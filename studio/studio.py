@@ -123,7 +123,7 @@ def cmd_qa(a):
 def cmd_render(a):
     import build as B;sc=3 if a.res=='4k' else (1 if a.res=='720p' else 1.5);html=B.build(sc);os.makedirs(ROOT+'/renders',exist_ok=True)
     W,H=(3840,2160) if a.res=='4k' else ((1280,720) if a.res=='720p' else (1920,1080));out=f'{ROOT}/renders/ep{a.n}_{a.res}.mp4'
-    sh(['node','studio/render_ep.js',bd(a.n),ep(a.n)+'/shots.json',out,str(a.workers),'30'],env=dict(node_env(),ENGINE=html,VW=str(W),VH=str(H),CRF='26' if a.res in ('4k','720p') else '20',JQ='90',TARGET_SEC=str(target(a))))
+    sh(['node','studio/render_ep.js',bd(a.n),ep(a.n)+'/shots.json',out,str(a.workers),'30'],env=dict(node_env(),SILENT=('1' if getattr(a,'silent',False) else ''),ENGINE=html,VW=str(W),VH=str(H),CRF='26' if a.res in ('4k','720p') else '20',JQ='90',TARGET_SEC=str(target(a))))
     print(out)
 def cmd_feedback(a):
     rec={'date':datetime.date.today().isoformat(),'ep':a.n,'cat':a.cat,'shot':a.shot,'text':a.text,'status':'open'}
@@ -144,6 +144,6 @@ if __name__=='__main__':
         if name not in('learn','gallery'):q.add_argument('n')
         if name=='new':q.add_argument('title')
         if name=='qa':q.add_argument('--video')
-        if name=='render':q.add_argument('--res',default='1080p');q.add_argument('--workers',type=int,default=4)
+        if name=='render':q.add_argument('--res',default='1080p');q.add_argument('--workers',type=int,default=4);q.add_argument('--silent',action='store_true',help='no guide voice in the video: subtitles only (owner records the voiceover)')
         if name=='feedback':q.add_argument('text');q.add_argument('--cat',default='visual');q.add_argument('--shot',type=int)
     a=p.parse_args();a.f(a)

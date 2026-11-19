@@ -23,5 +23,5 @@ async function worker(B,shotsF,part,f0,f1,fps){
  await Promise.all([...Array(nW)].map((_,i)=>{const f0=i*per,f1=Math.min(N,f0+per),part=`${B}/part${i}.mp4`;parts.push(part);
    return new Promise(r=>{const c=spawn('node',[__filename,'--worker',B,S,part,f0,f1,fps],{stdio:'inherit'});c.on('close',r)})}));
  fs.writeFileSync(B+'/parts.txt',parts.map(p=>`file '${path.basename(p)}'`).join('\n'));
- execSync(`ffmpeg -y -v error -f concat -safe 0 -i ${B}/parts.txt -i ${B}/voice.wav -c:v copy -c:a aac -b:a 192k -shortest ${out}`);
+ if(process.env.SILENT)execSync(`ffmpeg -y -v error -f concat -safe 0 -i ${B}/parts.txt -c:v copy -an ${out}`);else execSync(`ffmpeg -y -v error -f concat -safe 0 -i ${B}/parts.txt -i ${B}/voice.wav -c:v copy -c:a aac -b:a 192k -shortest ${out}`);
  console.log('done',out,((Date.now()-t0)/1000).toFixed(0)+'s')})();
