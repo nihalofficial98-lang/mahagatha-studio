@@ -40,7 +40,7 @@ function go(){
     const S2=C.vishnu;c.save();c.translate(0,0);c.fillStyle='#10101c';c.beginPath();c.moveTo(-36,-8);c.bezierCurveTo(-42,-56,42,-56,36,-8);c.bezierCurveTo(26,-30,-26,-30,-36,-8);c.closePath();c.fill();c.restore();
     c.fillStyle='#e6b84a';c.beginPath();c.moveTo(-28,-22);c.lineTo(-22,-74);c.lineTo(-10,-62);c.lineTo(0,-118);c.lineTo(10,-62);c.lineTo(22,-74);c.lineTo(28,-22);c.closePath();c.fill();c.fillStyle='#c4882a';c.fillRect(-28,-30,56,8);c.fillStyle='#e0302a';c.beginPath();c.arc(0,-40,4.4,0,7);c.fill()},400,440,200,300);X.drawImage(H,PX+10+i*262,170,300,330);txt(n,PX+10+i*262+150,525,26,'#ffe9b8','center')});
   txt('शेषशायी विष्णु (योगनिद्रा)',PX+30,600,34,'#ffe9b8');
-  const R=figure(c=>{c.scale(.9,.9);V2.drawReclineVishnu(c,{t:1.2})},800,520,400,470);X.drawImage(R,PX+20,620,760,500);
+  const R=figure(c=>{c.scale(.78,.78);V2.drawReclineVishnu(c,{t:1.2})},800,620,400,560);X.drawImage(R,PX+20,610,760,590);
   txt('रंग-पट्टिका',PX+30,1200,32,'#ffe9b8');
   [['#4f7fd6','त्वचा'],['#f2c230','पीतांबर'],['#e6b84a','स्वर्ण'],['#f6e7a8','उत्तरीय'],['#d02a2a','कौस्तुभ'],['#e8ecf6','शेष']].forEach(([c,n],i)=>{X.fillStyle=c;X.beginPath();X.roundRect(PX+30+i*128,1230,110,56,8);X.fill();X.strokeStyle='rgba(255,255,255,.3)';X.stroke();txt(n,PX+85+i*128,1316,20,'#c9b894','center',400)});
   const id=X.getImageData(0,0,2400,1500),d=id.data;let sd=7;for(let i=0;i<d.length;i+=4){sd=(sd*16807)%2147483647;const n=((sd/2147483647)-.5)*14;d[i]+=n;d[i+1]+=n;d[i+2]+=n}X.putImageData(id,0,0);

@@ -407,28 +407,60 @@ function drawBrahmaRig(c,o){const t=o.t||0,k=o.k||0,br=Math.sin(t*1.7)*2,S=BRAHM
   head(-62,-286+br,.84,true);head(62,-286+br,.84,true);head(0,-292+br,1.04,false);
   c.restore()}
 
+/* ---------- Shesha: the cosmic serpent. Thick sinuous coils with belly scales + five jewelled cobra hoods ---------- */
+function drawShesha(c,t){c.save();
+  const pearl=['#fbfbff','#dfe4f6','#a9b1d6'],ink='#5a6498';
+  glow2(c,-170,-330,300,'200,220,255',.34);
+  // coils: three overlapping S-curves forming a heap/bed (bottom → top)
+  const coil=(y,amp,half,w,ph,tail)=>{const pts=[];for(let k=0;k<=30;k++){const u=k/30,x=lerp(-half,half,u),yy=y+Math.sin(u*Math.PI*2.2+ph)*amp+(tail&&u>.86?(u-.86)*-160:0);pts.push([x,yy,w*(tail&&u>.8?Math.max(.15,1-(u-.8)*4):1)])}
+    const line=(off,col,wm)=>{c.strokeStyle=col;c.lineCap='round';c.lineJoin='round';for(let k=0;k<pts.length-1;k++){c.lineWidth=pts[k][2]*wm;c.beginPath();c.moveTo(pts[k][0],pts[k][1]+off*pts[k][2]);c.lineTo(pts[k+1][0],pts[k+1][1]+off*pts[k+1][2]);c.stroke()}};
+    line(0,ink,1.12);line(.02,pearl[2],1);line(-.06,pearl[1],.78);line(-.2,pearl[0],.38);
+    c.strokeStyle='rgba(90,100,160,.45)';c.lineWidth=2;for(let k=1;k<pts.length-1;k++){if(k%2)continue;const a=pts[k-1],b=pts[k+1],dx=b[0]-a[0],dy=b[1]-a[1],d=Math.hypot(dx,dy)||1,nx=-dy/d,ny=dx/d,w2=pts[k][2]*.46;c.beginPath();c.moveTo(pts[k][0]+nx*w2,pts[k][1]+ny*w2);c.lineTo(pts[k][0]-nx*w2,pts[k][1]-ny*w2);c.stroke()}};
+  coil(-34,12,340,54,0,true);coil(-86,14,300,50,2.2,false);coil(-136,12,250,46,4.1,false);
+  // necks + hoods from the left end of the top coil, fanned behind Vishnu's head
+  const base=[-250,-118],H=[[-380,-372,.82],[-300,-440,.96],[-190,-470,1.08],[-80,-440,.96],[10,-372,.82]];
+  H.forEach(([hx,hy,sz],i)=>{const sw=Math.sin(t*1.3+i*1.1)*5,bob=Math.sin(t*1.7+i)*3,hx2=hx+sw,hy2=hy+bob;
+    c.lineCap='round';c.strokeStyle=ink;c.lineWidth=34*sz;c.beginPath();c.moveTo(base[0],base[1]);c.bezierCurveTo(base[0]+(hx-base[0])*.2,base[1]-120,hx2,hy2+170,hx2,hy2+70);c.stroke();
+    c.strokeStyle=pearl[1];c.lineWidth=28*sz;c.beginPath();c.moveTo(base[0],base[1]);c.bezierCurveTo(base[0]+(hx-base[0])*.2,base[1]-120,hx2,hy2+170,hx2,hy2+70);c.stroke();
+    c.save();c.translate(hx2,hy2);c.scale(sz,sz);
+    const hg=c.createLinearGradient(-70,0,70,0);hg.addColorStop(0,'#aab3d8');hg.addColorStop(.4,'#fdfdff');hg.addColorStop(1,'#8d96c0');c.fillStyle=hg;c.strokeStyle=ink;c.lineWidth=4;
+    c.beginPath();c.moveTo(-16,78);c.bezierCurveTo(-34,52,-78,34,-72,-14);c.bezierCurveTo(-68,-60,-26,-86,0,-86);c.bezierCurveTo(26,-86,68,-60,72,-14);c.bezierCurveTo(78,34,34,52,16,78);c.closePath();c.fill();c.stroke();
+    c.fillStyle='rgba(120,130,190,.35)';c.beginPath();c.moveTo(-10,70);c.bezierCurveTo(-24,50,-52,34,-50,-10);c.bezierCurveTo(-44,-44,-14,-64,0,-64);c.bezierCurveTo(14,-64,44,-44,50,-10);c.bezierCurveTo(52,34,24,50,10,70);c.fill();
+    // hood scales
+    c.strokeStyle='rgba(90,100,160,.35)';c.lineWidth=2;for(let r=0;r<4;r++)for(let q=-2;q<=2;q++){c.beginPath();c.arc(q*20+(r%2)*10,-44+r*24,10,.2,Math.PI-.2);c.stroke()}
+    // spectacle mark
+    c.strokeStyle='#4a5388';c.lineWidth=4;c.beginPath();c.arc(-18,10,13,0,7);c.arc(18,10,13,0,7);c.stroke();c.beginPath();c.moveTo(-18,-3);c.quadraticCurveTo(0,-14,18,-3);c.moveTo(-18,23);c.quadraticCurveTo(0,44,18,23);c.stroke();
+    // eyes, jewel, tongue
+    c.fillStyle='#ffe66a';[-1,1].forEach(sd=>{c.beginPath();c.ellipse(sd*22,-34,6,8,0,0,7);c.fill();c.fillStyle='#1a1020';c.fillRect(sd*22-1.2,-40,2.4,12);c.fillStyle='#ffe66a'});
+    glow2(c,0,-70,26,'255,70,60',.8);c.fillStyle='#e02a3a';c.beginPath();c.moveTo(0,-82);c.lineTo(8,-70);c.lineTo(0,-58);c.lineTo(-8,-70);c.closePath();c.fill();c.fillStyle='#ffb0b8';c.beginPath();c.arc(-2,-72,2,0,7);c.fill();
+    c.strokeStyle='#c02a3a';c.lineWidth=2.6;c.beginPath();c.moveTo(0,70);c.lineTo(0,86);c.moveTo(0,86);c.lineTo(-6,96);c.moveTo(0,86);c.lineTo(6,96);c.stroke();
+    c.restore()});
+  c.restore()}
+
 /* ---------- Vishnu in yoganidra on Shesha (reclining) ---------- */
 function drawReclineVishnu(c,o){const t=o.t||0,S=CAST.vishnu,br=Math.sin(t*1.2)*2;c.save();
-  const scale=(x,y,r)=>{c.strokeStyle='rgba(70,80,130,.35)';c.lineWidth=2;for(let u=-1;u<=1;u+=.25){c.beginPath();c.arc(x+u*r*.9,y,5,0.1,Math.PI-.1);c.stroke()}};
-  const sn=c.createLinearGradient(-300,0,300,0);sn.addColorStop(0,'#aab4d8');sn.addColorStop(.5,'#eef1fa');sn.addColorStop(1,'#8f98bc');
-  // Shesha's five cobra hoods rising from the coils behind and above the head
-  [[-2,.78],[2,.78],[-1,.92],[1,.92],[0,1]].forEach(([h,sz])=>{const hx=-170+h*74,top=-330-sz*70+Math.abs(h)*14,bob=Math.sin(t*1.5+h)*3;c.save();c.translate(hx,0);
-    const hg=c.createLinearGradient(-52,0,52,0);hg.addColorStop(0,'#aab4d8');hg.addColorStop(.5,'#f0f3fb');hg.addColorStop(1,'#8f98bc');c.fillStyle=hg;
-    c.beginPath();c.moveTo(-16,-120);c.bezierCurveTo(-18,-170,-56*sz,top+80,-52*sz,top+30+bob);c.bezierCurveTo(-48*sz,top-14+bob,48*sz,top-14+bob,52*sz,top+30+bob);c.bezierCurveTo(56*sz,top+80,18,-170,16,-120);c.closePath();c.fill();
-    c.strokeStyle='rgba(70,80,130,.45)';c.lineWidth=3;c.beginPath();c.moveTo(-52*sz,top+34+bob);c.bezierCurveTo(-30*sz,top+10+bob,30*sz,top+10+bob,52*sz,top+34+bob);c.stroke();
-    c.fillStyle='#c4cce6';c.beginPath();c.ellipse(0,top+62+bob,20*sz,34*sz,0,0,7);c.fill();c.strokeStyle='#7a86b8';c.lineWidth=3;c.beginPath();c.arc(0,top+52+bob,12*sz,3.5,5.9);c.stroke();
-    c.fillStyle='#f0d860';[-1,1].forEach(sd=>{c.beginPath();c.ellipse(sd*16*sz,top+36+bob,3.4,4.6,0,0,7);c.fill();c.fillStyle='#222';c.fillRect(sd*16*sz-.8,top+32+bob,1.6,8);c.fillStyle='#f0d860'});c.restore()});
-  // Shesha's coiled bed
-  for(let i=0;i<3;i++){c.fillStyle=sn;c.beginPath();c.ellipse(20,-26-i*30,330-i*44,30,0,0,7);c.fill();scale(20,-14-i*30,200-i*30);c.strokeStyle='rgba(60,70,120,.4)';c.lineWidth=3;c.beginPath();c.ellipse(20,-26-i*30,330-i*44,30,0,.15,Math.PI-.15);c.stroke()}
-  // Vishnu lying on his side, head propped on one hand
-  const y0=-122+br,skin=S.skin;
-  c.fillStyle=skin;c.beginPath();c.moveTo(-170,y0-8);c.bezierCurveTo(-110,y0-70,100,y0-64,196,y0-12);c.bezierCurveTo(120,y0+36,-110,y0+34,-170,y0-8);c.fill();
-  c.fillStyle='rgba(15,20,80,.3)';c.beginPath();c.moveTo(-160,y0+8);c.bezierCurveTo(-90,y0+34,110,y0+34,190,y0-2);c.bezierCurveTo(100,y0+16,-100,y0+18,-160,y0+8);c.fill();
-  const L=S.lower,dg=c.createLinearGradient(20,0,280,0);dg.addColorStop(0,L.colL);dg.addColorStop(1,L.colD);c.fillStyle=dg;c.beginPath();c.moveTo(20,y0-58);c.bezierCurveTo(140,y0-72,250,y0-40,300,y0+10);c.bezierCurveTo(210,y0+44,100,y0+38,20,y0+14);c.closePath();c.fill();c.fillStyle=L.trim;c.fillRect(20,y0-12,9,56);
-  c.fillStyle=skin;c.beginPath();c.ellipse(304,y0+8,16,26,.3,0,7);c.fill();
-  for(let i=0;i<13;i++){const u=i/12;c.fillStyle=i%2?'#f08ab0':'#ffd0e0';c.beginPath();c.arc(-130+u*140,y0-40+Math.sin(u*3.14)*12,5,0,7);c.fill()}
-  c.strokeStyle=skin;c.lineWidth=30;c.lineCap='round';c.beginPath();c.moveTo(-90,y0-24);c.lineTo(-176,y0-70);c.stroke();c.lineWidth=22;c.beginPath();c.moveTo(-60,y0-10);c.lineTo(30,y0+14);c.stroke();
-  c.save();c.translate(-190,y0-122);c.rotate(-.1);drawHead(c,0,0,{expr:'closed',k:0,S:S,t:t});hairFront(c,S,0,0);headgear(c,S,0,0);c.restore();
+  drawShesha(c,t);
+  // Vishnu lies on his side on the top coil, head resting in his palm, short neck, both hands visible
+  const y0=-186+br,skin=S.skin;
+  // legs + dhoti (drawn first, behind the torso)
+  const L=S.lower,dg=c.createLinearGradient(20,0,300,0);dg.addColorStop(0,L.colL);dg.addColorStop(1,L.colD);
+  c.fillStyle=skin;c.beginPath();c.ellipse(318,y0+16,18,30,.35,0,7);c.fill();c.beginPath();c.ellipse(300,y0-8,16,24,.2,0,7);c.fill();
+  c.fillStyle=dg;c.beginPath();c.moveTo(14,y0-66);c.bezierCurveTo(140,y0-84,262,y0-48,304,y0+4);c.bezierCurveTo(226,y0+52,100,y0+46,14,y0+18);c.closePath();c.fill();
+  c.strokeStyle='rgba(120,70,0,.4)';c.lineWidth=2;for(let k=0;k<6;k++){c.beginPath();c.moveTo(38+k*38,y0-56+k*4);c.quadraticCurveTo(98+k*40,y0-10,68+k*44,y0+36);c.stroke()}c.fillStyle=L.trim;c.fillRect(14,y0-16,9,64);
+  // torso (shoulders rise at the head end)
+  const tg=c.createLinearGradient(0,y0-90,0,y0+40);tg.addColorStop(0,S.skinH);tg.addColorStop(.45,skin);tg.addColorStop(1,S.skinD);c.fillStyle=tg;
+  c.beginPath();c.moveTo(-170,y0-16);c.bezierCurveTo(-166,y0-82,-96,y0-96,-40,y0-82);c.bezierCurveTo(10,y0-74,30,y0-68,40,y0-56);c.lineTo(40,y0+22);c.bezierCurveTo(-30,y0+44,-130,y0+40,-170,y0-16);c.closePath();c.fill();
+  c.fillStyle='rgba(255,255,255,.12)';c.beginPath();c.ellipse(-70,y0-56,70,14,-.08,0,7);c.fill();c.strokeStyle='rgba(20,24,70,.3)';c.lineWidth=2.2;c.lineCap='round';c.beginPath();c.moveTo(-120,y0-40);c.quadraticCurveTo(-70,y0-28,-20,y0-44);c.stroke();c.beginPath();c.moveTo(-100,y0-10);c.quadraticCurveTo(-50,y0,0,y0-10);c.stroke();
+  for(let k=0;k<13;k++){const u=k/12;c.fillStyle=k%2?'#f08ab0':'#ffd0e0';c.beginPath();c.arc(-150+u*150,y0-48+Math.sin(u*3.14)*14,5.4,0,7);c.fill()}
+  c.fillStyle='#e0302a';c.beginPath();c.arc(-78,y0-32,6,0,7);c.fill();
+  // neck + head resting on the palm (the propping arm: elbow on the coil, forearm up, hand under the cheek)
+  c.fillStyle=S.skinM;c.beginPath();c.roundRect(-176,y0-92,34,48,8);c.fill();
+  tapered(c,[-128,y0-52],[-120,y0+4],19,16,skin);tapered(c,[-120,y0+4],[-168,y0-46],16,12,skin);c.fillStyle=S.armlet;c.beginPath();c.roundRect(-134,y0-34,26,16,3);c.fill();
+  c.save();c.translate(-166,y0-104);c.rotate(-.2);drawHead(c,0,0,{expr:'closed',k:0,S:S,t:t});hairFront(c,S,0,0);headgear(c,S,0,0);c.restore();
+  handS(c,S,[-168,y0-42],false,.6);
+  // the free arm rests along his side; the hand holds a lotus
+  const ra=limbS(c,S,[-92,y0-58],[34,y0-34],72,66,-1,[17,14,11]);armband(c,ra,14,S.armlet);lotusFlower(c,ra.t[0]+6,ra.t[1]-8,.8);handS(c,S,ra.t,true);
+  c.fillStyle=skin;c.beginPath();c.arc(-92,y0-58,18,0,7);c.fill();
   c.restore()}
 
 /* ---------- Ardhanarishwara: Shiva (right half) joined to Adishakti (left half) ---------- */
@@ -490,7 +522,7 @@ function go(){
     const S2=C.vishnu;c.save();c.translate(0,0);c.fillStyle='#10101c';c.beginPath();c.moveTo(-36,-8);c.bezierCurveTo(-42,-56,42,-56,36,-8);c.bezierCurveTo(26,-30,-26,-30,-36,-8);c.closePath();c.fill();c.restore();
     c.fillStyle='#e6b84a';c.beginPath();c.moveTo(-28,-22);c.lineTo(-22,-74);c.lineTo(-10,-62);c.lineTo(0,-118);c.lineTo(10,-62);c.lineTo(22,-74);c.lineTo(28,-22);c.closePath();c.fill();c.fillStyle='#c4882a';c.fillRect(-28,-30,56,8);c.fillStyle='#e0302a';c.beginPath();c.arc(0,-40,4.4,0,7);c.fill()},400,440,200,300);X.drawImage(H,PX+10+i*262,170,300,330);txt(n,PX+10+i*262+150,525,26,'#ffe9b8','center')});
   txt('शेषशायी विष्णु (योगनिद्रा)',PX+30,600,34,'#ffe9b8');
-  const R=figure(c=>{c.scale(.9,.9);V2.drawReclineVishnu(c,{t:1.2})},800,520,400,470);X.drawImage(R,PX+20,620,760,500);
+  const R=figure(c=>{c.scale(.78,.78);V2.drawReclineVishnu(c,{t:1.2})},800,620,400,560);X.drawImage(R,PX+20,610,760,590);
   txt('रंग-पट्टिका',PX+30,1200,32,'#ffe9b8');
   [['#4f7fd6','त्वचा'],['#f2c230','पीतांबर'],['#e6b84a','स्वर्ण'],['#f6e7a8','उत्तरीय'],['#d02a2a','कौस्तुभ'],['#e8ecf6','शेष']].forEach(([c,n],i)=>{X.fillStyle=c;X.beginPath();X.roundRect(PX+30+i*128,1230,110,56,8);X.fill();X.strokeStyle='rgba(255,255,255,.3)';X.stroke();txt(n,PX+85+i*128,1316,20,'#c9b894','center',400)});
   const id=X.getImageData(0,0,2400,1500),d=id.data;let sd=7;for(let i=0;i<d.length;i+=4){sd=(sd*16807)%2147483647;const n=((sd/2147483647)-.5)*14;d[i]+=n;d[i+1]+=n;d[i+2]+=n}X.putImageData(id,0,0);
