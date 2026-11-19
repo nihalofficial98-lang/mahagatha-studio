@@ -445,23 +445,46 @@ function drawShesha(c,t){c.save();
   const tail=[];for(let k=0;k<=14;k++){const u=k/14;tail.push([380+u*130,-46+Math.sin(u*3.4)*30-u*22])}snakeTube(c,tail,70,10);
   c.restore()}
 
-/* ---------- Vishnu in yoganidra on Shesha: reclined against the coils, one arm relaxed, one on the knee, two raised hands ---------- */
-function drawReclineVishnu(c,o){const t=o.t||0,S=Object.assign({},CAST.vishnu,{arms4:false,uttariya:'#c4283a',lower:Object.assign({},CAST.vishnu.lower,{len:.66})}),br=Math.sin(t*1.2)*1.6;c.save();
+/* ---------- Vishnu in yoganidra on Shesha: hand-posed (NOT a rotated standing rig) ----------
+   Torso leans back at ~22 deg, near knee raised with the forearm resting on it, far leg extended, two raised upper hands. */
+function drawReclineVishnu(c,o){const t=o.t||0,S=CAST.vishnu,br=Math.sin(t*1.2)*1.4,L=S.lower;c.save();
   drawShesha(c,t);
-  const ox=30,oy=-204+br,rot=-Math.PI/2+.19;
-  const tx=(x,y)=>[ox+(x*Math.cos(rot)-y*Math.sin(rot)),oy+(x*Math.sin(rot)+y*Math.cos(rot))];
-  const P=poseOf('lie2','vishnu');
-  // warm halo behind head and chest
-  const hp=tx(0,-482);
-  // two raised upper hands (chakra + conch) drawn behind the body
-  const shA=tx(-58,-404),shB=tx(58,-404);const Lh=shA[0]<shB[0]?shA:shB,Rh=shA[0]<shB[0]?shB:shA;
-  [[Lh,-1],[Rh,1]].forEach(([sh,sd])=>{const T=[sh[0]+sd*52,sh[1]-170],r=limbS(c,S,sh,T,70,66,sd,[15,12,9]);armband(c,r,13,S.armlet);handS(c,S,r.t,false);
-    if(sd<0){c.save();c.translate(r.t[0],r.t[1]-26);glow2(c,0,0,44,'255,225,120',.5);c.rotate(t*2.2);c.strokeStyle='#f6d870';c.lineWidth=5;c.beginPath();c.arc(0,0,22,0,7);c.stroke();c.lineWidth=2;for(let k=0;k<8;k++){const a=k*.785;c.beginPath();c.moveTo(0,0);c.lineTo(Math.cos(a)*22,Math.sin(a)*22);c.stroke()}c.restore()}
-    else{c.save();c.translate(r.t[0],r.t[1]-22);c.rotate(.2);const cg=c.createLinearGradient(-12,0,12,0);cg.addColorStop(0,'#fffaf0');cg.addColorStop(1,'#cfc3a2');c.fillStyle=cg;c.beginPath();c.moveTo(0,20);c.bezierCurveTo(-20,6,-16,-24,0,-30);c.bezierCurveTo(16,-24,20,6,0,20);c.fill();c.restore()}});
-  // head first (so the resting hand is drawn over it), tilted gently
-  c.save();c.translate(hp[0],hp[1]);c.rotate(-.2);c.scale(1.12,1.12);drawHead(c,0,0,{expr:'closed',k:0,S:S,t:t});hairFront(c,S,0,0);headgear(c,S,0,0);c.restore();
-  c.save();c.translate(ox,oy);c.rotate(rot);drawHuman(c,S,P,{t:t,noHead:true,expr:'calm'});c.restore();
-  // bare foot of the extended leg + a golden pot beside him (as in the classic scene)
+  const N=[-196,-330+br],TL=205,d=[.375,.927],nn=[-.927,.375],P=(u,v)=>[N[0]+d[0]*TL*u+nn[0]*v,N[1]+d[1]*TL*u+nn[1]*v];
+  const skin=S.skin,ad=(a,b)=>[a[0]+b[0],a[1]+b[1]];
+  const lim=(a,b,wa,wb)=>{tapered(c,a,b,wa,wb,skin);c.globalAlpha=.38;const dx=b[0]-a[0],dy=b[1]-a[1],dd=Math.hypot(dx,dy)||1,nx=-dy/dd,ny=dx/dd;tapered(c,[a[0]+nx*wa*.5,a[1]+ny*wa*.5],[b[0]+nx*wb*.5,b[1]+ny*wb*.5],wa*.5,wb*.5,S.skinD);c.globalAlpha=.22;tapered(c,[a[0]-nx*wa*.4,a[1]-ny*wa*.4],[b[0]-nx*wb*.4,b[1]-ny*wb*.4],wa*.3,wb*.3,S.skinH);c.globalAlpha=1};
+  const cloth=(a,b,wa,wb)=>{const g=c.createLinearGradient(a[0],a[1]-40,a[0],a[1]+40);g.addColorStop(0,L.colL);g.addColorStop(1,L.colD);tapered(c,a,b,wa,wb,g);c.strokeStyle='rgba(120,70,0,.4)';c.lineWidth=2;const dx=b[0]-a[0],dy=b[1]-a[1],dd=Math.hypot(dx,dy)||1,nx=-dy/dd,ny=dx/dd;[-.6,-.2,.2,.6].forEach(f=>{c.beginPath();c.moveTo(a[0]+nx*wa*f,a[1]+ny*wa*f);c.lineTo(b[0]+nx*wb*f,b[1]+ny*wb*f);c.stroke()})};
+  const foot=(p,ang)=>{c.save();c.translate(p[0],p[1]);c.rotate(ang);c.fillStyle=S.skinM;c.beginPath();c.ellipse(10,0,26,11,0,0,7);c.fill();c.fillStyle=skin;[0,1,2,3,4].forEach(k=>{c.beginPath();c.ellipse(32,-6+k*3.4,4.2,2.8,0,0,7);c.fill()});c.fillStyle='rgba(15,20,70,.3)';c.beginPath();c.ellipse(8,4,20,5,0,0,7);c.fill();c.restore()};
+  const PV=P(1,0),Ls=P(.1,60),Rs=P(.1,-60);
+  // --- raised upper hands (behind the body): chakra on the left, conch on the right
+  const raise=(sh,sd2,hand)=>{const el=ad(sh,[sd2*40,-66]),hd=ad(sh,[sd2*36,-146]);lim(sh,el,15,12);lim(el,hd,12,9);armband(c,{s:sh,e:el,t:hd},13,S.armlet);handS(c,S,hd,false);return hd};
+  const hL=raise(Ls,-1),hR=raise(Rs,1);
+  c.save();c.translate(hL[0],hL[1]-26);glow2(c,0,0,44,'255,225,120',.5);c.rotate(t*2.2);c.strokeStyle='#f6d870';c.lineWidth=5;c.beginPath();c.arc(0,0,23,0,7);c.stroke();c.lineWidth=2;for(let k=0;k<8;k++){const a=k*.785;c.beginPath();c.moveTo(0,0);c.lineTo(Math.cos(a)*23,Math.sin(a)*23);c.stroke()}c.restore();
+  c.save();c.translate(hR[0]+2,hR[1]-22);c.rotate(.2);const cg=c.createLinearGradient(-12,0,12,0);cg.addColorStop(0,'#fffaf0');cg.addColorStop(1,'#cfc3a2');c.fillStyle=cg;c.beginPath();c.moveTo(0,22);c.bezierCurveTo(-21,6,-17,-26,0,-32);c.bezierCurveTo(17,-26,21,6,0,22);c.fill();c.restore();
+  // --- far leg: extended along the coil
+  const KF=ad(PV,[122,10]),AF=ad(PV,[236,-8]);lim(KF,AF,22,13);foot(ad(AF,[4,-8]),-.28);lim(ad(PV,[6,12]),KF,32,24);cloth(ad(PV,[6,12]),ad(KF,[-6,0]),36,30);
+  // --- torso
+  const half=[[0,34],[.1,64],[.4,52],[.7,42],[1,50]],up=half.map(([u,w])=>P(u,-w)),lo=half.map(([u,w])=>P(u,w));
+  const tg=c.createLinearGradient(P(.5,-56)[0],P(.5,-56)[1],P(.5,56)[0],P(.5,56)[1]);tg.addColorStop(0,S.skinD);tg.addColorStop(.35,skin);tg.addColorStop(.7,skin);tg.addColorStop(1,S.skinH);c.fillStyle=tg;
+  c.beginPath();c.moveTo(up[0][0],up[0][1]);for(let k=1;k<up.length;k++){const m=[(up[k-1][0]+up[k][0])/2,(up[k-1][1]+up[k][1])/2];c.quadraticCurveTo(up[k-1][0],up[k-1][1],m[0],m[1])}c.lineTo(up[up.length-1][0],up[up.length-1][1]);c.lineTo(lo[lo.length-1][0],lo[lo.length-1][1]);for(let k=lo.length-2;k>=0;k--){const m=[(lo[k+1][0]+lo[k][0])/2,(lo[k+1][1]+lo[k][1])/2];c.quadraticCurveTo(lo[k+1][0],lo[k+1][1],m[0],m[1])}c.closePath();c.fill();
+  c.strokeStyle='rgba(15,20,70,.3)';c.lineWidth=2.2;c.lineCap='round';[[.16,-.03],[.16,.03]].forEach(([u,sgn],i)=>{const a=P(u,sgn>0?8:-8),b=P(u+.17,sgn>0?34:-34);c.beginPath();c.moveTo(a[0],a[1]);c.quadraticCurveTo(P(u+.1,sgn>0?8:-8)[0],P(u+.1,sgn>0?8:-8)[1],b[0],b[1]);c.stroke()});
+  c.beginPath();const a0=P(.16,0),a1=P(.72,0);c.moveTo(a0[0],a0[1]);c.lineTo(a1[0],a1[1]);c.stroke();[.32,.44,.56].forEach(u=>{const a=P(u,-14),b=P(u,14);c.beginPath();c.moveTo(a[0],a[1]);c.lineTo(b[0],b[1]);c.stroke()});
+  // red uttariya from the left shoulder, draping down onto the coil; plus a sash across the chest
+  c.fillStyle='#c4283a';c.beginPath();const u0=P(.06,66),u1=P(.5,70);c.moveTo(u0[0]+10,u0[1]-10);c.bezierCurveTo(u0[0]-26,u0[1]+40,u1[0]-46,u1[1]+30,u1[0]-70,u1[1]+104);c.lineTo(u1[0]-24,u1[1]+112);c.bezierCurveTo(u1[0]-6,u1[1]+50,u0[0]+34,u0[1]+30,u0[0]+44,u0[1]);c.closePath();c.fill();c.strokeStyle='rgba(0,0,0,.2)';c.lineWidth=2;c.beginPath();c.moveTo(u0[0]+16,u0[1]);c.bezierCurveTo(u0[0]-10,u0[1]+50,u1[0]-30,u1[1]+40,u1[0]-48,u1[1]+104);c.stroke();
+  c.strokeStyle='#c4283a';c.lineWidth=15;c.lineCap='butt';const s0=P(.08,52),s1=P(.9,-30);c.beginPath();c.moveTo(s0[0],s0[1]);c.quadraticCurveTo(P(.5,40)[0],P(.5,40)[1],s1[0],s1[1]);c.stroke();
+  // garland + Kaustubha
+  for(let k=0;k<15;k++){const u=k/14,q=[P(.08+u*.1,-44+u*0)[0],0];const a=P(.06,-44),b=P(.34,0),e=P(.06,44),pt=[(1-u)*(1-u)*a[0]+2*(1-u)*u*b[0]+u*u*e[0],(1-u)*(1-u)*a[1]+2*(1-u)*u*b[1]+u*u*e[1]];c.fillStyle=k%2?'#f08ab0':'#ffd0e0';c.beginPath();c.arc(pt[0],pt[1],5,0,7);c.fill()}
+  const kg=P(.3,0);glow2(c,kg[0],kg[1],16,'255,70,60',.8);c.fillStyle='#e0302a';c.beginPath();c.arc(kg[0],kg[1],6,0,7);c.fill();
+  // waist band + dhoti top
+  c.fillStyle=L.trim;c.beginPath();const w0=P(.94,-52),w1=P(.94,52),w2=P(1.1,52),w3=P(1.1,-52);c.moveTo(w0[0],w0[1]);c.lineTo(w1[0],w1[1]);c.lineTo(w2[0],w2[1]);c.lineTo(w3[0],w3[1]);c.closePath();c.fill();
+  // --- near leg: knee raised, bare calf, foot on the coil, dhoti over the thigh
+  const HN=ad(PV,[-10,6]),KN=ad(PV,[122,-84]),AN=ad(PV,[178,18]);lim(KN,AN,26,14);foot(ad(AN,[8,4]),.12);lim(HN,KN,38,30);cloth(HN,ad(KN,[4,-2]),42,34);c.fillStyle=L.trim;c.beginPath();c.ellipse(KN[0]+2,KN[1]+4,36,10,-.5,0,7);c.fill();
+  // --- lower arms: left relaxed on the coil, right forearm resting on the knee
+  const Le=ad(Ls,[-34,62]),Lh=ad(Ls,[-52,128]);lim(Ls,Le,17,14);lim(Le,Lh,14,11);armband(c,{s:Ls,e:Le,t:Lh},13,S.armlet);handS(c,S,Lh,false,-.2);
+  const Re=ad(Rs,[56,64]),Rh=ad(KN,[-6,-16]);lim(Rs,Re,17,14);lim(Re,Rh,14,11);armband(c,{s:Rs,e:Re,t:Rh},13,S.armlet);handS(c,S,Rh,false,.5);
+  [Ls,Rs].forEach((sp,i)=>{c.fillStyle=skin;c.beginPath();c.arc(sp[0],sp[1],19,0,7);c.fill();c.fillStyle='rgba(255,255,255,.14)';c.beginPath();c.arc(sp[0]+(i?-4:4),sp[1]-5,10,0,7);c.fill()});
+  // --- neck + head, gently tilted, crown on
+  c.fillStyle=S.skinM;c.beginPath();c.roundRect(N[0]-15,N[1]-48,30,56,8);c.fill();
+  c.save();c.translate(N[0]-6,N[1]-66);c.rotate(-.22);c.scale(1.12,1.12);drawHead(c,0,0,{expr:'closed',k:0,S:S,t:t});hairFront(c,S,0,0);headgear(c,S,0,0);c.restore();
   c.restore()}
 
 /* ---------- Ardhanarishwara: Shiva (right half) joined to Adishakti (left half) ---------- */
