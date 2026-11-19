@@ -259,6 +259,7 @@ const PZ={
  sit:{sit:true,ph:[0,-58],ch:[0,-186],nk:[0,-230],hd:[0,-282],sL:[-62,-212],sR:[62,-212],hL:[-104,-70],hR:[104,-70],hipL:[-28,-62],hipR:[28,-62],kL:[-122,-34],kR:[122,-34],fL:[-38,-12],fR:[38,-12],hem:0}
 };
 PZ.vstand={hL:[-96,-292],hR:[98,-256]};
+PZ.lie2={hL:[-98,-262],hR:[84,-196],kL:[-22,-128],kR:[70,-176],fL:[-34,0],fR:[30,-40],hem:200,sway:0};
 PZ.lie={hL:[-70,-486],hR:[64,-232],kL:[-24,-130],kR:[22,-130],fL:[-30,0],fR:[18,0],hem:200,sway:0};
 PZ.sitpray={...PZ.sit,hL:[-8,-222],hR:[8,-222],ef:1};
 const poseOf=(n,who)=>(who==='vishnu'||who==='hayagriva')&&(!n||n==='stand')?poseOf0('vstand'):poseOf0(n);
@@ -287,7 +288,7 @@ function clothS(c,S,P,sw,sp){ // lower garment: dhoti / sari / seated mound
     c.strokeStyle='rgba(0,0,0,.22)';c.lineWidth=2.2;[-110,-60,-20,20,60,110].forEach(x=>{c.beginPath();c.moveTo(x*.35,wy+10);c.quadraticCurveTo(x*1.1,-48,x*1.45,-6);c.stroke()});
     c.fillStyle='rgba(255,240,200,.16)';c.beginPath();c.ellipse(-110,-40,40,16,-.25,0,7);c.fill();c.fillStyle='rgba(0,0,0,.18)';c.beginPath();c.ellipse(110,-36,40,14,.25,0,7);c.fill();
     c.fillStyle=L.trim;c.fillRect(-170,-4,340,7);c.fillStyle=S.skin;[-1,1].forEach(sd=>{c.beginPath();c.ellipse(sd*30,-6,24,9,sd*-.15,0,7);c.fill()});return}
-  const hem=-wy-12,topW=(S.female?44:52)+sp*.22,botW=(S.female?(S.lower.type==='sari'?74:62):60)+sw*4+sp*.7;
+  const hem=(-wy-12)*(L.len||1),topW=(S.female?44:52)+sp*.22,botW=(S.female?(S.lower.type==='sari'?74:62):60)+sw*4+sp*.7;
   c.save();c.beginPath();c.moveTo(-topW,wy);c.lineTo(topW,wy);c.lineTo(botW,wy+hem*.55);
   for(let i=0;i<=8;i++){const u=i/8,x=lerp(botW,-botW,u),y=wy+hem+Math.sin(u*6+sw)*3;c.lineTo(x,y)}c.lineTo(-botW,wy+hem*.55);c.closePath();
   const g=c.createLinearGradient(-botW,0,botW,0);g.addColorStop(0,L.colL);g.addColorStop(.5,L.col);g.addColorStop(1,L.colD);c.fillStyle=g;c.fill();c.clip();
@@ -408,42 +409,60 @@ function drawBrahmaRig(c,o){const t=o.t||0,k=o.k||0,br=Math.sin(t*1.7)*2,S=BRAHM
   head(-62,-286+br,.84,true);head(62,-286+br,.84,true);head(0,-292+br,1.04,false);
   c.restore()}
 
-/* ---------- Shesha: the cosmic serpent. Thick sinuous coils with belly scales + five jewelled cobra hoods ---------- */
+/* ---------- Shesha: olive-khaki serpent coiled into a nest, five real snake heads rising behind Vishnu ---------- */
+const SN={base:'#a39a6c',mid:'#8a8158',dark:'#5c553a',ink:'#3e3a28',light:'#cfc496',belly:'#e0d6aa'};
+function snakeTube(c,pts,w0,w1){ // thick tube along a polyline of points with outline, body, highlight and belly ticks
+  const n=pts.length;const W=k=>lerp(w0,w1,k/(n-1));
+  const pass=(col,wm,off)=>{c.strokeStyle=col;c.lineCap='round';c.lineJoin='round';for(let k=0;k<n-1;k++){const a=pts[k],b=pts[k+1],dx=b[0]-a[0],dy=b[1]-a[1],d=Math.hypot(dx,dy)||1,nx=-dy/d,ny=dx/d;c.lineWidth=W(k)*wm;c.beginPath();c.moveTo(a[0]+nx*off*W(k),a[1]+ny*off*W(k));c.lineTo(b[0]+nx*off*W(k+1),b[1]+ny*off*W(k+1));c.stroke()}};
+  pass(SN.ink,1.1,0);pass(SN.base,1,0);pass(SN.mid,.55,.22);pass(SN.light,.34,-.22);
+  c.strokeStyle='rgba(60,54,34,.42)';c.lineWidth=2;for(let k=1;k<n-1;k+=1){const a=pts[k-1],b=pts[k+1],dx=b[0]-a[0],dy=b[1]-a[1],d=Math.hypot(dx,dy)||1,nx=-dy/d,ny=dx/d,w=W(k)*.46;c.beginPath();c.moveTo(pts[k][0]+nx*w,pts[k][1]+ny*w);c.lineTo(pts[k][0]-nx*w,pts[k][1]-ny*w);c.stroke()}}
+function ellPts(cx,cy,rx,ry,a0,a1,N){const p=[];for(let k=0;k<=N;k++){const a=lerp(a0,a1,k/N);p.push([cx+Math.cos(a)*rx,cy+Math.sin(a)*ry])}return p}
+function snakeHead(c,x,y,dir,s,t,open){c.save();c.translate(x,y);c.scale(dir*s,s);const g=c.createLinearGradient(0,-34,0,26);g.addColorStop(0,SN.light);g.addColorStop(.55,SN.base);g.addColorStop(1,SN.mid);
+  const gap=3+open*7;
+  // tongue
+  const tg=Math.sin(t*5)*3;c.strokeStyle='#c02a3a';c.lineWidth=3.2;c.lineCap='round';c.beginPath();c.moveTo(66,6+gap*.4);c.lineTo(104,8+gap*.4+tg);c.moveTo(104,8+gap*.4+tg);c.lineTo(118,1+gap*.4+tg);c.moveTo(104,8+gap*.4+tg);c.lineTo(118,16+gap*.4+tg);c.stroke();
+  // lower jaw (thin, slightly open) and the dark mouth between the jaws
+  c.fillStyle='#6a1a28';c.beginPath();c.moveTo(-6,8);c.lineTo(72,4);c.lineTo(66,4+gap);c.lineTo(-6,16);c.closePath();c.fill();
+  c.fillStyle=SN.belly;c.strokeStyle=SN.ink;c.lineWidth=3;c.beginPath();c.moveTo(-6,14);c.lineTo(66,4+gap);c.bezierCurveTo(58,16+gap,24,22+gap,-8,22);c.closePath();c.fill();c.stroke();
+  // skull
+  c.fillStyle=g;c.beginPath();c.moveTo(-46,8);c.bezierCurveTo(-44,-34,-6,-42,24,-32);c.bezierCurveTo(52,-24,72,-14,80,-2);c.bezierCurveTo(76,6,50,6,28,8);c.bezierCurveTo(10,8,-10,14,-46,8);c.closePath();c.fill();c.strokeStyle=SN.ink;c.lineWidth=3.4;c.stroke();
+  c.strokeStyle='rgba(60,54,34,.4)';c.lineWidth=2;for(let r=0;r<3;r++)for(let q=0;q<5;q++){c.beginPath();c.arc(-24+q*14+(r%2)*7,-24+r*10,6,.2,Math.PI-.2);c.stroke()}
+  c.fillStyle='#f0d860';c.beginPath();c.ellipse(26,-14,6.4,5.4,0,0,7);c.fill();c.fillStyle='#16100a';c.fillRect(25,-19,2.4,10);c.strokeStyle=SN.ink;c.lineWidth=3;c.beginPath();c.moveTo(16,-22);c.quadraticCurveTo(28,-28,40,-18);c.stroke();
+  c.fillStyle=SN.ink;c.beginPath();c.arc(70,-7,2.4,0,7);c.fill();c.restore()}
 function drawShesha(c,t){c.save();
-  const pearl=['#fbfbff','#dfe4f6','#a9b1d6'],ink='#5a6498';
-  glow2(c,-170,-330,300,'200,220,255',.34);
-  // coils: three overlapping S-curves forming a heap/bed (bottom → top)
-  const coil=(y,amp,half,w,ph,tail)=>{const pts=[];for(let k=0;k<=30;k++){const u=k/30,x=lerp(-half,half,u),yy=y+Math.sin(u*Math.PI*2.2+ph)*amp+(tail&&u>.86?(u-.86)*-160:0);pts.push([x,yy,w*(tail&&u>.8?Math.max(.15,1-(u-.8)*4):1)])}
-    const line=(off,col,wm)=>{c.strokeStyle=col;c.lineCap='round';c.lineJoin='round';for(let k=0;k<pts.length-1;k++){c.lineWidth=pts[k][2]*wm;c.beginPath();c.moveTo(pts[k][0],pts[k][1]+off*pts[k][2]);c.lineTo(pts[k+1][0],pts[k+1][1]+off*pts[k+1][2]);c.stroke()}};
-    line(0,ink,1.12);line(.02,pearl[2],1);line(-.06,pearl[1],.78);line(-.2,pearl[0],.38);
-    c.strokeStyle='rgba(90,100,160,.45)';c.lineWidth=2;for(let k=1;k<pts.length-1;k++){if(k%2)continue;const a=pts[k-1],b=pts[k+1],dx=b[0]-a[0],dy=b[1]-a[1],d=Math.hypot(dx,dy)||1,nx=-dy/d,ny=dx/d,w2=pts[k][2]*.46;c.beginPath();c.moveTo(pts[k][0]+nx*w2,pts[k][1]+ny*w2);c.lineTo(pts[k][0]-nx*w2,pts[k][1]-ny*w2);c.stroke()}};
-  coil(-34,12,340,54,0,true);coil(-86,14,300,50,2.2,false);coil(-136,12,250,46,4.1,false);
-  // necks + hoods from the left end of the top coil, arching over Vishnu's head like a canopy
-  const base=[-262,-112],H=[[-380,-352,.78],[-318,-424,.92],[-214,-452,1.04],[-108,-424,.92],[-40,-352,.78]];
-  H.forEach(([hx,hy,sz],i)=>{const sw=Math.sin(t*1.3+i*1.1)*4,bob=Math.sin(t*1.7+i)*2.5,hx2=hx+sw,hy2=hy+bob;
-    const neck=(w,col)=>{c.lineCap='round';c.strokeStyle=col;c.lineWidth=w;c.beginPath();c.moveTo(base[0],base[1]);c.bezierCurveTo(base[0]+(hx-base[0])*.1,base[1]-130,hx2-(hx-base[0])*.05,hy2+150,hx2,hy2+58*sz);c.stroke()};
-    neck(30*sz,'#4e5890');neck(25*sz,'#c8cfe8');neck(10*sz,'#f4f6ff');
-    c.save();c.translate(hx2,hy2);c.scale(sz,sz);
-    const hg=c.createLinearGradient(-58,0,58,0);hg.addColorStop(0,'#9aa4cf');hg.addColorStop(.45,'#fbfcff');hg.addColorStop(1,'#7e88b6');c.fillStyle=hg;c.strokeStyle='#4e5890';c.lineWidth=4;
-    c.beginPath();c.moveTo(-12,66);c.bezierCurveTo(-30,44,-60,20,-56,-26);c.bezierCurveTo(-52,-66,-20,-84,0,-84);c.bezierCurveTo(20,-84,52,-66,56,-26);c.bezierCurveTo(60,20,30,44,12,66);c.closePath();c.fill();c.stroke();
-    c.strokeStyle='rgba(78,88,144,.35)';c.lineWidth=2;for(let r=0;r<5;r++)for(let q=-2;q<=2;q++){const x=q*20+(r%2)*10,y=-52+r*22;if(Math.abs(x)<48-Math.abs(r-2)*3){c.beginPath();c.arc(x,y,10,.15,Math.PI-.15);c.stroke()}}
-    c.strokeStyle='#4e5890';c.lineWidth=3;c.beginPath();c.moveTo(0,-62);c.lineTo(0,56);c.stroke();
-    c.fillStyle='#ffe66a';[-1,1].forEach(sd=>{c.beginPath();c.ellipse(sd*15,-30,4.4,5.6,0,0,7);c.fill();c.fillStyle='#1a1020';c.fillRect(sd*15-1,-35,2,10);c.fillStyle='#ffe66a'});
-    glow2(c,0,-68,22,'255,70,60',.7);c.fillStyle='#e02a3a';c.beginPath();c.moveTo(0,-80);c.lineTo(7,-68);c.lineTo(0,-56);c.lineTo(-7,-68);c.closePath();c.fill();c.fillStyle='#ffb0b8';c.beginPath();c.arc(-2,-70,1.8,0,7);c.fill();
-    c.restore()});
+  // five heads on thick necks, fanned behind where Vishnu lies
+  const base=[-150,-170],Hd=[[-345,-362,-1,.9],[-262,-466,-1,1],[-140,-504,1,1.05],[-12,-462,1,1],[70,-372,1,.9]];
+  Hd.forEach(([hx,hy,dir,sz],i)=>{const sw=Math.sin(t*1.2+i)*4,bob=Math.sin(t*1.6+i*1.3)*3,ex=hx+sw,ey=hy+bob;
+    const pts=[];for(let k=0;k<=16;k++){const u=k/16,x=lerp(base[0],ex-dir*30,u)+Math.sin(u*Math.PI)*(ex-base[0])*.18*(i%2?1:-1)*.5,y=lerp(base[1],ey+36,u)-Math.sin(u*Math.PI)*70;pts.push([x,y])}
+    snakeTube(c,pts,56*sz,42*sz);snakeHead(c,ex,ey,dir,sz*1.05,t+i,.3+.5*Math.sin(t*1.5+i))});
+  // the coiled nest: back ring (the couch surface), then two front rings
+  c.fillStyle=SN.mid;c.beginPath();c.ellipse(-10,-168,290,52,0,0,7);c.fill();
+  snakeTube(c,ellPts(-10,-168,290,52,0,Math.PI*2,44),78,78);
+  c.fillStyle=SN.base;c.beginPath();c.ellipse(-10,-170,262,38,0,0,7);c.fill();c.fillStyle='rgba(255,240,180,.12)';c.beginPath();c.ellipse(-60,-182,170,14,-.05,0,7);c.fill();
+  snakeTube(c,ellPts(10,-104,345,62,0,Math.PI,40),96,96);
+  snakeTube(c,ellPts(-6,-46,395,66,.05,Math.PI-.05,40),104,104);
+  // tail tip curling out at the right
+  const tail=[];for(let k=0;k<=14;k++){const u=k/14;tail.push([380+u*130,-46+Math.sin(u*3.4)*30-u*22])}snakeTube(c,tail,70,10);
   c.restore()}
 
-/* ---------- Vishnu in yoganidra on Shesha (reclining): the standing rig, rotated, with a hand under the cheek ---------- */
-function drawReclineVishnu(c,o){const t=o.t||0,S=Object.assign({},CAST.vishnu,{arms4:false,uttariya:null}),br=Math.sin(t*1.2)*1.6;c.save();
+/* ---------- Vishnu in yoganidra on Shesha: reclined against the coils, one arm relaxed, one on the knee, two raised hands ---------- */
+function drawReclineVishnu(c,o){const t=o.t||0,S=Object.assign({},CAST.vishnu,{arms4:false,uttariya:'#c4283a',lower:Object.assign({},CAST.vishnu.lower,{len:.66})}),br=Math.sin(t*1.2)*1.6;c.save();
   drawShesha(c,t);
-  const ox=250,oy=-196+br,rot=-Math.PI/2+.06;                       // body lies along the top coil, feet to the right
+  const ox=30,oy=-204+br,rot=-Math.PI/2+.19;
   const tx=(x,y)=>[ox+(x*Math.cos(rot)-y*Math.sin(rot)),oy+(x*Math.sin(rot)+y*Math.cos(rot))];
-  // head first (so the propping hand is drawn over its lower edge)
-  const hp=tx(2,-482);c.save();c.translate(hp[0]-2,hp[1]-4);c.rotate(-.34);c.scale(1.12,1.12);drawHead(c,0,0,{expr:'closed',k:0,S:S,t:t});hairFront(c,S,0,0);headgear(c,S,0,0);c.restore();
-  c.save();c.translate(ox,oy);c.rotate(rot);
-  drawHuman(c,S,poseOf('lie','vishnu'),{t:t,noHead:true,expr:'calm'});
-  const hp2=poseOf('lie','vishnu');lotusFlower(c,hp2.hR[0]+10,hp2.hR[1]-6,.9);
-  c.restore();c.restore()}
+  const P=poseOf('lie2','vishnu');
+  // warm halo behind head and chest
+  const hp=tx(0,-482);
+  // two raised upper hands (chakra + conch) drawn behind the body
+  const shA=tx(-58,-404),shB=tx(58,-404);const Lh=shA[0]<shB[0]?shA:shB,Rh=shA[0]<shB[0]?shB:shA;
+  [[Lh,-1],[Rh,1]].forEach(([sh,sd])=>{const T=[sh[0]+sd*52,sh[1]-170],r=limbS(c,S,sh,T,70,66,sd,[15,12,9]);armband(c,r,13,S.armlet);handS(c,S,r.t,false);
+    if(sd<0){c.save();c.translate(r.t[0],r.t[1]-26);glow2(c,0,0,44,'255,225,120',.5);c.rotate(t*2.2);c.strokeStyle='#f6d870';c.lineWidth=5;c.beginPath();c.arc(0,0,22,0,7);c.stroke();c.lineWidth=2;for(let k=0;k<8;k++){const a=k*.785;c.beginPath();c.moveTo(0,0);c.lineTo(Math.cos(a)*22,Math.sin(a)*22);c.stroke()}c.restore()}
+    else{c.save();c.translate(r.t[0],r.t[1]-22);c.rotate(.2);const cg=c.createLinearGradient(-12,0,12,0);cg.addColorStop(0,'#fffaf0');cg.addColorStop(1,'#cfc3a2');c.fillStyle=cg;c.beginPath();c.moveTo(0,20);c.bezierCurveTo(-20,6,-16,-24,0,-30);c.bezierCurveTo(16,-24,20,6,0,20);c.fill();c.restore()}});
+  // head first (so the resting hand is drawn over it), tilted gently
+  c.save();c.translate(hp[0],hp[1]);c.rotate(-.2);c.scale(1.12,1.12);drawHead(c,0,0,{expr:'closed',k:0,S:S,t:t});hairFront(c,S,0,0);headgear(c,S,0,0);c.restore();
+  c.save();c.translate(ox,oy);c.rotate(rot);drawHuman(c,S,P,{t:t,noHead:true,expr:'calm'});c.restore();
+  // bare foot of the extended leg + a golden pot beside him (as in the classic scene)
+  c.restore()}
 
 /* ---------- Ardhanarishwara: Shiva (right half) joined to Adishakti (left half) ---------- */
 function drawArdha(c,o){const t=o.t||0;c.save();c.beginPath();c.rect(0,-900,600,1000);c.clip();drawShiva(c,{P:POSES.calm,t:t,rage:false,k:0,pose:'calm'});c.restore();
@@ -454,6 +473,7 @@ const V2NAMES=new Set(['shiva','vishnu','hayagriva','daksha','manu','adishakti',
 const SCALE={shiva:.62,default:.62};
 function v2fig(who,x,y,s,t,o){
   const sc=SCALE[who]||SCALE.default,FR=clamp(o.res||s*SC_,1.4,3.9),RG=[-260,-560,520,620];
+  if(who==='vishnu_rest'){glow(x-70*sc*s,y-330*sc*s,420*sc*s,'255,205,100',.30);glow(x-70*sc*s,y-330*sc*s,230*sc*s,'255,232,160',.26)}
   const c=figBegin(FR,OY,RG);if(o.flip<0)c.scale(-1,1);c.scale(sc,sc);
   const ex=o.expr||{},kk=o.k!=null?o.k:(ex.brow!=null&&ex.brow<-.2?clamp(-ex.brow*1.1,0,1):0),face=ex.eye!=null&&ex.eye<.5?'closed':'calm';
   if(who==='shiva'){const pn=o.pose==='rage'||o.pose==='lunge'?'rage':'calm',P=mixPose(POSES.calm,POSES.rage,pn==='rage'?1:0);drawShiva(c,{P:P,t:t,rage:kk>.5,k:kk,expr:face==='closed'?'closed':undefined,imp:o.imp||0})}
@@ -504,7 +524,8 @@ function go(){
     const S2=C.vishnu;c.save();c.translate(0,0);c.fillStyle='#10101c';c.beginPath();c.moveTo(-36,-8);c.bezierCurveTo(-42,-56,42,-56,36,-8);c.bezierCurveTo(26,-30,-26,-30,-36,-8);c.closePath();c.fill();c.restore();
     c.fillStyle='#e6b84a';c.beginPath();c.moveTo(-28,-22);c.lineTo(-22,-74);c.lineTo(-10,-62);c.lineTo(0,-118);c.lineTo(10,-62);c.lineTo(22,-74);c.lineTo(28,-22);c.closePath();c.fill();c.fillStyle='#c4882a';c.fillRect(-28,-30,56,8);c.fillStyle='#e0302a';c.beginPath();c.arc(0,-40,4.4,0,7);c.fill()},400,440,200,300);X.drawImage(H,PX+10+i*262,170,300,330);txt(n,PX+10+i*262+150,525,26,'#ffe9b8','center')});
   txt('शेषशायी विष्णु (योगनिद्रा)',PX+30,600,34,'#ffe9b8');
-  const R=figure(c=>{c.scale(.78,.78);V2.drawReclineVishnu(c,{t:1.2})},800,620,400,560);X.drawImage(R,PX+20,610,760,590);
+  const hg=X.createRadialGradient(PX+330,880,20,PX+330,880,300);hg.addColorStop(0,'rgba(255,215,120,.42)');hg.addColorStop(1,'rgba(255,200,90,0)');X.fillStyle=hg;X.fillRect(PX-30,560,820,640);
+  const R=figure(c=>{c.scale(.58,.58);V2.drawReclineVishnu(c,{t:1.2})},900,640,420,590);X.drawImage(R,PX-30,600,860,610);
   txt('रंग-पट्टिका',PX+30,1200,32,'#ffe9b8');
   [['#4f7fd6','त्वचा'],['#f2c230','पीतांबर'],['#e6b84a','स्वर्ण'],['#f6e7a8','उत्तरीय'],['#d02a2a','कौस्तुभ'],['#e8ecf6','शेष']].forEach(([c,n],i)=>{X.fillStyle=c;X.beginPath();X.roundRect(PX+30+i*128,1230,110,56,8);X.fill();X.strokeStyle='rgba(255,255,255,.3)';X.stroke();txt(n,PX+85+i*128,1316,20,'#c9b894','center',400)});
   const id=X.getImageData(0,0,2400,1500),d=id.data;let sd=7;for(let i=0;i<d.length;i+=4){sd=(sd*16807)%2147483647;const n=((sd/2147483647)-.5)*14;d[i]+=n;d[i+1]+=n;d[i+2]+=n}X.putImageData(id,0,0);
