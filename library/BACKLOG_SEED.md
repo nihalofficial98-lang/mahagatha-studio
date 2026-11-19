@@ -1,0 +1,8 @@
+## Standing roadmap (engine improvements, in priority order)
+1. **Quadruped rig** (bull, later cow/deer/lion/Garuda): body, neck, head, horns, hump, 4 two-segment legs with walk cycle.
+2. **Face expressiveness**: cheeks/teeth/tears states, side-profile heads, lip-sync-like mouth flap driven by word timings.
+3. **Walk/run cycles** for biped figures (currently static poses + sway).
+4. **Backgrounds**: forest, river, mountain-top ashram, battlefield, ocean-of-milk, Vaikuntha, Kailash — each with parallax depth + particles.
+5. **Own-voice alignment**: run Whisper (faster-whisper) on voiceovers/epNN.mp3 to regenerate word timings, then re-render with the same shots.
+6. **Speed**: cache static layers per shot, render only changing layers; GPU runner for 4K (target < 20 min/episode).
+7. **Auto-QA by pixels**: text-safe-area measurement, face-visible check for named characters.
