@@ -1,0 +1,25 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#000"><canvas id=cv width=1280 height=720></canvas>
+<script src="shiva_v2.js"></script><script>
+const cv=document.getElementById('cv'),X=cv.getContext('2d');
+const FW=1000,FH=900;const F=document.createElement('canvas');F.width=FW;F.height=FH;const S=document.createElement('canvas');S.width=FW;S.height=FH;const O=document.createElement('canvas');O.width=FW;O.height=FH;
+function figure(draw,rim,key){const c=F.getContext('2d');c.setTransform(1,0,0,1,0,0);c.clearRect(0,0,FW,FH);c.save();c.translate(FW/2,FH-70);draw(c);c.restore();
+  c.setTransform(1,0,0,1,0,0);c.globalCompositeOperation='source-atop';let g=c.createLinearGradient(0,0,FW,0);g.addColorStop(0,`rgba(${key},.30)`);g.addColorStop(.55,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(6,8,30,.38)');c.fillStyle=g;c.fillRect(0,0,FW,FH);c.globalCompositeOperation='source-over';
+  const s=S.getContext('2d');s.setTransform(1,0,0,1,0,0);s.clearRect(0,0,FW,FH);s.drawImage(F,0,0);s.globalCompositeOperation='source-in';s.fillStyle=rim;s.fillRect(0,0,FW,FH);s.globalCompositeOperation='source-over';
+  const o=O.getContext('2d');o.clearRect(0,0,FW,FH);for(let k=0;k<8;k++)o.drawImage(S,Math.cos(k*.785)*2.4,Math.sin(k*.785)*2.4);o.drawImage(F,0,0);return O}
+function frame(T){
+  const u=easeIO((T-2.2)/1.2),rageness=u,imp=Math.sin(Math.min(1,Math.max(0,(T-2.2)/1.6))*Math.PI)+(T>3.4?0.25*Math.sin(T*3):0)*(T>3.4?1:0);
+  // background: dusk hall glow shifting to red with the rage
+  const g=X.createLinearGradient(0,0,0,720);g.addColorStop(0,mix([29,36,48],[44,16,14],u));g.addColorStop(.7,mix([42,42,44],[60,24,16],u));g.addColorStop(1,'#14100c');X.fillStyle=g;X.fillRect(0,0,1280,720);
+  let r=X.createRadialGradient(640,360,40,640,380,620);r.addColorStop(0,`rgba(${Math.round(255)},${Math.round(190-100*u)},${Math.round(110-60*u)},${.22+.12*u})`);r.addColorStop(1,'rgba(0,0,0,0)');X.fillStyle=r;X.fillRect(0,0,1280,720);
+  // floor + shadow
+  X.fillStyle='rgba(0,0,0,.32)';X.beginPath();X.ellipse(640,664,230+60*u,26,0,0,7);X.fill();
+  // dust
+  X.fillStyle='rgba(255,230,190,.5)';for(let i=0;i<40;i++){const x=(i*173.3+T*(6+i%5))%1280,y=(i*97.1-T*(10+i%7)+720*3)%720;X.globalAlpha=.25+.3*((i*7)%5)/5;X.beginPath();X.arc(x,y,1+(i%3)*.6,0,7);X.fill()}X.globalAlpha=1;
+  const P=mixPose(POSES.calm,POSES.rage,u);const rg=u>.45;
+  const f=figure(c=>{c.scale(.9,.9);drawShiva(c,{P,t:T,rage:rg,imp:imp})},rg?'rgba(255,170,130,.95)':'rgba(255,236,200,.95)',rg?'255,120,70':'255,200,130');
+  X.drawImage(f,640-FW/2,720-FH+60);
+  const id=X.getImageData(0,0,1280,720),d=id.data;let sd=((T*1000)|0)+7;for(let i=0;i<d.length;i+=4){sd=(sd*16807)%2147483647;const n=((sd/2147483647)-.5)*12;d[i]+=n;d[i+1]+=n;d[i+2]+=n}X.putImageData(id,0,0);
+  const v=X.createRadialGradient(640,360,380,640,360,860);v.addColorStop(0,'rgba(0,0,0,0)');v.addColorStop(1,'rgba(0,0,0,.5)');X.fillStyle=v;X.fillRect(0,0,1280,720)}
+function mix(a,b,u){return `rgb(${a.map((v,i)=>Math.round(v+(b[i]-v)*u)).join(',')})`}
+window.frame=frame;document.title='ready';
+</script>

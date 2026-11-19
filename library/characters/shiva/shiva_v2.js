@@ -55,24 +55,27 @@ function drawSerpent(c,t,rage,L,R){ // Vasuki around the neck, hood over right s
   if(rage){c.strokeStyle='#d02a2a';c.lineWidth=1.6;c.beginPath();c.moveTo(hx+3,hy-8);c.lineTo(hx+3,hy+2);c.moveTo(hx+3,hy+2);c.lineTo(hx-1,hy+8);c.moveTo(hx+3,hy+2);c.lineTo(hx+7,hy+8);c.stroke()}
   c.restore()}
 
-function drawJata(c,hx,hy,t,rage,s=1){ // topknot, strands, crescent moon, Ganga
+function drawJata(c,hx,hy,t,rage,imp=0){ // bun of coiled jata + hanging ropes, Ganga, crescent moon
   c.save();c.translate(hx,hy);const sw=Math.sin(t*1.6)*2;
-  // long strands behind shoulders
-  c.fillStyle=SH.hair;[[-1,0],[1,0]].forEach(([sd])=>{c.beginPath();c.moveTo(sd*18,-10);c.bezierCurveTo(sd*54,10,sd*64+sw*sd,70,sd*50+sw*sd*2,150+(rage?-20:0));c.lineTo(sd*30,140);c.bezierCurveTo(sd*34,70,sd*26,30,sd*10,-4);c.fill()});
-  // topknot: wide bun of twisted jata ropes
-  const kg=c.createLinearGradient(-44,0,44,0);kg.addColorStop(0,'#4a4468');kg.addColorStop(.35,'#26233c');kg.addColorStop(1,'#0a0912');c.fillStyle=kg;
-  c.beginPath();c.moveTo(-36,-8);c.bezierCurveTo(-58,-40,-52,-96,-22,-116);c.bezierCurveTo(-14,-134,12,-134,22,-116);c.bezierCurveTo(52,-96,58,-40,36,-8);c.closePath();c.fill();
-  for(let i=0;i<7;i++){const u=i/6,x0=lerp(-30,30,u);c.strokeStyle=i%2?'rgba(190,180,230,.30)':'rgba(10,8,24,.55)';c.lineWidth=5;c.beginPath();c.moveTo(x0,-8);c.bezierCurveTo(x0*1.5,-40,x0*1.1+sw,-80,x0*.45,-118);c.stroke()}
-  c.strokeStyle='rgba(230,220,255,.18)';c.lineWidth=2;c.beginPath();c.moveTo(-40,-40);c.quadraticCurveTo(0,-30,40,-44);c.moveTo(-34,-70);c.quadraticCurveTo(0,-60,34,-74);c.stroke();
-  c.fillStyle=SH.gold;c.beginPath();c.roundRect(-38,-16,76,9,4);c.fill();
-  // lose locks flying in rage
-  if(rage){c.fillStyle=SH.hair;[-1,1].forEach(sd=>{for(let k=0;k<3;k++){c.beginPath();c.moveTo(sd*20,-70+k*10);c.quadraticCurveTo(sd*(70+k*20),-84-k*14+sw*3,sd*(96+k*22),-40-k*26+sw*4);c.quadraticCurveTo(sd*(66+k*10),-70-k*6,sd*18,-58+k*10);c.fill()}})}
-  // Ganga — a ribbon of water spiralling from the top of the knot
-  c.strokeStyle=SH.water;c.lineCap='round';c.globalAlpha=.9;c.lineWidth=9;c.beginPath();c.moveTo(-2,-132);c.bezierCurveTo(-30,-150,-52,-120,-44,-96);c.bezierCurveTo(-36,-70,-66,-60,-60,-24+sw);c.stroke();
-  c.lineWidth=3;c.strokeStyle='#ffffff';c.beginPath();c.moveTo(-4,-134);c.bezierCurveTo(-30,-150,-52,-120,-44,-96);c.stroke();c.globalAlpha=1;
-  c.fillStyle='#e8f8ff';[[-2,-136,5],[-18,-146,3.5],[-50,-104,3],[-58,-40,3.6]].forEach(([x,y,r])=>{c.beginPath();c.arc(x,y,r,0,7);c.fill()});
+  const rope=(x0,y0,x1,y1,x2,y2,w,ph)=>{ // one rope strand with a light twist highlight
+    const dx=Math.sin(t*2.1+ph)*(5+imp*16),dx2=Math.sin(t*2.6+ph*1.7)*(8+imp*26);
+    c.lineCap='round';c.strokeStyle='#15122a';c.lineWidth=w;c.beginPath();c.moveTo(x0,y0);c.quadraticCurveTo(x1+dx,y1,x2+dx2,y2);c.stroke();
+    c.strokeStyle='rgba(200,190,240,.22)';c.lineWidth=w*.28;c.setLineDash([w*.9,w*.7]);c.beginPath();c.moveTo(x0-w*.2,y0);c.quadraticCurveTo(x1+dx-w*.2,y1,x2+dx2-w*.2,y2);c.stroke();c.setLineDash([])};
+  const spread=rage?1.5+imp*0.8:1;
+  [-1,1].forEach((sd,k)=>{for(let i=0;i<4;i++){rope(sd*(12+i*7),-6+i*3,sd*(58+i*14)*spread,40+i*8,sd*(52+i*16)*spread+sd*imp*20,(rage?96:150)-i*14+imp*-24,13-i*1.4,i+k*2)}});
+  // bun
+  const kg=c.createRadialGradient(-12,-70,6,0,-64,56);kg.addColorStop(0,'#4a4468');kg.addColorStop(.6,'#221f38');kg.addColorStop(1,'#0c0a18');c.fillStyle=kg;
+  c.beginPath();c.ellipse(0,-66,40,52,0,0,7);c.fill();
+  c.lineCap='round';for(let i=0;i<5;i++){c.strokeStyle=i%2?'rgba(200,190,240,.30)':'rgba(8,6,20,.7)';c.lineWidth=7;c.beginPath();c.ellipse(0,-66-i*2,38-i*6.2,50-i*8.6,0,0.6+i*.5,Math.PI*2+0.1+i*.5);c.stroke()}
+  c.fillStyle='#14102a';c.beginPath();c.arc(0,-110,9,0,7);c.fill();
+  c.fillStyle=SH.gold;c.beginPath();c.roundRect(-34,-26,68,9,4);c.fill();
+  if(rage){[-1,1].forEach(sd=>{for(let k=0;k<3;k++)rope(sd*20,-80+k*14,sd*(70+k*20),-96-k*16+sw*2,sd*(110+k*26+imp*30),-50-k*30,8,k+3)})}
+  // Ganga ribbon from the bun
+  c.strokeStyle=SH.water;c.lineCap='round';c.globalAlpha=.92;c.lineWidth=9;c.beginPath();c.moveTo(0,-112);c.bezierCurveTo(-34,-130,-60,-96,-48,-66);c.bezierCurveTo(-38,-38,-70,-30,-62,6+sw);c.stroke();
+  c.lineWidth=3;c.strokeStyle='#fff';c.beginPath();c.moveTo(-2,-114);c.bezierCurveTo(-34,-130,-60,-96,-48,-66);c.stroke();c.globalAlpha=1;
+  c.fillStyle='#e8f8ff';[[0,-116,5],[-22,-122,3.5],[-54,-80,3],[-60,-22,3.6]].forEach(([x,y,r])=>{c.beginPath();c.arc(x,y,r,0,7);c.fill()});
   // crescent moon
-  c.fillStyle='#f4f0e0';c.beginPath();c.arc(20,-92,13,.5,5.8);c.arc(25,-92,10.5,5.5,.8,true);c.fill();c.fillStyle='rgba(255,240,180,.35)';c.beginPath();c.arc(20,-92,17,0,7);c.fill();
+  c.fillStyle='#f4f0e0';c.beginPath();c.arc(22,-88,13,.5,5.8);c.arc(27,-88,10.5,5.5,.8,true);c.fill();c.fillStyle='rgba(255,240,180,.35)';c.beginPath();c.arc(22,-88,17,0,7);c.fill();
   c.restore()}
 
 function drawHead(c,hx,hy,o){ // o:{expr:'calm'|'rage'|'closed', t, rage}
@@ -111,7 +114,7 @@ function drawTrishul(c,x,top,bot,t,rage){ // trident with damaru + ribbons
   [[-30,top-48],[0,top-62],[30,top-48]].forEach(([dx,dy],i)=>{c.beginPath();c.moveTo(dx-8,dy);c.lineTo(dx,dy-(i===1?46:40));c.lineTo(dx+8,dy);c.closePath();c.fill()});
   c.lineWidth=6;c.beginPath();c.moveTo(0,top+14);c.lineTo(0,top-64);c.stroke();
   c.fillStyle=SH.goldD;c.beginPath();c.ellipse(0,top+34,9,6,0,0,7);c.fill();
-  c.save();c.translate(0,top+62);c.rotate(0.15+sw*0.02);drawDamaru(c,sw);c.restore();
+  c.strokeStyle='#8a1f1a';c.lineWidth=2.4;c.beginPath();c.moveTo(0,top+58);c.lineTo(0,top+72);c.stroke();c.save();c.translate(0,top+72);c.rotate(sw*0.05);c.scale(.8,.8);c.translate(0,26);drawDamaru(c,sw);c.restore();
   // ribbon
   c.fillStyle='#c83a3a';c.beginPath();c.moveTo(2,top+44);c.quadraticCurveTo(36+sw*3,top+54,50+sw*4,top+90);c.quadraticCurveTo(26+sw*2,top+70,2,top+62);c.fill();
   c.restore()}
@@ -121,10 +124,12 @@ const POSES={
  calm:{ph:[0,-262],ch:[0,-388],nk:[0,-428],hd:[0,-478],sL:[-64,-402],sR:[64,-402],hL:[-92,-248],hR:[92,-300],hipL:[-24,-258],hipR:[24,-258],kL:[-34,-130],kR:[32,-130],fL:[-40,0],fR:[40,0],tri:{x:98,top:-640,bot:0},lean:0,hem:150,sway:0},
  rage:{ph:[6,-250],ch:[-4,-372],nk:[-8,-410],hd:[-10,-458],sL:[-66,-388],sR:[60,-388],hL:[-150,-452],hR:[140,-318],hipL:[-26,-248],hipR:[34,-246],kL:[-74,-128],kR:[80,-120],fL:[-110,0],fR:[118,0],tri:{x:140,top:-610,bot:-20,rot:0.18},lean:-0.05,hem:140,sway:3}
 };
+function mixPose(a,b,u){const m=(x,y)=>Array.isArray(x)?x.map((v,i)=>m(v,y[i])):(typeof x==='number'?x+(y-x)*u:(u<.5?x:y));const o={};for(const k in a)o[k]=(a[k]&&typeof a[k]==='object'&&!Array.isArray(a[k]))?mixPose(a[k],b[k]||a[k],u):m(a[k],b[k]===undefined?a[k]:b[k]);return o}
+const easeIO=x=>{x=Math.max(0,Math.min(1,x));return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
 function drawShiva(c,o){
-  const P=POSES[o.pose||'calm'],t=o.t||0,rage=(o.pose==='rage'),sw=Math.sin(t*1.5)+P.sway;c.save();
+  const P0=o.P||POSES[o.pose||'calm'],t=o.t||0,br=Math.sin(t*1.7)*2.4,P=JSON.parse(JSON.stringify(P0));['ch','nk','hd','sL','sR'].forEach(k=>{P[k][1]+=br});P.hL[1]+=br*.6;P.hR[1]+=br*.6;const rage=(o.rage!==undefined?o.rage:o.pose==='rage'),sw=Math.sin(t*1.5)+P.sway;c.save();
   // jata strands behind
-  const HS=1.18;c.save();c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);c.save();c.translate(P.hd[0],P.hd[1]-30);c.scale(.74,.7);c.translate(-P.hd[0],-P.hd[1]+30);drawJata(c,P.hd[0],P.hd[1]-34,t,rage);c.restore();c.restore();
+  const HS=1.18;c.save();c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);c.save();c.translate(P.hd[0],P.hd[1]-30);c.scale(.74,.7);c.translate(-P.hd[0],-P.hd[1]+30);drawJata(c,P.hd[0],P.hd[1]-34,t,rage,o.imp||0);c.restore();c.restore();
   // legs
   const stance=(h,k,f,side)=>{const r=elbow(h,f,86,92,side);tapered(c,h,r.e,31,23,SH.skin);tapered(c,r.e,f,23,14,SH.skin);c.fillStyle='rgba(255,255,255,.10)';c.beginPath();c.ellipse(lerp(r.e[0],f[0],.35)-side*2,lerp(r.e[1],f[1],.35),9,26,Math.atan2(f[1]-r.e[1],f[0]-r.e[0])+1.57,0,7);c.fill();
     c.globalAlpha=.4;c.fillStyle=SH.skinD;tapered(c,[h[0]+side*10,h[1]],[r.e[0]+side*8,r.e[1]],9,8,SH.skinD);tapered(c,[r.e[0]+side*7,r.e[1]],[f[0]+side*6,f[1]-6],8,6,SH.skinD);c.globalAlpha=1;
