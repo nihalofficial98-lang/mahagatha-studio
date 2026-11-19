@@ -1576,14 +1576,14 @@
 "fx": [
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_lightning_bolt_b.png",
+"src": "../library/pilot/assets/fx_shockwave_ring.png",
 "x": 640,
-"y": 230,
-"w": 300,
+"y": 330,
+"w": 520,
 "blend": "lighter",
-"alpha": 0.9,
+"alpha": 0.5,
 "c": 0,
-"d": 0.5
+"d": 0.4
 },
 {
 "t": "flash",
@@ -2358,19 +2358,16 @@
 "figs": [],
 "fx": [
 {
-"t": "fximg",
-"src": "../library/pilot/assets/fx_sudarshan_chakra.png",
-"x": 640,
-"y": 330,
-"w": 264.0,
-"blend": "lighter",
-"c": 0,
-"d": 0.8,
-"spin": 1.4
-},
-{
 "t": "dim",
 "ga": 0.4
+},
+{
+"t": "clock",
+"x": 640,
+"y": 330,
+"r": 130,
+"c": 0,
+"d": 0.4
 }
 ]
 },
@@ -2407,52 +2404,46 @@
 "fx": [
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_fire_small.png",
-"x": 200,
-"y": 360,
-"w": 108.0,
-"blend": "lighter",
+"src": "../library/pilot/assets/fx_element_prithvi.png",
+"x": 160,
+"y": 350,
+"w": 170,
 "c": 0,
 "d": 0.5
 },
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_snow_flakes.png",
-"x": 420,
-"y": 360,
-"w": 126.0,
-"blend": "lighter",
+"src": "../library/pilot/assets/fx_element_jal.png",
+"x": 400,
+"y": 350,
+"w": 170,
 "c": 1,
 "d": 0.5
 },
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_energy_swirl.png",
+"src": "../library/pilot/assets/fx_element_agni.png",
 "x": 640,
-"y": 360,
-"w": 126.0,
-"blend": "lighter",
+"y": 350,
+"w": 170,
 "c": 2,
-"d": 0.5,
-"spin": 1.0
+"d": 0.5
 },
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_divine_rays.png",
-"x": 860,
-"y": 360,
-"w": 144.0,
-"blend": "lighter",
+"src": "../library/pilot/assets/fx_element_vayu.png",
+"x": 880,
+"y": 350,
+"w": 170,
 "c": 3,
 "d": 0.5
 },
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_lotus_pond_leaf.png",
-"x": 1080,
-"y": 360,
-"w": 126.0,
-"blend": "lighter",
+"src": "../library/pilot/assets/fx_element_akash.png",
+"x": 1120,
+"y": 350,
+"w": 170,
 "c": 4,
 "d": 0.5
 }
@@ -2515,23 +2506,23 @@
 "t": "fximg",
 "src": "../library/pilot/assets/fx_lightning_forks.png",
 "x": 480,
-"y": 230,
-"w": 300,
+"y": 260,
+"w": 340,
 "blend": "lighter",
 "alpha": 0.9,
 "c": 0,
-"d": 0.6
+"d": 0.35
 },
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_lightning_bolt_a.png",
+"src": "../library/pilot/assets/fx_lightning_forks.png",
 "x": 800,
-"y": 230,
-"w": 300,
+"y": 260,
+"w": 340,
 "blend": "lighter",
 "alpha": 0.9,
 "c": 1,
-"d": 0.6
+"d": 0.35
 }
 ]
 },
@@ -2587,24 +2578,10 @@
 ],
 "fx": [
 {
-"t": "fximg",
-"src": "../library/pilot/assets/fx_magic_circle.png",
+"t": "scales",
 "x": 640,
-"y": 250,
-"w": 300,
-"blend": "lighter",
-"c": 0,
-"d": 0.6,
-"spin": 0.3
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_light_beam.png",
-"x": 640,
-"y": 330,
-"w": 260,
-"blend": "lighter",
-"alpha": 0.7,
+"y": 105,
+"sc": 0.6,
 "c": 0,
 "d": 0.6
 }
@@ -2693,14 +2670,13 @@
 "fx": [
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_sudarshan_chakra.png",
+"src": "../library/pilot/assets/fx_fire_ring.png",
 "x": 640,
 "y": 300,
-"w": 211.2,
+"w": 253.43999999999997,
 "blend": "lighter",
-"c": 0,
-"d": 0.8,
-"spin": 1.4
+"spin": 0.4,
+"a": 0.9
 }
 ]
 },
@@ -2886,26 +2862,12 @@
 ],
 "fx": [
 {
-"t": "fximg",
-"src": "../library/pilot/assets/fx_magic_circle.png",
+"t": "scales",
 "x": 640,
-"y": 340,
-"w": 300,
-"blend": "lighter",
+"y": 105,
 "c": 0,
 "d": 0.6,
-"spin": 0.3
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_light_beam.png",
-"x": 640,
-"y": 420,
-"w": 260,
-"blend": "lighter",
-"alpha": 0.7,
-"c": 0,
-"d": 0.6
+"sc": 0.6
 }
 ]
 },
@@ -8278,14 +8240,14 @@
 "fx": [
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_lightning_bolt_b.png",
+"src": "../library/pilot/assets/fx_lightning_forks.png",
 "x": 640,
-"y": 230,
-"w": 300,
+"y": 260,
+"w": 340,
 "blend": "lighter",
 "alpha": 0.9,
 "c": 0,
-"d": 0.8
+"d": 0.35
 },
 {
 "t": "text",

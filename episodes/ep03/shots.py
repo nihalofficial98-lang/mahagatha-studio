@@ -243,10 +243,8 @@ def _libfx(x):
     t=x.get('t')
     if t=='icon' and x['i'] in _IC:
         n,w,k=_IC[x['i']];e={'t':'fximg','src':_A+'fx_'+n+'.png','x':x['x'],'y':x['y'],'w':w*x.get('sc',1),'blend':'lighter','c':x.get('c',0),'d':x.get('d',1)};e.update(k);return [e]
-    if t=='scales':return [{'t':'fximg','src':_A+'fx_magic_circle.png','x':x['x'],'y':x['y']+40,'w':300,'blend':'lighter','c':x.get('c',0),'d':x.get('d',1),'spin':.3},{'t':'fximg','src':_A+'fx_light_beam.png','x':x['x'],'y':x['y']+120,'w':260,'blend':'lighter','alpha':.7,'c':x.get('c',0),'d':x.get('d',1)}]
     if t=='crack':
-        _bn[0]+=1;n=['lightning_bolt_a','lightning_bolt_b','lightning_forks'][_bn[0]%3]
-        return [{'t':'fximg','src':_A+'fx_'+n+'.png','x':x['x'],'y':230,'w':300,'blend':'lighter','alpha':.9,'c':x.get('c',0),'d':x.get('d',.6)}]
+        return [{'t':'fximg','src':_A+'fx_lightning_forks.png','x':x['x'],'y':260,'w':340,'blend':'lighter','alpha':.9,'c':x.get('c',0),'d':.35}]
     return [x]
 for _s in film.shots:
     _sc=_s.get('sc')
@@ -254,4 +252,19 @@ for _s in film.shots:
     _sc['fx']=[y for x in _sc.get('fx',[]) for y in _libfx(x)]
     for _g in _sc.get('figs',[]):
         if _g.get('pose')=='flee':_g.pop('pose')
+
+# context overrides (shot numbers are 1-based as on the frame sheets)
+def _fxs(n):return film.shots[n-1]['sc']['fx']
+_clock=[{'t':'clock','x':640,'y':330,'r':130,'c':0,'d':.4}]
+_s45=_fxs(45);_s45[:]=[x for x in _s45 if x['t'] not in('fximg',)]+_clock   # "time stopped": a stopped clock, not a spinning chakra
+_s46=_fxs(46);_s46[:]=[x for x in _s46 if x['t']!='fximg']+[{'t':'fximg','src':_A+'fx_element_'+n+'.png','x':xx,'y':350,'w':170,'c':i,'d':.5} for i,(n,xx) in enumerate([('prithvi',160),('jal',400),('agni',640),('vayu',880),('akash',1120)])]  # the five elements
+_s50=_fxs(50);_s50[:]=[({'t':'fximg','src':_A+'fx_fire_ring.png','x':x['x'],'y':x['y'],'w':x['w']*1.2,'blend':'lighter','spin':.4,'a':.9} if x['t']=='fximg' else x) for x in _s50]  # "everything will turn to ash"
+_s171=_fxs(171)
+for _i,_x in enumerate(_s171):
+    if _x['t']=='fximg' and 'ground_crack' in _x['src']:_s171[_i]={'t':'fximg','src':_A+'fx_lightning_bolt_b.png','x':_x['x'],'y':230,'w':300,'blend':'lighter','alpha':.9,'c':_x.get('c',0),'d':.6}
+for _n in (48,54):
+    for _x in _fxs(_n):
+        if _x['t']=='scales':_x['y']=105;_x['sc']=.6
+for _i,_x in enumerate(_fxs(30)):
+    if _x['t']=='fximg':_fxs(30)[_i]={'t':'fximg','src':_A+'fx_shockwave_ring.png','x':640,'y':330,'w':520,'blend':'lighter','alpha':.5,'c':0,'d':.4}  # the echo that broke his penance
 print(film.save(os.path.join(HERE,'shots.json')),'shots')

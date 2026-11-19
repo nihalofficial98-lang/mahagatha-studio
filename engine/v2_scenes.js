@@ -173,3 +173,11 @@ FXV2.fximg=function(F,t,P,d,a){const e=imgGet(F.src);if(!e.ok)return;ctx.save();
 
 window.imgGetV2=imgGet;
 ['open','closed','rage'].forEach(n=>imgGet('../library/pilot/assets/sp_hc_'+n+'.png'));
+
+FXV2.clock=function(F,t,P,d,a){ctx.save();ctx.globalAlpha*=a;ctx.translate(F.x,F.y);const r=F.r||120;
+  const g=ctx.createRadialGradient(0,0,r*.6,0,0,r*1.9);g.addColorStop(0,'rgba(170,190,255,.28)');g.addColorStop(1,'rgba(170,190,255,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(0,0,r*1.9,0,7);ctx.fill();
+  ctx.fillStyle='rgba(18,22,48,.85)';ctx.beginPath();ctx.arc(0,0,r,0,7);ctx.fill();ctx.strokeStyle='#d8dcff';ctx.lineWidth=r*.07;ctx.stroke();
+  ctx.lineCap='round';for(let i=0;i<12;i++){const an=i*Math.PI/6,m=i%3===0;ctx.lineWidth=m?r*.055:r*.03;ctx.strokeStyle='#cfd6ff';ctx.beginPath();ctx.moveTo(Math.sin(an)*r*(m?.74:.82),-Math.cos(an)*r*(m?.74:.82));ctx.lineTo(Math.sin(an)*r*.92,-Math.cos(an)*r*.92);ctx.stroke()}
+  const sh=Math.sin(t*38)*.004*Math.max(0,1-t*2.5); // the hands shudder once, then freeze
+  const hand=(an,len,w,col)=>{ctx.strokeStyle=col;ctx.lineWidth=w;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(Math.sin(an+sh)*len,-Math.cos(an+sh)*len);ctx.stroke()};
+  hand(-1.05,r*.5,r*.075,'#f0f2ff');hand(1.05,r*.75,r*.055,'#f0f2ff');ctx.fillStyle='#ffd98a';ctx.beginPath();ctx.arc(0,0,r*.07,0,7);ctx.fill();ctx.restore()};
