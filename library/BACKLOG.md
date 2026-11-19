@@ -3,11 +3,12 @@
 Work top-down. When fixed: set status to `done` in library/feedback.jsonl and add a line to CHANGELOG.md.
 
 
-## visual (4 open)
+## visual (5 open)
 - [ep02] Bull (Dharma) looks like a blob; needs real anatomy, horns, hump, legs, animation
 - [ep02] Kamadeva birth: heart icon covers his face
 - [ep02] Eight mountains rise shot starts sparse; stagger peaks earlier
 - [ep02] Tower of realms is flat colored bands; needs painted skies/underworld detail
+- [ep03] Character design rules (owner): (1) identity cues must be instantly readable (e.g. Shiva: tiger-skin wrap, third eye, tripundra, crescent moon ONLY on hair, serpent, trident+damaru). (2) Anger must come from eyes+brows+mouth only: glowing RED eyes, heavy lowered brows, plain frown the SAME width as the smile. NO fangs, NO open screaming mouth, NO face lines/creases/cheek hollows (they read as monkey). (3) Hair in anger stays natural, no antler/flying ropes. (4) No extra ornaments the owner did not ask for (Ganga ribbon removed). (5) Costume must cover the body in every pose (skirt widens with leg spread). (6) Cinematic muted palette, light rim, grain, vignette like the reference video. (7) Final length of every video: 8-10 min.
 
 ## Standing roadmap (engine improvements, in priority order)
 1. **Quadruped rig** (bull, later cow/deer/lion/Garuda): body, neck, head, horns, hump, 4 two-segment legs with walk cycle.

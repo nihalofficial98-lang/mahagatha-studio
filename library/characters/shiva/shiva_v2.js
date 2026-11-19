@@ -25,15 +25,15 @@ function hand(c,p,ang,grip){c.save();c.translate(p[0],p[1]);c.rotate(ang);c.fill
   c.fillStyle=SH.skinD;c.globalAlpha=.4;c.beginPath();c.ellipse(4,2,6,9,0,0,7);c.fill();c.globalAlpha=1;c.restore()}
 function armlet(c,r,w,col){const E=r.e,S=r.s;const x=lerp(S[0],E[0],.5),y=lerp(S[1],E[1],.5);c.save();c.translate(x,y);c.rotate(Math.atan2(E[1]-S[1],E[0]-S[0])+1.57);c.fillStyle=col;c.beginPath();c.ellipse(0,0,w+1.5,4,0,0,7);c.fill();c.fillStyle='rgba(0,0,0,.25)';c.beginPath();c.ellipse(0,2,w+1.5,2,0,0,7);c.fill();c.restore()}
 
-function drawTiger(c,wx,wy,hem,sway,rage){ // tiger-skin wrap from waist to knee
-  c.save();const topW=54,botW=62+sway*4;
+function drawTiger(c,wx,wy,hem,sway,rage,sp=0){ // tiger-skin wrap from waist to knee; sp = leg spread so the wrap always covers the thighs
+  c.save();const topW=54+sp*.25,botW=62+sway*4+sp*.62;
   c.beginPath();c.moveTo(-topW,wy);c.lineTo(topW,wy);c.lineTo(botW+4,wy+hem*0.6);
   // ragged fur hem
   const n=9;for(let i=0;i<=n;i++){const u=i/n,x=lerp(botW+4,-botW-10,u),y=wy+hem+((i%2)?10:-4)+Math.sin(u*5+sway)*4;c.lineTo(x,y)}
   c.lineTo(-topW-8,wy+hem*0.5);c.closePath();
   const g=c.createLinearGradient(-60,0,60,0);g.addColorStop(0,SH.tigerL);g.addColorStop(.45,SH.tiger);g.addColorStop(1,SH.tigerD);c.fillStyle=g;c.fill();c.clip();
   // stripes (tapered black wedges) following the drape
-  c.fillStyle=SH.stripe;for(let i=0;i<22;i++){const u=(i%11)/10,row=Math.floor(i/11);const x=lerp(-topW,topW,u)+row*5-3,y=wy+8+row*hem*0.42+(i%3)*6;
+  c.fillStyle=SH.stripe;for(let i=0;i<22;i++){const u=(i%11)/10,row=Math.floor(i/11);const x=lerp(-botW*(.55+.4*row),botW*(.55+.4*row),u)+row*5-3,y=wy+8+row*hem*0.42+(i%3)*6;
     const len=26+((i*7)%14),ang=(u-.5)*0.55+(row?.1:-.1);c.save();c.translate(x,y);c.rotate(ang);c.beginPath();c.moveTo(-3,0);c.quadraticCurveTo(4,len*.5,0,len);c.quadraticCurveTo(-1,len*.5,-3,0);c.fill();
     c.beginPath();c.moveTo(7,6);c.quadraticCurveTo(13,len*.35,9,len*.7);c.quadraticCurveTo(7,len*.35,7,6);c.fill();c.restore()}
   // fold shading
@@ -166,7 +166,7 @@ function drawShiva(c,o){
   // vibhuti (ash) bands across chest
   c.strokeStyle=SH.ash;c.lineWidth=4;c.globalAlpha=.9;[0,1,2].forEach(i=>{c.beginPath();c.moveTo(-34+i*0.5,P.ch[1]+34+i*8);c.quadraticCurveTo(0,P.ch[1]+44+i*8,34-i*0.5,P.ch[1]+34+i*8);c.stroke()});c.globalAlpha=1;
   // tiger skin
-  drawTiger(c,0,P.ph[1]-4,P.hem,sw,rage);
+  drawTiger(c,0,P.ph[1]-4,P.hem,sw,rage,Math.max(0,(P.kR[0]-P.kL[0])/2-24));
   // rudraksha mala
   c.fillStyle=SH.bead;for(let i=0;i<15;i++){const u=i/14,bx=-36+u*72,by=P.nk[1]+16+Math.sin(u*3.14)*50;c.beginPath();c.arc(bx,by,4.8,0,7);c.fill();c.fillStyle='rgba(255,220,170,.4)';c.beginPath();c.arc(bx-1.4,by-1.4,1.4,0,7);c.fill();c.fillStyle=SH.bead}
   // neck
