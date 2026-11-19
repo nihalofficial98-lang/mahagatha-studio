@@ -35,7 +35,7 @@ def make(g):
     if len(ks)==1:p=items[ks[0]][1]+f' Single item, centred, with a margin, on a {bgtxt}. '+STY
     else:
         lst=' '.join(f'({i+1}) {items[k][1]}' for i,k in enumerate(ks))
-        p=f'A sheet of {len(ks)} SEPARATE items, laid out in a neat grid (2 or 3 per row, row by row, left to right), each item fully separate with wide empty gaps, none overlapping, all fully visible, on a {bgtxt}. Items in order: {lst} '+STY
+        p=f'A sheet of {len(ks)} SEPARATE items, laid out in a neat grid (2 or 3 per row, row by row, left to right), each item as LARGE as possible so the items fill the whole image edge to edge, with only SMALL gaps between items (about 3% of the width), none overlapping, all fully visible, no empty margins or blank space, on a {bgtxt}. Items in order: {lst} '+STY
     return g,out,call(p,out)
 def cut_one(kind,k,im,path):
     if kind=='solid':im.save('/tmp/_k.png');keyout.key('/tmp/_k.png',path)
