@@ -235,4 +235,23 @@ add(29,3,0,{'bg':bg('storm',r=1),'figs':[],'fx':[{'t':'crack','x':CX,'c':0,'d':.
 # ================= B30: closing card =================
 add(30,0,0,C([],[txt('आगे क्या हुआ, जानने के लिए…',CX,300,66,0,glow='rgba(255,215,150,.9)',d=1.0),{'t':'sparkle','x':CX,'y':360,'n':40,'rx':520,'ry':220}],rgb='255,200,150',spin=.05),'amb',cues=['आगे'],dx=.8)
 add(30,0,.55,C([],[txt('मिलते हैं अगले एपिसोड में',CX,340,74,0,glow='rgba(255,215,150,.9)',d=1.0),{'t':'sparkle','x':CX,'y':360,'n':40,'rx':520,'ry':220}],rgb='255,200,150',spin=.05),'amb',cues=['मिलते'])
+
+# ---- library (Gemini) objects/effects replace the coded icons, red crack lines and crooked flee poses ----
+_A='../library/pilot/assets/';_IC={'cycle':('sudarshan_chakra',88,{'spin':1.4}),'vortex':('energy_swirl',70,{'spin':1.0}),'flame':('fire_small',60,{}),'frost':('snow_flakes',70,{}),'light':('divine_rays',80,{}),'lotusI':('lotus_pond_leaf',70,{}),'trident':('trident_plain',40,{})}
+_bn=[0]
+def _libfx(x):
+    t=x.get('t')
+    if t=='icon' and x['i'] in _IC:
+        n,w,k=_IC[x['i']];e={'t':'fximg','src':_A+'fx_'+n+'.png','x':x['x'],'y':x['y'],'w':w*x.get('sc',1),'blend':'lighter','c':x.get('c',0),'d':x.get('d',1)};e.update(k);return [e]
+    if t=='scales':return [{'t':'fximg','src':_A+'fx_magic_circle.png','x':x['x'],'y':x['y']+40,'w':300,'blend':'lighter','c':x.get('c',0),'d':x.get('d',1),'spin':.3},{'t':'fximg','src':_A+'fx_light_beam.png','x':x['x'],'y':x['y']+120,'w':260,'blend':'lighter','alpha':.7,'c':x.get('c',0),'d':x.get('d',1)}]
+    if t=='crack':
+        _bn[0]+=1;n=['lightning_bolt_a','lightning_bolt_b','lightning_forks'][_bn[0]%3]
+        return [{'t':'fximg','src':_A+'fx_'+n+'.png','x':x['x'],'y':230,'w':300,'blend':'lighter','alpha':.9,'c':x.get('c',0),'d':x.get('d',.6)}]
+    return [x]
+for _s in film.shots:
+    _sc=_s.get('sc')
+    if not _sc:continue
+    _sc['fx']=[y for x in _sc.get('fx',[]) for y in _libfx(x)]
+    for _g in _sc.get('figs',[]):
+        if _g.get('pose')=='flee':_g.pop('pose')
 print(film.save(os.path.join(HERE,'shots.json')),'shots')
