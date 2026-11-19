@@ -70,7 +70,7 @@ FXV2.egg=function(F,t,P,d,a){const x=F.x,y=F.y,sc=F.sc||1,cr=F.crack!=null?F.cra
   ctx.restore()};
 // four glowing Vedas, appearing one by one (cue index c is the first)
 FXV2.books=function(F,t,P,d,a){const names=F.names||['ऋग्वेद','यजुर्वेद','सामवेद','अथर्ववेद'],cols=F.cols||['#f0c850','#e8a040','#f0e070','#c8a0f0'];ctx.save();
-  names.forEach((n,i)=>{const ai=q(P,t,(F.c||0)+i,.6);if(ai<=.01)return;const x=F.x+(i-1.5)*(F.gap||230),y=F.y+Math.sin(t*1.3+i)*8-(1-ai)*40;ctx.save();ctx.globalAlpha*=ai*a;glow(x,y,120,'255,225,150',.5);ctx.translate(x,y);ctx.rotate((i-1.5)*.06);
+  names.forEach((n,i)=>{const ai=q(P,t,(F.c||0)+i,.6);if(ai<=.01)return;const x=F.x+(i-1.5)*(F.gap||230),y=F.y+Math.sin(t*1.3+i)*8-(1-ai)*40+(F.fall||0)*t;ctx.save();ctx.globalAlpha*=ai*a;glow(x,y,120,'255,225,150',.5);ctx.translate(x,y);ctx.rotate((i-1.5)*.06);
     const g=ctx.createLinearGradient(-48,0,48,0);g.addColorStop(0,'#8a5a1a');g.addColorStop(.5,cols[i]);g.addColorStop(1,'#8a5a1a');ctx.fillStyle=g;ctx.beginPath();ctx.roundRect(-46,-62,92,124,6);ctx.fill();ctx.strokeStyle='rgba(60,30,0,.6)';ctx.lineWidth=3;ctx.stroke();
     ctx.strokeStyle='rgba(255,245,200,.7)';ctx.lineWidth=2;ctx.strokeRect(-36,-52,72,104);ctx.fillStyle='rgba(255,245,200,.85)';ctx.beginPath();ctx.arc(0,-8,13,0,7);ctx.fill();ctx.restore();
     stext(n,x,F.y+96,28,'#ffe9b8',ai*a)});ctx.restore()};
@@ -89,3 +89,20 @@ FXV2.bluemountain=function(F,t,P,d,a){const g=F.c!=null?q(P,t,F.c,F.d||3):1;ctx.
 FXV2.waterfront=function(F,t,P,d,a){const y=F.y;ctx.save();ctx.globalAlpha*=a;const g=ctx.createLinearGradient(0,y,0,H+300);g.addColorStop(0,F.top||'rgba(12,30,66,.78)');g.addColorStop(1,F.bot||'rgba(2,6,18,.97)');ctx.fillStyle=g;ctx.beginPath();ctx.moveTo(-300,y+Math.sin(t)*3);for(let x=-300;x<=W+300;x+=40)ctx.lineTo(x,y+Math.sin(x*.02+t*1.2)*5);ctx.lineTo(W+300,H+300);ctx.lineTo(-300,H+300);ctx.closePath();ctx.fill();
   ctx.strokeStyle='rgba(170,200,255,.28)';ctx.lineWidth=2;for(let k=0;k<4;k++){ctx.beginPath();for(let x=-300;x<=W+300;x+=30){const yy=y+8+k*26+Math.sin(x*.018+t*1.1+k)*4;x>-300?ctx.lineTo(x,yy):ctx.moveTo(x,yy)}ctx.stroke()}
   ctx.strokeStyle='rgba(220,235,255,.5)';ctx.lineWidth=2.4;ctx.beginPath();for(let x=-300;x<=W+300;x+=30){const yy=y+Math.sin(x*.02+t*1.2)*5;x>-300?ctx.lineTo(x,yy):ctx.moveTo(x,yy)}ctx.stroke();ctx.restore()};
+
+// the three gunas: sattva (white), rajas (red), tamas (black); F.hi highlights one
+FXV2.gunas=function(F,t,P,d,a){const cols=[['#f6f2e4','सत्व','255,250,230'],['#d8402a','रजस','255,90,60'],['#17121e','तमस','150,110,220']];ctx.save();
+  cols.forEach(([col,name,rgb],i)=>{const ai=F.all?1:q(P,t,(F.c||0)+i,.7);if(ai<=.01)return;const x=CX+(i-1)*(F.gap||300),y=(F.y||340)+Math.sin(t*1.2+i)*6,hi=F.hi===i?1.28:(F.hi==null?1:.8);ctx.save();ctx.globalAlpha*=ai*a;
+    glow(x,y,200*hi,rgb,F.hi===i?.7:.4);const g=ctx.createRadialGradient(x-20,y-24,6,x,y,92*hi);g.addColorStop(0,i===2?'#4a3a66':'#ffffff');g.addColorStop(.5,col);g.addColorStop(1,i===2?'#07050c':shade2(col));ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,86*hi,0,7);ctx.fill();ctx.strokeStyle=`rgba(${rgb},.6)`;ctx.lineWidth=3;ctx.stroke();ctx.restore();
+    stext(name,x,y+150*hi,F.hi===i?50:38,'#ffe9b8',ai*a)});ctx.restore()};
+function shade2(c){return c==='#f6f2e4'?'#bcb89c':'#7a1a10'}
+// one of the five elements: type vayu|jal|prithvi|agni|akash
+FXV2.element=function(F,t,P,d,a){const x=F.x||CX,y=F.y||330,sc=F.sc||1,tp=F.type;ctx.save();ctx.globalAlpha*=a;ctx.translate(x,y);ctx.scale(sc,sc);const sw=Math.sin(t*2)*6;
+  if(tp==='vayu'){glow(0,0,220,'190,225,255',.35);ctx.strokeStyle='#cfe6ff';ctx.lineWidth=9;ctx.lineCap='round';[-60,0,60].forEach((dy,i)=>{ctx.beginPath();ctx.moveTo(-140,dy);ctx.bezierCurveTo(-60,dy-50+sw,40,dy+50-sw,120,dy-10);ctx.bezierCurveTo(150,dy-26,150,dy+20,112,dy+26);ctx.stroke()})}
+  else if(tp==='jal'){glow(0,0,220,'120,180,255',.4);const g=ctx.createLinearGradient(0,-120,0,100);g.addColorStop(0,'#bfe4ff');g.addColorStop(1,'#2a6ad0');ctx.fillStyle=g;ctx.beginPath();ctx.moveTo(0,-130);ctx.bezierCurveTo(70,-30,100,20,70,70);ctx.bezierCurveTo(40,120,-40,120,-70,70);ctx.bezierCurveTo(-100,20,-70,-30,0,-130);ctx.fill();ctx.strokeStyle='rgba(255,255,255,.6)';ctx.lineWidth=5;ctx.beginPath();ctx.arc(-18,40,40,2.4,3.6);ctx.stroke()}
+  else if(tp==='prithvi'){glow(0,0,220,'150,200,110',.3);ctx.fillStyle='#6a4a2a';ctx.beginPath();ctx.moveTo(-150,100);ctx.lineTo(-40,-90);ctx.lineTo(20,-10);ctx.lineTo(80,-120);ctx.lineTo(160,100);ctx.closePath();ctx.fill();ctx.fillStyle='#4a8a3a';ctx.beginPath();ctx.moveTo(-150,100);ctx.lineTo(-100,30);ctx.lineTo(-20,70);ctx.lineTo(60,20);ctx.lineTo(120,60);ctx.lineTo(160,100);ctx.closePath();ctx.fill();ctx.fillStyle='rgba(255,255,255,.7)';ctx.beginPath();ctx.moveTo(80,-120);ctx.lineTo(55,-80);ctx.lineTo(100,-76);ctx.closePath();ctx.fill()}
+  else if(tp==='agni'){fireBank(0,100,200,230,t,1)}
+  else if(tp==='akash'){glow(0,0,240,'160,140,255',.4);ctx.strokeStyle='#d8ccff';ctx.lineWidth=6;ctx.beginPath();ctx.arc(0,0,100,0,7);ctx.stroke();ctx.strokeStyle='rgba(216,204,255,.5)';ctx.lineWidth=3;ctx.beginPath();ctx.ellipse(0,0,150,52,t*.4,0,7);ctx.stroke();ctx.fillStyle='#fff';for(let i=0;i<14;i++){const an=i*.9+t*.3,r=40+(i%4)*22;ctx.beginPath();ctx.arc(Math.cos(an)*r,Math.sin(an)*r,2.4,0,7);ctx.fill()}}
+  ctx.restore();if(F.label)stext(F.label,x,y+(F.ly||170)*sc,F.lsize||48,'#ffe9b8',a)};
+// a blooming lotus (open 0..1 driven by cue F.c)
+FXV2.lotus=function(F,t,P,d,a){const op=F.c!=null?q(P,t,F.c,F.d||1.4):(F.open==null?1:F.open);ctx.save();ctx.globalAlpha*=a;lotus(F.x,F.y,F.sc||1,t,op,1);ctx.restore()};

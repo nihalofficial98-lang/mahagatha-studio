@@ -100,7 +100,7 @@ function headgear(c,S,hx,hy){c.save();c.translate(hx,hy);const g='#e6b84a',gd='#
   c.restore()}
 function horseHead(c,hx,hy,k,t){c.save();c.translate(hx,hy);const sw=Math.sin(t*2)*3;
   // glowing mane
-  c.fillStyle='rgba(255,235,170,.85)';for(let i=-3;i<=3;i++){c.beginPath();c.moveTo(i*8,-60);c.bezierCurveTo(i*18+sw,-20,i*22-sw,40,i*20,110+Math.abs(i)*10);c.bezierCurveTo(i*12,40,i*10,-10,i*8+6,-60);c.fill()}
+  c.fillStyle='rgba(255,236,176,.5)';for(let i=-3;i<=3;i++){c.beginPath();c.moveTo(i*6,-60);c.bezierCurveTo(i*14+sw,-20,i*17-sw,40,i*15,100+Math.abs(i)*8);c.bezierCurveTo(i*9,40,i*8,-10,i*6+5,-60);c.fill()}
   const g=c.createLinearGradient(-40,0,40,0);g.addColorStop(0,'#fbf8ee');g.addColorStop(.6,'#e8e2d4');g.addColorStop(1,'#a8a2b4');c.fillStyle=g;
   c.beginPath();c.moveTo(-26,-62);c.bezierCurveTo(-46,-30,-40,20,-24,66);c.bezierCurveTo(-12,82,12,82,24,66);c.bezierCurveTo(40,20,46,-30,26,-62);c.bezierCurveTo(12,-72,-12,-72,-26,-62);c.fill();
   c.fillStyle='#e8e2d4';[-1,1].forEach(sd=>{c.beginPath();c.moveTo(sd*18,-62);c.lineTo(sd*30,-98);c.lineTo(sd*34,-58);c.closePath();c.fill();c.fillStyle='#e8a8b0';c.beginPath();c.moveTo(sd*21,-64);c.lineTo(sd*29,-90);c.lineTo(sd*31,-62);c.fill();c.fillStyle='#e8e2d4'});
@@ -310,7 +310,7 @@ function crownB(c,hs){c.save();c.translate(0,-24);c.scale(1,hs);c.translate(0,24
 function shivaJataSmall(c,t,rage){c.save();c.translate(0,-30);c.scale(.74,.7);c.translate(0,30);drawJata(c,0,-34,t,rage,0);c.restore()}
 function v2head(who,x,y,s,t,o){ // close-up of the head with neck, shoulders and garments
   const FR=clamp(s*SC_,2,3.9),RG=[-300,-330,600,520];const c=figBegin(FR,OY,RG);const ex=o.expr||{},kk=ex.brow!=null&&ex.brow<-.2?clamp(-ex.brow*1.1,0,1):0,face=ex.eye!=null&&ex.eye<.5?'closed':'calm';
-  c.scale(1.5,1.5);
+  c.scale(1.5,1.5);if(who==='vishnu'||who==='hayagriva'||who==='adishakti')c.translate(0,24);
   if(who==='shiva'){bust(c,{skin:SH.skin,skinM:SH.skinM,skinD:SH.skinD,skinH:SH.skinH},{beads:true,ash:true,snake:true,armlets:'#e0b04a'});shivaJataSmall(c,t,kk>.5);drawHead(c,0,0,{expr:face==='closed'?'closed':undefined,k:kk,t:t})}
   else if(who==='brahma'){const S=BRAHMA;bust(c,S,{sash:'#f6f0e0',armlets:'#e0b04a'});
     const side=(x2)=>{c.save();c.translate(x2,10);c.scale(.8,.8);c.filter='brightness(.8)';drawHead(c,0,0,{expr:face,k:kk,S:S,t:t});crownB(c,.7);c.filter='none';c.restore()};side(-58);side(58);
