@@ -1,6 +1,6 @@
 # Mahagatha Part 1: Episode plan (stories 1-21 -> 13 videos)
 
-Rule: one video = 6-10 min = about 850-1,350 Hindi words. Short stories are paired by theme so every video has a story arc,
+Rule: one video = at least 8 and at most 10 min (aim 8.5-9.5) = about 870-1,050 Hindi words. Short stories are paired by theme so every video has a story arc,
 labelled Part 1 / Part 2 on screen. Long stories (15, 18, 21) stand alone.
 
 | Ep | Stories | Working title | Source words |

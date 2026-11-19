@@ -60,8 +60,8 @@ def cmd_check(a):
         if w==0:warn.append(f"B{x['beat']:02d}: empty")
         if re.search(r'[A-Za-z]{4,}',' '.join(x['lines'])):warn.append(f"B{x['beat']:02d}: Latin text in narration")
     est=words*0.575
-    print(f'{len(b)} beats, {words} words, ~{est/60:.1f} min at guide pace (target 6–10)')
-    if not 360<=est<=600:warn.append('length outside 6–10 min')
+    print(f'{len(b)} beats, {words} words, ~{est/60:.1f} min at guide pace (rule: 8–10 min, aim 8.5–9.5)')
+    if not 492<=est<=588:warn.append('length outside the safe 8.2–9.8 min band (hard rule: video must be 8–10 min)')
     print('\n'.join('WARN '+w for w in warn) or 'script OK')
 def cmd_voice(a):
     b=beats(a.n);os.makedirs(os.path.join(ROOT,'voiceovers'),exist_ok=True)
@@ -106,6 +106,11 @@ def cmd_qa(a):
     shots=json.load(open(ep(a.n)+'/shots.json'))
     for i in range(1,len(shots)):
         if shots[i]['draw']==shots[i-1]['draw']=='scene' and json.dumps(shots[i].get('sc'),sort_keys=True)==json.dumps(shots[i-1].get('sc'),sort_keys=True):bad.append(f'shots {i-1},{i} identical (repeated frame)')
+    total=sum(b['duration'] for b in json.load(open(bd(a.n)+'/engine_timings.json')))
+    try:is_test=json.load(open(ep(a.n)+'/episode.json')).get('test',False)
+    except Exception:is_test=False
+    if not is_test and not rules['min_video_sec']<=total<=rules['max_video_sec']:bad.append(f'video length {total/60:.2f} min outside {rules["min_video_sec"]//60}–{rules["max_video_sec"]//60} min rule')
+    print(f'video length {total/60:.2f} min'+(' (test episode, length rule skipped)' if is_test else f' (rule {rules["min_video_sec"]//60}–{rules["max_video_sec"]//60})'))
     print(f'{len(inf)} shots, avg {avg:.2f}s (rule {rules["avg_shot_sec"][0]}–{rules["avg_shot_sec"][1]})')
     if not rules['avg_shot_sec'][0]<=avg<=rules['avg_shot_sec'][1]:bad.append('average shot length out of range')
     if a.video:

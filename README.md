@@ -17,7 +17,7 @@ sudo apt install ffmpeg
 | 1 | Plan episode from the next stories | edit `library/EPISODE_PLAN.md` | Claude |
 | 2 | Scaffold | `python3 studio/studio.py new 03 "title"` | Claude |
 | 3 | Write script (fresh Hindi, beats + emotion cues) | `episodes/ep03/script.md` | Claude |
-| 4 | Lint script (6–10 min, beats, cues) | `studio.py check 03` | Claude |
+| 4 | Lint script (8–10 min rule, beats, cues) | `studio.py check 03` | Claude |
 | 5 | Voiceover files: tagged (AI voice) + clean (you read) | `studio.py voice-docs 03` → `voiceovers/` | Claude → you |
 | 6 | Your recording | save as `voiceovers/ep03.mp3` | **You** |
 | 7 | Guide voice + word timings (stand-in) | `studio.py tts 03` | auto |

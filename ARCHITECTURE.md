@@ -20,7 +20,7 @@ To add a character: add a spec to `CH` in art.js; add a scene to the gallery; bu
 1. **Feedback → backlog.** Every complaint/idea is logged (`studio.py feedback`). `studio.py learn` regenerates `library/BACKLOG.md`
    (open items by category + the standing roadmap). Work the backlog top-down before each new batch of episodes.
 2. **QA rules.** Each repeated complaint becomes a machine check in `library/rules.json` / `studio.py qa`
-   (cue words found, shot length 1–6.5 s and average 2.6–4.2 s, no identical consecutive shots, no frozen picture > 4 s, no black frames).
+   (cue words found, video length 8–10 min, shot length 1–6.5 s and average 2.6–4.2 s, no identical consecutive shots, no frozen picture > 4 s, no black frames).
    Rules only tighten. An episode cannot be published while `qa` fails.
 3. **Versioned gallery.** `studio.py gallery` renders every character, pose, expression, and background to `library/gallery/vX.Y.Z/`.
    Compare folders across versions to *see* the art improving; each engine change gets a CHANGELOG entry.
