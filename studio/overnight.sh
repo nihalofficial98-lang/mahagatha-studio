@@ -2,8 +2,9 @@
 # overnight chain: EP3 finishes -> mux music; EP1 4K (fallback 1080p) -> music -> mux; logs in /tmp/overnight.log
 cd /home/user/mahagatha-studio
 L=/tmp/overnight.log; echo "start $(date)" > $L
-while [ ! -f renders/ep03_1080p.mp4 ]; do sleep 20; done
-sleep 30; echo "ep03 video ready $(date)" >> $L
+while pgrep -f "studio.py render 03" >/dev/null; do sleep 20; done
+sleep 10; [ renders/ep03_1080p.mp4 -nt /tmp/ep03_render.log ] || { echo "ep03 render did not finish fresh" >> $L; exit 1; }
+ echo "ep03 video ready $(date)" >> $L
 ffmpeg -loglevel error -y -i renders/ep03_1080p.mp4 -i renders/ep03_music.mp3 -c:v copy -c:a aac -b:a 192k -shortest renders/ep03_1080p_with_music.mp4 && echo "ep03 muxed $(date)" >> $L
 python3 studio/studio.py render 01 --res 4k --workers 4 --silent > /tmp/ep01_render.log 2>&1
 if [ -f renders/ep01_4k.mp4 ]; then
