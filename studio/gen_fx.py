@@ -19,6 +19,7 @@ for kind in ('add','solid'):
     ks=[k for k in batchable if items[k][0]==kind];n=4 if kind=='add' else 6
     groups+=[(kind,ks[i:i+n]) for i in range(0,len(ks),n)]
 groups+=[(items[k][0],[k]) for k in single]
+if os.environ.get('SINGLE'):groups=[(items[k][0],[k]) for k in ids]
 os.makedirs(F+'raw',exist_ok=True)
 def call(prompt,out):
     for _ in range(3):

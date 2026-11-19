@@ -6,7 +6,10 @@ R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));P=R+'/library/pupp
 sys.path.insert(0,R+'/studio');import keyout
 M=json.load(open(P+'cast.json'));EXPR=['neutral','smile','angry','sad','shocked','closed']
 LEADS=['shiva','vishnu','brahma','narada','daksha','adishakti','madhu','kaitabha','sati','indra','krishna','rama','parvati','ganesha','durga']
-ids=[k for k in (sys.argv[1:] or LEADS) if k in M['characters'] or k=='shiva']
+animals=set(M.get('animal_ids',[]))
+if sys.argv[1:]==['ALL']:ids=['shiva']+[k for k in M['characters'] if k not in animals and k not in ('brahma',) or k=='brahma' ]
+else:ids=[k for k in (sys.argv[1:] or LEADS) if k in M['characters'] or k=='shiva']
+ids=[k for k in ids if not os.path.exists(f'{P}{k}/heads_hero/neutral.png')]
 DESC={**M['characters'],'shiva':"Lord Shiva: ash-blue skin, black coiled jata bun with ONLY a small white crescent moon, long black locks beside the face, vertical red third eye, three white ash lines, gold ear rings, rudraksha mala, a green serpent on the neck."}
 T=("Hero expression sheet. {d} Draw ONLY the HEAD and neck of this one character SIX times in a 3 columns by 2 rows grid, each head as LARGE as possible so the grid fills the whole image edge to edge with only SMALL gaps (about 3% of the width) and no blank margins, all at exactly the same scale and angle, front view, same hair, crown, jewellery and skin tone. "
  "Row 1 left to right: neutral calm, gentle smile, angry (heavy lowered brows, plain tight frown, NO fangs, NO face lines). Row 2 left to right: sad (raised inner brows, downturned mouth, watery eyes), shocked (wide eyes, small open mouth), eyes closed serene. "
