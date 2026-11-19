@@ -1,3 +1,4 @@
+import os
 """Assemble the film engine (art + main + shots + scenes) into one HTML page next to engine/fonts.
 usage: python3 studio/build.py [--scale 1.5|3] [--out engine/_built.html]   (scale 1.5 = 1080p, 3 = 4K)"""
 import argparse,os
@@ -11,7 +12,7 @@ def build(scale=1.5,out=None):
     js=js.replace('let SC_=1.5;','let SC_=%s;'%scale).replace('CW_=1920,CH_=1080;','CW_=%d,CH_=%d;'%(int(1280*scale),int(720*scale)))
     import glob,base64,json as _j
     A={os.path.basename(f):'data:image/png;base64,'+base64.b64encode(open(f,'rb').read()).decode() for f in glob.glob(os.path.join(ROOT,'library','pilot','assets','*.png'))}
-    js='window.ASSET_DATA='+_j.dumps(A)+';\n'+js
+    js='window.ASSET_DATA='+_j.dumps(A)+';\nwindow.PAINTED_BG='+('true' if os.environ.get('PAINTED_BG') else 'false')+';\n'+js
     html='''<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face{font-family:NSer;font-weight:600;src:url('fonts/noto-serif-devanagari-devanagari-600-normal.woff2')}
 @font-face{font-family:NSer;font-weight:700;src:url('fonts/noto-serif-devanagari-devanagari-700-normal.woff2')}

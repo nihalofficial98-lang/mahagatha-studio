@@ -155,6 +155,7 @@ FXV2.fximg=function(F,t,P,d,a){const e=imgGet(F.src);if(!e.ok)return;ctx.save();
 
 // ---- painted (Gemini) backgrounds under the existing particle animation ----
 (function(){
+  if(!window.PAINTED_BG)return; // opt-in: PAINTED_BG=1 python3 studio/studio.py ...
   const A='../library/pilot/assets/bgp_';
   const P={
     yagna:{f:'yagna',fy:.5,fx:(S,t,f,fl)=>{glow(CX,470,620,'255,140,60',.22*f*fl);layer(.9,()=>{fireBank(S.kx==null?CX:S.kx,552,300,250,t,f)});embers(t,40,11,'255,150,60',1.1*f);dust(t,26,17,'255,210,150',.25,3)}},
