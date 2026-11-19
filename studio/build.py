@@ -4,7 +4,10 @@ import argparse,os
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def build(scale=1.5,out=None):
     out=out or os.path.join(ROOT,'engine',f'_built_{scale}.html');d=os.path.join(ROOT,'engine')
-    js=''.join(open(os.path.join(d,f)).read() for f in ('art.js','main.js','shots.js','scenes.js'))
+    rd=lambda *p:open(os.path.join(*p),encoding='utf-8').read()
+    # v2 characters: Shiva core (single source of truth in library/characters/shiva) + generic cast, wrapped so their helpers stay private
+    v2='const V2=(function(){'+rd(ROOT,'library','characters','shiva','shiva_v2.js')+'\n'+rd(d,'v2_cast.js')+'\n})();\n'
+    js=rd(d,'art.js')+v2+''.join(rd(d,f) for f in ('main.js','shots.js','scenes.js'))
     js=js.replace('let SC_=1.5;','let SC_=%s;'%scale).replace('CW_=1920,CH_=1080;','CW_=%d,CH_=%d;'%(int(1280*scale),int(720*scale)))
     html='''<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face{font-family:NSer;font-weight:600;src:url('fonts/noto-serif-devanagari-devanagari-600-normal.woff2')}

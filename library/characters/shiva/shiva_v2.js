@@ -73,23 +73,28 @@ function drawJata(c,hx,hy,t,rage,imp=0){ // bun of coiled jata + hanging ropes, 
   c.fillStyle='#f4f0e0';c.beginPath();c.arc(22,-88,13,.5,5.8);c.arc(27,-88,10.5,5.5,.8,true);c.fill();c.fillStyle='rgba(255,240,180,.35)';c.beginPath();c.arc(22,-88,17,0,7);c.fill();
   c.restore()}
 
-function drawHead(c,hx,hy,o){ // o:{expr:'calm'|'closed'|'rage', k:0..1 anger blend, t}
-  const e=o.expr||'calm',k=e==='rage'?1:(e==='calm'?(o.k||0):0),closed=e==='closed',L=(a,b)=>a+(b-a)*k;c.save();c.translate(hx,hy);
+const SHIVA_FACE={skin:SH.skin,skinM:SH.skinM,skinD:SH.skinD,skinH:SH.skinH,gold:SH.gold,ash:SH.ash,red:SH.red,tripundra:true,third:true,brow:'#0b0a14'};
+function drawHead(c,hx,hy,o){ // o:{expr:'calm'|'closed'|'rage', k:0..1 anger blend, S:face spec, t}
+  const S=o.S||SHIVA_FACE;const e=o.expr||'calm',k=e==='rage'?1:(e==='calm'?(o.k||0):0),closed=e==='closed',L=(a,b)=>a+(b-a)*k;c.save();c.translate(hx,hy);
   // ears + kundala
-  [-1,1].forEach(sd=>{c.fillStyle=SH.skinM;c.beginPath();c.ellipse(sd*37,2,8,15,sd*-0.12,0,7);c.fill();c.strokeStyle=SH.gold;c.lineWidth=3.2;c.beginPath();c.arc(sd*38,22,8,0,7);c.stroke();c.fillStyle=SH.gold;c.beginPath();c.arc(sd*38,31,2.6,0,7);c.fill()});
+  [-1,1].forEach(sd=>{c.fillStyle=S.skinM;c.beginPath();c.ellipse(sd*37,2,8,15,sd*-0.12,0,7);c.fill();c.strokeStyle=S.gold;c.lineWidth=3.2;c.beginPath();c.arc(sd*38,22,8,0,7);c.stroke();c.fillStyle=S.gold;c.beginPath();c.arc(sd*38,31,2.6,0,7);c.fill()});
   // head (jaw squares up and widens when angry)
-  const g=c.createLinearGradient(-34,0,34,0);g.addColorStop(0,SH.skinH);g.addColorStop(.35,SH.skin);g.addColorStop(1,SH.skinD);c.fillStyle=g;
+  const g=c.createLinearGradient(-34,0,34,0);g.addColorStop(0,S.skinH);g.addColorStop(.35,S.skin);g.addColorStop(1,S.skinD);c.fillStyle=g;
   const jw=24;c.beginPath();c.moveTo(-34,-14);c.bezierCurveTo(-36,-44,36,-44,34,-14);c.bezierCurveTo(36,16,jw,44,0,50);c.bezierCurveTo(-jw,44,-36,16,-34,-14);c.fill();
   c.fillStyle='rgba(20,20,60,.22)';c.beginPath();c.moveTo(-31,12);c.bezierCurveTo(-24,42,-10,46,0,47);c.bezierCurveTo(10,46,24,42,31,12);c.bezierCurveTo(20,30,8,30,0,30);c.bezierCurveTo(-8,30,-20,30,-31,12);c.fill();
   // tripundra + third eye
-  c.strokeStyle=SH.ash;c.lineWidth=3.4;c.lineCap='round';[-33,-27,-21].forEach((y,i)=>{c.beginPath();c.moveTo(-23+i*0.6,y+6);c.quadraticCurveTo(0,y+(i?1:-1)+k*(i-1)*2,23-i*0.6,y+6);c.stroke()});
-  if(k>0.05){const gl=c.createRadialGradient(0,-22,0,0,-22,32);gl.addColorStop(0,`rgba(255,120,60,${.9*k})`);gl.addColorStop(1,'rgba(255,60,20,0)');c.fillStyle=gl;c.beginPath();c.arc(0,-22,32,0,7);c.fill()}
-  c.fillStyle=k>.5?'#ffcf70':SH.red;c.beginPath();c.ellipse(0,-22,L(3.2,4),L(6.5,10),0,0,7);c.fill();if(k>.3){c.fillStyle='#ff3a14';c.beginPath();c.ellipse(0,-22,2,L(3,7),0,0,7);c.fill()}
+  if(S.tripundra!==false){c.strokeStyle=S.ash;c.lineWidth=3.4;c.lineCap='round';[-33,-27,-21].forEach((y,i)=>{c.beginPath();c.moveTo(-23+i*0.6,y+6);c.quadraticCurveTo(0,y+(i?1:-1)+k*(i-1)*2,23-i*0.6,y+6);c.stroke()})}
+  if(S.third!==false&&k>0.05){const gl=c.createRadialGradient(0,-22,0,0,-22,32);gl.addColorStop(0,`rgba(255,120,60,${.9*k})`);gl.addColorStop(1,'rgba(255,60,20,0)');c.fillStyle=gl;c.beginPath();c.arc(0,-22,32,0,7);c.fill()}
+  if(S.third!==false){c.fillStyle=k>.5?'#ffcf70':S.red;c.beginPath();c.ellipse(0,-22,L(3.2,4),L(6.5,10),0,0,7);c.fill();if(k>.3){c.fillStyle='#ff3a14';c.beginPath();c.ellipse(0,-22,2,L(3,7),0,0,7);c.fill()}}
+  // other marks: vaishnava tilak (U), simple dot/bindi, ash lines for sages
+  if(S.tilak==='vaishnava'){c.strokeStyle='#f4efe6';c.lineWidth=3;c.lineCap='round';c.beginPath();c.moveTo(-6,-36);c.lineTo(-6,-20);c.moveTo(6,-36);c.lineTo(6,-20);c.moveTo(-6,-20);c.quadraticCurveTo(0,-15,6,-20);c.stroke();c.fillStyle='#d02a2a';c.beginPath();c.ellipse(0,-27,2,5,0,0,7);c.fill()}
+  if(S.tilak==='dot'||S.bindi){c.fillStyle='#d02a2a';c.beginPath();c.arc(0,S.bindi?-18:-24,S.bindi?3.4:3,0,7);c.fill()}
+  if(S.tilak==='ash'){c.strokeStyle=S.ash||'#e8e4ee';c.lineWidth=3;c.lineCap='round';[-30,-24].forEach((y,i)=>{c.beginPath();c.moveTo(-18,y+5);c.quadraticCurveTo(0,y-1,18,y+5);c.stroke()});c.fillStyle='#d02a2a';c.beginPath();c.arc(0,-18,2.6,0,7);c.fill()}
   // furrow between the brows
   if(k>0.1){c.strokeStyle=`rgba(15,18,60,${.6*k})`;c.lineWidth=2.2;[-3,0,3].forEach(x=>{c.beginPath();c.moveTo(x,-12);c.quadraticCurveTo(x*1.4,-4,x,2);c.stroke()})}
   // brows: heavy, steep, pulled low and together
-  c.fillStyle='#0b0a14';[-1,1].forEach(sd=>{const inY=L(-8,1),outY=L(-9,-19),th=L(4.5,8.5);
-    c.beginPath();c.moveTo(sd*3,inY);c.bezierCurveTo(sd*12,L(-16,inY-6),sd*24,outY-2,sd*33,outY);c.lineTo(sd*33,outY+th*.6);c.bezierCurveTo(sd*22,outY+th+2,sd*10,inY+th*.8,sd*3,inY+th);c.closePath();c.fill()});
+  c.fillStyle=S.brow||'#0b0a14';[-1,1].forEach(sd=>{const inY=L(-8,1),outY=L(-9,-19),th=L(4.5,8.5);
+    const bg=S.browGap!=null?S.browGap:3;c.beginPath();c.moveTo(sd*bg,inY);c.bezierCurveTo(sd*(bg+9),L(-16,inY-6),sd*24,outY-2,sd*33,outY);c.lineTo(sd*33,outY+th*.6);c.bezierCurveTo(sd*22,outY+th+2,sd*(bg+7),inY+th*.8,sd*bg,inY+th);c.closePath();c.fill()});
   // eyes
   [-1,1].forEach(sd=>{const ex=sd*16,ey=L(3,5);
     if(closed){c.strokeStyle='#0b0a14';c.lineWidth=2.6;c.beginPath();c.moveTo(ex-9,ey);c.quadraticCurveTo(ex,ey+5,ex+9,ey);c.stroke();return}
@@ -119,6 +124,11 @@ function drawHead(c,hx,hy,o){ // o:{expr:'calm'|'closed'|'rage', k:0..1 anger bl
       c.fillStyle='#ece4d8';c.fillRect(-w,34-dn*.6,2*w,op+3);c.strokeStyle='rgba(60,30,30,.55)';c.lineWidth=.9;for(let q=-3;q<=3;q++){c.beginPath();c.moveTo(q*w/3.4,33);c.lineTo(q*w/3.4,42);c.stroke()}c.restore()}
     c.strokeStyle='#14040a';c.lineWidth=2.6;c.lineCap='round';c.beginPath();c.moveTo(-w-1,36+dn+1);c.quadraticCurveTo(0,34.5-dn*.6,w+1,36+dn+1);c.stroke();
   }
+  if(S.beard){c.fillStyle=S.beard;const bl=S.beardLen||34;c.beginPath();c.moveTo(-31,6);c.bezierCurveTo(-34,28,-24,46,-10,50);c.bezierCurveTo(-6,50+bl,6,50+bl,10,50);c.bezierCurveTo(24,46,34,28,31,6);c.bezierCurveTo(26,20,20,24,12,26);c.bezierCurveTo(6,24,-6,24,-12,26);c.bezierCurveTo(-20,24,-26,20,-31,6);c.closePath();c.fill();
+    c.fillStyle='rgba(255,255,255,.16)';c.beginPath();c.ellipse(-10,40,5,14,.2,0,7);c.fill();c.fillStyle=S.mustache||S.beard;c.beginPath();c.moveTo(-14,29);c.quadraticCurveTo(0,24,14,29);c.quadraticCurveTo(0,33,-14,29);c.fill();
+    // mouth drawn again on top of the beard so the expression still reads
+    if(k<0.12){c.strokeStyle=S.mouthCol||'#4a2030';c.lineWidth=2.4;c.beginPath();c.moveTo(-8,36);c.quadraticCurveTo(0,39,8,36);c.stroke()}else{c.strokeStyle='#14040a';c.lineWidth=2.8;c.lineCap='round';c.beginPath();c.moveTo(-9,38.5);c.quadraticCurveTo(0,34.5,9,38.5);c.stroke()}}
+  if(S.female){c.strokeStyle='#14101a';c.lineWidth=2;[-1,1].forEach(sd=>{c.beginPath();c.moveTo(sd*16+sd*10,3);c.lineTo(sd*16+sd*14,-1);c.moveTo(sd*16+sd*9,5);c.lineTo(sd*16+sd*13,4);c.stroke()});if(k<0.12){c.fillStyle='#c4384a';c.beginPath();c.moveTo(-8,36);c.quadraticCurveTo(0,32,8,36);c.quadraticCurveTo(0,43,-8,36);c.fill()}}
   c.restore()}
 
 function drawTrishul(c,x,top,bot,t,rage){ // trident with damaru + ribbons
