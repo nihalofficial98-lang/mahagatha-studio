@@ -13,81 +13,37 @@
 "to": {
 "z": 1.08,
 "x": 0,
-"y": -4,
+"y": -10,
 "r": 0
 }
 },
 "grade": "rgba(190,200,255,0.14)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_yagna2.png",
-"fy": 0.5,
-"z0": 1.08,
-"zv": 0.004
+"k": "yagna",
+"fire": 0.9
 },
 "figs": [
 {
-"who": "img",
-"x": 250,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_rishi_vasishtha.png",
-"hpx": 400
+"who": "rishi0",
+"x": 300,
+"y": 650,
+"s": 1.15
 },
 {
-"who": "img",
-"x": 380,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_rishi_marichi.png",
-"hpx": 400
-},
-{
-"who": "img",
-"x": 900,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_rishi_atri.png",
-"hpx": 400
-},
-{
-"who": "img",
-"x": 1030,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_rishi_angirasa.png",
-"hpx": 400
-},
-{
-"who": "img",
+"who": "daksha",
 "x": 640,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_daksha.png",
-"hpx": 520
+"y": 650,
+"s": 1.3
+},
+{
+"who": "rishi3",
+"x": 980,
+"y": 650,
+"s": 1.15
 }
 ],
-"fx": [
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_fire_tall.png",
-"x": 640,
-"y": 700,
-"w": 300,
-"alpha": 0.85,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_embers.png",
-"x": 640,
-"y": 420,
-"w": 520,
-"alpha": 0.6,
-"blend": "lighter"
-}
-]
+"fx": []
 }
 },
 {
@@ -102,111 +58,65 @@
 "r": 0
 },
 "to": {
-"z": 1.2,
+"z": 1.18,
 "x": 0,
-"y": -6,
+"y": -8,
 "r": 0
 }
 },
 "grade": "rgba(20,10,40,0.22)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_yagna2.png",
-"fy": 0.5,
-"z0": 1.08,
-"zv": 0.004
+"k": "yagna",
+"fire": 0.9
 },
 "figs": [
 {
-"who": "img",
-"x": 250,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_rishi_vasishtha.png",
-"hpx": 400
+"who": "rishi0",
+"x": 300,
+"y": 650,
+"s": 1.15
 },
 {
-"who": "img",
-"x": 380,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_rishi_marichi.png",
-"hpx": 400
-},
-{
-"who": "img",
-"x": 900,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_rishi_atri.png",
-"hpx": 400
-},
-{
-"who": "img",
-"x": 1030,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_rishi_angirasa.png",
-"hpx": 400
-},
-{
-"who": "img",
+"who": "daksha",
 "x": 640,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_daksha.png",
-"hpx": 520
+"y": 650,
+"s": 1.3
+},
+{
+"who": "rishi3",
+"x": 980,
+"y": 650,
+"s": 1.15
 }
 ],
 "fx": [
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_fire_tall.png",
-"x": 640,
-"y": 700,
-"w": 300,
-"alpha": 0.85,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_embers.png",
-"x": 640,
-"y": 420,
-"w": 520,
-"alpha": 0.6,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_thunder_flash.png",
-"x": 640,
-"y": 260,
-"w": 1300,
-"alpha": 0.22,
-"blend": "lighter"
+"src": "../library/pilot/assets/fx_lightning_bolt_a.png",
+"x": 1000,
+"y": 230,
+"w": 260,
+"blend": "lighter",
+"alpha": 0.85
 },
 {
 "t": "fximg",
 "src": "../library/pilot/assets/fx_lightning_bolt_a.png",
-"x": 980,
+"x": 250,
 "y": 230,
-"w": 280,
-"alpha": 0.8,
-"blend": "lighter"
+"w": 220,
+"blend": "lighter",
+"alpha": 0.85
 },
 {
 "t": "flash",
 "c": 0,
-"w": 0.12,
+"w": 0.15,
 "rgb": "200,215,255"
 }
 ]
 },
-"cues": [
-"शिव"
-],
 "shake": 4
 },
 {
@@ -223,39 +133,28 @@
 "to": {
 "z": 1.06,
 "x": 0,
-"y": -5,
+"y": -8,
 "r": 0
 }
 },
 "grade": "rgba(60,90,170,0.20)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_kailash2.png",
-"fy": 0.45,
-"z0": 1.1,
-"zv": 0.003
+"k": "kailash",
+"mx": 0.22
 },
 "figs": [
 {
-"who": "shiva_p",
+"who": "shiva",
 "x": 640,
-"y": 690,
-"s": 1.0,
-"hpx": 600,
-"eyes": "closed"
+"y": 650,
+"s": 1.25,
+"expr": {
+"eye": 0.2
+}
 }
 ],
-"fx": [
-{
-"t": "glow",
-"x": 640,
-"y": 230,
-"r": 200,
-"rgb": "160,190,255",
-"ga": 0.18
-}
-]
+"fx": []
 }
 },
 {
@@ -279,46 +178,39 @@
 "grade": "rgba(60,90,170,0.20)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_kailash2.png",
-"fy": 0.45,
-"z0": 1.1,
-"zv": 0.003
+"k": "kailash",
+"mx": 0.22
 },
 "figs": [
 {
-"who": "shiva_p",
-"x": 640,
-"y": 690,
-"s": 1.0,
-"hpx": 600,
-"eyes": "closed",
-"headT": -0.04
+"who": "shiva",
+"x": 580,
+"y": 650,
+"s": 1.25,
+"expr": {
+"eye": 0.2
+}
 }
 ],
 "fx": [
 {
 "t": "shock",
-"x": 700,
-"y": 230,
+"x": 1180,
+"y": 340,
 "c": 0,
 "rgb": "255,215,130",
-"max": 430
+"max": 650
 },
 {
 "t": "shock",
-"x": 700,
-"y": 230,
+"x": 1180,
+"y": 340,
 "c": 1,
 "rgb": "255,215,130",
-"max": 620
+"max": 900
 }
 ]
 },
-"cues": [
-"मंत्रों",
-"गूँज"
-],
 "shake": 1
 },
 {
@@ -327,35 +219,34 @@
 "draw": "scene",
 "cam": {
 "from": {
-"z": 1.0,
-"x": 0,
+"z": 1.1,
+"x": -30,
 "y": 0,
 "r": 0
 },
 "to": {
-"z": 1.04,
-"x": 0,
-"y": -4,
+"z": 1.0,
+"x": 20,
+"y": 0,
 "r": 0
 }
 },
 "grade": "rgba(60,90,170,0.20)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_kailash2.png",
-"fy": 0.45,
-"z0": 1.1,
-"zv": 0.003
+"k": "kailash",
+"mx": 0.22
 },
 "figs": [
 {
-"who": "shiva_p",
+"who": "shiva",
 "x": 640,
-"y": 690,
-"s": 1.0,
-"hpx": 600,
-"eyes": "open"
+"y": 470,
+"s": 2.3,
+"head": true,
+"expr": {
+"eye": 0.2
+}
 }
 ],
 "fx": []
@@ -367,84 +258,75 @@
 "draw": "scene",
 "cam": {
 "from": {
-"z": 1.04,
-"x": 0,
-"y": 0,
-"r": 0
+"z": 1.0,
+"x": 40,
+"y": 10,
+"r": -0.006
 },
 "to": {
-"z": 1.16,
-"x": 0,
-"y": -8,
-"r": 0
+"z": 1.08,
+"x": -30,
+"y": 0,
+"r": 0.006
 }
 },
 "grade": "rgba(255,60,30,0.20)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_kailash2.png",
-"fy": 0.45,
-"z0": 1.1,
-"zv": 0.003
+"k": "storm",
+"r": 0.5
 },
 "figs": [
 {
-"who": "shiva_p",
+"who": "shiva",
 "x": 640,
-"y": 690,
-"s": 1.0,
-"hpx": 600,
-"ka": [
-0,
-1,
-0,
-1.1
-]
+"y": 470,
+"s": 3.0,
+"head": true,
+"expr": {
+"brow": -0.95
+}
 }
 ],
 "fx": [
 {
 "t": "glow",
 "x": 640,
-"y": 230,
-"r": 280,
+"y": 400,
+"r": 380,
 "rgb": "255,60,40",
-"ga": 0.4
+"ga": 0.5
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_lightning_bolt_a.png",
+"x": 220,
+"y": 230,
+"w": 300,
+"blend": "lighter",
+"alpha": 0.85
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_lightning_bolt_a.png",
+"x": 1060,
+"y": 230,
+"w": 300,
+"blend": "lighter",
+"alpha": 0.85
 },
 {
 "t": "fximg",
 "src": "../library/pilot/assets/fx_thunder_flash.png",
 "x": 640,
-"y": 260,
-"w": 1300,
-"alpha": 0.2,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_lightning_bolt_a.png",
-"x": 250,
-"y": 230,
-"w": 300,
-"alpha": 0.8,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_lightning_bolt_a.png",
-"x": 1030,
-"y": 230,
-"w": 300,
-"alpha": 0.8,
-"blend": "lighter"
+"y": 250,
+"w": 1100,
+"blend": "lighter",
+"alpha": 0.25
 }
 ]
 },
-"cues": [
-"आग"
-],
-"shake": 3
+"shake": 2
 },
 {
 "beat": 2,
@@ -460,95 +342,6 @@
 "to": {
 "z": 1.1,
 "x": 0,
-"y": -6,
-"r": 0
-}
-},
-"grade": "rgba(255,60,30,0.20)",
-"sc": {
-"bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_yagna2.png",
-"fy": 0.5,
-"z0": 1.08,
-"zv": 0.004
-},
-"figs": [
-{
-"who": "img",
-"x": 250,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_rishi_vasishtha.png",
-"hpx": 400
-},
-{
-"who": "img",
-"x": 950,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_daksha.png",
-"hpx": 520
-},
-{
-"who": "shiva_p",
-"x": 560,
-"y": 690,
-"s": 1.0,
-"hpx": 600,
-"ka": [
-1,
-1,
-0,
-0.1
-]
-}
-],
-"fx": [
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_fire_tall.png",
-"x": 640,
-"y": 700,
-"w": 300,
-"alpha": 0.85,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_embers.png",
-"x": 640,
-"y": 420,
-"w": 520,
-"alpha": 0.6,
-"blend": "lighter"
-},
-{
-"t": "glow",
-"x": 560,
-"y": 300,
-"r": 260,
-"rgb": "255,60,40",
-"ga": 0.3
-}
-]
-},
-"shake": 2
-},
-{
-"beat": 2,
-"at": 18.48,
-"draw": "scene",
-"cam": {
-"from": {
-"z": 1.1,
-"x": 0,
-"y": 0,
-"r": 0
-},
-"to": {
-"z": 1.2,
-"x": 0,
 "y": -8,
 "r": 0
 }
@@ -556,84 +349,203 @@
 "grade": "rgba(255,60,30,0.20)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_yagna2.png",
-"fy": 0.5,
-"z0": 1.08,
-"zv": 0.004
+"k": "yagna",
+"fire": 0.9
 },
 "figs": [
 {
-"who": "img",
-"x": 250,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_rishi_vasishtha.png",
-"hpx": 400
+"who": "shiva",
+"x": 420,
+"y": 670,
+"s": 1.65,
+"pose": "rage",
+"expr": {
+"brow": -0.95
 },
-{
-"who": "img",
-"x": 950,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_daksha.png",
-"hpx": 520
-},
-{
-"who": "shiva_p",
-"x": 560,
-"y": 690,
-"s": 1.0,
-"hpx": 600,
-"ka": [
-1,
-1,
-0,
-0.1
-],
-"lunge": 1
+"aura": "255,70,40"
 }
 ],
 "fx": [
 {
 "t": "fximg",
 "src": "../library/pilot/assets/fx_fire_tall.png",
-"x": 640,
-"y": 700,
-"w": 300,
-"alpha": 0.85,
-"blend": "lighter"
+"x": 210,
+"y": 640,
+"w": 330.0,
+"blend": "lighter",
+"alpha": 0.9
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_fire_tall.png",
+"x": 1070,
+"y": 640,
+"w": 330.0,
+"blend": "lighter",
+"alpha": 0.9
 },
 {
 "t": "fximg",
 "src": "../library/pilot/assets/fx_embers.png",
 "x": 640,
 "y": 420,
-"w": 520,
-"alpha": 0.6,
-"blend": "lighter"
+"w": 700,
+"blend": "lighter",
+"alpha": 0.6
+}
+]
+},
+"shake": 2
+},
+{
+"beat": 2,
+"at": 18.72,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.09,
+"x": 0,
+"y": -12,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 0,
+"y": 10,
+"r": 0
+}
+},
+"grade": "rgba(255,60,30,0.20)",
+"sc": {
+"bg": {
+"k": "yagna",
+"fire": 0.9
+},
+"figs": [
+{
+"who": "shiva",
+"x": 640,
+"y": 670,
+"s": 1.55,
+"pose": "lunge",
+"expr": {
+"brow": -0.95
+},
+"aura": "255,70,40"
+}
+],
+"fx": [
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_fire_tall.png",
+"x": 210,
+"y": 640,
+"w": 330.0,
+"blend": "lighter",
+"alpha": 0.9
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_fire_tall.png",
+"x": 1070,
+"y": 640,
+"w": 330.0,
+"blend": "lighter",
+"alpha": 0.9
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_embers.png",
+"x": 640,
+"y": 420,
+"w": 700,
+"blend": "lighter",
+"alpha": 0.6
 },
 {
 "t": "shock",
-"x": 560,
-"y": 400,
+"x": 640,
+"y": 420,
 "c": 0,
-"rgb": "255,90,50",
-"max": 520
+"rgb": "255,120,80",
+"max": 900
 },
 {
 "t": "flash",
 "c": 0,
-"w": 0.1,
-"rgb": "255,160,100"
+"w": 0.2,
+"rgb": "255,160,120"
 }
 ]
 },
-"shake": 5
+"shake": 6
 },
 {
 "beat": 3,
 "at": 0,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": -40,
+"y": 0,
+"r": 0.006
+},
+"to": {
+"z": 1.07,
+"x": 30,
+"y": -10,
+"r": -0.004
+}
+},
+"grade": "rgba(190,200,255,0.14)",
+"sc": {
+"bg": {
+"k": "yagna",
+"fire": 0.7
+},
+"figs": [
+{
+"who": "daksha",
+"x": 560,
+"y": 650,
+"s": 1.3,
+"pose": "flee",
+"vx": -120
+},
+{
+"who": "rishi0",
+"x": 860,
+"y": 650,
+"s": 1.15,
+"pose": "flee",
+"vx": -120
+},
+{
+"who": "rishi3",
+"x": 1060,
+"y": 650,
+"s": 1.15,
+"pose": "flee",
+"vx": -120
+}
+],
+"fx": [
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_smoke_plume.png",
+"x": 900,
+"y": 380,
+"w": 700,
+"alpha": 0.4
+}
+]
+},
+"shake": 2
+},
+{
+"beat": 3,
+"at": 2.63,
 "draw": "scene",
 "cam": {
 "from": {
@@ -643,69 +555,37 @@
 "r": 0
 },
 "to": {
-"z": 1.08,
+"z": 1.09,
 "x": 0,
-"y": -4,
+"y": -14,
 "r": 0
 }
 },
 "grade": "rgba(190,200,255,0.14)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_yagna2.png",
-"fy": 0.5,
-"z0": 1.08,
-"zv": 0.004
+"k": "yagna",
+"fire": 0.6
 },
 "figs": [
 {
-"who": "img",
-"x": 520,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_daksha.png",
-"hpx": 520,
-"rot": -0.05
+"who": "rishi1",
+"x": 420,
+"y": 660,
+"s": 1.55,
+"pose": "flee",
+"vx": -60
 },
 {
-"who": "img",
-"x": 200,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_rishi_atri.png",
-"hpx": 400,
-"rot": -0.06
+"who": "rishi4",
+"x": 830,
+"y": 660,
+"s": 1.55,
+"pose": "flee",
+"vx": -60
 }
 ],
-"fx": [
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_fire_tall.png",
-"x": 640,
-"y": 700,
-"w": 300,
-"alpha": 0.85,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_embers.png",
-"x": 640,
-"y": 420,
-"w": 520,
-"alpha": 0.6,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_smoke_plume.png",
-"x": 800,
-"y": 350,
-"w": 620,
-"alpha": 0.4
-}
-]
+"fx": []
 },
 "shake": 2
 },
@@ -715,60 +595,42 @@
 "draw": "scene",
 "cam": {
 "from": {
-"z": 1.06,
-"x": 0,
+"z": 1.1,
+"x": -30,
 "y": 0,
 "r": 0
 },
 "to": {
 "z": 1.0,
-"x": 0,
-"y": -4,
+"x": 20,
+"y": 0,
 "r": 0
 }
 },
-"grade": "rgba(255,60,30,0.20)",
+"grade": "rgba(190,200,255,0.14)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_yagna2.png",
-"fy": 0.5,
-"z0": 1.08,
-"zv": 0.004
+"k": "yagna",
+"fire": 0.5
 },
 "figs": [
 {
-"who": "shiva_p",
-"x": 400,
-"y": 690,
-"s": 1.0,
-"hpx": 600,
-"ka": [
-1,
-1,
-0,
-0.1
-]
+"who": "vishnu",
+"x": 640,
+"y": 665,
+"s": 1.5,
+"aura": "130,170,255"
 }
 ],
 "fx": [
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_fire_tall.png",
+"src": "../library/pilot/assets/fx_sparkles_gold.png",
 "x": 640,
-"y": 700,
-"w": 300,
-"alpha": 0.85,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_embers.png",
-"x": 640,
-"y": 420,
-"w": 520,
-"alpha": 0.6,
-"blend": "lighter"
+"y": 330,
+"w": 420,
+"blend": "lighter",
+"alpha": 0.8
 }
 ]
 }
@@ -780,78 +642,45 @@
 "cam": {
 "from": {
 "z": 1.0,
-"x": 0,
-"y": 0,
-"r": 0
+"x": 40,
+"y": 10,
+"r": -0.006
 },
 "to": {
-"z": 1.1,
-"x": 0,
-"y": -4,
-"r": 0
+"z": 1.08,
+"x": -30,
+"y": 0,
+"r": 0.006
 }
 },
-"grade": "rgba(190,200,255,0.14)",
+"grade": "rgba(20,10,40,0.22)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_yagna2.png",
-"fy": 0.5,
-"z0": 1.08,
-"zv": 0.004
+"k": "yagna",
+"fire": 0.5
 },
 "figs": [
 {
-"who": "shiva_p",
-"x": 380,
-"y": 690,
-"s": 1.0,
-"hpx": 600,
-"ka": [
-1,
-1,
-0,
-0.1
-]
+"who": "shiva",
+"x": 300,
+"y": 660,
+"s": 1.45,
+"pose": "rage",
+"expr": {
+"brow": -0.95
+},
+"aura": "255,70,40"
 },
 {
-"who": "img",
-"x": 920,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_vishnu.png",
-"hpx": 560
+"who": "vishnu",
+"x": 980,
+"y": 665,
+"s": 1.45,
+"flip": -1,
+"aura": "130,170,255"
 }
 ],
-"fx": [
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_fire_tall.png",
-"x": 640,
-"y": 700,
-"w": 300,
-"alpha": 0.85,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_embers.png",
-"x": 640,
-"y": 420,
-"w": 520,
-"alpha": 0.6,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_sparkles_gold.png",
-"x": 920,
-"y": 330,
-"w": 300,
-"blend": "lighter",
-"alpha": 0.7
-}
-]
+"fx": []
 }
 },
 {
@@ -860,80 +689,67 @@
 "draw": "scene",
 "cam": {
 "from": {
-"z": 1.0,
+"z": 1.09,
 "x": 0,
-"y": 0,
+"y": -12,
 "r": 0
 },
 "to": {
-"z": 1.12,
+"z": 1.0,
 "x": 0,
-"y": -6,
+"y": 10,
 "r": 0
 }
 },
 "grade": "rgba(255,60,30,0.20)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_yagna2.png",
-"fy": 0.5,
-"z0": 1.08,
-"zv": 0.004
+"k": "voidR",
+"rgb": "255,60,30"
 },
 "figs": [
 {
-"who": "shiva_p",
-"x": 420,
-"y": 690,
-"s": 1.0,
-"hpx": 600,
-"ka": [
-1,
-1,
-0,
-0.1
-]
-},
-{
-"who": "img",
-"x": 880,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_vishnu.png",
-"hpx": 560
+"who": "shiva",
+"x": 640,
+"y": 670,
+"s": 1.6,
+"pose": "lunge",
+"expr": {
+"brow": -0.95
+}
 }
 ],
 "fx": [
 {
 "t": "fximg",
 "src": "../library/pilot/assets/fx_fire_tall.png",
-"x": 640,
-"y": 700,
-"w": 300,
-"alpha": 0.85,
-"blend": "lighter"
+"x": 210,
+"y": 640,
+"w": 360.0,
+"blend": "lighter",
+"alpha": 0.9
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_fire_tall.png",
+"x": 1070,
+"y": 640,
+"w": 360.0,
+"blend": "lighter",
+"alpha": 0.9
 },
 {
 "t": "fximg",
 "src": "../library/pilot/assets/fx_embers.png",
 "x": 640,
 "y": 420,
-"w": 520,
-"alpha": 0.6,
-"blend": "lighter"
-},
-{
-"t": "glow",
-"x": 640,
-"y": 330,
-"r": 480,
-"rgb": "255,60,40",
-"ga": 0.25
+"w": 700,
+"blend": "lighter",
+"alpha": 0.6
 }
 ]
 },
-"shake": 2
+"shake": 3
 },
 {
 "beat": 4,
@@ -941,98 +757,79 @@
 "draw": "scene",
 "cam": {
 "from": {
-"z": 1.1,
-"x": 0,
+"z": 1.0,
+"x": -40,
 "y": 0,
-"r": 0
+"r": 0.006
 },
 "to": {
-"z": 1.25,
-"x": 0,
-"y": -8,
-"r": 0
+"z": 1.07,
+"x": 30,
+"y": -10,
+"r": -0.004
 }
 },
-"grade": "rgba(20,10,40,0.22)",
+"grade": "rgba(255,60,30,0.20)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_yagna2.png",
-"fy": 0.5,
-"z0": 1.08,
-"zv": 0.004
+"k": "cosmos",
+"rgb": "220,110,90",
+"spin": 0.05
 },
 "figs": [
 {
-"who": "shiva_p",
-"x": 470,
-"y": 690,
-"s": 1.0,
-"hpx": 600,
-"ka": [
-1,
-1,
-0,
-0.1
-],
-"lunge": 1
+"who": "shiva",
+"x": 410,
+"y": 670,
+"s": 1.5,
+"pose": "lunge",
+"expr": {
+"brow": -0.95
+}
 },
 {
-"who": "img",
-"x": 820,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_vishnu.png",
-"hpx": 560
+"who": "vishnu",
+"x": 870,
+"y": 670,
+"s": 1.5,
+"flip": -1
 }
 ],
 "fx": [
 {
-"t": "fximg",
-"src": "../library/pilot/assets/fx_fire_tall.png",
-"x": 640,
-"y": 700,
-"w": 300,
-"alpha": 0.85,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_embers.png",
-"x": 640,
-"y": 420,
-"w": 520,
-"alpha": 0.6,
-"blend": "lighter"
-},
-{
 "t": "shock",
 "x": 640,
-"y": 350,
+"y": 380,
 "c": 0,
-"rgb": "255,215,130",
-"max": 600
+"rgb": "255,180,120",
+"max": 900
 },
 {
 "t": "shock",
 "x": 640,
-"y": 350,
+"y": 380,
 "c": 1,
-"rgb": "255,215,130",
-"max": 880
+"rgb": "255,200,150",
+"max": 1200
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_explosion_burst.png",
+"x": 640,
+"y": 380,
+"w": 800,
+"blend": "lighter",
+"alpha": 0.8
 },
 {
 "t": "flash",
 "c": 0,
 "w": 0.12,
-"rgb": "255,190,120"
+"rgb": "255,220,180"
 }
 ]
 },
-"cues": [
-"भिड़"
-],
-"shake": 8
+"shake": 7
 },
 {
 "beat": 4,
@@ -1040,90 +837,97 @@
 "draw": "scene",
 "cam": {
 "from": {
-"z": 1.12,
+"z": 1.0,
 "x": 0,
 "y": 0,
 "r": 0
 },
 "to": {
-"z": 1.2,
+"z": 1.09,
 "x": 0,
-"y": -6,
+"y": -14,
 "r": 0
 }
 },
-"grade": "rgba(255,60,30,0.20)",
+"grade": "rgba(60,90,170,0.20)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_yagna2.png",
-"fy": 0.5,
-"z0": 1.08,
-"zv": 0.004
+"k": "cosmos",
+"rgb": "170,130,255",
+"spin": 0.05
 },
 "figs": [
 {
-"who": "shiva_p",
-"x": 440,
-"y": 690,
-"s": 1.0,
-"hpx": 600,
-"ka": [
-1,
-1,
-0,
-0.1
-]
-},
-{
-"who": "img",
-"x": 860,
-"y": 690,
-"s": 1.0,
-"src": "../library/pilot/assets/lib_vishnu.png",
-"hpx": 560
+"who": "shiva",
+"x": 260,
+"y": 670,
+"s": 1.2,
+"pose": "lunge",
+"expr": {
+"brow": -0.95
+}
 }
 ],
 "fx": [
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_fire_tall.png",
-"x": 640,
-"y": 700,
-"w": 300,
-"alpha": 0.85,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_embers.png",
-"x": 640,
-"y": 420,
-"w": 520,
-"alpha": 0.6,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_sudarshan_chakra.png",
-"x": 860,
-"y": 230,
-"w": 170,
-"blend": "lighter",
-"spin": 9
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_lightning_bolt_a.png",
-"x": 470,
-"y": 230,
-"w": 280,
-"alpha": 0.7,
-"blend": "lighter"
+"src": "../library/pilot/assets/fx_trident_plain.png",
+"x": 900,
+"y": 330,
+"w": 240,
+"alpha": 0.95
 }
 ]
 },
-"shake": 4
+"shake": 2
+},
+{
+"beat": 4,
+"at": 7.81,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.1,
+"x": -30,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 20,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(190,200,255,0.14)",
+"sc": {
+"bg": {
+"k": "cosmos",
+"rgb": "255,220,130",
+"spin": 0.05
+},
+"figs": [
+{
+"who": "vishnu",
+"x": 1020,
+"y": 670,
+"s": 1.2,
+"flip": -1
+}
+],
+"fx": [
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_sudarshan_chakra.png",
+"x": 400,
+"y": 330,
+"w": 260,
+"blend": "lighter",
+"spin": 6
+}
+]
+},
+"shake": 2
 },
 {
 "beat": 4,
@@ -1132,62 +936,68 @@
 "cam": {
 "from": {
 "z": 1.0,
-"x": 0,
-"y": 0,
-"r": 0
+"x": 40,
+"y": 10,
+"r": -0.006
 },
 "to": {
-"z": 1.2,
-"x": 0,
-"y": -3,
-"r": 0
+"z": 1.08,
+"x": -30,
+"y": 0,
+"r": 0.006
 }
 },
 "grade": "rgba(20,10,40,0.22)",
 "sc": {
 "bg": {
-"k": "img",
-"src": "../library/pilot/assets/bg_kailash2.png",
-"fy": 0.45,
-"z0": 1.1,
-"zv": 0.003
+"k": "cosmos",
+"rgb": "150,170,255",
+"spin": 0.4
 },
 "figs": [],
 "fx": [
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_thunder_flash.png",
-"x": 640,
-"y": 260,
-"w": 1300,
-"alpha": 0.25,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_lightning_forks.png",
-"x": 450,
-"y": 280,
-"w": 460,
-"alpha": 0.8,
-"blend": "lighter"
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_lightning_bolt_a.png",
-"x": 880,
-"y": 230,
-"w": 330,
-"alpha": 0.8,
-"blend": "lighter"
-},
 {
 "t": "shock",
 "x": 640,
 "y": 360,
 "c": 0,
-"rgb": "180,200,255",
-"max": 900
+"rgb": "170,190,255",
+"max": 1000
+},
+{
+"t": "shock",
+"x": 640,
+"y": 360,
+"c": 1,
+"rgb": "255,200,150",
+"max": 1200
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_lightning_bolt_a.png",
+"x": 300,
+"y": 230,
+"w": 320,
+"blend": "lighter",
+"alpha": 0.85
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_lightning_bolt_a.png",
+"x": 980,
+"y": 230,
+"w": 320,
+"blend": "lighter",
+"alpha": 0.85
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_thunder_flash.png",
+"x": 640,
+"y": 300,
+"w": 1100,
+"blend": "lighter",
+"alpha": 0.22
 }
 ]
 },
