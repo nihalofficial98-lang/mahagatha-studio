@@ -1,5 +1,5 @@
 /* Shiva v2 — reference design (standalone canvas drawing; origin = between the feet, y up is negative).
-   Identity cues: ash-blue skin, tripundra + third eye, tall jata with crescent moon and Ganga,
+   Identity cues: ash-blue skin, tripundra + third eye, jata with crescent moon,
    serpent around neck, TIGER-SKIN wrap, rudraksha mala, trident with damaru. */
 const SH={skin:'#7c8fd0',skinM:'#6477b8',skinD:'#3d4a88',skinH:'#9fb0e6',hair:'#14121f',hairH:'#3a3550',
   tiger:'#d98a2b',tigerD:'#a8601a',tigerL:'#f0b050',stripe:'#1a1008',ash:'#e8e4ee',gold:'#e0b04a',goldD:'#a87820',
@@ -55,7 +55,7 @@ function drawSerpent(c,t,rage,L,R){ // Vasuki around the neck, hood over right s
   if(rage){c.strokeStyle='#d02a2a';c.lineWidth=1.6;c.beginPath();c.moveTo(hx+3,hy-8);c.lineTo(hx+3,hy+2);c.moveTo(hx+3,hy+2);c.lineTo(hx-1,hy+8);c.moveTo(hx+3,hy+2);c.lineTo(hx+7,hy+8);c.stroke()}
   c.restore()}
 
-function drawJata(c,hx,hy,t,rage,imp=0){ // bun of coiled jata + hanging ropes, Ganga, crescent moon
+function drawJata(c,hx,hy,t,rage,imp=0){ // bun of coiled jata + hanging ropes, crescent moon
   c.save();c.translate(hx,hy);const sw=Math.sin(t*1.6)*2;
   const rope=(x0,y0,x1,y1,x2,y2,w,ph)=>{ // one rope strand with a light twist highlight
     const dx=Math.sin(t*2.1+ph)*(4+imp*5),dx2=Math.sin(t*2.6+ph*1.7)*(6+imp*8);
@@ -69,10 +69,6 @@ function drawJata(c,hx,hy,t,rage,imp=0){ // bun of coiled jata + hanging ropes, 
   c.lineCap='round';for(let i=0;i<5;i++){c.strokeStyle=i%2?'rgba(200,190,240,.30)':'rgba(8,6,20,.7)';c.lineWidth=7;c.beginPath();c.ellipse(0,-66-i*2,38-i*6.2,50-i*8.6,0,0.6+i*.5,Math.PI*2+0.1+i*.5);c.stroke()}
   c.fillStyle='#14102a';c.beginPath();c.arc(0,-110,9,0,7);c.fill();
   c.fillStyle=SH.gold;c.beginPath();c.roundRect(-34,-26,68,9,4);c.fill();
-  // Ganga ribbon from the bun
-  c.strokeStyle=SH.water;c.lineCap='round';c.globalAlpha=.92;c.lineWidth=9;c.beginPath();c.moveTo(0,-112);c.bezierCurveTo(-34,-130,-60,-96,-48,-66);c.bezierCurveTo(-38,-38,-70,-30,-62,6+sw);c.stroke();
-  c.lineWidth=3;c.strokeStyle='#fff';c.beginPath();c.moveTo(-2,-114);c.bezierCurveTo(-34,-130,-60,-96,-48,-66);c.stroke();c.globalAlpha=1;
-  c.fillStyle='#e8f8ff';[[0,-116,5],[-22,-122,3.5],[-54,-80,3],[-60,-22,3.6]].forEach(([x,y,r])=>{c.beginPath();c.arc(x,y,r,0,7);c.fill()});
   // crescent moon
   c.fillStyle='#f4f0e0';c.beginPath();c.arc(22,-88,13,.5,5.8);c.arc(27,-88,10.5,5.5,.8,true);c.fill();c.fillStyle='rgba(255,240,180,.35)';c.beginPath();c.arc(22,-88,17,0,7);c.fill();
   c.restore()}

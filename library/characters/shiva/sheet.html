@@ -30,7 +30,7 @@ function go(){bg();
   const B=figure(c=>{c.scale(S,S);drawShiva(c,{pose:'rage',t:1.2})},980,1000,490,920,'rgba(255,170,130,.95)','255,120,70');X.drawImage(B,1230-490,oy-920);
   txt('शांत रूप',ox,1335,38,'#ffe9b8','center');txt('calm · meditative · default',ox,1375,24,'#c9b894','center',400);
   txt('रौद्र रूप',1230,1335,38,'#ffe9b8','center');txt('rage · yagna destruction',1230,1375,24,'#c9b894','center',400);
-  lab(-10,-640,230,'जटा · चंद्रमा · गंगा','matted topknot, crescent moon, Ganga',ox,oy,S,1);
+  lab(-10,-640,230,'जटा · चंद्रमा','matted jata bun, crescent moon',ox,oy,S,1);
   lab(2,-512,380,'तीसरा नेत्र · त्रिपुंड्र','third eye + three ash lines',ox,oy,S,2);
   lab(80,-428,530,'वासुकि नाग','serpent around the neck',ox,oy,S,3);
   lab(-30,-300,680,'रुद्राक्ष माला · भस्म','rudraksha mala, ash on chest',ox,oy,S,4);
@@ -46,7 +46,7 @@ function go(){bg();
   const N=figure(c=>{c.scale(1.4,1.4);drawSerpentHead(c,1)},260,300,130,170);X.drawImage(N,PX+560,640,230,265);txt('वासुकि',PX+675,925,26,'#ffe9b8','center');
   const Tg=figure(c=>{c.scale(1.5,1.5);drawTiger(c,0,0,100,0,false)},300,260,150,30);X.drawImage(Tg,PX+230,935,260,225);txt('बाघ-छाल',PX+360,1175,26,'#ffe9b8','center');
   txt('रंग-पट्टिका',PX+30,1260,32,'#ffe9b8');
-  [[SH.skin,'त्वचा'],[SH.tiger,'बाघ-छाल'],[SH.gold,'स्वर्ण'],[SH.hair,'जटा'],[SH.snake,'नाग'],[SH.water,'गंगा']].forEach(([c,n],i)=>{X.fillStyle=c;X.beginPath();X.roundRect(PX+30+i*128,1280,110,56,8);X.fill();X.strokeStyle='rgba(255,255,255,.3)';X.stroke();txt(n,PX+85+i*128,1366,20,'#c9b894','center',400)});
+  [[SH.skin,'त्वचा'],[SH.tiger,'बाघ-छाल'],[SH.gold,'स्वर्ण'],[SH.hair,'जटा'],[SH.snake,'नाग'],[SH.ash,'भस्म']].forEach(([c,n],i)=>{X.fillStyle=c;X.beginPath();X.roundRect(PX+30+i*128,1280,110,56,8);X.fill();X.strokeStyle='rgba(255,255,255,.3)';X.stroke();txt(n,PX+85+i*128,1366,20,'#c9b894','center',400)});
   const id=X.getImageData(0,0,2400,1500),d=id.data;let sd=7;for(let i=0;i<d.length;i+=4){sd=(sd*16807)%2147483647;const n=((sd/2147483647)-.5)*14;d[i]+=n;d[i+1]+=n;d[i+2]+=n}X.putImageData(id,0,0);
   const v=X.createRadialGradient(1200,750,500,1200,750,1500);v.addColorStop(0,'rgba(0,0,0,0)');v.addColorStop(1,'rgba(0,0,0,.45)');X.fillStyle=v;X.fillRect(0,0,2400,1500);
   document.title='done'}
