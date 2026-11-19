@@ -311,7 +311,7 @@ function shivaJataSmall(c,t,rage){c.save();c.translate(0,-30);c.scale(.74,.7);c.
 function v2head(who,x,y,s,t,o){ // close-up of the head with neck, shoulders and garments
   const FR=clamp(s*SC_,2,3.9),RG=[-300,-330,600,520];const c=figBegin(FR,OY,RG);const ex=o.expr||{},kk=ex.brow!=null&&ex.brow<-.2?clamp(-ex.brow*1.1,0,1):0,face=ex.eye!=null&&ex.eye<.5?'closed':'calm';
   c.scale(1.5,1.5);if(who==='vishnu'||who==='hayagriva'||who==='adishakti')c.translate(0,24);
-  if(who==='shiva'){c.translate(0,-6);c.scale(.82,.82);bust(c,{skin:SH.skin,skinM:SH.skinM,skinD:SH.skinD,skinH:SH.skinH},{beads:true,ash:true,snake:true,armlets:'#e0b04a'});if(!PH(c,0,0,face==='closed'?'closed':'calm',kk)){shivaJataSmall(c,t,kk>.5);drawHead(c,0,0,{expr:face==='closed'?'closed':undefined,k:kk,t:t})}}
+  if(who==='shiva'){c.translate(0,-6);c.scale(.82,.82);bust(c,{skin:SH.skin,skinM:SH.skinM,skinD:SH.skinD,skinH:SH.skinH},{beads:true,ash:true,snake:true,armlets:'#e0b04a'});shivaJataSmall(c,t,kk>.5);drawHead(c,0,0,{expr:face==='closed'?'closed':undefined,k:kk,t:t})}
   else if(who==='brahma'){const S=BRAHMA;bust(c,S,{sash:'#f6f0e0',armlets:'#e0b04a'});
     const side=(x2)=>{c.save();c.translate(x2,10);c.scale(.8,.8);c.filter='brightness(.8)';drawHead(c,0,0,{expr:face,k:kk,S:S,t:t});crownB(c,.7);c.filter='none';c.restore()};side(-58);side(58);
     drawHead(c,0,0,{expr:face,k:kk,S:S,t:t});crownB(c,.78)}

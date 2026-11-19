@@ -55,11 +55,6 @@ function drawSerpent(c,t,rage,L,R){ // Vasuki around the neck, hood over right s
   if(rage){c.strokeStyle='#d02a2a';c.lineWidth=1.6;c.beginPath();c.moveTo(hx+3,hy-8);c.lineTo(hx+3,hy+2);c.moveTo(hx+3,hy+2);c.lineTo(hx-1,hy+8);c.moveTo(hx+3,hy+2);c.lineTo(hx+7,hy+8);c.stroke()}
   c.restore()}
 
-const PHS='../library/pilot/assets/sp_hc_';
-function PHok(){const g=window.imgGetV2;return !!g&&g(PHS+'open.png').ok&&g(PHS+'closed.png').ok&&g(PHS+'rage.png').ok}
-function PH(c,hx,hy,expr,k){ // approved painted Shiva head (jata, moon, third eye) on the coded body
-  if(!PHok())return false;const g=window.imgGetV2,KS=.72,draw=(n,a)=>{const e=g(PHS+n+'.png'),w=e.img.width*KS,h=e.img.height*KS;c.save();c.globalAlpha*=a;c.drawImage(e.img,hx-w*.52,hy+60-h,w,h);c.restore()};
-  if(expr==='closed')draw('closed',1);else{const kk=expr==='rage'?1:(k||0);draw('open',kk>=.98?0:1-Math.min(1,kk)*.9);if(kk>0)draw('rage',Math.min(1,kk))}return true}
 function drawJata(c,hx,hy,t,rage,imp=0){ // bun of coiled jata + hanging ropes, crescent moon
   c.save();c.translate(hx,hy);const sw=Math.sin(t*1.6)*2;
   const rope=(x0,y0,x1,y1,x2,y2,w,ph)=>{ // one rope strand with a light twist highlight
@@ -68,27 +63,14 @@ function drawJata(c,hx,hy,t,rage,imp=0){ // bun of coiled jata + hanging ropes, 
     c.strokeStyle='rgba(200,190,240,.22)';c.lineWidth=w*.28;c.setLineDash([w*.9,w*.7]);c.beginPath();c.moveTo(x0-w*.2,y0);c.quadraticCurveTo(x1+dx-w*.2,y1,x2+dx2-w*.2,y2);c.stroke();c.setLineDash([])};
   const spread=rage?1.12+imp*0.12:1;
   [-1,1].forEach((sd,k)=>{for(let i=0;i<4;i++){rope(sd*(12+i*7),-6+i*3,sd*(58+i*14)*spread,40+i*8,sd*(52+i*16)*spread+sd*imp*6,150-i*14-imp*6,13-i*1.4,i+k*2)}});
-  // topknot of thick matted locks: irregular, swaying, with twist marks
-  const sway=Math.sin(t*1.3)*2.5;
-  const lock=(x0,y0,cx,cy,x1,y1,w,col)=>{
-    const P=(u)=>[(1-u)*(1-u)*x0+2*(1-u)*u*cx+u*u*(x1+sway*u),(1-u)*(1-u)*y0+2*(1-u)*u*cy+u*u*y1];
-    c.lineCap='round';c.lineJoin='round';
-    c.strokeStyle='#0a0816';c.lineWidth=w+5;c.beginPath();c.moveTo(x0,y0);c.quadraticCurveTo(cx,cy,x1+sway,y1);c.stroke();
-    c.strokeStyle=col;c.lineWidth=w;c.beginPath();c.moveTo(x0,y0);c.quadraticCurveTo(cx,cy,x1+sway,y1);c.stroke();
-    c.strokeStyle='rgba(215,205,250,.34)';c.lineWidth=1.8;
-    for(let u=.08;u<.95;u+=.12){const [px,py]=P(u),[qx,qy]=P(u+.02),dx=qx-px,dy=qy-py,L=Math.hypot(dx,dy)||1,nx=-dy/L,ny=dx/L,m=w*.4;
-      c.beginPath();c.moveTo(px-nx*m-dx/L*2,py-ny*m-dy/L*2);c.lineTo(px+nx*m+dx/L*2,py+ny*m+dy/L*2);c.stroke()}};
-  c.fillStyle='#14112a';c.beginPath();c.ellipse(0,-44,38,20,0,0,7);c.fill();
-  lock(-8,-44,-30,-96,-8,-138,16,'#2c2849');
-  lock(8,-44,14,-100,28,-136,16,'#34305a');
-  lock(-24,-40,-54,-80,-34,-120,16,'#2a2646');
-  lock(24,-40,56,-78,40,-114,15,'#312d54');
-  lock(0,-46,-8,-92,-22,-106,13,'#3c3868');
-  // twine binding the knot
-  c.strokeStyle='#8a6a2a';c.lineWidth=5;c.beginPath();c.ellipse(0,-50,30,9,0,0.1,Math.PI-0.1);c.stroke();
+  // bun
+  const kg=c.createRadialGradient(-12,-70,6,0,-64,56);kg.addColorStop(0,'#4a4468');kg.addColorStop(.6,'#221f38');kg.addColorStop(1,'#0c0a18');c.fillStyle=kg;
+  c.beginPath();c.ellipse(0,-66,40,52,0,0,7);c.fill();
+  c.lineCap='round';for(let i=0;i<5;i++){c.strokeStyle=i%2?'rgba(200,190,240,.30)':'rgba(8,6,20,.7)';c.lineWidth=7;c.beginPath();c.ellipse(0,-66-i*2,38-i*6.2,50-i*8.6,0,0.6+i*.5,Math.PI*2+0.1+i*.5);c.stroke()}
+  c.fillStyle='#14102a';c.beginPath();c.arc(0,-110,9,0,7);c.fill();
   c.fillStyle=SH.gold;c.beginPath();c.roundRect(-34,-26,68,9,4);c.fill();
   // crescent moon
-  c.fillStyle='#f4f0e0';c.beginPath();c.arc(-22,-70,12,.5,5.8);c.arc(-17.5,-70,9.8,5.5,.8,true);c.fill();c.fillStyle='rgba(255,240,180,.35)';c.beginPath();c.arc(-22,-70,16,0,7);c.fill();
+  c.fillStyle='#f4f0e0';c.beginPath();c.arc(22,-88,13,.5,5.8);c.arc(27,-88,10.5,5.5,.8,true);c.fill();c.fillStyle='rgba(255,240,180,.35)';c.beginPath();c.arc(22,-88,17,0,7);c.fill();
   c.restore()}
 
 const SHIVA_FACE={skin:SH.skin,skinM:SH.skinM,skinD:SH.skinD,skinH:SH.skinH,gold:SH.gold,ash:SH.ash,red:SH.red,tripundra:true,third:true,brow:'#0b0a14'};
@@ -173,7 +155,7 @@ const easeIO=x=>{x=Math.max(0,Math.min(1,x));return x<.5?4*x*x*x:1-Math.pow(-2*x
 function drawShiva(c,o){
   const P0=o.P||POSES[o.pose||'calm'],t=o.t||0,br=Math.sin(t*1.7)*2.4,P=JSON.parse(JSON.stringify(P0));['ch','nk','hd','sL','sR'].forEach(k=>{P[k][1]+=br});P.hL[1]+=br*.6;P.hR[1]+=br*.6;const rage=(o.rage!==undefined?o.rage:o.pose==='rage'),sw=Math.sin(t*1.5)+P.sway;c.save();
   // jata strands behind
-  const HS=1.18;c.save();c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);c.save();c.translate(P.hd[0],P.hd[1]-30);c.scale(.74,.7);c.translate(-P.hd[0],-P.hd[1]+30);if(!PHok())drawJata(c,P.hd[0],P.hd[1]-34,t,rage,o.imp||0);c.restore();c.restore();
+  const HS=1.18;c.save();c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);c.save();c.translate(P.hd[0],P.hd[1]-30);c.scale(.74,.7);c.translate(-P.hd[0],-P.hd[1]+30);drawJata(c,P.hd[0],P.hd[1]-34,t,rage,o.imp||0);c.restore();c.restore();
   // legs
   const stance=(h,k,f,side)=>{const r=elbow(h,f,86,92,side);tapered(c,h,r.e,31,23,SH.skin);tapered(c,r.e,f,23,14,SH.skin);c.fillStyle='rgba(255,255,255,.10)';c.beginPath();c.ellipse(lerp(r.e[0],f[0],.35)-side*2,lerp(r.e[1],f[1],.35),9,26,Math.atan2(f[1]-r.e[1],f[0]-r.e[0])+1.57,0,7);c.fill();
     c.globalAlpha=.4;c.fillStyle=SH.skinD;tapered(c,[h[0]+side*10,h[1]],[r.e[0]+side*8,r.e[1]],9,8,SH.skinD);tapered(c,[r.e[0]+side*7,r.e[1]],[f[0]+side*6,f[1]-6],8,6,SH.skinD);c.globalAlpha=1;
@@ -200,7 +182,7 @@ function drawShiva(c,o){
   // neck
   c.fillStyle=SH.skinM;c.beginPath();c.roundRect(P.nk[0]-16,P.hd[1]+30,32,P.nk[1]-P.hd[1]+4,8);c.fill();
   drawSerpent(c,t,rage,P.sL,P.sR);
-  c.save();c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);{const ex=o.expr||(o.k!==undefined?'calm':(rage?'rage':'calm'));if(!PH(c,P.hd[0],P.hd[1],ex,o.k))drawHead(c,P.hd[0],P.hd[1],{expr:ex,k:o.k,t})}c.restore();
+  c.save();c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);drawHead(c,P.hd[0],P.hd[1],{expr:o.expr||(o.k!==undefined?'calm':(rage?'rage':'calm')),k:o.k,t});c.restore();
   // arms (on top)
   const aL=limbShaded(c,P.sL,P.hL,64,62,-1,[19,15,12]);aL.s=P.sL;const aR=limbShaded(c,P.sR,P.hR,64,62,1,[19,15,12]);aR.s=P.sR;
   armlet(c,aL,17,SH.gold);armlet(c,aR,17,SH.gold);
