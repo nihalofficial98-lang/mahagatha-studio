@@ -116,9 +116,9 @@ BG.img=function(S,t){const e=imgGet(S.src);skyG(S.cols||['#05060c','#10131f'],-3
   layer(S.d==null?.25:S.d,()=>{const w=e.img.width,h=e.img.height,z=(S.z0||1.14)+(S.zv||.004)*t,sc=Math.max(W/w,H/h)*z,fx=S.fx==null?.5:S.fx,fy=S.fy==null?.5:S.fy,dx=(W-w*sc)*fx-(S.px||0)*t,dy=(H-h*sc)*fy-(S.py||0)*t;
     ctx.drawImage(e.img,dx,dy,w*sc,h*sc);if(S.tint){ctx.fillStyle=S.tint;ctx.fillRect(-300,-300,W+600,H+600)}})};
 function IMGFIG(f,x,y,s,t){const e=imgGet(f.src);if(!e.ok)return;const w=e.img.width,h=e.img.height,k=(f.hpx||520)/h*s,br=1+(f.breath==null?.006:f.breath)*Math.sin(t*1.7),sw=(f.sway||0)*Math.sin(t*1.1);
-  ctx.save();ctx.translate(x,y);
+  const wk=f.walk?Math.sin(t*f.walk):0;ctx.save();ctx.translate(x,y-(f.walk?Math.abs(wk)*(f.walkAmp||10):0));
   if(f.shadow!==false&&f.anchor!=='center'){ctx.fillStyle='rgba(0,0,0,.35)';ctx.beginPath();ctx.ellipse(0,4,w*k*.34,w*k*.05,0,0,7);ctx.fill()}
-  ctx.rotate(sw);ctx.scale((f.flip||1)*k,k*br);const ax=w/2,ay=f.anchor==='center'?h/2:h;if(f.glow){ctx.shadowColor=f.glow;ctx.shadowBlur=(f.gb||34)/k}
+  ctx.rotate(sw+wk*.04);ctx.scale((f.flip||1)*k,k*br);const ax=w/2,ay=f.anchor==='center'?h/2:h;if(f.glow){ctx.shadowColor=f.glow;ctx.shadowBlur=(f.gb||34)/k}
   ctx.drawImage(e.img,-ax,-ay,w,h);ctx.restore()}
 
 /* ---------- rigged painted puppet: Shiva (pieces sliced from the approved Gemini art, shared source coordinates 445x943) ---------- */
@@ -138,15 +138,17 @@ function drawShivaP(f,x,y,s,t,P){
   if(f.glow){ctx.shadowColor=f.glow;ctx.shadowBlur=26}
   const D=n=>{const e=spImg(n);ctx.drawImage(e.img,0,0)};
   const rot=(pv,a,fn)=>{ctx.save();ctx.translate(pv[0],pv[1]);ctx.rotate(a);ctx.translate(-pv[0],-pv[1]);fn();ctx.restore()};
-  const thigh=(pv,kn,side,n,sn)=>rot(pv,(side<0?aTh:-aTh),()=>{
+  const WL=f.walk?Math.sin(t*f.walk):0;const thigh=(pv,kn,side,n,sn)=>rot(pv,(side<0?aTh:-aTh)+(side<0?1:-1)*.30*WL,()=>{
     // synthetic upper leg (hidden by the skirt) + visible thigh band, then the shin hinged at the knee
     ctx.save();const g=ctx.createLinearGradient(pv[0]-34,0,pv[0]+34,0);g.addColorStop(0,'#a7c4e2');g.addColorStop(.5,'#93b5d8');g.addColorStop(1,'#7fa2c8');ctx.fillStyle=g;ctx.beginPath();ctx.moveTo(pv[0]-36,pv[1]-30);ctx.lineTo(pv[0]+36,pv[1]-30);ctx.lineTo(kn[0]+34,kn[1]);ctx.lineTo(kn[0]-34,kn[1]);ctx.closePath();ctx.fill();ctx.restore();
-    D(n);rot(kn,(side<0?-1:1)*Math.abs(aSh),()=>D(sn))});
+    D(n);rot(kn,(side<0?-1:1)*Math.abs(aSh)+(side<0?-1:1)*.22*Math.max(0,(side<0?WL:-WL)),()=>D(sn))});
   thigh(SP.pivot.hipL,SP.pivot.kneeL,-1,'thighL','shinL');thigh(SP.pivot.hipR,SP.pivot.kneeR,1,'thighR','shinR');
   ctx.save();ctx.translate(SP.W/2,SP.H);ctx.scale(1,1+.004*br);ctx.translate(-SP.W/2,-SP.H);D('root');ctx.restore();
-  rot(SP.pivot.armR,aArmR,()=>{D('armR_up');rot(SP.pivot.elbowR,aElbR,()=>D('armR_lo'))});
+  rot(SP.pivot.armR,aArmR-.18*WL,()=>{D('armR_up');rot(SP.pivot.elbowR,aElbR,()=>D('armR_lo'))});
   rot(SP.pivot.armL,aArmL,()=>D('armL_grp'));
   rot(SP.pivot.head,aHead,()=>{const closed=f.eyes==='closed';
     if(k<.99){ctx.globalAlpha=(1-k);D(closed?'head_closed':'head_open');ctx.globalAlpha=1}
     if(k>.01){ctx.globalAlpha=Math.min(1,k*1.4);D('head_rage');ctx.globalAlpha=1}});
   ctx.restore()}
+
+FXV2.fximg=function(F,t,P,d,a){const e=imgGet(F.src);if(!e.ok)return;ctx.save();ctx.globalAlpha*=a*(F.alpha==null?1:F.alpha);if(F.blend)ctx.globalCompositeOperation=F.blend;const w=F.w||300,h=w*e.img.height/e.img.width,sc=1+(F.grow||0)*t;ctx.translate(F.x+(F.vx||0)*t,F.y);ctx.rotate((F.rot||0)+(F.spin||0)*t);ctx.scale(sc,sc);ctx.drawImage(e.img,-w/2,-h/2,w,h);ctx.restore()};
