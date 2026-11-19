@@ -169,3 +169,6 @@ FXV2.fximg=function(F,t,P,d,a){const e=imgGet(F.src);if(!e.ok)return;ctx.save();
   Object.keys(P).forEach(k=>{const o=P[k];BG[k]=function(S,t){const f=S.fire==null?1:S.fire,fl=.86+.14*Math.sin(t*9)+.06*Math.sin(t*23);
     BG.img({src:A+o.f+'.png',fy:o.fy==null?.5:o.fy,z0:1.08,zv:.003,d:.25},t);o.fx(S,t,f,fl)}});
 })();
+
+window.imgGetV2=imgGet;
+['open','closed','rage'].forEach(n=>imgGet('../library/pilot/assets/sp_hc_'+n+'.png'));

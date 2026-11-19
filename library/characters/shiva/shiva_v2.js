@@ -55,6 +55,11 @@ function drawSerpent(c,t,rage,L,R){ // Vasuki around the neck, hood over right s
   if(rage){c.strokeStyle='#d02a2a';c.lineWidth=1.6;c.beginPath();c.moveTo(hx+3,hy-8);c.lineTo(hx+3,hy+2);c.moveTo(hx+3,hy+2);c.lineTo(hx-1,hy+8);c.moveTo(hx+3,hy+2);c.lineTo(hx+7,hy+8);c.stroke()}
   c.restore()}
 
+const PHS='../library/pilot/assets/sp_hc_';
+function PHok(){const g=window.imgGetV2;return !!g&&g(PHS+'open.png').ok&&g(PHS+'closed.png').ok&&g(PHS+'rage.png').ok}
+function PH(c,hx,hy,expr,k){ // approved painted Shiva head (jata, moon, third eye) on the coded body
+  if(!PHok())return false;const g=window.imgGetV2,KS=.72,draw=(n,a)=>{const e=g(PHS+n+'.png'),w=e.img.width*KS,h=e.img.height*KS;c.save();c.globalAlpha*=a;c.drawImage(e.img,hx-w*.52,hy+60-h,w,h);c.restore()};
+  if(expr==='closed')draw('closed',1);else{const kk=expr==='rage'?1:(k||0);draw('open',kk>=.98?0:1-Math.min(1,kk)*.9);if(kk>0)draw('rage',Math.min(1,kk))}return true}
 function drawJata(c,hx,hy,t,rage,imp=0){ // bun of coiled jata + hanging ropes, crescent moon
   c.save();c.translate(hx,hy);const sw=Math.sin(t*1.6)*2;
   const rope=(x0,y0,x1,y1,x2,y2,w,ph)=>{ // one rope strand with a light twist highlight
@@ -168,7 +173,7 @@ const easeIO=x=>{x=Math.max(0,Math.min(1,x));return x<.5?4*x*x*x:1-Math.pow(-2*x
 function drawShiva(c,o){
   const P0=o.P||POSES[o.pose||'calm'],t=o.t||0,br=Math.sin(t*1.7)*2.4,P=JSON.parse(JSON.stringify(P0));['ch','nk','hd','sL','sR'].forEach(k=>{P[k][1]+=br});P.hL[1]+=br*.6;P.hR[1]+=br*.6;const rage=(o.rage!==undefined?o.rage:o.pose==='rage'),sw=Math.sin(t*1.5)+P.sway;c.save();
   // jata strands behind
-  const HS=1.18;c.save();c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);c.save();c.translate(P.hd[0],P.hd[1]-30);c.scale(.74,.7);c.translate(-P.hd[0],-P.hd[1]+30);drawJata(c,P.hd[0],P.hd[1]-34,t,rage,o.imp||0);c.restore();c.restore();
+  const HS=1.18;c.save();c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);c.save();c.translate(P.hd[0],P.hd[1]-30);c.scale(.74,.7);c.translate(-P.hd[0],-P.hd[1]+30);if(!PHok())drawJata(c,P.hd[0],P.hd[1]-34,t,rage,o.imp||0);c.restore();c.restore();
   // legs
   const stance=(h,k,f,side)=>{const r=elbow(h,f,86,92,side);tapered(c,h,r.e,31,23,SH.skin);tapered(c,r.e,f,23,14,SH.skin);c.fillStyle='rgba(255,255,255,.10)';c.beginPath();c.ellipse(lerp(r.e[0],f[0],.35)-side*2,lerp(r.e[1],f[1],.35),9,26,Math.atan2(f[1]-r.e[1],f[0]-r.e[0])+1.57,0,7);c.fill();
     c.globalAlpha=.4;c.fillStyle=SH.skinD;tapered(c,[h[0]+side*10,h[1]],[r.e[0]+side*8,r.e[1]],9,8,SH.skinD);tapered(c,[r.e[0]+side*7,r.e[1]],[f[0]+side*6,f[1]-6],8,6,SH.skinD);c.globalAlpha=1;
@@ -195,7 +200,7 @@ function drawShiva(c,o){
   // neck
   c.fillStyle=SH.skinM;c.beginPath();c.roundRect(P.nk[0]-16,P.hd[1]+30,32,P.nk[1]-P.hd[1]+4,8);c.fill();
   drawSerpent(c,t,rage,P.sL,P.sR);
-  c.save();c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);drawHead(c,P.hd[0],P.hd[1],{expr:o.expr||(o.k!==undefined?'calm':(rage?'rage':'calm')),k:o.k,t});c.restore();
+  c.save();c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);{const ex=o.expr||(o.k!==undefined?'calm':(rage?'rage':'calm'));if(!PH(c,P.hd[0],P.hd[1],ex,o.k))drawHead(c,P.hd[0],P.hd[1],{expr:ex,k:o.k,t})}c.restore();
   // arms (on top)
   const aL=limbShaded(c,P.sL,P.hL,64,62,-1,[19,15,12]);aL.s=P.sL;const aR=limbShaded(c,P.sR,P.hR,64,62,1,[19,15,12]);aR.s=P.sR;
   armlet(c,aL,17,SH.gold);armlet(c,aR,17,SH.gold);
