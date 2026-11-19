@@ -6,7 +6,7 @@ async function worker(B,shotsF,part,f0,f1,fps){
   const tm=JSON.parse(fs.readFileSync(B+'/engine_timings.json')),sh=JSON.parse(fs.readFileSync(shotsF));
   const b=await chromium.launch();const pg=await b.newPage({viewport:{width:VW,height:VH}});
   pg.on('pageerror',e=>console.log('PAGEERR',e.message));
-  await pg.goto('file://'+path.resolve(__dirname,ENG));await pg.evaluate(([s,t])=>window.init(s,t),[sh,tm]);
+  await pg.goto('file://'+path.resolve(__dirname,ENG));await pg.evaluate(([s,t])=>window.init(s,t),[sh,tm]);await pg.waitForFunction(()=>window.IMG_PENDING===0,null,{timeout:120000});
   const ff=spawn('ffmpeg',['-y','-v','error','-f','image2pipe','-framerate',String(fps),'-c:v','mjpeg','-i','-','-c:v','libx264','-preset','veryfast','-crf',CRF,'-pix_fmt','yuv420p','-threads','2',part],{stdio:['pipe','inherit','inherit']});
   for(let f=f0;f<f1;f++){await pg.evaluate(t=>window.seek(t),f/fps);const buf=await pg.screenshot({type:'jpeg',quality:JQ});if(!ff.stdin.write(buf))await new Promise(r=>ff.stdin.once('drain',r));if((f-f0)%240===0)console.log(`[${path.basename(part)}] ${f-f0}/${f1-f0}`)}
   ff.stdin.end();await new Promise(r=>ff.on('close',r));await b.close()}

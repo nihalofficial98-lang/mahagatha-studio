@@ -45,7 +45,8 @@ function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.f
   const x=f.x+(f.vx||0)*t,y=f.y+(f.vy||0)*t,s=f.s*(1+(f.ds||0)*t);ctx.save();ctx.globalAlpha*=a;if(f.dark!=null)ctx.filter=`brightness(${f.dark})`;
   const o={pose:f.pose||'stand',expr:ex,flip:f.flip||1,key:f.key||'255,214,160',rim:f.rim||'rgba(255,238,210,.95)',lx:f.lx??-1,tail:f.tail!==false};
   if(f.aura)glow(x,y-130*s,260*s,f.aura,0.5);
-  if(V2.has(f.who)){const vo={pose:f.pose,expr:ex,flip:o.flip,key:o.key,rim:o.rim,lx:o.lx,k:f.k,prop:f.prop,imp:f.imp};
+  if(f.who==='img')IMGFIG(f,x,y,s,t);
+  else if(V2.has(f.who)){const vo={pose:f.pose,expr:ex,flip:o.flip,key:o.key,rim:o.rim,lx:o.lx,k:f.k,prop:f.prop,imp:f.imp};
     if(f.head)V2.head(f.who,x,y,s,t,vo);else{if(f.who==='brahma'&&f.lotus!==false)lotus(x,y+22*s,s*1.25,t,1);V2.fig(f.who,x,y,s,t,vo)}}
   else if(f.who==='brahma')drawBrahma(x,y,s,t,{aura:null,expr:ex,key:o.key,rim:o.rim,lx:o.lx,lotus:f.lotus!==false});
   else if(f.who==='bull'){const b0=f.la0||[1,1,1,1],la=[b0[0],b0[1]*(f.l1==null?1:1-q(P,t,f.l1,0.9)),b0[2]*(f.l2==null?1:1-q(P,t,f.l2,0.9)),b0[3]*(f.l3==null?1:1-q(P,t,f.l3,0.9))];drawBull(x,y,s,t,{key:o.key,rim:o.rim,la:la,bow:(f.bow||0)*q(P,t,f.bc,1.2)})}

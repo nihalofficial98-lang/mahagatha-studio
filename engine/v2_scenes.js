@@ -106,3 +106,17 @@ FXV2.element=function(F,t,P,d,a){const x=F.x||CX,y=F.y||330,sc=F.sc||1,tp=F.type
   ctx.restore();if(F.label)stext(F.label,x,y+(F.ly||170)*sc,F.lsize||48,'#ffe9b8',a)};
 // a blooming lotus (open 0..1 driven by cue F.c)
 FXV2.lotus=function(F,t,P,d,a){const op=F.c!=null?q(P,t,F.c,F.d||1.4):(F.open==null?1:F.open);ctx.save();ctx.globalAlpha*=a;lotus(F.x,F.y,F.sc||1,t,op,1);ctx.restore()};
+
+/* ---------- painted-image support (Gemini pilot): asset preload, image background, cut-out figure ---------- */
+const IMGS={};window.IMG_PENDING=0;
+function imgGet(src){let e=IMGS[src];if(!e){e=IMGS[src]={img:new Image(),ok:false};window.IMG_PENDING++;e.img.onload=()=>{e.ok=true;window.IMG_PENDING--};e.img.onerror=()=>{window.IMG_PENDING--;e.err=true;console.error('image failed',src)};const key=src.split('/').pop();e.img.src=(window.ASSET_DATA&&window.ASSET_DATA[key])||src}return e}
+function preloadAssets(o){if(Array.isArray(o))o.forEach(preloadAssets);else if(o&&typeof o==='object'){if(typeof o.src==='string')imgGet(o.src);for(const k in o)preloadAssets(o[k])}}
+{const _init=window.init;window.init=function(sh,tm){preloadAssets(sh);return _init.apply(this,arguments)}}
+BG.img=function(S,t){const e=imgGet(S.src);skyG(S.cols||['#05060c','#10131f'],-300,H+300);if(!e.ok)return;
+  layer(S.d==null?.25:S.d,()=>{const w=e.img.width,h=e.img.height,z=(S.z0||1.14)+(S.zv||.004)*t,sc=Math.max(W/w,H/h)*z,fx=S.fx==null?.5:S.fx,fy=S.fy==null?.5:S.fy,dx=(W-w*sc)*fx-(S.px||0)*t,dy=(H-h*sc)*fy-(S.py||0)*t;
+    ctx.drawImage(e.img,dx,dy,w*sc,h*sc);if(S.tint){ctx.fillStyle=S.tint;ctx.fillRect(-300,-300,W+600,H+600)}})};
+function IMGFIG(f,x,y,s,t){const e=imgGet(f.src);if(!e.ok)return;const w=e.img.width,h=e.img.height,k=(f.hpx||520)/h*s,br=1+(f.breath==null?.006:f.breath)*Math.sin(t*1.7),sw=(f.sway||0)*Math.sin(t*1.1);
+  ctx.save();ctx.translate(x,y);
+  if(f.shadow!==false&&f.anchor!=='center'){ctx.fillStyle='rgba(0,0,0,.35)';ctx.beginPath();ctx.ellipse(0,4,w*k*.34,w*k*.05,0,0,7);ctx.fill()}
+  ctx.rotate(sw);ctx.scale((f.flip||1)*k,k*br);const ax=w/2,ay=f.anchor==='center'?h/2:h;if(f.glow){ctx.shadowColor=f.glow;ctx.shadowBlur=(f.gb||34)/k}
+  ctx.drawImage(e.img,-ax,-ay,w,h);ctx.restore()}
