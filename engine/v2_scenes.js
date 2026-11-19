@@ -152,3 +152,20 @@ function drawShivaP(f,x,y,s,t,P){
   ctx.restore()}
 
 FXV2.fximg=function(F,t,P,d,a){const e=imgGet(F.src);if(!e.ok)return;ctx.save();ctx.globalAlpha*=a*(F.alpha==null?1:F.alpha);if(F.blend)ctx.globalCompositeOperation=F.blend;const w=F.w||300,h=w*e.img.height/e.img.width,sc=1+(F.grow||0)*t;ctx.translate(F.x+(F.vx||0)*t,F.y);ctx.rotate((F.rot||0)+(F.spin||0)*t);ctx.scale(sc,sc);ctx.drawImage(e.img,-w/2,-h/2,w,h);ctx.restore()};
+
+// ---- painted (Gemini) backgrounds under the existing particle animation ----
+(function(){
+  const A='../library/pilot/assets/bgp_';
+  const P={
+    yagna:{f:'yagna',fy:.5,fx:(S,t,f,fl)=>{glow(CX,470,620,'255,140,60',.22*f*fl);layer(.9,()=>{fireBank(S.kx==null?CX:S.kx,552,300,250,t,f)});embers(t,40,11,'255,150,60',1.1*f);dust(t,26,17,'255,210,150',.25,3)}},
+    kailash:{f:'kailash',fx:(S,t)=>{dust(t,46,5,'225,235,255',.5,5);glow(W*(S.mx==null?.22:S.mx),120,380,'190,205,255',.12)}},
+    cosmicsea:{f:'cosmic_sea',fx:(S,t)=>{starsF(t,50);dust(t,30,9,'180,200,255',.35,3)}},
+    garden:{f:'garden',fx:(S,t)=>{dust(t,34,21,'255,236,170',.55,4,1.4);dust(t,18,23,'255,190,200',.5,7,1.6)}},
+    palace:{f:'palace',fx:(S,t)=>{dust(t,34,31,'255,230,170',.4,3);glow(210,260,200,'255,210,120',.18+.04*Math.sin(t*3));glow(500,260,200,'255,210,120',.18)}},
+    cosmos:{f:'cosmos',fx:(S,t)=>{starsF(t,70);dust(t,44,3,S.rgb||'200,190,255',.45,2)}},
+    dawn:{f:'heaven_clouds',fx:(S,t)=>{dust(t,30,41,'255,240,220',.45,3);glow(CX,150,520,'255,230,190',.16)}},
+    storm:{f:'storm_red',fx:(S,t)=>{embers(t,36,7,'255,90,60',.9);glow(CX,600,520,'255,110,50',.2+.06*Math.sin(t*5))}}
+  };
+  Object.keys(P).forEach(k=>{const o=P[k];BG[k]=function(S,t){const f=S.fire==null?1:S.fire,fl=.86+.14*Math.sin(t*9)+.06*Math.sin(t*23);
+    BG.img({src:A+o.f+'.png',fy:o.fy==null?.5:o.fy,z0:1.08,zv:.003,d:.25},t);o.fx(S,t,f,fl)}});
+})();
