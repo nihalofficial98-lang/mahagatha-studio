@@ -58,18 +58,17 @@ function drawSerpent(c,t,rage,L,R){ // Vasuki around the neck, hood over right s
 function drawJata(c,hx,hy,t,rage,imp=0){ // bun of coiled jata + hanging ropes, Ganga, crescent moon
   c.save();c.translate(hx,hy);const sw=Math.sin(t*1.6)*2;
   const rope=(x0,y0,x1,y1,x2,y2,w,ph)=>{ // one rope strand with a light twist highlight
-    const dx=Math.sin(t*2.1+ph)*(5+imp*16),dx2=Math.sin(t*2.6+ph*1.7)*(8+imp*26);
+    const dx=Math.sin(t*2.1+ph)*(4+imp*5),dx2=Math.sin(t*2.6+ph*1.7)*(6+imp*8);
     c.lineCap='round';c.strokeStyle='#15122a';c.lineWidth=w;c.beginPath();c.moveTo(x0,y0);c.quadraticCurveTo(x1+dx,y1,x2+dx2,y2);c.stroke();
     c.strokeStyle='rgba(200,190,240,.22)';c.lineWidth=w*.28;c.setLineDash([w*.9,w*.7]);c.beginPath();c.moveTo(x0-w*.2,y0);c.quadraticCurveTo(x1+dx-w*.2,y1,x2+dx2-w*.2,y2);c.stroke();c.setLineDash([])};
-  const spread=rage?1.5+imp*0.8:1;
-  [-1,1].forEach((sd,k)=>{for(let i=0;i<4;i++){rope(sd*(12+i*7),-6+i*3,sd*(58+i*14)*spread,40+i*8,sd*(52+i*16)*spread+sd*imp*20,(rage?96:150)-i*14+imp*-24,13-i*1.4,i+k*2)}});
+  const spread=rage?1.12+imp*0.12:1;
+  [-1,1].forEach((sd,k)=>{for(let i=0;i<4;i++){rope(sd*(12+i*7),-6+i*3,sd*(58+i*14)*spread,40+i*8,sd*(52+i*16)*spread+sd*imp*6,150-i*14-imp*6,13-i*1.4,i+k*2)}});
   // bun
   const kg=c.createRadialGradient(-12,-70,6,0,-64,56);kg.addColorStop(0,'#4a4468');kg.addColorStop(.6,'#221f38');kg.addColorStop(1,'#0c0a18');c.fillStyle=kg;
   c.beginPath();c.ellipse(0,-66,40,52,0,0,7);c.fill();
   c.lineCap='round';for(let i=0;i<5;i++){c.strokeStyle=i%2?'rgba(200,190,240,.30)':'rgba(8,6,20,.7)';c.lineWidth=7;c.beginPath();c.ellipse(0,-66-i*2,38-i*6.2,50-i*8.6,0,0.6+i*.5,Math.PI*2+0.1+i*.5);c.stroke()}
   c.fillStyle='#14102a';c.beginPath();c.arc(0,-110,9,0,7);c.fill();
   c.fillStyle=SH.gold;c.beginPath();c.roundRect(-34,-26,68,9,4);c.fill();
-  if(rage){[-1,1].forEach(sd=>{for(let k=0;k<3;k++)rope(sd*20,-80+k*14,sd*(70+k*20),-96-k*16+sw*2,sd*(110+k*26+imp*30),-50-k*30,8,k+3)})}
   // Ganga ribbon from the bun
   c.strokeStyle=SH.water;c.lineCap='round';c.globalAlpha=.92;c.lineWidth=9;c.beginPath();c.moveTo(0,-112);c.bezierCurveTo(-34,-130,-60,-96,-48,-66);c.bezierCurveTo(-38,-38,-70,-30,-62,6+sw);c.stroke();
   c.lineWidth=3;c.strokeStyle='#fff';c.beginPath();c.moveTo(-2,-114);c.bezierCurveTo(-34,-130,-60,-96,-48,-66);c.stroke();c.globalAlpha=1;
@@ -120,17 +119,15 @@ function drawHead(c,hx,hy,o){ // o:{expr:'calm'|'closed'|'rage', k:0..1 anger bl
   if(k>.2){c.fillStyle=`rgba(10,8,30,${.7*k})`;[-1,1].forEach(sd=>{c.beginPath();c.ellipse(sd*5.5,25,2.6,3.6*k+.5,sd*.6,0,7);c.fill()})}
   // mouth: calm = soft closed line; angry = bared-teeth snarl
   if(k<0.12){c.strokeStyle='#2a1030';c.lineWidth=2.4;c.beginPath();c.moveTo(-10,36);c.quadraticCurveTo(0,40-k*10,10,36);c.stroke()}
-  else{const w=L(10,20),open=L(1,5.2);
-    c.fillStyle='#220810';c.beginPath();c.moveTo(-w,L(36,33));c.bezierCurveTo(-w*.6,L(34,29),-w*.25,L(33,31),0,L(33,32));c.bezierCurveTo(w*.25,L(33,31),w*.6,L(34,29),w,L(36,33));c.bezierCurveTo(w*.8,34+open*1.1,w*.3,35+open*1.45,0,36+open*1.5);c.bezierCurveTo(-w*.3,35+open*1.45,-w*.8,34+open*1.1,-w,L(36,33));c.fill();
-    // teeth: top row with long canines, lower row small
-    c.fillStyle='#f4efe6';const ty=L(34,31.5);
-    for(let q=-4;q<=4;q++){const x=q*w/4.6,fang=Math.abs(q)===3,h=fang?7.5*k+2:3.6*k+1;c.beginPath();c.moveTo(x-w/10,ty);c.lineTo(x,ty+h);c.lineTo(x+w/10,ty);c.closePath();c.fill()}
-    c.fillStyle='#e8e0d4';for(let q=-3;q<=3;q++){const x=q*w/4.2,by=35+open*1.45;c.beginPath();c.moveTo(x-w/11,by);c.lineTo(x,by-(Math.abs(q)===3?4.6:3)*k-.5);c.lineTo(x+w/11,by);c.closePath();c.fill()}
-    // tongue shadow
-    c.fillStyle='rgba(170,40,60,.7)';c.beginPath();c.ellipse(0,34.5+open*1.1,w*.45,open*.7,0,0,7);c.fill();
-    // upper lip line + snarl corners
-    c.strokeStyle='#14040a';c.lineWidth=2.4;c.beginPath();c.moveTo(-w-3,L(36,32));c.bezierCurveTo(-w*.6,L(33,29),-w*.25,L(32,30),0,L(32,30.4));c.bezierCurveTo(w*.25,L(32,30),w*.6,L(33,29),w+3,L(36,32));c.stroke();
-    c.beginPath();c.moveTo(-w-3,L(36,32));c.quadraticCurveTo(-w-6,L(38,30),-w-5,L(40,27));c.moveTo(w+3,L(36,32));c.quadraticCurveTo(w+6,L(38,30),w+5,L(40,27));c.stroke()}
+  else{const w=L(10,15),dn=L(0,4.5),op=L(.5,3);
+    // clenched, downturned mouth: corners pulled down, lips pressed hard
+    c.fillStyle='#240a12';c.beginPath();c.moveTo(-w,36+dn);c.quadraticCurveTo(0,35-dn*.6,w,36+dn);c.quadraticCurveTo(0,35-dn*.6+op+1.5,-w,36+dn);c.fill();
+    if(k>.45){c.save();c.beginPath();c.moveTo(-w+2,36+dn-.5);c.quadraticCurveTo(0,35-dn*.6,w-2,36+dn-.5);c.quadraticCurveTo(0,35-dn*.6+op+1,-w+2,36+dn-.5);c.clip();
+      c.fillStyle='#ece4d8';c.fillRect(-w,34-dn*.6,2*w,op+3);c.strokeStyle='rgba(60,30,30,.55)';c.lineWidth=.9;for(let q=-3;q<=3;q++){c.beginPath();c.moveTo(q*w/3.4,33);c.lineTo(q*w/3.4,42);c.stroke()}c.restore()}
+    c.strokeStyle='#14040a';c.lineWidth=2.6;c.lineCap='round';c.beginPath();c.moveTo(-w-1,36+dn+1);c.quadraticCurveTo(0,34.5-dn*.6,w+1,36+dn+1);c.stroke();
+    // chin tension + corner creases
+    c.lineWidth=2;c.strokeStyle='rgba(15,18,60,.5)';c.beginPath();c.moveTo(-w-1,36+dn+1);c.quadraticCurveTo(-w-4,40+dn,-w-3,44+dn);c.moveTo(w+1,36+dn+1);c.quadraticCurveTo(w+4,40+dn,w+3,44+dn);c.stroke();
+    c.beginPath();c.moveTo(-6,45);c.quadraticCurveTo(0,43,6,45);c.stroke()}
   c.restore()}
 
 function drawTrishul(c,x,top,bot,t,rage){ // trident with damaru + ribbons
