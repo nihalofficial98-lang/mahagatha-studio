@@ -120,3 +120,33 @@ function IMGFIG(f,x,y,s,t){const e=imgGet(f.src);if(!e.ok)return;const w=e.img.w
   if(f.shadow!==false&&f.anchor!=='center'){ctx.fillStyle='rgba(0,0,0,.35)';ctx.beginPath();ctx.ellipse(0,4,w*k*.34,w*k*.05,0,0,7);ctx.fill()}
   ctx.rotate(sw);ctx.scale((f.flip||1)*k,k*br);const ax=w/2,ay=f.anchor==='center'?h/2:h;if(f.glow){ctx.shadowColor=f.glow;ctx.shadowBlur=(f.gb||34)/k}
   ctx.drawImage(e.img,-ax,-ay,w,h);ctx.restore()}
+
+/* ---------- rigged painted puppet: Shiva (pieces sliced from the approved Gemini art, shared source coordinates 445x943) ---------- */
+const SP_SRC=['root','head_open','head_closed','head_rage','armR_up','armR_lo','armL_grp','thighL','thighR','shinL','shinR'].map(n=>'../library/pilot/assets/sp_'+n+'.png');
+const SP={pivot:{head:[268,232],armR:[385,288],elbowR:[405,395],armL:[150,270],hipL:[238,640],hipR:[300,640],kneeL:[220,700],kneeR:[322,700]},H:943,W:445};
+function loadShivaPuppet(){SP_SRC.forEach(imgGet)}
+function spImg(n){return imgGet('../library/pilot/assets/sp_'+n+'.png')}
+{const _pre=preloadAssets;preloadAssets=function(o){if(Array.isArray(o))o.forEach(preloadAssets);else if(o&&typeof o==='object'){if(o.who==='shiva_p')loadShivaPuppet();if(typeof o.src==='string')imgGet(o.src);for(const k in o)preloadAssets(o[k])}}}
+function drawShivaP(f,x,y,s,t,P){
+  const ok=SP_SRC.every(u=>imgGet(u).ok);if(!ok)return;
+  const an=f.ka?clamp((t-f.ka[2])/(f.ka[3]||1),0,1):0,ae=an*an*(3-2*an),kk=f.ka?f.ka[0]+(f.ka[1]-f.ka[0])*ae:(f.k==null?0:f.k),k=clamp(kk,0,1),rage=k,st=f.stance==null?k:f.stance,hp=(f.hpx||640)*s,sc=hp/SP.H,fl=f.flip||1;
+  const br=Math.sin(t*1.7),sw=Math.sin(t*1.1);
+  const aHead=(f.head||0)+Math.sin(t*.9)*.012+(f.headT||0),aArmR=(f.armR||0)+Math.sin(t*1.3)*.012+rage*.12,aElbR=(f.elbowR||0)-.06*rage,aArmL=(f.armL||0)+Math.sin(t*1.1+1)*.01-rage*.10*(f.lunge||0)+(f.lunge||0)*(-.45);
+  const aTh=.34*st,aSh=-.26*st,crouch=60*st;
+  ctx.save();ctx.translate(x,y);ctx.scale(fl*sc,sc);ctx.translate(-SP.W/2,-SP.H+crouch+br*2.5);
+  if(f.shadow!==false){ctx.save();ctx.fillStyle='rgba(0,0,0,.35)';ctx.beginPath();ctx.ellipse(SP.W/2,SP.H-crouch-4,150+st*70,18,0,0,7);ctx.fill();ctx.restore()}
+  if(f.glow){ctx.shadowColor=f.glow;ctx.shadowBlur=26}
+  const D=n=>{const e=spImg(n);ctx.drawImage(e.img,0,0)};
+  const rot=(pv,a,fn)=>{ctx.save();ctx.translate(pv[0],pv[1]);ctx.rotate(a);ctx.translate(-pv[0],-pv[1]);fn();ctx.restore()};
+  const thigh=(pv,kn,side,n,sn)=>rot(pv,(side<0?aTh:-aTh),()=>{
+    // synthetic upper leg (hidden by the skirt) + visible thigh band, then the shin hinged at the knee
+    ctx.save();const g=ctx.createLinearGradient(pv[0]-34,0,pv[0]+34,0);g.addColorStop(0,'#a7c4e2');g.addColorStop(.5,'#93b5d8');g.addColorStop(1,'#7fa2c8');ctx.fillStyle=g;ctx.beginPath();ctx.moveTo(pv[0]-36,pv[1]-30);ctx.lineTo(pv[0]+36,pv[1]-30);ctx.lineTo(kn[0]+34,kn[1]);ctx.lineTo(kn[0]-34,kn[1]);ctx.closePath();ctx.fill();ctx.restore();
+    D(n);rot(kn,(side<0?-1:1)*Math.abs(aSh),()=>D(sn))});
+  thigh(SP.pivot.hipL,SP.pivot.kneeL,-1,'thighL','shinL');thigh(SP.pivot.hipR,SP.pivot.kneeR,1,'thighR','shinR');
+  ctx.save();ctx.translate(SP.W/2,SP.H);ctx.scale(1,1+.004*br);ctx.translate(-SP.W/2,-SP.H);D('root');ctx.restore();
+  rot(SP.pivot.armR,aArmR,()=>{D('armR_up');rot(SP.pivot.elbowR,aElbR,()=>D('armR_lo'))});
+  rot(SP.pivot.armL,aArmL,()=>D('armL_grp'));
+  rot(SP.pivot.head,aHead,()=>{const closed=f.eyes==='closed';
+    if(k<.99){ctx.globalAlpha=(1-k);D(closed?'head_closed':'head_open');ctx.globalAlpha=1}
+    if(k>.01){ctx.globalAlpha=Math.min(1,k*1.4);D('head_rage');ctx.globalAlpha=1}});
+  ctx.restore()}

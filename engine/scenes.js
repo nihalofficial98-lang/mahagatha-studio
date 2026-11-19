@@ -45,7 +45,8 @@ function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.f
   const x=f.x+(f.vx||0)*t,y=f.y+(f.vy||0)*t,s=f.s*(1+(f.ds||0)*t);ctx.save();ctx.globalAlpha*=a;if(f.dark!=null)ctx.filter=`brightness(${f.dark})`;
   const o={pose:f.pose||'stand',expr:ex,flip:f.flip||1,key:f.key||'255,214,160',rim:f.rim||'rgba(255,238,210,.95)',lx:f.lx??-1,tail:f.tail!==false};
   if(f.aura)glow(x,y-130*s,260*s,f.aura,0.5);
-  if(f.who==='img')IMGFIG(f,x,y,s,t);
+  if(f.who==='shiva_p')drawShivaP(f,x,y,s,t,P);
+  else if(f.who==='img')IMGFIG(f,x,y,s,t);
   else if(V2.has(f.who)){const vo={pose:f.pose,expr:ex,flip:o.flip,key:o.key,rim:o.rim,lx:o.lx,k:f.k,prop:f.prop,imp:f.imp};
     if(f.head)V2.head(f.who,x,y,s,t,vo);else{if(f.who==='brahma'&&f.lotus!==false)lotus(x,y+22*s,s*1.25,t,1);V2.fig(f.who,x,y,s,t,vo)}}
   else if(f.who==='brahma')drawBrahma(x,y,s,t,{aura:null,expr:ex,key:o.key,rim:o.rim,lx:o.lx,lotus:f.lotus!==false});
