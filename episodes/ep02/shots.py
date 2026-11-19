@@ -43,11 +43,13 @@ add(2,'सब',{'c':[-1,-1,-1,-1],'bloom':0,'fx':[]},'earth',draw='map',cues=['�
 # ---------------- B03
 T3=lambda **k:dict({'cv':-1,'c1':-1,'c2':-1,'c3':-1,'c4':-1,'c5':-1,'c6':-1},**k)
 add(3,0,T3(c1=0,c2=1,cv=9,c3=9,c4=9,c5=9,c6=9,pan=[(None,600),(1,1000)]),'night',draw='tower',cues=['स्वर्गलोक','भूलोक'],dx=0.7)
-add(3,'नीचे',T3(c3=0,c4=1,c5=2,c6=3,cv=9,pan=[(None,1000),(0,1350),(3,1900)]),'dark',draw='tower',cues=['अतल','वितल','सुतल','पाताल'])
+add(3,'नीचे',T3(c3=0,c4=1,c5=9,c6=9,cv=9,pan=[(None,1000),(1,1450)]),'dark',draw='tower',cues=['अतल','वितल'])
+add(3,'सुतल',T3(c3=-1,c4=-1,c5=0,c6=1,cv=9,pan=[(None,1450),(1,1900)]),'dark',draw='tower',cues=['सुतल','पाताल'])
 add(3,'और इन',T3(cv=0,pan=[(None,1800),(0,250)]),'warm',draw='tower',cues=['वैकुंठ'])
 # ---------------- B04
 add(4,0,{'bg':bg('cosmos'),'figs':[F('brahma',CX,640,1.4,aura='190,170,255',expr={'eye':1})],'fx':[{'t':'icon','i':'cycle','x':CX,'y':250,'sc':2.2,'c':0,'d':1.0}]},'void',cues=['चार'],dx=0.7)
-add(4,'सफ़ेद',{'pc':[0,1,2,3]},'night',draw='pillars',cues=['सफ़ेद','लाल','पीला','काला'])
+add(4,'सफ़ेद',{'pc':[0,1,None,None]},'night',draw='pillars',cues=['सफ़ेद','लाल'])
+add(4,'पीला',{'pc':[None,None,0,1],'pre':2},'night',draw='pillars',cues=['पीला','काला'])
 add(4,'चारों',{'pc':[None]*4,'pre':4,'ring':0,'fx':[{'t':'text','s':'महायुग','x':CX,'y':140,'size':64,'c':1,'d':1.0,'glow':'rgba(255,220,150,.7)'}]},'amb',draw='pillars',cues=['बने','महायुग'])
 # ---------------- B05
 add(5,0,{'bg':bg('dawn'),'figs':[],'fx':[{'t':'outline','x':CX,'y':520,'sc':1.5,'c':0,'d':1.5}]},'warm',cues=['मनुष्य'],dx=0.7)
@@ -104,6 +106,7 @@ add(12,'मर्त्य',{'bg':bg('storm',r=0.2),'figs':[F('brahma',CX-300,70
 add(13,0,{'bg':bg('moon'),'figs':[F('shiva',CX,430,3.4,head=True,expr={'eye':0.7,'mouth':0.0},key='200,220,255')]},'night',dx=0.5)
 add(13,'मैं केवल',{'bg':bg('cosmos',rgb='130,150,255'),'figs':[F('shiva',CX,700,1.9,pose='tri',key='200,220,255',lx=1)],'fx':[{'t':'infinity','x':CX+320,'y':260,'c':0,'d':0.8}]},'night',cues=['अमर'])
 add(13,'अगर यह',{'bg':bg('moon'),'figs':[F('brahma',CX-330,700,1.35,expr={'brow':0.5}),F('shiva',CX+330,700,1.75,pose='tri',key='200,220,255',flip=-1,lx=1,expr={'brow':0.1})]},'night')
+add(13,'मैं तपस्या',{'bg':bg('moon'),'figs':[F('shiva',CX,985,3.1,pose='tri',key='200,220,255',lx=1,expr={'brow':0.1,'eye':0.9})]},'night')
 add(13,'और महादेव',{'bg':bg('moon'),'figs':[F('shiva',CX,640,1.6,pose='tri',key='200,220,255',lx=1,fo=0,fd=3.2,ds=-0.1,vx=-10)]},'night',cues=['चले'],dx=0.6)
 # ---------------- B14
 add(14,0,{'bg':bg('cel'),'figs':R11()+[F('brahma',CX,740,1.0,expr={'brow':0.2})]},'cel',dx=0.5)
@@ -116,12 +119,14 @@ add(14,'और पाँच',{'bg':bg('cel'),'figs':[F(('rudra%d'%(i+6)),CX-440+
 add(14,'रुद्र चले',{'bg':bg('cel',warm=True),'figs':[F(('rudra' if i==0 else 'rudra%d'%i),CX-525+i*105,560,0.8,tail=False,fo=0,fd=2.0,vy=-6,key='255,214,160') for i in range(11)]+[F('brahma',CX,740,1.1,expr={'mouth':0.1})]},'warm',cues=['गए'])
 add(14,'ब्रह्मा फिर',{'bg':bg('cel',fy=660),'figs':[F('brahma',CX,640,1.25,aura='190,190,255',expr={'eye':0.8,'mouth':-0.3})]},'dark',cam=z(1.2,1.0,0,0,-30,0))
 add(14,'तब उन्हें',{'bg':bg('cel'),'figs':[F('brahma',CX-320,700,1.5,expr={'brow':0.4})],'fx':[{'t':'icon','i':'flame','x':CX+170,'y':380,'sc':1.8,'c':0,'d':0.6},{'t':'icon','i':'lotusI','x':CX+420,'y':380,'sc':1.8,'c':1,'d':0.6}]},'cel',cues=['विनाश','सृजन'])
+add(14,'ये काम',{'bg':bg('cel'),'figs':[F('brahma',CX,985,3.1,aura=None,expr={'brow':0.6,'eye':1.1,'mouth':0.0})]},'cel')
 add(14,'उन्होंने फिर',{'bg':bg('cel',warm=True),'figs':[F('brahma',CX,690,1.6,aura='255,225,170',pose='fist',expr={'brow':-0.4,'mouth':0.2})],'fx':[{'t':'glow','x':CX,'y':450,'r':300,'rgb':'255,225,170','c':0,'d':1.5,'ga':0.5}]},'warm',cues=['कमर'])
 add(14,'पर आख़िरी',{'bg':bg('storm',r=0.35),'figs':[F('brahma',CX,690,1.5,aura='255,80,40',expr={'brow':0.3,'eye':1.1})],'fx':[{'t':'crack','x':CX+260,'c':0,'d':0.8}]},'red',cues=['बाक़ी'])
 # ---------------- B15
 add(15,0,{'bg':bg('cel',warm=True),'figs':[F('brahma',CX,700,1.6,pose='cross',aura='255,225,170',expr={'eye':0.2,'mouth':0.2})],'fx':[{'t':'sparkle','x':CX,'y':400,'n':26,'rx':420,'ry':200}]},'warm',dx=0.6)
 RN=['वशिष्ठ','मरीचि','अत्रि','अंगिरा','पुलस्त्य','पुलह','क्रतु']
-add(15,'वशिष्ठ',{'bg':bg('cel',warm=True),'figs':[F('rishi%d'%i,CX-480+i*160,610,1.15,pose='namaste',tail=False,ac=i,ad=0.5) for i in range(7)],'fx':[{'t':'name','s':RN[i],'x':CX-480+i*160,'y':640,'c':i,'d':0.4,'size':26} for i in range(7)]},'warm',cues=RN)
+add(15,'वशिष्ठ',{'bg':bg('cel',warm=True),'figs':[F('rishi%d'%i,CX-480+i*160,610,1.15,pose='namaste',tail=False,ac=i,ad=0.5) for i in range(7)],'fx':[{'t':'name','s':RN[i],'x':CX-480+i*160,'y':640,'c':i,'d':0.4,'size':26} for i in range(4)]},'warm',cues=RN[:4])
+add(15,'पुलस्त्य',{'bg':bg('cel',warm=True),'figs':[F('rishi%d'%i,CX-480+i*160,610,1.15,pose='namaste',tail=False,ac=(i-4 if i>=4 else None),ad=0.5) for i in range(7)],'fx':[{'t':'name','s':RN[i],'x':CX-480+i*160,'y':640,'c':(i-4 if i>=4 else None),'d':0.4,'size':26} for i in range(7)]},'warm',cues=RN[4:])
 add(15,'यही',{'bg':bg('night'),'figs':[],'fx':[{'t':'threads','x':CX-300,'y':300,'to':[[CX-170,220],[CX-60,260]],'c':0,'d':0.8}]},'night',cues=['सप्तर्षि'])
 S[-1]['sc']['fx']=[{'t':'glow','x':x,'y':y,'r':60,'rgb':'255,240,190','ga':0.9,'c':0,'d':0.8} for x,y in [(300,200),(430,230),(560,270),(690,310),(800,230),(910,170),(1010,250)]]+[{'t':'text','s':'सप्तर्षि','x':CX,'y':480,'size':64,'c':0,'d':1.0,'glow':'rgba(255,230,170,.7)'}]
 add(15,'यही',{'bg':bg('night'),'figs':[F('rishi%d'%i,CX-480+i*160,610,1.1,pose='cross',tail=False,aura='255,240,190') for i in range(7)]},'night',cues=['सप्तर्षि'])
@@ -129,7 +134,8 @@ S.pop(-2)  # keep the star-pattern shot? (replace with constellation + rishis co
 # ---------------- B16
 add(16,0,{'bg':bg('cel',warm=True),'figs':[F('brahma',CX,985,3.1,aura='255,225,170',expr={'eye':0.3,'mouth':0.3})],'fx':[{'t':'glow','x':CX,'y':660,'r':220,'rgb':'255,220,160','ga':0.6}]},'warm',dx=0.6)
 add(16,'धर्म का',{'bg':bg('cel',warm=True),'figs':[F('bull',CX,700,1.9,ac=0,ad=1.2,aura='255,230,170')]},'warm',cues=['बैल'])
-add(16,'चार पैर',{'bg':bg('cel',warm=True),'figs':[F('bull',CX,700,1.8)],'fx':[{'t':'name','s':n,'x':CX-300+i*200,'y':220,'c':i,'d':0.5,'size':34} for i,n in enumerate(['सत्य','तप','पवित्रता','करुणा'])]},'warm',cues=['सत्य','तप','पवित्रता','करुणा'])
+add(16,'चार पैर',{'bg':bg('cel',warm=True),'figs':[F('bull',CX,700,1.8)],'fx':[{'t':'name','s':n,'x':CX-300+i*200,'y':220,'c':i,'d':0.5,'size':34} for i,n in enumerate(['सत्य','तप'])]},'warm',cues=['सत्य','तप'])
+add(16,'पवित्रता',{'bg':bg('cel',warm=True),'figs':[F('bull',CX,700,1.8)],'fx':[{'t':'name','s':n,'x':CX-300+i*200,'y':220,'c':(i-2 if i>=2 else None),'d':0.5,'size':34} for i,n in enumerate(['सत्य','तप','पवित्रता','करुणा'])]},'warm',cues=['पवित्रता','करुणा'])
 add(16,'ब्रह्मा ने भविष्य',{'bg':bg('cel'),'figs':[F('brahma',CX,985,3.1,aura=None,expr={'brow':0.5,'mouth':-0.2})]},'dark')
 add(16,'सतयुग',{'bg':bg('dawn'),'figs':[F('bull',CX,700,1.9,aura='255,240,200')],'fx':[{'t':'name','s':'सतयुग · ४ पैर','x':CX,'y':200,'c':0,'d':0.4,'size':38,'col':'#fff'}]},'warm',cues=['सतयुग'])
 add(16,'त्रेता',{'bg':bg('dusk'),'figs':[F('bull',CX,700,1.9,l1=0)],'fx':[{'t':'name','s':'त्रेता · ३ पैर','x':CX,'y':200,'c':0,'d':0.4,'size':38,'col':'#ffb09a'}]},'amb',cues=['तप'])
