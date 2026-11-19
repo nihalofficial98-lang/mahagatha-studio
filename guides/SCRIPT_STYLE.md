@@ -1,0 +1,7 @@
+# Script style (Hindi, original wording — the book is used only for plot facts)
+- 6–10 min, ~900–1,100 words, 20–25 **beats** (`**B07** [शांत, दृढ़]`), one emotion cue per beat (drives voice rate/pitch/volume).
+- Open with a hook that names the danger; close each episode with a question that sets up the next.
+- Short lines; one new idea or image per sentence — every sentence is a chance for a new shot (3–4 s).
+- Use dialogue in quotes; give each speaker a distinct rhythm. Avoid English words.
+- Name characters when they enter; names are shown on screen the moment they are spoken.
+- Cues: धीमे, रहस्यमयी, भव्य, गंभीर, शांत, दृढ़, करुण, तेज़, क्रोध, विस्फोट, फुसफुसाकर, गिड़गिड़ाते हुए, ठंडा, स्नेह.
