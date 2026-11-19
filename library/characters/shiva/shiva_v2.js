@@ -63,14 +63,17 @@ function drawJata(c,hx,hy,t,rage,imp=0){ // bun of coiled jata + hanging ropes, 
     c.strokeStyle='rgba(200,190,240,.22)';c.lineWidth=w*.28;c.setLineDash([w*.9,w*.7]);c.beginPath();c.moveTo(x0-w*.2,y0);c.quadraticCurveTo(x1+dx-w*.2,y1,x2+dx2-w*.2,y2);c.stroke();c.setLineDash([])};
   const spread=rage?1.12+imp*0.12:1;
   [-1,1].forEach((sd,k)=>{for(let i=0;i<4;i++){rope(sd*(12+i*7),-6+i*3,sd*(58+i*14)*spread,40+i*8,sd*(52+i*16)*spread+sd*imp*6,150-i*14-imp*6,13-i*1.4,i+k*2)}});
-  // bun
-  const kg=c.createRadialGradient(-12,-70,6,0,-64,56);kg.addColorStop(0,'#4a4468');kg.addColorStop(.6,'#221f38');kg.addColorStop(1,'#0c0a18');c.fillStyle=kg;
-  c.beginPath();c.ellipse(0,-66,40,52,0,0,7);c.fill();
-  c.lineCap='round';for(let i=0;i<5;i++){c.strokeStyle=i%2?'rgba(200,190,240,.30)':'rgba(8,6,20,.7)';c.lineWidth=7;c.beginPath();c.ellipse(0,-66-i*2,38-i*6.2,50-i*8.6,0,0.6+i*.5,Math.PI*2+0.1+i*.5);c.stroke()}
-  c.fillStyle='#14102a';c.beginPath();c.arc(0,-110,9,0,7);c.fill();
+  // bun: stacked coils of twisted jata, tapering to a top-knot
+  const coil=(cy,rx,ry,w,ph)=>{
+    c.lineCap='round';c.strokeStyle='#0c0a18';c.lineWidth=w+4;c.beginPath();c.ellipse(0,cy,rx,ry,0,0,Math.PI*2);c.stroke();
+    const g=c.createLinearGradient(-rx,0,rx,0);g.addColorStop(0,'#2a2646');g.addColorStop(.35,'#4b4670');g.addColorStop(1,'#16132b');c.strokeStyle=g;c.lineWidth=w;c.beginPath();c.ellipse(0,cy,rx,ry,0,0,Math.PI*2);c.stroke();
+    c.strokeStyle='rgba(210,200,245,.38)';c.lineWidth=2.2;for(let a=.15;a<Math.PI;a+=.34){const x=Math.cos(a+ph)*rx,y=cy+Math.sin(a+ph)*ry;c.beginPath();c.moveTo(x-3,y-w*.42);c.lineTo(x+3,y+w*.42);c.stroke()}};
+  c.fillStyle='#1a1730';c.beginPath();c.ellipse(0,-58,42,26,0,0,7);c.fill();
+  [[-32,44,13,17,0],[-52,39,11,16,.5],[-72,33,9.5,15,1],[-90,26,8,14,1.5],[-106,18,6,12,2]].forEach(([cy,rx,ry,w,ph])=>coil(cy,rx,ry,w,ph));
+  c.fillStyle='#211d3a';c.beginPath();c.moveTo(-9,-110);c.quadraticCurveTo(0,-142,9,-110);c.fill();c.strokeStyle='rgba(210,200,245,.3)';c.lineWidth=2;c.beginPath();c.moveTo(-3,-114);c.quadraticCurveTo(0,-132,3,-114);c.stroke();
   c.fillStyle=SH.gold;c.beginPath();c.roundRect(-34,-26,68,9,4);c.fill();
   // crescent moon
-  c.fillStyle='#f4f0e0';c.beginPath();c.arc(22,-88,13,.5,5.8);c.arc(27,-88,10.5,5.5,.8,true);c.fill();c.fillStyle='rgba(255,240,180,.35)';c.beginPath();c.arc(22,-88,17,0,7);c.fill();
+  c.fillStyle='#f4f0e0';c.beginPath();c.arc(30,-96,13,.5,5.8);c.arc(35,-96,10.5,5.5,.8,true);c.fill();c.fillStyle='rgba(255,240,180,.35)';c.beginPath();c.arc(30,-96,17,0,7);c.fill();
   c.restore()}
 
 const SHIVA_FACE={skin:SH.skin,skinM:SH.skinM,skinD:SH.skinD,skinH:SH.skinH,gold:SH.gold,ash:SH.ash,red:SH.red,tripundra:true,third:true,brow:'#0b0a14'};
