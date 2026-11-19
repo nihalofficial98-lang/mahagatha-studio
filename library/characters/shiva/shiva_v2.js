@@ -63,17 +63,27 @@ function drawJata(c,hx,hy,t,rage,imp=0){ // bun of coiled jata + hanging ropes, 
     c.strokeStyle='rgba(200,190,240,.22)';c.lineWidth=w*.28;c.setLineDash([w*.9,w*.7]);c.beginPath();c.moveTo(x0-w*.2,y0);c.quadraticCurveTo(x1+dx-w*.2,y1,x2+dx2-w*.2,y2);c.stroke();c.setLineDash([])};
   const spread=rage?1.12+imp*0.12:1;
   [-1,1].forEach((sd,k)=>{for(let i=0;i<4;i++){rope(sd*(12+i*7),-6+i*3,sd*(58+i*14)*spread,40+i*8,sd*(52+i*16)*spread+sd*imp*6,150-i*14-imp*6,13-i*1.4,i+k*2)}});
-  // bun: stacked coils of twisted jata, tapering to a top-knot
-  const coil=(cy,rx,ry,w,ph)=>{
-    c.lineCap='round';c.strokeStyle='#0c0a18';c.lineWidth=w+4;c.beginPath();c.ellipse(0,cy,rx,ry,0,0,Math.PI*2);c.stroke();
-    const g=c.createLinearGradient(-rx,0,rx,0);g.addColorStop(0,'#2a2646');g.addColorStop(.35,'#4b4670');g.addColorStop(1,'#16132b');c.strokeStyle=g;c.lineWidth=w;c.beginPath();c.ellipse(0,cy,rx,ry,0,0,Math.PI*2);c.stroke();
-    c.strokeStyle='rgba(210,200,245,.38)';c.lineWidth=2.2;for(let a=.15;a<Math.PI;a+=.34){const x=Math.cos(a+ph)*rx,y=cy+Math.sin(a+ph)*ry;c.beginPath();c.moveTo(x-3,y-w*.42);c.lineTo(x+3,y+w*.42);c.stroke()}};
-  c.fillStyle='#1a1730';c.beginPath();c.ellipse(0,-58,42,26,0,0,7);c.fill();
-  [[-32,44,13,17,0],[-52,39,11,16,.5],[-72,33,9.5,15,1],[-90,26,8,14,1.5],[-106,18,6,12,2]].forEach(([cy,rx,ry,w,ph])=>coil(cy,rx,ry,w,ph));
-  c.fillStyle='#211d3a';c.beginPath();c.moveTo(-9,-110);c.quadraticCurveTo(0,-142,9,-110);c.fill();c.strokeStyle='rgba(210,200,245,.3)';c.lineWidth=2;c.beginPath();c.moveTo(-3,-114);c.quadraticCurveTo(0,-132,3,-114);c.stroke();
+  // topknot of thick matted locks: irregular, swaying, with twist marks
+  const sway=Math.sin(t*1.3)*2.5;
+  const lock=(x0,y0,cx,cy,x1,y1,w,col)=>{
+    const P=(u)=>[(1-u)*(1-u)*x0+2*(1-u)*u*cx+u*u*(x1+sway*u),(1-u)*(1-u)*y0+2*(1-u)*u*cy+u*u*y1];
+    c.lineCap='round';c.lineJoin='round';
+    c.strokeStyle='#0a0816';c.lineWidth=w+5;c.beginPath();c.moveTo(x0,y0);c.quadraticCurveTo(cx,cy,x1+sway,y1);c.stroke();
+    c.strokeStyle=col;c.lineWidth=w;c.beginPath();c.moveTo(x0,y0);c.quadraticCurveTo(cx,cy,x1+sway,y1);c.stroke();
+    c.strokeStyle='rgba(215,205,250,.34)';c.lineWidth=1.8;
+    for(let u=.08;u<.95;u+=.12){const [px,py]=P(u),[qx,qy]=P(u+.02),dx=qx-px,dy=qy-py,L=Math.hypot(dx,dy)||1,nx=-dy/L,ny=dx/L,m=w*.4;
+      c.beginPath();c.moveTo(px-nx*m-dx/L*2,py-ny*m-dy/L*2);c.lineTo(px+nx*m+dx/L*2,py+ny*m+dy/L*2);c.stroke()}};
+  c.fillStyle='#14112a';c.beginPath();c.ellipse(0,-44,38,20,0,0,7);c.fill();
+  lock(-8,-44,-30,-96,-8,-138,16,'#2c2849');
+  lock(8,-44,14,-100,28,-136,16,'#34305a');
+  lock(-24,-40,-54,-80,-34,-120,16,'#2a2646');
+  lock(24,-40,56,-78,40,-114,15,'#312d54');
+  lock(0,-46,-8,-92,-22,-106,13,'#3c3868');
+  // twine binding the knot
+  c.strokeStyle='#8a6a2a';c.lineWidth=5;c.beginPath();c.ellipse(0,-50,30,9,0,0.1,Math.PI-0.1);c.stroke();
   c.fillStyle=SH.gold;c.beginPath();c.roundRect(-34,-26,68,9,4);c.fill();
   // crescent moon
-  c.fillStyle='#f4f0e0';c.beginPath();c.arc(30,-96,13,.5,5.8);c.arc(35,-96,10.5,5.5,.8,true);c.fill();c.fillStyle='rgba(255,240,180,.35)';c.beginPath();c.arc(30,-96,17,0,7);c.fill();
+  c.fillStyle='#f4f0e0';c.beginPath();c.arc(-22,-70,12,.5,5.8);c.arc(-17.5,-70,9.8,5.5,.8,true);c.fill();c.fillStyle='rgba(255,240,180,.35)';c.beginPath();c.arc(-22,-70,16,0,7);c.fill();
   c.restore()}
 
 const SHIVA_FACE={skin:SH.skin,skinM:SH.skinM,skinD:SH.skinD,skinH:SH.skinH,gold:SH.gold,ash:SH.ash,red:SH.red,tripundra:true,third:true,brow:'#0b0a14'};
