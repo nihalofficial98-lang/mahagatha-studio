@@ -243,4 +243,10 @@ add(25,0,'जिनका',C([],[orb(CX,340,420,'140,170,255',.45),spk(CX,340,40
 add(25,0,'प्रकट',{'bg':bg('kailash'),'figs':[sh(CX,650,1.3,dark=.4)],'fx':[orb(CX,340,380,'160,190,255',.4)]},'cool')
 add(25,1,0,{'bg':bg('kailash'),'figs':[sh(CX,650,1.4)],'fx':[txt('शिव का प्राकट्य',CX,170,100,0,d=.9)]},'night',cues=['शिव'],cam=Z(1.0,1.1,0,0,0,-10))
 add(25,2,0,C([],[txt('कल मिलते हैं',CX,360,110,0,d=1.0)],rgb='200,170,255'),'night',cues=['कल'])
+
+# library (Gemini) chakra instead of the coded cycle icon (the five-thousand-year war of Vishnu/Hayagriva)
+for _s in film.shots:
+    _sc=_s.get('sc')
+    if not _sc:continue
+    _sc['fx']=[({'t':'fximg','src':'../library/pilot/assets/fx_sudarshan_chakra.png','x':x['x'],'y':x['y'],'w':88*x.get('sc',1),'blend':'lighter','spin':1.4,'c':x.get('c',0),'d':x.get('d',1)} if x.get('t')=='icon' and x.get('i')=='cycle' else x) for x in _sc.get('fx',[])]
 print(film.save(os.path.join(HERE,'shots.json')),'shots')
