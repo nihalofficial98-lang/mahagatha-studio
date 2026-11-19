@@ -274,8 +274,12 @@ function drawReclineVishnu(c,o){const t=o.t||0,S=CAST.vishnu,br=Math.sin(t*1.2)*
 function drawArdha(c,o){const t=o.t||0;c.save();c.beginPath();c.rect(0,-900,600,1000);c.clip();drawShiva(c,{P:POSES.calm,t:t,rage:false,k:0,pose:'calm'});c.restore();
   c.save();c.beginPath();c.rect(-600,-900,600,1000);c.clip();drawHuman(c,Object.assign({},CAST.adishakti,{build:1.0}),Object.assign(poseOf('stand'),{}),{t:t,expr:'calm'});c.restore()}
 
+function drawHarihara(c,o){const t=o.t||0;c.save();c.beginPath();c.rect(0,-900,600,1000);c.clip();drawShiva(c,{P:POSES.calm,t:t,rage:false,k:0,pose:'calm'});c.restore();
+  c.save();c.beginPath();c.rect(-600,-900,600,1000);c.clip();drawHuman(c,Object.assign({},CAST.vishnu,{arms4:false}),poseOf('stand','vishnu'),{t:t,expr:'calm'});c.restore()}
+function halfHead(c,leftFn,rightFn){c.save();c.beginPath();c.rect(0,-400,400,800);c.clip();rightFn();c.restore();c.save();c.beginPath();c.rect(-400,-400,400,800);c.clip();leftFn();c.restore()}
+
 /* ---------- engine glue ---------- */
-const V2NAMES=new Set(['shiva','vishnu','hayagriva','daksha','manu','adishakti','brahmi','madhu','kaitabha','ardha','brahma','vishnu_rest',...[0,1,2,3,4,5,6].map(i=>'rishi'+i)]);
+const V2NAMES=new Set(['harihara','shiva','vishnu','hayagriva','daksha','manu','adishakti','brahmi','madhu','kaitabha','ardha','brahma','vishnu_rest',...[0,1,2,3,4,5,6].map(i=>'rishi'+i)]);
 const SCALE={shiva:.62,default:.62};
 function v2fig(who,x,y,s,t,o){
   const sc=SCALE[who]||SCALE.default,FR=clamp(o.res||s*SC_,1.4,3.9),RG=[-260,-560,520,620];
@@ -286,14 +290,35 @@ function v2fig(who,x,y,s,t,o){
   else if(who==='brahma')drawBrahmaRig(c,{t:t,k:kk,expr:face});
   else if(who==='vishnu_rest')drawReclineVishnu(c,{t:t});
   else if(who==='ardha')drawArdha(c,{t:t});
+  else if(who==='harihara')drawHarihara(c,{t:t});
   else drawHuman(c,CAST[who],poseOf(o.pose,who),{t:t,k:o.k!=null?o.k:(CAST[who].kdef||kk),expr:face,prop:o.prop});
   figFinish(c,o,x,y,s,FR,OY,RG,.26,.34,true)}
-function v2head(who,x,y,s,t,o){ // close-up of the head and shoulders
-  const FR=clamp(s*SC_,2,3.9),RG=[-200,-300,400,420];const c=figBegin(FR,OY,RG);const ex=o.expr||{},kk=ex.brow!=null&&ex.brow<-.2?clamp(-ex.brow*1.1,0,1):0,face=ex.eye!=null&&ex.eye<.5?'closed':'calm';
+function bust(c,S,o){ // neck + shoulders + garments below a head close-up, so heads never float like masks
+  c.fillStyle=S.skinM;c.fillRect(-17,24,34,56);
+  const g=c.createLinearGradient(-170,0,170,0);g.addColorStop(0,S.skinH);g.addColorStop(.4,S.skin);g.addColorStop(1,S.skinD);c.fillStyle=g;
+  c.beginPath();c.moveTo(-190,170);c.bezierCurveTo(-180,84,-108,66,-28,58);c.lineTo(28,58);c.bezierCurveTo(108,66,180,84,190,170);c.closePath();c.fill();
+  c.fillStyle='rgba(255,255,255,.12)';c.beginPath();c.ellipse(-70,84,46,16,.1,0,7);c.fill();
+  if(o.sash){c.strokeStyle=o.sash;c.lineWidth=22;c.lineCap='butt';c.beginPath();c.moveTo(-150,86);c.quadraticCurveTo(-30,102,70,170);c.stroke()}
+  if(o.upper){c.fillStyle=o.upper;c.beginPath();c.moveTo(-120,92);c.quadraticCurveTo(0,60,120,92);c.lineTo(150,170);c.lineTo(-150,170);c.closePath();c.fill();c.strokeStyle='#b8862a';c.lineWidth=4;c.beginPath();c.moveTo(-120,92);c.quadraticCurveTo(0,64,120,92);c.stroke()}
+  if(o.beads){c.fillStyle='#6a3a20';for(let k=0;k<15;k++){const u=k/14;c.beginPath();c.arc(-42+u*84,64+Math.sin(u*3.14)*44,4.6,0,7);c.fill()}}
+  if(o.garland){for(let k=0;k<17;k++){const u=k/16;c.fillStyle=k%2?'#f08ab0':'#ffd0e0';c.beginPath();c.arc(-50+u*100,64+Math.sin(u*3.14)*54,5.6,0,7);c.fill()}c.fillStyle='#e0302a';c.beginPath();c.arc(0,122,6.4,0,7);c.fill()}
+  if(o.necklace){c.strokeStyle=o.necklace;c.lineWidth=5;c.beginPath();c.moveTo(-40,64);c.quadraticCurveTo(0,130,40,64);c.stroke();c.fillStyle=o.necklace;c.beginPath();c.arc(0,104,6,0,7);c.fill()}
+  if(o.ash){c.strokeStyle='#e8e4ee';c.lineWidth=5;[0,1,2].forEach(i=>{c.beginPath();c.moveTo(-58+i*4,112+i*13);c.quadraticCurveTo(0,124+i*13,58-i*4,112+i*13);c.stroke()})}
+  if(o.snake){c.strokeStyle='#2f5a48';c.lineWidth=15;c.lineCap='round';c.beginPath();c.moveTo(-110,78);c.bezierCurveTo(-60,124,0,128,48,98);c.bezierCurveTo(80,80,96,72,112,50);c.stroke();}
+  if(o.armlets){c.fillStyle=o.armlets;[-1,1].forEach(sd=>{c.beginPath();c.roundRect(sd*150-18,100,36,18,3);c.fill()})}}
+function crownB(c,hs){c.save();c.translate(0,-24);c.scale(1,hs);c.translate(0,24);c.fillStyle='#e6b84a';c.beginPath();c.moveTo(-26,-24);c.lineTo(-22,-52);c.lineTo(-10,-58);c.lineTo(-5,-96);c.lineTo(0,-128);c.lineTo(5,-96);c.lineTo(10,-58);c.lineTo(22,-52);c.lineTo(26,-24);c.closePath();c.fill();c.fillStyle='#c4882a';c.fillRect(-26,-30,52,7);c.fillStyle='#e0302a';c.beginPath();c.arc(0,-40,4,0,7);c.fill();c.restore()}
+function shivaJataSmall(c,t,rage){c.save();c.translate(0,-30);c.scale(.74,.7);c.translate(0,30);drawJata(c,0,-34,t,rage,0);c.restore()}
+function v2head(who,x,y,s,t,o){ // close-up of the head with neck, shoulders and garments
+  const FR=clamp(s*SC_,2,3.9),RG=[-300,-330,600,520];const c=figBegin(FR,OY,RG);const ex=o.expr||{},kk=ex.brow!=null&&ex.brow<-.2?clamp(-ex.brow*1.1,0,1):0,face=ex.eye!=null&&ex.eye<.5?'closed':'calm';
   c.scale(1.5,1.5);
-  if(who==='shiva'){drawJata(c,0,-34,t,kk>.5,0);drawHead(c,0,0,{expr:face==='closed'?'closed':undefined,k:kk,t:t})}
-  else if(who==='brahma'){const S=BRAHMA;c.save();c.translate(-50,6);c.scale(.8,.8);drawHead(c,0,0,{expr:face,k:kk,S:S,t:t});c.restore();c.save();c.translate(50,6);c.scale(.8,.8);drawHead(c,0,0,{expr:face,k:kk,S:S,t:t});c.restore();drawHead(c,0,0,{expr:face,k:kk,S:S,t:t});
-    c.fillStyle='#e6b84a';c.beginPath();c.moveTo(-26,-24);c.lineTo(-22,-52);c.lineTo(-10,-58);c.lineTo(-5,-96);c.lineTo(0,-128);c.lineTo(5,-96);c.lineTo(10,-58);c.lineTo(22,-52);c.lineTo(26,-24);c.closePath();c.fill()}
-  else{const S=CAST[who];if(S.headType==='horse')horseHead(c,0,10,kk,t);else{if(S.hair&&S.hair.type==='long'){hairBack(c,S,{hd:[0,0],ph:[0,200]},t)}drawHead(c,0,0,{expr:face,k:o.k!=null?o.k:(S.kdef||kk),S:S,t:t});hairFront(c,S,0,0);headgear(c,S,0,0)}}
+  if(who==='shiva'){bust(c,{skin:SH.skin,skinM:SH.skinM,skinD:SH.skinD,skinH:SH.skinH},{beads:true,ash:true,snake:true,armlets:'#e0b04a'});shivaJataSmall(c,t,kk>.5);drawHead(c,0,0,{expr:face==='closed'?'closed':undefined,k:kk,t:t})}
+  else if(who==='brahma'){const S=BRAHMA;bust(c,S,{sash:'#f6f0e0',armlets:'#e0b04a'});
+    const side=(x2)=>{c.save();c.translate(x2,10);c.scale(.8,.8);c.filter='brightness(.8)';drawHead(c,0,0,{expr:face,k:kk,S:S,t:t});crownB(c,.7);c.filter='none';c.restore()};side(-58);side(58);
+    drawHead(c,0,0,{expr:face,k:kk,S:S,t:t});crownB(c,.78)}
+  else if(who==='ardha'||who==='harihara'){const A=CAST[who==='ardha'?'adishakti':'vishnu'];
+    halfHead(c,()=>{bust(c,A,{necklace:A.necklace,garland:who==='harihara',upper:who==='ardha'?'#e0b04a':null});if(A.hair&&A.hair.type==='long')hairBack(c,A,{hd:[0,0],ph:[0,200]},t);drawHead(c,0,0,{expr:face,k:0,S:A,t:t});hairFront(c,A,0,0);headgear(c,A,0,0)},()=>{bust(c,{skin:SH.skin,skinM:SH.skinM,skinD:SH.skinD,skinH:SH.skinH},{beads:true,ash:true,snake:true});shivaJataSmall(c,t,false);drawHead(c,0,0,{expr:face==='closed'?'closed':undefined,k:0,t:t})})}
+  else{const S=CAST[who];if(S.headType==='horse'){bust(c,S,{garland:true,armlets:S.armlet});horseHead(c,0,10,kk,t)}else{
+      bust(c,S,{sash:S.sash&&!S.female?S.sash:null,beads:S.beads,garland:S.garland,necklace:S.necklace,upper:S.upper&&S.upper.col,armlets:S.armlet});
+      if(S.hair&&S.hair.type==='long'){hairBack(c,S,{hd:[0,0],ph:[0,200]},t)}drawHead(c,0,0,{expr:face,k:o.k!=null?o.k:(S.kdef||kk),S:S,t:t});hairFront(c,S,0,0);headgear(c,S,0,0)}}
   figFinish(c,o,x,y,s,FR,OY,RG,.26,.34,false)}
 return {has:w=>V2NAMES.has(w),fig:v2fig,head:v2head,CAST:CAST,poseOf:poseOf,drawHuman:drawHuman,drawBrahmaRig:drawBrahmaRig,drawReclineVishnu:drawReclineVishnu,drawArdha:drawArdha,drawShiva:drawShiva,drawHead:drawHead,drawJata:drawJata,POSES:POSES,mixPose:mixPose,SH:SH};
