@@ -1,0 +1,54 @@
+<!doctype html><meta charset="utf-8"><style>
+@font-face{font-family:NSer;font-weight:600;src:url('../../../node_modules/@fontsource/noto-serif-devanagari/files/noto-serif-devanagari-devanagari-600-normal.woff2')}
+@font-face{font-family:NSer;font-weight:400;src:url('../../../node_modules/@fontsource/noto-serif-devanagari/files/noto-serif-devanagari-devanagari-400-normal.woff2')}
+body{margin:0;background:#15120f}canvas{display:block}</style><canvas id=cv width=2400 height=1500></canvas>
+<script src="shiva_v2.js"></script><script>
+const cv=document.getElementById('cv'),X=cv.getContext('2d');
+function figure(draw,w,h,ox,oy,rim='rgba(255,236,200,.95)',key='255,200,130'){ // canvas with key light + rim outline
+  const F=document.createElement('canvas');F.width=w;F.height=h;const c=F.getContext('2d');c.translate(ox,oy);draw(c);
+  c.setTransform(1,0,0,1,0,0);c.globalCompositeOperation='source-atop';let g=c.createLinearGradient(0,0,w,0);g.addColorStop(0,`rgba(${key},.30)`);g.addColorStop(.55,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(6,8,30,.38)');c.fillStyle=g;c.fillRect(0,0,w,h);
+  g=c.createLinearGradient(0,0,0,h);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(6,8,30,.28)');c.fillStyle=g;c.fillRect(0,0,w,h);c.globalCompositeOperation='source-over';
+  const S=document.createElement('canvas');S.width=w;S.height=h;const s=S.getContext('2d');s.drawImage(F,0,0);s.globalCompositeOperation='source-in';s.fillStyle=rim;s.fillRect(0,0,w,h);
+  const O=document.createElement('canvas');O.width=w;O.height=h;const o=O.getContext('2d');for(let k=0;k<8;k++)o.drawImage(S,Math.cos(k*.785)*2.4,Math.sin(k*.785)*2.4);o.drawImage(F,0,0);return O}
+function bg(){const g=X.createLinearGradient(0,0,0,1500);g.addColorStop(0,'#1d2430');g.addColorStop(.6,'#2a2a2c');g.addColorStop(1,'#14100c');X.fillStyle=g;X.fillRect(0,0,2400,1500);
+  let r=X.createRadialGradient(700,560,40,700,640,900);r.addColorStop(0,'rgba(255,190,110,.20)');r.addColorStop(1,'rgba(0,0,0,0)');X.fillStyle=r;X.fillRect(0,0,2400,1500);
+  r=X.createRadialGradient(1300,600,40,1300,640,800);r.addColorStop(0,'rgba(255,90,50,.16)');r.addColorStop(1,'rgba(0,0,0,0)');X.fillStyle=r;X.fillRect(0,0,2400,1500);
+  X.fillStyle='rgba(255,240,210,.05)';X.fillRect(1560,70,800,1380);X.strokeStyle='rgba(255,220,160,.25)';X.lineWidth=2;X.strokeRect(1560,70,800,1380);
+  X.strokeStyle='rgba(255,220,160,.2)';X.lineWidth=2;X.beginPath();X.moveTo(60,1265);X.lineTo(1530,1265);X.stroke()}
+function txt(s,x,y,size,col='#f4e6c8',al='left',w=600){X.font=`${w} ${size}px NSer, serif`;X.fillStyle=col;X.textAlign=al;X.fillText(s,x,y)}
+function callout(x1,y1,x2,y2,label,sub){X.strokeStyle='rgba(255,220,150,.75)';X.lineWidth=2;X.beginPath();X.moveTo(x1,y1);X.lineTo(x2,y2);X.stroke();X.fillStyle='#ffdc96';X.beginPath();X.arc(x1,y1,5,0,7);X.fill();
+  const left=x2<x1;txt(label,x2+(left?-14:14),y2+8,30,'#ffe9b8',left?'right':'left');if(sub)txt(sub,x2+(left?-14:14),y2+38,22,'#c9b894',left?'right':'left',400)}
+function tw(s,size,w){X.font=`${w} ${size}px NSer, serif`;return X.measureText(s).width}
+function lab(px,py,y,label,sub,ox,oy,S,n){ // numbered marker on the figure + numbered label in the left column
+  const x1=ox+px*S,y1=oy+py*S;X.fillStyle='#ffdc96';X.beginPath();X.arc(x1,y1,16,0,7);X.fill();txt(String(n),x1,y1+7,20,'#241a0c','center');
+  X.fillStyle='#ffdc96';X.beginPath();X.arc(88,y+2,17,0,7);X.fill();txt(String(n),88,y+9,20,'#241a0c','center');
+  txt(label,120,y+8,30,'#ffe9b8');if(sub)txt(sub,120,y+38,22,'#c9b894','left',400)}
+function go(){bg();
+  txt('शिव — चरित्र संदर्भ (v2 मसौदा)',70,110,64,'#ffe9b8');txt('Shiva · character reference · Mahagatha Studio',72,156,28,'#c9b894','left',400);
+  const S=1.22,ox=640,oy=1265;
+  const A=figure(c=>{c.scale(S,S);drawShiva(c,{pose:'calm',t:1.2})},900,1000,450,920);X.drawImage(A,ox-450,oy-920);
+  const B=figure(c=>{c.scale(S,S);drawShiva(c,{pose:'rage',t:1.2})},980,1000,490,920,'rgba(255,170,130,.95)','255,120,70');X.drawImage(B,1230-490,oy-920);
+  txt('शांत रूप',ox,1335,38,'#ffe9b8','center');txt('calm · meditative · default',ox,1375,24,'#c9b894','center',400);
+  txt('रौद्र रूप',1230,1335,38,'#ffe9b8','center');txt('rage · yagna destruction',1230,1375,24,'#c9b894','center',400);
+  lab(-10,-640,230,'जटा · चंद्रमा · गंगा','matted topknot, crescent moon, Ganga',ox,oy,S,1);
+  lab(2,-512,380,'तीसरा नेत्र · त्रिपुंड्र','third eye + three ash lines',ox,oy,S,2);
+  lab(80,-428,530,'वासुकि नाग','serpent around the neck',ox,oy,S,3);
+  lab(-30,-300,680,'रुद्राक्ष माला · भस्म','rudraksha mala, ash on chest',ox,oy,S,4);
+  lab(-10,-190,830,'बाघ-छाल (मुख्य पहचान)','the instant "this is Shiva" cue',ox,oy,S,5);
+  lab(98,-520,980,'त्रिशूल + डमरू','trident with damaru',ox,oy,S,6);
+  const PX=1560;
+  txt('मुख-भाव',PX+30,140,36,'#ffe9b8');
+  [['calm','शांत'],['closed','ध्यान'],['rage','क्रोध']].forEach(([e,n],i)=>{const H=figure(c=>{c.scale(1.5,1.5);drawJata(c,0,-34,1.2,e==='rage');drawHead(c,0,0,{expr:e,t:1});},400,440,200,260,e==='rage'?'rgba(255,170,130,.95)':'rgba(255,236,200,.95)',e==='rage'?'255,120,70':'255,200,130');
+    X.drawImage(H,PX+10+i*262,170,300,330);txt(n,PX+10+i*262+150,525,26,'#ffe9b8','center')});
+  txt('प्रतीक',PX+30,600,36,'#ffe9b8');
+  const T=figure(c=>{c.scale(.62,.62);drawTrishul(c,0,0,300,1,false)},200,560,100,300);X.drawImage(T,PX+20,640,170,480);txt('त्रिशूल',PX+105,1150,26,'#ffe9b8','center');
+  const D=figure(c=>{c.scale(2.4,2.4);drawDamaru(c,0)},340,260,170,130);X.drawImage(D,PX+230,650,300,230);txt('डमरू',PX+380,905,26,'#ffe9b8','center');
+  const N=figure(c=>{c.scale(1.4,1.4);drawSerpentHead(c,1)},260,300,130,170);X.drawImage(N,PX+560,640,230,265);txt('वासुकि',PX+675,925,26,'#ffe9b8','center');
+  const Tg=figure(c=>{c.scale(1.5,1.5);drawTiger(c,0,0,100,0,false)},300,260,150,30);X.drawImage(Tg,PX+230,935,260,225);txt('बाघ-छाल',PX+360,1175,26,'#ffe9b8','center');
+  txt('रंग-पट्टिका',PX+30,1260,32,'#ffe9b8');
+  [[SH.skin,'त्वचा'],[SH.tiger,'बाघ-छाल'],[SH.gold,'स्वर्ण'],[SH.hair,'जटा'],[SH.snake,'नाग'],[SH.water,'गंगा']].forEach(([c,n],i)=>{X.fillStyle=c;X.beginPath();X.roundRect(PX+30+i*128,1280,110,56,8);X.fill();X.strokeStyle='rgba(255,255,255,.3)';X.stroke();txt(n,PX+85+i*128,1366,20,'#c9b894','center',400)});
+  const id=X.getImageData(0,0,2400,1500),d=id.data;let sd=7;for(let i=0;i<d.length;i+=4){sd=(sd*16807)%2147483647;const n=((sd/2147483647)-.5)*14;d[i]+=n;d[i+1]+=n;d[i+2]+=n}X.putImageData(id,0,0);
+  const v=X.createRadialGradient(1200,750,500,1200,750,1500);v.addColorStop(0,'rgba(0,0,0,0)');v.addColorStop(1,'rgba(0,0,0,.45)');X.fillStyle=v;X.fillRect(0,0,2400,1500);
+  document.title='done'}
+document.fonts.load('600 40px NSer').then(()=>document.fonts.load('400 24px NSer')).then(go).catch(e=>{console.error(e);go()});
+</script>
