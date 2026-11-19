@@ -1,0 +1,14 @@
+<!doctype html><meta charset=utf-8><body style="margin:0;background:#3a4054"><canvas id=cv width=2400 height=900></canvas>
+<script src="shiva_v3.js"></script><script>
+const X=document.getElementById('cv').getContext('2d');X.fillStyle='#3a4054';X.fillRect(0,0,2400,900);
+function fig(draw,w,h,ox,oy){const F=document.createElement('canvas');F.width=w;F.height=h;const c=F.getContext('2d');c.translate(ox,oy);draw(c);
+  const S=document.createElement('canvas');S.width=w;S.height=h;const s=S.getContext('2d');s.drawImage(F,0,0);s.globalCompositeOperation='source-in';s.fillStyle='rgba(255,238,205,.95)';s.fillRect(0,0,w,h);
+  const O=document.createElement('canvas');O.width=w;O.height=h;const o=O.getContext('2d');for(let k=0;k<8;k++)o.drawImage(S,Math.cos(k*.785)*2.6,Math.sin(k*.785)*2.6);o.drawImage(F,0,0);return O}
+function tag(t,x,y,col){X.fillStyle=col;X.beginPath();X.roundRect(x,y,t.length*15+30,40,9);X.fill();X.fillStyle='#1c1408';X.font='bold 22px sans-serif';X.fillText(t,x+14,y+27)}
+const A=fig(c=>{c.scale(1.0,1.0);drawShiva3(c,{pose:'calm',closed:true,t:1.2})},700,900,350,860);
+const B=fig(c=>{c.scale(1.0,1.0);drawShiva3(c,{pose:'rage',t:1.2})},800,900,400,860);
+X.drawImage(A,0,0);X.drawImage(B,560,0);tag('OURS (code) calm',20,20,'#78c8ff');tag('OURS (code) rage',580,20,'#78c8ff');
+const g1=new Image(),g2=new Image();let n=0;function done(){if(++n<2)return;
+  [[g1,1240,'GEMINI calm'],[g2,1840,'GEMINI rage']].forEach(([im,x,l])=>{const s=Math.min(560/im.width,840/im.height);X.drawImage(im,x+(580-im.width*s)/2,40+(840-im.height*s)/2,im.width*s,im.height*s);tag(l,x+10,20,'#ffd050')});document.title='done'}
+g1.onload=done;g2.onload=done;g1.src='../../pilot/simple/shiva_calm_cut.png';g2.src='../../pilot/simple/shiva_rage_cut.png';
+</script>
