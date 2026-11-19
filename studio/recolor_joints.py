@@ -43,6 +43,8 @@ def process(k,darken=0.965):
         ca=np.median(rgb[ann],axis=0);new=(ca*darken).clip(0,255)
         mm=((xx-cx)**2+(yy-cy)**2<=(rr)**2)&al&(gg<ca.mean()-12);a[...,:3][mm]=new.astype(np.uint8);n+=1
     Image.fromarray(a,'RGBA').save(src);return n
+if __name__=='__main__' and not os.environ.get('FORCE'):
+    print('joint recolouring is DISABLED (owner decision); set FORCE=1 to run it');sys.exit(0)
 if __name__=='__main__':
     ids=sys.argv[1:] or sorted(os.listdir(P))
     tot=0
