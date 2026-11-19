@@ -3,7 +3,7 @@ usage: recolor_joints.py [id ...]   (default: every character with full.png; wri
 import os,sys,json,shutil,numpy as np,cv2
 from PIL import Image
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));P=R+'/library/puppets/'
-def process(k,darken=0.90):
+def process(k,darken=0.965):
     src=f'{P}{k}/full.png'
     if not os.path.exists(src):return 0
     bak=f'{P}{k}/full_orig.png'
