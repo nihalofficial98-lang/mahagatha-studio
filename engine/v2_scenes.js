@@ -181,3 +181,15 @@ FXV2.clock=function(F,t,P,d,a){ctx.save();ctx.globalAlpha*=a;ctx.translate(F.x,F
   const sh=Math.sin(t*38)*.004*Math.max(0,1-t*2.5); // the hands shudder once, then freeze
   const hand=(an,len,w,col)=>{ctx.strokeStyle=col;ctx.lineWidth=w;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(Math.sin(an+sh)*len,-Math.cos(an+sh)*len);ctx.stroke()};
   hand(-1.05,r*.5,r*.075,'#f0f2ff');hand(1.05,r*.75,r*.055,'#f0f2ff');ctx.fillStyle='#ffd98a';ctx.beginPath();ctx.arc(0,0,r*.07,0,7);ctx.fill();ctx.restore()};
+
+FXV2.skull=function(F,t,P,d,a){ctx.save();ctx.globalAlpha*=a*(F.alpha==null?1:F.alpha);ctx.translate(F.x,F.y);ctx.rotate((F.rot||0)+(F.shiver?Math.sin(t*40)*.01:0));const sc=(F.w||160)/160;ctx.scale(sc,sc);
+  const gl=ctx.createRadialGradient(0,0,10,0,0,170);gl.addColorStop(0,'rgba(255,225,180,'+(F.glow==null?.28:F.glow)+')');gl.addColorStop(1,'rgba(255,225,180,0)');ctx.fillStyle=gl;ctx.beginPath();ctx.arc(0,0,170,0,7);ctx.fill();
+  const bone=ctx.createLinearGradient(-60,-70,60,70);bone.addColorStop(0,'#f4ead4');bone.addColorStop(.6,'#d9c9a6');bone.addColorStop(1,'#b49f78');
+  ctx.fillStyle=bone;ctx.strokeStyle='#5f4d36';ctx.lineWidth=5;ctx.lineJoin='round';
+  ctx.beginPath();ctx.moveTo(-58,-8);ctx.bezierCurveTo(-62,-70,-30,-92,0,-92);ctx.bezierCurveTo(30,-92,62,-70,58,-8);ctx.bezierCurveTo(57,10,46,22,42,34);ctx.lineTo(38,56);ctx.quadraticCurveTo(0,66,-38,56);ctx.lineTo(-42,34);ctx.bezierCurveTo(-46,22,-57,10,-58,-8);ctx.closePath();ctx.fill();ctx.stroke();
+  ctx.fillStyle='#1a1210';[[-26,2],[26,2]].forEach(([x,y])=>{ctx.beginPath();ctx.ellipse(x,y,17,20,x<0?.15:-.15,0,7);ctx.fill()});
+  ctx.beginPath();ctx.moveTo(0,16);ctx.lineTo(-9,34);ctx.quadraticCurveTo(0,38,9,34);ctx.closePath();ctx.fill();
+  ctx.fillStyle='#e9dcc0';ctx.strokeStyle='#5f4d36';ctx.lineWidth=3;ctx.beginPath();ctx.roundRect(-30,44,60,24,7);ctx.fill();ctx.stroke();
+  ctx.strokeStyle='#5f4d36';ctx.lineWidth=2.5;for(let i=-20;i<=20;i+=10){ctx.beginPath();ctx.moveTo(i,45);ctx.lineTo(i,67);ctx.stroke()}ctx.beginPath();ctx.moveTo(-28,56);ctx.lineTo(28,56);ctx.stroke();
+  ctx.strokeStyle='rgba(95,77,54,.7)';ctx.lineWidth=2.5;ctx.beginPath();ctx.moveTo(14,-86);ctx.lineTo(8,-64);ctx.lineTo(18,-50);ctx.stroke();
+  ctx.restore()};

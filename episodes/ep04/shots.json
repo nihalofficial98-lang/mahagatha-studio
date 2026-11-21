@@ -123,14 +123,14 @@
 },
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
-"x": 900,
-"y": 430,
-"w": 210,
+"src": "../library/pilot/assets/head_brahma_cut.png",
+"x": 1011,
+"y": 347,
+"w": 64,
 "alpha": 0.85,
-"par": 1.1,
 "c": 1,
-"d": 0.5
+"d": 0.5,
+"rot": -0.25
 }
 ],
 "fxb": [
@@ -177,16 +177,24 @@
 "bg": {
 "k": "voidR"
 },
-"figs": [],
+"figs": [
+{
+"who": "shiva",
+"x": 708,
+"y": 779,
+"s": 2.6,
+"pose": "idle"
+}
+],
 "fx": [
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
-"x": 640,
-"y": 330,
-"w": 520,
+"src": "../library/pilot/assets/head_brahma_cut.png",
+"x": 568,
+"y": 449,
+"w": 124,
 "alpha": 0.95,
-"par": 1.0
+"rot": 0.25
 },
 {
 "t": "fximg",
@@ -3407,7 +3415,7 @@
 },
 {
 "t": "fximg",
-"src": "../library/pilot/assets/lib_boar_varaha.png",
+"src": "../library/pilot/assets/lib_deer.png",
 "x": 860,
 "y": 520,
 "w": 230,
@@ -4832,16 +4840,24 @@
 "bg": {
 "k": "night"
 },
-"figs": [],
+"figs": [
+{
+"who": "shiva",
+"x": 748,
+"y": 799,
+"s": 2.6,
+"pose": "idle"
+}
+],
 "fx": [
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
-"x": 760,
-"y": 350,
-"w": 300,
+"src": "../library/pilot/assets/head_brahma_cut.png",
+"x": 608,
+"y": 469,
+"w": 124,
 "alpha": 0.9,
-"par": 1.0
+"rot": 0.25
 },
 {
 "t": "fximg",
@@ -4905,14 +4921,14 @@
 "fx": [
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
-"x": 800,
-"y": 520,
-"w": 260,
+"src": "../library/pilot/assets/head_brahma_cut.png",
+"x": 429,
+"y": 484,
+"w": 81,
 "alpha": 0.9,
-"par": 1.1,
 "c": 0,
-"d": 0.6
+"d": 0.6,
+"rot": 0.25
 },
 {
 "t": "glow",
@@ -4970,12 +4986,12 @@
 "fx": [
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
-"x": 820,
-"y": 500,
-"w": 240,
+"src": "../library/pilot/assets/head_brahma_cut.png",
+"x": 407,
+"y": 269,
+"w": 81,
 "alpha": 0.9,
-"par": 1.1
+"rot": 0.25
 },
 {
 "t": "fximg",
@@ -5034,15 +5050,6 @@
 "ga": 0.4,
 "c": 0,
 "d": 2.0
-},
-{
-"t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
-"x": 1000,
-"y": 520,
-"w": 220,
-"alpha": 0.9,
-"par": 1.2
 }
 ],
 "fxb": []
@@ -5321,12 +5328,12 @@
 "fx": [
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
-"x": 820,
-"y": 520,
-"w": 180,
+"src": "../library/pilot/assets/head_brahma_cut.png",
+"x": 560,
+"y": 509,
+"w": 72,
 "alpha": 0.9,
-"par": 1.2
+"rot": 0.25
 },
 {
 "t": "text",
@@ -5648,12 +5655,13 @@
 },
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
+"src": "../library/pilot/assets/head_brahma_cut.png",
 "x": 1050,
 "y": 520,
-"w": 150,
+"w": 110,
 "alpha": 0.8,
-"par": 1.2
+"par": 1.2,
+"rot": 0.35
 }
 ],
 "fxb": []
@@ -5968,12 +5976,12 @@
 },
 {
 "t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
-"x": 900,
-"y": 480,
-"w": 170,
+"src": "../library/pilot/assets/head_brahma_cut.png",
+"x": 566,
+"y": 512,
+"w": 67,
 "alpha": 0.9,
-"par": 1.2
+"rot": 0.25
 }
 ],
 "fxb": [
@@ -6023,13 +6031,21 @@
 "figs": [],
 "fx": [
 {
-"t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
+"t": "skull",
 "x": 640,
 "y": 330,
-"w": 460,
-"alpha": 0.95,
-"par": 1.0
+"w": 368,
+"alpha": 0.8
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/head_brahma_cut.png",
+"x": 640,
+"y": 330,
+"w": 230,
+"alpha": 0.45,
+"par": 1.0,
+"rot": 0.35
 },
 {
 "t": "fximg",
@@ -6089,8 +6105,7 @@
 "figs": [],
 "fx": [
 {
-"t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
+"t": "skull",
 "x": 640,
 "y": 340,
 "w": 420,
@@ -6204,8 +6219,7 @@
 ],
 "fx": [
 {
-"t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
+"t": "skull",
 "x": 850,
 "y": 450,
 "w": 160,
@@ -6402,8 +6416,7 @@
 "figs": [],
 "fx": [
 {
-"t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
+"t": "skull",
 "x": 640,
 "y": 300,
 "w": 260,
@@ -6461,13 +6474,13 @@
 "figs": [],
 "fx": [
 {
-"t": "fximg",
-"src": "../library/pilot/assets/fx_bones.png",
+"t": "skull",
 "x": 640,
 "y": 600,
 "w": 240,
 "alpha": 1,
-"par": 1.0
+"par": 1.0,
+"shiver": true
 },
 {
 "t": "shock",

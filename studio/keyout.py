@@ -3,11 +3,11 @@ Only green regions CONNECTED to the image border are removed, so green parts of 
 import sys,numpy as np,colorsys
 from PIL import Image,ImageFilter
 from scipy import ndimage as ndi
-def key(src,dst,pad=6):
+def key(src,dst,pad=6,hmax=125):
     im=Image.open(src).convert('RGB');a=np.asarray(im).astype(np.float32)/255.0;r,g,b=a[...,0],a[...,1],a[...,2]
     mx=np.maximum(np.maximum(r,g),b);mn=np.minimum(np.minimum(r,g),b);d=mx-mn+1e-6;v=mx;s=d/(mx+1e-6)
     h=np.where(mx==g,60*(2+(b-r)/d),np.where(mx==r,60*(((g-b)/d)%6),60*(4+(r-g)/d)))%360
-    green=(h>55)&(h<125)&(s>0.16)&(v>0.22)&(g>=r)&(g>=b)
+    green=(h>55)&(h<hmax)&(s>0.16)&(v>0.22)&(g>=r)&(g>=b)
     green=np.pad(green,4,mode='edge');green=ndi.binary_closing(green,iterations=2)[4:-4,4:-4]   # pad so closing does not erode the border
     lab,n=ndi.label(green);border=np.unique(np.concatenate([lab[0],lab[-1],lab[:,0],lab[:,-1]]));border=border[border>0]
     bg=np.isin(lab,border)

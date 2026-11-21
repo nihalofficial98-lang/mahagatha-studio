@@ -7,12 +7,13 @@ from shotkit import Film
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));A=R+'/library/pilot/assets/'
 WHO=set('shiva vishnu brahma daksha narada manu adishakti brahmi madhu kaitabha harihara ardha vishnu_rest hayagriva'.split())|{f'rishi{i}' for i in range(7)}
 BGK=set('cel storm voidR night dusk moon palace dawn amber cosmos sea plain yagna kailash garden cosmicsea img'.split())
-FXT=set('text name glow orbs sparkle petals shock flash bolt crack ribbon beam light flames fire pillar infinity scales trident heart tears threads outline egg books gunas element lotus bluemountain waterfront vaikuntha clock dim fximg arrow asuras ban body cycle flame frost icon kids lotusI person vortex'.split())
+FXT=set('text name glow orbs sparkle petals shock flash bolt crack ribbon beam light flames fire pillar infinity scales trident heart tears threads outline egg books gunas element lotus bluemountain waterfront vaikuntha clock dim fximg skull arrow asuras ban body cycle flame frost icon kids lotusI person vortex'.split())
 RESERVED={'id','at','cues','bg','figs','fx','fxb','cam','grade','note','custom','args','len_hint'}
 def norm(w):return re.sub(r'[^\wऀ-ॿ]','',w)
 def ensure_asset(name):
     """make library images available to the engine under library/pilot/assets; returns the engine src path"""
     base=os.path.basename(name)
+    if not base.lower().endswith('.png') and os.path.exists(A+base+'.png'):base=base+'.png'   # an asset already in the engine folder, by bare name
     if not base.lower().endswith('.png'):base=('fx_'+base if not base.startswith(('fx_','lib_','bgp_','bg_')) else base)+'.png'
     dst=A+base
     if not os.path.exists(dst):
