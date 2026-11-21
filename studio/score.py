@@ -37,7 +37,32 @@ def chord_notes(ch,base):
     if m.group(3):ns.append(36+pcof(m.group(3)))
     else:ns.append(rt)
     return ns
+LEMO='/home/user/lemomo-ai/lemo-opuscar'
+try:
+    sys.path.insert(0,LEMO);from core.audio import sampler as SP
+except Exception as e:SP=None
+PROG2NAME={48:'violins',44:'violins_trem',52:'organ_soft',53:'organ_soft',19:'organ',46:'harp',73:'flute',15:'dan_tranh',47:'timpani',58:'tuba',60:'horn',57:'trombone',61:'horn',116:'gran_cassa',104:'dan_tranh',14:'tubular_bells',42:'cellos',43:'contrabass',89:'violas',111:'oboe',24:'guitar_nylon',75:'flute'}
+def sampled_render(pm,tail):
+    ev=[];tot=0.0
+    for ins in pm.instruments:
+        nm=PROG2NAME.get(ins.program)
+        if nm is None:return None
+        for n in ins.notes:
+            m=nm
+            if ins.program==48:m='contrabass' if n.pitch<40 else 'cellos' if n.pitch<57 else 'violins'
+            if ins.program==89:m='cellos' if n.pitch<55 else 'violas'
+            ev.append((float(n.start),m,int(n.pitch),max(.15,float(n.end-n.start)),n.velocity/127.0,0.0));tot=max(tot,n.end)
+    if not ev:return None
+    y=SP.render(ev,dur=tot+tail,master=False);y=np.asarray(y,dtype=np.float32)
+    return y if y.ndim==2 else np.stack([y,y],1)
 def fs_render(pm,tail):
+    if SP is not None and os.environ.get('SCORE_ENGINE','sampled')=='sampled':
+        try:
+            r=sampled_render(pm,tail)
+            if r is not None:return r
+        except Exception as e:print('sampler fallback:',repr(e)[:120])
+    return fs_render_gm(pm,tail)
+def fs_render_gm(pm,tail):
     with tempfile.TemporaryDirectory() as td:
         mid=td+'/a.mid';wav=td+'/a.wav';pm.write(mid)
         subprocess.run(['fluidsynth','-ni','-q','-R','0','-C','0','-g','0.9','-F',wav,'-r',str(SR),SF,mid],check=True,capture_output=True)
@@ -56,6 +81,10 @@ def addp(a,b):
 def stereo(x):return x if x.ndim==2 else np.stack([x,x],1)
 # --- procedural sounds (stereo) ---
 def gong(d=6.0,f=62):
+    if SP is not None and os.environ.get('SCORE_ENGINE','sampled')=='sampled':
+        try:
+            y=np.asarray(SP.hit('gong',None,.9),dtype=np.float32);return stereo(y if y.ndim==1 else y.mean(1))
+        except Exception as e:pass
     n=int(d*SR);t=np.arange(n)/SR;x=sum(a*np.sin(2*np.pi*f*r*t+np.sin(t*3)*0.3)*np.exp(-t*dc) for r,a,dc in[(1,1,.5),(1.52,.7,.7),(2.3,.5,.9),(3.1,.4,1.3),(4.6,.25,1.8)])*np.minimum(1,t*60);return stereo(x*.5)
 def shankh(d,f=146.8):
     n=int(d*SR);t=np.arange(n)/SR;ph=2*np.pi*f*t*(1+.004*np.sin(2*np.pi*5*t))
@@ -178,5 +207,5 @@ def build(ep):
     os.makedirs(f'{Rr}/renders',exist_ok=True)
     def save(x,name):
         wavfile.write(f'/tmp/{name}.wav',SR,(np.clip(x,-1,1)*32767).astype(np.int16));subprocess.run(['ffmpeg','-v','error','-y','-i',f'/tmp/{name}.wav','-b:a','192k',f'{Rr}/renders/{name}.mp3'],check=True)
-    save(mus,f'ep{ep}_score_music_only');save(mix,f'ep{ep}_score_with_voice');print('ok: music',round(len(mus)/SR,1),'s; music RMS during speech is 14 dB under the voice')
+    sfx_=os.environ.get('SCORE_SUFFIX','');save(mus,f'ep{ep}_score{sfx_}_music_only');save(mix,f'ep{ep}_score{sfx_}_with_voice');print('ok: music',round(len(mus)/SR,1),'s; music RMS during speech is 14 dB under the voice')
 if __name__=='__main__':build(sys.argv[1])
