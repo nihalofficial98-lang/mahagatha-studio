@@ -32,3 +32,6 @@ Old literary-style EP4 draft kept as episodes/ep04/script_v1_literary.md.
 
 ## Voice tags (owner's ElevenLabs voice)
 Never use quiet-type tags (hushed, whispers, quiet, soft, low): this voice over-hushes. Use emotion + energy words instead (tense, grave, awed, urgent, stunned, trembling, warm, calm, intense).
+
+## Background music: PAUSED (owner decision, token cost)
+From now on episodes use only the owner's voiceover matched to the video. Do not run the sound-director or the score renderer unless the owner asks again. Tools stay in the repo (studio/score.py, sound-director agent, sampler-based renderer; real-instrument samples via the lemo-opuscar clone).
