@@ -89,6 +89,11 @@ def main():
                     if x.get('t') in('img','image'):x['t']='fximg'
                     if x.get('t') not in FXT:errs.append(f"{sid}: unknown effect '{x.get('t')}'")
                     if x.get('t')=='fximg':x['src']=ensure_asset(x['src'])
+                    if x.get('t')=='threads' and not x.get('to'):errs.append(f"{sid}: 'threads' needs x, y and a 'to' list of [x,y] endpoints")
+                    if x.get('t')=='orbs' and not x.get('items'):errs.append(f"{sid}: 'orbs' needs an 'items' list")
+                    if x.get('t')=='beam' and not x.get('len'):errs.append(f"{sid}: 'beam' needs x, y and len")
+                    if x.get('t')=='infinity' and ('x' not in x or 'y' not in x):errs.append(f"{sid}: 'infinity' needs x and y")
+                    if x.get('t')=='text' and not x.get('s'):errs.append(f"{sid}: 'text' needs 's'")
                     out.append(x)
                 return out
             sc={'bg':bgd,'figs':figs,'fx':fxs(s.get('fx',[])),'fxb':fxs(s.get('fxb',[]))}

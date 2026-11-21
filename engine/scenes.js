@@ -56,7 +56,8 @@ function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.f
   ctx.restore()}
 /* ---------- effects ---------- */
 const FXV2={};
-function drawFx(F,t,P,d){const a=F.c!=null?q(P,t,F.c,F.d||0.5):(F.a??1),k=F.t;if(a<=0.005&&k!=='orbs'&&k!=='shock')return;if(FXV2[k]){FXV2[k](F,t,P,d,a);return}
+function drawFx(F,t,P,d){try{drawFx0(F,t,P,d)}catch(e){(window.FX_ERRORS=window.FX_ERRORS||[]);const m=(F&&F.t)+': '+e.message;if(window.FX_ERRORS.indexOf(m)<0)window.FX_ERRORS.push(m)}}
+function drawFx0(F,t,P,d){const a=F.c!=null?q(P,t,F.c,F.d||0.5):(F.a??1),k=F.t;if(a<=0.005&&k!=='orbs'&&k!=='shock')return;if(FXV2[k]){FXV2[k](F,t,P,d,a);return}
   if(k==='text')stext(F.s,F.x,F.y,F.size||50,F.col||'#ffe9b8',a*(F.fade!=null?1-q(P,t,F.fade,0.5):1),F.w||700,'center',F.glow);
   else if(k==='name')pill(F.s,F.x,F.y,a*(F.fade!=null?1-q(P,t,F.fade,0.5):1),F.col,F.size||32);
   else if(k==='flames'){ctx.save();ctx.globalAlpha*=a;flamesF(F.x,F.y,F.sc||1,t,F.n||8,F.c1,F.c2);ctx.restore()}

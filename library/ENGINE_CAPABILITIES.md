@@ -46,3 +46,9 @@ limb-animated walking, multi-view (side/back) characters, lip-sync, true 3D, wat
 } ] }
 ```
 Image effects: `"t":"img","src":"<name>"` where name is any library/fx image (e.g. `fire_tall`), `lib_<character>` (cut-out) or `bgp_<background>`; the builder copies it into the engine automatically. `par` = parallax depth (0.1–0.3 far sky, 0.5–0.8 mid set pieces, 1.0 actors, 1.3–1.6 foreground). Every beat needs a shot at its start. Hand-coded exceptions: write a function in `episodes/epNN/custom_shots.py` that returns the engine scene dict `{bg,figs,fx,fxb}` and reference it with `custom`.
+
+## Required parameters of effects that crash or vanish without them (builder now checks the first three)
+- `threads`: `x`,`y` (start) and `to`: [[x,y],...] (end points); optional `rgb`, `bend`. `orbs`: `items`: [{`c` (cue index), `x0`,`y0`,`x1`,`y1`, `r`, `rgb`, `dur`, `arc`, `keep`}]. `beam`: `x`,`y`,`len` (a vertical light column rising from the point), optional `w`. `infinity`: `x`,`y`, `c`,`d`.
+- `text`: `s`,`x`,`y`,`size`,`c`,`d`. `name`: `s`,`x`,`y`. `glow`: `x`,`y`,`r`,`rgb`,`ga`. `shock`: `x`,`y`,`c`,`rgb`,`max`. `flash`: `c`,`w`,`rgb`. `sparkle`: `x`,`y`,`n`,`rx`,`ry`.
+- Image effects (`fximg`): `alpha` is the MAXIMUM opacity reached after the fade-in (`c`/`d`); never give a fade-in an `alpha` of 0.
+- Known weak library images (visible rectangles or odd scale): `mountain_peak` (has a box background), `stars_gold_big` (huge at w>400), flower/petal clusters over w>700. Prefer `star_field`, `halo_ring`, `divine_rays`, `cloud_*`.
