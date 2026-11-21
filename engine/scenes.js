@@ -42,12 +42,16 @@ const BG={
 };
 /* ---------- figures ---------- */
 function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.fo!=null?1-q(P,t,f.fo,f.fd||1.2):1);if(a<=0.01)return;const ex=f.exprB?lerpO(f.expr,f.exprB,q(P,t,f.ec,0.4)):(f.expr||{});
-  const x=f.x+(f.vx||0)*t,y=f.y+(f.vy||0)*t,s=f.s*(1+(f.ds||0)*t);ctx.save();ctx.globalAlpha*=a;if(f.dark!=null)ctx.filter=`brightness(${f.dark})`;
+  const x=f.x+(f.vx||0)*t,y=f.y+(f.vy||0)*t,s=f.s*(1+(f.ds||0)*t);ctx.save();ctx.globalAlpha*=a;if(f.mx||f.my){const m=q(P,t,f.mc||0,f.md||1.2);ctx.translate((f.mx||0)*m,(f.my||0)*m)}
+  if(f.bow){const bb=q(P,t,f.bc||0,f.bd||0.8);ctx.translate(x,y);ctx.rotate(f.bow*bb);ctx.translate(-x,-y)}
+  if(f.kneel){const kk=q(P,t,f.kc||0,f.kd||0.6)*f.kneel;ctx.translate(x,y);ctx.scale(1,1-kk*0.3);ctx.translate(-x,-y)}
+  let HD=null;if(f.hd){HD={};['l','r','t','b'].forEach(k=>{const v=f.hd[k];HD[k]=v==null?0:(typeof v==='number'?v:q(P,t,v.c||0,v.d||0.7))})}
+  if(f.dark!=null)ctx.filter=`brightness(${f.dark})`;
   const o={pose:f.pose||'stand',expr:ex,flip:f.flip||1,key:f.key||'255,214,160',rim:f.rim||'rgba(255,238,210,.95)',lx:f.lx??-1,tail:f.tail!==false};
   if(f.aura)glow(x,y-130*s,260*s,f.aura,0.5);
   if(f.who==='shiva_p')drawShivaP(f,x,y,s,t,P);
   else if(f.who==='img')IMGFIG(f,x,y,s,t);
-  else if(V2.has(f.who)){const vo={pose:f.pose,expr:ex,flip:o.flip,key:o.key,rim:o.rim,lx:o.lx,k:f.k,prop:f.prop,imp:f.imp};
+  else if(V2.has(f.who)){const vo={pose:f.pose,expr:ex,flip:o.flip,key:o.key,rim:o.rim,lx:o.lx,k:f.k,prop:f.prop,imp:f.imp,hd:HD};
     if(f.head)V2.head(f.who,x,y,s,t,vo);else{if(f.who==='brahma'&&f.lotus!==false)lotus(x,y+22*s,s*1.25,t,1);V2.fig(f.who,x,y,s,t,vo)}}
   else if(f.who==='brahma')drawBrahma(x,y,s,t,{aura:null,expr:ex,key:o.key,rim:o.rim,lx:o.lx,lotus:f.lotus!==false});
   else if(f.who==='bull'){const b0=f.la0||[1,1,1,1],la=[b0[0],b0[1]*(f.l1==null?1:1-q(P,t,f.l1,0.9)),b0[2]*(f.l2==null?1:1-q(P,t,f.l2,0.9)),b0[3]*(f.l3==null?1:1-q(P,t,f.l3,0.9))];drawBull(x,y,s,t,{key:o.key,rim:o.rim,la:la,bow:(f.bow||0)*q(P,t,f.bc,1.2)})}

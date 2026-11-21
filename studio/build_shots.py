@@ -89,6 +89,8 @@ def main():
                     x=dict(x)
                     if x.get('t') in('img','image'):x['t']='fximg'
                     if x.get('t') not in FXT:errs.append(f"{sid}: unknown effect '{x.get('t')}'")
+                    _src=str(x.get('src','')).lower()
+                    if x.get('t') in('heart','sparkle','stars','star_field') or any(w in _src for w in('heart','star','sparkle')):errs.append(f"{sid}: BANNED effect/image '{x.get('t')} {x.get('src','')}' (owner rule: no hearts, stars or sparkles)")
                     if x.get('t')=='fximg':x['src']=ensure_asset(x['src'])
                     if x.get('t')=='threads' and not x.get('to'):errs.append(f"{sid}: 'threads' needs x, y and a 'to' list of [x,y] endpoints")
                     if x.get('t')=='orbs' and not x.get('items'):errs.append(f"{sid}: 'orbs' needs an 'items' list")
@@ -103,6 +105,17 @@ def main():
             for e in('from','to'):
                 c=cam.get(e,{})
                 if not .9<=c.get('z',1)<=3.1 or abs(c.get('x',0))>220 or abs(c.get('y',0))>220 or abs(c.get('r',0))>.08:warns.append(f"{sid}: camera '{e}' looks extreme {c}")
+        if 'sc' in dir() and isinstance(sc,dict) and sc.get('figs') is not None:
+            for ff in sc['figs']:
+                if ff.get('who') in (None,'img'):continue
+                fs=ff.get('s',1);fx0,fy0=ff.get('x',640),ff.get('y',500)
+                if ff.get('head'):cy=fy0;top=fy0-104*fs;chin=fy0+75*fs
+                else:cy=fy0-300*fs;top=cy-105*fs;chin=cy+55*fs
+                for e in((cam or {}).get('from',{}),(cam or {}).get('to',{})) if cam else [{}]:
+                    z=e.get('z',1);sh=abs(e.get('y',0))
+                    t_=360+(top-360)*z-sh;c_=360+(chin-360)*z+sh;cx_=640+(fx0-640)*z
+                    if t_<2 or c_>640 or cx_<20 or cx_>1260:
+                        errs.append(f"{sid}: FACE CROPPED '{ff.get('who')}' (x={fx0}, y={fy0}, s={fs}, head={bool(ff.get('head'))}): crown at {t_:.0f}, chin at {c_:.0f} on a 720-high frame. Move the figure so the whole face is visible above the subtitles.");break
         ncue=len(s.get('cues') or [])
         for x in (sc.get('fx',[])+sc.get('fxb',[])):
             if isinstance(x,dict) and x.get('c') is not None and x['c']>=ncue:warns.append(f"{sid}: effect '{x.get('t')}' fades in on cue c={x['c']} but the shot lists {ncue} cue word(s): it will stay invisible. Add the cue word to 'cues' (or drop 'c').")

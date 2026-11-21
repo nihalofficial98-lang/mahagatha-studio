@@ -189,7 +189,14 @@ function drawBrahmaRig(c,o){const t=o.t||0,k=o.k||0,br=Math.sin(t*1.7)*2,S=BRAHM
   const head=(x,y,s,dark)=>{c.save();c.translate(x,y);c.scale(s,s);if(dark){c.filter='brightness(.8)'}drawHead(c,0,0,{expr:o.expr||'calm',k:k,S:S,t:t});
     c.fillStyle='#e6b84a';c.beginPath();c.moveTo(-26,-24);c.lineTo(-22,-52);c.lineTo(-10,-58);c.lineTo(-5,-96);c.lineTo(0,-128);c.lineTo(5,-96);c.lineTo(10,-58);c.lineTo(22,-52);c.lineTo(26,-24);c.closePath();c.fill();c.fillStyle='#c4882a';c.fillRect(-26,-30,52,7);c.fillStyle='#e0302a';c.beginPath();c.arc(0,-40,4,0,7);c.fill();c.filter='none';c.restore()};
   c.fillStyle=S.skinM;c.fillRect(-14,-290+br,28,50);
-  head(-62,-286+br,.84,true);head(62,-286+br,.84,true);head(0,-292+br,1.04,false);
+  const H=o.hd,ez=v=>v*v*(3-2*v);
+  if(!H){head(-62,-286+br,.84,true);head(62,-286+br,.84,true);head(0,-292+br,1.04,false)}
+  else{ // faces sprout one by one: back, left, right, then a fifth on top; the front face is always there
+    if(H.b>.01)head(0,-300+br,.9*ez(H.b),true);
+    if(H.l>.01)head(-22-40*ez(H.l),-286+br,.84*ez(H.l),true);
+    if(H.r>.01)head(22+40*ez(H.r),-286+br,.84*ez(H.r),true);
+    head(0,-292+br,1.04,false);
+    if(H.t>.01)head(0,-396+br-20*(1-ez(H.t)),.74*ez(H.t),false)}
   c.restore()}
 
 /* ---------- Shesha: olive-khaki serpent coiled into a nest, five real snake heads rising behind Vishnu ---------- */
@@ -287,7 +294,7 @@ function v2fig(who,x,y,s,t,o){
   const c=figBegin(FR,OY,RG);if(o.flip<0)c.scale(-1,1);c.scale(sc,sc);
   const ex=o.expr||{},kk=o.k!=null?o.k:(ex.brow!=null&&ex.brow<-.2?clamp(-ex.brow*1.1,0,1):0),face=ex.eye!=null&&ex.eye<.5?'closed':'calm';
   if(who==='shiva'){const pn=o.pose==='rage'||o.pose==='lunge'?'rage':'calm',P=mixPose(POSES.calm,POSES.rage,pn==='rage'?1:0);drawShiva(c,{P:P,t:t,rage:kk>.5,k:kk,expr:face==='closed'?'closed':undefined,imp:o.imp||0})}
-  else if(who==='brahma')drawBrahmaRig(c,{t:t,k:kk,expr:face});
+  else if(who==='brahma')drawBrahmaRig(c,{t:t,k:kk,expr:face,hd:o.hd});
   else if(who==='vishnu_rest')drawReclineVishnu(c,{t:t});
   else if(who==='ardha')drawArdha(c,{t:t});
   else if(who==='harihara')drawHarihara(c,{t:t});
