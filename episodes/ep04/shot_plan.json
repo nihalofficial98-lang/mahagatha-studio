@@ -5071,9 +5071,24 @@
    "fxb": [],
    "fx": [
     {
-     "t": "scales",
-     "x": 520,
-     "y": 300
+     "t": "fximg",
+     "src": "red_energy_pulse",
+     "x": 848,
+     "y": 571,
+     "w": 230,
+     "alpha": 0.9,
+     "blend": "lighter",
+     "c": 0,
+     "d": 1.0
+    },
+    {
+     "t": "fximg",
+     "src": "head_brahma_cut",
+     "x": 854,
+     "y": 585,
+     "w": 43,
+     "rot": 0.25,
+     "alpha": 1.0
     }
    ],
    "cam": {
@@ -5092,7 +5107,10 @@
    },
    "grade": "night",
    "shake": 0,
-   "note": "Scales of justice tip against Shiva: the punishment as symbol, pull-out"
+   "note": "A red pulse of consequence around the hand that holds the head: this is the punishment for the sin",
+   "cues": [
+    "यह"
+   ]
   },
   {
    "id": "s075",
@@ -5607,7 +5625,27 @@
     "word": "ब्रह्मांड"
    },
    "bg": "cosmos",
-   "figs": [],
+   "figs": [
+    {
+     "who": "brahma",
+     "x": 380,
+     "y": 650,
+     "s": 0.7
+    },
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 650,
+     "s": 0.7,
+     "pose": "idle"
+    },
+    {
+     "who": "vishnu",
+     "x": 900,
+     "y": 650,
+     "s": 0.7
+    }
+   ],
    "fxb": [
     {
      "t": "img",
@@ -5618,23 +5656,48 @@
      "alpha": 0.6,
      "blend": "lighter",
      "par": 0.15
+    },
+    {
+     "t": "fximg",
+     "src": "halo_ring",
+     "x": 380,
+     "y": 470,
+     "w": 230,
+     "alpha": 0.9,
+     "blend": "lighter",
+     "spin": 0.15
+    },
+    {
+     "t": "fximg",
+     "src": "halo_ring",
+     "x": 640,
+     "y": 385,
+     "w": 230,
+     "alpha": 0.9,
+     "blend": "lighter",
+     "spin": 0.15
+    },
+    {
+     "t": "fximg",
+     "src": "halo_ring",
+     "x": 900,
+     "y": 425,
+     "w": 230,
+     "alpha": 0.9,
+     "blend": "lighter",
+     "spin": 0.15
     }
    ],
    "fx": [
-    {
-     "t": "scales",
-     "x": 640,
-     "y": 320
-    },
     {
      "t": "img",
      "src": "magic_circle",
      "x": 640,
      "y": 320,
      "w": 800,
-     "alpha": 0.3,
+     "alpha": 0.55,
      "blend": "lighter",
-     "spin": 0.03,
+     "spin": 0.12,
      "par": 0.4
     }
    ],
@@ -5654,7 +5717,7 @@
    },
    "grade": "cel",
    "shake": 0,
-   "note": "Cosmic scales hold equal: the same law for all"
+   "note": "The same law for all: Brahma, Shiva and Vishnu stand equal under identical rings while the cosmic circle turns behind them"
   },
   {
    "id": "s084",

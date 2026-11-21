@@ -5155,14 +5155,31 @@
 ],
 "fx": [
 {
-"t": "scales",
-"x": 520,
-"y": 300
+"t": "fximg",
+"src": "../library/pilot/assets/fx_red_energy_pulse.png",
+"x": 848,
+"y": 571,
+"w": 230,
+"alpha": 0.9,
+"blend": "lighter",
+"c": 0,
+"d": 1.0
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/head_brahma_cut.png",
+"x": 854,
+"y": 585,
+"w": 43,
+"rot": 0.25,
+"alpha": 1.0
 }
 ],
 "fxb": []
 },
-"cues": null,
+"cues": [
+"यह"
+],
 "shake": 0
 },
 {
@@ -5695,22 +5712,37 @@
 "bg": {
 "k": "cosmos"
 },
-"figs": [],
-"fx": [
+"figs": [
 {
-"t": "scales",
-"x": 640,
-"y": 320
+"who": "brahma",
+"x": 380,
+"y": 650,
+"s": 0.7
 },
+{
+"who": "shiva",
+"x": 640,
+"y": 650,
+"s": 0.7,
+"pose": "idle"
+},
+{
+"who": "vishnu",
+"x": 900,
+"y": 650,
+"s": 0.7
+}
+],
+"fx": [
 {
 "t": "fximg",
 "src": "../library/pilot/assets/fx_magic_circle.png",
 "x": 640,
 "y": 320,
 "w": 800,
-"alpha": 0.3,
+"alpha": 0.55,
 "blend": "lighter",
-"spin": 0.03,
+"spin": 0.12,
 "par": 0.4
 }
 ],
@@ -5724,6 +5756,36 @@
 "alpha": 0.6,
 "blend": "lighter",
 "par": 0.15
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_halo_ring.png",
+"x": 380,
+"y": 470,
+"w": 230,
+"alpha": 0.9,
+"blend": "lighter",
+"spin": 0.15
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_halo_ring.png",
+"x": 640,
+"y": 385,
+"w": 230,
+"alpha": 0.9,
+"blend": "lighter",
+"spin": 0.15
+},
+{
+"t": "fximg",
+"src": "../library/pilot/assets/fx_halo_ring.png",
+"x": 900,
+"y": 425,
+"w": 230,
+"alpha": 0.9,
+"blend": "lighter",
+"spin": 0.15
 }
 ]
 },
