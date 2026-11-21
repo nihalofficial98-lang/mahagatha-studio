@@ -190,7 +190,7 @@ function drawBrahmaRig(c,o){const t=o.t||0,k=o.k||0,br=Math.sin(t*1.7)*2,S=BRAHM
     c.fillStyle='#e6b84a';c.beginPath();c.moveTo(-26,-24);c.lineTo(-22,-52);c.lineTo(-10,-58);c.lineTo(-5,-96);c.lineTo(0,-128);c.lineTo(5,-96);c.lineTo(10,-58);c.lineTo(22,-52);c.lineTo(26,-24);c.closePath();c.fill();c.fillStyle='#c4882a';c.fillRect(-26,-30,52,7);c.fillStyle='#e0302a';c.beginPath();c.arc(0,-40,4,0,7);c.fill();c.filter='none';c.restore()};
   c.fillStyle=S.skinM;c.fillRect(-14,-290+br,28,50);
   const H=o.hd,ez=v=>v*v*(3-2*v);
-  if(!H){head(-62,-286+br,.84,true);head(62,-286+br,.84,true);head(0,-292+br,1.04,false)}
+  if(!H){head(0,-352+br,.7,true);head(-62,-286+br,.84,true);head(62,-286+br,.84,true);head(0,-292+br,1.04,false)}   // four-faced: back face peeks above, two side faces, front face
   else{ // faces sprout one by one: back, left, right, then a fifth on top; the front face is always there
     if(H.b>.01)head(0,-300+br,.9*ez(H.b),true);
     if(H.l>.01)head(-22-40*ez(H.l),-286+br,.84*ez(H.l),true);
