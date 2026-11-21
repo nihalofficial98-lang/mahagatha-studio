@@ -3,24 +3,24 @@ python3 studio/vo_script.py 04"""
 import re,sys,os
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TAGS={'04':{
-1:['fast, shocking, hushed intensity','low, grave, slow-burning','dark, mysterious, building curiosity'],
-2:['calm, measured, storyteller','ominous, quiet, dread under the words; the quoted curse slow and cold','grave, firm, weight on every word'],
-3:['soft, tense, unease building','cold, hollow, heavy','alarmed, quick breath, then tense','slow, awed, shaken disbelief'],
-4:['fast, rising panic','hushed, stunned, one beat of silence','urgent, pleading, worried (the sages speaking)','heavy, defeated, quiet'],
+1:['fast, shocking, intense','deep, grave, slow-burning','dark, mysterious, building curiosity'],
+2:['calm, measured, storyteller','ominous, dread under the words; the quoted curse slow and cold','grave, firm, weight on every word'],
+3:['tense, unease building','cold, hollow, heavy','alarmed, quick breath, then tense','slow, awed, shaken disbelief'],
+4:['fast, rising panic','stunned, shaken, one beat of silence','urgent, pleading, worried (the sages speaking)','heavy, defeated'],
 5:['fast, breathless, chase','quick, dramatic, rhythmic list','steady, wide, awed list','light surprise, curious, then a calm reveal of the name'],
 6:['sudden, powerful, burning anger','tense, then softening into shame and pleading','harsh, final, cold fury','stern, thundering judgement (Shiva speaking)','calm, explanatory, settling'],
 7:['slow, uneasy, discovery','tense then grave, realisation sinking in'],
 8:['thoughtful, questioning, gentle','calm, wise, measured (Atri explaining)'],
-9:['sad, weary, slow','awed, quiet, wondering, the miracle','relieved, reverent, glowing'],
-10:['soft, tender, concerned','trembling, fearful, near tears (her words)','heavy silence, then a fragile voice'],
-11:['trembling, pained, slow','pained, slower','pained, voice breaking','despairing, fading','whispers, broken, almost crying'],
+9:['sad, weary, slow','awed, wondering, the miracle','relieved, reverent, glowing'],
+10:['tender, concerned','trembling, fearful, near tears (her words)','heavy pause, then a fragile voice'],
+11:['trembling, pained, slow','pained, slower','pained, voice breaking','despairing, fading','broken, trembling, almost crying'],
 12:['light, shift of tone, storyteller','surprised, proud, a little boastful (Narada)','calm, knowing smile (Vishnu)','curious, eager (Narada)','gentle, playful, hinting (Vishnu)'],
-13:['soft, dreamy, drawn in','warm, quick, almost carried away'],
+13:['dreamy, drawn in','warm, quick, almost carried away'],
 14:['warm, gentle, time flowing, happy'],
-15:['sudden, dark, alarming','shocked, helpless, rushed, then a dazed hush'],
-16:['calm, simple, quietly devastating','stunned, shaky, disbelieving','sharp, sinking realisation','slow, hushed, deeply moved'],
-17:['gentle, wise, smiling','calm, teaching, measured','soft, final, serene'],
-18:['quiet, thoughtful, widening awe','playful, ominous smile, light warning'],
+15:['sudden, dark, alarming','shocked, helpless, rushed, then dazed and stunned'],
+16:['calm, simple, quietly devastating','stunned, shaky, disbelieving','sharp, sinking realisation','slow, deeply moved, heavy'],
+17:['gentle, wise, smiling','calm, teaching, measured','calm, final, serene'],
+18:['thoughtful, widening awe','playful, ominous smile, light warning'],
 19:['warm, direct to the audience, friendly question','calm, warm, inviting teaser']}}
 def main():
     ep=sys.argv[1];src=open(f'{R}/episodes/ep{ep}/script.md',encoding='utf-8').read().split('\n');T=TAGS[ep];blocks={};cur=None

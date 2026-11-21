@@ -29,3 +29,6 @@ The scene-director agent (`.claude/agents/scene-director.md`) writes the shot br
 - Build in steps; each step answers the previous one and opens the next.
 - End with the payoff, then one question to the audience, then the teaser.
 Old literary-style EP4 draft kept as episodes/ep04/script_v1_literary.md.
+
+## Voice tags (owner's ElevenLabs voice)
+Never use quiet-type tags (hushed, whispers, quiet, soft, low): this voice over-hushes. Use emotion + energy words instead (tense, grave, awed, urgent, stunned, trembling, warm, calm, intense).
