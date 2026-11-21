@@ -53,8 +53,12 @@ def sampled_render(pm,tail):
             if ins.program==89:m='cellos' if n.pitch<55 else 'violas'
             ev.append((float(n.start),m,int(n.pitch),max(.15,float(n.end-n.start)),n.velocity/127.0,0.0));tot=max(tot,n.end)
     if not ev:return None
-    y=SP.render(ev,dur=tot+tail,master=False);y=np.asarray(y,dtype=np.float32)
-    return y if y.ndim==2 else np.stack([y,y],1)
+    y=SP.render(ev,dur=tot+tail,master=False);y=np.asarray(y,dtype=np.float32);y=y if y.ndim==2 else np.stack([y,y],1)
+    sr=getattr(SP,'SR',48000)
+    if sr!=SR:
+        import soxr;y=soxr.resample(y,sr,SR).astype(np.float32)
+    globals()['USED_SAMPLER']=True
+    return y
 def fs_render(pm,tail):
     if SP is not None and os.environ.get('SCORE_ENGINE','sampled')=='sampled':
         try:
@@ -83,7 +87,11 @@ def stereo(x):return x if x.ndim==2 else np.stack([x,x],1)
 def gong(d=6.0,f=62):
     if SP is not None and os.environ.get('SCORE_ENGINE','sampled')=='sampled':
         try:
-            y=np.asarray(SP.hit('gong',None,.9),dtype=np.float32);return stereo(y if y.ndim==1 else y.mean(1))
+            y=np.asarray(SP.hit('gong',None,.9),dtype=np.float32);y=y if y.ndim==1 else y.mean(1)
+            sr=getattr(SP,'SR',48000)
+            if sr!=SR:
+                import soxr;y=soxr.resample(y,sr,SR).astype(np.float32)
+            globals()['USED_SAMPLER']=True;return stereo(y)
         except Exception as e:pass
     n=int(d*SR);t=np.arange(n)/SR;x=sum(a*np.sin(2*np.pi*f*r*t+np.sin(t*3)*0.3)*np.exp(-t*dc) for r,a,dc in[(1,1,.5),(1.52,.7,.7),(2.3,.5,.9),(3.1,.4,1.3),(4.6,.25,1.8)])*np.minimum(1,t*60);return stereo(x*.5)
 def shankh(d,f=146.8):
@@ -176,16 +184,21 @@ def build(ep):
         for w in t['words']:sp[int((off+w['start'])*SR):int((off+w['end'])*SR)]=1
         off+=t['duration']
     k_=np.ones(int(.35*SR))/int(.35*SR);spd=np.convolve(sp,k_,'same');spd=np.minimum(1,spd*1.6)
+    msamp=np.zeros((n,2),np.float32);mproc=np.zeros((n,2),np.float32)
     for c in cues['cues']:
+        globals()['USED_SAMPLER']=False
         r=render_cue(c,key,sp)
         if r is None:continue
-        a,x=r;i=int(a*SR);j=min(n,i+len(x));mus[i:j]+=x[:j-i]
+        a,x=r;i=int(a*SR);j=min(n,i+len(x));tgt=msamp if globals().get('USED_SAMPLER') else mproc;tgt[i:j]+=x[:j-i]
+    rms=lambda y:20*np.log10(np.sqrt((y**2).mean())+1e-9)
+    print('bus levels before mixing (dBFS RMS): real instruments %.1f | synthesized layers %.1f'%(rms(msamp),rms(mproc)))
+    gs=float(os.environ.get('SAMPLED_GAIN','1.0'));gp=float(os.environ.get('PROC_GAIN','0.7'));mus=msamp*gs+mproc*gp
     # reverb on the music bus
     ir=(np.random.default_rng(4).standard_normal(int(2.4*SR))*np.exp(-np.arange(int(2.4*SR))/SR*2.0)*.01)
     wet=np.stack([oaconvolve(mus[:,ch],ir,mode='full')[:n] for ch in(0,1)],1);mus=mus+.7*wet
     # voice-pocket ducking: 3 bands, mids ducked harder while the voice speaks
     lo=lp(mus,220);hi=hp(mus,4200);mid=mus-lo-hi
-    g_mid=1-spd*(1-10**(-9/20));g_edge=1-spd*(1-10**(-4/20));mus=lo*g_edge[:,None]+hi*g_edge[:,None]+mid*g_mid[:,None]
+    g_mid=1-spd*(1-10**(-6/20));g_edge=1-spd*(1-10**(-3/20));mus=lo*g_edge[:,None]+hi*g_edge[:,None]+mid*g_mid[:,None]
     # explicit silences (also kills reverb tails)
     g=np.ones(n)
     for c in cues['cues']:
@@ -201,11 +214,11 @@ def build(ep):
     sr,v=wavfile.read(vf);v=v.astype(np.float32)/32768.0
     vv=np.zeros((n,2),np.float32);m=min(n,len(v));vv[:m]=v[:m]
     mask=sp>0;rv=np.sqrt((vv[mask]**2).mean()) if mask.any() else .1;rm=np.sqrt((mus[mask]**2).mean())+1e-6
-    kk=rv*10**(-14/20)/rm;mus=mus*kk
+    kk=rv*10**(-10/20)/rm;mus=mus*kk
     pk=np.abs(mus).max();mix=mus+vv;mx=np.abs(mix).max()
     gfin=.62/mx;mix*=gfin;mus*=gfin   # normalise the whole mix to a healthy level (peak 0.9)
     os.makedirs(f'{Rr}/renders',exist_ok=True)
     def save(x,name):
         wavfile.write(f'/tmp/{name}.wav',SR,(np.clip(x,-1,1)*32767).astype(np.int16));subprocess.run(['ffmpeg','-v','error','-y','-i',f'/tmp/{name}.wav','-b:a','192k',f'{Rr}/renders/{name}.mp3'],check=True)
-    sfx_=os.environ.get('SCORE_SUFFIX','');save(mus,f'ep{ep}_score{sfx_}_music_only');save(mix,f'ep{ep}_score{sfx_}_with_voice');print('ok: music',round(len(mus)/SR,1),'s; music RMS during speech is 14 dB under the voice')
+    sfx_=os.environ.get('SCORE_SUFFIX','');save(mus,f'ep{ep}_score{sfx_}_music_only');save(mix,f'ep{ep}_score{sfx_}_with_voice');print('ok: music',round(len(mus)/SR,1),'s; music RMS during speech is 10 dB under the voice')
 if __name__=='__main__':build(sys.argv[1])
