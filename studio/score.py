@@ -174,7 +174,7 @@ def build(ep):
     mask=sp>0;rv=np.sqrt((vv[mask]**2).mean()) if mask.any() else .1;rm=np.sqrt((mus[mask]**2).mean())+1e-6
     kk=rv*10**(-14/20)/rm;mus=mus*kk
     pk=np.abs(mus).max();mix=mus+vv;mx=np.abs(mix).max()
-    gfin=.9/mx;mix*=gfin;mus*=gfin   # normalise the whole mix to a healthy level (peak 0.9)
+    gfin=.62/mx;mix*=gfin;mus*=gfin   # normalise the whole mix to a healthy level (peak 0.9)
     os.makedirs(f'{Rr}/renders',exist_ok=True)
     def save(x,name):
         wavfile.write(f'/tmp/{name}.wav',SR,(np.clip(x,-1,1)*32767).astype(np.int16));subprocess.run(['ffmpeg','-v','error','-y','-i',f'/tmp/{name}.wav','-b:a','192k',f'{Rr}/renders/{name}.mp3'],check=True)
