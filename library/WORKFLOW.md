@@ -20,3 +20,12 @@ The scene-director agent (`.claude/agents/scene-director.md`) writes the shot br
 - No recap lines ("last time…"). Open directly on a hook: 3–4 punchy lines that promise the strangest/most shocking parts of THIS story, then one short context beat that introduces the characters for a first-time viewer.
 - The series continuity lives only in the end teaser.
 - With every script, also give 8–10 YouTube hook-title options (Hindi + Hinglish/English), grouped by angle (shock, mystery, question), plus a thumbnail text idea.
+
+## Script style (owner's reference: two explainer-style videos, from EP4 on)
+- Cold-open hook that leaves a question open (what happened / who said what / what it cost), in 2–3 plain sentences. No recap, no greeting, no channel or source mentions, no verse/chapter citations.
+- Then give the stakes and just enough context in simple words so the video stands alone.
+- Spoken, conversational Hindi: short sentences mixed with longer ones; turns like "पर…", "और यहाँ एक दिलचस्प बात है…", "अब सोचिए…", "याद रखिए…"; pose the obvious question and then answer it.
+- Concrete, memorable details (numbers, names, what exactly happened) and callbacks to things the viewer already knows (why Brahma has four faces, Kashi, etc.).
+- Build in steps; each step answers the previous one and opens the next.
+- End with the payoff, then one question to the audience, then the teaser.
+Old literary-style EP4 draft kept as episodes/ep04/script_v1_literary.md.
