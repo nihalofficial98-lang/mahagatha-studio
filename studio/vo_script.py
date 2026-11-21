@@ -8,7 +8,7 @@ TAGS={'04':{
 3:['tense, unease building','cold, hollow, heavy','alarmed, quick breath, then tense','slow, awed, shaken disbelief'],
 4:['fast, rising panic','stunned, shaken, one beat of silence','urgent, pleading, worried (the sages speaking)','heavy, defeated'],
 5:['fast, breathless, chase','quick, dramatic, rhythmic list','steady, wide, awed list','light surprise, curious, then a calm reveal of the name'],
-6:['sudden, powerful, burning anger','tense, then softening into shame and pleading','harsh, final, cold fury','stern, thundering judgement (Shiva speaking)','calm, explanatory, settling'],
+6:['sudden, powerful, burning anger','tense, then breaking into shame and pleading','harsh, final, cold fury','stern, thundering judgement (Shiva speaking)','calm, explanatory, settling'],
 7:['slow, uneasy, discovery','tense then grave, realisation sinking in'],
 8:['thoughtful, questioning, gentle','calm, wise, measured (Atri explaining)'],
 9:['sad, weary, slow','awed, wondering, the miracle','relieved, reverent, glowing'],
@@ -18,7 +18,7 @@ TAGS={'04':{
 13:['dreamy, drawn in','warm, quick, almost carried away'],
 14:['warm, gentle, time flowing, happy'],
 15:['sudden, dark, alarming','shocked, helpless, rushed, then dazed and stunned'],
-16:['calm, simple, quietly devastating','stunned, shaky, disbelieving','sharp, sinking realisation','slow, deeply moved, heavy'],
+16:['calm, simple, devastating','stunned, shaky, disbelieving','sharp, sinking realisation','slow, deeply moved, heavy'],
 17:['gentle, wise, smiling','calm, teaching, measured','calm, final, serene'],
 18:['thoughtful, widening awe','playful, ominous smile, light warning'],
 19:['warm, direct to the audience, friendly question','calm, warm, inviting teaser']}}
