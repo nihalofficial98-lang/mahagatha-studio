@@ -151,7 +151,7 @@ function drawShivaP(f,x,y,s,t,P){
     if(k>.01){ctx.globalAlpha=Math.min(1,k*1.4);D('head_rage');ctx.globalAlpha=1}});
   ctx.restore()}
 
-FXV2.fximg=function(F,t,P,d,a){const e=imgGet(F.src);if(!e.ok)return;ctx.save();ctx.globalAlpha*=a*(F.alpha==null?1:F.alpha);if(F.blend)ctx.globalCompositeOperation=F.blend;const w=F.w||300,h=w*e.img.height/e.img.width,sc=1+(F.grow||0)*t;ctx.translate(F.x+(F.vx||0)*t,F.y);ctx.rotate((F.rot||0)+(F.spin||0)*t);ctx.scale(sc,sc);ctx.drawImage(e.img,-w/2,-h/2,w,h);ctx.restore()};
+FXV2.fximg=function(F,t,P,d,a){const e=imgGet(F.src);if(!e.ok)return;if(F.par!=null&&!F._in){layer(F.par,()=>FXV2.fximg(Object.assign({},F,{_in:1,par:null}),t,P,d,a));return}ctx.save();ctx.globalAlpha*=a*(F.alpha==null?1:F.alpha);if(F.blend)ctx.globalCompositeOperation=F.blend;const w=F.w||300,h=w*e.img.height/e.img.width,sc=1+(F.grow||0)*t;ctx.translate(F.x+(F.vx||0)*t,F.y);ctx.rotate((F.rot||0)+(F.spin||0)*t);ctx.scale(sc,sc);ctx.drawImage(e.img,-w/2,-h/2,w,h);ctx.restore()};
 
 // ---- painted (Gemini) backgrounds under the existing particle animation ----
 (function(){

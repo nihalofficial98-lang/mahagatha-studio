@@ -7,7 +7,7 @@ import numpy as np
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def norm(w):
     w=unicodedata.normalize('NFC',w).lower();w=re.sub(r'[​-‍﻿]','',w);w=re.sub(r'[^\wऀ-ॿ]','',w)
-    w=w.replace('़','')          # nukta
+    w=w.replace('ॐ','ओम').replace('़','')   # Om sign -> ओम ; nukta
     w=re.sub(r'[ँं]','',w)  # chandrabindu/anusvara (often written differently)
     return w
 def parse_srt(txt):
@@ -27,9 +27,11 @@ def parse(path):
     if path.lower().endswith('.srt'):return parse_srt(txt)
     d=json.loads(txt);ws=[]
     def add(x):
-        t=x.get('text',x.get('word',''));
-        if x.get('type','word')!='word' or not str(t).strip():return
-        ws.append((str(t).strip(),float(x['start']),float(x['end'])))
+        t=str(x.get('text',x.get('word',''))).strip()
+        if x.get('type','word')!='word' or not t or t.startswith('['):return   # skip spacing and [audio events]
+        a=x.get('start',x.get('start_time'));b=x.get('end',x.get('end_time'))
+        if a is None or b is None:return
+        ws.append((t,float(a),float(b)))
     if isinstance(d,dict) and 'words' in d:[add(x) for x in d['words']]
     elif isinstance(d,dict) and 'segments' in d:
         for sg in d['segments']:[add(x) for x in sg.get('words',[])]
@@ -62,9 +64,16 @@ def main():
     ep,voice,tsf=sys.argv[1],sys.argv[2],sys.argv[3];out=os.path.join(R,'build/ep'+ep)
     if '--out' in sys.argv:out=os.path.abspath(sys.argv[sys.argv.index('--out')+1])
     B=json.load(open(f'{R}/build/ep{ep}/beats.json',encoding='utf-8'))['scenes'];asr=parse(tsf)
+    if '--max-time' in sys.argv:mt=float(sys.argv[sys.argv.index('--max-time')+1]);asr=[w for w in asr if w[1]<mt]
     words=[(bi,si,w) for bi,sc in enumerate(B) for si,seg in enumerate(sc['narration']) for w in seg['t'].split()]
     pair=match([w[2] for w in words],asr);ns=len(words);st=np.full(ns,np.nan);en=np.full(ns,np.nan)
     for i,j in pair.items():st[i]=asr[j][1];en[i]=asr[j][2]
+    used=set(pair.values());extras=[];run=[]
+    for j,w in enumerate(asr):
+        if j in used:
+            if len(run)>=2:extras.append({'start':asr[run[0]][1],'end':asr[run[-1]][2],'text':' '.join(asr[k][0] for k in run),'after_script_word':max([i for i,jj in pair.items() if jj<run[0]]+[-1])})
+            run=[]
+        else:run.append(j)
     ok=np.flatnonzero(~np.isnan(st));print(f'matched {len(ok)} of {ns} script words ({100*len(ok)/ns:.0f}%) to recognizer words ({len(asr)})')
     if len(ok)<ns*.5:raise SystemExit('too few words matched: is this the right episode / transcript?')
     # fill gaps by interpolation weighted by word length
@@ -79,17 +88,31 @@ def main():
             i=j
         else:i+=1
     st=np.maximum.accumulate(st);en=np.maximum(en,st+.05)
+    if '--cut-extras' in sys.argv and extras:
+        nxt=lambda t:min([st[k] for k in range(ns) if st[k]>t]+[1e9]);cuts=[(max(0,x['start']-.04),min(x['end']+.12,nxt(x['end'])-.02)) for x in extras if x['end']-x['start']>.5]
+        keep=[];cur=0.0
+        for a,b in cuts:keep.append((cur,a));cur=b
+        keep.append((cur,None));fc=[];lab=[]
+        for k,(a,b) in enumerate(keep):
+            fc.append(f"[0:a]atrim=start={a:.3f}"+(f":end={b:.3f}" if b else "")+f",asetpts=PTS-STARTPTS,afade=t=in:d=.015,afade=t=out:st=0:d=0[a{k}]" if False else f"[0:a]atrim=start={a:.3f}"+(f":end={b:.3f}" if b else "")+f",asetpts=PTS-STARTPTS[a{k}]");lab.append(f'[a{k}]')
+        tv=os.path.join(out,'voice_trimmed.mp3');os.makedirs(out,exist_ok=True)
+        subprocess.run(['ffmpeg','-v','error','-y','-i',voice,'-filter_complex',';'.join(fc)+';'+''.join(lab)+f'concat=n={len(keep)}:v=0:a=1[o]','-map','[o]','-b:a','192k',tv],check=True)
+        def sh(t):return t-sum(min(max(t-a,0),b-a) for a,b in cuts)
+        st=np.array([sh(t) for t in st]);en=np.array([sh(t) for t in en]);voice=tv;extras=[];print('cut',len(cuts),'spoken heading(s) out of the audio:',[(round(a,1),round(b,1)) for a,b in cuts])
     total=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',voice]))
     bi_idx={};[bi_idx.setdefault(w[0],[]).append(k) for k,w in enumerate(words)]
     starts=[];
     for bi in sorted(bi_idx):
         f=st[bi_idx[bi][0]];prev=en[bi_idx[bi-1][-1]] if bi>0 else 0.0
+        for x in extras:                      # spoken words not in the script (a heading) belong to the START of this beat
+            if bi>0 and prev-.05<=x['start']<f:f=min(f,x['start']+.2)
         starts.append(0.0 if bi==0 else (prev+(f-prev)*.5 if f-prev<.6 else f-.2))
     ends=starts[1:]+[total];os.makedirs(out+'/audio',exist_ok=True);T=[]
     for bi in sorted(bi_idx):
         a,b=starts[bi],ends[bi];subprocess.run(['ffmpeg','-v','error','-y','-ss',f'{a:.3f}','-t',f'{b-a:.3f}','-i',voice,'-ac','1','-ar','44100','-b:a','192k',f'{out}/audio/{bi:02d}.mp3'],check=True)
         T.append({'audio':round(b-a,6),'duration':round(b-a,6),'beat':B[bi]['beat'],'words':[{'text':(re.sub(r'[^\wऀ-ॿ]','',words[k][2]) or words[k][2]),'start':round(st[k]-a,3),'end':round(en[k]-a,3)} for k in bi_idx[bi]]})
-    json.dump(T,open(out+'/timings.json','w'),ensure_ascii=False)
+    json.dump(T,open(out+'/timings.json','w'),ensure_ascii=False);json.dump(extras,open(out+'/extras.json','w'),ensure_ascii=False,indent=1)
+    print('extra spoken words not in the script:',[(round(x['start'],1),x['text']) for x in extras][:8])
     print(f'timed to the recognizer: voice {total:.1f}s ({total/60:.2f} min), {len(B)} beats')
     if '--out' not in sys.argv:
         ef=f'{R}/episodes/ep{ep}/episode.json';d=json.load(open(ef));d['target_sec']=round(total,1);d['voice']='user';json.dump(d,open(ef,'w'),ensure_ascii=False)
