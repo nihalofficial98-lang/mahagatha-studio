@@ -4,7 +4,7 @@
   studio.py check 03              lint the script (length, beats, cue tags)
   studio.py voice-docs 03         write voiceover files (tagged for AI voice, clean for you) into voiceovers/
   studio.py tts 03                guide voice + word timings (stand-in until your own recording)
-  studio.py align 03 voice.mp3    NEW WORKFLOW: align YOUR voiceover to the script (visuals then follow your voice, never the reverse)
+  studio.py align 03 voice.mp3 --timestamps words.json   NEW WORKFLOW (exact word times from a speech recognizer; without --timestamps it only estimates): align YOUR voiceover to the script (visuals then follow your voice, never the reverse)
   studio.py shots 03              run the director's edit list -> shots.json
   studio.py stills 03             contact sheets of every shot (build/ep03/sheets)
   studio.py qa 03 [--video f]     automated QA (cue misses, shot lengths, frozen/black frames)
@@ -78,7 +78,10 @@ def cmd_align(a):
     os.makedirs(bd(a.n),exist_ok=True);os.makedirs(ROOT+'/voiceovers',exist_ok=True)
     sh(['python3','studio/parse_script.py',ep(a.n)+'/script.md',bd(a.n)+'/beats.json'])
     dst=f"{ROOT}/voiceovers/ep{a.n}_voice{os.path.splitext(a.voice)[1]}";shutil.copy(a.voice,dst)
-    sh(['python3','studio/align_voice.py',a.n,dst])
+    if a.timestamps:sh(['python3','studio/import_timestamps.py',a.n,dst,a.timestamps])
+    else:
+        print('WARNING: no --timestamps file: using the model-free ESTIMATE (can drift by seconds). For exact subtitles export word timestamps from a speech recognizer (ElevenLabs Speech-to-Text JSON, Whisper JSON or SRT) and pass --timestamps')
+        sh(['python3','studio/align_dtw.py',a.n,dst])
     print('aligned. next: studio.py shots',a.n,'-> qa -> stills (review frames) -> render (voice is included; do not use --silent)')
 def cmd_shots(a): sh(['python3',ep(a.n)+'/shots.py'])
 def prepare(a,target):
@@ -150,7 +153,7 @@ if __name__=='__main__':
         q=s.add_parser(name);q.set_defaults(f=f)
         if name not in('learn','gallery'):q.add_argument('n')
         if name=='new':q.add_argument('title')
-        if name=='align':q.add_argument('voice')
+        if name=='align':q.add_argument('voice');q.add_argument('--timestamps',default=None)
         if name=='qa':q.add_argument('--video')
         if name=='render':q.add_argument('--res',default='1080p');q.add_argument('--workers',type=int,default=4);q.add_argument('--silent',action='store_true',help='no guide voice in the video: subtitles only (owner records the voiceover)')
         if name=='feedback':q.add_argument('text');q.add_argument('--cat',default='visual');q.add_argument('--shot',type=int)
