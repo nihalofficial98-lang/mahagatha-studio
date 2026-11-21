@@ -83,7 +83,9 @@ def cmd_align(a):
         print('WARNING: no --timestamps file: using the model-free ESTIMATE (can drift by seconds). For exact subtitles export word timestamps from a speech recognizer (ElevenLabs Speech-to-Text JSON, Whisper JSON or SRT) and pass --timestamps')
         sh(['python3','studio/align_dtw.py',a.n,dst])
     print('aligned. next: studio.py shots',a.n,'-> qa -> stills (review frames) -> render (voice is included; do not use --silent)')
-def cmd_shots(a): sh(['python3',ep(a.n)+'/shots.py'])
+def cmd_shots(a):
+    if os.path.exists(ep(a.n)+'/shot_plan.json'):sh(['python3','studio/build_shots.py',a.n])   # scene director's plan, timed to the voice
+    else:sh(['python3',ep(a.n)+'/shots.py'])
 def prepare(a,target):
     sh(['node','studio/render_ep.js',bd(a.n),ep(a.n)+'/shots.json','/dev/null'],env=dict(node_env(),PREPARE_ONLY='1',TARGET_SEC=str(target)))
 def target(a): 

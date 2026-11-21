@@ -26,3 +26,23 @@ cel(neutral), night(blue), dark(vignette-heavy), red(wrath), amb(amber/golden), 
 Shots start on spoken WORDS (cue words from the script) or line fractions, never on seconds. Shot length 1.0–6.5 s, average 2.6–4.2 s. At a fast voice (+15–20% vs guide) keep list/enumeration shots ≥1 s: merge or hold, do not flash.
 ## Not possible today (put under "asset/feature requests" and the producer will build it)
 limb-animated walking, multi-view (side/back) characters, lip-sync, true 3D, water simulation, crowds with individual motion.
+
+## Shot plan (what the scene director writes: episodes/epNN/shot_plan.json)
+`python3 studio/studio.py shots NN` builds shots.json from it, timed to the owner's voice, and validates (unknown character/effect/background, missing assets, words not in the voice, shots <1.0 s or >6.5 s, extreme camera, effects waiting on missing cue words).
+```
+{"episode":"04","shots":[ {
+  "id":"s012",
+  "at": {"t":71.20,"word":"काट"}            // PREFERRED: absolute seconds from voice_timeline.md + the spoken word (checked)
+       | {"beat":6,"word":"काट"}            // first occurrence of the word in that beat
+       | {"beat":6,"line":2,"frac":0.4},     // or a line fraction
+  "cues": ["काट"],                           // words that effects with "c":0 / "c":1 fade in on (in order)
+  "bg": {"k":"yagna","fire":0.9} | "cosmos" | {"k":"img","src":"bgp_yagna"},
+  "figs": [ {"who":"shiva","x":420,"y":670,"s":1.45,"pose":"rage","expr":{"brow":-0.95},"aura":"255,70,40","flip":-1} ],
+  "fxb": [ ...effects BEHIND the characters ],
+  "fx":  [ {"t":"img","src":"lightning_forks","x":900,"y":250,"w":380,"alpha":0.7,"blend":"lighter","par":1.3}, {"t":"text","s":"…","x":640,"y":300,"size":70,"c":0,"d":0.8} ],
+  "cam": {"from":{"z":1.0,"x":0,"y":0,"r":0},"to":{"z":1.1,"x":-20,"y":-8,"r":0.004}},
+  "grade":"night", "shake":2, "note":"why this shot"
+  // or a hand-coded exception: "custom":"name_in_custom_shots_py", "args":{...}
+} ] }
+```
+Image effects: `"t":"img","src":"<name>"` where name is any library/fx image (e.g. `fire_tall`), `lib_<character>` (cut-out) or `bgp_<background>`; the builder copies it into the engine automatically. `par` = parallax depth (0.1–0.3 far sky, 0.5–0.8 mid set pieces, 1.0 actors, 1.3–1.6 foreground). Every beat needs a shot at its start. Hand-coded exceptions: write a function in `episodes/epNN/custom_shots.py` that returns the engine scene dict `{bg,figs,fx,fxb}` and reference it with `custom`.
