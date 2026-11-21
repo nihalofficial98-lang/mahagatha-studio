@@ -15,3 +15,8 @@ Measured on test voices: pause-based estimate was only reliable when pauses were
 Measured on EP1: 0.43 s per script word (489 s for 1,138 words). Target 8.5–9.5 min = 1,190–1,325 words. Check with `PACE=0.43 python3 studio/studio.py check NN`.
 Do NOT put section headings (`भाग 1 …`) or metadata lines in the voiceover text: they get read aloud. The tagged voiceover file for generation contains narration lines only.
 The scene-director agent (`.claude/agents/scene-director.md`) writes the shot brief from the verified script while the owner generates the voice; shots are then built against the voice timestamps.
+
+## Every video must stand alone and open on a hook (owner rule)
+- No recap lines ("last time…"). Open directly on a hook: 3–4 punchy lines that promise the strangest/most shocking parts of THIS story, then one short context beat that introduces the characters for a first-time viewer.
+- The series continuity lives only in the end teaser.
+- With every script, also give 8–10 YouTube hook-title options (Hindi + Hinglish/English), grouped by angle (shock, mystery, question), plus a thumbnail text idea.
