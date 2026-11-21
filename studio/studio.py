@@ -60,7 +60,7 @@ def cmd_check(a):
         if w>130:warn.append(f"B{x['beat']:02d}: {w} words — long; split it (shots need fresh words every 3–4 s)")
         if w==0:warn.append(f"B{x['beat']:02d}: empty")
         if re.search(r'[A-Za-z]{4,}',' '.join(x['lines'])):warn.append(f"B{x['beat']:02d}: Latin text in narration")
-    est=words*0.575
+    est=words*(float(os.environ.get('PACE','0.575')))
     print(f'{len(b)} beats, {words} words, ~{est/60:.1f} min at guide pace (rule: 8–10 min, aim 8.5–9.5)')
     if not 492<=est<=588:warn.append('length outside the safe 8.2–9.8 min band (hard rule: video must be 8–10 min)')
     print('\n'.join('WARN '+w for w in warn) or 'script OK')
