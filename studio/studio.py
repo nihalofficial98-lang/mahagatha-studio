@@ -128,8 +128,8 @@ def cmd_qa(a):
         if bl:bad.append(f'black frames at {bl[:6]}')
     print('\n'.join('FAIL '+b for b in bad) or 'QA PASS');sys.exit(1 if bad else 0)
 def cmd_render(a):
-    import build as B;sc=3 if a.res=='4k' else (1 if a.res=='720p' else 1.5);html=B.build(sc);os.makedirs(ROOT+'/renders',exist_ok=True)
-    W,H=(3840,2160) if a.res=='4k' else ((1280,720) if a.res=='720p' else (1920,1080));out=f'{ROOT}/renders/ep{a.n}_{a.res}.mp4'
+    import build as B;sc=3 if a.res=='4k' else (1 if a.res=='720p' else (2/3 if a.res=='480p' else 1.5));html=B.build(sc);os.makedirs(ROOT+'/renders',exist_ok=True)
+    W,H=(3840,2160) if a.res=='4k' else ((1280,720) if a.res=='720p' else ((854,480) if a.res=='480p' else (1920,1080)));out=f'{ROOT}/renders/ep{a.n}_{a.res}.mp4'
     sh(['node','studio/render_ep.js',bd(a.n),ep(a.n)+'/shots.json',out,str(a.workers),'30'],env=dict(node_env(),SILENT=('1' if getattr(a,'silent',False) else ''),ENGINE=html,VW=str(W),VH=str(H),CRF='26' if a.res in ('4k','720p') else '20',JQ='90',TARGET_SEC=str(target(a))))
     print(out)
 def cmd_feedback(a):
