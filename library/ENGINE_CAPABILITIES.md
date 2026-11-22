@@ -61,3 +61,5 @@ Every character is a jointed vector rig (head, eyes, brows, mouth, shoulders, el
 - Brahma: `hd:{l,r,b,t}` sprouts the left, right, back and top faces on cues.
 - Coded cast: shiva, vishnu, brahma (4 faces), daksha, narada (veena prop), manu, brahmi, adishakti, sati, prasuti, diti, danu, asikli, villager, villager_w, kumara (child), jaya, vijaya, kashyapa, indra, surya, chandra, hiranyaksha, hiranyakashipu, ravana, rishi0-6, madhu, kaitabha.
 - `episodes/epNN/action_plan.json` (written by the action-director agent) is merged into the shots by build_shots.py.
+- Act easing: `acts[i].e` = 'spring' (overshoots and settles, good for arrivals and bows) or 'antic' (a small wind-up the opposite way first). `talk:<0..1>` on a figure opens the mouth in a speech rhythm and adds a slight head sway while the shot plays.
+- Policy: painted cut-outs (img) only for characters who stand or appear without acting (e.g. demons, guards, crowd devas); anyone who acts is a coded rig.
