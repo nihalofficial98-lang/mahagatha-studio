@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Trimurti - new look</title>
+<style>html,body{margin:0;background:#000}canvas{display:block;width:100vw;height:auto}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<script src="chars_new.js"></script><script src="trimurti_rigs.js"></script>
+<script>
+// Live preview: showcase.html#brahma (or vishnu / shiva / trio). render_frames.js drives window.TRIMURTI.render directly.
+window.frame=(scene,t,p,cam)=>TRIMURTI.render(document.getElementById('c'),scene,t,p,cam);
+if(!navigator.webdriver){const sc=(location.hash||'#brahma').slice(1),t0=performance.now();
+  const loop=()=>{const t=(performance.now()-t0)/1000;const p=window.LIVE&&LIVE[sc]?LIVE[sc](t):{};frame(sc,t,p,{});requestAnimationFrame(loop)};
+  window.LIVE={brahma:t=>({sprout:Math.min(1,t/3),rot:Math.max(0,Math.sin(t*.4))*1.2,bless:.5+.5*Math.sin(t*.8),talk:(t%8)>5?1:0,lift:.5+.5*Math.sin(t*.5)}),
+    vishnu:t=>({blink:.5+.5*Math.cos(t*.5),lotus:Math.min(1,t/6),bias:Math.sin(t*.3)*.6}),
+    shiva:t=>({raise:Math.max(0,Math.sin(t*.35)),lift:Math.max(0,Math.sin(t*.35)-.5)*2,third:Math.max(0,Math.sin(t*.35)),blink:Math.max(0,Math.sin(t*.35))>.2?0:.9}),
+    trio:t=>({})};loop()}
+</script></body></html>

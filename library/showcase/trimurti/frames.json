@@ -1,0 +1,326 @@
+[
+ {
+  "name": "brahma_01_hero",
+  "scene": "brahma",
+  "t": 2.0,
+  "p": {
+   "bless": 0.6,
+   "glow": 1.1
+  },
+  "cam": {}
+ },
+ {
+  "name": "brahma_02_single_face",
+  "scene": "brahma",
+  "t": 0.4,
+  "p": {
+   "sprout": 0,
+   "bless": 0
+  },
+  "cam": {
+   "x": 20,
+   "y": -40,
+   "z": 1.25
+  }
+ },
+ {
+  "name": "brahma_03_faces_sprouting",
+  "scene": "brahma",
+  "t": 1.2,
+  "p": {
+   "sprout": 0.7,
+   "bless": 0.2
+  },
+  "cam": {
+   "x": 20,
+   "y": -40,
+   "z": 1.25
+  }
+ },
+ {
+  "name": "brahma_04_faces_turning",
+  "scene": "brahma",
+  "t": 3.0,
+  "p": {
+   "rot": 0.55,
+   "bless": 0.5
+  },
+  "cam": {}
+ },
+ {
+  "name": "brahma_05_blessing_talking",
+  "scene": "brahma",
+  "t": 4.13,
+  "p": {
+   "bless": 1,
+   "talk": 1
+  },
+  "cam": {}
+ },
+ {
+  "name": "brahma_06_arms_raised_glow",
+  "scene": "brahma",
+  "t": 5.0,
+  "p": {
+   "lift": 1,
+   "bless": 0.8,
+   "glow": 1.5,
+   "lotusGlow": 1.8
+  },
+  "cam": {}
+ },
+ {
+  "name": "brahma_07_meditative_blink",
+  "scene": "brahma",
+  "t": 6.2,
+  "p": {
+   "blink": 1,
+   "lotusGlow": 2,
+   "bless": 0.3
+  },
+  "cam": {}
+ },
+ {
+  "name": "brahma_08_closeup_heads",
+  "scene": "brahma",
+  "t": 2.5,
+  "p": {
+   "talk": 0.6
+  },
+  "cam": {
+   "x": 20,
+   "y": -76,
+   "z": 2.5
+  }
+ },
+ {
+  "name": "vishnu_01_hero",
+  "scene": "vishnu",
+  "t": 2.0,
+  "p": {
+   "blink": 0.35,
+   "smile": 0.55
+  },
+  "cam": {}
+ },
+ {
+  "name": "vishnu_02_yoganidra",
+  "scene": "vishnu",
+  "t": 0.5,
+  "p": {
+   "blink": 1,
+   "smile": 0.4
+  },
+  "cam": {}
+ },
+ {
+  "name": "vishnu_03_hoods_sway_left",
+  "scene": "vishnu",
+  "t": 3.0,
+  "p": {
+   "blink": 1,
+   "bias": -1,
+   "sway": 1.6
+  },
+  "cam": {}
+ },
+ {
+  "name": "vishnu_04_hoods_rise_right",
+  "scene": "vishnu",
+  "t": 4.0,
+  "p": {
+   "blink": 0.6,
+   "bias": 0.8,
+   "rise": 1
+  },
+  "cam": {}
+ },
+ {
+  "name": "vishnu_05_eyes_open_chakra",
+  "scene": "vishnu",
+  "t": 5.0,
+  "p": {
+   "blink": 0,
+   "smile": 0.6,
+   "lx": 0.4,
+   "chakra": 1.7
+  },
+  "cam": {}
+ },
+ {
+  "name": "vishnu_06_navel_lotus",
+  "scene": "vishnu",
+  "t": 6.0,
+  "p": {
+   "blink": 0.3,
+   "lotus": 1,
+   "glow": 1.3
+  },
+  "cam": {}
+ },
+ {
+  "name": "vishnu_07_hoods_medium",
+  "scene": "vishnu",
+  "t": 7.0,
+  "p": {
+   "blink": 0.5,
+   "rise": 0.6,
+   "bias": -0.4
+  },
+  "cam": {
+   "x": -150,
+   "y": -150,
+   "z": 1.7
+  }
+ },
+ {
+  "name": "vishnu_08_closeup_head",
+  "scene": "vishnu",
+  "t": 2.5,
+  "p": {
+   "blink": 0.2,
+   "smile": 0.6
+  },
+  "cam": {
+   "x": -148,
+   "y": -62,
+   "z": 2.5
+  }
+ },
+ {
+  "name": "shiva_01_hero",
+  "scene": "shiva",
+  "t": 2.0,
+  "p": {
+   "blink": 0.9
+  },
+  "cam": {}
+ },
+ {
+  "name": "shiva_02_eyes_opening",
+  "scene": "shiva",
+  "t": 2.6,
+  "p": {
+   "blink": 0.35,
+   "third": 0.15
+  },
+  "cam": {}
+ },
+ {
+  "name": "shiva_03_third_eye",
+  "scene": "shiva",
+  "t": 3.0,
+  "p": {
+   "blink": 0,
+   "third": 1,
+   "glow": 1.3
+  },
+  "cam": {}
+ },
+ {
+  "name": "shiva_04_raising_arms",
+  "scene": "shiva",
+  "t": 3.5,
+  "p": {
+   "blink": 0,
+   "third": 0.6,
+   "raise": 0.5
+  },
+  "cam": {}
+ },
+ {
+  "name": "shiva_05_trident_raised",
+  "scene": "shiva",
+  "t": 4.0,
+  "p": {
+   "blink": 0,
+   "third": 1,
+   "raise": 1,
+   "lift": 1,
+   "glow": 1.4
+  },
+  "cam": {}
+ },
+ {
+  "name": "shiva_06_ganga_moon",
+  "scene": "shiva",
+  "t": 5.0,
+  "p": {
+   "blink": 0.9,
+   "moon": 1.6
+  },
+  "cam": {
+   "x": 0,
+   "y": -150,
+   "z": 1.8
+  }
+ },
+ {
+  "name": "shiva_07_blessing_smile",
+  "scene": "shiva",
+  "t": 6.0,
+  "p": {
+   "blink": 0.15,
+   "smile": 0.7,
+   "raise": 1,
+   "lift": 0.3
+  },
+  "cam": {}
+ },
+ {
+  "name": "shiva_08_closeup_head",
+  "scene": "shiva",
+  "t": 2.5,
+  "p": {
+   "blink": 0.25,
+   "third": 0.5
+  },
+  "cam": {
+   "x": 0,
+   "y": -66,
+   "z": 2.5
+  }
+ },
+ {
+  "name": "trio_01_lineup",
+  "scene": "trio",
+  "t": 2.0,
+  "p": {
+   "brahma": {
+    "bless": 0.6
+   },
+   "vishnu": {
+    "blink": 0.4,
+    "smile": 0.5
+   },
+   "shiva": {
+    "blink": 0.9
+   }
+  },
+  "cam": {}
+ },
+ {
+  "name": "trio_02_awakened",
+  "scene": "trio",
+  "t": 4.0,
+  "p": {
+   "brahma": {
+    "lift": 1,
+    "bless": 1,
+    "glow": 1.4
+   },
+   "vishnu": {
+    "blink": 0,
+    "lotus": 1,
+    "rise": 0.6
+   },
+   "shiva": {
+    "raise": 1,
+    "lift": 1,
+    "third": 1,
+    "blink": 0
+   }
+  },
+  "cam": {}
+ }
+]
