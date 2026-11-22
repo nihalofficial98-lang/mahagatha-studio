@@ -96,7 +96,7 @@ function hairBack(c,col,t,len){const sw=Math.sin(t*1.2)*3;
   for(let i=-2;i<=2;i++)stroke(c,cc=>{cc.moveTo(i*14,0);cc.bezierCurveTo(i*22,len*.3,i*20+sw,len*.6,i*16+sw,len*.9)},'rgba(160,150,230,.28)',2.2)}
 
 function kirita(c,h){h=h||100;
-  [-1,1].forEach(sd=>cut(c,cc=>{cc.moveTo(sd*30,-30);cc.bezierCurveTo(sd*56,-36,sd*62,-62,sd*50,-84);cc.bezierCurveTo(sd*46,-62,sd*38,-52,sd*26,-48);cc.closePath()},lg(c,0,-84,0,-30,[PAL.goldL,PAL.gold,PAL.goldD]),{lw:1.8}));
+  // (no side horns: Vishnu's kirita is a plain tiered crown)
   const top=-42-h;cut(c,cc=>{cc.moveTo(-33,-40);cc.lineTo(-26,-42-h*.5);cc.lineTo(-17,-42-h*.82);cc.quadraticCurveTo(-6,-42-h*.95,0,top);cc.quadraticCurveTo(6,-42-h*.95,17,-42-h*.82);cc.lineTo(26,-42-h*.5);cc.lineTo(33,-40);cc.closePath()},goldG(c,-32,32),{lw:2.2});
   [.28,.55,.8].forEach((f,i)=>{const y=-42-h*f,w=lerp(32,14,f);stroke(c,cc=>{cc.moveTo(-w,y+3);cc.quadraticCurveTo(0,y-4,w,y+3)},PAL.goldD,3);for(let k=-2;k<=2;k++)if(Math.abs(k)*7<w)gem(c,k*w/2.6,y-1+Math.abs(k)*.8,2,i%2?PAL.emer:PAL.ruby)});
   cut(c,cc=>{cc.moveTo(0,-42-h*.5);cc.quadraticCurveTo(11,-42-h*.32,0,-48);cc.quadraticCurveTo(-11,-42-h*.32,0,-42-h*.5)},PAL.ruby,{lw:1.4,sh:0});
