@@ -436,23 +436,23 @@ function v2fig(who,x,y,s,t,o){
   else drawHuman(c,CAST[who],poseOf(o.pose,who),{t:t,k:o.k!=null?o.k:(CAST[who].kdef||kk),expr:face,prop:o.prop,mood:o.mood,tilt:o.tilt});
   figFinish(c,o,x,y,s,FR,OY,RG,.22,.3,true)}
 // head close-up: shoulders, chest, garments and jewellery under the head (Opus torso), so heads never float like masks
-function bust(c,S,o){const sk=skinPK(S),t=o.t||0,bw=Math.min(S.build||1,1.2);
+function bust(c,S,o){const sk=skinPK(S),t=o.t||0,bw=Math.min(S.build||1,1.2);c.save();c.translate(0,-10);
   const sh=[[-122*bw,96],[122*bw,96]];[-1,1].forEach((sd,i)=>{const a=sh[i],b=[sd*156*bw,330];PK.limbOutline(c,a,b,34*bw,28*bw);PK.limb(c,sk,a,b,34*bw,28*bw,{lw:0,sh:0});if(S.armlet)PK.band(c,a,b,.55,30*bw,S.armlet);if(S.female&&S.upper)PK.cut(c,PK.P.caps(a,PK.L2(a,b,.32),36*bw,34*bw),S.upper.col,{lw:1.8,sh:0})});
   c.save();c.translate(0,340);PK.torso(c,sk,262,134*bw,100*bw,0,{fem:!!S.female,muscle:S.muscle});
   const S2=Object.assign({},S);c.scale(1.7,1.7);torsoDress(c,S2,sk,153,72*bw,56*bw,0,t);c.restore();
   if(S.vasuki){const vp=PK.ellPts(0,70,64,30,Math.PI*1.02,-.1,14);for(let i=1;i<=8;i++){const u=i/8;vp.push([64+u*60,70-u*130+Math.sin(u*Math.PI)*10])}PK.tube(c,vp,12,10,VSK,{scales:false,belly:1});PK.hood(c,128,-40,.22+Math.sin(t*1.4)*.1,.68,t,VSK,{ph:2,eye:o.k>.5?'#ff5a3a':'#ffd34a'})}
-  PK.cut(c,PK.P.caps([0,88],[0,30],26,23),S.skinM,{lw:2,sh:0})}
+  PK.cut(c,PK.P.caps([0,88],[0,40],26,23),S.skinM,{lw:2,sh:0});c.restore()}
 function v2head(who,x,y,s,t,o){ // close-up of the head with neck, shoulders and garments
   const OYH=1300,FR=clamp(s*SC_,2,3.9),RG=[-300,-330,600,640];const c=figBegin(FR,OYH,RG);PK.setDPR(FR);const ex=o.expr||{},kk=ex.brow!=null&&ex.brow<-.2?clamp(-ex.brow*1.1,0,1):0,face=ex.eye!=null&&ex.eye<.5?'closed':'calm';
-  if(o.flip<0)c.scale(-1,1);c.scale(1.5,1.5);const M=o.mood,turn=o.tilt?0:.06;
-  if(who==='shiva'){const S=CAST.shiva;c.translate(0,-6);c.scale(.86,.86);PK.halo(c,0,-30,128,t,Object.assign({g:.55,n:26},S.halo));c.save();c.scale(1.1,1.1);hairBack(c,S,{hd:[0,0],ph:[0,200]},t);c.restore();bust(c,S,{t:t,k:kk});c.save();c.scale(1.1,1.1);drawHead(c,0,0,{expr:face==='closed'?'closed':'calm',k:kk,S:S,t:t,mood:M,turn:turn});hairFront(c,S,0,0,t);c.restore()}
-  else if(who==='brahma'){const S=BRAHMA;PK.halo(c,0,-40,122,t,{g:.55,n:26});bust(c,S,{t:t});
+  if(o.flip<0)c.scale(-1,1);c.scale(1.32,1.32);const M=o.mood,turn=o.tilt?0:.06;
+  if(who==='shiva'){const S=CAST.shiva;c.translate(0,-6);c.scale(.86,.86);PK.halo(c,0,-30,112,t,Object.assign({g:.55,n:26},S.halo));c.save();c.scale(1.1,1.1);hairBack(c,S,{hd:[0,0],ph:[0,200]},t);c.restore();bust(c,S,{t:t,k:kk});c.save();c.scale(1.1,1.1);drawHead(c,0,0,{expr:face==='closed'?'closed':'calm',k:kk,S:S,t:t,mood:M,turn:turn});hairFront(c,S,0,0,t);c.restore()}
+  else if(who==='brahma'){const S=BRAHMA;PK.halo(c,0,-40,108,t,{g:.5,n:26});bust(c,S,{t:t});
     const side=(x2,tn)=>{c.save();c.translate(x2,12);c.scale(.8,.8);c.filter='brightness(.8)';drawHead(c,0,0,{expr:face,k:kk*.8,S:S,t:t+x2*.01,mood:Object.assign({smile:.2},M&&M.sad?{sad:M.sad*.8}:{}),turn:tn});c.save();c.scale(1-Math.abs(tn)*.3,1);PK.hairCap(c,'#e6e0da');PK.jataMukuta(c);c.restore();c.filter='none';c.restore()};
     side(-62,-.6);side(62,.6);drawHead(c,0,0,{expr:face,k:kk,S:S,t:t,mood:M,turn:turn});PK.hairCap(c,'#e6e0da');PK.jataMukuta(c)}
   else if(who==='ardha'||who==='harihara'){const A=CAST[who==='ardha'?'adishakti':'vishnu'],Sh=CAST.shiva;
     halfHead(c,()=>{bust(c,A,{t:t});if(A.hair&&A.hair.type==='long')hairBack(c,A,{hd:[0,0],ph:[0,200]},t);drawHead(c,0,0,{expr:face,k:0,S:A,t:t});hairFront(c,A,0,0,t);headgear(c,A,0,0)},()=>{bust(c,Sh,{t:t});drawHead(c,0,0,{expr:face==='closed'?'closed':'calm',k:0,S:Sh,t:t});hairFront(c,Sh,0,0,t)})}
-  else{const S=CAST[who];if(S.halo)PK.halo(c,0,-34,S.halo.r*1.05,t,Object.assign({n:26},S.halo,{g:(S.halo.g==null?.8:S.halo.g)*.7}));if(S.sun)PK.sunDisk(c,0,-30,108,t);
+  else{const S=CAST[who];if(S.halo)PK.halo(c,0,-34,S.halo.r*.95,t,Object.assign({n:26},S.halo,{g:(S.halo.g==null?.8:S.halo.g)*.7}));if(S.sun)PK.sunDisk(c,0,-30,108,t);
     if(S.headType==='horse'){bust(c,S,{t:t});horseHead(c,0,10,kk,t)}else{
       hairBack(c,S,{hd:[0,0],ph:[0,200]},t);bust(c,S,{t:t,k:kk});drawHead(c,0,0,{expr:face,k:o.k!=null?o.k:(S.kdef||kk),S:S,t:t,mood:M,turn:turn});hairFront(c,S,0,0,t);headgear(c,S,0,0)}}
   figFinish(c,o,x,y,s,FR,OYH,RG,.22,.3,false)}
-return {has:w=>V2NAMES.has(w),fig:v2fig,head:v2head,CAST:CAST,poseOf:poseOf,drawHuman:drawHuman,drawBrahmaRig:drawBrahmaRig,drawReclineVishnu:drawReclineVishnu,drawArdha:drawArdha,drawShiva:drawShiva,drawHead:drawHead,drawJata:drawJata,POSES:POSES,mixPose:mixPose,SH:SH};
+return {PK:PK,has:w=>V2NAMES.has(w),fig:v2fig,head:v2head,CAST:CAST,poseOf:poseOf,drawHuman:drawHuman,drawBrahmaRig:drawBrahmaRig,drawReclineVishnu:drawReclineVishnu,drawArdha:drawArdha,drawShiva:drawShiva,drawHead:drawHead,drawJata:drawJata,POSES:POSES,mixPose:mixPose,SH:SH};

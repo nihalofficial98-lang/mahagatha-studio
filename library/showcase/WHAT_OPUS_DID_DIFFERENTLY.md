@@ -24,3 +24,10 @@ The old pose had the head upright at the end of a horizontal body with only hair
 python3 studio/ep_frames.py 06 --out library/showcase/ep06_frames   # one frame per EP6 shot
 node library/showcase/trimurti/render_frames.js                      # the Trimurti hero frames
 ```
+
+## Round 2: one shared paper-cut body for the whole cast (EP6 final frames)
+- `engine/v2_cast.js` `drawHuman()` now draws every character from the same kit: the Opus torso (`PK.torso`), outlined IK arms with armlets/bangles and real hands (rest, abhaya, point, jnana, pray, hold chosen from the pose), cloth-covered legs with front-view feet and anklets, and one lower-garment routine (`dhoti` to mid-shin with pleat fan, `short` to the knee, `sari` with pleats and border, `tiger` skin). Necklaces (hara, pearls, rudraksha, tulsi, vanamala), sash, sacred thread, uttariya ends, armour, halos, crowns and props are spec fields in `CAST`.
+- Shiva (`drawShiva`) and standing Brahma (three heads, four arms with Veda, mala, kamandalu) use the same `drawHuman`; seated Brahma is the Opus lotus hero. Shiva keeps the jata bun with moon and NO water stream; Vishnu's kirita has NO horns.
+- Close-ups (`v2head`) get a real bust (shoulders, chest, jewellery) instead of a flat cut, drawn on a separate canvas band so it never shows a straight cut line.
+- Faces: stronger anger (thicker, lower inner brows) and sadness (inner brows raised higher, tear from sad 0.32, lower mouth).
+- Backgrounds (`engine/paper_scenes.js`): cloud banks from puffs of varied size and height (no repeated arches), cut-paper mandalas, nebula ribbons and ringed planets for cosmos, lit ridge edges and paper trees for vista, paper lightning and rain for storm, foam curls for sea/dusk, a new paper-cut palace hall. Name plates, shock rings, flames and the lotus effect are paper-cut too.

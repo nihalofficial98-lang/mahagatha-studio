@@ -17,16 +17,13 @@ const CC=(base)=>({light:shd(base,1.28),mid:base,dark:shd(base,.6)});
    a second inner row of smaller puffs cut in a lighter tone, rim highlights on the big billows only ---- */
 function puffs(seed,y,rmin,rmax,x0,x1,wav){const r=rng(seed),P=[];let x=x0;while(x<x1){const big=r()<.22,rad=(rmin+(rmax-rmin)*Math.pow(r(),1.5))*(big?1.45:1);
     const yy=y-rad*.32+(r()-.5)*rmax*.55+Math.sin(x*.0042+seed)*wav;P.push([x+rad*.6,yy,rad]);x+=rad*(.55+r()*.75)}return P}
-function blob(P,yb,pad){P.forEach(([x,y,r])=>{ctx.moveTo(x+r+pad,y);ctx.arc(x,y,r+pad,0,TAU)});const x0=P[0][0]-P[0][2],x1=P[P.length-1][0]+P[P.length-1][2];ctx.rect(x0-pad,Math.min(...P.map(p=>p[1])),x1-x0+2*pad,yb-Math.min(...P.map(p=>p[1]))+pad)}
+function blob(P,yb,pad){P.forEach(([x,y,r])=>{ctx.moveTo(x+r+pad,y);ctx.arc(x,y,r+pad,0,TAU)});const x0=P[0][0]-P[0][2],x1=P[P.length-1][0]+P[P.length-1][2];P.forEach(([x,y,r])=>ctx.rect(x-r*.98-pad,y,2*r*.98+2*pad,yb-y+pad));const yr=Math.max(...P.map(p=>p[1]+p[2]));ctx.rect(x0-pad,yr,x1-x0+2*pad,yb-yr+pad)}
 function deck(seed,y,h,C,t,drift,rmin,rmax){const dx=Math.sin(t*.12+seed)*drift;ctx.save();ctx.translate(dx,0);
   const P=puffs(seed,y,rmin,rmax,-380,W+420,h*.12),yb=y+h+400;
   // ink edge + shadow (stroke pass), then the fill hides every inner seam
   ctx.save();ctx.beginPath();blob(P,yb,0);ctx.shadowColor='rgba(10,2,24,.34)';ctx.shadowBlur=11*SC_;ctx.shadowOffsetY=7*SC_;ctx.strokeStyle='rgba(24,8,34,.42)';ctx.lineWidth=4;ctx.lineJoin='round';ctx.stroke();ctx.fillStyle=C.dark;ctx.fill();ctx.restore();
   ctx.beginPath();blob(P,yb,0);ctx.fillStyle=vg(y-rmax*1.2,y+h,[C.light,C.mid,C.dark]);ctx.fill();
-  // inner row: smaller puffs, lighter paper, lying lower inside the bank
-  const Q=puffs(seed+101,y+rmax*.55,rmin*.55,rmax*.62,-360,W+400,h*.08).filter((p,i)=>i%3!==1);
   ctx.save();ctx.beginPath();blob(P,yb,0);ctx.clip();
-    Q.forEach(([x,y2,r],i)=>{ctx.fillStyle=i%2?'rgba(255,255,255,.08)':'rgba(30,10,50,.07)';ctx.beginPath();ctx.arc(x,y2,r,PI,TAU);ctx.fill()});
   // shade at the bottom of the bank so it reads as volume
   ctx.fillStyle=vg(y+h*.25,y+h,['rgba(20,8,40,0)','rgba(20,8,40,.28)']);ctx.fillRect(-500,y,W+1000,h+400);ctx.restore();
   // rim light on the bigger billows (upper-left quarter)
@@ -64,6 +61,20 @@ function ptree(x,y,h,t,i,c,trunk){cutP(()=>ctx.roundRect(x-7,y-h*.55,14,h*.55,5)
 function ridgeP(base,amp,freq,seed,col,par,rim){const r=rng(seed);const pts=[[-520,base]];for(let x=-500;x<=W+500;x+=46)pts.push([x,base-amp*(.5+.35*Math.sin(x*freq+seed)+.15*Math.sin(x*freq*3.1+seed*2))-r()*10]);
   cutP(()=>{ctx.moveTo(-520,H+400);pts.forEach(p=>ctx.lineTo(p[0],p[1]));ctx.lineTo(W+520,H+400);ctx.closePath()},vg(base-amp,base+160,[shd(col,1.15),col,shd(col,.72)]),{blur:7});
   if(rim){ctx.strokeStyle=rim;ctx.lineWidth=2;ctx.beginPath();pts.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]+2):ctx.moveTo(p[0],p[1]+2));ctx.stroke()}return pts}
+
+/* ---- paper-cut overrides for the shared effects: name plate, shock ring, flames, lotus ---- */
+pill=function(s,x,y,a,col,size){col=col||'#ffe9b8';size=size||32;if(a<=0.01)return;ctx.save();ctx.globalAlpha*=clamp(a);ctx.font=`700 ${size}px NSer, serif`;const w=ctx.measureText(s).width+56,h=size*1.6,cx=clamp(x,70+w/2,W-70-w/2),cy=clamp(y,60,H-130);
+  const plate=()=>{ctx.moveTo(cx-w/2,cy);ctx.lineTo(cx-w/2+h*.35,cy-h/2);ctx.lineTo(cx+w/2-h*.35,cy-h/2);ctx.lineTo(cx+w/2,cy);ctx.lineTo(cx+w/2-h*.35,cy+h/2);ctx.lineTo(cx-w/2+h*.35,cy+h/2);ctx.closePath()};
+  cutP(plate,vg(cy-h/2,cy+h/2,['#3a1a2a','#1a0c1c']),{blur:8,sy:4,lw:3,ink:'#e0b04a'});ctx.save();ctx.beginPath();plate();ctx.clip();ctx.strokeStyle='rgba(255,230,170,.35)';ctx.lineWidth=1.4;ctx.setLineDash([2,6]);ctx.strokeRect(cx-w/2+10,cy-h/2+6,w-20,h-12);ctx.setLineDash([]);ctx.restore();
+  [-1,1].forEach(sd=>{ctx.fillStyle='#e0b04a';ctx.beginPath();ctx.arc(cx+sd*(w/2-h*.2),cy,3.4,0,TAU);ctx.fill()});ctx.restore();stext(s,cx,cy+1,size,col,a,700,'center','rgba(255,210,140,.35)')};
+shockF=function(x,y,u,rgb,max,sq){max=max||900;sq=sq||.5;if(u<0||u>1)return;ctx.save();ctx.translate(x,y);ctx.scale(1,sq);const R=u*max,al=1-u;ctx.globalAlpha*=al;
+  ctx.strokeStyle='rgba(24,8,34,.6)';ctx.lineWidth=12*(1-u)+5;ctx.beginPath();ctx.arc(0,0,R,0,TAU);ctx.stroke();ctx.strokeStyle=`rgb(${rgb})`;ctx.lineWidth=9*(1-u)+2;ctx.stroke();
+  const n=24;for(let i=0;i<n;i++){ctx.save();ctx.rotate(i/n*TAU+u);cutP(()=>{ctx.moveTo(-8,-R);ctx.quadraticCurveTo(0,-R-26*(1-u)-6,8,-R);ctx.closePath()},`rgb(${rgb})`,{sh:0,lw:1.2});ctx.restore()}ctx.restore()};
+flamesF=function(x,y,s,t,n,c1,c2){n=n||8;c1=c1||'#ff5a1a';c2=c2||'#ffc24a';ctx.save();ctx.translate(x,y);ctx.scale(s,s);glow(0,-50,140,'255,140,50',.35);for(let i=0;i<n;i++){const ph=i*1.7,h=90+Math.sin(t*6+ph)*24+(i%3)*16,w=24,xx=(i-(n-1)/2)*22;
+  [[c1,1,'#ff3a10'],[c2,.55,'#fff0a0']].forEach(([c,k,c3])=>cutP(()=>{ctx.moveTo(xx-w*k,0);ctx.quadraticCurveTo(xx-w*.8*k+Math.sin(t*7+ph)*8,-h*.6*k,xx+Math.sin(t*5+ph)*10,-h*k);ctx.quadraticCurveTo(xx+w*.8*k+Math.sin(t*7+ph)*8,-h*.6*k,xx+w*k,0);ctx.closePath()},vg(-h*k,0,[c3,c]),{sh:0,lw:1.4,ink:'rgba(110,20,0,.6)'}))}ctx.restore()};
+const inkWrap=f0=>function(){ctx.save();ctx.shadowColor='rgba(30,13,36,.85)';ctx.shadowBlur=2.6*SC_;ctx.shadowOffsetY=1.2*SC_;f0.apply(null,arguments);ctx.restore()};
+drawSwan=inkWrap(drawSwan);drawBoar=inkWrap(drawBoar);
+lotus=function(x,y,s,t,open,a){open=open==null?1:open;ctx.save();ctx.globalAlpha*=a==null?1:a;V2.PK.setDPR(SC_);V2.PK.padma(ctx,x,y,s*2.2,Math.max(.05,open),t);ctx.restore()};
 
 Object.assign(BG,{
  cloudscape(S,t){const sky=S.sky||['#2a3a86','#7a8ad0','#f0b8c0','#fff0d0'];skyG(sky,-300,H+300);const sx=S.sx??CX,sy=S.sy??250,sun=S.sun||'255,236,190',warm=hx(sky[sky.length-1]).reduce((a,b)=>a+b)>560,sd=S.seed||21;
@@ -114,7 +125,7 @@ Object.assign(BG,{
   const fl=Math.max(0,Math.sin(t*5.3)*Math.sin(t*2.1));if(fl>.55)glow(CX*.8,200,500,'255,220,200',.3*(fl-.5));embers(t,36,3,'255,120,50',1.2*r)},
  sea(S,t){skyG(['#04122e','#0a2a5a','#16407e'],-300,H+300);stars(t,70,4,240);moonAt(W*.78,120,30,t);glow(CX,220,420,'120,170,255',.2);
   layer(.12,()=>deck(17,210,120,{light:'#3a5a9a',mid:'#24427a',dark:'#142a56'},t,10,20,40));
-  layer(.4,()=>waves(300,7,['#123c78','#16488c','#1c5aa6','#2470bc'],t,12,true))},
+  layer(.4,()=>waves(300,13,['#123c78','#16488c','#1c5aa6','#2470bc','#1a5098'],t,12,true))},
  voidR(S,t){skyG(S.cols||['#050204','#1c0408','#4a0c0c'],-300,H+300);glow(S.gx||CX,S.gy||340,520,S.rgb||'255,60,30',.42);layer(.12,()=>paperMandala(S.gx||CX,S.gy||340,t,'#2a0608',4,-.03,.4));mandala(S.gx||CX,S.gy||340,t,'255,90,60',.2,5,-.04);embers(t,60,3,'255,110,40',2)},
  amber(S,t){skyG(['#2a1808','#6a3a12','#b8701e','#e8a850'],-300,H+300);glow(CX,450,520,'255,190,110',.34);layer(.06,()=>{rays(CX,400,t,'255,220,150',.05,14,1400);sunburst(CX,400,64,t,['#fffbea','#ffd070','#e8802a'],.8)});
   layer(.12,()=>cloudlets(19,5,60,200,{light:'#f6d8a0',mid:'#d8a060'},t,1));

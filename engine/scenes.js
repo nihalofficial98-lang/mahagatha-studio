@@ -110,7 +110,7 @@ function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.f
   let HD=null;if(f.hd){HD={};['l','r','t','b'].forEach(k=>{const v=f.hd[k];HD[k]=v==null?0:(typeof v==='number'?v:q(P,t,v.c||0,v.d||0.7))})}
   if(f.dark!=null)ctx.filter=`brightness(${f.dark})`;
   const o={pose:f.pose||'stand',expr:ex,flip:f.flip||1,key:f.key||'255,214,160',rim:f.rim||'rgba(255,238,210,.95)',lx:f.lx??-1,tail:f.tail!==false};
-  if(f.aura)glow(x,y-130*s,260*s,f.aura,0.5);
+  if(f.aura)glow(x,y-130*s,240*s,f.aura,0.26);
   if(f.who==='shiva_p')drawShivaP(f,x,y,s,t,P);
   else if(f.who==='img')IMGFIG(f,x,y,s,t);
   else if(V2.has(f.who)){let PO=f.pose,MOOD=f.mood?Object.assign({},f.mood):{},TILT=f.tilt||0;
