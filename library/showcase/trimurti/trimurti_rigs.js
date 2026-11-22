@@ -78,7 +78,7 @@ const PIT={b:'#f6b81e',h:'#ffe27e',d:'#c26c0c',m:'#e09a16'};
 const SN={b:'#2f9488',d:'#155456',l:'#86e0cc',belly:'#f8e6aa',bellyD:'#d8aa58'};
 function foot(c,sk,p,ang){c.save();c.translate(p[0],p[1]);c.rotate(ang);cut(c,P.smooth([[-6,-10],[14,-12],[30,-8],[36,-2],[30,6],[-4,9],[-12,0]]),lg(c,0,-12,0,9,[sk.h,sk.b,sk.d]),{lw:1.8});
   c.fillStyle='#e0234a';c.beginPath();c.ellipse(6,7,16,2.4,0,0,TAU);c.fill();for(let k=0;k<5;k++)cut(c,P.ell(34-k*.6,-7+k*3.2,2.6,2),sk.b,{sh:0,lw:.9});beadArc(c,-8,-10,-8,9,4,6,2.2,PAL.gold);c.restore()}
-function drawVishnu(c,t,o){o=o||{};const br=Math.sin(t*1.1),bl=o.blink==null?.6:o.blink,sway=o.sway==null?1:o.sway,bias=o.bias||0,rise=o.rise||0;
+function drawVishnu(c,t,o){o=o||{};const br=Math.sin(t*1.1),bl=o.blink==null?.92:o.blink,sway=o.sway==null?1:o.sway,bias=o.bias||0,rise=o.rise||0;
   glow(c,-240,-340,360,'255,205,110',.3*(o.glow==null?1:o.glow));
   // five hoods on necks
   const piv=[-176,-246],Rh=162+rise*28,base=[-206,-204];
@@ -104,17 +104,17 @@ function drawVishnu(c,t,o){o=o||{};const br=Math.sin(t*1.1),bl=o.blink==null?.6:
   // torso
   c.save();c.translate(H[0],H[1]);c.rotate(TH);torso(c,SKV,160,68,44,br*1.5);
   cut(c,cc=>cc.roundRect(-46,-12,92,18,6),goldG(c,-46,46),{lw:2,sh:0});for(let k=-3;k<=3;k++)gem(c,k*12,-3,2.6,k%2?PAL.emer:PAL.ruby);
-  stroke(c,cc=>{cc.moveTo(-52,-150);cc.quadraticCurveTo(0,-80,38,-8)},'#fff4dc',1.8);
+  stroke(c,cc=>{cc.moveTo(-52,-150);cc.quadraticCurveTo(0,-80,38,-8)},INK,3.6);stroke(c,cc=>{cc.moveTo(-52,-150);cc.quadraticCurveTo(0,-80,38,-8)},'#fff4dc',1.8);
   hara(c,-146,28,[12,22],br*1.5);gem(c,0,-106,6,PAL.ruby);
   for(let i=0;i<24;i++){const u=i/23,x=lerp(-50,50,u),y=-146+Math.sin(u*PI)*176;cut(c,P.ell(x,y,4.6,4.6),i%3?'#f07aa6':(i%2?'#fff3a0':'#5cc070'),{sh:0,lw:1})}
   // neck + head (yoganidra)
-  cut(c,P.caps([0,-148],[0,-184],13,13),SKV.m,{lw:2});
-  c.save();c.translate(0,-186);c.rotate(1.12);c.translate(0,-44);hairBack(c,'#16142a',t,96);
+  cut(c,P.caps([0,-146],[0,-176],16,15),SKV.m,{lw:2});
+  c.save();c.translate(0,-172);c.rotate(.74);c.translate(0,-40);hairBack(c,'#16142a',t,68);
   face(c,{skin:SKV,t:t,blink:bl,smile:o.smile==null?.45:o.smile,lx:o.lx||0,ly:o.ly||0,tilak:'vaishnava',lip:'#c23a5a',kgem:PAL.emer});
   hairCap(c,'#14122a');kirita(c,66);c.restore();c.restore();
   // front arms: upper hand holds a lotus, lower hand rests on the gada
   const aP=arm(c,SKV,W([52,-150]),[34,-258+br],{bend:-1,w:[16,13,10],l1:72,l2:70,hand:'hold',cap:1});padma(c,aP.t[0]+2,aP.t[1]-24,1.1,1,t);
-  gada(c,[-138,-142],[-6,-150]);arm(c,SKV,W([-52,-150]),[-70,-146],{bend:-1,w:[16,13,10],hand:'hold',cap:1});
+  gada(c,[-138,-142],[-6,-150]);const hcp=W([40*Math.sin(.74),-172-40*Math.cos(.74)]);arm(c,SKV,W([-52,-150]),[hcp[0]+6,hcp[1]+56],{bend:-1,w:[16,13,10],hand:'rest',cap:1,l1:66,l2:62});
   // lotus rising from the navel
   const lo=ease(o.lotus||0);if(lo>.01){const nv=W([0,-36]),tp=[nv[0]+70,nv[1]-250*lo];stroke(c,cc=>{cc.moveTo(nv[0],nv[1]);cc.bezierCurveTo(nv[0]+10,nv[1]-90*lo,tp[0]+30,tp[1]+100*lo,tp[0],tp[1])},'#1e5a2a',7);stroke(c,cc=>{cc.moveTo(nv[0],nv[1]);cc.bezierCurveTo(nv[0]+10,nv[1]-90*lo,tp[0]+30,tp[1]+100*lo,tp[0],tp[1])},'#4caa4a',4);
     glow(c,tp[0],tp[1]-10,90*lo,'255,190,220',.5);padma(c,tp[0],tp[1],1.6*lo,lo,t)}
