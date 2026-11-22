@@ -74,6 +74,35 @@ const BG={
 
 };
 /* ---------- figures ---------- */
+function drawBoar(x,y,sc,t,f){ // Vishnu as the great boar: slate-blue body, bristle mane, tusks, gold ornaments; pose 'dig' scratches the earth, 'run' trots
+  ctx.save();ctx.translate(x,y);ctx.scale(sc*(f.flip||1),sc);const dig=(f.pose||'dig')==='dig',sw=Math.sin(t*(dig?9:6)),bob=Math.sin(t*1.7)*2;
+  const col='#3e4f80',colD='#2a3860',colH='#5a70a8';
+  ctx.fillStyle='rgba(0,0,0,.28)';ctx.beginPath();ctx.ellipse(0,2,120,14,0,0,7);ctx.fill();
+  const leg=(lx,ph,front)=>{ctx.save();ctx.translate(lx,-62+bob);const a=(front&&dig?(.5+.5*Math.sin(t*9+ph))*-.9:Math.sin(t*6+ph)*.35);ctx.rotate(a);ctx.fillStyle=colD;ctx.beginPath();ctx.moveTo(-13,0);ctx.lineTo(13,0);ctx.lineTo(9,62);ctx.lineTo(-9,62);ctx.closePath();ctx.fill();ctx.fillStyle='#e8dcc0';ctx.beginPath();ctx.moveTo(-10,56);ctx.lineTo(10,56);ctx.lineTo(12,68);ctx.lineTo(-12,68);ctx.closePath();ctx.fill();ctx.restore()};
+  leg(-74,0,false);leg(-40,2,false);leg(50,1,true);leg(80,3,true);
+  const g=ctx.createLinearGradient(0,-150,0,-30);g.addColorStop(0,colH);g.addColorStop(1,colD);ctx.fillStyle=g;ctx.beginPath();ctx.ellipse(-4,-86+bob,104,54,0,0,7);ctx.fill();
+  ctx.fillStyle=colD;for(let i=0;i<14;i++){const bx=-90+i*14;ctx.beginPath();ctx.moveTo(bx,-130+bob+Math.abs(i-7)*1.6);ctx.lineTo(bx+7,-158+bob+Math.abs(i-7)*2.4+Math.sin(t*3+i)*3);ctx.lineTo(bx+14,-130+bob+Math.abs(i-7)*1.6);ctx.fill()}
+  ctx.strokeStyle=colD;ctx.lineWidth=10;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(-104,-96+bob);ctx.quadraticCurveTo(-150,-110+Math.sin(t*4)*8,-138,-72);ctx.stroke();
+  // head lowered when digging
+  ctx.save();ctx.translate(96,-90+bob+(dig?24:0));ctx.rotate(dig?.42:0.05);ctx.fillStyle=col;ctx.beginPath();ctx.ellipse(0,0,50,38,0,0,7);ctx.fill();ctx.fillStyle=colH;ctx.beginPath();ctx.ellipse(46,10,40,24,.12,0,7);ctx.fill();ctx.fillStyle='#1a2038';ctx.beginPath();ctx.ellipse(80,6,8,11,0,0,7);ctx.fill();
+  ctx.fillStyle=colD;ctx.beginPath();ctx.moveTo(-22,-30);ctx.lineTo(-6,-62);ctx.lineTo(10,-30);ctx.fill();
+  ctx.fillStyle='#fff3d0';ctx.beginPath();ctx.arc(10,-8,6.4,0,7);ctx.fill();ctx.fillStyle='#d8a020';ctx.beginPath();ctx.arc(11,-8,3.6,0,7);ctx.fill();ctx.fillStyle='#10101c';ctx.beginPath();ctx.arc(11.6,-8,1.8,0,7);ctx.fill();
+  ctx.fillStyle='#f6eed8';[[0,1],[1,-1]].forEach(([i,sg])=>{ctx.beginPath();ctx.moveTo(52,22+i*3);ctx.bezierCurveTo(82,30+i*4,96,6,92,-26);ctx.bezierCurveTo(84,2,70,16,52,18+i*3);ctx.fill()});
+  ctx.fillStyle='#e6b84a';ctx.beginPath();ctx.moveTo(-26,-36);ctx.lineTo(-18,-58);ctx.lineTo(-8,-42);ctx.lineTo(2,-62);ctx.lineTo(12,-42);ctx.lineTo(22,-58);ctx.lineTo(28,-36);ctx.closePath();ctx.fill();ctx.restore();
+  ctx.strokeStyle='#e6b84a';ctx.lineWidth=6;ctx.beginPath();ctx.moveTo(44,-120+bob);ctx.quadraticCurveTo(70,-60,56,-34+bob);ctx.stroke();ctx.fillStyle='#e0302a';ctx.beginPath();ctx.arc(62,-62+bob,6,0,7);ctx.fill();
+  ctx.restore()}
+function drawSwan(x,y,sc,t,f){ // Brahma as the hamsa: white body, long curved neck, beating wings, orange beak, small gold crown
+  ctx.save();ctx.translate(x,y);ctx.scale(sc*(f.flip||1),sc);const fl=Math.sin(t*5.2),bob=Math.sin(t*2.4)*5;
+  const wing=(back)=>{ctx.save();ctx.translate(-10,-92+bob);ctx.rotate((back?-.2:0)+fl*.55-(back?.3:.55));ctx.fillStyle=back?'#d8dff0':'#f8f9ff';ctx.beginPath();ctx.moveTo(0,0);ctx.bezierCurveTo(-40,-100,-150,-150,-250,-96);ctx.bezierCurveTo(-190,-88,-150,-52,-120,-24);ctx.bezierCurveTo(-80,-30,-40,-18,0,0);ctx.fill();ctx.strokeStyle='rgba(120,140,200,.35)';ctx.lineWidth=2;for(let i=0;i<6;i++){ctx.beginPath();ctx.moveTo(-40-i*34,-22-i*8);ctx.lineTo(-70-i*30,-60-i*10);ctx.stroke()}ctx.restore()};
+  wing(true);
+  ctx.fillStyle='#f6f8ff';ctx.beginPath();ctx.ellipse(0,-86+bob,92,40,-.08,0,7);ctx.fill();ctx.beginPath();ctx.moveTo(-80,-92+bob);ctx.lineTo(-150,-70+bob);ctx.lineTo(-84,-70+bob);ctx.fill();
+  ctx.strokeStyle='#f6f8ff';ctx.lineWidth=24;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(60,-100+bob);ctx.bezierCurveTo(112,-120+bob,98,-190+bob,138,-196+bob);ctx.stroke();
+  ctx.fillStyle='#f6f8ff';ctx.beginPath();ctx.ellipse(146,-198+bob,24,19,.2,0,7);ctx.fill();
+  ctx.fillStyle='#f0902a';ctx.beginPath();ctx.moveTo(164,-204+bob);ctx.lineTo(210,-196+bob);ctx.lineTo(166,-186+bob);ctx.closePath();ctx.fill();ctx.fillStyle='#1a1018';ctx.beginPath();ctx.arc(150,-204+bob,3.4,0,7);ctx.fill();
+  ctx.fillStyle='#e6b84a';ctx.beginPath();ctx.moveTo(130,-214+bob);ctx.lineTo(136,-236+bob);ctx.lineTo(146,-222+bob);ctx.lineTo(154,-238+bob);ctx.lineTo(160,-214+bob);ctx.closePath();ctx.fill();
+  wing(false);
+  ctx.restore()}
+
 function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.fo!=null?1-q(P,t,f.fo,f.fd||1.2):1);if(a<=0.01)return;const ex=f.exprB?lerpO(f.expr,f.exprB,q(P,t,f.ec,0.4)):(f.expr||{});
   const x=f.x+(f.vx||0)*t,y=f.y+(f.vy||0)*t,s=f.s*(1+(f.ds||0)*t);ctx.save();ctx.globalAlpha*=a;if(f.mx||f.my){const m=q(P,t,f.mc||0,f.md||1.2);ctx.translate((f.mx||0)*m,(f.my||0)*m)}
   if(f.bow){const bb=q(P,t,f.bc||0,f.bd||0.8);ctx.translate(x,y);ctx.rotate(f.bow*bb);ctx.translate(-x,-y)}
@@ -95,6 +124,8 @@ function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.f
     const vo={pose:PO,expr:ex,flip:o.flip,key:o.key,rim:o.rim,lx:o.lx,k:f.k,prop:f.prop,imp:f.imp,hd:HD,mood:MOOD,tilt:TILT};
     if(f.head)V2.head(f.who,x,y,s,t,vo);else{if(f.who==='brahma'&&f.lotus!==false)lotus(x,y+22*s,s*1.25,t,1);V2.fig(f.who,x,y,s,t,vo)}}
   else if(f.who==='brahma')drawBrahma(x,y,s,t,{aura:null,expr:ex,key:o.key,rim:o.rim,lx:o.lx,lotus:f.lotus!==false});
+  else if(f.who==='boar')drawBoar(x,y,s,t,f);
+  else if(f.who==='swan')drawSwan(x,y,s,t,f);
   else if(f.who==='bull'){const b0=f.la0||[1,1,1,1],la=[b0[0],b0[1]*(f.l1==null?1:1-q(P,t,f.l1,0.9)),b0[2]*(f.l2==null?1:1-q(P,t,f.l2,0.9)),b0[3]*(f.l3==null?1:1-q(P,t,f.l3,0.9))];drawBull(x,y,s,t,{key:o.key,rim:o.rim,la:la,bow:(f.bow||0)*q(P,t,f.bc,1.2)})}
   else if(f.head)drawHead(CH[f.who],x,y,s,t,{key:o.key,rim:o.rim,lx:o.lx,expr:ex});
   else drawFig(CH[f.who],x,y,s,t,o);

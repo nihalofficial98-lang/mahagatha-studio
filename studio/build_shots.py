@@ -5,7 +5,7 @@ import json,sys,os,re,shutil,importlib.util
 sys.path.insert(0,os.path.join(os.path.dirname(os.path.abspath(__file__))))
 from shotkit import Film
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));A=R+'/library/pilot/assets/'
-WHO=set('shiva vishnu brahma daksha narada manu adishakti brahmi madhu kaitabha harihara ardha vishnu_rest hayagriva kumara jaya vijaya villager villager_w prasuti sati diti danu asikli kashyapa indra surya chandra hiranyaksha hiranyakashipu ravana'.split())|{f'rishi{i}' for i in range(7)}
+WHO=set('shiva vishnu brahma daksha narada manu adishakti brahmi madhu kaitabha harihara ardha vishnu_rest hayagriva kumara jaya vijaya villager villager_w prasuti sati diti danu asikli kashyapa indra surya chandra hiranyaksha hiranyakashipu ravana boar swan'.split())|{f'rishi{i}' for i in range(7)}
 BGK=set('vista cloudscape earth pillar cel storm voidR night dusk moon palace dawn amber cosmos sea plain yagna kailash garden cosmicsea img'.split())
 FXT=set('text name glow orbs sparkle petals shock flash bolt crack ribbon beam light flames fire pillar infinity scales trident heart tears threads outline egg books gunas element lotus bluemountain waterfront vaikuntha clock dim fximg skull arrow asuras ban body cycle flame frost icon kids lotusI person vortex'.split())
 RESERVED={'id','at','cues','bg','figs','fx','fxb','cam','grade','note','custom','args','len_hint'}
@@ -121,7 +121,7 @@ def main():
                 if not .9<=c.get('z',1)<=3.1 or abs(c.get('x',0))>220 or abs(c.get('y',0))>220 or abs(c.get('r',0))>.08:warns.append(f"{sid}: camera '{e}' looks extreme {c}")
         if 'sc' in dir() and isinstance(sc,dict) and sc.get('figs') is not None:
             for ff in sc['figs']:
-                if ff.get('who') in (None,'img'):continue
+                if ff.get('who') in (None,'img','boar','swan','bull'):continue
                 fs=ff.get('s',1);fx0,fy0=ff.get('x',640),ff.get('y',500)
                 if ff.get('head'):cy=fy0;top=fy0-104*fs;chin=fy0+75*fs
                 else:cy=fy0-300*fs;top=cy-105*fs;chin=cy+55*fs
