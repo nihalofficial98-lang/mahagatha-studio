@@ -51,7 +51,14 @@ function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.f
   if(f.aura)glow(x,y-130*s,260*s,f.aura,0.5);
   if(f.who==='shiva_p')drawShivaP(f,x,y,s,t,P);
   else if(f.who==='img')IMGFIG(f,x,y,s,t);
-  else if(V2.has(f.who)){const vo={pose:f.pose,expr:ex,flip:o.flip,key:o.key,rim:o.rim,lx:o.lx,k:f.k,prop:f.prop,imp:f.imp,hd:HD};
+  else if(V2.has(f.who)){let PO=f.pose,MOOD=f.mood?Object.assign({},f.mood):{},TILT=f.tilt||0;
+    if(f.acts||f.walk){PO=JSON.parse(JSON.stringify(V2.poseOf(f.pose||'stand',f.who)));
+      (f.acts||[]).forEach(a=>{const u=q(P,t,a.c||0,a.d||.6);if(u<=0)return;if(a.pose)PO=V2.mixPose(PO,V2.poseOf(a.pose,f.who),u);
+        if(a.mood)for(const k in a.mood)MOOD[k]=(MOOD[k]||0)+(a.mood[k]-(MOOD[k]||0))*u;if(a.tilt!=null)TILT+=(a.tilt-TILT)*u});
+      if(f.walk){const w=Math.sin(t*4.2*f.walk),w2=Math.sin(t*4.2*f.walk+Math.PI),lift=a=>Math.max(0,a)*26;
+        PO.fL[0]+=w*34;PO.fL[1]-=lift(w);PO.fR[0]+=w2*34;PO.fR[1]-=lift(w2);PO.kL[0]+=w*20;PO.kL[1]-=lift(w)*.8;PO.kR[0]+=w2*20;PO.kR[1]-=lift(w2)*.8;
+        PO.hL[0]+=w2*26;PO.hR[0]+=w*26;PO.hd[1]-=Math.abs(w)*3;PO.ch[1]-=Math.abs(w)*3}}
+    const vo={pose:PO,expr:ex,flip:o.flip,key:o.key,rim:o.rim,lx:o.lx,k:f.k,prop:f.prop,imp:f.imp,hd:HD,mood:MOOD,tilt:TILT};
     if(f.head)V2.head(f.who,x,y,s,t,vo);else{if(f.who==='brahma'&&f.lotus!==false)lotus(x,y+22*s,s*1.25,t,1);V2.fig(f.who,x,y,s,t,vo)}}
   else if(f.who==='brahma')drawBrahma(x,y,s,t,{aura:null,expr:ex,key:o.key,rim:o.rim,lx:o.lx,lotus:f.lotus!==false});
   else if(f.who==='bull'){const b0=f.la0||[1,1,1,1],la=[b0[0],b0[1]*(f.l1==null?1:1-q(P,t,f.l1,0.9)),b0[2]*(f.l2==null?1:1-q(P,t,f.l2,0.9)),b0[3]*(f.l3==null?1:1-q(P,t,f.l3,0.9))];drawBull(x,y,s,t,{key:o.key,rim:o.rim,la:la,bow:(f.bow||0)*q(P,t,f.bc,1.2)})}

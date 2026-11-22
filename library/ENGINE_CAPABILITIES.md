@@ -52,3 +52,12 @@ Image effects: `"t":"img","src":"<name>"` where name is any library/fx image (e.
 - `text`: `s`,`x`,`y`,`size`,`c`,`d`. `name`: `s`,`x`,`y`. `glow`: `x`,`y`,`r`,`rgb`,`ga`. `shock`: `x`,`y`,`c`,`rgb`,`max`. `flash`: `c`,`w`,`rgb`. `sparkle`: `x`,`y`,`n`,`rx`,`ry`.
 - Image effects (`fximg`): `alpha` is the MAXIMUM opacity reached after the fade-in (`c`/`d`); never give a fade-in an `alpha` of 0.
 - Known weak library images (visible rectangles or odd scale): `mountain_peak` (has a box background), `stars_gold_big` (huge at w>400), flower/petal clusters over w>700. Prefer `star_field`, `halo_ring`, `divine_rays`, `cloud_*`.
+
+## Character acting (coded rig, from EP6 on)
+Every character is a jointed vector rig (head, eyes, brows, mouth, shoulders, elbows, hands, knees, feet). Per figure in a shot:
+- `acts:[{c:<cue index>,pose:'namaste|bow|point|raise|open|plead|flee|lunge|sit|hold',d:<seconds>,mood:{...},tilt:<rad>}]` blends to the pose on that spoken word.
+- `walk:<speed>` (leg and arm swing) with `vx` drift; `mx,my` + `mc,md` move on a cue; `bow`, `kneel` with `bc,bd`; `fo,fd` fade out.
+- `mood:{smile,sad,surp,mouth,lx,ly,blink}` face; anger via `expr:{brow:-0.9}`; `tilt` head turn.
+- Brahma: `hd:{l,r,b,t}` sprouts the left, right, back and top faces on cues.
+- Coded cast: shiva, vishnu, brahma (4 faces), daksha, narada (veena prop), manu, brahmi, adishakti, sati, prasuti, diti, danu, asikli, villager, villager_w, kumara (child), jaya, vijaya, kashyapa, indra, surya, chandra, hiranyaksha, hiranyakashipu, ravana, rishi0-6, madhu, kaitabha.
+- `episodes/epNN/action_plan.json` (written by the action-director agent) is merged into the shots by build_shots.py.

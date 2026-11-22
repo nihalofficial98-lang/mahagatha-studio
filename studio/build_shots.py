@@ -5,7 +5,7 @@ import json,sys,os,re,shutil,importlib.util
 sys.path.insert(0,os.path.join(os.path.dirname(os.path.abspath(__file__))))
 from shotkit import Film
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));A=R+'/library/pilot/assets/'
-WHO=set('shiva vishnu brahma daksha narada manu adishakti brahmi madhu kaitabha harihara ardha vishnu_rest hayagriva'.split())|{f'rishi{i}' for i in range(7)}
+WHO=set('shiva vishnu brahma daksha narada manu adishakti brahmi madhu kaitabha harihara ardha vishnu_rest hayagriva kumara jaya vijaya villager villager_w prasuti sati diti danu asikli kashyapa indra surya chandra hiranyaksha hiranyakashipu ravana'.split())|{f'rishi{i}' for i in range(7)}
 BGK=set('cel storm voidR night dusk moon palace dawn amber cosmos sea plain yagna kailash garden cosmicsea img'.split())
 FXT=set('text name glow orbs sparkle petals shock flash bolt crack ribbon beam light flames fire pillar infinity scales trident heart tears threads outline egg books gunas element lotus bluemountain waterfront vaikuntha clock dim fximg skull arrow asuras ban body cycle flame frost icon kids lotusI person vortex'.split())
 RESERVED={'id','at','cues','bg','figs','fx','fxb','cam','grade','note','custom','args','len_hint'}
@@ -24,11 +24,25 @@ def ensure_asset(name):
         if src and os.path.exists(src):shutil.copy(src,dst)
         else:raise SystemExit(f'asset not found: {name} (looked for {dst})')
     return '../library/pilot/assets/'+base
+def load_actions(epdir):
+    import os,json
+    p=os.path.join(epdir,'action_plan.json')
+    return json.load(open(p,encoding='utf-8')).get('shots',{}) if os.path.exists(p) else {}
 def main():
     ep=sys.argv[1];plan_p=f'{R}/episodes/ep{ep}/shot_plan.json';out_p=f'{R}/episodes/ep{ep}/shots.json'
     if '--plan' in sys.argv:plan_p=os.path.abspath(sys.argv[sys.argv.index('--plan')+1])
     if '--out' in sys.argv:out_p=os.path.abspath(sys.argv[sys.argv.index('--out')+1])
     plan=json.load(open(plan_p,encoding='utf-8'));T=json.load(open(f'{R}/build/ep{ep}/timings.json',encoding='utf-8'));Bt=json.load(open(f'{R}/build/ep{ep}/beats.json',encoding='utf-8'))['scenes']
+    ACT=load_actions(f'{R}/episodes/ep{ep}')
+    for s_ in (plan['shots'] if isinstance(plan,dict) else plan):
+        a_=ACT.get(s_.get('id'))
+        if not a_:continue
+        for k_,spec in (a_.get('figs') or {}).items():
+            try:s_['figs'][int(k_)].update(spec)
+            except Exception:pass
+        for w_ in (a_.get('cues_add') or []):
+            s_.setdefault('cues',[])
+            if w_ not in s_['cues']:s_['cues'].append(w_)
     beats=[];off=0.0;allw=[]
     for t,sc in zip(T,Bt):
         i=0;lines=[]
