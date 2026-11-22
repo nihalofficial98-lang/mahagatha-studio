@@ -41,7 +41,7 @@ function band(c,a,b,u,w,col){const x=lerp(a[0],b[0],u),y=lerp(a[1],b[1],u),an=Ma
 
 /* ---------- faces ---------- */
 // F: {skin:{b,h,d,m}, turn -1..1, blink 0..1, mouth 0..1, smile, lx, ly, brow, tilak, third, beard, lip, t}
-function face(c,F){const sk=F.skin,tn=clamp(F.turn||0,-1,1),sq=1-Math.abs(tn)*.3,fx=tn*12,bl=clamp(F.blink||0),bs_=clamp((F.beardLen==null?48:F.beardLen)/48,.3,1.5),an=clamp(F.anger||0),sd_=clamp(F.sad||0),su=clamp(F.surp||0),mo=clamp(Math.max(F.mouth||0,su*.75)),sm=(F.smile==null?.35:F.smile)*(1-clamp(an+sd_+su))-an*1.15-sd_*.95,lx=(F.lx||0)+tn*.5,ly=F.ly||0,t=F.t||0;
+function face(c,F){const sk=F.skin,tn=clamp(F.turn||0,-1,1),sq=1-Math.abs(tn)*.3,fx=tn*12,bl=clamp(F.blink||0),bs_=clamp((F.beardLen==null?48:F.beardLen)/48,.3,1.5),an=clamp(F.anger||0),sd_=clamp(F.sad||0),su=clamp(F.surp||0),mo=clamp(Math.max(F.mouth||0,su*.75)),sm=(F.smile==null?.35:F.smile)*(1-clamp(an+sd_+su))-an*1.25-sd_*1.25,lx=(F.lx||0)+tn*.5,ly=F.ly||0,t=F.t||0;
   c.save();c.scale(sq,1);
   [-1,1].forEach(sd=>{if(tn*sd<-.6)return;const ex=sd*33;cut(c,P.ell(ex,4,7.5,13,sd*-.15),sk.m,{sh:0,lw:2});
     if(F.kundala!==false){c.save();c.translate(ex+sd,17);c.rotate(Math.sin(t*1.7+sd)*.14);cut(c,cc=>{cc.moveTo(0,-2);cc.bezierCurveTo(10,6,9,20,0,27);cc.bezierCurveTo(-9,20,-10,6,0,-2)},goldG(c,-9,9),{lw:1.6,sh:0});gem(c,0,13,3.2,F.kgem||PAL.ruby);c.restore()}});
@@ -51,7 +51,7 @@ function face(c,F){const sk=F.skin,tn=clamp(F.turn||0,-1,1),sq=1-Math.abs(tn)*.3
   c.fillStyle='rgba(255,105,110,.17)';[-1,1].forEach(sd=>{c.beginPath();c.ellipse(sd*19+fx,20,8,5,0,0,TAU);c.fill()});c.restore();
   c.save();c.translate(fx,0);
   // brows
-  [-1,1].forEach(sd=>{const ex=sd*15,r=(F.brow||0)*4+su*6+sd_*1.5,ia=an*7.5-sd_*7,oa=-an*3.5+sd_*3,m=(ia+oa)*.4-an*2,th=4+an*2.6;c.fillStyle=F.browCol||INK;c.beginPath();c.moveTo(ex-sd*10,-15-r*.6+ia);c.quadraticCurveTo(ex+sd*3,-24.5-r+m,ex+sd*17,-14.5-r*.3+oa);c.quadraticCurveTo(ex+sd*3,-24.5-r+m+th,ex-sd*10,-15-r*.6+ia+an*2);c.fill()});
+  [-1,1].forEach(sd=>{const ex=sd*15,r=(F.brow||0)*4+su*6+sd_*3,ia=an*9-sd_*10.5,oa=-an*4+sd_*4.5,m=(ia+oa)*.4-an*2,th=4+an*3.4;c.fillStyle=F.browCol||INK;c.beginPath();c.moveTo(ex-sd*10,-15-r*.6+ia);c.quadraticCurveTo(ex+sd*3,-24.5-r+m,ex+sd*17,-14.5-r*.3+oa);c.quadraticCurveTo(ex+sd*3,-24.5-r+m+th,ex-sd*10,-15-r*.6+ia+an*2);c.fill()});
   // lotus-petal eyes with kajal wings; the lid slides down for blinks / meditation
   [-1,1].forEach(sd=>{const ex=sd*15,inn=[ex-sd*10,1],out=[ex+sd*13,-3],cy=lerp(-11.5,6,bl);
     const eye=cc=>{cc.moveTo(inn[0],inn[1]);cc.quadraticCurveTo(ex,-12,out[0],out[1]);cc.quadraticCurveTo(ex+sd,7.5,inn[0],inn[1]);cc.closePath()};
@@ -61,7 +61,7 @@ function face(c,F){const sk=F.skin,tn=clamp(F.turn||0,-1,1),sq=1-Math.abs(tn)*.3
       if(an>.02||sd_>.02){const yi=-9+an*9.5,yo=-9+an*1.5+sd_*7.5;c.fillStyle=sk.m;c.beginPath();c.moveTo(inn[0]-sd*5,-18);c.lineTo(out[0]+sd*5,-18);c.lineTo(out[0]+sd*5,yo);c.lineTo(inn[0]-sd*5,yi);c.closePath();c.fill();stroke(c,cc=>{cc.moveTo(inn[0]-sd*5,yi);cc.lineTo(out[0]+sd*5,yo)},INK,2.4)}
       c.fillStyle=sk.m;c.beginPath();c.moveTo(inn[0]-sd*4,-17);c.lineTo(out[0]+sd*4,-17);c.lineTo(out[0]+sd*3,out[1]);c.quadraticCurveTo(ex,cy,inn[0],inn[1]);c.closePath();c.fill();c.restore()}
     if(an>.35||F.eyeRed)glow(c,ex+sd*2,-3,15,'255,60,40',.38*Math.max(an,F.eyeRed?.8:0));
-    if(sd_>.5){const tx=ex+sd*7,ty=9+sd_*8;cut(c,cc=>{cc.moveTo(tx,ty-6);cc.quadraticCurveTo(tx+4,ty+1,tx,ty+4);cc.quadraticCurveTo(tx-4,ty+1,tx,ty-6)},'rgba(190,225,255,.85)',{sh:0,lw:.9,ink:'rgba(60,90,140,.7)'})}
+    if(sd_>.32){const tx=ex+sd*7,ty=9+sd_*8;cut(c,cc=>{cc.moveTo(tx,ty-6);cc.quadraticCurveTo(tx+4,ty+1,tx,ty+4);cc.quadraticCurveTo(tx-4,ty+1,tx,ty-6)},'rgba(190,225,255,.85)',{sh:0,lw:.9,ink:'rgba(60,90,140,.7)'})}
     stroke(c,cc=>{cc.moveTo(inn[0],inn[1]);cc.quadraticCurveTo(ex,cy,out[0],out[1])},INK,3.1);
     c.fillStyle=INK;c.beginPath();c.moveTo(out[0]-sd*2.5,out[1]-1.6);c.lineTo(out[0]+sd*8,out[1]-5.5);c.lineTo(out[0],out[1]+1.6);c.closePath();c.fill();
     if(bl<.9)stroke(c,cc=>{cc.moveTo(inn[0]+sd*2,inn[1]+1.5);cc.quadraticCurveTo(ex+sd,6.5,out[0]-sd,out[1]+1)},'rgba(30,13,36,.55)',1.3);
@@ -79,7 +79,7 @@ function face(c,F){const sk=F.skin,tn=clamp(F.turn||0,-1,1),sq=1-Math.abs(tn)*.3
   c.beginPath();c.moveTo(-cw*.8,my-cu*.5+lo*.4);c.quadraticCurveTo(0,my+6.5+lo,cw*.8,my-cu*.5+lo*.4);c.quadraticCurveTo(0,my+1.6+lo,-cw*.8,my-cu*.5+lo*.4);c.fill();
   stroke(c,cc=>{cc.moveTo(-cw,my-cu);cc.quadraticCurveTo(0,my+1+lo*.6+sm*1.6,cw,my-cu)},INK,1.5);
   c.fillStyle='rgba(255,255,255,.35)';c.beginPath();c.ellipse(2,my+3.4+lo,3,1,0,0,TAU);c.fill();
-  if(F.beard){const bc=F.beard;[-1,1].forEach(sd=>{const m=cc=>{cc.moveTo(sd*1,25.5);cc.quadraticCurveTo(sd*12,23.5,sd*17,29.5);cc.quadraticCurveTo(sd*21,33,sd*25,27)};stroke(c,m,INK,6.2);stroke(c,m,bc,4)})}
+  if(F.beard||F.must){const bc=F.must||F.beard;[-1,1].forEach(sd=>{const m=cc=>{cc.moveTo(sd*1,25.5);cc.quadraticCurveTo(sd*12,23.5,sd*17,29.5);cc.quadraticCurveTo(sd*21,33,sd*25,27)};stroke(c,m,INK,6.2);stroke(c,m,bc,4)})}
   // marks
   if(F.bindi){c.fillStyle=PAL.ruby;c.beginPath();c.arc(0,-21,2.6,0,TAU);c.fill()}
   if(F.tilak==='vaishnava'){stroke(c,cc=>{cc.moveTo(-6,-40);cc.lineTo(-5,-21);cc.quadraticCurveTo(0,-15,5,-21);cc.lineTo(6,-40)},'#fff8ee',2.6);stroke(c,cc=>{cc.moveTo(0,-38);cc.lineTo(0,-21)},PAL.ruby,2.8)}
@@ -135,6 +135,9 @@ function hand(c,sk,p,ang,type,fl){c.save();c.translate(p[0],p[1]);c.rotate(ang);
     stroke(c,cc=>cc.arc(-6,-25,4.5,0,TAU),INK,1.5);cut(c,P.caps([-10,-12],[-8,-24],3.6,3),f,o);cut(c,P.caps([-3,-20],[-4,-28],3.4,3),f,o)}
   else if(type==='rest'){cut(c,P.smooth([[-10,0],[10,0],[11,-14],[7,-20],[-7,-20],[-11,-14]]),lg(c,-11,0,11,0,[sk.h,sk.b]),o);
     [[-6,-19,-7,-30],[-2,-20,-2,-33],[2.5,-20,3,-32],[6.5,-18,7.5,-28]].forEach(([x,y,x2,y2])=>cut(c,P.caps([x,y],[x2,y2],3.2,2.8),f,o));cut(c,P.caps([-10,-6],[-16,-15],3.6,3),f,o)}
+  else if(type==='point'){cut(c,P.smooth([[-11,0],[11,0],[13,-12],[9,-21],[-9,-21],[-13,-12]]),lg(c,-12,0,12,0,[sk.h,sk.b,sk.d]),o);
+    [2.5,7.5].forEach(x=>cut(c,P.ell(x,-21,3.4,4),f,{sh:0,lw:1.2}));cut(c,P.ell(-2.5,-22,3.4,4),f,{sh:0,lw:1.2});
+    cut(c,P.caps([-7,-18],[-8,-40],3.5,3),f,o);cut(c,P.caps([-12,-8],[-4,-19],3.8,3.4),f,o)}
   else{ // fist gripping something
     cut(c,P.smooth([[-11,0],[11,0],[13,-14],[9,-24],[-9,-24],[-13,-14]]),lg(c,-12,0,12,0,[sk.h,sk.b,sk.d]),o);
     [-7.5,-2.5,2.5,7.5].forEach(x=>cut(c,P.ell(x,-24,3.4,4),f,{sh:0,lw:1.2}));cut(c,P.caps([-12,-8],[-3,-19],3.8,3.4),f,o)}
@@ -218,5 +221,83 @@ function hood(c,x,y,ang,s,t,S,o){o=o||{};c.save();c.translate(x,y);c.rotate(ang)
   if(o.gem){glow(c,0,-90,34,'140,255,230',.7);cut(c,P.poly([[0,-101],[7,-90],[0,-80],[-7,-90]]),'#c8fff4',{sh:0,lw:1.4})}
   c.restore()}
 
-G.TRIKIT={TAU,PI,clamp,lerp,ease,L2,rng,shade,INK,PAL,lg,rg,cut,P,glow,stroke,ik,goldG,gem,beadArc,band,face,hairCap,hairBack,kirita,jataMukuta,halo,hand,limb,limbOutline,arm,veda,mala,kamandalu,chakra,shankha,padma,gada,damaru,trishul,tube,ellPts,hood,setDPR:v=>{DPR=v}};
+/* ---------- bodies (Opus showcase torso, feet, jewellery) ---------- */
+// torso standing on the waist at the origin, h tall, shoulder half-width sw, waist half-width ww, breathing b
+function torso(c,sk,h,sw,ww,b,o){o=o||{};const fem=o.fem,pts=fem?[[-ww,0],[-ww-6,-h*.22],[-ww+2,-h*.48],[-sw+6,-h*.8],[-sw,-h+8+b],[-sw*.5,-h-2+b],[0,-h+b],[sw*.5,-h-2+b],[sw,-h+8+b],[sw-6,-h*.8],[ww-2,-h*.48],[ww+6,-h*.22],[ww,0],[0,5]]
+    :[[-ww,0],[-ww-5,-h*.32],[-sw+4,-h*.74],[-sw,-h+6+b],[-sw*.55,-h-3+b],[0,-h-1+b],[sw*.55,-h-3+b],[sw,-h+6+b],[sw-4,-h*.74],[ww+5,-h*.32],[ww,0],[0,5]];
+  cut(c,P.smooth(pts),lg(c,-sw,0,sw,0,[sk.h,sk.b,sk.b,sk.d]),{lw:2.4});
+  c.save();c.beginPath();P.smooth(pts)(c);c.clip();c.fillStyle='rgba(30,10,60,.17)';c.beginPath();c.ellipse(sw*.9,-h*.5,sw*.36,h*.75,0,0,TAU);c.fill();c.fillStyle='rgba(255,255,255,.12)';c.beginPath();c.ellipse(-sw*.45,-h*.62+b,sw*.3,h*.16,-.2,0,TAU);c.fill();c.restore();
+  const m=o.muscle==null?.6:o.muscle;
+  if(!fem){[-1,1].forEach(sd=>stroke(c,cc=>{cc.moveTo(sd*4,-h*.66+b);cc.quadraticCurveTo(sd*sw*.45,-h*.5+b,sd*sw*.8,-h*.7+b)},`rgba(40,14,40,${.2+.25*m})`,2));
+    stroke(c,cc=>{cc.moveTo(0,-h*.6+b);cc.lineTo(0,-h*.28)},`rgba(40,14,40,${.12+.2*m})`,1.6);
+    if(m>.6)[-1,1].forEach(sd=>[.36,.46].forEach(f=>stroke(c,cc=>{cc.moveTo(sd*4,-h*f);cc.quadraticCurveTo(sd*ww*.4,-h*f+3,sd*ww*.62,-h*f-1)},'rgba(40,14,40,.2)',1.4)))}
+  cut(c,P.ell(0,-h*.2,3,4),'rgba(40,14,40,.45)',{sh:0,lw:0});
+  stroke(c,cc=>{cc.moveTo(-ww*.7,-h*.1);cc.quadraticCurveTo(0,-h*.04,ww*.7,-h*.1)},'rgba(40,14,40,.2)',1.4)}
+function hara(c,y0,w,drops,b,o){o=o||{};drops.forEach((d,i)=>{const n=13+i*2;beadArc(c,-w+i*3,y0+b,w-i*3,y0+b,d,n,i===drops.length-1?2.4:3,o.cols?o.cols[i%o.cols.length]:(i%2?PAL.pearl:PAL.gold))});if(o.gem!==false)gem(c,0,y0+b+drops[drops.length-1]+2,4.5,o.gem||PAL.ruby)}
+function petal(c,L,w,cols){cut(c,cc=>{cc.moveTo(0,0);cc.bezierCurveTo(L*.28,-w,L*.74,-w*.78,L,0);cc.bezierCurveTo(L*.74,w*.78,L*.28,w,0,0)},lg(c,0,0,L,0,cols),{lw:1.8,sh:1});stroke(c,cc=>{cc.moveTo(L*.12,0);cc.quadraticCurveTo(L*.5,-w*.12,L*.86,0)},'rgba(150,30,80,.35)',1.3)}
+function lotusSeat(c,t,part,ga){ga=ga==null?1:ga;
+  if(part==='back'){glow(c,0,-70,320,'255,140,190',.3*ga);for(let i=0;i<11;i++){const u=i/10;c.save();c.translate((u-.5)*230,-56);c.rotate(-PI/2+(u-.5)*2.3);petal(c,150-Math.abs(u-.5)*70,36,['#c2386e','#f27aa6','#ffd6e6']);c.restore()}return}
+  for(let i=0;i<10;i++){const u=i/9;c.save();c.translate((u-.5)*300,-36);c.rotate(PI/2+(.5-u)*1.7);petal(c,82-Math.abs(u-.5)*20,30,['#9e2a5a','#d84e86','#f6a0c2']);c.restore()}
+  cut(c,P.ell(0,-44,196,22),lg(c,0,-66,0,-22,['#ffe08a','#e3992b','#a8601a']),{lw:2.2});for(let i=0;i<26;i++){const a=i/26*TAU;cut(c,P.ell(Math.cos(a)*178,-44+Math.sin(a)*16,2.4,2.4),PAL.goldL,{sh:0,lw:.8})}
+  for(let i=0;i<9;i++){const u=i/8;c.save();c.translate((u-.5)*300,-36);c.rotate(-PI/2+(u-.5)*1.2);petal(c,74-Math.abs(u-.5)*24,26,['#e05a90','#f7a0c2','#fff2f7']);c.restore()}
+  glow(c,0,-60,180,'255,200,230',.18*ga)}
+// side-view foot (toes toward +x), with anklet
+function foot(c,sk,p,ang,o){o=o||{};c.save();c.translate(p[0],p[1]);c.rotate(ang||0);if(o.flip)c.scale(-1,1);cut(c,P.smooth([[-6,-10],[14,-12],[30,-8],[36,-2],[30,6],[-4,9],[-12,0]]),lg(c,0,-12,0,9,[sk.h,sk.b,sk.d]),{lw:1.8});
+  if(o.alta!==false){c.fillStyle='rgba(224,35,74,.75)';c.beginPath();c.ellipse(6,7,16,2.2,0,0,TAU);c.fill()}for(let k=0;k<5;k++)cut(c,P.ell(34-k*.6,-7+k*3.2,2.6,2),sk.b,{sh:0,lw:.9});if(o.anklet!==false)beadArc(c,-8,-10,-8,9,4,6,2.2,o.anklet||PAL.gold);c.restore()}
+// front-view foot standing on the ground (toes turned out by side)
+function footF(c,sk,x,y,sd,o){o=o||{};c.save();c.translate(x,y);c.scale(sd,1);
+  cut(c,P.smooth([[-9,-16],[9,-17],[18,-9],[28,-4],[29,3],[14,5],[-8,5],[-14,-2]]),lg(c,0,-17,0,5,[sk.h,sk.b,sk.d]),{lw:1.8,sh:0});
+  for(let k=0;k<4;k++)cut(c,P.ell(26-k*5.5,1+k*.6,2.6-k*.25,2.2),sk.b,{sh:0,lw:.8});
+  if(o.alta!==false){c.fillStyle='rgba(224,35,74,.7)';c.beginPath();c.ellipse(8,4,14,1.8,0,0,TAU);c.fill()}
+  if(o.anklet!==false)beadArc(c,-10,-15,12,-15,5,7,2.3,o.anklet||PAL.gold,'rgba(255,255,255,.6)');c.restore()}
+function tigerStripes(c,path,box,n,seed){c.save();c.beginPath();path(c);c.clip();const r=rng(seed),[x0,y0,x1,y1]=box;
+  for(let i=0;i<n;i++){const x=lerp(x0,x1,(i+.5)/n)+(r()-.5)*8,w=3.5+r()*4,top=y0-4+r()*((y1-y0)*.5);c.fillStyle='#1e0d14';c.beginPath();c.moveTo(x-w,top);c.quadraticCurveTo(x+w*2,lerp(top,y1,.4),x-w*.2,lerp(top,y1,.35+r()*.4));c.quadraticCurveTo(x+w*.4,lerp(top,y1,.3),x+w,top);c.fill()}c.restore()}
+// ribbon of cloth along a centre line (uttariya, pallu, sash ends): pts centre line, w half-width
+function ribbon(c,pts,w0,w1,col,o){o=o||{};const n=pts.length,L=[],R=[];for(let i=0;i<n;i++){const a=pts[Math.max(0,i-1)],b=pts[Math.min(n-1,i+1)],dx=b[0]-a[0],dy=b[1]-a[1],d=Math.hypot(dx,dy)||1,w=lerp(w0,w1,i/(n-1));L.push([pts[i][0]-dy/d*w,pts[i][1]+dx/d*w]);R.push([pts[i][0]+dy/d*w,pts[i][1]-dx/d*w])}
+  const path=cc=>{cc.moveTo(L[0][0],L[0][1]);for(let i=1;i<n;i++){const m=[(L[i-1][0]+L[i][0])/2,(L[i-1][1]+L[i][1])/2];cc.quadraticCurveTo(L[i-1][0],L[i-1][1],m[0],m[1])}cc.lineTo(L[n-1][0],L[n-1][1]);cc.lineTo(R[n-1][0],R[n-1][1]);for(let i=n-2;i>=0;i--){const m=[(R[i+1][0]+R[i][0])/2,(R[i+1][1]+R[i][1])/2];cc.quadraticCurveTo(R[i+1][0],R[i+1][1],m[0],m[1])}cc.lineTo(R[0][0],R[0][1]);cc.closePath()};
+  cut(c,path,o.fill||col,{lw:o.lw||1.8,sh:o.sh==null?0:o.sh});
+  if(o.edge)stroke(c,cc=>{cc.moveTo(R[0][0],R[0][1]);for(let i=1;i<n;i++)cc.lineTo(R[i][0],R[i][1])},o.edge,o.ew||2.4);
+  if(o.folds)for(let i=1;i<n-1;i+=2)stroke(c,cc=>{cc.moveTo(lerp(L[i][0],R[i][0],.2),lerp(L[i][1],R[i][1],.2));cc.lineTo(lerp(L[i+1][0],R[i+1][0],.75),lerp(L[i+1][1],R[i+1][1],.75))},'rgba(40,10,30,.22)',1.4);
+  return path}
+// a flower garland (vanamala) hanging from (x0,y0) to (x1,y1) dropping by drop
+function garland(c,x0,y0,x1,y1,drop,n,t){for(let i=0;i<n;i++){const u=i/(n-1),x=lerp(x0,x1,u),y=lerp(y0,y1,u)+Math.sin(u*PI)*drop,k=i%3;
+  if(k===1){cut(c,P.ell(x,y,4.6,6,Math.atan2(Math.cos(u*PI)*drop*PI,x1-x0)),'#3c9a4c',{sh:0,lw:1})}else{c.save();c.translate(x,y);for(let p=0;p<5;p++){c.rotate(TAU/5);cut(c,P.ell(0,-3.6,2.6,3.6),k?'#ffd34a':'#f05a8a',{sh:0,lw:.8})}cut(c,P.ell(0,0,2,2),k?'#e8701a':'#ffe9a0',{sh:0,lw:0});c.restore()}}}
+
+/* ---------- head-dress ---------- */
+// kirita with options: gem (centre), crest: 'fan' | 'moon' | null
+function crownK(c,h,o){o=o||{};kirita(c,h);const top=-42-h;
+  if(o.crest==='fan'){for(let k=-2;k<=2;k++){c.save();c.translate(0,top-4);c.rotate(k*.34);cut(c,cc=>{cc.moveTo(-4,0);cc.quadraticCurveTo(-7,-18,0,-30);cc.quadraticCurveTo(7,-18,4,0);cc.closePath()},goldG(c,-6,6),{lw:1.3,sh:0});gem(c,0,-18,1.8,k%2?PAL.sapph:PAL.emer);c.restore()}}
+  if(o.crest==='moon'){glow(c,0,top-14,40,'230,240,255',.5);cut(c,cc=>{cc.arc(0,top-14,15,PI*.95,PI*2.05,true);cc.arc(0,top-20,12,PI*2.0,PI*1.0);cc.closePath()},lg(c,-15,top-30,15,top,['#ffffff','#dfe6f6']),{lw:1.4,sh:0})}
+  if(o.gem){cut(c,cc=>{cc.moveTo(0,-42-h*.5);cc.quadraticCurveTo(11,-42-h*.32,0,-48);cc.quadraticCurveTo(-11,-42-h*.32,0,-42-h*.5)},o.gem,{lw:1.4,sh:0})}}
+// spiked asura crown (dark iron + gold)
+function asuraCrown(c,col){col=col||'#3a2a34';const sp=[[-34,-30],[-30,-64],[-20,-46],[-12,-82],[-4,-50],[0,-96],[4,-50],[12,-82],[20,-46],[30,-64],[34,-30]];
+  cut(c,P.poly(sp.concat([[30,-22],[-30,-22]])),lg(c,-34,0,34,0,[shade(col,1.6),col,shade(col,.6)]),{lw:2.2});
+  sp.forEach(([x,y],i)=>{if(i%2)return;if(y<-60)cut(c,P.ell(x,y+8,2.6,3),PAL.gold,{sh:0,lw:.8})});
+  cut(c,cc=>{cc.moveTo(-36,-20);cc.quadraticCurveTo(0,-32,36,-20);cc.lineTo(34,-36);cc.quadraticCurveTo(0,-46,-34,-36);cc.closePath()},goldG(c,-36,36),{lw:2});
+  for(let k=-2;k<=2;k++)gem(c,k*13,-30-Math.cos(k*.4)*2,2.8,k%2?'#ff3a2a':PAL.emer)}
+// wrapped turban (villager)
+function turban(c,col){col=col||'#e8e0c8';cut(c,cc=>{cc.moveTo(-38,-14);cc.bezierCurveTo(-46,-50,-22,-70,0,-68);cc.bezierCurveTo(24,-70,46,-50,38,-14);cc.bezierCurveTo(26,-26,-26,-26,-38,-14);cc.closePath()},lg(c,-40,0,40,0,[shade(col,1.15),col,shade(col,.7)]),{lw:2.2});
+  [[-34,-22,30,-52],[-36,-36,34,-34],[-28,-54,36,-22]].forEach(([a,b,d,e])=>stroke(c,cc=>{cc.moveTo(a,b);cc.quadraticCurveTo(0,(b+e)/2-10,d,e)},'rgba(60,40,20,.35)',2));
+  cut(c,cc=>{cc.moveTo(18,-56);cc.quadraticCurveTo(30,-70,24,-82);cc.quadraticCurveTo(38,-72,30,-54);cc.closePath()},shade(col,.85),{lw:1.6,sh:0})}
+// matted-hair bun of a sage, tied with rudraksha
+function rishiJata(c,col,o){o=o||{};const hc=col||'#e8e4de',d=shade(hc,.62),l=shade(hc,1.15);
+  [-1,1].forEach(sd=>{for(let i=0;i<3;i++){const f=cc=>{cc.moveTo(sd*(16+i*7),-36);cc.bezierCurveTo(sd*(44+i*6),-30,sd*(46+i*5),20,sd*(40+i*4),60+i*10)};stroke(c,f,INK,9.5-i);stroke(c,f,i%2?d:hc,6.5-i)}});
+  const bun=[[-24,-40],[-30,-66],[-24,-92],[-8,-106],[10,-106],[26,-92],[30,-66],[24,-40]];cut(c,P.smooth(bun),lg(c,-30,0,30,0,[l,hc,d]),{lw:2.2});
+  c.save();c.beginPath();P.smooth(bun)(c);c.clip();for(let i=0;i<5;i++)stroke(c,cc=>cc.ellipse(0,-72+i*2,28-i*5,36-i*6,0,PI*(1.1+i*.2),PI*(2.5+i*.2)),i%2?'rgba(255,255,255,.35)':'rgba(40,30,30,.35)',2.4);c.restore();
+  beadArc(c,-26,-44,26,-44,4,9,3.2,'#7a3a1a','rgba(255,200,160,.5)')}
+
+/* ---------- more props ---------- */
+function veena(c,x,y,a,s){c.save();c.translate(x,y);c.rotate(a||0);c.scale(s||1,s||1);
+  cut(c,P.ell(0,46,30,34),rg(c,-8,36,4,36,['#e8a058','#b8642a','#6a3410']),{lw:2});cut(c,cc=>cc.roundRect(-5,-170,10,212,4),lg(c,-5,0,5,0,['#e8c070','#b8862a','#7a5214']),{lw:1.8});
+  cut(c,P.ell(0,-150,20,15),rg(c,-6,-154,2,22,['#e8a058','#b8642a','#6a3410']),{lw:1.8});for(let k=0;k<7;k++)cut(c,cc=>cc.roundRect(-8,-130+k*22,16,4,2),PAL.gold,{sh:0,lw:.8});
+  stroke(c,cc=>{cc.moveTo(-2,-176);cc.lineTo(-2,60);cc.moveTo(2,-176);cc.lineTo(2,60)},'rgba(255,240,200,.9)',1.1);cut(c,P.ell(0,-182,6,6),goldG(c,-6,6),{sh:0,lw:1});c.restore()}
+function vajra(c,x,y,a,s){c.save();c.translate(x,y);c.rotate(a||0);c.scale(s||1,s||1);glow(c,0,0,60,'180,210,255',.45);
+  cut(c,cc=>cc.roundRect(-5,-14,10,28,3),goldG(c,-5,5),{lw:1.4});cut(c,P.ell(0,0,8,8),goldG(c,-8,8),{lw:1.4,sh:0});gem(c,0,0,3,PAL.sapph);
+  [-1,1].forEach(sd=>{c.save();c.scale(1,sd);cut(c,cc=>{cc.moveTo(-10,-14);cc.quadraticCurveTo(-20,-30,-4,-46);cc.lineTo(0,-54);cc.lineTo(4,-46);cc.quadraticCurveTo(20,-30,10,-14);cc.closePath()},goldG(c,-18,18),{lw:1.6});stroke(c,cc=>{cc.moveTo(0,-16);cc.lineTo(0,-46)},PAL.goldD,1.6);c.restore()});c.restore()}
+function sword(c,x,y,a,s){c.save();c.translate(x,y);c.rotate(a||0);c.scale(s||1,s||1);cut(c,cc=>{cc.moveTo(-6,-14);cc.lineTo(-7,-120);cc.quadraticCurveTo(0,-140,7,-120);cc.lineTo(6,-14);cc.closePath()},lg(c,-7,0,7,0,['#f4f6fa','#b8c0cc','#7a8494']),{lw:1.6});
+  cut(c,cc=>cc.roundRect(-18,-16,36,7,3),goldG(c,-18,18),{lw:1.4,sh:0});cut(c,cc=>cc.roundRect(-4,-9,8,24,3),'#5a2a1a',{lw:1.2,sh:0});c.restore()}
+function sunDisk(c,x,y,r,t){c.save();c.translate(x,y);glow(c,0,0,r*2.4,'255,190,80',.35);c.rotate(t*.1);for(let i=0;i<20;i++){c.save();c.rotate(i/20*TAU);cut(c,cc=>{cc.moveTo(-r*.13,-r*.9);cc.lineTo(0,-r*(i%2?1.28:1.5));cc.lineTo(r*.13,-r*.9);cc.closePath()},i%2?'#ffb23a':'#ffd86a',{sh:0,lw:1.2});c.restore()}
+  cut(c,P.ell(0,0,r,r),rg(c,0,0,r*.1,r,['#fff6c8','#ffc84a','#f07a1a']),{lw:2,sh:0});stroke(c,cc=>cc.arc(0,0,r*.8,0,TAU),'rgba(255,250,220,.8)',2,{dash:[1,6]});c.restore()}
+
+G.TRIKIT={TAU,PI,clamp,lerp,ease,L2,rng,shade,INK,PAL,lg,rg,cut,P,glow,stroke,ik,goldG,gem,beadArc,band,face,hairCap,hairBack,kirita,jataMukuta,halo,hand,limb,limbOutline,arm,veda,mala,kamandalu,chakra,shankha,padma,gada,damaru,trishul,tube,ellPts,hood,torso,hara,petal,lotusSeat,foot,footF,tigerStripes,ribbon,garland,crownK,asuraCrown,turban,rishiJata,veena,vajra,sword,sunDisk,setDPR:v=>{DPR=v}};
 return G.TRIKIT})();
