@@ -72,7 +72,7 @@ function drawHead(c,hx,hy,o){ // o:{expr:'calm'|'closed'|'rage', k:0..1 anger, S
   const bl=Math.max(M.blink||0,e==='closed'?1:0,((t*.37)%1)<.03?1:0),tri=S.third&&S.tripundra!==false;
   c.save();c.translate(hx,hy);
   PK.face(c,{skin:skinPK(S),t:t,turn:o.turn||0,must:S.mustache,blink:bl,mouth:M.mouth||0,smile:M.smile==null?(S.female?.5:.3):M.smile,lx:M.lx||0,ly:M.ly||0,anger:k,sad:M.sad||0,surp:M.surp||0,
-    tilak:tri?'tripundra':(S.tilak==='vaishnava'?'vaishnava':(S.tilak==='ash'?'tripundra':null)),bindi:S.bindi||S.tilak==='dot',third:tri?k:null,beard:S.beard,beardLen:S.beardLen,
+    tilak:tri?'tripundra':(S.tilak==='vaishnava'||S.tilak==='brahma'?S.tilak:(S.tilak==='ash'?'tripundra':null)),bindi:S.bindi||S.tilak==='dot',third:tri?k:null,beard:S.beard,beardLen:S.beardLen,
     browCol:S.brow,lip:S.female?'#c4384a':(S.lip||'#a8384e'),eyeRed:S.eyeRed,kgem:S.kgem||(S.female?'#18a57a':undefined)});
   c.restore()}
 
@@ -85,47 +85,9 @@ const POSES={
 };
 function mixPose(a,b,u){const m=(x,y)=>Array.isArray(x)?x.map((v,i)=>m(v,y[i])):(typeof x==='number'?x+(y-x)*u:(u<.5?x:y));const o={};for(const k in a)o[k]=(a[k]&&typeof a[k]==='object'&&!Array.isArray(a[k]))?mixPose(a[k],b[k]||a[k],u):m(a[k],b[k]===undefined?a[k]:b[k]);return o}
 const easeIO=x=>{x=Math.max(0,Math.min(1,x));return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
-function drawShiva(c,o){
-  const P0=o.P||POSES[o.pose||'calm'],t=o.t||0,br=Math.sin(t*1.7)*2.4,P=JSON.parse(JSON.stringify(P0));['ch','nk','hd','sL','sR'].forEach(k=>{P[k][1]+=br});P.hL[1]+=br*.6;P.hR[1]+=br*.6;const rage=(o.rage!==undefined?o.rage:o.pose==='rage'),sw=Math.sin(t*1.5)+P.sway;c.save();
-  // jata strands behind
-  const HS=1.18;c.save();c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);c.save();c.translate(P.hd[0],P.hd[1]-30);c.scale(.74,.7);c.translate(-P.hd[0],-P.hd[1]+30);drawJata(c,P.hd[0],P.hd[1]-34,t,rage,o.imp||0);c.restore();c.restore();
-  // legs
-  const stance=(h,k,f,side)=>{const r=elbow(h,f,86,92,side);inkCap(c,h,r.e,31,23);inkCap(c,r.e,f,23,14);tapered(c,h,r.e,31,23,SH.skin);tapered(c,r.e,f,23,14,SH.skin);c.fillStyle='rgba(255,255,255,.10)';c.beginPath();c.ellipse(lerp(r.e[0],f[0],.35)-side*2,lerp(r.e[1],f[1],.35),9,26,Math.atan2(f[1]-r.e[1],f[0]-r.e[0])+1.57,0,7);c.fill();
-    c.globalAlpha=.4;c.fillStyle=SH.skinD;tapered(c,[h[0]+side*10,h[1]],[r.e[0]+side*8,r.e[1]],9,8,SH.skinD);tapered(c,[r.e[0]+side*7,r.e[1]],[f[0]+side*6,f[1]-6],8,6,SH.skinD);c.globalAlpha=1;
-    c.fillStyle=SH.skinM;c.beginPath();c.ellipse(f[0]+side*4,f[1]-3,19,8,0,0,7);c.fill();c.fillStyle=SH.skinD;c.globalAlpha=.4;c.beginPath();c.ellipse(f[0]+side*6,f[1]-1,13,4,0,0,7);c.fill();c.globalAlpha=1};
-  stance(P.hipL,P.kL,P.fL,-1);stance(P.hipR,P.kR,P.fR,1);
-  // trident behind right hand
-  const T=P.tri;c.save();if(T.rot){c.translate(T.x,-300);c.rotate(T.rot);c.translate(-T.x,300)}drawTrishul(c,T.x,T.top,T.bot,t,rage);c.restore();
-  // torso
-  const tg=c.createLinearGradient(-60,0,60,0);tg.addColorStop(0,SH.skinH);tg.addColorStop(.3,SH.skin);tg.addColorStop(1,SH.skinD);c.fillStyle=tg;
-  c.beginPath();c.moveTo(P.sL[0]-6,P.sL[1]+4);c.bezierCurveTo(-52,P.sL[1]+34,-46,P.ch[1]+64,-36,P.ph[1]-6);c.lineTo(36,P.ph[1]-6);c.bezierCurveTo(46,P.ch[1]+64,52,P.sR[1]+34,P.sR[0]+6,P.sR[1]+4);c.bezierCurveTo(30,P.nk[1]+4,-30,P.nk[1]+4,P.sL[0]-6,P.sL[1]+4);c.fill();c.strokeStyle=INKC;c.lineWidth=2.6;c.lineJoin='round';c.stroke();
-  // muscle definition
-  c.strokeStyle='rgba(20,24,70,.38)';c.lineWidth=2.4;c.lineCap='round';
-  c.beginPath();c.moveTo(0,P.nk[1]+24);c.lineTo(0,P.ph[1]-18);c.stroke();
-  [-1,1].forEach(sd=>{c.beginPath();c.moveTo(sd*5,P.ch[1]+2);c.bezierCurveTo(sd*26,P.ch[1]+22,sd*44,P.ch[1]+10,sd*46,P.ch[1]-14);c.stroke();
-    for(let i=0;i<3;i++){c.beginPath();c.moveTo(sd*4,P.ph[1]-86+i*22);c.quadraticCurveTo(sd*18,P.ph[1]-80+i*22,sd*26,P.ph[1]-86+i*22);c.stroke()}
-    c.beginPath();c.moveTo(sd*40,P.ch[1]+24);c.quadraticCurveTo(sd*34,P.ch[1]+60,sd*30,P.ph[1]-30);c.stroke()});
-  c.fillStyle='rgba(255,255,255,.12)';[-1,1].forEach(sd=>{c.beginPath();c.ellipse(sd*22,P.ch[1]+6,20,14,sd*-0.2,0,7);c.fill()});
-  // vibhuti (ash) bands across chest
-  c.strokeStyle=SH.ash;c.lineWidth=4;c.globalAlpha=.9;[0,1,2].forEach(i=>{c.beginPath();c.moveTo(-34+i*0.5,P.ch[1]+34+i*8);c.quadraticCurveTo(0,P.ch[1]+44+i*8,34-i*0.5,P.ch[1]+34+i*8);c.stroke()});c.globalAlpha=1;
-  // tiger skin
-  drawTiger(c,0,P.ph[1]-4,P.hem,sw,rage,Math.max(0,(P.kR[0]-P.kL[0])/2-24));
-  // rudraksha mala
-  c.fillStyle=SH.bead;for(let i=0;i<15;i++){const u=i/14,bx=-36+u*72,by=P.nk[1]+16+Math.sin(u*3.14)*50;c.beginPath();c.arc(bx,by,4.8,0,7);c.fill();c.fillStyle='rgba(255,220,170,.4)';c.beginPath();c.arc(bx-1.4,by-1.4,1.4,0,7);c.fill();c.fillStyle=SH.bead}
-  // neck
-  c.fillStyle=SH.skinM;c.beginPath();c.roundRect(P.nk[0]-16,P.hd[1]+30,32,P.nk[1]-P.hd[1]+4,8);c.fill();
-  drawSerpent(c,t,rage,P.sL,P.sR);
-  c.save();c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);drawHead(c,P.hd[0],P.hd[1],{expr:o.expr||(o.k!==undefined?'calm':(rage?'rage':'calm')),k:o.k,t});c.restore();
-  // arms (on top)
-  const aL=limbShaded(c,P.sL,P.hL,64,62,-1,[19,15,12]);aL.s=P.sL;const aR=limbShaded(c,P.sR,P.hR,64,62,1,[19,15,12]);aR.s=P.sR;
-  armlet(c,aL,17,SH.gold);armlet(c,aR,17,SH.gold);
-  [aL,aR].forEach((r,i)=>{c.fillStyle=SH.snake;c.beginPath();c.ellipse(lerp(r.e[0],r.t[0],.78),lerp(r.e[1],r.t[1],.78),13,5,Math.atan2(r.t[1]-r.e[1],r.t[0]-r.e[0])+1.57,0,7);c.fill()});
-  // shoulder pads: deltoids
-  [P.sL,P.sR].forEach((s,i)=>{c.fillStyle=SH.skin;c.beginPath();c.arc(s[0],s[1],21,0,7);c.fill();c.fillStyle='rgba(255,255,255,.14)';c.beginPath();c.arc(s[0]+(i?-4:4),s[1]-6,12,0,7);c.fill()});
-  hand(c,aL.t,rage?0.3:0.1,rage);hand(c,aR.t,0,true);
-  // trident grip: re-draw fingers over shaft
-  c.fillStyle=SH.skinM;c.beginPath();c.ellipse(aR.t[0],aR.t[1],12,10,0,0,7);c.fill();c.fillStyle=SH.skin;[-8,-3,2,7].forEach(y=>{c.beginPath();c.roundRect(aR.t[0]-13,aR.t[1]+y-2.6,26,5.6,3);c.fill()});
-  c.restore()}
+function drawShiva(c,o){ // Shiva is drawn by the shared paper-cut rig (engine/v2_cast.js drawHuman + CAST.shiva): jata, tiger skin, Vasuki, trishul
+  const P=JSON.parse(JSON.stringify(o.P||POSES[o.pose||'calm']));const rage=(o.rage!==undefined?o.rage:o.pose==='rage');
+  drawHuman(c,CAST.shiva,P,{t:o.t||0,k:o.k!=null?o.k:(rage?1:0),expr:o.expr||'calm',mood:o.mood,tilt:o.tilt})}
 
 function drawDamaru(c,sw=0){c.save();
   const g=c.createLinearGradient(-30,0,30,0);g.addColorStop(0,'#d89a4a');g.addColorStop(.5,'#b8742e');g.addColorStop(1,'#7a4a22');c.fillStyle=g;

@@ -116,7 +116,7 @@ function jataMukuta(c){ // Brahma: tiered gold crown with lotus band
 
 /* ---------- halo (prabhavali) ---------- */
 function halo(c,x,y,r,t,o){o=o||{};const C=o.col||['#fff3c0','#f6c040','#e8661c','#7a1030'],g=o.g==null?1:o.g;c.save();c.translate(x,y);
-  glow(c,0,0,r*2.1,o.rgb||'255,190,80',.32*g);glow(c,0,0,r*1.2,o.rgb2||'255,235,170',.22*g);
+  glow(c,0,0,r*1.55,o.rgb||'255,190,80',.2*g);glow(c,0,0,r*1.1,o.rgb2||'255,235,170',.14*g);
   const n=o.n||30;c.save();c.rotate(t*.06);for(let i=0;i<n;i++){const f=1+.09*Math.sin(t*3.1+i*1.9);c.save();c.rotate(i/n*TAU);
     cut(c,cc=>{cc.moveTo(-r*.1,-r*.95);cc.bezierCurveTo(-r*.12,-r*1.08,-r*.03,-r*1.14*f,r*.03,-r*1.3*f);cc.bezierCurveTo(r*.02,-r*1.16*f,r*.12,-r*1.08,r*.1,-r*.95);cc.closePath()},lg(c,0,-r*.95,0,-r*1.3,[C[1],C[2]]),{sh:0,lw:1.3});c.restore()}c.restore();
   cut(c,P.ell(0,0,r,r),rg(c,0,0,r*.1,r,[[0,C[0]],[.55,C[1]],[.85,C[2]],[1,C[3]]]),{lw:2.6,sh:0});
@@ -160,7 +160,7 @@ function mala(c,x,y,t){const n=20,ph=t*.6;for(let i=0;i<n;i++){const a=PI/2+((i/
 function kamandalu(c,x,y){c.save();c.translate(x,y);stroke(c,cc=>{cc.moveTo(-18,-14);cc.bezierCurveTo(-28,-44,28,-44,18,-14)},INK,5);stroke(c,cc=>{cc.moveTo(-18,-14);cc.bezierCurveTo(-28,-44,28,-44,18,-14)},PAL.gold,3);
   cut(c,cc=>{cc.moveTo(20,-4);cc.quadraticCurveTo(38,-8,44,-22);cc.lineTo(40,-24);cc.quadraticCurveTo(32,-12,20,-12)},goldG(c,20,44),{lw:1.6,sh:0});
   cut(c,P.ell(0,6,24,22),rg(c,-8,-2,2,28,['#ffe6a0','#d99a32','#7a4612']),{lw:2.2});cut(c,cc=>cc.roundRect(-8,-20,16,10,3),goldG(c,-8,8),{lw:1.6,sh:0});stroke(c,cc=>{cc.moveTo(-22,4);cc.quadraticCurveTo(0,12,22,4)},'rgba(90,40,0,.55)',2);c.restore()}
-function chakra(c,x,y,r,t,g){c.save();c.translate(x,y);glow(c,0,0,r*3.2,'255,200,90',.42*(g==null?1:g));glow(c,0,0,r*1.6,'255,245,200',.4*(g==null?1:g));c.rotate(t*2.2);
+function chakra(c,x,y,r,t,g){c.save();c.translate(x,y);glow(c,0,0,r*2.3,'255,200,90',.3*(g==null?1:g));glow(c,0,0,r*1.4,'255,245,200',.28*(g==null?1:g));c.rotate(t*2.2);
   for(let i=0;i<16;i++){c.save();c.rotate(i/16*TAU);cut(c,cc=>{cc.moveTo(-r*.18,-r*.92);cc.quadraticCurveTo(-r*.05,-r*1.2,r*.12,-r*1.42);cc.quadraticCurveTo(r*.08,-r*1.15,r*.2,-r*.92);cc.closePath()},lg(c,0,-r*.9,0,-r*1.4,['#ffd35a','#ff7a1a']),{sh:0,lw:1.1});c.restore()}
   cut(c,P.ell(0,0,r,r),goldG(c,-r,r),{lw:2,sh:0});cut(c,P.ell(0,0,r*.74,r*.74),'#7a1630',{lw:1.6,sh:0});
   for(let i=0;i<12;i++){c.save();c.rotate(i/12*TAU);cut(c,cc=>{cc.moveTo(-r*.07,-r*.18);cc.lineTo(0,-r*.74);cc.lineTo(r*.07,-r*.18);cc.closePath()},PAL.gold,{sh:0,lw:1});c.restore()}
