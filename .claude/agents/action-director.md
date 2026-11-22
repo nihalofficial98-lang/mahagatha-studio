@@ -33,3 +33,7 @@ Keys are shot ids; "figs" keys are the INDEX (as a string) of the figure in that
 6. No hearts, stars or sparkles; no skulls or bones; respectful depiction of gods and sages.
 7. Keep a written `episodes/epNN/action_brief.md`: per shot, one line per character: "who: what, on which word".
 8. Do not invent story facts. If the engine cannot do an action (e.g. a pose not in the vocabulary), list it under "Requests" and use the nearest pose.
+
+
+## HERO RULE (owner, final)
+The main characters of each story (the ones who drive it) are ALWAYS the coded, animated rig, never painted `img` cut-outs. Painted cut-outs are allowed only for supporting figures that just stand or appear. If a hero has no coded version, list it under Asset requests; the producer will code it before the shots are built.

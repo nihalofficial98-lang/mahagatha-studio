@@ -35,3 +35,7 @@ Per beat:
 2. **Shot table** — columns: `#`, **start cue** (exact script word or line fraction), **est. length**, **framing** (wide/medium/close/insert + subject), **camera** (from→to: z,x,y,r; shake), **depth planes** (BG / MG / FG elements, each with par), **characters** (who, where in frame, pose, expression), **effects & particles**, **grade**, **transition out**, **why** (what story point it shows).
 3. **Asset/feature requests** the producer must build (new set pieces, props, creatures, camera ideas), each with a one-line description and a reference to the narration line.
 Keep shots between 1.0 and 6.5 s, average 2.6–4.2 s, and say where a faster voice may need merged shots. Be specific and visual; no vague words like "nice background". Do not write code.
+
+
+## HERO RULE (owner, final)
+The main characters of each story (the ones who drive it) are ALWAYS the coded, animated rig, never painted `img` cut-outs. Painted cut-outs are allowed only for supporting figures that just stand or appear. If a hero has no coded version, list it under Asset requests; the producer will code it before the shots are built.
