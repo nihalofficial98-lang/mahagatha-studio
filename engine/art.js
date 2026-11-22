@@ -142,10 +142,10 @@ function palace(t,o={}){o=Object.assign({win:['#0e1a44','#2a3a7a'],wall:['#3a281
 const GR=[];(function(){for(let i=0;i<4;i++){const c=mk(256,256),x=c.getContext('2d'),d=x.createImageData(256,256),r=rng(700+i);for(let p=0;p<d.data.length;p+=4){const v=r()*255;d.data[p]=d.data[p+1]=d.data[p+2]=v;d.data[p+3]=255}x.putImageData(d,0,0);GR.push(c)}})();
 const BLC=mk(200,120);
 function post(c2,T,P,cw,ch){c2.save();c2.setTransform(1,0,0,1,0,0);
-  const bw=BLC.width,bh=BLC.height,b=BLC.getContext('2d');b.filter='brightness(1.1) contrast(1.5)';b.drawImage(c2.canvas,0,0,bw,bh);b.filter='none';c2.globalCompositeOperation='lighter';c2.globalAlpha=P.bloom??0.16;c2.drawImage(BLC,0,0,cw,ch);c2.globalAlpha=1;
+  const bw=BLC.width,bh=BLC.height,b=BLC.getContext('2d');b.filter='brightness(1.1) contrast(1.5)';b.drawImage(c2.canvas,0,0,bw,bh);b.filter='none';c2.globalCompositeOperation='lighter';c2.globalAlpha=P.bloom??0.07;c2.drawImage(BLC,0,0,cw,ch);c2.globalAlpha=1;
   if(P.grade){c2.globalCompositeOperation='soft-light';c2.fillStyle=P.grade;c2.fillRect(0,0,cw,ch)}
-  c2.globalCompositeOperation='source-over';c2.globalAlpha=0.05;c2.fillStyle=c2.createPattern(GR[Math.floor(T*24)%4],'repeat');c2.translate(-(Math.floor(T*60)%97),-(Math.floor(T*47)%89));c2.fillRect(0,0,cw+120,ch+120);c2.restore();
-  c2.save();c2.setTransform(1,0,0,1,0,0);c2.globalCompositeOperation='source-over';const v=c2.createRadialGradient(cw/2,ch/2,ch*0.32,cw/2,ch/2,ch*0.95);v.addColorStop(0,'rgba(0,0,0,0)');v.addColorStop(1,`rgba(0,0,0,${P.vig??0.62})`);c2.fillStyle=v;c2.fillRect(0,0,cw,ch);c2.restore()}
+  c2.globalCompositeOperation='source-over';c2.globalAlpha=0.025;c2.fillStyle=c2.createPattern(GR[Math.floor(T*24)%4],'repeat');c2.translate(-(Math.floor(T*60)%97),-(Math.floor(T*47)%89));c2.fillRect(0,0,cw+120,ch+120);c2.restore();
+  c2.save();c2.setTransform(1,0,0,1,0,0);c2.globalCompositeOperation='source-over';const v=c2.createRadialGradient(cw/2,ch/2,ch*0.32,cw/2,ch/2,ch*0.95);v.addColorStop(0,'rgba(0,0,0,0)');v.addColorStop(1,`rgba(0,0,0,${P.vig??0.4})`);c2.fillStyle=v;c2.fillRect(0,0,cw,ch);c2.restore()}
 
 const RISHI=i=>({skin:['#c28a5a','#b8825a','#c08a5a','#b88050','#c58f60','#a87850','#b98558'][i%7],skinD:['#98643e','#8a5a38','#966238','#8a5830','#9a6a40','#80583a','#8a603a'][i%7],hair:'#eeeaf2',hairTop:'knot',hairCap:true,beard:true,beardCol:'#f2eee6',cloth:['#f0e6cf','#e8c27a','#d98a4a','#cfe0d0','#e0d0e8','#f4efe0','#c9a06a'][i%7],clothL:'#fff8e8',clothD:'#a89878',trim:'#d98a2a',belt:'#b88a3a',sash:'#d9a441',beads:true,tilak:'shaiva',tail:false,blinkPh:i*0.7,brow:'#e8e2d8'});
 const RUV=['#6577b8','#7467b8','#5f90b8','#8467a4','#587898','#6f80b8','#6262a8','#58909f','#8470b0','#6283a0','#9070a8'];

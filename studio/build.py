@@ -8,7 +8,7 @@ def build(scale=1.5,out=None):
     rd=lambda *p:open(os.path.join(*p),encoding='utf-8').read()
     # v2 characters: Shiva core (single source of truth in library/characters/shiva) + generic cast, wrapped so their helpers stay private
     v2='const V2=(function(){'+rd(d,'paper_kit.js')+'\n'+rd(ROOT,'library','characters','shiva','shiva_v2.js')+'\n'+rd(d,'v2_cast.js')+'\n})();\n'
-    js=rd(d,'art.js')+v2+''.join(rd(d,f) for f in ('main.js','shots.js','scenes.js','v2_scenes.js'))
+    js=rd(d,'art.js')+v2+''.join(rd(d,f) for f in ('main.js','shots.js','scenes.js','v2_scenes.js','paper_scenes.js'))
     js=js.replace('let SC_=1.5;','let SC_=%s;'%scale).replace('CW_=1920,CH_=1080;','CW_=%d,CH_=%d;'%(int(1280*scale),int(720*scale)))
     import glob,base64,json as _j
     A={os.path.basename(f):'data:image/png;base64,'+base64.b64encode(open(f,'rb').read()).decode() for f in glob.glob(os.path.join(ROOT,'library','pilot','assets','*.png'))}

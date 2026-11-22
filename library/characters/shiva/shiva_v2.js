@@ -64,11 +64,6 @@ function drawJata(c,hx,hy,t,rage,imp=0){ // jata: hanging locks, coiled bun, cre
   PK.cut(c,cc=>cc.roundRect(-34,-27,68,10,4),PK.goldG(c,-34,34),{lw:1.6,sh:0});for(let k=-2;k<=2;k++)PK.gem(c,k*12,-22,2.4,k%2?'#18a57a':'#e0234a');
   // crescent moon
   PK.glow(c,-18,-92,46,'230,240,255',.5);PK.cut(c,cc=>{cc.arc(-18,-92,16,Math.PI*.35,Math.PI*1.75);cc.arc(-12,-96,12,Math.PI*1.62,Math.PI*.45,true);cc.closePath()},PK.lg(c,-34,-108,-4,-76,['#ffffff','#f4ecc8']),{lw:1.5,sh:0});
-  // Ganga: a thin river that rises from the top of the bun, falls over its right side and runs down the locks
-  const gp=cc=>{cc.moveTo(4,-116);cc.bezierCurveTo(30,-124,54,-104,54,-72);cc.bezierCurveTo(54,-40,64,-6,70,40);cc.bezierCurveTo(72,70,66,96,70,128)};
-  PK.glow(c,40,-90,56,'170,220,255',.35);PK.stroke(c,gp,'rgba(30,60,120,.55)',12);PK.stroke(c,gp,'rgba(150,205,255,.85)',8);PK.stroke(c,gp,'rgba(235,248,255,.95)',3.2);
-  PK.stroke(c,gp,'#ffffff',1.8,{dash:[9,14],off:-t*50});
-  const rr=PK.rng(5);for(let i=0;i<8;i++){const u=(t*.7+rr())%1;PK.cut(c,PK.P.ell(68+Math.sin(i*2.1)*9*u,128+u*22,2.2,2.6),'rgba(230,248,255,.9)',{sh:0,lw:0})}
   c.restore()}
 
 const SHIVA_FACE={skin:SH.skin,skinM:SH.skinM,skinD:SH.skinD,skinH:SH.skinH,gold:SH.gold,ash:SH.ash,red:SH.red,tripundra:true,third:true,brow:'#0b0a14'};

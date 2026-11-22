@@ -169,7 +169,7 @@ function drawShiva(c,t,o){o=o||{};const by=Math.sin(t*1.2)*2,bl=o.blink==null?.9
   // crescent moon
   const mg=o.moon==null?1:o.moon;glow(c,-34,-102,60,'230,240,255',.5*mg);cut(c,cc=>{cc.arc(-34,-102,17,PI*.35,PI*1.75);cc.arc(-28,-106,13,PI*1.62,PI*.45,true);cc.closePath()},lg(c,-50,-120,-20,-86,['#ffffff','#f4ecc8']),{lw:1.6,sh:0});
   // Ganga springing from the jata
-  const gg=o.ganga==null?1:o.ganga;if(gg>.01){const gp=cc=>{cc.moveTo(6,-160);cc.bezierCurveTo(8,-200,60,-210,84,-170);cc.bezierCurveTo(106,-130,112,-60,124,40*gg-20)};
+  const gg=o.ganga==null?0:o.ganga;if(gg>.01){const gp=cc=>{cc.moveTo(6,-160);cc.bezierCurveTo(8,-200,60,-210,84,-170);cc.bezierCurveTo(106,-130,112,-60,124,40*gg-20)};
     glow(c,60,-170,70,'170,220,255',.4*gg);stroke(c,gp,'rgba(120,190,255,.55)',14*gg);stroke(c,gp,'rgba(220,245,255,.85)',6*gg);stroke(c,gp,'#ffffff',2.4,{dash:[10,14],off:-t*60});
     const r=rng(5);for(let i=0;i<10;i++){const u=(t*.8+r())%1;cut(c,P.ell(4+Math.sin(i)*10*u,-158-u*40,1.8,1.8),'rgba(230,248,255,.9)',{sh:0,lw:0})}}
   face(c,{skin:SKS,t:t,blink:bl,smile:o.smile==null?.25:o.smile,lx:o.lx||0,tilak:'tripundra',third:th,lip:'#7a3a5e',kgem:PAL.sapph,browCol:'#141020'});

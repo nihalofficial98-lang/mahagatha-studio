@@ -21,11 +21,11 @@ def parse_timeline(p):
         out.append({'beat':b['beat'],'audio':round(b['end']-b['start'],3),'duration':round(b['end']-b['start'],3),'words':ws})
     return out
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('ep');ap.add_argument('--out');ap.add_argument('--only');ap.add_argument('--at',type=float,default=.55);ap.add_argument('--q',type=int,default=86);ap.add_argument('--scale',type=float,default=1.5)
+    ap=argparse.ArgumentParser();ap.add_argument('ep');ap.add_argument('--out');ap.add_argument('--only');ap.add_argument('--at',type=float,default=.55);ap.add_argument('--q',type=int,default=86);ap.add_argument('--scale',type=float,default=2.0)
     a=ap.parse_args();epd=f'{ROOT}/episodes/ep{a.ep}';work=f'{ROOT}/build/ep{a.ep}';os.makedirs(work,exist_ok=True)
     out=a.out or f'{ROOT}/library/showcase/ep{a.ep}_frames';os.makedirs(out,exist_ok=True)
     tm=work+'/engine_timings.json';json.dump(parse_timeline(epd+'/voice_timeline.md'),open(tm,'w'),ensure_ascii=False)
-    html=B.build(a.scale);env=dict(os.environ,ENGINE=html)
+    html=B.build(a.scale);env=dict(os.environ,ENGINE=html,VW=str(int(1280*a.scale)),VH=str(int(720*a.scale)))
     info=json.loads(subprocess.check_output(['node',ROOT+'/studio/still.js','--info',epd+'/shots.json',tm],env=dict(env,MISSONLY='1'),cwd=ROOT,text=True))
     inf=info['info'];print('shots',len(inf),'cue misses',info['miss'][:8])
     ids=[s.get('id') for s in json.load(open(epd+'/shot_plan.json'))['shots']]
@@ -44,7 +44,7 @@ def main():
     for i,t in zip(sel,ts):
         f=byT.get(float(t))
         if not f:print('missing frame',i,t);continue
-        dst=f'{out}/{i:03d}_{ids[i] if i<len(ids) else i}.jpg';Image.open(f).convert('RGB').save(dst,quality=a.q);done.append((i,dst))
+        dst=f'{out}/{i:03d}_{ids[i] if i<len(ids) else i}.jpg';Image.open(f).convert('RGB').resize((1920,1080),Image.LANCZOS).save(dst,quality=a.q);done.append((i,dst))
     for n in range(0,len(done),20):
         im=Image.new('RGB',(1920,270*5),(12,10,20))
         for k,(i,dst) in enumerate(done[n:n+20]):
