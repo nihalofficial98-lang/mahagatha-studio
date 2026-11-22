@@ -318,7 +318,7 @@ function v2fig(who,x,y,s,t,o){
 function bust(c,S,o){ // neck + shoulders + garments below a head close-up, so heads never float like masks
   c.fillStyle=S.skinM;c.fillRect(-17,24,34,56);
   const g=c.createLinearGradient(-170,0,170,0);g.addColorStop(0,S.skinH);g.addColorStop(.4,S.skin);g.addColorStop(1,S.skinD);c.fillStyle=g;
-  c.beginPath();c.moveTo(-190,170);c.bezierCurveTo(-180,84,-108,66,-28,58);c.lineTo(28,58);c.bezierCurveTo(108,66,180,84,190,170);c.closePath();c.fill();
+  c.beginPath();c.moveTo(-190,170);c.bezierCurveTo(-180,84,-108,66,-28,58);c.lineTo(28,58);c.bezierCurveTo(108,66,180,84,190,170);c.closePath();c.fill();c.strokeStyle=INKC;c.lineWidth=3;c.lineJoin='round';c.stroke();
   c.fillStyle='rgba(255,255,255,.12)';c.beginPath();c.ellipse(-70,84,46,16,.1,0,7);c.fill();
   if(o.sash){c.strokeStyle=o.sash;c.lineWidth=22;c.lineCap='butt';c.beginPath();c.moveTo(-150,86);c.quadraticCurveTo(-30,102,70,170);c.stroke()}
   if(o.upper){c.fillStyle=o.upper;c.beginPath();c.moveTo(-120,92);c.quadraticCurveTo(0,60,120,92);c.lineTo(150,170);c.lineTo(-150,170);c.closePath();c.fill();c.strokeStyle='#b8862a';c.lineWidth=4;c.beginPath();c.moveTo(-120,92);c.quadraticCurveTo(0,64,120,92);c.stroke()}
