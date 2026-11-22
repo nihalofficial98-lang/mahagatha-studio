@@ -120,6 +120,7 @@ function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.f
       if(f.walk){const w=Math.sin(t*4.2*f.walk),w2=Math.sin(t*4.2*f.walk+Math.PI),lift=a=>Math.max(0,a)*26;
         PO.fL[0]+=w*34;PO.fL[1]-=lift(w);PO.fR[0]+=w2*34;PO.fR[1]-=lift(w2);PO.kL[0]+=w*20;PO.kL[1]-=lift(w)*.8;PO.kR[0]+=w2*20;PO.kR[1]-=lift(w2)*.8;
         PO.hL[0]+=w2*26;PO.hR[0]+=w*26;PO.hd[1]-=Math.abs(w)*3;PO.ch[1]-=Math.abs(w)*3}}
+    if((o.flip||1)<0){if(MOOD.lx)MOOD.lx=-MOOD.lx;TILT=-TILT}
     if(f.talk){const ts=t*11+(f.x||0);MOOD.mouth=Math.max(MOOD.mouth||0,f.talk*(.25+.45*Math.abs(Math.sin(ts))*Math.abs(Math.sin(ts*.37+1))));TILT+=Math.sin(t*1.9)*.025*f.talk}
     const vo={pose:PO,expr:ex,flip:o.flip,key:o.key,rim:o.rim,lx:o.lx,k:f.k,prop:f.prop,imp:f.imp,hd:HD,mood:MOOD,tilt:TILT};
     if(f.head)V2.head(f.who,x,y,s,t,vo);else{if(f.who==='brahma'&&f.lotus!==false)lotus(x,y+22*s,s*1.25,t,1);V2.fig(f.who,x,y,s,t,vo)}}
