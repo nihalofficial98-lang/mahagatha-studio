@@ -452,11 +452,11 @@ function bust(c,S,o){const sk=skinPK(S),t=o.t||0,bw=Math.min(S.build||1,1.2);c.s
   c.save();c.translate(0,340);PK.torso(c,sk,262,134*bw,100*bw,0,{fem:!!S.female,muscle:S.muscle});
   const S2=Object.assign({},S);c.scale(1.7,1.7);torsoDress(c,S2,sk,153,72*bw,56*bw,0,t);c.restore();
   if(S.vasuki){const vp=PK.ellPts(0,70,64,30,Math.PI*1.02,-.1,14);for(let i=1;i<=8;i++){const u=i/8;vp.push([64+u*60,70-u*130+Math.sin(u*Math.PI)*10])}PK.tube(c,vp,12,10,VSK,{scales:false,belly:1});PK.hood(c,128,-40,.22+Math.sin(t*1.4)*.1,.68,t,VSK,{ph:2,eye:o.k>.5?'#ff5a3a':'#ffd34a'})}
-  PK.cut(c,PK.P.caps([0,88],[0,40],26,23),S.skinM,{lw:2,sh:0});c.restore()}
+  PK.cut(c,PK.P.caps([0,88],[0,40],26*(o.nk||1),23*(o.nk||1)),S.skinM,{lw:2,sh:0});c.restore()}
 function v2head(who,x,y,s,t,o){ // close-up of the head with neck, shoulders and garments
   const OYH=1300,FR=clamp(s*SC_,2,3.9),RG=[-300,-330,600,640];const c=figBegin(FR,OYH,RG);PK.setDPR(FR);const ex=o.expr||{},kk=ex.brow!=null&&ex.brow<-.2?clamp(-ex.brow*1.1,0,1):0,face=ex.eye!=null&&ex.eye<.5?'closed':'calm';
   if(o.flip<0)c.scale(-1,1);c.scale(1.32,1.32);const M=o.mood,turn=o.tilt?0:.06;
-  if(who==='shiva'){const S=CAST.shiva;c.translate(0,-6);c.scale(.86,.86);PK.halo(c,0,-30,112,t,Object.assign({g:.55,n:26},S.halo));c.save();c.translate(0,62);c.scale(1.95,1.95);hairBack(c,S,{hd:[0,0],ph:[0,200]},t);c.restore();c.save();c.translate(0,38);c.scale(.72,.88);bust(c,S,{t:t,k:kk});c.restore();c.save();c.translate(0,62);c.scale(2.25,2.25);drawHead(c,0,0,{expr:face==='closed'?'closed':'calm',k:kk,S:S,t:t,mood:M,turn:turn});hairFront(c,S,0,0,t);c.restore()}
+  if(who==='shiva'){const S=CAST.shiva;c.translate(0,-6);c.scale(.86,.86);PK.halo(c,0,-30,112,t,Object.assign({g:.55,n:26},S.halo));c.save();c.translate(0,48);c.scale(1.95,1.95);hairBack(c,S,{hd:[0,0],ph:[0,200]},t);c.restore();c.save();c.translate(0,126);c.scale(.72,.88);bust(c,S,{t:t,k:kk,nk:1.9});c.restore();c.save();c.translate(0,48);c.scale(2.25,2.25);drawHead(c,0,0,{expr:face==='closed'?'closed':'calm',k:kk,S:S,t:t,mood:M,turn:turn});hairFront(c,S,0,0,t);c.restore()}
   else if(who==='brahma'){const S=BRAHMA;PK.halo(c,0,-40,108,t,{g:.5,n:26});bust(c,S,{t:t});
     const side=(x2,tn)=>{c.save();c.translate(x2,12);c.scale(.8,.8);c.filter='brightness(.8)';drawHead(c,0,0,{expr:face,k:kk*.8,S:S,t:t+x2*.01,mood:Object.assign({smile:.2},M&&M.sad?{sad:M.sad*.8}:{}),turn:tn});c.save();c.scale(1-Math.abs(tn)*.3,1);PK.hairCap(c,'#e6e0da');PK.jataMukuta(c);c.restore();c.filter='none';c.restore()};
     side(-62,-.6);side(62,.6);drawHead(c,0,0,{expr:face,k:kk,S:S,t:t,mood:M,turn:turn});PK.hairCap(c,'#e6e0da');PK.jataMukuta(c)}
