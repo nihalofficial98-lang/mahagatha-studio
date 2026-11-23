@@ -172,7 +172,7 @@ FXV2.fximg=function(F,t,P,d,a){const e=imgGet(F.src);if(!e.ok)return;if(F.par!=n
 })();
 
 window.imgGetV2=imgGet;
-['open','closed','rage'].forEach(n=>imgGet('../library/pilot/assets/sp_hc_'+n+'.png'));
+// (painted Shiva head images removed: all art is code-drawn)
 
 FXV2.clock=function(F,t,P,d,a){ctx.save();ctx.globalAlpha*=a;ctx.translate(F.x,F.y);const r=F.r||120;
   const g=ctx.createRadialGradient(0,0,r*.6,0,0,r*1.9);g.addColorStop(0,'rgba(170,190,255,.28)');g.addColorStop(1,'rgba(170,190,255,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(0,0,r*1.9,0,7);ctx.fill();

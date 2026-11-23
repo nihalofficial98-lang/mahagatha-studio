@@ -1,3 +1,5 @@
+> **Start with [WORKFLOW.md](WORKFLOW.md)** — the only supported way to make an episode. Older notes below may be outdated.
+
 # Mahagatha Studio
 
 Free, automated pipeline that turns Puranic stories (book "Mahagatha") into dramatic Hindi animated videos:
