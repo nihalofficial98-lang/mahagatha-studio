@@ -25,44 +25,44 @@ def FORMS():
  'brahma':{'title':'brahma - forms (EP6)','figs':[
     ('seated on the lotus',{'who':'brahma','x':150,'y':640,'s':.95,'emo':'calm'}),
     ('standing',{'who':'brahma','x':400,'y':650,'s':.9,'pose':'stand','lotus':False,'emo':'pride'}),
-    ('pride',{'who':'brahma','x':610,'y':300,'s':.42,'head':True,'emo':'pride'}),
-    ('fear (lost inside Vishnu)',{'who':'brahma','x':820,'y':300,'s':.42,'head':True,'emo':'fear'}),
-    ('sly smile (the lie)',{'who':'brahma','x':1030,'y':300,'s':.42,'head':True,'mood':{'smile':.75,'lx':.7,'ly':.1}}),
-    ('shame',{'who':'brahma','x':820,'y':600,'s':.42,'head':True,'emo':'shame'}),
-    ('doubt',{'who':'brahma','x':1030,'y':600,'s':.42,'head':True,'emo':'doubt'}),
-    ('rage (the quarrel)',{'who':'brahma','x':610,'y':600,'s':.42,'head':True,'emo':'rage'})]},
+    ('pride',{'who':'brahma','x':640,'y':250,'s':.36,'head':True,'emo':'pride'}),
+    ('fear (lost inside Vishnu)',{'who':'brahma','x':860,'y':250,'s':.36,'head':True,'emo':'fear'}),
+    ('sly smile (the lie)',{'who':'brahma','x':1080,'y':250,'s':.36,'head':True,'mood':{'smile':.8,'lx':.8,'ly':.15,'blink':.3}}),
+    ('rage (the quarrel)',{'who':'brahma','x':640,'y':545,'s':.36,'head':True,'emo':'rage'}),
+    ('shame (cursed)',{'who':'brahma','x':860,'y':545,'s':.36,'head':True,'emo':'shame'}),
+    ('doubt',{'who':'brahma','x':1080,'y':545,'s':.36,'head':True,'emo':'doubt'})]},
  'vishnu':{'title':'vishnu - forms (EP6)','figs':[
     ('standing',{'who':'vishnu','x':160,'y':650,'s':.95,'emo':'calm'}),
     ('admits defeat',{'who':'vishnu','x':420,'y':650,'s':.95,'pose':'namaste','emo':'devotion'}),
     ('Varaha (boar) - digging',{'who':'boar','x':780,'y':420,'s':1.05,'pose':'dig'}),
     ('Varaha - running',{'who':'boar','x':1080,'y':420,'s':.9,'pose':'run'}),
-    ('rage (the quarrel)',{'who':'vishnu','x':780,'y':620,'s':.42,'head':True,'emo':'rage'}),
-    ('wonder',{'who':'vishnu','x':1030,'y':620,'s':.42,'head':True,'emo':'surprise'})]},
+    ('rage (the quarrel)',{'who':'vishnu','x':780,'y':545,'s':.36,'head':True,'emo':'rage'}),
+    ('wonder',{'who':'vishnu','x':1030,'y':545,'s':.36,'head':True,'emo':'surprise'})]},
  'shiva':{'title':'shiva - forms (EP6)','bg':{'k':'pillar','ct':-2,'px':400,'pw':120},'figs':[
     ('emerging from the cracked Jyotirlinga, furious: "Liar!"',{'who':'shiva','x':400,'y':690,'s':1.15,'pose':'rpoint','emo':'rage','flip':-1}),
     ('rage stance',{'who':'shiva','x':830,'y':660,'s':.95,'pose':'rage','emo':'rage'}),
-    ('stern judgement',{'who':'shiva','x':1110,'y':330,'s':.44,'head':True,'emo':'anger'}),
-    ('calm',{'who':'shiva','x':1110,'y':620,'s':.44,'head':True,'emo':'calm'})]},
+    ('stern judgement',{'who':'shiva','x':1130,'y':250,'s':.38,'head':True,'emo':'anger'}),
+    ('calm (leaving)',{'who':'shiva','x':1130,'y':545,'s':.38,'head':True,'emo':'calm'})],'labcol':'#ffe9b8'},
  'daksha':{'title':'daksha - forms (EP6 ending)','figs':[
     ('watching Shiva leave',{'who':'daksha','x':200,'y':650,'s':.95,'pose':'stand','mood':{'anger':.8,'sad':.7,'lx':.8}}),
     ('hateful + tearful',{'who':'daksha','x':560,'y':330,'s':.5,'head':True,'mood':{'anger':.85,'sad':.75,'ly':.1}}),
     ('burning hatred',{'who':'daksha','x':860,'y':330,'s':.5,'head':True,'emo':'rage'}),
     ('grief',{'who':'daksha','x':1130,'y':330,'s':.5,'head':True,'emo':'grief'})]},
  'ketaki':{'title':'ketaki - the flower that speaks (EP6)','figs':[
-    ('falling (glow)',{'who':'ketaki','x':130,'y':330,'s':.85,'emo':'calm','fall':1}),
-    ('"I slipped from the top"',{'who':'ketaki','x':340,'y':330,'s':.85,'mood':{'smile':.4,'mouth':.4}}),
-    ('"You want me to lie?"',{'who':'ketaki','x':550,'y':330,'s':.85,'emo':'fear'}),
-    ('"Brahmadev is the greatest"',{'who':'ketaki','x':760,'y':330,'s':.85,'mood':{'smile':.6,'mouth':.45,'ly':-.3}}),
-    ('shame',{'who':'ketaki','x':970,'y':330,'s':.85,'emo':'shame'}),
-    ('cursed - withering',{'who':'ketaki','x':1170,'y':330,'s':.85,'wither':.55}),
-    ('in the hamsa\'s beak',{'who':'swan','x':300,'y':690,'s':.95}),
-    ('held up as proof',{'who':'brahma','x':720,'y':690,'s':.82,'pose':'hold','lotus':False,'emo':'pride'}),
-    ('withered (fully)',{'who':'ketaki','x':1080,'y':650,'s':.85,'wither':1})],
-    'extra':[{'who':'ketaki','x':521,'y':520,'s':.28,'mood':{'smile':.2},'flip':1},{'who':'ketaki','x':803,'y':425,'s':.34,'mood':{'smile':.6,'mouth':.45}}]},
+    ('neutral, falling',{'who':'ketaki','x':120,'y':300,'s':.8,'emo':'calm','fall':1}),
+    ('speaks',{'who':'ketaki','x':325,'y':300,'s':.8,'mood':{'smile':.4,'mouth':.5}}),
+    ('afraid: "a lie?"',{'who':'ketaki','x':530,'y':300,'s':.8,'emo':'fear'}),
+    ('false witness',{'who':'ketaki','x':735,'y':300,'s':.8,'mood':{'smile':.6,'mouth':.45,'ly':-.3}}),
+    ('shame',{'who':'ketaki','x':940,'y':300,'s':.8,'emo':'shame'}),
+    ('withering',{'who':'ketaki','x':1150,'y':300,'s':.8,'wither':.55}),
+    ('in the hamsa\'s beak',{'who':'swan','x':260,'y':690,'s':.9}),
+    ('held up as proof',{'who':'brahma','x':720,'y':680,'s':.82,'pose':'hold','lotus':False,'emo':'pride'}),
+    ('withered (fully)',{'who':'ketaki','x':1080,'y':650,'s':.8,'wither':1})],
+    'extra':[{'who':'ketaki','x':452,'y':528,'s':.26,'mood':{'smile':.2}},{'who':'ketaki','x':760,'y':540,'s':.3,'mood':{'smile':.6,'mouth':.45}}]},
  'swan':{'title':'swan - Brahma as the Hamsa (EP6)','bg':{'k':'cloudscape','fore':False},'figs':[
     ('flying up past the clouds',{'who':'swan','x':330,'y':560,'s':1.3}),
-    ('with the ketaki in its beak',{'who':'swan','x':900,'y':600,'s':1.2})],
-    'extra':[{'who':'ketaki','x':1159,'y':382,'s':.32,'mood':{'smile':.2}}]},
+    ('with the ketaki in its beak',{'who':'swan','x':880,'y':600,'s':1.2,'glide':1})],
+    'extra':[{'who':'ketaki','x':1132,'y':374,'s':.32,'mood':{'smile':.2}}],'labcol':'#3a2414'},
  'boar':{'title':'boar - Vishnu as Varaha (EP6)','bg':{'k':'earth','fore':False},'figs':[
     ('digging down through the earth',{'who':'boar','x':380,'y':560,'s':1.5,'pose':'dig'}),
     ('running',{'who':'boar','x':920,'y':560,'s':1.4,'pose':'run'})]},
@@ -73,17 +73,18 @@ def FORMS():
     ('chandra',{'who':'chandra','x':885,'y':650,'s':.86,'emo':'doubt'}),
     ('vayu',{'who':'vayu','x':1130,'y':650,'s':.86,'emo':'surprise','pose':'open'})]},
  'jyotirlinga':{'title':'jyotirlinga - the endless pillar of fire (EP6)','frames':[
-    {'bg':{'k':'pillar','px':640,'pw':120},'figs':[('the pillar appears between them',{'who':'brahma','x':330,'y':690,'s':.72,'pose':'point','lotus':False,'emo':'surprise','flip':1}),
+    {'bg':{'k':'pillar','px':640,'pw':120},'labcol':'#ffe9b8','figs':[('the pillar appears between them',{'who':'brahma','x':330,'y':690,'s':.72,'pose':'point','lotus':False,'emo':'surprise','flip':1}),
         ('',{'who':'vishnu','x':950,'y':690,'s':.72,'pose':'open','emo':'surprise','flip':-1})]},
-    {'bg':{'k':'pillar','px':640,'pw':120,'ct':-2},'figs':[('it cracks open: Shiva appears',{'who':'shiva','x':640,'y':700,'s':1.1,'pose':'rpoint','emo':'rage','flip':-1})],
+    {'bg':{'k':'pillar','px':640,'pw':120,'ct':-2},'labcol':'#ffe9b8','figs':[('it cracks open: Shiva appears',{'who':'shiva','x':640,'y':700,'s':1.1,'pose':'rpoint','emo':'rage','flip':-1})],
         'fx':[{'t':'pfx','k':'om_symbol','x':640,'y':110,'w':120}]}]},
 }
 
 def frame_shot(T,figs,fx,bg=None):
-    return {'beat':1,'at':T,'draw':'scene','grade':'cel','cues':[],'cam':{'from':{'z':1},'to':{'z':1}},'dx':0,'sc':{'bg':bg or BG,'figs':figs,'fx':fx}}
+    return {'beat':1,'at':T,'draw':'scene','grade':'cel','vig':.12,'cues':[],'cam':{'from':{'z':1},'to':{'z':1}},'dx':0,'sc':{'bg':bg or BG,'figs':figs,'fx':fx}}
 
 def label_y(f):
-    if f.get('head'):return f['y']+150
+    if f.get('head'):return f['y']+int(330*f['s'])
+    if f['who']=='ketaki':return f['y']+38
     return min(712,f['y']+20)
 
 def main():
@@ -113,7 +114,8 @@ def main():
             spec=F[n];frames=spec.get('frames') or [spec]
             for k,fr in enumerate(frames):
                 figs=[f for _,f in fr['figs']]+fr.get('extra',spec.get('extra',[]) if k==0 else [])
-                fx=[lab(l,f['x'],label_y(f),19) for l,f in fr['figs'] if l]+[lab(spec['title'],640,30,26)]+fr.get('fx',[])
+                lc=fr.get('labcol',spec.get('labcol',INK));L=lambda *a:dict(lab(*a),col=lc)
+                fx=[L(l,f['x'],label_y(f),19) for l,f in fr['figs'] if l]+[L(spec['title'],640,30,26)]+fr.get('fx',[])
                 shots.append(frame_shot(T,figs,fx,fr.get('bg')));outs.append(f'{n}_forms'+(f'{k+1}' if len(frames)>1 else ''));T+=1
     tmp=R+'/build/cast_sheet';shutil.rmtree(tmp,ignore_errors=True);os.makedirs(tmp);os.makedirs(x.out,exist_ok=True)
     json.dump(shots,open(tmp+'/shots.json','w'),ensure_ascii=False)
