@@ -1,246 +1,649 @@
-# EP6 action brief (action-director)
+# EP6 action brief (v2, generated from briefs.json)
+Per shot, one line per character: who: base pose/emotion, then what they do on which spoken word.
 
-Companion of `action_plan.json`. Shot ids match `shot_plan.json`. Cue words are the shot's `cues` (0-based c). "talk" = speech rhythm on the whole shot. lx is read as screen space (+ right, - left); ly +0.8 = down, -0.8 = up. Shots with no figure (b01_4, b02_x none, b04_12/13/18, b05_6/8/11, b08_3/4/11/12, b09_4/5/8/10, b10_11, b12_4/5, b13_10/12, b14_5/16) have no acting.
+**b01_1** @0.14s "ब्रह्मा ने यह पूरा ब्रह्मांड रचा"
+- brahma: default/calm; looks at 640; on 'ब्रह्मांड': emo pride, tilt 0.05; on 'रचा': pose open, emo joy
 
-## Global rules used
-- Speakers: talk 0.4-0.9, eyes on listener; listener looks back and reacts (surp / sad / smile).
-- Narration-only shots: no talk; the body does the narrated verb on its word.
-- Guilt: ly 0.8. Awe: surp + ly negative. Anger stays the existing expr brow -0.9.
-- Spring on bows, arrivals, namaste; antic on strikes, points, shouts, the trident.
+**b01_2** @2.36s "फिर भी उनकी पूजा कोई क्यों नहीं करता"
+- brahma: stand/sad; looks at 900; on 'पूजा': emo sad, mood {'ly': 0.6}; on 'नहीं': emo grief, tilt -0.08
 
-## B01 Hook
-- b01_1 Brahma: faces open (existing hd), smiles and tilts on "ब्रह्मांड"; arms open (spring) on "रचा".
-- b01_2 Brahma: looks after the rishis, plead pose on "पूजा", sad up and head dips on "नहीं". Rishis: eyes ahead, keep walking.
-- b01_3 Brahma head: sad, eyes down, head tilt (spring) on "झूठ".
-- b01_5 Brahma: holds the flower, looks at Vishnu on "गवाह", eyes to flower on "फूल". Vishnu: listens, head tilt, surprise on "गवाह", slight sorrow on "फूल".
-- b01_6 both tiny: eyes up on "आदि", eyes down on "अंत".
-- b01_7 Shiva: raises arm (antic) on "शिव", talks.
-- b01_8 Shiva: points (antic), talks on "बदला". Brahma: plead pose, sad, eyes down (spring).
+**b01_3** @4.72s "जवाब है एक झूठ"
+- brahma: default/doubt; on 'झूठ': emo shame, mood {'lx': -0.7, 'ly': 0.4}, tilt 0.06
 
-## B02 Three gods
-- b02_1 all three: look at each other, small head tilts on "तीन".
-- b02_2 Brahma open / Vishnu hold / Shiva raise (spring) on "तीन"; smiles grow on "देवता".
-- b02_3 Brahma: arms open (spring), smile on "रचते".
-- b02_4 Vishnu: hold the world (spring), smile on "पालते".
-- b02_5 Shiva: raises arm (antic) on "संहार".
-- b02_6 all three glance at each other with head tilts on "बड़ा".
-- b02_7 Brahma and Vishnu: point at each other (antic) on "आग", mouths open.
-- b02_8 devas: Indra points, Surya opens arms, Chandra pleads, all surprised, on "देवताओं".
-- b02_9 Brahma and Vishnu: lunge (antic) at each other on "झगड़ा", both talking.
-- b02_10 devas: flee pose with surprise on "दौड़े" (existing walk and drift).
-- b02_11 Indra and Surya: plead, shocked; Brahma and Vishnu: point and shout on "दोनों".
-- b02_12 heads: glare, clench, antic tilt on "पीस".
-- b02_13 Brahma points and shouts on "आवाज़ें"; Vishnu points and shouts on "ग़ुस्सा".
-- b02_14 Indra and Chandra: plead, cower (sad, eyes down); Brahma and Vishnu: raise arm and shout on "ऊँचा".
+**b01_4** @7.08s "और उस झूठ का गवाह बना एक फूल"
+- ketaki: default/calm; on 'गवाह': emo fear, mood {'ly': -0.6}; slides on 'उस'
 
-## B03 Dialogue
-- b03_1 Brahma: walks, eyes on Vishnu, sad on "प्रणाम". Vishnu: eyes elsewhere, no bow.
-- b03_2 Brahma head: talking, sad (spring) on "प्रणाम".
-- b03_3 Brahma: open arms (spring), talking, on "रचयिता".
-- b03_4 Brahma head: pleading, sad up and head tilt on "सम्मान".
-- b03_5 Vishnu: turns head back (tilt, eyes to Brahma), hold pose on "पलटकर". Brahma: surprise.
-- b03_6 Vishnu head: talks, slight smile, on "पालनकर्ता".
-- b03_7 Brahma head: talks, antic tilt on "रचता".
-- b03_8 Brahma: points at Vishnu (antic), talking, on "करूँ". Vishnu: listens, slight surprise.
-- b03_9 Vishnu head: slight smile, eyes on Brahma (static).
-- b03_10 Vishnu: hold pose, gaze down at the world, smile (spring) on "नाज़ुक".
-- b03_11 Madhu lunges (antic) on "मधु"; Kaitabha lunges on "कैटभ"; Vishnu watches.
-- b03_12 Vishnu: raises arm (antic) on "मारा".
-- b03_13 Vishnu: opens arms (spring) on "रक्षा", smiles with tilt on "बड़ा". Brahma: surprise on "रक्षा", stung on "बड़ा".
-- b03_14 Brahma head: stung (antic), sad and surprised, on "बचा".
-- b03_15 both: lunge (antic) on "कैसी".
+**b01_5** @10.28s "यह झूठ बोला गया आग के एक ऐसे"
+- brahma: hold/pride; looks at vishnu; on 'झूठ': emo doubt, mood {'lx': -0.5}
+- ketaki: default/shame; looks at brahma
+- vishnu: default/calm; looks at brahma; on 'आग': emo surprise, mood {'ly': -0.5}
 
-## B04 Vishnu enters Brahma
-- b04_1 Brahma: walks, points (antic), talking. Vishnu: calm, eyes on Brahma.
-- b04_2 Brahma head: talking, antic tilt on "शक्ति".
-- b04_3 Vishnu head: calm, curious smile.
-- b04_4 Brahma: arms open (spring), talking, on "शरीर".
-- b04_5 Brahma: hold pose, eyes up, smile on "समेटे".
-- b04_6 Vishnu: walks toward Brahma and fades; surprise on "भीतर", awe with eyes up and arms open on "गए". Brahma: arms open (spring) on "भीतर".
-- b04_7 Vishnu: arms open (spring), awe, eyes up on "देखा".
-- b04_8 Vishnu: eyes up with head tilt on "लाख"; arms open (spring) on "लोक".
-- b04_9 Vishnu: plead pose, surprise, head turn on "समुद्र".
-- b04_10 Vishnu: raised arm, eyes high, head tilted up on "पर्वत".
-- b04_11 Vishnu: open arms, smile on "साँस"; villagers look aside, child smiles.
-- b04_14 Vishnu: points toward the faint light (spring) on "राज़".
-- b04_15 Vishnu head: wide eyes, eyes up (static).
-- b04_16 Vishnu: head turns left on "दृश्य", right on "आवाज़ें".
-- b04_17 Vishnu: arms wide (spring), smile on "देखी".
-- b04_19 Vishnu: steps back out (mx 30), surprise, smile on "आकर". Brahma: open arms, smile.
-- b04_20 Vishnu: namaste (spring) on "सचमुच"; head dips on "स्वामी". Brahma: open arms, proud smile growing on "स्वामी".
-- b04_21 Vishnu: arms open (spring), talking, on "झाँकिए". Brahma: surprise, head tilt.
+**b01_6** @12.82s "स्तंभ के सामने जिसका न कोई आदि था न कोई अंत"
+- brahma: stand/surprise; looks at 640
+- vishnu: default/surprise; looks at 640
 
-## B05 Brahma enters Vishnu
-- b05_1 Brahma: walks, surprise on "विष्णु", more awe on "उतरे", fades (existing). Vishnu: arms open (spring).
-- b05_2 Brahma: frozen, surprise and mouth open on "थम"; faces sprout (l, r, b).
-- b05_3 Brahma: eyes up on "अनंत", eyes shift on "असीम".
-- b05_4 Brahma: head tilt up, eyes up (spring) on "आकाशगंगाएँ".
-- b05_5 Brahma: hands raised in defence, eyes up on "ग्रह".
-- b05_7 Brahma: eyes left on "बीता", centre on "आता", right on "आने".
-- b05_9 Brahma head: eyes dart left and up on "आँखें".
-- b05_10 Brahma: dizzy tilt on "सिर".
-- b05_12 Brahma: unsettled on "बदलते"; calms with smile on "वही".
-- b05_13 Vishnu head: talks serenely. Brahma: surprise, then sad on "खोकर", sitpray (spring) with smile on "पाया".
-- b05_14 Brahma: flee pose (antic), panic.
-- b05_15 Brahma head: eyes dart left on "रास्ता", sad right and down on "नहीं".
-- b05_16 Brahma: sitpray, looks up on "डंडी".
-- b05_17 Vishnu: serene smile. Brahma: surprise on "नाभि", smile on "निकले".
-- b05_18 Brahma: arms open (spring), faces sprout (l, r, b), smile on "प्रकट".
+**b01_7** @17.08s "और उसी पल शिव ने ब्रह्मा को एक ऐसा"
+- shiva: rage/rage; looks at 300; on 'ब्रह्मा': pose rpoint, emo rage
 
-## B06 Weapons and pillar
-- b06_1 Brahma: arms open (spring); Vishnu: hold (spring), on "महानता".
-- b06_2 both: point (antic) at each other on "जड़".
-- b06_3 heads: head tilts, eyes on each other on "सही".
-- b06_4 heads: each turns head and eyes away (static).
-- b06_5 both: hold pose, heads tilt away on "बराबर".
-- b06_6 Brahma: raises arm (antic) on "हथियार"; Vishnu: raises arm on "उठ".
-- b06_7 Indra, Surya, Kashyapa, Rishi3: flee pose (spring), terrified, on "काँप".
-- b06_8 devas: back away, plead pose, eyes on danger, on "पीछे".
-- b06_9 both: point (antic) at the fire on "आग".
-- b06_10 both: blown back (mx -50 / +50), flee pose (spring), on "प्रकट".
-- b06_11 Indra: plead, eyes up; Kashyapa: namaste, eyes up, on "दहकता".
-- b06_12 both: eyes up on "ऊपर", eyes down on "नीचे".
-- b06_13 both: arms open (spring), eyes up on "छोर".
-- b06_14 all: freeze, eyes up on "ठिठक".
-- b06_15 Indra: points, talking (spring); Kashyapa: opens arms; Surya and Chandra look and nod, on "शर्त".
-- b06_16 Vishnu: head and eyes down on "जड़".
-- b06_17 Brahma: raised arm (spring), eyes up on "चोटी".
-- b06_18 both: point at each other (antic) on "पहुँचा", smile on "बड़ा"; Brahma talking.
-- b06_19 both: namaste (spring) with a small bow on "मान".
+**b01_8** @19.7s "फ़ैसला सुनाया जो आज तक नहीं बदला"
+- shiva: point/anger; looks at brahma
+- brahma: stand/shame; looks at 880; on 'सुनाया': pose bow, emo shame, mood {'ly': 0.8}; on 'बदला': emo grief
 
-## B07 Boar and swan
-- b07_1 Vishnu replaced by BOAR (dig, x640 y670 s1.2) on "वराह".
-- b07_2 BOAR digging, sinking (y590 s1.0, vy 40) on "चीर".
-- b07_3 Brahma replaced by SWAN (x640 y420 s1.1) on "हंस".
-- b07_4 SWAN rising (y430 s1.0, vy -45) on "पार".
-- b07_5 tiny gods: Vishnu looks and tilts down on "नीचे"; Brahma looks and tilts up on "ऊपर".
-- b07_6 Vishnu head (kept as a face close-up, not replaced): antic tilt on "जीतना", eyes forward.
-- b07_7 Brahma head: eyes up, small smile (static).
-- b07_8 BOAR digging (y560 s1.0, vy 50) on "ढूँढते".
-- b07_9 SWAN higher (y440 s1.0, vy -35).
-- b07_10 tiny gods: Brahma looks up, Vishnu looks down, surprise, on "स्तंभ".
-- b07_12 Brahma: eyes up, head tilt (static).
-- b07_13 SWAN, weary (x620 y480 s1.1, slow sink vy 12) on "थककर".
-- b07_14 Brahma: raises arm (spring), head tilts back, eyes up, surprise on "गिरता".
-- b07_15 Brahma head: surprise, eyes to the flower on "केतकी"; eyes keep following on "फूल".
+**b02_1** @22.88s "शुरू से समझते हैं सृष्टि के तीन बड़े देवता हैं"
+- brahma: stand/calm; looks at 640; on 'तीन': pose namaste
+- shiva: stand/calm; looks at 330
+- vishnu: stand/calm; looks at 640; on 'देवता': pose namaste
 
-## B08 Flower and thought
-- b08_1 SWAN with the flower in its beak (x500 y500 s1.2) on "चोंच/पकड़".
-- b08_2 Brahma head: talking to the flower, antic tilt on "कहाँ".
-- b08_5 Brahma head: eyes drift up-left, away from the flower, on "सुना".
-- b08_6 Brahma: stuck, eyes up and aside on "अटक".
-- b08_7 Brahma head: thought lights up, eyes sharp (spring) on "ऊँचाइयाँ".
-- b08_8 Brahma: points up (spring), head tilt back on "फूल".
-- b08_9 Brahma: points up on "कुछ"; raises arm (spring) with smile on "है".
-- b08_10 Brahma: gaze to the flower in hand (spring) on "फूल"; small smile on "हाथ".
-- b08_13 Brahma head: private smile (spring) on "सबूत".
-- b08_14 Brahma: hold pose, smile (spring) on "चाहत".
-- b08_15 Brahma head: smile fades, sad, eyes down (conscience) on "सोचा".
+**b02_2** @26.76s "ब्रह्मा जो रचते हैं"
+- brahma: default/calm; looks at 640; on 'रचते': pose open, emo joy
 
-## B09 Persuasion
-- b09_1 Brahma: points at the flower (spring), talking, on "केतकी"; keeps pointing on "कहा".
-- b09_2 Brahma head: talking, antic tilt on "गवाही".
-- b09_3 Brahma: points at the summit (spring), talking, on "चोटी".
-- b09_6 Brahma head: talking, antic tilt on "रचा".
-- b09_7 Brahma: plead pose (spring), smile, on "एहसान".
-- b09_9 Brahma head: talking, smile grows on "महानता".
-- b09_11 Brahma head: big smile (spring) on "गई".
+**b02_3** @28.64s "विष्णु जो पालते हैं"
+- vishnu: default/calm; looks at 640; on 'पालते': pose open, emo devotion
 
-## B10 The lie
-- b10_1 Brahma: hold pose, small smile, eyes down while descending.
-- b10_2 devas look toward Brahma returning; Vishnu sad, eyes down, on "लौट".
-- b10_3 Vishnu head: head lowers, eyes down (spring) on "झुकाकर".
-- b10_4 Vishnu: bow (spring), talking, on "जड़". Indra: surprised.
-- b10_5 Vishnu head: honest, sad, talking, on "हार".
-- b10_6 Brahma head: sly smile (spring) on "मुस्कुराए".
-- b10_7 Brahma: faces sprout left on "चारों", right on "मुखों", back on "मिलकर"; arms open (spring), talking.
-- b10_8 Brahma: raises arm (antic), eyes up, talking, on "चोटी".
-- b10_9 Brahma: arms open (spring), proud smile, on "जीतकर". Indra and Kashyapa: surprise, nod.
-- b10_10 Brahma: holds the flower out (spring) on "बढ़ाया". Vishnu: bows (spring).
-- b10_12 Vishnu head: quiet, sad, eyes down (static).
-- b10_13 Vishnu: sad on "हार"; namaste (spring) on "जोड़". Brahma: smile grows.
+**b02_4** @30.76s "और शिव जो संहार करते हैं"
+- shiva: stand/calm; looks at 640; on 'संहार': emo anger
 
-## B11 Pillar cracks
-- b11_1 Vishnu: namaste, eyes on the pillar. Brahma: small smile fading to surprise.
-- b11_2 both: recoil (mx -40 / +40), flee pose (spring), on "चटक".
-- b11_3 Indra: plead, awe; Kashyapa: namaste, awe, on "ओम".
-- b11_4 both: raise arms to shield (spring) on "गहरी"; turn heads away on "लाल".
-- b11_5 Shiva: silhouette, small head turn on "धुंध".
-- b11_6 Shiva: arms open (antic) on "शिव"; raises arm (antic), mouth open, on "क्रोध".
-- b11_7 Shiva: looks at Brahma, talking, points (antic) on "उँगली". Brahma: shock, sad on "ब्रह्मा"; plead, eyes down (spring) on "उँगली".
-- b11_8 Shiva head: shouts, antic on "गरजे", loudest antic on "झूठे" (Liar!).
-- b11_9 Brahma head: pale, still, eyes down, mouth closed. Vishnu head: sad, eyes down.
+**b02_5** @33.42s "एक दिन देवताओं को ख़बर मिली कि"
+- agni: default/calm; looks at 640; on 'ख़बर': emo surprise
+- indra: default/calm; looks at 380; talks; on 'ख़बर': emo surprise, pose open
+- surya: default/calm; looks at 640; on 'मिली': emo surprise
 
-## B12 Jyotirlinga
-- b12_1 Shiva: points (antic), talking, on "चोटी". Brahma: shock, sad, eyes down.
-- b12_2 Shiva head: talking, head tilt on "दोनों".
-- b12_3 Brahma and Vishnu: namaste (spring), eyes up on "शिवलिंग".
-- b12_6 Brahma and Vishnu heads: look up, wide, on "इंद्रिय"; eyes shut against the light on "परे".
-- b12_7 Shiva: opens arms (spring), talking, calmer, on "बताने".
-- b12_8 Brahma and Vishnu (specks): bow (spring), sad, on "छोटी".
-- b12_9 Shiva: raises arm (spring), eyes up, on "ऊपर".
-- b12_10 Brahma and Vishnu: look at each other on "एक"; namaste (spring) on "बराबर". Shiva: hold, small smile.
-- b12_11 Shiva: opens arms (spring), talking. Vishnu: sad, eyes down on "हार"; namaste (spring) on "स्वीकार".
-- b12_12 Shiva: points (antic), talking, on "ब्रह्मा". Brahma: shock, sad, eyes down.
-- b12_13 Brahma head: guilt, sad, eyes down on "धोखा".
-- b12_14 Shiva head: talking, head tilt on "डर".
-- b12_15 Brahma: kneels (kneel 0.8), plead, eyes down (spring) on "हरेगा". Shiva: hold, talking.
+**b02_6** @35.48s "ब्रह्मा और विष्णु के बीच झगड़ा छिड़ गया है"
+- brahma: stand/pride; looks at vishnu; talks; on 'झगड़ा': pose point, emo anger
+- vishnu: default/calm; looks at brahma; on 'झगड़ा': emo anger
 
-## B13 Judgement
-- b13_1 Shiva: raises the trident arm (antic) on "त्रिशूल".
-- b13_2 Shiva: lunge strike (antic) on "मारा".
-- b13_3 Shiva head: talking, calm, on "श्राप".
-- b13_4 Brahma: walks, bowed, sad, eyes down, on "प्रकृति".
-- b13_5 Brahma head: light drains, sad, eyes down, on "नकारा".
-- b13_6 Indra, Kashyapa, Rishi1: walk away left, eyes away, head down, on "नकारेंगे". Brahma: stays, plead pose, eyes after them.
-- b13_7 Brahma: sad, eyes down on "पूजा"; sitpray alone on "करेगा".
-- b13_8 Shiva: turns, points (antic) at the flower on "केतकी".
-- b13_9 Shiva head: thunder voice, talking, antic, on "गरजे".
-- b13_11 Shiva: opens arms (spring), eyes down at the flower, on "चढ़ाएगा".
-- b13_13 Devotee: open arms (spring), sad, head tilt on "नहीं".
+**b02_7** @38.08s "वे दौड़े आए और देखा"
+- indra: default/surprise; looks at 900; on 'देखा': emo fear, pose open; walks to x 560 on 'दौड़े'
+- agni: default/surprise; looks at 900; walks to x 400 on 'दौड़े'
+- vayu: default/surprise; looks at 560; on 'देखा': emo fear
 
-## B14 The answer and Daksha
-- b14_1 Brahma: sad, eyes down on "जवाब".
-- b14_2 Brahma: arms open (spring) on "रची".
-- b14_3 Brahma: sad, eyes down on "छीन".
-- b14_4 Brahma head: sad, eyes down on "झूठ".
-- b14_6 Brahma head: sad and fearful, eyes down, on "डर".
-- b14_7 Vishnu: namaste (spring) on "विष्णु"; smile on "स्वीकार". Brahma: sad, eyes down; plead and flinch on "स्वीकार".
-- b14_8 Brahma: arms open (spring) on "सृष्टि".
-- b14_9 Brahma: shrinks inward, sad, eyes down, on "डर".
-- b14_10 Brahma: pensive, head tilt, on "हारे".
-- b14_11 Narada: points (antic), talking, on "श्राप". Brahma: shock, plead (spring).
-- b14_12 Brahma: fifth head sprouts on "पाँचवाँ"; sad on "सिर".
-- b14_13 Brahma head: sad, eyes down, on "झूठ".
-- b14_14 Brahma: sad on "चूक"; head tilt on "थी".
-- b14_15 Brahma head: looks to the gold side with a smile on "चाहत"; looks to the dark side, sad, on "डर".
-- b14_17 Rishi4: walks, eyes on the temple, head tilt on "हैं".
-- b14_18 Shiva: walks away, eyes ahead, small head tilt on "चले".
-- b14_19 Shiva: walks. Daksha: glares, eyes on Shiva (lx -0.8), hold pose, head tilt on "घूर".
-- b14_20 Daksha head: hard glare, eyes on Shiva (spring) on "दक्ष".
-- b14_21 Daksha head: eyes fill (sad) on "भरी"; antic clench on "जल".
-- b14_22 Daksha: points (antic), talking, on "काटा".
-- b14_23 Daksha: clenched stance (rage pose, antic), talking, on "छीन".
-- b14_24 Daksha: arms open (antic), mouth open, on "लहर".
-- b14_25 Daksha head: antic tilt, mouth open, on "निगलने".
+**b02_8** @39.98s "कि दोनों एकदूसरे पर दाँत पीस रहे हैं"
+- brahma: default/anger; looks at vishnu; on 'दाँत': emo rage
+- vishnu: default/anger; looks at brahma; on 'पीस': emo rage
 
-## B15 Teaser
-- b15_1 Brahma: arms open (spring), eyes to us, on "सोचिए".
-- b15_2 Brahma head: talking, eyes to us, on "ब्रह्मा".
-- b15_3 Vishnu: namaste (spring), smile, on "सच".
-- b15_4 Brahma head: shadowed smile, head tilt on "झूठ".
-- b15_5 Brahma head: smile (spring), eyes to us, on "कमेंट".
-- b15_6 asura: head tilt, eyes right, on "असुर".
-- b15_7 asura: turns eyes to the devas on "देवताओं". Indra: hold pose, wary surprise.
-- b15_8 asura head: smile, eyes soften, on "दिल".
-- b15_9 asura: arms open (spring), smile, on "ना". Villagers: eyes on him, small smile. Child: raised hand (spring), smile.
-- b15_10 asura head: sad, eyes down, on "हरा".
+**b02_9** @42.58s "आवाज़ें ऊँची हो रही थीं और ग़ुस्सा उससे भी ऊँचा"
+- brahma: point/rage; looks at vishnu; talks
+- vishnu: point/anger; looks at brahma; talks
+- indra: default/fear; looks at 640; on 'ग़ुस्सा': pose flee
+- chandra: default/fear; looks at 640; on 'ग़ुस्सा': pose flee
 
-## Requests
-1. `lx` sign: I assumed screen space (+ right). If it is relative to flip, the lx values for flip -1 figures must be inverted.
-2. b07_6: I kept Vishnu's head close-up (face visible) rather than replacing it with the boar. A boar head close-up is not available; please confirm.
-3. Swan and boar `x,y,s` are estimates (swan is body centre; beak with the flower in b08_1 sits near the y 300 flower). Check that nothing is cropped on the first render and nudge.
-4. `kneel` on the boar is set to 0 because it squashes the figure.
-5. Acts on empty-cue shots (b03_9, b04_3, b04_15, b06_4, b07_7, b07_12) are static moods only; nothing was added to cues.
-6. The seated pose `sitpray` is used for Brahma on the lotus (b05_13, b05_16, b13_7). If it stands him up, replace with `sit`.
-7. Cut-out check: no painted heroes are used; Hiranyaksha (b15_6 to b15_10) is the stand-in asura, to be replaced by the real coded character for EP7.
+**b03_1** @46.12s "ब्रह्मा बोले मैं इस रास्ते से गुज़रा"
+- brahma: stand/pride; looks at vishnu; talks; on 'रास्ते': pose point, flip 1
+- vishnu: default/calm; looks at brahma
+
+**b03_2** @48.66s "और इसने मुझे प्रणाम तक नहीं किया"
+- brahma: point/anger; looks at vishnu; talks; on 'प्रणाम': emo anger
+- vishnu: stand/calm; on 'नहीं': tilt 0.06
+
+**b03_3** @50.8s "मैं रचयिता हूँ क्या मैं थोड़े सम्मान के भी लायक नहीं"
+- brahma: stand/pride; looks at 900; talks; on 'रचयिता': pose raise, emo pride; on 'सम्मान': pose open, emo anger
+
+**b03_4** @54.44s "विष्णु ने पलटकर कहा आप रचयिता होंगे"
+- vishnu: default/calm; looks at 200; talks; on 'कहा': pose open, emo anger; turns round on 'पलटकर'
+
+**b03_5** @57.58s "पर मैं पालनकर्ता हूँ"
+- vishnu: default/pride; looks at 300; on 'पालनकर्ता': emo pride, tilt -0.05
+
+**b03_6** @59.6s "तुम पालते इसीलिए हो क्योंकि मैं रचता हूँ"
+- brahma: stand/anger; looks at vishnu; talks; on 'रचता': pose point, emo rage; walks to x 500 on 'पालते'
+- vishnu: default/calm; looks at brahma; on 'रचता': emo anger
+
+**b03_7** @62.82s "मैं सृष्टि शुरू न करूँ तो तुम्हारे पास करने को कुछ नहीं बचेगा"
+- brahma: open/pride; looks at 900; talks; on 'शुरू': pose raise; on 'नहीं': pose open, emo anger
+
+**b03_8** @67.1s "सृष्टि इतनी नाज़ुक है कि उसे मेरी ज़रूरत पड़ती है"
+- vishnu: hold/calm; looks at 760; talks; on 'नाज़ुक': emo sad, tilt 0.06, mood {'ly': 0.4}; on 'ज़रूरत': emo devotion
+
+**b03_9** @70.9s "याद कीजिए मधु और कैटभ को"
+- madhu: lunge/rage; looks at 1000
+- kaitabha: lunge/rage; looks at 200
+
+**b03_10** @73.0s "मैंने ही मारा था"
+- vishnu: point/anger; looks at 900; on 'मारा': emo pride
+- madhu: lie/fear; looks at vishnu
+- kaitabha: lie/fear; looks at vishnu
+
+**b03_11** @74.28s "जो रक्षा करता है वही बड़ा होता है"
+- vishnu: stand/pride; looks at brahma; talks; on 'बड़ा': pose raise, emo pride
+- brahma: stand/anger; looks at vishnu
+
+**b03_12** @76.94s "जो अपनी रचना को बचा ही न सके उसकी शक्ति कैसी"
+- brahma: default/shame; looks at 1000; on 'बचा': emo surprise; on 'शक्ति': emo rage
+
+**b04_1** @80.48s "ब्रह्मा आगे बढ़े शक्ति"
+- brahma: stand/anger; looks at vishnu; on 'शक्ति': pose raise, emo rage; walks to x 520 on 'आगे'
+- vishnu: default/calm; looks at brahma
+
+**b04_2** @82.96s "तुम मेरी शक्ति देखना चाहते हो"
+- brahma: default/pride; looks at 1000; on 'देखना': emo anger, tilt 0.05
+
+**b04_3** @84.94s "मेरे शरीर के भीतर आओ और देखो कि मैं क्या समेटे हुए हूँ"
+- brahma: stand/pride; looks at 640; talks; on 'आओ': pose open, emo joy; on 'समेटे': emo pride
+
+**b04_4** @90.02s "विष्णु उनके भीतर चले गए"
+- brahma: open/pride; looks at vishnu
+- vishnu: default/calm; looks at brahma; walks to x 640 on 'भीतर'; fades out on 'गए'
+
+**b04_5** @92.46s "और वहाँ उन्होंने देखा दस लाख लोक"
+- vishnu: default/surprise; looks at 640; on 'देखा': pose open, emo surprise
+
+**b04_6** @96.46s "गरजते समुद्र"
+- vishnu: default/surprise; looks at 600
+
+**b04_7** @97.98s "आसमान छूते पर्वत"
+- vishnu: default/surprise; looks at 640
+
+**b04_8** @100.08s "हर तरह का जीवन हर तरफ़ साँस लेता हुआ"
+- villager: default/joy; looks at 500; talks
+- villager_w: default/joy; looks at 330
+- kumara: default/joy; looks at 900
+- swan: default/calm; looks at villager
+- vishnu: default/calm; looks at 450; on 'जीवन': emo joy
+
+**b04_9** @103.76s "गर्भ में पलते जीव और उन्हें पोसते तत्व"
+
+**b04_10** @107.5s "यहाँ तक कि ख़ाली जगहें भी अपने भीतर राज़ छिपाए बैठी थीं"
+- vishnu: default/surprise; looks at 700; on 'राज़': emo surprise, mood {'lx': 0.8}
+
+**b04_11** @111.9s "बाहर आकर विष्णु बोले"
+- brahma: stand/pride; looks at vishnu
+- vishnu: default/surprise; looks at brahma; on 'बोले': emo calm; fades in on 'बाहर'
+
+**b04_12** @113.8s "आप सचमुच सब कुछ के स्वामी हैं"
+- vishnu: default/devotion; looks at brahma; talks; on 'स्वामी': pose namaste
+- brahma: stand/pride; looks at vishnu; on 'सचमुच': emo joy, tilt 0.05
+
+**b04_13** @116.5s "पर अब मेरे शरीर के भीतर भी तो झाँकिए"
+- vishnu: default/calm; looks at brahma; talks; on 'भीतर': pose open, emo joy
+- brahma: stand/pride; looks at vishnu; on 'झाँकिए': emo doubt
+
+**b05_1** @119.48s "ब्रह्मा विष्णु के भीतर उतरे"
+- vishnu: open/calm; looks at brahma
+- brahma: stand/doubt; looks at vishnu; walks to x 780 on 'विष्णु'; fades out on 'उतरे'
+
+**b05_2** @121.96s "और वहीं थम गए"
+- brahma: default/calm; looks at 640; on 'थम': emo surprise, mood {'ly': -0.6}
+
+**b05_3** @123.78s "सामने था अनंत असीम"
+- brahma: default/surprise; looks at 640
+
+**b05_4** @126.5s "दस लाख आकाशगंगाएँ"
+
+**b05_5** @129.52s "विशाल ग्रह झिलमिलाते तारामंडल"
+- brahma: default/surprise; looks at 800
+
+**b05_6** @132.78s "बीता हुआ आता हुआ और आने वाला समय"
+- brahma: default/surprise; looks at 640; on 'आता': mood {'lx': 0, 'ly': -0.7}; on 'आने': mood {'lx': 0.8, 'ly': -0.6}
+
+**b05_7** @136.4s "एक नहीं अनगिनत ब्रह्मांड"
+
+**b05_8** @139.28s "ब्रह्मा की कई आँखें उसे देख नहीं पा रही थीं"
+- brahma: default/surprise; looks at 640; on 'आँखें': mood {'lx': -0.8, 'ly': -0.4}; on 'देख': emo fear, mood {'lx': 0.8, 'ly': -0.5}
+
+**b05_9** @143.28s "उनके कई सिर उसे समझ नहीं पा रहे थे"
+- brahma: plead/fear; looks at 640; on 'समझ': emo fear, tilt 0.1
+
+**b05_10** @146.9s "मानो वह अनंत उनसे कह रहा हो"
+- vishnu: default/calm; looks at 640; talks
+- brahma: default/surprise; looks at 640
+
+**b05_11** @149.3s "कि ख़ुद को खोकर ही ख़ुद को पाया जा सकता है"
+- brahma: default/sad; looks at 640; on 'खोकर': pose sitpray, mood {'blink': 1}; on 'पाया': emo devotion
+
+**b05_12** @152.74s "वे बाहर निकलना चाहते थे पर रास्ता नहीं मिला"
+- brahma: stand/fear; looks at 200; on 'निकलना': pose flee, mood {'lx': 0.9}; on 'रास्ता': emo fear, mood {'lx': -0.9}, turn -0.6
+
+**b05_13** @156.26s "आख़िर में कमल की डंडी से होते हुए"
+- brahma: default/surprise; looks at 640; slides on 'डंडी'
+
+**b05_14** @159.02s "वे विष्णु की नाभि से बाहर निकले"
+- vishnu_rest: default/calm; looks at 640
+- brahma: default/surprise; looks at 640; fades in on 'नाभि'
+
+**b05_15** @161.56s "वही कमल जिस पर वे सबसे पहले प्रकट हुए थे"
+- brahma: default/calm; looks at 640; on 'प्रकट': emo devotion, mood {'ly': -0.3}
+
+**b06_1** @165.12s "दोनों ने अपनी महानता दिखा दी"
+- brahma: stand/pride; looks at vishnu; on 'महानता': pose raise
+- vishnu: default/pride; looks at brahma; on 'महानता': pose raise
+
+**b06_2** @167.12s "और यही झगड़े की असली जड़ थी"
+- brahma: stand/anger; looks at vishnu
+- vishnu: default/anger; looks at brahma
+
+**b06_3** @169.4s "क्योंकि दोनों सही थे"
+- brahma: default/pride; looks at vishnu
+- vishnu: default/pride; looks at brahma
+
+**b06_4** @170.94s "और कोई यह मानने को तैयार नहीं था"
+- brahma: stand/anger; looks at vishnu; turns round on 'मानने'
+- vishnu: default/anger; looks at brahma; turns round on 'तैयार'
+
+**b06_5** @173.06s "कि दूसरा भी बराबर है झगड़ा नहीं थमा"
+- brahma: default/anger; looks at 10
+- vishnu: default/anger; looks at 1280
+
+**b06_6** @176.24s "तीखे शब्द ख़त्म हुए तो हथियार उठ गए"
+- brahma: stand/rage; looks at vishnu; on 'हथियार': pose raise
+- vishnu: default/rage; looks at brahma; on 'हथियार': pose raise
+
+**b06_7** @179.18s "सभा काँप उठी"
+- indra: flee/fear; looks at 900
+- surya: flee/fear; looks at 900
+- agni: flee/fear; looks at 1100
+
+**b06_8** @180.62s "तभी उनके बीच"
+- brahma: lunge/rage; looks at vishnu
+- vishnu: lunge/rage; looks at brahma
+
+**b06_9** @182.46s "आग का एक विशाल स्तंभ प्रकट हुआ"
+- brahma: stand/surprise; looks at 640; on 'प्रकट': pose flee, emo fear, mood {'ly': -0.6}
+- vishnu: default/surprise; looks at 640; on 'प्रकट': pose flee, emo surprise, mood {'ly': -0.6}
+
+**b06_10** @185.26s "सोने जैसा दहकता हुआ"
+
+**b06_11** @187.36s "इतना ऊँचा कि ऊपर और नीचे"
+- brahma: stand/surprise; looks at 640; on 'ऊपर': mood {'ly': -0.9}, tilt -0.12; on 'नीचे': mood {'ly': 0.9}, tilt 0.1
+- vishnu: default/surprise; looks at 640; on 'ऊपर': mood {'ly': -0.9}, tilt -0.12; on 'नीचे': mood {'ly': 0.9}, tilt 0.1
+
+**b06_12** @190.14s "दोनों तरफ़ उसका कोई छोर नहीं दिखता था"
+
+**b06_13** @193.36s "सब ठिठक गए"
+- brahma: stand/surprise; looks at 640
+- vishnu: default/surprise; looks at 640
+- indra: default/surprise; looks at 640
+- surya: default/surprise; looks at 640
+
+**b06_14** @194.84s "फिर देवताओं ने एक शर्त रखी"
+- indra: default/calm; looks at 1000; talks; on 'शर्त': pose raise
+- agni: default/calm; looks at 640
+- chandra: default/calm; looks at 640
+
+**b06_15** @197.3s "विष्णु इस स्तंभ की जड़ ढूँढेंगे"
+- vishnu: default/calm; looks at 760; talks; on 'जड़': emo pride, mood {'ly': 0.8}
+
+**b06_16** @199.84s "ब्रह्मा उसकी चोटी"
+- brahma: stand/pride; looks at 520; on 'चोटी': pose point, flip -1, mood {'ly': -0.9}
+
+**b06_17** @201.72s "जो पहले पहुँचा वही बड़ा कहलाएगा"
+- brahma: stand/pride; looks at 640
+- vishnu: default/pride; looks at 640
+
+**b06_18** @204.62s "दोनों मान गए"
+- brahma: stand/pride; looks at vishnu; on 'मान': pose bow
+- vishnu: default/calm; looks at brahma; on 'मान': pose bow
+
+**b07_1** @205.94s "विष्णु ने वराह का रूप लिया"
+- vishnu: default/pride; looks at boar; fades out on 'वराह'
+- boar: dig/calm; looks at vishnu; fades in on 'रूप'
+
+**b07_2** @207.76s "और धरती खोदते हुए नीचे उतरते गए"
+- boar: dig/calm; looks at 640; slides on 'धरती'
+
+**b07_3** @210.48s "ब्रह्मा ने हंस का रूप लिया"
+- brahma: stand/pride; looks at swan; fades out on 'हंस'
+- swan: default/calm; looks at brahma; fades in on 'रूप'
+
+**b07_4** @212.26s "और ऊपर आसमान में उड़ चले वराह बनकर विष्णु ने धरती चीर दी हंस बनकर ब्रह्मा"
+- swan: default/calm; looks at 640
+
+**b07_5** @218.6s "बादलों के पार पहुँच गए"
+- swan: default/calm; looks at 640
+
+**b07_6** @220.38s "वे ढूँढते रहे"
+- boar: dig/calm; looks at 640
+
+**b07_7** @221.68s "ढूँढते रहे"
+- swan: default/calm; looks at 640
+
+**b07_8** @222.76s "पर स्तंभ ख़त्म ही नहीं होता था"
+- swan: default/calm; looks at 640
+
+**b07_9** @225.12s "वह धरती और आकाश में फैला था"
+
+**b07_10** @227.62s "जैसे पूरे ब्रह्मांड की रीढ़"
+
+**b07_11** @230.06s "ब्रह्मा थककर लौटने ही वाले थे"
+- swan: default/calm; looks at 640
+
+**b07_12** @232.34s "कि तभी उन्हें ऊपर से कुछ गिरता दिखा"
+- swan: default/calm; looks at 640
+- ketaki: default/calm; looks at swan; slides on 'गिरता'
+
+**b07_13** @235.46s "एक केतकी का फूल"
+- ketaki: default/calm; on 'केतकी': emo surprise
+
+**b08_1** @237.36s "ब्रह्मा ने उसे अपनी चोंच में पकड़ लिया"
+- swan: default/calm; looks at 640
+- ketaki: default/surprise; looks at swan
+
+**b08_2** @239.72s "तुम कहाँ से आ रहे हो"
+- brahma: hold/doubt; looks at 640; talks; on 'कहाँ': emo surprise, tilt 0.06
+- ketaki: default/calm; looks at brahma
+
+**b08_3** @241.36s "मैं इस स्तंभ की ऊपरी ऊँचाइयों पर था"
+- ketaki: default/calm; talks; on 'ऊपरी': mood {'ly': -0.8, 'lx': 0.7}
+
+**b08_4** @244.48s "वहाँ से फिसल गया"
+- ketaki: default/fear; looks at 640; slides on 'फिसल'
+
+**b08_5** @245.96s "ब्रह्मा ने पूरा वाक्य सुना ही नहीं"
+- brahma: hold/doubt; looks at 1100
+- ketaki: default/calm; looks at brahma; talks
+
+**b08_6** @248.66s "बस दो शब्द उनके कानों में अटक गए"
+- brahma: default/calm; looks at 640; on 'अटक': emo surprise, mood {'lx': 0.6, 'ly': -0.3}
+
+**b08_7** @251.48s "ऊपरी ऊँचाइयाँ"
+- brahma: default/surprise; looks at 640; on 'ऊँचाइयाँ': emo pride, mood {'ly': -0.7, 'smile': 0.3}
+
+**b08_8** @253.32s "ऊपर से गिरता एक फूल"
+- ketaki: default/calm; looks at 640; slides on 'गिरता'
+
+**b08_9** @255.64s "इसका मतलब था कि ऊपर कुछ है"
+- brahma: hold/doubt; looks at 880; on 'ऊपर': emo surprise, mood {'ly': -0.9, 'lx': 0.6}; on 'है': emo pride, mood {'smile': 0.4}
+- ketaki: default/calm; looks at brahma
+
+**b08_10** @258.58s "और अब वह फूल उनके हाथ में"
+- brahma: hold/doubt; looks at 660; on 'हाथ': emo pride, tilt 0.05
+- ketaki: default/fear; looks at brahma
+
+**b08_11** @261.0s "सिर्फ़ फूल नहीं था वह जीत की चाबी था"
+- ketaki: default/fear; looks at 640
+
+**b08_12** @264.54s "एक ऐसा सबूत जिसे कोई झुठला नहीं सकता"
+- brahma: hold/pride; looks at 660; on 'सबूत': emo pride, mood {'smile': 0.8, 'lx': -0.6}
+- ketaki: default/shame; looks at brahma
+
+**b08_13** @267.96s "जीतने की चाहत ने ब्रह्मा को वह करा दिया"
+- brahma: hold/pride; looks at 640; on 'चाहत': emo anger, mood {'smile': 0.5}
+- ketaki: default/fear; looks at brahma
+
+**b08_14** @271.14s "जो कभी सोचा भी नहीं था"
+- brahma: default/doubt; looks at 640; on 'सोचा': emo pride, mood {'smile': 0.7, 'lx': -0.7}
+
+**b09_1** @273.2s "उन्होंने केतकी से कहा तुम सबके सामने गवाही दोगे"
+- brahma: hold/pride; looks at 620; talks; on 'गवाही': emo anger, tilt 0.06
+- ketaki: default/fear; looks at brahma
+
+**b09_2** @276.76s "कहोगे कि मैं चोटी तक पहुँचा था"
+- brahma: stand/pride; looks at 980; talks; on 'चोटी': pose raise, mood {'ly': -0.8}
+- ketaki: default/fear; looks at brahma
+
+**b09_3** @279.06s "और तुम्हें वहीं से लाया था"
+- ketaki: default/fear; on 'लाया': emo fear, mood {'surp': 0.8}
+
+**b09_4** @280.74s "आप चाहते हैं कि मैं झूठ बोलूँ"
+- ketaki: default/fear; talks; on 'झूठ': emo surprise, mood {'surp': 1}
+
+**b09_5** @283.14s "मैंने तुम्हें रचा है"
+- brahma: stand/pride; looks at 640; talks; on 'रचा': pose raise
+
+**b09_6** @284.72s "बदले में मैं तुमसे बस एक एहसान माँग रहा हूँ"
+- brahma: stand/joy; looks at 800; talks; on 'एहसान': pose plead, mood {'smile': 0.6}
+- ketaki: default/shame; looks at brahma
+
+**b09_7** @288.08s "लेकिन झूठ"
+- ketaki: default/sad; talks; on 'झूठ': emo sad, mood {'ly': 0.5}
+
+**b09_8** @289.66s "अगर तुमने साथ दिया तो मैं अपनी महानता साबित कर सकता हूँ"
+- brahma: hold/pride; looks at 660; talks; on 'महानता': emo joy, mood {'smile': 0.7, 'ly': -0.5}
+- ketaki: default/fear; looks at brahma
+
+**b09_9** @293.78s "केतकी मान गई"
+- ketaki: default/fear; on 'मान': emo shame, mood {'ly': 0.9}, tilt 0.12
+
+**b10_1** @295.32s "दोनों नीचे उतरे"
+- brahma: hold/pride; looks at 640; slides on 'नीचे'
+- ketaki: default/shame; looks at brahma; slides on 'नीचे'
+
+**b10_2** @296.78s "वहाँ विष्णु पहले से लौट चुके थे"
+- vishnu: default/sad; looks at 300
+- indra: default/calm; looks at vishnu
+- agni: default/calm; looks at vishnu
+
+**b10_3** @299.08s "उन्होंने सिर झुकाकर सच कह दिया"
+- vishnu: default/sad; looks at 300; talks; on 'झुकाकर': pose bow, mood {'ly': 0.8}; on 'सच': emo devotion
+
+**b10_4** @301.26s "कि वे स्तंभ की जड़ नहीं खोज पाए"
+- vishnu: default/sad; looks at 640; talks; on 'नहीं': emo sad, tilt -0.08, mood {'ly': 0.6}
+
+**b10_5** @303.7s "ब्रह्मा मुस्कुराए उनके चारों मुखों ने मिलकर बताया"
+- brahma: default/joy; looks at 900; talks; on 'मुस्कुराए': emo joy, mood {'smile': 0.9, 'lx': 0.6}; on 'चारों': emo pride
+
+**b10_6** @307.38s "कि कैसे वे चोटी तक पहुँचे उसे छुआ"
+- brahma: stand/pride; looks at 900; talks; on 'पहुँचे': pose raise; on 'छुआ': pose point, mood {'ly': -0.7}
+- indra: default/surprise; looks at brahma; on 'छुआ': mood {'ly': -0.7}
+- surya: default/surprise; looks at brahma
+
+**b10_7** @310.36s "और जीतकर लौटे"
+- brahma: stand/pride; looks at 640; on 'जीतकर': pose open, emo joy
+
+**b10_8** @311.86s "उन्होंने फूल आगे बढ़ाया"
+- brahma: hold/pride; looks at 900; on 'बढ़ाया': emo joy, mood {'smile': 0.6}
+- ketaki: default/shame; looks at brahma
+- vishnu: default/sad; looks at brahma
+
+**b10_9** @313.8s "और फूल बोला ब्रह्मदेव ही सबसे महान हैं"
+- ketaki: default/calm; talks; on 'ब्रह्मदेव': mood {'smile': 0.6, 'mouth': 0.5, 'ly': -0.3}; on 'महान': emo shame, mood {'lx': 0.8}
+
+**b10_10** @317.46s "विष्णु ने हार मान ली और हाथ जोड़ लिए"
+- vishnu: default/sad; looks at brahma; on 'हार': emo sad, mood {'ly': 0.6}; on 'जोड़': pose namaste, emo devotion
+- brahma: hold/pride; looks at vishnu
+- ketaki: default/shame; looks at vishnu
+
+**b11_1** @320.58s "और तभी आग का वह स्तंभ"
+- brahma: hold/pride; looks at 640; on 'स्तंभ': emo fear, mood {'lx': 0.7}
+- ketaki: default/fear; looks at brahma
+- vishnu: namaste/sad; looks at 640; on 'स्तंभ': emo surprise
+
+**b11_2** @322.92s "बीच से चटक गया"
+- brahma: flee/fear; looks at 640
+- vishnu: flee/surprise; looks at 640
+
+**b11_3** @324.42s "ओम की गूँज उठी"
+
+**b11_4** @326.1s "लपटें और गहरी और लाल होती गईं"
+
+**b11_5** @329.18s "उस धधकती धुंध में प्रकट हुए"
+- shiva: stand/anger; looks at 640; slides on 'प्रकट'
+
+**b11_6** @331.74s "शिव क्रोध से जलते हुए"
+- shiva: rage/anger; looks at 640; on 'क्रोध': emo rage
+
+**b11_7** @334.2s "उन्होंने ब्रह्मा की ओर उँगली उठाई"
+- shiva: rage/rage; looks at brahma; on 'उँगली': pose rpoint
+- brahma: hold/fear; looks at shiva; on 'उँगली': emo fear
+- ketaki: default/fear; looks at shiva
+
+**b11_8** @336.32s "और गरजे झूठे"
+- shiva: default/rage; looks at 200; on 'गरजे': emo rage, mood {'mouth': 0.9}
+
+**b11_9** @338.52s "सब सन्न रह गए"
+- brahma: hold/fear; looks at 640
+- ketaki: default/fear; looks at brahma
+- vishnu: default/surprise; looks at 640
+- indra: default/surprise; looks at 640
+- agni: default/surprise; looks at 640
+
+**b12_1** @340.08s "तुम कहते हो तुमने इस स्तंभ की चोटी देखी"
+- shiva: stand/anger; looks at brahma; talks; on 'चोटी': pose point; walks to x 800 on 'कहते'
+- brahma: hold/fear; looks at shiva
+- ketaki: default/shame; looks at shiva
+
+**b12_2** @343.42s "जानते हो तुम दोनों किसे खोज रहे थे"
+- shiva: stand/anger; looks at 300; talks; on 'दोनों': mood {'lx': 0.8}; on 'खोज': mood {'lx': -0.8}
+- brahma: stand/fear; looks at shiva
+- vishnu: default/surprise; looks at shiva
+
+**b12_3** @346.18s "यह शिवलिंग है एक ज्योतिर्लिंग"
+
+**b12_4** @348.86s "परब्रह्म की तरह अनंत अपरिमेय"
+
+**b12_5** @351.72s "हर इंद्रिय से परे"
+- brahma: stand/surprise; looks at 640
+- vishnu: default/surprise; looks at 640
+
+**b12_6** @353.38s "यह यहाँ सिर्फ़ यह बताने आया था"
+- shiva: stand/calm; looks at 1000; talks; on 'बताने': pose open
+
+**b12_7** @355.62s "कि तुम्हारी यह बहस कितनी छोटी है"
+- brahma: stand/shame; looks at 640
+- vishnu: default/sad; looks at 640
+
+**b12_8** @358.1s "कि परब्रह्म से ऊपर कुछ नहीं"
+- shiva: stand/calm; looks at 640; talks; on 'ऊपर': pose raise, mood {'ly': -0.6}
+
+**b12_9** @360.38s "और हम सब उसी एक सत्य के बराबर हिस्से हैं"
+- brahma: stand/sad; looks at 640; on 'सत्य': pose namaste
+- shiva: stand/calm; looks at 640; talks
+- vishnu: default/devotion; looks at 640; on 'सत्य': pose namaste
+
+**b12_10** @364.0s "हरि ने अपनी हार स्वीकार की"
+- shiva: stand/calm; looks at vishnu; talks
+- vishnu: namaste/devotion; looks at shiva; on 'स्वीकार': pose bow
+
+**b12_11** @366.32s "पर ब्रह्मा तुम हारने से इतना डरे"
+- shiva: stand/anger; looks at brahma; talks; on 'हारने': pose point, emo anger; turns round on 'ब्रह्मा'
+- brahma: stand/fear; looks at shiva; on 'डरे': emo fear, pose plead
+
+**b12_12** @369.24s "कि तुमने धोखा दिया"
+- brahma: default/shame; looks at 640; on 'धोखा': emo shame, mood {'ly': 0.9}, tilt 0.08
+
+**b12_13** @370.96s "जो ख़ुद डर से भरा है वह दूसरों का डर कैसे हरेगा"
+- shiva: default/anger; looks at 200; talks; on 'डर': emo calm; on 'हरेगा': emo anger
+
+**b13_1** @374.88s "शिव ने अपना त्रिशूल धरती पर मारा"
+- shiva: stand/anger; looks at 640; on 'त्रिशूल': pose raise; on 'मारा': pose lunge, emo rage
+
+**b13_2** @377.94s "यह श्राप नहीं है ब्रह्मदेव"
+- shiva: stand/calm; looks at 200; talks; on 'ब्रह्मदेव': emo anger
+
+**b13_3** @380.06s "यह प्रकृति का नियम है"
+
+**b13_4** @382.04s "तुमने सत्य को नकारा"
+- brahma: default/shame; looks at 640; on 'नकारा': emo grief, mood {'ly': 0.8}
+
+**b13_5** @383.82s "अब सब तुम्हें नकारेंगे"
+- brahma: plead/grief; looks at 800
+- indra: default/sad; looks at brahma; turns round on 'नकारेंगे'
+- surya: default/sad; looks at brahma; turns round on 'नकारेंगे'
+- chandra: default/sad; looks at brahma; turns round on 'नकारेंगे'
+
+**b13_6** @385.88s "आज के बाद कोई तुम्हारी पूजा नहीं करेगा"
+- brahma: default/sad; looks at 640; on 'पूजा': emo grief, mood {'ly': 0.6}
+
+**b13_7** @389.28s "फिर वे केतकी की ओर मुड़े और गरजे तुम मुझे प्रिय थे"
+- shiva: stand/anger; looks at 360; on 'गरजे': pose point, emo rage; turns round on 'मुड़े'
+- ketaki: default/fear; looks at shiva
+
+**b13_8** @393.82s "पर तुमने झूठी गवाही दी"
+- ketaki: default/shame; on 'तुमने': emo fear; on 'गवाही': emo shame, mood {'ly': 0.8}; withers on 'झूठी'
+
+**b13_9** @395.96s "आज से तुम्हें कोई मुझ पर नहीं चढ़ाएगा"
+- ketaki: default/sad; looks at shiva; withers on 'नहीं'
+- shiva: stand/anger; looks at 520; turns round on 'चढ़ाएगा'
+
+**b13_10** @399.22s "और यही वजह है कि केतकी का फूल"
+- rishi2: namaste/devotion; looks at 760
+- ketaki: default/sad; looks at rishi2
+
+**b13_11** @402.2s "शिव की पूजा में नहीं चढ़ाया जाता"
+- rishi2: stand/calm; looks at 900; on 'नहीं': emo sad, tilt -0.08; turns round on 'चढ़ाया'
+- ketaki: default/sad; looks at rishi2
+
+**b14_1** @404.78s "तो यही है जवाब"
+- brahma: default/sad; looks at 640
+
+**b14_2** @406.42s "ब्रह्मा ने सृष्टि रची"
+- brahma: default/calm; looks at 640; on 'रची': pose open, emo joy
+
+**b14_3** @408.14s "पर एक झूठ ने उनसे पूजा का अधिकार छीन लिया"
+- brahma: default/calm; looks at 640; on 'झूठ': emo sad; on 'छीन': emo grief, tilt -0.08
+
+**b14_4** @411.68s "और ऐसा सिर्फ़ इसलिए नहीं कि उन्होंने झूठ बोला"
+- brahma: hold/pride; looks at 900; on 'झूठ': emo doubt
+- ketaki: default/shame; looks at brahma
+
+**b14_5** @414.88s "बल्कि इसलिए कि वे हार से डर गए"
+- brahma: default/doubt; looks at 640; on 'डर': emo fear, mood {'lx': -0.6}
+
+**b14_6** @417.76s "ठीक वहीं जहाँ विष्णु ने अपनी हार स्वीकार की थी"
+- vishnu: namaste/devotion; looks at 640; on 'स्वीकार': pose bow
+
+**b14_7** @421.7s "यह पहली बार नहीं था जब ब्रह्मा अपने ही मन से हारे"
+- brahma: default/sad; looks at 640; on 'हारे': emo grief, tilt -0.1
+
+**b14_8** @425.5s "पहले नारद का श्राप"
+- narada: default/anger; looks at brahma; on 'श्राप': pose point
+- brahma: stand/surprise; looks at narada
+
+**b14_9** @427.0s "फिर वह पाँचवाँ सिर"
+- brahma: default/fear; looks at 900
+- shiva: rage/rage; looks at 420
+
+**b14_10** @428.56s "और अब यह झूठ"
+- ketaki: default/sad; on 'झूठ': emo shame
+
+**b14_11** @430.44s "हर बार उनकी चूक एक ही थी"
+- brahma: default/sad; looks at 640; on 'एक': emo shame, mood {'ly': 0.6}
+
+**b14_12** @433.28s "जीतने की चाहत और खोने का डर"
+- brahma: stand/doubt; looks at 640; on 'जीतने': mood {'lx': -0.8, 'ly': -0.6}; on 'डर': emo fear, mood {'lx': 0.8, 'ly': -0.6}
+
+**b14_13** @436.4s "शिव वहाँ से चले गए"
+- shiva: stand/calm; looks at 1000; walks to x 860 on 'चले'
+
+**b14_14** @438.06s "पर कोई उन्हें जाते हुए घूर रहा था"
+- daksha: stand/calm; looks at shiva; on 'घूर': emo anger, mood {'lx': 0.9}
+- shiva: stand/calm; looks at 1200; walks to x 1080 on 'जाते'
+
+**b14_15** @441.08s "दक्ष उनकी आँखें भरी थीं"
+- daksha: default/sad; looks at 900; on 'आँखें': emo grief
+
+**b14_16** @443.74s "और मन जल रहा था"
+- daksha: default/grief; looks at 900; on 'जल': emo anger
+
+**b14_17** @445.58s "पहले मेरे पिता का सिर काटा अब उनकी पूजा भी छीन ली"
+- daksha: stand/anger; looks at 1100; talks; on 'काटा': pose point, emo rage; on 'छीन': emo rage, tilt 0.06
+
+**b14_18** @449.94s "उस दिन नफ़रत की एक लहर"
+- daksha: stand/rage; looks at 640; on 'नफ़रत': emo rage
+
+**b14_19** @452.44s "उनके पूरे अस्तित्व को निगलने लगी"
+- daksha: stand/rage; looks at 640; on 'निगलने': emo rage, tilt -0.06
+
+**b15_1** @455.44s "अब आप सोचिए"
+- brahma: stand/calm; looks at 640
+
+**b15_2** @456.68s "अगर आप ब्रह्मा की जगह होते"
+- brahma: hold/doubt; looks at 660
+- ketaki: default/calm; looks at brahma
+
+**b15_3** @458.8s "तो क्या सच बोल देते"
+- vishnu: namaste/devotion; looks at 640; on 'सच': pose bow
+
+**b15_4** @460.26s "या जीतने के लिए आप भी झूठ का सहारा लेते"
+- brahma: hold/pride; looks at 660; on 'झूठ': mood {'smile': 0.8, 'lx': -0.6}
+- ketaki: default/shame; looks at brahma
+
+**b15_5** @463.78s "अपना जवाब कमेंट में ज़रूर बताइए"
+- narada: stand/joy; looks at 640; talks; on 'बताइए': pose open, emo joy
+
+**b15_6** @466.28s "अगली कहानी में मिलिए एक ऐसे असुर से"
+- hiranyaksha: stand/calm; looks at 640; on 'असुर': emo pride
+
+**b15_7** @468.98s "जो था तो देवताओं का दुश्मन"
+- hiranyaksha: stand/anger; looks at indra
+- indra: default/fear; looks at hiranyaksha; on 'दुश्मन': pose raise
+
+**b15_8** @471.0s "पर जिसका दिल इतना बड़ा था"
+- hiranyaksha: stand/joy; looks at 640; on 'दिल': pose open, emo joy
+
+**b15_9** @473.2s "कि वह किसी को ना नहीं कह पाता था"
+- villager: plead/sad; looks at hiranyaksha
+- villager_w: plead/sad; looks at hiranyaksha
+- hiranyaksha: stand/joy; looks at villager; on 'ना': pose open, tilt 0.06
+
+**b15_10** @475.66s "और उसी उदारता ने उसे हरा दिया"
+- hiranyaksha: stand/sad; looks at 640; on 'हरा': pose bow, emo sad
