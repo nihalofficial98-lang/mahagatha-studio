@@ -27,7 +27,10 @@ def main():
     tm=work+'/engine_timings.json';tgt=str(json.load(open(epd+'/episode.json')).get('target_sec',0))
     subprocess.run(['node',ROOT+'/studio/render_ep.js',work,epd+'/shots.json','/dev/null'],env=dict(os.environ,PREPARE_ONLY='1',TARGET_SEC=tgt),check=True,stdout=subprocess.DEVNULL)   # engine_timings.json from the REAL voice timings (build/epNN/timings.json)
     html=B.build(a.scale);env=dict(os.environ,ENGINE=html,VW=str(int(1280*a.scale)),VH=str(int(720*a.scale)))
-    info=json.loads(subprocess.check_output(['node',ROOT+'/studio/still.js','--info',epd+'/shots.json',tm],env=dict(env,MISSONLY='1'),cwd=ROOT,text=True))
+    raw=subprocess.check_output(['node',ROOT+'/studio/still.js','--info',epd+'/shots.json',tm],env=dict(env,MISSONLY='1'),cwd=ROOT,text=True)
+    info=json.loads([l for l in raw.splitlines() if l.startswith('{')][-1])
+    for l in raw.splitlines():
+        if l.startswith(('PAGEERR','CONSOLE')):print(l)
     inf=info['info'];print('shots',len(inf),'cue misses',info['miss'][:8])
     ids=[s.get('id') for s in json.load(open(epd+'/shot_plan.json'))['shots']]
     sel=range(len(inf))
@@ -38,7 +41,9 @@ def main():
             else:sel.append(int(part))
     tmp=work+'/stills';shutil.rmtree(tmp,ignore_errors=True);os.makedirs(tmp)
     ts=[round(inf[i][1]+inf[i][2]*a.at,2) for i in sel]
-    subprocess.run(['node',ROOT+'/studio/still.js',epd+'/shots.json',tm,tmp]+[str(t) for t in ts],env=env,cwd=ROOT,check=True,stdout=subprocess.DEVNULL)
+    r=subprocess.run(['node',ROOT+'/studio/still.js',epd+'/shots.json',tm,tmp]+[str(t) for t in ts],env=env,cwd=ROOT,check=True,capture_output=True,text=True)
+    for l in r.stdout.splitlines():
+        if l.startswith(('PAGEERR','CONSOLE','FX_ERRORS')) and l!='FX_ERRORS []':print(l)
     files=[tmp+'/t%s.png'%str(t).rjust(5,'0') if False else None for t in ts]
     fs=sorted(glob.glob(tmp+'/t*.png'),key=lambda f:float(os.path.basename(f)[1:-4]));byT={float(os.path.basename(f)[1:-4]):f for f in fs}
     done=[]

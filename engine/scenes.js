@@ -111,9 +111,7 @@ function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.f
   if(f.dark!=null)ctx.filter=`brightness(${f.dark})`;
   const o={pose:f.pose||'stand',expr:ex,flip:f.flip||1,key:f.key||'255,214,160',rim:f.rim||'rgba(255,238,210,.95)',lx:f.lx??-1,tail:f.tail!==false};
   if(f.aura)glow(x,y-130*s,240*s,f.aura,0.26);
-  if(f.who==='shiva_p')drawShivaP(f,x,y,s,t,P);
-  else if(f.who==='img')IMGFIG(f,x,y,s,t);
-  else if(V2.has(f.who)){let PO=f.pose,MOOD=f.mood?Object.assign({},f.mood):{},TILT=f.tilt||0;
+  if(V2.has(f.who)){let PO=f.pose,MOOD=f.mood?Object.assign({},f.mood):{},TILT=f.tilt||0;
     if(f.acts||f.walk){PO=JSON.parse(JSON.stringify(V2.poseOf(f.pose||'stand',f.who)));
       (f.acts||[]).forEach(a=>{let u=q(P,t,a.c||0,a.d||.6);if(u<=0)return;if(a.e==='spring'&&u<1){u=1-Math.exp(-5.5*u)*Math.cos(9*u)}else if(a.e==='antic'&&u<1){u=u<.22?-.12*Math.sin(u/.22*3.14):(u-.22)/.78*1.0;u=Math.max(-.12,u)}if(a.pose)PO=V2.mixPose(PO,V2.poseOf(a.pose,f.who),u);
         if(a.mood)for(const k in a.mood)MOOD[k]=(MOOD[k]||0)+(a.mood[k]-(MOOD[k]||0))*u;if(a.tilt!=null)TILT+=(a.tilt-TILT)*u});
