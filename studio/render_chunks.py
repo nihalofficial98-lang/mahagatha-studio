@@ -7,7 +7,7 @@ R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));sys.path.insert(0,
 import build as B
 def die(m):sys.exit('STOP: '+m)
 def main():
-    a=argparse.ArgumentParser();a.add_argument('ep');a.add_argument('--chunk',type=int,default=600);a.add_argument('--workers',type=int,default=4);a.add_argument('--fps',type=int,default=30);a.add_argument('--check',action='store_true');x=a.parse_args()
+    a=argparse.ArgumentParser();a.add_argument('ep');a.add_argument('--chunk',type=int,default=600);a.add_argument('--workers',type=int,default=4);a.add_argument('--fps',type=int,default=30);a.add_argument('--res',default='1080p',choices=['1080p','720p']);a.add_argument('--check',action='store_true');x=a.parse_args()
     ep=x.ep;E=f'{R}/episodes/ep{ep}';Bd=f'{R}/build/ep{ep}';S=E+'/shots.json'
     need=[S,Bd+'/timings.json',Bd+'/beats.json',E+'/episode.json',E+'/APPROVED']
     miss=[p for p in need if not os.path.exists(p)]
@@ -18,11 +18,11 @@ def main():
     tgt=str(json.load(open(E+'/episode.json')).get('target_sec',0))
     subprocess.run(['node',R+'/studio/render_ep.js',Bd,S,'/dev/null'],env=dict(env,PREPARE_ONLY='',VOICE_ONLY='1',TARGET_SEC=tgt),check=True)
     tm=json.load(open(Bd+'/engine_timings.json'));total=sum(t['duration'] for t in tm);N=round(total*x.fps)
-    C=Bd+'/chunks';os.makedirs(C,exist_ok=True);jobs=[(i,f0,min(N,f0+x.chunk)) for i,f0 in enumerate(range(0,N,x.chunk))]
+    C=Bd+('/chunks' if x.res=='1080p' else '/chunks720');os.makedirs(C,exist_ok=True);jobs=[(i,f0,min(N,f0+x.chunk)) for i,f0 in enumerate(range(0,N,x.chunk))]
     todo=[j for j in jobs if not os.path.exists(f'{C}/ch{j[0]:03d}.mp4')]
     print(f'EP{ep}: {total:.1f}s, {N} frames, {len(jobs)} chunks, {len(jobs)-len(todo)} already done, {len(todo)} to render')
     if x.check:return
-    html=B.build(1.5);wenv=dict(env,ENGINE=html,VW='1920',VH='1080',CRF='20',JQ='92');run={}
+    W,H,SC=(1920,1080,1.5) if x.res=='1080p' else (1280,720,1.0);html=B.build(SC);wenv=dict(env,ENGINE=html,VW=str(W),VH=str(H),CRF='20',JQ='92');run={}
     while todo or run:
         while todo and len(run)<x.workers:
             i,f0,f1=todo.pop(0);part=f'{C}/ch{i:03d}.part.mp4'
@@ -36,7 +36,7 @@ def main():
     have=sorted(glob.glob(C+'/ch[0-9][0-9][0-9].mp4'))
     if len(have)!=len(jobs):die(f'{len(have)}/{len(jobs)} chunks present; run the same command again')
     open(C+'/list.txt','w').write(''.join(f"file '{os.path.basename(f)}'\n" for f in have))
-    os.makedirs(R+'/renders',exist_ok=True);out=f'{R}/renders/ep{ep}_1080p.mp4'
+    os.makedirs(R+'/renders',exist_ok=True);out=f'{R}/renders/ep{ep}_{x.res}.mp4'
     subprocess.run(['ffmpeg','-y','-v','error','-f','concat','-safe','0','-i',C+'/list.txt','-i',Bd+'/voice.wav','-c:v','copy','-c:a','aac','-b:a','192k','-shortest',out],check=True)
     print('done',out)
 if __name__=='__main__':main()
