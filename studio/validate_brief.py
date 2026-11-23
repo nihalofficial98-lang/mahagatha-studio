@@ -102,6 +102,8 @@ def check(brief,ep):
                 if a.get('pose') and a['pose'] not in V.POSES:errs.append(f"{sid}: {who} action pose '{a['pose']}' unknown")
                 if a.get('emo') and a['emo'] not in V.EMO:errs.append(f"{sid}: {who} action emo '{a['emo']}' unknown")
                 if not any(k in a for k in('pose','emo','mood','tilt','look','turn','walk_to')):errs.append(f'{sid}: {who} action on {a.get("word")} changes nothing')
+            for k_,w_ in (f.get('engine_cues') or {}).items():
+                if not has_word(nw,w_):errs.append(f"{sid}: {who} engine cue {k_} word '{w_}' not in the narration")
             if f.get('walk') and not has_word(nw,f['walk'].get('word','')):errs.append(f'{sid}: {who} walk.word not in narration')
             if face_cropped(f,cam):errs.append(f"{sid}: {who} face cropped or inside the subtitle band (x={f.get('x')}, y={f.get('y')}, s={f.get('s')})")
             figs.append(who)

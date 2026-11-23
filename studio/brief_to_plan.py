@@ -19,6 +19,7 @@ def convert(s):
         for a in f.get('actions',[]):used.append(a['word'])
         if f.get('walk'):used.append(f['walk']['word'])
         if f.get('turn_on'):used.append(f['turn_on'])
+        used+=list((f.get('engine_cues') or {}).values())
     for e in s['effects']:
         if e.get('word'):used.append(e['word'])
     ch=s['background'].get('change')
@@ -49,6 +50,8 @@ def convert(s):
         if acts:g['acts']=acts
         if f.get('walk'):w=f['walk'];g['walkTo']={'x':w['to_x'],'c':ci(w['word']),'d':w.get('d',2),'sp':w.get('speed',1)}
         if f.get('turn_on'):g['turnc']=ci(f['turn_on']);g['turnd']=f.get('turn_d',.5)
+        g.update(f.get('engine') or {})          # raw engine figure keys (mx/my/md, wd, fall, rot, glide, a, fd, ...)
+        for k,w in (f.get('engine_cues') or {}).items():g[k]=ci(w)   # cue keys fired on a spoken word (mc, wc, fo, ac, kc, bc)
         figs.append(g)
     fx=[];fxb=[]
     for e in s['effects']:
