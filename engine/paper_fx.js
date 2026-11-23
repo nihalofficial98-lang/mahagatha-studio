@@ -32,7 +32,7 @@ const E={
   for(let i=0;i<7;i++){const x=(i-3)/3*w*.42;gem(x,b*.5,b*.22,i%2?'#18a57a':'#d0243a')}gem(0,-h*.5,w*.06,'#d0243a');gem(-w*.34,-h*.22,w*.04,'#2a6ad0');gem(w*.34,-h*.22,w*.04,'#2a6ad0');
   ctx.fillStyle='#fffbe8';for(let i=0;i<9;i++){ctx.beginPath();ctx.arc((i-4)/4*w*.46,b+5+Math.sin(t*2+i)*1.5,3.2,0,TAU);ctx.fill()}}},
  divine_rays:{s:0,f(w,t,F,a){const n=13,L=w*.75;for(let i=0;i<n;i++){const an=PI/2+(i-(n-1)/2)*.17+Math.sin(t*.3)*.03,sp=.045+.02*(i%2),k=.6+.4*Math.abs(Math.sin(t*.7+i*1.3));
-   ctx.fillStyle=i%2?`rgba(255,226,150,${.5*k})`:`rgba(255,250,225,${.6*k})`;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(Math.cos(an-sp)*L,Math.sin(an-sp)*L);ctx.lineTo(Math.cos(an+sp)*L,Math.sin(an+sp)*L);ctx.closePath();ctx.fill()}
+   const rg=ctx.createRadialGradient(0,0,0,0,0,L);rg.addColorStop(0,i%2?`rgba(255,226,150,${.42*k})`:`rgba(255,250,225,${.5*k})`);rg.addColorStop(1,'rgba(255,240,200,0)');ctx.fillStyle=rg;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(Math.cos(an-sp)*L,Math.sin(an-sp)*L);ctx.lineTo(Math.cos(an+sp)*L,Math.sin(an+sp)*L);ctx.closePath();ctx.fill()}
    glow(0,0,w*.28,'255,240,200',.7)}},
  embers:{s:0,f(w,t){const r=rng(11);for(let i=0;i<46;i++){const ph=r(),u=((t*.22+ph)%1),x=(r()-.5)*w+Math.sin(t*1.3+i)*20,y=w*.3-u*w*.7,s=2+r()*4,al=Math.sin(u*PI);
    ctx.save();ctx.translate(x,y);ctx.rotate(t*2+i);ctx.fillStyle=`rgba(255,${120+((i*37)%90)},40,${al})`;ctx.beginPath();ctx.moveTo(0,-s);ctx.lineTo(s*.6,0);ctx.lineTo(0,s);ctx.lineTo(-s*.6,0);ctx.closePath();ctx.fill();ctx.restore();glow(x,y,s*4,'255,150,60',.25*al)}}},

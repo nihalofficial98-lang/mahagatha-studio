@@ -4,26 +4,17 @@ Plan format: see library/ENGINE_CAPABILITIES.md ("Shot plan"). Hand-coded except
 import json,sys,os,re,shutil,importlib.util
 sys.path.insert(0,os.path.join(os.path.dirname(os.path.abspath(__file__))))
 from shotkit import Film
+import engine_vocab as V
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));A=R+'/library/pilot/assets/'
-WHO=set('shiva vishnu brahma daksha narada manu adishakti brahmi madhu kaitabha harihara ardha vishnu_rest hayagriva kumara jaya vijaya villager villager_w prasuti sati diti danu asikli kashyapa indra surya chandra hiranyaksha hiranyakashipu ravana boar swan'.split())|{f'rishi{i}' for i in range(7)}
-BGK=set('vista cloudscape earth pillar cel storm voidR night dusk moon palace dawn amber cosmos sea plain yagna kailash garden cosmicsea img'.split())
-FXT=set('text name glow orbs sparkle petals shock flash bolt crack ribbon beam light flames fire pillar infinity scales trident heart tears threads outline egg books gunas element lotus bluemountain waterfront vaikuntha clock dim fximg skull arrow asuras ban body cycle flame frost icon kids lotusI person vortex'.split())
-RESERVED={'id','at','cues','bg','figs','fx','fxb','cam','grade','note','custom','args','len_hint'}
+WHO=set(V.CAST)
+BGK=set(V.BG)
+FXT=set(V.FX)|{'heart','sparkle'}   # the last two are rejected below as banned
+RESERVED={'id','at','cues','bg','figs','fx','fxb','cam','grade','note','custom','args','len_hint','layers','bg2','bgTo','bgc','bgd'}
 def norm(w):return re.sub(r'[^\wऀ-ॿ]','',w)
-def ensure_asset(name):
-    """make library images available to the engine under library/pilot/assets; returns the engine src path"""
-    base=os.path.basename(name)
-    if not base.lower().endswith('.png') and os.path.exists(A+base+'.png'):base=base+'.png'   # an asset already in the engine folder, by bare name
-    if not base.lower().endswith('.png'):base=('fx_'+base if not base.startswith(('fx_','lib_','bgp_','bg_')) else base)+'.png'
-    dst=A+base
-    if not os.path.exists(dst):
-        stem=base[:-4];src=None
-        if stem.startswith('fx_'):src=f'{R}/library/fx/{stem[3:]}.png'
-        elif stem.startswith('lib_'):src=f'{R}/library/puppets/{stem[4:]}/full.png'
-        elif stem.startswith('bgp_'):src=f'{R}/library/pilot/backgrounds/{stem[4:]}.png'
-        if src and os.path.exists(src):shutil.copy(src,dst)
-        else:raise SystemExit(f'asset not found: {name} (looked for {dst})')
-    return '../library/pilot/assets/'+base
+def pfx_name(src):
+    """legacy image names ('fx_boulder', '../library/pilot/assets/fx_boulder.png', 'boulder') -> code-drawn effect name"""
+    n=os.path.basename(str(src));n=n[:-4] if n.endswith('.png') else n
+    return n[3:] if n.startswith('fx_') else n
 def load_actions(epdir):
     import os,json
     p=os.path.join(epdir,'action_plan.json')
@@ -90,22 +81,22 @@ def main():
         else:
             bgd=s.get('bg','plain');bgd={'k':bgd} if isinstance(bgd,str) else dict(bgd)
             if bgd.get('k') not in BGK:errs.append(f"{sid}: unknown background '{bgd.get('k')}'")
-            if bgd.get('k')=='img' and 'src' in bgd:bgd['src']=ensure_asset(bgd['src'])
             figs=[]
             for f in s.get('figs',[]):
                 f=dict(f)
-                if f.get('who') not in WHO and f.get('who')!='img':errs.append(f"{sid}: unknown character '{f.get('who')}'")
-                if f.get('who')=='img':f['src']=ensure_asset(f['src'])
+                if f.get('who') not in ('boar','swan') and f.get('pose') and isinstance(f.get('pose'),str) and f['pose'] not in V.POSES:errs.append(f"{sid}: unknown pose '{f['pose']}'")
+                if f.get('emo') and f['emo'] not in V.EMO:errs.append(f"{sid}: unknown emo '{f['emo']}'")
+                if f.get('who') not in WHO:errs.append(f"{sid}: unknown character '{f.get('who')}'")
                 figs.append(f)
             def fxs(L):
                 out=[]
                 for x in L:
                     x=dict(x)
-                    if x.get('t') in('img','image'):x['t']='fximg'
+                    if x.get('t') in('img','image','fximg'):x={k_:v_ for k_,v_ in x.items() if k_!='src'}|{'t':'pfx','k':pfx_name(x.get('src',''))}
+                    if x.get('t')=='pfx' and x.get('k') not in V.PFX:errs.append(f"{sid}: unknown pfx effect '{x.get('k')}' (known: {', '.join(V.PFX)})")
                     if x.get('t') not in FXT:errs.append(f"{sid}: unknown effect '{x.get('t')}'")
                     _src=str(x.get('src','')).lower()
                     if x.get('t') in('heart','sparkle','stars','star_field') or any(w in _src for w in('heart','star','sparkle')):errs.append(f"{sid}: BANNED effect/image '{x.get('t')} {x.get('src','')}' (owner rule: no hearts, stars or sparkles)")
-                    if x.get('t')=='fximg':x['src']=ensure_asset(x['src'])
                     if x.get('t')=='threads' and not x.get('to'):errs.append(f"{sid}: 'threads' needs x, y and a 'to' list of [x,y] endpoints")
                     if x.get('t')=='orbs' and not x.get('items'):errs.append(f"{sid}: 'orbs' needs an 'items' list")
                     if x.get('t')=='beam' and not x.get('len'):errs.append(f"{sid}: 'beam' needs x, y and len")
@@ -114,6 +105,14 @@ def main():
                     out.append(x)
                 return out
             sc={'bg':bgd,'figs':figs,'fx':fxs(s.get('fx',[])),'fxb':fxs(s.get('fxb',[]))}
+            for k2 in('bg2','bgTo','bgc','bgd'):
+                if k2 in s:sc[k2]=s[k2]
+            if s.get('bg2') and s['bg2'].get('k') not in BGK:errs.append(f"{sid}: unknown bg2 '{s['bg2'].get('k')}'")
+            if s.get('layers'):
+                for ly in s['layers']:
+                    for it in ly.get('items',[]):
+                        if it.get('o') not in V.OBJ:errs.append(f"{sid}: unknown layer object '{it.get('o')}' (known: {', '.join(V.OBJ)})")
+                sc['layers']=s['layers']
         cam=s.get('cam')
         if cam:
             for e in('from','to'):
