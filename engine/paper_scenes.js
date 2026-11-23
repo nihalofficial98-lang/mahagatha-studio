@@ -228,7 +228,7 @@ const OBJ={
   if(o.flowers){const r=rng(Math.round(x));for(let i=0;i<8;i++){ctx.fillStyle=FOGC(o.flowers,o);ctx.beginPath();ctx.arc(x+(r()-.5)*100*s,y-(10+r()*50)*s,3.4*s,0,TAU);ctx.fill()}}},
  hill(x,y,s,t,o){const c=FOGC(o.col||'#5a8a4a',o),w=(o.w||700)*s,h=(o.h||120)*s;cutP(()=>{ctx.moveTo(x-w,y+400);ctx.lineTo(x-w,y);ctx.bezierCurveTo(x-w*.5,y-h,x+w*.5,y-h,x+w,y);ctx.lineTo(x+w,y+400);ctx.closePath()},vg(y-h,y+200,[shd(c,1.2),c,shd(c,.6)]),fogO(o))}
 };
-const LDEF={far:{par:.2,fog:.55,blur:1.2,dark:0},mid:{par:.55,fog:.22,blur:0,dark:0},near:{par:1.35,fog:0,blur:1.6,dark:.45}};
+const LDEF={far:{par:.2,fog:.55,blur:1.2,dark:0},mid:{par:.55,fog:.22,blur:0,dark:0},near:{par:1.35,fog:0,blur:1.6,dark:.55}};
 /* layered scenery: L = [{d:'far'|'mid'|'near', par?, fog?, haze?, blur?, dark?, items:[{o:'tree'|'rock'|'cloud'|'mountain'|'pillar'|'wall'|'shrub'|'hill', x, y, s, ...object options}]}]
    which = 'back' draws far+mid (behind the actors), 'front' draws near (in front of them). After the far layer a haze band softens it. */
 function drawLayers(L,t,which){(L||[]).forEach(ly=>{const D=LDEF[ly.d]||LDEF.mid,front=ly.d==='near';if((which==='front')!==front)return;const o0={fog:ly.fog??D.fog,haze:ly.haze||'#d8d4ec',dark:ly.dark??D.dark,darkc:ly.darkc};
@@ -241,7 +241,7 @@ ptree=function(x,y,h,t,i,c,trunk){OBJ.tree(x,y,h/200,t,{col:c[1]||c[0],trunk:tru
    corners so faces stay clear. Turn off with bg.fore:false, or replace with a 'near' layer in sc.layers. */
 const FG=(items,o)=>drawLayers([Object.assign({d:'near',items},o||{})],0,'front');
 window.BGF={
- vista:(S,t)=>FG([{o:'rock',x:60,y:H+30,s:1.6,col:'#4a5a6a',moss:1},{o:'shrub',x:180,y:H+20,s:1.3,col:'#2a4a34'},{o:'shrub',x:1180,y:H+24,s:1.5,col:'#2a4a34',flowers:'#f0c040'},{o:'rock',x:1270,y:H+40,s:1.3,col:'#4a5a6a'}],{dark:.4}),
+ vista:(S,t)=>FG([{o:'rock',x:50,y:H-6,s:2.1,col:'#5a6a7a',moss:1},{o:'shrub',x:190,y:H+4,s:1.5,col:'#2a5a3a'},{o:'shrub',x:1170,y:H+6,s:1.7,col:'#2a5a3a',flowers:'#f0c040'},{o:'rock',x:1280,y:H,s:1.8,col:'#5a6a7a'}],{dark:.3}),
  kailash:(S,t)=>FG([{o:'rock',x:40,y:H+40,s:2,col:'#c8d0ec'},{o:'rock',x:1250,y:H+50,s:1.7,col:'#c8d0ec'}],{dark:.35,darkc:'#0a1030'}),
  cloudscape:(S,t)=>FG([{o:'cloud',x:-20,y:H-10,s:2.4,col:'#ffffff'},{o:'cloud',x:1300,y:H,s:2.2,col:'#ffffff'}],{dark:.08,blur:2}),
  amber:(S,t)=>FG([{o:'cloud',x:-10,y:H,s:2.2,col:'#ffe0b0'},{o:'cloud',x:1290,y:H+10,s:2,col:'#ffe0b0'}],{dark:.12,darkc:'#5a2a08',blur:2}),

@@ -19,8 +19,14 @@ function camAt(it,T){const k=clamp((T-it.start)/Math.max(0.01,it.end-it.start)),
 function drawShotTo(c2,it,T){ctx=c2;ctx.setTransform(SC_,0,0,SC_,0,0);ctx.globalAlpha=1;ctx.clearRect(0,0,W,H);const t=T-it.start,d=it.end-it.start;cam=camAt(it,T);
   const sw=(it.shake||1);cam.x+=(Math.sin(T*0.9)*1.6+Math.sin(T*2.3)*0.8)*sw;cam.y+=(Math.cos(T*0.7)*1.3+Math.sin(T*1.9)*0.7)*sw;cam.r+=(Math.sin(T*0.6)*0.0016)*sw+(it.tilt||0);
   SHOTS[it.draw](t,d,it,clamp(t/d));ctx.setTransform(SC_,0,0,SC_,0,0);ctx.globalAlpha=1;post(c2,T,it,CW_,CH_);ctx.setTransform(SC_,0,0,SC_,0,0)}
-window.seek=(T)=>{let i=SHOTLIST.length-1;while(i>0&&T<SHOTLIST[i].start)i--;const sh=SHOTLIST[i],lt=T-sh.start,DX=sh.dx??0.28;const M=MAINC();
+/* scene transitions (shot.tr): fade (default dissolve), wipe (torn paper edge sweeps left to right), iris (circle opens
+   from the centre), flash (white bloom, for impact). dx = length in seconds. */
+function transit(M,TR,u){if(TR!=='wipe'&&TR!=='iris'&&TR!=='flash'){M.globalAlpha=u;M.drawImage(OB,0,0);return}
+  if(TR==='flash'){M.globalAlpha=u;M.drawImage(OB,0,0);M.globalAlpha=Math.max(0,1-Math.abs(u*2-1))*.85;M.fillStyle='#fff8e8';M.fillRect(0,0,CW_,CH_);return}
+  const path=()=>{M.beginPath();if(TR==='iris'){M.arc(CW_/2,CH_/2,u*Math.hypot(CW_,CH_)*.55,0,7)}else{const ex=u*(CW_+260*SC_)-130*SC_;M.moveTo(-10,-10);for(let k=0;k<=24;k++){const y=k/24*CH_;M.lineTo(ex+Math.sin(k*2.7)*26*SC_+(k%2?14:-10)*SC_,y)}M.lineTo(-10,CH_+10);M.closePath()}};
+  M.save();path();M.clip();M.drawImage(OB,0,0);M.restore();M.save();path();M.shadowColor='rgba(10,2,24,.6)';M.shadowBlur=14*SC_;M.lineWidth=4*SC_;M.strokeStyle='#f4ead0';M.stroke();M.restore()}
+window.seek=(T)=>{let i=SHOTLIST.length-1;while(i>0&&T<SHOTLIST[i].start)i--;const sh=SHOTLIST[i],lt=T-sh.start,TR=sh.tr||'fade',DX=sh.dx??({wipe:.55,iris:.6,flash:.4}[TR]||0.28);const M=MAINC();
   if(OA.width!==CW_){OA.width=OB.width=CW_;OA.height=OB.height=CH_}
-  if(i>0&&lt<DX){const u=ease(lt/DX);drawShotTo(OA.getContext('2d'),SHOTLIST[i-1],T);drawShotTo(OB.getContext('2d'),sh,T);M.setTransform(1,0,0,1,0,0);M.globalAlpha=1;M.clearRect(0,0,CW_,CH_);M.drawImage(OA,0,0);M.globalAlpha=u;M.drawImage(OB,0,0);M.globalAlpha=1}
+  if(i>0&&lt<DX){const u=ease(lt/DX);drawShotTo(OA.getContext('2d'),SHOTLIST[i-1],T);drawShotTo(OB.getContext('2d'),sh,T);M.setTransform(1,0,0,1,0,0);M.globalAlpha=1;M.clearRect(0,0,CW_,CH_);M.drawImage(OA,0,0);transit(M,TR,u);M.globalAlpha=1}
   else drawShotTo(M,sh,T);
   subs(M,T);const fin=1-clamp(T/0.8),fout=clamp((T-(TOTAL-1.0))/1.0),a2=Math.max(fin,fout);if(a2>0){M.setTransform(SC_,0,0,SC_,0,0);M.fillStyle=`rgba(0,0,0,${a2})`;M.fillRect(0,0,W,H)}};

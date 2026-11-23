@@ -433,7 +433,7 @@ function v2fig(who,x,y,s,t,o){
   else if(who==='vishnu_rest')drawReclineVishnu(c,{t:t});
   else if(who==='ardha')drawArdha(c,{t:t});
   else if(who==='harihara')drawHarihara(c,{t:t});
-  else drawHuman(c,CAST[who],poseOf(o.pose,who),{t:t,k:o.k!=null?o.k:(CAST[who].kdef||kk),expr:face,prop:o.prop,mood:o.mood,tilt:o.tilt});
+  else drawHuman(c,CAST[who],poseOf(o.pose,who),{t:t,k:o.k!=null?o.k:(CAST[who].kdef||kk),expr:face,prop:o.prop,mood:o.mood,tilt:o.tilt,turn:o.mood&&o.mood.turn!=null?o.mood.turn:undefined});
   figFinish(c,o,x,y,s,FR,OY,RG,.22,.3,true)}
 // head close-up: shoulders, chest, garments and jewellery under the head (Opus torso), so heads never float like masks
 function bust(c,S,o){const sk=skinPK(S),t=o.t||0,bw=Math.min(S.build||1,1.2);c.save();c.translate(0,-10);

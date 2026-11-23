@@ -68,7 +68,7 @@ function drawJata(c,hx,hy,t,rage,imp=0){ // jata: hanging locks, coiled bun, cre
 
 const SHIVA_FACE={skin:SH.skin,skinM:SH.skinM,skinD:SH.skinD,skinH:SH.skinH,gold:SH.gold,ash:SH.ash,red:SH.red,tripundra:true,third:true,brow:'#0b0a14'};
 function drawHead(c,hx,hy,o){ // o:{expr:'calm'|'closed'|'rage', k:0..1 anger, S:face spec, mood:{blink,smile,sad,surp,mouth,lx,ly}, t}
-  const S=o.S||SHIVA_FACE,M=o.mood||{},e=o.expr||'calm',k=e==='rage'?1:(e==='calm'?(o.k||0):0),t=o.t||0;
+  const S=o.S||SHIVA_FACE,M=o.mood||{},e=o.expr||'calm',k=Math.max(M.anger||0,e==='rage'?1:(e==='calm'?(o.k||0):0)),t=o.t||0;
   const bl=Math.max(M.blink||0,e==='closed'?1:0,((t*.37)%1)<.03?1:0),tri=S.third&&S.tripundra!==false;
   c.save();c.translate(hx,hy);
   PK.face(c,{skin:skinPK(S),t:t,turn:o.turn||0,must:S.mustache,blink:bl,mouth:M.mouth||0,smile:M.smile==null?(S.female?.5:.3):M.smile,lx:M.lx||0,ly:M.ly||0,anger:k,sad:M.sad||0,surp:M.surp||0,

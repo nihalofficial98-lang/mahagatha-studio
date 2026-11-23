@@ -103,19 +103,23 @@ function drawSwan(x,y,sc,t,f){ // Brahma as the hamsa: white body, long curved n
   wing(false);
   ctx.restore()}
 
+/* emotion presets (face): f.emo or acts[i].emo; explicit mood values override */
+const EMO={calm:{smile:.3},joy:{smile:1,surp:.15},anger:{anger:1,smile:0},rage:{anger:1,mouth:.35},sad:{sad:1,ly:.45},grief:{sad:1,ly:.7,mouth:.2},surprise:{surp:1,mouth:.45},fear:{surp:.7,sad:.4,mouth:.25},shame:{sad:.7,ly:.95,lx:.3},pride:{smile:.55,ly:-.3},doubt:{sad:.35,lx:.6,smile:0},devotion:{smile:.45,ly:-.5,blink:.35}};
 function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.fo!=null?1-q(P,t,f.fo,f.fd||1.2):1);if(a<=0.01)return;const ex=f.exprB?lerpO(f.expr,f.exprB,q(P,t,f.ec,0.4)):(f.expr||{});
-  const x=f.x+(f.vx||0)*t,y=f.y+(f.vy||0)*t,s=f.s*(1+(f.ds||0)*t);ctx.save();ctx.globalAlpha*=a;if(f.mx||f.my){const m=q(P,t,f.mc||0,f.md||1.2);ctx.translate((f.mx||0)*m,(f.my||0)*m)}
+  let WK=f.walk||0,WX=0;if(f.walkTo){const W2=f.walkTo,d2=W2.d||Math.abs(W2.x-f.x)/(W2.v||120),m=clamp((t-cuT(P,W2.c||0))/Math.max(.1,d2));WX=(W2.x-f.x)*m;if(m>0&&m<1)WK=W2.sp||1}
+  const x=f.x+(f.vx||0)*t+WX,y=f.y+(f.vy||0)*t,s=f.s*(1+(f.ds||0)*t);ctx.save();ctx.globalAlpha*=a;if(f.mx||f.my){const m=q(P,t,f.mc||0,f.md||1.2);ctx.translate((f.mx||0)*m,(f.my||0)*m)}
   if(f.bow){const bb=q(P,t,f.bc||0,f.bd||0.8);ctx.translate(x,y);ctx.rotate(f.bow*bb);ctx.translate(-x,-y)}
   if(f.kneel){const kk=q(P,t,f.kc||0,f.kd||0.6)*f.kneel;ctx.translate(x,y);ctx.scale(1,1-kk*0.3);ctx.translate(-x,-y)}
   let HD=null;if(f.hd){HD={};['l','r','t','b'].forEach(k=>{const v=f.hd[k];HD[k]=v==null?0:(typeof v==='number'?v:q(P,t,v.c||0,v.d||0.7))})}
   if(f.dark!=null)ctx.filter=`brightness(${f.dark})`;
   const o={pose:f.pose||'stand',expr:ex,flip:f.flip||1,key:f.key||'255,214,160',rim:f.rim||'rgba(255,238,210,.95)',lx:f.lx??-1,tail:f.tail!==false};
   if(f.aura)glow(x,y-130*s,240*s,f.aura,0.26);
-  if(V2.has(f.who)){let PO=f.pose,MOOD=f.mood?Object.assign({},f.mood):{},TILT=f.tilt||0;
-    if(f.acts||f.walk){PO=JSON.parse(JSON.stringify(V2.poseOf(f.pose||'stand',f.who)));
-      (f.acts||[]).forEach(a=>{let u=q(P,t,a.c||0,a.d||.6);if(u<=0)return;if(a.e==='spring'&&u<1){u=1-Math.exp(-5.5*u)*Math.cos(9*u)}else if(a.e==='antic'&&u<1){u=u<.22?-.12*Math.sin(u/.22*3.14):(u-.22)/.78*1.0;u=Math.max(-.12,u)}if(a.pose)PO=V2.mixPose(PO,V2.poseOf(a.pose,f.who),u);
+  if(f.turnc!=null){const u=q(P,t,f.turnc,f.turnd||.5),sx=Math.cos(u*Math.PI);ctx.translate(x,0);ctx.scale(Math.abs(sx)<.05?.05*Math.sign(sx||1):sx,1);ctx.translate(-x,0)}
+  if(V2.has(f.who)){let PO=f.pose,MOOD=Object.assign({},EMO[f.emo]||{},f.mood||{}),TILT=f.tilt||0;
+    if(f.acts||WK){PO=JSON.parse(JSON.stringify(V2.poseOf(f.pose||'stand',f.who)));
+      (f.acts||[]).forEach(a=>{let u=q(P,t,a.c||0,a.d||.6);if(u<=0)return;if(a.emo)a=Object.assign({},a,{mood:Object.assign({},EMO[a.emo],a.mood||{})});if(a.e==='spring'&&u<1){u=1-Math.exp(-5.5*u)*Math.cos(9*u)}else if(a.e==='antic'&&u<1){u=u<.22?-.12*Math.sin(u/.22*3.14):(u-.22)/.78*1.0;u=Math.max(-.12,u)}if(a.pose)PO=V2.mixPose(PO,V2.poseOf(a.pose,f.who),u);
         if(a.mood)for(const k in a.mood)MOOD[k]=(MOOD[k]||0)+(a.mood[k]-(MOOD[k]||0))*u;if(a.tilt!=null)TILT+=(a.tilt-TILT)*u});
-      if(f.walk){const w=Math.sin(t*4.2*f.walk),w2=Math.sin(t*4.2*f.walk+Math.PI),lift=a=>Math.max(0,a)*26;
+      if(WK){const w=Math.sin(t*4.2*WK),w2=Math.sin(t*4.2*WK+Math.PI),lift=a=>Math.max(0,a)*26;
         PO.fL[0]+=w*34;PO.fL[1]-=lift(w);PO.fR[0]+=w2*34;PO.fR[1]-=lift(w2);PO.kL[0]+=w*20;PO.kL[1]-=lift(w)*.8;PO.kR[0]+=w2*20;PO.kR[1]-=lift(w2)*.8;
         PO.hL[0]+=w2*26;PO.hR[0]+=w*26;PO.hd[1]-=Math.abs(w)*3;PO.ch[1]-=Math.abs(w)*3}}
     if((o.flip||1)<0){if(MOOD.lx)MOOD.lx=-MOOD.lx;TILT=-TILT}
