@@ -5,7 +5,7 @@ R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));E=R+'/engine/'
 rd=lambda f:open(E+f,encoding='utf-8').read()
 def _cast():
     m=re.search(r"V2NAMES=new Set\(\[(.*?)\.\.\.",rd('v2_cast.js'),re.S)
-    return sorted(set(re.findall(r"'(\w+)'",m.group(1)))|{f'rishi{i}' for i in range(7)}|{'boar','swan'})
+    return sorted(set(re.findall(r"'(\w+)'",m.group(1)))|{f'rishi{i}' for i in range(7)}|{'boar','swan','ketaki'})
 def _pfx():return re.findall(r"^ (\w+):\{s:",rd('paper_fx.js'),re.M)
 def _obj():
     s=rd('paper_scenes.js');a=s.index('const OBJ={');b=s.index('\n};',a)

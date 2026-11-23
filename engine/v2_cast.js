@@ -52,6 +52,9 @@ Object.assign(CAST,{
  kashyapa:skinSet('#c8905e',{hair:{type:'jata',col:'#ece8e2'},beard:'#ece8e2',beardLen:46,mustache:'#ece8e2',brow:'#9a9490',lower:L_('#e8862a','#8a3a12','dhoti',{fan:'#f4a850'}),deerskin:true,thread:true,neck:['rudraksha','rudraksha2'],tilak:'ash',bangle:'rudraksha',muscle:.4,build:.94,prop:'kamandalu'}),
  indra:skinSet('#e8b064',{hair:{type:'cap',col:'#18141c'},crown:'indra',mustache:'#2a1a14',lower:L_('#2a52b8','#f2c14e','dhoti',{pleat:true,fan:'#4a78e0',dots:'#f2c14e'}),uttariya:'#f2c14e',neck:['hara'],armlet:'#e0b040',muscle:.85,prop:'vajra',halo:{r:96,col:['#ffffff','#bcd8ff','#5a8ae0','#2a3a8a'],rgb:'150,190,255',rgb2:'220,235,255',petal:'rgba(240,248,255,.45)',g:.55}}),
  surya:skinSet('#f4a848',{hair:{type:'cap',col:'#4a2410'},crown:'raja',lower:L_('#e0501e','#ffd34a','dhoti',{pleat:true,fan:'#ff8a3a'}),uttariya:'#ffd34a',neck:['hara'],armlet:'#ffd34a',muscle:.75,prop:'lotus2',sun:true,kgem:'#ff7a1a'}),
+ // EP6 devas crowd: Agni (fire god: ember skin, flame crest, fire halo) and Vayu (wind god: sky-blue cloth, long wind-blown scarf)
+ agni:skinSet('#e07a4a',{skinH:'#ffb084',skinD:'#a23e1c',hair:{type:'cap',col:'#5a1a0c'},crown:'agni',beard:'#6a200e',beardLen:14,mustache:'#6a200e',brow:'#4a120a',lower:L_('#b8241a','#ffd34a','dhoti',{pleat:true,fan:'#f27a1e'}),uttariya:'#ffb02a',thread:true,neck:['hara'],armlet:'#ffd34a',muscle:.7,lip:'#9a2a2a',kgem:'#ff7a1a',halo:{r:96,col:['#fff2a0','#ffb030','#e8501a','#8a1a0a'],rgb:'255,150,60',rgb2:'255,220,150',petal:'rgba(255,220,150,.45)',g:.7}}),
+ vayu:skinSet('#e2b48a',{hair:{type:'cap',col:'#1c1a24'},crown:'vayu',mustache:'#1c1a24',lower:L_('#3a9ad8','#f2f6ff','dhoti',{pleat:true,fan:'#8ccaf2'}),uttariya:'#eef6ff',sash:'#bfe2fa',neck:['pearls'],armlet:'#e0b040',muscle:.65,kgem:'#7ac8f0'}),
  chandra:skinSet('#e4ecf6',{skinD:'#98a8c8',hair:{type:'cap',col:'#202838'},crown:'chandra',lower:L_('#f4f6fc','#9ab0d8','dhoti',{pleat:true,fan:'#dce6f8'}),uttariya:'#cfd8ee',neck:['pearls'],armlet:'#c8d4ea',muscle:.5,lip:'#a8506e',kgem:'#dfe8ff',halo:{r:96,col:['#ffffff','#e4ecff','#a8b8e8','#5a6aa8'],rgb:'200,215,255',rgb2:'240,245,255',petal:'rgba(255,255,255,.5)',g:.6}}),
  hiranyaksha:skinSet('#6e3030',{hair:{type:'wild',col:'#0c0a14'},horns:'#e8dcc0',crown:'asura',crownCol:'#4a3418',build:1.3,brow:'#08060c',eyeRed:true,mustache:'#0c0a14',beard:'#0c0a14',beardLen:10,lower:L_('#1e1418','#e0b040','short',{fan:'#3a2a30'}),armor:'#c9a24a',armlet:'#e0b040',muscle:1,kdef:.55,prop:'gada'}),
  hiranyakashipu:skinSet('#8a4a2a',{hair:{type:'wild',col:'#0c0a14'},horns:'#e8c050',crown:'asura',build:1.25,brow:'#08060c',eyeRed:true,mustache:'#0c0a14',lower:L_('#c8282a','#e0b040','short'),armor:'#e0b040',armlet:'#e0b040',muscle:1,kdef:.5,prop:'gada'}),
@@ -78,7 +81,9 @@ PZ.lie2={hL:[-98,-262],hR:[84,-196],kL:[-22,-128],kR:[70,-176],fL:[-34,0],fR:[30
 PZ.lie={hL:[-70,-486],hR:[64,-232],kL:[-24,-130],kR:[22,-130],fL:[-30,0],fR:[18,0],hem:200,sway:0};
 PZ.sitpray={...PZ.sit,hL:[-8,-222],hR:[8,-222],ef:1};
 PZ.calm={};PZ.rage={...PZ.lunge};
-const poseOf=(n,who)=>(n&&typeof n==='object')?n:((who==='vishnu'||who==='hayagriva')&&(!n||n==='stand')?poseOf0('vstand'):poseOf0(n));
+PZ.rpoint={...PZ.lunge,hR:[196,-440]};  // furious accusing point (Shiva: left hand, trishul stays in the right)
+BASE.pointL=false;
+const poseOf=(n,who)=>(n&&typeof n==='object')?n:who==='shiva'?shivaPose(n):((who==='vishnu'||who==='hayagriva')&&(!n||n==='stand')?poseOf0('vstand'):poseOf0(n));
 const poseOf0=(n)=>Object.assign(JSON.parse(JSON.stringify(BASE)),JSON.parse(JSON.stringify(PZ[n]||PZ[{tri:'hold',rest:'stand',cross:'sit',fist:'hold',cup:'open'}[n]]||{})));
 
 /* ---------- small helpers kept for the recline / ardha rigs ---------- */
@@ -115,7 +120,7 @@ function headgear(c,S,hx,hy){c.save();c.translate(hx,hy);
   if(S.horns)[-1,1].forEach(sd=>PK.cut(c,cc=>{cc.moveTo(sd*22,-38);cc.bezierCurveTo(sd*40,-60,sd*58,-70,sd*56,-102);cc.bezierCurveTo(sd*50,-80,sd*34,-62,sd*14,-44);cc.closePath()},PK.lg(c,0,-104,0,-40,['#fff6e0',S.horns,PK.shade(S.horns,.62)]),{lw:2}));
   const cr=S.crown;
   if(cr==='vishnu')PK.kirita(c,66);else if(cr==='devi')PK.kirita(c,58);else if(cr==='small')PK.kirita(c,34);
-  else if(cr==='raja')PK.crownK(c,44,{gem:'#18a57a'});else if(cr==='indra')PK.crownK(c,70,{crest:'fan',gem:'#3b7cf0'});else if(cr==='chandra')PK.crownK(c,46,{crest:'moon',gem:'#dfe8ff'});
+  else if(cr==='raja')PK.crownK(c,44,{gem:'#18a57a'});else if(cr==='indra')PK.crownK(c,70,{crest:'fan',gem:'#3b7cf0'});else if(cr==='chandra')PK.crownK(c,46,{crest:'moon',gem:'#dfe8ff'});else if(cr==='agni')PK.crownK(c,44,{crest:'flame',gem:'#ff7a1a'});else if(cr==='vayu')PK.crownK(c,40,{crest:'fan',gem:'#7ac8f0'});
   else if(cr==='brahma')PK.jataMukuta(c);else if(cr==='asura')PK.asuraCrown(c,S.crownCol);
   else if(cr==='helmet'){PK.cut(c,cc=>{cc.moveTo(-35,-14);cc.bezierCurveTo(-38,-66,38,-66,35,-14);cc.lineTo(22,-22);cc.lineTo(-22,-22);cc.closePath()},PK.goldG(c,-35,35),{lw:2.2});
     PK.cut(c,cc=>cc.roundRect(-35,-32,70,10,3),PK.goldG(c,-35,35),{lw:1.6,sh:0});for(let k=-2;k<=2;k++)PK.gem(c,k*13,-27,2.6,k%2?'#18a57a':'#e0234a');
@@ -228,9 +233,12 @@ function drawHuman(c,S,P0,o){
   const HS=S.hs||(fem?1.06:1.12);c.save();
   // halo / sun disk behind the head
   const hcy=P.hd[1]-(S.heads3?18:10);
+  // halo, sun disk and back hair lean WITH the torso (bow / plead), so they stay centred behind the head
+  const leanT=()=>{if(P.lean){c.translate(0,P.ph[1]);c.rotate(P.lean);c.translate(0,-P.ph[1])}};
+  c.save();leanT();
   if(S.halo&&o.halo!==false){const Hh=S.halo;PK.halo(c,P.hd[0],hcy,Hh.r*(P.sit?.92:1),t,Object.assign({g:Hh.g==null?.8:Hh.g,n:26},Hh))}
   if(S.sun&&o.halo!==false)PK.sunDisk(c,P.hd[0],hcy,92,t);
-  c.save();c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);hairBack(c,S,P,t);c.restore();
+  c.translate(P.hd[0],P.hd[1]+40);c.scale(HS,HS);c.translate(-P.hd[0],-P.hd[1]-40);hairBack(c,S,P,t);c.restore();
   // Shiva's trishul stands behind the right hand
   const tri=S.prop==='trishul'?(P.tri||{x:P.hR[0],top:-640,bot:0}):null;
   if(tri){c.save();if(tri.rot){c.translate(P.hR[0],-300);c.rotate(tri.rot);c.translate(-P.hR[0],300)}PK.trishul(c,P.hR[0],tri.bot||0,(tri.bot||0)-tri.top,t,0);c.restore()}
@@ -274,7 +282,7 @@ function frontArms(c,S,sk,P,o,t,k){const fem=!!S.female,bw=S.build||1,w=[(fem?14
     PK.hand(c,sk,a.t,dir,'rest')};
   // props carried in a lowered hand
   const holdR=tr==='rest'&&!S.arms4,holdL=tl==='rest'&&!S.arms4;let usedR=false,usedL=false;
-  if(S.prop==='trishul'){PK.hand(c,sk,aL.t,Math.atan2(aL.t[0]-aL.e[0],-(aL.t[1]-aL.e[1])),tl==='abhaya'?'abhaya':(tl==='ext'?'abhaya':(tl==='pray'?'rest':'rest')));PK.hand(c,sk,aR.t,0,'hold');return}
+  if(S.prop==='trishul'){const dL=Math.atan2(aL.t[0]-aL.e[0],-(aL.t[1]-aL.e[1]));if(P.pointL)PK.hand(c,sk,aL.t,dL,'point',-1);else PK.hand(c,sk,aL.t,dL,tl==='abhaya'?'abhaya':(tl==='ext'?'abhaya':'rest'));PK.hand(c,sk,aR.t,0,'hold');return}
   if(holdR&&(pr==='gada'))PK.gada(c,[aR.t[0]+4,aR.t[1]+70],[aR.t[0]+4,aR.t[1]-60]);
   if(holdR&&pr==='sword')PK.sword(c,aR.t[0]+2,aR.t[1]+8,.35,1.1);
   if(holdR&&pr==='vajra')PK.vajra(c,aR.t[0]+2,aR.t[1]-30,.4,.9);
@@ -419,9 +427,12 @@ function halfHead(c,leftFn,rightFn){c.save();c.beginPath();c.rect(0,-400,400,800
 
 
 /* ---------- engine glue ---------- */
-const V2NAMES=new Set(['narada','kumara','jaya','vijaya','villager','villager_w','prasuti','sati','diti','danu','asikli','kashyapa','indra','surya','chandra','hiranyaksha','hiranyakashipu','ravana','harihara','shiva','vishnu','hayagriva','daksha','manu','adishakti','brahmi','madhu','kaitabha','ardha','brahma','vishnu_rest',...[0,1,2,3,4,5,6].map(i=>'rishi'+i)]);
+const V2NAMES=new Set(['narada','kumara','jaya','vijaya','villager','villager_w','prasuti','sati','diti','danu','asikli','kashyapa','indra','surya','chandra','agni','vayu','hiranyaksha','hiranyakashipu','ravana','harihara','shiva','vishnu','hayagriva','daksha','manu','adishakti','brahmi','madhu','kaitabha','ardha','brahma','vishnu_rest',...[0,1,2,3,4,5,6].map(i=>'rishi'+i)]);
 const SCALE={shiva:.62,kumara:.5,default:.62};
-const shivaPose=(p)=>{if(p&&typeof p==='object'){const q=JSON.parse(JSON.stringify(p));if(!q.tri)q.tri=Object.assign({},POSES.calm.tri);return q}
+const shivaPose=(p)=>{const r=shivaPose0(p);if(r.pointL==null)r.pointL=false;return r};
+const shivaPose0=(p)=>{if(p&&typeof p==='object'){const q=JSON.parse(JSON.stringify(p));if(!q.tri)q.tri=Object.assign({},POSES.calm.tri);return q}
+  if(p==='point')return Object.assign(JSON.parse(JSON.stringify(POSES.calm)),{hL:[-182,-412],pointL:true});
+  if(p==='rpoint')return Object.assign(JSON.parse(JSON.stringify(POSES.rage)),{hL:[-196,-440],pointL:true});
   return JSON.parse(JSON.stringify(p==='rage'||p==='lunge'?POSES.rage:(PZ[p]&&p!=='stand'&&p!=='calm'?Object.assign({},POSES.calm,PZ[p]):POSES.calm)))};
 function v2fig(who,x,y,s,t,o){
   const sc=SCALE[who]||SCALE.default,FR=clamp(o.res||s*SC_,1.4,3.9),RG=[-260,-560,520,620];

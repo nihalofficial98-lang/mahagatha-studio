@@ -103,6 +103,35 @@ function drawSwan(x,y,sc,t,f){ // Brahma as the hamsa: white body, long curved n
   wing(false);
   ctx.restore()}
 
+function drawKetaki(x,y,sc,t,f,M,P){ // the KETAKI flower as a speaking character: the paper ketaki (PFX.flower_petals) with a gentle face on its heart.
+  // x,y = base of the flower; f.wither 0..1 or f.wc (cue) + f.wd: bracts brown and droop, face saddens; f.fall:1 petals drop; f.talk 0..1 moves the mouth.
+  const w=240*sc,h=w*1.05,wi=f.wc!=null?q(P,t,f.wc,f.wd||1.5):(f.wither||0),PSX=window.PS,cutP=PSX.cutP,mix=PSX.mix,vg=PSX.vg;M=Object.assign({},M||{});
+  if(wi>0){M.sad=Math.max(M.sad||0,wi);M.smile=(M.smile||0)*(1-wi);M.ly=Math.max(M.ly||0,wi*.6)}
+  if(f.talk){const ts=t*11+(f.x||0);M.mouth=Math.max(M.mouth||0,f.talk*(.25+.45*Math.abs(Math.sin(ts))*Math.abs(Math.sin(ts*.37+1))))}
+  ctx.save();ctx.translate(x,y);ctx.scale(f.flip||1,1);ctx.rotate(wi*.32);ctx.translate(0,-h*.25+wi*h*.06);
+  window.PFX.flower_petals.f(w,t,{wither:wi,fall:f.fall,glow:f.glow},1,P);
+  // face on the flower's heart (drawn in the same frame the ketaki uses: its base is at +h*.25)
+  const fx=0,fy=h*.25-h*.4+Math.sin(t*1.2)*1.5,R=w*.13,an=(M.anger||0),sd=(M.sad||0),sp=(M.surp||0),sm=(M.smile||0),mo=(M.mouth||0),bl=Math.max(M.blink||0,((t*.41)%1)<.035?1:0);
+  ctx.save();ctx.translate(fx,fy);ctx.rotate(Math.sin(t*1.2)*.04*(1-wi));
+  cutP(()=>ctx.ellipse(0,0,R*.86,R,0,0,Math.PI*2),vg(-R,R,[mix('#fffaf0','#d8b890',wi),mix('#fbe8b0','#b89060',wi),mix('#efc870','#8a6a3a',wi)]),{blur:5,sy:2,lw:1.8});
+  ctx.strokeStyle=`rgba(200,150,50,${.55*(1-wi*.5)})`;ctx.lineWidth=1.6;ctx.beginPath();ctx.ellipse(0,0,R*.74,R*.88,0,0,Math.PI*2);ctx.stroke();
+  // cheeks
+  ctx.fillStyle=`rgba(240,120,110,${.22*(1-wi)})`;[-1,1].forEach(s2=>{ctx.beginPath();ctx.ellipse(s2*R*.46,R*.26,R*.15,R*.09,0,0,Math.PI*2);ctx.fill()});
+  // eyes (almond), irises look by lx/ly
+  const ex=R*.32,ey=-R*.08,ew=R*.2,eh=R*(.12+sp*.06)*(1-bl*.92)*(1-sd*.25);
+  [-1,1].forEach(s2=>{ctx.save();ctx.translate(s2*ex,ey);ctx.fillStyle='#fffdf6';ctx.beginPath();ctx.moveTo(-ew,0);ctx.quadraticCurveTo(0,-eh*2,ew,0);ctx.quadraticCurveTo(0,eh*1.4,-ew,0);ctx.fill();
+    if(eh>1){ctx.save();ctx.clip();ctx.fillStyle=an>.5?'#c81e1e':'#3a2414';ctx.beginPath();ctx.arc((M.lx||0)*ew*.4,(M.ly||0)*eh*.5,eh*.95,0,Math.PI*2);ctx.fill();ctx.fillStyle='#120a08';ctx.beginPath();ctx.arc((M.lx||0)*ew*.4,(M.ly||0)*eh*.5,eh*.45,0,Math.PI*2);ctx.fill();ctx.restore()}
+    ctx.strokeStyle='#3a2014';ctx.lineWidth=2;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(-ew,0);ctx.quadraticCurveTo(0,-eh*2,ew,0);ctx.stroke();
+    // brow: anger pulls the inner end down, sadness lifts it
+    const bi=-R*.2+an*R*.1-sd*R*.08-sp*R*.06,bo=-R*.26-sp*R*.06+sd*R*.04;ctx.strokeStyle='#6a4020';ctx.lineWidth=2.2+an*1.4;ctx.beginPath();ctx.moveTo(-s2*ew*.1,bi);ctx.quadraticCurveTo(s2*ew*.5,Math.min(bi,bo)-R*.04,s2*ew*1.1,bo);ctx.stroke();ctx.restore()});
+  // tear when sad
+  if(sd>.5){ctx.fillStyle='rgba(170,215,255,.9)';ctx.beginPath();const tx=ex*.9,ty=ey+R*.16+((t*.6)%1)*R*.3;ctx.moveTo(tx,ty-5);ctx.quadraticCurveTo(tx+4,ty+2,tx,ty+5);ctx.quadraticCurveTo(tx-4,ty+2,tx,ty-5);ctx.fill()}
+  // mouth: smile curve, frown, or open
+  const my=R*.36,mw=R*(.2+sm*.08-sp*.06),cv=(sm*.9-sd*.7-an*.5)*R*.12,op=Math.max(mo,sp*.6)*R*.16;
+  if(op>1.2){ctx.fillStyle='#7a2a2a';ctx.beginPath();ctx.ellipse(0,my+op*.3,mw*.55,op,0,0,Math.PI*2);ctx.fill()}
+  ctx.strokeStyle='#7a3020';ctx.lineWidth=2.2;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(-mw,my-cv*.3);ctx.quadraticCurveTo(0,my+cv,mw,my-cv*.3);ctx.stroke();
+  ctx.restore();ctx.restore()}
+
 /* emotion presets (face): f.emo or acts[i].emo; explicit mood values override */
 const EMO={calm:{smile:.3},joy:{smile:1,surp:.15},anger:{anger:1,smile:0},rage:{anger:1,mouth:.35},sad:{sad:1,ly:.45},grief:{sad:1,ly:.7,mouth:.2},surprise:{surp:1,mouth:.45},fear:{surp:.7,sad:.4,mouth:.25},shame:{sad:.7,ly:.95,lx:.3},pride:{smile:.55,ly:-.3},doubt:{sad:.35,lx:.6,smile:0},devotion:{smile:.45,ly:-.5,blink:.35}};
 function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.fo!=null?1-q(P,t,f.fo,f.fd||1.2):1);if(a<=0.01)return;const ex=f.exprB?lerpO(f.expr,f.exprB,q(P,t,f.ec,0.4)):(f.expr||{});
@@ -129,6 +158,7 @@ function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.f
   else if(f.who==='brahma')drawBrahma(x,y,s,t,{aura:null,expr:ex,key:o.key,rim:o.rim,lx:o.lx,lotus:f.lotus!==false});
   else if(f.who==='boar')drawBoar(x,y,s,t,f);
   else if(f.who==='swan')drawSwan(x,y,s,t,f);
+  else if(f.who==='ketaki'){const MO=Object.assign({},EMO[f.emo]||{},f.mood||{});(f.acts||[]).forEach(a=>{const u=q(P,t,a.c||0,a.d||.6);if(u<=0)return;const am=Object.assign({},EMO[a.emo]||{},a.mood||{});for(const k in am)MO[k]=(MO[k]||0)+(am[k]-(MO[k]||0))*u});drawKetaki(x,y,s,t,f,MO,P)}
   else if(f.who==='bull'){const b0=f.la0||[1,1,1,1],la=[b0[0],b0[1]*(f.l1==null?1:1-q(P,t,f.l1,0.9)),b0[2]*(f.l2==null?1:1-q(P,t,f.l2,0.9)),b0[3]*(f.l3==null?1:1-q(P,t,f.l3,0.9))];drawBull(x,y,s,t,{key:o.key,rim:o.rim,la:la,bow:(f.bow||0)*q(P,t,f.bc,1.2)})}
   else if(f.head)drawHead(CH[f.who],x,y,s,t,{key:o.key,rim:o.rim,lx:o.lx,expr:ex});
   else drawFig(CH[f.who],x,y,s,t,o);

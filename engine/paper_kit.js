@@ -268,6 +268,7 @@ function garland(c,x0,y0,x1,y1,drop,n,t){for(let i=0;i<n;i++){const u=i/(n-1),x=
 function crownK(c,h,o){o=o||{};kirita(c,h);const top=-42-h;
   if(o.crest==='fan'){for(let k=-2;k<=2;k++){c.save();c.translate(0,top-4);c.rotate(k*.34);cut(c,cc=>{cc.moveTo(-4,0);cc.quadraticCurveTo(-7,-18,0,-30);cc.quadraticCurveTo(7,-18,4,0);cc.closePath()},goldG(c,-6,6),{lw:1.3,sh:0});gem(c,0,-18,1.8,k%2?PAL.sapph:PAL.emer);c.restore()}}
   if(o.crest==='moon'){glow(c,0,top-14,40,'230,240,255',.5);cut(c,cc=>{cc.arc(0,top-14,15,PI*.95,PI*2.05,true);cc.arc(0,top-20,12,PI*2.0,PI*1.0);cc.closePath()},lg(c,-15,top-30,15,top,['#ffffff','#dfe6f6']),{lw:1.4,sh:0})}
+  if(o.crest==='flame'){glow(c,0,top-16,46,'255,150,60',.55);[[-1,.8,'#e8541c'],[1,.8,'#e8541c'],[0,1.15,'#ff9a2a']].forEach(([sd,k,col])=>cut(c,cc=>{const x=sd*12,y=top+2;cc.moveTo(x-9,y);cc.bezierCurveTo(x-14,y-18*k,x-2+sd*4,y-26*k,x+sd*6,y-40*k);cc.bezierCurveTo(x+8,y-24*k,x+12,y-14*k,x+9,y);cc.closePath()},lg(c,0,top-46,0,top,['#fff2a0',col,'#b8300c']),{lw:1.3,sh:0}))}
   if(o.gem){cut(c,cc=>{cc.moveTo(0,-42-h*.5);cc.quadraticCurveTo(11,-42-h*.32,0,-48);cc.quadraticCurveTo(-11,-42-h*.32,0,-42-h*.5)},o.gem,{lw:1.4,sh:0})}}
 // spiked asura crown (dark iron + gold)
 function asuraCrown(c,col){col=col||'#3a2a34';const sp=[[-34,-30],[-30,-64],[-20,-46],[-12,-82],[-4,-50],[0,-96],[4,-50],[12,-82],[20,-46],[30,-64],[34,-30]];
