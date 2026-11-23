@@ -87,7 +87,7 @@ function drawBoar(x,y,sc,t,f){ // Vishnu as Varaha, paper-cut: slate-blue body, 
   cutP(()=>{ctx.moveTo(-104,-100+bob);ctx.quadraticCurveTo(-146,-112+Math.sin(t*4)*8,-140,-70);ctx.quadraticCurveTo(-136,-62,-130,-72);ctx.quadraticCurveTo(-132,-100,-100,-90+bob);ctx.closePath()},colD,{lw:1.8,ink:INKB,sh:0});
   // body
   cutP(()=>ctx.ellipse(-4,-88+bob,108,56,0,0,TAU),vg(-150,-30,[colH,col,colD]),o);
-  ctx.save();ctx.beginPath();ctx.ellipse(-4,-88+bob,108,56,0,0,TAU);ctx.clip();ctx.strokeStyle='rgba(20,26,60,.35)';ctx.lineWidth=2;for(let i=0;i<9;i++){ctx.beginPath();ctx.moveTo(-90+i*20,-120+bob);ctx.quadraticCurveTo(-84+i*20,-92+bob,-92+i*20,-60+bob);ctx.stroke()}
+  ctx.save();ctx.beginPath();ctx.ellipse(-4,-88+bob,108,56,0,0,TAU);ctx.clip();ctx.strokeStyle='rgba(20,26,60,.18)';ctx.lineWidth=2;for(let i=0;i<5;i++){ctx.beginPath();ctx.moveTo(-80+i*34,-124+bob);ctx.quadraticCurveTo(-72+i*34,-96+bob,-82+i*34,-66+bob);ctx.stroke()}
     ctx.fillStyle='rgba(255,255,255,.12)';ctx.beginPath();ctx.ellipse(-20,-118+bob,70,14,-.05,0,TAU);ctx.fill();ctx.restore();
   // bristle mane (one cut piece)
   cutP(()=>{ctx.moveTo(-92,-124+bob);for(let i=0;i<=14;i++){const bx=-92+i*13,lift=Math.abs(i-8)*1.8;ctx.lineTo(bx+6,-160+bob+lift*1.4+Math.sin(t*3+i)*3);ctx.lineTo(bx+13,-134+bob+lift)}ctx.quadraticCurveTo(40,-120+bob,-92,-124+bob);ctx.closePath()},vg(-165,-120,[shd(colD,1.3),colD,INKB]),{lw:1.8,ink:INKB,sh:0});
@@ -98,8 +98,8 @@ function drawBoar(x,y,sc,t,f){ // Vishnu as Varaha, paper-cut: slate-blue body, 
   // head, lowered when digging
   ctx.save();ctx.translate(98,-92+bob+(dig?24:0));ctx.rotate(dig?.42:.05);
   cutP(()=>{ctx.moveTo(-30,-34);ctx.lineTo(-10,-70);ctx.lineTo(8,-32);ctx.closePath()},vg(-70,-30,[colH,colD]),{lw:1.8,ink:INKB,sh:0}); // ear
-  cutP(()=>{ctx.moveTo(-40,-20);ctx.quadraticCurveTo(-30,-44,6,-40);ctx.quadraticCurveTo(50,-30,84,-6);ctx.quadraticCurveTo(94,8,86,26);ctx.quadraticCurveTo(50,40,0,38);ctx.quadraticCurveTo(-40,34,-40,-20);ctx.closePath()},vg(-44,40,[colH,col,colD]),o);
-  cutP(()=>ctx.ellipse(86,10,10,15,0,0,TAU),'#2a3050',{lw:1.6,ink:INKB,sh:0});ctx.fillStyle='#0c1020';[-1,1].forEach(sd=>{ctx.beginPath();ctx.ellipse(86,10+sd*6,2.4,3,0,0,TAU);ctx.fill()});
+  cutP(()=>{ctx.moveTo(-40,-18);ctx.quadraticCurveTo(-30,-40,6,-36);ctx.quadraticCurveTo(50,-24,90,-4);ctx.lineTo(94,24);ctx.quadraticCurveTo(50,32,0,32);ctx.quadraticCurveTo(-40,30,-40,-18);ctx.closePath()},vg(-44,40,[colH,col,colD]),o);
+  cutP(()=>ctx.ellipse(94,10,8,15,0,0,TAU),'#8a98c8',{lw:1.6,ink:INKB,sh:0});ctx.fillStyle='#0c1020';[-1,1].forEach(sd=>{ctx.beginPath();ctx.ellipse(95,10+sd*6,2.2,3,0,0,TAU);ctx.fill()});
   // tusks
   [[0,1],[1,-1]].forEach(([i])=>cutP(()=>{ctx.moveTo(54,24+i*3);ctx.bezierCurveTo(82,32+i*4,98,8,94,-26);ctx.bezierCurveTo(86,2,72,16,54,18+i*3);ctx.closePath()},vg(-26,30,['#ffffff','#f2e8cc','#c8b890']),{lw:1.6,ink:INKB,sh:0}));
   // eye (gold iris, gentle)
@@ -111,23 +111,23 @@ function drawBoar(x,y,sc,t,f){ // Vishnu as Varaha, paper-cut: slate-blue body, 
   cutP(()=>ctx.arc(0,-50,3.4,0,TAU),'#18a57a',{lw:1,ink:'#5a3200',sh:0});
   ctx.restore();ctx.restore()}
 function drawSwan(x,y,sc,t,f){ // Brahma as the Hamsa, paper-cut: white layered feathers, long S-neck, orange beak (tip at 210,-196), gold crown + red-gold neck band
-  const {cutP,vg}=window.PS,TAU=Math.PI*2;ctx.save();ctx.translate(x,y);ctx.scale(sc*(f.flip||1),sc);const fl=Math.sin(t*5.2)*(f.glide?.3:1),bob=Math.sin(t*2.4)*5;
+  const {cutP,vg}=window.PS,TAU=Math.PI*2;ctx.save();ctx.translate(x,y);ctx.scale(sc*(f.flip||1),sc);if(f.rot)ctx.rotate(f.rot);const fl=Math.sin(t*5.2)*(f.glide?.3:1),bob=Math.sin(t*2.4)*5;
   const INKS='#4a5070',o={lw:2.2,ink:INKS,blur:8,sy:4};
   const wing=(back)=>{ctx.save();ctx.translate(-10,-96+bob);ctx.rotate((back?-.2:0)+fl*.55-(back?.3:.55));
     const c0=back?['#e6eaf6','#c4cae0','#9aa2c4']:['#ffffff','#eef1fb','#c8cee6'];
-    for(let i=0;i<7;i++){const an=-2.62+i*.13,L=150-i*8;ctx.save();ctx.translate(-120+i*12,-50+i*4);ctx.rotate(an);cutP(()=>{ctx.moveTo(0,-9);ctx.quadraticCurveTo(L*.6,-14,L,0);ctx.quadraticCurveTo(L*.6,12,0,9);ctx.closePath()},vg(-14,14,c0),{lw:1.6,ink:INKS,sh:0});ctx.strokeStyle='rgba(120,130,170,.5)';ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(4,0);ctx.lineTo(L*.9,0);ctx.stroke();ctx.restore()}
+    for(let i=0;i<7;i++){const an=-2.66+i*.1,L=138-i*9;ctx.save();ctx.translate(-120+i*12,-50+i*4);ctx.rotate(an);cutP(()=>{ctx.moveTo(0,-13);ctx.quadraticCurveTo(L*.55,-20,L,-2);ctx.quadraticCurveTo(L*.7,16,0,13);ctx.closePath()},vg(-14,14,c0),{lw:1.6,ink:INKS,sh:0});ctx.strokeStyle='rgba(120,130,170,.5)';ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(4,0);ctx.lineTo(L*.9,0);ctx.stroke();ctx.restore()}
     cutP(()=>{ctx.moveTo(0,0);ctx.bezierCurveTo(-40,-96,-130,-138,-200,-104);ctx.bezierCurveTo(-170,-80,-150,-56,-124,-30);ctx.bezierCurveTo(-84,-30,-40,-16,0,0);ctx.closePath()},vg(-130,0,c0),o);
     ctx.save();ctx.beginPath();ctx.moveTo(0,0);ctx.bezierCurveTo(-40,-96,-130,-138,-200,-104);ctx.bezierCurveTo(-170,-80,-150,-56,-124,-30);ctx.bezierCurveTo(-84,-30,-40,-16,0,0);ctx.clip();
       ctx.strokeStyle='rgba(110,120,170,.45)';ctx.lineWidth=1.6;for(let r=0;r<3;r++)for(let i=0;i<7;i++){const cx=-30-i*24-r*8,cy=-24-r*22-i*6;ctx.beginPath();ctx.arc(cx,cy,11,.1,Math.PI-.1);ctx.stroke()}ctx.restore();
     ctx.restore()};
   wing(true);
-  // tail fan + body
-  cutP(()=>{ctx.moveTo(-70,-96+bob);ctx.lineTo(-156,-78+bob);ctx.lineTo(-140,-70+bob);ctx.lineTo(-160,-62+bob);ctx.lineTo(-84,-66+bob);ctx.closePath()},vg(-100,-60,['#ffffff','#d8def0']),{lw:1.8,ink:INKS,sh:0});
-  cutP(()=>ctx.ellipse(0,-86+bob,94,42,-.08,0,TAU),vg(-128,-44,['#ffffff','#f2f4fc','#c8cee6']),o);
   // neck: filled S-curve (sampled bezier, tapering), then the head
   const B=(u,p0,p1,p2,p3)=>{const v=1-u;return v*v*v*p0+3*v*v*u*p1+3*v*u*u*p2+u*u*u*p3};const L=[],Rr=[];
   for(let i=0;i<=20;i++){const u=i/20,px=B(u,58,112,98,140),py=B(u,-100,-122,-190,-196)+bob,dx=B(Math.min(1,u+.02),58,112,98,140)-B(Math.max(0,u-.02),58,112,98,140),dy=B(Math.min(1,u+.02),-100,-122,-190,-196)-B(Math.max(0,u-.02),-100,-122,-190,-196),d=Math.hypot(dx,dy)||1,w=15-u*4;L.push([px-dy/d*w,py+dx/d*w]);Rr.push([px+dy/d*w,py-dx/d*w])}
   cutP(()=>{L.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]):ctx.moveTo(p[0],p[1]));Rr.reverse().forEach(p=>ctx.lineTo(p[0],p[1]));ctx.closePath()},vg(-200,-100,['#ffffff','#eef1fb']),{lw:2,ink:INKS,sh:0});
+  // tail fan + body
+  cutP(()=>{ctx.moveTo(-70,-96+bob);ctx.lineTo(-156,-78+bob);ctx.lineTo(-140,-70+bob);ctx.lineTo(-160,-62+bob);ctx.lineTo(-84,-66+bob);ctx.closePath()},vg(-100,-60,['#ffffff','#d8def0']),{lw:1.8,ink:INKS,sh:0});
+  cutP(()=>ctx.ellipse(0,-86+bob,94,42,-.08,0,TAU),vg(-128,-44,['#ffffff','#f2f4fc','#c8cee6']),o);
   // red-gold neck band (Brahma's colours)
   ctx.save();ctx.translate(96,-136+bob);ctx.rotate(-.9);cutP(()=>ctx.roundRect(-16,-5,32,10,4),'#d23a2a',{lw:1.4,ink:'#5a1a10',sh:0});ctx.fillStyle='#f2c14e';ctx.fillRect(-16,-1,32,2.4);ctx.restore();
   cutP(()=>{ctx.moveTo(164,-206+bob);ctx.lineTo(212,-197+bob);ctx.lineTo(166,-185+bob);ctx.closePath()},vg(-206,-185,['#ffb048','#f0902a','#c8641a']),{lw:1.6,ink:'#6a3a10',sh:0});
@@ -154,7 +154,7 @@ function drawKetaki(x,y,sc,t,f,M,P){ // the KETAKI flower as a speaking characte
   // cheeks
   ctx.fillStyle=`rgba(240,120,110,${.22*(1-wi)})`;[-1,1].forEach(s2=>{ctx.beginPath();ctx.ellipse(s2*R*.46,R*.26,R*.15,R*.09,0,0,Math.PI*2);ctx.fill()});
   // eyes (almond), irises look by lx/ly
-  const ex=R*.33,ey=-R*.06,ew=R*.22,eh=R*(.13+sp*.06)*(1-bl*.92)*(1-sd*.25);
+  const ex=R*.33,ey=-R*.06,ew=R*.22,eh=R*(.13+sp*.09)*(1-bl*.92)*(1-sd*.25);
   [-1,1].forEach(s2=>{ctx.save();ctx.translate(s2*ex,ey);ctx.fillStyle='#fffdf6';ctx.beginPath();ctx.moveTo(-ew,0);ctx.quadraticCurveTo(0,-eh*2,ew,0);ctx.quadraticCurveTo(0,eh*1.4,-ew,0);ctx.fill();
     if(eh>1){ctx.save();ctx.clip();ctx.fillStyle=an>.5?'#c81e1e':'#3a2414';ctx.beginPath();ctx.arc((M.lx||0)*ew*.4,(M.ly||0)*eh*.5,eh*.95,0,Math.PI*2);ctx.fill();ctx.fillStyle='#120a08';ctx.beginPath();ctx.arc((M.lx||0)*ew*.4,(M.ly||0)*eh*.5,eh*.45,0,Math.PI*2);ctx.fill();ctx.restore()}
     ctx.strokeStyle='#3a2014';ctx.lineWidth=2;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(-ew,0);ctx.quadraticCurveTo(0,-eh*2,ew,0);ctx.stroke();
@@ -164,7 +164,7 @@ function drawKetaki(x,y,sc,t,f,M,P){ // the KETAKI flower as a speaking characte
   // tear when sad
   if(sd>.5){ctx.fillStyle='rgba(170,215,255,.9)';ctx.beginPath();const tx=ex*.9,ty=ey+R*.16+((t*.6)%1)*R*.3;ctx.moveTo(tx,ty-5);ctx.quadraticCurveTo(tx+4,ty+2,tx,ty+5);ctx.quadraticCurveTo(tx-4,ty+2,tx,ty-5);ctx.fill()}
   // mouth: smile curve, frown, or open
-  const my=R*.36,mw=R*(.2+sm*.08-sp*.06),cv=(sm*.9-sd*.7-an*.5)*R*.12,op=Math.max(mo,sp*.6)*R*.16;
+  const my=R*.36,mw=R*(.2+sm*.08-sp*.06),cv=(sm*.9-sd*.8-an*.6)*R*.16,op=Math.max(mo,sp*.7)*R*.3;
   if(op>1.2){ctx.fillStyle='#7a2a2a';ctx.beginPath();ctx.ellipse(0,my+op*.3,mw*.55,op,0,0,Math.PI*2);ctx.fill()}
   ctx.strokeStyle='#a03a3a';ctx.lineWidth=2.4;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(-mw,my-cv*.3);ctx.quadraticCurveTo(0,my+cv,mw,my-cv*.3);ctx.stroke();
   ctx.restore();ctx.restore()}

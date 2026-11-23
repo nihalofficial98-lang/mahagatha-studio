@@ -1,0 +1,509 @@
+{
+ "episode": "06",
+ "cast": [
+  {
+   "who": "brahma",
+   "role": "hero",
+   "new": false,
+   "identity": "4 heads (3 visible + back face), white beard, red dhoti, gold jata-mukuta, book + mala + kamandalu, sun halo; seated on the lotus (default) or standing (lotus:false)",
+   "props": [
+    "veda book",
+    "mala",
+    "kamandalu",
+    "lotus seat",
+    "ketaki (held)"
+   ],
+   "poses": [
+    "stand",
+    "namaste",
+    "bow",
+    "point",
+    "hold",
+    "open",
+    "plead",
+    "rage",
+    "sit",
+    "sitpray"
+   ],
+   "emotions": [
+    "calm",
+    "pride",
+    "anger",
+    "rage",
+    "fear",
+    "doubt",
+    "shame",
+    "sad",
+    "surprise",
+    "joy"
+   ],
+   "moves": [
+    "walk",
+    "walkTo",
+    "turnc",
+    "talk",
+    "hd (faces sprout / back face)"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/brahma_faces.jpg",
+    "library/showcase/ep06_cast/brahma_poses.jpg",
+    "library/showcase/ep06_cast/brahma_forms.jpg"
+   ]
+  },
+  {
+   "who": "vishnu",
+   "role": "hero",
+   "new": false,
+   "identity": "blue skin, 4 arms (chakra, conch, gada, lotus), yellow dhoti, kirita without horns, vanamala + Kaustubha, sun halo",
+   "props": [
+    "sudarshan chakra",
+    "shankha",
+    "gada",
+    "padma"
+   ],
+   "poses": [
+    "stand",
+    "namaste",
+    "bow",
+    "point",
+    "open",
+    "rage",
+    "plead"
+   ],
+   "emotions": [
+    "calm",
+    "anger",
+    "rage",
+    "surprise",
+    "sad",
+    "devotion",
+    "joy"
+   ],
+   "moves": [
+    "walk",
+    "walkTo",
+    "turnc",
+    "talk"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/vishnu_faces.jpg",
+    "library/showcase/ep06_cast/vishnu_poses.jpg",
+    "library/showcase/ep06_cast/vishnu_forms.jpg"
+   ]
+  },
+  {
+   "who": "boar",
+   "role": "hero",
+   "new": false,
+   "identity": "Varaha form of Vishnu: slate-blue paper-cut boar, bristle mane, ivory tusks, gold crown, gold necklace with red gem, vaishnava tilak (redrawn paper-cut for EP6)",
+   "props": [],
+   "poses": [
+    "dig",
+    "run"
+   ],
+   "emotions": [],
+   "moves": [
+    "mx/my slide",
+    "vx"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/boar_forms.jpg",
+    "library/showcase/ep06_cast/vishnu_forms.jpg"
+   ]
+  },
+  {
+   "who": "shiva",
+   "role": "hero",
+   "new": false,
+   "identity": "ash-blue skin, jata bun with crescent, third eye + tripundra, tiger skin, Vasuki, rudraksha, trishul; points with the LEFT hand (flip:-1 to point right)",
+   "props": [
+    "trishul"
+   ],
+   "poses": [
+    "stand",
+    "namaste",
+    "bow",
+    "point",
+    "rpoint",
+    "rage",
+    "open"
+   ],
+   "emotions": [
+    "calm",
+    "anger",
+    "rage",
+    "sad",
+    "surprise",
+    "joy"
+   ],
+   "moves": [
+    "walk",
+    "walkTo",
+    "turnc",
+    "talk",
+    "mx/my (emerge from the pillar)"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/shiva_faces.jpg",
+    "library/showcase/ep06_cast/shiva_poses.jpg",
+    "library/showcase/ep06_cast/shiva_forms.jpg",
+    "library/showcase/ep06_cast/jyotirlinga_forms2.jpg"
+   ]
+  },
+  {
+   "who": "swan",
+   "role": "hero",
+   "new": false,
+   "identity": "Hamsa form of Brahma: white layered-feather paper-cut swan, gold crown, red-gold neck band, orange beak (tip at 210,-196 * s); rot tilts the flight, glide slows the wings (redrawn paper-cut for EP6)",
+   "props": [
+    "ketaki (in the beak)"
+   ],
+   "poses": [
+    "fly"
+   ],
+   "emotions": [],
+   "moves": [
+    "vx/vy",
+    "mx/my",
+    "rot",
+    "glide"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/swan_forms.jpg"
+   ]
+  },
+  {
+   "who": "ketaki",
+   "role": "support",
+   "new": true,
+   "identity": "the ketaki (screw-pine) flower: cream-gold bracts, golden spadix, green saw-edged leaves, gentle face with a red bindi on its heart; speaks (talk), withers (wither / wc+wd), petals fall (fall:1)",
+   "props": [],
+   "poses": [
+    "(flower - no body poses)"
+   ],
+   "emotions": [
+    "calm",
+    "fear",
+    "shame",
+    "sad",
+    "joy",
+    "pride"
+   ],
+   "moves": [
+    "talk",
+    "wither/wc/wd",
+    "fall",
+    "mx/my",
+    "flip"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/ketaki_forms.jpg"
+   ]
+  },
+  {
+   "who": "daksha",
+   "role": "support",
+   "new": false,
+   "identity": "Brahma's son: tan skin, dark beard, raja crown with emerald, maroon dhoti, gold uttariya, sacred thread",
+   "props": [],
+   "poses": [
+    "stand",
+    "bow",
+    "point",
+    "namaste"
+   ],
+   "emotions": [
+    "anger",
+    "rage",
+    "sad",
+    "grief",
+    "calm"
+   ],
+   "moves": [
+    "walk",
+    "walkTo",
+    "turnc"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/daksha_faces.jpg",
+    "library/showcase/ep06_cast/daksha_poses.jpg",
+    "library/showcase/ep06_cast/daksha_forms.jpg"
+   ]
+  },
+  {
+   "who": "indra",
+   "role": "crowd",
+   "new": false,
+   "identity": "king of devas: fan-crest crown, blue dhoti, vajra, blue-white halo",
+   "props": [
+    "vajra"
+   ],
+   "poses": [
+    "stand",
+    "bow",
+    "point",
+    "namaste",
+    "open",
+    "flee"
+   ],
+   "emotions": [
+    "calm",
+    "surprise",
+    "fear",
+    "doubt"
+   ],
+   "moves": [
+    "walk",
+    "walkTo",
+    "flee"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/indra_faces.jpg",
+    "library/showcase/ep06_cast/indra_poses.jpg",
+    "library/showcase/ep06_cast/devas_forms.jpg"
+   ]
+  },
+  {
+   "who": "agni",
+   "role": "crowd",
+   "new": true,
+   "identity": "fire god: ember-red skin, flame-crest crown, red dhoti, saffron uttariya, fire halo",
+   "props": [],
+   "poses": [
+    "stand",
+    "bow",
+    "point",
+    "namaste",
+    "open",
+    "flee"
+   ],
+   "emotions": [
+    "calm",
+    "surprise",
+    "fear"
+   ],
+   "moves": [
+    "walk",
+    "walkTo",
+    "flee"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/agni_faces.jpg",
+    "library/showcase/ep06_cast/agni_poses.jpg",
+    "library/showcase/ep06_cast/devas_forms.jpg"
+   ]
+  },
+  {
+   "who": "surya",
+   "role": "crowd",
+   "new": false,
+   "identity": "sun god: sun disk behind the head, orange dhoti, lotuses in hand",
+   "props": [
+    "lotus"
+   ],
+   "poses": [
+    "stand",
+    "bow",
+    "point",
+    "namaste",
+    "open",
+    "flee"
+   ],
+   "emotions": [
+    "calm",
+    "surprise",
+    "fear"
+   ],
+   "moves": [
+    "walk",
+    "walkTo",
+    "flee"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/surya_faces.jpg",
+    "library/showcase/ep06_cast/surya_poses.jpg",
+    "library/showcase/ep06_cast/devas_forms.jpg"
+   ]
+  },
+  {
+   "who": "chandra",
+   "role": "crowd",
+   "new": false,
+   "identity": "moon god: pale skin, crescent-crest crown, white dhoti, pearls, silver halo",
+   "props": [],
+   "poses": [
+    "stand",
+    "bow",
+    "point",
+    "namaste",
+    "open",
+    "flee"
+   ],
+   "emotions": [
+    "calm",
+    "surprise",
+    "fear",
+    "doubt"
+   ],
+   "moves": [
+    "walk",
+    "walkTo",
+    "flee"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/chandra_faces.jpg",
+    "library/showcase/ep06_cast/chandra_poses.jpg",
+    "library/showcase/ep06_cast/devas_forms.jpg"
+   ]
+  },
+  {
+   "who": "vayu",
+   "role": "crowd",
+   "new": true,
+   "identity": "wind god: sky-blue dhoti, white wind scarf + pale-blue sash, fan-crest crown, pearls, sky halo",
+   "props": [],
+   "poses": [
+    "stand",
+    "bow",
+    "point",
+    "namaste",
+    "open",
+    "flee"
+   ],
+   "emotions": [
+    "calm",
+    "surprise",
+    "fear"
+   ],
+   "moves": [
+    "walk",
+    "walkTo",
+    "flee"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/vayu_faces.jpg",
+    "library/showcase/ep06_cast/vayu_poses.jpg",
+    "library/showcase/ep06_cast/devas_forms.jpg"
+   ]
+  },
+  {
+   "who": "narada",
+   "role": "support",
+   "new": false,
+   "identity": "sage with veena, small jata, white dhoti, saffron sash (B14 flashback: Narada's curse)",
+   "props": [
+    "veena"
+   ],
+   "poses": [
+    "stand",
+    "bow",
+    "point",
+    "namaste"
+   ],
+   "emotions": [
+    "calm",
+    "anger",
+    "sad"
+   ],
+   "moves": [
+    "walk",
+    "walkTo"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/narada_faces.jpg",
+    "library/showcase/ep06_cast/narada_poses.jpg"
+   ]
+  },
+  {
+   "who": "madhu",
+   "role": "crowd",
+   "new": false,
+   "identity": "asura (B03 flashback): purple skin, horns, asura crown, sword",
+   "props": [
+    "sword"
+   ],
+   "poses": [
+    "stand",
+    "lunge",
+    "rage",
+    "lie"
+   ],
+   "emotions": [
+    "rage",
+    "fear"
+   ],
+   "moves": [
+    "walk",
+    "mx/my"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/madhu_faces.jpg",
+    "library/showcase/ep06_cast/madhu_poses.jpg"
+   ]
+  },
+  {
+   "who": "kaitabha",
+   "role": "crowd",
+   "new": false,
+   "identity": "asura (B03 flashback): red-brown skin, horns, beard, gada",
+   "props": [
+    "gada"
+   ],
+   "poses": [
+    "stand",
+    "lunge",
+    "rage",
+    "lie"
+   ],
+   "emotions": [
+    "rage",
+    "fear"
+   ],
+   "moves": [
+    "walk",
+    "mx/my"
+   ],
+   "sheet": [
+    "library/showcase/ep06_cast/kaitabha_faces.jpg",
+    "library/showcase/ep06_cast/kaitabha_poses.jpg"
+   ]
+  }
+ ],
+ "requests": [
+  {
+   "what": "Ketaki as a speaking character (face, emotions, talk, wither on a cue)",
+   "why": "B08-B10, B13: \"मैं इस स्तंभ की ऊपरी ऊँचाइयों पर था...\", \"आप चाहते हैं, कि मैं झूठ बोलूँ?\", \"ब्रह्मदेव ही सबसे महान हैं\"; the curse",
+   "status": "built"
+  },
+  {
+   "what": "Shiva points with the left hand so the trishul stays planted; new pose rpoint (furious lunge + point)",
+   "why": "B11: \"उन्होंने ब्रह्मा की ओर उँगली उठाई, और गरजे, 'झूठे!'\"",
+   "status": "built"
+  },
+  {
+   "what": "Halo, sun disk and back hair lean with the body in bow/plead (were left behind)",
+   "why": "B10: Vishnu bows his head and admits defeat; devas bowing",
+   "status": "built"
+  },
+  {
+   "what": "Swan (Hamsa) and boar (Varaha) redrawn in the paper-cut style (ink edges, layered feathers / mane, crowns)",
+   "why": "B07: \"विष्णु ने वराह का रूप लिया... ब्रह्मा ने हंस का रूप लिया\"",
+   "status": "built"
+  },
+  {
+   "what": "Devas crowd: new agni and vayu next to indra, surya, chandra",
+   "why": "B02/B06: \"देवताओं को ख़बर मिली... वे दौड़े आए\", \"देवता डर के मारे पीछे हट गए\"",
+   "status": "built"
+  },
+  {
+   "what": "Jyotirlinga: existing bg 'pillar' (px, pw; ct = crack time) + pfx om_symbol; no new rig needed",
+   "why": "B06, B11: the endless pillar of fire cracks and Shiva appears",
+   "status": "built"
+  },
+  {
+   "what": "cast_sheet.py: faces neutral/angry/sad/surprised/joy, poses stand/walk/bow/point/pray, story forms sheets, groups devas/jyotirlinga",
+   "why": "owner approval sheets for EP6",
+   "status": "built"
+  }
+ ]
+}

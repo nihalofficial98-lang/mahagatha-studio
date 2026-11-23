@@ -23,14 +23,14 @@ lab=lambda s,x,y,size=22:{'t':'text','s':s,'x':x,'y':y,'size':size,'col':INK}
 def FORMS():
     return {
  'brahma':{'title':'brahma - forms (EP6)','figs':[
-    ('seated on the lotus',{'who':'brahma','x':150,'y':640,'s':.95,'emo':'calm'}),
+    ('seated on the lotus',{'who':'brahma','x':150,'y':620,'s':.95,'emo':'calm'}),
     ('standing',{'who':'brahma','x':400,'y':650,'s':.9,'pose':'stand','lotus':False,'emo':'pride'}),
-    ('pride',{'who':'brahma','x':640,'y':250,'s':.36,'head':True,'emo':'pride'}),
-    ('fear (lost inside Vishnu)',{'who':'brahma','x':860,'y':250,'s':.36,'head':True,'emo':'fear'}),
-    ('sly smile (the lie)',{'who':'brahma','x':1080,'y':250,'s':.36,'head':True,'mood':{'smile':.8,'lx':.8,'ly':.15,'blink':.3}}),
-    ('rage (the quarrel)',{'who':'brahma','x':640,'y':545,'s':.36,'head':True,'emo':'rage'}),
-    ('shame (cursed)',{'who':'brahma','x':860,'y':545,'s':.36,'head':True,'emo':'shame'}),
-    ('doubt',{'who':'brahma','x':1080,'y':545,'s':.36,'head':True,'emo':'doubt'})]},
+    ('pride',{'who':'brahma','x':640,'y':200,'s':.48,'head':True,'emo':'pride'}),
+    ('fear (lost inside Vishnu)',{'who':'brahma','x':890,'y':200,'s':.48,'head':True,'emo':'fear'}),
+    ('sly smile (the lie)',{'who':'brahma','x':1140,'y':200,'s':.48,'head':True,'mood':{'smile':.8,'lx':.8,'ly':.15,'blink':.3}}),
+    ('rage (the quarrel)',{'who':'brahma','x':640,'y':505,'s':.48,'head':True,'emo':'rage'}),
+    ('shame (cursed)',{'who':'brahma','x':890,'y':505,'s':.48,'head':True,'emo':'shame'}),
+    ('doubt',{'who':'brahma','x':1140,'y':505,'s':.48,'head':True,'emo':'doubt'})]},
  'vishnu':{'title':'vishnu - forms (EP6)','figs':[
     ('standing',{'who':'vishnu','x':160,'y':650,'s':.95,'emo':'calm'}),
     ('admits defeat',{'who':'vishnu','x':420,'y':650,'s':.95,'pose':'namaste','emo':'devotion'}),
@@ -60,10 +60,10 @@ def FORMS():
     ('withered (fully)',{'who':'ketaki','x':1080,'y':650,'s':.8,'wither':1})],
     'extra':[{'who':'ketaki','x':452,'y':528,'s':.26,'mood':{'smile':.2}},{'who':'ketaki','x':760,'y':540,'s':.3,'mood':{'smile':.6,'mouth':.45}}]},
  'swan':{'title':'swan - Brahma as the Hamsa (EP6)','bg':{'k':'cloudscape','fore':False},'figs':[
-    ('flying up past the clouds',{'who':'swan','x':330,'y':560,'s':1.3}),
+    ('flying up past the clouds',{'who':'swan','x':420,'y':600,'s':1.3,'rot':-.22}),
     ('with the ketaki in its beak',{'who':'swan','x':880,'y':600,'s':1.2,'glide':1})],
     'extra':[{'who':'ketaki','x':1132,'y':374,'s':.32,'mood':{'smile':.2}}],'labcol':'#3a2414'},
- 'boar':{'title':'boar - Vishnu as Varaha (EP6)','bg':{'k':'earth','fore':False},'figs':[
+ 'boar':{'title':'boar - Vishnu as Varaha (EP6)','bg':{'k':'earth','fore':False},'labcol':'#ffe9b8','figs':[
     ('digging down through the earth',{'who':'boar','x':380,'y':560,'s':1.5,'pose':'dig'}),
     ('running',{'who':'boar','x':920,'y':560,'s':1.4,'pose':'run'})]},
  'devas':{'title':'devas - the watching crowd (EP6)','figs':[
@@ -83,9 +83,9 @@ def frame_shot(T,figs,fx,bg=None):
     return {'beat':1,'at':T,'draw':'scene','grade':'cel','vig':.12,'cues':[],'cam':{'from':{'z':1},'to':{'z':1}},'dx':0,'sc':{'bg':bg or BG,'figs':figs,'fx':fx}}
 
 def label_y(f):
-    if f.get('head'):return f['y']+int(330*f['s'])
+    if f.get('head'):return f['y']+int(345*f['s'])
     if f['who']=='ketaki':return f['y']+38
-    return min(712,f['y']+20)
+    return min(712,f['y']+(52 if f['who']=='brahma' and f.get('lotus') is None and not f.get('pose') else 26))
 
 def main():
     a=argparse.ArgumentParser();a.add_argument('who',nargs='*');a.add_argument('--out',default=R+'/library/characters/sheets')
@@ -95,7 +95,7 @@ def main():
     if bad:sys.exit(f'not in the cast: {bad} (add the spec to engine/v2_cast.js CAST and V2NAMES first)')
     faces=[(e,e) if e not in dict(FACES) else (e,dict(FACES)[e]) for e in x.faces.split(',')] if x.faces else FACES
     poses=[(p,'namaste' if p=='pray' else ('stand' if p=='walk' else p),{'walk':1} if p=='walk' else {}) for p in x.poses.split(',')] if x.poses else POSES
-    shots=[];outs=[];T=0
+    shots=[frame_shot(0,[],[])];outs=[None];T=1   # lead-in shot: the timeline fades in from black at t=0
     for n in names:
         if n not in NONHUMAN and n not in GROUPS:
             full={'who':n,'x':140,'y':690,'s':1.0,'emo':'calm'}
@@ -129,6 +129,7 @@ def main():
         if l.startswith('FX_ERRORS') and l.strip()!='FX_ERRORS []':print(l)
         if 'PAGEERR' in l or 'CONSOLE' in l:print(l)
     for i,t in enumerate(ts):
+        if outs[i] is None:continue
         f=f"{tmp}/t{t.rjust(5,'0')}.png";dst=f"{x.out}/{outs[i]}.jpg"
         Image.open(f).convert('RGB').save(dst,quality=88);print(dst)
 main()

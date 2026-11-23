@@ -32,9 +32,9 @@ vista (sky, ridge colours, river, trees, ground) · cloudscape · cosmos (rgb, s
 
 ## Characters (coded rigs; names from engine_vocab: cast)
 brahma (3 visible faces + `hd` sprouting faces), vishnu, hayagriva, vishnu_rest (reclining on Shesha), shiva, daksha, manu, narada (veena), adishakti, brahmi, sati, prasuti, diti, danu, asikli,
-kashyapa, indra, surya, chandra, kumara (child sage), jaya, vijaya, villager, villager_w, madhu, kaitabha, hiranyaksha, hiranyakashipu, ravana, rishi0-6, harihara, ardha (Ardhanarishvara), boar, swan.
+kashyapa, indra, surya, chandra, agni, vayu, kumara (child sage), jaya, vijaya, villager, villager_w, madhu, kaitabha, hiranyaksha, hiranyakashipu, ravana, rishi0-6, harihara, ardha (Ardhanarishvara), boar, swan, ketaki (speaking flower: emo/mood/talk, `wither` or `wc`/`wd`, `fall`).
 Figure keys: `x,y` (feet), `s`, `flip` (1 faces right, -1 left), `pose`, `head:true` (bust close-up), `aura`, `dark`, `fo/fd` fade-out.
-- Poses: stand namaste open point raise plead bow hold flee lunge sit sitpray lie lie2 (+ shiva calm/rage). Blend on a word: `acts:[{c, pose, d, e:'spring'|'antic', emo, mood, tilt}]`.
+- Poses: stand namaste open point rpoint raise plead bow hold flee lunge sit sitpray lie lie2 (+ shiva calm/rage). Shiva points with his LEFT hand (flip:-1 to point right); rpoint = furious lunge + point. Blend on a word: `acts:[{c, pose, d, e:'spring'|'antic', emo, mood, tilt}]`.
 - Faces: `emo` preset = calm joy anger rage sad grief surprise fear shame pride doubt devotion (on the figure or on an act). Fine control `mood:{smile, sad, surp, anger, mouth, lx, ly, blink, turn}`
   (lx/ly = where the eyes look -1..1, turn = head three-quarter turn -1..1). Anger = red eyes + heavy brows + frown (no fangs). Sad adds a tear.
 - Movement: `walk:<speed>` + `vx` (walk while drifting) · `walkTo:{x, c, d, sp}` walks to x starting on cue c, legs swing only while moving
