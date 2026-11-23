@@ -41,15 +41,6 @@ def cmd_new(a):
     if os.path.exists(d):sys.exit('exists')
     os.makedirs(d)
     open(d+'/script.md','w',encoding='utf-8').write(f"# एपिसोड {a.n} — {a.title}\n\n**अनुमानित समय:** 8–9 मिनट\n**स्रोत:** (story numbers from source/)\n\n---\n\n**B01** [धीमे, रहस्यमयी]\n(Hook: 3–4 short lines; end on a question/danger.)\n\n**B02** [भव्य]\n\n---\n*समाप्त*\n")
-    open(d+'/shots.py','w').write('''import os,sys
-sys.path.insert(0,os.path.join(os.path.dirname(__file__),'..','..','studio'))
-from shotkit import *
-HERE=os.path.dirname(os.path.abspath(__file__));f=Film();add=f.add
-# add(beat, spoken-word trigger | seconds, scene-dict, grade, cam=None, draw='scene', cues=[words], shake=n, dx=dissolve_s)
-# scene = {'bg':bg('cel'),'figs':[F('brahma',CX,700,1.5)],'fx':[{'t':'name','s':'ब्रह्मा','x':CX,'y':200,'c':0}]}
-# see guides/DIRECTION.md for the shot grammar and library/CHARACTERS.md for the cast
-print(f.save(os.path.join(HERE,'shots.json')),'shots')
-''')
     open(d+'/feedback.md','w').write('# Feedback for ep'+a.n+'\n(use: studio.py feedback '+a.n+' "text")\n')
     print('created',d)
 def cmd_check(a):

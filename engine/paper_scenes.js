@@ -193,7 +193,10 @@ const fogO=o=>({blur:(o.fog?4:9)*(1-(o.fog||0)*.6),sy:(o.fog?2:5),lw:o.fog>.5?1:
 const OBJ={
  tree(x,y,s,t,o){const kind=o.kind||'round',lc=o.col||'#2f6a3c',tc=FOGC(o.trunk||'#4a2e1c',o),sw=Math.sin(t*.8+x*.01)*2*s,O=fogO(o);
   if(kind==='palm'){cutP(()=>{ctx.moveTo(x-6*s,y);ctx.quadraticCurveTo(x+14*s,y-120*s,x+sw+6*s,y-230*s);ctx.lineTo(x+sw+16*s,y-228*s);ctx.quadraticCurveTo(x+24*s,y-120*s,x+8*s,y);ctx.closePath()},vg(y-230*s,y,[shd(tc,1.3),tc]),O);
-   for(let i=0;i<7;i++){const an=-PI/2+(i-3)*.45,L=(90+(i%2)*25)*s,hx=x+sw+11*s,hy=y-230*s;cutP(()=>{ctx.moveTo(hx,hy);ctx.quadraticCurveTo(hx+Math.cos(an-.3)*L*.6,hy+Math.sin(an-.3)*L*.6-20*s,hx+Math.cos(an)*L,hy+Math.sin(an)*L+30*s);ctx.quadraticCurveTo(hx+Math.cos(an+.2)*L*.5,hy+Math.sin(an+.2)*L*.5,hx,hy)},FOGC(i%2?lc:shd(lc,1.2),o),O)}return}
+   const hx0=x+sw+11*s,hy0=y-230*s;for(let i=0;i<8;i++){const an=-PI/2+(i-3.5)*.42+(i<4?-.25:.25),L=(95+(i%2)*25)*s,ex=hx0+Math.cos(an)*L,ey=hy0+Math.sin(an)*L+Math.abs(Math.cos(an))*L*.45,nx=-Math.sin(an)*14*s,ny=Math.cos(an)*14*s,mx=(hx0+ex)/2,my=(hy0+ey)/2-10*s;
+    cutP(()=>{ctx.moveTo(hx0,hy0);ctx.quadraticCurveTo(mx+nx,my+ny,ex,ey);ctx.quadraticCurveTo(mx-nx,my-ny,hx0,hy0);ctx.closePath()},FOGC(i%2?lc:shd(lc,1.2),o),O);
+    ctx.strokeStyle=`rgba(20,40,20,${.4*(1-(o.fog||0))})`;ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(hx0,hy0);ctx.quadraticCurveTo(mx,my,ex,ey);ctx.stroke()}
+   cutP(()=>ctx.arc(hx0,hy0+4*s,9*s,0,TAU),FOGC('#6a4a2a',o),{sh:0,lw:1});return}
   if(kind==='pine'){cutP(()=>ctx.rect(x-6*s,y-40*s,12*s,40*s),tc,O);for(let k=0;k<4;k++){const yy=y-40*s-k*42*s,w=(70-k*14)*s;cutP(()=>{ctx.moveTo(x-w+sw*k*.3,yy);ctx.lineTo(x+sw*k*.5,yy-70*s);ctx.lineTo(x+w+sw*k*.3,yy);ctx.closePath()},vg(yy-70*s,yy,[FOGC(shd(lc,1.25),o),FOGC(shd(lc,.8),o)]),O)}return}
   // round / banyan: trunk with two branches, three to five layered crowns, banyan adds hanging roots
   const ban=kind==='banyan',H_=(ban?190:210)*s,cw=ban?1.5:1;

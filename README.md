@@ -1,44 +1,24 @@
-> **Start with [WORKFLOW.md](WORKFLOW.md)** — the only supported way to make an episode. Older notes below may be outdated.
-
 # Mahagatha Studio
 
-Free, automated pipeline that turns Puranic stories (book "Mahagatha") into dramatic Hindi animated videos:
-**plan → script → voiceover files → direction (shot list) → frames → QA → render (1080p / 4K) → learn.**
-Everything runs on free tools: Python, Node + headless Chromium (Playwright), ffmpeg, edge-tts (guide voice).
+Hindi-narrated 2D paper-cut animated Puranic videos, drawn entirely by code (headless Chromium canvas → ffmpeg).
 
-## One-time setup
+- **How to make an episode:** [WORKFLOW.md](WORKFLOW.md) (the only supported way) · start prompt: [guides/PROMPT_TEMPLATE.md](guides/PROMPT_TEMPLATE.md)
+- **What the engine can draw:** [library/ENGINE_CAPABILITIES.md](library/ENGINE_CAPABILITIES.md) (names: `python3 studio/engine_vocab.py`)
+- **Shot brief schema:** [guides/SHOT_BRIEF.md](guides/SHOT_BRIEF.md) · script rules: [guides/SCRIPT_STYLE.md](guides/SCRIPT_STYLE.md) · render steps for Sonnet: [guides/RENDER.md](guides/RENDER.md)
+
+## Setup (once)
 ```bash
-pip install edge-tts pillow playwright markdown && playwright install chromium
-npm install            # fonts
-sudo apt install ffmpeg
+pip install pillow numpy && npm install -g playwright && npx playwright install chromium   # + ffmpeg
 ```
-
-## The daily loop (what you and I each do)
-| # | Step | Command | Who |
-|---|------|---------|-----|
-| 1 | Plan episode from the next stories | edit `library/EPISODE_PLAN.md` | Claude |
-| 2 | Scaffold | `python3 studio/studio.py new 03 "title"` | Claude |
-| 3 | Write script (fresh Hindi, beats + emotion cues) | `episodes/ep03/script.md` | Claude |
-| 4 | Lint script (8–10 min rule, beats, cues) | `studio.py check 03` | Claude |
-| 5 | Voiceover files: tagged (AI voice) + clean (you read) | `studio.py voice-docs 03` → `voiceovers/` | Claude → you |
-| 6 | Your recording | save as `voiceovers/ep03.mp3` | **You** |
-| 7 | Guide voice + word timings (stand-in) | `studio.py tts 03` | auto |
-| 8 | Direct: shot list from spoken-word triggers | `episodes/ep03/shots.py` → `studio.py shots 03` | Claude |
-| 9 | Look at every shot | `studio.py stills 03` → `build/ep03/sheets/` | Claude |
-| 10 | Automated QA gate | `studio.py qa 03` | auto |
-| 11 | Render | `studio.py render 03` (`--res 4k`) | auto |
-| 12 | QA on the video (freezes/black) | `studio.py qa 03 --video renders/ep03_1080p.mp4` | auto |
-| 13 | Your feedback → system memory | `studio.py feedback 03 "…" --cat visual` | you/Claude |
-
-The system improves itself through **three ratchets** (see ARCHITECTURE.md): the feedback log → backlog, the QA rules,
-and the versioned asset gallery.
 
 ## Layout
 ```
-studio/      CLI (studio.py), TTS, renderer, QA, gallery, shot toolkit
-engine/      the film engine: art.js (figures, textures), scenes.js (backgrounds, FX), main.js (timeline, subtitles, camera)
-episodes/    epNN/{script.md, shots.py, episode.json, feedback.md}
-library/     CHARACTERS.md, BACKLOG.md, rules.json, feedback.jsonl, CHANGELOG.md, gallery/vX.Y.Z/
-guides/      SCRIPT_STYLE, DIRECTION, CINEMATOGRAPHY, RUNBOOK (the craft rules)
-source/      book text by story; voiceovers/ → scripts for you + your recordings
+.claude/agents/  producer, script-editor (sonnet) · character-designer, cinematographer, scene-designer, action-director, effects-designer (opus) · qa-reviewer (sonnet)
+engine/          the film engine (see ENGINE_CAPABILITIES.md "Files"); studio/build.py joins it into one HTML page
+studio/          pipeline scripts: studio.py (new/check/align/qa), import_timestamps, hide_unspoken, make_timeline, cast_sheet,
+                 validate_brief, brief_to_plan, build_shots, ep_frames, render_chunks, make_srt_ts, engine_vocab
+episodes/epNN/   script.md, episode.json, cast.json, briefs.json, shot_plan.json, shots.json, qa_report.json, STATUS.md, NEXT.md, APPROVED
+build/epNN/      voice pieces, timings, render chunks (not edited by hand)
+library/         ENGINE_CAPABILITIES.md, CHARACTERS.md, character sheets, plans (EPISODE_PLAN, SERIES_PLAN), feedback
+source/          the book, one file per story · deliverables/ scripts for the owner · renders/ finished videos
 ```

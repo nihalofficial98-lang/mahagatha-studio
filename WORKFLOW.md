@@ -1,27 +1,26 @@
-# Mahagatha Studio — how an episode is made (one way, nothing else)
+# Mahagatha Studio — how an episode is made (the only way)
 
-Style: bright, clear, layered paper-cut look (the EP6 look). **All art is drawn by code** — no AI-generated images anywhere.
+Output: a Hindi-narrated 2D paper-cut Puranic video (bright EP6 look), 1280x720 plan rendered to 1080p, subtitles = exactly what the owner says.
+**All art is code** (no AI images). Opus designs; Sonnet runs mechanical steps from written instructions. Agents live in `.claude/agents/`.
+To start: paste the prompt in `guides/PROMPT_TEMPLATE.md`.
 
-## Steps
-1. **Script** — Claude writes the verified script and the emotion-tagged voiceover script (`deliverables/EPNN_…`).
-2. **Voice + timeline** — the owner records the voiceover and sends the **mp3 and the word-timestamp JSON**. Nothing starts before both are in.
-3. **Align** — `python3 studio/import_timestamps.py NN voiceovers/epNN_voice.mp3 <timeline.json>`, then `python3 studio/hide_unspoken.py NN <timeline.json>`
-   (script lines the narrator skipped are hidden, sentences he added are shown, so subtitles = exactly what is spoken).
-4. **Characters first (Opus)** — build/adjust the cast specs the episode needs (`engine/v2_cast.js` `CAST`, `engine/paper_kit.js`). Owner approves the character sheet.
-5. **Frames (Opus)** — one frame per shot: `python3 studio/ep_frames.py NN --out library/showcase/epNN_frames`. Story beats must read visually: background, characters, expression and effects change with the narration. Owner approves the frames.
-6. **Video (Sonnet)** — only after the owner's go-ahead. Check subtitles on a few frames first. Render in resumable chunks (see below).
-7. **Deliver** — `renders/epNN_1080p.mp4` + `.srt`.
+| # | Step | Who (model) | Command / output | Gate |
+|---|------|-------------|------------------|------|
+| 1 | Script, emotion-tagged script, hook titles | script-editor (sonnet) | `episodes/epNN/script.md`, `deliverables/EPNN_*` ; `python3 studio/studio.py check NN` | script check passes |
+| 2 | **Owner records** the voice and sends the **mp3 + word-timestamp JSON** | owner | — | nothing below starts without BOTH files |
+| 3 | Align voice + subtitles | producer (sonnet) | `python3 studio/studio.py align NN <voice.mp3> --timestamps <words.json>` → `python3 studio/hide_unspoken.py NN <words.json>` → `python3 studio/make_timeline.py NN` | `build/epNN/timings.json`, `episodes/epNN/voice_timeline.md` exist |
+| 4 | Characters first | character-designer (opus) | `episodes/epNN/cast.json`, `python3 studio/cast_sheet.py <names>` → `library/characters/sheets/` | **owner approves the sheets** |
+| 5 | Shot briefs | cinematographer → scene-designer → action-director → effects-designer (opus) | `episodes/epNN/briefs.json` (schema `guides/SHOT_BRIEF.md`); `python3 studio/validate_brief.py NN` | 0 errors |
+| 6 | Frames (one per shot) | producer (sonnet) runs, qa-reviewer (sonnet) checks, Opus agents fix | `python3 studio/brief_to_plan.py NN` → `python3 studio/build_shots.py NN` → `python3 studio/ep_frames.py NN` → `library/showcase/epNN_frames/`; `episodes/epNN/qa_report.json` | qa pass, then **owner approves the frames** → producer writes `episodes/epNN/APPROVED` |
+| 7 | Video | Sonnet, following `episodes/epNN/NEXT.md` (from `guides/RENDER.md`) | `python3 studio/render_chunks.py NN` → `renders/epNN_1080p.mp4`; subtitles `renders/epNN.srt` | only with APPROVED |
+| 8 | Deliver | producer | mp4 + srt + hook titles | — |
 
-## Render rules (so nothing is lost)
-- 1080p, 30 fps, 4 workers. ~6 h for 8 min on this container; run as a normal background task (`timeout 7200000`) and relaunch when it stops. Detached processes die when the container idles.
-- Render in 600-frame chunks, each saved when finished (`build/epNN/ch2/chNN.mp4`), then concat + mux the voice. Never re-render finished chunks.
-- Do not poll; one status line when asked.
+## How to tell where we are
+no script.md → 1 · no `build/epNN/timings.json` → 2/3 · no cast.json or sheets not approved → 4 · briefs.json invalid → 5 · no qa pass or no APPROVED → 6 · APPROVED but no `renders/epNN_1080p.mp4` → 7.
 
 ## Rules
-- No Gemini/AI images. Effects, backgrounds, characters are code.
-- Subtitle text = what the audio says (from the JSON), not just the script.
-- Never start a long job without every input (script, mp3, timeline JSON, approved frames).
-
-## Known TODO before the next episode
-- EP6 shots still reference 102 `fximg` effects (library/fx images were Gemini and are now deleted): replace with code-drawn paper-cut effects in `engine/paper_scenes.js` and drop the painted-image code from `engine/v2_scenes.js`.
-- Engine pass with Opus: walking, eyes/brows/expressions and scene-changing backgrounds as one reusable system.
+- Never start a long job (render) without every input: shots.json, timings.json, the voice pieces, APPROVED. `render_chunks.py` refuses otherwise.
+- Subtitle text = the words in the owner's audio (import_timestamps + hide_unspoken), never just the script.
+- Every frame: story matches the subtitle, faces above the subtitles, ≥ 2 depth planes, nothing flat or empty (qa-reviewer checklist).
+- Only use names printed by `python3 studio/engine_vocab.py`; anything missing is built by Opus first (engine work).
+- No polling of long jobs; one status line when asked. Render runs as a normal background task and resumes from finished chunks.

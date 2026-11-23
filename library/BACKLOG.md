@@ -11,11 +11,10 @@ Work top-down. When fixed: set status to `done` in library/feedback.jsonl and ad
 - [ep03] Character design rules (owner): (1) identity cues must be instantly readable (e.g. Shiva: tiger-skin wrap, third eye, tripundra, crescent moon ONLY on hair, serpent, trident+damaru). (2) Anger must come from eyes+brows+mouth only: glowing RED eyes, heavy lowered brows, plain frown the SAME width as the smile. NO fangs, NO open screaming mouth, NO face lines/creases/cheek hollows (they read as monkey). (3) Hair in anger stays natural, no antler/flying ropes. (4) No extra ornaments the owner did not ask for (Ganga ribbon removed). (5) Costume must cover the body in every pose (skirt widens with leg spread). (6) Cinematic muted palette, light rim, grain, vignette like the reference video. (7) Final length of every video: 8-10 min.
 - [ep03] Character PROPORTION rule (owner): all characters must look like proper adult heroic figures, about 7 heads tall, smaller head, long torso and legs. NO bobble-head, NO chibi, NO kid versions. Gemini prompts must always say '7 heads tall, heroic proportions, NOT chibi'. Style = simple geometric flat vector with round joint discs; characters must stay fully animatable.
 
-## Standing roadmap (engine improvements, in priority order)
-1. **Quadruped rig** (bull, later cow/deer/lion/Garuda): body, neck, head, horns, hump, 4 two-segment legs with walk cycle.
-2. **Face expressiveness**: cheeks/teeth/tears states, side-profile heads, lip-sync-like mouth flap driven by word timings.
-3. **Walk/run cycles** for biped figures (currently static poses + sway).
-4. **Backgrounds**: forest, river, mountain-top ashram, battlefield, ocean-of-milk, Vaikuntha, Kailash — each with parallax depth + particles.
-5. **Own-voice alignment**: run Whisper (faster-whisper) on voiceovers/epNN.mp3 to regenerate word timings, then re-render with the same shots.
-6. **Speed**: cache static layers per shot, render only changing layers; GPU runner for 4K (target < 20 min/episode).
-7. **Auto-QA by pixels**: text-safe-area measurement, face-visible check for named characters.
+## Standing roadmap (engine, priority order)
+1. Side/back views of characters (true turn instead of the paper flip `turnc`).
+2. Mouth shapes driven by word timings (closer to lip-sync than `talk`).
+3. More animals (cow, lion, deer, Garuda, serpent as a character) and a quadruped walk.
+4. More scene objects (river bank, ashram hut, chariot, throne room, battlefield) as paper OBJ entries.
+5. Speed: cache static layers per shot (render is ~6 h for 8 min on 4 cores).
+6. Pixel QA: automatic face-visible and subtitle-overlap check on rendered frames.

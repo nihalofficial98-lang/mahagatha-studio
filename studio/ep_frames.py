@@ -21,6 +21,7 @@ def parse_timeline(p):
         out.append({'beat':b['beat'],'audio':round(b['end']-b['start'],3),'duration':round(b['end']-b['start'],3),'words':ws})
     return out
 def main():
+    if 'NODE_PATH' not in os.environ:os.environ['NODE_PATH']=subprocess.run(['npm','root','-g'],capture_output=True,text=True).stdout.strip()   # playwright is installed globally
     ap=argparse.ArgumentParser();ap.add_argument('ep');ap.add_argument('--out');ap.add_argument('--only');ap.add_argument('--at',type=float,default=.55);ap.add_argument('--q',type=int,default=86);ap.add_argument('--scale',type=float,default=2.0)
     a=ap.parse_args();epd=f'{ROOT}/episodes/ep{a.ep}';work=f'{ROOT}/build/ep{a.ep}';os.makedirs(work,exist_ok=True)
     out=a.out or f'{ROOT}/library/showcase/ep{a.ep}_frames';os.makedirs(out,exist_ok=True)
