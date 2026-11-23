@@ -731,7 +731,8 @@
      "y": 550,
      "s": 0.259,
      "flip": 1,
-     "emo": "shame"
+     "emo": "shame",
+     "look": "brahma"
     },
     {
      "who": "vishnu",
@@ -865,7 +866,7 @@
     {
      "who": "brahma",
      "x": 470,
-     "y": 680,
+     "y": 610,
      "s": 0.38,
      "flip": 1,
      "emo": "surprise",
@@ -879,7 +880,7 @@
     {
      "who": "vishnu",
      "x": 810,
-     "y": 680,
+     "y": 610,
      "s": 0.38,
      "flip": -1,
      "emo": "surprise",
@@ -4298,7 +4299,8 @@
      "s": 0.7,
      "flip": -1,
      "emo": "fear",
-     "pose": "lie"
+     "pose": "lie",
+     "look": "vishnu"
     },
     {
      "who": "kaitabha",
@@ -4307,7 +4309,8 @@
      "s": 0.65,
      "flip": -1,
      "emo": "fear",
-     "pose": "lie"
+     "pose": "lie",
+     "look": "vishnu"
     }
    ],
    "effects": [
@@ -5347,7 +5350,7 @@
     {
      "who": "vishnu",
      "x": 640,
-     "y": 690,
+     "y": 670,
      "s": 0.45,
      "flip": 1,
      "emo": "surprise",
@@ -5413,7 +5416,7 @@
    },
    "duration": 1.52,
    "narration": "गरजते समुद्र",
-   "meaning": "Roaring oceans.",
+   "meaning": "Inside Brahma Vishnu sees roaring oceans.",
    "why": "Inside Brahma: dark-blue waves rise and crash over rocks, spray flying; Vishnu small on a rock watching.",
    "camera": {
     "shot": "wide",
@@ -5651,7 +5654,7 @@
     {
      "who": "vishnu",
      "x": 900,
-     "y": 690,
+     "y": 620,
      "s": 0.38,
      "flip": -1,
      "emo": "surprise",
@@ -5846,7 +5849,8 @@
      "emo": "calm",
      "engine": {
       "glide": 1
-     }
+     },
+     "look": "villager"
     },
     {
      "who": "vishnu",
@@ -6101,7 +6105,7 @@
     {
      "who": "vishnu",
      "x": 320,
-     "y": 690,
+     "y": 670,
      "s": 0.45,
      "flip": 1,
      "emo": "surprise",
@@ -7090,7 +7094,7 @@
     {
      "who": "brahma",
      "x": 640,
-     "y": 690,
+     "y": 650,
      "s": 0.42,
      "flip": 1,
      "emo": "surprise",
@@ -7132,7 +7136,7 @@
    },
    "duration": 3.02,
    "narration": "दस लाख आकाशगंगाएँ",
-   "meaning": "A million galaxies.",
+   "meaning": "Inside Vishnu there are a million galaxies.",
    "why": "Spiral galaxies turn across the whole frame, near and far, in violet and gold.",
    "camera": {
     "shot": "wide",
@@ -7229,7 +7233,7 @@
      "blend": "lighter",
      "spin": 0.5,
      "par": 0.3,
-     "meaning": "a galaxy"
+     "meaning": "one spiral galaxy turning"
     },
     {
      "k": "energy_swirl",
@@ -7356,7 +7360,7 @@
     {
      "who": "brahma",
      "x": 300,
-     "y": 690,
+     "y": 670,
      "s": 0.45,
      "flip": 1,
      "emo": "surprise",
@@ -7560,7 +7564,7 @@
      "y": 240,
      "r": 90,
      "word": "बीता",
-     "meaning": "time past"
+     "meaning": "the clock of time past"
     },
     {
      "k": "clock",
@@ -8099,7 +8103,7 @@
     {
      "who": "brahma",
      "x": 640,
-     "y": 690,
+     "y": 650,
      "s": 0.4,
      "flip": 1,
      "emo": "surprise",
@@ -8494,7 +8498,7 @@
     {
      "who": "brahma",
      "x": 640,
-     "y": 700,
+     "y": 680,
      "s": 0.6,
      "flip": 1,
      "emo": "surprise",
@@ -9548,7 +9552,7 @@
      "s": 0.6,
      "flip": -1,
      "emo": "anger",
-     "look": 0
+     "look": 10
     },
     {
      "who": "vishnu",
@@ -9898,7 +9902,7 @@
      "r": 0
     },
     "shake": 0,
-    "motivation": "push into the gap where something will appear"
+    "motivation": "push into the gap where the column will appear"
    },
    "focus": {
     "subject": "the gap",
@@ -10186,12 +10190,12 @@
    },
    "duration": 2.1,
    "narration": "सोने जैसा दहकता हुआ",
-   "meaning": "Glowing like gold.",
+   "meaning": "The column of fire glows like molten gold.",
    "why": "Insert on the column: rolling golden flames, embers streaming upward, divine rays.",
    "camera": {
     "shot": "insert",
     "lens": "tele",
-    "move": "tilt_up",
+    "move": "crane_up",
     "from": {
      "z": 1.25,
      "x": 0,
@@ -10205,7 +10209,7 @@
      "r": 0
     },
     "shake": 0,
-    "motivation": "tilt up the glowing gold fire"
+    "motivation": "crane up the glowing gold fire"
    },
    "focus": {
     "subject": "pillar of fire",
@@ -10407,7 +10411,7 @@
     {
      "who": "brahma",
      "x": 420,
-     "y": 690,
+     "y": 630,
      "s": 0.45,
      "flip": 1,
      "emo": "surprise",
@@ -10436,7 +10440,7 @@
     {
      "who": "vishnu",
      "x": 860,
-     "y": 690,
+     "y": 630,
      "s": 0.45,
      "flip": -1,
      "emo": "surprise",
@@ -10612,7 +10616,7 @@
    },
    "duration": 1.48,
    "narration": "सब ठिठक गए",
-   "meaning": "Everyone froze.",
+   "meaning": "Everyone froze in front of the column.",
    "why": "Brahma, Vishnu and the devas stand still before the column, all faces in wide-eyed surprise.",
    "camera": {
     "shot": "wide",
@@ -11089,7 +11093,7 @@
    },
    "duration": 1.88,
    "narration": "ब्रह्मा उसकी चोटी",
-   "meaning": "Brahma its peak.",
+   "meaning": "Brahma will search for its peak.",
    "why": "Brahma at the column looks up and points to its top, a light glowing far above on 'चोटी'.",
    "camera": {
     "shot": "low_angle",
@@ -11388,7 +11392,7 @@
    },
    "duration": 1.32,
    "narration": "दोनों मान गए",
-   "meaning": "Both agreed.",
+   "meaning": "Both Brahma and Vishnu agreed to the contest.",
    "why": "Brahma and Vishnu nod once to each other with a short bow on 'मान'.",
    "camera": {
     "shot": "medium",
@@ -11670,7 +11674,8 @@
      },
      "engine_cues": {
       "fo": "वराह"
-     }
+     },
+     "look": "boar"
     },
     {
      "who": "boar",
@@ -11685,7 +11690,8 @@
      },
      "engine_cues": {
       "ac": "रूप"
-     }
+     },
+     "look": "vishnu"
     }
    ],
    "effects": [
@@ -11819,7 +11825,8 @@
      },
      "engine_cues": {
       "mc": "धरती"
-     }
+     },
+     "look": 640
     }
    ],
    "effects": [
@@ -11977,7 +11984,8 @@
      },
      "engine_cues": {
       "fo": "हंस"
-     }
+     },
+     "look": "swan"
     },
     {
      "who": "swan",
@@ -11992,7 +12000,8 @@
      },
      "engine_cues": {
       "ac": "रूप"
-     }
+     },
+     "look": "brahma"
     }
    ],
    "effects": [
@@ -12145,7 +12154,8 @@
       "rot": -0.25,
       "vx": 40,
       "vy": -50
-     }
+     },
+     "look": 640
     }
    ],
    "effects": [
@@ -12289,7 +12299,8 @@
      "engine": {
       "rot": -0.2,
       "vy": -30
-     }
+     },
+     "look": 640
     }
    ],
    "effects": [
@@ -12419,7 +12430,8 @@
      "pose": "dig",
      "engine": {
       "vx": -30
-     }
+     },
+     "look": 640
     }
    ],
    "effects": [
@@ -12444,7 +12456,7 @@
    },
    "duration": 1.08,
    "narration": "ढूँढते रहे",
-   "meaning": "kept searching,",
+   "meaning": "Brahma kept searching up in the sky,",
    "why": "Above, the swan flies on through endless clouds, wings beating.",
    "camera": {
     "shot": "medium",
@@ -12563,7 +12575,8 @@
      "engine": {
       "rot": -0.18,
       "vx": 40
-     }
+     },
+     "look": 640
     }
    ],
    "effects": [],
@@ -12685,7 +12698,8 @@
      "engine": {
       "rot": -0.3,
       "vy": -20
-     }
+     },
+     "look": 640
     }
    ],
    "effects": [
@@ -13093,7 +13107,8 @@
       "glide": 1,
       "rot": 0.12,
       "vy": 10
-     }
+     },
+     "look": 640
     }
    ],
    "effects": [],
@@ -13227,12 +13242,13 @@
      "engine": {
       "rot": -0.25,
       "glide": 1
-     }
+     },
+     "look": 640
     },
     {
      "who": "ketaki",
      "x": 900,
-     "y": 140,
+     "y": 160,
      "s": 0.25,
      "flip": 1,
      "emo": "calm",
@@ -13243,7 +13259,8 @@
      },
      "engine_cues": {
       "mc": "गिरता"
-     }
+     },
+     "look": "swan"
     }
    ],
    "effects": [
@@ -13269,7 +13286,7 @@
    },
    "duration": 1.9,
    "narration": "एक केतकी का फूल",
-   "meaning": "A ketaki flower.",
+   "meaning": "The falling thing is a ketaki flower.",
    "why": "Close on the ketaki tumbling in the air, cream-gold bracts and its little face, its name appearing as spoken.",
    "camera": {
     "shot": "insert",
@@ -13540,7 +13557,8 @@
      "emo": "calm",
      "engine": {
       "rot": -0.1
-     }
+     },
+     "look": 640
     },
     {
      "who": "ketaki",
@@ -13548,7 +13566,8 @@
      "y": 412,
      "s": 0.27,
      "flip": 1,
-     "emo": "surprise"
+     "emo": "surprise",
+     "look": "swan"
     }
    ],
    "effects": [
@@ -13968,7 +13987,7 @@
     {
      "who": "ketaki",
      "x": 600,
-     "y": 300,
+     "y": 310,
      "s": 0.6,
      "flip": 1,
      "emo": "fear",
@@ -13979,7 +13998,8 @@
      },
      "engine_cues": {
       "mc": "फिसल"
-     }
+     },
+     "look": 640
     }
    ],
    "effects": [
@@ -14289,7 +14309,7 @@
    },
    "duration": 1.84,
    "narration": "ऊपरी ऊँचाइयाँ",
-   "meaning": "Upper heights.",
+   "meaning": "The words upper heights echo in Brahma’s mind.",
    "why": "The words 'ऊपरी ऊँचाइयाँ' float in gold above Brahma's head as his eyes look up greedily.",
    "camera": {
     "shot": "extreme_close",
@@ -14537,7 +14557,8 @@
      },
      "engine_cues": {
       "mc": "गिरता"
-     }
+     },
+     "look": 640
     }
    ],
    "effects": [],
@@ -14685,7 +14706,8 @@
      "y": 535,
      "s": 0.315,
      "flip": 1,
-     "emo": "calm"
+     "emo": "calm",
+     "look": "brahma"
     }
    ],
    "effects": [
@@ -14848,7 +14870,8 @@
      "y": 528,
      "s": 0.351,
      "flip": 1,
-     "emo": "fear"
+     "emo": "fear",
+     "look": "brahma"
     }
    ],
    "effects": [],
@@ -14964,7 +14987,8 @@
      "emo": "fear",
      "mood": {
       "ly": -0.4
-     }
+     },
+     "look": 640
     }
    ],
    "effects": [
@@ -15140,7 +15164,8 @@
      "y": 528,
      "s": 0.351,
      "flip": 1,
-     "emo": "shame"
+     "emo": "shame",
+     "look": "brahma"
     }
    ],
    "effects": [
@@ -15284,7 +15309,8 @@
      "y": 536,
      "s": 0.333,
      "flip": 1,
-     "emo": "fear"
+     "emo": "fear",
+     "look": "brahma"
     }
    ],
    "effects": [
@@ -15450,10 +15476,10 @@
    "camera": {
     "shot": "two_shot",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_left",
     "from": {
-     "z": 1.0,
-     "x": 0,
+     "z": 1.05,
+     "x": 30,
      "y": 0,
      "r": 0
     },
@@ -15464,7 +15490,7 @@
      "r": 0
     },
     "shake": 0,
-    "motivation": "push in as he presses the flower"
+    "motivation": "slide in as he presses the flower"
    },
    "focus": {
     "subject": "brahma and ketaki",
@@ -15724,7 +15750,8 @@
      "emo": "fear",
      "mood": {
       "ly": -0.6
-     }
+     },
+     "look": "brahma"
     }
    ],
    "effects": [],
@@ -15992,7 +16019,7 @@
    },
    "duration": 1.58,
    "narration": "मैंने तुम्हें रचा है",
-   "meaning": "I created you.",
+   "meaning": "Brahma claims: I created you, so you owe me.",
    "why": "Low angle on Brahma towering over the flower, a stern proud face with a hand on his chest.",
    "camera": {
     "shot": "low_angle",
@@ -16277,7 +16304,8 @@
      "emo": "shame",
      "mood": {
       "lx": 0.7
-     }
+     },
+     "look": "brahma"
     }
    ],
    "effects": [],
@@ -16292,7 +16320,7 @@
    },
    "duration": 1.58,
    "narration": "लेकिन झूठ",
-   "meaning": "But a lie?",
+   "meaning": "The ketaki protests: but that would be a lie?",
    "why": "Extreme close on the ketaki: sad eyes brimming, its petals trembling.",
    "camera": {
     "shot": "extreme_close",
@@ -16554,7 +16582,8 @@
      "y": 533,
      "s": 0.34,
      "flip": 1,
-     "emo": "fear"
+     "emo": "fear",
+     "look": "brahma"
     }
    ],
    "effects": [
@@ -16580,7 +16609,7 @@
    },
    "duration": 1.54,
    "narration": "केतकी मान गई",
-   "meaning": "The ketaki agreed.",
+   "meaning": "The ketaki gives in and agrees to lie.",
    "why": "The ketaki lowers its face in shame and gives a small nod; its glow dims.",
    "camera": {
     "shot": "close",
@@ -16713,7 +16742,7 @@
    },
    "duration": 1.46,
    "narration": "दोनों नीचे उतरे",
-   "meaning": "Both came down.",
+   "meaning": "Brahma and the ketaki came down together.",
    "why": "Brahma, holding the flower, descends through dusky clouds beside the fire column.",
    "camera": {
     "shot": "wide",
@@ -16853,7 +16882,8 @@
      },
      "engine_cues": {
       "mc": "नीचे"
-     }
+     },
+     "look": "brahma"
     }
    ],
    "effects": [],
@@ -17863,7 +17893,8 @@
      "y": 526,
      "s": 0.333,
      "flip": 1,
-     "emo": "shame"
+     "emo": "shame",
+     "look": "brahma"
     },
     {
      "who": "vishnu",
@@ -18171,7 +18202,8 @@
      "y": 540,
      "s": 0.303,
      "flip": 1,
-     "emo": "shame"
+     "emo": "shame",
+     "look": "vishnu"
     }
    ],
    "effects": [],
@@ -18310,7 +18342,8 @@
      "y": 557,
      "s": 0.266,
      "flip": 1,
-     "emo": "fear"
+     "emo": "fear",
+     "look": "brahma"
     },
     {
      "who": "vishnu",
@@ -19223,7 +19256,8 @@
      "y": 538,
      "s": 0.351,
      "flip": 1,
-     "emo": "fear"
+     "emo": "fear",
+     "look": "shiva"
     }
    ],
    "effects": [],
@@ -19500,7 +19534,8 @@
      "y": 560,
      "s": 0.259,
      "flip": 1,
-     "emo": "fear"
+     "emo": "fear",
+     "look": "brahma"
     },
     {
      "who": "vishnu",
@@ -19689,7 +19724,8 @@
      "y": 540,
      "s": 0.303,
      "flip": 1,
-     "emo": "shame"
+     "emo": "shame",
+     "look": "shiva"
     }
    ],
    "effects": [],
@@ -20129,7 +20165,7 @@
    },
    "duration": 1.66,
    "narration": "हर इंद्रिय से परे",
-   "meaning": "beyond every sense.",
+   "meaning": "The Jyotirlinga is beyond every sense.",
    "why": "Tiny Brahma and Vishnu look up at the blazing column with awe-struck faces.",
    "camera": {
     "shot": "high_angle",
@@ -20230,7 +20266,7 @@
     {
      "who": "brahma",
      "x": 420,
-     "y": 690,
+     "y": 680,
      "s": 0.5,
      "flip": 1,
      "emo": "surprise",
@@ -20244,7 +20280,7 @@
     {
      "who": "vishnu",
      "x": 860,
-     "y": 690,
+     "y": 680,
      "s": 0.5,
      "flip": -1,
      "emo": "surprise",
@@ -20496,7 +20532,7 @@
     {
      "who": "brahma",
      "x": 520,
-     "y": 690,
+     "y": 640,
      "s": 0.32,
      "flip": 1,
      "emo": "shame",
@@ -20507,7 +20543,7 @@
     {
      "who": "vishnu",
      "x": 760,
-     "y": 690,
+     "y": 640,
      "s": 0.32,
      "flip": -1,
      "emo": "sad",
@@ -21201,7 +21237,7 @@
    },
    "duration": 1.72,
    "narration": "कि तुमने धोखा दिया",
-   "meaning": "that you cheated.",
+   "meaning": "Brahma’s fear made him cheat.",
    "why": "Close on Brahma looking down in shame, a tear forming.",
    "camera": {
     "shot": "close",
@@ -22476,7 +22512,8 @@
      "emo": "fear",
      "mood": {
       "ly": -0.5
-     }
+     },
+     "look": "shiva"
     }
    ],
    "effects": [],
@@ -22742,7 +22779,8 @@
      },
      "engine_cues": {
       "wc": "नहीं"
-     }
+     },
+     "look": "shiva"
     },
     {
      "who": "shiva",
@@ -22890,13 +22928,14 @@
     {
      "who": "ketaki",
      "x": 980,
-     "y": 660,
+     "y": 650,
      "s": 0.4,
      "flip": 1,
      "emo": "sad",
      "engine": {
       "wither": 1
-     }
+     },
+     "look": "rishi2"
     }
    ],
    "effects": [
@@ -23055,7 +23094,8 @@
      "emo": "sad",
      "engine": {
       "wither": 1
-     }
+     },
+     "look": "rishi2"
     }
    ],
    "effects": [
@@ -23612,7 +23652,8 @@
      "y": 535,
      "s": 0.315,
      "flip": 1,
-     "emo": "shame"
+     "emo": "shame",
+     "look": "brahma"
     }
    ],
    "effects": [],
@@ -24379,7 +24420,7 @@
    },
    "duration": 1.88,
    "narration": "और अब यह झूठ",
-   "meaning": "and now this lie.",
+   "meaning": "And now, third, this lie with the ketaki.",
    "why": "The withered ketaki lies in Brahma's open hand, a dim grey light over it.",
    "camera": {
     "shot": "insert",
@@ -24645,7 +24686,7 @@
      "y": 160,
      "r": 70,
      "rgb": "255,140,120",
-     "meaning": "the lie"
+     "meaning": "the third fall: the lie"
     }
    ],
    "transition_in": "fade"
@@ -24949,21 +24990,21 @@
    "camera": {
     "shot": "ots",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pan_left",
     "from": {
-     "z": 1.0,
-     "x": 0,
+     "z": 1.05,
+     "x": 30,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.1,
-     "x": 0,
+     "z": 1.08,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "push in over the watcher’s shoulder"
+    "motivation": "pan over the watcher’s shoulder to his target"
    },
    "focus": {
     "subject": "daksha",
@@ -25750,7 +25791,7 @@
    },
    "duration": 1.24,
    "narration": "अब आप सोचिए",
-   "meaning": "Now you think.",
+   "meaning": "The narrator asks the viewer to think.",
    "why": "Calm dawn over the valley: Brahma stands still and looks out toward the viewer.",
    "camera": {
     "shot": "wide",
@@ -26039,7 +26080,8 @@
      "y": 533,
      "s": 0.34,
      "flip": 1,
-     "emo": "calm"
+     "emo": "calm",
+     "look": "brahma"
     }
    ],
    "effects": [],
@@ -26327,7 +26369,8 @@
      "y": 533,
      "s": 0.34,
      "flip": 1,
-     "emo": "shame"
+     "emo": "shame",
+     "look": "brahma"
     }
    ],
    "effects": [],
