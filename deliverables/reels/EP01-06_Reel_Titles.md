@@ -3,11 +3,11 @@ Format: first-frame text (2-4 words) | full title. Claims are checked against th
 
 1. Reel 1, story 05 (SCRIPTED): "Brahma & the First Woman" | How Did Brahma Create the First Man and Woman?
 2. Reel 2, story 06 (SCRIPTED): "Why Brahma Has 4 Heads" | Why Does Brahma Have Only Four Heads? (alt: Why Does Shiva Carry a Skull in His Hand?)
-3. Story 08: "Vishnu's Guards Chose Hate" | Why Did Jaya and Vijaya Choose to Be Vishnu's Enemies?
-4. Story 02: "Madhu and Kaitabha" | How Did Vishnu Defeat Madhu and Kaitabha?
-5. Story 07: "Narada's Maya Test" | Narada Asked Vishnu What Maya Is. Then This Happened
-6. Story 03: "Rudra: Born From Anger" | How Was Rudra Born From Brahma's Anger?
-7. Story 10 (spare): "Why Say Swaha?" | Why Does Every Offering to Agni End With Swaha?
+3. Story 08 (not yet scripted): "Vishnu's Guards Chose Hate" | Why Did Jaya and Vijaya Choose to Be Vishnu's Enemies?
+4. Reel 3, story 02 (SCRIPTED, Reel03): "Madhu and Kaitabha" | How Did Vishnu Defeat Madhu and Kaitabha?
+5. Reel 4, story 07 (SCRIPTED, Reel04): "Narada's Maya Test" | Narada Asked Vishnu What Maya Is. Then This Happened
+6. Reel 5, story 03 (SCRIPTED, Reel05): "Shiva Born From Anger" | How Was Shiva Born From Brahma's Anger?
+7. Reel 6, story 10 (SCRIPTED, Reel06): "Why Say Swaha?" | Why Does Every Offering to Agni End With Swaha?
 8. Story 09 (spare): "Daksha Cursed Narada" | Why Did Daksha Curse Narada?
 
 ---
