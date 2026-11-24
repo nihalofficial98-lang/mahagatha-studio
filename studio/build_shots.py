@@ -1,10 +1,11 @@
 """Build shots.json from a scene director's shot_plan.json, timed to the owner's voice (word timestamps). Validates as it builds.
  python3 studio/build_shots.py 04 [--plan episodes/ep04/shot_plan.json] [--out episodes/ep04/shots.json]
+ Reels: python3 studio/build_shots.py reel02 (reels/reel02/, timings from reels/build/reel02/; first shot gets the reel.json title card)
 Plan format: see library/ENGINE_CAPABILITIES.md ("Shot plan"). Hand-coded exceptions go in episodes/epNN/custom_shots.py and are referenced with {"custom": name, "args": {...}}."""
 import json,sys,os,re,shutil,importlib.util
 sys.path.insert(0,os.path.join(os.path.dirname(os.path.abspath(__file__))))
 from shotkit import Film
-import engine_vocab as V
+import engine_vocab as V,project as PJ
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));A=R+'/library/pilot/assets/'
 WHO=set(V.CAST)
 BGK=set(V.BG)
@@ -20,11 +21,11 @@ def load_actions(epdir):
     p=os.path.join(epdir,'action_plan.json')
     return json.load(open(p,encoding='utf-8')).get('shots',{}) if os.path.exists(p) else {}
 def main():
-    ep=sys.argv[1];plan_p=f'{R}/episodes/ep{ep}/shot_plan.json';out_p=f'{R}/episodes/ep{ep}/shots.json'
+    ep=sys.argv[1];E=PJ.edir(ep);BD=PJ.bdir(ep);VERT=PJ.fmt(ep)=='vertical';plan_p=f'{E}/shot_plan.json';out_p=f'{E}/shots.json'
     if '--plan' in sys.argv:plan_p=os.path.abspath(sys.argv[sys.argv.index('--plan')+1])
     if '--out' in sys.argv:out_p=os.path.abspath(sys.argv[sys.argv.index('--out')+1])
-    plan=json.load(open(plan_p,encoding='utf-8'));T=json.load(open(f'{R}/build/ep{ep}/timings.json',encoding='utf-8'));Bt=json.load(open(f'{R}/build/ep{ep}/beats.json',encoding='utf-8'))['scenes']
-    ACT=load_actions(f'{R}/episodes/ep{ep}')
+    plan=json.load(open(plan_p,encoding='utf-8'));T=json.load(open(f'{BD}/timings.json',encoding='utf-8'));Bt=json.load(open(f'{BD}/beats.json',encoding='utf-8'))['scenes']
+    ACT=load_actions(E)
     for s_ in (plan['shots'] if isinstance(plan,dict) else plan):
         a_=ACT.get(s_.get('id'))
         if not a_:continue
@@ -41,7 +42,7 @@ def main():
             n=len(seg['t'].split());ws=[(norm(w['text']),off+w['start'],off+w['end']) for w in t['words'][i:i+n]];i+=n;lines.append(ws);allw+=ws
         beats.append({'beat':sc['beat'],'start':off,'end':off+t['duration'],'lines':lines});off+=t['duration']
     total=off;errs=[];warns=[];film=Film();custom=None
-    cp=f'{R}/episodes/ep{ep}/custom_shots.py'
+    cp=f'{E}/custom_shots.py'
     if os.path.exists(cp):
         spec=importlib.util.spec_from_file_location('custom_shots',cp);custom=importlib.util.module_from_spec(spec);spec.loader.exec_module(custom)
     def beat_of(t):
@@ -118,7 +119,7 @@ def main():
             for e in('from','to'):
                 c=cam.get(e,{})
                 if not .9<=c.get('z',1)<=3.1 or abs(c.get('x',0))>220 or abs(c.get('y',0))>220 or abs(c.get('r',0))>.08:warns.append(f"{sid}: camera '{e}' looks extreme {c}")
-        if 'sc' in dir() and isinstance(sc,dict) and sc.get('figs') is not None:
+        if not VERT and 'sc' in dir() and isinstance(sc,dict) and sc.get('figs') is not None:   # 16:9 face rule (reels: validate_brief.py checks the 9:16 window)
             for ff in sc['figs']:
                 if ff.get('who') in (None,'img','boar','swan','bull'):continue
                 fs=ff.get('s',1);fx0,fy0=ff.get('x',640),ff.get('y',500)
@@ -133,6 +134,9 @@ def main():
         for x in (sc.get('fx',[])+sc.get('fxb',[])):
             if isinstance(x,dict) and x.get('c') is not None and x['c']>=ncue:warns.append(f"{sid}: effect '{x.get('t')}' fades in on cue c={x['c']} but the shot lists {ncue} cue word(s): it will stay invisible. Add the cue word to 'cues' (or drop 'c').")
         extra={k2:v for k2,v in s.items() if k2 not in RESERVED}
+        if VERT and k==0:   # reels: the first-frame title card from reel.json
+            M=PJ.meta(ep)
+            if M.get('title'):extra['title']={'text':M['title'],'sec':M.get('title_sec',2.5)}
         film.add(b['beat'],round(rel,2),sc,s.get('grade','cel'),cam=cam,cues=s.get('cues'),**{k2:v for k2,v in extra.items()})
         if s.get('cues'):
             for cw in s['cues']:

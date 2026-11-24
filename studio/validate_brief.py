@@ -1,5 +1,5 @@
 """Reject vague or incomplete SHOT BRIEFS before anything is built.
-  python3 studio/validate_brief.py NN [--brief episodes/epNN/briefs.json]
+  python3 studio/validate_brief.py NN [--brief episodes/epNN/briefs.json]    (reels: NN = reel02 / _test -> reels/<id>/briefs.json; 9:16 face rules)
 Exit 1 and one line per problem if the brief is not ready. Schema: guides/SHOT_BRIEF.md (one object per shot).
 Checks: every required field present and specific; words exist in the narration and the owner's voice timeline; 1.0-6.5 s;
 camera move from the list with a motivation; >= 2 depth layers (far/mid/near) with objects and atmospheric fade on far;
@@ -7,7 +7,7 @@ cast, poses, emotions, effects and layer objects exist in the engine; every char
 faces stay above the subtitle band; consecutive shots do not repeat the same camera move or the same frame."""
 import json,sys,os,re,argparse
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
-import engine_vocab as V
+import engine_vocab as V,project as PJ
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VAGUE=re.compile(r'\b(nice|beautiful|good|cool|something|stuff|etc|appropriate|interesting|some kind|various|as needed|tbd|todo)\b',re.I)
 SHOTS='wide medium close extreme_close insert two_shot ots pov low_angle high_angle top establishing'.split()
@@ -30,15 +30,26 @@ def face_cropped(f,cam):
         z=e.get('z',1);sh=abs(e.get('y',0));t_=360+(top-360)*z-sh;c_=360+(chin-360)*z+sh;cx=640+(x0-640)*z
         if t_<2 or c_>590 or cx<20 or cx>1260:return True
     return False
+def face_cropped_v(f,cam,vert):
+    """9:16 reels: the face must sit in the portrait window above the subtitle band (64% of the height); stack mode frames faces itself"""
+    if f.get('who') in ('boar','swan') or (vert or {}).get('mode')=='stack':return False
+    s=f.get('s',1);y0=f.get('y',500);vz=max(1,(vert or {}).get('z',1));h=720/vz
+    if f.get('head'):top=y0-104*s;chin=y0+75*s;fc=y0
+    else:fc=y0-300*s;top=fc-105*s;chin=fc+55*s
+    for e in (cam.get('from',{}),cam.get('to',{})):
+        z=e.get('z',1);sy=lambda v:360+(v-360-e.get('y',0))*z
+        w0=min(max(sy(fc)-(vert or {}).get('y',.36)*h,0),720-h) if vz>1 else 0
+        if (sy(top)-w0)/h<.003 or (sy(chin)-w0)/h>.64:return True
+    return False
 def load_timeline(ep):
-    p=f'{R}/build/ep{ep}/timings.json'
+    p=f'{PJ.bdir(ep)}/timings.json'
     if not os.path.exists(p):return None
     T=json.load(open(p,encoding='utf-8'));out=[];off=0.0
     for b in T:
         out+=[(norm(w['text']),off+w['start']) for w in b['words']];off+=b['duration']
     return out
 def check(brief,ep):
-    errs=[];warn=[];tl=load_timeline(ep);prev=None;prev2=None
+    errs=[];warn=[];tl=load_timeline(ep);prev=None;prev2=None;vert=PJ.fmt(ep)=='vertical'
     if tl is None:warn.append('no build/epNN/timings.json yet: start words not checked against the voice (run import_timestamps.py first)')
     ids=set()
     for i,s in enumerate(brief.get('shots',[])):
@@ -105,13 +116,19 @@ def check(brief,ep):
             for k_,w_ in (f.get('engine_cues') or {}).items():
                 if not has_word(nw,w_):errs.append(f"{sid}: {who} engine cue {k_} word '{w_}' not in the narration")
             if f.get('walk') and not has_word(nw,f['walk'].get('word','')):errs.append(f'{sid}: {who} walk.word not in narration')
-            if face_cropped(f,cam):errs.append(f"{sid}: {who} face cropped or inside the subtitle band (x={f.get('x')}, y={f.get('y')}, s={f.get('s')})")
+            if vert:
+                foc=(s.get('vertical') or {}).get('focus') or fo.get('subject')
+                if face_cropped_v(f,cam,s.get('vertical')):(errs if who==foc else warn).append(f"{sid}: {who} face cropped or inside the 9:16 subtitle band (y={f.get('y')}, s={f.get('s')}, vertical={s.get('vertical')})")
+            elif face_cropped(f,cam):errs.append(f"{sid}: {who} face cropped or inside the subtitle band (x={f.get('x')}, y={f.get('y')}, s={f.get('s')})")
             figs.append(who)
         for e in s['effects']:
             k=e.get('k') or e.get('t')
             if k not in V.PFX and k not in V.FX:errs.append(f"{sid}: effect '{k}' unknown (pfx: {V.PFX}; engine fx: {V.FX})")
             if e.get('word') and not has_word(nw,e['word']):errs.append(f"{sid}: effect word '{e['word']}' not in the narration")
             text_ok(errs,sid,f'effects.{k}.meaning',e.get('meaning'),10)
+        vt=s.get('vertical') or {}
+        if vert and vt.get('mode')=='stack' and len([w for w in (vt.get('stack') or figs[:2]) if w in figs])<2:errs.append(f"{sid}: vertical stack needs two characters of this shot (vertical.stack)")
+        if vert and vt.get('focus') and isinstance(vt['focus'],str) and vt['focus'] not in figs:errs.append(f"{sid}: vertical.focus '{vt['focus']}' is not a character of this shot")
         if s['transition_in'] not in V.TRANS:errs.append(f"{sid}: transition_in must be one of {V.TRANS}")
         if not figs and not s['effects'] and len(L)<3:errs.append(f'{sid}: empty frame (no character, no effect, fewer than 3 layers)')
         key=(bg.get('k'),tuple(sorted(figs)),c.get('shot'))
@@ -121,7 +138,7 @@ def check(brief,ep):
     return errs,warn
 def main():
     a=argparse.ArgumentParser();a.add_argument('ep');a.add_argument('--brief');x=a.parse_args()
-    p=x.brief or f'{R}/episodes/ep{x.ep}/briefs.json';b=json.load(open(p,encoding='utf-8'))
+    p=x.brief or f'{PJ.edir(x.ep)}/briefs.json';b=json.load(open(p,encoding='utf-8'))
     errs,warn=check(b,x.ep)
     for w in warn:print('WARN',w)
     for e in errs:print('ERROR',e)

@@ -61,6 +61,40 @@ Object.assign(CAST,{
  ravana:skinSet('#4a3028',{hair:{type:'wild',col:'#0c0a14'},crown:'asura',build:1.28,brow:'#08060c',eyeRed:true,mustache:'#0c0a14',lower:L_('#a8182a','#e0b040','short'),armor:'#e0b040',armlet:'#e0b040',muscle:1,kdef:.45,prop:'sword'})
 });
 
+/* ---------- REELS cast (7 vertical reels, Nov 2026): new characters only; EP6 specs above are untouched ---------- */
+const FIREHALO={r:104,col:['#fff2a0','#ffb030','#e8501a','#8a1a0a'],rgb:'255,140,60',rgb2:'255,215,150',petal:'rgba(255,215,150,.45)',g:.8};
+Object.assign(CAST,{
+ // Rudra: Shiva newly born from Brahma's anger (ash-blue skin, jata + crescent, third eye, tiger skin) with a FIRE halo; no Vasuki, no trishul. Also the unit of the eleven Rudras.
+ rudra:skinSet('#88a4c4',{skinH:'#c2d6ec',skinD:'#506c90',skinM:'#7492b6',hair:{type:'shiva'},tripundra:true,third:true,brow:'#141020',lower:{type:'tiger',col:'#f09a30',colL:'#ffc060',colD:'#a84a0c',trim:'#5a3a22'},
+   neck:['rudraksha'],ashBands:true,armlet:'#e0b04a',bangle:'rudraksha',muscle:.85,halo:FIREHALO,lip:'#7a3a5e',kgem:'#ff7a1a'}),
+ // Kamadeva: god of love: parrot-green uttariya, rose dhoti, flower garland, sugarcane bow
+ kama:skinSet('#eaa878',{hair:{type:'cap',col:'#16121a'},crown:'raja',mustache:'#2a1a14',lower:L_('#d83a74','#f2c14e','dhoti',{pleat:true,fan:'#f27aa6',dots:'#f2c14e'}),uttariya:'#7cc840',neck:['hara','garland'],armlet:'#e0b040',muscle:.7,kgem:'#e0407a',lip:'#c23a5a',prop:'kamabow'}),
+ // Prakriti: Mother Nature: leaf-green sari, gold choli, flower garland, lotus in hand, green-gold halo
+ prakriti:skinSet('#e2a878',{female:true,bindi:true,hair:{type:'long',col:'#14101a'},crown:'devi',lower:L_('#1f8a44','#f2c14e','sari'),upper:{type:'choli',col:'#f2c14e'},pallu:'#6ac24a',build:.84,neck:['necklace','garland'],armlet:'#e0b04a',bangle:'glass',muscle:0,prop:'lotus2',
+   halo:{r:100,col:['#ffffff','#effac8','#7cc858','#2a6a2a'],rgb:'170,230,130',rgb2:'230,250,200',petal:'rgba(240,255,220,.45)',g:.7}}),
+ // Swaha: the young goddess who carries the offerings: flame-orange sari, gold choli, small crown, small fire halo
+ swaha:skinSet('#f2b88c',{female:true,bindi:true,hair:{type:'long',col:'#16101a'},crown:'small',lower:L_('#e04a1a','#ffd34a','sari'),upper:{type:'choli',col:'#ffd34a'},pallu:'#ff9a2a',build:.8,neck:['necklace'],armlet:'#ffd34a',bangle:'glass',muscle:0,kgem:'#ff7a1a',
+   halo:Object.assign({},FIREHALO,{r:84,g:.55})}),
+ // Yoga Nidra devi (the sleep that holds Vishnu): indigo skin and sari, silver trim, moon-silver halo
+ nidra:skinSet('#7c6cae',{skinH:'#aa9cd8',skinD:'#40326c',skinM:'#6c5c9c',female:true,bindi:true,hair:{type:'long',col:'#0c0814'},crown:'devi',lower:L_('#2c2270','#d8e0f2','sari'),upper:{type:'choli',col:'#d8e0f2'},pallu:'#5a48b0',build:.82,neck:['pearls'],armlet:'#d8e0f2',bangle:'glass',muscle:0,kgem:'#b8a8ff',
+   halo:{r:96,col:['#ffffff','#e2deff','#8a7ad0','#2a1e5a'],rgb:'170,160,255',rgb2:'225,220,255',petal:'rgba(240,236,255,.45)',g:.6}}),
+ // the young woman at the river (Reel 4), later Narada's wife: rose sari, marigold choli
+ kanya:skinSet('#ecb48a',{female:true,bindi:true,hair:{type:'long',col:'#16101a'},lower:L_('#d8406e','#f2c14e','sari'),upper:{type:'choli',col:'#f6b030'},pallu:'#f070a0',build:.8,neck:['necklace'],bangle:'glass',muscle:0}),
+ // children (Narada's children / grandchildren): big head, small body
+ balak:skinSet('#e2a878',{hair:{type:'topknot',col:'#16121a'},lower:L_('#f4eedc','#e07a2a','short',{len:.25,fan:'#f6c070'}),sash:'#e07a2a',neck:['tulsi'],tilak:'dot',muscle:0,build:.8,hs:1.36}),
+ balika:skinSet('#eab08a',{female:true,bindi:true,hair:{type:'long',col:'#16121a'},lower:L_('#2a9a6a','#f2c14e','sari'),upper:{type:'choli',col:'#f2a03a'},pallu:'#f6d860',build:.78,neck:['necklace'],bangle:'glass',muscle:0,hs:1.32}),
+ // the starving gods (Reel 6): thin, faded cloth; plus a thin Indra (same crown + vajra)
+ deva_thin:skinSet('#d8b088',{hair:{type:'cap',col:'#1c1820'},crown:'small',lower:L_('#c8b47a','#a08040','dhoti',{fan:'#ddd0a0'}),uttariya:'#ece2c8',thread:true,neck:['pearls'],armlet:'#c8a050',muscle:0,build:.76,kgem:'#c8a050'}),
+ deva_thin2:skinSet('#cfa27a',{hair:{type:'cap',col:'#1c1820'},crown:'small',mustache:'#2a2228',lower:L_('#8a9ec0','#c8a050','dhoti',{fan:'#b4c4dc'}),uttariya:'#e4e8f0',thread:true,neck:['pearls'],armlet:'#c8a050',muscle:0,build:.76,kgem:'#8a9ec0'}),
+ indra_thin:Object.assign({},CAST.indra,{build:.8,muscle:0,halo:Object.assign({},CAST.indra.halo,{g:.25})}),
+ // Daksha's sons: Haryashvas (green-gold princes) and Shavalashvas (spotted violet princes); crowd units
+ haryashva:skinSet('#d8a070',{hair:{type:'cap',col:'#1a141c'},crown:'small',lower:L_('#2f9a5a','#f2c14e','dhoti',{pleat:true,fan:'#5ac07a'}),uttariya:'#f2c14e',thread:true,neck:['hara'],armlet:'#e0b040',muscle:.55,build:.94,kgem:'#18a57a'}),
+ shavalashva:skinSet('#c89060',{hair:{type:'cap',col:'#1a141c'},crown:'small',lower:L_('#7a4ab0','#f2c14e','dhoti',{pleat:true,fan:'#a07ad8',dots:'#f6f0e0'}),uttariya:'#f6f0e0',thread:true,neck:['hara'],armlet:'#e0b040',muscle:.55,build:.94,kgem:'#7a4ab0'}),
+ // Narada as a householder (no veena) and as an old grandfather (white jata + beard)
+ narada_g:Object.assign({},CAST.narada,{prop:null,uttariya:'#f6d860'}),
+ narada_old:Object.assign({},CAST.narada,{prop:null,skin:'#dca474',skinM:shade('#dca474',.86),skinD:shade('#dca474',.6),skinH:shade('#dca474',1.3),hair:{type:'jata',col:'#ece8e2',small:true},beard:'#ece8e2',beardLen:30,mustache:'#ece8e2',brow:'#9a9490',build:.88})
+});
+
 /* ---------- poses (joints in rig units; feet at 0, +y down) ---------- */
 const BASE=JSON.parse(JSON.stringify(POSES.calm));delete BASE.tri;BASE.hL=[-86,-262];BASE.hR=[86,-262];
 const PZ={
@@ -426,9 +460,129 @@ function drawHarihara(c,o){const t=o.t||0;c.save();c.beginPath();c.rect(0,-900,6
 function halfHead(c,leftFn,rightFn){c.save();c.beginPath();c.rect(0,-400,400,800);c.clip();rightFn();c.restore();c.save();c.beginPath();c.rect(-400,-400,400,800);c.clip();leftFn();c.restore()}
 
 
+/* ---------- REELS: hand props, Kapali, five-headed Brahma, Shatarupa animal forms ---------- */
+// where drawHuman's IK puts a hand (same maths as armX; side -1 = left hand)
+function handAt(S,P0,t,side){const br=Math.sin(t*1.7)*2.2,bw=S.build||1,L=side<0,s=L?[P0.sL[0]*bw,P0.sL[1]+br]:[P0.sR[0]*bw,P0.sR[1]+br],tg=L?[P0.hL[0],P0.hL[1]+br*.6]:[P0.hR[0],P0.hR[1]+br*.6];return PK.ik(s,tg,66,64,L?1:-1).t}
+function leanAt(c,P){if(P.lean){c.translate(0,P.ph[1]);c.rotate(P.lean);c.translate(0,-P.ph[1])}}
+// Kamadeva's sugarcane bow, held at its middle, flower tips, string on the body side
+function kamaBow(c,x,y){c.save();c.translate(x,y);const top=[8,-160],bot=[8,150],cp=[-78,-4],q=(u,i)=>(1-u)*(1-u)*top[i]+2*(1-u)*u*cp[i]+u*u*bot[i];
+  PK.stroke(c,cc=>{cc.moveTo(top[0],top[1]);cc.lineTo(bot[0],bot[1])},'#f6d0e0',2.2);
+  const arc=cc=>{cc.moveTo(top[0],top[1]);cc.quadraticCurveTo(cp[0],cp[1],bot[0],bot[1])};PK.stroke(c,arc,INKC,13);PK.stroke(c,arc,'#62a436',9);PK.stroke(c,arc,'rgba(200,240,150,.7)',2.4,{dash:[16,6]});
+  for(let k=1;k<10;k++){const u=k/10,px=q(u,0),py=q(u,1);PK.stroke(c,cc=>{cc.moveTo(px-7,py);cc.lineTo(px+7,py)},'#2e5a14',2.2)}
+  [top,bot].forEach(p=>{for(let i=0;i<5;i++){const a=i*1.2566;PK.cut(c,PK.P.ell(p[0]+Math.cos(a)*7,p[1]+Math.sin(a)*7,6,4.2,a),'#f47aa8',{lw:1,sh:0})}PK.cut(c,PK.P.ell(p[0],p[1],3.4,3.4),'#ffd34a',{lw:.8,sh:0})});
+  c.restore()}
+// kapala: a stylised ivory skull resting in the palm (no gore)
+function kapala(c,x,y,s){c.save();c.translate(x,y-20*s);c.scale(s,s);const ink='#5a4632';
+  PK.glow(c,0,-6,46,'255,235,190',.35);
+  PK.cut(c,PK.P.smooth([[-24,-4],[-22,-30],[0,-40],[22,-30],[24,-4],[16,10],[12,22],[-12,22],[-16,10]]),PK.lg(c,-24,-40,24,22,['#fffaf0','#efe4c8','#bfae88']),{lw:2,ink:ink});
+  [-1,1].forEach(sd=>PK.cut(c,PK.P.ell(sd*10,-6,6.5,7.5,sd*.2),'#5a4634',{lw:1.2,ink:ink,sh:0}));
+  PK.cut(c,PK.P.poly([[0,2],[-3.5,9],[3.5,9]]),'#6a5640',{lw:0,sh:0});
+  PK.stroke(c,cc=>{cc.moveTo(-9,16);cc.lineTo(9,16)},ink,1.4);for(let k=-2;k<=2;k++)PK.stroke(c,cc=>{cc.moveTo(k*3.6,13);cc.lineTo(k*3.6,19)},ink,1);
+  c.restore()}
+// Brahma's fifth head as Shiva carries it: serene, eyes closed, crowned, soft golden glow (no blood)
+function brahmaHead(c,x,y,t,s){c.save();c.translate(x,y-62*s);c.scale(s,s);PK.glow(c,0,-20,110,'255,220,150',.45);
+  drawHead(c,0,0,{expr:'closed',k:0,S:BRAHMA,t:t,mood:{smile:.05,sad:.3}});PK.hairCap(c,'#e6e0da');PK.jataMukuta(c);c.restore()}
+// Kapali: Shiva wandering with the skull (default) or Brahma's head (prop:'head') stuck to his LEFT hand
+function drawKapali(c,o,t,kk,face){const S=CAST.shiva,P=shivaPose(o.pose);drawHuman(c,S,P,{t:t,k:kk,expr:face==='closed'?'closed':'calm',mood:o.mood,tilt:o.tilt});
+  const it=o.prop||'skull';if(it==='none')return;c.save();leanAt(c,P);const h=handAt(S,P,t,-1);if(it==='head')brahmaHead(c,h[0],h[1]+4,t,.62);else kapala(c,h[0],h[1]+2,1.25);c.restore()}
+function drawKama(c,o,t,kk,face){const S=CAST.kama,P=poseOf(o.pose,'kama');drawHuman(c,S,P,{t:t,k:o.k!=null?o.k:kk,expr:face,mood:o.mood,tilt:o.tilt,turn:o.mood&&o.mood.turn!=null?o.mood.turn:undefined});
+  c.save();leanAt(c,P);const h=handAt(S,P,t,-1);kamaBow(c,h[0]-2,h[1]-4);c.restore()}
+// Brahma with the FIFTH head on top (Reel 2): seated or standing; hd:{l,r,b,t} still grows the heads one by one (default: all five)
+function topHead(c,x,y,s,t,k,face){c.save();c.translate(x,y);c.scale(s,s);drawHead(c,0,0,{expr:face||'calm',k:k,S:BRAHMA,t:t+.7,mood:{smile:.3,ly:-.2}});PK.hairCap(c,'#e6e0da');PK.jataMukuta(c);c.restore()}
+function drawBrahma5(c,o,t,kk,face){const H=o.hd||{l:1,r:1,b:1,t:1},P=poseOf(o.pose||'stand','brahma'),sit=P.sit||(o.lotus!==false&&(!o.pose||o.pose==='stand'));
+  drawBrahmaRig(c,{t:t,k:kk,expr:face,hd:H,mood:o.mood,P:sit?(P.sit?P:null):P,lotus:o.lotus,tilt:o.tilt});
+  if(!sit){const u=H.t==null?0:H.t,e=u*u*(3-2*u);if(e<.02)return;c.save();leanAt(c,P);c.translate(P.hd[0],P.hd[1]+40);c.rotate(o.tilt||0);topHead(c,0,-168+30*(1-e),.74*e,t,kk,face);c.restore()}}
+/* Shatarupa: Brahmi's animal forms (cow, mare, duck, doe), paper-cut, facing right, feet at y=0.  Each wears Brahmi's gold
+   necklace with the green gem so the viewer knows it is her.  pose: stand | walk | run | bow (head lowered); mood.blink/lx work. */
+const AINK='#4a3424';
+function aEye(c,x,y,r,M,t){const bl=Math.min(1,Math.max(M.blink||0,((t*.37)%1)<.03?1:0)),ry=r*(1-bl*.85);
+  PK.cut(c,PK.P.ell(x,y,r*1.25,ry),'#fffaf0',{lw:1.6,ink:AINK,sh:0});
+  if(bl<.7){c.save();c.beginPath();c.ellipse(x,y,r*1.25,ry,0,0,7);c.clip();const ix=x+r*.2+(M.lx||0)*r*.3;c.fillStyle='#4a2810';c.beginPath();c.arc(ix,y,r*.88,0,7);c.fill();c.fillStyle='#0c0604';c.beginPath();c.arc(ix+r*.08,y,r*.48,0,7);c.fill();c.fillStyle='#fff';c.beginPath();c.arc(ix-r*.25,y-r*.35,r*.26,0,7);c.fill();c.restore()}
+  PK.stroke(c,cc=>{cc.moveTo(x-r*1.35,y+r*.15);cc.quadraticCurveTo(x,y-r*1.45*(1-bl)-r*.2,x+r*1.35,y-r*.05)},AINK,2.6);
+  for(let i=0;i<3;i++){const a=x+r*(.25+i*.38),b=y-r*(1.02-i*.12)*(1-bl)-r*.12;PK.stroke(c,cc=>{cc.moveTo(a,b);cc.lineTo(a+r*.38,b-r*.42)},AINK,1.7)}}
+function aBand(c,a,m,b){const f=cc=>{cc.moveTo(a[0],a[1]);cc.quadraticCurveTo(m[0],m[1],b[0],b[1])};PK.stroke(c,f,AINK,9);PK.stroke(c,f,'#e6b84a',6);PK.stroke(c,f,'rgba(255,240,180,.8)',1.6,{dash:[4,5]});
+  const g=[.25*a[0]+.5*m[0]+.25*b[0],.25*a[1]+.5*m[1]+.25*b[1]];PK.cut(c,PK.P.ell(g[0],g[1]+6,5,6.5),'#e6b84a',{lw:1.2,ink:AINK,sh:0});PK.gem(c,g[0],g[1]+7,3.6,'#18a57a')}
+function aLeg(c,x,top,len,w,ang,C,hoof,far){c.save();c.translate(x,top);c.rotate(ang);const col=far?[shade(C.b,.82),shade(C.d,.78)]:[C.h,C.b,C.d];
+  PK.cut(c,cc=>{cc.moveTo(-w,-12);cc.quadraticCurveTo(-w*1.15,len*.3,-w*.5,len*.58);cc.lineTo(-w*.42,len-10);cc.lineTo(w*.42,len-10);cc.lineTo(w*.55,len*.58);cc.quadraticCurveTo(w*1.2,len*.28,w,-12);cc.closePath()},PK.lg(c,-w,0,w,0,col),{lw:2,ink:AINK,sh:0});
+  if(hoof)PK.cut(c,cc=>{cc.moveTo(-w*.5,len-12);cc.lineTo(w*.55,len-12);cc.lineTo(w*.72,len);cc.lineTo(-w*.62,len);cc.closePath()},far?shade(hoof,.8):hoof,{lw:1.6,ink:AINK,sh:0});
+  c.restore()}
+function aMove(o,t){const p=o.pose||'stand',run=p==='run'?1:(p==='walk'?.5:0),bow=(p==='bow'||p==='graze')?1:0,f=run>.5?7:4;
+  return{run:run,bow:bow,bob:Math.sin(t*1.6)*2-(run?Math.abs(Math.sin(t*f))*8*run:0),sw:k=>run?Math.sin(t*f+k)*.42*run:0,M:o.mood||{}}}
+function aShadow(c,w){c.fillStyle='rgba(30,16,8,.2)';c.beginPath();c.ellipse(0,2,w,14,0,0,7);c.fill()}
+function drawCow(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#f8f2e6',d:'#d2c2a4',h:'#ffffff'},hoof='#6a5440',body=PK.lg(c,0,-340,0,-190,[C.h,C.b,C.d]);aShadow(c,210);
+  aLeg(c,-120,-206+b,206,22,A.sw(0),C,hoof,1);aLeg(c,106,-206+b,206,22,A.sw(2),C,hoof,1);
+  const tl=cc=>{cc.moveTo(-182,-286+b);cc.quadraticCurveTo(-214,-220+Math.sin(t*2)*6,-200,-128)};PK.stroke(c,tl,AINK,9);PK.stroke(c,tl,C.d,6);PK.cut(c,PK.P.ell(-200,-118,9,20,.1),'#a88a62',{lw:1.6,ink:AINK,sh:0});
+  const bp=PK.P.smooth([[-188,-300+b],[-120,-334+b],[0,-326+b],[84,-350+b],[128,-326+b],[162,-282+b],[152,-212+b],[90,-190+b],[0,-196+b],[-120,-188+b],[-182,-214+b],[-200,-262+b]]);
+  PK.cut(c,bp,body,{lw:2.4,ink:AINK});c.save();c.beginPath();bp(c);c.clip();c.fillStyle='rgba(226,180,118,.55)';[[-96,-282,48,30],[22,-246,34,22],[-30,-312,26,14]].forEach(([x,y,rx,ry])=>{c.beginPath();c.ellipse(x,y+b,rx,ry,.2,0,7);c.fill()});
+    c.fillStyle='rgba(255,255,255,.35)';c.beginPath();c.ellipse(-30,-316+b,120,12,0,0,7);c.fill();c.restore();
+  aLeg(c,-98,-210+b,210,24,A.sw(1),C,hoof,0);aLeg(c,128,-210+b,210,24,A.sw(3),C,hoof,0);
+  const hy=-300+b+A.bow*80,hx=226-A.bow*10;
+  PK.cut(c,PK.P.smooth([[104,-326+b],[170,-338+b],[hx,hy-8],[hx+4,hy+44],[178,-208+b],[150,-182+b],[126,-232+b]]),body,{lw:2.2,ink:AINK});
+  aBand(c,[168,-336+b],[204,-270+b+A.bow*30],[178,-226+b+A.bow*20]);
+  c.save();c.translate(hx,hy);c.rotate(.32+A.bow*.55);
+  const horn=(x0,lean)=>{PK.cut(c,cc=>{cc.moveTo(x0-7,-30);cc.quadraticCurveTo(x0-12+lean,-62,x0+lean*2,-86);cc.quadraticCurveTo(x0+6+lean,-60,x0+7,-30);cc.closePath()},PK.lg(c,0,-86,0,-30,['#fff6e0','#e8dcc0','#b8a888']),{lw:1.8,ink:AINK,sh:0});PK.cut(c,PK.P.ell(x0+lean*2,-84,4.6,6),PK.goldG(c,x0-5,x0+5),{lw:1.2,ink:AINK,sh:0})};
+  horn(-20,-6);
+  PK.cut(c,cc=>{cc.moveTo(-26,-18);cc.quadraticCurveTo(-60,-30,-82,-10+Math.sin(t*1.3)*3);cc.quadraticCurveTo(-56,4,-24,0);cc.closePath()},PK.lg(c,-80,0,-24,0,[C.d,C.b]),{lw:1.8,ink:AINK,sh:0});
+  PK.cut(c,PK.P.smooth([[-36,-32],[10,-42],[50,-22],[80,14],[82,42],[58,54],[20,46],[-14,26],[-38,2]]),PK.lg(c,-36,-42,40,54,[C.h,C.b,C.d]),{lw:2.2,ink:AINK});
+  PK.cut(c,PK.P.ell(66,38,22,17,.2),PK.lg(c,50,24,86,56,['#f8d4c4','#e6a898']),{lw:1.8,ink:AINK,sh:0});PK.cut(c,PK.P.ell(76,32,3.6,5.6,.3),'#5a3a2a',{lw:0,sh:0});PK.stroke(c,cc=>{cc.moveTo(52,50);cc.quadraticCurveTo(64,56,78,50)},AINK,1.6);
+  aEye(c,16,-6,7.5,A.M,t);PK.cut(c,PK.P.ell(32,-30,3.4,4.4),'#d0243a',{lw:.8,ink:AINK,sh:0});horn(-2,6);
+  c.restore()}
+function drawMare(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#e8c48a',d:'#b48450',h:'#fae4bc'},MN={b:'#fbf6e8',d:'#d8ccb0',h:'#ffffff'},hoof='#4a3a2a',body=PK.lg(c,0,-335,0,-210,[C.h,C.b,C.d]),mane=PK.lg(c,0,-480,0,-300,[MN.h,MN.b,MN.d]);aShadow(c,210);
+  aLeg(c,-124,-222+b,222,17,A.sw(0),C,hoof,1);aLeg(c,100,-222+b,222,17,A.sw(2),C,hoof,1);
+  const ts=Math.sin(t*1.8)*8+(A.run?14:0);PK.cut(c,cc=>{cc.moveTo(-176,-312+b);cc.bezierCurveTo(-226,-300+b,-232+ts,-220,-246+ts,-112);cc.bezierCurveTo(-226+ts,-150,-210,-230,-172,-282+b);cc.closePath()},mane,{lw:2,ink:AINK,sh:0});
+  const bp=PK.P.smooth([[-182,-302+b],[-110,-334+b],[30,-326+b],[118,-326+b],[160,-286+b],[144,-226+b],[60,-212+b],[-60,-216+b],[-160,-222+b],[-198,-264+b]]);
+  PK.cut(c,bp,body,{lw:2.4,ink:AINK});c.save();c.beginPath();bp(c);c.clip();c.fillStyle='rgba(255,255,255,.3)';c.beginPath();c.ellipse(-30,-318+b,130,12,0,0,7);c.fill();c.restore();
+  aLeg(c,-102,-226+b,226,19,A.sw(1),C,hoof,0);aLeg(c,122,-226+b,226,19,A.sw(3),C,hoof,0);
+  const hx=214+A.bow*20,hy=-462+b+A.bow*120;
+  PK.cut(c,PK.P.smooth([[86,-318+b],[140,-420+b+A.bow*60],[hx-10,hy-14],[hx+26,hy+10],[196,-380+b+A.bow*70],[170,-264+b],[122,-226+b]]),body,{lw:2.2,ink:AINK});
+  for(let i=0;i<6;i++){const u=i/5,x0=lerp(hx-18,108,u),y0=lerp(hy-12,-322+b,u),sw=Math.sin(t*2+i)*4;PK.cut(c,cc=>{cc.moveTo(x0+10,y0-6);cc.quadraticCurveTo(x0-24+sw,y0+4,x0-34+sw,y0+40);cc.quadraticCurveTo(x0-12,y0+20,x0+8,y0+14);cc.closePath()},mane,{lw:1.6,ink:AINK,sh:0})}
+  aBand(c,[150,-404+b+A.bow*60],[176,-350+b+A.bow*70],[196,-372+b+A.bow*70]);
+  c.save();c.translate(hx,hy);c.rotate(.98+A.bow*.4);
+  PK.cut(c,cc=>{cc.moveTo(-22,-18);cc.lineTo(-14,-62);cc.lineTo(0,-20);cc.closePath()},PK.lg(c,0,-62,0,-18,[C.h,C.d]),{lw:1.8,ink:AINK,sh:0});
+  PK.cut(c,PK.P.smooth([[-32,-24],[20,-30],[92,-18],[124,2],[122,24],[92,32],[20,28],[-32,16]]),PK.lg(c,-30,-30,120,30,[C.h,C.b,C.d]),{lw:2.2,ink:AINK});
+  PK.cut(c,cc=>{cc.moveTo(30,-30);cc.quadraticCurveTo(80,-26,118,-4);cc.quadraticCurveTo(80,-14,30,-18);cc.closePath()},'rgba(255,250,236,.85)',{lw:0,sh:0});
+  PK.cut(c,PK.P.ell(112,8,4,6,.4),'#3a2a1a',{lw:0,sh:0});PK.stroke(c,cc=>{cc.moveTo(98,26);cc.quadraticCurveTo(110,28,120,20)},AINK,1.6);
+  PK.cut(c,cc=>{cc.moveTo(-26,-26);cc.quadraticCurveTo(0,-44,24,-26);cc.quadraticCurveTo(10,-10,30,4);cc.quadraticCurveTo(-4,-6,-20,-8);cc.closePath()},mane,{lw:1.6,ink:AINK,sh:0});
+  aEye(c,8,-2,7.5,A.M,t);c.restore()}
+function drawDoe(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#d0905a',d:'#9a6034',h:'#eab886'},hoof='#3a2a1a',body=PK.lg(c,0,-262,0,-172,[C.h,C.b,C.d]);aShadow(c,160);
+  aLeg(c,-104,-182+b,182,12,A.sw(0),C,hoof,1);aLeg(c,84,-182+b,182,12,A.sw(2),C,hoof,1);
+  PK.cut(c,cc=>{cc.moveTo(-136,-246+b);cc.quadraticCurveTo(-170,-262+b+Math.sin(t*3)*5,-162,-230+b);cc.quadraticCurveTo(-150,-224+b,-132,-232+b);cc.closePath()},'#fbf4e6',{lw:1.6,ink:AINK,sh:0});
+  const bp=PK.P.smooth([[-142,-236+b],[-60,-262+b],[40,-258+b],[108,-252+b],[132,-212+b],[100,-180+b],[0,-172+b],[-100,-176+b],[-150,-200+b]]);
+  PK.cut(c,bp,body,{lw:2.4,ink:AINK});c.save();c.beginPath();bp(c);c.clip();c.fillStyle='#f6ead4';c.beginPath();c.ellipse(-10,-162+b,140,26,0,0,7);c.fill();
+    c.fillStyle='rgba(255,248,232,.92)';for(let r=0;r<3;r++)for(let i=0;i<8;i++){const x=-118+i*30+(r%2)*14,y=-244+r*18+b;if(x<120)c.beginPath(),c.ellipse(x,y,4.6,3.4,0,0,7),c.fill()}c.restore();
+  aLeg(c,-86,-186+b,186,13,A.sw(1),C,hoof,0);aLeg(c,102,-186+b,186,13,A.sw(3),C,hoof,0);
+  const hx=150+A.bow*16,hy=-350+b+A.bow*120;
+  PK.cut(c,PK.P.smooth([[78,-252+b],[112,-318+b+A.bow*60],[hx-6,hy-6],[hx+16,hy+16],[134,-262+b+A.bow*40],[118,-196+b],[96,-190+b]]),body,{lw:2.2,ink:AINK});
+  aBand(c,[110,-310+b+A.bow*60],[132,-276+b+A.bow*50],[148,-300+b+A.bow*50]);
+  c.save();c.translate(hx,hy);c.rotate(.42+A.bow*.7);
+  const ear=(a,l)=>{c.save();c.rotate(a);PK.cut(c,cc=>{cc.moveTo(-4,-10);cc.quadraticCurveTo(-30,-l*.5,-12,-l);cc.quadraticCurveTo(10,-l*.55,8,-8);cc.closePath()},PK.lg(c,-20,0,10,0,[C.d,C.b]),{lw:1.8,ink:AINK,sh:0});
+    PK.cut(c,cc=>{cc.moveTo(-2,-14);cc.quadraticCurveTo(-18,-l*.5,-10,-l*.86);cc.quadraticCurveTo(4,-l*.5,4,-14);cc.closePath()},'#f2c8b0',{lw:0,sh:0});c.restore()};
+  ear(-.9,50);
+  PK.cut(c,PK.P.smooth([[-24,-20],[14,-24],[52,-8],[70,10],[62,22],[30,22],[-6,18],[-26,4]]),PK.lg(c,-24,-24,60,22,[C.h,C.b,C.d]),{lw:2.2,ink:AINK});
+  PK.cut(c,PK.P.ell(14,16,22,6),'#f6ead4',{lw:0,sh:0});PK.cut(c,PK.P.ell(66,10,5.4,4.6),'#2a1a12',{lw:1,ink:AINK,sh:0});
+  aEye(c,12,-6,8,A.M,t);ear(-.45,56);c.restore()}
+function drawDuck(c,o,t){const A=aMove(o,t),b=A.bob*.6,C={b:'#fbf6ea',d:'#d8ccb0',h:'#ffffff'},W=['#fbe6a8','#e8c070','#b88a3a'];aShadow(c,100);
+  [[-14,A.sw(0)],[14,A.sw(2)]].forEach(([x,a],i)=>{c.save();c.translate(x,-36+b);c.rotate(a*.6);PK.stroke(c,cc=>{cc.moveTo(0,0);cc.lineTo(0,32)},AINK,7);PK.stroke(c,cc=>{cc.moveTo(0,0);cc.lineTo(0,32)},'#f0902a',4.4);
+    PK.cut(c,cc=>{cc.moveTo(-6,32);cc.lineTo(26,34);cc.lineTo(-4,40);cc.closePath()},'#f0902a',{lw:1.4,ink:AINK,sh:0});c.restore()});
+  const bp=PK.P.smooth([[-112,-118+b],[-66,-98+b],[0,-104+b],[56,-112+b],[86,-90+b],[74,-48+b],[20,-28+b],[-54,-32+b],[-96,-58+b]]);
+  PK.cut(c,bp,PK.lg(c,0,-118,0,-28,[C.h,C.b,C.d]),{lw:2.2,ink:AINK});
+  const hx=86,hy=-176+b+A.bow*50;
+  PK.cut(c,PK.P.smooth([[38,-104+b],[56,-150+b+A.bow*30],[hx-14,hy+4],[hx+16,hy+6],[92,-138+b+A.bow*30],[84,-92+b]]),PK.lg(c,40,-170,90,-90,[C.h,C.b]),{lw:2,ink:AINK});
+  aBand(c,[54,-124+b+A.bow*20],[70,-110+b+A.bow*20],[90,-120+b+A.bow*20]);
+  const wp=PK.P.smooth([[-84,-94+b],[-20,-108+b+Math.sin(t*2)*2],[40,-98+b],[30,-66+b],[-30,-56+b],[-86,-72+b]]);PK.cut(c,wp,PK.lg(c,0,-108,0,-56,W),{lw:2,ink:AINK,sh:0});
+  c.save();c.beginPath();wp(c);c.clip();for(let i=0;i<6;i++)PK.stroke(c,cc=>cc.arc(-70+i*20,-62+b,12,Math.PI*1.1,Math.PI*1.9),'rgba(120,80,20,.45)',1.6);c.restore();
+  c.save();c.translate(hx,hy);c.rotate(A.bow*.5);
+  PK.cut(c,PK.P.ell(0,0,27,23),PK.lg(c,-27,-23,27,23,[C.h,C.b,C.d]),{lw:2,ink:AINK});
+  PK.cut(c,cc=>{cc.moveTo(18,-8);cc.quadraticCurveTo(44,-10,54,2);cc.quadraticCurveTo(40,12,18,8);cc.closePath()},PK.lg(c,18,-10,54,12,['#ffc060','#f0902a','#c8641a']),{lw:1.6,ink:AINK,sh:0});
+  aEye(c,4,-6,5.4,A.M,t);c.restore()}
+const ANIMAL={cow:drawCow,mare:drawMare,doe:drawDoe,duck:drawDuck};
+const ANIMAL_HEAD={cow:[248,-290,1.5],mare:[262,-430,1.25],doe:[168,-338,1.9],duck:[92,-170,2.6]};
+const XFIG={kapali:drawKapali,kama:drawKama,brahma5:drawBrahma5};
+
 /* ---------- engine glue ---------- */
-const V2NAMES=new Set(['narada','kumara','jaya','vijaya','villager','villager_w','prasuti','sati','diti','danu','asikli','kashyapa','indra','surya','chandra','agni','vayu','hiranyaksha','hiranyakashipu','ravana','harihara','shiva','vishnu','hayagriva','daksha','manu','adishakti','brahmi','madhu','kaitabha','ardha','brahma','vishnu_rest',...[0,1,2,3,4,5,6].map(i=>'rishi'+i)]);
+const V2NAMES=new Set(['narada','kumara','jaya','vijaya','villager','villager_w','prasuti','sati','diti','danu','asikli','kashyapa','indra','surya','chandra','agni','vayu','hiranyaksha','hiranyakashipu','ravana','harihara','shiva','vishnu','hayagriva','daksha','manu','adishakti','brahmi','madhu','kaitabha','ardha','brahma','vishnu_rest','rudra','kapali','brahma5','kama','prakriti','swaha','nidra','kanya','balak','balika','deva_thin','deva_thin2','indra_thin','haryashva','shavalashva','narada_g','narada_old','cow','mare','doe','duck',...[0,1,2,3,4,5,6].map(i=>'rishi'+i)]);
 const SCALE={shiva:.62,kumara:.5,default:.62};
+Object.assign(SCALE,{balak:.5,balika:.5});
 const shivaPose=(p)=>{const r=shivaPose0(p);if(r.pointL==null)r.pointL=false;return r};
 const shivaPose0=(p)=>{if(p&&typeof p==='object'){const q=JSON.parse(JSON.stringify(p));if(!q.tri)q.tri=Object.assign({},POSES.calm.tri);return q}
   if(p==='point')return Object.assign(JSON.parse(JSON.stringify(POSES.calm)),{hL:[-182,-412],pointL:true});
@@ -444,6 +598,8 @@ function v2fig(who,x,y,s,t,o){
   else if(who==='vishnu_rest')drawReclineVishnu(c,{t:t});
   else if(who==='ardha')drawArdha(c,{t:t});
   else if(who==='harihara')drawHarihara(c,{t:t});
+  else if(XFIG[who])XFIG[who](c,o,t,kk,face);
+  else if(ANIMAL[who])ANIMAL[who](c,o,t);
   else drawHuman(c,CAST[who],poseOf(o.pose,who),{t:t,k:o.k!=null?o.k:(CAST[who].kdef||kk),expr:face,prop:o.prop,mood:o.mood,tilt:o.tilt,turn:o.mood&&o.mood.turn!=null?o.mood.turn:undefined});
   figFinish(c,o,x,y,s,FR,OY,RG,.22,.3,true)}
 // head close-up: shoulders, chest, garments and jewellery under the head (Opus torso), so heads never float like masks
@@ -456,10 +612,12 @@ function bust(c,S,o){const sk=skinPK(S),t=o.t||0,bw=Math.min(S.build||1,1.2);c.s
 function v2head(who,x,y,s,t,o){ // close-up of the head with neck, shoulders and garments
   const OYH=1300,FR=clamp(s*SC_,2,3.9),RG=[-300,-330,600,640];const c=figBegin(FR,OYH,RG);PK.setDPR(FR);const ex=o.expr||{},kk=ex.brow!=null&&ex.brow<-.2?clamp(-ex.brow*1.1,0,1):0,face=ex.eye!=null&&ex.eye<.5?'closed':'calm';
   if(o.flip<0)c.scale(-1,1);c.scale(1.32,1.32);const M=o.mood,turn=o.tilt?0:.06;
-  if(who==='shiva'){const S=CAST.shiva;c.translate(0,-6);c.scale(.86,.86);PK.halo(c,0,-30,112,t,Object.assign({g:.55,n:26},S.halo));c.save();c.translate(0,48);c.scale(1.95,1.95);hairBack(c,S,{hd:[0,0],ph:[0,200]},t);c.restore();c.save();c.translate(0,126);c.scale(.72,.88);bust(c,S,{t:t,k:kk,nk:1.9});c.restore();c.save();c.translate(0,48);c.scale(2.25,2.25);drawHead(c,0,0,{expr:face==='closed'?'closed':'calm',k:kk,S:S,t:t,mood:M,turn:turn});hairFront(c,S,0,0,t);c.restore()}
+  const who0=who;if(who==='kapali')who='shiva';if(who==='brahma5')who='brahma';
+  if(ANIMAL[who]){const H=ANIMAL_HEAD[who];c.translate(0,40);c.scale(H[2],H[2]);c.translate(-H[0],-H[1]);ANIMAL[who](c,o,t)}
+  else   if(who==='shiva'){const S=CAST.shiva;c.translate(0,-6);c.scale(.86,.86);PK.halo(c,0,-30,112,t,Object.assign({g:.55,n:26},S.halo));c.save();c.translate(0,48);c.scale(1.95,1.95);hairBack(c,S,{hd:[0,0],ph:[0,200]},t);c.restore();c.save();c.translate(0,126);c.scale(.72,.88);bust(c,S,{t:t,k:kk,nk:1.9});c.restore();c.save();c.translate(0,48);c.scale(2.25,2.25);drawHead(c,0,0,{expr:face==='closed'?'closed':'calm',k:kk,S:S,t:t,mood:M,turn:turn});hairFront(c,S,0,0,t);c.restore()}
   else if(who==='brahma'){const S=BRAHMA;PK.halo(c,0,-40,108,t,{g:.5,n:26});bust(c,S,{t:t});
     const side=(x2,tn)=>{c.save();c.translate(x2,12);c.scale(.8,.8);c.filter='brightness(.8)';drawHead(c,0,0,{expr:face,k:kk*.8,S:S,t:t+x2*.01,mood:Object.assign({smile:.2},M&&M.sad?{sad:M.sad*.8}:{}),turn:tn});c.save();c.scale(1-Math.abs(tn)*.3,1);PK.hairCap(c,'#e6e0da');PK.jataMukuta(c);c.restore();c.filter='none';c.restore()};
-    side(-62,-.6);side(62,.6);drawHead(c,0,0,{expr:face,k:kk,S:S,t:t,mood:M,turn:turn});PK.hairCap(c,'#e6e0da');PK.jataMukuta(c)}
+    side(-62,-.6);side(62,.6);drawHead(c,0,0,{expr:face,k:kk,S:S,t:t,mood:M,turn:turn});PK.hairCap(c,'#e6e0da');PK.jataMukuta(c);if(who0==='brahma5')topHead(c,0,-150,.68,t,kk,face)}
   else if(who==='ardha'||who==='harihara'){const A=CAST[who==='ardha'?'adishakti':'vishnu'],Sh=CAST.shiva;
     halfHead(c,()=>{bust(c,A,{t:t});if(A.hair&&A.hair.type==='long')hairBack(c,A,{hd:[0,0],ph:[0,200]},t);drawHead(c,0,0,{expr:face,k:0,S:A,t:t});hairFront(c,A,0,0,t);headgear(c,A,0,0)},()=>{bust(c,Sh,{t:t});drawHead(c,0,0,{expr:face==='closed'?'closed':'calm',k:0,S:Sh,t:t});hairFront(c,Sh,0,0,t)})}
   else{const S=CAST[who];if(S.halo)PK.halo(c,0,-34,S.halo.r*.95,t,Object.assign({n:26},S.halo,{g:(S.halo.g==null?.8:S.halo.g)*.7}));if(S.sun)PK.sunDisk(c,0,-30,108,t);

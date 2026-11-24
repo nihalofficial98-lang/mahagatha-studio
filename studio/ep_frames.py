@@ -1,10 +1,12 @@
 """Render one still per shot of an episode with the CURRENT engine, using the voice_timeline.md word times
 (no TTS / network needed).  python3 studio/ep_frames.py 06 [--out DIR] [--only 0,5,9-12] [--at 0.55] [--q 86]
-Writes <out>/<NNN>_<shotid>.jpg (1920x1080) and contact sheets <out>/sheet_NN.jpg."""
+Writes <out>/<NNN>_<shotid>.jpg (1920x1080) and contact sheets <out>/sheet_NN.jpg.
+Reels (9:16, format from reels/<id>/reel.json or --format vertical): python3 studio/ep_frames.py reel02 -> library/showcase/reel02_frames/
+<NNN>_<shotid>.jpg at 1080x1920 (--scale 1.5 default; 1.0 = 720x1280) with the title card and reel subtitles drawn."""
 import os,re,sys,json,glob,subprocess,argparse,shutil
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));sys.path.insert(0,ROOT+'/studio')
 from PIL import Image,ImageDraw
-import build as B
+import build as B,project as PJ
 def parse_timeline(p):
     t=open(p,encoding='utf-8').read();beats=[];cur=None
     for ln in t.splitlines():
@@ -22,12 +24,15 @@ def parse_timeline(p):
     return out
 def main():
     if 'NODE_PATH' not in os.environ:os.environ['NODE_PATH']=subprocess.run(['npm','root','-g'],capture_output=True,text=True).stdout.strip()   # playwright is installed globally
-    ap=argparse.ArgumentParser();ap.add_argument('ep');ap.add_argument('--out');ap.add_argument('--only');ap.add_argument('--at',type=float,default=.55);ap.add_argument('--q',type=int,default=86);ap.add_argument('--scale',type=float,default=2.0)
-    a=ap.parse_args();epd=f'{ROOT}/episodes/ep{a.ep}';work=f'{ROOT}/build/ep{a.ep}';os.makedirs(work,exist_ok=True)
-    out=a.out or f'{ROOT}/library/showcase/ep{a.ep}_frames';os.makedirs(out,exist_ok=True)
-    tm=work+'/engine_timings.json';tgt=str(json.load(open(epd+'/episode.json')).get('target_sec',0))
+    ap=argparse.ArgumentParser();ap.add_argument('ep');ap.add_argument('--out');ap.add_argument('--only');ap.add_argument('--at',type=float,default=.55);ap.add_argument('--q',type=int,default=86);ap.add_argument('--scale',type=float);ap.add_argument('--format',default='auto',choices=['auto','16:9','vertical'])
+    a=ap.parse_args();epd=PJ.edir(a.ep);work=PJ.bdir(a.ep);os.makedirs(work,exist_ok=True);vert=PJ.fmt(a.ep,a.format)=='vertical'
+    if a.scale is None:a.scale=1.5 if vert else 2.0
+    out=a.out or f'{ROOT}/library/showcase/'+(f'{a.ep}_frames' if PJ.is_reel(a.ep) else f'ep{a.ep}_frames');os.makedirs(out,exist_ok=True)
+    tm=work+'/engine_timings.json';tgt=str(PJ.target(a.ep))
     subprocess.run(['node',ROOT+'/studio/render_ep.js',work,epd+'/shots.json','/dev/null'],env=dict(os.environ,PREPARE_ONLY='1',TARGET_SEC=tgt),check=True,stdout=subprocess.DEVNULL)   # engine_timings.json from the REAL voice timings (build/epNN/timings.json)
-    html=B.build(a.scale);env=dict(os.environ,ENGINE=html,VW=str(int(1280*a.scale)),VH=str(int(720*a.scale)))
+    if vert:html=B.build(a.scale,fmt='vertical');VW,VH=int(720*a.scale),int(1280*a.scale);SIZE=(VW,VH)
+    else:html=B.build(a.scale);VW,VH=int(1280*a.scale),int(720*a.scale);SIZE=(1920,1080)
+    env=dict(os.environ,ENGINE=html,VW=str(VW),VH=str(VH))
     raw=subprocess.check_output(['node',ROOT+'/studio/still.js','--info',epd+'/shots.json',tm],env=dict(env,MISSONLY='1'),cwd=ROOT,text=True)
     info=json.loads([l for l in raw.splitlines() if l.startswith('{')][-1])
     for l in raw.splitlines():
@@ -51,7 +56,14 @@ def main():
     for i,t in zip(sel,ts):
         f=byT.get(float(t))
         if not f:print('missing frame',i,t);continue
-        dst=f'{out}/{i:03d}_{ids[i] if i<len(ids) else i}.jpg';Image.open(f).convert('RGB').resize((1920,1080),Image.LANCZOS).save(dst,quality=a.q);done.append((i,dst))
+        dst=f'{out}/{i:03d}_{ids[i] if i<len(ids) else i}.jpg';im_=Image.open(f).convert('RGB');(im_ if im_.size==SIZE else im_.resize(SIZE,Image.LANCZOS)).save(dst,quality=a.q);done.append((i,dst))
+    if vert:   # 9:16 contact sheets: 6 x 2 portrait tiles
+        for n in range(0,len(done),12):
+            im=Image.new('RGB',(6*270,2*480),(12,10,20))
+            for k,(i,dst) in enumerate(done[n:n+12]):
+                x=Image.open(dst).resize((270,480));d=ImageDraw.Draw(x);d.rectangle((0,0,92,16),fill=(0,0,0));d.text((4,2),os.path.basename(dst)[:12],fill=(255,230,80));im.paste(x,((k%6)*270,(k//6)*480))
+            im.save(f'{out}/sheet_{n//12:02d}.jpg',quality=82)
+        print('wrote',len(done),'frames to',out);return
     for n in range(0,len(done),20):
         im=Image.new('RGB',(1920,270*5),(12,10,20))
         for k,(i,dst) in enumerate(done[n:n+20]):

@@ -1,13 +1,14 @@
 """Turn APPROVED shot briefs into the builder's shot plan (then build_shots.py makes shots.json, timed to the voice).
   python3 studio/brief_to_plan.py NN [--brief B] [--out P]   # default: episodes/epNN/briefs.json -> episodes/epNN/shot_plan.json
+  (reels: NN = reel02 / _test -> reels/<id>/; the brief's optional `vertical` block becomes the shot's `vert`)
 It refuses to run while validate_brief.py reports errors. Mapping is mechanical: every word in the brief becomes a cue
 (in spoken order) and each action/effect/background change fires on its cue index."""
 import json,sys,os,re
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
-import validate_brief as VB,engine_vocab as V
+import validate_brief as VB,engine_vocab as V,project as PJ
 R=VB.R;norm=VB.norm
 TR_DX={'cut':0}
-def convert(s):
+def convert(s,vert=False):
     nw=VB.words_of(s['narration']);cues=[]
     def cue(w):
         """index of word w in this shot's cue list; cues are kept in the order they are spoken"""
@@ -65,6 +66,10 @@ def convert(s):
           'layers':[{k:v for k,v in l.items() if k not in('contents','from_background')} for l in s['layers'] if l.get('items')],
           'note':f"{s['camera']['shot']} {s['camera']['move']}: {s['why']}"}
     if not plan['layers']:del plan['layers']
+    if vert:                                  # 9:16 reels: portrait window / stack layout (engine/main.js VERTICAL); default focus = focus.subject
+        v=dict(s.get('vertical') or {})
+        if 'focus' not in v and v.get('mode')!='stack' and s['focus'].get('subject') in xs:v['focus']=s['focus']['subject']
+        if v:plan['vert']=v
     if s['camera'].get('shake'):plan['shake']=s['camera']['shake']
     if ch:
         plan['bgc']=ci(ch['word']);plan['bgd']=ch.get('d',1.2)
@@ -76,10 +81,11 @@ def convert(s):
     return plan
 def main():
     import argparse;a=argparse.ArgumentParser();a.add_argument('ep');a.add_argument('--brief');a.add_argument('--out');x=a.parse_args();ep=x.ep
-    p=x.brief or f'{R}/episodes/ep{ep}/briefs.json';b=json.load(open(p,encoding='utf-8'))
+    p=x.brief or f'{PJ.edir(ep)}/briefs.json';b=json.load(open(p,encoding='utf-8'))
     errs,_=VB.check(b,ep)
     if errs:print('\n'.join('ERROR '+e for e in errs));sys.exit('brief not valid: fix it (python3 studio/validate_brief.py %s)'%ep)
-    out={'episode':ep,'shots':[convert(s) for s in b['shots']]}
-    dst=x.out or f'{R}/episodes/ep{ep}/shot_plan.json';json.dump(out,open(dst,'w',encoding='utf-8'),ensure_ascii=False,indent=1)
+    vert=PJ.fmt(ep)=='vertical'
+    out={'episode':ep,'shots':[convert(s,vert) for s in b['shots']]}
+    dst=x.out or f'{PJ.edir(ep)}/shot_plan.json';json.dump(out,open(dst,'w',encoding='utf-8'),ensure_ascii=False,indent=1)
     print(f"{len(out['shots'])} shots -> {dst}\nnext: python3 studio/build_shots.py {ep}")
 if __name__=='__main__':main()
