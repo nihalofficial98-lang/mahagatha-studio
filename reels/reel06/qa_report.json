@@ -1,0 +1,72 @@
+{
+ "episode": "reel06",
+ "frames": 36,
+ "pass": false,
+ "checked": "all 36 frames opened (contact sheets sheet_00..05 at tile size after each pass, plus full-size 000_s01 and 005_s06, and the re-staged shots s02 s04 s06 s14 s32 again after fixes); title card 'Why Say Swaha?' on frame 000 with Agni's face just below at ~50%; every single-window face solved to 38-50% of the height and above the subtitle box (stack shots framed by the engine); subtitles = reels/build/reel06/words.json (validator 0 errors, narration continuity asserted in briefs_gen.py); 3 depth planes in every shot with hazed far planes; bright palette (Brahmaloka blue-gold, earth morning, warm gold fire, pale lilac-gray only for the starving gods and the offerings that never arrive); offering path = light_beam column from the havan kund to the gold gateway of Brahmaloka with gold light motes (s13 Agni fails to deliver / s28 Swaha delivers), broken path with smoke and mist in s17 s23 s32; stack only in s04 s14 (heaven/earth), s19 (Kamadev/Agni), s26 (Vishnu/Brahma); no hearts/stars/sparkles (light = glows, halo rings, rays, round motes); no PAGEERR; engine/main.js, engine/v2_cast.js and studio tools not edited by this pass (EP6 untouched); fixes made: seated villagers floated in the air -> standing, gods in s03 seated on cloud banks, Brahma cut by the right edge in s06 -> re-staged, fire altar hidden below the stack crop in s04/s14 -> raised, flames fx blob over Agni in s22 removed, last shot fell into the end fade -> s36/s37 merged, oversized halo rings reduced",
+ "issues": [
+  {
+   "shot": "s34",
+   "frame": "library/showcase/reel06_frames/033_s34.jpg",
+   "check": "story",
+   "problem": "'a tree without fruit': a lone plain leafy tree on a pale field; nothing explicitly shows the missing fruit",
+   "owner": "scene-designer",
+   "fix": "accept, or add a fruit option to the tree object (fruit dots on/off) and show a fruit tree losing its fruit"
+  },
+  {
+   "shot": "s35",
+   "frame": "library/showcase/reel06_frames/034_s35.jpg",
+   "check": "story",
+   "problem": "'a snake without venom' has no image (no snake rig/object); the shot shows only 'a man without knowledge': a puzzled villager with empty hands and a faint empty halo ring",
+   "owner": "character-designer",
+   "fix": "accept, or add a small paper snake (naga) object/rig for the simile"
+  },
+  {
+   "shot": "s06",
+   "frame": "library/showcase/reel06_frames/005_s06.jpg",
+   "check": "story",
+   "problem": "the 'Brahma' name plate fades in on the spoken word (13.00 s), just after the still time, so it is only a faint box in the still; same for 'Kamadev' in s18",
+   "owner": "effects-designer",
+   "fix": "accept (correct in motion), or start the plates one word earlier"
+  },
+  {
+   "shot": "s23",
+   "frame": "library/showcase/reel06_frames/022_s23.jpg",
+   "check": "story",
+   "problem": "the offering-motes that fail to reach the gods are small and faint at the top of the frame; 'could not carry' reads mainly through Agni's pleading pose and the gray sky",
+   "owner": "effects-designer",
+   "fix": "accept, or enlarge the orbs (r/sz) for this shot"
+  },
+  {
+   "shot": "s04",
+   "frame": "library/showcase/reel06_frames/003_s04.jpg",
+   "check": "continuity",
+   "problem": "stack layouts put heaven ABOVE and earth BELOW (s04, s14) so they match the upward offering path; the owner's example said 'earth ritual above, heaven below'",
+   "owner": "cinematographer",
+   "fix": "owner to choose; swapping is one change per shot (vertical.stack order in briefs_gen.py)"
+  },
+  {
+   "shot": "s02",
+   "frame": "library/showcase/reel06_frames/001_s02.jpg",
+   "check": "owner rules",
+   "problem": "villager / villager_w (the humans who pour the offerings, s02 s04 s10 s11 s14 s32 s35) are not in the reel 6 list of reels/cast.json; added to --cast as an exception like brahma in reel 4",
+   "owner": "character-designer",
+   "fix": "owner to confirm the two village figures as the 'humans'"
+  },
+  {
+   "shot": "s01",
+   "frame": "library/showcase/reel06_frames/000_s01.jpg",
+   "check": "technical",
+   "problem": "FX_ERRORS: one pfx call of smoke_plume draws an arc with a negative radius (R-3 when R is between 2 and 3); harmless (one stroke skipped), visible nowhere",
+   "owner": "effects-designer",
+   "fix": "engine/paper_fx.js smoke_plume: clamp the highlight arc radius to >= 0 (not done here: engine untouched)"
+  },
+  {
+   "shot": "s21",
+   "frame": "library/showcase/reel06_frames/020_s21.jpg",
+   "check": "faces",
+   "problem": "Agni's head close-up (head:true) is big; the subtitle box sits on his chest under the beard; face fully visible at ~42%",
+   "owner": "cinematographer",
+   "fix": "accept (same scale as earlier reels' head close-ups)"
+  }
+ ]
+}
