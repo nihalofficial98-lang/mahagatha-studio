@@ -16,3 +16,6 @@ State at the time of writing (all committed on branch `claude/amazing-heisenberg
 - `studio.py check NN` now prints a retention scorecard (`studio/script_check.py`; rules `library/script_rules.json`, pace `library/voice_profile.json` = 0.367 s/word measured on EP06, so 8-10 min = ~1,310-1,630 Hindi words). Self-test: `python3 studio/script_check.py --selftest`.
 - Why EP06 sagged: `python3 studio/script_check.py 06 --beats library/examples/ep06_beats_example.json` (19 errors; rewrite plan inside the file).
 - Not built yet: cue-id resolver in the brief tools, English align/render, 9:16 reel renderer (requirements in `guides/BEATS_SCHEMA.md`).
+
+## Formats
+- `story` (EP6 style) and `explainer` (owner samples: Parshuram/Ravan, Sita, Varaha): guides/LONG_STYLE.md. Explainers need a source pack with verse references from the owner.

@@ -6,6 +6,8 @@ The book gives only plot facts; every word is original. One episode = **one full
 - Video **8-10 min** (aim 8.5-9.5). Minutes come from the owner's measured pace in `library/voice_profile.json`, not a guess: Hindi **0.367 s/word** (EP06: 478 s for 1,303 words), so **~1,310-1,630 Hindi words** (aim 1,390-1,550). The old "870-1,050 words" figure was wrong (it assumed 0.575 s/word; EP06 came out at 7.97 min).
 - After every recording: `python3 studio/script_check.py NN --calibrate` updates the pace.
 
+> Two formats: `story` (dramatised retelling, e.g. EP6) and `explainer` (question-driven, source-cited, see `guides/LONG_STYLE.md`). Set `format` in episode.json. Reels follow `guides/REEL_STYLE.md`.
+
 ## Shape: teaser + 3 chapters (+ optional close)
 | Part | Length | Must contain |
 |---|---|---|
