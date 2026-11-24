@@ -4,7 +4,7 @@
  "notes": [
   "All characters are coded rigs (engine/v2_cast.js); names are printed by python3 studio/engine_vocab.py.",
   "Emotion presets (emo): calm joy anger rage sad grief surprise fear shame pride doubt devotion; \"moods\" below are custom mood:{...} presets per character.",
-  "Animals (cow, mare, duck, doe): pose stand|walk|run|bow; mood.blink/lx; no faces beyond the eyes; flip:-1 faces left; head:true gives a head close-up.",
+  "Animals (cow, mare, duck, doe): pose stand|run|bow, walk:1 key = gentle gait; mood.blink/lx; no faces beyond the eyes; flip:-1 faces left; head:true gives a head close-up.",
   "EP6 characters/specs unchanged; new characters were appended."
  ],
  "new_characters": [
@@ -191,7 +191,7 @@
      "sheet": [
       "library/showcase/reels_cast/lineup_reel01.jpg"
      ],
-     "note": "No pose/emotion control: the fused form is drawn calm, standing. Change Shiva -> ardha with a cross-fade (shiva fo + ardha ac)."
+     "note": "ALWAYS use flip:-1 in the reels: the rig draws Shiva on the viewer's right (= the figure's LEFT); the narration says the RIGHT side is male, so flip it (also for head:true). No pose/emotion control: drawn calm, standing. Change Shiva -> ardha with a cross-fade (shiva fo + ardha ac)."
     },
     {
      "who": "adishakti",
@@ -406,7 +406,6 @@
      "props": [],
      "poses": [
       "stand",
-      "walk",
       "run",
       "bow"
      ],
@@ -415,7 +414,7 @@
       "mood.lx"
      ],
      "moves": [
-      "vx",
+      "walk:1 (gait) + vx",
       "mx/my",
       "flip"
      ],
@@ -432,7 +431,6 @@
      "props": [],
      "poses": [
       "stand",
-      "walk",
       "run",
       "bow"
      ],
@@ -441,7 +439,7 @@
       "mood.lx"
      ],
      "moves": [
-      "vx",
+      "walk:1 (gait) + vx",
       "mx/my",
       "flip"
      ],
@@ -458,7 +456,6 @@
      "props": [],
      "poses": [
       "stand",
-      "walk",
       "run",
       "bow"
      ],
@@ -467,7 +464,7 @@
       "mood.lx"
      ],
      "moves": [
-      "vx",
+      "walk:1 (gait) + vx",
       "mx/my",
       "flip"
      ],
@@ -484,7 +481,6 @@
      "props": [],
      "poses": [
       "stand",
-      "walk",
       "run",
       "bow"
      ],
@@ -493,7 +489,7 @@
       "mood.lx"
      ],
      "moves": [
-      "vx",
+      "walk:1 (gait) + vx",
       "mx/my",
       "flip"
      ],
@@ -1553,7 +1549,7 @@
       "stand",
       "namaste",
       "open",
-      "walk"
+      "run"
      ],
      "emotions": [
       "calm",
@@ -1580,7 +1576,7 @@
       "stand",
       "namaste",
       "open",
-      "walk"
+      "run"
      ],
      "emotions": [
       "calm",
@@ -1692,7 +1688,7 @@
    "what": "Ardhanarishwara with poses/emotions",
    "why": "Reel 1",
    "status": "blocked",
-   "note": "existing ardha rig is static (calm, standing); fine for the reveal + close-up; needs engine work only if the owner wants it to gesture"
+   "note": "existing ardha rig is static (calm, standing) and mirrored (use flip:-1 so the male half is on the figure's right); fine for the reveal + close-up; needs engine work only if the owner wants it to gesture"
   },
   {
    "what": "Brahma pursuing in animal forms (bull, stallion ...)",

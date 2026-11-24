@@ -18,7 +18,7 @@ Sheet for any of them: `python3 studio/cast_sheet.py <names> [--out DIR]` → <n
 | ketaki | the speaking ketaki flower: cream-gold bracts, gentle face with bindi on its heart (emo/mood/talk work), `wither` 0..1 or `wc`/`wd` cue, `fall:1` drops petals; x,y = base of the flower |
 | brahma5 (reels) | Brahma with the FIFTH head on top; seated or standing (pose + lotus:false); `hd:{l,r,b,t}` grows heads, no hd = all five |
 | kapali (reels) | Shiva wandering, LEFT hand holds the ivory skull (default) or Brahma's serene severed head (`prop:'head'`, eyes closed, no blood); `prop:'none'` = released |
-| cow, mare, duck, doe (reels) | Shatarupa = Brahmi's animal forms, paper-cut side view facing right; each wears Brahmi's gold necklace with green gem; pose stand/walk/run/bow, mood.blink/lx, head:true close-up |
+| cow, mare, duck, doe (reels) | Shatarupa = Brahmi's animal forms, paper-cut side view facing right; each wears Brahmi's gold necklace with green gem; pose stand/run/bow (walk:1 = gait), mood.blink/lx, head:true close-up |
 | hayagriva2 (reels) | Hayagriva with a real paper-cut white horse head (front view), gold kirita, vaishnava tilak, red irises in anger; Vishnu's 4-armed body (use instead of the old `hayagriva`) |
 | nidra (reels) | Yoga Nidra devi: indigo skin + sari, silver trim, pearls, moon-silver halo; use mood blink .45 |
 | rudra (reels) | Shiva newly born from Brahma's anger: ash-blue, jata + crescent, third eye, tiger skin, FIRE halo, no Vasuki/trishul; also the eleven Rudras crowd |

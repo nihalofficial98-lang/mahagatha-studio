@@ -116,6 +116,7 @@ PZ.lie={hL:[-70,-486],hR:[64,-232],kL:[-24,-130],kR:[22,-130],fL:[-30,0],fR:[18,
 PZ.sitpray={...PZ.sit,hL:[-8,-222],hR:[8,-222],ef:1};
 PZ.calm={};PZ.rage={...PZ.lunge};
 PZ.rpoint={...PZ.lunge,hR:[196,-440]};  // furious accusing point (Shiva: left hand, trishul stays in the right)
+PZ.run={...PZ.flee};  // reels: running (humans = flee stride; animals cow/mare/duck/doe gallop)
 BASE.pointL=false;
 const poseOf=(n,who)=>(n&&typeof n==='object')?n:who==='shiva'?shivaPose(n):((who==='vishnu'||who==='hayagriva')&&(!n||n==='stand')?poseOf0('vstand'):poseOf0(n));
 const poseOf0=(n)=>Object.assign(JSON.parse(JSON.stringify(BASE)),JSON.parse(JSON.stringify(PZ[n]||PZ[{tri:'hold',rest:'stand',cross:'sit',fist:'hold',cup:'open'}[n]]||{})));
@@ -508,7 +509,7 @@ function aLeg(c,x,top,len,w,ang,C,hoof,far,hind){c.save();c.translate(x,top);c.r
   PK.cut(c,PK.P.ell(hk*.6,len*kn,w*.42,w*.3),'rgba(60,30,10,.12)',{lw:0,sh:0});
   if(hoof)PK.cut(c,cc=>{cc.moveTo(-w*.5,len-12);cc.lineTo(w*.55,len-12);cc.lineTo(w*.72,len);cc.lineTo(-w*.62,len);cc.closePath()},far?shade(hoof,.8):hoof,{lw:1.6,ink:AINK,sh:0});
   c.restore()}
-function aMove(o,t){const p=o.pose||'stand',run=p==='run'?1:(p==='walk'?.5:0),bow=(p==='bow'||p==='graze')?1:0,f=run>.5?7:4;
+function aMove(o,t){const p=(o.pose&&typeof o.pose==='object')?'walk':(o.pose||'stand'),run=p==='run'?1:(p==='walk'?.5:0),bow=(p==='bow'||p==='graze')?1:0,f=run>.5?7:4;
   return{run:run,bow:bow,bob:Math.sin(t*1.6)*2-(run?Math.abs(Math.sin(t*f))*8*run:0),sw:k=>run?Math.sin(t*f+k)*.42*run:0,M:o.mood||{}}}
 function aShadow(c,w){c.fillStyle='rgba(30,16,8,.2)';c.beginPath();c.ellipse(0,2,w,14,0,0,7);c.fill()}
 function drawCow(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#f8f2e6',d:'#d2c2a4',h:'#ffffff'},hoof='#6a5440',body=PK.lg(c,0,-340,0,-190,[C.h,C.b,C.d]);aShadow(c,210);

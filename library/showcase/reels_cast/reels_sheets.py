@@ -19,7 +19,7 @@ FRAMES={
    ('cow',F('cow',380,640,.7)),('mare',F('mare',740,640,.62)),('doe',F('doe',1050,640,.8)),
    ('duck',F('duck',1210,400,.9)),
    ('cow - head',F('cow',420,250,.42,head=True)),('mare - head',F('mare',660,250,.42,head=True)),('doe - head',F('doe',900,250,.42,head=True)),('duck - head',F('duck',1140,140,.3,head=True,mood={'blink':0}))]),
- 'animals_motion':dict(title='animal forms - poses: stand / run (legs swing) / bow (head lowered); flip:-1 faces left',figs=[
+ 'animals_motion':dict(title='animal forms - poses: stand / walk:1 / run (legs swing) / bow (head lowered); flip:-1 faces left',figs=[
    ('cow run',F('cow',220,330,.55,pose='run')),('cow bow',F('cow',560,330,.55,pose='bow')),('mare run',F('mare',930,330,.5,pose='run')),
    ('mare bow',F('mare',220,680,.5,pose='bow')),('doe run',F('doe',560,680,.62,pose='run')),('doe bow',F('doe',860,680,.62,pose='bow')),('duck run, facing left',F('duck',1130,680,.75,pose='run',flip=-1))]),
  # ---------- Kapali / Brahma's fifth head ----------
