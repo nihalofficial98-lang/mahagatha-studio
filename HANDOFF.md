@@ -19,3 +19,6 @@ State at the time of writing (all committed on branch `claude/amazing-heisenberg
 
 ## Formats
 - `story` (EP6 style) and `explainer` (owner samples: Parshuram/Ravan, Sita, Varaha): guides/LONG_STYLE.md. Explainers need a source pack with verse references from the owner.
+
+## External skills
+- See library/EXTERNAL_SKILLS.md (three.js, javascript-animation, explainer packs installed as reference skills; engine untouched).
