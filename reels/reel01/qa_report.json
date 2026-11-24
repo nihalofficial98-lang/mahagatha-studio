@@ -1,0 +1,41 @@
+{
+ "episode": "reel01",
+ "frames": 24,
+ "pass": false,
+ "checked": "all 24 frames opened at 540x960 + 4 contact sheets; faces above the 64% subtitle band in every single-window shot (face placement solved per shot to 38-50% height), title card on frame 000 above Brahma's face, subtitles = reels/build/reel01 words, no FX_ERRORS/PAGEERR, no hearts/stars/sparkles, EP6 still md5 unchanged",
+ "issues": [
+  {
+   "shot": "s03",
+   "frame": "library/showcase/reel01_frames/002_s03.jpg",
+   "check": "story",
+   "problem": "the sons' rejection reads weakly: kumara has no back view, so after turn_on they still face the camera (only a sideways look and walking right show they leave)",
+   "owner": "character-designer",
+   "fix": "needs a back/side view of kumara (engine work) or accept"
+  },
+  {
+   "shot": "s09",
+   "frame": "library/showcase/reel01_frames/008_s09.jpg",
+   "check": "technical",
+   "problem": "seated Shiva's seat edge is cut by the right edge of the window and his base sits just above the snow line (slight float, hidden mostly by the subtitle box)",
+   "owner": "action-director",
+   "fix": "accept, or move Shiva to x 720 with window x 600 in a later pass"
+  },
+  {
+   "shot": "s14",
+   "frame": "library/showcase/reel01_frames/013_s14.jpg",
+   "check": "story",
+   "problem": "light_beam seam on 'body' is barely visible at the still time; the split reads only after 'changed' (cross-fade to ardha), so the still shows Shiva in the swirl, not yet split",
+   "owner": "effects-designer",
+   "fix": "a dedicated split-light effect (paper_fx) would sell it; not built"
+  },
+  {
+   "shot": "s15",
+   "frame": "library/showcase/reel01_frames/014_s15.jpg",
+   "check": "story",
+   "problem": "ardha rig is static (no poses/emotions); the blue/rose glows show the two halves but the vertical seam beam is faint",
+   "owner": "effects-designer",
+   "fix": "accept for approval; build a seam effect if the owner wants more"
+  }
+ ],
+ "note": "pass=false only because of the 4 minor known weak spots above (no blocking face/subtitle/empty-frame problems)"
+}
