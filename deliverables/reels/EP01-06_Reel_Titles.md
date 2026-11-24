@@ -1,3 +1,18 @@
+# EP01-06 reels: titles in the owner's reference style (see guides/TITLES.md)
+Format: first-frame text (2-4 words) | full title. Claims are checked against the story before scripting.
+
+1. Reel 1, story 05 (SCRIPTED): "Brahma & the First Woman" | How Did Brahma Create the First Man and Woman?
+2. Reel 2, story 06 (SCRIPTED): "Why Brahma Has 4 Heads" | Why Does Brahma Have Only Four Heads? (alt: Why Does Shiva Carry a Skull in His Hand?)
+3. Story 08: "Vishnu's Guards Chose Hate" | Why Did Jaya and Vijaya Choose to Be Vishnu's Enemies?
+4. Story 02: "Madhu and Kaitabha" | How Did Vishnu Defeat Madhu and Kaitabha?
+5. Story 07: "Narada's Maya Test" | Narada Asked Vishnu What Maya Is. Then This Happened
+6. Story 03: "Rudra: Born From Anger" | How Was Rudra Born From Brahma's Anger?
+7. Story 10 (spare): "Why Say Swaha?" | Why Does Every Offering to Agni End With Swaha?
+8. Story 09 (spare): "Daksha Cursed Narada" | Why Did Daksha Curse Narada?
+
+---
+(older candidate list below, for reference)
+
 # EP01-06 English reel candidates: titles only (ranked best-first)
 
 Ranks 1-6 are the picks. Ranks 7-8 are spares. Length is the estimate for the later script (0.40 s/word, 170-250 words). No reel points to a next episode. None repeats the Brahma/Ketaki reels.
