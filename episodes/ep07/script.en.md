@@ -7,17 +7,17 @@
 
 **B01** [mysterious, grave]
 A demon took heaven by force, then gave away his own body. A god gave away his eye.
-Both times, the world received something no sword could ever win.
+Both gifts bought something no sword could.
 So why would a conqueror agree to die?
 
 **B02** [fast]
-Bala, an asura so strong that nothing could stop him, beat Indra, king of the gods, and took heaven. Then he made one small promise.
-And that promise handed the gods the key to his defeat.
+Bala, a demon so strong that nothing could stop him, beat Indra, king of the gods, and took heaven. Then he made one small promise.
+It would cost him everything.
 
 **B03** [grave]
-The gods stood helpless at the gates of heaven. Their king, Indra, had lost. Their home was gone, their throne was gone, and shame burned in them.
+The gods stood helpless at the gates of heaven. Their home was gone, and shame burned in them.
 Gods and demons came from the same family tree. Still, they hated each other, and fought again and again over heaven and earth. This time the demons had won.
-At stake was heaven itself, and everything the gods had.
+Without heaven, the gods had nowhere to go.
 
 **B04** [calm]
 Then Bala walked up to them. His mind was wicked, but his heart was generous. He had never refused anyone who asked him for a gift.
@@ -35,25 +35,24 @@ Indra and the gods went back to the palace and bowed to the demon. "We are holdi
 The hall froze. Bala stood up. His face was terrible. His shadow swallowed them. Were these their last words? He came closer. And closer. And closer.
 
 **B07** [firm]
-Bala folded his hands. "I am ready."
+Bala folded his hands. "I am ready." He did not say it with fear.
 Then the flames of the yagna fed on his body. They burned his bones and melted his flesh. The gods' trick had worked.
 
 **B08** [grand]
-Heaven was theirs again. The gods danced around his body, when someone cried, "Look!"
-The burned body was changing. Every part was turning solid, and becoming something so beautiful that no one could look away. The gods crept closer, afraid, to touch those colors.
+Bala was dead, and heaven was theirs again. The gods danced around his body. Then someone screamed, "Look!"
+The burned body was changing. Every part was turning solid, and becoming something so beautiful that no one could look away. The gods crept closer to touch those colors.
 Red, green, blue, yellow. Shades nobody had ever seen, dazzling their eyes and gripping their hearts. His body had become a rainbow, glowing with the light of a million stars.
 
 **B09** [calm]
 Then a voice from the sky spoke. "Bala's last selfless act has made his body holy. Now it holds the most precious things in the universe."
-He gave his life because his heart could not say no. The kindness that beat him also made his body priceless.
+He gave his life because his heart could not say no. The kindness that cost him his life also made his body priceless.
 
 **B10** [fast]
 Bala, the generous demon, gave his life in a fire ritual. His burned body turned priceless. The gods lifted it to carry it home to heaven.
-And they could not hold on.
+And it began to slip.
 
 **B11** [calm]
-The gods looked at the body from far away, then from close up. They were stunned. The demon they had feared had a body this wonderful!
-They wanted to take it back at once. The voice from the sky still rang in their ears: the most precious store in the universe. So they pushed together, shoulder to shoulder, and pulled with all their strength. Every attempt failed.
+The gods stared. They had come to celebrate a victory over a demon. Now his body was the greatest wonder in heaven. The demon they had feared had a body this wonderful! They remembered the voice: the most precious store in the universe. They tried to carry it home at any cost. They tightened their grip. But it was slipping.
 
 **B12** [mysterious]
 It slipped from their hands and fell towards the earth. As it fell, cracks ran through it. Before anyone could understand, it had shattered. The gods watched from above, helpless, as the pieces tore through the clouds and rained down.
@@ -71,14 +70,13 @@ His bones became diamonds. His bile became emeralds. His blood became rubies, re
 **B16** [slow]
 His teeth became pearls. His skin became topaz. His nails became garnets. His guts became coral.
 And his voice became the cat's eye. The same voice that had said, "I am ready."
-The names sound small. But each one is a piece of the body the gods once saw as an enemy.
+They sound like jewellery in a shop. But each one is a piece of the body the gods once saw as an enemy.
 
 **B17** [grand]
-These nine jewels were called the Navaratnas, the nine gems. They were the most precious things the universe had to give. The gods took a life by trickery, and the earth received a treasure no victory could ever bring. Even today, when someone speaks of the Navaratnas, they are speaking of one demon's generosity.
+These nine jewels were called the Navaratnas, the nine gems. They were the most precious things the universe had to give. The gods took a life by trickery, and the earth received a treasure no victory could ever bring.
 
 **B18** [tender]
-What could not be won by force came through giving. In every jewel, one generous demon's sacrifice still shines.
-The gods thought they had defeated a demon. In truth, a giver had handed them his greatest gift.
+Heaven was won by a trick. The treasure of the earth was won by a gift. The gods thought they had beaten a demon. In truth, they had lost a giver. And every jewel still carries his gift.
 
 **B19** [grave]
 Vishnu, who keeps the world alive, began to worship Shiva, the god of destruction, as no one ever had. He offered a thousand lotus flowers.
@@ -93,7 +91,7 @@ The gods begged Vishnu to save them. But Vishnu himself was tired of the endless
 
 **B22** [slow]
 Vishnu went into the empty wilderness and worshipped Shiva. Years came and years went. Shiva did not appear. Vishnu sang hymns that could please any god, but the vision he longed for did not come.
-So he stopped. He sifted the earth and shaped a lingam, a sacred stone of Shiva. Sitting before it, he began to chant the thousand names.
+So he stopped. He sifted the earth and shaped a lingam, the sacred form of Shiva. Sitting before it, he began to chant the thousand names.
 "Ashutosh... Bhairava... Mahakaal... Rudradeva..."
 
 **B23** [calm]
@@ -102,7 +100,7 @@ Shiva was moved. He was about to appear. But first he wanted to test the keeper 
 Vishnu counted the flowers. Nine hundred and ninety-nine.
 
 **B24** [whispering]
-Vishnu panicked. The lotus was nowhere to be found. One flower short meant the worship was unfinished. Years of effort, wasted. Would Vishnu fail before Shiva?
+Vishnu was baffled. He searched everywhere. The lotus was nowhere to be found. One flower short meant the worship was unfinished. Years of effort, wasted. Would Vishnu fail before Shiva?
 
 **B25** [firm]
 Then Vishnu's face lit up. While chanting Shiva's names, he had forgotten that he had many names too. Beautiful names, given by his devotees. One of them was Kamalanayana.
@@ -118,13 +116,12 @@ That eye shone brighter than any gem, wet with the dew of devotion. Shiva appear
 
 **B28** [firm]
 It had two circles, spinning in opposite directions, and one hundred and eight sharp edges.
-"It is the only moving weapon in the universe," said Shiva. "It obeys your will. It flies out, destroys its target and comes back to you. With it, you can face every disaster."
+"It is the only weapon in the universe that flies," said Shiva. "It obeys your will. It flies out, destroys its target and comes back to you. With it, you can face every disaster."
 "What shall we call it?" asked Vishnu.
 "Sudarshana." Shiva touched his eyes. "Virtuous vision."
 
 **B29** [calm]
-A demon named Bala gave his body, and the world got nine jewels. Vishnu gave his eye, and the world got the Sudarshana. Both times, the greatest gift came through giving.
-Which gift was greater? Tell us in the comments.
+Bala agreed to die because he could never refuse anyone who asked. His body became nine jewels. Vishnu gave his eye, and Shiva gave him the Sudarshana Chakra. Whose gift moved you more? Tell us in the comments.
 
 ---
 *The End*
