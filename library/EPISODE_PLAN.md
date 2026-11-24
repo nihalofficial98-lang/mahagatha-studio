@@ -1,6 +1,7 @@
 # Mahagatha Part 1: Episode plan (stories 1-21 -> 13 videos)
 
 Rule: one video = at least 8 and at most 10 min (aim 8.5-9.5) = about 1,310-1,630 Hindi script words at the owner's measured pace (0.367 s/word, library/voice_profile.json); each video = teaser + 3 stand-alone chapters (reels). Short stories are paired by theme so every video has a story arc,
+Every episode is standalone: it ends resolved with a short closing line and the comment question; no next-episode tease or setup for the next story.
 labelled Part 1 / Part 2 on screen. Long stories (15, 18, 21) stand alone.
 
 | Ep | Stories | Working title | Source words |

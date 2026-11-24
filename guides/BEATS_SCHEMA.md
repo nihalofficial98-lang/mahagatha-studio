@@ -24,7 +24,7 @@ Worked example (EP06 as recorded, analysis only): `library/examples/ep06_beats_e
 | `chapter` | "C2" | one of `chapters`; chapters are continuous blocks |
 | `reel` | "B" / null | reel the beat belongs to; teaser beats are `null` (full video only) |
 | `intent` | "the race starts" | one line: what this beat does for the story |
-| `roles` | ["hook"] | from: `hook stakes plant setup rehook turn climax payoff answer recap bridge question tease` |
+| `roles` | ["hook"] | from: `hook stakes plant setup rehook turn climax payoff answer recap bridge question` (`tease` is not allowed: episodes are standalone) |
 | `budget_sec` | 30 | planned length; the checker warns if the script is off by > 35% (or 6 s) |
 | `emotion` | {"hi":"तेज़","en":"fast"} | the reading cue per language; the script's `[cue]` must exist |
 | `cue_ids` | ["flower_falls"] | semantic anchors in this beat (unique in the episode) |
@@ -32,7 +32,7 @@ Worked example (EP06 as recorded, analysis only): `library/examples/ep06_beats_e
 | `names_introduced` | ["ketaki"] | names introduced (or re-introduced) here in one line; the language's spelling must appear in the beat text |
 | `vertical` (optional) | {"focus":"brahma","note":"keep flower centre"} | 9:16 reel framing hint (see Reels) |
 
-Checker rules tied to roles: first beat of the video = `hook`; first `stakes` <= 60 s; gaps between `hook/stakes/plant/rehook/turn/climax` <= 90 s; every chapter starts with `hook`, has `setup`, `turn` (or `climax`), `payoff`, ends with `bridge`; exactly one `climax` (in C3); a `payoff` within 30 s after it; time after the climax <= 15%; `recap` <= 40 words; `question`/`tease` only in C3 or X. Numbers: `library/script_rules.json`.
+Checker rules tied to roles: first beat of the video = `hook`; first `stakes` <= 60 s; gaps between `hook/stakes/plant/rehook/turn/climax` <= 90 s; every chapter starts with `hook`, has `setup`, `turn` (or `climax`), `payoff`, ends with `bridge`; exactly one `climax` (in C3); a `payoff` within 30 s after it; time after the climax <= 15%; `recap` <= 40 words; `question` only in C3 or X; role `tease` is an error (no next-episode pointer). Numbers: `library/script_rules.json`.
 
 ## Cue ids (shot anchors)
 Old briefs anchor a shot to a Hindi word (`"start": {"t": 0.14, "word": "ब्रह्मा"}`). That breaks for English (different words, different times). New rule:

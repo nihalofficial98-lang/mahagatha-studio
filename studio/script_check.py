@@ -19,7 +19,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROFILE = os.path.join(ROOT, 'library', 'voice_profile.json')
 RULES = os.path.join(ROOT, 'library', 'script_rules.json')
 ROLES = {'hook', 'stakes', 'plant', 'setup', 'rehook', 'turn', 'climax', 'payoff', 'answer',
-         'recap', 'bridge', 'question', 'tease'}
+         'recap', 'bridge', 'question', 'tease'}  # 'tease' is accepted but flagged as ERROR (standalone episodes)
 BACKREF = {'hi': ['जैसा हमने देखा', 'जैसा कि हमने देखा', 'जैसा हमने पहले', 'जैसा पहले बताया', 'पहले बताया था',
                   'पिछले हिस्से में', 'पिछले अध्याय'],
            'en': ['as we saw', 'as we have seen', "as we've seen", 'as mentioned', 'as i said', 'like we said',
@@ -299,12 +299,13 @@ def check_structure(R, script, doc, lang, rules, total):
     R.row('planted question', '%s -> %s' % (pi, ai), 'ch1 (or teaser) -> ch3', pq_ok)
     if not pq_ok:
         R.add('ERROR', 'planted_question must be planted in the teaser/chapter 1 and answered in chapter 3 (planted_in/answered_in beat ids)')
-    # 7. closing question / next-episode tease only at the very end
+    # 7. closing question only at the very end; no next-episode tease (standalone episodes)
     endc = [story[-1]] + [b['chapter'] for b in close] if story else []
     for b in B:
-        r = b['roles'] & {'question', 'tease'}
-        if r and b['chapter'] not in endc:
-            R.add('ERROR', '%s: %s only in the last chapter bridge / close (found in %s)' % (b['id'], '/'.join(sorted(r)), b['chapter']))
+        if 'tease' in b['roles']:
+            R.add('ERROR', '%s: no next-episode tease: every episode is standalone (remove role "tease")' % b['id'])
+        if 'question' in b['roles'] and b['chapter'] not in endc:
+            R.add('ERROR', '%s: question only in the last chapter bridge / close (found in %s)' % (b['id'], b['chapter']))
     # 8. reels
     reels = sorted({b.get('reel') for b in B if b.get('reel')})
     rep = []
@@ -455,7 +456,7 @@ def _synthetic(pace):
         ('C3', ['turn'], 36, ['shiva'], [], None),
         ('C3', ['climax'], 22, ['shiva', 'brahma'], [], 'shiva_verdict'),
         ('C3', ['payoff', 'answer'], 26, ['brahma'], [], None),
-        ('C3', ['recap', 'bridge', 'question', 'tease'], 14, ['brahma'], [], None),
+        ('C3', ['recap', 'bridge', 'question'], 14, ['brahma'], [], None),
     ]
     names = {'brahma': {'hi': 'ब्रह्मा', 'en': 'Brahma'}, 'vishnu': {'hi': 'विष्णु', 'en': 'Vishnu'}, 'shiva': {'hi': 'शिव', 'en': 'Shiva'}}
     beats, lines = [], ['# test', '']
@@ -502,7 +503,7 @@ def selftest():
         e = ' | '.join(R.errors)
         expect('catches back-reference', 'back-reference' in e)
         expect('catches name not re-introduced', 'before being introduced' in e)
-        expect('catches tease outside last chapter', 'tease only' in e)
+        expect('catches tease role (episodes are standalone)', 'no next-episode tease' in e)
         R = check(parse_script(p), None, 'hi', pace, rules)
         expect('legacy mode (no beats.json) never errors', not R.errors)
     # the EP06 analysis file must flag the known problems

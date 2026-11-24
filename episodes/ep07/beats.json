@@ -2,18 +2,194 @@
  "episode": "07",
  "title": {
   "hi": "बाला का बलिदान और सुदर्शन चक्र",
-  "en": ""
+  "en": "Bala's Sacrifice and the Sudarshana Chakra"
  },
  "languages": [
   "hi"
  ],
  "planted_question": {
-  "text": "TODO",
+  "text": "The conqueror who took heaven by force: why did he give his life himself, and what is the price of the greatest gift?",
   "planted_in": "B01",
-  "answered_in": "B21"
+  "answered_in": "B27"
  },
- "names": {},
- "cues": {},
+ "names": {
+  "bala": {
+   "hi": "बाला",
+   "en": "Bala",
+   "line": {
+    "hi": "बाला, वह असुर जिसने स्वर्ग जीता",
+    "en": ""
+   }
+  },
+  "indra": {
+   "hi": "इंद्र",
+   "en": "Indra",
+   "line": {
+    "hi": "इंद्र, देवताओं के राजा",
+    "en": ""
+   }
+  },
+  "devas": {
+   "hi": "देवता",
+   "en": "The gods",
+   "line": {
+    "hi": "देवता, स्वर्ग के वासी",
+    "en": ""
+   }
+  },
+  "vishnu": {
+   "hi": "विष्णु",
+   "en": "Vishnu",
+   "line": {
+    "hi": "विष्णु, जो सृष्टि को पालते हैं",
+    "en": ""
+   }
+  },
+  "shiva": {
+   "hi": "शिव",
+   "en": "Shiva",
+   "line": {
+    "hi": "शिव, संहार के देवता",
+    "en": ""
+   }
+  },
+  "sudarshana": {
+   "hi": "सुदर्शन",
+   "en": "Sudarshana",
+   "line": {
+    "hi": "सुदर्शन, शिव का दिया चक्र",
+    "en": ""
+   }
+  }
+ },
+ "cues": {
+  "bala_promise": {
+   "meaning": "Bala promises help at every yagna",
+   "anchor": {
+    "hi": "यज्ञ करो",
+    "en": ""
+   }
+  },
+  "indra_smirks": {
+   "meaning": "Indra smirks at the unknowing promise",
+   "anchor": {
+    "hi": "मुस्कुरा दिए",
+    "en": ""
+   }
+  },
+  "bala_stands": {
+   "meaning": "Bala rises, shadow over the gods",
+   "anchor": {
+    "hi": "बाला खड़ा हो गया",
+    "en": ""
+   }
+  },
+  "flames_take_bala": {
+   "meaning": "ritual flames consume his body",
+   "anchor": {
+    "hi": "यज्ञ की लपटें",
+    "en": ""
+   }
+  },
+  "rainbow_body": {
+   "meaning": "the body becomes a rainbow with the glow of a million stars",
+   "anchor": {
+    "hi": "इंद्रधनुष बन गई",
+    "en": ""
+   }
+  },
+  "heavenly_voice": {
+   "meaning": "a voice from the sky declares his act selfless",
+   "anchor": {
+    "hi": "आकाशवाणी हुई",
+    "en": ""
+   }
+  },
+  "body_falls": {
+   "meaning": "the rainbow body slips and falls to Earth",
+   "anchor": {
+    "hi": "भूलोक की ओर गिरने",
+    "en": ""
+   }
+  },
+  "pieces_scatter": {
+   "meaning": "fragments rain on mountains, forests, rivers, seas",
+   "anchor": {
+    "hi": "टुकड़े पहाड़ों पर गिरे",
+    "en": ""
+   }
+  },
+  "diamond_bones": {
+   "meaning": "bones become diamonds",
+   "anchor": {
+    "hi": "हीरे बने",
+    "en": ""
+   }
+  },
+  "cats_eye_voice": {
+   "meaning": "the voice becomes the cat's eye",
+   "anchor": {
+    "hi": "लहसुनिया",
+    "en": ""
+   }
+  },
+  "navaratna_named": {
+   "meaning": "the nine gems are named the Navaratnas",
+   "anchor": {
+    "hi": "नवरत्न कहलाए",
+    "en": ""
+   }
+  },
+  "lingam_sculpted": {
+   "meaning": "Vishnu shapes a lingam from earth",
+   "anchor": {
+    "hi": "शिवलिंग गढ़ा",
+    "en": ""
+   }
+  },
+  "thousand_names": {
+   "meaning": "the thousand names begin",
+   "anchor": {
+    "hi": "आशुतोष",
+    "en": ""
+   }
+  },
+  "lotus_stolen": {
+   "meaning": "Shiva steals a single lotus",
+   "anchor": {
+    "hi": "चुरा लिया",
+    "en": ""
+   }
+  },
+  "lotus_eyed_idea": {
+   "meaning": "he realises his own name is Lotus-Eyed",
+   "anchor": {
+    "hi": "कमलनयन",
+    "en": ""
+   }
+  },
+  "eye_plucked": {
+   "meaning": "Vishnu plucks his eye and places it on the lingam",
+   "anchor": {
+    "hi": "अपनी आँख निकाली",
+    "en": ""
+   }
+  },
+  "chakra_given": {
+   "meaning": "the golden disc, two circles spinning opposite ways, 108 edges",
+   "anchor": {
+    "hi": "सुनहरा चक्र",
+    "en": ""
+   }
+  },
+  "name_sudarshana": {
+   "meaning": "Shiva touches his eyes and names it",
+   "anchor": {
+    "hi": "शुभ दृष्टि",
+    "en": ""
+   }
+  }
+ },
  "chapters": [
   {
    "id": "T",
@@ -23,19 +199,25 @@
    "id": "C1",
    "kind": "chapter",
    "reel": "A",
-   "title": {}
+   "title": {
+    "hi": "बाला का बलिदान"
+   }
   },
   {
    "id": "C2",
    "kind": "chapter",
    "reel": "B",
-   "title": {}
+   "title": {
+    "hi": "नौ रत्न"
+   }
   },
   {
    "id": "C3",
    "kind": "chapter",
    "reel": "C",
-   "title": {}
+   "title": {
+    "hi": "विष्णु की आँख और सुदर्शन"
+   }
   }
  ],
  "beats": [
@@ -43,209 +225,276 @@
    "id": "B01",
    "chapter": "T",
    "reel": null,
-   "intent": "teaser: the image + the planted question; never the answer",
+   "intent": "teaser: two gifts of the self; planted question (why did the conqueror give his life; what does the biggest gift cost)",
    "roles": [
     "hook",
     "plant"
    ],
-   "budget_sec": 15,
+   "budget_sec": 18,
    "emotion": {
-    "hi": "तेज़, रहस्यमयी"
+    "hi": "रहस्यमयी, गंभीर",
+    "en": ""
    },
    "cue_ids": [],
-   "characters": [],
+   "characters": [
+    "bala",
+    "vishnu"
+   ],
    "names_introduced": []
   },
   {
    "id": "B02",
    "chapter": "C1",
    "reel": "A",
-   "intent": "chapter hook: start inside the action, names in one line each",
+   "intent": "Bala takes heaven and unknowingly hands the gods the key to his defeat",
    "roles": [
     "hook"
    ],
-   "budget_sec": 10,
+   "budget_sec": 11,
    "emotion": {
-    "hi": "तेज़"
+    "hi": "तेज़",
+    "en": ""
    },
    "cue_ids": [],
-   "characters": [],
-   "names_introduced": []
+   "characters": [
+    "bala",
+    "indra"
+   ],
+   "names_introduced": [
+    "bala",
+    "indra"
+   ]
   },
   {
    "id": "B03",
    "chapter": "C1",
    "reel": "A",
-   "intent": "what can be lost, and by whom (by 0:60 overall)",
+   "intent": "gods at the gate, heaven lost; what is at stake",
    "roles": [
     "stakes",
     "setup"
    ],
-   "budget_sec": 32,
+   "budget_sec": 28,
    "emotion": {
-    "hi": "गंभीर"
+    "hi": "गंभीर",
+    "en": ""
    },
    "cue_ids": [],
-   "characters": [],
-   "names_introduced": []
+   "characters": [
+    "indra",
+    "devas"
+   ],
+   "names_introduced": [
+    "devas"
+   ]
   },
   {
    "id": "B04",
    "chapter": "C1",
    "reel": "A",
-   "intent": "the world / the want",
+   "intent": "Bala's generous heart and his promise; Indra smirks",
    "roles": [
     "setup"
    ],
-   "budget_sec": 34,
+   "budget_sec": 26,
    "emotion": {
-    "hi": "शांत"
+    "hi": "शांत",
+    "en": ""
    },
-   "cue_ids": [],
-   "characters": [],
+   "cue_ids": [
+    "bala_promise",
+    "indra_smirks"
+   ],
+   "characters": [
+    "bala",
+    "indra"
+   ],
    "names_introduced": []
   },
   {
    "id": "B05",
    "chapter": "C1",
    "reel": "A",
-   "intent": "short punch: a new question",
+   "intent": "what is the smirk about? the yagna",
    "roles": [
     "rehook"
    ],
-   "budget_sec": 14,
+   "budget_sec": 8,
    "emotion": {
-    "hi": "रहस्यमयी"
+    "hi": "रहस्यमयी",
+    "en": ""
    },
    "cue_ids": [],
-   "characters": [],
+   "characters": [
+    "indra"
+   ],
    "names_introduced": []
   },
   {
    "id": "B06",
    "chapter": "C1",
    "reel": "A",
-   "intent": "the turn",
+   "intent": "the yagna day, the request, the terrifying pause",
    "roles": [
-    "turn"
+    "setup",
+    "rehook"
    ],
    "budget_sec": 36,
    "emotion": {
-    "hi": "तेज़"
+    "hi": "तेज़",
+    "en": ""
    },
-   "cue_ids": [],
-   "characters": [],
+   "cue_ids": [
+    "bala_stands"
+   ],
+   "characters": [
+    "bala",
+    "indra"
+   ],
    "names_introduced": []
   },
   {
    "id": "B07",
    "chapter": "C1",
    "reel": "A",
-   "intent": "mini-payoff of this chapter",
+   "intent": "\"I am ready\"; the flames",
    "roles": [
-    "payoff"
+    "turn"
    ],
-   "budget_sec": 32,
+   "budget_sec": 10,
    "emotion": {
-    "hi": "भव्य"
+    "hi": "दृढ़",
+    "en": ""
    },
-   "cue_ids": [],
-   "characters": [],
+   "cue_ids": [
+    "flames_take_bala"
+   ],
+   "characters": [
+    "bala"
+   ],
    "names_introduced": []
   },
   {
    "id": "B08",
    "chapter": "C1",
    "reel": "A",
-   "intent": "bridge line: an unresolved image that pulls into chapter 2",
+   "intent": "the gods celebrate; the body turns into a glowing rainbow",
    "roles": [
-    "bridge"
+    "payoff"
    ],
-   "budget_sec": 14,
+   "budget_sec": 34,
    "emotion": {
-    "hi": "धीमे"
+    "hi": "भव्य",
+    "en": ""
    },
-   "cue_ids": [],
-   "characters": [],
+   "cue_ids": [
+    "rainbow_body"
+   ],
+   "characters": [
+    "devas"
+   ],
    "names_introduced": []
   },
   {
    "id": "B09",
-   "chapter": "C2",
-   "reel": "B",
-   "intent": "chapter hook + names re-introduced in one line",
+   "chapter": "C1",
+   "reel": "A",
+   "intent": "heavenly voice's verdict and why he gave his life",
    "roles": [
-    "hook"
+    "bridge"
    ],
-   "budget_sec": 10,
+   "budget_sec": 24,
    "emotion": {
-    "hi": "तेज़"
+    "hi": "शांत",
+    "en": ""
    },
-   "cue_ids": [],
-   "characters": [],
+   "cue_ids": [
+    "heavenly_voice"
+   ],
+   "characters": [
+    "bala"
+   ],
    "names_introduced": []
   },
   {
    "id": "B10",
    "chapter": "C2",
    "reel": "B",
-   "intent": "setup",
+   "intent": "re-introduce Bala; the gods cannot carry the body home",
    "roles": [
-    "setup"
+    "hook"
    ],
-   "budget_sec": 36,
+   "budget_sec": 12,
    "emotion": {
-    "hi": "शांत"
+    "hi": "तेज़",
+    "en": ""
    },
    "cue_ids": [],
-   "characters": [],
-   "names_introduced": []
+   "characters": [
+    "bala",
+    "devas"
+   ],
+   "names_introduced": [
+    "bala",
+    "devas"
+   ]
   },
   {
    "id": "B11",
    "chapter": "C2",
    "reel": "B",
-   "intent": "short punch",
+   "intent": "the gods try to carry the body back",
    "roles": [
-    "rehook"
+    "setup"
    ],
-   "budget_sec": 14,
+   "budget_sec": 23,
    "emotion": {
-    "hi": "रहस्यमयी"
+    "hi": "शांत",
+    "en": ""
    },
    "cue_ids": [],
-   "characters": [],
+   "characters": [
+    "devas"
+   ],
    "names_introduced": []
   },
   {
    "id": "B12",
    "chapter": "C2",
    "reel": "B",
-   "intent": "escalation",
+   "intent": "the body slips and falls towards earth, cracking",
    "roles": [
-    "setup"
+    "turn"
    ],
-   "budget_sec": 36,
+   "budget_sec": 6,
    "emotion": {
-    "hi": "तनाव"
+    "hi": "रहस्यमयी",
+    "en": ""
    },
-   "cue_ids": [],
-   "characters": [],
+   "cue_ids": [
+    "body_falls"
+   ],
+   "characters": [
+    "bala"
+   ],
    "names_introduced": []
   },
   {
    "id": "B13",
    "chapter": "C2",
    "reel": "B",
-   "intent": "the turn",
+   "intent": "scattered across earth: 84 parts, 21 jewels, 9 most precious",
    "roles": [
-    "turn"
+    "setup"
    ],
-   "budget_sec": 16,
+   "budget_sec": 29,
    "emotion": {
-    "hi": "विस्फोट"
+    "hi": "गंभीर",
+    "en": ""
    },
-   "cue_ids": [],
+   "cue_ids": [
+    "pieces_scatter"
+   ],
    "characters": [],
    "names_introduced": []
   },
@@ -253,13 +502,14 @@
    "id": "B14",
    "chapter": "C2",
    "reel": "B",
-   "intent": "payoff",
+   "intent": "the winnowing 84 -> 21 -> 9, and the origin of each",
    "roles": [
-    "payoff"
+    "rehook"
    ],
-   "budget_sec": 36,
+   "budget_sec": 14,
    "emotion": {
-    "hi": "धूर्त"
+    "hi": "रहस्यमयी",
+    "en": ""
    },
    "cue_ids": [],
    "characters": [],
@@ -269,61 +519,77 @@
    "id": "B15",
    "chapter": "C2",
    "reel": "B",
-   "intent": "bridge line into chapter 3",
+   "intent": "diamond, emerald, ruby, sapphire",
    "roles": [
-    "bridge"
+    "setup"
    ],
-   "budget_sec": 14,
+   "budget_sec": 19,
    "emotion": {
-    "hi": "धीमे"
+    "hi": "गंभीर",
+    "en": ""
    },
-   "cue_ids": [],
-   "characters": [],
+   "cue_ids": [
+    "diamond_bones"
+   ],
+   "characters": [
+    "bala"
+   ],
    "names_introduced": []
   },
   {
    "id": "B16",
-   "chapter": "C3",
-   "reel": "C",
-   "intent": "chapter hook + names re-introduced",
+   "chapter": "C2",
+   "reel": "B",
+   "intent": "pearl, topaz, garnet, coral, cat's eye",
    "roles": [
-    "hook"
+    "setup"
    ],
-   "budget_sec": 10,
+   "budget_sec": 18,
    "emotion": {
-    "hi": "विस्फोट"
+    "hi": "धीमे",
+    "en": ""
    },
-   "cue_ids": [],
-   "characters": [],
+   "cue_ids": [
+    "cats_eye_voice"
+   ],
+   "characters": [
+    "bala"
+   ],
    "names_introduced": []
   },
   {
    "id": "B17",
-   "chapter": "C3",
-   "reel": "C",
-   "intent": "setup",
+   "chapter": "C2",
+   "reel": "B",
+   "intent": "the Navaratnas named; treasure from a gift, not a sword",
    "roles": [
-    "setup"
+    "payoff"
    ],
-   "budget_sec": 36,
+   "budget_sec": 23,
    "emotion": {
-    "hi": "गंभीर"
+    "hi": "भव्य",
+    "en": ""
    },
-   "cue_ids": [],
-   "characters": [],
+   "cue_ids": [
+    "navaratna_named"
+   ],
+   "characters": [
+    "devas"
+   ],
    "names_introduced": []
   },
   {
    "id": "B18",
-   "chapter": "C3",
-   "reel": "C",
-   "intent": "short punch",
+   "chapter": "C2",
+   "reel": "B",
+   "intent": "closing line: every gem carries the sacrifice",
    "roles": [
-    "rehook"
+    "bridge"
    ],
-   "budget_sec": 14,
+   "budget_sec": 7,
    "emotion": {
-    "hi": "रहस्यमयी"
+    "hi": "स्नेह",
+    "en": ""
    },
    "cue_ids": [],
    "characters": [],
@@ -333,69 +599,226 @@
    "id": "B19",
    "chapter": "C3",
    "reel": "C",
-   "intent": "the turn",
+   "intent": "Vishnu calls Shiva; a thousand lotuses; one short",
    "roles": [
-    "turn"
+    "hook"
    ],
-   "budget_sec": 36,
+   "budget_sec": 11,
    "emotion": {
-    "hi": "क्रोध"
+    "hi": "गंभीर",
+    "en": ""
    },
    "cue_ids": [],
-   "characters": [],
-   "names_introduced": []
+   "characters": [
+    "vishnu",
+    "shiva"
+   ],
+   "names_introduced": [
+    "vishnu",
+    "shiva"
+   ]
   },
   {
    "id": "B20",
    "chapter": "C3",
    "reel": "C",
-   "intent": "climax",
+   "intent": "demons unlike Bala torment gods and humans; Vishnu is weary",
    "roles": [
-    "climax"
+    "stakes",
+    "setup"
    ],
-   "budget_sec": 22,
+   "budget_sec": 28,
    "emotion": {
-    "hi": "विस्फोट"
+    "hi": "गंभीर",
+    "en": ""
    },
    "cue_ids": [],
-   "characters": [],
-   "names_introduced": []
+   "characters": [
+    "vishnu",
+    "devas"
+   ],
+   "names_introduced": [
+    "devas"
+   ]
   },
   {
    "id": "B21",
    "chapter": "C3",
    "reel": "C",
-   "intent": "payoff = answer to the planted question, within 30 s",
+   "intent": "Vishnu decides to invoke Mahadeva as no one has",
    "roles": [
-    "payoff",
-    "answer"
+    "rehook"
    ],
-   "budget_sec": 24,
+   "budget_sec": 5,
    "emotion": {
-    "hi": "दृढ़, भारी"
+    "hi": "दृढ़",
+    "en": ""
    },
    "cue_ids": [],
-   "characters": [],
+   "characters": [
+    "vishnu",
+    "shiva"
+   ],
    "names_introduced": []
   },
   {
    "id": "B22",
    "chapter": "C3",
    "reel": "C",
-   "intent": "recap <= 40 words + comment question + next-episode tease",
+   "intent": "years of worship; the earth lingam; thousand names",
+   "roles": [
+    "setup"
+   ],
+   "budget_sec": 27,
+   "emotion": {
+    "hi": "धीमे",
+    "en": ""
+   },
+   "cue_ids": [
+    "lingam_sculpted",
+    "thousand_names"
+   ],
+   "characters": [
+    "vishnu",
+    "shiva"
+   ],
+   "names_introduced": []
+  },
+  {
+   "id": "B23",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "a lotus offered per name; Shiva steals one: 999",
+   "roles": [
+    "turn"
+   ],
+   "budget_sec": 26,
+   "emotion": {
+    "hi": "शांत",
+    "en": ""
+   },
+   "cue_ids": [
+    "lotus_stolen"
+   ],
+   "characters": [
+    "vishnu",
+    "shiva"
+   ],
+   "names_introduced": []
+  },
+  {
+   "id": "B24",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "panic: will Hari fail before Hara?",
+   "roles": [
+    "rehook"
+   ],
+   "budget_sec": 9,
+   "emotion": {
+    "hi": "फुसफुसाकर",
+    "en": ""
+   },
+   "cue_ids": [],
+   "characters": [
+    "vishnu"
+   ],
+   "names_introduced": []
+  },
+  {
+   "id": "B25",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "Kamalanayana: the lotus-eyed idea",
+   "roles": [
+    "turn"
+   ],
+   "budget_sec": 23,
+   "emotion": {
+    "hi": "दृढ़",
+    "en": ""
+   },
+   "cue_ids": [
+    "lotus_eyed_idea"
+   ],
+   "characters": [
+    "vishnu"
+   ],
+   "names_introduced": []
+  },
+  {
+   "id": "B26",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "Vishnu plucks out his eye and offers it",
+   "roles": [
+    "climax"
+   ],
+   "budget_sec": 11,
+   "emotion": {
+    "hi": "गंभीर",
+    "en": ""
+   },
+   "cue_ids": [
+    "eye_plucked"
+   ],
+   "characters": [
+    "vishnu",
+    "shiva"
+   ],
+   "names_introduced": []
+  },
+  {
+   "id": "B27",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "Shiva heals him, gives the disc, names it Sudarshana",
+   "roles": [
+    "payoff",
+    "answer"
+   ],
+   "budget_sec": 36,
+   "emotion": {
+    "hi": "भव्य, दृढ़",
+    "en": ""
+   },
+   "cue_ids": [
+    "chakra_given",
+    "name_sudarshana"
+   ],
+   "characters": [
+    "shiva",
+    "vishnu",
+    "sudarshana"
+   ],
+   "names_introduced": [
+    "sudarshana"
+   ]
+  },
+  {
+   "id": "B28",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "recap, resolved closing line, comment question (no tease)",
    "roles": [
     "recap",
     "bridge",
-    "question",
-    "tease"
+    "question"
    ],
-   "budget_sec": 18,
+   "budget_sec": 15,
    "emotion": {
-    "hi": "शांत"
+    "hi": "शांत",
+    "en": ""
    },
    "cue_ids": [],
-   "characters": [],
-   "names_introduced": []
+   "characters": [
+    "bala",
+    "vishnu"
+   ],
+   "names_introduced": [
+    "bala",
+    "vishnu"
+   ]
   }
  ]
 }

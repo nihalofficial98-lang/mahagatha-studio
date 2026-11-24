@@ -14,13 +14,13 @@ The book gives only plot facts; every word is original. One episode = **one full
 | **T** teaser | 10-20 s (aim 15) | the strongest image + the **planted question**. Never the answer. Not in any reel. |
 | **C1** reel A | 150-192 s | hook in the first 10 s, names in one line each, **stakes by 0:60 of the video**, setup, turn, mini-payoff, bridge line |
 | **C2** reel B | 150-192 s | its own hook + one-line re-introductions, escalation, turn, payoff, bridge line |
-| **C3** reel C | 150-192 s | hook + re-introductions, turn, **climax**, payoff (= answer to the planted question) **within 30 s of the climax**, recap <= 40 words, bridge = closing question + next-episode tease |
+| **C3** reel C | 150-192 s | hook + re-introductions, turn, **climax**, payoff (= answer to the planted question) **within 30 s of the climax**, recap <= 40 words, bridge = short resolved closing line + comment question; **no next-episode tease** (the episode is standalone) |
 | **X** close (optional) | <= 25 s | sign-off only; belongs to reel C |
 
-Each chapter is a **full mini-story**: someone wants something, something stands in the way, it turns, it pays off, and a bridge line leaves one image unresolved. A stranger who sees only reel B must understand it.
+Each chapter is a **full mini-story**: someone wants something, something stands in the way, it turns, it pays off, and a bridge line closes it (the reel ends RESOLVED; at most a light forward pull, never an open cliffhanger). A stranger who sees only reel B must understand it.
 - **Re-introduce names in every chapter in one line** ("ब्रह्मा, जिन्होंने यह सृष्टि रची, ..."). Never "जैसा हमने देखा" / "as we saw earlier" / "पिछले हिस्से में": restate the fact in one line instead.
 - **One planted question** for the whole episode: asked in T/C1, answered in C3 (`planted_question` in beats.json). Each chapter may also have its own small question, answered inside the chapter.
-- The **bridge** of C1/C2 is a cliffhanger statement ("और तभी, उनके बीच, आसमान फट गया।"), not a question to the audience. The comment question and "next episode" tease appear **only** in the last chapter's bridge (or X).
+- The **bridge** of C1/C2 is a resolved closing line (the verdict, the result, the image that sums the chapter up), not a question to the audience and not a cliffhanger; a light forward pull is allowed. The comment question appears **only** in the last chapter's bridge (or X). **Never point to the next episode or story anywhere**: every episode is standalone.
 
 ## Pace inside the episode
 - **Stakes by the first minute**: what can be lost, by whom, said plainly.
@@ -59,6 +59,6 @@ Each chapter is cut as a vertical reel later. Write with that in mind: the hook 
 5. Short and long beats alternate; no beat > 110 words.
 6. The big set-piece (chase, race, battle) starts before 35% of the video.
 7. Climax in C3; payoff within 30 s; post-climax <= 15%; recap <= 40 words.
-8. Comment question + next-episode tease only at the very end.
+8. Comment question only at the very end; no next-episode tease anywhere (standalone episode).
 9. Every chapter is 2.5-3.2 min; total 8-10 min at the measured pace.
 10. Read each reel alone: would a stranger understand who, what they want, and why it matters?

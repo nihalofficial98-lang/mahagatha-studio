@@ -20,7 +20,7 @@ To start: paste the prompt in `guides/PROMPT_TEMPLATE.md`.
 no beats.json/script or no READY review → 1 · no `build/epNN/timings.json` → 2/3 · no cast.json or sheets not approved → 4 · briefs.json invalid → 5 · no qa pass or no APPROVED → 6 · APPROVED but no `renders/epNN_1080p.mp4` → 7.
 
 ## Rules
-- Script shape (guides/SCRIPT_STYLE.md): 15 s teaser + 3 stand-alone chapters of 2.5-3.2 min (= reels A/B/C) ; length from the measured voice pace (`library/voice_profile.json`, re-measure with `python3 studio/script_check.py NN --calibrate` after aligning).
+- Script shape (guides/SCRIPT_STYLE.md): 15 s teaser + 3 stand-alone chapters of 2.5-3.2 min (= reels A/B/C) ; length from the measured voice pace (`library/voice_profile.json`, re-measure with `python3 studio/script_check.py NN --calibrate` after aligning). Episodes are standalone: no next-episode tease; reels end resolved.
 - Never start a long job (render) without every input: shots.json, timings.json, the voice pieces, APPROVED. `render_chunks.py` refuses otherwise.
 - Subtitle text = the words in the owner's audio (import_timestamps + hide_unspoken), never just the script.
 - Every frame: story matches the subtitle, faces above the subtitles, ≥ 2 depth planes, nothing flat or empty (qa-reviewer checklist).

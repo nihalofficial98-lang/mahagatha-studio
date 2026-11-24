@@ -44,7 +44,7 @@ SKELETON=[  # chapter, reel, roles, budget_sec, Hindi cue, intent  (guides/SCRIP
  ('C1','A',['rehook'],14,'रहस्यमयी','short punch: a new question'),
  ('C1','A',['turn'],36,'तेज़','the turn'),
  ('C1','A',['payoff'],32,'भव्य','mini-payoff of this chapter'),
- ('C1','A',['bridge'],14,'धीमे','bridge line: an unresolved image that pulls into chapter 2'),
+ ('C1','A',['bridge'],14,'धीमे','bridge line: resolved closing line of the chapter (light forward pull at most)'),
  ('C2','B',['hook'],10,'तेज़','chapter hook + names re-introduced in one line'),
  ('C2','B',['setup'],36,'शांत','setup'),
  ('C2','B',['rehook'],14,'रहस्यमयी','short punch'),
@@ -58,7 +58,7 @@ SKELETON=[  # chapter, reel, roles, budget_sec, Hindi cue, intent  (guides/SCRIP
  ('C3','C',['turn'],36,'क्रोध','the turn'),
  ('C3','C',['climax'],22,'विस्फोट','climax'),
  ('C3','C',['payoff','answer'],24,'दृढ़, भारी','payoff = answer to the planted question, within 30 s'),
- ('C3','C',['recap','bridge','question','tease'],18,'शांत','recap <= 40 words + comment question + next-episode tease'),
+ ('C3','C',['recap','bridge','question'],18,'शांत','recap <= 40 words + short resolved closing line + comment question (no next-episode tease)'),
 ]
 def cmd_new(a):
     d=ep(a.n)
