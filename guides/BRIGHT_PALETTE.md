@@ -10,6 +10,6 @@ Rules
 - Engine, timeline, subtitles, camera, animation stay unchanged.
 
 Implementation (do NOT change engine files while an EP6 render is running):
-- Add an opt-in `palette: "bright"` field in episodes/epNN/episode.json, read by engine/paper_scenes.js and the grade in engine/main.js.
-- Default (no field) = current earthy look, so EP6 re-renders stay identical.
+- Bright is the DEFAULT for every new episode (EP7+). Field `palette` in episodes/epNN/episode.json, read by engine/paper_scenes.js and the grade in engine/main.js.
+- episodes/ep06/episode.json gets `palette: "earthy"` (pinned), so EP6 re-renders stay identical.
 - Ask the owner for 2-3 frames of a bright video to match exact colours before building.

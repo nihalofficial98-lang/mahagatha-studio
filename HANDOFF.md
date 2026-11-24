@@ -9,4 +9,4 @@ State at the time of writing (all committed on branch `claude/amazing-heisenberg
 - If engine_timings.json looks stale: `PREPARE_ONLY=1 TARGET_SEC=478.4 NODE_PATH=$(npm root -g) node studio/render_ep.js build/ep06 episodes/ep06/shots.json /dev/null 4 30`.
 
 ## Pending (after EP6 render)
-- Bright palette for EP7+ only: see guides/BRIGHT_PALETTE.md (opt-in `palette: "bright"`, EP6 unchanged).
+- Bright palette for EP7+ only: see guides/BRIGHT_PALETTE.md (bright = default for EP7+, EP6 pinned `palette: "earthy"`).
