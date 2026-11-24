@@ -1,5 +1,5 @@
 # Captions, titles and descriptions: all videos (Instagram / YouTube / Facebook)
-Replace @handle with your real handle. First line = hook (only ~125 characters show before "more").
+Replace @themysterypuraan with your real handle. First line = hook (only ~125 characters show before "more").
 Common CTA (YouTube): "Subscribe to The Mystery Puraan for more untold stories from the Puranas."
 
 ---
@@ -23,7 +23,7 @@ Common CTA (YouTube): "Subscribe to The Mystery Puraan for more untold stories f
 **YouTube Shorts title:** Did Shiva Create the First Humans? 🤯 #Shorts
 **YouTube description:** Brahma is the Creator, but he could not make humans alone. The answer came from the god he believed could never create. An untold story from the Puranas in 80 seconds. 🔔 Subscribe to The Mystery Puraan. #Shorts #Shiva #Brahma #Puranas
 **Tags:** Shiva, Brahma, Ardhanarishwara, first humans, Manu, Puranas, shorts
-**Instagram:** Brahma is the Creator. So who showed him how to make humans? 🤯 The answer comes from the one god he believed could never create. Watch till the end 👆 Follow @handle for untold stories from the Puranas 🔱 #Puranas #Shiva #Brahma #Ardhanarishwara #IndianMythology #Reels
+**Instagram:** Brahma is the Creator. So who showed him how to make humans? 🤯 The answer comes from the one god he believed could never create. Watch till the end 👆 Follow @themysterypuraan for untold stories from the Puranas 🔱 #Puranas #Shiva #Brahma #Ardhanarishwara #IndianMythology #Reels
 **Facebook:** Did Shiva create the first humans? 🤯 Brahma could not do it alone, and the answer came from the god he believed could never create. Follow The Mystery Puraan for more 🔱
 
 ---
@@ -31,7 +31,7 @@ Common CTA (YouTube): "Subscribe to The Mystery Puraan for more untold stories f
 **YouTube Shorts title:** Why Do People Go to Kashi? The Story of Shiva and Brahma's Head #Shorts
 **YouTube description:** Why do people travel to Kashi to be freed of their sins? The answer begins with Brahma's five heads and a skull Shiva could not put down. An untold story from the Puranas. 🔔 Subscribe to The Mystery Puraan. #Shorts #Kashi #Shiva #Brahma #Puranas
 **Tags:** Kashi, Varanasi, Shiva, Brahma, Kapali, Puranas, shorts
-**Instagram:** Why do millions travel to Kashi to wash away their sins? 🔱 It started with Brahma's five heads and a skull Shiva could not let go of. Watch till the end 👆 Follow @handle for untold stories from the Puranas #Kashi #Varanasi #Shiva #Brahma #Puranas #IndianMythology #Reels
+**Instagram:** Why do millions travel to Kashi to wash away their sins? 🔱 It started with Brahma's five heads and a skull Shiva could not let go of. Watch till the end 👆 Follow @themysterypuraan for untold stories from the Puranas #Kashi #Varanasi #Shiva #Brahma #Puranas #IndianMythology #Reels
 **Facebook:** Why do people go to Kashi? It started with Brahma's five heads and a skull stuck to Shiva's hand. A short, untold story from the Puranas 🔱
 
 ---
@@ -39,7 +39,7 @@ Common CTA (YouTube): "Subscribe to The Mystery Puraan for more untold stories f
 **YouTube Shorts title:** How Vishnu Defeated Madhu & Kaitabha After 5,000 Years #Shorts
 **YouTube description:** Vishnu fought two brothers for 5,000 years and could not win. Then he put down his mace and offered them a gift, but the gift was never for them. An untold story from the Puranas. 🔔 Subscribe to The Mystery Puraan. #Shorts #Vishnu #MadhuKaitabha #Puranas
 **Tags:** Vishnu, Madhu Kaitabha, Hayagriva, Madhusudan, Brahma, Vedas, Puranas, shorts
-**Instagram:** Vishnu fought two demons for 5,000 years and couldn't win. Then he offered them a gift... 🎁 but the gift was never for them. Watch till the end 👆 Follow @handle for untold stories #Vishnu #MadhuKaitabha #Puranas #IndianMythology #Reels
+**Instagram:** Vishnu fought two demons for 5,000 years and couldn't win. Then he offered them a gift... 🎁 but the gift was never for them. Watch till the end 👆 Follow @themysterypuraan for untold stories #Vishnu #MadhuKaitabha #Puranas #IndianMythology #Reels
 **Facebook:** Vishnu could not beat Madhu and Kaitabha in 5,000 years, until he offered them a boon. What was the trick? Watch on The Mystery Puraan 🔱
 
 ---
@@ -47,7 +47,7 @@ Common CTA (YouTube): "Subscribe to The Mystery Puraan for more untold stories f
 **YouTube Shorts title:** Narada Asked Vishnu What Maya Is... Then This Happened #Shorts
 **YouTube description:** Narada asked Vishnu what Maya is. Vishnu did not explain; he asked for water, and what happened next was the answer. An untold story from the Puranas. 🔔 Subscribe to The Mystery Puraan. #Shorts #Narada #Vishnu #Maya #Puranas
 **Tags:** Narada, Vishnu, Maya, illusion, Puranas, Vaikuntha, shorts
-**Instagram:** Narada asked Vishnu: "What is Maya?" 🤔 Vishnu said, "Get me some water." What happened next is the answer. Watch till the end 👆 Follow @handle for untold stories #Narada #Vishnu #Maya #Puranas #IndianMythology #Reels
+**Instagram:** Narada asked Vishnu: "What is Maya?" 🤔 Vishnu said, "Get me some water." What happened next is the answer. Watch till the end 👆 Follow @themysterypuraan for untold stories #Narada #Vishnu #Maya #Puranas #IndianMythology #Reels
 **Facebook:** What is Maya? Narada asked Vishnu, and Vishnu replied with a glass of water he never got. What happened next explains everything 🔱 The Mystery Puraan
 
 ---
@@ -55,7 +55,7 @@ Common CTA (YouTube): "Subscribe to The Mystery Puraan for more untold stories f
 **YouTube Shorts title:** How Was Shiva Born From Brahma's Anger? #Shorts
 **YouTube description:** Shiva was born from another god's anger, and his first demand was not for power but for a name. An untold story from the Puranas. 🔔 Subscribe to The Mystery Puraan. #Shorts #Shiva #Rudra #Brahma #Puranas
 **Tags:** Shiva, Rudra, Brahma, Kumaras, Mahadev, Puranas, shorts
-**Instagram:** Shiva was born from another god's anger. 🔥 And his first demand wasn't power. It was a name. Watch till the end 👆 Follow @handle for untold stories #Shiva #Rudra #Brahma #Puranas #Mahadev #IndianMythology #Reels
+**Instagram:** Shiva was born from another god's anger. 🔥 And his first demand wasn't power. It was a name. Watch till the end 👆 Follow @themysterypuraan for untold stories #Shiva #Rudra #Brahma #Puranas #Mahadev #IndianMythology #Reels
 **Facebook:** How was Shiva born? From Brahma's anger, and his first demand was a name. Watch the short story on The Mystery Puraan 🔱
 
 ---
@@ -63,7 +63,7 @@ Common CTA (YouTube): "Subscribe to The Mystery Puraan for more untold stories f
 **YouTube Shorts title:** Why Does Every Offering to Agni End With "Swaha"? #Shorts
 **YouTube description:** The gods once starved while humans fed the fire every day. The fire god himself said it was his fault. Here is why every offering ends with Swaha. An untold story from the Puranas. 🔔 Subscribe to The Mystery Puraan. #Shorts #Agni #Swaha #Puranas
 **Tags:** Swaha, Agni, yajna, Brahma, Prakriti, Puranas, shorts
-**Instagram:** Why does every offering to the fire end with "Swaha"? 🔥 Because once, the gods starved while humans fed the fire every day. Watch till the end 👆 Follow @handle for untold stories #Swaha #Agni #Yajna #Puranas #IndianMythology #Reels
+**Instagram:** Why does every offering to the fire end with "Swaha"? 🔥 Because once, the gods starved while humans fed the fire every day. Watch till the end 👆 Follow @themysterypuraan for untold stories #Swaha #Agni #Yajna #Puranas #IndianMythology #Reels
 **Facebook:** Why do we say "Swaha"? The gods once starved while humans fed the fire daily, until Agni confessed. Watch the story on The Mystery Puraan 🔱
 
 ---
@@ -71,5 +71,5 @@ Common CTA (YouTube): "Subscribe to The Mystery Puraan for more untold stories f
 **YouTube Shorts title:** Why Did Daksha Curse Narada? He Lost 6,000 Sons #Shorts
 **YouTube description:** Daksha lost 6,000 sons, every single one, and the man who took them never raised a hand. Was Narada a guide or a thief of sons? An untold story from the Puranas. 🔔 Subscribe to The Mystery Puraan. #Shorts #Narada #Daksha #Puranas
 **Tags:** Daksha, Narada, curse, Haryashvas, Puranas, shorts
-**Instagram:** Imagine losing 6,000 sons, and the man who took them never raised a hand. 💔 Was Narada a guide or a thief of sons? Tell us 👇 Follow @handle for untold stories #Daksha #Narada #Puranas #IndianMythology #Reels
+**Instagram:** Imagine losing 6,000 sons, and the man who took them never raised a hand. 💔 Was Narada a guide or a thief of sons? Tell us 👇 Follow @themysterypuraan for untold stories #Daksha #Narada #Puranas #IndianMythology #Reels
 **Facebook:** Daksha lost 6,000 sons to a few questions, and cursed Narada never to find a home. Guide or thief of sons? Comment below 🔱 The Mystery Puraan
