@@ -20,7 +20,9 @@ def chunks(x,hop=.01):
         else:out.append(s)
     return [c for c in out if c[1]-c[0]>.09]
 def wt(word):
-    w=re.sub(r'[^ऀ-ॿ\w]','',word);base=len(re.findall(r'[क-हक़-य़ऄ-औॲ]',w));mat=len(re.findall(r'[ा-्ँ-ः]',w))
+    w=re.sub(r'[^ऀ-ॿ\w]','',word)
+    if re.search(r'[A-Za-z]',w):return float(max(1,len(re.findall(r'[aeiouy]+',w.lower()))))   # English: ~syllables
+    base=len(re.findall(r'[क-हक़-य़ऄ-औॲ]',w));mat=len(re.findall(r'[ा-्ँ-ः]',w))
     return max(1.0,base+.3*mat)
 def align(units,ch,rate=None):
     N=len(ch);K=len(units);W=np.array([sum(wt(w) for w in u.split()) for u in units]);dur=np.array([c[1]-c[0] for c in ch]);cum=np.r_[0,np.cumsum(dur)]

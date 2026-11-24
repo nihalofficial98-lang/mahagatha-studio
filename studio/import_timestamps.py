@@ -10,6 +10,11 @@ def norm(w):
     w=w.replace('ॐ','ओम').replace('़','')   # Om sign -> ओम ; nukta
     w=re.sub(r'[ँं]','',w)  # chandrabindu/anusvara (often written differently)
     return w
+def disp(w):
+    """subtitle text of a script word: punctuation stripped. Latin (English) words keep an inner apostrophe/hyphen (Bala's, lotus-eyed); Devanagari unchanged."""
+    if re.search(r'[A-Za-z]',w):
+        return re.sub(r"^[^\w]+|[^\w]+$",'',re.sub(r"[^\w'’-]",'',w).replace('’',"'")).strip("'-")
+    return re.sub(r'[^\wऀ-ॿ]','',w)
 def parse_srt(txt):
     out=[]
     for blk in re.split(r'\n\s*\n',txt.strip()):
@@ -110,7 +115,7 @@ def main():
     ends=starts[1:]+[total];os.makedirs(out+'/audio',exist_ok=True);T=[]
     for bi in sorted(bi_idx):
         a,b=starts[bi],ends[bi];subprocess.run(['ffmpeg','-v','error','-y','-ss',f'{a:.3f}','-t',f'{b-a:.3f}','-i',voice,'-ac','1','-ar','44100','-b:a','192k',f'{out}/audio/{bi:02d}.mp3'],check=True)
-        T.append({'audio':round(b-a,6),'duration':round(b-a,6),'beat':B[bi]['beat'],'words':[{'text':(re.sub(r'[^\wऀ-ॿ]','',words[k][2]) or words[k][2]),'start':round(st[k]-a,3),'end':round(en[k]-a,3)} for k in bi_idx[bi]]})
+        T.append({'audio':round(b-a,6),'duration':round(b-a,6),'beat':B[bi]['beat'],'words':[{'text':(disp(words[k][2]) or words[k][2]),'start':round(st[k]-a,3),'end':round(en[k]-a,3)}|({'hide':1} if not re.search(r'\w',words[k][2]) else {}) for k in bi_idx[bi]]})
     json.dump(T,open(out+'/timings.json','w'),ensure_ascii=False);json.dump(extras,open(out+'/extras.json','w'),ensure_ascii=False,indent=1)
     print('extra spoken words not in the script:',[(round(x['start'],1),x['text']) for x in extras][:8])
     print(f'timed to the recognizer: voice {total:.1f}s ({total/60:.2f} min), {len(B)} beats')

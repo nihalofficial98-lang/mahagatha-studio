@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Mahagatha Studio — one CLI for the whole pipeline.
-  studio.py new 03 "title"        scaffold episodes/ep03
-  studio.py check 03 [--lang en]  retention scorecard: length (voice pace), chapters, hooks, climax, reels (studio/script_check.py)
+  studio.py new 08 "title" [--lang hi]  scaffold episodes/ep08 (script.en.md + script.md link; English is the default from EP07)
+  studio.py check 03 [--lang hi]  retention scorecard (default: the episode's primary language, English for EP07+): length (voice pace), chapters, hooks, climax, reels (studio/script_check.py)
   studio.py voice-docs 03         write voiceover files (tagged for AI voice, clean for you) into voiceovers/
   studio.py tts 03                guide voice + word timings (stand-in until your own recording)
   studio.py align 03 voice.mp3 --timestamps words.json   NEW WORKFLOW (exact word times from a speech recognizer; without --timestamps it only estimates): align YOUR voiceover to the script (visuals then follow your voice, never the reverse)
@@ -36,50 +36,53 @@ def beats(n):
         if cur and l and not l.startswith(('#','---','*समाप्त')): cur['lines'].append(l)
         if l.startswith('---'):cur=None
     return out
-SKELETON=[  # chapter, reel, roles, budget_sec, Hindi cue, intent  (guides/SCRIPT_STYLE.md, guides/BEATS_SCHEMA.md)
- ('T',None,['hook','plant'],15,'तेज़, रहस्यमयी','teaser: the image + the planted question; never the answer'),
- ('C1','A',['hook'],10,'तेज़','chapter hook: start inside the action, names in one line each'),
- ('C1','A',['stakes','setup'],32,'गंभीर','what can be lost, and by whom (by 0:60 overall)'),
- ('C1','A',['setup'],34,'शांत','the world / the want'),
- ('C1','A',['rehook'],14,'रहस्यमयी','short punch: a new question'),
- ('C1','A',['turn'],36,'तेज़','the turn'),
- ('C1','A',['payoff'],32,'भव्य','mini-payoff of this chapter'),
- ('C1','A',['bridge'],14,'धीमे','bridge line: resolved closing line of the chapter (light forward pull at most)'),
- ('C2','B',['hook'],10,'तेज़','chapter hook + names re-introduced in one line'),
- ('C2','B',['setup'],36,'शांत','setup'),
- ('C2','B',['rehook'],14,'रहस्यमयी','short punch'),
- ('C2','B',['setup'],36,'तनाव','escalation'),
- ('C2','B',['turn'],16,'विस्फोट','the turn'),
- ('C2','B',['payoff'],36,'धूर्त','payoff'),
- ('C2','B',['bridge'],14,'धीमे','bridge line into chapter 3'),
- ('C3','C',['hook'],10,'विस्फोट','chapter hook + names re-introduced'),
- ('C3','C',['setup'],36,'गंभीर','setup'),
- ('C3','C',['rehook'],14,'रहस्यमयी','short punch'),
- ('C3','C',['turn'],36,'क्रोध','the turn'),
- ('C3','C',['climax'],22,'विस्फोट','climax'),
- ('C3','C',['payoff','answer'],24,'दृढ़, भारी','payoff = answer to the planted question, within 30 s'),
- ('C3','C',['recap','bridge','question'],18,'शांत','recap <= 40 words + short resolved closing line + comment question (no next-episode tease)'),
+SKELETON=[  # chapter, reel, roles, budget_sec, English cue, intent  (guides/SCRIPT_STYLE.md, guides/BEATS_SCHEMA.md)
+ ('T',None,['hook','plant'],15,'fast, mysterious','teaser: the image + the planted question; never the answer'),
+ ('C1','A',['hook'],10,'fast','chapter hook: start inside the action, names in one line each'),
+ ('C1','A',['stakes','setup'],32,'grave','what can be lost, and by whom (by 0:60 overall)'),
+ ('C1','A',['setup'],34,'calm','the world / the want'),
+ ('C1','A',['rehook'],14,'mysterious','short punch: a new question'),
+ ('C1','A',['turn'],36,'fast','the turn'),
+ ('C1','A',['payoff'],32,'grand','mini-payoff of this chapter'),
+ ('C1','A',['bridge'],14,'slow','bridge line: resolved closing line of the chapter (light forward pull at most)'),
+ ('C2','B',['hook'],10,'fast','chapter hook + names re-introduced in one line'),
+ ('C2','B',['setup'],36,'calm','setup'),
+ ('C2','B',['rehook'],14,'mysterious','short punch'),
+ ('C2','B',['setup'],36,'tense','escalation'),
+ ('C2','B',['turn'],16,'explosive','the turn'),
+ ('C2','B',['payoff'],36,'sly','payoff'),
+ ('C2','B',['bridge'],14,'slow','bridge line into chapter 3'),
+ ('C3','C',['hook'],10,'explosive','chapter hook + names re-introduced'),
+ ('C3','C',['setup'],36,'grave','setup'),
+ ('C3','C',['rehook'],14,'mysterious','short punch'),
+ ('C3','C',['turn'],36,'angry','the turn'),
+ ('C3','C',['climax'],22,'explosive','climax'),
+ ('C3','C',['payoff','answer'],24,'firm, heavy','payoff = answer to the planted question, within 30 s'),
+ ('C3','C',['recap','bridge','question'],18,'calm','recap <= 40 words + short resolved closing line + comment question (no next-episode tease)'),
 ]
 def cmd_new(a):
     d=ep(a.n)
     if os.path.exists(d):sys.exit('exists')
+    lang=a.lang or ('en' if int(a.n)>=7 else 'hi')
     os.makedirs(d)
-    beats=[];lines=[f"# एपिसोड {a.n} — {a.title}\n\n**अनुमानित समय:** 8.5–9.5 मिनट (studio.py check {a.n})\n**स्रोत:** (story numbers from source/)\n\n---\n"]
+    beats=[];lines=[f"# Episode {a.n}: {a.title}\n\n**Estimated time:** 8.5-9.5 min at the owner's voice pace (studio.py check {a.n})\n**Source:** (story numbers from source/)\n\n---\n"]
     for i,(ch,reel,roles,sec,cue,intent) in enumerate(SKELETON,1):
         bid='B%02d'%i
-        beats.append({'id':bid,'chapter':ch,'reel':reel,'intent':intent,'roles':roles,'budget_sec':sec,'emotion':{'hi':cue},'cue_ids':[],'characters':[],'names_introduced':[]})
+        beats.append({'id':bid,'chapter':ch,'reel':reel,'intent':intent,'roles':roles,'budget_sec':sec,'emotion':{lang:cue},'cue_ids':[],'characters':[],'names_introduced':[]})
         lines.append(f"**{bid}** [{cue}]\nTODO ({ch} {'/'.join(roles)}, ~{sec} s): {intent}\n")
-    lines.append('---\n*समाप्त*\n')
-    open(d+'/script.hi.md','w',encoding='utf-8').write('\n'.join(lines))
-    os.symlink('script.hi.md',d+'/script.md')   # the Hindi align/voice pipeline keeps reading script.md
-    doc={'episode':a.n,'title':{'hi':a.title,'en':''},'languages':['hi'],'planted_question':{'text':'TODO','planted_in':'B01','answered_in':'B21'},
+    lines.append('---\n*The End*\n')
+    fn='script.%s.md'%lang
+    open(d+'/'+fn,'w',encoding='utf-8').write('\n'.join(lines))
+    os.symlink(fn,d+'/script.md')   # the align/voice pipeline keeps reading script.md (a link to the primary-language script)
+    open(d+'/episode.json','w',encoding='utf-8').write(json.dumps({'title':a.title,'stories':[],'voice':'user','format':'story','language':lang},ensure_ascii=False)+'\n')
+    doc={'episode':a.n,'title':{lang:a.title},'languages':[lang],'planted_question':{'text':'TODO','planted_in':'B01','answered_in':'B21'},
          'names':{},'cues':{},'chapters':[{'id':'T','kind':'teaser'},{'id':'C1','kind':'chapter','reel':'A','title':{}},{'id':'C2','kind':'chapter','reel':'B','title':{}},{'id':'C3','kind':'chapter','reel':'C','title':{}}],'beats':beats}
     open(d+'/beats.json','w',encoding='utf-8').write(json.dumps(doc,ensure_ascii=False,indent=1)+'\n')
     open(d+'/feedback.md','w').write('# Feedback for ep'+a.n+'\n(use: studio.py feedback '+a.n+' "text")\n')
-    print('created',d,'(script.hi.md + script.md link, beats.json skeleton: guides/BEATS_SCHEMA.md)')
+    print('created',d,f'({fn} + script.md link, episode.json language={lang}, beats.json skeleton: guides/BEATS_SCHEMA.md)')
 def cmd_check(a):
     import script_check
-    argv=[a.n,'--lang',a.lang]+(['--beats',a.beats] if a.beats else [])+(['--estimate'] if a.estimate else [])+(['--strict'] if a.strict else [])
+    argv=[a.n]+(['--lang',a.lang] if a.lang else [])+(['--beats',a.beats] if a.beats else [])+(['--estimate'] if a.estimate else [])+(['--strict'] if a.strict else [])
     rc=script_check.main(argv)
     if rc:sys.exit(rc)
 def cmd_voice(a):
@@ -172,10 +175,10 @@ if __name__=='__main__':
     for name,f in [('new',cmd_new),('check',cmd_check),('voice-docs',cmd_voice),('tts',cmd_tts),('align',cmd_align),('shots',cmd_shots),('stills',cmd_stills),('qa',cmd_qa),('render',cmd_render),('feedback',cmd_feedback),('learn',cmd_learn),('gallery',cmd_gallery)]:
         q=s.add_parser(name);q.set_defaults(f=f)
         if name not in('learn','gallery'):q.add_argument('n')
-        if name=='new':q.add_argument('title')
+        if name=='new':q.add_argument('title');q.add_argument('--lang',default=None,help='script language (default: en for EP07+, hi for EP01-06)')
         if name=='align':q.add_argument('voice');q.add_argument('--timestamps',default=None)
         if name=='qa':q.add_argument('--video')
-        if name=='check':q.add_argument('--lang',default='hi');q.add_argument('--beats');q.add_argument('--estimate',action='store_true');q.add_argument('--strict',action='store_true')
+        if name=='check':q.add_argument('--lang',default=None);q.add_argument('--beats');q.add_argument('--estimate',action='store_true');q.add_argument('--strict',action='store_true')
         if name=='render':q.add_argument('--res',default='1080p');q.add_argument('--workers',type=int,default=4);q.add_argument('--silent',action='store_true',help='no guide voice in the video: subtitles only (owner records the voiceover)')
         if name=='feedback':q.add_argument('text');q.add_argument('--cat',default='visual');q.add_argument('--shot',type=int)
     a=p.parse_args();a.f(a)

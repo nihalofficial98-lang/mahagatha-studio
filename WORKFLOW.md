@@ -1,13 +1,13 @@
 # Mahagatha Studio — how an episode is made (the only way)
 
-Output: a Hindi-narrated 2D paper-cut Puranic video (bright EP6 look), 1280x720 plan rendered to 1080p, subtitles = exactly what the owner says.
+Output: a 2D paper-cut Puranic video narrated in English from EP07 (EP01-06 are Hindi) (bright EP6 look), 1280x720 plan rendered to 1080p, subtitles = exactly what the owner says.
 **All art is code** (no AI images). Opus designs; Sonnet runs mechanical steps from written instructions. Agents live in `.claude/agents/`.
 To start: paste the prompt in `guides/PROMPT_TEMPLATE.md`.
 
 | # | Step | Who (model) | Command / output | Gate |
 |---|------|-------------|------------------|------|
-| 1 | Structure + script, reviewed, then tagged scripts + hook titles | script-editor (sonnet) -> script-doctor (sonnet) -> script-editor | `episodes/epNN/beats.json` + `script.hi.md` (`script.md` links to it) -> `episodes/epNN/script_review.md` -> `deliverables/EPNN_*` ; `python3 studio/studio.py check NN` | check RESULT: PASS, review READY, **owner approves the script** |
-| 1b | English (optional, after Hindi approved) | script-editor -> script-doctor | `script.en.md` on the same beats.json; `studio.py check NN --lang en` (guides/LANGUAGES.md) | same gates |
+| 1 | Structure + script, reviewed, then tagged scripts + hook titles | script-editor (sonnet) -> script-doctor (sonnet) -> script-editor | `episodes/epNN/beats.json` + `script.en.md` (`script.md` links to it; EP01-06: `script.hi.md`) -> `episodes/epNN/script_review.md` -> `deliverables/EPNN_*` ; `python3 studio/studio.py check NN` | check RESULT: PASS, review READY, **owner approves the script** |
+| 1b | Hindi (optional second language, only if the owner asks) | script-editor -> script-doctor | `script.hi.md` on the same beats.json; `studio.py check NN --lang hi` (guides/LANGUAGES.md) | same gates |
 | 2 | **Owner records** the voice and sends the **mp3 + word-timestamp JSON** | owner | — | nothing below starts without BOTH files |
 | 3 | Align voice + subtitles | producer (sonnet) | `python3 studio/studio.py align NN <voice.mp3> --timestamps <words.json>` → `python3 studio/hide_unspoken.py NN <words.json>` → `python3 studio/make_timeline.py NN` | `build/epNN/timings.json`, `episodes/epNN/voice_timeline.md` exist |
 | 4 | Characters first | character-designer (opus) | `episodes/epNN/cast.json`, `python3 studio/cast_sheet.py <names>` → `library/characters/sheets/` | **owner approves the sheets** |

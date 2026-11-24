@@ -1,5 +1,5 @@
 """After import_timestamps: script words the narrator did NOT say get hide:true (cues still work, subtitles skip them);
-sentences the narrator DID say that the script lacks are APPENDED (after the script words; the engine sorts by time). Danda stripped from word text.
+sentences the narrator DID say that the script lacks are APPENDED (after the script words; the engine sorts by time). Danda stripped from word text (no-op for English).
 usage: python3 studio/hide_unspoken.py 06 <timestamps.json>"""
 import sys,os,json
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)));import import_timestamps as T

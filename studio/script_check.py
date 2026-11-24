@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Retention + length checker for an episode script (any language).
 
-  python3 studio/script_check.py 07                 check episodes/ep07/script.hi.md (or script.md) against beats.json
-  python3 studio/script_check.py 07 --lang en       check script.en.md (same beats.json, English pace)
+  python3 studio/script_check.py 07                 check the episode's primary language (episode.json "language"; default en for EP07+, hi for EP01-06)
+  python3 studio/script_check.py 07 --lang hi       check the other language's script (script.hi.md, same beats.json, Hindi pace)
   python3 studio/script_check.py 06 --beats library/examples/ep06_beats_example.json   check with another beats file
   python3 studio/script_check.py 07 --estimate       ignore recorded timings, use words x pace
   python3 studio/script_check.py 07 --anchors hi    print cue_id -> beat + anchor phrase (for shot briefs)
@@ -24,7 +24,19 @@ BACKREF = {'hi': ['जैसा हमने देखा', 'जैसा कि
                   'पिछले हिस्से में', 'पिछले अध्याय'],
            'en': ['as we saw', 'as we have seen', "as we've seen", 'as mentioned', 'as i said', 'like we said',
                   'earlier we saw', 'in the last chapter', 'in the previous part']}
-SCRIPT_NAMES = {'hi': ['script.hi.md', 'script.md']}
+BACKREF['en'] += ['as we discussed', 'as you saw', 'remember when', 'previously on', 'in the first part']
+SCRIPT_NAMES = {'hi': ['script.hi.md', 'script.md'], 'en': ['script.en.md']}
+
+
+def primary_lang(n):
+    """episodes/epNN/episode.json "language"; default 'en' for NN>=7, 'hi' for NN<=6 (old episodes are Hindi)."""
+    try:
+        v = load_json(os.path.join(ROOT, 'episodes', 'ep' + n, 'episode.json')).get('language')
+        if v:
+            return v
+    except Exception:
+        pass
+    return 'en' if n.isdigit() and int(n) >= 7 else 'hi'
 
 
 # ---------- loading ----------
@@ -67,7 +79,10 @@ def script_path(epdir, lang):
 
 
 def timings_path(n, lang):
-    return os.path.join(ROOT, 'build', 'ep' + n, 'timings.json') if lang == 'hi' else os.path.join(ROOT, 'build', 'ep' + n, lang, 'timings.json')
+    """The primary language uses build/epNN/timings.json (the pipeline default); the other language build/epNN/<lang>/timings.json."""
+    if lang == primary_lang(n):
+        return os.path.join(ROOT, 'build', 'ep' + n, 'timings.json')
+    return os.path.join(ROOT, 'build', 'ep' + n, lang, 'timings.json')
 
 
 def pace_for(profile, lang):
@@ -80,7 +95,7 @@ def pace_for(profile, lang):
 
 
 def norm(s):
-    return re.sub(r'[\s,.!?।"“”\'‘’—–-]+', ' ', s).strip().lower()
+    return re.sub(r'[\s,.;:!?।…"“”\'‘’—–-]+', ' ', s).strip().lower()
 
 
 # ---------- core check ----------
@@ -379,8 +394,9 @@ def print_report(R, head):
     print('RESULT: %s (%d errors, %d warnings)' % ('PASS' if not errs else 'FAIL', len(errs), len(warns)))
 
 
-def run(n, lang='hi', beats=None, estimate=False, quiet=False):
+def run(n, lang=None, beats=None, estimate=False, quiet=False):
     epdir = os.path.join(ROOT, 'episodes', 'ep' + n)
+    lang = lang or primary_lang(n)
     sp = script_path(epdir, lang)
     if not sp:
         sys.exit('no script for %s in %s (expected %s)' % (lang, epdir, ' or '.join(SCRIPT_NAMES.get(lang, ['script.%s.md' % lang]))))
@@ -413,6 +429,7 @@ def anchors(n, lang, beats=None):
 
 
 def calibrate(n, lang):
+    lang = lang or primary_lang(n)
     sp = script_path(os.path.join(ROOT, 'episodes', 'ep' + n), lang)
     tp = timings_path(n, lang)
     if not sp or not os.path.exists(tp):
@@ -506,6 +523,22 @@ def selftest():
         expect('catches tease role (episodes are standalone)', 'no next-episode tease' in e)
         R = check(parse_script(p), None, 'hi', pace, rules)
         expect('legacy mode (no beats.json) never errors', not R.errors)
+    # English script path: same synthetic episode, English words
+    docE, textE = _synthetic(prof['en']['sec_per_word'])
+    for b in docE['beats']:
+        b['emotion'] = {'en': 'calm'}
+    for k in docE['cues'].values():
+        k['anchor'] = {'en': k['anchor']['hi'].replace('संकेत', 'signal')}
+    textE = textE.replace('[शांत]', '[calm]').replace('ब्रह्मा', 'Brahma').replace('विष्णु', 'Vishnu').replace('शिव', 'Shiva').replace('कथा', 'tale').replace('संकेत', 'signal')
+    with tempfile.TemporaryDirectory() as d:
+        p = os.path.join(d, 'script.en.md')
+        open(p, 'w', encoding='utf-8').write(textE)
+        R = check(parse_script(p), docE, 'en', prof['en']['sec_per_word'], rules)
+        expect('synthetic English episode passes (%s)' % (R.errors[:2] or 'no errors'), not R.errors)
+        open(p, 'w', encoding='utf-8').write(textE.replace('**B10** [calm]\n', '**B10** [calm]\nAs we saw earlier, '))
+        R = check(parse_script(p), docE, 'en', prof['en']['sec_per_word'], rules)
+        expect('English back-reference caught', 'back-reference' in ' | '.join(R.errors))
+    expect('primary language: EP06 hi, EP07 en', primary_lang('06') == 'hi' and primary_lang('07') == 'en')
     # the EP06 analysis file must flag the known problems
     ex = os.path.join(ROOT, 'library', 'examples', 'ep06_beats_example.json')
     s6 = os.path.join(ROOT, 'episodes', 'ep06', 'script.md')
@@ -522,7 +555,7 @@ def selftest():
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('n', nargs='?')
-    ap.add_argument('--lang', default='hi')
+    ap.add_argument('--lang', default=None, help="default: the episode's primary language (episode.json)")
     ap.add_argument('--beats', help='beats.json to use instead of episodes/epNN/beats.json')
     ap.add_argument('--estimate', action='store_true', help='ignore recorded timings')
     ap.add_argument('--anchors', metavar='LANG')

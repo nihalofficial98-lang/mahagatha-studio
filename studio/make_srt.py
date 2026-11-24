@@ -2,19 +2,20 @@
 Cues are phrases of the ORIGINAL script text (punctuation kept, emotion tags removed), timed by speech/silence chunks + DP."""
 import sys,re,math,json,numpy as np
 sys.path.insert(0,__file__.rsplit('/',1)[0]);import align_voice as A
+LAT=lambda s:bool(re.search(r'[A-Za-z]',s))   # English text: split on . ? ! , max 42 chars per line (guides/LANGUAGES.md)
 def phrases(path):
     out=[]
     for ln in open(path,encoding='utf-8'):
         ln=re.sub(r'^\s*\[[^\]]*\]\s*','',ln).strip()
         if not ln:continue
-        for s in re.findall(r'.+?(?:[।?!]+[”"’\']*|$)',ln):
+        for s in re.findall(r'.+?(?:[.?!…]+[”"’\']*(?=\s|$)|$)' if LAT(ln) else r'.+?(?:[।?!]+[”"’\']*|$)',ln):
             s=s.strip()
             if not s:continue
             parts=[s]
             while True:
                 nxt=[]
                 for p in parts:
-                    if len(p)<=34:nxt.append(p);continue
+                    if len(p)<=(42 if LAT(p) else 34):nxt.append(p);continue
                     cands=[m.end() for m in re.finditer(r'[,，]["”’\']?\s',p)]
                     if not cands:cands=[m.end() for m in re.finditer(r'\s',p)]
                     c=min(cands,key=lambda e:abs(e-len(p)/2));a,b=p[:c].strip(),p[c:].strip()
@@ -23,7 +24,7 @@ def phrases(path):
                 parts=nxt
             out+=parts
     return out
-def ends(p):return 2 if re.search(r'[।?!][”"’\']*$',p) else (1 if re.search(r'[,][”"’\']?$',p) else 0)
+def ends(p):return 2 if re.search(r'[.?!…][”"’\']*$' if LAT(p) else r'[।?!][”"’\']*$',p) else (1 if re.search(r'[,][”"’\']?$',p) else 0)
 def pieces(x):
     hop=.01;n=int(A.SR*hop);m=len(x)//n;e=10*np.log10((x[:m*n].reshape(m,n)**2).mean(1)+1e-10);e=np.convolve(e,np.ones(5)/5,'same')
     out=[]
@@ -60,7 +61,7 @@ def dp(U,ch,span=26):
 def ts(t):
     h=int(t//3600);m=int(t%3600//60);s=t%60;return f'{h:02d}:{m:02d}:{int(s):02d},{int(round((s-int(s))*1000)):03d}'.replace(',1000',',999')
 def wrap(p):
-    if len(p)<=36:return p
+    if len(p)<=(42 if LAT(p) else 36):return p
     ws=p.split();best=min(range(1,len(ws)),key=lambda i:abs(len(' '.join(ws[:i]))-len(' '.join(ws[i:]))));return ' '.join(ws[:best])+'\n'+' '.join(ws[best:])
 def main():
     script,voice,out=sys.argv[1:4];U=phrases(script);x=A.load(voice);total=len(x)/A.SR;ch=pieces(x)

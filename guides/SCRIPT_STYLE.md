@@ -1,10 +1,10 @@
-# Script style (retention-first; Hindi first, English as its own adaptation)
+# Script style (retention-first; English is the primary language from EP07, Hindi optional)
 
-The book gives only plot facts; every word is original. One episode = **one full video (8-10 min) that is also three stand-alone reels (2.5-3.2 min each)**. Structure lives in `episodes/epNN/beats.json` (schema: `guides/BEATS_SCHEMA.md`), words live in `script.hi.md` / `script.en.md` (`guides/LANGUAGES.md`). `python3 studio/studio.py check NN` prints the scorecard; `script-doctor` reviews it.
+The book gives only plot facts; every word is original. One episode = **one full video (8-10 min) that is also three stand-alone reels (2.5-3.2 min each)**. Structure lives in `episodes/epNN/beats.json` (schema: `guides/BEATS_SCHEMA.md`), words live in `script.en.md` (primary from EP07) / `script.hi.md` (`guides/LANGUAGES.md`). `python3 studio/studio.py check NN` prints the scorecard; `script-doctor` reviews it.
 
 ## Length (hard rule)
-- Video **8-10 min** (aim 8.5-9.5). Minutes come from the owner's measured pace in `library/voice_profile.json`, not a guess: Hindi **0.367 s/word** (EP06: 478 s for 1,303 words), so **~1,310-1,630 Hindi words** (aim 1,390-1,550). The old "870-1,050 words" figure was wrong (it assumed 0.575 s/word; EP06 came out at 7.97 min).
-- After every recording: `python3 studio/script_check.py NN --calibrate` updates the pace.
+- Video **8-10 min** (aim 8.5-9.5). Minutes come from the pace in `library/voice_profile.json` (seconds per script word, per language), not a guess. **English (primary from EP07): 0.40 s/word, an ESTIMATE until the first English recording is measured, so about 1,200-1,500 words** (aim 1,275-1,425). Hindi (EP01-06, optional second language): 0.367 s/word measured on EP06 = ~1,310-1,630 words. The checker prints minutes for the language it checks.
+- After every recording: `python3 studio/script_check.py NN --calibrate` (add `--lang hi` for Hindi) updates the pace; the first English recording turns the estimate into a measurement.
 
 > Two formats: `story` (dramatised retelling, e.g. EP6) and `explainer` (question-driven, source-cited, see `guides/LONG_STYLE.md`). Set `format` in episode.json. Reels follow `guides/REEL_STYLE.md`.
 
@@ -18,17 +18,17 @@ The book gives only plot facts; every word is original. One episode = **one full
 | **X** close (optional) | <= 25 s | sign-off only; belongs to reel C |
 
 Each chapter is a **full mini-story**: someone wants something, something stands in the way, it turns, it pays off, and a bridge line closes it (the reel ends RESOLVED; at most a light forward pull, never an open cliffhanger). A stranger who sees only reel B must understand it.
-- **Re-introduce names in every chapter in one line** ("ब्रह्मा, जिन्होंने यह सृष्टि रची, ..."). Never "जैसा हमने देखा" / "as we saw earlier" / "पिछले हिस्से में": restate the fact in one line instead.
+- **Re-introduce names in every chapter in one line** ("Brahma, who made this world, ..."). Never "as we saw earlier" / "in the last part" (Hindi: "जैसा हमने देखा"): restate the fact in one line instead.
 - **One planted question** for the whole episode: asked in T/C1, answered in C3 (`planted_question` in beats.json). Each chapter may also have its own small question, answered inside the chapter.
 - The **bridge** of C1/C2 is a resolved closing line (the verdict, the result, the image that sums the chapter up), not a question to the audience and not a cliffhanger; a light forward pull is allowed. The comment question appears **only** in the last chapter's bridge (or X). **Never point to the next episode or story anywhere**: every episode is standalone.
 
 ## Pace inside the episode
 - **Stakes by the first minute**: what can be lost, by whom, said plainly.
 - **Re-hook every 60-90 s**: a new question, a reveal, a turn, a threat. Mark them in beats.json (`hook`, `stakes`, `plant`, `rehook`, `turn`, `climax`); the checker fails any gap > 90 s.
-- **Vary beat length**: mix short punch beats (Hindi 15-40 words, ~5-15 s) with scene beats (60-100 words, ~22-37 s). At least 3 of each; never more than 3 beats of the same band in a row; no beat over 110 words.
-- **Start late, leave early**: open chapters inside the action, not with "शुरू से समझते हैं". Descriptions (worlds, cosmos) get one short beat, not two long ones.
+- **Vary beat length**: mix short punch beats (English 12-35 words, ~5-14 s; Hindi 15-40) with scene beats (English 50-85 words, ~20-34 s; Hindi 60-100). At least 3 of each; never more than 3 beats of the same band in a row; no beat over 95 words (Hindi 110).
+- **Start late, leave early**: open chapters inside the action, not with "Let us start from the beginning". Descriptions (worlds, cosmos) get one short beat, not two long ones.
 - **Ending**: payoff within 30 s of the climax; everything after the climax <= 15% of the video; recap <= 40 words; no list of earlier episodes.
-- **Hook never gives away the answer.** Promise it ("उस दिन जो फ़ैसला हुआ, वह आज तक नहीं बदला"), don't state it.
+- **Hook never gives away the answer.** Promise it ("What was decided that day has never changed"), don't state it.
 
 ## Triple hook (teaser and every chapter's first 10 s)
 Each hook is 1-3 lines and has three parts, in this order:
@@ -36,17 +36,17 @@ Each hook is 1-3 lines and has three parts, in this order:
 2. **Lean** - make them want more: a proof/stat, a pain point or wish they have, or something surprising. Opens the curiosity loop.
 3. **Contrarian snapback** - one line that pulls the other way from where the lean was heading (the expected answer is wrong, the hero is the culprit, the safe thing was the danger). Do not give away the answer.
 Test: read only the first 1-2 sentences aloud - is the context clear at once, and does it make you lean in?
-Example (EP6, Hindi): context "ब्रह्मा ने पूरा ब्रह्मांड रचा, फिर भी उनका एक भी मंदिर क्यों नहीं?" -> lean "वजह कोई श्राप नहीं, एक छोटा-सा फूल था।" -> snapback "और उस फूल ने झूठ बोला नहीं था, उससे बुलवाया गया था।" (check against the source story before using).
+Example (EP6, shown in English): context "Brahma made the whole universe, so why does he have not a single temple?" -> lean "The reason is not a curse. It was one small flower." -> snapback "And the flower did not lie. It was made to lie." (check against the source story before using). Hindi original lines: "ब्रह्मा ने पूरा ब्रह्मांड रचा, फिर भी उनका एक भी मंदिर क्यों नहीं?" / "वजह कोई श्राप नहीं, एक छोटा-सा फूल था।" / "और उस फूल ने झूठ बोला नहीं था, उससे बुलवाया गया था।"
 
 ## Lines (unchanged)
 - Short lines, one new idea or image per sentence: every sentence is a possible cut (3-4 s).
 - Dialogue in quotes; each speaker has a distinct rhythm. Names appear on screen when spoken.
-- One emotion cue per beat: `**B07** [शांत, दृढ़]`. Hindi cues: धीमे, रहस्यमयी, भव्य, गंभीर, शांत, दृढ़, करुण, तेज़, क्रोध, विस्फोट, फुसफुसाकर, गिड़गिड़ाते हुए, ठंडा, स्नेह (English: slow, mysterious, grand, grave, calm, firm, pitiful, fast, angry, explosive, whispering, pleading, cold, tender).
-- Hindi script: no English words. English script: rules in `guides/LANGUAGES.md`.
+- One emotion cue per beat: `**B07** [calm, firm]`. Keep the cues mild and readable, never shouting. English cues: slow, mysterious, grand, grave, calm, measured, firm, pitiful, fast, angry, explosive, whispering, pleading, cold, tender (Hindi equivalents for the Hindi version: धीमे, रहस्यमयी, भव्य, गंभीर, शांत, दृढ़, करुण, तेज़, क्रोध, विस्फोट, फुसफुसाकर, गिड़गिड़ाते हुए, ठंडा, स्नेह).
+- English script: plain spoken English; short sentences, one action each (`guides/REEL_STYLE.md`); numbers written as words ("nine hundred and ninety-nine", so the speech recognizer and the subtitles match); no standalone dashes; no Devanagari; one spelling per name (`names.*.en`); at most one Sanskrit term per chapter, explained in the same line. Hindi script (optional second language): no English words. Details: `guides/LANGUAGES.md`.
 - No AI images anywhere: all art is code.
 
 ## Shot cues
-Shots anchor to **beat id + cue id** (`flower_falls`), not to a Hindi word, so the same briefs serve both languages. Every visual moment that needs an exact cut gets a cue id in beats.json with an anchor phrase per language that occurs in that beat's text (`studio.py check` verifies it; `script_check.py NN --anchors hi` prints the mapping for brief writers).
+Shots anchor to **beat id + cue id** (`flower_falls`), not to a spoken word, so the same briefs serve both languages. Every visual moment that needs an exact cut gets a cue id in beats.json with an anchor phrase per language that occurs in that beat's text (`studio.py check` verifies it; `script_check.py NN --anchors en` prints the mapping for brief writers).
 
 ## Reels (9:16) - requirement, not built yet
 Each chapter is cut as a vertical reel later. Write with that in mind: the hook line works without the teaser, the main subject of each beat can sit in the centre third, and on-screen names/subtitles must fit the vertical safe area. Details in `guides/BEATS_SCHEMA.md`.

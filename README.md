@@ -1,6 +1,6 @@
 # Mahagatha Studio
 
-Hindi-narrated 2D paper-cut animated Puranic videos, drawn entirely by code (headless Chromium canvas → ffmpeg).
+2D paper-cut animated Puranic videos (English narration from EP07; EP01-06 Hindi), drawn entirely by code (headless Chromium canvas → ffmpeg).
 
 - **How to make an episode:** [WORKFLOW.md](WORKFLOW.md) (the only supported way) · start prompt: [guides/PROMPT_TEMPLATE.md](guides/PROMPT_TEMPLATE.md)
 - **What the engine can draw:** [library/ENGINE_CAPABILITIES.md](library/ENGINE_CAPABILITIES.md) (names: `python3 studio/engine_vocab.py`)

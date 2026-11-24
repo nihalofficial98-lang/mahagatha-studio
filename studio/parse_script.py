@@ -8,8 +8,15 @@ CUES = [  # keyword -> (rate, pitch, vol)
  ("आग्रह", ("+2%", "+2Hz", "+0%")), ("ठंडा", ("-6%", "-6Hz", "-5%")), ("शांत", ("+0%", "-3Hz", "+0%")),
  ("करुण", ("-10%", "-3Hz", "-5%")), ("विस्फोट", ("+6%", "+4Hz", "+15%")), ("धमाका", ("+6%", "+4Hz", "+15%")), ("दृढ़", ("+0%", "-3Hz", "+5%")), ("स्नेह", ("-4%", "+0Hz", "+0%")), ("विचारमग्न", ("-6%", "-3Hz", "+0%")), ("भारी", ("-8%", "-5Hz", "+5%")), ("चिंतन", ("+0%", "-3Hz", "+0%")), ("धीमे", ("-4%", "-3Hz", "+0%")), ("टीज़र", ("+0%", "-2Hz", "+0%")),
 ]
+CUES_EN = [  # English cue keywords (guide-voice stand-in only; the owner records the real voice)
+ ("whisper", ("-7%", "-6Hz", "-10%")), ("angry", ("+4%", "+3Hz", "+10%")), ("pleading", ("+2%", "+4Hz", "+5%")),
+ ("fast", ("+8%", "+2Hz", "+8%")), ("grand", ("+0%", "+0Hz", "+10%")), ("grave", ("-4%", "-5Hz", "+0%")),
+ ("mysterious", ("-6%", "-4Hz", "-5%")), ("cold", ("-6%", "-6Hz", "-5%")), ("calm", ("+0%", "-3Hz", "+0%")),
+ ("slow", ("-10%", "-3Hz", "-5%")), ("explosive", ("+6%", "+4Hz", "+15%")), ("firm", ("+0%", "-3Hz", "+5%")), ("tender", ("-4%", "+0Hz", "+0%")),
+ ("measured", ("-2%", "-2Hz", "+0%")),
+]
 def cue_params(cue):
-    for k, v in CUES:
+    for k, v in CUES + CUES_EN:
         if k in cue: return (f"{int(v[0][:-1])+10:+d}%",)+v[1:]
     return ("+10%", "+0Hz", "+0%")
 beats, cur = [], None
@@ -18,7 +25,7 @@ for raw in open(src, encoding="utf-8").read().split("\n"):
     m = re.match(r"\*\*B(\d+)\*\*\s*(\[[^\]]*\])?", line)
     if m:
         cur = {"beat": int(m.group(1)), "cue": m.group(2) or "", "lines": []}; beats.append(cur); continue
-    if cur is None or not line or line.startswith(("#", "---", "*समाप्त")) :
+    if cur is None or not line or line.startswith(("#", "---", "*समाप्त", "*The End")) :
         if line.startswith(("##", "---")): cur = None if line.startswith("---") else cur
         continue
     cur["lines"].append(line)
@@ -34,5 +41,6 @@ for b in beats:
     if segs:
         segs[-1]["pause"] += 0.2; segs[-1]["rate"] = f"{int(rate[:-1]) - 3:+d}%"
     scenes.append({"beat": b["beat"], "narration": segs})
-json.dump({"voice": "hi-IN-MadhurNeural", "scenes": scenes}, open(out, "w"), ensure_ascii=False, indent=1)
+HI = bool(re.search(r"[\u0900-\u097F]", open(src, encoding="utf-8").read()))
+json.dump({"voice": "hi-IN-MadhurNeural" if HI else "en-US-GuyNeural", "scenes": scenes}, open(out, "w"), ensure_ascii=False, indent=1)
 print(len(scenes), "beats,", sum(len(s["narration"]) for s in scenes), "segments")

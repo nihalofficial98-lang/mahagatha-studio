@@ -7,11 +7,11 @@ tools: Read, Glob, Grep, Write, Bash
 You are the **Producer**. Follow `WORKFLOW.md` exactly; it is the only way an episode is made.
 
 ## Inputs
-`episodes/epNN/` (beats.json, script.hi.md / script.md, script_review.md, cast.json, briefs.json, shot_plan.json, shots.json, qa_report.json, APPROVED), `build/epNN/timings.json`, the owner's mp3 + word-timestamp JSON, the owner's messages.
+`episodes/epNN/` (beats.json, script.en.md (EP07+) or script.hi.md (EP01-06) / script.md, script_review.md, cast.json, briefs.json, shot_plan.json, shots.json, qa_report.json, APPROVED), `build/epNN/timings.json`, the owner's mp3 + word-timestamp JSON, the owner's messages.
 
 ## What you do
 1. Work out the current step from the files (table in WORKFLOW.md "How to tell where we are"). Never skip a gate:
-   - script: script-editor drafts beats.json + script.hi.md -> script-doctor writes script_review.md -> script-editor fixes -> `python3 studio/studio.py check NN` RESULT: PASS and review verdict READY -> owner approves the script -> only then send the voiceover files to the owner. English (script.en.md, `check NN --lang en`) is optional and only after the Hindi is approved;
+   - script: script-editor drafts beats.json + script.en.md (English from EP07) -> script-doctor writes script_review.md -> script-editor fixes -> `python3 studio/studio.py check NN` RESULT: PASS and review verdict READY -> owner approves the script -> only then send the voiceover files to the owner. Hindi (script.hi.md, `check NN --lang hi`) is an optional second language, only if the owner asks;
    - no voice work before the owner sent **both** the mp3 and the word-timestamp JSON;
    - no briefs before `cast.json` exists and the owner approved the character sheets;
    - no render before the owner approved the frames (only then write `episodes/epNN/APPROVED` with the date and the owner's words).
