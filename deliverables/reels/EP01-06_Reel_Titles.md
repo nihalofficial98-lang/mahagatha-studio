@@ -1,8 +1,8 @@
 # EP01-06 reels: titles in the owner's reference style (see guides/TITLES.md)
 Format: first-frame text (2-4 words) | full title. Claims are checked against the story before scripting.
 
-1. Reel 1, story 05 (SCRIPTED): "Brahma & the First Woman" | How Did Brahma Create the First Man and Woman?
-2. Reel 2, story 06 (SCRIPTED): "Why Brahma Has 4 Heads" | Why Does Brahma Have Only Four Heads? (alt: Why Does Shiva Carry a Skull in His Hand?)
+1. Reel 1, story 05 (SCRIPTED): "Did Shiva Create the First Humans?" | Did Shiva Create the First Humans? Brahma Could Not Do It Alone (alts: Brahma Is the Creator. So Why Did He Need Shiva to Make Humans? | Who Really Made the First Man and Woman? Not Brahma Alone)
+2. Reel 2, story 06 (SCRIPTED): "Why Do People Go to Kashi?" | Why Do People Go to Kashi? It Started With Shiva and Brahma's Head (alts: Why Do People Go to Varanasi? Shiva, Brahma and a Skull He Could Not Drop | Why Is Kashi Where Sins Are Freed? The Story of Shiva and Brahma's Fifth Head)
 3. Story 08 (not yet scripted): "Vishnu's Guards Chose Hate" | Why Did Jaya and Vijaya Choose to Be Vishnu's Enemies?
 4. Reel 3, story 02 (SCRIPTED, Reel03): "Madhu and Kaitabha" | How Did Vishnu Defeat Madhu and Kaitabha?
 5. Reel 4, story 07 (SCRIPTED, Reel04): "Narada's Maya Test" | Narada Asked Vishnu What Maya Is. Then This Happened
