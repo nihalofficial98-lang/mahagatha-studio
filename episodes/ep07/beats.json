@@ -1,0 +1,401 @@
+{
+ "episode": "07",
+ "title": {
+  "hi": "बाला का बलिदान और सुदर्शन चक्र",
+  "en": ""
+ },
+ "languages": [
+  "hi"
+ ],
+ "planted_question": {
+  "text": "TODO",
+  "planted_in": "B01",
+  "answered_in": "B21"
+ },
+ "names": {},
+ "cues": {},
+ "chapters": [
+  {
+   "id": "T",
+   "kind": "teaser"
+  },
+  {
+   "id": "C1",
+   "kind": "chapter",
+   "reel": "A",
+   "title": {}
+  },
+  {
+   "id": "C2",
+   "kind": "chapter",
+   "reel": "B",
+   "title": {}
+  },
+  {
+   "id": "C3",
+   "kind": "chapter",
+   "reel": "C",
+   "title": {}
+  }
+ ],
+ "beats": [
+  {
+   "id": "B01",
+   "chapter": "T",
+   "reel": null,
+   "intent": "teaser: the image + the planted question; never the answer",
+   "roles": [
+    "hook",
+    "plant"
+   ],
+   "budget_sec": 15,
+   "emotion": {
+    "hi": "तेज़, रहस्यमयी"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B02",
+   "chapter": "C1",
+   "reel": "A",
+   "intent": "chapter hook: start inside the action, names in one line each",
+   "roles": [
+    "hook"
+   ],
+   "budget_sec": 10,
+   "emotion": {
+    "hi": "तेज़"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B03",
+   "chapter": "C1",
+   "reel": "A",
+   "intent": "what can be lost, and by whom (by 0:60 overall)",
+   "roles": [
+    "stakes",
+    "setup"
+   ],
+   "budget_sec": 32,
+   "emotion": {
+    "hi": "गंभीर"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B04",
+   "chapter": "C1",
+   "reel": "A",
+   "intent": "the world / the want",
+   "roles": [
+    "setup"
+   ],
+   "budget_sec": 34,
+   "emotion": {
+    "hi": "शांत"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B05",
+   "chapter": "C1",
+   "reel": "A",
+   "intent": "short punch: a new question",
+   "roles": [
+    "rehook"
+   ],
+   "budget_sec": 14,
+   "emotion": {
+    "hi": "रहस्यमयी"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B06",
+   "chapter": "C1",
+   "reel": "A",
+   "intent": "the turn",
+   "roles": [
+    "turn"
+   ],
+   "budget_sec": 36,
+   "emotion": {
+    "hi": "तेज़"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B07",
+   "chapter": "C1",
+   "reel": "A",
+   "intent": "mini-payoff of this chapter",
+   "roles": [
+    "payoff"
+   ],
+   "budget_sec": 32,
+   "emotion": {
+    "hi": "भव्य"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B08",
+   "chapter": "C1",
+   "reel": "A",
+   "intent": "bridge line: an unresolved image that pulls into chapter 2",
+   "roles": [
+    "bridge"
+   ],
+   "budget_sec": 14,
+   "emotion": {
+    "hi": "धीमे"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B09",
+   "chapter": "C2",
+   "reel": "B",
+   "intent": "chapter hook + names re-introduced in one line",
+   "roles": [
+    "hook"
+   ],
+   "budget_sec": 10,
+   "emotion": {
+    "hi": "तेज़"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B10",
+   "chapter": "C2",
+   "reel": "B",
+   "intent": "setup",
+   "roles": [
+    "setup"
+   ],
+   "budget_sec": 36,
+   "emotion": {
+    "hi": "शांत"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B11",
+   "chapter": "C2",
+   "reel": "B",
+   "intent": "short punch",
+   "roles": [
+    "rehook"
+   ],
+   "budget_sec": 14,
+   "emotion": {
+    "hi": "रहस्यमयी"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B12",
+   "chapter": "C2",
+   "reel": "B",
+   "intent": "escalation",
+   "roles": [
+    "setup"
+   ],
+   "budget_sec": 36,
+   "emotion": {
+    "hi": "तनाव"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B13",
+   "chapter": "C2",
+   "reel": "B",
+   "intent": "the turn",
+   "roles": [
+    "turn"
+   ],
+   "budget_sec": 16,
+   "emotion": {
+    "hi": "विस्फोट"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B14",
+   "chapter": "C2",
+   "reel": "B",
+   "intent": "payoff",
+   "roles": [
+    "payoff"
+   ],
+   "budget_sec": 36,
+   "emotion": {
+    "hi": "धूर्त"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B15",
+   "chapter": "C2",
+   "reel": "B",
+   "intent": "bridge line into chapter 3",
+   "roles": [
+    "bridge"
+   ],
+   "budget_sec": 14,
+   "emotion": {
+    "hi": "धीमे"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B16",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "chapter hook + names re-introduced",
+   "roles": [
+    "hook"
+   ],
+   "budget_sec": 10,
+   "emotion": {
+    "hi": "विस्फोट"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B17",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "setup",
+   "roles": [
+    "setup"
+   ],
+   "budget_sec": 36,
+   "emotion": {
+    "hi": "गंभीर"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B18",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "short punch",
+   "roles": [
+    "rehook"
+   ],
+   "budget_sec": 14,
+   "emotion": {
+    "hi": "रहस्यमयी"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B19",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "the turn",
+   "roles": [
+    "turn"
+   ],
+   "budget_sec": 36,
+   "emotion": {
+    "hi": "क्रोध"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B20",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "climax",
+   "roles": [
+    "climax"
+   ],
+   "budget_sec": 22,
+   "emotion": {
+    "hi": "विस्फोट"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B21",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "payoff = answer to the planted question, within 30 s",
+   "roles": [
+    "payoff",
+    "answer"
+   ],
+   "budget_sec": 24,
+   "emotion": {
+    "hi": "दृढ़, भारी"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  },
+  {
+   "id": "B22",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "recap <= 40 words + comment question + next-episode tease",
+   "roles": [
+    "recap",
+    "bridge",
+    "question",
+    "tease"
+   ],
+   "budget_sec": 18,
+   "emotion": {
+    "hi": "शांत"
+   },
+   "cue_ids": [],
+   "characters": [],
+   "names_introduced": []
+  }
+ ]
+}
