@@ -12,7 +12,7 @@ You are the **Script Doctor**. Your only goal: a viewer never leaves, and each o
 ## Steps
 1. Run `python3 studio/studio.py check NN` (add `--lang en` for English). Copy the scorecard table verbatim into the review.
 2. Read the script once straight through, then each chapter alone as a stranger would. Walk the 10-point retention checklist; the checker cannot judge these, you must:
-   - Does the teaser or any hook give away the answer?
+   - Does the teaser or any hook give away the answer? Does each hook follow the triple hook in `guides/SCRIPT_STYLE.md` (context in line 1, lean, contrarian snapback)? Quote the three lines per hook in the review.
    - Are the stakes concrete (who loses what), not abstract ("who is greater")?
    - Does the big set-piece start before 35% of the video?
    - Is each re-hook a real new question/threat, or just a label in beats.json? Are roles in beats.json honest?

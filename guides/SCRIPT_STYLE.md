@@ -28,6 +28,14 @@ Each chapter is a **full mini-story**: someone wants something, something stands
 - **Ending**: payoff within 30 s of the climax; everything after the climax <= 15% of the video; recap <= 40 words; no list of earlier episodes.
 - **Hook never gives away the answer.** Promise it ("उस दिन जो फ़ैसला हुआ, वह आज तक नहीं बदला"), don't state it.
 
+## Triple hook (teaser and every chapter's first 10 s)
+Each hook is 1-3 lines and has three parts, in this order:
+1. **Context** - the very first line says what this is about (audio, on-screen text/subtitle and the first visual all agree). Context delayed to the second half of the first sentence loses viewers.
+2. **Lean** - make them want more: a proof/stat, a pain point or wish they have, or something surprising. Opens the curiosity loop.
+3. **Contrarian snapback** - one line that pulls the other way from where the lean was heading (the expected answer is wrong, the hero is the culprit, the safe thing was the danger). Do not give away the answer.
+Test: read only the first 1-2 sentences aloud - is the context clear at once, and does it make you lean in?
+Example (EP6, Hindi): context "ब्रह्मा ने पूरा ब्रह्मांड रचा, फिर भी उनका एक भी मंदिर क्यों नहीं?" -> lean "वजह कोई श्राप नहीं, एक छोटा-सा फूल था।" -> snapback "और उस फूल ने झूठ बोला नहीं था, उससे बुलवाया गया था।" (check against the source story before using).
+
 ## Lines (unchanged)
 - Short lines, one new idea or image per sentence: every sentence is a possible cut (3-4 s).
 - Dialogue in quotes; each speaker has a distinct rhythm. Names appear on screen when spoken.
@@ -44,7 +52,7 @@ Each chapter is cut as a vertical reel later. Write with that in mind: the hook 
 ## Retention checklist (script-doctor and script-editor both run it)
 1. Teaser <= 20 s, ends on the planted question, does NOT give the answer.
 2. Stakes stated plainly before 0:60.
-3. Each chapter: hook line in the first 10 s, names re-introduced in one line, setup, turn, payoff, bridge line. No back-references.
+3. Each chapter: triple hook (context, lean, snapback) / hook line in the first 10 s, names re-introduced in one line, setup, turn, payoff, bridge line. No back-references.
 4. No gap > 90 s without a hook/turn/reveal (scorecard "max re-hook gap").
 5. Short and long beats alternate; no beat > 110 words.
 6. The big set-piece (chase, race, battle) starts before 35% of the video.
