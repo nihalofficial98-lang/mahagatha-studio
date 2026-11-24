@@ -4,14 +4,14 @@
 **Alternates:** (a) Creation Failed Until Shiva Showed Brahma This; (b) The God Who Split Himself in Half
 
 ## Hook
-- Context: The first man and woman appeared only after a god showed himself as half male and half female.
-- Lean: Brahma, the Creator, had tried everything and failed.
-- Snapback: The answer came from Shiva, the Destroyer, the one god Brahma believed could not create.
+- Context: Brahma, the Creator, could not make the first man and woman.
+- Lean: His own sons had rejected him, and creation was wearing him down.
+- Snapback: The one who helped was Shiva, the Destroyer, the very god Brahma believed could not create.
 
 ## Tagged narration
-[curious] The first man and woman appeared only after a god showed himself as half male and half female.
-[calm] Brahma, the Creator, had tried everything and failed. His own sons had rejected him, and creation was wearing him down.
-[curious] The answer came from Shiva, the Destroyer, the one god Brahma believed could not create.
+[curious] Brahma, the Creator, could not make the first man and woman.
+[calm] His own sons had rejected him, and creation was wearing him down.
+[curious] The one who helped was Shiva, the Destroyer, the very god Brahma believed could not create.
 [calm] Vishnu, the Preserver, noticed Brahma's grief. He told him to go to Mahadeva, another name for Shiva. Brahma said the Destroyer could not create. Vishnu said Shiva might not create, but he would surely counsel.
 Brahma found Shiva meditating. He sat down and prayed from the depth of his soul. Shiva opened his eyes. He said reproduction could not happen the way Brahma had made his sons. What Brahma needed was Shakti, the power of the feminine.
 Then Shiva's body changed. The right side became male. The left side became female, split evenly down the middle. This form was called Ardhanarishwara, the Androgynous One.
@@ -19,7 +19,7 @@ Then Shiva's body changed. The right side became male. The left side became fema
 [calm] Brahma bowed to the Goddess and asked to create the female. She gave him the generative force. From his own body, Brahma made a man named Manu and a woman named Brahmi. The human race descends from Manu.
 [curious] The Destroyer had not made the first humans. He had shown the Creator what creation needed, both halves.
 
-**Length:** 231 words (tags excluded), about 92 s at 0.40 s/word.
+**Length:** 217 words (tags excluded), about 87 s at 0.40 s/word.
 
 ## Source lines (story 05)
 1. Hook: "half-male and half-female ... Ardhanarishwara"; "He's the Destroyer. How can he create?"

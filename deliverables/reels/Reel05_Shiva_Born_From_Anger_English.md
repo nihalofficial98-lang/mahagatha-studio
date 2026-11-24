@@ -17,10 +17,10 @@ They said they were grateful, but they did not want to be bound by life and deat
 [calm] Brahma sat in awe. The being roared again. "Tell me my name." Brahma remembered that the root word for both red and roaring is Rud. He said, "Rudra. I name you Rudra."
 This was Shiva, also called Mahadeva. Brahma created, Vishnu preserved, and Shiva was the Destroyer.
 Brahma asked him to help with creation. Shiva agreed and began making beings. But he made copies of himself, and each was immortal. Eleven Rudras stood before Brahma.
-[firm] Brahma said creation needed mortals, who die and are born again. Shiva said he could only make immortals. Then he would rather meditate, and he left.
+[firm] Brahma said creation needed mortals, who die and are born again. Shiva said he could only make immortals. If that spoiled the plan, he would rather meditate. Then he left.
 [curious] The god born from Brahma's anger could only make what never dies.
 
-**Length:** 236 words (tags excluded), about 94 s at 0.40 s/word.
+**Length:** 240 words (tags excluded), about 96 s at 0.40 s/word.
 
 ## Source lines (story 03)
 1. Hook: "What is my name?" / "Rudra. I name you Rudra."

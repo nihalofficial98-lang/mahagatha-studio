@@ -5,13 +5,13 @@
 **Alternates:** (a) Narada Went to Fetch Water for Vishnu and Lost Everything; (b) A Sage Asked Vishnu About Maya. Why Was Vishnu Still Thirsty?
 
 ## Hook
-- Context: Narada, a great sage, asked Vishnu what maya is.
+- Context: Narada, a great sage, asked Vishnu, the Preserver, what maya is.
 - Lean: Vishnu did not explain. He asked for a glass of water.
 - Snapback: Narada never brought it, and that was the answer.
 
 ## Tagged narration
-[curious] Narada, a great sage, asked Vishnu what maya is. Vishnu did not explain. He asked for water.
-[calm] Narada had come to Vaikuntha, Vishnu's home. He had just seen his curse leave his father, Brahma, with four heads. Vishnu smiled and said it was all maya. Narada asked what that meant.
+[curious] Narada, a great sage, asked Vishnu, the Preserver, what maya is. Vishnu did not explain. He asked for water. Narada never brought it, and that was the answer.
+[calm] Narada had come to Vaikuntha, Vishnu's home, to tell him how his curse had come true on his father, Brahma. Vishnu smiled and said it was all maya. Narada asked what that meant.
 Vishnu said he was thirsty. He told Narada to fetch some water, and then he would answer.
 Narada walked to the river outside. By the bank he saw a young woman. She was so lovely that he forgot Vishnu, his errand and his thirst.
 [curious] He married her right there and built a house on the sand by the river.
@@ -22,7 +22,7 @@ Narada stood stunned. His wife, his children, his home. None of it had been real
 Vishnu said that was maya. Attachment to a world that does not last. It makes us chase what slips away like sand.
 [curious] Then he smiled and warned Narada that there would be much more maya to come.
 
-**Length:** 219 words (tags excluded), about 88 s at 0.40 s/word.
+**Length:** 230 words (tags excluded), about 92 s at 0.40 s/word.
 
 ## Source lines (story 07)
 1. Hook: "What is maya?" / "I feel thirsty. Get me some water and I shall tell you."

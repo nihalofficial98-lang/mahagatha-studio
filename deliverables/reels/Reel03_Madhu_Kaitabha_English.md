@@ -5,22 +5,22 @@
 **Alternates:** (a) Vishnu Could Not Beat Madhu and Kaitabha Until He Offered a Boon; (b) Why Did Vishnu Stop Fighting Madhu and Kaitabha After Five Thousand Years?
 
 ## Hook
-- Context: Vishnu fought two brothers for five thousand years and could not win.
+- Context: Vishnu, the Preserver, fought two brothers for five thousand years and could not win.
 - Lean: Then he put down his mace and offered them a gift.
-- Snapback: The gift was a trap, and the brothers walked into it themselves.
+- Snapback: But the gift was never for them.
 
 ## Tagged narration
-[curious] Vishnu fought two brothers for five thousand years and could not win. Then he put down his mace and offered them a gift.
+[curious] Vishnu, the Preserver, fought two brothers for five thousand years and could not win. Then he put down his mace and offered them a gift. But the gift was never for them.
 [calm] The brothers were Madhu and Kaitabha. They crawled out of Vishnu's earwax when Brahma, the Creator, brought forth the Vedas. They fed on the endless water and grew huge.
 They found Brahma on his lotus and told him to bow or fight. He stayed silent, so they shook the stem. The Vedas slipped from his hands, and the brothers hid them.
-Brahma begged Vishnu, the Preserver, but Vishnu lay in Yoga Nidra, a trance between waking and sleep. Brahma called on Nidra to release him. Vishnu woke as Hayagriva, the Horse-Headed One.
-When one brother tired, the other took over. Five thousand years passed. Vishnu saw that strength would never win. So he laid down his mace, praised their power, and offered a boon.
+Brahma begged Vishnu, but Vishnu lay in Yoga Nidra, a trance between waking and sleep. Brahma called on Nidra to release him. Vishnu woke as Hayagriva, the Horse-Headed One.
+When one brother tired, the other took over. Vishnu saw strength would never win. So he laid down his mace, praised their power, and offered a boon.
 [curious] The brothers sneered. Victors did not beg for boons, they said. They gave them. They told him to ask. Vishnu asked, "Grant me that I may kill you both."
-[firm] They had walked into a trap, but they had given their word. They asked to die only where there was no water. Vishnu smiled and grew, towering over the waters like a blue mountain. He placed the brothers on his thighs and beheaded them.
-[calm] For killing Madhu, Vishnu came to be called Madhusudan. Brahma thanked him for saving them.
+[firm] They had walked into a trap, but they had given their word. They asked to die only where there was no water. Vishnu grew, towering over the waters like a blue mountain. He placed the brothers on his thighs and beheaded them.
+[calm] For killing Madhu, Vishnu came to be called Madhusudan. Brahma asked him to keep saving them.
 [curious] Vishnu said, "Perhaps I did nothing. Perhaps the universe saved itself through me."
 
-**Length:** 248 words (tags excluded), about 99 s at 0.40 s/word.
+**Length:** 249 words (tags excluded), about 100 s at 0.40 s/word.
 
 ## Source lines (story 02)
 1. Hook: "Five thousand years elapsed"; "Laying down his mace ... I would like to grant you both a boon"; "Grant me then that I may kill you both."

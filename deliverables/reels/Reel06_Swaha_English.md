@@ -2,26 +2,26 @@
 
 **First-frame title:** Why Say Swaha?
 **Full title:** Why Does Every Offering to Agni End With Swaha?
-**Alternates:** (a) The Gods Were Starving Until Agni Found Swaha; (b) Humans Fed the Fire Every Day. Why Did the Gods Still Starve?
+**Alternates:** (a) The Gods Were Starving Until Agni Found Swaha; (b) Humans Fed the Fire Regularly. Why Did the Gods Still Starve?
 
 ## Hook
 - Context: Every offering to the fire god Agni ends with the word Swaha.
-- Lean: The gods had once starved while humans fed the fire every day.
-- Snapback: The one to blame was Agni himself, and he said so.
+- Lean: The gods once starved while humans fed the fire regularly.
+- Snapback: The fire god himself said it was his fault.
 
 ## Tagged narration
-[curious] Every offering to the fire god Agni ends with the word Swaha. There is a reason. Once, the gods were starving.
+[curious] Every offering to the fire god Agni ends with the word Swaha. The gods once starved while humans fed the fire regularly. The fire god himself said it was his fault.
 [calm] One morning, the gods came to Brahma, the Creator, in Brahmaloka. They were thin and weak. They had nothing to eat.
 Brahma explained how they were meant to eat. When humans held a yagna, a fire ritual, they poured offerings into the fire. Agni, the mouth of the gods, carried them to heaven. In return, the gods gave humans blessings.
 [curious] Indra, a leader of the gods, said humans held yagnas all the time. But nothing reached heaven.
-[calm] Kamadeva blamed Agni. Agni stepped forward with folded hands. He said he was to blame. He could burn the offerings, but he could not carry them to the gods. He did not have that skill.
-Brahma had no answer. Vishnu told him to pray to Prakriti, Mother Nature.
+[calm] Another god, Kamadeva, blamed Agni. Agni stepped forward with folded hands. He said he was to blame. He could burn the offerings, but he could not carry them to the gods. He did not have that skill.
+Brahma had no answer. Vishnu, the Preserver, told him to pray to Prakriti, Mother Nature.
 Prakriti created a young goddess to carry offerings from Earth to heaven. Brahma asked her name.
 [firm] "Swaha," she said.
 Brahma declared that every offering to Agni must end with her name. Without it, the offering would not reach the gods. A chant without Swaha would be like a tree without fruit, a snake without venom, a man without knowledge.
 [curious] Then he gave Swaha in marriage to Agni, and the two were never parted.
 
-**Length:** 219 words (tags excluded), about 88 s at 0.40 s/word.
+**Length:** 233 words (tags excluded), about 93 s at 0.40 s/word.
 
 ## Source lines (story 10)
 1. Hook: "every offering made to Agni in a yagna must end with the word 'Swaha'."

@@ -4,22 +4,22 @@
 **Alternates:** (a) Why Shiva Carried a Skull in His Hand; (b) The Head That Shiva Could Not Put Down
 
 ## Hook
-- Context: Brahma once had five heads. Now he has four.
+- Context: Brahma, the Creator, once had five heads. Now he has four.
 - Lean: Shiva cut one off in rage.
 - Snapback: But it was Shiva who paid the price.
 
 ## Tagged narration
-[curious] Brahma once had five heads. Now he has four.
+[curious] Brahma, the Creator, once had five heads. Now he has four.
 [calm] Shiva cut one off in rage. But it was Shiva who paid the price.
-It began with a curse. The sage Narada had said Brahma would desire what must not be desired. When Brahma created his daughter Brahmi, the curse took hold. She saw his gaze and moved away. Each time she moved, a new head grew so he could keep looking at her. Soon he had five.
+It began with a curse. The sage Narada had said Brahma would desire what must not be desired. When Brahma created his daughter Brahmi, the curse took hold. She saw his gaze and moved away. Each time she moved, a new head grew so he could keep looking at her.
 [firm] His sons Marichi and Atri warned him. Brahmi became a cow, a mare, a duck, a doe, a hundred forms in all. Brahma followed in the male form each time. She was named Shatarupa.
 Shiva appeared in fury. Brahma came to his senses and begged forgiveness. Shiva cut off the fifth head. He said Brahma's four mouths would recite the Vedas forever, to repent.
 [curious] Then Shiva stopped. The severed head was stuck to his left hand.
-[calm] Killing a Brahmin was a sin, and the head had come as the penalty. Shatarupa said Shiva had been right to act. Atri said every action brings its result, whatever the reason. Brahma had paid, though he was cursed. Shiva must pay too.
+[calm] Killing a Brahmin was a sin, and the head had come as the penalty. Shatarupa said Shiva had been right to act. Atri said every action brings its result, whatever the reason. Brahma had paid, though a curse drove him. So must Shiva.
 Shiva wandered the universe, but nothing freed him. The flesh rotted away until only a skull remained. He was called Kapali.
 [firm] Then he reached a place on Earth, and the skull fell from his hand. Anyone who came here would be freed of every sin. That place became Kashi, also called Varanasi.
 
-**Length:** 248 words (tags excluded), about 99 s at 0.40 s/word.
+**Length:** 246 words (tags excluded), about 98 s at 0.40 s/word.
 
 ## Source lines (story 06)
 1. "Brahma once had five heads": fifth head severed "leaving him with only four".
