@@ -57,12 +57,28 @@ def main():
         f=byT.get(float(t))
         if not f:print('missing frame',i,t);continue
         dst=f'{out}/{i:03d}_{ids[i] if i<len(ids) else i}.jpg';im_=Image.open(f).convert('RGB');(im_ if im_.size==SIZE else im_.resize(SIZE,Image.LANCZOS)).save(dst,quality=a.q);done.append((i,dst))
-    if vert:   # 9:16 contact sheets: 6 x 2 portrait tiles
-        for n in range(0,len(done),12):
-            im=Image.new('RGB',(6*270,2*480),(12,10,20))
-            for k,(i,dst) in enumerate(done[n:n+12]):
-                x=Image.open(dst).resize((270,480));d=ImageDraw.Draw(x);d.rectangle((0,0,92,16),fill=(0,0,0));d.text((4,2),os.path.basename(dst)[:12],fill=(255,230,80));im.paste(x,((k%6)*270,(k//6)*480))
-            im.save(f'{out}/sheet_{n//12:02d}.jpg',quality=82)
+    if vert:   # 9:16 contact sheets: 6 portrait tiles (3 x 2), each captioned with the shot number, id and the spoken line (briefs.json narration)
+        from PIL import ImageFont
+        nar={}
+        bp=epd+'/briefs.json'
+        if os.path.exists(bp):nar={b_['id']:b_.get('narration','') for b_ in json.load(open(bp,encoding='utf-8'))['shots']}
+        def font(sz):
+            for f_ in ('/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf','/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf'):
+                if os.path.exists(f_):return ImageFont.truetype(f_,sz)
+            return ImageFont.load_default()
+        F1,F2=font(22),font(17);TW,TH,CAP=420,746,96
+        for n in range(0,len(done),6):
+            im=Image.new('RGB',(3*TW,2*(TH+CAP)),(12,10,20));d=ImageDraw.Draw(im)
+            for k,(i,dst) in enumerate(done[n:n+6]):
+                x0,y0=(k%3)*TW,(k//3)*(TH+CAP);im.paste(Image.open(dst).resize((TW,TH)),(x0,y0))
+                sid=os.path.basename(dst)[4:-4];d.text((x0+8,y0+TH+6),f'#{i+1:02d}  {sid}',font=F1,fill=(255,214,90))
+                ws=nar.get(sid,'').split();ln=[];cur=''
+                for w_ in ws:
+                    if d.textlength(cur+' '+w_,font=F2)>TW-16 and cur:ln.append(cur);cur=w_
+                    else:cur=(cur+' '+w_).strip()
+                if cur:ln.append(cur)
+                for r_,t_ in enumerate(ln[:3]):d.text((x0+8,y0+TH+34+r_*20),t_,font=F2,fill=(240,236,224))
+            im.save(f'{out}/sheet_{n//6:02d}.jpg',quality=84)
         print('wrote',len(done),'frames to',out);return
     for n in range(0,len(done),20):
         im=Image.new('RGB',(1920,270*5),(12,10,20))

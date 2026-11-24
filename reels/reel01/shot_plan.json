@@ -26,12 +26,11 @@
     {
      "who": "brahma",
      "x": 640,
-     "y": 680,
-     "s": 0.95,
+     "y": 573,
+     "s": 1.1,
      "flip": 1,
      "pose": "sit",
      "emo": "calm",
-     "talk": 0.0,
      "mood": {
       "lx": -0.8
      },
@@ -351,9 +350,9 @@
    "figs": [
     {
      "who": "brahma",
-     "x": 540,
-     "y": 650,
-     "s": 0.78,
+     "x": 510,
+     "y": 590,
+     "s": 1.0,
      "flip": 1,
      "pose": "stand",
      "lotus": false,
@@ -379,19 +378,29 @@
     },
     {
      "who": "kumara",
-     "x": 690,
-     "y": 660,
-     "s": 0.95,
+     "x": 660,
+     "y": 590,
+     "s": 1.05,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "pride",
+       "mood": {
+        "lx": 0.9
+       }
+      }
+     ],
      "walkTo": {
-      "x": 900,
+      "x": 800,
       "c": 2,
-      "d": 2.2,
+      "d": 2.6,
       "sp": 1
      },
      "turnc": 1,
@@ -399,19 +408,29 @@
     },
     {
      "who": "kumara",
-     "x": 760,
-     "y": 655,
-     "s": 0.9,
+     "x": 750,
+     "y": 590,
+     "s": 1.0,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "pride",
+       "mood": {
+        "lx": 0.9
+       }
+      }
+     ],
      "walkTo": {
-      "x": 980,
+      "x": 900,
       "c": 2,
-      "d": 2.2,
+      "d": 2.6,
       "sp": 1
      },
      "turnc": 1,
@@ -517,8 +536,8 @@
    "note": "wide pan_right: Brahma pleads toward his child-sage sons; on 'rejected' they turn their backs and walk away, and on 'wearing' he sags into grief in a cooling blue sky.",
    "vert": {
     "x": [
-     600,
-     640
+     610,
+     630
     ],
     "focus": "brahma"
    },
@@ -554,8 +573,8 @@
     {
      "who": "shiva",
      "x": 640,
-     "y": 640,
-     "s": 0.95,
+     "y": 486,
+     "s": 1.05,
      "flip": 1,
      "pose": "sitpray",
      "emo": "calm",
@@ -609,8 +628,15 @@
    "layers": [
     {
      "d": "mid",
-     "fog": 0.25,
+     "fog": 0.15,
      "items": [
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 600,
+       "s": 2.4,
+       "col": "#8a96c4"
+      },
       {
        "o": "rock",
        "x": 470,
@@ -679,8 +705,8 @@
     {
      "who": "vishnu",
      "x": 420,
-     "y": 660,
-     "s": 0.9,
+     "y": 650,
+     "s": 0.95,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -861,8 +887,8 @@
     {
      "who": "vishnu",
      "x": 600,
-     "y": 650,
-     "s": 0.92,
+     "y": 632,
+     "s": 1.0,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -979,8 +1005,8 @@
    "note": "medium push_in: Vishnu speaks and on 'Mahadev' points toward the far snow peak of Kailash, which glows as 'Shiva' is said.",
    "vert": {
     "focus": "vishnu",
-    "z": 1.1,
-    "y": 0.42
+    "z": 1.15,
+    "y": 0.38
    },
    "dx": 0
   },
@@ -1009,8 +1035,8 @@
     {
      "who": "brahma",
      "x": 640,
-     "y": 665,
-     "s": 0.9,
+     "y": 558,
+     "s": 1.0,
      "flip": -1,
      "pose": "stand",
      "lotus": false,
@@ -1190,9 +1216,9 @@
    "figs": [
     {
      "who": "vishnu",
-     "x": 560,
-     "y": 658,
-     "s": 0.82,
+     "x": 550,
+     "y": 591,
+     "s": 1.0,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -1211,9 +1237,9 @@
     },
     {
      "who": "brahma",
-     "x": 770,
-     "y": 653,
-     "s": 0.8,
+     "x": 780,
+     "y": 591,
+     "s": 1.0,
      "flip": -1,
      "pose": "stand",
      "lotus": false,
@@ -1371,9 +1397,9 @@
    "figs": [
     {
      "who": "brahma",
-     "x": 470,
-     "y": 637,
-     "s": 0.72,
+     "x": 450,
+     "y": 575,
+     "s": 0.95,
      "flip": 1,
      "pose": "stand",
      "lotus": false,
@@ -1392,7 +1418,7 @@
       }
      ],
      "walkTo": {
-      "x": 570,
+      "x": 530,
       "c": 0,
       "d": 1.4,
       "sp": 1
@@ -1400,9 +1426,9 @@
     },
     {
      "who": "shiva",
-     "x": 760,
-     "y": 661,
-     "s": 0.82,
+     "x": 740,
+     "y": 485,
+     "s": 1.0,
      "flip": -1,
      "pose": "sitpray",
      "emo": "calm",
@@ -1426,7 +1452,7 @@
    "fxb": [
     {
      "t": "glow",
-     "x": 760,
+     "x": 740,
      "y": 420,
      "r": 220,
      "rgb": "180,200,255",
@@ -1480,30 +1506,22 @@
     },
     {
      "d": "mid",
-     "fog": 0.22,
+     "fog": 0.15,
      "items": [
       {
        "o": "tree",
-       "x": 430,
-       "y": 610,
+       "x": 420,
+       "y": 600,
        "s": 0.75,
        "kind": "pine",
        "col": "#2f6a52"
       },
       {
        "o": "rock",
-       "x": 880,
-       "y": 630,
-       "s": 1.0,
-       "col": "#7a88a8"
-      },
-      {
-       "o": "tree",
-       "x": 940,
-       "y": 600,
-       "s": 0.65,
-       "kind": "pine",
-       "col": "#2f6a52"
+       "x": 740,
+       "y": 670,
+       "s": 3.0,
+       "col": "#66729a"
       }
      ]
     },
@@ -1532,7 +1550,7 @@
    "vert": {
     "x": [
      560,
-     700
+     650
     ],
     "focus": "brahma"
    },
@@ -1571,8 +1589,8 @@
     {
      "who": "brahma",
      "x": 640,
-     "y": 690,
-     "s": 0.95,
+     "y": 571,
+     "s": 1.05,
      "flip": 1,
      "pose": "sit",
      "emo": "devotion",
@@ -1884,9 +1902,9 @@
    "figs": [
     {
      "who": "kumara",
-     "x": 530,
-     "y": 600,
-     "s": 0.6,
+     "x": 520,
+     "y": 454,
+     "s": 0.7,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -1905,8 +1923,8 @@
     {
      "who": "shiva",
      "x": 660,
-     "y": 665,
-     "s": 0.9,
+     "y": 568,
+     "s": 1.0,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
@@ -2060,8 +2078,8 @@
     {
      "who": "adishakti",
      "x": 640,
-     "y": 650,
-     "s": 0.92,
+     "y": 617,
+     "s": 1.05,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -2217,7 +2235,8 @@
    },
    "cues": [
     "Shivas",
-    "body"
+    "body",
+    "changed"
    ],
    "bg": {
     "k": "cosmos",
@@ -2228,8 +2247,8 @@
     {
      "who": "shiva",
      "x": 640,
-     "y": 665,
-     "s": 0.92,
+     "y": 593,
+     "s": 1.0,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -2246,22 +2265,22 @@
        }
       }
      ],
-     "fd": 1.0,
-     "fo": 1
+     "fd": 0.8,
+     "fo": 2
     },
     {
      "who": "ardha",
      "x": 640,
-     "y": 665,
-     "s": 0.92,
+     "y": 593,
+     "s": 1.0,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
-     "ad": 1.0,
-     "ac": 1
+     "ad": 0.8,
+     "ac": 2
     }
    ],
    "fx": [
@@ -2350,7 +2369,7 @@
      ]
     }
    ],
-   "note": "medium handheld: Shiva stands in a swirl of gold and blue light; on 'body' the Goddess half fades in over him as he dissolves into the new form.",
+   "note": "medium handheld: Shiva stands in a swirl of gold and blue light, eyes closing; on 'body' a seam of light runs down his middle and on 'changed' he dissolves into the half-Goddess form.",
    "vert": {
     "focus": "shiva"
    },
@@ -2377,8 +2396,8 @@
     {
      "who": "ardha",
      "x": 640,
-     "y": 643,
-     "s": 0.92,
+     "y": 585,
+     "s": 1.05,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
@@ -2668,8 +2687,8 @@
     {
      "who": "ardha",
      "x": 640,
-     "y": 654,
-     "s": 0.88,
+     "y": 603,
+     "s": 1.0,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
@@ -2805,7 +2824,7 @@
      "who": "adishakti",
      "x": 800,
      "y": 650,
-     "s": 0.9,
+     "s": 0.95,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
@@ -2825,7 +2844,7 @@
      "who": "brahma",
      "x": 440,
      "y": 670,
-     "s": 0.85,
+     "s": 0.95,
      "flip": 1,
      "pose": "stand",
      "lotus": false,
@@ -2989,9 +3008,9 @@
    "figs": [
     {
      "who": "adishakti",
-     "x": 720,
-     "y": 650,
-     "s": 0.82,
+     "x": 730,
+     "y": 575,
+     "s": 0.95,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
@@ -3010,9 +3029,9 @@
     },
     {
      "who": "brahma",
-     "x": 530,
-     "y": 656,
-     "s": 0.8,
+     "x": 520,
+     "y": 575,
+     "s": 0.95,
      "flip": 1,
      "pose": "namaste",
      "lotus": false,
@@ -3189,6 +3208,7 @@
    },
    "cues": [
     "body",
+    "Brahma",
     "made",
     "man",
     "Manu"
@@ -3207,9 +3227,9 @@
    "figs": [
     {
      "who": "brahma",
-     "x": 520,
-     "y": 644,
-     "s": 0.8,
+     "x": 530,
+     "y": 574,
+     "s": 0.95,
      "flip": 1,
      "pose": "stand",
      "lotus": false,
@@ -3219,7 +3239,7 @@
      },
      "acts": [
       {
-       "c": 1,
+       "c": 2,
        "d": 0.6,
        "pose": "open",
        "emo": "joy"
@@ -3228,9 +3248,9 @@
     },
     {
      "who": "manu",
-     "x": 720,
-     "y": 656,
-     "s": 0.85,
+     "x": 740,
+     "y": 574,
+     "s": 1.0,
      "flip": -1,
      "pose": "stand",
      "emo": "surprise",
@@ -3239,14 +3259,14 @@
      },
      "acts": [
       {
-       "c": 3,
+       "c": 4,
        "d": 0.6,
        "pose": "namaste",
        "emo": "joy"
       }
      ],
-     "ad": 0.9,
-     "ac": 2
+     "ad": 0.7,
+     "ac": 1
     }
    ],
    "fx": [
@@ -3260,7 +3280,7 @@
      "blend": "lighter",
      "par": 1.0,
      "rgb": "255,230,160",
-     "c": 2,
+     "c": 3,
      "d": 0.6
     }
    ],
@@ -3285,7 +3305,7 @@
      "alpha": 0.5,
      "blend": "lighter",
      "par": 0.9,
-     "c": 2,
+     "c": 3,
      "d": 0.6
     }
    ],
@@ -3384,11 +3404,11 @@
      ]
     }
    ],
-   "note": "medium push_in: Brahma glows with gold light; Manu takes shape beside him out of the light on 'Manu', standing in namaste.",
+   "note": "medium push_in: Brahma glows with gold light from his own body; Manu takes shape beside him out of the light as 'Brahma made a man' is said, and joins his hands on 'Manu'.",
    "vert": {
     "x": [
-     560,
-     640
+     590,
+     680
     ],
     "focus": "manu"
    }
@@ -3418,8 +3438,8 @@
     {
      "who": "manu",
      "x": 600,
-     "y": 658,
-     "s": 0.82,
+     "y": 592,
+     "s": 1.0,
      "flip": 1,
      "pose": "namaste",
      "emo": "joy",
@@ -3438,8 +3458,8 @@
     {
      "who": "brahmi",
      "x": 790,
-     "y": 658,
-     "s": 0.82,
+     "y": 592,
+     "s": 1.0,
      "flip": -1,
      "pose": "stand",
      "emo": "surprise",
@@ -3615,8 +3635,8 @@
     {
      "who": "manu",
      "x": 600,
-     "y": 645,
-     "s": 0.78,
+     "y": 592,
+     "s": 0.95,
      "flip": 1,
      "pose": "stand",
      "emo": "joy",
@@ -3632,9 +3652,9 @@
     },
     {
      "who": "brahmi",
-     "x": 730,
-     "y": 641,
-     "s": 0.76,
+     "x": 740,
+     "y": 592,
+     "s": 0.95,
      "flip": -1,
      "pose": "stand",
      "emo": "joy",
@@ -3785,8 +3805,8 @@
     {
      "who": "shiva",
      "x": 640,
-     "y": 665,
-     "s": 0.92,
+     "y": 468,
+     "s": 1.05,
      "flip": 1,
      "pose": "sitpray",
      "emo": "calm",
@@ -3872,26 +3892,26 @@
     },
     {
      "d": "mid",
-     "fog": 0.22,
+     "fog": 0.15,
      "items": [
       {
        "o": "tree",
-       "x": 440,
-       "y": 610,
+       "x": 450,
+       "y": 600,
        "s": 0.75,
        "kind": "pine",
        "col": "#2f6a52"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 630,
-       "s": 1.0,
-       "col": "#7a88a8"
+       "x": 640,
+       "y": 665,
+       "s": 3.1,
+       "col": "#66729a"
       },
       {
        "o": "tree",
-       "x": 910,
+       "x": 850,
        "y": 600,
        "s": 0.65,
        "kind": "pine",
@@ -3952,8 +3972,8 @@
     {
      "who": "ardha",
      "x": 640,
-     "y": 663,
-     "s": 0.9,
+     "y": 604,
+     "s": 1.05,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
