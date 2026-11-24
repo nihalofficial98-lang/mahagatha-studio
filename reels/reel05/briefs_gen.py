@@ -267,7 +267,7 @@ S.append(shot("s16",33.92,
  characters=[{"who":"rudra","x":640,"y":330,"s":0.42,"_fix":1,"flip":1,"pose":"raise","emo":"rage","look":640,"engine_cues":{"ac":"being","mc":"being"},"engine":{"ad":0.5,"my":-30,"md":2.0}},
   {"who":"brahma","x":640,"y":690,"s":0.9,"_face":0.52,"flip":1,"pose":"sit","emo":"rage","look":640,
    "actions":[{"word":"burst","emo":"surprise","mood":{"ly":-0.8},"d":0.4}]}],
- effects=[{"k":"glow","word":"fiery","x":640,"y":0,"_fore":1,"r":110,"rgb":"255,210,130","ga":0.85,"par":1.0,"meaning":"his forehead glowing with fire"},
+ effects=[{"k":"glow","word":"fiery","x":640,"y":0,"_fore":1,"r":80,"rgb":"255,210,130","ga":0.45,"par":1.0,"meaning":"his forehead glowing with fire"},
   {"k":"beam","word":"being","x":640,"y":0,"_fore":1,"len":520,"w":55,"par":1.0,"behind":True,"meaning":"the column of fire bursting from his forehead"},
   {"k":"flames","word":"being","x":640,"y":0,"_fore":1,"sc":0.55,"n":7,"par":1.0,"meaning":"flames leaping from his forehead"}],
  transition_in="cut"))
@@ -458,9 +458,9 @@ S.append(shot("s30",67.8,
  effects=[{"k":"halo_ring","word":"immortal","x":640,"y":300,"w":560,"alpha":0.45,"blend":"lighter","par":1.0,"behind":True,"meaning":"immortality, a ring of undying light behind them all"}],
  transition_in="cut"))
 # 31 --------------------------------------------------------------- eleven Rudras before Brahma (stack)
-CROWD=[(640,372,.42,1,'namaste'),(560,372,.42,1,'stand'),(720,372,.42,-1,'stand'),
-       (520,430,.48,1,'stand'),(600,430,.48,1,'namaste'),(680,430,.48,-1,'namaste'),(760,430,.48,-1,'stand'),
-       (478,500,.54,1,'namaste'),(585,500,.54,1,'stand'),(695,500,.54,-1,'stand'),(802,500,.54,-1,'namaste')]
+CROWD=[(c+dx,y,s_,fl,p) for c in (560,) for dx,y,s_,fl,p in [(0,372,.42,1,'namaste'),(-80,372,.42,1,'stand'),(80,372,.42,-1,'stand'),
+       (-120,430,.48,1,'stand'),(-40,430,.48,1,'namaste'),(40,430,.48,-1,'namaste'),(120,430,.48,-1,'stand'),
+       (-162,500,.54,1,'namaste'),(-55,500,.54,1,'stand'),(55,500,.54,-1,'stand'),(162,500,.54,-1,'namaste')]]
 S.append(shot("s31",71.46,
  meaning="Eleven Rudras now stood in front of Brahma.",
  why="Stacked: above, eleven identical Rudras with fire halos stand in three rows on the clouds; below, Brahma on his lotus looks at them in surprise.",
@@ -471,7 +471,7 @@ S.append(shot("s31",71.46,
  characters=[{"who":"rudra","x":x,"y":y,"s":s,"_fix":1,"flip":fl,"pose":p,"emo":"calm","look":1050} for x,y,s,fl,p in CROWD]+
   [{"who":"brahma","x":1060,"y":640,"s":0.85,"_fix":1,"flip":-1,"pose":"sit","emo":"surprise","look":640,"mood":{"surp":0.8},
    "actions":[{"word":"Brahma","mood":{"surp":1,"mouth":0.3},"d":0.6}]}],
- effects=[name("Eleven","Eleven Rudras",640,80,26)],
+ effects=[name("Eleven","Eleven Rudras",560,80,26)],
  transition_in="cut"))
 # 32 --------------------------------------------------------------- mortals who die and are born again
 S.append(shot("s32",73.84,
@@ -502,14 +502,14 @@ S.append(shot("s33",78.12,
 # 34 --------------------------------------------------------------- he would rather meditate
 S.append(shot("s34",80.74,
  meaning="If that spoiled Brahma's plan, Shiva would rather meditate.",
- why="Shiva closes his eyes and folds his hands on 'meditate' as the hall behind him cross-fades to the white Himalaya.",
+ why="Shiva closes his eyes and folds his hands on 'plan', ready to meditate, as the hall behind him cross-fades to the white Himalaya.",
  camera=cam("push_in",(1.0,0,0),(1.08,0,-6),"medium","normal",0,"push in as he turns inward"),
  focus={"subject":"shiva","depth":"deep"},vertical={"focus":"shiva","z":1.08,"y":0.42},
  layers=[far_snow(),mid_pines(),near_snow()],
  background={**cloud_bg(SKY_SHIVA),"change":{"word":"meditate","bg2":snow_bg(),"d":1.0}},
  mood={"emotion":"withdrawal","grade":"cool"},
  characters=[{"who":"shiva","x":640,"y":690,"s":1.0,"_face":0.43,"flip":1,"pose":"stand","emo":"calm","talk":0.5,"look":540,
-   "actions":[{"word":"spoiled","mood":{"ly":0.4},"d":0.6},{"word":"rather","pose":"namaste","mood":{"blink":1,"smile":0.3},"d":0.7}]}],
+   "actions":[{"word":"spoiled","mood":{"ly":0.4},"d":0.6},{"word":"plan","pose":"namaste","mood":{"blink":1,"smile":0.3},"d":0.7}]}],
  effects=[],transition_in="cut"))
 # 35 --------------------------------------------------------------- then he left
 S.append(shot("s35",83.4,
@@ -526,12 +526,12 @@ S.append(shot("s35",83.4,
 # 36 --------------------------------------------------------------- what never dies
 S.append(shot("s36",84.64,
  meaning="The god born from Brahma's anger could only make what never dies.",
- why="Shiva sits in meditation on the snowy peak with closed eyes; behind him a faint warm glow of the fire he was born from, and on 'never' a ring of undying light opens as the camera pulls away.",
+ why="Shiva sits in meditation on the snowy peak with closed eyes, his fire halo of Rudra burning quietly behind him, the fire he was born from, and on 'never' a ring of undying light opens as the camera pulls away.",
  camera=cam("pull_out",(1.1,0,-8),(1.0,0,0),"wide","wide",0,"final pull out on the meditating god"),
- focus={"subject":"shiva","depth":"deep"},vertical={"focus":"shiva"},
+ focus={"subject":"rudra","depth":"deep"},vertical={"focus":"rudra"},
  layers=[far_snow(),mid_pines(),near_snow()],
  background=snow_bg(sx=640,sy=200),mood={"emotion":"stillness","grade":"cool"},
- characters=[{"who":"shiva","x":640,"y":690,"s":1.05,"_face":0.47,"flip":1,"pose":"sitpray","prop":"none","emo":"calm","mood":{"blink":1,"smile":0.3},"look":640,
+ characters=[{"who":"rudra","x":640,"y":690,"s":1.05,"_face":0.47,"flip":1,"pose":"sitpray","emo":"calm","mood":{"blink":1,"smile":0.3},"look":640,
    "actions":[{"word":"anger","mood":{"blink":1,"smile":0.2},"tilt":0.03,"d":0.6}]}],
  effects=[{"k":"glow","word":"anger","x":640,"y":0,"_head":0,"r":260,"rgb":"255,170,100","ga":0.4,"par":1.0,"behind":True,"meaning":"the fire of anger he was born from, now a quiet glow"},
   {"k":"halo_ring","word":"never","x":640,"y":0,"_head":0,"w":460,"alpha":0.45,"blend":"lighter","par":1.0,"behind":True,"meaning":"what never dies, a ring of undying light"}],

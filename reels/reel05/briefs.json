@@ -3151,9 +3151,9 @@
      "word": "fiery",
      "x": 640,
      "y": 354,
-     "r": 110,
+     "r": 80,
      "rgb": "255,210,130",
-     "ga": 0.85,
+     "ga": 0.45,
      "par": 1.0,
      "meaning": "his forehead glowing with fire"
     },
@@ -6015,7 +6015,7 @@
    "characters": [
     {
      "who": "rudra",
-     "x": 640,
+     "x": 560,
      "y": 372,
      "s": 0.42,
      "flip": 1,
@@ -6025,7 +6025,7 @@
     },
     {
      "who": "rudra",
-     "x": 560,
+     "x": 480,
      "y": 372,
      "s": 0.42,
      "flip": 1,
@@ -6035,10 +6035,20 @@
     },
     {
      "who": "rudra",
-     "x": 720,
+     "x": 640,
      "y": 372,
      "s": 0.42,
      "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 440,
+     "y": 430,
+     "s": 0.48,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 1050
@@ -6049,7 +6059,7 @@
      "y": 430,
      "s": 0.48,
      "flip": 1,
-     "pose": "stand",
+     "pose": "namaste",
      "emo": "calm",
      "look": 1050
     },
@@ -6058,7 +6068,7 @@
      "x": 600,
      "y": 430,
      "s": 0.48,
-     "flip": 1,
+     "flip": -1,
      "pose": "namaste",
      "emo": "calm",
      "look": 1050
@@ -6069,23 +6079,13 @@
      "y": 430,
      "s": 0.48,
      "flip": -1,
-     "pose": "namaste",
-     "emo": "calm",
-     "look": 1050
-    },
-    {
-     "who": "rudra",
-     "x": 760,
-     "y": 430,
-     "s": 0.48,
-     "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "look": 1050
     },
     {
      "who": "rudra",
-     "x": 478,
+     "x": 398,
      "y": 500,
      "s": 0.54,
      "flip": 1,
@@ -6095,7 +6095,7 @@
     },
     {
      "who": "rudra",
-     "x": 585,
+     "x": 505,
      "y": 500,
      "s": 0.54,
      "flip": 1,
@@ -6105,7 +6105,7 @@
     },
     {
      "who": "rudra",
-     "x": 695,
+     "x": 615,
      "y": 500,
      "s": 0.54,
      "flip": -1,
@@ -6115,7 +6115,7 @@
     },
     {
      "who": "rudra",
-     "x": 802,
+     "x": 722,
      "y": 500,
      "s": 0.54,
      "flip": -1,
@@ -6152,7 +6152,7 @@
      "k": "name",
      "word": "Eleven",
      "s": "Eleven Rudras",
-     "x": 640,
+     "x": 560,
      "y": 80,
      "size": 26,
      "meaning": "the name Eleven Rudras on screen as it is said"
@@ -6556,7 +6556,7 @@
    "duration": 2.66,
    "narration": "If that spoiled the plan, he would rather meditate.",
    "meaning": "If that spoiled Brahma's plan, Shiva would rather meditate.",
-   "why": "Shiva closes his eyes and folds his hands on 'meditate' as the hall behind him cross-fades to the white Himalaya.",
+   "why": "Shiva closes his eyes and folds his hands on 'plan', ready to meditate, as the hall behind him cross-fades to the white Himalaya.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -6731,7 +6731,7 @@
        "d": 0.6
       },
       {
-       "word": "rather",
+       "word": "plan",
        "pose": "namaste",
        "mood": {
         "blink": 1,
@@ -6944,7 +6944,7 @@
    "duration": 4.36,
    "narration": "The god born from Brahma's anger could only make what never dies.",
    "meaning": "The god born from Brahma's anger could only make what never dies.",
-   "why": "Shiva sits in meditation on the snowy peak with closed eyes; behind him a faint warm glow of the fire he was born from, and on 'never' a ring of undying light opens as the camera pulls away.",
+   "why": "Shiva sits in meditation on the snowy peak with closed eyes, his fire halo of Rudra burning quietly behind him, the fire he was born from, and on 'never' a ring of undying light opens as the camera pulls away.",
    "camera": {
     "shot": "wide",
     "lens": "wide",
@@ -6965,11 +6965,11 @@
     "motivation": "final pull out on the meditating god"
    },
    "focus": {
-    "subject": "shiva",
+    "subject": "rudra",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "shiva"
+    "focus": "rudra"
    },
    "layers": [
     {
@@ -7084,13 +7084,12 @@
    },
    "characters": [
     {
-     "who": "shiva",
+     "who": "rudra",
      "x": 640,
      "y": 543,
      "s": 1.05,
      "flip": 1,
      "pose": "sitpray",
-     "prop": "none",
      "emo": "calm",
      "mood": {
       "blink": 1,
