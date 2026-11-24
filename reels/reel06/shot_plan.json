@@ -1,0 +1,7332 @@
+{
+ "episode": "reel06",
+ "shots": [
+  {
+   "id": "s01",
+   "at": {
+    "t": 0.16,
+    "word": "Every"
+   },
+   "cues": [
+    "fire"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#3a4ab0",
+     "#e8946a",
+     "#ffc878",
+     "#fff2d0"
+    ],
+    "sx": 640,
+    "sy": 200,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab8c8",
+     "#6aa47e",
+     "#4a8a5a"
+    ],
+    "haze": "240,246,255"
+   },
+   "figs": [
+    {
+     "who": "agni",
+     "x": 640,
+     "y": 652,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.4,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "open",
+       "emo": "joy",
+       "e": "spring"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "havan_kund",
+     "x": 640,
+     "y": 668,
+     "w": 230,
+     "alpha": 1,
+     "par": 1.0
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 360,
+     "r": 300,
+     "rgb": "255,170,80",
+     "ga": 0.5,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 500,
+       "y": 392,
+       "s": 1.0,
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 800,
+       "y": 395,
+       "s": 1.0,
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 610,
+       "s": 0.8,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "tree",
+       "x": 830,
+       "y": 605,
+       "s": 0.75,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#f0a020"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 640,
+       "h": 60,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Agni, ember-skinned with his flame crown and fire halo, stands behind a blazing brick fire altar in a bright village yard below the title card and opens his arms over the flames on 'fire'.",
+   "vert": {
+    "focus": "agni"
+   }
+  },
+  {
+   "id": "s02",
+   "at": {
+    "t": 2.48,
+    "word": "ends"
+   },
+   "cues": [
+    "word",
+    "Swaha"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2f6ad0",
+     "#7ab8f0",
+     "#ffe6c4",
+     "#fff8ea"
+    ],
+    "sx": 760,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab8c8",
+     "#6aa47e",
+     "#4a8a5a"
+    ],
+    "haze": "240,246,255"
+   },
+   "figs": [
+    {
+     "who": "villager",
+     "x": 575,
+     "y": 509,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "devotion",
+     "talk": 0.6,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "open",
+       "emo": "devotion"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "havan_kund",
+     "x": 745,
+     "y": 650,
+     "w": 190,
+     "alpha": 1,
+     "par": 1.0
+    },
+    {
+     "t": "orbs",
+     "items": [
+      {
+       "x0": 640,
+       "y0": 430,
+       "x1": 740,
+       "y1": 560,
+       "dur": 0.9,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      },
+      {
+       "x0": 650,
+       "y0": 420,
+       "x1": 745,
+       "y1": 555,
+       "dur": 0.9,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 1
+      }
+     ],
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "name",
+     "s": "Swaha",
+     "x": 650,
+     "y": 118,
+     "size": 30,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 745,
+     "y": 520,
+     "r": 200,
+     "rgb": "255,190,90",
+     "ga": 0.6,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.05,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 520,
+       "y": 392,
+       "s": 1.0,
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 800,
+       "y": 395,
+       "s": 1.0,
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "tree",
+       "x": 440,
+       "y": 610,
+       "s": 0.8,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "hut",
+       "x": 560,
+       "y": 590,
+       "s": 0.75,
+       "lamp": true
+      },
+      {
+       "o": "tree",
+       "x": 860,
+       "y": 605,
+       "s": 0.75,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#f0a020"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 640,
+       "h": 60,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 460,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_right: A village priest sits at the altar and pours an offering into the fire; as he says the last word the flames flare gold and the name 'Swaha' appears above.",
+   "vert": {
+    "x": [
+     630,
+     660
+    ],
+    "focus": "villager"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s03",
+   "at": {
+    "t": 4.54,
+    "word": "The"
+   },
+   "cues": [
+    "starved"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#5466a4",
+     "#9ca8cc",
+     "#e6dccc",
+     "#f6f0e6"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "deva_thin",
+     "x": 640,
+     "y": 483,
+     "s": 0.85,
+     "flip": 1,
+     "pose": "sit",
+     "emo": "sad",
+     "mood": {
+      "ly": 0.6,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "grief",
+       "tilt": -0.06
+      }
+     ]
+    },
+    {
+     "who": "deva_thin2",
+     "x": 540,
+     "y": 429,
+     "s": 0.72,
+     "flip": 1,
+     "pose": "sit",
+     "emo": "sad",
+     "mood": {
+      "ly": 0.5,
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "indra_thin",
+     "x": 745,
+     "y": 429,
+     "s": 0.72,
+     "flip": -1,
+     "pose": "sit",
+     "emo": "sad",
+     "mood": {
+      "ly": 0.5,
+      "lx": 0.8
+     }
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -20,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eceef4",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#b0b8d0"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#b0b8d0"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#f6f6fa"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#f6f6fa"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8ccaa",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8ccaa",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "high_angle crane_down: High and wide over a pale, empty hall of heaven: three thin gods sit slumped on the clouds between faded pillars, heads hanging.",
+   "vert": {
+    "x": [
+     640,
+     640
+    ],
+    "focus": "deva_thin"
+   }
+  },
+  {
+   "id": "s04",
+   "at": {
+    "t": 5.94,
+    "word": "while"
+   },
+   "cues": [
+    "fed"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#5466a4",
+     "#9ca8cc",
+     "#e6dccc",
+     "#f6f0e6"
+    ],
+    "sx": 900,
+    "sy": 200
+   },
+   "figs": [
+    {
+     "who": "deva_thin",
+     "x": 400,
+     "y": 650,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "sad",
+     "mood": {
+      "ly": 0.6,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "emo": "grief",
+       "mood": {
+        "ly": 0.7
+       }
+      }
+     ]
+    },
+    {
+     "who": "villager",
+     "x": 860,
+     "y": 680,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "devotion",
+     "talk": 0.5,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "open"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "havan_kund",
+     "x": 985,
+     "y": 665,
+     "w": 170,
+     "alpha": 1,
+     "par": 1.0
+    },
+    {
+     "t": "orbs",
+     "items": [
+      {
+       "x0": 930,
+       "y0": 520,
+       "x1": 985,
+       "y1": 600,
+       "dur": 0.9,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      },
+      {
+       "x0": 940,
+       "y0": 510,
+       "x1": 990,
+       "y1": 600,
+       "dur": 1.3,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      }
+     ],
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 985,
+     "y": 560,
+     "r": 180,
+     "rgb": "255,180,80",
+     "ga": 0.55,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 380,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 300,
+       "y": 420,
+       "s": 1.4,
+       "col": "#ffffff"
+      },
+      {
+       "o": "mountain",
+       "x": 900,
+       "y": 520,
+       "s": 1.0,
+       "w": 260,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 1080,
+       "y": 525,
+       "s": 1.0,
+       "w": 220,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 250,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8c8a0",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8c8a0",
+       "h": 520
+      },
+      {
+       "o": "tree",
+       "x": 1090,
+       "y": 600,
+       "s": 0.8,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "hut",
+       "x": 760,
+       "y": 590,
+       "s": 0.8,
+       "lamp": true
+      },
+      {
+       "o": "hill",
+       "x": 900,
+       "y": 700,
+       "s": 1.0,
+       "w": 560,
+       "h": 120,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 330,
+       "y": 690,
+       "s": 1.8,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 700,
+       "s": 1.5,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot static: Stacked: above, a thin god in pale heaven looks down with sad eyes; below, on bright earth, a villager pours offerings into a blazing fire altar.",
+   "vert": {
+    "mode": "stack",
+    "stack": [
+     "deva_thin",
+     "villager"
+    ]
+   },
+   "dx": 0
+  },
+  {
+   "id": "s05",
+   "at": {
+    "t": 8.5,
+    "word": "The"
+   },
+   "cues": [
+    "himself",
+    "fault"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a4ab0",
+     "#e8946a",
+     "#ffc878",
+     "#fff2d0"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "agni",
+     "x": 640,
+     "y": 665,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "sad",
+     "talk": 0.6,
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "shame"
+      },
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "shame",
+       "tilt": -0.07,
+       "mood": {
+        "ly": 0.7
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 330,
+     "r": 220,
+     "rgb": "255,150,70",
+     "ga": 0.4,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f8ece0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4ea"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4ea"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "close push_in: Close on Agni with folded hands: his fire halo burns low and on 'fault' he lowers his eyes and bows his head in shame.",
+   "vert": {
+    "focus": "agni",
+    "z": 1.2,
+    "y": 0.42
+   }
+  },
+  {
+   "id": "s06",
+   "at": {
+    "t": 11.32,
+    "word": "One"
+   },
+   "cues": [
+    "came",
+    "Brahma",
+    "creator"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a5ab8",
+     "#9ab0ea",
+     "#ffc890",
+     "#fff0d8"
+    ],
+    "sx": 820,
+    "sy": 300
+   },
+   "figs": [
+    {
+     "who": "brahma",
+     "x": 800,
+     "y": 522,
+     "s": 1.0,
+     "flip": -1,
+     "pose": "sit",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "surprise",
+       "mood": {
+        "surp": 0.4
+       }
+      },
+      {
+       "c": 2,
+       "d": 0.6,
+       "emo": "calm",
+       "mood": {
+        "smile": 0.3
+       }
+      }
+     ]
+    },
+    {
+     "who": "deva_thin",
+     "x": 470,
+     "y": 597,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "sad",
+     "mood": {
+      "lx": 0.8
+     },
+     "walkTo": {
+      "x": 580,
+      "c": 0,
+      "d": 1.6,
+      "sp": 1
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 380,
+     "y": 522,
+     "s": 0.88,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "sad",
+     "mood": {
+      "lx": 0.8
+     },
+     "walkTo": {
+      "x": 480,
+      "c": 0,
+      "d": 1.6,
+      "sp": 1
+     }
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Brahma",
+     "x": 760,
+     "y": 118,
+     "size": 30,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 820,
+     "y": 300,
+     "r": 240,
+     "rgb": "255,220,150",
+     "ga": 0.4,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 860,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 330,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 980,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 420,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 900,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot pan_right: Morning sun over the gold hall of heaven: two thin gods walk in from the left and the window pans with them to four-headed Brahma on his lotus, who looks up as his name is said.",
+   "vert": {
+    "x": [
+     500,
+     780
+    ],
+    "focus": "brahma"
+   }
+  },
+  {
+   "id": "s07",
+   "at": {
+    "t": 14.48,
+    "word": "in"
+   },
+   "cues": [
+    "Brahmaloka"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f56c0",
+     "#7eaaf0",
+     "#ffd8a8",
+     "#fff6e0"
+    ],
+    "sx": 640,
+    "sy": 220
+   },
+   "figs": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 507,
+     "s": 0.85,
+     "flip": 1,
+     "pose": "sit",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.4,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "mood": {
+        "smile": 0.6,
+        "ly": -0.2
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Brahmaloka",
+     "x": 640,
+     "y": 110,
+     "size": 30,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "palace_gate",
+     "x": 640,
+     "y": 330,
+     "w": 240,
+     "alpha": 0.85,
+     "par": 0.4
+    },
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 60,
+     "w": 640,
+     "alpha": 0.35,
+     "blend": "lighter",
+     "par": 0.2
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 12,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": -8,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 480
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 480
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 460,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "establishing crane_up: Wide on Brahmaloka: a gold gateway stands on the clouds, Brahma sits on his pink lotus before it, and the name plate appears as 'Brahmaloka' is said.",
+   "vert": {
+    "x": [
+     640,
+     640
+    ],
+    "focus": "brahma"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s08",
+   "at": {
+    "t": 15.86,
+    "word": "They"
+   },
+   "cues": [
+    "thin",
+    "weak",
+    "nothing",
+    "eat"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#5466a4",
+     "#9ca8cc",
+     "#e6dccc",
+     "#f6f0e6"
+    ],
+    "sx": 700,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "deva_thin",
+     "x": 575,
+     "y": 636,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "sad",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "grief",
+       "tilt": -0.07
+      },
+      {
+       "c": 2,
+       "d": 0.6,
+       "pose": "open",
+       "emo": "grief"
+      }
+     ]
+    },
+    {
+     "who": "deva_thin2",
+     "x": 710,
+     "y": 636,
+     "s": 0.98,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "sad",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "emo": "grief",
+       "mood": {
+        "ly": 0.5
+       }
+      },
+      {
+       "c": 3,
+       "d": 0.6,
+       "pose": "open",
+       "emo": "sad"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.1,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eceef4",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#b0b8d0"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#b0b8d0"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#f6f6fa"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#f6f6fa"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 440,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8ccaa",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 840,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8ccaa",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot push_in: Two thin gods in faded cloth stand close together; one sags on 'weak', and on 'nothing' both open their empty hands to Brahma.",
+   "vert": {
+    "x": [
+     640,
+     640
+    ],
+    "z": 1.05,
+    "y": 0.42,
+    "focus": "deva_thin"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s09",
+   "at": {
+    "t": 19.48,
+    "word": "Brahma"
+   },
+   "cues": [
+    "explained",
+    "eat"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f56c0",
+     "#7eaaf0",
+     "#ffd8a8",
+     "#fff6e0"
+    ],
+    "sx": 700,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 567,
+     "s": 1.05,
+     "flip": -1,
+     "pose": "sit",
+     "emo": "calm",
+     "talk": 0.6,
+     "mood": {
+      "smile": 0.3,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "open",
+       "emo": "calm"
+      },
+      {
+       "c": 1,
+       "d": 0.6,
+       "tilt": 0.04,
+       "mood": {
+        "smile": 0.5,
+        "ly": 0.2
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 640,
+     "y": 300,
+     "w": 420,
+     "alpha": 0.4,
+     "blend": "lighter",
+     "par": 0.9,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.12,
+     "x": 12,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.12,
+     "x": -12,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 460,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 820,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_left: Brahma on his lotus speaks with an open teaching hand, his Veda book at his side and a soft gold ring of light behind his heads.",
+   "vert": {
+    "focus": "brahma",
+    "z": 1.12,
+    "y": 0.42
+   },
+   "dx": 0
+  },
+  {
+   "id": "s10",
+   "at": {
+    "t": 22.02,
+    "word": "When"
+   },
+   "cues": [
+    "yajna",
+    "ritual"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2f6ad0",
+     "#7ab8f0",
+     "#ffe6c4",
+     "#fff8ea"
+    ],
+    "sx": 640,
+    "sy": 200,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab8c8",
+     "#6aa47e",
+     "#4a8a5a"
+    ],
+    "haze": "240,246,255"
+   },
+   "figs": [
+    {
+     "who": "villager",
+     "x": 548,
+     "y": 484,
+     "s": 0.85,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "devotion",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "mood": {
+        "blink": 0.6,
+        "smile": 0.4
+       }
+      }
+     ]
+    },
+    {
+     "who": "villager_w",
+     "x": 735,
+     "y": 484,
+     "s": 0.82,
+     "flip": -1,
+     "pose": "sitpray",
+     "emo": "devotion",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "mood": {
+        "smile": 0.5
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "havan_kund",
+     "x": 642,
+     "y": 668,
+     "w": 170,
+     "alpha": 1,
+     "par": 1.0
+    },
+    {
+     "t": "name",
+     "s": "Yajna",
+     "x": 640,
+     "y": 118,
+     "size": 30,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 642,
+     "y": 560,
+     "r": 200,
+     "rgb": "255,180,80",
+     "ga": 0.55,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -20,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 500,
+       "y": 392,
+       "s": 1.0,
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 800,
+       "y": 395,
+       "s": 1.0,
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "tree",
+       "x": 440,
+       "y": 610,
+       "s": 0.8,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "hut",
+       "x": 640,
+       "y": 575,
+       "s": 0.75,
+       "lamp": true
+      },
+      {
+       "o": "tree",
+       "x": 850,
+       "y": 605,
+       "s": 0.75,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#f0a020"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 640,
+       "h": 60,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "note": "wide crane_down: Bright earth: a village man and woman sit facing each other across a blazing brick fire altar in their yard, hands folded, and the word 'Yajna' appears above the fire.",
+   "vert": {
+    "x": [
+     640,
+     640
+    ],
+    "focus": "villager"
+   },
+   "tr": "iris"
+  },
+  {
+   "id": "s11",
+   "at": {
+    "t": 24.72,
+    "word": "they"
+   },
+   "cues": [
+    "poured",
+    "fire"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2f6ad0",
+     "#7ab8f0",
+     "#ffe6c4",
+     "#fff8ea"
+    ],
+    "sx": 700,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab8c8",
+     "#6aa47e",
+     "#4a8a5a"
+    ],
+    "haze": "240,246,255"
+   },
+   "figs": [
+    {
+     "who": "villager_w",
+     "x": 610,
+     "y": 542,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "devotion",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "open",
+       "emo": "joy"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "havan_kund",
+     "x": 760,
+     "y": 662,
+     "w": 190,
+     "alpha": 1,
+     "par": 1.0
+    },
+    {
+     "t": "orbs",
+     "items": [
+      {
+       "x0": 690,
+       "y0": 440,
+       "x1": 755,
+       "y1": 570,
+       "dur": 0.8,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      },
+      {
+       "x0": 700,
+       "y0": 430,
+       "x1": 760,
+       "y1": 570,
+       "dur": 1.1,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      },
+      {
+       "x0": 690,
+       "y0": 445,
+       "x1": 765,
+       "y1": 570,
+       "dur": 0.8,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 1
+      }
+     ],
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 760,
+     "y": 540,
+     "r": 220,
+     "rgb": "255,190,90",
+     "ga": 0.6,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 520,
+       "y": 392,
+       "s": 1.0,
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 800,
+       "y": 395,
+       "s": 1.0,
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 610,
+       "s": 0.8,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 605,
+       "s": 0.75,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#f0a020"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 640,
+       "h": 60,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 470,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 840,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Closer: the village woman stretches both hands over the altar and a stream of round gold offering-motes falls from her hands into the flames, which flare up on 'fire'.",
+   "vert": {
+    "x": [
+     650,
+     680
+    ],
+    "z": 1.1,
+    "y": 0.42,
+    "focus": "villager_w"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s12",
+   "at": {
+    "t": 26.92,
+    "word": "Agni"
+   },
+   "cues": [
+    "Agni",
+    "mouth"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#3a4ab0",
+     "#e8946a",
+     "#ffc878",
+     "#fff2d0"
+    ],
+    "sx": 640,
+    "sy": 180,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab8c8",
+     "#6aa47e",
+     "#4a8a5a"
+    ],
+    "haze": "240,246,255"
+   },
+   "figs": [
+    {
+     "who": "agni",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.3,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "open",
+       "emo": "joy",
+       "e": "spring"
+      },
+      {
+       "c": 1,
+       "d": 0.5,
+       "mood": {
+        "smile": 0.6,
+        "mouth": 0.4
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "havan_kund",
+     "x": 640,
+     "y": 690,
+     "w": 260,
+     "alpha": 1,
+     "par": 1.0
+    },
+    {
+     "t": "name",
+     "s": "Agni",
+     "x": 640,
+     "y": 112,
+     "size": 30,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 330,
+     "r": 280,
+     "rgb": "255,160,70",
+     "ga": 0.55,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 18,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#fbf0e0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 500,
+       "y": 392,
+       "s": 1.0,
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 800,
+       "y": 395,
+       "s": 1.0,
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "tree",
+       "x": 440,
+       "y": 610,
+       "s": 0.8,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "tree",
+       "x": 850,
+       "y": 605,
+       "s": 0.75,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#f0a020"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 640,
+       "h": 60,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: Agni rises out of the altar fire, arms open to receive, his flame crown blazing; the name 'Agni' appears above him.",
+   "vert": {
+    "focus": "agni"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s13",
+   "at": {
+    "t": 28.7,
+    "word": "carried"
+   },
+   "cues": [
+    "carried",
+    "heaven"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#3a6ad0",
+     "#8ab8f0",
+     "#ffe2b0",
+     "#fff6e4"
+    ],
+    "sx": 640,
+    "sy": 120,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab8c8",
+     "#6aa47e",
+     "#4a8a5a"
+    ],
+    "haze": "240,246,255"
+   },
+   "figs": [
+    {
+     "who": "agni",
+     "x": 640,
+     "y": 509,
+     "s": 0.72,
+     "flip": 1,
+     "pose": "raise",
+     "emo": "joy",
+     "mood": {
+      "ly": -0.6,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "mood": {
+        "smile": 0.8,
+        "ly": -0.8
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "havan_kund",
+     "x": 640,
+     "y": 670,
+     "w": 170,
+     "alpha": 1,
+     "par": 1.0
+    },
+    {
+     "t": "orbs",
+     "items": [
+      {
+       "x0": 620,
+       "y0": 600,
+       "x1": 630,
+       "y1": 95,
+       "dur": 1.2,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      },
+      {
+       "x0": 660,
+       "y0": 620,
+       "x1": 650,
+       "y1": 95,
+       "dur": 1.6,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      },
+      {
+       "x0": 640,
+       "y0": 610,
+       "x1": 640,
+       "y1": 95,
+       "dur": 1.6,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 1
+      },
+      {
+       "x0": 630,
+       "y0": 600,
+       "x1": 640,
+       "y1": 95,
+       "dur": 1.2,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 1
+      }
+     ],
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "light_beam",
+     "x": 640,
+     "y": 640,
+     "w": 120,
+     "alpha": 0.55,
+     "blend": "lighter",
+     "par": 1.0
+    },
+    {
+     "t": "pfx",
+     "k": "palace_gate",
+     "x": 640,
+     "y": 95,
+     "w": 120,
+     "alpha": 0.95,
+     "par": 0.6
+    },
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 95,
+     "r": 140,
+     "rgb": "255,230,160",
+     "ga": 0.6,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#f6f2ea",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 130,
+       "s": 1.4,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 120,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 540,
+       "s": 1.0,
+       "w": 220,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "tree",
+       "x": 470,
+       "y": 640,
+       "s": 0.7,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "tree",
+       "x": 820,
+       "y": 640,
+       "s": 0.65,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#f0a020"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 690,
+       "s": 1.0,
+       "w": 600,
+       "h": 50,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 840,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "note": "wide pull_out: A column of light rises from the altar fire at the bottom of the frame to the gold gateway of Brahmaloka in the clouds at the top; Agni rides up the column with raised arms and gold offering-motes climb past him to the gate.",
+   "vert": {
+    "x": [
+     640,
+     640
+    ],
+    "focus": "agni"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s14",
+   "at": {
+    "t": 30.18,
+    "word": "In"
+   },
+   "cues": [
+    "gave",
+    "blessings"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f56c0",
+     "#7eaaf0",
+     "#ffd8a8",
+     "#fff6e0"
+    ],
+    "sx": 900,
+    "sy": 200
+   },
+   "figs": [
+    {
+     "who": "deva_thin2",
+     "x": 400,
+     "y": 650,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.6,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "raise",
+       "emo": "joy"
+      }
+     ]
+    },
+    {
+     "who": "villager",
+     "x": 860,
+     "y": 680,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "mood": {
+        "smile": 0.9,
+        "ly": -0.4
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "havan_kund",
+     "x": 985,
+     "y": 665,
+     "w": 170,
+     "alpha": 1,
+     "par": 1.0
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 880,
+     "y": 300,
+     "w": 420,
+     "alpha": 0.45,
+     "blend": "lighter",
+     "par": 0.6,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "glow",
+     "x": 860,
+     "y": 470,
+     "r": 200,
+     "rgb": "255,226,150",
+     "ga": 0.5,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 380,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 300,
+       "y": 420,
+       "s": 1.4,
+       "col": "#ffffff"
+      },
+      {
+       "o": "mountain",
+       "x": 900,
+       "y": 520,
+       "s": 1.0,
+       "w": 260,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 1080,
+       "y": 525,
+       "s": 1.0,
+       "w": 220,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 250,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "tree",
+       "x": 1090,
+       "y": 600,
+       "s": 0.8,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "hut",
+       "x": 760,
+       "y": 590,
+       "s": 0.8,
+       "lamp": true
+      },
+      {
+       "o": "hill",
+       "x": 900,
+       "y": 700,
+       "s": 1.0,
+       "w": 560,
+       "h": 120,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 330,
+       "y": 690,
+       "s": 1.8,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 700,
+       "s": 1.5,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot tilt_down: Stacked: above, a god in bright heaven raises a blessing hand; below, the villager at his fire folds his hands with joy as warm rays fall on him.",
+   "vert": {
+    "mode": "stack",
+    "stack": [
+     "deva_thin2",
+     "villager"
+    ]
+   }
+  },
+  {
+   "id": "s15",
+   "at": {
+    "t": 33.04,
+    "word": "Indra"
+   },
+   "cues": [
+    "Indra",
+    "leader"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#5466a4",
+     "#9ca8cc",
+     "#e6dccc",
+     "#f6f0e6"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "indra_thin",
+     "x": 640,
+     "y": 623,
+     "s": 1.02,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "sad",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "pride",
+       "mood": {
+        "ly": -0.2
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Indra",
+     "x": 640,
+     "y": 115,
+     "size": 30,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 320,
+     "r": 200,
+     "rgb": "170,190,255",
+     "ga": 0.35,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 12,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eceef4",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#b0b8d0"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#b0b8d0"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#f6f6fa"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#f6f6fa"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8ccaa",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8ccaa",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium crane_up: Thin Indra, still in his tall crown with his vajra, stands in the pale hall with a dimmed blue halo; his name appears as it is said.",
+   "vert": {
+    "focus": "indra_thin"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s16",
+   "at": {
+    "t": 34.9,
+    "word": "said"
+   },
+   "cues": [
+    "humans",
+    "time"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#5466a4",
+     "#9ca8cc",
+     "#e6dccc",
+     "#f6f0e6"
+    ],
+    "sx": 760,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "indra_thin",
+     "x": 600,
+     "y": 643,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "doubt",
+     "talk": 0.7,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "point",
+       "emo": "anger"
+      },
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "doubt",
+       "mood": {
+        "ly": 0.3
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 735,
+     "y": 520,
+     "w": 110,
+     "alpha": 0.7,
+     "par": 0.3
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 800,
+     "y": 540,
+     "w": 80,
+     "alpha": 0.6,
+     "par": 0.3
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.08,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eceef4",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#b0b8d0"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#b0b8d0"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#f6f6fa"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#f6f6fa"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 440,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8ccaa",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 860,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8ccaa",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 460,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_right: Indra points down toward earth as he speaks; far below the clouds three little columns of yajna smoke rise from the villages, proof that the rituals go on.",
+   "vert": {
+    "focus": "indra_thin",
+    "z": 1.08,
+    "y": 0.42
+   },
+   "dx": 0
+  },
+  {
+   "id": "s17",
+   "at": {
+    "t": 37.32,
+    "word": "but"
+   },
+   "cues": [
+    "nothing"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#6a7490",
+     "#a0a8bc",
+     "#d4d6dc",
+     "#eeeef0"
+    ],
+    "sx": 640,
+    "sy": 160
+   },
+   "figs": [
+    {
+     "who": "deva_thin",
+     "x": 640,
+     "y": 432,
+     "s": 0.75,
+     "flip": 1,
+     "pose": "sit",
+     "emo": "grief",
+     "mood": {
+      "ly": 0.8,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "grief",
+       "tilt": -0.06
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "havan_kund",
+     "x": 640,
+     "y": 690,
+     "w": 140,
+     "alpha": 1,
+     "par": 1.0
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 650,
+     "w": 180,
+     "alpha": 0.7,
+     "par": 1.0
+    },
+    {
+     "t": "orbs",
+     "items": [
+      {
+       "x0": 630,
+       "y0": 640,
+       "x1": 640,
+       "y1": 470,
+       "dur": 1.0,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      },
+      {
+       "x0": 650,
+       "y0": 640,
+       "x1": 640,
+       "y1": 460,
+       "dur": 1.4,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      }
+     ],
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 510,
+     "w": 460,
+     "alpha": 0.8,
+     "par": 1.0
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 16,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eceef4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 150,
+       "s": 1.3,
+       "col": "#f4f4f8"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 170,
+       "s": 1.2,
+       "col": "#f4f4f8"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.3,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 640,
+       "y": 470,
+       "s": 1.6,
+       "col": "#ffffff"
+      },
+      {
+       "o": "tree",
+       "x": 470,
+       "y": 660,
+       "s": 0.6,
+       "kind": "round",
+       "col": "#4a8a5a"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 700,
+       "s": 1.0,
+       "w": 600,
+       "h": 50,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#f0f0f4"
+      },
+      {
+       "o": "cloud",
+       "x": 840,
+       "y": 748,
+       "s": 1.6,
+       "col": "#f0f0f4"
+      }
+     ]
+    }
+   ],
+   "note": "wide tilt_up: Above, a thin god sits on a cloud with an empty gaze looking down; below, the smoke and gold motes rising from an earth altar thin out and vanish into a gray mist halfway up.",
+   "vert": {
+    "x": [
+     640,
+     640
+    ],
+    "focus": "deva_thin"
+   }
+  },
+  {
+   "id": "s18",
+   "at": {
+    "t": 38.98,
+    "word": "Another"
+   },
+   "cues": [
+    "Kamadev"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a52b0",
+     "#e0a0c0",
+     "#ffd0b0",
+     "#fff2e4"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "kama",
+     "x": 640,
+     "y": 616,
+     "s": 1.02,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "pride",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "anger",
+       "mood": {
+        "anger": 0.6
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Kamadev",
+     "x": 640,
+     "y": 115,
+     "size": 30,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 330,
+     "r": 200,
+     "rgb": "255,170,200",
+     "ga": 0.35,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Kamadev in a rose dhoti and parrot-green shawl, his sugarcane bow in hand, turns with a proud, sharp look as his name appears.",
+   "vert": {
+    "focus": "kama"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s19",
+   "at": {
+    "t": 40.64,
+    "word": "blamed"
+   },
+   "cues": [
+    "blamed",
+    "Agni"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f56c0",
+     "#7eaaf0",
+     "#ffd8a8",
+     "#fff6e0"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "kama",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "point",
+     "emo": "anger",
+     "talk": 0.7,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "anger",
+       "mood": {
+        "anger": 0.8
+       }
+      }
+     ]
+    },
+    {
+     "who": "agni",
+     "x": 860,
+     "y": 660,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "sad",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "shame",
+       "mood": {
+        "ly": 0.5
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 340,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 900,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 400,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 230,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 1050,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 300,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 980,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot handheld: Stacked: above, Kamadev jabs a finger downward in anger; below, Agni hears the charge and lowers his eyes in shame.",
+   "vert": {
+    "mode": "stack",
+    "stack": [
+     "kama",
+     "agni"
+    ]
+   },
+   "shake": 1,
+   "dx": 0
+  },
+  {
+   "id": "s20",
+   "at": {
+    "t": 41.98,
+    "word": "Agni"
+   },
+   "cues": [
+    "stepped",
+    "folded"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f56c0",
+     "#7eaaf0",
+     "#ffd8a8",
+     "#fff6e0"
+    ],
+    "sx": 700,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "deva_thin",
+     "x": 800,
+     "y": 509,
+     "s": 0.72,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "sad",
+     "mood": {
+      "lx": 0.8
+     },
+     "a": 0.8
+    },
+    {
+     "who": "agni",
+     "x": 560,
+     "y": 621,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "sad",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "shame",
+       "mood": {
+        "ly": 0.3
+       }
+      }
+     ],
+     "walkTo": {
+      "x": 650,
+      "c": 0,
+      "d": 1.4,
+      "sp": 1
+     }
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 620,
+     "y": 330,
+     "r": 200,
+     "rgb": "255,160,80",
+     "ga": 0.35,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 430,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 850,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_right: Agni walks forward out of the group of thin gods, palms folded; the gods behind him turn their eyes to him.",
+   "vert": {
+    "focus": "agni"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s21",
+   "at": {
+    "t": 44.4,
+    "word": "He"
+   },
+   "cues": [
+    "blame"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a4ab0",
+     "#e8946a",
+     "#ffc878",
+     "#fff2d0"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "agni",
+     "x": 640,
+     "y": 360,
+     "s": 1.15,
+     "flip": -1,
+     "head": true,
+     "emo": "sad",
+     "talk": 0.6,
+     "mood": {
+      "ly": 0.4
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "shame",
+       "tilt": -0.06,
+       "mood": {
+        "ly": 0.7
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f8ece0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4ea"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4ea"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "close push_in: Close on Agni's face: he speaks with his eyes lowered and his head bowed, owning the fault.",
+   "vert": {
+    "focus": "agni"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s22",
+   "at": {
+    "t": 46.02,
+    "word": "He"
+   },
+   "cues": [
+    "burn"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#3a4ab0",
+     "#e8946a",
+     "#ffc878",
+     "#fff2d0"
+    ],
+    "sx": 640,
+    "sy": 200,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab8c8",
+     "#6aa47e",
+     "#4a8a5a"
+    ],
+    "haze": "240,246,255"
+   },
+   "figs": [
+    {
+     "who": "agni",
+     "x": 640,
+     "y": 618,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "open",
+       "emo": "pride"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "havan_kund",
+     "x": 640,
+     "y": 690,
+     "w": 280,
+     "alpha": 1,
+     "par": 1.0
+    },
+    {
+     "t": "flames",
+     "x": 640,
+     "y": 560,
+     "sc": 1.2,
+     "n": 8,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 450,
+     "r": 300,
+     "rgb": "255,160,60",
+     "ga": 0.6,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#fbf0e0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 500,
+       "y": 392,
+       "s": 1.0,
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 800,
+       "y": 395,
+       "s": 1.0,
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "tree",
+       "x": 440,
+       "y": 610,
+       "s": 0.8,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "tree",
+       "x": 850,
+       "y": 605,
+       "s": 0.75,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#f0a020"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 640,
+       "h": 60,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "note": "medium pull_out: Agni stands over a roaring altar fire with an open hand: the flames leap high and the offerings burn bright gold.",
+   "vert": {
+    "focus": "agni"
+   }
+  },
+  {
+   "id": "s23",
+   "at": {
+    "t": 47.34,
+    "word": "but"
+   },
+   "cues": [
+    "carry",
+    "skill"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#6a7490",
+     "#a0a8bc",
+     "#d4d6dc",
+     "#eeeef0"
+    ],
+    "sx": 640,
+    "sy": 160,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab8c8",
+     "#6aa47e",
+     "#4a8a5a"
+    ],
+    "haze": "240,246,255"
+   },
+   "figs": [
+    {
+     "who": "agni",
+     "x": 640,
+     "y": 629,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "sad",
+     "mood": {
+      "ly": -0.6,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "mood": {
+        "ly": -0.8
+       }
+      },
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "grief",
+       "tilt": -0.06,
+       "mood": {
+        "ly": 0.6
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "orbs",
+     "items": [
+      {
+       "x0": 610,
+       "y0": 300,
+       "x1": 580,
+       "y1": 70,
+       "dur": 1.4,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      },
+      {
+       "x0": 670,
+       "y0": 300,
+       "x1": 700,
+       "y1": 80,
+       "dur": 1.1,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      },
+      {
+       "x0": 640,
+       "y0": 290,
+       "x1": 650,
+       "y1": 60,
+       "dur": 1.8,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      }
+     ],
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 120,
+     "w": 520,
+     "alpha": 0.6,
+     "par": 0.8
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 14,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eceef4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 140,
+       "s": 1.3,
+       "col": "#f4f4f8"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 180,
+       "s": 1.1,
+       "col": "#f4f4f8"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "tree",
+       "x": 440,
+       "y": 610,
+       "s": 0.8,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "tree",
+       "x": 850,
+       "y": 605,
+       "s": 0.75,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#f0a020"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 640,
+       "h": 60,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: Agni looks up and lifts his hands as gold offering-motes drift up from him and fade out in the empty sky; on 'skill' he drops his eyes in sorrow.",
+   "vert": {
+    "focus": "agni"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s24",
+   "at": {
+    "t": 51.34,
+    "word": "Brahma"
+   },
+   "cues": [
+    "no",
+    "answer"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f56c0",
+     "#7eaaf0",
+     "#ffd8a8",
+     "#fff6e0"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 585,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "sit",
+     "emo": "doubt",
+     "mood": {
+      "ly": 0.4,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "emo": "doubt",
+       "tilt": 0.05,
+       "mood": {
+        "ly": 0.6
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 820,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "close static: Brahma on his lotus sits silent and still with a troubled frown, his eyes lowered; the gold light of his hall cools on 'answer'.",
+   "vert": {
+    "focus": "brahma",
+    "z": 1.2,
+    "y": 0.42
+   },
+   "bgc": 1,
+   "bgd": 1.0,
+   "bg2": {
+    "k": "cloudscape",
+    "sky": [
+     "#5466a4",
+     "#9ca8cc",
+     "#e6dccc",
+     "#f6f0e6"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "dx": 0
+  },
+  {
+   "id": "s25",
+   "at": {
+    "t": 53.16,
+    "word": "Vishnu"
+   },
+   "cues": [
+    "Vishnu",
+    "preserver"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f56c0",
+     "#7eaaf0",
+     "#ffd8a8",
+     "#fff6e0"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 613,
+     "s": 1.02,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.5,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "pose": "open",
+       "emo": "joy"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Vishnu",
+     "x": 640,
+     "y": 115,
+     "size": 30,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 640,
+     "y": 320,
+     "w": 480,
+     "alpha": 0.45,
+     "blend": "lighter",
+     "par": 0.9,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": -16,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_down: Blue four-armed Vishnu appears in a ring of light in the gold hall and opens his hand; his name appears as it is said.",
+   "vert": {
+    "focus": "vishnu"
+   }
+  },
+  {
+   "id": "s26",
+   "at": {
+    "t": 54.7,
+    "word": "told"
+   },
+   "cues": [
+    "told",
+    "pray",
+    "Prakriti"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f56c0",
+     "#7eaaf0",
+     "#ffd8a8",
+     "#fff6e0"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "talk": 0.6,
+     "mood": {
+      "smile": 0.5,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "point"
+      }
+     ]
+    },
+    {
+     "who": "brahma",
+     "x": 860,
+     "y": 660,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "sit",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "pose": "sitpray",
+       "emo": "devotion"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 860,
+     "y": 500,
+     "r": 220,
+     "rgb": "150,230,120",
+     "ga": 0.5,
+     "par": 1.0,
+     "c": 2,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -12,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 320,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 900,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 380,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 230,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 1050,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 300,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 980,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot crane_down: Stacked: above, Vishnu speaks and points the way; below, Brahma on his lotus folds his hands in prayer while a green light of Mother Nature glows around him on 'Prakriti'.",
+   "vert": {
+    "mode": "stack",
+    "stack": [
+     "vishnu",
+     "brahma"
+    ]
+   },
+   "dx": 0
+  },
+  {
+   "id": "s27",
+   "at": {
+    "t": 57.72,
+    "word": "Prakriti"
+   },
+   "cues": [
+    "Prakriti",
+    "created",
+    "goddess"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2a72c8",
+     "#86cce4",
+     "#e4f4c4",
+     "#fffbe8"
+    ],
+    "sx": 700,
+    "sy": 230,
+    "ridge": [
+     "#a8d0e0",
+     "#88c0a8",
+     "#5aa86a",
+     "#3a8a4a"
+    ],
+    "haze": "240,246,255"
+   },
+   "figs": [
+    {
+     "who": "prakriti",
+     "x": 570,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.6,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "pose": "open",
+       "emo": "joy"
+      }
+     ]
+    },
+    {
+     "who": "swaha",
+     "x": 730,
+     "y": 612,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "smile": 0.6,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.6,
+       "pose": "namaste",
+       "emo": "devotion"
+      }
+     ],
+     "ad": 0.8,
+     "ac": 1
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Prakriti",
+     "x": 600,
+     "y": 115,
+     "size": 30,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 730,
+     "y": 360,
+     "r": 240,
+     "rgb": "255,190,110",
+     "ga": 0.55,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    },
+    {
+     "t": "glow",
+     "x": 570,
+     "y": 330,
+     "r": 200,
+     "rgb": "160,230,130",
+     "ga": 0.4,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 520,
+       "y": 392,
+       "s": 1.0,
+       "w": 230,
+       "h": 120,
+       "col": "#9ac4cc",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 800,
+       "y": 395,
+       "s": 1.0,
+       "w": 200,
+       "h": 90,
+       "col": "#9ac4cc",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 605,
+       "s": 0.85,
+       "kind": "round",
+       "col": "#3a9a4a",
+       "flowers": "#ff9ac0"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 610,
+       "s": 0.8,
+       "kind": "round",
+       "col": "#3a9a4a",
+       "flowers": "#ffd040"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 665,
+       "s": 1.0,
+       "w": 640,
+       "h": 50,
+       "col": "#b8e090"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 440,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a6a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 880,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a6a3a"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot pan_right: In a green flowering world Prakriti opens her hands and, in a burst of warm light beside her, the young goddess Swaha in a flame-orange sari takes shape.",
+   "vert": {
+    "x": [
+     580,
+     700
+    ],
+    "focus": "prakriti"
+   }
+  },
+  {
+   "id": "s28",
+   "at": {
+    "t": 59.54,
+    "word": "to"
+   },
+   "cues": [
+    "carry",
+    "offerings"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#3a62d0",
+     "#8ab4f0",
+     "#ffd8a0",
+     "#fff4dc"
+    ],
+    "sx": 640,
+    "sy": 110,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab8c8",
+     "#6aa47e",
+     "#4a8a5a"
+    ],
+    "haze": "240,246,255"
+   },
+   "figs": [
+    {
+     "who": "swaha",
+     "x": 640,
+     "y": 516,
+     "s": 0.74,
+     "flip": 1,
+     "pose": "raise",
+     "emo": "joy",
+     "mood": {
+      "ly": -0.6,
+      "smile": 0.7,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "mood": {
+        "smile": 0.9,
+        "ly": -0.8
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "havan_kund",
+     "x": 640,
+     "y": 670,
+     "w": 170,
+     "alpha": 1,
+     "par": 1.0
+    },
+    {
+     "t": "orbs",
+     "items": [
+      {
+       "x0": 620,
+       "y0": 600,
+       "x1": 640,
+       "y1": 95,
+       "dur": 1.0,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "keep": true,
+       "c": 0
+      },
+      {
+       "x0": 660,
+       "y0": 610,
+       "x1": 640,
+       "y1": 95,
+       "dur": 1.0,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "keep": true,
+       "c": 1
+      },
+      {
+       "x0": 640,
+       "y0": 600,
+       "x1": 640,
+       "y1": 95,
+       "dur": 1.4,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "keep": true,
+       "c": 1
+      }
+     ],
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "light_beam",
+     "x": 640,
+     "y": 640,
+     "w": 130,
+     "alpha": 0.7,
+     "blend": "lighter",
+     "par": 1.0
+    },
+    {
+     "t": "pfx",
+     "k": "palace_gate",
+     "x": 640,
+     "y": 95,
+     "w": 130,
+     "alpha": 1.0,
+     "par": 0.6
+    },
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 95,
+     "r": 170,
+     "rgb": "255,230,150",
+     "ga": 0.7,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 640,
+     "y": 95,
+     "w": 240,
+     "alpha": 0.55,
+     "blend": "lighter",
+     "par": 0.6,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.06,
+     "x": 0,
+     "y": 14,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#fff6e4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 130,
+       "s": 1.4,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 120,
+       "s": 1.3,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 540,
+       "s": 1.0,
+       "w": 220,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "tree",
+       "x": 470,
+       "y": 640,
+       "s": 0.7,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "tree",
+       "x": 820,
+       "y": 640,
+       "s": 0.65,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#ff9ac0"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 690,
+       "s": 1.0,
+       "w": 600,
+       "h": 50,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 840,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "note": "wide crane_up: The road of light again, now complete: Swaha rises up the column of light from the altar fire, arms raised, and the gold offering-motes she carries reach the shining gateway of Brahmaloka at the top.",
+   "vert": {
+    "x": [
+     640,
+     640
+    ],
+    "focus": "swaha"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s29",
+   "at": {
+    "t": 62.0,
+    "word": "Brahma"
+   },
+   "cues": [
+    "asked"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f56c0",
+     "#7eaaf0",
+     "#ffd8a8",
+     "#fff6e0"
+    ],
+    "sx": 760,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "brahma",
+     "x": 620,
+     "y": 560,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "sit",
+     "emo": "joy",
+     "talk": 0.6,
+     "mood": {
+      "smile": 0.5,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "open",
+       "tilt": 0.05,
+       "mood": {
+        "smile": 0.6,
+        "surp": 0.3
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 760,
+     "y": 330,
+     "r": 200,
+     "rgb": "255,200,120",
+     "ga": 0.35,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.1,
+     "x": -8,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 460,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 820,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_left: Brahma on his lotus leans toward the right with an open, welcoming hand and a curious smile as he asks.",
+   "vert": {
+    "focus": "brahma",
+    "z": 1.1,
+    "y": 0.42
+   },
+   "dx": 0
+  },
+  {
+   "id": "s30",
+   "at": {
+    "t": 63.5,
+    "word": "Swaha"
+   },
+   "cues": [
+    "Swaha"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#4656b8",
+     "#f2a478",
+     "#ffda94",
+     "#fff6de"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "swaha",
+     "x": 640,
+     "y": 364,
+     "s": 1.15,
+     "flip": -1,
+     "head": true,
+     "emo": "joy",
+     "talk": 0.5,
+     "mood": {
+      "smile": 0.6,
+      "mouth": 0.4
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "tilt": 0.04,
+       "mood": {
+        "smile": 0.7,
+        "mouth": 0.5,
+        "ly": 0.2
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Swaha",
+     "x": 640,
+     "y": 118,
+     "size": 32,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 330,
+     "r": 260,
+     "rgb": "255,180,90",
+     "ga": 0.45,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#fbeee0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff6ea"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff6ea"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "close push_in: Close on Swaha: a gentle smile as she says her own name, her small fire halo glowing, and the name 'Swaha' appears above her.",
+   "vert": {
+    "focus": "swaha"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s31",
+   "at": {
+    "t": 65.16,
+    "word": "Brahma"
+   },
+   "cues": [
+    "declared",
+    "offering",
+    "Agni"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f56c0",
+     "#7eaaf0",
+     "#ffd8a8",
+     "#fff6e0"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 573,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "lotus": false,
+     "emo": "calm",
+     "talk": 0.6,
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "raise",
+       "emo": "pride"
+      }
+     ]
+    },
+    {
+     "who": "agni",
+     "x": 515,
+     "y": 573,
+     "s": 0.78,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.6,
+       "pose": "namaste",
+       "emo": "joy"
+      }
+     ]
+    },
+    {
+     "who": "swaha",
+     "x": 765,
+     "y": 573,
+     "s": 0.76,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "pose": "namaste",
+       "emo": "devotion"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 640,
+     "y": 330,
+     "w": 460,
+     "alpha": 0.45,
+     "blend": "lighter",
+     "par": 0.9,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 14,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 430,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 850,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: Brahma, standing between Agni and Swaha, raises his hand to proclaim the rule; Agni folds his hands on his name and Swaha on 'name', as a gold ring of light opens behind Brahma.",
+   "vert": {
+    "x": [
+     640,
+     640
+    ],
+    "focus": "brahma"
+   }
+  },
+  {
+   "id": "s32",
+   "at": {
+    "t": 69.24,
+    "word": "Without"
+   },
+   "cues": [
+    "Without",
+    "reach"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#6a7490",
+     "#a0a8bc",
+     "#d4d6dc",
+     "#eeeef0"
+    ],
+    "sx": 700,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab8c8",
+     "#6aa47e",
+     "#4a8a5a"
+    ],
+    "haze": "240,246,255"
+   },
+   "figs": [
+    {
+     "who": "villager_w",
+     "x": 580,
+     "y": 506,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "open"
+      },
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "doubt",
+       "mood": {
+        "ly": -0.6
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "havan_kund",
+     "x": 730,
+     "y": 660,
+     "w": 180,
+     "alpha": 1,
+     "par": 1.0
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 730,
+     "y": 560,
+     "w": 160,
+     "alpha": 0.6,
+     "par": 1.0
+    },
+    {
+     "t": "orbs",
+     "items": [
+      {
+       "x0": 720,
+       "y0": 540,
+       "x1": 725,
+       "y1": 330,
+       "dur": 1.2,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      },
+      {
+       "x0": 740,
+       "y0": 540,
+       "x1": 735,
+       "y1": 320,
+       "dur": 1.2,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 1
+      }
+     ],
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef0f4",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 520,
+       "y": 392,
+       "s": 1.0,
+       "w": 230,
+       "h": 120,
+       "col": "#a8b4c8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 800,
+       "y": 395,
+       "s": 1.0,
+       "w": 200,
+       "h": 90,
+       "col": "#a8b4c8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "tree",
+       "x": 440,
+       "y": 610,
+       "s": 0.8,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "tree",
+       "x": 860,
+       "y": 605,
+       "s": 0.75,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#f0a020"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 640,
+       "h": 60,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 460,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "note": "medium pull_out: On earth the village woman pours into the fire, but the motes rise only a little and thin into gray smoke; she looks up, doubtful.",
+   "vert": {
+    "x": [
+     620,
+     640
+    ],
+    "focus": "villager_w"
+   }
+  },
+  {
+   "id": "s33",
+   "at": {
+    "t": 72.18,
+    "word": "A"
+   },
+   "cues": [
+    "chant",
+    "Swaha"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f56c0",
+     "#7eaaf0",
+     "#ffd8a8",
+     "#fff6e0"
+    ],
+    "sx": 600,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 646,
+     "s": 1.0,
+     "flip": -1,
+     "pose": "stand",
+     "lotus": false,
+     "emo": "calm",
+     "talk": 0.7,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "point"
+      },
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "doubt",
+       "mood": {
+        "ly": 0.2
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 460,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 820,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Brahma stands with one finger raised as he speaks the comparison, his face stern and certain.",
+   "vert": {
+    "focus": "brahma",
+    "z": 1.1,
+    "y": 0.42
+   },
+   "dx": 0
+  },
+  {
+   "id": "s34",
+   "at": {
+    "t": 74.06,
+    "word": "a"
+   },
+   "cues": [],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#6a7490",
+     "#a0a8bc",
+     "#d4d6dc",
+     "#eeeef0"
+    ],
+    "sx": 640,
+    "sy": 200,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab8c8",
+     "#6aa47e",
+     "#4a8a5a"
+    ],
+    "haze": "240,246,255"
+   },
+   "figs": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 560,
+     "w": 520,
+     "alpha": 0.5,
+     "par": 1.0
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -14,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0f0f0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 520,
+       "y": 392,
+       "s": 1.0,
+       "w": 230,
+       "h": 120,
+       "col": "#b0bccc",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 800,
+       "y": 395,
+       "s": 1.0,
+       "w": 200,
+       "h": 90,
+       "col": "#b0bccc",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.12,
+     "items": [
+      {
+       "o": "tree",
+       "x": 640,
+       "y": 600,
+       "s": 1.4,
+       "kind": "round",
+       "col": "#6a8a5a"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 650,
+       "s": 1.0,
+       "w": 640,
+       "h": 60,
+       "col": "#d8d0b0"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 460,
+       "y": 748,
+       "s": 1.4,
+       "col": "#6a6a4a"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.3,
+       "col": "#6a6a4a"
+      }
+     ]
+    }
+   ],
+   "note": "wide tilt_down: A lone tree stands on a pale bare field: green leaves but not a single fruit or flower on it, under a quiet sky.",
+   "vert": {
+    "x": [
+     640,
+     640
+    ]
+   },
+   "dx": 0
+  },
+  {
+   "id": "s35",
+   "at": {
+    "t": 75.44,
+    "word": "a"
+   },
+   "cues": [
+    "venom",
+    "man",
+    "knowledge"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#6a7490",
+     "#a0a8bc",
+     "#d4d6dc",
+     "#eeeef0"
+    ],
+    "sx": 640,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab8c8",
+     "#6aa47e",
+     "#4a8a5a"
+    ],
+    "haze": "240,246,255"
+   },
+   "figs": [
+    {
+     "who": "villager",
+     "x": 640,
+     "y": 650,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "doubt",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "open",
+       "emo": "doubt"
+      },
+      {
+       "c": 2,
+       "d": 0.6,
+       "emo": "sad",
+       "tilt": -0.05,
+       "mood": {
+        "ly": 0.4
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 640,
+     "y": 340,
+     "w": 300,
+     "alpha": 0.2,
+     "blend": "lighter",
+     "par": 0.9,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.06,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0f0f0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 520,
+       "y": 392,
+       "s": 1.0,
+       "w": 230,
+       "h": 120,
+       "col": "#b0bccc",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 800,
+       "y": 395,
+       "s": 1.0,
+       "w": 200,
+       "h": 90,
+       "col": "#b0bccc",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "tree",
+       "x": 440,
+       "y": 610,
+       "s": 0.8,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "tree",
+       "x": 860,
+       "y": 605,
+       "s": 0.75,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#f0a020"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 640,
+       "h": 60,
+       "col": "#c8d890"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 460,
+       "y": 748,
+       "s": 1.5,
+       "col": "#4a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#4a5a3a"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_left: A village man stands with empty open hands and a lost, puzzled face; the gold light that should glow around his head is only a faint ring.",
+   "vert": {
+    "focus": "villager",
+    "z": 1.1,
+    "y": 0.42
+   }
+  },
+  {
+   "id": "s36",
+   "at": {
+    "t": 78.78,
+    "word": "Then"
+   },
+   "cues": [
+    "gave",
+    "Swaha",
+    "marriage"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#4656b8",
+     "#f2a478",
+     "#ffda94",
+     "#fff6de"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "figs": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 385,
+     "s": 0.55,
+     "flip": 1,
+     "pose": "stand",
+     "lotus": false,
+     "emo": "joy",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "raise"
+      }
+     ],
+     "a": 0.55
+    },
+    {
+     "who": "agni",
+     "x": 565,
+     "y": 612,
+     "s": 0.98,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.6,
+       "pose": "namaste",
+       "emo": "joy",
+       "mood": {
+        "smile": 0.9
+       }
+      }
+     ]
+    },
+    {
+     "who": "swaha",
+     "x": 720,
+     "y": 612,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "smile": 0.7,
+      "ly": 0.3,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "pose": "namaste",
+       "emo": "joy"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 645,
+     "y": 360,
+     "w": 520,
+     "alpha": 0.45,
+     "blend": "lighter",
+     "par": 0.9,
+     "c": 2,
+     "d": 0.6
+    },
+    {
+     "t": "glow",
+     "x": 645,
+     "y": 400,
+     "r": 260,
+     "rgb": "255,200,110",
+     "ga": 0.45,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#fbeee0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff6ea"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff6ea"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 430,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 850,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot push_in: Agni and Swaha face each other with folded hands inside a ring of marigold light, while Brahma, faint behind them, raises his hand in blessing.",
+   "vert": {
+    "x": [
+     640,
+     640
+    ],
+    "focus": "agni"
+   }
+  },
+  {
+   "id": "s37",
+   "at": {
+    "t": 81.12,
+    "word": "and"
+   },
+   "cues": [
+    "and",
+    "two",
+    "never"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#4656b8",
+     "#f2a478",
+     "#ffda94",
+     "#fff6de"
+    ],
+    "sx": 640,
+    "sy": 230
+   },
+   "figs": [
+    {
+     "who": "agni",
+     "x": 590,
+     "y": 605,
+     "s": 0.98,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "smile": 0.8,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "mood": {
+        "smile": 1
+       }
+      }
+     ]
+    },
+    {
+     "who": "swaha",
+     "x": 695,
+     "y": 605,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "smile": 0.8,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.6,
+       "tilt": 0.04,
+       "mood": {
+        "smile": 1,
+        "blink": 0.3
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "orbs",
+     "items": [
+      {
+       "x0": 560,
+       "y0": 560,
+       "x1": 540,
+       "y1": 220,
+       "dur": 2.0,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      },
+      {
+       "x0": 720,
+       "y0": 560,
+       "x1": 740,
+       "y1": 230,
+       "dur": 2.0,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 1
+      },
+      {
+       "x0": 640,
+       "y0": 580,
+       "x1": 650,
+       "y1": 200,
+       "dur": 2.0,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 2
+      }
+     ],
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 642,
+     "y": 340,
+     "r": 300,
+     "rgb": "255,170,80",
+     "ga": 0.55,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#fbeee0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a4b0dc"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff6ea"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff6ea"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 430,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 850,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot pull_out: Agni and Swaha stand side by side, their two fire halos merged into one warm glow, as light motes rise around them and the camera pulls away.",
+   "vert": {
+    "x": [
+     640,
+     640
+    ],
+    "focus": "agni"
+   },
+   "dx": 0
+  }
+ ]
+}

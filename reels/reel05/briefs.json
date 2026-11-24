@@ -1,0 +1,7117 @@
+{
+ "episode": "reel05",
+ "format": "vertical",
+ "shots": [
+  {
+   "id": "s01",
+   "beat": 1,
+   "start": {
+    "t": 0.18,
+    "word": "Shiva"
+   },
+   "duration": 2.86,
+   "narration": "Shiva was born from another god's anger.",
+   "meaning": "Shiva was born out of another god's anger.",
+   "why": "Below the title card the newborn Rudra stands in a bright gold-orange sky with his fire halo; on 'anger' his eyes blaze red and a warm glow flares behind him.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "slow push in on the god whose birth the reel tells"
+   },
+   "focus": {
+    "subject": "rudra",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "rudra"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#fff0dc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#e8a888"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#e8a888"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e0"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#fff4ec"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#fff4ec"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#d84a24",
+     "#f4843a",
+     "#ffc46a",
+     "#fff2d0"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "mood": {
+    "emotion": "wonder",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "rudra",
+     "x": 640,
+     "y": 673,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 640,
+     "actions": [
+      {
+       "word": "anger",
+       "emo": "anger",
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "anger",
+     "x": 640,
+     "y": 330,
+     "r": 260,
+     "rgb": "255,150,70",
+     "ga": 0.5,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the anger he was born from, a fire-orange light behind him"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s02",
+   "beat": 1,
+   "start": {
+    "t": 3.04,
+    "word": "His"
+   },
+   "duration": 2.32,
+   "narration": "His first demand was not for power,",
+   "meaning": "His first demand was not for power.",
+   "why": "Rudra raises his hand on 'demand' but turns his blazing eyes away from a gold crown that glows faintly beside him: power is not what he wants.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "dolly_left",
+    "from": {
+     "z": 1.05,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a sideways drift past the crown he ignores"
+   },
+   "focus": {
+    "subject": "rudra",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": 610,
+    "z": 1.08,
+    "y": 0.42
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#fff0dc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#e8a888"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#e8a888"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e0"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#fff4ec"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#fff4ec"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#d84a24",
+     "#f4843a",
+     "#ffc46a",
+     "#fff2d0"
+    ],
+    "sx": 700,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "demand",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "rudra",
+     "x": 680,
+     "y": 637,
+     "s": 1.0,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "anger",
+     "talk": 0.6,
+     "look": 800,
+     "actions": [
+      {
+       "word": "demand",
+       "pose": "raise",
+       "emo": "anger",
+       "e": "spring",
+       "d": 0.5
+      },
+      {
+       "word": "power",
+       "mood": {
+        "lx": 0.6,
+        "anger": 0.7
+       },
+       "d": 0.5
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "crown_gold",
+     "word": "power",
+     "x": 505,
+     "y": 215,
+     "w": 80,
+     "alpha": 0.6,
+     "par": 1.0,
+     "meaning": "power: a gold crown he does not even look at"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s03",
+   "beat": 1,
+   "start": {
+    "t": 5.36,
+    "word": "it"
+   },
+   "duration": 1.4,
+   "narration": "it was for a name.",
+   "meaning": "What he demanded was a name.",
+   "why": "Close on Rudra's face: red eyes, mouth open as he demands; an empty name plate with a question mark appears above him on 'name'.",
+   "camera": {
+    "shot": "close",
+    "lens": "tele",
+    "move": "static",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "stillness on the single thing he wants"
+   },
+   "focus": {
+    "subject": "rudra",
+    "depth": "shallow"
+   },
+   "vertical": {
+    "focus": "rudra"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#fff0dc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#e8a888"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#e8a888"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e0"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#c83c2a",
+     "#f07a40",
+     "#ffb860",
+     "#ffeccc"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "demand",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "rudra",
+     "x": 640,
+     "y": 370,
+     "s": 1.1,
+     "flip": 1,
+     "head": true,
+     "emo": "anger",
+     "talk": 0.7,
+     "look": 640,
+     "actions": [
+      {
+       "word": "name",
+       "mood": {
+        "anger": 0.8,
+        "mouth": 0.5,
+        "ly": -0.2
+       },
+       "d": 0.4
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "name",
+     "word": "name",
+     "s": "?",
+     "x": 640,
+     "y": 95,
+     "size": 40,
+     "meaning": "the name he does not have yet, an empty plate with a question mark"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s04",
+   "beat": 1,
+   "start": {
+    "t": 6.76,
+    "word": "Brahma"
+   },
+   "duration": 1.7,
+   "narration": "Brahma, the creator,",
+   "meaning": "Brahma is the creator god.",
+   "why": "Brahma sits on his pink lotus in his bright blue-gold hall, soft rays fall on him and his name plate appears as he is named.",
+   "camera": {
+    "shot": "establishing",
+    "lens": "wide",
+    "move": "crane_down",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -20,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "descending to the creator on his lotus"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2456b4",
+     "#74aaea",
+     "#ffe2b4",
+     "#fff7e6"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "majesty",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 527,
+     "s": 1.0,
+     "flip": 1,
+     "emo": "calm",
+     "look": 640,
+     "mood": {
+      "smile": 0.4
+     },
+     "actions": [
+      {
+       "word": "creator",
+       "mood": {
+        "smile": 0.6,
+        "ly": -0.2
+       },
+       "tilt": 0.03,
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "divine_rays",
+     "x": 640,
+     "y": 80,
+     "w": 700,
+     "alpha": 0.35,
+     "blend": "lighter",
+     "par": 0.2,
+     "behind": true,
+     "meaning": "the light of the creator's world"
+    },
+    {
+     "k": "name",
+     "word": "Brahma",
+     "s": "Brahma",
+     "x": 640,
+     "y": 130,
+     "size": 32,
+     "meaning": "the name Brahma on screen as it is said"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s05",
+   "beat": 1,
+   "start": {
+    "t": 8.46,
+    "word": "had"
+   },
+   "duration": 2.3,
+   "narration": "had made four sons from his mind.",
+   "meaning": "Brahma had created four sons out of his mind.",
+   "why": "A ring of light opens around Brahma's head on 'mind' and four small child sages fade in at the foot of his lotus, two on 'four', two on 'sons'.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "push in as the sons appear"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": 640
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 460,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2456b4",
+     "#74aaea",
+     "#ffe2b4",
+     "#fff7e6"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "creation",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 420,
+     "s": 0.78,
+     "flip": 1,
+     "emo": "joy",
+     "look": 640,
+     "mood": {
+      "smile": 0.6,
+      "ly": 0.5
+     },
+     "actions": [
+      {
+       "word": "mind",
+       "mood": {
+        "smile": 0.8,
+        "ly": 0.6
+       },
+       "tilt": 0.04,
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "kumara",
+     "x": 492,
+     "y": 531,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "look": "brahma",
+     "engine_cues": {
+      "ac": "four"
+     },
+     "engine": {
+      "ad": 0.6
+     }
+    },
+    {
+     "who": "kumara",
+     "x": 566,
+     "y": 544,
+     "s": 0.52,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "brahma",
+     "engine_cues": {
+      "ac": "four"
+     },
+     "engine": {
+      "ad": 0.6
+     }
+    },
+    {
+     "who": "kumara",
+     "x": 714,
+     "y": 544,
+     "s": 0.52,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "brahma",
+     "engine_cues": {
+      "ac": "sons"
+     },
+     "engine": {
+      "ad": 0.6
+     }
+    },
+    {
+     "who": "kumara",
+     "x": 788,
+     "y": 531,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "namaste",
+     "emo": "joy",
+     "look": "brahma",
+     "engine_cues": {
+      "ac": "sons"
+     },
+     "engine": {
+      "ad": 0.6
+     }
+    }
+   ],
+   "effects": [
+    {
+     "k": "halo_ring",
+     "word": "mind",
+     "x": 640,
+     "y": 268,
+     "w": 300,
+     "alpha": 0.5,
+     "blend": "lighter",
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the sons born from Brahma's mind, a ring of light around his head"
+    },
+    {
+     "k": "glow",
+     "word": "four",
+     "x": 640,
+     "y": 358,
+     "r": 260,
+     "rgb": "255,230,170",
+     "ga": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the light the four sons appear in"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s06",
+   "beat": 1,
+   "start": {
+    "t": 10.76,
+    "word": "They"
+   },
+   "duration": 2.58,
+   "narration": "They were child sages called the Kumaras.",
+   "meaning": "The four sons were child sages called the Kumaras.",
+   "why": "The four boy sages stand in a row on the clouds with folded hands and ash marks, calm and young; their name appears on 'Kumaras'.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.0,
+     "x": -8,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 8,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow drift along the row of four"
+   },
+   "focus": {
+    "subject": "kumara",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": 640
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#f4eef8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 440,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 840,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 460,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a52b8",
+     "#8aa4ec",
+     "#f4dcf0",
+     "#fff6ee"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "innocence",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "kumara",
+     "x": 500,
+     "y": 552,
+     "s": 0.8,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "look": 640,
+     "actions": [
+      {
+       "word": "sages",
+       "mood": {
+        "smile": 0.5
+       },
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "kumara",
+     "x": 593,
+     "y": 571,
+     "s": 0.84,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": 640,
+     "actions": [
+      {
+       "word": "child",
+       "mood": {
+        "smile": 0.7
+       },
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "kumara",
+     "x": 687,
+     "y": 571,
+     "s": 0.84,
+     "flip": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "look": 640,
+     "actions": [
+      {
+       "word": "Kumaras",
+       "mood": {
+        "smile": 0.5
+       },
+       "tilt": 0.04,
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "kumara",
+     "x": 780,
+     "y": 552,
+     "s": 0.8,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": 640,
+     "actions": [
+      {
+       "word": "Kumaras",
+       "mood": {
+        "smile": 0.7
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "x": 640,
+     "y": 330,
+     "r": 280,
+     "rgb": "255,236,200",
+     "ga": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the soft light of the boy sages"
+    },
+    {
+     "k": "name",
+     "word": "Kumaras",
+     "s": "Kumaras",
+     "x": 640,
+     "y": 130,
+     "size": 32,
+     "meaning": "the name Kumaras on screen as it is said"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s07",
+   "beat": 1,
+   "start": {
+    "t": 13.34,
+    "word": "He"
+   },
+   "duration": 3.32,
+   "narration": "He told them to help him fill the world with living beings.",
+   "meaning": "Brahma told the Kumaras to help him fill the world with living beings.",
+   "why": "Brahma on his lotus talks with open hands; on 'world' the clouds below him cross-fade to a green valley with a river, the empty world he wants filled.",
+   "camera": {
+    "shot": "medium",
+    "lens": "wide",
+    "move": "pull_out",
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "pulling back to show the world below"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "hazy blue hills and white clouds over the world",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 500,
+       "y": 470,
+       "s": 1.0,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 800,
+       "y": 480,
+       "s": 0.9,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 220,
+       "s": 1.2,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "trees of the green world below",
+     "fog": 0.25,
+     "items": [
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 640,
+       "s": 0.7,
+       "kind": "banyan",
+       "col": "#3a8a4a"
+      },
+      {
+       "o": "tree",
+       "x": 840,
+       "y": 640,
+       "s": 0.7,
+       "kind": "round",
+       "col": "#3a8a4a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2456b4",
+     "#74aaea",
+     "#ffe2b4",
+     "#fff7e6"
+    ],
+    "sx": 640,
+    "sy": 200,
+    "change": {
+     "word": "world",
+     "bg2": {
+      "k": "vista",
+      "sky": [
+       "#2456b4",
+       "#74aaea",
+       "#ffe2b4",
+       "#fff7e6"
+      ],
+      "sx": 640,
+      "sy": 220,
+      "ridge": [
+       "#a8c4e4",
+       "#8ab4cc",
+       "#6aa08a",
+       "#4a8064"
+      ],
+      "river": "#5ab8e8",
+      "haze": "240,246,255"
+     },
+     "d": 1.0
+    }
+   },
+   "mood": {
+    "emotion": "command",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 489,
+     "s": 0.95,
+     "flip": 1,
+     "emo": "calm",
+     "talk": 0.7,
+     "look": 640,
+     "actions": [
+      {
+       "word": "help",
+       "pose": "open",
+       "emo": "joy",
+       "d": 0.6
+      },
+      {
+       "word": "living",
+       "mood": {
+        "smile": 0.7,
+        "ly": 0.5
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "living",
+     "x": 640,
+     "y": 560,
+     "r": 260,
+     "rgb": "200,255,190",
+     "ga": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the life he wants spread over the world, a green-gold light"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s08",
+   "beat": 1,
+   "start": {
+    "t": 16.66,
+    "word": "They"
+   },
+   "duration": 2.4,
+   "narration": "They folded their hands and said no.",
+   "meaning": "The Kumaras folded their hands and refused.",
+   "why": "Two Kumaras in front and two behind fold their hands on 'folded'; on 'no' they gently turn their heads aside, polite but firm.",
+   "camera": {
+    "shot": "two_shot",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "push in on the polite refusal"
+   },
+   "focus": {
+    "subject": "kumara",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": 640
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#f4eef8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 440,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 840,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 460,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a52b8",
+     "#8aa4ec",
+     "#f4dcf0",
+     "#fff6ee"
+    ],
+    "sx": 600,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "refusal",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "kumara",
+     "x": 495,
+     "y": 492,
+     "s": 0.72,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 640,
+     "actions": [
+      {
+       "word": "folded",
+       "pose": "namaste",
+       "d": 0.6
+      },
+      {
+       "word": "no",
+       "mood": {
+        "turn": -0.4,
+        "lx": -0.5
+       },
+       "d": 0.5
+      }
+     ]
+    },
+    {
+     "who": "kumara",
+     "x": 785,
+     "y": 492,
+     "s": 0.72,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 640,
+     "actions": [
+      {
+       "word": "folded",
+       "pose": "namaste",
+       "d": 0.6
+      },
+      {
+       "word": "no",
+       "mood": {
+        "turn": 0.4,
+        "lx": 0.5
+       },
+       "d": 0.5
+      }
+     ]
+    },
+    {
+     "who": "kumara",
+     "x": 575,
+     "y": 610,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 900,
+     "actions": [
+      {
+       "word": "folded",
+       "pose": "namaste",
+       "e": "spring",
+       "d": 0.6
+      },
+      {
+       "word": "no",
+       "mood": {
+        "turn": -0.5,
+        "lx": -0.6
+       },
+       "tilt": -0.05,
+       "d": 0.5
+      }
+     ]
+    },
+    {
+     "who": "kumara",
+     "x": 705,
+     "y": 610,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 380,
+     "actions": [
+      {
+       "word": "folded",
+       "pose": "namaste",
+       "e": "spring",
+       "d": 0.6
+      },
+      {
+       "word": "no",
+       "mood": {
+        "turn": 0.5,
+        "lx": 0.6
+       },
+       "tilt": 0.05,
+       "d": 0.5
+      }
+     ]
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s09",
+   "beat": 1,
+   "start": {
+    "t": 19.06,
+    "word": "They"
+   },
+   "duration": 1.22,
+   "narration": "They said they were grateful,",
+   "meaning": "The Kumaras said they were grateful.",
+   "why": "Close on one boy sage: a warm smile and a small bow of the head on 'grateful', a soft gold glow behind him.",
+   "camera": {
+    "shot": "close",
+    "lens": "tele",
+    "move": "static",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "stillness for a gentle word"
+   },
+   "focus": {
+    "subject": "kumara",
+    "depth": "shallow"
+   },
+   "vertical": {
+    "focus": "kumara"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#f4eef8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a52b8",
+     "#8aa4ec",
+     "#f4dcf0",
+     "#fff6ee"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "gratitude",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "kumara",
+     "x": 640,
+     "y": 360,
+     "s": 1.15,
+     "flip": 1,
+     "head": true,
+     "emo": "devotion",
+     "talk": 0.6,
+     "look": 900,
+     "mood": {
+      "smile": 0.6
+     },
+     "actions": [
+      {
+       "word": "grateful",
+       "emo": "joy",
+       "mood": {
+        "smile": 0.9,
+        "blink": 0.4,
+        "ly": 0.3
+       },
+       "tilt": 0.06,
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "grateful",
+     "x": 640,
+     "y": 330,
+     "r": 240,
+     "rgb": "255,225,160",
+     "ga": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "his gratitude as a warm light"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s10",
+   "beat": 1,
+   "start": {
+    "t": 20.28,
+    "word": "but"
+   },
+   "duration": 3.16,
+   "narration": "but they did not want to be bound by life and death.",
+   "meaning": "They did not want to be bound by the cycle of life and death.",
+   "why": "Two Kumaras step back with open hands while a gold wheel, the round of birth and death, turns in the sky above them on 'life'; they look away from it.",
+   "camera": {
+    "shot": "two_shot",
+    "lens": "normal",
+    "move": "dolly_left",
+    "from": {
+     "z": 1.0,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a drift away, like their step back from the wheel"
+   },
+   "focus": {
+    "subject": "kumara",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": 640
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#ece8f8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 440,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 840,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 460,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a52b8",
+     "#8aa4ec",
+     "#f4dcf0",
+     "#fff6ee"
+    ],
+    "sx": 640,
+    "sy": 180
+   },
+   "mood": {
+    "emotion": "detachment",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "kumara",
+     "x": 565,
+     "y": 626,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 900,
+     "actions": [
+      {
+       "word": "want",
+       "emo": "doubt",
+       "d": 0.6
+      },
+      {
+       "word": "bound",
+       "pose": "open",
+       "mood": {
+        "ly": -0.5,
+        "lx": 0.3
+       },
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "kumara",
+     "x": 715,
+     "y": 626,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 380,
+     "actions": [
+      {
+       "word": "want",
+       "emo": "doubt",
+       "d": 0.6
+      },
+      {
+       "word": "bound",
+       "pose": "open",
+       "mood": {
+        "ly": -0.5,
+        "lx": -0.3
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "icon",
+     "i": "cycle",
+     "word": "life",
+     "x": 640,
+     "y": 150,
+     "sc": 1.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the round of birth and death they refuse, a turning gold wheel"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s11",
+   "beat": 1,
+   "start": {
+    "t": 23.44,
+    "word": "They"
+   },
+   "duration": 2.48,
+   "narration": "They wanted to meditate on the infinite.",
+   "meaning": "They wanted to meditate on the infinite.",
+   "why": "The four Kumaras sit cross-legged with closed eyes in a violet-gold sky; on 'infinite' a glowing infinity sign opens above them.",
+   "camera": {
+    "shot": "wide",
+    "lens": "wide",
+    "move": "crane_up",
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "rising toward the infinite they meditate on"
+   },
+   "focus": {
+    "subject": "kumara",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": 640
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#f0e8fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a8a0d8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a8a0d8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fbf6ff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fbf6ff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "low cloud banks behind the seated sages",
+     "fog": 0.25,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 560,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 570,
+       "s": 1.0,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 460,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a3aa8",
+     "#8a7ae0",
+     "#f0d4f4",
+     "#fff4e6"
+    ],
+    "sx": 640,
+    "sy": 170
+   },
+   "mood": {
+    "emotion": "meditation",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "kumara",
+     "x": 500,
+     "y": 449,
+     "s": 0.66,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "calm",
+     "mood": {
+      "blink": 1
+     },
+     "look": 640
+    },
+    {
+     "who": "kumara",
+     "x": 780,
+     "y": 449,
+     "s": 0.66,
+     "flip": -1,
+     "pose": "sitpray",
+     "emo": "calm",
+     "mood": {
+      "blink": 1
+     },
+     "look": 640
+    },
+    {
+     "who": "kumara",
+     "x": 580,
+     "y": 519,
+     "s": 0.8,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "calm",
+     "mood": {
+      "blink": 1
+     },
+     "look": 640,
+     "actions": [
+      {
+       "word": "meditate",
+       "mood": {
+        "blink": 1,
+        "smile": 0.4
+       },
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "kumara",
+     "x": 700,
+     "y": 519,
+     "s": 0.8,
+     "flip": -1,
+     "pose": "sitpray",
+     "emo": "calm",
+     "mood": {
+      "blink": 1
+     },
+     "look": 640,
+     "actions": [
+      {
+       "word": "meditate",
+       "mood": {
+        "blink": 1,
+        "smile": 0.4
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "infinity",
+     "word": "infinite",
+     "x": 640,
+     "y": 150,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the infinite, a glowing infinity sign above them"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s12",
+   "beat": 1,
+   "start": {
+    "t": 25.92,
+    "word": "They"
+   },
+   "duration": 2.86,
+   "narration": "They asked only that they never grow old.",
+   "meaning": "Their only wish was never to grow old.",
+   "why": "One Kumara asks with open pleading hands on 'asked', then folds them; a pale ring of light opens behind his young face on 'never', the youth he keeps for ever.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "push in on his one wish"
+   },
+   "focus": {
+    "subject": "kumara",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "kumara",
+    "z": 1.1,
+    "y": 0.42
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#f4eef8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a52b8",
+     "#8aa4ec",
+     "#f4dcf0",
+     "#fff6ee"
+    ],
+    "sx": 700,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "wish",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "kumara",
+     "x": 640,
+     "y": 661,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "talk": 0.6,
+     "look": 540,
+     "mood": {
+      "smile": 0.5
+     },
+     "actions": [
+      {
+       "word": "asked",
+       "pose": "plead",
+       "emo": "devotion",
+       "d": 0.6
+      },
+      {
+       "word": "old",
+       "pose": "namaste",
+       "emo": "joy",
+       "mood": {
+        "smile": 0.8
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "halo_ring",
+     "word": "never",
+     "x": 640,
+     "y": 346,
+     "w": 380,
+     "alpha": 0.45,
+     "blend": "lighter",
+     "par": 1.0,
+     "behind": true,
+     "meaning": "eternal youth, a pale ring of light behind his young face"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s13",
+   "beat": 1,
+   "start": {
+    "t": 28.78,
+    "word": "Brahma"
+   },
+   "duration": 2.32,
+   "narration": "Brahma argued, then gave in.",
+   "meaning": "Brahma argued with them, then gave in.",
+   "why": "Brahma on his lotus points and argues with a frown on 'argued'; on 'gave' his hands open and his eyes drop, giving in.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "tilt_down",
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": -14,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "tilting down as his argument sinks"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2456b4",
+     "#74aaea",
+     "#ffe2b4",
+     "#fff7e6"
+    ],
+    "sx": 700,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "frustration",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 509,
+     "s": 1.0,
+     "flip": 1,
+     "emo": "calm",
+     "talk": 0.7,
+     "look": 800,
+     "actions": [
+      {
+       "word": "argued",
+       "pose": "point",
+       "emo": "anger",
+       "e": "antic",
+       "d": 0.5
+      },
+      {
+       "word": "gave",
+       "pose": "open",
+       "emo": "sad",
+       "mood": {
+        "ly": 0.6
+       },
+       "tilt": -0.05,
+       "d": 0.7
+      }
+     ]
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s14",
+   "beat": 1,
+   "start": {
+    "t": 31.1,
+    "word": "As"
+   },
+   "duration": 1.3,
+   "narration": "As his sons left,",
+   "meaning": "Brahma's sons walked away from him.",
+   "why": "The window follows the four Kumaras walking off over the clouds to the right and fading, while Brahma at the left edge watches them go.",
+   "camera": {
+    "shot": "wide",
+    "lens": "wide",
+    "move": "pan_right",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "the pan follows the sons leaving"
+   },
+   "focus": {
+    "subject": "kumara",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     600,
+     720
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 500,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 860,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "cloud banks along the path they walk",
+     "fog": 0.25,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 560,
+       "s": 1.0,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 880,
+       "y": 570,
+       "s": 1.0,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 460,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2456b4",
+     "#74aaea",
+     "#ffe2b4",
+     "#fff7e6"
+    ],
+    "sx": 760,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "parting",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 470,
+     "y": 507,
+     "s": 0.85,
+     "flip": 1,
+     "emo": "sad",
+     "look": 800,
+     "actions": [
+      {
+       "word": "left",
+       "mood": {
+        "ly": 0.2
+       },
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "kumara",
+     "x": 610,
+     "y": 510,
+     "s": 0.66,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 900,
+     "walk": {
+      "word": "sons",
+      "to_x": 740,
+      "d": 1.4,
+      "speed": 1
+     },
+     "engine_cues": {
+      "fo": "left"
+     },
+     "engine": {
+      "fd": 0.9
+     }
+    },
+    {
+     "who": "kumara",
+     "x": 680,
+     "y": 491,
+     "s": 0.62,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 900,
+     "walk": {
+      "word": "sons",
+      "to_x": 810,
+      "d": 1.4,
+      "speed": 1
+     },
+     "engine_cues": {
+      "fo": "left"
+     },
+     "engine": {
+      "fd": 0.9
+     }
+    },
+    {
+     "who": "kumara",
+     "x": 750,
+     "y": 510,
+     "s": 0.66,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 900,
+     "walk": {
+      "word": "sons",
+      "to_x": 880,
+      "d": 1.4,
+      "speed": 1
+     },
+     "engine_cues": {
+      "fo": "left"
+     },
+     "engine": {
+      "fd": 0.9
+     }
+    },
+    {
+     "who": "kumara",
+     "x": 820,
+     "y": 491,
+     "s": 0.62,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 900,
+     "walk": {
+      "word": "sons",
+      "to_x": 950,
+      "d": 1.4,
+      "speed": 1
+     },
+     "engine_cues": {
+      "fo": "left"
+     },
+     "engine": {
+      "fd": 0.9
+     }
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s15",
+   "beat": 1,
+   "start": {
+    "t": 32.4,
+    "word": "rage"
+   },
+   "duration": 1.52,
+   "narration": "rage rose in him.",
+   "meaning": "Rage rose inside Brahma.",
+   "why": "Close on Brahma's faces: brows crush down and his eyes turn red on 'rage' as the sky behind him floods bright fire-orange and a red pulse throbs.",
+   "camera": {
+    "shot": "close",
+    "lens": "tele",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.1,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "push in on the rising anger"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "shallow"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2456b4",
+     "#74aaea",
+     "#ffe2b4",
+     "#fff7e6"
+    ],
+    "sx": 640,
+    "sy": 200,
+    "change": {
+     "word": "rage",
+     "bg2": {
+      "k": "cloudscape",
+      "sky": [
+       "#d84a24",
+       "#f4843a",
+       "#ffc46a",
+       "#fff2d0"
+      ],
+      "sx": 640,
+      "sy": 200
+     },
+     "d": 0.8
+    }
+   },
+   "mood": {
+    "emotion": "rage",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 360,
+     "s": 1.1,
+     "flip": 1,
+     "head": true,
+     "emo": "sad",
+     "look": 640,
+     "actions": [
+      {
+       "word": "rage",
+       "emo": "rage",
+       "e": "antic",
+       "d": 0.5
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "red_energy_pulse",
+     "word": "rose",
+     "x": 640,
+     "y": 330,
+     "w": 420,
+     "alpha": 0.55,
+     "blend": "lighter",
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the rage rising in him, a throbbing red-orange light"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s16",
+   "beat": 1,
+   "start": {
+    "t": 33.92,
+    "word": "A"
+   },
+   "duration": 2.72,
+   "narration": "A fiery being burst from his forehead.",
+   "meaning": "A fiery being burst out of Brahma's forehead.",
+   "why": "Brahma on his lotus with angry red eyes; on 'fiery' his forehead glows, on 'burst' a white-gold column of fire shoots up from it with a flash and a figure of flame rises in it.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "handheld",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.03,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 3,
+    "motivation": "the frame trembles with the burst"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": 640
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#fff0dc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#e8a888"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#e8a888"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e0"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#fff4ec"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#fff4ec"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#d84a24",
+     "#f4843a",
+     "#ffc46a",
+     "#fff2d0"
+    ],
+    "sx": 640,
+    "sy": 170
+   },
+   "mood": {
+    "emotion": "eruption",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "rudra",
+     "x": 640,
+     "y": 330,
+     "s": 0.45,
+     "flip": 1,
+     "pose": "raise",
+     "emo": "rage",
+     "look": 640,
+     "engine_cues": {
+      "ac": "burst",
+      "mc": "burst"
+     },
+     "engine": {
+      "ad": 0.7,
+      "my": -40,
+      "md": 2.4
+     }
+    },
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 549,
+     "s": 0.9,
+     "flip": 1,
+     "emo": "rage",
+     "look": 640,
+     "actions": [
+      {
+       "word": "burst",
+       "emo": "surprise",
+       "mood": {
+        "ly": -0.8
+       },
+       "d": 0.4
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "fiery",
+     "x": 640,
+     "y": 354,
+     "r": 120,
+     "rgb": "255,200,120",
+     "ga": 0.8,
+     "par": 1.0,
+     "meaning": "his forehead glowing with fire"
+    },
+    {
+     "k": "beam",
+     "word": "burst",
+     "x": 640,
+     "y": 354,
+     "len": 560,
+     "w": 40,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the column of fire bursting from his forehead"
+    },
+    {
+     "k": "flash",
+     "word": "burst",
+     "rgb": "255,236,200",
+     "ga": 0.5,
+     "w": 0.35,
+     "meaning": "the flash of the burst"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s17",
+   "beat": 1,
+   "start": {
+    "t": 36.64,
+    "word": "A"
+   },
+   "duration": 2.88,
+   "narration": "A being stepped out of it with blazing red eyes.",
+   "meaning": "A being stepped out of the fire with blazing red eyes.",
+   "why": "Rudra walks forward out of the column of fire, his fire halo burning behind him; on 'blazing' his eyes flare red.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "push in as he comes toward us"
+   },
+   "focus": {
+    "subject": "rudra",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "rudra",
+    "z": 1.08,
+    "y": 0.42
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#fff0dc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#e8a888"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#e8a888"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e0"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#fff4ec"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#fff4ec"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#d84a24",
+     "#f4843a",
+     "#ffc46a",
+     "#fff2d0"
+    ],
+    "sx": 640,
+    "sy": 180
+   },
+   "mood": {
+    "emotion": "birth",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "rudra",
+     "x": 640,
+     "y": 639,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 640,
+     "engine_cues": {
+      "mc": "stepped"
+     },
+     "engine": {
+      "my": 14,
+      "md": 1.4
+     },
+     "actions": [
+      {
+       "word": "stepped",
+       "pose": "lunge",
+       "e": "spring",
+       "d": 0.6
+      },
+      {
+       "word": "blazing",
+       "pose": "stand",
+       "emo": "rage",
+       "d": 0.5
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "beam",
+     "x": 640,
+     "y": 700,
+     "len": 720,
+     "w": 70,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the column of fire he steps out of"
+    },
+    {
+     "k": "glow",
+     "word": "red",
+     "x": 640,
+     "y": 339,
+     "r": 160,
+     "rgb": "255,90,60",
+     "ga": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the red blaze of his eyes"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s18",
+   "beat": 1,
+   "start": {
+    "t": 39.52,
+    "word": "He"
+   },
+   "duration": 2.52,
+   "narration": "He roared, \"What is my name?\"",
+   "meaning": "He roared: What is my name?",
+   "why": "Close on Rudra roaring, mouth wide and eyes red; rings of fire-orange sound burst out from him on 'roared' and the frame shakes.",
+   "camera": {
+    "shot": "close",
+    "lens": "tele",
+    "move": "handheld",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 4,
+    "motivation": "the roar shakes the frame"
+   },
+   "focus": {
+    "subject": "rudra",
+    "depth": "shallow"
+   },
+   "vertical": {
+    "focus": "rudra"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#fff0dc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#e8a888"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#e8a888"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e0"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#c83c2a",
+     "#f07a40",
+     "#ffb860",
+     "#ffeccc"
+    ],
+    "sx": 640,
+    "sy": 170
+   },
+   "mood": {
+    "emotion": "rage",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "rudra",
+     "x": 640,
+     "y": 360,
+     "s": 1.1,
+     "flip": 1,
+     "head": true,
+     "emo": "rage",
+     "talk": 0.9,
+     "look": 640,
+     "actions": [
+      {
+       "word": "roared",
+       "mood": {
+        "anger": 1,
+        "mouth": 0.8
+       },
+       "e": "antic",
+       "d": 0.4
+      },
+      {
+       "word": "name",
+       "mood": {
+        "anger": 1,
+        "mouth": 0.6,
+        "ly": -0.2
+       },
+       "tilt": 0.05,
+       "d": 0.5
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "shock",
+     "word": "roared",
+     "x": 640,
+     "y": 380,
+     "rgb": "255,150,80",
+     "max": 700,
+     "meaning": "the roar going out in rings"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s19",
+   "beat": 1,
+   "start": {
+    "t": 42.04,
+    "word": "Brahma"
+   },
+   "duration": 1.98,
+   "narration": "Brahma sat in awe.",
+   "meaning": "Brahma sat in awe of the being.",
+   "why": "Brahma on his lotus stares up with wide eyes and parted lips, still and amazed, the orange firelight of Rudra falling on him from above.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "tilt_up",
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 12,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "tilting up with his gaze toward the being"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#fff0dc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#e8a888"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#e8a888"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e0"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f0d0a0",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f0d0a0",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a56b4",
+     "#8aa8e0",
+     "#ffd0a0",
+     "#fff2e0"
+    ],
+    "sx": 780,
+    "sy": 120
+   },
+   "mood": {
+    "emotion": "awe",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 534,
+     "s": 1.0,
+     "flip": 1,
+     "emo": "surprise",
+     "look": 800,
+     "mood": {
+      "surp": 0.8,
+      "ly": -0.7
+     },
+     "actions": [
+      {
+       "word": "awe",
+       "mood": {
+        "surp": 1,
+        "mouth": 0.4,
+        "ly": -0.8
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "x": 800,
+     "y": 90,
+     "r": 320,
+     "rgb": "255,160,80",
+     "ga": 0.5,
+     "par": 0.6,
+     "behind": true,
+     "meaning": "Rudra's firelight falling on Brahma from above"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s20",
+   "beat": 1,
+   "start": {
+    "t": 44.02,
+    "word": "The"
+   },
+   "duration": 3.1,
+   "narration": "The being roared again, \"Tell me my name.\"",
+   "meaning": "The being roared again, demanding his name.",
+   "why": "Stacked: above, Rudra lunges forward with raised hand and red eyes, roaring; below, Brahma looks up at him in fear and wonder.",
+   "camera": {
+    "shot": "two_shot",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 2,
+    "motivation": "a small pull back as the roar hits"
+   },
+   "focus": {
+    "subject": "rudra",
+    "depth": "deep"
+   },
+   "vertical": {
+    "mode": "stack",
+    "stack": [
+     "rudra",
+     "brahma"
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#fff0dc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 320,
+       "y": 500,
+       "s": 1.0,
+       "col": "#e8a888"
+      },
+      {
+       "o": "mountain",
+       "x": 940,
+       "y": 510,
+       "s": 0.85,
+       "col": "#e8a888"
+      },
+      {
+       "o": "cloud",
+       "x": 380,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e0"
+      },
+      {
+       "o": "cloud",
+       "x": 900,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 250,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 1030,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 300,
+       "y": 745,
+       "s": 1.7,
+       "col": "#fff4ec"
+      },
+      {
+       "o": "cloud",
+       "x": 980,
+       "y": 748,
+       "s": 1.6,
+       "col": "#fff4ec"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#d84a24",
+     "#f4843a",
+     "#ffc46a",
+     "#fff2d0"
+    ],
+    "sx": 640,
+    "sy": 180
+   },
+   "mood": {
+    "emotion": "demand",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "rudra",
+     "x": 820,
+     "y": 660,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "rage",
+     "talk": 0.9,
+     "look": "brahma",
+     "actions": [
+      {
+       "word": "roared",
+       "pose": "raise",
+       "mood": {
+        "anger": 1,
+        "mouth": 0.8
+       },
+       "e": "antic",
+       "d": 0.5
+      }
+     ]
+    },
+    {
+     "who": "brahma",
+     "x": 440,
+     "y": 680,
+     "s": 0.95,
+     "flip": 1,
+     "emo": "surprise",
+     "look": "rudra",
+     "mood": {
+      "ly": -0.5
+     },
+     "actions": [
+      {
+       "word": "Tell",
+       "emo": "fear",
+       "mood": {
+        "ly": -0.6
+       },
+       "d": 0.5
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "shock",
+     "word": "roared",
+     "x": 820,
+     "y": 380,
+     "rgb": "255,150,80",
+     "max": 600,
+     "meaning": "the second roar going out in rings"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s21",
+   "beat": 1,
+   "start": {
+    "t": 47.12,
+    "word": "Brahma"
+   },
+   "duration": 1.84,
+   "narration": "Brahma remembered that the root word",
+   "meaning": "Brahma remembered a root word.",
+   "why": "Brahma raises his hand with his eyes turned up, remembering; a soft gold ring of light opens behind his heads on 'remembered'.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "push in on the moment he remembers"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma",
+    "z": 1.1,
+    "y": 0.42
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2456b4",
+     "#7aa8e8",
+     "#ffdcb0",
+     "#fff6e6"
+    ],
+    "sx": 700,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "remembering",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 541,
+     "s": 1.0,
+     "flip": 1,
+     "emo": "doubt",
+     "look": 640,
+     "mood": {
+      "ly": -0.6
+     },
+     "actions": [
+      {
+       "word": "remembered",
+       "pose": "raise",
+       "emo": "calm",
+       "mood": {
+        "ly": -0.7,
+        "smile": 0.3
+       },
+       "d": 0.6
+      },
+      {
+       "word": "root",
+       "mood": {
+        "smile": 0.5,
+        "ly": -0.4
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "halo_ring",
+     "word": "remembered",
+     "x": 640,
+     "y": 346,
+     "w": 360,
+     "alpha": 0.45,
+     "blend": "lighter",
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the memory lighting up in his mind"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s22",
+   "beat": 1,
+   "start": {
+    "t": 48.96,
+    "word": "for"
+   },
+   "duration": 2.78,
+   "narration": "for both red and roaring is rud.",
+   "meaning": "The root word for both red and roaring is rud.",
+   "why": "Rudra below with red eyes; the word 'red' appears in red on 'red', 'roaring' on 'roaring' as his mouth opens, and the big gold root 'rud' between them on 'rud'.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.0,
+     "x": -8,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 8,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow drift while the words appear"
+   },
+   "focus": {
+    "subject": "rudra",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": 640
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#fff0dc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#e8a888"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#e8a888"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e0"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#f4c890",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#fff4ec"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#fff4ec"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#d84a24",
+     "#f4843a",
+     "#ffc46a",
+     "#fff2d0"
+    ],
+    "sx": 640,
+    "sy": 240
+   },
+   "mood": {
+    "emotion": "meaning",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "rudra",
+     "x": 640,
+     "y": 646,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "anger",
+     "look": 640,
+     "actions": [
+      {
+       "word": "red",
+       "emo": "rage",
+       "d": 0.5
+      },
+      {
+       "word": "roaring",
+       "mood": {
+        "anger": 1,
+        "mouth": 0.8
+       },
+       "d": 0.5
+      },
+      {
+       "word": "rud",
+       "emo": "anger",
+       "mood": {
+        "mouth": 0
+       },
+       "d": 0.5
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "text",
+     "word": "red",
+     "s": "red",
+     "x": 540,
+     "y": 95,
+     "size": 46,
+     "col": "#ff5a3a",
+     "meaning": "the word red"
+    },
+    {
+     "k": "text",
+     "word": "roaring",
+     "s": "roaring",
+     "x": 745,
+     "y": 95,
+     "size": 42,
+     "col": "#fff0d8",
+     "meaning": "the word roaring"
+    },
+    {
+     "k": "text",
+     "word": "rud",
+     "s": "rud",
+     "x": 640,
+     "y": 170,
+     "size": 70,
+     "col": "#ffe08a",
+     "glow": 1,
+     "meaning": "the root word rud that means both"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s23",
+   "beat": 1,
+   "start": {
+    "t": 51.74,
+    "word": "He"
+   },
+   "duration": 3.36,
+   "narration": "He said, \"Rudra, I name you Rudra.\"",
+   "meaning": "Brahma named him Rudra.",
+   "why": "The window pans from Brahma raising his hand in blessing to Rudra, whose red eyes calm as he is named; the name plate 'Rudra' appears over him.",
+   "camera": {
+    "shot": "two_shot",
+    "lens": "normal",
+    "move": "pan_right",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "the pan carries the name from Brahma to Rudra"
+   },
+   "focus": {
+    "subject": "rudra",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     540,
+     760
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "gold pillars behind both",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 390,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 910,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 440,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 880,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a56b4",
+     "#8aa8e0",
+     "#ffd4a8",
+     "#fff4e4"
+    ],
+    "sx": 760,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "naming",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 520,
+     "y": 505,
+     "s": 0.95,
+     "flip": 1,
+     "emo": "calm",
+     "talk": 0.7,
+     "look": "rudra",
+     "actions": [
+      {
+       "word": "Rudra",
+       "pose": "raise",
+       "emo": "joy",
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "rudra",
+     "x": 775,
+     "y": 590,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "anger",
+     "look": "brahma",
+     "actions": [
+      {
+       "word": "name",
+       "emo": "calm",
+       "mood": {
+        "smile": 0.2
+       },
+       "d": 0.8
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "name",
+     "word": "Rudra",
+     "s": "Rudra",
+     "x": 775,
+     "y": 120,
+     "size": 32,
+     "meaning": "the name Rudra on screen as it is said"
+    },
+    {
+     "k": "glow",
+     "word": "name",
+     "x": 775,
+     "y": 400,
+     "r": 200,
+     "rgb": "255,220,170",
+     "ga": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the calm that comes with his name"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s24",
+   "beat": 1,
+   "start": {
+    "t": 55.1,
+    "word": "This"
+   },
+   "duration": 3.3,
+   "narration": "This was Shiva, also called Mahadev.",
+   "meaning": "This being was Shiva, also called Mahadev.",
+   "why": "Rudra's fire halo cools into Shiva's blue halo: on 'Shiva' the newborn dissolves into the familiar Mahadev with trishul and serpent, and his name plate appears on 'Mahadev'.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_up",
+    "from": {
+     "z": 1.06,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "rising with the reveal of who he is"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "shiva"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef4fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a8b8e0"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a8b8e0"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8d8b0",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8d8b0",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a4aa8",
+     "#7a9ae8",
+     "#d8e4fa",
+     "#f6f8ff"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "revelation",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "rudra",
+     "x": 640,
+     "y": 614,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 640,
+     "engine_cues": {
+      "fo": "Shiva"
+     },
+     "engine": {
+      "fd": 1.0
+     }
+    },
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 614,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 640,
+     "mood": {
+      "smile": 0.3
+     },
+     "engine_cues": {
+      "ac": "Shiva"
+     },
+     "engine": {
+      "ad": 1.0
+     },
+     "actions": [
+      {
+       "word": "Mahadev",
+       "mood": {
+        "smile": 0.5
+       },
+       "tilt": 0.03,
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "Shiva",
+     "x": 640,
+     "y": 330,
+     "r": 260,
+     "rgb": "190,215,255",
+     "ga": 0.5,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "Shiva's pale blue light replacing the fire"
+    },
+    {
+     "k": "name",
+     "word": "Mahadev",
+     "s": "Mahadev",
+     "x": 640,
+     "y": 120,
+     "size": 32,
+     "meaning": "the name Mahadev on screen as it is said"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s25",
+   "beat": 1,
+   "start": {
+    "t": 58.4,
+    "word": "Brahma"
+   },
+   "duration": 1.3,
+   "narration": "Brahma created,",
+   "meaning": "Brahma is the creator.",
+   "why": "Brahma on his lotus opens his hands in gold light; the plate 'Creator' appears.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a short push on the first of the three"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2456b4",
+     "#74aaea",
+     "#ffe2b4",
+     "#fff7e6"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "creation",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 520,
+     "s": 1.0,
+     "flip": 1,
+     "emo": "joy",
+     "look": 640,
+     "mood": {
+      "smile": 0.6
+     },
+     "actions": [
+      {
+       "word": "created",
+       "pose": "open",
+       "d": 0.5
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "created",
+     "x": 640,
+     "y": 330,
+     "r": 260,
+     "rgb": "255,215,140",
+     "ga": 0.5,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the gold light of creation"
+    },
+    {
+     "k": "name",
+     "word": "created",
+     "s": "Creator",
+     "x": 640,
+     "y": 120,
+     "size": 32,
+     "meaning": "the name Creator on screen as it is said"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s26",
+   "beat": 1,
+   "start": {
+    "t": 59.7,
+    "word": "Vishnu"
+   },
+   "duration": 1.18,
+   "narration": "Vishnu preserved,",
+   "meaning": "Vishnu is the preserver.",
+   "why": "Blue Vishnu stands calm and smiling in his blue-gold sky with a raised blessing hand; the plate 'Preserver' appears.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "dolly_left",
+    "from": {
+     "z": 1.0,
+     "x": 8,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": -8,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a short drift to the second of the three"
+   },
+   "focus": {
+    "subject": "vishnu",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "vishnu"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "protection",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 619,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 640,
+     "mood": {
+      "smile": 0.7
+     },
+     "actions": [
+      {
+       "word": "preserved",
+       "pose": "raise",
+       "emo": "joy",
+       "d": 0.5
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "name",
+     "word": "preserved",
+     "s": "Preserver",
+     "x": 640,
+     "y": 120,
+     "size": 32,
+     "meaning": "the name Preserver on screen as it is said"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s27",
+   "beat": 1,
+   "start": {
+    "t": 60.88,
+    "word": "and"
+   },
+   "duration": 2.1,
+   "narration": "and Shiva was the destroyer.",
+   "meaning": "Shiva is the destroyer.",
+   "why": "Shiva with his trishul in a violet-rose sky, his face stern; his third eye glows and the plate 'Destroyer' appears.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "tilt_up",
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 14,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "tilt up to the third of the three"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "shiva"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#f4e8f4",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#b0a0d0"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#b0a0d0"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4f4"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4f4"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e0c0a8",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e0c0a8",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#4a3aa0",
+     "#9a6ad0",
+     "#f4a8a0",
+     "#ffe8cc"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "power",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 627,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 640,
+     "actions": [
+      {
+       "word": "destroyer",
+       "emo": "anger",
+       "mood": {
+        "anger": 0.5
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "destroyer",
+     "x": 640,
+     "y": 305,
+     "r": 70,
+     "rgb": "255,120,80",
+     "ga": 0.6,
+     "par": 1.0,
+     "meaning": "the third eye of the destroyer glowing"
+    },
+    {
+     "k": "name",
+     "word": "destroyer",
+     "s": "Destroyer",
+     "x": 640,
+     "y": 120,
+     "size": 32,
+     "meaning": "the name Destroyer on screen as it is said"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s28",
+   "beat": 1,
+   "start": {
+    "t": 62.98,
+    "word": "Brahma"
+   },
+   "duration": 2.28,
+   "narration": "Brahma asked him to help with creation.",
+   "meaning": "Brahma asked Shiva to help with creation.",
+   "why": "The window pans from Brahma pleading with open hands to Shiva, who listens calmly with his head tilted.",
+   "camera": {
+    "shot": "two_shot",
+    "lens": "normal",
+    "move": "pan_right",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "the pan carries the request from Brahma to Shiva"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     540,
+     760
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "gold pillars behind both",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 390,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 910,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 440,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 880,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2456b4",
+     "#74aaea",
+     "#ffe2b4",
+     "#fff7e6"
+    ],
+    "sx": 700,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "request",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 520,
+     "y": 505,
+     "s": 0.95,
+     "flip": 1,
+     "emo": "calm",
+     "talk": 0.7,
+     "look": "shiva",
+     "actions": [
+      {
+       "word": "help",
+       "pose": "plead",
+       "emo": "devotion",
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "shiva",
+     "x": 775,
+     "y": 590,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": "brahma",
+     "actions": [
+      {
+       "word": "creation",
+       "tilt": 0.05,
+       "mood": {
+        "smile": 0.3
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s29",
+   "beat": 1,
+   "start": {
+    "t": 65.26,
+    "word": "Shiva"
+   },
+   "duration": 2.54,
+   "narration": "Shiva agreed and began making beings,",
+   "meaning": "Shiva agreed and started to make beings.",
+   "why": "Shiva nods with folded hands on 'agreed', then opens his hands on 'making'; a first being of light, his own shape, fades in behind him on 'beings'.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -14,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "descending on the god at work"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "shiva"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef4fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a8b8e0"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a8b8e0"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8d8b0",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8d8b0",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a4aa8",
+     "#7a9ae8",
+     "#d8e4fa",
+     "#f6f8ff"
+    ],
+    "sx": 700,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "creation",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "rudra",
+     "x": 760,
+     "y": 429,
+     "s": 0.62,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": "shiva",
+     "engine_cues": {
+      "ac": "beings"
+     },
+     "engine": {
+      "ad": 0.8,
+      "a": 0.85
+     }
+    },
+    {
+     "who": "shiva",
+     "x": 610,
+     "y": 621,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 640,
+     "actions": [
+      {
+       "word": "agreed",
+       "pose": "namaste",
+       "tilt": 0.05,
+       "mood": {
+        "smile": 0.4
+       },
+       "d": 0.6
+      },
+      {
+       "word": "making",
+       "pose": "open",
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "beings",
+     "x": 760,
+     "y": 305,
+     "r": 160,
+     "rgb": "255,200,140",
+     "ga": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the light a new being appears in"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s30",
+   "beat": 1,
+   "start": {
+    "t": 67.8,
+    "word": "but"
+   },
+   "duration": 3.66,
+   "narration": "but he made copies of himself, and each was immortal.",
+   "meaning": "The beings Shiva made were copies of himself, and each one was immortal.",
+   "why": "Around Shiva, four beings with his face, jata and fire halo fade in one after another on 'copies' and 'himself'; on 'immortal' a ring of undying light opens behind them.",
+   "camera": {
+    "shot": "wide",
+    "lens": "wide",
+    "move": "pull_out",
+    "from": {
+     "z": 1.06,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "pulling back to reveal how many copies there are"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": 640
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef4fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a8b8e0"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a8b8e0"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "cloud banks behind the row of beings",
+     "fog": 0.25,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 560,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 570,
+       "s": 1.0,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a4aa8",
+     "#7a9ae8",
+     "#d8e4fa",
+     "#f6f8ff"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "multiplication",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "rudra",
+     "x": 495,
+     "y": 420,
+     "s": 0.6,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 640,
+     "engine_cues": {
+      "ac": "copies"
+     },
+     "engine": {
+      "ad": 0.6
+     }
+    },
+    {
+     "who": "rudra",
+     "x": 785,
+     "y": 420,
+     "s": 0.6,
+     "flip": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "look": 640,
+     "engine_cues": {
+      "ac": "copies"
+     },
+     "engine": {
+      "ad": 0.6
+     }
+    },
+    {
+     "who": "rudra",
+     "x": 530,
+     "y": 499,
+     "s": 0.7,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "look": 640,
+     "engine_cues": {
+      "ac": "himself"
+     },
+     "engine": {
+      "ad": 0.6
+     }
+    },
+    {
+     "who": "rudra",
+     "x": 750,
+     "y": 499,
+     "s": 0.7,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 640,
+     "engine_cues": {
+      "ac": "himself"
+     },
+     "engine": {
+      "ad": 0.6
+     }
+    },
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 602,
+     "s": 0.88,
+     "flip": 1,
+     "pose": "open",
+     "emo": "calm",
+     "look": 640,
+     "mood": {
+      "smile": 0.4
+     },
+     "actions": [
+      {
+       "word": "immortal",
+       "emo": "joy",
+       "mood": {
+        "smile": 0.6
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "halo_ring",
+     "word": "immortal",
+     "x": 640,
+     "y": 300,
+     "w": 560,
+     "alpha": 0.45,
+     "blend": "lighter",
+     "par": 1.0,
+     "behind": true,
+     "meaning": "immortality, a ring of undying light behind them all"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s31",
+   "beat": 1,
+   "start": {
+    "t": 71.46,
+    "word": "Eleven"
+   },
+   "duration": 2.38,
+   "narration": "Eleven Rudras stood before Brahma.",
+   "meaning": "Eleven Rudras now stood in front of Brahma.",
+   "why": "Stacked: above, eleven identical Rudras with fire halos stand in three rows on the clouds; below, Brahma on his lotus looks at them in surprise.",
+   "camera": {
+    "shot": "two_shot",
+    "lens": "normal",
+    "move": "static",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "stillness: a whole row of gods just standing there"
+   },
+   "focus": {
+    "subject": "rudra",
+    "depth": "deep"
+   },
+   "vertical": {
+    "mode": "stack",
+    "stack": [
+     "rudra",
+     "brahma"
+    ],
+    "h": 430
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 360,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 940,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 420,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 900,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "cloud banks behind the rows of Rudras",
+     "fog": 0.25,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 360,
+       "s": 1.2,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 370,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 300,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 1000,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2456b4",
+     "#74aaea",
+     "#ffe2b4",
+     "#fff7e6"
+    ],
+    "sx": 760,
+    "sy": 160
+   },
+   "mood": {
+    "emotion": "surprise",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "rudra",
+     "x": 640,
+     "y": 400,
+     "s": 0.36,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 560,
+     "y": 400,
+     "s": 0.36,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 720,
+     "y": 400,
+     "s": 0.36,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 500,
+     "y": 452,
+     "s": 0.42,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 593,
+     "y": 452,
+     "s": 0.42,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 687,
+     "y": 452,
+     "s": 0.42,
+     "flip": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 780,
+     "y": 452,
+     "s": 0.42,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 505,
+     "y": 505,
+     "s": 0.48,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 595,
+     "y": 505,
+     "s": 0.48,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 685,
+     "y": 505,
+     "s": 0.48,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 775,
+     "y": 505,
+     "s": 0.48,
+     "flip": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "brahma",
+     "x": 1060,
+     "y": 640,
+     "s": 0.85,
+     "flip": -1,
+     "emo": "surprise",
+     "look": 640,
+     "mood": {
+      "surp": 0.8
+     },
+     "actions": [
+      {
+       "word": "Brahma",
+       "mood": {
+        "surp": 1,
+        "mouth": 0.3
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "name",
+     "word": "Rudras",
+     "s": "Eleven Rudras",
+     "x": 640,
+     "y": 250,
+     "size": 26,
+     "meaning": "the name Eleven Rudras on screen as it is said"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s32",
+   "beat": 1,
+   "start": {
+    "t": 73.84,
+    "word": "Brahma"
+   },
+   "duration": 4.28,
+   "narration": "Brahma said creation needed mortals who die and are born again.",
+   "meaning": "Brahma said creation needed mortal beings who die and are born again.",
+   "why": "Brahma pleads with open hands; above him the gold wheel of birth and death turns on 'die' and glows on 'born': what creation needs.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "tilt_down",
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": -14,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "tilting down from the wheel to the creator"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#ecc878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2456b4",
+     "#74aaea",
+     "#ffe2b4",
+     "#fff7e6"
+    ],
+    "sx": 640,
+    "sy": 160
+   },
+   "mood": {
+    "emotion": "explaining",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 530,
+     "s": 1.0,
+     "flip": 1,
+     "emo": "doubt",
+     "talk": 0.7,
+     "look": 800,
+     "actions": [
+      {
+       "word": "mortals",
+       "pose": "open",
+       "d": 0.6
+      },
+      {
+       "word": "again",
+       "pose": "plead",
+       "emo": "calm",
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "icon",
+     "i": "cycle",
+     "word": "die",
+     "x": 640,
+     "y": 130,
+     "sc": 1.2,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the round of death and rebirth creation needs"
+    },
+    {
+     "k": "glow",
+     "word": "born",
+     "x": 640,
+     "y": 130,
+     "r": 180,
+     "rgb": "255,230,170",
+     "ga": 0.5,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "birth again, the wheel lighting up"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s33",
+   "beat": 1,
+   "start": {
+    "t": 78.12,
+    "word": "Shiva"
+   },
+   "duration": 2.62,
+   "narration": "Shiva said he could only make immortals.",
+   "meaning": "Shiva answered that he could only make immortal beings.",
+   "why": "Shiva speaks calmly with an open hand while two of his fire-haloed copies stand faint behind him.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.04,
+     "x": -8,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 8,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a calm drift while he answers"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "shiva"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
+     "fog": 0.55,
+     "haze": "#eef4fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#a8b8e0"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#a8b8e0"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Brahma's hall",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8d8b0",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8d8b0",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a4aa8",
+     "#7a9ae8",
+     "#d8e4fa",
+     "#f6f8ff"
+    ],
+    "sx": 600,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "rudra",
+     "x": 520,
+     "y": 424,
+     "s": 0.6,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 640,
+     "engine": {
+      "a": 0.5
+     }
+    },
+    {
+     "who": "rudra",
+     "x": 770,
+     "y": 424,
+     "s": 0.6,
+     "flip": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "look": 640,
+     "engine": {
+      "a": 0.5
+     }
+    },
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 634,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "talk": 0.6,
+     "look": 540,
+     "actions": [
+      {
+       "word": "only",
+       "pose": "open",
+       "d": 0.6
+      },
+      {
+       "word": "immortals",
+       "mood": {
+        "blink": 0.4,
+        "smile": 0.2
+       },
+       "tilt": -0.04,
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s34",
+   "beat": 1,
+   "start": {
+    "t": 80.74,
+    "word": "If"
+   },
+   "duration": 2.66,
+   "narration": "If that spoiled the plan, he would rather meditate.",
+   "meaning": "If that spoiled Brahma's plan, Shiva would rather meditate.",
+   "why": "Shiva closes his eyes and folds his hands on 'meditate' as the hall behind him cross-fades to the white Himalaya.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "push in as he turns inward"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "shiva",
+    "z": 1.08,
+    "y": 0.42
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "white snow peaks of the Himalaya in blue haze",
+     "fog": 0.5,
+     "haze": "#eef4fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 500,
+       "y": 470,
+       "s": 1.2,
+       "col": "#b8c8e4"
+      },
+      {
+       "o": "mountain",
+       "x": 800,
+       "y": 480,
+       "s": 1.0,
+       "col": "#b8c8e4"
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 230,
+       "s": 1.0,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "deodar pines and snowy rocks on the slope",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 610,
+       "s": 0.8,
+       "kind": "pine",
+       "col": "#2a6a5a"
+      },
+      {
+       "o": "tree",
+       "x": 840,
+       "y": 615,
+       "s": 0.75,
+       "kind": "pine",
+       "col": "#2a6a5a"
+      },
+      {
+       "o": "rock",
+       "x": 520,
+       "y": 650,
+       "s": 1.0,
+       "col": "#dce4f2"
+      },
+      {
+       "o": "rock",
+       "x": 760,
+       "y": 655,
+       "s": 0.9,
+       "col": "#dce4f2"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "blurred snowy rocks in the bottom corners",
+     "dark": 0.3,
+     "items": [
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 752,
+       "s": 1.6,
+       "col": "#c8d4ec"
+      },
+      {
+       "o": "rock",
+       "x": 830,
+       "y": 755,
+       "s": 1.5,
+       "col": "#c8d4ec"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a4aa8",
+     "#7a9ae8",
+     "#d8e4fa",
+     "#f6f8ff"
+    ],
+    "sx": 640,
+    "sy": 200,
+    "change": {
+     "word": "meditate",
+     "bg2": {
+      "k": "vista",
+      "sky": [
+       "#2a6ad0",
+       "#7ab8f0",
+       "#dcecfa",
+       "#f8fbff"
+      ],
+      "sx": 700,
+      "sy": 220,
+      "ridge": [
+       "#c8daf0",
+       "#a8c0e0",
+       "#8aa4cc",
+       "#7088b4"
+      ],
+      "haze": "240,246,255"
+     },
+     "d": 1.0
+    }
+   },
+   "mood": {
+    "emotion": "withdrawal",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 639,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "talk": 0.5,
+     "look": 540,
+     "actions": [
+      {
+       "word": "spoiled",
+       "mood": {
+        "ly": 0.4
+       },
+       "d": 0.6
+      },
+      {
+       "word": "meditate",
+       "pose": "namaste",
+       "mood": {
+        "blink": 1,
+        "smile": 0.3
+       },
+       "d": 0.7
+      }
+     ]
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s35",
+   "beat": 1,
+   "start": {
+    "t": 83.4,
+    "word": "Then"
+   },
+   "duration": 1.24,
+   "narration": "Then he left.",
+   "meaning": "Then Shiva walked away and left Brahma.",
+   "why": "On a bright snowy slope Shiva walks away to the right with his trishul and fades into the white haze.",
+   "camera": {
+    "shot": "wide",
+    "lens": "wide",
+    "move": "pan_right",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "the pan follows him walking away"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     600,
+     700
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "white snow peaks of the Himalaya in blue haze",
+     "fog": 0.5,
+     "haze": "#eef4fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 520,
+       "y": 470,
+       "s": 1.2,
+       "col": "#b8c8e4"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 480,
+       "s": 1.0,
+       "col": "#b8c8e4"
+      },
+      {
+       "o": "cloud",
+       "x": 580,
+       "y": 230,
+       "s": 1.0,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "deodar pines and snowy rocks on the slope",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "tree",
+       "x": 440,
+       "y": 610,
+       "s": 0.8,
+       "kind": "pine",
+       "col": "#2a6a5a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 615,
+       "s": 0.75,
+       "kind": "pine",
+       "col": "#2a6a5a"
+      },
+      {
+       "o": "rock",
+       "x": 510,
+       "y": 650,
+       "s": 1.0,
+       "col": "#dce4f2"
+      },
+      {
+       "o": "rock",
+       "x": 800,
+       "y": 655,
+       "s": 0.9,
+       "col": "#dce4f2"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "blurred snowy rocks in the bottom corners",
+     "dark": 0.3,
+     "items": [
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 752,
+       "s": 1.6,
+       "col": "#c8d4ec"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 755,
+       "s": 1.5,
+       "col": "#c8d4ec"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#2a6ad0",
+     "#7ab8f0",
+     "#dcecfa",
+     "#f8fbff"
+    ],
+    "sx": 760,
+    "sy": 220,
+    "ridge": [
+     "#c8daf0",
+     "#a8c0e0",
+     "#8aa4cc",
+     "#7088b4"
+    ],
+    "haze": "240,246,255"
+   },
+   "mood": {
+    "emotion": "departure",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "shiva",
+     "x": 600,
+     "y": 581,
+     "s": 0.85,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 900,
+     "walk": {
+      "word": "Then",
+      "to_x": 740,
+      "d": 1.3,
+      "speed": 1
+     },
+     "engine_cues": {
+      "fo": "left"
+     },
+     "engine": {
+      "fd": 1.0
+     }
+    }
+   ],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "left",
+     "x": 720,
+     "y": 520,
+     "w": 360,
+     "alpha": 0.6,
+     "par": 1.0,
+     "meaning": "the white haze he disappears into"
+    }
+   ],
+   "transition_in": "wipe"
+  },
+  {
+   "id": "s36",
+   "beat": 1,
+   "start": {
+    "t": 84.64,
+    "word": "The"
+   },
+   "duration": 4.36,
+   "narration": "The god born from Brahma's anger could only make what never dies.",
+   "meaning": "The god born from Brahma's anger could only make what never dies.",
+   "why": "Shiva sits in meditation on the snowy peak with closed eyes; behind him a faint warm glow of the fire he was born from, and on 'never' a ring of undying light opens as the camera pulls away.",
+   "camera": {
+    "shot": "wide",
+    "lens": "wide",
+    "move": "pull_out",
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -8,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "final pull out on the meditating god"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "shiva"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "white snow peaks of the Himalaya in blue haze",
+     "fog": 0.5,
+     "haze": "#eef4fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 500,
+       "y": 470,
+       "s": 1.2,
+       "col": "#b8c8e4"
+      },
+      {
+       "o": "mountain",
+       "x": 800,
+       "y": 480,
+       "s": 1.0,
+       "col": "#b8c8e4"
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 230,
+       "s": 1.0,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "deodar pines and snowy rocks on the slope",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 610,
+       "s": 0.8,
+       "kind": "pine",
+       "col": "#2a6a5a"
+      },
+      {
+       "o": "tree",
+       "x": 840,
+       "y": 615,
+       "s": 0.75,
+       "kind": "pine",
+       "col": "#2a6a5a"
+      },
+      {
+       "o": "rock",
+       "x": 520,
+       "y": 650,
+       "s": 1.0,
+       "col": "#dce4f2"
+      },
+      {
+       "o": "rock",
+       "x": 760,
+       "y": 655,
+       "s": 0.9,
+       "col": "#dce4f2"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "blurred snowy rocks in the bottom corners",
+     "dark": 0.3,
+     "items": [
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 752,
+       "s": 1.6,
+       "col": "#c8d4ec"
+      },
+      {
+       "o": "rock",
+       "x": 830,
+       "y": 755,
+       "s": 1.5,
+       "col": "#c8d4ec"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#2a6ad0",
+     "#7ab8f0",
+     "#dcecfa",
+     "#f8fbff"
+    ],
+    "sx": 640,
+    "sy": 200,
+    "ridge": [
+     "#c8daf0",
+     "#a8c0e0",
+     "#8aa4cc",
+     "#7088b4"
+    ],
+    "haze": "240,246,255"
+   },
+   "mood": {
+    "emotion": "stillness",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 543,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "calm",
+     "mood": {
+      "blink": 1,
+      "smile": 0.3
+     },
+     "look": 640,
+     "actions": [
+      {
+       "word": "anger",
+       "mood": {
+        "blink": 1,
+        "smile": 0.2
+       },
+       "tilt": 0.03,
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "anger",
+     "x": 640,
+     "y": 338,
+     "r": 260,
+     "rgb": "255,170,100",
+     "ga": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the fire of anger he was born from, now a quiet glow"
+    },
+    {
+     "k": "halo_ring",
+     "word": "never",
+     "x": 640,
+     "y": 338,
+     "w": 460,
+     "alpha": 0.45,
+     "blend": "lighter",
+     "par": 1.0,
+     "behind": true,
+     "meaning": "what never dies, a ring of undying light"
+    }
+   ],
+   "transition_in": "fade"
+  }
+ ]
+}

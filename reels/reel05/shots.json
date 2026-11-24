@@ -1,0 +1,6618 @@
+[
+{
+"beat": 1,
+"at": 0.0,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.05,
+"x": 0,
+"y": -6,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#d84a24",
+"#f4843a",
+"#ffc46a",
+"#fff2d0"
+],
+"sx": 640,
+"sy": 190
+},
+"figs": [
+{
+"who": "rudra",
+"x": 640,
+"y": 673,
+"s": 1.0,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"emo": "anger"
+}
+]
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "glow",
+"x": 640,
+"y": 330,
+"r": 260,
+"rgb": "255,150,70",
+"ga": 0.5,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#fff0dc",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#e8a888"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#e8a888"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#fff4e0"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#fff4e0"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#fff4ec"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#fff4ec"
+}
+]
+}
+]
+},
+"cues": [
+"anger"
+],
+"vert": {
+"focus": "rudra"
+},
+"title": {
+"text": "Shiva Born From Anger",
+"sec": 2.5
+}
+},
+{
+"beat": 1,
+"at": 3.04,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.05,
+"x": 10,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.05,
+"x": -10,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#d84a24",
+"#f4843a",
+"#ffc46a",
+"#fff2d0"
+],
+"sx": 700,
+"sy": 200
+},
+"figs": [
+{
+"who": "rudra",
+"x": 680,
+"y": 637,
+"s": 1.0,
+"flip": -1,
+"pose": "stand",
+"emo": "anger",
+"talk": 0.6,
+"mood": {
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.5,
+"pose": "raise",
+"emo": "anger",
+"e": "spring"
+},
+{
+"c": 1,
+"d": 0.5,
+"mood": {
+"lx": 0.6,
+"anger": 0.7
+}
+}
+]
+}
+],
+"fx": [
+{
+"t": "pfx",
+"k": "crown_gold",
+"x": 505,
+"y": 215,
+"w": 80,
+"alpha": 0.6,
+"par": 1.0,
+"c": 1,
+"d": 0.6
+}
+],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#fff0dc",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#e8a888"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#e8a888"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#fff4e0"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#fff4e0"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#fff4ec"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#fff4ec"
+}
+]
+}
+]
+},
+"cues": [
+"demand",
+"power"
+],
+"vert": {
+"x": 610,
+"z": 1.08,
+"y": 0.42,
+"focus": "rudra"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 5.36,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#c83c2a",
+"#f07a40",
+"#ffb860",
+"#ffeccc"
+],
+"sx": 640,
+"sy": 200
+},
+"figs": [
+{
+"who": "rudra",
+"x": 640,
+"y": 370,
+"s": 1.1,
+"flip": 1,
+"head": true,
+"emo": "anger",
+"talk": 0.7,
+"mood": {
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.4,
+"mood": {
+"anger": 0.8,
+"mouth": 0.5,
+"ly": -0.2
+}
+}
+]
+}
+],
+"fx": [
+{
+"t": "name",
+"s": "?",
+"x": 640,
+"y": 95,
+"size": 40,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#fff0dc",
+"items": [
+{
+"o": "mountain",
+"x": 440,
+"y": 500,
+"s": 1.0,
+"col": "#e8a888"
+},
+{
+"o": "mountain",
+"x": 840,
+"y": 510,
+"s": 0.85,
+"col": "#e8a888"
+},
+{
+"o": "cloud",
+"x": 500,
+"y": 230,
+"s": 1.3,
+"col": "#fff4e0"
+},
+{
+"o": "cloud",
+"x": 800,
+"y": 270,
+"s": 1.1,
+"col": "#fff4e0"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+}
+]
+}
+]
+},
+"cues": [
+"name"
+],
+"vert": {
+"focus": "rudra"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 6.76,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": -20,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2456b4",
+"#74aaea",
+"#ffe2b4",
+"#fff7e6"
+],
+"sx": 640,
+"sy": 200
+},
+"figs": [
+{
+"who": "brahma",
+"x": 640,
+"y": 527,
+"s": 1.0,
+"flip": 1,
+"emo": "calm",
+"mood": {
+"smile": 0.4,
+"lx": -0.8
+},
+"acts": [
+{
+"c": 1,
+"d": 0.6,
+"tilt": 0.03,
+"mood": {
+"smile": 0.6,
+"ly": -0.2
+}
+}
+]
+}
+],
+"fx": [
+{
+"t": "name",
+"s": "Brahma",
+"x": 640,
+"y": 130,
+"size": 32,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "pfx",
+"k": "divine_rays",
+"x": 640,
+"y": 80,
+"w": 700,
+"alpha": 0.35,
+"blend": "lighter",
+"par": 0.2
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef2fa",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"Brahma",
+"creator"
+],
+"vert": {
+"focus": "brahma"
+}
+},
+{
+"beat": 1,
+"at": 8.46,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.04,
+"x": 0,
+"y": -4,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2456b4",
+"#74aaea",
+"#ffe2b4",
+"#fff7e6"
+],
+"sx": 640,
+"sy": 200
+},
+"figs": [
+{
+"who": "brahma",
+"x": 640,
+"y": 420,
+"s": 0.78,
+"flip": 1,
+"emo": "joy",
+"mood": {
+"smile": 0.6,
+"ly": 0.5,
+"lx": -0.8
+},
+"acts": [
+{
+"c": 2,
+"d": 0.6,
+"tilt": 0.04,
+"mood": {
+"smile": 0.8,
+"ly": 0.6
+}
+}
+]
+},
+{
+"who": "kumara",
+"x": 492,
+"y": 531,
+"s": 0.5,
+"flip": 1,
+"pose": "namaste",
+"emo": "joy",
+"mood": {
+"lx": 0.8
+},
+"ad": 0.6,
+"ac": 0
+},
+{
+"who": "kumara",
+"x": 566,
+"y": 544,
+"s": 0.52,
+"flip": 1,
+"pose": "stand",
+"emo": "joy",
+"mood": {
+"lx": 0.8
+},
+"ad": 0.6,
+"ac": 0
+},
+{
+"who": "kumara",
+"x": 714,
+"y": 544,
+"s": 0.52,
+"flip": -1,
+"pose": "stand",
+"emo": "joy",
+"mood": {
+"lx": 0.8
+},
+"ad": 0.6,
+"ac": 1
+},
+{
+"who": "kumara",
+"x": 788,
+"y": 531,
+"s": 0.5,
+"flip": -1,
+"pose": "namaste",
+"emo": "joy",
+"mood": {
+"lx": 0.8
+},
+"ad": 0.6,
+"ac": 1
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "pfx",
+"k": "halo_ring",
+"x": 640,
+"y": 268,
+"w": 300,
+"alpha": 0.5,
+"blend": "lighter",
+"par": 1.0,
+"c": 2,
+"d": 0.6
+},
+{
+"t": "glow",
+"x": 640,
+"y": 358,
+"r": 260,
+"rgb": "255,230,170",
+"ga": 0.45,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef2fa",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 460,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 820,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"four",
+"sons",
+"mind"
+],
+"vert": {
+"x": 640,
+"focus": "brahma"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 10.76,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": -8,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 8,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#3a52b8",
+"#8aa4ec",
+"#f4dcf0",
+"#fff6ee"
+],
+"sx": 640,
+"sy": 200
+},
+"figs": [
+{
+"who": "kumara",
+"x": 500,
+"y": 552,
+"s": 0.8,
+"flip": 1,
+"pose": "namaste",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 1,
+"d": 0.6,
+"mood": {
+"smile": 0.5
+}
+}
+]
+},
+{
+"who": "kumara",
+"x": 593,
+"y": 571,
+"s": 0.84,
+"flip": 1,
+"pose": "stand",
+"emo": "joy",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"mood": {
+"smile": 0.7
+}
+}
+]
+},
+{
+"who": "kumara",
+"x": 687,
+"y": 571,
+"s": 0.84,
+"flip": -1,
+"pose": "namaste",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 2,
+"d": 0.6,
+"tilt": 0.04,
+"mood": {
+"smile": 0.5
+}
+}
+]
+},
+{
+"who": "kumara",
+"x": 780,
+"y": 552,
+"s": 0.8,
+"flip": -1,
+"pose": "stand",
+"emo": "joy",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 2,
+"d": 0.6,
+"mood": {
+"smile": 0.7
+}
+}
+]
+}
+],
+"fx": [
+{
+"t": "name",
+"s": "Kumaras",
+"x": 640,
+"y": 130,
+"size": 32,
+"c": 2,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "glow",
+"x": 640,
+"y": 330,
+"r": 280,
+"rgb": "255,236,200",
+"ga": 0.4,
+"par": 1.0
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#f4eef8",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 440,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 840,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 460,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 820,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"child",
+"sages",
+"Kumaras"
+],
+"vert": {
+"x": 640,
+"focus": "kumara"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 13.34,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.08,
+"x": 0,
+"y": -6,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2456b4",
+"#74aaea",
+"#ffe2b4",
+"#fff7e6"
+],
+"sx": 640,
+"sy": 200
+},
+"figs": [
+{
+"who": "brahma",
+"x": 640,
+"y": 489,
+"s": 0.95,
+"flip": 1,
+"emo": "calm",
+"talk": 0.7,
+"mood": {
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"pose": "open",
+"emo": "joy"
+},
+{
+"c": 2,
+"d": 0.6,
+"mood": {
+"smile": 0.7,
+"ly": 0.5
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "glow",
+"x": 640,
+"y": 560,
+"r": 260,
+"rgb": "200,255,190",
+"ga": 0.4,
+"par": 1.0,
+"c": 2,
+"d": 0.6
+}
+],
+"bg2": {
+"k": "vista",
+"sky": [
+"#2456b4",
+"#74aaea",
+"#ffe2b4",
+"#fff7e6"
+],
+"sx": 640,
+"sy": 220,
+"ridge": [
+"#a8c4e4",
+"#8ab4cc",
+"#6aa08a",
+"#4a8064"
+],
+"river": "#5ab8e8",
+"haze": "240,246,255"
+},
+"bgc": 1,
+"bgd": 1.0,
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef4fa",
+"items": [
+{
+"o": "mountain",
+"x": 500,
+"y": 470,
+"s": 1.0,
+"col": "#9ab4d4",
+"snow": false
+},
+{
+"o": "mountain",
+"x": 800,
+"y": 480,
+"s": 0.9,
+"col": "#9ab4d4",
+"snow": false
+},
+{
+"o": "cloud",
+"x": 560,
+"y": 220,
+"s": 1.2,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.25,
+"items": [
+{
+"o": "tree",
+"x": 450,
+"y": 640,
+"s": 0.7,
+"kind": "banyan",
+"col": "#3a8a4a"
+},
+{
+"o": "tree",
+"x": 840,
+"y": 640,
+"s": 0.7,
+"kind": "round",
+"col": "#3a8a4a"
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"help",
+"world",
+"living"
+],
+"vert": {
+"focus": "brahma"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 16.66,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.06,
+"x": 0,
+"y": -4,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#3a52b8",
+"#8aa4ec",
+"#f4dcf0",
+"#fff6ee"
+],
+"sx": 600,
+"sy": 200
+},
+"figs": [
+{
+"who": "kumara",
+"x": 495,
+"y": 492,
+"s": 0.72,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"pose": "namaste"
+},
+{
+"c": 1,
+"d": 0.5,
+"mood": {
+"turn": -0.4,
+"lx": -0.5
+}
+}
+]
+},
+{
+"who": "kumara",
+"x": 785,
+"y": 492,
+"s": 0.72,
+"flip": -1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"pose": "namaste"
+},
+{
+"c": 1,
+"d": 0.5,
+"mood": {
+"turn": 0.4,
+"lx": 0.5
+}
+}
+]
+},
+{
+"who": "kumara",
+"x": 575,
+"y": 610,
+"s": 0.95,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"pose": "namaste",
+"e": "spring"
+},
+{
+"c": 1,
+"d": 0.5,
+"tilt": -0.05,
+"mood": {
+"turn": -0.5,
+"lx": -0.6
+}
+}
+]
+},
+{
+"who": "kumara",
+"x": 705,
+"y": 610,
+"s": 0.95,
+"flip": -1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"pose": "namaste",
+"e": "spring"
+},
+{
+"c": 1,
+"d": 0.5,
+"tilt": 0.05,
+"mood": {
+"turn": 0.5,
+"lx": 0.6
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#f4eef8",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 440,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 840,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 460,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 820,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"folded",
+"no"
+],
+"vert": {
+"x": 640,
+"focus": "kumara"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 19.06,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#3a52b8",
+"#8aa4ec",
+"#f4dcf0",
+"#fff6ee"
+],
+"sx": 640,
+"sy": 200
+},
+"figs": [
+{
+"who": "kumara",
+"x": 640,
+"y": 360,
+"s": 1.15,
+"flip": 1,
+"head": true,
+"emo": "devotion",
+"talk": 0.6,
+"mood": {
+"smile": 0.6,
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"emo": "joy",
+"tilt": 0.06,
+"mood": {
+"smile": 0.9,
+"blink": 0.4,
+"ly": 0.3
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "glow",
+"x": 640,
+"y": 330,
+"r": 240,
+"rgb": "255,225,160",
+"ga": 0.45,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#f4eef8",
+"items": [
+{
+"o": "mountain",
+"x": 440,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 840,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 500,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 800,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+}
+]
+},
+"cues": [
+"grateful"
+],
+"vert": {
+"focus": "kumara"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 20.28,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 10,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": -10,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(80,160,200,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#3a52b8",
+"#8aa4ec",
+"#f4dcf0",
+"#fff6ee"
+],
+"sx": 640,
+"sy": 180
+},
+"figs": [
+{
+"who": "kumara",
+"x": 565,
+"y": 626,
+"s": 0.95,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"emo": "doubt"
+},
+{
+"c": 1,
+"d": 0.6,
+"pose": "open",
+"mood": {
+"ly": -0.5,
+"lx": 0.3
+}
+}
+]
+},
+{
+"who": "kumara",
+"x": 715,
+"y": 626,
+"s": 0.95,
+"flip": -1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"emo": "doubt"
+},
+{
+"c": 1,
+"d": 0.6,
+"pose": "open",
+"mood": {
+"ly": -0.5,
+"lx": -0.3
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "icon",
+"i": "cycle",
+"x": 640,
+"y": 150,
+"sc": 1.3,
+"par": 1.0,
+"c": 2,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#ece8f8",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 440,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 840,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 460,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 820,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"want",
+"bound",
+"life"
+],
+"vert": {
+"x": 640,
+"focus": "kumara"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 23.44,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.04,
+"x": 0,
+"y": 10,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 0,
+"y": -6,
+"r": 0
+}
+},
+"grade": "rgba(80,160,200,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#3a3aa8",
+"#8a7ae0",
+"#f0d4f4",
+"#fff4e6"
+],
+"sx": 640,
+"sy": 170
+},
+"figs": [
+{
+"who": "kumara",
+"x": 500,
+"y": 449,
+"s": 0.66,
+"flip": 1,
+"pose": "sitpray",
+"emo": "calm",
+"mood": {
+"blink": 1,
+"lx": 0.8
+}
+},
+{
+"who": "kumara",
+"x": 780,
+"y": 449,
+"s": 0.66,
+"flip": -1,
+"pose": "sitpray",
+"emo": "calm",
+"mood": {
+"blink": 1,
+"lx": 0.8
+}
+},
+{
+"who": "kumara",
+"x": 580,
+"y": 519,
+"s": 0.8,
+"flip": 1,
+"pose": "sitpray",
+"emo": "calm",
+"mood": {
+"blink": 1,
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"mood": {
+"blink": 1,
+"smile": 0.4
+}
+}
+]
+},
+{
+"who": "kumara",
+"x": 700,
+"y": 519,
+"s": 0.8,
+"flip": -1,
+"pose": "sitpray",
+"emo": "calm",
+"mood": {
+"blink": 1,
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"mood": {
+"blink": 1,
+"smile": 0.4
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "infinity",
+"x": 640,
+"y": 150,
+"par": 1.0,
+"c": 1,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#f0e8fa",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#a8a0d8"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#a8a0d8"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#fbf6ff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#fbf6ff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.25,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 560,
+"s": 1.1,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 820,
+"y": 570,
+"s": 1.0,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 460,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 820,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"meditate",
+"infinite"
+],
+"vert": {
+"x": 640,
+"focus": "kumara"
+}
+},
+{
+"beat": 1,
+"at": 25.92,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.08,
+"x": 0,
+"y": -6,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#3a52b8",
+"#8aa4ec",
+"#f4dcf0",
+"#fff6ee"
+],
+"sx": 700,
+"sy": 200
+},
+"figs": [
+{
+"who": "kumara",
+"x": 640,
+"y": 661,
+"s": 1.05,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"talk": 0.6,
+"mood": {
+"smile": 0.5,
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"pose": "plead",
+"emo": "devotion"
+},
+{
+"c": 2,
+"d": 0.6,
+"pose": "namaste",
+"emo": "joy",
+"mood": {
+"smile": 0.8
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "pfx",
+"k": "halo_ring",
+"x": 640,
+"y": 346,
+"w": 380,
+"alpha": 0.45,
+"blend": "lighter",
+"par": 1.0,
+"c": 1,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#f4eef8",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"asked",
+"never",
+"old"
+],
+"vert": {
+"focus": "kumara",
+"z": 1.1,
+"y": 0.42
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 28.78,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.04,
+"x": 0,
+"y": -14,
+"r": 0
+},
+"to": {
+"z": 1.04,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2456b4",
+"#74aaea",
+"#ffe2b4",
+"#fff7e6"
+],
+"sx": 700,
+"sy": 200
+},
+"figs": [
+{
+"who": "brahma",
+"x": 640,
+"y": 509,
+"s": 1.0,
+"flip": 1,
+"emo": "calm",
+"talk": 0.7,
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.5,
+"pose": "point",
+"emo": "anger",
+"e": "antic"
+},
+{
+"c": 1,
+"d": 0.7,
+"pose": "open",
+"emo": "sad",
+"tilt": -0.05,
+"mood": {
+"ly": 0.6
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef2fa",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"argued",
+"gave"
+],
+"vert": {
+"focus": "brahma"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 31.1,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2456b4",
+"#74aaea",
+"#ffe2b4",
+"#fff7e6"
+],
+"sx": 760,
+"sy": 200
+},
+"figs": [
+{
+"who": "brahma",
+"x": 470,
+"y": 507,
+"s": 0.85,
+"flip": 1,
+"emo": "sad",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 1,
+"d": 0.6,
+"mood": {
+"ly": 0.2
+}
+}
+]
+},
+{
+"who": "kumara",
+"x": 610,
+"y": 510,
+"s": 0.66,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"walkTo": {
+"x": 740,
+"c": 0,
+"d": 1.4,
+"sp": 1
+},
+"fd": 0.9,
+"fo": 1
+},
+{
+"who": "kumara",
+"x": 680,
+"y": 491,
+"s": 0.62,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"walkTo": {
+"x": 810,
+"c": 0,
+"d": 1.4,
+"sp": 1
+},
+"fd": 0.9,
+"fo": 1
+},
+{
+"who": "kumara",
+"x": 750,
+"y": 510,
+"s": 0.66,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"walkTo": {
+"x": 880,
+"c": 0,
+"d": 1.4,
+"sp": 1
+},
+"fd": 0.9,
+"fo": 1
+},
+{
+"who": "kumara",
+"x": 820,
+"y": 491,
+"s": 0.62,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"walkTo": {
+"x": 950,
+"c": 0,
+"d": 1.4,
+"sp": 1
+},
+"fd": 0.9,
+"fo": 1
+}
+],
+"fx": [],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef2fa",
+"items": [
+{
+"o": "mountain",
+"x": 500,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 860,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 560,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 820,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.25,
+"items": [
+{
+"o": "cloud",
+"x": 560,
+"y": 560,
+"s": 1.0,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 880,
+"y": 570,
+"s": 1.0,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 460,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 860,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"sons",
+"left"
+],
+"vert": {
+"x": [
+600,
+720
+],
+"focus": "kumara"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 32.4,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.1,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2456b4",
+"#74aaea",
+"#ffe2b4",
+"#fff7e6"
+],
+"sx": 640,
+"sy": 200
+},
+"figs": [
+{
+"who": "brahma",
+"x": 640,
+"y": 360,
+"s": 1.1,
+"flip": 1,
+"head": true,
+"emo": "sad",
+"mood": {
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.5,
+"emo": "rage",
+"e": "antic"
+}
+]
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "pfx",
+"k": "red_energy_pulse",
+"x": 640,
+"y": 330,
+"w": 420,
+"alpha": 0.55,
+"blend": "lighter",
+"par": 1.0,
+"c": 1,
+"d": 0.6
+}
+],
+"bg2": {
+"k": "cloudscape",
+"sky": [
+"#d84a24",
+"#f4843a",
+"#ffc46a",
+"#fff2d0"
+],
+"sx": 640,
+"sy": 200
+},
+"bgc": 0,
+"bgd": 0.8,
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef2fa",
+"items": [
+{
+"o": "mountain",
+"x": 440,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 840,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 500,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 800,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+}
+]
+},
+"cues": [
+"rage",
+"rose"
+],
+"vert": {
+"focus": "brahma"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 33.92,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.03,
+"x": 0,
+"y": -6,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#d84a24",
+"#f4843a",
+"#ffc46a",
+"#fff2d0"
+],
+"sx": 640,
+"sy": 170
+},
+"figs": [
+{
+"who": "rudra",
+"x": 640,
+"y": 330,
+"s": 0.45,
+"flip": 1,
+"pose": "raise",
+"emo": "rage",
+"mood": {
+"lx": -0.8
+},
+"ad": 0.7,
+"my": -40,
+"md": 2.4,
+"ac": 1,
+"mc": 1
+},
+{
+"who": "brahma",
+"x": 640,
+"y": 549,
+"s": 0.9,
+"flip": 1,
+"emo": "rage",
+"mood": {
+"lx": -0.8
+},
+"acts": [
+{
+"c": 1,
+"d": 0.4,
+"emo": "surprise",
+"mood": {
+"ly": -0.8
+}
+}
+]
+}
+],
+"fx": [
+{
+"t": "glow",
+"x": 640,
+"y": 354,
+"r": 120,
+"rgb": "255,200,120",
+"ga": 0.8,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "flash",
+"rgb": "255,236,200",
+"ga": 0.5,
+"w": 0.35,
+"c": 1,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "beam",
+"x": 640,
+"y": 354,
+"len": 560,
+"w": 40,
+"par": 1.0,
+"c": 1,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#fff0dc",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#e8a888"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#e8a888"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#fff4e0"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#fff4e0"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#fff4ec"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#fff4ec"
+}
+]
+}
+]
+},
+"cues": [
+"fiery",
+"burst"
+],
+"vert": {
+"x": 640,
+"focus": "brahma"
+},
+"shake": 3,
+"dx": 0
+},
+{
+"beat": 1,
+"at": 36.64,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.08,
+"x": 0,
+"y": -6,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#d84a24",
+"#f4843a",
+"#ffc46a",
+"#fff2d0"
+],
+"sx": 640,
+"sy": 180
+},
+"figs": [
+{
+"who": "rudra",
+"x": 640,
+"y": 639,
+"s": 1.0,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"pose": "lunge",
+"e": "spring"
+},
+{
+"c": 1,
+"d": 0.5,
+"pose": "stand",
+"emo": "rage"
+}
+],
+"my": 14,
+"md": 1.4,
+"mc": 0
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "beam",
+"x": 640,
+"y": 700,
+"len": 720,
+"w": 70,
+"par": 1.0
+},
+{
+"t": "glow",
+"x": 640,
+"y": 339,
+"r": 160,
+"rgb": "255,90,60",
+"ga": 0.45,
+"par": 1.0,
+"c": 2,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#fff0dc",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#e8a888"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#e8a888"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#fff4e0"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#fff4e0"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#fff4ec"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#fff4ec"
+}
+]
+}
+]
+},
+"cues": [
+"stepped",
+"blazing",
+"red"
+],
+"vert": {
+"focus": "rudra",
+"z": 1.08,
+"y": 0.42
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 39.52,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.05,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#c83c2a",
+"#f07a40",
+"#ffb860",
+"#ffeccc"
+],
+"sx": 640,
+"sy": 170
+},
+"figs": [
+{
+"who": "rudra",
+"x": 640,
+"y": 360,
+"s": 1.1,
+"flip": 1,
+"head": true,
+"emo": "rage",
+"talk": 0.9,
+"mood": {
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.4,
+"e": "antic",
+"mood": {
+"anger": 1,
+"mouth": 0.8
+}
+},
+{
+"c": 1,
+"d": 0.5,
+"tilt": 0.05,
+"mood": {
+"anger": 1,
+"mouth": 0.6,
+"ly": -0.2
+}
+}
+]
+}
+],
+"fx": [
+{
+"t": "shock",
+"x": 640,
+"y": 380,
+"rgb": "255,150,80",
+"max": 700,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#fff0dc",
+"items": [
+{
+"o": "mountain",
+"x": 440,
+"y": 500,
+"s": 1.0,
+"col": "#e8a888"
+},
+{
+"o": "mountain",
+"x": 840,
+"y": 510,
+"s": 0.85,
+"col": "#e8a888"
+},
+{
+"o": "cloud",
+"x": 500,
+"y": 230,
+"s": 1.3,
+"col": "#fff4e0"
+},
+{
+"o": "cloud",
+"x": 800,
+"y": 270,
+"s": 1.1,
+"col": "#fff4e0"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+}
+]
+}
+]
+},
+"cues": [
+"roared",
+"name"
+],
+"vert": {
+"focus": "rudra"
+},
+"shake": 4,
+"dx": 0
+},
+{
+"beat": 1,
+"at": 42.04,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.04,
+"x": 0,
+"y": 12,
+"r": 0
+},
+"to": {
+"z": 1.04,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2a56b4",
+"#8aa8e0",
+"#ffd0a0",
+"#fff2e0"
+],
+"sx": 780,
+"sy": 120
+},
+"figs": [
+{
+"who": "brahma",
+"x": 640,
+"y": 534,
+"s": 1.0,
+"flip": 1,
+"emo": "surprise",
+"mood": {
+"surp": 0.8,
+"ly": -0.7,
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"mood": {
+"surp": 1,
+"mouth": 0.4,
+"ly": -0.8
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "glow",
+"x": 800,
+"y": 90,
+"r": 320,
+"rgb": "255,160,80",
+"ga": 0.5,
+"par": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#fff0dc",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#e8a888"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#e8a888"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#fff4e0"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#fff4e0"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#f0d0a0",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#f0d0a0",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"awe"
+],
+"vert": {
+"focus": "brahma"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 44.02,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.04,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#d84a24",
+"#f4843a",
+"#ffc46a",
+"#fff2d0"
+],
+"sx": 640,
+"sy": 180
+},
+"figs": [
+{
+"who": "rudra",
+"x": 820,
+"y": 660,
+"s": 0.95,
+"flip": -1,
+"pose": "stand",
+"emo": "rage",
+"talk": 0.9,
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.5,
+"pose": "raise",
+"e": "antic",
+"mood": {
+"anger": 1,
+"mouth": 0.8
+}
+}
+]
+},
+{
+"who": "brahma",
+"x": 440,
+"y": 680,
+"s": 0.95,
+"flip": 1,
+"emo": "surprise",
+"mood": {
+"ly": -0.5,
+"lx": 0.8
+},
+"acts": [
+{
+"c": 1,
+"d": 0.5,
+"emo": "fear",
+"mood": {
+"ly": -0.6
+}
+}
+]
+}
+],
+"fx": [
+{
+"t": "shock",
+"x": 820,
+"y": 380,
+"rgb": "255,150,80",
+"max": 600,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#fff0dc",
+"items": [
+{
+"o": "mountain",
+"x": 320,
+"y": 500,
+"s": 1.0,
+"col": "#e8a888"
+},
+{
+"o": "mountain",
+"x": 940,
+"y": 510,
+"s": 0.85,
+"col": "#e8a888"
+},
+{
+"o": "cloud",
+"x": 380,
+"y": 230,
+"s": 1.3,
+"col": "#fff4e0"
+},
+{
+"o": "cloud",
+"x": 900,
+"y": 270,
+"s": 1.1,
+"col": "#fff4e0"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 250,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 1030,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 300,
+"y": 745,
+"s": 1.7,
+"col": "#fff4ec"
+},
+{
+"o": "cloud",
+"x": 980,
+"y": 748,
+"s": 1.6,
+"col": "#fff4ec"
+}
+]
+}
+]
+},
+"cues": [
+"roared",
+"Tell"
+],
+"vert": {
+"mode": "stack",
+"stack": [
+"rudra",
+"brahma"
+]
+},
+"shake": 2,
+"dx": 0
+},
+{
+"beat": 1,
+"at": 47.12,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.08,
+"x": 0,
+"y": -6,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2456b4",
+"#7aa8e8",
+"#ffdcb0",
+"#fff6e6"
+],
+"sx": 700,
+"sy": 200
+},
+"figs": [
+{
+"who": "brahma",
+"x": 640,
+"y": 541,
+"s": 1.0,
+"flip": 1,
+"emo": "doubt",
+"mood": {
+"ly": -0.6,
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"pose": "raise",
+"emo": "calm",
+"mood": {
+"ly": -0.7,
+"smile": 0.3
+}
+},
+{
+"c": 1,
+"d": 0.6,
+"mood": {
+"smile": 0.5,
+"ly": -0.4
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "pfx",
+"k": "halo_ring",
+"x": 640,
+"y": 346,
+"w": 360,
+"alpha": 0.45,
+"blend": "lighter",
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef2fa",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"remembered",
+"root"
+],
+"vert": {
+"focus": "brahma",
+"z": 1.1,
+"y": 0.42
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 48.96,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": -8,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 8,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#d84a24",
+"#f4843a",
+"#ffc46a",
+"#fff2d0"
+],
+"sx": 640,
+"sy": 240
+},
+"figs": [
+{
+"who": "rudra",
+"x": 640,
+"y": 646,
+"s": 0.9,
+"flip": 1,
+"pose": "stand",
+"emo": "anger",
+"mood": {
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.5,
+"emo": "rage"
+},
+{
+"c": 1,
+"d": 0.5,
+"mood": {
+"anger": 1,
+"mouth": 0.8
+}
+},
+{
+"c": 2,
+"d": 0.5,
+"emo": "anger",
+"mood": {
+"mouth": 0
+}
+}
+]
+}
+],
+"fx": [
+{
+"t": "text",
+"s": "red",
+"x": 540,
+"y": 95,
+"size": 46,
+"col": "#ff5a3a",
+"c": 0,
+"d": 0.6
+},
+{
+"t": "text",
+"s": "roaring",
+"x": 745,
+"y": 95,
+"size": 42,
+"col": "#fff0d8",
+"c": 1,
+"d": 0.6
+},
+{
+"t": "text",
+"s": "rud",
+"x": 640,
+"y": 170,
+"size": 70,
+"col": "#ffe08a",
+"glow": 1,
+"c": 2,
+"d": 0.6
+}
+],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#fff0dc",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#e8a888"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#e8a888"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#fff4e0"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#fff4e0"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#f4c890",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#fff4ec"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#fff4ec"
+}
+]
+}
+]
+},
+"cues": [
+"red",
+"roaring",
+"rud"
+],
+"vert": {
+"x": 640,
+"focus": "rudra"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 51.74,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.02,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2a56b4",
+"#8aa8e0",
+"#ffd4a8",
+"#fff4e4"
+],
+"sx": 760,
+"sy": 200
+},
+"figs": [
+{
+"who": "brahma",
+"x": 520,
+"y": 505,
+"s": 0.95,
+"flip": 1,
+"emo": "calm",
+"talk": 0.7,
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"pose": "raise",
+"emo": "joy"
+}
+]
+},
+{
+"who": "rudra",
+"x": 775,
+"y": 590,
+"s": 0.95,
+"flip": -1,
+"pose": "stand",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 1,
+"d": 0.8,
+"emo": "calm",
+"mood": {
+"smile": 0.2
+}
+}
+]
+}
+],
+"fx": [
+{
+"t": "name",
+"s": "Rudra",
+"x": 775,
+"y": 120,
+"size": 32,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "glow",
+"x": 775,
+"y": 400,
+"r": 200,
+"rgb": "255,220,170",
+"ga": 0.4,
+"par": 1.0,
+"c": 1,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef2fa",
+"items": [
+{
+"o": "mountain",
+"x": 480,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 840,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 540,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 800,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 390,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 910,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 440,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 880,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"Rudra",
+"name"
+],
+"vert": {
+"x": [
+540,
+760
+],
+"focus": "rudra"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 55.1,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.06,
+"x": 0,
+"y": 10,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 0,
+"y": -6,
+"r": 0
+}
+},
+"grade": "rgba(80,160,200,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2a4aa8",
+"#7a9ae8",
+"#d8e4fa",
+"#f6f8ff"
+],
+"sx": 640,
+"sy": 200
+},
+"figs": [
+{
+"who": "rudra",
+"x": 640,
+"y": 614,
+"s": 1.0,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": -0.8
+},
+"fd": 1.0,
+"fo": 0
+},
+{
+"who": "shiva",
+"x": 640,
+"y": 614,
+"s": 1.0,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"smile": 0.3,
+"lx": -0.8
+},
+"acts": [
+{
+"c": 1,
+"d": 0.6,
+"tilt": 0.03,
+"mood": {
+"smile": 0.5
+}
+}
+],
+"ad": 1.0,
+"ac": 0
+}
+],
+"fx": [
+{
+"t": "name",
+"s": "Mahadev",
+"x": 640,
+"y": 120,
+"size": 32,
+"c": 1,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "glow",
+"x": 640,
+"y": 330,
+"r": 260,
+"rgb": "190,215,255",
+"ga": 0.5,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef4fc",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#a8b8e0"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#a8b8e0"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#e8d8b0",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#e8d8b0",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"Shiva",
+"Mahadev"
+],
+"vert": {
+"focus": "shiva"
+}
+},
+{
+"beat": 1,
+"at": 58.4,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.05,
+"x": 0,
+"y": -4,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2456b4",
+"#74aaea",
+"#ffe2b4",
+"#fff7e6"
+],
+"sx": 640,
+"sy": 200
+},
+"figs": [
+{
+"who": "brahma",
+"x": 640,
+"y": 520,
+"s": 1.0,
+"flip": 1,
+"emo": "joy",
+"mood": {
+"smile": 0.6,
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.5,
+"pose": "open"
+}
+]
+}
+],
+"fx": [
+{
+"t": "name",
+"s": "Creator",
+"x": 640,
+"y": 120,
+"size": 32,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "glow",
+"x": 640,
+"y": 330,
+"r": 260,
+"rgb": "255,215,140",
+"ga": 0.5,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef2fa",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"created"
+],
+"vert": {
+"focus": "brahma"
+}
+},
+{
+"beat": 1,
+"at": 59.7,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 8,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": -8,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#1d4fae",
+"#5aa0e8",
+"#c4e4fa",
+"#fff6dc"
+],
+"sx": 640,
+"sy": 200
+},
+"figs": [
+{
+"who": "vishnu",
+"x": 640,
+"y": 619,
+"s": 1.0,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"smile": 0.7,
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.5,
+"pose": "raise",
+"emo": "joy"
+}
+]
+}
+],
+"fx": [
+{
+"t": "name",
+"s": "Preserver",
+"x": 640,
+"y": 120,
+"size": 32,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef2fa",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"preserved"
+],
+"vert": {
+"focus": "vishnu"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 60.88,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.04,
+"x": 0,
+"y": 14,
+"r": 0
+},
+"to": {
+"z": 1.04,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#4a3aa0",
+"#9a6ad0",
+"#f4a8a0",
+"#ffe8cc"
+],
+"sx": 640,
+"sy": 200
+},
+"figs": [
+{
+"who": "shiva",
+"x": 640,
+"y": 627,
+"s": 1.0,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"emo": "anger",
+"mood": {
+"anger": 0.5
+}
+}
+]
+}
+],
+"fx": [
+{
+"t": "glow",
+"x": 640,
+"y": 305,
+"r": 70,
+"rgb": "255,120,80",
+"ga": 0.6,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "name",
+"s": "Destroyer",
+"x": 640,
+"y": 120,
+"size": 32,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#f4e8f4",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#b0a0d0"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#b0a0d0"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#fff4f4"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#fff4f4"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#e0c0a8",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#e0c0a8",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"destroyer"
+],
+"vert": {
+"focus": "shiva"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 62.98,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.02,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2456b4",
+"#74aaea",
+"#ffe2b4",
+"#fff7e6"
+],
+"sx": 700,
+"sy": 200
+},
+"figs": [
+{
+"who": "brahma",
+"x": 520,
+"y": 505,
+"s": 0.95,
+"flip": 1,
+"emo": "calm",
+"talk": 0.7,
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"pose": "plead",
+"emo": "devotion"
+}
+]
+},
+{
+"who": "shiva",
+"x": 775,
+"y": 590,
+"s": 0.95,
+"flip": -1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 1,
+"d": 0.6,
+"tilt": 0.05,
+"mood": {
+"smile": 0.3
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef2fa",
+"items": [
+{
+"o": "mountain",
+"x": 480,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 840,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 540,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 800,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 390,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 910,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 440,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 880,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"help",
+"creation"
+],
+"vert": {
+"x": [
+540,
+760
+],
+"focus": "shiva"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 65.26,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": -14,
+"r": 0
+},
+"to": {
+"z": 1.04,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(80,160,200,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2a4aa8",
+"#7a9ae8",
+"#d8e4fa",
+"#f6f8ff"
+],
+"sx": 700,
+"sy": 200
+},
+"figs": [
+{
+"who": "rudra",
+"x": 760,
+"y": 429,
+"s": 0.62,
+"flip": -1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"ad": 0.8,
+"a": 0.85,
+"ac": 2
+},
+{
+"who": "shiva",
+"x": 610,
+"y": 621,
+"s": 1.0,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"pose": "namaste",
+"tilt": 0.05,
+"mood": {
+"smile": 0.4
+}
+},
+{
+"c": 1,
+"d": 0.6,
+"pose": "open"
+}
+]
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "glow",
+"x": 760,
+"y": 305,
+"r": 160,
+"rgb": "255,200,140",
+"ga": 0.45,
+"par": 1.0,
+"c": 2,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef4fc",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#a8b8e0"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#a8b8e0"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#e8d8b0",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#e8d8b0",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"agreed",
+"making",
+"beings"
+],
+"vert": {
+"focus": "shiva"
+}
+},
+{
+"beat": 1,
+"at": 67.8,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.06,
+"x": 0,
+"y": -6,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(80,160,200,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2a4aa8",
+"#7a9ae8",
+"#d8e4fa",
+"#f6f8ff"
+],
+"sx": 640,
+"sy": 200
+},
+"figs": [
+{
+"who": "rudra",
+"x": 495,
+"y": 420,
+"s": 0.6,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"ad": 0.6,
+"ac": 0
+},
+{
+"who": "rudra",
+"x": 785,
+"y": 420,
+"s": 0.6,
+"flip": -1,
+"pose": "namaste",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"ad": 0.6,
+"ac": 0
+},
+{
+"who": "rudra",
+"x": 530,
+"y": 499,
+"s": 0.7,
+"flip": 1,
+"pose": "namaste",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"ad": 0.6,
+"ac": 1
+},
+{
+"who": "rudra",
+"x": 750,
+"y": 499,
+"s": 0.7,
+"flip": -1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"ad": 0.6,
+"ac": 1
+},
+{
+"who": "shiva",
+"x": 640,
+"y": 602,
+"s": 0.88,
+"flip": 1,
+"pose": "open",
+"emo": "calm",
+"mood": {
+"smile": 0.4,
+"lx": -0.8
+},
+"acts": [
+{
+"c": 2,
+"d": 0.6,
+"emo": "joy",
+"mood": {
+"smile": 0.6
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "pfx",
+"k": "halo_ring",
+"x": 640,
+"y": 300,
+"w": 560,
+"alpha": 0.45,
+"blend": "lighter",
+"par": 1.0,
+"c": 2,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef4fc",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#a8b8e0"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#a8b8e0"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.25,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 560,
+"s": 1.1,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 820,
+"y": 570,
+"s": 1.0,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"copies",
+"himself",
+"immortal"
+],
+"vert": {
+"x": 640,
+"focus": "shiva"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 71.46,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2456b4",
+"#74aaea",
+"#ffe2b4",
+"#fff7e6"
+],
+"sx": 760,
+"sy": 160
+},
+"figs": [
+{
+"who": "rudra",
+"x": 640,
+"y": 400,
+"s": 0.36,
+"flip": 1,
+"pose": "namaste",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "rudra",
+"x": 560,
+"y": 400,
+"s": 0.36,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "rudra",
+"x": 720,
+"y": 400,
+"s": 0.36,
+"flip": -1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": -0.8
+}
+},
+{
+"who": "rudra",
+"x": 500,
+"y": 452,
+"s": 0.42,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "rudra",
+"x": 593,
+"y": 452,
+"s": 0.42,
+"flip": 1,
+"pose": "namaste",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "rudra",
+"x": 687,
+"y": 452,
+"s": 0.42,
+"flip": -1,
+"pose": "namaste",
+"emo": "calm",
+"mood": {
+"lx": -0.8
+}
+},
+{
+"who": "rudra",
+"x": 780,
+"y": 452,
+"s": 0.42,
+"flip": -1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": -0.8
+}
+},
+{
+"who": "rudra",
+"x": 505,
+"y": 505,
+"s": 0.48,
+"flip": 1,
+"pose": "namaste",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "rudra",
+"x": 595,
+"y": 505,
+"s": 0.48,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "rudra",
+"x": 685,
+"y": 505,
+"s": 0.48,
+"flip": -1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": -0.8
+}
+},
+{
+"who": "rudra",
+"x": 775,
+"y": 505,
+"s": 0.48,
+"flip": -1,
+"pose": "namaste",
+"emo": "calm",
+"mood": {
+"lx": -0.8
+}
+},
+{
+"who": "brahma",
+"x": 1060,
+"y": 640,
+"s": 0.85,
+"flip": -1,
+"emo": "surprise",
+"mood": {
+"surp": 0.8,
+"lx": 0.8
+},
+"acts": [
+{
+"c": 1,
+"d": 0.6,
+"mood": {
+"surp": 1,
+"mouth": 0.3
+}
+}
+]
+}
+],
+"fx": [
+{
+"t": "name",
+"s": "Eleven Rudras",
+"x": 640,
+"y": 250,
+"size": 26,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef2fa",
+"items": [
+{
+"o": "mountain",
+"x": 360,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 940,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 420,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 900,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.25,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 360,
+"s": 1.2,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 820,
+"y": 370,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 300,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 1000,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"Rudras",
+"Brahma"
+],
+"vert": {
+"mode": "stack",
+"stack": [
+"rudra",
+"brahma"
+],
+"h": 430
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 73.84,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.04,
+"x": 0,
+"y": -14,
+"r": 0
+},
+"to": {
+"z": 1.04,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(255,190,120,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2456b4",
+"#74aaea",
+"#ffe2b4",
+"#fff7e6"
+],
+"sx": 640,
+"sy": 160
+},
+"figs": [
+{
+"who": "brahma",
+"x": 640,
+"y": 530,
+"s": 1.0,
+"flip": 1,
+"emo": "doubt",
+"talk": 0.7,
+"mood": {
+"lx": 0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"pose": "open"
+},
+{
+"c": 3,
+"d": 0.6,
+"pose": "plead",
+"emo": "calm"
+}
+]
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "icon",
+"i": "cycle",
+"x": 640,
+"y": 130,
+"sc": 1.2,
+"par": 1.0,
+"c": 1,
+"d": 0.6
+},
+{
+"t": "glow",
+"x": 640,
+"y": 130,
+"r": 180,
+"rgb": "255,230,170",
+"ga": 0.5,
+"par": 1.0,
+"c": 2,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef2fa",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#9aaad8"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#9aaad8"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#ecc878",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"mortals",
+"die",
+"born",
+"again"
+],
+"vert": {
+"focus": "brahma"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 78.12,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.04,
+"x": -8,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.04,
+"x": 8,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(80,160,200,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2a4aa8",
+"#7a9ae8",
+"#d8e4fa",
+"#f6f8ff"
+],
+"sx": 600,
+"sy": 200
+},
+"figs": [
+{
+"who": "rudra",
+"x": 520,
+"y": 424,
+"s": 0.6,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"a": 0.5
+},
+{
+"who": "rudra",
+"x": 770,
+"y": 424,
+"s": 0.6,
+"flip": -1,
+"pose": "namaste",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"a": 0.5
+},
+{
+"who": "shiva",
+"x": 640,
+"y": 634,
+"s": 1.0,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"talk": 0.6,
+"mood": {
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"pose": "open"
+},
+{
+"c": 1,
+"d": 0.6,
+"tilt": -0.04,
+"mood": {
+"blink": 0.4,
+"smile": 0.2
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.55,
+"haze": "#eef4fc",
+"items": [
+{
+"o": "mountain",
+"x": 460,
+"y": 500,
+"s": 1.0,
+"col": "#a8b8e0"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 510,
+"s": 0.85,
+"col": "#a8b8e0"
+},
+{
+"o": "cloud",
+"x": 520,
+"y": 230,
+"s": 1.3,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 780,
+"y": 270,
+"s": 1.1,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "pillar",
+"x": 450,
+"y": 700,
+"s": 1.0,
+"col": "#e8d8b0",
+"h": 520
+},
+{
+"o": "pillar",
+"x": 830,
+"y": 700,
+"s": 1.0,
+"col": "#e8d8b0",
+"h": 520
+}
+]
+},
+{
+"d": "near",
+"dark": 0.1,
+"blur": 2,
+"items": [
+{
+"o": "cloud",
+"x": 470,
+"y": 745,
+"s": 1.7,
+"col": "#ffffff"
+},
+{
+"o": "cloud",
+"x": 810,
+"y": 748,
+"s": 1.6,
+"col": "#ffffff"
+}
+]
+}
+]
+},
+"cues": [
+"only",
+"immortals"
+],
+"vert": {
+"focus": "shiva"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 80.74,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.08,
+"x": 0,
+"y": -6,
+"r": 0
+}
+},
+"grade": "rgba(80,160,200,0.16)",
+"sc": {
+"bg": {
+"k": "cloudscape",
+"sky": [
+"#2a4aa8",
+"#7a9ae8",
+"#d8e4fa",
+"#f6f8ff"
+],
+"sx": 640,
+"sy": 200
+},
+"figs": [
+{
+"who": "shiva",
+"x": 640,
+"y": 639,
+"s": 1.0,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"talk": 0.5,
+"mood": {
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"mood": {
+"ly": 0.4
+}
+},
+{
+"c": 1,
+"d": 0.7,
+"pose": "namaste",
+"mood": {
+"blink": 1,
+"smile": 0.3
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [],
+"bg2": {
+"k": "vista",
+"sky": [
+"#2a6ad0",
+"#7ab8f0",
+"#dcecfa",
+"#f8fbff"
+],
+"sx": 700,
+"sy": 220,
+"ridge": [
+"#c8daf0",
+"#a8c0e0",
+"#8aa4cc",
+"#7088b4"
+],
+"haze": "240,246,255"
+},
+"bgc": 1,
+"bgd": 1.0,
+"layers": [
+{
+"d": "far",
+"fog": 0.5,
+"haze": "#eef4fc",
+"items": [
+{
+"o": "mountain",
+"x": 500,
+"y": 470,
+"s": 1.2,
+"col": "#b8c8e4"
+},
+{
+"o": "mountain",
+"x": 800,
+"y": 480,
+"s": 1.0,
+"col": "#b8c8e4"
+},
+{
+"o": "cloud",
+"x": 560,
+"y": 230,
+"s": 1.0,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "tree",
+"x": 450,
+"y": 610,
+"s": 0.8,
+"kind": "pine",
+"col": "#2a6a5a"
+},
+{
+"o": "tree",
+"x": 840,
+"y": 615,
+"s": 0.75,
+"kind": "pine",
+"col": "#2a6a5a"
+},
+{
+"o": "rock",
+"x": 520,
+"y": 650,
+"s": 1.0,
+"col": "#dce4f2"
+},
+{
+"o": "rock",
+"x": 760,
+"y": 655,
+"s": 0.9,
+"col": "#dce4f2"
+}
+]
+},
+{
+"d": "near",
+"dark": 0.3,
+"items": [
+{
+"o": "rock",
+"x": 450,
+"y": 752,
+"s": 1.6,
+"col": "#c8d4ec"
+},
+{
+"o": "rock",
+"x": 830,
+"y": 755,
+"s": 1.5,
+"col": "#c8d4ec"
+}
+]
+}
+]
+},
+"cues": [
+"spoiled",
+"meditate"
+],
+"vert": {
+"focus": "shiva",
+"z": 1.08,
+"y": 0.42
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 83.4,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(80,160,200,0.16)",
+"sc": {
+"bg": {
+"k": "vista",
+"sky": [
+"#2a6ad0",
+"#7ab8f0",
+"#dcecfa",
+"#f8fbff"
+],
+"sx": 760,
+"sy": 220,
+"ridge": [
+"#c8daf0",
+"#a8c0e0",
+"#8aa4cc",
+"#7088b4"
+],
+"haze": "240,246,255"
+},
+"figs": [
+{
+"who": "shiva",
+"x": 600,
+"y": 581,
+"s": 0.85,
+"flip": 1,
+"pose": "stand",
+"emo": "calm",
+"mood": {
+"lx": 0.8
+},
+"walkTo": {
+"x": 740,
+"c": 0,
+"d": 1.3,
+"sp": 1
+},
+"fd": 1.0,
+"fo": 1
+}
+],
+"fx": [
+{
+"t": "pfx",
+"k": "mist_wisps",
+"x": 720,
+"y": 520,
+"w": 360,
+"alpha": 0.6,
+"par": 1.0,
+"c": 1,
+"d": 0.6
+}
+],
+"fxb": [],
+"layers": [
+{
+"d": "far",
+"fog": 0.5,
+"haze": "#eef4fc",
+"items": [
+{
+"o": "mountain",
+"x": 520,
+"y": 470,
+"s": 1.2,
+"col": "#b8c8e4"
+},
+{
+"o": "mountain",
+"x": 820,
+"y": 480,
+"s": 1.0,
+"col": "#b8c8e4"
+},
+{
+"o": "cloud",
+"x": 580,
+"y": 230,
+"s": 1.0,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "tree",
+"x": 440,
+"y": 610,
+"s": 0.8,
+"kind": "pine",
+"col": "#2a6a5a"
+},
+{
+"o": "tree",
+"x": 880,
+"y": 615,
+"s": 0.75,
+"kind": "pine",
+"col": "#2a6a5a"
+},
+{
+"o": "rock",
+"x": 510,
+"y": 650,
+"s": 1.0,
+"col": "#dce4f2"
+},
+{
+"o": "rock",
+"x": 800,
+"y": 655,
+"s": 0.9,
+"col": "#dce4f2"
+}
+]
+},
+{
+"d": "near",
+"dark": 0.3,
+"items": [
+{
+"o": "rock",
+"x": 450,
+"y": 752,
+"s": 1.6,
+"col": "#c8d4ec"
+},
+{
+"o": "rock",
+"x": 860,
+"y": 755,
+"s": 1.5,
+"col": "#c8d4ec"
+}
+]
+}
+]
+},
+"cues": [
+"Then",
+"left"
+],
+"vert": {
+"x": [
+600,
+700
+],
+"focus": "shiva"
+},
+"tr": "wipe"
+},
+{
+"beat": 1,
+"at": 84.64,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.1,
+"x": 0,
+"y": -8,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": 0,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(80,160,200,0.16)",
+"sc": {
+"bg": {
+"k": "vista",
+"sky": [
+"#2a6ad0",
+"#7ab8f0",
+"#dcecfa",
+"#f8fbff"
+],
+"sx": 640,
+"sy": 200,
+"ridge": [
+"#c8daf0",
+"#a8c0e0",
+"#8aa4cc",
+"#7088b4"
+],
+"haze": "240,246,255"
+},
+"figs": [
+{
+"who": "shiva",
+"x": 640,
+"y": 543,
+"s": 1.05,
+"flip": 1,
+"pose": "sitpray",
+"emo": "calm",
+"mood": {
+"blink": 1,
+"smile": 0.3,
+"lx": -0.8
+},
+"acts": [
+{
+"c": 0,
+"d": 0.6,
+"tilt": 0.03,
+"mood": {
+"blink": 1,
+"smile": 0.2
+}
+}
+]
+}
+],
+"fx": [],
+"fxb": [
+{
+"t": "glow",
+"x": 640,
+"y": 338,
+"r": 260,
+"rgb": "255,170,100",
+"ga": 0.4,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "halo_ring",
+"x": 640,
+"y": 338,
+"w": 460,
+"alpha": 0.45,
+"blend": "lighter",
+"par": 1.0,
+"c": 1,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.5,
+"haze": "#eef4fc",
+"items": [
+{
+"o": "mountain",
+"x": 500,
+"y": 470,
+"s": 1.2,
+"col": "#b8c8e4"
+},
+{
+"o": "mountain",
+"x": 800,
+"y": 480,
+"s": 1.0,
+"col": "#b8c8e4"
+},
+{
+"o": "cloud",
+"x": 560,
+"y": 230,
+"s": 1.0,
+"col": "#ffffff"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.2,
+"items": [
+{
+"o": "tree",
+"x": 450,
+"y": 610,
+"s": 0.8,
+"kind": "pine",
+"col": "#2a6a5a"
+},
+{
+"o": "tree",
+"x": 840,
+"y": 615,
+"s": 0.75,
+"kind": "pine",
+"col": "#2a6a5a"
+},
+{
+"o": "rock",
+"x": 520,
+"y": 650,
+"s": 1.0,
+"col": "#dce4f2"
+},
+{
+"o": "rock",
+"x": 760,
+"y": 655,
+"s": 0.9,
+"col": "#dce4f2"
+}
+]
+},
+{
+"d": "near",
+"dark": 0.3,
+"items": [
+{
+"o": "rock",
+"x": 450,
+"y": 752,
+"s": 1.6,
+"col": "#c8d4ec"
+},
+{
+"o": "rock",
+"x": 830,
+"y": 755,
+"s": 1.5,
+"col": "#c8d4ec"
+}
+]
+}
+]
+},
+"cues": [
+"anger",
+"never"
+],
+"vert": {
+"focus": "shiva"
+}
+}
+]

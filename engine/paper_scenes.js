@@ -245,7 +245,18 @@ const OBJ={
   ctx.save();ctx.strokeStyle=FOGC('rgba(110,60,10,.45)',o);ctx.lineWidth=1.3*s;for(let i=1;i<14;i++){const u=i/14,bx=L-ov+u*(w+2*ov),by=top+10*s+Math.sin(u*PI)*14*s;ctx.beginPath();ctx.moveTo(bx,by);ctx.lineTo(x+(u-.5)*w*.16+sw,top-rh+6*s);ctx.stroke()}ctx.restore();
   cutP(()=>{ctx.moveTo(L-ov,top+10*s);ctx.quadraticCurveTo(x,top+26*s,L+w+ov,top+10*s);ctx.lineTo(L+w+ov,top+18*s);ctx.quadraticCurveTo(x,top+36*s,L-ov,top+18*s);ctx.closePath()},FOGC(shd(rf,.75),o),{sh:0,lw:1});
   if(o.toran!==false){ctx.strokeStyle=FOGC('#6a4a20',o);ctx.lineWidth=1.4*s;ctx.beginPath();ctx.moveTo(dx-dw-10*s,dt-dw*.2-6*s);ctx.quadraticCurveTo(dx,dt+4*s,dx+dw+10*s,dt-dw*.2-6*s);ctx.stroke();
-   for(let i=0;i<7;i++){const u=i/6,lx=dx-dw-10*s+u*(2*dw+20*s),ly=dt-dw*.2-6*s+Math.sin(u*PI)*9*s;cutP(()=>{ctx.moveTo(lx-4*s,ly);ctx.lineTo(lx,ly+13*s);ctx.lineTo(lx+4*s,ly);ctx.closePath()},FOGC(i%2?'#3a8a3a':'#f0a020',o),{sh:0,lw:.8})}}}
+   for(let i=0;i<7;i++){const u=i/6,lx=dx-dw-10*s+u*(2*dw+20*s),ly=dt-dw*.2-6*s+Math.sin(u*PI)*9*s;cutP(()=>{ctx.moveTo(lx-4*s,ly);ctx.lineTo(lx,ly+13*s);ctx.lineTo(lx+4*s,ly);ctx.closePath()},FOGC(i%2?'#3a8a3a':'#f0a020',o),{sh:0,lw:.8})}}},
+ // reels (reel 7): dusty road from (x,y) (half-width o.w) narrowing to the horizon point (o.ex,o.ey) (half-width o.ew); o.bend curves it,
+ // o.col sand colour, o.glow (rgb string) = a path of light, o.plain = no ruts/stones but ripple lines (a river: col blue); ruts + edge stones fade with distance
+ road(x,y,s,t,o){const w=(o.w||200)*s,ex=o.ex??x+120,ey=o.ey??y-260,ew=(o.ew||5)*s,bd=(o.bend||0)*s,c=o.col||'#ecd29a',mx=(x+ex)/2+bd,my=(y+ey)/2;
+  const side=k=>{ctx.moveTo(x+k*w,y+300);ctx.lineTo(x+k*w,y);ctx.quadraticCurveTo(mx+k*(w+ew)*.42,my,ex+k*ew,ey)};
+  cutP(()=>{side(-1);ctx.lineTo(ex+ew,ey);ctx.quadraticCurveTo(mx+(w+ew)*.42,my,x+w,y);ctx.lineTo(x+w,y+300);ctx.closePath()},vg(ey,y+60,[FOGC(mix(c,'#fff6e0',.45),o),FOGC(c,o),FOGC(shd(c,.86),o)]),Object.assign(fogO(o),{blur:4,sy:2}));
+  if(o.glow){ctx.save();ctx.globalCompositeOperation='lighter';ctx.beginPath();side(-1);ctx.lineTo(ex+ew,ey);ctx.quadraticCurveTo(mx+(w+ew)*.42,my,x+w,y);ctx.lineTo(x+w,y+300);ctx.closePath();
+   const g=ctx.createLinearGradient(0,ey,0,y);g.addColorStop(0,`rgba(${o.glow},.55)`);g.addColorStop(1,`rgba(${o.glow},.08)`);ctx.fillStyle=g;ctx.fill();ctx.restore()}
+  if(o.plain){ctx.save();ctx.strokeStyle=`rgba(255,255,255,${.45*(1-(o.fog||0))})`;ctx.lineWidth=2*s;for(let i=0;i<9;i++){const u=.08+i*.1,qx=(1-u)*(1-u)*x+2*u*(1-u)*mx+u*u*ex,qy=(1-u)*(1-u)*y+2*u*(1-u)*my+u*u*ey,hw=((1-u)*w+u*ew)*.5;ctx.beginPath();ctx.moveTo(qx-hw+Math.sin(t+i)*hw*.3,qy);ctx.lineTo(qx+hw*.2+Math.sin(t+i)*hw*.3,qy);ctx.stroke()}ctx.restore();return}
+  ctx.save();ctx.strokeStyle=FOGC(shd(c,.72),o);ctx.globalAlpha*=.5;ctx.lineWidth=2*s;[-.35,.35].forEach(k=>{ctx.beginPath();ctx.moveTo(x+k*w,y+60);ctx.quadraticCurveTo(mx+k*(w+ew)*.2,my,ex+k*ew*.5,ey+4);ctx.stroke()});ctx.restore();
+  const r=rng(o.seed||Math.round(x+ex));for(let i=0;i<18;i++){const u=r(),k=r()<.5?-1:1,qx=(1-u)*(1-u)*(x+k*w)+2*u*(1-u)*(mx+k*(w+ew)*.42)+u*u*(ex+k*ew),qy=(1-u)*(1-u)*y+2*u*(1-u)*my+u*u*ey,rs=(1-u*.85)*7*s;
+   cutP(()=>ctx.ellipse(qx+k*rs*.6,qy,rs*1.3,rs*.8,0,0,TAU),FOGC(i%3?'#b8a488':'#9a8a76',o),{sh:0,lw:.8})}}
 };
 const LDEF={far:{par:.2,fog:.55,blur:1.2,dark:0},mid:{par:.55,fog:.22,blur:0,dark:0},near:{par:1.35,fog:0,blur:1.6,dark:.55}};
 /* layered scenery: L = [{d:'far'|'mid'|'near', par?, fog?, haze?, blur?, dark?, items:[{o:'tree'|'rock'|'cloud'|'mountain'|'pillar'|'wall'|'shrub'|'hill', x, y, s, ...object options}]}]
