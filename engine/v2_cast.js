@@ -484,7 +484,7 @@ function brahmaHead(c,x,y,t,s){c.save();c.translate(x,y-62*s);c.scale(s,s);PK.gl
   drawHead(c,0,0,{expr:'closed',k:0,S:BRAHMA,t:t,mood:{smile:.05,sad:.3}});PK.hairCap(c,'#e6e0da');PK.jataMukuta(c);c.restore()}
 // Kapali: Shiva wandering with the skull (default) or Brahma's head (prop:'head') stuck to his LEFT hand
 function drawKapali(c,o,t,kk,face){const S=CAST.shiva,P=shivaPose(o.pose);drawHuman(c,S,P,{t:t,k:kk,expr:face==='closed'?'closed':'calm',mood:o.mood,tilt:o.tilt});
-  const it=o.prop||'skull';if(it==='none')return;c.save();leanAt(c,P);const h=handAt(S,P,t,-1);if(it==='head')brahmaHead(c,h[0],h[1]+4,t,.62);else kapala(c,h[0],h[1]+2,1.25);c.restore()}
+  const it=o.prop||'skull';if(it==='none')return;c.save();leanAt(c,P);const h=handAt(S,P,t,-1);if(it==='head')brahmaHead(c,h[0],h[1]+4,t,.74);else kapala(c,h[0],h[1]+2,1.45);c.restore()}
 function drawKama(c,o,t,kk,face){const S=CAST.kama,P=poseOf(o.pose,'kama');drawHuman(c,S,P,{t:t,k:o.k!=null?o.k:kk,expr:face,mood:o.mood,tilt:o.tilt,turn:o.mood&&o.mood.turn!=null?o.mood.turn:undefined});
   c.save();leanAt(c,P);const h=handAt(S,P,t,-1);kamaBow(c,h[0]-2,h[1]-4);c.restore()}
 // Brahma with the FIFTH head on top (Reel 2): seated or standing; hd:{l,r,b,t} still grows the heads one by one (default: all five)
@@ -583,7 +583,7 @@ const XFIG={kapali:drawKapali,kama:drawKama,brahma5:drawBrahma5};
 /* ---------- engine glue ---------- */
 const V2NAMES=new Set(['narada','kumara','jaya','vijaya','villager','villager_w','prasuti','sati','diti','danu','asikli','kashyapa','indra','surya','chandra','agni','vayu','hiranyaksha','hiranyakashipu','ravana','harihara','shiva','vishnu','hayagriva','daksha','manu','adishakti','brahmi','madhu','kaitabha','ardha','brahma','vishnu_rest','rudra','kapali','brahma5','kama','prakriti','swaha','nidra','kanya','balak','balika','deva_thin','deva_thin2','indra_thin','haryashva','shavalashva','narada_g','narada_old','cow','mare','doe','duck',...[0,1,2,3,4,5,6].map(i=>'rishi'+i)]);
 const SCALE={shiva:.62,kumara:.5,default:.62};
-Object.assign(SCALE,{balak:.5,balika:.5});
+Object.assign(SCALE,{balak:.42,balika:.42});
 const shivaPose=(p)=>{const r=shivaPose0(p);if(r.pointL==null)r.pointL=false;return r};
 const shivaPose0=(p)=>{if(p&&typeof p==='object'){const q=JSON.parse(JSON.stringify(p));if(!q.tri)q.tri=Object.assign({},POSES.calm.tri);return q}
   if(p==='point')return Object.assign(JSON.parse(JSON.stringify(POSES.calm)),{hL:[-182,-412],pointL:true});

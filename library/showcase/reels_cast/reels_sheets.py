@@ -45,7 +45,7 @@ FRAMES={
    ('Kamadeva blames',F('kama',520,660,.76,pose='point',emo='anger')),('Agni: "my fault"',F('agni',700,660,.76,pose='namaste',emo='shame')),
    ('Prakriti',F('prakriti',880,660,.76,emo='calm')),('Swaha',F('swaha',1050,660,.76,pose='namaste',emo='joy')),('Vishnu',F('vishnu',1210,660,.7,emo='calm'))]),
  # ---------- Reel 4 ----------
- 'maya_family':dict(title='Reel 4 - Narada\'s maya: the young woman, the family, the old householder',bg={'k':'vista','fore':False},figs=[
+ 'maya_family':dict(title='Reel 4 - Narada\'s maya: the young woman, the family, the old householder',figs=[
    ('Narada (veena)',F('narada',110,660,.76,emo='calm')),('the young woman at the river',F('kanya',290,660,.76,emo='joy',mood={'lx':-.6})),
    ('Narada, householder',F('narada_g',470,660,.76,emo='joy')),('children',F('balak',610,660,.76,emo='joy')),('',F('balika',700,660,.76,emo='joy',flip=-1)),
    ('Narada, grandfather',F('narada_old',880,660,.76,emo='calm',pose='open')),('grandchildren',F('balika',1010,660,.62,emo='joy')),('',F('balak',1090,660,.62,emo='surprise',flip=-1)),
@@ -56,7 +56,7 @@ FRAMES={
    ('Hayagriva',F('hayagriva',900,660,.8,emo='calm')),('Madhu',F('madhu',1060,660,.8,emo='rage',pose='lunge')),('Kaitabha',F('kaitabha',1210,660,.8,emo='anger',flip=-1)),
    ('Nidra close-up',F('nidra',560,170,.36,head=True,mood={'blink':.5,'smile':.45}))]),
  # ---------- Reel 7 ----------
- 'sons_crowd':dict(title='Reel 7 - Daksha\'s sons: Haryashvas (green) and Shavalashvas (violet) - crowd rigs',bg={'k':'vista','fore':False},figs=[('',f) for f in
+ 'sons_crowd':dict(title='Reel 7 - Daksha\'s sons: Haryashvas (green) and Shavalashvas (violet) - crowd rigs',figs=[('',f) for f in
    [F('haryashva',70+i*84,430+(i%2)*18,.4,flip=1 if i%3 else -1,emo='doubt' if i%2 else 'calm') for i in range(8)]+
    [F('shavalashva',700+i*84,430+(i%2)*18,.4,flip=-1 if i%3 else 1,emo='doubt' if i%2 else 'calm') for i in range(7)]]+[
    ('Daksha roars',F('daksha',200,690,.74,pose='point',emo='rage')),('Asikli',F('asikli',380,690,.74,emo='sad')),
