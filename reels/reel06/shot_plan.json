@@ -222,10 +222,10 @@
     {
      "who": "villager",
      "x": 575,
-     "y": 509,
+     "y": 614,
      "s": 1.0,
      "flip": 1,
-     "pose": "sitpray",
+     "pose": "namaste",
      "emo": "devotion",
      "talk": 0.6,
      "mood": {
@@ -289,7 +289,7 @@
      "x": 650,
      "y": 118,
      "size": 30,
-     "c": 1,
+     "c": 0,
      "d": 0.6
     }
    ],
@@ -424,7 +424,7 @@
      ]
     }
    ],
-   "note": "medium dolly_right: A village priest sits at the altar and pours an offering into the fire; as he says the last word the flames flare gold and the name 'Swaha' appears above.",
+   "note": "medium dolly_right: A village man stands at the altar and pours an offering into the fire; as he says the last word the flames flare gold and the name 'Swaha' appears above.",
    "vert": {
     "x": [
      630,
@@ -458,7 +458,7 @@
     {
      "who": "deva_thin",
      "x": 640,
-     "y": 483,
+     "y": 492,
      "s": 0.85,
      "flip": 1,
      "pose": "sit",
@@ -479,7 +479,7 @@
     {
      "who": "deva_thin2",
      "x": 540,
-     "y": 429,
+     "y": 440,
      "s": 0.72,
      "flip": 1,
      "pose": "sit",
@@ -492,7 +492,7 @@
     {
      "who": "indra_thin",
      "x": 745,
-     "y": 429,
+     "y": 440,
      "s": 0.72,
      "flip": -1,
      "pose": "sit",
@@ -575,6 +575,27 @@
        "s": 1.0,
        "col": "#d8ccaa",
        "h": 520
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 478,
+       "s": 1.2,
+       "col": "#f4f4f8"
+      },
+      {
+       "o": "cloud",
+       "x": 745,
+       "y": 478,
+       "s": 1.2,
+       "col": "#f4f4f8"
+      },
+      {
+       "o": "cloud",
+       "x": 640,
+       "y": 540,
+       "s": 1.7,
+       "col": "#ffffff"
       }
      ]
     },
@@ -655,11 +676,11 @@
     },
     {
      "who": "villager",
-     "x": 860,
-     "y": 680,
+     "x": 850,
+     "y": 730,
      "s": 0.95,
      "flip": 1,
-     "pose": "sitpray",
+     "pose": "stand",
      "emo": "devotion",
      "talk": 0.5,
      "mood": {
@@ -678,9 +699,9 @@
     {
      "t": "pfx",
      "k": "havan_kund",
-     "x": 985,
-     "y": 665,
-     "w": 170,
+     "x": 965,
+     "y": 640,
+     "w": 160,
      "alpha": 1,
      "par": 1.0
     },
@@ -688,10 +709,10 @@
      "t": "orbs",
      "items": [
       {
-       "x0": 930,
-       "y0": 520,
-       "x1": 985,
-       "y1": 600,
+       "x0": 920,
+       "y0": 480,
+       "x1": 965,
+       "y1": 590,
        "dur": 0.9,
        "r": 46,
        "rgb": "255,224,140",
@@ -700,10 +721,10 @@
        "c": 0
       },
       {
-       "x0": 940,
-       "y0": 510,
-       "x1": 990,
-       "y1": 600,
+       "x0": 930,
+       "y0": 470,
+       "x1": 970,
+       "y1": 590,
        "dur": 1.3,
        "r": 46,
        "rgb": "255,224,140",
@@ -720,8 +741,8 @@
    "fxb": [
     {
      "t": "glow",
-     "x": 985,
-     "y": 560,
+     "x": 965,
+     "y": 540,
      "r": 180,
      "rgb": "255,180,80",
      "ga": 0.55,
@@ -1054,9 +1075,9 @@
    "figs": [
     {
      "who": "brahma",
-     "x": 800,
-     "y": 522,
-     "s": 1.0,
+     "x": 735,
+     "y": 486,
+     "s": 0.82,
      "flip": -1,
      "pose": "sit",
      "emo": "calm",
@@ -1084,7 +1105,7 @@
     },
     {
      "who": "deva_thin",
-     "x": 470,
+     "x": 510,
      "y": 597,
      "s": 0.9,
      "flip": 1,
@@ -1094,7 +1115,7 @@
       "lx": 0.8
      },
      "walkTo": {
-      "x": 580,
+      "x": 600,
       "c": 0,
       "d": 1.6,
       "sp": 1
@@ -1102,8 +1123,8 @@
     },
     {
      "who": "deva_thin2",
-     "x": 380,
-     "y": 522,
+     "x": 430,
+     "y": 486,
      "s": 0.88,
      "flip": 1,
      "pose": "stand",
@@ -1112,7 +1133,7 @@
       "lx": 0.8
      },
      "walkTo": {
-      "x": 480,
+      "x": 515,
       "c": 0,
       "d": 1.6,
       "sp": 1
@@ -1123,7 +1144,7 @@
     {
      "t": "name",
      "s": "Brahma",
-     "x": 760,
+     "x": 700,
      "y": 118,
      "size": 30,
      "c": 1,
@@ -1239,8 +1260,8 @@
    "note": "two_shot pan_right: Morning sun over the gold hall of heaven: two thin gods walk in from the left and the window pans with them to four-headed Brahma on his lotus, who looks up as his name is said.",
    "vert": {
     "x": [
-     500,
-     780
+     560,
+     700
     ],
     "focus": "brahma"
    }
@@ -1675,8 +1696,8 @@
      "t": "pfx",
      "k": "halo_ring",
      "x": 640,
-     "y": 300,
-     "w": 420,
+     "y": 290,
+     "w": 300,
      "alpha": 0.4,
      "blend": "lighter",
      "par": 0.9,
@@ -1819,10 +1840,10 @@
     {
      "who": "villager",
      "x": 548,
-     "y": 484,
+     "y": 573,
      "s": 0.85,
      "flip": 1,
-     "pose": "sitpray",
+     "pose": "namaste",
      "emo": "devotion",
      "mood": {
       "lx": 0.8
@@ -1841,10 +1862,10 @@
     {
      "who": "villager_w",
      "x": 735,
-     "y": 484,
+     "y": 573,
      "s": 0.82,
      "flip": -1,
-     "pose": "sitpray",
+     "pose": "namaste",
      "emo": "devotion",
      "mood": {
       "lx": 0.8
@@ -2009,7 +2030,7 @@
      ]
     }
    ],
-   "note": "wide crane_down: Bright earth: a village man and woman sit facing each other across a blazing brick fire altar in their yard, hands folded, and the word 'Yajna' appears above the fire.",
+   "note": "wide crane_down: Bright earth: a village man and woman stand facing each other across a blazing brick fire altar in their yard, hands folded, and the word 'Yajna' appears above the fire.",
    "vert": {
     "x": [
      640,
@@ -2051,10 +2072,10 @@
     {
      "who": "villager_w",
      "x": 610,
-     "y": 542,
+     "y": 647,
      "s": 1.0,
      "flip": 1,
-     "pose": "sitpray",
+     "pose": "namaste",
      "emo": "devotion",
      "mood": {
       "lx": 0.8
@@ -2594,8 +2615,8 @@
      "k": "light_beam",
      "x": 640,
      "y": 640,
-     "w": 120,
-     "alpha": 0.55,
+     "w": 150,
+     "alpha": 0.85,
      "blend": "lighter",
      "par": 1.0
     },
@@ -2739,6 +2760,7 @@
    },
    "cues": [
     "gave",
+    "humans",
     "blessings"
    ],
    "bg": {
@@ -2776,11 +2798,11 @@
     },
     {
      "who": "villager",
-     "x": 860,
-     "y": 680,
+     "x": 850,
+     "y": 730,
      "s": 0.95,
      "flip": 1,
-     "pose": "sitpray",
+     "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
@@ -2788,6 +2810,11 @@
      "acts": [
       {
        "c": 1,
+       "d": 0.5,
+       "pose": "namaste"
+      },
+      {
+       "c": 2,
        "d": 0.6,
        "mood": {
         "smile": 0.9,
@@ -2801,9 +2828,9 @@
     {
      "t": "pfx",
      "k": "havan_kund",
-     "x": 985,
-     "y": 665,
-     "w": 170,
+     "x": 965,
+     "y": 640,
+     "w": 160,
      "alpha": 1,
      "par": 1.0
     }
@@ -2829,7 +2856,7 @@
      "rgb": "255,226,150",
      "ga": 0.5,
      "par": 1.0,
-     "c": 1,
+     "c": 2,
      "d": 0.6
     }
    ],
@@ -3193,17 +3220,17 @@
      "t": "pfx",
      "k": "smoke_plume",
      "x": 735,
-     "y": 520,
-     "w": 110,
-     "alpha": 0.7,
+     "y": 470,
+     "w": 100,
+     "alpha": 0.75,
      "par": 0.3
     },
     {
      "t": "pfx",
      "k": "smoke_plume",
-     "x": 800,
-     "y": 540,
-     "w": 80,
+     "x": 690,
+     "y": 440,
+     "w": 70,
      "alpha": 0.6,
      "par": 0.3
     }
@@ -3881,7 +3908,7 @@
    "figs": [
     {
      "who": "deva_thin",
-     "x": 800,
+     "x": 735,
      "y": 509,
      "s": 0.72,
      "flip": -1,
@@ -4058,8 +4085,8 @@
     {
      "who": "agni",
      "x": 640,
-     "y": 360,
-     "s": 1.15,
+     "y": 345,
+     "s": 1.0,
      "flip": -1,
      "head": true,
      "emo": "sad",
@@ -4238,16 +4265,39 @@
      "k": "havan_kund",
      "x": 640,
      "y": 690,
-     "w": 280,
+     "w": 300,
      "alpha": 1,
      "par": 1.0
     },
     {
-     "t": "flames",
-     "x": 640,
-     "y": 560,
-     "sc": 1.2,
-     "n": 8,
+     "t": "orbs",
+     "items": [
+      {
+       "x0": 560,
+       "y0": 420,
+       "x1": 620,
+       "y1": 600,
+       "dur": 0.9,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      },
+      {
+       "x0": 720,
+       "y0": 430,
+       "x1": 660,
+       "y1": 600,
+       "dur": 1.2,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      }
+     ],
+     "par": 1.0,
      "c": 0,
      "d": 0.6
     }
@@ -4820,8 +4870,8 @@
      "t": "pfx",
      "k": "halo_ring",
      "x": 640,
-     "y": 320,
-     "w": 480,
+     "y": 310,
+     "w": 360,
      "alpha": 0.45,
      "blend": "lighter",
      "par": 0.9,
@@ -5796,8 +5846,8 @@
     {
      "who": "swaha",
      "x": 640,
-     "y": 364,
-     "s": 1.15,
+     "y": 350,
+     "s": 1.0,
      "flip": -1,
      "head": true,
      "emo": "joy",
@@ -6180,10 +6230,10 @@
     {
      "who": "villager_w",
      "x": 580,
-     "y": 506,
+     "y": 611,
      "s": 1.0,
      "flip": 1,
-     "pose": "sitpray",
+     "pose": "namaste",
      "emo": "calm",
      "mood": {
       "lx": 0.8
@@ -6219,9 +6269,9 @@
      "t": "pfx",
      "k": "smoke_plume",
      "x": 730,
-     "y": 560,
-     "w": 160,
-     "alpha": 0.6,
+     "y": 610,
+     "w": 210,
+     "alpha": 0.85,
      "par": 1.0
     },
     {
@@ -6885,7 +6935,8 @@
    "cues": [
     "gave",
     "Swaha",
-    "marriage"
+    "marriage",
+    "never"
    ],
    "bg": {
     "k": "cloudscape",
@@ -6962,11 +7013,65 @@
        "d": 0.6,
        "pose": "namaste",
        "emo": "joy"
+      },
+      {
+       "c": 3,
+       "d": 0.6,
+       "tilt": 0.04,
+       "mood": {
+        "smile": 1,
+        "blink": 0.3
+       }
       }
      ]
     }
    ],
-   "fx": [],
+   "fx": [
+    {
+     "t": "orbs",
+     "items": [
+      {
+       "x0": 560,
+       "y0": 560,
+       "x1": 540,
+       "y1": 220,
+       "dur": 2.0,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 3
+      },
+      {
+       "x0": 720,
+       "y0": 560,
+       "x1": 740,
+       "y1": 230,
+       "dur": 2.4,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 3
+      },
+      {
+       "x0": 640,
+       "y0": 580,
+       "x1": 650,
+       "y1": 200,
+       "dur": 1.6,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 3
+      }
+     ],
+     "par": 1.0,
+     "c": 3,
+     "d": 0.6
+    }
+   ],
    "fxb": [
     {
      "t": "pfx",
@@ -6989,6 +7094,17 @@
      "ga": 0.45,
      "par": 1.0,
      "c": 1,
+     "d": 0.6
+    },
+    {
+     "t": "glow",
+     "x": 642,
+     "y": 340,
+     "r": 300,
+     "rgb": "255,170,80",
+     "ga": 0.5,
+     "par": 1.0,
+     "c": 3,
      "d": 0.6
     }
    ],
@@ -7087,7 +7203,7 @@
      ]
     }
    ],
-   "note": "two_shot push_in: Agni and Swaha face each other with folded hands inside a ring of marigold light, while Brahma, faint behind them, raises his hand in blessing.",
+   "note": "two_shot push_in: Agni and Swaha face each other with folded hands inside a ring of marigold light while Brahma, faint behind them, raises his hand in blessing; on 'never' their two fire halos glow as one and light motes rise around them.",
    "vert": {
     "x": [
      640,
@@ -7095,238 +7211,6 @@
     ],
     "focus": "agni"
    }
-  },
-  {
-   "id": "s37",
-   "at": {
-    "t": 81.12,
-    "word": "and"
-   },
-   "cues": [
-    "and",
-    "two",
-    "never"
-   ],
-   "bg": {
-    "k": "cloudscape",
-    "sky": [
-     "#4656b8",
-     "#f2a478",
-     "#ffda94",
-     "#fff6de"
-    ],
-    "sx": 640,
-    "sy": 230
-   },
-   "figs": [
-    {
-     "who": "agni",
-     "x": 590,
-     "y": 605,
-     "s": 0.98,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "joy",
-     "mood": {
-      "smile": 0.8,
-      "lx": 0.8
-     },
-     "acts": [
-      {
-       "c": 1,
-       "d": 0.6,
-       "mood": {
-        "smile": 1
-       }
-      }
-     ]
-    },
-    {
-     "who": "swaha",
-     "x": 695,
-     "y": 605,
-     "s": 0.95,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "joy",
-     "mood": {
-      "smile": 0.8,
-      "lx": 0.8
-     },
-     "acts": [
-      {
-       "c": 2,
-       "d": 0.6,
-       "tilt": 0.04,
-       "mood": {
-        "smile": 1,
-        "blink": 0.3
-       }
-      }
-     ]
-    }
-   ],
-   "fx": [
-    {
-     "t": "orbs",
-     "items": [
-      {
-       "x0": 560,
-       "y0": 560,
-       "x1": 540,
-       "y1": 220,
-       "dur": 2.0,
-       "r": 46,
-       "rgb": "255,224,140",
-       "sz": 6,
-       "arc": 10,
-       "c": 0
-      },
-      {
-       "x0": 720,
-       "y0": 560,
-       "x1": 740,
-       "y1": 230,
-       "dur": 2.0,
-       "r": 46,
-       "rgb": "255,224,140",
-       "sz": 6,
-       "arc": 10,
-       "c": 1
-      },
-      {
-       "x0": 640,
-       "y0": 580,
-       "x1": 650,
-       "y1": 200,
-       "dur": 2.0,
-       "r": 46,
-       "rgb": "255,224,140",
-       "sz": 6,
-       "arc": 10,
-       "c": 2
-      }
-     ],
-     "par": 1.0,
-     "c": 0,
-     "d": 0.6
-    }
-   ],
-   "fxb": [
-    {
-     "t": "glow",
-     "x": 642,
-     "y": 340,
-     "r": 300,
-     "rgb": "255,170,80",
-     "ga": 0.55,
-     "par": 1.0
-    }
-   ],
-   "cam": {
-    "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
-     "r": 0
-    }
-   },
-   "grade": "warm",
-   "layers": [
-    {
-     "d": "far",
-     "fog": 0.55,
-     "haze": "#fbeee0",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 440,
-       "y": 500,
-       "s": 1.0,
-       "col": "#a4b0dc"
-      },
-      {
-       "o": "mountain",
-       "x": 840,
-       "y": 510,
-       "s": 0.85,
-       "col": "#a4b0dc"
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 230,
-       "s": 1.3,
-       "col": "#fff6ea"
-      },
-      {
-       "o": "cloud",
-       "x": 800,
-       "y": 270,
-       "s": 1.1,
-       "col": "#fff6ea"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "fog": 0.2,
-     "items": [
-      {
-       "o": "pillar",
-       "x": 430,
-       "y": 700,
-       "s": 1.0,
-       "col": "#e8c878",
-       "h": 520
-      },
-      {
-       "o": "pillar",
-       "x": 850,
-       "y": 700,
-       "s": 1.0,
-       "col": "#e8c878",
-       "h": 520
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "dark": 0.1,
-     "blur": 2,
-     "items": [
-      {
-       "o": "cloud",
-       "x": 450,
-       "y": 745,
-       "s": 1.7,
-       "col": "#ffffff"
-      },
-      {
-       "o": "cloud",
-       "x": 830,
-       "y": 748,
-       "s": 1.6,
-       "col": "#ffffff"
-      }
-     ]
-    }
-   ],
-   "note": "two_shot pull_out: Agni and Swaha stand side by side, their two fire halos merged into one warm glow, as light motes rise around them and the camera pulls away.",
-   "vert": {
-    "x": [
-     640,
-     640
-    ],
-    "focus": "agni"
-   },
-   "dx": 0
   }
  ]
 }

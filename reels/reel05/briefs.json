@@ -342,7 +342,7 @@
    "effects": [
     {
      "k": "crown_gold",
-     "word": "power",
+     "word": "first",
      "x": 505,
      "y": 215,
      "w": 80,
@@ -493,7 +493,7 @@
    "effects": [
     {
      "k": "name",
-     "word": "name",
+     "word": "was",
      "s": "?",
      "x": 640,
      "y": 95,
@@ -645,6 +645,7 @@
      "y": 527,
      "s": 1.0,
      "flip": 1,
+     "pose": "sit",
      "emo": "calm",
      "look": 640,
      "mood": {
@@ -829,6 +830,7 @@
      "y": 420,
      "s": 0.78,
      "flip": 1,
+     "pose": "sit",
      "emo": "joy",
      "look": 640,
      "mood": {
@@ -1168,7 +1170,7 @@
     },
     {
      "k": "name",
-     "word": "Kumaras",
+     "word": "called",
      "s": "Kumaras",
      "x": 640,
      "y": 130,
@@ -1970,7 +1972,7 @@
     {
      "k": "icon",
      "i": "cycle",
-     "word": "life",
+     "word": "want",
      "x": 640,
      "y": 150,
      "sc": 1.3,
@@ -2191,7 +2193,7 @@
    "effects": [
     {
      "k": "infinity",
-     "word": "infinite",
+     "word": "meditate",
      "x": 640,
      "y": 150,
      "par": 1.0,
@@ -2377,7 +2379,7 @@
      "word": "never",
      "x": 640,
      "y": 346,
-     "w": 380,
+     "w": 260,
      "alpha": 0.45,
      "blend": "lighter",
      "par": 1.0,
@@ -2939,14 +2941,14 @@
      "s": 1.1,
      "flip": 1,
      "head": true,
-     "emo": "sad",
+     "emo": "anger",
      "look": 640,
      "actions": [
       {
-       "word": "rage",
+       "word": "rose",
        "emo": "rage",
        "e": "antic",
-       "d": 0.5
+       "d": 0.4
       }
      ]
     }
@@ -2977,7 +2979,7 @@
    "duration": 2.72,
    "narration": "A fiery being burst from his forehead.",
    "meaning": "A fiery being burst out of Brahma's forehead.",
-   "why": "Brahma on his lotus with angry red eyes; on 'fiery' his forehead glows, on 'burst' a white-gold column of fire shoots up from it with a flash and a figure of flame rises in it.",
+   "why": "Brahma on his lotus with angry red eyes; on 'fiery' his forehead glows, then flames and a white-gold column of fire shoot up from it and a small figure with a fire halo rises in the column.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -3107,19 +3109,19 @@
      "who": "rudra",
      "x": 640,
      "y": 330,
-     "s": 0.45,
+     "s": 0.42,
      "flip": 1,
      "pose": "raise",
      "emo": "rage",
      "look": 640,
      "engine_cues": {
-      "ac": "burst",
-      "mc": "burst"
+      "ac": "being",
+      "mc": "being"
      },
      "engine": {
-      "ad": 0.7,
-      "my": -40,
-      "md": 2.4
+      "ad": 0.5,
+      "my": -30,
+      "md": 2.0
      }
     },
     {
@@ -3128,6 +3130,7 @@
      "y": 549,
      "s": 0.9,
      "flip": 1,
+     "pose": "sit",
      "emo": "rage",
      "look": 640,
      "actions": [
@@ -3148,30 +3151,32 @@
      "word": "fiery",
      "x": 640,
      "y": 354,
-     "r": 120,
-     "rgb": "255,200,120",
-     "ga": 0.8,
+     "r": 110,
+     "rgb": "255,210,130",
+     "ga": 0.85,
      "par": 1.0,
      "meaning": "his forehead glowing with fire"
     },
     {
      "k": "beam",
-     "word": "burst",
+     "word": "being",
      "x": 640,
      "y": 354,
-     "len": 560,
-     "w": 40,
+     "len": 520,
+     "w": 55,
      "par": 1.0,
      "behind": true,
      "meaning": "the column of fire bursting from his forehead"
     },
     {
-     "k": "flash",
-     "word": "burst",
-     "rgb": "255,236,200",
-     "ga": 0.5,
-     "w": 0.35,
-     "meaning": "the flash of the burst"
+     "k": "flames",
+     "word": "being",
+     "x": 640,
+     "y": 354,
+     "sc": 0.55,
+     "n": 7,
+     "par": 1.0,
+     "meaning": "flames leaping from his forehead"
     }
    ],
    "transition_in": "cut"
@@ -3333,13 +3338,14 @@
      "actions": [
       {
        "word": "stepped",
-       "pose": "lunge",
+       "mood": {
+        "ly": 0.2
+       },
        "e": "spring",
        "d": 0.6
       },
       {
-       "word": "blazing",
-       "pose": "stand",
+       "word": "out",
        "emo": "rage",
        "d": 0.5
       }
@@ -3494,6 +3500,10 @@
      "flip": 1,
      "head": true,
      "emo": "rage",
+     "mood": {
+      "anger": 1,
+      "mouth": 0.9
+     },
      "talk": 0.9,
      "look": 640,
      "actions": [
@@ -3660,8 +3670,8 @@
      "#ffd0a0",
      "#fff2e0"
     ],
-    "sx": 780,
-    "sy": 120
+    "sx": 700,
+    "sy": 200
    },
    "mood": {
     "emotion": "awe",
@@ -3674,6 +3684,7 @@
      "y": 534,
      "s": 1.0,
      "flip": 1,
+     "pose": "sit",
      "emo": "surprise",
      "look": 800,
      "mood": {
@@ -3877,6 +3888,7 @@
      "y": 680,
      "s": 0.95,
      "flip": 1,
+     "pose": "sit",
      "emo": "surprise",
      "look": "rudra",
      "mood": {
@@ -3917,7 +3929,7 @@
    "duration": 1.84,
    "narration": "Brahma remembered that the root word",
    "meaning": "Brahma remembered a root word.",
-   "why": "Brahma raises his hand with his eyes turned up, remembering; a soft gold ring of light opens behind his heads on 'remembered'.",
+   "why": "Brahma on his lotus turns his eyes up and smiles as he remembers; a soft gold ring of light opens behind his heads on 'remembered'.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -4048,9 +4060,10 @@
     {
      "who": "brahma",
      "x": 640,
-     "y": 541,
+     "y": 554,
      "s": 1.0,
      "flip": 1,
+     "pose": "sit",
      "emo": "doubt",
      "look": 640,
      "mood": {
@@ -4059,7 +4072,6 @@
      "actions": [
       {
        "word": "remembered",
-       "pose": "raise",
        "emo": "calm",
        "mood": {
         "ly": -0.7,
@@ -4083,8 +4095,8 @@
      "k": "halo_ring",
      "word": "remembered",
      "x": 640,
-     "y": 346,
-     "w": 360,
+     "y": 359,
+     "w": 280,
      "alpha": 0.45,
      "blend": "lighter",
      "par": 1.0,
@@ -4282,7 +4294,7 @@
      "x": 745,
      "y": 95,
      "size": 42,
-     "col": "#fff0d8",
+     "col": "#8a2a10",
      "meaning": "the word roaring"
     },
     {
@@ -4291,8 +4303,8 @@
      "s": "rud",
      "x": 640,
      "y": 170,
-     "size": 70,
-     "col": "#ffe08a",
+     "size": 72,
+     "col": "#7a1a08",
      "glow": 1,
      "meaning": "the root word rud that means both"
     }
@@ -4467,7 +4479,7 @@
      "look": "brahma",
      "actions": [
       {
-       "word": "name",
+       "word": "Rudra",
        "emo": "calm",
        "mood": {
         "smile": 0.2
@@ -4699,7 +4711,7 @@
     },
     {
      "k": "name",
-     "word": "Mahadev",
+     "word": "also",
      "s": "Mahadev",
      "x": 640,
      "y": 120,
@@ -4719,7 +4731,7 @@
    "duration": 1.3,
    "narration": "Brahma created,",
    "meaning": "Brahma is the creator.",
-   "why": "Brahma on his lotus opens his hands in gold light; the plate 'Creator' appears.",
+   "why": "Brahma smiles on his lotus in gold light, book and mala in his hands; the plate 'Creator' appears.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -4851,6 +4863,7 @@
      "y": 520,
      "s": 1.0,
      "flip": 1,
+     "pose": "sit",
      "emo": "joy",
      "look": 640,
      "mood": {
@@ -4859,7 +4872,11 @@
      "actions": [
       {
        "word": "created",
-       "pose": "open",
+       "mood": {
+        "smile": 0.8,
+        "ly": -0.2
+       },
+       "tilt": 0.04,
        "d": 0.5
       }
      ]
@@ -4880,7 +4897,7 @@
     },
     {
      "k": "name",
-     "word": "created",
+     "word": "Brahma",
      "s": "Creator",
      "x": 640,
      "y": 120,
@@ -5051,7 +5068,7 @@
    "effects": [
     {
      "k": "name",
-     "word": "preserved",
+     "word": "Vishnu",
      "s": "Preserver",
      "x": 640,
      "y": 120,
@@ -5232,7 +5249,7 @@
     },
     {
      "k": "name",
-     "word": "destroyer",
+     "word": "Shiva",
      "s": "Destroyer",
      "x": 640,
      "y": 120,
@@ -5569,7 +5586,7 @@
      "emo": "calm",
      "look": "shiva",
      "engine_cues": {
-      "ac": "beings"
+      "ac": "began"
      },
      "engine": {
       "ad": 0.8,
@@ -5606,7 +5623,7 @@
    "effects": [
     {
      "k": "glow",
-     "word": "beings",
+     "word": "began",
      "x": 760,
      "y": 305,
      "r": 160,
@@ -5999,8 +6016,8 @@
     {
      "who": "rudra",
      "x": 640,
-     "y": 400,
-     "s": 0.36,
+     "y": 372,
+     "s": 0.42,
      "flip": 1,
      "pose": "namaste",
      "emo": "calm",
@@ -6009,8 +6026,8 @@
     {
      "who": "rudra",
      "x": 560,
-     "y": 400,
-     "s": 0.36,
+     "y": 372,
+     "s": 0.42,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -6019,8 +6036,8 @@
     {
      "who": "rudra",
      "x": 720,
-     "y": 400,
-     "s": 0.36,
+     "y": 372,
+     "s": 0.42,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
@@ -6028,9 +6045,9 @@
     },
     {
      "who": "rudra",
-     "x": 500,
-     "y": 452,
-     "s": 0.42,
+     "x": 520,
+     "y": 430,
+     "s": 0.48,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -6038,38 +6055,8 @@
     },
     {
      "who": "rudra",
-     "x": 593,
-     "y": 452,
-     "s": 0.42,
-     "flip": 1,
-     "pose": "namaste",
-     "emo": "calm",
-     "look": 1050
-    },
-    {
-     "who": "rudra",
-     "x": 687,
-     "y": 452,
-     "s": 0.42,
-     "flip": -1,
-     "pose": "namaste",
-     "emo": "calm",
-     "look": 1050
-    },
-    {
-     "who": "rudra",
-     "x": 780,
-     "y": 452,
-     "s": 0.42,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 1050
-    },
-    {
-     "who": "rudra",
-     "x": 505,
-     "y": 505,
+     "x": 600,
+     "y": 430,
      "s": 0.48,
      "flip": 1,
      "pose": "namaste",
@@ -6078,18 +6065,18 @@
     },
     {
      "who": "rudra",
-     "x": 595,
-     "y": 505,
+     "x": 680,
+     "y": 430,
      "s": 0.48,
-     "flip": 1,
-     "pose": "stand",
+     "flip": -1,
+     "pose": "namaste",
      "emo": "calm",
      "look": 1050
     },
     {
      "who": "rudra",
-     "x": 685,
-     "y": 505,
+     "x": 760,
+     "y": 430,
      "s": 0.48,
      "flip": -1,
      "pose": "stand",
@@ -6098,9 +6085,39 @@
     },
     {
      "who": "rudra",
-     "x": 775,
-     "y": 505,
-     "s": 0.48,
+     "x": 478,
+     "y": 500,
+     "s": 0.54,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 585,
+     "y": 500,
+     "s": 0.54,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 695,
+     "y": 500,
+     "s": 0.54,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 1050
+    },
+    {
+     "who": "rudra",
+     "x": 802,
+     "y": 500,
+     "s": 0.54,
      "flip": -1,
      "pose": "namaste",
      "emo": "calm",
@@ -6112,6 +6129,7 @@
      "y": 640,
      "s": 0.85,
      "flip": -1,
+     "pose": "sit",
      "emo": "surprise",
      "look": 640,
      "mood": {
@@ -6132,10 +6150,10 @@
    "effects": [
     {
      "k": "name",
-     "word": "Rudras",
+     "word": "Eleven",
      "s": "Eleven Rudras",
      "x": 640,
-     "y": 250,
+     "y": 80,
      "size": 26,
      "meaning": "the name Eleven Rudras on screen as it is said"
     }
@@ -6152,7 +6170,7 @@
    "duration": 4.28,
    "narration": "Brahma said creation needed mortals who die and are born again.",
    "meaning": "Brahma said creation needed mortal beings who die and are born again.",
-   "why": "Brahma pleads with open hands; above him the gold wheel of birth and death turns on 'die' and glows on 'born': what creation needs.",
+   "why": "Brahma explains from his lotus, eyes on the sky; above him the gold wheel of birth and death turns on 'die' and glows on 'born': what creation needs.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -6284,19 +6302,25 @@
      "y": 530,
      "s": 1.0,
      "flip": 1,
+     "pose": "sit",
      "emo": "doubt",
      "talk": 0.7,
      "look": 800,
      "actions": [
       {
        "word": "mortals",
-       "pose": "open",
+       "mood": {
+        "ly": -0.4
+       },
+       "tilt": 0.04,
        "d": 0.6
       },
       {
        "word": "again",
-       "pose": "plead",
        "emo": "calm",
+       "mood": {
+        "ly": 0.3
+       },
        "d": 0.6
       }
      ]
@@ -6306,7 +6330,7 @@
     {
      "k": "icon",
      "i": "cycle",
-     "word": "die",
+     "word": "creation",
      "x": 640,
      "y": 130,
      "sc": 1.2,
@@ -6707,7 +6731,7 @@
        "d": 0.6
       },
       {
-       "word": "meditate",
+       "word": "rather",
        "pose": "namaste",
        "mood": {
         "blink": 1,
@@ -7066,6 +7090,7 @@
      "s": 1.05,
      "flip": 1,
      "pose": "sitpray",
+     "prop": "none",
      "emo": "calm",
      "mood": {
       "blink": 1,

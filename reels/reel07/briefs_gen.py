@@ -45,16 +45,17 @@ def near_court(xs=(450,830)):
 def near_clouds(xs=(470,810)):
     return {"d":"near","contents":"white cloud puffs low in the bottom corners","dark":0.1,"blur":2,
             "items":[{"o":"cloud","x":xs[0],"y":748,"s":1.7,"col":"#ffffff"},{"o":"cloud","x":xs[1],"y":750,"s":1.6,"col":"#ffffff"}]}
+SEA='#4aa6e4'
 def far_sea(xs=(480,820),y=372):
-    return {"d":"far","contents":"the blue sea on the horizon with pale headlands and clouds","fog":0.35,"haze":"#eef6fc",
+    return {"d":"far","contents":"pale headlands and white clouds over the sea horizon","fog":0.4,"haze":"#eef6fc",
             "items":[{"o":"mountain","x":xs[0]-60,"y":y+4,"s":1.0,"w":200,"h":70,"col":"#9ab8c8","snow":False},
-                     {"o":"cloud","x":xs[0],"y":190,"s":1.1,"col":"#ffffff"},{"o":"cloud","x":xs[1],"y":240,"s":0.9,"col":"#ffffff"},
-                     {"o":"hill","x":640,"y":y,"s":1.0,"w":1500,"h":4,"col":"#3a94dc"}]}
-def mid_shore(rx=(830,700),sand_y=440,trees=(430,880)):
+                     {"o":"cloud","x":xs[0],"y":190,"s":1.1,"col":"#ffffff"},{"o":"cloud","x":xs[1],"y":240,"s":0.9,"col":"#ffffff"}]}
+def sea_band(y=374):return {"o":"hill","x":640,"y":y,"s":1.0,"w":1500,"h":3,"col":SEA,"fog":0.08}
+def mid_shore(rx=(900,640),sand_y=440,trees=(430,880)):
     """sand bank of the Sindhu; the river (a 'road' drawn as water) runs from the front into the sea"""
     return {"d":"mid","contents":"golden sand bank of the River Sindhu, the blue river flowing out into the sea, palms","fog":0.15,"par":1.0,
-            "items":[{"o":"hill","x":640,"y":sand_y,"s":1.0,"w":1100,"h":14,"col":"#f2dca8"},
-                     {"o":"road","x":rx[0],"y":740,"s":1.0,"w":170,"ex":rx[1],"ey":378,"ew":34,"bend":-60,"col":"#4aaae6","plain":True},
+            "items":[sea_band(),{"o":"hill","x":640,"y":sand_y,"s":1.0,"w":1100,"h":14,"col":"#f2dca8"},
+                     {"o":"road","x":rx[0],"y":740,"s":1.0,"w":160,"ex":rx[1],"ey":372,"ew":40,"bend":40,"col":SEA,"plain":True},
                      {"o":"tree","x":trees[0],"y":sand_y+30,"s":0.62,"kind":"palm","col":"#2e7a44"},{"o":"tree","x":trees[1],"y":sand_y+40,"s":0.58,"kind":"palm","col":"#2e7a44"}]}
 def near_reeds(xs=(450,830),col='#2a5a3a'):
     return {"d":"near","contents":"dark blurred reeds and shrubs in the bottom corners","dark":0.45,
@@ -63,12 +64,23 @@ def far_hills(haze='#f6eee6',xs=(480,820),col='#a4a8d0'):
     return {"d":"far","contents":"soft blue-violet hills in haze on the horizon","fog":0.55,"haze":haze,
             "items":[{"o":"mountain","x":xs[0],"y":392,"s":1.0,"w":240,"h":110,"col":col,"snow":False},{"o":"mountain","x":xs[1],"y":396,"s":1.0,"w":220,"h":90,"col":col,"snow":False},
                      {"o":"cloud","x":xs[0]+40,"y":190,"s":1.0,"col":"#fff4ec"}]}
-def mid_road(x=600,ex=760,ey=380,w=190,glow=None,grass='#7aa860',trees=(430,900),bend=40):
-    r={"o":"road","x":x,"y":740,"s":1.0,"w":w,"ex":ex,"ey":ey,"ew":4,"bend":bend,"col":"#efd6a0"}
+def mid_road(x=600,ex=760,ey=380,w=190,glow=None,grass='#7aa860',trees=(430,900),bend=40,col='#efd6a0'):
+    r={"o":"road","x":x,"y":740,"s":1.0,"w":w,"ex":ex,"ey":ey,"ew":4,"bend":bend,"col":col}
     if glow:r["glow"]=glow
     return {"d":"mid","contents":"green fields and a pale dusty road running to the horizon","fog":0.12,"par":1.0,
             "items":[{"o":"hill","x":640,"y":ey+4,"s":1.0,"w":1100,"h":10,"col":grass},r,
                      {"o":"tree","x":trees[0],"y":ey+150,"s":0.6,"kind":"round","col":"#3a7a44"},{"o":"tree","x":trees[1],"y":ey+120,"s":0.5,"kind":"round","col":"#3a7a44"}]}
+def road_pt(x,ex,ey,bend,u,y=740):
+    mx=(x+ex)/2+bend;my=(y+ey)/2
+    return round((1-u)**2*x+2*u*(1-u)*mx+u*u*ex),round((1-u)**2*y+2*u*(1-u)*my+u*u*ey)
+def walkers(who,x,ex,ey,bend,us,off=0,vx=6,a_far=0.45):
+    """figures walking away along the road centre: scale from linear perspective to the horizon ey, fainter with distance"""
+    out=[]
+    for k,u in enumerate(us):
+        px,py=road_pt(x,ex,ey,bend,u);sc=round(max(.07,.0024*(py-ey+6)),3);a=round(min(1,a_far+(1-a_far)*(1-u)*1.6),2)
+        hw=(1-u)*200+u*4;o_=off*hw
+        out.append(dict(x=round(px+(o_ if k%2 else -o_)),y=py,s=sc,a=a,v=round(vx*(1-u)+1,1)))
+    return out
 def name(word,s,x=640,y=128,size=30):return {"k":"name","word":word,"s":s,"x":x,"y":y,"size":size,"meaning":f"the name {s} on screen the moment it is spoken"}
 def shot(id,t,**k):
     i0=idx(t);s={"id":id,"beat":1,"start":{"t":t,"word":T[i0][0].strip(',.?!"')}};s.update(k);return s
@@ -205,12 +217,12 @@ S.append(shot("s09",18.98,
  why="Closer on the front row of princes at the water's edge, hands folded toward the sea; a golden glow of the offering rises over the water on 'offerings'.",
  camera=cam("dolly_left",(1.04,12,0),(1.04,-12,0),"medium","normal",0,"a slow drift along the row of praying princes"),
  focus={"subject":"haryashva","depth":"deep"},vertical={"x":620},
- layers=[far_sea(y=380),{"d":"mid","contents":"the sand bank and the river mouth behind the praying princes","fog":0.15,"par":1.0,"items":[{"o":"hill","x":640,"y":470,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"road","x":860,"y":740,"s":1.0,"w":180,"ex":760,"ey":384,"ew":40,"bend":-40,"col":"#4aaae6","plain":True},{"o":"tree","x":420,"y":500,"s":0.6,"kind":"palm","col":"#2e7a44"}]},near_reeds((440,820))],
+ layers=[far_sea(y=380),{"d":"mid","contents":"the sand bank at the river mouth and the open sea behind the praying princes","fog":0.15,"par":1.0,"items":[sea_band(),{"o":"hill","x":640,"y":470,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"tree","x":420,"y":500,"s":0.6,"kind":"palm","col":"#2e7a44"}]},near_reeds((440,820))],
  background=vista(sky=SKY_SEA,sx=760,sy=230,horizon=40),mood={"emotion":"devotion","grade":"warm"},
- characters=crowd("haryashva",[(500,0.3,row(620,6,56),0.85)],look=800,emos=['devotion','calm'],acts=[{"word":"offerings","pose":"namaste","d":0.6}])+
+ characters=crowd("haryashva",[(500,0.3,row(620,6,56),0.85)],look=800,emos=['devotion','calm'],acts=[{"word":"sea","pose":"namaste","d":0.6}])+
    crowd("haryashva",[(575,0.48,row(625,3,112),1)],look=800,emos=['devotion'],flipto=1,acts=[{"word":"sea","pose":"namaste","emo":"devotion","d":0.6}]),
- effects=[{"k":"glow","word":"offerings","x":760,"y":360,"r":220,"rgb":"255,210,120","ga":0.5,"par":1.0,"behind":True,"meaning":"the golden light of the offering over the water"},
-  {"k":"light_beam","word":"offerings","x":760,"y":0,"w":120,"alpha":0.35,"par":0.6,"behind":True,"meaning":"a beam of blessing falling on the sacred river mouth"}],
+ effects=[{"k":"glow","word":"sea","x":760,"y":360,"r":220,"rgb":"255,210,120","ga":0.5,"par":1.0,"behind":True,"meaning":"the golden light of the offering over the water"},
+  {"k":"light_beam","word":"sea","x":760,"y":0,"w":120,"alpha":0.35,"par":0.6,"behind":True,"meaning":"a beam of blessing falling on the sacred river mouth"}],
  transition_in="cut"))
 # 10 --------------------------------------------------------------- Narada, the divine sage
 S.append(shot("s10",21.2,
@@ -231,7 +243,7 @@ S.append(shot("s11",22.8,
  why="Narada walks along the bright shore with his veena toward the river mouth, the sea shining behind him.",
  camera=cam("dolly_right",(1.0,-10,0),(1.0,10,0),"wide","wide",0,"the dolly travels with him toward the brothers"),
  focus={"subject":"narada","depth":"deep"},vertical={"x":[560,660]},
- layers=[far_sea(),{"d":"mid","contents":"the sand bank and palms along the shore","fog":0.15,"par":1.0,"items":[{"o":"hill","x":640,"y":470,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"tree","x":440,"y":520,"s":0.7,"kind":"palm","col":"#2e7a44"},{"o":"tree","x":860,"y":520,"s":0.6,"kind":"palm","col":"#2e7a44"}]},near_reeds((450,840))],
+ layers=[far_sea(),{"d":"mid","contents":"the sand bank and palms along the shore","fog":0.15,"par":1.0,"items":[sea_band(),{"o":"hill","x":640,"y":470,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"tree","x":440,"y":520,"s":0.7,"kind":"palm","col":"#2e7a44"},{"o":"tree","x":860,"y":520,"s":0.6,"kind":"palm","col":"#2e7a44"}]},near_reeds((450,840))],
  background=vista(sky=SKY_SEA,sx=760,sy=230,horizon=40),mood={"emotion":"journey","grade":"warm"},
  characters=[{"who":"narada","x":540,"y":665,"s":0.95,"_face":0.45,"flip":1,"pose":"stand","emo":"calm","mood":{"smile":0.4},"look":800,"walk":{"word":"was","to_x":680,"d":1.6,"speed":1},
    "actions":[{"word":"way","mood":{"smile":0.6,"lx":0.6},"d":0.6}]}],
@@ -241,13 +253,13 @@ S.append(shot("s12",24.1,
  meaning="Narada asked the brothers how they could rule a land they knew nothing about.",
  why="The window pans from Narada, one hand open in a question, to the rows of green princes on the sand, who turn to listen.",
  camera=cam("pan_right",(1.0,0,0),(1.02,0,0),"two_shot","normal",0,"the pan carries the question from the sage to the brothers"),
- focus={"subject":"narada","depth":"deep"},vertical={"x":[480,760]},
- layers=[far_sea(xs=(470,840)),{"d":"mid","contents":"the sand bank with a palm on each side","fog":0.15,"par":1.0,"items":[{"o":"hill","x":640,"y":440,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"tree","x":330,"y":500,"s":0.7,"kind":"palm","col":"#2e7a44"},{"o":"tree","x":940,"y":490,"s":0.6,"kind":"palm","col":"#2e7a44"}]},near_reeds((380,900))],
+ focus={"subject":"narada","depth":"deep"},vertical={"x":[470,700]},
+ layers=[far_sea(xs=(470,840)),{"d":"mid","contents":"the sand bank with a palm on each side","fog":0.15,"par":1.0,"items":[sea_band(),{"o":"hill","x":640,"y":440,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"tree","x":330,"y":500,"s":0.7,"kind":"palm","col":"#2e7a44"},{"o":"tree","x":940,"y":490,"s":0.6,"kind":"palm","col":"#2e7a44"}]},near_reeds((380,900))],
  background=vista(sky=SKY_SEA,sx=700,sy=230,horizon=40),mood={"emotion":"question","grade":"warm"},
- characters=crowd("haryashva",[(450,0.21,row(790,6,40),0.65),(495,0.27,row(790,5,50),0.85),(560,0.35,row(780,4,64),1)],look=480,emos=['calm','doubt'],
+ characters=crowd("haryashva",[(450,0.21,row(735,6,40),0.65),(495,0.27,row(735,5,50),0.85),(560,0.35,row(728,4,64),1)],look=480,emos=['calm','doubt'],
    acts=[{"word":"land","mood":{"ly":0.2},"emo":"doubt","d":0.6}])+
    [{"who":"narada","x":470,"y":665,"s":1.0,"_face":0.42,"flip":1,"pose":"stand","emo":"calm","talk":0.7,"look":760,
-   "actions":[{"word":"asked","pose":"open","emo":"doubt","d":0.6},{"word":"nothing","mood":{"smile":0.4,"lx":0.6},"tilt":0.05,"d":0.6}]}],
+   "actions":[{"word":"asked","pose":"open","emo":"calm","mood":{"surp":0.4,"smile":0.3},"d":0.6},{"word":"nothing","mood":{"smile":0.4,"lx":0.6},"tilt":0.05,"d":0.6}]}],
  effects=[],transition_in="cut"))
 # 13 --------------------------------------------------------------- too few people or too many
 S.append(shot("s13",27.42,
@@ -255,10 +267,10 @@ S.append(shot("s13",27.42,
  why="Closer on Narada asking: he lifts one hand on 'few' and spreads both hands wide on 'many', eyebrows raised in a teasing question.",
  camera=cam("push_in",(1.0,0,0),(1.08,0,-6),"medium","normal",0,"push in on the clever question"),
  focus={"subject":"narada","depth":"shallow"},vertical={"focus":"narada","z":1.12,"y":0.42},
- layers=[far_sea(xs=(500,800)),{"d":"mid","contents":"the sand bank and a palm behind the sage","fog":0.2,"par":1.0,"items":[{"o":"hill","x":640,"y":450,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"tree","x":800,"y":500,"s":0.7,"kind":"palm","col":"#2e7a44"}]},near_reeds((470,820))],
+ layers=[far_sea(xs=(500,800)),{"d":"mid","contents":"the sand bank and a palm behind the sage","fog":0.2,"par":1.0,"items":[sea_band(),{"o":"hill","x":640,"y":450,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"tree","x":800,"y":500,"s":0.7,"kind":"palm","col":"#2e7a44"}]},near_reeds((470,820))],
  background=vista(sky=SKY_SEA,sx=760,sy=230,horizon=40),mood={"emotion":"teasing","grade":"warm"},
- characters=[{"who":"narada","x":620,"y":665,"s":1.0,"_face":0.42,"flip":1,"pose":"stand","emo":"doubt","talk":0.7,"look":800,
-   "actions":[{"word":"few","pose":"raise","emo":"doubt","mood":{"surp":0.4},"d":0.5},{"word":"many","pose":"open","mood":{"smile":0.5,"surp":0.3},"tilt":0.05,"d":0.5}]}],
+ characters=[{"who":"narada","x":620,"y":665,"s":1.0,"_face":0.42,"flip":1,"pose":"stand","emo":"calm","mood":{"surp":0.3,"smile":0.3},"talk":0.7,"look":800,
+   "actions":[{"word":"few","pose":"raise","mood":{"surp":0.5,"smile":0.4},"d":0.5},{"word":"many","pose":"open","mood":{"smile":0.5,"surp":0.3},"tilt":0.05,"d":0.5}]}],
  effects=[],transition_in="cut"))
 # 14 --------------------------------------------------------------- no answer
 S.append(shot("s14",30.92,
@@ -266,7 +278,7 @@ S.append(shot("s14",30.92,
  why="Close on three Haryashva princes: their smiles are gone, they glance at each other with knitted brows and closed mouths, the rows behind them just as unsure.",
  camera=cam("static",(1.0,0,0),(1.0,0,0),"close","tele",0,"stillness: nobody has anything to say"),
  focus={"subject":"haryashva","depth":"shallow"},vertical={"x":640},
- layers=[far_sea(xs=(480,800)),{"d":"mid","contents":"the sand bank behind the brothers","fog":0.2,"par":1.0,"items":[{"o":"hill","x":640,"y":440,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"tree","x":880,"y":490,"s":0.6,"kind":"palm","col":"#2e7a44"}]},near_reeds((450,840))],
+ layers=[far_sea(xs=(480,800)),{"d":"mid","contents":"the sand bank behind the brothers","fog":0.2,"par":1.0,"items":[sea_band(),{"o":"hill","x":640,"y":440,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"tree","x":880,"y":490,"s":0.6,"kind":"palm","col":"#2e7a44"}]},near_reeds((450,840))],
  background=vista(sky=SKY_SEA,sx=760,sy=230,horizon=40),mood={"emotion":"doubt","grade":"cool"},
  characters=crowd("haryashva",[(450,0.27,row(640,6,52),0.7)],look=640,emos=['doubt'])+
    [{"who":"haryashva","x":515,"y":575,"s":0.74,"flip":1,"pose":"stand","emo":"doubt","look":640,"_fixed":True,"actions":[{"word":"no","mood":{"ly":0.3,"lx":0.6},"d":0.5}]},
@@ -279,7 +291,7 @@ S.append(shot("s15",33.04,
  why="Close on Narada's face: one corner of his mouth lifts in a sly smirk, eyes slid sideways toward the brothers.",
  camera=cam("push_in",(1.0,0,0),(1.08,0,0),"close","tele",0,"push in on the smirk"),
  focus={"subject":"narada","depth":"shallow"},vertical={"focus":"narada"},
- layers=[far_sea(xs=(500,800)),{"d":"mid","contents":"a palm on the sand bank behind his head","fog":0.25,"par":1.0,"items":[{"o":"hill","x":640,"y":450,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"tree","x":790,"y":520,"s":0.7,"kind":"palm","col":"#2e7a44"}]},near_reeds((470,820))],
+ layers=[far_sea(xs=(500,800)),{"d":"mid","contents":"a palm on the sand bank behind his head","fog":0.25,"par":1.0,"items":[sea_band(),{"o":"hill","x":640,"y":450,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"tree","x":790,"y":520,"s":0.7,"kind":"palm","col":"#2e7a44"}]},near_reeds((470,820))],
  background=vista(sky=SKY_SEA,sx=700,sy=230,horizon=40),mood={"emotion":"sly","grade":"warm"},
  characters=[{"who":"narada","x":640,"y":350,"s":1.15,"flip":1,"head":True,"emo":"calm","mood":{"smile":0.5,"lx":0.6},"look":900,
    "actions":[{"word":"smirked","mood":{"smile":0.8,"lx":0.7,"ly":0.15,"blink":0.25},"tilt":0.05,"d":0.5}]}],
@@ -289,10 +301,10 @@ S.append(shot("s16",34.46,
  meaning="Narada told them to first learn every detail about the earth.",
  why="The window pans from Narada pointing outward to the wide earth beyond: hills, forests and a river winding away to far blue mountains.",
  camera=cam("pan_right",(1.0,0,0),(1.0,0,0),"wide","wide",0,"the pan follows his pointing hand out over the whole earth"),
- focus={"subject":"narada","depth":"deep"},vertical={"x":[500,780]},
+ focus={"subject":"narada","depth":"deep"},vertical={"x":[565,700]},
  layers=[{"d":"far","contents":"far blue mountain ranges and clouds across the earth","fog":0.5,"haze":"#eef4fa","items":[{"o":"mountain","x":760,"y":420,"s":1.0,"w":260,"h":200,"col":"#8aa4d0"},{"o":"mountain","x":960,"y":430,"s":0.9,"w":220,"h":160,"col":"#8aa4d0"},{"o":"cloud","x":820,"y":200,"s":1.1,"col":"#ffffff"}]},
    {"d":"mid","contents":"green hills and round trees of the wide earth","fog":0.18,"items":[{"o":"hill","x":800,"y":520,"s":1.0,"w":500,"h":60,"col":"#7aa860"},{"o":"tree","x":720,"y":540,"s":0.55,"kind":"round","col":"#3a7a44"},{"o":"tree","x":880,"y":530,"s":0.5,"kind":"pine","col":"#2e6a3e"},{"o":"tree","x":400,"y":560,"s":0.7,"kind":"palm","col":"#2e7a44"}]},near_reeds((420,880))],
- background=vista(sky=['#2f6ad0','#7ab8f0','#ffe6c4','#fff8ea'],sx=800,sy=230,river='#5ab8e8'),mood={"emotion":"advice","grade":"warm"},
+ background=vista(sky=['#2f6ad0','#7ab8f0','#ffe6c4','#fff8ea'],sx=800,sy=230),mood={"emotion":"advice","grade":"warm"},
  characters=[{"who":"narada","x":500,"y":665,"s":1.0,"_face":0.42,"flip":1,"pose":"stand","emo":"calm","talk":0.7,"look":800,"mood":{"smile":0.4},
    "actions":[{"word":"learn","pose":"point","emo":"calm","e":"spring","d":0.6},{"word":"earth","mood":{"smile":0.6,"lx":0.7},"d":0.6}]}],
  effects=[],transition_in="cut"))
@@ -303,7 +315,7 @@ S.append(shot("s17",37.64,
  camera=cam("tilt_up",(1.04,0,14),(1.04,0,-6),"medium","normal",0,"tilting up the path toward the summit"),
  focus={"subject":"narada","depth":"deep"},vertical={"x":600},
  layers=[{"d":"far","contents":"a tall shining mountain peak far away under rays","fog":0.45,"haze":"#f2eefa","items":[{"o":"mountain","x":700,"y":400,"s":1.0,"w":220,"h":250,"col":"#a0a8d8"},{"o":"cloud","x":520,"y":220,"s":1.0,"col":"#ffffff"}]},
-   mid_road(x=650,ex=700,ey=400,w=170,glow='255,226,150',trees=(470,880),bend=-30),near_reeds((440,830))],
+   mid_road(x=650,ex=700,ey=400,w=170,trees=(470,880),bend=-30,col='#f2c878'),near_reeds((440,830))],
  background=vista(sky=['#2a50c0','#7aa8ee','#ffe0b8','#fff6e4'],sx=700,sy=150),mood={"emotion":"promise","grade":"warm"},
  characters=[{"who":"narada","x":520,"y":665,"s":0.96,"_face":0.44,"flip":1,"pose":"stand","emo":"calm","talk":0.6,"look":700,"mood":{"smile":0.5},
    "actions":[{"word":"higher","pose":"raise","emo":"joy","mood":{"ly":-0.6,"smile":0.6},"d":0.6}]}],
@@ -316,7 +328,7 @@ S.append(shot("s18",39.96,
  why="Rows of green princes on the shore turn to one another with doubtful faces while the bright sky fades to gray-blue and a gray shadow of mist creeps along the rows.",
  camera=cam("push_in",(1.0,0,0),(1.08,0,-4),"wide","normal",0,"a slow push in as the doubt creeps in"),
  focus={"subject":"haryashva","depth":"deep"},vertical={"x":640},
- layers=[far_sea(),{"d":"mid","contents":"the sand bank under a cooling sky","fog":0.18,"par":1.0,"items":[{"o":"hill","x":640,"y":405,"s":1.0,"w":1100,"h":12,"col":"#e6d8b8"},{"o":"tree","x":420,"y":460,"s":0.55,"kind":"palm","col":"#2e6a44"},{"o":"tree","x":880,"y":455,"s":0.5,"kind":"palm","col":"#2e6a44"}]},near_reeds((440,840),'#24484a')],
+ layers=[far_sea(),{"d":"mid","contents":"the sand bank under a cooling sky","fog":0.18,"par":1.0,"items":[sea_band(),{"o":"hill","x":640,"y":405,"s":1.0,"w":1100,"h":12,"col":"#e6d8b8"},{"o":"tree","x":420,"y":460,"s":0.55,"kind":"palm","col":"#2e6a44"},{"o":"tree","x":880,"y":455,"s":0.5,"kind":"palm","col":"#2e6a44"}]},near_reeds((440,840),'#24484a')],
  background={**vista(sky=SKY_SEA,sx=760,sy=230,horizon=40),"change":{"word":"crept","bg2":vista(sky=SKY_COOL,sx=760,sy=230,horizon=40,ridge=RIDGE_DAWN),"d":1.4}},
  mood={"emotion":"doubt","grade":"cool"},
  characters=crowd("haryashva",[(412,0.19,row(640,9,38),0.55),(450,0.24,row(640,8,46,3),0.72),(500,0.31,row(640,6,58),0.9),(560,0.4,row(640,5,74),1)],look=None,emos=['doubt','calm','doubt','shame'],
@@ -329,11 +341,11 @@ S.append(shot("s19",42.7,
  why="At sunrise a long line of green princes walks away along a dusty road toward the sun, each one smaller and paler as the road runs to the horizon.",
  camera=cam("dolly_right",(1.0,-12,0),(1.0,6,0),"wide","wide",0,"the dolly moves with the brothers down the road"),
  focus={"subject":"haryashva","depth":"deep"},vertical={"x":680},
- layers=[far_hills(),mid_road(x=600,ex=780,ey=380,w=200),near_reeds((470,860),'#3a5a3a')],
- background=vista(sky=SKY_DAWN,sx=780,sy=360,ridge=RIDGE_DAWN,sr=460),mood={"emotion":"departure","grade":"warm"},
+ layers=[far_hills(haze='#f4e8f0'),mid_road(x=650,ex=760,ey=380,w=200,bend=10,trees=(470,900)),near_reeds((470,860),'#3a5a3a')],
+ background=vista(sky=SKY_DAWN,sx=760,sy=330,ridge=RIDGE_DAWN,sr=300),mood={"emotion":"departure","grade":"warm"},
  characters=[{"who":"haryashva","x":x,"y":y,"s":s,"flip":1,"pose":"stand","emo":"calm","look":900,"_fixed":True,"engine":{"walk":1,"vx":v,**({"a":a} if a<1 else {})},
-   "actions":[{"word":"explore","mood":{"lx":0.6},"d":0.6}]} for (x,y,s,a,v) in [(780,386,0.08,0.45,3),(772,394,0.1,0.55,3),(760,404,0.12,0.62,4),(744,418,0.15,0.72,5),(722,437,0.19,0.82,6),(694,464,0.24,0.92,7),(658,500,0.31,1,8),(612,548,0.4,1,9)]],
- effects=[{"k":"glow","x":780,"y":360,"r":300,"rgb":"255,200,130","ga":0.45,"par":0.4,"behind":True,"meaning":"the sunrise the brothers walk into"}],
+   "actions":[{"word":"explore","mood":{"lx":0.6},"d":0.6}]} for (x,y,s,a,v) in [(w["x"],w["y"],w["s"],w["a"],w["v"]) for w in walkers("haryashva",650,760,380,10,[.93,.88,.82,.75,.67,.58,.48,.37],off=0.42)]],
+ effects=[{"k":"glow","x":760,"y":340,"r":220,"rgb":"255,200,130","ga":0.3,"par":0.4,"behind":True,"meaning":"the sunrise the brothers walk into"}],
  transition_in="fade"))
 # 20 --------------------------------------------------------------- no one saw them again
 S.append(shot("s20",44.94,
@@ -341,11 +353,11 @@ S.append(shot("s20",44.94,
  why="The same sunrise road, now nearly empty: the last three tiny figures at the horizon fade into the light on 'saw', leaving only the road.",
  camera=cam("crane_up",(1.04,0,8),(1.0,0,-10),"wide","wide",0,"rising over the empty road"),
  focus={"subject":"road","depth":"deep"},vertical={"x":720},
- layers=[far_hills(xs=(520,860)),mid_road(x=640,ex=780,ey=380,w=210),near_reeds((500,900),'#3a5a3a')],
- background=vista(sky=SKY_DAWN,sx=780,sy=350,ridge=RIDGE_DAWN,sr=460),mood={"emotion":"emptiness","grade":"warm"},
- characters=[{"who":"haryashva","x":x,"y":y,"s":s,"flip":1,"pose":"stand","emo":"calm","look":900,"_fixed":True,"engine":{"walk":1,"vx":2,"a":0.6,"fd":1.0},"engine_cues":{"fo":"saw"}} for (x,y,s) in [(776,388,0.08),(768,395,0.09),(758,404,0.11)]],
+ layers=[far_hills(haze='#f4e8f0',xs=(520,860)),mid_road(x=680,ex=770,ey=380,w=210,bend=10,trees=(500,920)),near_reeds((500,900),'#3a5a3a')],
+ background=vista(sky=SKY_DAWN,sx=770,sy=330,ridge=RIDGE_DAWN,sr=300),mood={"emotion":"emptiness","grade":"warm"},
+ characters=[{"who":"haryashva","x":x,"y":y,"s":s,"flip":1,"pose":"stand","emo":"calm","look":900,"_fixed":True,"engine":{"walk":1,"vx":2,"a":0.6,"fd":1.0},"engine_cues":{"fo":"saw"}} for (x,y,s) in [(w["x"],w["y"],w["s"]) for w in walkers("haryashva",680,770,380,10,[.95,.91,.86])]],
  effects=[{"k":"mist_wisps","word":"again","x":760,"y":400,"w":300,"alpha":0.5,"par":0.6,"meaning":"morning mist where the brothers disappeared"},
-  {"k":"glow","x":780,"y":360,"r":280,"rgb":"255,210,140","ga":0.45,"par":0.4,"behind":True,"meaning":"the sunrise that swallowed them"}],
+  {"k":"glow","x":770,"y":340,"r":220,"rgb":"255,210,140","ga":0.3,"par":0.4,"behind":True,"meaning":"the sunrise that swallowed them"}],
  transition_in="cut"))
 # 21 --------------------------------------------------------------- they never came back
 S.append(shot("s21",46.34,
@@ -360,19 +372,32 @@ S.append(shot("s21",46.34,
  effects=[],transition_in="fade"))
 # 22 --------------------------------------------------------------- Daksha and Ashikli had another thousand sons
 S.append(shot("s22",47.88,
- meaning="Daksha and his wife Ashikli had a thousand more sons.",
- why="Daksha and his wife Ashikli in her blue sari stand together in the courtyard; her name appears, and on 'thousand' rows of violet-clad princes appear behind them.",
- camera=cam("pull_out",(1.06,0,-6),(1.0,0,0),"two_shot","normal",0,"pulling back to reveal the new rows of sons"),
- focus={"subject":"asikli","depth":"deep"},vertical={"x":[580,690]},
+ meaning="Daksha had a wife, Ashikli.",
+ why="Daksha stands beside his wife Ashikli in her blue sari in the bright courtyard; they look at each other with a quiet hopeful smile and her name appears as it is spoken.",
+ camera=cam("dolly_left",(1.04,10,-4),(1.04,-6,-4),"two_shot","normal",0,"a gentle drift across the royal couple"),
+ focus={"subject":"asikli","depth":"deep"},vertical={"x":640},
+ layers=[far_sky(),mid_court(cx=640,wy=450,ws=0.6,px=(440,840)),near_court((440,840))],
+ background=vista(),mood={"emotion":"new hope","grade":"warm"},
+ characters=[{"who":"daksha","x":570,"y":690,"s":0.98,"_face":0.42,"flip":1,"pose":"stand","emo":"sad","look":"asikli",
+   "actions":[{"word":"wife","emo":"calm","mood":{"smile":0.5},"d":0.6}]},
+  {"who":"asikli","x":712,"y":690,"s":0.96,"_ground":True,"flip":-1,"pose":"stand","emo":"calm","look":"daksha","mood":{"smile":0.4},
+   "actions":[{"word":"Ashikli","mood":{"smile":0.7,"ly":0.2},"d":0.6}]}],
+ effects=[name("Ashikli","Ashikli",700,128,28)],
+ transition_in="cut"))
+S.append(shot("s22b",49.54,
+ meaning="Daksha and Ashikli had another thousand sons.",
+ why="Pulling back from the couple, rows of violet-clad princes appear in the courtyard behind them on 'another'; Daksha opens his arms and Ashikli folds her hands in joy.",
+ camera=cam("pull_out",(1.06,0,-6),(1.0,0,0),"wide","normal",0,"pulling back to reveal the new rows of sons"),
+ focus={"subject":"daksha","depth":"deep"},vertical={"x":640},
  layers=[far_sky(),mid_court(cx=640,wy=400,ws=0.5,px=(420,870)),near_court((440,840))],
  background=vista(),mood={"emotion":"new hope","grade":"warm"},
- characters=crowd("shavalashva",[(410,0.2,row(640,10,36),0.55),(448,0.25,row(640,8,46,3),0.75),(492,0.3,row(640,7,56),0.9)],look=640,emos=['joy','calm'],
-   cues={"ac":"thousand"},eng={"ad":0.8})+
-  [{"who":"daksha","x":560,"y":690,"s":0.98,"_face":0.41,"flip":1,"pose":"stand","emo":"calm","look":"asikli","mood":{"smile":0.4},
-   "actions":[{"word":"thousand","pose":"open","emo":"joy","d":0.6}]},
-  {"who":"asikli","x":710,"y":690,"s":0.96,"_ground":True,"flip":-1,"pose":"stand","emo":"calm","look":"daksha","mood":{"smile":0.5},
-   "actions":[{"word":"Ashikli","mood":{"smile":0.7,"ly":0.2},"d":0.6},{"word":"sons","pose":"namaste","emo":"joy","d":0.6}]}],
- effects=[name("Ashikli","Ashikli",700,128,28)],
+ characters=crowd("shavalashva",[(405,0.19,row(640,10,36),0.55),(440,0.24,row(640,8,46,3),0.75),(482,0.29,row(640,7,56),0.9)],look=640,emos=['joy','calm'],
+   cues={"ac":"another"},eng={"ad":0.6})+
+  [{"who":"daksha","x":575,"y":690,"s":0.86,"_face":0.43,"flip":1,"pose":"stand","emo":"joy","look":"asikli",
+   "actions":[{"word":"thousand","pose":"open","emo":"joy","mood":{"smile":0.9},"d":0.6}]},
+  {"who":"asikli","x":705,"y":690,"s":0.84,"_ground":True,"flip":-1,"pose":"stand","emo":"joy","look":"daksha",
+   "actions":[{"word":"sons","pose":"namaste","emo":"joy","d":0.6}]}],
+ effects=[{"k":"glow","word":"another","x":640,"y":400,"r":280,"rgb":"220,190,255","ga":0.4,"par":1.0,"behind":True,"meaning":"a violet light as the new sons appear"}],
  transition_in="cut"))
 # 23 --------------------------------------------------------------- the Shavalashvas
 S.append(shot("s23",51.16,
@@ -393,10 +418,10 @@ S.append(shot("s24",52.52,
  meaning="Narada gave the Shavalashvas exactly the same advice.",
  why="The very same shore and the very same pan: Narada, hand open, talks to rows of violet princes on the sand, who listen just as their brothers did.",
  camera=cam("pan_right",(1.0,0,0),(1.02,0,0),"two_shot","normal",0,"the same pan as before: the same words, the same result"),
- focus={"subject":"narada","depth":"deep"},vertical={"x":[480,760]},
- layers=[far_sea(xs=(470,840)),{"d":"mid","contents":"the same sand bank with a palm on each side","fog":0.15,"par":1.0,"items":[{"o":"hill","x":640,"y":440,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"tree","x":330,"y":500,"s":0.7,"kind":"palm","col":"#2e7a44"},{"o":"tree","x":940,"y":490,"s":0.6,"kind":"palm","col":"#2e7a44"}]},near_reeds((380,900))],
+ focus={"subject":"narada","depth":"deep"},vertical={"x":[470,700]},
+ layers=[far_sea(xs=(470,840)),{"d":"mid","contents":"the same sand bank with a palm on each side","fog":0.15,"par":1.0,"items":[sea_band(),{"o":"hill","x":640,"y":440,"s":1.0,"w":1100,"h":12,"col":"#f2dca8"},{"o":"tree","x":330,"y":500,"s":0.7,"kind":"palm","col":"#2e7a44"},{"o":"tree","x":940,"y":490,"s":0.6,"kind":"palm","col":"#2e7a44"}]},near_reeds((380,900))],
  background=vista(sky=SKY_SEA,sx=700,sy=230,horizon=40),mood={"emotion":"repetition","grade":"warm"},
- characters=crowd("shavalashva",[(450,0.21,row(790,6,40),0.65),(495,0.27,row(790,5,50),0.85),(560,0.35,row(780,4,64),1)],look=480,emos=['calm','doubt'],
+ characters=crowd("shavalashva",[(450,0.21,row(735,6,40),0.65),(495,0.27,row(735,5,50),0.85),(560,0.35,row(728,4,64),1)],look=480,emos=['calm','doubt'],
    acts=[{"word":"same","emo":"doubt","mood":{"ly":0.2},"d":0.6}])+
    [{"who":"narada","x":470,"y":665,"s":1.0,"_face":0.42,"flip":1,"pose":"stand","emo":"calm","talk":0.7,"look":760,
    "actions":[{"word":"spoke","pose":"open","emo":"calm","mood":{"smile":0.5},"d":0.6},{"word":"exactly","pose":"point","mood":{"smile":0.7,"lx":0.6},"d":0.6}]}],
@@ -406,13 +431,13 @@ S.append(shot("s25",55.24,
  meaning="The Shavalashvas disappeared as well.",
  why="On the sunrise road a line of violet princes walks away and dissolves into the morning mist on 'vanished'.",
  camera=cam("dolly_left",(1.0,10,0),(1.0,-6,0),"wide","wide",0,"a drift against their walk as they disappear"),
- focus={"subject":"shavalashva","depth":"deep"},vertical={"x":690},
- layers=[far_hills(),mid_road(x=620,ex=790,ey=380,w=200),near_reeds((480,880),'#3a5a3a')],
- background=vista(sky=SKY_DAWN,sx=790,sy=350,ridge=RIDGE_DAWN,sr=460),mood={"emotion":"vanishing","grade":"warm"},
+ focus={"subject":"shavalashva","depth":"deep"},vertical={"x":700},
+ layers=[far_hills(haze='#f4e8f0'),mid_road(x=660,ex=770,ey=380,w=200,bend=10,trees=(480,900)),near_reeds((480,880),'#3a5a3a')],
+ background=vista(sky=SKY_DAWN,sx=770,sy=330,ridge=RIDGE_DAWN,sr=300),mood={"emotion":"vanishing","grade":"warm"},
  characters=[{"who":"shavalashva","x":x,"y":y,"s":s,"flip":1,"pose":"stand","emo":"calm","look":900,"_fixed":True,"engine":{"walk":1,"vx":v,"fd":1.0,**({"a":a} if a<1 else {})},"engine_cues":{"fo":"vanished"}}
-   for (x,y,s,a,v) in [(782,392,0.1,0.55,3),(768,404,0.13,0.65,4),(750,420,0.17,0.78,5),(726,442,0.22,0.88,6),(694,472,0.28,1,7),(654,512,0.35,1,8)]],
+   for (x,y,s,a,v) in [(w["x"],w["y"],w["s"],w["a"],w["v"]) for w in walkers("shavalashva",660,770,380,10,[.9,.83,.74,.64,.53,.42],off=0.42)]],
  effects=[{"k":"mist_wisps","word":"vanished","x":720,"y":430,"w":420,"alpha":0.75,"par":1.0,"meaning":"the mist that swallows the second brothers"},
-  {"k":"glow","x":790,"y":350,"r":280,"rgb":"255,200,150","ga":0.45,"par":0.4,"behind":True,"meaning":"the sunrise they vanish into"}],
+  {"k":"glow","x":770,"y":340,"r":220,"rgb":"255,200,150","ga":0.3,"par":0.4,"behind":True,"meaning":"the sunrise they vanish into"}],
  transition_in="wipe"))
 # 26 --------------------------------------------------------------- Daksha roared
 S.append(shot("s26",56.34,
@@ -458,7 +483,7 @@ S.append(shot("s29",63.58,
  why="Narada stands calm beside a road of soft light that runs to the horizon, his hand open toward it on 'choice': the path was there, walking it was theirs.",
  camera=cam("tilt_up",(1.04,0,12),(1.04,0,-4),"medium","normal",0,"tilting up along the road to its far end"),
  focus={"subject":"narada","depth":"deep"},vertical={"x":600},
- layers=[far_hills(xs=(520,840)),mid_road(x=700,ex=720,ey=390,w=170,glow='255,236,180',trees=(440,900),bend=-20),near_reeds((440,840))],
+ layers=[far_hills(xs=(520,840)),mid_road(x=700,ex=720,ey=390,w=170,trees=(440,900),bend=-20,col='#f2c878'),near_reeds((440,840))],
  background=vista(sky=['#3a5cc4','#8ab0ec','#ffd8b8','#fff4e6'],sx=720,sy=330,ridge=RIDGE_DAWN),mood={"emotion":"calm","grade":"warm"},
  characters=[{"who":"narada","x":520,"y":665,"s":0.98,"_face":0.43,"flip":1,"pose":"stand","emo":"calm","talk":0.6,"look":720,"mood":{"smile":0.4},
    "actions":[{"word":"choice","pose":"open","mood":{"smile":0.6,"lx":0.6},"d":0.6},{"word":"walk","tilt":0.04,"mood":{"blink":0.3},"d":0.5}]}],
@@ -469,15 +494,15 @@ S.append(shot("s30",65.56,
  meaning="Daksha laid a curse on Narada.",
  why="The window pans from Daksha thrusting his finger in a curse to Narada, who is struck by a red ring of the curse and stops smiling.",
  camera=cam("pan_right",(1.0,0,0),(1.04,0,0),"two_shot","normal",5,"the pan follows the curse from the king to the sage"),
- focus={"subject":"narada","depth":"deep"},vertical={"x":[500,780]},
+ focus={"subject":"narada","depth":"deep"},vertical={"x":[600,700]},
  layers=[far_sky(xs=(440,880),haze='#ffe4d8',col='#ffe8d8',mcol='#c8a0a8'),mid_court(cx=640,wy=440,ws=0.55,px=(330,960)),near_court((380,900))],
  background=vista(sky=SKY_RAGE,sun='255,170,120'),mood={"emotion":"curse","grade":"warm"},
- characters=[{"who":"daksha","x":490,"y":665,"s":0.98,"_face":0.42,"flip":1,"pose":"stand","emo":"rage","talk":1.0,"look":"narada",
+ characters=[{"who":"daksha","x":545,"y":665,"s":0.98,"_face":0.42,"flip":1,"pose":"stand","emo":"rage","talk":1.0,"look":"narada",
    "actions":[{"word":"cursed","pose":"rpoint","emo":"rage","e":"spring","d":0.4}]},
-  {"who":"narada","x":800,"y":665,"s":0.96,"_ground":True,"flip":-1,"pose":"stand","emo":"calm","look":"daksha",
-   "actions":[{"word":"him","emo":"surprise","mood":{"surp":0.6},"d":0.4}]}],
- effects=[{"k":"red_energy_pulse","word":"cursed","x":800,"y":330,"w":360,"alpha":0.55,"par":1.0,"behind":True,"meaning":"the curse striking Narada"},
-  {"k":"halo_ring","word":"him","x":800,"y":330,"w":380,"alpha":0.4,"blend":"lighter","par":1.0,"behind":True,"rgb":"255,110,90","meaning":"the ring of the curse closing around him"}],
+  {"who":"narada","x":760,"y":665,"s":0.96,"_ground":True,"flip":-1,"pose":"stand","emo":"calm","look":"daksha",
+   "actions":[{"word":"cursed","emo":"fear","mood":{"surp":0.7},"d":0.4}]}],
+ effects=[{"k":"red_energy_pulse","word":"cursed","x":760,"y":330,"w":360,"alpha":0.55,"par":1.0,"behind":True,"meaning":"the curse striking Narada"},
+  {"k":"glow","word":"cursed","x":760,"y":330,"r":200,"rgb":"255,90,70","ga":0.5,"par":1.0,"behind":True,"meaning":"the red light of the curse closing around him"}],
  transition_in="flash"))
 # 31 --------------------------------------------------------------- scattered his sons across the earth
 S.append(shot("s31",67.06,
@@ -487,11 +512,11 @@ S.append(shot("s31",67.06,
  focus={"subject":"haryashva","depth":"deep"},vertical={"x":640},
  layers=[{"d":"far","contents":"far blue hills and haze across the earth","fog":0.55,"haze":"#eef4fa","items":[{"o":"mountain","x":500,"y":330,"s":1.0,"w":240,"h":100,"col":"#9ab4d4","snow":False},{"o":"mountain","x":800,"y":335,"s":1.0,"w":220,"h":90,"col":"#9ab4d4","snow":False}]},
    {"d":"mid","contents":"rolling green hills with groves dotted over the land","fog":0.15,"items":[{"o":"hill","x":520,"y":430,"s":1.0,"w":360,"h":40,"col":"#8ab870"},{"o":"hill","x":800,"y":470,"s":1.0,"w":380,"h":50,"col":"#7aa860"},{"o":"tree","x":470,"y":450,"s":0.3,"kind":"round","col":"#3a7a44"},{"o":"tree","x":830,"y":500,"s":0.32,"kind":"round","col":"#3a7a44"},{"o":"tree","x":600,"y":540,"s":0.36,"kind":"pine","col":"#2e6a3e"}]},near_reeds((440,840))],
- background=vista(sky=['#2f6ad0','#7ab8f0','#ffe6c4','#fff8ea'],sx=640,sy=200,river='#5ab8e8'),mood={"emotion":"scattered","grade":"warm"},
+ background=vista(sky=['#2f6ad0','#7ab8f0','#ffe6c4','#fff8ea'],sx=640,sy=200),mood={"emotion":"scattered","grade":"warm"},
  characters=[{"who":w,"x":x,"y":y,"s":s,"flip":f,"pose":"stand","emo":e,"look":x+f*100,"_fixed":True,**({"engine":{"a":a}} if a<1 else {}),
    "actions":[{"word":"scattered","mood":{"ly":0.3},"d":0.6}]}
    for (w,x,y,s,f,e,a) in [("haryashva",470,372,0.11,1,"sad",0.6),("shavalashva",585,358,0.1,-1,"calm",0.55),("haryashva",770,380,0.12,-1,"calm",0.62),("shavalashva",835,410,0.13,1,"sad",0.7),
-     ("haryashva",505,440,0.16,1,"calm",0.8),("shavalashva",700,452,0.17,-1,"doubt",0.82),("haryashva",615,500,0.21,1,"sad",0.92),("shavalashva",470,532,0.24,1,"calm",1),("haryashva",790,540,0.25,-1,"doubt",1)]],
+     ("haryashva",505,440,0.16,1,"calm",0.8),("shavalashva",700,452,0.17,-1,"doubt",0.82),("haryashva",615,500,0.21,1,"sad",0.92),("shavalashva",470,522,0.23,1,"calm",1),("haryashva",790,528,0.24,-1,"doubt",1)]],
  effects=[{"k":"mist_wisps","word":"across","x":640,"y":420,"w":520,"alpha":0.45,"par":0.8,"meaning":"the haze of distance between the scattered sons"}],
  transition_in="cut"))
 # 32 --------------------------------------------------------------- wander the three worlds, never find a home
@@ -511,11 +536,11 @@ S.append(shot("s32",69.78,
 S.append(shot("s33",73.64,
  meaning="The question to the viewer: was Narada a guide or a thief of sons?",
  why="Close on Narada with his veena: on 'guide' a gold halo opens behind his head; on 'thief' a violet swirl takes its place and his smile turns sly.",
- camera=cam("push_in",(1.0,0,0),(1.1,0,-6),"close","tele",0,"push in on the face the viewer must judge"),
- focus={"subject":"narada","depth":"shallow"},vertical={"focus":"narada","z":1.15,"y":0.42},
+ camera=cam("push_in",(1.0,0,0),(1.08,0,-6),"medium","normal",0,"push in on the face the viewer must judge"),
+ focus={"subject":"narada","depth":"shallow"},vertical={"focus":"narada"},
  layers=[{"d":"far","contents":"soft clouds and a pale peak behind the sage","fog":0.55,"haze":"#ece6f6","items":[{"o":"mountain","x":500,"y":460,"s":1.0,"col":"#a8a8d8","snow":False},{"o":"cloud","x":560,"y":220,"s":1.2,"col":"#ffffff"},{"o":"cloud","x":780,"y":270,"s":1.0,"col":"#ffffff"}]},
    {"d":"mid","contents":"a bank of clouds at his feet","fog":0.15,"items":[{"o":"cloud","x":480,"y":640,"s":1.5,"col":"#ffffff"},{"o":"cloud","x":820,"y":650,"s":1.4,"col":"#f4f0ff"}]},near_clouds()],
- background=cloud_bg(sky=['#2a3f9e','#6a8ae0','#e0d0f4','#fff4e4']),mood={"emotion":"question","grade":"warm"},
+ background=cloud_bg(),mood={"emotion":"question","grade":"warm"},
  characters=[{"who":"narada","x":640,"y":665,"s":1.04,"_face":0.43,"flip":1,"pose":"stand","emo":"calm","look":700,"mood":{"smile":0.4},
    "actions":[{"word":"guide","pose":"namaste","emo":"devotion","d":0.6},{"word":"thief","pose":"stand","emo":"calm","mood":{"smile":0.8,"lx":-0.7,"ly":0.15,"blink":0.25},"tilt":0.05,"d":0.6}]}],
  effects=[{"k":"halo_ring","word":"guide","x":640,"y":290,"w":420,"alpha":0.5,"blend":"lighter","par":1.0,"behind":True,"meaning":"Narada as a holy guide, a gold halo"},

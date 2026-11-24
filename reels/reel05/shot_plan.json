@@ -163,6 +163,7 @@
     "word": "His"
    },
    "cues": [
+    "first",
     "demand",
     "power"
    ],
@@ -192,14 +193,14 @@
      },
      "acts": [
       {
-       "c": 0,
+       "c": 1,
        "d": 0.5,
        "pose": "raise",
        "emo": "anger",
        "e": "spring"
       },
       {
-       "c": 1,
+       "c": 2,
        "d": 0.5,
        "mood": {
         "lx": 0.6,
@@ -218,7 +219,7 @@
      "w": 80,
      "alpha": 0.6,
      "par": 1.0,
-     "c": 1,
+     "c": 0,
      "d": 0.6
     }
    ],
@@ -334,6 +335,7 @@
     "word": "it"
    },
    "cues": [
+    "was",
     "name"
    ],
    "bg": {
@@ -362,7 +364,7 @@
      },
      "acts": [
       {
-       "c": 0,
+       "c": 1,
        "d": 0.4,
        "mood": {
         "anger": 0.8,
@@ -493,6 +495,7 @@
      "y": 527,
      "s": 1.0,
      "flip": 1,
+     "pose": "sit",
      "emo": "calm",
      "mood": {
       "smile": 0.4,
@@ -663,6 +666,7 @@
      "y": 420,
      "s": 0.78,
      "flip": 1,
+     "pose": "sit",
      "emo": "joy",
      "mood": {
       "smile": 0.6,
@@ -875,6 +879,7 @@
    "cues": [
     "child",
     "sages",
+    "called",
     "Kumaras"
    ],
    "bg": {
@@ -944,7 +949,7 @@
      },
      "acts": [
       {
-       "c": 2,
+       "c": 3,
        "d": 0.6,
        "tilt": 0.04,
        "mood": {
@@ -966,7 +971,7 @@
      },
      "acts": [
       {
-       "c": 2,
+       "c": 3,
        "d": 0.6,
        "mood": {
         "smile": 0.7
@@ -1672,8 +1677,7 @@
    },
    "cues": [
     "want",
-    "bound",
-    "life"
+    "bound"
    ],
    "bg": {
     "k": "cloudscape",
@@ -1753,7 +1757,7 @@
      "y": 150,
      "sc": 1.3,
      "par": 1.0,
-     "c": 2,
+     "c": 0,
      "d": 0.6
     }
    ],
@@ -1866,8 +1870,7 @@
     "word": "They"
    },
    "cues": [
-    "meditate",
-    "infinite"
+    "meditate"
    ],
    "bg": {
     "k": "cloudscape",
@@ -1961,7 +1964,7 @@
      "x": 640,
      "y": 150,
      "par": 1.0,
-     "c": 1,
+     "c": 0,
      "d": 0.6
     }
    ],
@@ -2126,7 +2129,7 @@
      "k": "halo_ring",
      "x": 640,
      "y": 346,
-     "w": 380,
+     "w": 260,
      "alpha": 0.45,
      "blend": "lighter",
      "par": 1.0,
@@ -2651,14 +2654,14 @@
      "s": 1.1,
      "flip": 1,
      "head": true,
-     "emo": "sad",
+     "emo": "anger",
      "mood": {
       "lx": -0.8
      },
      "acts": [
       {
-       "c": 0,
-       "d": 0.5,
+       "c": 1,
+       "d": 0.4,
        "emo": "rage",
        "e": "antic"
       }
@@ -2781,6 +2784,7 @@
    },
    "cues": [
     "fiery",
+    "being",
     "burst"
    ],
    "bg": {
@@ -2799,16 +2803,16 @@
      "who": "rudra",
      "x": 640,
      "y": 330,
-     "s": 0.45,
+     "s": 0.42,
      "flip": 1,
      "pose": "raise",
      "emo": "rage",
      "mood": {
       "lx": -0.8
      },
-     "ad": 0.7,
-     "my": -40,
-     "md": 2.4,
+     "ad": 0.5,
+     "my": -30,
+     "md": 2.0,
      "ac": 1,
      "mc": 1
     },
@@ -2818,13 +2822,14 @@
      "y": 549,
      "s": 0.9,
      "flip": 1,
+     "pose": "sit",
      "emo": "rage",
      "mood": {
       "lx": -0.8
      },
      "acts": [
       {
-       "c": 1,
+       "c": 2,
        "d": 0.4,
        "emo": "surprise",
        "mood": {
@@ -2839,18 +2844,20 @@
      "t": "glow",
      "x": 640,
      "y": 354,
-     "r": 120,
-     "rgb": "255,200,120",
-     "ga": 0.8,
+     "r": 110,
+     "rgb": "255,210,130",
+     "ga": 0.85,
      "par": 1.0,
      "c": 0,
      "d": 0.6
     },
     {
-     "t": "flash",
-     "rgb": "255,236,200",
-     "ga": 0.5,
-     "w": 0.35,
+     "t": "flames",
+     "x": 640,
+     "y": 354,
+     "sc": 0.55,
+     "n": 7,
+     "par": 1.0,
      "c": 1,
      "d": 0.6
     }
@@ -2860,8 +2867,8 @@
      "t": "beam",
      "x": 640,
      "y": 354,
-     "len": 560,
-     "w": 40,
+     "len": 520,
+     "w": 55,
      "par": 1.0,
      "c": 1,
      "d": 0.6
@@ -2962,7 +2969,7 @@
      ]
     }
    ],
-   "note": "medium handheld: Brahma on his lotus with angry red eyes; on 'fiery' his forehead glows, on 'burst' a white-gold column of fire shoots up from it with a flash and a figure of flame rises in it.",
+   "note": "medium handheld: Brahma on his lotus with angry red eyes; on 'fiery' his forehead glows, then flames and a white-gold column of fire shoot up from it and a small figure with a fire halo rises in the column.",
    "vert": {
     "x": 640,
     "focus": "brahma"
@@ -2978,7 +2985,7 @@
    },
    "cues": [
     "stepped",
-    "blazing",
+    "out",
     "red"
    ],
    "bg": {
@@ -3008,13 +3015,14 @@
       {
        "c": 0,
        "d": 0.6,
-       "pose": "lunge",
-       "e": "spring"
+       "e": "spring",
+       "mood": {
+        "ly": 0.2
+       }
       },
       {
        "c": 1,
        "d": 0.5,
-       "pose": "stand",
        "emo": "rage"
       }
      ],
@@ -3180,6 +3188,8 @@
      "emo": "rage",
      "talk": 0.9,
      "mood": {
+      "anger": 1,
+      "mouth": 0.9,
       "lx": -0.8
      },
      "acts": [
@@ -3315,8 +3325,8 @@
      "#ffd0a0",
      "#fff2e0"
     ],
-    "sx": 780,
-    "sy": 120
+    "sx": 700,
+    "sy": 200
    },
    "figs": [
     {
@@ -3325,6 +3335,7 @@
      "y": 534,
      "s": 1.0,
      "flip": 1,
+     "pose": "sit",
      "emo": "surprise",
      "mood": {
       "surp": 0.8,
@@ -3510,6 +3521,7 @@
      "y": 680,
      "s": 0.95,
      "flip": 1,
+     "pose": "sit",
      "emo": "surprise",
      "mood": {
       "ly": -0.5,
@@ -3670,9 +3682,10 @@
     {
      "who": "brahma",
      "x": 640,
-     "y": 541,
+     "y": 554,
      "s": 1.0,
      "flip": 1,
+     "pose": "sit",
      "emo": "doubt",
      "mood": {
       "ly": -0.6,
@@ -3682,7 +3695,6 @@
       {
        "c": 0,
        "d": 0.6,
-       "pose": "raise",
        "emo": "calm",
        "mood": {
         "ly": -0.7,
@@ -3706,8 +3718,8 @@
      "t": "pfx",
      "k": "halo_ring",
      "x": 640,
-     "y": 346,
-     "w": 360,
+     "y": 359,
+     "w": 280,
      "alpha": 0.45,
      "blend": "lighter",
      "par": 1.0,
@@ -3810,7 +3822,7 @@
      ]
     }
    ],
-   "note": "medium push_in: Brahma raises his hand with his eyes turned up, remembering; a soft gold ring of light opens behind his heads on 'remembered'.",
+   "note": "medium push_in: Brahma on his lotus turns his eyes up and smiles as he remembers; a soft gold ring of light opens behind his heads on 'remembered'.",
    "vert": {
     "focus": "brahma",
     "z": 1.1,
@@ -3894,7 +3906,7 @@
      "x": 745,
      "y": 95,
      "size": 42,
-     "col": "#fff0d8",
+     "col": "#8a2a10",
      "c": 1,
      "d": 0.6
     },
@@ -3903,8 +3915,8 @@
      "s": "rud",
      "x": 640,
      "y": 170,
-     "size": 70,
-     "col": "#ffe08a",
+     "size": 72,
+     "col": "#7a1a08",
      "glow": 1,
      "c": 2,
      "d": 0.6
@@ -4068,7 +4080,7 @@
      },
      "acts": [
       {
-       "c": 1,
+       "c": 0,
        "d": 0.8,
        "emo": "calm",
        "mood": {
@@ -4215,6 +4227,7 @@
    },
    "cues": [
     "Shiva",
+    "also",
     "Mahadev"
    ],
    "bg": {
@@ -4257,7 +4270,7 @@
      },
      "acts": [
       {
-       "c": 1,
+       "c": 2,
        "d": 0.6,
        "tilt": 0.03,
        "mood": {
@@ -4400,6 +4413,7 @@
     "word": "Brahma"
    },
    "cues": [
+    "Brahma",
     "created"
    ],
    "bg": {
@@ -4420,6 +4434,7 @@
      "y": 520,
      "s": 1.0,
      "flip": 1,
+     "pose": "sit",
      "emo": "joy",
      "mood": {
       "smile": 0.6,
@@ -4427,9 +4442,13 @@
      },
      "acts": [
       {
-       "c": 0,
+       "c": 1,
        "d": 0.5,
-       "pose": "open"
+       "tilt": 0.04,
+       "mood": {
+        "smile": 0.8,
+        "ly": -0.2
+       }
       }
      ]
     }
@@ -4454,7 +4473,7 @@
      "rgb": "255,215,140",
      "ga": 0.5,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     }
    ],
@@ -4553,7 +4572,7 @@
      ]
     }
    ],
-   "note": "medium push_in: Brahma on his lotus opens his hands in gold light; the plate 'Creator' appears.",
+   "note": "medium push_in: Brahma smiles on his lotus in gold light, book and mala in his hands; the plate 'Creator' appears.",
    "vert": {
     "focus": "brahma"
    }
@@ -4565,6 +4584,7 @@
     "word": "Vishnu"
    },
    "cues": [
+    "Vishnu",
     "preserved"
    ],
    "bg": {
@@ -4593,7 +4613,7 @@
      },
      "acts": [
       {
-       "c": 0,
+       "c": 1,
        "d": 0.5,
        "pose": "raise",
        "emo": "joy"
@@ -4721,6 +4741,7 @@
     "word": "and"
    },
    "cues": [
+    "Shiva",
     "destroyer"
    ],
    "bg": {
@@ -4748,7 +4769,7 @@
      },
      "acts": [
       {
-       "c": 0,
+       "c": 1,
        "d": 0.6,
        "emo": "anger",
        "mood": {
@@ -4767,7 +4788,7 @@
      "rgb": "255,120,80",
      "ga": 0.6,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -5062,8 +5083,8 @@
    },
    "cues": [
     "agreed",
-    "making",
-    "beings"
+    "began",
+    "making"
    ],
    "bg": {
     "k": "cloudscape",
@@ -5090,7 +5111,7 @@
      },
      "ad": 0.8,
      "a": 0.85,
-     "ac": 2
+     "ac": 1
     },
     {
      "who": "shiva",
@@ -5114,7 +5135,7 @@
        }
       },
       {
-       "c": 1,
+       "c": 2,
        "d": 0.6,
        "pose": "open"
       }
@@ -5131,7 +5152,7 @@
      "rgb": "255,200,140",
      "ga": 0.45,
      "par": 1.0,
-     "c": 2,
+     "c": 1,
      "d": 0.6
     }
    ],
@@ -5460,7 +5481,7 @@
     "word": "Eleven"
    },
    "cues": [
-    "Rudras",
+    "Eleven",
     "Brahma"
    ],
    "bg": {
@@ -5478,8 +5499,8 @@
     {
      "who": "rudra",
      "x": 640,
-     "y": 400,
-     "s": 0.36,
+     "y": 372,
+     "s": 0.42,
      "flip": 1,
      "pose": "namaste",
      "emo": "calm",
@@ -5490,8 +5511,8 @@
     {
      "who": "rudra",
      "x": 560,
-     "y": 400,
-     "s": 0.36,
+     "y": 372,
+     "s": 0.42,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -5502,8 +5523,8 @@
     {
      "who": "rudra",
      "x": 720,
-     "y": 400,
-     "s": 0.36,
+     "y": 372,
+     "s": 0.42,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
@@ -5513,9 +5534,9 @@
     },
     {
      "who": "rudra",
-     "x": 500,
-     "y": 452,
-     "s": 0.42,
+     "x": 520,
+     "y": 430,
+     "s": 0.48,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -5525,44 +5546,8 @@
     },
     {
      "who": "rudra",
-     "x": 593,
-     "y": 452,
-     "s": 0.42,
-     "flip": 1,
-     "pose": "namaste",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
-    },
-    {
-     "who": "rudra",
-     "x": 687,
-     "y": 452,
-     "s": 0.42,
-     "flip": -1,
-     "pose": "namaste",
-     "emo": "calm",
-     "mood": {
-      "lx": -0.8
-     }
-    },
-    {
-     "who": "rudra",
-     "x": 780,
-     "y": 452,
-     "s": 0.42,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": -0.8
-     }
-    },
-    {
-     "who": "rudra",
-     "x": 505,
-     "y": 505,
+     "x": 600,
+     "y": 430,
      "s": 0.48,
      "flip": 1,
      "pose": "namaste",
@@ -5573,20 +5558,20 @@
     },
     {
      "who": "rudra",
-     "x": 595,
-     "y": 505,
+     "x": 680,
+     "y": 430,
      "s": 0.48,
-     "flip": 1,
-     "pose": "stand",
+     "flip": -1,
+     "pose": "namaste",
      "emo": "calm",
      "mood": {
-      "lx": 0.8
+      "lx": -0.8
      }
     },
     {
      "who": "rudra",
-     "x": 685,
-     "y": 505,
+     "x": 760,
+     "y": 430,
      "s": 0.48,
      "flip": -1,
      "pose": "stand",
@@ -5597,9 +5582,45 @@
     },
     {
      "who": "rudra",
-     "x": 775,
-     "y": 505,
-     "s": 0.48,
+     "x": 478,
+     "y": 500,
+     "s": 0.54,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "rudra",
+     "x": 585,
+     "y": 500,
+     "s": 0.54,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "rudra",
+     "x": 695,
+     "y": 500,
+     "s": 0.54,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": -0.8
+     }
+    },
+    {
+     "who": "rudra",
+     "x": 802,
+     "y": 500,
+     "s": 0.54,
      "flip": -1,
      "pose": "namaste",
      "emo": "calm",
@@ -5613,6 +5634,7 @@
      "y": 640,
      "s": 0.85,
      "flip": -1,
+     "pose": "sit",
      "emo": "surprise",
      "mood": {
       "surp": 0.8,
@@ -5635,7 +5657,7 @@
      "t": "name",
      "s": "Eleven Rudras",
      "x": 640,
-     "y": 250,
+     "y": 80,
      "size": 26,
      "c": 0,
      "d": 0.6
@@ -5753,8 +5775,8 @@
     "word": "Brahma"
    },
    "cues": [
+    "creation",
     "mortals",
-    "die",
     "born",
     "again"
    ],
@@ -5776,6 +5798,7 @@
      "y": 530,
      "s": 1.0,
      "flip": 1,
+     "pose": "sit",
      "emo": "doubt",
      "talk": 0.7,
      "mood": {
@@ -5783,15 +5806,20 @@
      },
      "acts": [
       {
-       "c": 0,
+       "c": 1,
        "d": 0.6,
-       "pose": "open"
+       "tilt": 0.04,
+       "mood": {
+        "ly": -0.4
+       }
       },
       {
        "c": 3,
        "d": 0.6,
-       "pose": "plead",
-       "emo": "calm"
+       "emo": "calm",
+       "mood": {
+        "ly": 0.3
+       }
       }
      ]
     }
@@ -5805,7 +5833,7 @@
      "y": 130,
      "sc": 1.2,
      "par": 1.0,
-     "c": 1,
+     "c": 0,
      "d": 0.6
     },
     {
@@ -5915,7 +5943,7 @@
      ]
     }
    ],
-   "note": "medium tilt_down: Brahma pleads with open hands; above him the gold wheel of birth and death turns on 'die' and glows on 'born': what creation needs.",
+   "note": "medium tilt_down: Brahma explains from his lotus, eyes on the sky; above him the gold wheel of birth and death turns on 'die' and glows on 'born': what creation needs.",
    "vert": {
     "focus": "brahma"
    },
@@ -6110,6 +6138,7 @@
    },
    "cues": [
     "spoiled",
+    "rather",
     "meditate"
    ],
    "bg": {
@@ -6265,7 +6294,7 @@
     "z": 1.08,
     "y": 0.42
    },
-   "bgc": 1,
+   "bgc": 2,
    "bgd": 1.0,
    "bg2": {
     "k": "vista",
@@ -6498,6 +6527,7 @@
      "s": 1.05,
      "flip": 1,
      "pose": "sitpray",
+     "prop": "none",
      "emo": "calm",
      "mood": {
       "blink": 1,

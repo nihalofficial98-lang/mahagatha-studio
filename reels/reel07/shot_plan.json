@@ -3322,7 +3322,7 @@
    "layers": [
     {
      "d": "far",
-     "fog": 0.35,
+     "fog": 0.4,
      "haze": "#eef6fc",
      "items": [
       {
@@ -3348,15 +3348,6 @@
        "y": 240,
        "s": 0.9,
        "col": "#ffffff"
-      },
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 372,
-       "s": 1.0,
-       "w": 1500,
-       "h": 4,
-       "col": "#3a94dc"
       }
      ]
     },
@@ -3368,6 +3359,16 @@
       {
        "o": "hill",
        "x": 640,
+       "y": 374,
+       "s": 1.0,
+       "w": 1500,
+       "h": 3,
+       "col": "#4aa6e4",
+       "fog": 0.08
+      },
+      {
+       "o": "hill",
+       "x": 640,
        "y": 440,
        "s": 1.0,
        "w": 1100,
@@ -3376,15 +3377,15 @@
       },
       {
        "o": "road",
-       "x": 830,
+       "x": 900,
        "y": 740,
        "s": 1.0,
-       "w": 170,
-       "ex": 700,
-       "ey": 378,
-       "ew": 34,
-       "bend": -60,
-       "col": "#4aaae6",
+       "w": 160,
+       "ex": 640,
+       "ey": 372,
+       "ew": 40,
+       "bend": 40,
+       "col": "#4aa6e4",
        "plain": true
       },
       {
@@ -3440,8 +3441,7 @@
     "word": "meets"
    },
    "cues": [
-    "sea",
-    "offerings"
+    "sea"
    ],
    "bg": {
     "k": "vista",
@@ -3477,7 +3477,7 @@
      },
      "acts": [
       {
-       "c": 1,
+       "c": 0,
        "d": 0.6,
        "pose": "namaste"
       }
@@ -3497,7 +3497,7 @@
      },
      "acts": [
       {
-       "c": 1,
+       "c": 0,
        "d": 0.6,
        "pose": "namaste"
       }
@@ -3517,7 +3517,7 @@
      },
      "acts": [
       {
-       "c": 1,
+       "c": 0,
        "d": 0.6,
        "pose": "namaste"
       }
@@ -3537,7 +3537,7 @@
      },
      "acts": [
       {
-       "c": 1,
+       "c": 0,
        "d": 0.6,
        "pose": "namaste"
       }
@@ -3557,7 +3557,7 @@
      },
      "acts": [
       {
-       "c": 1,
+       "c": 0,
        "d": 0.6,
        "pose": "namaste"
       }
@@ -3577,7 +3577,7 @@
      },
      "acts": [
       {
-       "c": 1,
+       "c": 0,
        "d": 0.6,
        "pose": "namaste"
       }
@@ -3655,7 +3655,7 @@
      "rgb": "255,210,120",
      "ga": 0.5,
      "par": 1.0,
-     "c": 1,
+     "c": 0,
      "d": 0.6
     },
     {
@@ -3666,7 +3666,7 @@
      "w": 120,
      "alpha": 0.35,
      "par": 0.6,
-     "c": 1,
+     "c": 0,
      "d": 0.6
     }
    ],
@@ -3688,7 +3688,7 @@
    "layers": [
     {
      "d": "far",
-     "fog": 0.35,
+     "fog": 0.4,
      "haze": "#eef6fc",
      "items": [
       {
@@ -3714,15 +3714,6 @@
        "y": 240,
        "s": 0.9,
        "col": "#ffffff"
-      },
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 380,
-       "s": 1.0,
-       "w": 1500,
-       "h": 4,
-       "col": "#3a94dc"
       }
      ]
     },
@@ -3734,24 +3725,21 @@
       {
        "o": "hill",
        "x": 640,
+       "y": 374,
+       "s": 1.0,
+       "w": 1500,
+       "h": 3,
+       "col": "#4aa6e4",
+       "fog": 0.08
+      },
+      {
+       "o": "hill",
+       "x": 640,
        "y": 470,
        "s": 1.0,
        "w": 1100,
        "h": 12,
        "col": "#f2dca8"
-      },
-      {
-       "o": "road",
-       "x": 860,
-       "y": 740,
-       "s": 1.0,
-       "w": 180,
-       "ex": 760,
-       "ey": 384,
-       "ew": 40,
-       "bend": -40,
-       "col": "#4aaae6",
-       "plain": true
       },
       {
        "o": "tree",
@@ -4034,7 +4022,7 @@
    "layers": [
     {
      "d": "far",
-     "fog": 0.35,
+     "fog": 0.4,
      "haze": "#eef6fc",
      "items": [
       {
@@ -4060,15 +4048,6 @@
        "y": 240,
        "s": 0.9,
        "col": "#ffffff"
-      },
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 372,
-       "s": 1.0,
-       "w": 1500,
-       "h": 4,
-       "col": "#3a94dc"
       }
      ]
     },
@@ -4077,6 +4056,16 @@
      "fog": 0.15,
      "par": 1.0,
      "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 374,
+       "s": 1.0,
+       "w": 1500,
+       "h": 3,
+       "col": "#4aa6e4",
+       "fog": 0.08
+      },
       {
        "o": "hill",
        "x": 640,
@@ -4170,7 +4159,7 @@
    "figs": [
     {
      "who": "haryashva",
-     "x": 690,
+     "x": 635,
      "y": 450,
      "s": 0.21,
      "flip": -1,
@@ -4193,53 +4182,7 @@
     },
     {
      "who": "haryashva",
-     "x": 730,
-     "y": 450,
-     "s": 0.21,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "doubt",
-     "mood": {
-      "lx": 0.8
-     },
-     "acts": [
-      {
-       "c": 1,
-       "d": 0.6,
-       "emo": "doubt",
-       "mood": {
-        "ly": 0.2
-       }
-      }
-     ],
-     "a": 0.65
-    },
-    {
-     "who": "haryashva",
-     "x": 770,
-     "y": 450,
-     "s": 0.21,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     },
-     "acts": [
-      {
-       "c": 1,
-       "d": 0.6,
-       "emo": "doubt",
-       "mood": {
-        "ly": 0.2
-       }
-      }
-     ],
-     "a": 0.65
-    },
-    {
-     "who": "haryashva",
-     "x": 810,
+     "x": 675,
      "y": 450,
      "s": 0.21,
      "flip": -1,
@@ -4262,7 +4205,7 @@
     },
     {
      "who": "haryashva",
-     "x": 850,
+     "x": 715,
      "y": 450,
      "s": 0.21,
      "flip": -1,
@@ -4285,7 +4228,7 @@
     },
     {
      "who": "haryashva",
-     "x": 890,
+     "x": 755,
      "y": 450,
      "s": 0.21,
      "flip": -1,
@@ -4308,7 +4251,53 @@
     },
     {
      "who": "haryashva",
-     "x": 690,
+     "x": 795,
+     "y": 450,
+     "s": 0.21,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "doubt",
+       "mood": {
+        "ly": 0.2
+       }
+      }
+     ],
+     "a": 0.65
+    },
+    {
+     "who": "haryashva",
+     "x": 835,
+     "y": 450,
+     "s": 0.21,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "doubt",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "doubt",
+       "mood": {
+        "ly": 0.2
+       }
+      }
+     ],
+     "a": 0.65
+    },
+    {
+     "who": "haryashva",
+     "x": 635,
      "y": 495,
      "s": 0.27,
      "flip": -1,
@@ -4331,7 +4320,7 @@
     },
     {
      "who": "haryashva",
-     "x": 740,
+     "x": 685,
      "y": 495,
      "s": 0.27,
      "flip": -1,
@@ -4354,7 +4343,7 @@
     },
     {
      "who": "haryashva",
-     "x": 790,
+     "x": 735,
      "y": 495,
      "s": 0.27,
      "flip": -1,
@@ -4377,7 +4366,7 @@
     },
     {
      "who": "haryashva",
-     "x": 840,
+     "x": 785,
      "y": 495,
      "s": 0.27,
      "flip": -1,
@@ -4400,7 +4389,7 @@
     },
     {
      "who": "haryashva",
-     "x": 890,
+     "x": 835,
      "y": 495,
      "s": 0.27,
      "flip": -1,
@@ -4423,7 +4412,7 @@
     },
     {
      "who": "haryashva",
-     "x": 684,
+     "x": 632,
      "y": 560,
      "s": 0.35,
      "flip": -1,
@@ -4445,7 +4434,7 @@
     },
     {
      "who": "haryashva",
-     "x": 748,
+     "x": 696,
      "y": 560,
      "s": 0.35,
      "flip": -1,
@@ -4467,7 +4456,7 @@
     },
     {
      "who": "haryashva",
-     "x": 812,
+     "x": 760,
      "y": 560,
      "s": 0.35,
      "flip": -1,
@@ -4489,7 +4478,7 @@
     },
     {
      "who": "haryashva",
-     "x": 876,
+     "x": 824,
      "y": 560,
      "s": 0.35,
      "flip": -1,
@@ -4526,7 +4515,11 @@
        "c": 0,
        "d": 0.6,
        "pose": "open",
-       "emo": "doubt"
+       "emo": "calm",
+       "mood": {
+        "surp": 0.4,
+        "smile": 0.3
+       }
       },
       {
        "c": 2,
@@ -4560,7 +4553,7 @@
    "layers": [
     {
      "d": "far",
-     "fog": 0.35,
+     "fog": 0.4,
      "haze": "#eef6fc",
      "items": [
       {
@@ -4586,15 +4579,6 @@
        "y": 240,
        "s": 0.9,
        "col": "#ffffff"
-      },
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 372,
-       "s": 1.0,
-       "w": 1500,
-       "h": 4,
-       "col": "#3a94dc"
       }
      ]
     },
@@ -4603,6 +4587,16 @@
      "fog": 0.15,
      "par": 1.0,
      "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 374,
+       "s": 1.0,
+       "w": 1500,
+       "h": 3,
+       "col": "#4aa6e4",
+       "fog": 0.08
+      },
       {
        "o": "hill",
        "x": 640,
@@ -4655,8 +4649,8 @@
    "note": "two_shot pan_right: The window pans from Narada, one hand open in a question, to the rows of green princes on the sand, who turn to listen.",
    "vert": {
     "x": [
-     480,
-     760
+     470,
+     700
     ],
     "focus": "narada"
    },
@@ -4700,9 +4694,11 @@
      "s": 1.0,
      "flip": 1,
      "pose": "stand",
-     "emo": "doubt",
+     "emo": "calm",
      "talk": 0.7,
      "mood": {
+      "surp": 0.3,
+      "smile": 0.3,
       "lx": 0.8
      },
      "acts": [
@@ -4710,9 +4706,9 @@
        "c": 0,
        "d": 0.5,
        "pose": "raise",
-       "emo": "doubt",
        "mood": {
-        "surp": 0.4
+        "surp": 0.5,
+        "smile": 0.4
        }
       },
       {
@@ -4748,7 +4744,7 @@
    "layers": [
     {
      "d": "far",
-     "fog": 0.35,
+     "fog": 0.4,
      "haze": "#eef6fc",
      "items": [
       {
@@ -4774,15 +4770,6 @@
        "y": 240,
        "s": 0.9,
        "col": "#ffffff"
-      },
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 372,
-       "s": 1.0,
-       "w": 1500,
-       "h": 4,
-       "col": "#3a94dc"
       }
      ]
     },
@@ -4791,6 +4778,16 @@
      "fog": 0.2,
      "par": 1.0,
      "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 374,
+       "s": 1.0,
+       "w": 1500,
+       "h": 3,
+       "col": "#4aa6e4",
+       "fog": 0.08
+      },
       {
        "o": "hill",
        "x": 640,
@@ -5038,7 +5035,7 @@
    "layers": [
     {
      "d": "far",
-     "fog": 0.35,
+     "fog": 0.4,
      "haze": "#eef6fc",
      "items": [
       {
@@ -5064,15 +5061,6 @@
        "y": 240,
        "s": 0.9,
        "col": "#ffffff"
-      },
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 372,
-       "s": 1.0,
-       "w": 1500,
-       "h": 4,
-       "col": "#3a94dc"
       }
      ]
     },
@@ -5081,6 +5069,16 @@
      "fog": 0.2,
      "par": 1.0,
      "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 374,
+       "s": 1.0,
+       "w": 1500,
+       "h": 3,
+       "col": "#4aa6e4",
+       "fog": 0.08
+      },
       {
        "o": "hill",
        "x": 640,
@@ -5206,7 +5204,7 @@
    "layers": [
     {
      "d": "far",
-     "fog": 0.35,
+     "fog": 0.4,
      "haze": "#eef6fc",
      "items": [
       {
@@ -5232,15 +5230,6 @@
        "y": 240,
        "s": 0.9,
        "col": "#ffffff"
-      },
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 372,
-       "s": 1.0,
-       "w": 1500,
-       "h": 4,
-       "col": "#3a94dc"
       }
      ]
     },
@@ -5249,6 +5238,16 @@
      "fog": 0.25,
      "par": 1.0,
      "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 374,
+       "s": 1.0,
+       "w": 1500,
+       "h": 3,
+       "col": "#4aa6e4",
+       "fog": 0.08
+      },
       {
        "o": "hill",
        "x": 640,
@@ -5323,8 +5322,7 @@
      "#4a8064"
     ],
     "haze": "240,244,255",
-    "dust": 14,
-    "river": "#5ab8e8"
+    "dust": 14
    },
    "figs": [
     {
@@ -5473,8 +5471,8 @@
    "note": "wide pan_right: The window pans from Narada pointing outward to the wide earth beyond: hills, forests and a river winding away to far blue mountains.",
    "vert": {
     "x": [
-     500,
-     780
+     565,
+     700
     ],
     "focus": "narada"
    },
@@ -5627,8 +5625,7 @@
        "ey": 400,
        "ew": 4,
        "bend": -30,
-       "col": "#efd6a0",
-       "glow": "255,226,150"
+       "col": "#f2c878"
       },
       {
        "o": "tree",
@@ -6521,7 +6518,7 @@
    "layers": [
     {
      "d": "far",
-     "fog": 0.35,
+     "fog": 0.4,
      "haze": "#eef6fc",
      "items": [
       {
@@ -6547,15 +6544,6 @@
        "y": 240,
        "s": 0.9,
        "col": "#ffffff"
-      },
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 372,
-       "s": 1.0,
-       "w": 1500,
-       "h": 4,
-       "col": "#3a94dc"
       }
      ]
     },
@@ -6564,6 +6552,16 @@
      "fog": 0.18,
      "par": 1.0,
      "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 374,
+       "s": 1.0,
+       "w": 1500,
+       "h": 3,
+       "col": "#4aa6e4",
+       "fog": 0.08
+      },
       {
        "o": "hill",
        "x": 640,
@@ -6659,8 +6657,8 @@
      "#ffbc8c",
      "#ffeac4"
     ],
-    "sx": 780,
-    "sy": 360,
+    "sx": 760,
+    "sy": 330,
     "ridge": [
      "#b4b4dc",
      "#9a9ac8",
@@ -6669,14 +6667,14 @@
     ],
     "haze": "240,244,255",
     "dust": 14,
-    "sr": 460
+    "sr": 300
    },
    "figs": [
     {
      "who": "haryashva",
-     "x": 780,
-     "y": 386,
-     "s": 0.08,
+     "x": 747,
+     "y": 405,
+     "s": 0.074,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -6693,14 +6691,14 @@
       }
      ],
      "walk": 1,
-     "vx": 3,
-     "a": 0.45
+     "vx": 1.4,
+     "a": 0.51
     },
     {
      "who": "haryashva",
-     "x": 772,
-     "y": 394,
-     "s": 0.1,
+     "x": 761,
+     "y": 423,
+     "s": 0.118,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -6717,14 +6715,14 @@
       }
      ],
      "walk": 1,
-     "vx": 3,
-     "a": 0.55
+     "vx": 1.7,
+     "a": 0.56
     },
     {
      "who": "haryashva",
-     "x": 760,
-     "y": 404,
-     "s": 0.12,
+     "x": 727,
+     "y": 445,
+     "s": 0.17,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -6741,14 +6739,14 @@
       }
      ],
      "walk": 1,
-     "vx": 4,
-     "a": 0.62
+     "vx": 2.1,
+     "a": 0.61
     },
     {
      "who": "haryashva",
-     "x": 744,
-     "y": 418,
-     "s": 0.15,
+     "x": 758,
+     "y": 470,
+     "s": 0.23,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -6765,14 +6763,14 @@
       }
      ],
      "walk": 1,
-     "vx": 5,
-     "a": 0.72
+     "vx": 2.5,
+     "a": 0.67
     },
     {
      "who": "haryashva",
-     "x": 722,
-     "y": 437,
-     "s": 0.19,
+     "x": 699,
+     "y": 499,
+     "s": 0.3,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -6789,14 +6787,38 @@
       }
      ],
      "walk": 1,
-     "vx": 6,
+     "vx": 3.0,
+     "a": 0.74
+    },
+    {
+     "who": "haryashva",
+     "x": 755,
+     "y": 531,
+     "s": 0.377,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "mood": {
+        "lx": 0.6
+       }
+      }
+     ],
+     "walk": 1,
+     "vx": 3.5,
      "a": 0.82
     },
     {
      "who": "haryashva",
-     "x": 694,
-     "y": 464,
-     "s": 0.24,
+     "x": 664,
+     "y": 567,
+     "s": 0.463,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -6813,14 +6835,14 @@
       }
      ],
      "walk": 1,
-     "vx": 7,
-     "a": 0.92
+     "vx": 4.1,
+     "a": 0.91
     },
     {
      "who": "haryashva",
-     "x": 658,
-     "y": 500,
-     "s": 0.31,
+     "x": 749,
+     "y": 607,
+     "s": 0.559,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -6837,41 +6859,18 @@
       }
      ],
      "walk": 1,
-     "vx": 8
-    },
-    {
-     "who": "haryashva",
-     "x": 612,
-     "y": 548,
-     "s": 0.4,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     },
-     "acts": [
-      {
-       "c": 0,
-       "d": 0.6,
-       "mood": {
-        "lx": 0.6
-       }
-      }
-     ],
-     "walk": 1,
-     "vx": 9
+     "vx": 4.8
     }
    ],
    "fx": [],
    "fxb": [
     {
      "t": "glow",
-     "x": 780,
-     "y": 360,
-     "r": 300,
+     "x": 760,
+     "y": 340,
+     "r": 220,
      "rgb": "255,200,130",
-     "ga": 0.45,
+     "ga": 0.3,
      "par": 0.4
     }
    ],
@@ -6879,13 +6878,13 @@
     "from": {
      "z": 1.0,
      "x": -12,
-     "y": 0,
+     "y": 10,
      "r": 0
     },
     "to": {
      "z": 1.0,
      "x": 6,
-     "y": 0,
+     "y": 10,
      "r": 0
     }
    },
@@ -6894,7 +6893,7 @@
     {
      "d": "far",
      "fog": 0.55,
-     "haze": "#f6eee6",
+     "haze": "#f4e8f0",
      "items": [
       {
        "o": "mountain",
@@ -6941,19 +6940,19 @@
       },
       {
        "o": "road",
-       "x": 600,
+       "x": 650,
        "y": 740,
        "s": 1.0,
        "w": 200,
-       "ex": 780,
+       "ex": 760,
        "ey": 380,
        "ew": 4,
-       "bend": 40,
+       "bend": 10,
        "col": "#efd6a0"
       },
       {
        "o": "tree",
-       "x": 430,
+       "x": 470,
        "y": 530,
        "s": 0.6,
        "kind": "round",
@@ -7015,8 +7014,8 @@
      "#ffbc8c",
      "#ffeac4"
     ],
-    "sx": 780,
-    "sy": 350,
+    "sx": 770,
+    "sy": 330,
     "ridge": [
      "#b4b4dc",
      "#9a9ac8",
@@ -7025,14 +7024,14 @@
     ],
     "haze": "240,244,255",
     "dust": 14,
-    "sr": 460
+    "sr": 300
    },
    "figs": [
     {
      "who": "haryashva",
-     "x": 776,
-     "y": 388,
-     "s": 0.08,
+     "x": 766,
+     "y": 398,
+     "s": 0.07,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -7047,9 +7046,9 @@
     },
     {
      "who": "haryashva",
-     "x": 768,
-     "y": 395,
-     "s": 0.09,
+     "x": 764,
+     "y": 412,
+     "s": 0.091,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -7064,9 +7063,9 @@
     },
     {
      "who": "haryashva",
-     "x": 758,
-     "y": 404,
-     "s": 0.11,
+     "x": 760,
+     "y": 430,
+     "s": 0.134,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -7096,11 +7095,11 @@
    "fxb": [
     {
      "t": "glow",
-     "x": 780,
-     "y": 360,
-     "r": 280,
+     "x": 770,
+     "y": 340,
+     "r": 220,
      "rgb": "255,210,140",
-     "ga": 0.45,
+     "ga": 0.3,
      "par": 0.4
     }
    ],
@@ -7123,7 +7122,7 @@
     {
      "d": "far",
      "fog": 0.55,
-     "haze": "#f6eee6",
+     "haze": "#f4e8f0",
      "items": [
       {
        "o": "mountain",
@@ -7170,19 +7169,19 @@
       },
       {
        "o": "road",
-       "x": 640,
+       "x": 680,
        "y": 740,
        "s": 1.0,
        "w": 210,
-       "ex": 780,
+       "ex": 770,
        "ey": 380,
        "ew": 4,
-       "bend": 40,
+       "bend": 10,
        "col": "#efd6a0"
       },
       {
        "o": "tree",
-       "x": 430,
+       "x": 500,
        "y": 530,
        "s": 0.6,
        "kind": "round",
@@ -7190,7 +7189,7 @@
       },
       {
        "o": "tree",
-       "x": 900,
+       "x": 920,
        "y": 500,
        "s": 0.5,
        "kind": "round",
@@ -7420,7 +7419,223 @@
     "word": "Daksha"
    },
    "cues": [
-    "Ashikli",
+    "wife",
+    "Ashikli"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2a5cc4",
+     "#7ab0ee",
+     "#ffdca8",
+     "#fff6e2"
+    ],
+    "sx": 640,
+    "sy": 250,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 14
+   },
+   "figs": [
+    {
+     "who": "daksha",
+     "x": 570,
+     "y": 597,
+     "s": 0.98,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "sad",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "emo": "calm",
+       "mood": {
+        "smile": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "who": "asikli",
+     "x": 712,
+     "y": 597,
+     "s": 0.96,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.4,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "mood": {
+        "smile": 0.7,
+        "ly": 0.2
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Ashikli",
+     "x": 700,
+     "y": 128,
+     "size": 28,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": -6,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 420,
+       "s": 0.9,
+       "w": 260,
+       "h": 200,
+       "col": "#9aaad8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 430,
+       "s": 0.8,
+       "w": 240,
+       "h": 170,
+       "col": "#9aaad8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.2,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 1.0,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "wall",
+       "x": 640,
+       "y": 456,
+       "s": 0.6,
+       "w": 1300,
+       "h": 330,
+       "col": "#f2d6a2"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 450,
+       "s": 1.0,
+       "w": 1000,
+       "h": 8,
+       "col": "#ecd8b4"
+      },
+      {
+       "o": "pillar",
+       "x": 440,
+       "y": 640,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 560
+      },
+      {
+       "o": "pillar",
+       "x": 840,
+       "y": 640,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 560
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.35,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 440,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2e6a3e",
+       "flowers": "#f0a020"
+      },
+      {
+       "o": "shrub",
+       "x": 840,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2e6a3e",
+       "flowers": "#ff7a9a"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot dolly_left: Daksha stands beside his wife Ashikli in her blue sari in the bright courtyard; they look at each other with a quiet hopeful smile and her name appears as it is spoken.",
+   "vert": {
+    "x": 640,
+    "focus": "asikli"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s23",
+   "at": {
+    "t": 49.54,
+    "word": "had"
+   },
+   "cues": [
+    "another",
     "thousand",
     "sons"
    ],
@@ -7447,388 +7662,387 @@
     {
      "who": "shavalashva",
      "x": 478,
-     "y": 410,
-     "s": 0.2,
+     "y": 405,
+     "s": 0.19,
      "flip": 1,
      "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.55,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 514,
-     "y": 410,
-     "s": 0.2,
+     "y": 405,
+     "s": 0.19,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.55,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 550,
-     "y": 410,
-     "s": 0.2,
+     "y": 405,
+     "s": 0.19,
      "flip": 1,
      "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.55,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 586,
-     "y": 410,
-     "s": 0.2,
+     "y": 405,
+     "s": 0.19,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.55,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 622,
-     "y": 410,
-     "s": 0.2,
+     "y": 405,
+     "s": 0.19,
      "flip": 1,
      "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.55,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 658,
-     "y": 410,
-     "s": 0.2,
+     "y": 405,
+     "s": 0.19,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.55,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 694,
-     "y": 410,
-     "s": 0.2,
+     "y": 405,
+     "s": 0.19,
      "flip": -1,
      "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.55,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 730,
-     "y": 410,
-     "s": 0.2,
+     "y": 405,
+     "s": 0.19,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.55,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 766,
-     "y": 410,
-     "s": 0.2,
+     "y": 405,
+     "s": 0.19,
      "flip": -1,
      "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.55,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 802,
-     "y": 410,
-     "s": 0.2,
+     "y": 405,
+     "s": 0.19,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.55,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 476,
-     "y": 448,
-     "s": 0.25,
+     "y": 440,
+     "s": 0.24,
      "flip": 1,
      "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.75,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 528,
-     "y": 448,
-     "s": 0.25,
+     "y": 440,
+     "s": 0.24,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.75,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 568,
-     "y": 448,
-     "s": 0.25,
+     "y": 440,
+     "s": 0.24,
      "flip": 1,
      "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.75,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 620,
-     "y": 448,
-     "s": 0.25,
+     "y": 440,
+     "s": 0.24,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.75,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 660,
-     "y": 448,
-     "s": 0.25,
+     "y": 440,
+     "s": 0.24,
      "flip": -1,
      "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.75,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 712,
-     "y": 448,
-     "s": 0.25,
+     "y": 440,
+     "s": 0.24,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.75,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 752,
-     "y": 448,
-     "s": 0.25,
+     "y": 440,
+     "s": 0.24,
      "flip": -1,
      "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.75,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 804,
-     "y": 448,
-     "s": 0.25,
+     "y": 440,
+     "s": 0.24,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.75,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 472,
-     "y": 492,
-     "s": 0.3,
+     "y": 482,
+     "s": 0.29,
      "flip": 1,
      "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.9,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 528,
-     "y": 492,
-     "s": 0.3,
+     "y": 482,
+     "s": 0.29,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.9,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 584,
-     "y": 492,
-     "s": 0.3,
+     "y": 482,
+     "s": 0.29,
      "flip": 1,
      "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.9,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 640,
-     "y": 492,
-     "s": 0.3,
+     "y": 482,
+     "s": 0.29,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.9,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 696,
-     "y": 492,
-     "s": 0.3,
+     "y": 482,
+     "s": 0.29,
      "flip": -1,
      "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.9,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 752,
-     "y": 492,
-     "s": 0.3,
+     "y": 482,
+     "s": 0.29,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.9,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "shavalashva",
      "x": 808,
-     "y": 492,
-     "s": 0.3,
+     "y": 482,
+     "s": 0.29,
      "flip": -1,
      "pose": "stand",
      "emo": "joy",
      "mood": {
       "lx": 0.8
      },
-     "ad": 0.8,
+     "ad": 0.6,
      "a": 0.9,
-     "ac": 1
+     "ac": 0
     },
     {
      "who": "daksha",
-     "x": 560,
-     "y": 590,
-     "s": 0.98,
+     "x": 575,
+     "y": 569,
+     "s": 0.86,
      "flip": 1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "joy",
      "mood": {
-      "smile": 0.4,
       "lx": 0.8
      },
      "acts": [
@@ -7836,31 +8050,25 @@
        "c": 1,
        "d": 0.6,
        "pose": "open",
-       "emo": "joy"
+       "emo": "joy",
+       "mood": {
+        "smile": 0.9
+       }
       }
      ]
     },
     {
      "who": "asikli",
-     "x": 710,
-     "y": 590,
-     "s": 0.96,
+     "x": 705,
+     "y": 569,
+     "s": 0.84,
      "flip": -1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "joy",
      "mood": {
-      "smile": 0.5,
       "lx": 0.8
      },
      "acts": [
-      {
-       "c": 0,
-       "d": 0.6,
-       "mood": {
-        "smile": 0.7,
-        "ly": 0.2
-       }
-      },
       {
        "c": 2,
        "d": 0.6,
@@ -7870,18 +8078,20 @@
      ]
     }
    ],
-   "fx": [
+   "fx": [],
+   "fxb": [
     {
-     "t": "name",
-     "s": "Ashikli",
-     "x": 700,
-     "y": 128,
-     "size": 28,
+     "t": "glow",
+     "x": 640,
+     "y": 400,
+     "r": 280,
+     "rgb": "220,190,255",
+     "ga": 0.4,
+     "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
    "cam": {
     "from": {
      "z": 1.06,
@@ -8003,18 +8213,15 @@
      ]
     }
    ],
-   "note": "two_shot pull_out: Daksha and his wife Ashikli in her blue sari stand together in the courtyard; her name appears, and on 'thousand' rows of violet-clad princes appear behind them.",
+   "note": "wide pull_out: Pulling back from the couple, rows of violet-clad princes appear in the courtyard behind them on 'another'; Daksha opens his arms and Ashikli folds her hands in joy.",
    "vert": {
-    "x": [
-     580,
-     690
-    ],
-    "focus": "asikli"
+    "x": 640,
+    "focus": "daksha"
    },
    "dx": 0
   },
   {
-   "id": "s23",
+   "id": "s24",
    "at": {
     "t": 51.16,
     "word": "the"
@@ -8430,7 +8637,7 @@
    "dx": 0
   },
   {
-   "id": "s24",
+   "id": "s25",
    "at": {
     "t": 52.52,
     "word": "Narada"
@@ -8463,7 +8670,7 @@
    "figs": [
     {
      "who": "shavalashva",
-     "x": 690,
+     "x": 635,
      "y": 450,
      "s": 0.21,
      "flip": -1,
@@ -8486,53 +8693,7 @@
     },
     {
      "who": "shavalashva",
-     "x": 730,
-     "y": 450,
-     "s": 0.21,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "doubt",
-     "mood": {
-      "lx": 0.8
-     },
-     "acts": [
-      {
-       "c": 2,
-       "d": 0.6,
-       "emo": "doubt",
-       "mood": {
-        "ly": 0.2
-       }
-      }
-     ],
-     "a": 0.65
-    },
-    {
-     "who": "shavalashva",
-     "x": 770,
-     "y": 450,
-     "s": 0.21,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     },
-     "acts": [
-      {
-       "c": 2,
-       "d": 0.6,
-       "emo": "doubt",
-       "mood": {
-        "ly": 0.2
-       }
-      }
-     ],
-     "a": 0.65
-    },
-    {
-     "who": "shavalashva",
-     "x": 810,
+     "x": 675,
      "y": 450,
      "s": 0.21,
      "flip": -1,
@@ -8555,7 +8716,7 @@
     },
     {
      "who": "shavalashva",
-     "x": 850,
+     "x": 715,
      "y": 450,
      "s": 0.21,
      "flip": -1,
@@ -8578,7 +8739,7 @@
     },
     {
      "who": "shavalashva",
-     "x": 890,
+     "x": 755,
      "y": 450,
      "s": 0.21,
      "flip": -1,
@@ -8601,7 +8762,53 @@
     },
     {
      "who": "shavalashva",
-     "x": 690,
+     "x": 795,
+     "y": 450,
+     "s": 0.21,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.6,
+       "emo": "doubt",
+       "mood": {
+        "ly": 0.2
+       }
+      }
+     ],
+     "a": 0.65
+    },
+    {
+     "who": "shavalashva",
+     "x": 835,
+     "y": 450,
+     "s": 0.21,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "doubt",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.6,
+       "emo": "doubt",
+       "mood": {
+        "ly": 0.2
+       }
+      }
+     ],
+     "a": 0.65
+    },
+    {
+     "who": "shavalashva",
+     "x": 635,
      "y": 495,
      "s": 0.27,
      "flip": -1,
@@ -8624,7 +8831,7 @@
     },
     {
      "who": "shavalashva",
-     "x": 740,
+     "x": 685,
      "y": 495,
      "s": 0.27,
      "flip": -1,
@@ -8647,7 +8854,7 @@
     },
     {
      "who": "shavalashva",
-     "x": 790,
+     "x": 735,
      "y": 495,
      "s": 0.27,
      "flip": -1,
@@ -8670,7 +8877,7 @@
     },
     {
      "who": "shavalashva",
-     "x": 840,
+     "x": 785,
      "y": 495,
      "s": 0.27,
      "flip": -1,
@@ -8693,7 +8900,7 @@
     },
     {
      "who": "shavalashva",
-     "x": 890,
+     "x": 835,
      "y": 495,
      "s": 0.27,
      "flip": -1,
@@ -8716,7 +8923,7 @@
     },
     {
      "who": "shavalashva",
-     "x": 684,
+     "x": 632,
      "y": 560,
      "s": 0.35,
      "flip": -1,
@@ -8738,7 +8945,7 @@
     },
     {
      "who": "shavalashva",
-     "x": 748,
+     "x": 696,
      "y": 560,
      "s": 0.35,
      "flip": -1,
@@ -8760,7 +8967,7 @@
     },
     {
      "who": "shavalashva",
-     "x": 812,
+     "x": 760,
      "y": 560,
      "s": 0.35,
      "flip": -1,
@@ -8782,7 +8989,7 @@
     },
     {
      "who": "shavalashva",
-     "x": 876,
+     "x": 824,
      "y": 560,
      "s": 0.35,
      "flip": -1,
@@ -8856,7 +9063,7 @@
    "layers": [
     {
      "d": "far",
-     "fog": 0.35,
+     "fog": 0.4,
      "haze": "#eef6fc",
      "items": [
       {
@@ -8882,15 +9089,6 @@
        "y": 240,
        "s": 0.9,
        "col": "#ffffff"
-      },
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 372,
-       "s": 1.0,
-       "w": 1500,
-       "h": 4,
-       "col": "#3a94dc"
       }
      ]
     },
@@ -8899,6 +9097,16 @@
      "fog": 0.15,
      "par": 1.0,
      "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 374,
+       "s": 1.0,
+       "w": 1500,
+       "h": 3,
+       "col": "#4aa6e4",
+       "fog": 0.08
+      },
       {
        "o": "hill",
        "x": 640,
@@ -8951,14 +9159,14 @@
    "note": "two_shot pan_right: The very same shore and the very same pan: Narada, hand open, talks to rows of violet princes on the sand, who listen just as their brothers did.",
    "vert": {
     "x": [
-     480,
-     760
+     470,
+     700
     ],
     "focus": "narada"
    }
   },
   {
-   "id": "s25",
+   "id": "s26",
    "at": {
     "t": 55.24,
     "word": "They"
@@ -8974,8 +9182,8 @@
      "#ffbc8c",
      "#ffeac4"
     ],
-    "sx": 790,
-    "sy": 350,
+    "sx": 770,
+    "sy": 330,
     "ridge": [
      "#b4b4dc",
      "#9a9ac8",
@@ -8984,14 +9192,14 @@
     ],
     "haze": "240,244,255",
     "dust": 14,
-    "sr": 460
+    "sr": 300
    },
    "figs": [
     {
      "who": "shavalashva",
-     "x": 782,
-     "y": 392,
-     "s": 0.1,
+     "x": 751,
+     "y": 416,
+     "s": 0.101,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -8999,16 +9207,16 @@
       "lx": 0.8
      },
      "walk": 1,
-     "vx": 3,
+     "vx": 1.6,
      "fd": 1.0,
-     "a": 0.55,
+     "a": 0.54,
      "fo": 0
     },
     {
      "who": "shavalashva",
-     "x": 768,
-     "y": 404,
-     "s": 0.13,
+     "x": 770,
+     "y": 441,
+     "s": 0.161,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -9016,16 +9224,16 @@
       "lx": 0.8
      },
      "walk": 1,
-     "vx": 4,
+     "vx": 2.0,
      "fd": 1.0,
-     "a": 0.65,
+     "a": 0.6,
      "fo": 0
     },
     {
      "who": "shavalashva",
-     "x": 750,
-     "y": 420,
-     "s": 0.17,
+     "x": 722,
+     "y": 474,
+     "s": 0.24,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -9033,16 +9241,16 @@
       "lx": 0.8
      },
      "walk": 1,
-     "vx": 5,
+     "vx": 2.6,
      "fd": 1.0,
-     "a": 0.78,
+     "a": 0.68,
      "fo": 0
     },
     {
      "who": "shavalashva",
-     "x": 726,
-     "y": 442,
-     "s": 0.22,
+     "x": 766,
+     "y": 510,
+     "s": 0.326,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -9050,16 +9258,16 @@
       "lx": 0.8
      },
      "walk": 1,
-     "vx": 6,
+     "vx": 3.2,
      "fd": 1.0,
-     "a": 0.88,
+     "a": 0.77,
      "fo": 0
     },
     {
      "who": "shavalashva",
-     "x": 694,
-     "y": 472,
-     "s": 0.28,
+     "x": 683,
+     "y": 549,
+     "s": 0.42,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -9067,15 +9275,16 @@
       "lx": 0.8
      },
      "walk": 1,
-     "vx": 7,
+     "vx": 3.8,
      "fd": 1.0,
+     "a": 0.86,
      "fo": 0
     },
     {
      "who": "shavalashva",
-     "x": 654,
-     "y": 512,
-     "s": 0.35,
+     "x": 760,
+     "y": 589,
+     "s": 0.516,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -9083,8 +9292,9 @@
       "lx": 0.8
      },
      "walk": 1,
-     "vx": 8,
+     "vx": 4.5,
      "fd": 1.0,
+     "a": 0.96,
      "fo": 0
     }
    ],
@@ -9104,11 +9314,11 @@
    "fxb": [
     {
      "t": "glow",
-     "x": 790,
-     "y": 350,
-     "r": 280,
+     "x": 770,
+     "y": 340,
+     "r": 220,
      "rgb": "255,200,150",
-     "ga": 0.45,
+     "ga": 0.3,
      "par": 0.4
     }
    ],
@@ -9116,13 +9326,13 @@
     "from": {
      "z": 1.0,
      "x": 10,
-     "y": 0,
+     "y": 2,
      "r": 0
     },
     "to": {
      "z": 1.0,
      "x": -6,
-     "y": 0,
+     "y": 2,
      "r": 0
     }
    },
@@ -9131,7 +9341,7 @@
     {
      "d": "far",
      "fog": 0.55,
-     "haze": "#f6eee6",
+     "haze": "#f4e8f0",
      "items": [
       {
        "o": "mountain",
@@ -9178,19 +9388,19 @@
       },
       {
        "o": "road",
-       "x": 620,
+       "x": 660,
        "y": 740,
        "s": 1.0,
        "w": 200,
-       "ex": 790,
+       "ex": 770,
        "ey": 380,
        "ew": 4,
-       "bend": 40,
+       "bend": 10,
        "col": "#efd6a0"
       },
       {
        "o": "tree",
-       "x": 430,
+       "x": 480,
        "y": 530,
        "s": 0.6,
        "kind": "round",
@@ -9230,13 +9440,13 @@
    ],
    "note": "wide dolly_left: On the sunrise road a line of violet princes walks away and dissolves into the morning mist on 'vanished'.",
    "vert": {
-    "x": 690,
+    "x": 700,
     "focus": "shavalashva"
    },
    "tr": "wipe"
   },
   {
-   "id": "s26",
+   "id": "s27",
    "at": {
     "t": 56.34,
     "word": "Daksha"
@@ -9440,7 +9650,7 @@
    "dx": 0
   },
   {
-   "id": "s27",
+   "id": "s28",
    "at": {
     "t": 57.78,
     "word": "Who"
@@ -9626,7 +9836,7 @@
    "dx": 0
   },
   {
-   "id": "s28",
+   "id": "s29",
    "at": {
     "t": 60.68,
     "word": "Narada"
@@ -9844,7 +10054,7 @@
    "dx": 0
   },
   {
-   "id": "s29",
+   "id": "s30",
    "at": {
     "t": 63.58,
     "word": "It"
@@ -9995,8 +10205,7 @@
        "ey": 390,
        "ew": 4,
        "bend": -20,
-       "col": "#efd6a0",
-       "glow": "255,236,180"
+       "col": "#f2c878"
       },
       {
        "o": "tree",
@@ -10046,14 +10255,13 @@
    "dx": 0
   },
   {
-   "id": "s30",
+   "id": "s31",
    "at": {
     "t": 65.56,
     "word": "Daksha"
    },
    "cues": [
-    "cursed",
-    "him"
+    "cursed"
    ],
    "bg": {
     "k": "vista",
@@ -10078,7 +10286,7 @@
    "figs": [
     {
      "who": "daksha",
-     "x": 490,
+     "x": 545,
      "y": 600,
      "s": 0.98,
      "flip": 1,
@@ -10100,7 +10308,7 @@
     },
     {
      "who": "narada",
-     "x": 800,
+     "x": 760,
      "y": 600,
      "s": 0.96,
      "flip": -1,
@@ -10111,11 +10319,11 @@
      },
      "acts": [
       {
-       "c": 1,
+       "c": 0,
        "d": 0.4,
-       "emo": "surprise",
+       "emo": "fear",
        "mood": {
-        "surp": 0.6
+        "surp": 0.7
        }
       }
      ]
@@ -10126,7 +10334,7 @@
     {
      "t": "pfx",
      "k": "red_energy_pulse",
-     "x": 800,
+     "x": 760,
      "y": 330,
      "w": 360,
      "alpha": 0.55,
@@ -10135,16 +10343,14 @@
      "d": 0.6
     },
     {
-     "t": "pfx",
-     "k": "halo_ring",
-     "x": 800,
+     "t": "glow",
+     "x": 760,
      "y": 330,
-     "w": 380,
-     "alpha": 0.4,
-     "blend": "lighter",
+     "r": 200,
+     "rgb": "255,90,70",
+     "ga": 0.5,
      "par": 1.0,
-     "rgb": "255,110,90",
-     "c": 1,
+     "c": 0,
      "d": 0.6
     }
    ],
@@ -10272,8 +10478,8 @@
    "note": "two_shot pan_right: The window pans from Daksha thrusting his finger in a curse to Narada, who is struck by a red ring of the curse and stops smiling.",
    "vert": {
     "x": [
-     500,
-     780
+     600,
+     700
     ],
     "focus": "narada"
    },
@@ -10281,7 +10487,7 @@
    "tr": "flash"
   },
   {
-   "id": "s31",
+   "id": "s32",
    "at": {
     "t": 67.06,
     "word": "Narada"
@@ -10307,8 +10513,7 @@
      "#4a8064"
     ],
     "haze": "240,244,255",
-    "dust": 14,
-    "river": "#5ab8e8"
+    "dust": 14
    },
    "figs": [
     {
@@ -10468,8 +10673,8 @@
     {
      "who": "shavalashva",
      "x": 470,
-     "y": 532,
-     "s": 0.24,
+     "y": 522,
+     "s": 0.23,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -10489,8 +10694,8 @@
     {
      "who": "haryashva",
      "x": 790,
-     "y": 540,
-     "s": 0.25,
+     "y": 528,
+     "s": 0.24,
      "flip": -1,
      "pose": "stand",
      "emo": "doubt",
@@ -10526,13 +10731,13 @@
     "from": {
      "z": 1.06,
      "x": 0,
-     "y": 36,
+     "y": 28,
      "r": 0
     },
     "to": {
      "z": 1.0,
      "x": 0,
-     "y": 18,
+     "y": 10,
      "r": 0
     }
    },
@@ -10643,7 +10848,7 @@
    "dx": 0
   },
   {
-   "id": "s32",
+   "id": "s33",
    "at": {
     "t": 69.78,
     "word": "so"
@@ -10839,7 +11044,7 @@
    }
   },
   {
-   "id": "s33",
+   "id": "s34",
    "at": {
     "t": 73.64,
     "word": "Was"
@@ -10851,10 +11056,10 @@
    "bg": {
     "k": "cloudscape",
     "sky": [
-     "#2a3f9e",
-     "#6a8ae0",
-     "#e0d0f4",
-     "#fff4e4"
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
     ],
     "sx": 640,
     "sy": 200
@@ -10863,7 +11068,7 @@
     {
      "who": "narada",
      "x": 640,
-     "y": 670,
+     "y": 623,
      "s": 1.04,
      "flip": 1,
      "pose": "stand",
@@ -10930,7 +11135,7 @@
      "r": 0
     },
     "to": {
-     "z": 1.1,
+     "z": 1.08,
      "x": 0,
      "y": -6,
      "r": 0
@@ -11009,11 +11214,9 @@
      ]
     }
    ],
-   "note": "close push_in: Close on Narada with his veena: on 'guide' a gold halo opens behind his head; on 'thief' a violet swirl takes its place and his smile turns sly.",
+   "note": "medium push_in: Close on Narada with his veena: on 'guide' a gold halo opens behind his head; on 'thief' a violet swirl takes its place and his smile turns sly.",
    "vert": {
-    "focus": "narada",
-    "z": 1.15,
-    "y": 0.42
+    "focus": "narada"
    },
    "dx": 0
   }

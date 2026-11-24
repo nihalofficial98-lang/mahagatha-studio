@@ -218,7 +218,7 @@
    "duration": 2.06,
    "narration": "ends with the word Swaha.",
    "meaning": "Each of those offerings ends with one word: Swaha.",
-   "why": "A village priest sits at the altar and pours an offering into the fire; as he says the last word the flames flare gold and the name 'Swaha' appears above.",
+   "why": "A village man stands at the altar and pours an offering into the fire; as he says the last word the flames flare gold and the name 'Swaha' appears above.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -380,10 +380,10 @@
     {
      "who": "villager",
      "x": 575,
-     "y": 509,
+     "y": 614,
      "s": 1.0,
      "flip": 1,
-     "pose": "sitpray",
+     "pose": "namaste",
      "emo": "devotion",
      "talk": 0.6,
      "look": 760,
@@ -453,7 +453,7 @@
     },
     {
      "k": "name",
-     "word": "Swaha",
+     "word": "word",
      "s": "Swaha",
      "x": 650,
      "y": 118,
@@ -542,7 +542,7 @@
     },
     {
      "d": "mid",
-     "contents": "two gold pillars of Brahma's hall framing the figure",
+     "contents": "faded pillars and the cloud banks the gods sit on",
      "fog": 0.2,
      "items": [
       {
@@ -560,6 +560,27 @@
        "s": 1.0,
        "col": "#d8ccaa",
        "h": 520
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 478,
+       "s": 1.2,
+       "col": "#f4f4f8"
+      },
+      {
+       "o": "cloud",
+       "x": 745,
+       "y": 478,
+       "s": 1.2,
+       "col": "#f4f4f8"
+      },
+      {
+       "o": "cloud",
+       "x": 640,
+       "y": 540,
+       "s": 1.7,
+       "col": "#ffffff"
       }
      ]
     },
@@ -605,7 +626,7 @@
     {
      "who": "deva_thin",
      "x": 640,
-     "y": 483,
+     "y": 492,
      "s": 0.85,
      "flip": 1,
      "pose": "sit",
@@ -626,7 +647,7 @@
     {
      "who": "deva_thin2",
      "x": 540,
-     "y": 429,
+     "y": 440,
      "s": 0.72,
      "flip": 1,
      "pose": "sit",
@@ -639,7 +660,7 @@
     {
      "who": "indra_thin",
      "x": 745,
-     "y": 429,
+     "y": 440,
      "s": 0.72,
      "flip": -1,
      "pose": "sit",
@@ -848,11 +869,11 @@
     },
     {
      "who": "villager",
-     "x": 860,
-     "y": 680,
+     "x": 850,
+     "y": 730,
      "s": 0.95,
      "flip": 1,
-     "pose": "sitpray",
+     "pose": "stand",
      "emo": "devotion",
      "look": 1000,
      "talk": 0.5,
@@ -868,17 +889,17 @@
    "effects": [
     {
      "k": "havan_kund",
-     "x": 985,
-     "y": 665,
-     "w": 170,
+     "x": 965,
+     "y": 640,
+     "w": 160,
      "alpha": 1,
      "par": 1.0,
      "meaning": "the brick fire altar of the yajna with its bright fire"
     },
     {
      "k": "glow",
-     "x": 985,
-     "y": 560,
+     "x": 965,
+     "y": 540,
      "r": 180,
      "rgb": "255,180,80",
      "ga": 0.55,
@@ -891,10 +912,10 @@
      "word": "fed",
      "items": [
       {
-       "x0": 930,
-       "y0": 520,
-       "x1": 985,
-       "y1": 600,
+       "x0": 920,
+       "y0": 480,
+       "x1": 965,
+       "y1": 590,
        "dur": 0.9,
        "r": 46,
        "rgb": "255,224,140",
@@ -903,10 +924,10 @@
        "c": 0
       },
       {
-       "x0": 940,
-       "y0": 510,
-       "x1": 990,
-       "y1": 600,
+       "x0": 930,
+       "y0": 470,
+       "x1": 970,
+       "y1": 590,
        "dur": 1.3,
        "r": 46,
        "rgb": "255,224,140",
@@ -1138,8 +1159,8 @@
    },
    "vertical": {
     "x": [
-     500,
-     780
+     560,
+     700
     ]
    },
    "layers": [
@@ -1243,9 +1264,9 @@
    "characters": [
     {
      "who": "brahma",
-     "x": 800,
-     "y": 522,
-     "s": 1.0,
+     "x": 735,
+     "y": 486,
+     "s": 0.82,
      "flip": -1,
      "pose": "sit",
      "emo": "calm",
@@ -1271,7 +1292,7 @@
     },
     {
      "who": "deva_thin",
-     "x": 470,
+     "x": 510,
      "y": 597,
      "s": 0.9,
      "flip": 1,
@@ -1280,15 +1301,15 @@
      "look": "brahma",
      "walk": {
       "word": "came",
-      "to_x": 580,
+      "to_x": 600,
       "d": 1.6,
       "speed": 1
      }
     },
     {
      "who": "deva_thin2",
-     "x": 380,
-     "y": 522,
+     "x": 430,
+     "y": 486,
      "s": 0.88,
      "flip": 1,
      "pose": "stand",
@@ -1296,7 +1317,7 @@
      "look": "brahma",
      "walk": {
       "word": "came",
-      "to_x": 480,
+      "to_x": 515,
       "d": 1.6,
       "speed": 1
      }
@@ -1307,7 +1328,7 @@
      "k": "name",
      "word": "Brahma",
      "s": "Brahma",
-     "x": 760,
+     "x": 700,
      "y": 118,
      "size": 30,
      "meaning": "the name Brahma on screen when it is spoken"
@@ -1893,8 +1914,8 @@
      "k": "halo_ring",
      "word": "explained",
      "x": 640,
-     "y": 300,
-     "w": 420,
+     "y": 290,
+     "w": 300,
      "alpha": 0.4,
      "blend": "lighter",
      "par": 0.9,
@@ -1914,7 +1935,7 @@
    "duration": 2.7,
    "narration": "When humans held a yajna, a fire ritual,",
    "meaning": "On earth humans hold a yajna, a sacred fire ritual.",
-   "why": "Bright earth: a village man and woman sit facing each other across a blazing brick fire altar in their yard, hands folded, and the word 'Yajna' appears above the fire.",
+   "why": "Bright earth: a village man and woman stand facing each other across a blazing brick fire altar in their yard, hands folded, and the word 'Yajna' appears above the fire.",
    "camera": {
     "shot": "wide",
     "lens": "wide",
@@ -2076,10 +2097,10 @@
     {
      "who": "villager",
      "x": 548,
-     "y": 484,
+     "y": 573,
      "s": 0.85,
      "flip": 1,
-     "pose": "sitpray",
+     "pose": "namaste",
      "emo": "devotion",
      "look": "villager_w",
      "actions": [
@@ -2096,10 +2117,10 @@
     {
      "who": "villager_w",
      "x": 735,
-     "y": 484,
+     "y": 573,
      "s": 0.82,
      "flip": -1,
-     "pose": "sitpray",
+     "pose": "namaste",
      "emo": "devotion",
      "look": "villager",
      "actions": [
@@ -2313,10 +2334,10 @@
     {
      "who": "villager_w",
      "x": 610,
-     "y": 542,
+     "y": 647,
      "s": 1.0,
      "flip": 1,
-     "pose": "sitpray",
+     "pose": "namaste",
      "emo": "devotion",
      "look": 760,
      "actions": [
@@ -2802,8 +2823,8 @@
      "k": "light_beam",
      "x": 640,
      "y": 640,
-     "w": 120,
-     "alpha": 0.55,
+     "w": 150,
+     "alpha": 0.85,
      "blend": "lighter",
      "par": 1.0,
      "behind": true,
@@ -3092,14 +3113,19 @@
     },
     {
      "who": "villager",
-     "x": 860,
-     "y": 680,
+     "x": 850,
+     "y": 730,
      "s": 0.95,
      "flip": 1,
-     "pose": "sitpray",
+     "pose": "stand",
      "emo": "joy",
      "look": 1000,
      "actions": [
+      {
+       "word": "humans",
+       "pose": "namaste",
+       "d": 0.5
+      },
       {
        "word": "blessings",
        "mood": {
@@ -3114,9 +3140,9 @@
    "effects": [
     {
      "k": "havan_kund",
-     "x": 985,
-     "y": 665,
-     "w": 170,
+     "x": 965,
+     "y": 640,
+     "w": 160,
      "alpha": 1,
      "par": 1.0,
      "meaning": "the brick fire altar of the yajna with its bright fire"
@@ -3499,18 +3525,18 @@
     {
      "k": "smoke_plume",
      "x": 735,
-     "y": 520,
-     "w": 110,
-     "alpha": 0.7,
+     "y": 470,
+     "w": 100,
+     "alpha": 0.75,
      "par": 0.3,
      "behind": true,
      "meaning": "smoke of a yajna rising far below on earth"
     },
     {
      "k": "smoke_plume",
-     "x": 800,
-     "y": 540,
-     "w": 80,
+     "x": 690,
+     "y": 440,
+     "w": 70,
      "alpha": 0.6,
      "par": 0.3,
      "behind": true,
@@ -4241,7 +4267,7 @@
    "characters": [
     {
      "who": "deva_thin",
-     "x": 800,
+     "x": 735,
      "y": 509,
      "s": 0.72,
      "flip": -1,
@@ -4433,8 +4459,8 @@
     {
      "who": "agni",
      "x": 640,
-     "y": 360,
-     "s": 1.15,
+     "y": 345,
+     "s": 1.0,
      "flip": -1,
      "head": true,
      "emo": "sad",
@@ -4653,19 +4679,42 @@
      "k": "havan_kund",
      "x": 640,
      "y": 690,
-     "w": 280,
+     "w": 300,
      "alpha": 1,
      "par": 1.0,
      "meaning": "the brick fire altar of the yajna with its bright fire"
     },
     {
-     "k": "flames",
+     "k": "orbs",
      "word": "burn",
-     "x": 640,
-     "y": 560,
-     "sc": 1.2,
-     "n": 8,
-     "meaning": "tall flames of the burning offerings"
+     "items": [
+      {
+       "x0": 560,
+       "y0": 420,
+       "x1": 620,
+       "y1": 600,
+       "dur": 0.9,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      },
+      {
+       "x0": 720,
+       "y0": 430,
+       "x1": 660,
+       "y1": 600,
+       "dur": 1.2,
+       "r": 46,
+       "rgb": "255,224,140",
+       "sz": 6,
+       "arc": 10,
+       "c": 0
+      }
+     ],
+     "par": 1.0,
+     "meaning": "offerings falling into his fire as gold motes"
     }
    ],
    "transition_in": "fade"
@@ -5251,8 +5300,8 @@
      "k": "halo_ring",
      "word": "Vishnu",
      "x": 640,
-     "y": 320,
-     "w": 480,
+     "y": 310,
+     "w": 360,
      "alpha": 0.45,
      "blend": "lighter",
      "par": 0.9,
@@ -6307,8 +6356,8 @@
     {
      "who": "swaha",
      "x": 640,
-     "y": 364,
-     "s": 1.15,
+     "y": 350,
+     "s": 1.0,
      "flip": -1,
      "head": true,
      "emo": "joy",
@@ -6732,10 +6781,10 @@
     {
      "who": "villager_w",
      "x": 580,
-     "y": 506,
+     "y": 611,
      "s": 1.0,
      "flip": 1,
-     "pose": "sitpray",
+     "pose": "namaste",
      "emo": "calm",
      "look": 740,
      "actions": [
@@ -6768,9 +6817,9 @@
     {
      "k": "smoke_plume",
      "x": 730,
-     "y": 560,
-     "w": 160,
-     "alpha": 0.6,
+     "y": 610,
+     "w": 210,
+     "alpha": 0.85,
      "par": 1.0,
      "meaning": "the offering turning to gray smoke instead of rising to heaven"
     },
@@ -7355,10 +7404,10 @@
     "t": 78.78,
     "word": "Then"
    },
-   "duration": 2.34,
-   "narration": "Then he gave Swaha in marriage to Agni,",
-   "meaning": "Then Brahma gave Swaha in marriage to Agni.",
-   "why": "Agni and Swaha face each other with folded hands inside a ring of marigold light, while Brahma, faint behind them, raises his hand in blessing.",
+   "duration": 3.98,
+   "narration": "Then he gave Swaha in marriage to Agni, and the two were never parted.",
+   "meaning": "Then Brahma gave Swaha in marriage to Agni, and the two were never parted.",
+   "why": "Agni and Swaha face each other with folded hands inside a ring of marigold light while Brahma, faint behind them, raises his hand in blessing; on 'never' their two fire halos glow as one and light motes rise around them.",
    "camera": {
     "shot": "two_shot",
     "lens": "normal",
@@ -7548,6 +7597,15 @@
        "pose": "namaste",
        "emo": "joy",
        "d": 0.6
+      },
+      {
+       "word": "never",
+       "mood": {
+        "smile": 1,
+        "blink": 0.3
+       },
+       "tilt": 0.04,
+       "d": 0.6
       }
      ]
     }
@@ -7576,211 +7634,22 @@
      "behind": true,
      "meaning": "marigold light of the wedding",
      "word": "Swaha"
-    }
-   ],
-   "transition_in": "fade"
-  },
-  {
-   "id": "s37",
-   "beat": 1,
-   "start": {
-    "t": 81.12,
-    "word": "and"
-   },
-   "duration": 1.64,
-   "narration": "and the two were never parted.",
-   "meaning": "Agni and Swaha were never parted again.",
-   "why": "Agni and Swaha stand side by side, their two fire halos merged into one warm glow, as light motes rise around them and the camera pulls away.",
-   "camera": {
-    "shot": "two_shot",
-    "lens": "wide",
-    "move": "pull_out",
-    "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
-     "r": 0
     },
-    "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "final pull out: the pair together for ever"
-   },
-   "focus": {
-    "subject": "agni",
-    "depth": "deep"
-   },
-   "vertical": {
-    "x": [
-     640,
-     640
-    ]
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "soft cloud banks and two hazy peaks of Brahmaloka far behind",
-     "fog": 0.55,
-     "haze": "#fbeee0",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 440,
-       "y": 500,
-       "s": 1.0,
-       "col": "#a4b0dc"
-      },
-      {
-       "o": "mountain",
-       "x": 840,
-       "y": 510,
-       "s": 0.85,
-       "col": "#a4b0dc"
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 230,
-       "s": 1.3,
-       "col": "#fff6ea"
-      },
-      {
-       "o": "cloud",
-       "x": 800,
-       "y": 270,
-       "s": 1.1,
-       "col": "#fff6ea"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "two gold pillars of Brahma's hall framing the figure",
-     "fog": 0.2,
-     "items": [
-      {
-       "o": "pillar",
-       "x": 430,
-       "y": 700,
-       "s": 1.0,
-       "col": "#e8c878",
-       "h": 520
-      },
-      {
-       "o": "pillar",
-       "x": 850,
-       "y": 700,
-       "s": 1.0,
-       "col": "#e8c878",
-       "h": 520
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "white cloud puffs low in the bottom corners",
-     "dark": 0.1,
-     "blur": 2,
-     "items": [
-      {
-       "o": "cloud",
-       "x": 450,
-       "y": 745,
-       "s": 1.7,
-       "col": "#ffffff"
-      },
-      {
-       "o": "cloud",
-       "x": 830,
-       "y": 748,
-       "s": 1.6,
-       "col": "#ffffff"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "cloudscape",
-    "sky": [
-     "#4656b8",
-     "#f2a478",
-     "#ffda94",
-     "#fff6de"
-    ],
-    "sx": 640,
-    "sy": 230
-   },
-   "mood": {
-    "emotion": "union",
-    "grade": "warm"
-   },
-   "characters": [
-    {
-     "who": "agni",
-     "x": 590,
-     "y": 605,
-     "s": 0.98,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "joy",
-     "look": "swaha",
-     "mood": {
-      "smile": 0.8
-     },
-     "actions": [
-      {
-       "word": "two",
-       "mood": {
-        "smile": 1
-       },
-       "d": 0.6
-      }
-     ]
-    },
-    {
-     "who": "swaha",
-     "x": 695,
-     "y": 605,
-     "s": 0.95,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "joy",
-     "look": "agni",
-     "mood": {
-      "smile": 0.8
-     },
-     "actions": [
-      {
-       "word": "never",
-       "mood": {
-        "smile": 1,
-        "blink": 0.3
-       },
-       "tilt": 0.04,
-       "d": 0.6
-      }
-     ]
-    }
-   ],
-   "effects": [
     {
      "k": "glow",
      "x": 642,
      "y": 340,
      "r": 300,
      "rgb": "255,170,80",
-     "ga": 0.55,
+     "ga": 0.5,
      "par": 1.0,
      "behind": true,
-     "meaning": "their two fires burning as one"
+     "meaning": "their two fires burning as one",
+     "word": "never"
     },
     {
      "k": "orbs",
-     "word": "and",
+     "word": "never",
      "items": [
       {
        "x0": 560,
@@ -7792,38 +7661,38 @@
        "rgb": "255,224,140",
        "sz": 6,
        "arc": 10,
-       "c": 0
+       "c": 3
       },
       {
        "x0": 720,
        "y0": 560,
        "x1": 740,
        "y1": 230,
-       "dur": 2.0,
+       "dur": 2.4,
        "r": 46,
        "rgb": "255,224,140",
        "sz": 6,
        "arc": 10,
-       "c": 1
+       "c": 3
       },
       {
        "x0": 640,
        "y0": 580,
        "x1": 650,
        "y1": 200,
-       "dur": 2.0,
+       "dur": 1.6,
        "r": 46,
        "rgb": "255,224,140",
        "sz": 6,
        "arc": 10,
-       "c": 2
+       "c": 3
       }
      ],
      "par": 1.0,
      "meaning": "warm light motes rising around the joined pair"
     }
    ],
-   "transition_in": "cut"
+   "transition_in": "fade"
   }
  ]
 }
