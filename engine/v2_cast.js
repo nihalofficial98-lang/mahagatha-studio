@@ -512,12 +512,11 @@ function aMove(o,t){const p=o.pose||'stand',run=p==='run'?1:(p==='walk'?.5:0),bo
   return{run:run,bow:bow,bob:Math.sin(t*1.6)*2-(run?Math.abs(Math.sin(t*f))*8*run:0),sw:k=>run?Math.sin(t*f+k)*.42*run:0,M:o.mood||{}}}
 function aShadow(c,w){c.fillStyle='rgba(30,16,8,.2)';c.beginPath();c.ellipse(0,2,w,14,0,0,7);c.fill()}
 function drawCow(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#f8f2e6',d:'#d2c2a4',h:'#ffffff'},hoof='#6a5440',body=PK.lg(c,0,-340,0,-190,[C.h,C.b,C.d]);aShadow(c,210);
-  aLeg(c,-120,-206+b,206,22,A.sw(0),C,hoof,1,1);aLeg(c,106,-206+b,206,22,A.sw(2),C,hoof,1);
+  aLeg(c,-120,-206+b,206,22,A.sw(0),C,hoof,1,1);aLeg(c,106,-206+b,206,22,A.sw(2),C,hoof,1);aLeg(c,-98,-210+b,210,24,A.sw(1),C,hoof,0,1);aLeg(c,128,-210+b,210,24,A.sw(3),C,hoof,0);
   const tl=cc=>{cc.moveTo(-182,-286+b);cc.quadraticCurveTo(-214,-220+Math.sin(t*2)*6,-200,-128)};PK.stroke(c,tl,AINK,9);PK.stroke(c,tl,C.d,6);PK.cut(c,PK.P.ell(-200,-118,9,20,.1),'#a88a62',{lw:1.6,ink:AINK,sh:0});
   const bp=PK.P.smooth([[-188,-300+b],[-120,-334+b],[0,-326+b],[84,-350+b],[128,-326+b],[162,-282+b],[152,-212+b],[90,-190+b],[0,-196+b],[-120,-188+b],[-182,-214+b],[-200,-262+b]]);
   PK.cut(c,bp,body,{lw:2.4,ink:AINK});c.save();c.beginPath();bp(c);c.clip();c.fillStyle='rgba(226,180,118,.55)';[[-96,-282,48,30],[22,-246,34,22],[-30,-312,26,14]].forEach(([x,y,rx,ry])=>{c.beginPath();c.ellipse(x,y+b,rx,ry,.2,0,7);c.fill()});
     c.fillStyle='rgba(255,255,255,.35)';c.beginPath();c.ellipse(-30,-316+b,120,12,0,0,7);c.fill();c.restore();
-  aLeg(c,-98,-210+b,210,24,A.sw(1),C,hoof,0,1);aLeg(c,128,-210+b,210,24,A.sw(3),C,hoof,0);
   const hy=-300+b+A.bow*80,hx=226-A.bow*10;
   PK.cut(c,PK.P.smooth([[104,-326+b],[170,-338+b],[hx,hy-8],[hx+4,hy+44],[178,-208+b],[150,-182+b],[126,-232+b]]),body,{lw:2.2,ink:AINK});
   aBand(c,[168,-336+b],[204,-270+b+A.bow*30],[178,-226+b+A.bow*20]);
@@ -530,14 +529,15 @@ function drawCow(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#f8f2e6',d:'#d2c2a4',h:
   aEye(c,16,-6,7.5,A.M,t);PK.cut(c,PK.P.ell(32,-30,3.4,4.4),'#d0243a',{lw:.8,ink:AINK,sh:0});horn(-2,6);
   c.restore()}
 function drawMare(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#e8c48a',d:'#b48450',h:'#fae4bc'},MN={b:'#fbf6e8',d:'#d8ccb0',h:'#ffffff'},hoof='#4a3a2a',body=PK.lg(c,0,-335,0,-210,[C.h,C.b,C.d]),mane=PK.lg(c,0,-480,0,-300,[MN.h,MN.b,MN.d]);aShadow(c,210);
-  aLeg(c,-124,-222+b,222,17,A.sw(0),C,hoof,1,1);aLeg(c,100,-222+b,222,17,A.sw(2),C,hoof,1);
+  aLeg(c,-124,-222+b,222,17,A.sw(0),C,hoof,1,1);aLeg(c,100,-222+b,222,17,A.sw(2),C,hoof,1);aLeg(c,-102,-226+b,226,19,A.sw(1),C,hoof,0,1);aLeg(c,122,-226+b,226,19,A.sw(3),C,hoof,0);
   const ts=Math.sin(t*1.8)*8+(A.run?14:0);PK.cut(c,cc=>{cc.moveTo(-176,-312+b);cc.bezierCurveTo(-226,-300+b,-232+ts,-220,-246+ts,-112);cc.bezierCurveTo(-226+ts,-150,-210,-230,-172,-282+b);cc.closePath()},mane,{lw:2,ink:AINK,sh:0});
   const bp=PK.P.smooth([[-182,-302+b],[-110,-334+b],[30,-326+b],[118,-326+b],[160,-286+b],[144,-226+b],[60,-212+b],[-60,-216+b],[-160,-222+b],[-198,-264+b]]);
   PK.cut(c,bp,body,{lw:2.4,ink:AINK});c.save();c.beginPath();bp(c);c.clip();c.fillStyle='rgba(255,255,255,.3)';c.beginPath();c.ellipse(-30,-318+b,130,12,0,0,7);c.fill();c.restore();
-  aLeg(c,-102,-226+b,226,19,A.sw(1),C,hoof,0,1);aLeg(c,122,-226+b,226,19,A.sw(3),C,hoof,0);
   const hx=214+A.bow*20,hy=-462+b+A.bow*120;
   PK.cut(c,PK.P.smooth([[86,-318+b],[140,-420+b+A.bow*60],[hx-10,hy-14],[hx+26,hy+10],[196,-380+b+A.bow*70],[170,-264+b],[122,-226+b]]),body,{lw:2.2,ink:AINK});
-  for(let i=0;i<6;i++){const u=i/5,x0=lerp(hx-18,108,u),y0=lerp(hy-12,-322+b,u),sw=Math.sin(t*2+i)*4;PK.cut(c,cc=>{cc.moveTo(x0+10,y0-6);cc.quadraticCurveTo(x0-24+sw,y0+4,x0-34+sw,y0+40);cc.quadraticCurveTo(x0-12,y0+20,x0+8,y0+14);cc.closePath()},mane,{lw:1.6,ink:AINK,sh:0})}
+  {const A0=[hx-4,hy-22],B0=[80,-326+b],dx=B0[0]-A0[0],dy=B0[1]-A0[1],d=Math.hypot(dx,dy),nx=-dy/d,ny=dx/d,pts=[];for(let i=0;i<=8;i++){const u=i/8;pts.push([A0[0]+dx*u-nx*12,A0[1]+dy*u-ny*12])}
+    for(let i=8;i>=0;i--){const u=i/8,j=(i%2?40:24)+Math.sin(t*2+i)*3;pts.push([A0[0]+dx*u+nx*j,A0[1]+dy*u+ny*j])}
+    PK.cut(c,PK.P.smooth(pts),mane,{lw:1.8,ink:AINK,sh:0});for(let i=1;i<8;i++){const u=i/8;PK.stroke(c,cc=>{cc.moveTo(A0[0]+dx*u-nx*6,A0[1]+dy*u-ny*6);cc.lineTo(A0[0]+dx*u+nx*24,A0[1]+dy*u+ny*24)},'rgba(150,130,90,.45)',1.4)}}
   aBand(c,[150,-404+b+A.bow*60],[176,-350+b+A.bow*70],[196,-372+b+A.bow*70]);
   c.save();c.translate(hx,hy);c.rotate(.98+A.bow*.4);
   PK.cut(c,cc=>{cc.moveTo(-22,-18);cc.lineTo(-14,-62);cc.lineTo(0,-20);cc.closePath()},PK.lg(c,0,-62,0,-18,[C.h,C.d]),{lw:1.8,ink:AINK,sh:0});
@@ -547,12 +547,11 @@ function drawMare(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#e8c48a',d:'#b48450',h
   PK.cut(c,cc=>{cc.moveTo(-26,-26);cc.quadraticCurveTo(0,-44,24,-26);cc.quadraticCurveTo(10,-10,30,4);cc.quadraticCurveTo(-4,-6,-20,-8);cc.closePath()},mane,{lw:1.6,ink:AINK,sh:0});
   aEye(c,8,-2,7.5,A.M,t);c.restore()}
 function drawDoe(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#d0905a',d:'#9a6034',h:'#eab886'},hoof='#3a2a1a',body=PK.lg(c,0,-262,0,-172,[C.h,C.b,C.d]);aShadow(c,160);
-  aLeg(c,-104,-182+b,182,12,A.sw(0),C,hoof,1,1);aLeg(c,84,-182+b,182,12,A.sw(2),C,hoof,1);
+  aLeg(c,-104,-182+b,182,12,A.sw(0),C,hoof,1,1);aLeg(c,84,-182+b,182,12,A.sw(2),C,hoof,1);aLeg(c,-86,-186+b,186,13,A.sw(1),C,hoof,0,1);aLeg(c,102,-186+b,186,13,A.sw(3),C,hoof,0);
   PK.cut(c,cc=>{cc.moveTo(-136,-246+b);cc.quadraticCurveTo(-170,-262+b+Math.sin(t*3)*5,-162,-230+b);cc.quadraticCurveTo(-150,-224+b,-132,-232+b);cc.closePath()},'#fbf4e6',{lw:1.6,ink:AINK,sh:0});
   const bp=PK.P.smooth([[-142,-236+b],[-60,-262+b],[40,-258+b],[108,-252+b],[132,-212+b],[100,-180+b],[0,-172+b],[-100,-176+b],[-150,-200+b]]);
   PK.cut(c,bp,body,{lw:2.4,ink:AINK});c.save();c.beginPath();bp(c);c.clip();c.fillStyle='#f6ead4';c.beginPath();c.ellipse(-10,-162+b,140,26,0,0,7);c.fill();
     c.fillStyle='rgba(255,248,232,.92)';for(let r=0;r<3;r++)for(let i=0;i<8;i++){const x=-118+i*30+(r%2)*14,y=-244+r*18+b;if(x<120)c.beginPath(),c.ellipse(x,y,4.6,3.4,0,0,7),c.fill()}c.restore();
-  aLeg(c,-86,-186+b,186,13,A.sw(1),C,hoof,0,1);aLeg(c,102,-186+b,186,13,A.sw(3),C,hoof,0);
   const hx=150+A.bow*16,hy=-350+b+A.bow*120;
   PK.cut(c,PK.P.smooth([[78,-252+b],[112,-318+b+A.bow*60],[hx-6,hy-6],[hx+16,hy+16],[134,-262+b+A.bow*40],[118,-196+b],[96,-190+b]]),body,{lw:2.2,ink:AINK});
   aBand(c,[110,-310+b+A.bow*60],[132,-276+b+A.bow*50],[148,-300+b+A.bow*50]);
@@ -578,7 +577,7 @@ function drawDuck(c,o,t){const A=aMove(o,t),b=A.bob*.6,C={b:'#fbf6ea',d:'#d8ccb0
   PK.cut(c,cc=>{cc.moveTo(18,-8);cc.quadraticCurveTo(44,-10,54,2);cc.quadraticCurveTo(40,12,18,8);cc.closePath()},PK.lg(c,18,-10,54,12,['#ffc060','#f0902a','#c8641a']),{lw:1.6,ink:AINK,sh:0});
   aEye(c,4,-6,5.4,A.M,t);c.restore()}
 const ANIMAL={cow:drawCow,mare:drawMare,doe:drawDoe,duck:drawDuck};
-const ANIMAL_HEAD={cow:[248,-290,1.5],mare:[262,-430,1.25],doe:[168,-338,1.9],duck:[92,-170,2.6]};
+const ANIMAL_HEAD={cow:[232,-300,1.3],mare:[244,-440,1.15],doe:[156,-344,1.6],duck:[80,-150,2.0]};
 const XFIG={kapali:drawKapali,kama:drawKama,brahma5:drawBrahma5};
 
 /* ---------- engine glue ---------- */
