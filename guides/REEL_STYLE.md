@@ -1,5 +1,5 @@
 # Reel style (English; the owner's house style for all English scripts and reels; from the owner's sample reels: King Shibi, Lakshmana's sleep, Yudhishthir and the Yaksha)
-- 140-180 words, ~60-75 s. One story, one idea.
+- 170-250 words, 1-2 min (about 70-100 s at 0.40 s/word; the owner's 3 sample reels are shorter at ~150 words, both are fine). One story, one idea.
 - Line 1 = the most shocking or surprising fact (context at once). Or a popular claim snapped back: "<claim>. Well, not really." (contrarian snapback, see .claude/skills/triple-hook).
 - Name the source early; give exact location only if the source file has it. Never invent verse numbers.
 - Short plain past-tense sentences, one action each, mostly indirect speech; no filler, no decoration, no moral lecture.
