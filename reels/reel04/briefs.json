@@ -382,7 +382,7 @@
    "duration": 2.9,
    "narration": "Vishnu did not explain. He asked for water.",
    "meaning": "Vishnu did not explain Maya; instead he asked for water.",
-   "why": "Close on Vishnu: he gives no lecture, only a calm smile; on 'water' he opens his hand and a small drop of blue light rises in his palm.",
+   "why": "Close on Vishnu: he gives no lecture, only a calm smile, and on 'water' he holds out an open, empty hand.",
    "camera": {
     "shot": "close",
     "lens": "tele",
@@ -541,19 +541,7 @@
      ]
     }
    ],
-   "effects": [
-    {
-     "k": "glow",
-     "word": "water",
-     "x": 560,
-     "y": 470,
-     "r": 90,
-     "rgb": "140,210,255",
-     "ga": 0.7,
-     "par": 1.0,
-     "meaning": "the water he asks for, a drop of blue light in his hand"
-    }
-   ],
+   "effects": [],
    "transition_in": "cut"
   },
   {
@@ -970,7 +958,7 @@
     "depth": "deep"
    },
    "vertical": {
-    "focus": "narada",
+    "x": 620,
     "z": 1.1,
     "y": 0.46
    },
@@ -1075,9 +1063,9 @@
    "characters": [
     {
      "who": "brahma",
-     "x": 790,
-     "y": 407,
-     "s": 0.62,
+     "x": 735,
+     "y": 367,
+     "s": 0.55,
      "flip": -1,
      "pose": "stand",
      "lotus": false,
@@ -1099,7 +1087,7 @@
     },
     {
      "who": "narada",
-     "x": 600,
+     "x": 545,
      "y": 665,
      "s": 1.0,
      "flip": 1,
@@ -1128,9 +1116,9 @@
     {
      "k": "glow",
      "word": "curse",
-     "x": 790,
-     "y": 380,
-     "r": 200,
+     "x": 735,
+     "y": 360,
+     "r": 180,
      "rgb": "255,140,150",
      "ga": 0.45,
      "par": 1.0,
@@ -1478,13 +1466,20 @@
      "s": 1.15,
      "flip": 1,
      "head": true,
-     "emo": "doubt",
+     "emo": "calm",
+     "mood": {
+      "surp": 0.4,
+      "smile": 0
+     },
      "talk": 0.6,
      "look": 900,
      "actions": [
       {
-       "word": "meant",
-       "emo": "surprise",
+       "word": "asked",
+       "mood": {
+        "surp": 0.6,
+        "ly": -0.2
+       },
        "tilt": 0.07,
        "d": 0.5
       }
@@ -1894,27 +1889,29 @@
    "layers": [
     {
      "d": "far",
-     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "contents": "low blue hills and white clouds in haze on the horizon, above where the river begins",
      "fog": 0.55,
      "haze": "#eef4fa",
      "items": [
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 500,
-       "y": 470,
+       "y": 392,
        "s": 1.0,
-       "w": 380,
-       "h": 90,
-       "col": "#9ab4d4"
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 800,
-       "y": 480,
+       "y": 395,
        "s": 1.0,
-       "w": 340,
-       "h": 70,
-       "col": "#9ab4d4"
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
        "o": "cloud",
@@ -2084,27 +2081,29 @@
    "layers": [
     {
      "d": "far",
-     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "contents": "low blue hills and white clouds in haze on the horizon, above where the river begins",
      "fog": 0.55,
      "haze": "#eef4fa",
      "items": [
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 540,
-       "y": 470,
+       "y": 392,
        "s": 1.0,
-       "w": 380,
-       "h": 90,
-       "col": "#9ab4d4"
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 800,
-       "y": 480,
+       "y": 395,
        "s": 1.0,
-       "w": 340,
-       "h": 70,
-       "col": "#9ab4d4"
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
        "o": "cloud",
@@ -2261,7 +2260,7 @@
    },
    "duration": 1.24,
    "narration": "She was so lovely",
-   "meaning": "She was so lovely.",
+   "meaning": "The young woman was so lovely that Narada was captivated.",
    "why": "Close on her face: a shy smile, eyes lowered, a warm rose glow and a halo of light behind her head.",
    "camera": {
     "shot": "close",
@@ -2292,27 +2291,29 @@
    "layers": [
     {
      "d": "far",
-     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "contents": "low blue hills and white clouds in haze on the horizon, above where the river begins",
      "fog": 0.55,
      "haze": "#eef4fa",
      "items": [
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 520,
-       "y": 470,
+       "y": 392,
        "s": 1.0,
-       "w": 380,
-       "h": 90,
-       "col": "#9ab4d4"
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 780,
-       "y": 480,
+       "y": 395,
        "s": 1.0,
-       "w": 340,
-       "h": 70,
-       "col": "#9ab4d4"
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
        "o": "cloud",
@@ -2464,27 +2465,29 @@
    "layers": [
     {
      "d": "far",
-     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "contents": "low blue hills and white clouds in haze on the horizon, above where the river begins",
      "fog": 0.55,
      "haze": "#eef4fa",
      "items": [
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 520,
-       "y": 470,
+       "y": 392,
        "s": 1.0,
-       "w": 380,
-       "h": 90,
-       "col": "#9ab4d4"
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 800,
-       "y": 480,
+       "y": 395,
        "s": 1.0,
-       "w": 340,
-       "h": 70,
-       "col": "#9ab4d4"
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
        "o": "cloud",
@@ -2685,27 +2688,29 @@
    "layers": [
     {
      "d": "far",
-     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "contents": "low blue hills and white clouds in haze on the horizon, above where the river begins",
      "fog": 0.55,
      "haze": "#eef4fa",
      "items": [
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 520,
-       "y": 470,
+       "y": 392,
        "s": 1.0,
-       "w": 380,
-       "h": 90,
-       "col": "#9ab4d4"
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 780,
-       "y": 480,
+       "y": 395,
        "s": 1.0,
-       "w": 340,
-       "h": 70,
-       "col": "#9ab4d4"
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
        "o": "cloud",
@@ -2919,27 +2924,29 @@
    "layers": [
     {
      "d": "far",
-     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "contents": "low blue hills and white clouds in haze on the horizon, above where the river begins",
      "fog": 0.55,
      "haze": "#eef4fa",
      "items": [
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 500,
-       "y": 470,
+       "y": 392,
        "s": 1.0,
-       "w": 380,
-       "h": 90,
-       "col": "#9ab4d4"
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 800,
-       "y": 480,
+       "y": 395,
        "s": 1.0,
-       "w": 340,
-       "h": 70,
-       "col": "#9ab4d4"
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
        "o": "cloud",
@@ -3079,16 +3086,16 @@
    ],
    "effects": [
     {
-     "k": "embers",
+     "k": "glow",
      "word": "house",
      "x": 650,
-     "y": 420,
-     "w": 380,
-     "alpha": 0.4,
-     "blend": "lighter",
-     "par": 1.0,
-     "rgb": "255,230,160",
-     "meaning": "warm motes of light over the new home"
+     "y": 470,
+     "r": 240,
+     "rgb": "255,220,150",
+     "ga": 0.45,
+     "par": 0.55,
+     "behind": true,
+     "meaning": "warm light over the new home"
     }
    ],
    "transition_in": "cut"
@@ -3102,8 +3109,8 @@
    },
    "duration": 1.2,
    "narration": "Years passed.",
-   "meaning": "Years passed.",
-   "why": "The same house through the seasons: pink spring blossoms drift down, then on 'passed' the sky turns to golden autumn and the light deepens.",
+   "meaning": "Years passed while Narada lived in the house by the river.",
+   "why": "The same house through the seasons: pink spring blossoms drift down, while from 'Years' the sky turns to golden autumn and the light deepens.",
    "camera": {
     "shot": "wide",
     "lens": "wide",
@@ -3136,27 +3143,29 @@
    "layers": [
     {
      "d": "far",
-     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "contents": "low blue hills and white clouds in haze on the horizon, above where the river begins",
      "fog": 0.55,
      "haze": "#eef4fa",
      "items": [
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 500,
-       "y": 470,
+       "y": 392,
        "s": 1.0,
-       "w": 380,
-       "h": 90,
-       "col": "#9ab4d4"
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 800,
-       "y": 480,
+       "y": 395,
        "s": 1.0,
-       "w": 340,
-       "h": 70,
-       "col": "#9ab4d4"
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
        "o": "cloud",
@@ -3256,7 +3265,7 @@
     "river": "#5ab8e8",
     "haze": "240,246,255",
     "change": {
-     "word": "passed",
+     "word": "Years",
      "bg2": {
       "k": "vista",
       "sky": [
@@ -3276,7 +3285,7 @@
       "river": "#5ab8e8",
       "haze": "240,246,255"
      },
-     "d": 0.9
+     "d": 1.0
     }
    },
    "mood": {
@@ -3290,9 +3299,9 @@
      "word": "Years",
      "x": 640,
      "y": 120,
-     "n": 14,
-     "sp": 40,
-     "len": 520,
+     "n": 22,
+     "sp": 30,
+     "len": 560,
      "meaning": "blossoms falling as the seasons turn"
     },
     {
@@ -3316,10 +3325,10 @@
     "t": 42.92,
     "word": "Narada"
    },
-   "duration": 2.9,
-   "narration": "Narada became a father, then a grandfather.",
-   "meaning": "Narada became a father, then a grandfather.",
-   "why": "Narada stands with his son and daughter; on 'grandfather' he cross-fades into the white-bearded old man and two small grandchildren appear at his side.",
+   "duration": 1.52,
+   "narration": "Narada became a father,",
+   "meaning": "Narada became a father of a son and a daughter.",
+   "why": "Narada the householder stands before his house with his little son and daughter, opening his arms to them with joy on 'father'.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -3345,34 +3354,36 @@
    },
    "vertical": {
     "x": [
-     650,
-     650
+     640,
+     640
     ]
    },
    "layers": [
     {
      "d": "far",
-     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "contents": "low blue hills and white clouds in haze on the horizon, above where the river begins",
      "fog": 0.55,
-     "haze": "#fbf0e0",
+     "haze": "#eef4fa",
      "items": [
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 520,
-       "y": 470,
+       "y": 392,
        "s": 1.0,
-       "w": 380,
-       "h": 90,
-       "col": "#9ab4d4"
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 790,
-       "y": 480,
+       "y": 395,
        "s": 1.0,
-       "w": 340,
-       "h": 70,
-       "col": "#9ab4d4"
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
        "o": "cloud",
@@ -3392,7 +3403,242 @@
     },
     {
      "d": "mid",
-     "contents": "the house behind the family",
+     "contents": "the house behind the family and a tree",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hut",
+       "x": 820,
+       "y": 600,
+       "s": 0.9,
+       "lamp": true
+      },
+      {
+       "o": "tree",
+       "x": 440,
+       "y": 605,
+       "s": 0.75,
+       "kind": "round",
+       "col": "#3a8a4a"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 620,
+       "h": 40,
+       "col": "#f4dca8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark blurred reeds and shrubs in the bottom corners",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 460,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#2f6ad0",
+     "#7ab8f0",
+     "#ffe6c4",
+     "#fff8ea"
+    ],
+    "sx": 700,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "river": "#5ab8e8",
+    "haze": "240,246,255"
+   },
+   "mood": {
+    "emotion": "family",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "narada_g",
+     "x": 620,
+     "y": 575,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "balak",
+     "actions": [
+      {
+       "word": "father",
+       "pose": "open",
+       "emo": "joy",
+       "mood": {
+        "smile": 1
+       },
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "balak",
+     "x": 755,
+     "y": 575,
+     "s": 0.84,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "narada_g",
+     "actions": [
+      {
+       "word": "father",
+       "pose": "open",
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "balika",
+     "x": 495,
+     "y": 575,
+     "s": 0.82,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "narada_g",
+     "actions": [
+      {
+       "word": "father",
+       "mood": {
+        "smile": 1
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "father",
+     "x": 620,
+     "y": 380,
+     "r": 220,
+     "rgb": "255,225,170",
+     "ga": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the warmth of becoming a father"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s19",
+   "beat": 1,
+   "start": {
+    "t": 44.44,
+    "word": "then"
+   },
+   "duration": 1.38,
+   "narration": "then a grandfather.",
+   "meaning": "Then Narada became a grandfather.",
+   "why": "A cross-fade in the same place: Narada is now white-bearded and old, the sky has turned autumn gold, and two small grandchildren stand at his side.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "static",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "the frame holds still so the dissolve reads as the years passing"
+   },
+   "focus": {
+    "subject": "narada_old",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     640,
+     640
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "low blue hills and white clouds in haze on the horizon, above where the river begins",
+     "fog": 0.55,
+     "haze": "#fbf0e0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 520,
+       "y": 392,
+       "s": 1.0,
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 790,
+       "y": 395,
+       "s": 1.0,
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "the same house, now under an autumn tree",
      "fog": 0.2,
      "items": [
       {
@@ -3464,79 +3710,53 @@
     "haze": "240,246,255"
    },
    "mood": {
-    "emotion": "family",
+    "emotion": "old age",
     "grade": "warm"
    },
    "characters": [
     {
-     "who": "narada_g",
-     "x": 620,
-     "y": 610,
-     "s": 1.0,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "joy",
-     "look": "balak",
-     "engine_cues": {
-      "fo": "grandfather"
-     },
-     "engine": {
-      "fd": 0.8
-     },
-     "actions": [
-      {
-       "word": "father",
-       "pose": "open",
-       "emo": "joy",
-       "d": 0.6
-      }
-     ]
-    },
-    {
      "who": "narada_old",
      "x": 620,
-     "y": 610,
+     "y": 576,
      "s": 1.0,
      "flip": 1,
      "pose": "open",
      "emo": "joy",
      "look": "balak",
-     "engine_cues": {
-      "ac": "grandfather"
-     },
-     "engine": {
-      "ad": 0.8
-     }
-    },
-    {
-     "who": "balak",
-     "x": 745,
-     "y": 604,
-     "s": 0.62,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "joy",
-     "look": "narada_g",
      "actions": [
       {
-       "word": "father",
-       "pose": "open",
+       "word": "grandfather",
+       "mood": {
+        "smile": 1,
+        "blink": 0.3
+       },
+       "tilt": 0.04,
        "d": 0.6
       }
      ]
     },
     {
+     "who": "balak",
+     "x": 740,
+     "y": 576,
+     "s": 0.72,
+     "flip": -1,
+     "pose": "open",
+     "emo": "joy",
+     "look": "narada_old"
+    },
+    {
      "who": "balika",
-     "x": 510,
-     "y": 598,
-     "s": 0.6,
+     "x": 505,
+     "y": 576,
+     "s": 0.7,
      "flip": 1,
      "pose": "stand",
      "emo": "joy",
-     "look": "narada_g",
+     "look": "narada_old",
      "actions": [
       {
-       "word": "father",
+       "word": "grandfather",
        "mood": {
         "smile": 1
        },
@@ -3552,17 +3772,17 @@
      "x": 620,
      "y": 380,
      "r": 220,
-     "rgb": "255,225,170",
+     "rgb": "255,215,150",
      "ga": 0.45,
      "par": 1.0,
      "behind": true,
-     "meaning": "the years turning the father into a grandfather"
+     "meaning": "the golden light of his old age"
     }
    ],
    "transition_in": "fade"
   },
   {
-   "id": "s19",
+   "id": "s20",
    "beat": 1,
    "start": {
     "t": 45.82,
@@ -3604,27 +3824,29 @@
    "layers": [
     {
      "d": "far",
-     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "contents": "low blue hills and white clouds in haze on the horizon, above where the river begins",
      "fog": 0.55,
      "haze": "#fbf0e0",
      "items": [
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 500,
-       "y": 470,
+       "y": 392,
        "s": 1.0,
-       "w": 380,
-       "h": 90,
-       "col": "#9ab4d4"
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 800,
-       "y": 480,
+       "y": 395,
        "s": 1.0,
-       "w": 340,
-       "h": 70,
-       "col": "#9ab4d4"
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
        "o": "cloud",
@@ -3649,15 +3871,15 @@
      "items": [
       {
        "o": "hut",
-       "x": 640,
-       "y": 590,
-       "s": 1.05,
+       "x": 700,
+       "y": 505,
+       "s": 0.85,
        "lamp": true
       },
       {
        "o": "hill",
        "x": 640,
-       "y": 660,
+       "y": 620,
        "s": 1.0,
        "w": 620,
        "h": 40,
@@ -3714,8 +3936,8 @@
    "characters": [
     {
      "who": "narada_old",
-     "x": 580,
-     "y": 615,
+     "x": 565,
+     "y": 531,
      "s": 0.85,
      "flip": 1,
      "pose": "stand",
@@ -3735,8 +3957,8 @@
     },
     {
      "who": "kanya",
-     "x": 700,
-     "y": 615,
+     "x": 665,
+     "y": 531,
      "s": 0.82,
      "flip": -1,
      "pose": "stand",
@@ -3748,9 +3970,9 @@
     },
     {
      "who": "balak",
-     "x": 500,
-     "y": 569,
-     "s": 0.5,
+     "x": 480,
+     "y": 531,
+     "s": 0.76,
      "flip": 1,
      "pose": "open",
      "emo": "joy",
@@ -3758,9 +3980,9 @@
     },
     {
      "who": "balika",
-     "x": 780,
-     "y": 569,
-     "s": 0.5,
+     "x": 770,
+     "y": 531,
+     "s": 0.74,
      "flip": -1,
      "pose": "stand",
      "emo": "joy",
@@ -3780,9 +4002,9 @@
     {
      "k": "halo_ring",
      "word": "world",
-     "x": 640,
-     "y": 420,
-     "w": 560,
+     "x": 680,
+     "y": 400,
+     "w": 520,
      "alpha": 0.4,
      "blend": "lighter",
      "par": 0.9,
@@ -3793,7 +4015,7 @@
    "transition_in": "cut"
   },
   {
-   "id": "s20",
+   "id": "s21",
    "beat": 1,
    "start": {
     "t": 48.48,
@@ -3802,7 +4024,7 @@
    "duration": 2.56,
    "narration": "Then one day, the sky turned gray.",
    "meaning": "Then one day the sky turned gray.",
-   "why": "Old Narada looks up in unease as the bright sky over the river cross-fades to gray on 'gray'.",
+   "why": "Old Narada looks up in unease as the bright sky over the river cross-fades to gray from 'day' to 'gray'.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -3832,27 +4054,29 @@
    "layers": [
     {
      "d": "far",
-     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "contents": "low blue hills and white clouds in haze on the horizon, above where the river begins",
      "fog": 0.55,
      "haze": "#eef4fa",
      "items": [
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 500,
-       "y": 470,
+       "y": 392,
        "s": 1.0,
-       "w": 380,
-       "h": 90,
-       "col": "#9ab4d4"
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 800,
-       "y": 480,
+       "y": 395,
        "s": 1.0,
-       "w": 340,
-       "h": 70,
-       "col": "#9ab4d4"
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
        "o": "cloud",
@@ -3942,7 +4166,7 @@
     "river": "#5ab8e8",
     "haze": "240,246,255",
     "change": {
-     "word": "gray",
+     "word": "day",
      "bg2": {
       "k": "vista",
       "sky": [
@@ -4003,7 +4227,7 @@
    "transition_in": "cut"
   },
   {
-   "id": "s21",
+   "id": "s22",
    "beat": 1,
    "start": {
     "t": 51.04,
@@ -4125,7 +4349,7 @@
     {
      "who": "narada_old",
      "x": 560,
-     "y": 612,
+     "y": 563,
      "s": 0.95,
      "flip": 1,
      "pose": "stand",
@@ -4151,19 +4375,19 @@
     },
     {
      "who": "kanya",
-     "x": 700,
-     "y": 612,
+     "x": 690,
+     "y": 563,
      "s": 0.92,
      "flip": -1,
-     "pose": "hold",
+     "pose": "open",
      "emo": "fear",
      "look": "narada_old"
     },
     {
      "who": "balak",
-     "x": 760,
-     "y": 584,
-     "s": 0.52,
+     "x": 780,
+     "y": 563,
+     "s": 0.8,
      "flip": -1,
      "pose": "stand",
      "emo": "fear",
@@ -4197,7 +4421,7 @@
    "transition_in": "fade"
   },
   {
-   "id": "s22",
+   "id": "s23",
    "beat": 1,
    "start": {
     "t": 54.72,
@@ -4232,8 +4456,8 @@
    },
    "vertical": {
     "x": [
-     600,
-     680
+     610,
+     650
     ]
    },
    "layers": [
@@ -4296,17 +4520,17 @@
    "characters": [
     {
      "who": "narada_old",
-     "x": 540,
-     "y": 619,
-     "s": 1.0,
+     "x": 520,
+     "y": 570,
+     "s": 0.98,
      "flip": 1,
-     "pose": "plead",
+     "pose": "stand",
      "emo": "grief",
      "look": "kanya",
      "actions": [
       {
        "word": "swept",
-       "pose": "plead",
+       "pose": "open",
        "emo": "grief",
        "e": "spring",
        "d": 0.5
@@ -4321,8 +4545,8 @@
     },
     {
      "who": "kanya",
-     "x": 720,
-     "y": 619,
+     "x": 670,
+     "y": 570,
      "s": 0.9,
      "flip": -1,
      "pose": "open",
@@ -4333,17 +4557,17 @@
       "fo": "family"
      },
      "engine": {
-      "mx": 150,
+      "mx": 170,
       "my": -20,
-      "md": 1.6,
+      "md": 1.8,
       "fd": 1.4
      }
     },
     {
      "who": "balika",
-     "x": 790,
-     "y": 595,
-     "s": 0.55,
+     "x": 750,
+     "y": 570,
+     "s": 0.8,
      "flip": -1,
      "pose": "open",
      "emo": "fear",
@@ -4385,7 +4609,7 @@
    "transition_in": "cut"
   },
   {
-   "id": "s23",
+   "id": "s24",
    "beat": 1,
    "start": {
     "t": 56.98,
@@ -4592,7 +4816,7 @@
    "transition_in": "flash"
   },
   {
-   "id": "s24",
+   "id": "s25",
    "beat": 1,
    "start": {
     "t": 60.88,
@@ -4768,7 +4992,7 @@
    "transition_in": "cut"
   },
   {
-   "id": "s25",
+   "id": "s26",
    "beat": 1,
    "start": {
     "t": 64.819,
@@ -4777,7 +5001,7 @@
    "duration": 1.72,
    "narration": "Narada stood stunned.",
    "meaning": "Narada stood stunned.",
-   "why": "Close on Narada's face, eyes wide and mouth open in shock as he understands no time has passed.",
+   "why": "Close on Narada's face staring straight ahead, mouth open in shock, a pale ring of light behind his head: he understands no time has passed.",
    "camera": {
     "shot": "close",
     "lens": "tele",
@@ -4906,30 +5130,50 @@
     {
      "who": "narada",
      "x": 640,
-     "y": 360,
+     "y": 340,
      "s": 1.15,
      "flip": 1,
      "head": true,
      "emo": "surprise",
-     "look": 900,
+     "mood": {
+      "surp": 1,
+      "mouth": 0.7,
+      "ly": 0,
+      "lx": 0
+     },
      "actions": [
       {
-       "word": "stunned",
+       "word": "stood",
        "emo": "surprise",
        "mood": {
         "surp": 1,
-        "mouth": 0.6
+        "mouth": 0.8,
+        "ly": 0,
+        "lx": 0
        },
-       "d": 0.5
+       "d": 0.4
       }
      ]
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "halo_ring",
+     "word": "stunned",
+     "x": 640,
+     "y": 300,
+     "w": 520,
+     "alpha": 0.4,
+     "blend": "lighter",
+     "par": 0.9,
+     "behind": true,
+     "meaning": "the shock of waking from the dream, a pale ring of light"
+    }
+   ],
    "transition_in": "cut"
   },
   {
-   "id": "s26",
+   "id": "s27",
    "beat": 1,
    "start": {
     "t": 66.54,
@@ -5055,8 +5299,8 @@
    "characters": [
     {
      "who": "kanya",
-     "x": 600,
-     "y": 594,
+     "x": 590,
+     "y": 558,
      "s": 0.92,
      "flip": 1,
      "pose": "stand",
@@ -5078,8 +5322,8 @@
     {
      "who": "balak",
      "x": 720,
-     "y": 582,
-     "s": 0.55,
+     "y": 558,
+     "s": 0.78,
      "flip": -1,
      "pose": "stand",
      "emo": "joy",
@@ -5096,8 +5340,8 @@
     {
      "who": "balika",
      "x": 790,
-     "y": 578,
-     "s": 0.53,
+     "y": 558,
+     "s": 0.76,
      "flip": -1,
      "pose": "stand",
      "emo": "joy",
@@ -5139,7 +5383,7 @@
    "transition_in": "iris"
   },
   {
-   "id": "s27",
+   "id": "s28",
    "beat": 1,
    "start": {
     "t": 71.06,
@@ -5333,7 +5577,7 @@
    "transition_in": "fade"
   },
   {
-   "id": "s28",
+   "id": "s29",
    "beat": 1,
    "start": {
     "t": 75.74,
@@ -5342,7 +5586,7 @@
    "duration": 2.88,
    "narration": "It makes us chase what slips away like sand.",
    "meaning": "Maya makes us chase what slips away like sand.",
-   "why": "Young Narada on the empty river bank reaches out; golden sand-coloured motes stream out of his hands and blow away on 'slips'.",
+   "why": "Young Narada on the empty river bank reaches out; a stream of golden sand blows out of his open hands and away from him.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -5367,34 +5611,36 @@
     "depth": "deep"
    },
    "vertical": {
-    "focus": "narada",
+    "x": 620,
     "z": 1.08,
     "y": 0.44
    },
    "layers": [
     {
      "d": "far",
-     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "contents": "low blue hills and white clouds in haze on the horizon, above where the river begins",
      "fog": 0.55,
      "haze": "#f4eefa",
      "items": [
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 520,
-       "y": 470,
+       "y": 392,
        "s": 1.0,
-       "w": 380,
-       "h": 90,
-       "col": "#9ab4d4"
+       "w": 230,
+       "h": 120,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
-       "o": "hill",
+       "o": "mountain",
        "x": 800,
-       "y": 480,
+       "y": 395,
        "s": 1.0,
-       "w": 340,
-       "h": 70,
-       "col": "#9ab4d4"
+       "w": 200,
+       "h": 90,
+       "col": "#9ab4d4",
+       "snow": false
       },
       {
        "o": "cloud",
@@ -5485,7 +5731,7 @@
    "characters": [
     {
      "who": "narada",
-     "x": 600,
+     "x": 560,
      "y": 655,
      "s": 1.0,
      "flip": 1,
@@ -5495,7 +5741,7 @@
      "actions": [
       {
        "word": "chase",
-       "pose": "plead",
+       "pose": "open",
        "emo": "sad",
        "d": 0.6
       },
@@ -5512,23 +5758,20 @@
    ],
    "effects": [
     {
-     "k": "embers",
-     "word": "slips",
-     "x": 720,
-     "y": 470,
-     "w": 320,
-     "alpha": 0.6,
-     "blend": "lighter",
+     "k": "sand_drift",
+     "word": "chase",
+     "x": 665,
+     "y": 445,
+     "w": 200,
+     "alpha": 1,
      "par": 1.0,
-     "rgb": "255,215,140",
-     "vx": 40,
-     "meaning": "sand slipping away from his hands as drifting golden motes"
+     "meaning": "grains of golden sand slipping out of his reach and blowing away"
     }
    ],
    "transition_in": "wipe"
   },
   {
-   "id": "s29",
+   "id": "s30",
    "beat": 1,
    "start": {
     "t": 78.62,

@@ -1,0 +1,57 @@
+{
+ "episode": "reel04",
+ "frames": 30,
+ "pass": false,
+ "checked": "all 30 frames opened (contact sheets sheet_00..04 at tile size + full-size checks of s26/s29 and the re-staged shots); title card 'Narada's Maya Test' on frame 000 above Narada's face; faces of adults solved to 38-52% of the height and above the subtitle box in every single-window shot (children s .7-.84 so their faces clear the box); subtitles = reels/build/reel04 words (validator start words match the voice, narration continuity asserted in briefs_gen.py); >= 3 depth planes in every shot with hazed far planes; bright palette (Vaikuntha blue-gold, river morning, spring/autumn, gray only for the storm, violet for Maya/dream); stack layout only in s24 (Vishnu above, Narada below); no FX_ERRORS/PAGEERR; no hearts/stars/sparkles (glittery embers replaced by glows and the new round-grain sand_drift); EP6 still 040_b04_12 md5 911ca8b7... unchanged before/after the engine additions",
+ "issues": [
+  {
+   "shot": "s03",
+   "check": "story",
+   "problem": "'He asked for water' is shown only by Vishnu's open empty hand; there is no water vessel prop (no lota/kalash object in the engine)",
+   "owner": "scene-designer",
+   "fix": "accept, or add a small water-pot object (lota) and give it to Vishnu's hand / leave it unfilled by the river in s29",
+   "frame": "library/showcase/reel04_frames/002_s03.jpg"
+  },
+  {
+   "shot": "s04",
+   "check": "faces",
+   "problem": "Narada's shame/doubt face reads a little stern rather than puzzled; the halo ring on 'answer' fades in after the still time",
+   "owner": "action-director",
+   "fix": "accept, or emo doubt with mood smile 0.2",
+   "frame": "library/showcase/reel04_frames/003_s04.jpg"
+  },
+  {
+   "shot": "s06",
+   "check": "story",
+   "problem": "Brahma (not in the --cast list for reel 4) appears as a faint 45% memory figure behind Narada for 'his father, Brahma'; same kind of exception as kumara in reel 1",
+   "owner": "cinematographer",
+   "fix": "owner to confirm, or drop the memory figure and keep only the rose glow",
+   "frame": "library/showcase/reel04_frames/005_s06.jpg"
+  },
+  {
+   "shot": "s17",
+   "check": "story",
+   "problem": "'Years passed': the falling blossom petals are small at the still time; the time-passing reads mainly through the spring-to-autumn sky cross-fade, the blossom tree vs autumn tree and the fade transitions into and out of the shot",
+   "owner": "effects-designer",
+   "fix": "accept, or a bigger leaf/petal fall effect (classic petals are 14x6 px ellipses)",
+   "frame": "library/showcase/reel04_frames/016_s17.jpg"
+  },
+  {
+   "shot": "s23",
+   "check": "technical",
+   "problem": "swept away: the girl is half cut by the right edge and the wife's open arms read as reaching more than being carried; the wave and splash are stylised paper (not frightening) as asked",
+   "owner": "action-director",
+   "fix": "accept (they slide out of frame on 'swept' and fade on 'family')",
+   "frame": "library/showcase/reel04_frames/022_s23.jpg"
+  },
+  {
+   "shot": "s26",
+   "check": "faces",
+   "problem": "'stunned': the narada rig's surprise face is mild (eyes do not widen, small open mouth); the read relies on the straight stare and the pale ring",
+   "owner": "character-designer",
+   "fix": "engine/v2_cast.js: a stronger surprise (wider eyes, raised brows) for narada; requested in frames_notes.md, not edited",
+   "frame": "library/showcase/reel04_frames/025_s26.jpg"
+  }
+ ],
+ "note": "pass=false only because of the minor known weak spots above (no blocking face/subtitle/empty-frame problems)"
+}

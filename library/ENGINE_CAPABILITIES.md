@@ -29,7 +29,7 @@ vista (sky, ridge colours, river, trees, ground) · cloudscape · cosmos (rgb, s
 - Defaults: far par .2 fog .55 blur 1.2 (+ haze band) · mid par .55 fog .22 · near par 1.35 blur 1.6 dark .55 (drawn in front of the actors).
 - `fog` mixes colours toward `haze` (lighter/bluer = farther); `dark` mixes toward a silhouette colour; `blur` = shallow focus.
 - Objects (x, y = base on the ground, s = scale): `tree` (kind round | banyan | palm | pine, col, trunk, flowers) · `rock` (col, moss)
-  · `cloud` (col) · `mountain` (h, w, col, snow:false, trees) · `pillar` (h, w, col) · `wall` (w, h, col: palace wall with arches) · `shrub` (col, flowers) · `hill` (w, h, col).
+  · `cloud` (col) · `mountain` (h, w, col, snow:false, trees) · `pillar` (h, w, col) · `wall` (w, h, col: palace wall with arches) · `shrub` (col, flowers) · `hill` (w, h, col) · `hut` (reels: thatched mud house on a plinth; w, h, col, roof, lamp, toran:false).
 
 ## Characters (coded rigs; names from engine_vocab: cast)
 brahma (3 visible faces + `hd` sprouting faces), vishnu, hayagriva, vishnu_rest (reclining on Shesha), shiva, daksha, manu, narada (veena), adishakti, brahmi, sati, prasuti, diti, danu, asikli,
@@ -47,7 +47,7 @@ Figure keys: `x,y` (feet), `s`, `flip` (1 faces right, -1 left), `pose`, `head:t
 boulder · cloud_white_cluster · crown_gold · divine_rays · embers · energy_swirl · flower_petals (= the ketaki flower; `wither` 0..1 or `wc`/`wd` cue, `fall:1` petals drop, `glow`)
 · ground_crack (grows with its fade-in) · halo_ring · havan_kund (with fire) · light_beam · lightning_bolt_a · lightning_forks · magic_circle (yantra)
 · mandara_mountain (tall peak) · mist_wisps · om_symbol · palace_gate (temple gateway) · red_energy_pulse · smoke_plume · sudarshan_chakra
-· water_splash · wave_ocean · whirlpool_churn. Old plans that say `{"t":"img","src":name}` or `fximg` are converted to pfx automatically.
+· water_splash · wave_ocean · whirlpool_churn · sand_drift (reels: round sand grains blowing from x,y toward +x, w = length). Old plans that say `{"t":"img","src":name}` or `fximg` are converted to pfx automatically.
 
 ## Classic effects (`fx` in front, `fxb` behind the actors)
 text, name (name plate), glow, orbs, petals, shock, flash, bolt, crack, ribbon, beam, light, flames, fire, pillar, infinity, scales, trident, tears,

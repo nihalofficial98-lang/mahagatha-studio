@@ -1,0 +1,5337 @@
+{
+ "episode": "reel03",
+ "shots": [
+  {
+   "id": "s01",
+   "at": {
+    "t": 0.12,
+    "word": "Vishnu"
+   },
+   "cues": [
+    "preserver",
+    "fought"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#33307e",
+     "#7a4a9a",
+     "#ff9a5a",
+     "#ffe2a8"
+    ],
+    "sx": 640,
+    "sy": 260
+   },
+   "figs": [
+    {
+     "who": "madhu",
+     "x": 520,
+     "y": 560,
+     "s": 0.8,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "anger",
+     "dark": 0.55,
+     "mood": {
+      "lx": 0.8
+     },
+     "ad": 0.7,
+     "ac": 0
+    },
+    {
+     "who": "kaitabha",
+     "x": 770,
+     "y": 565,
+     "s": 0.8,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "anger",
+     "dark": 0.55,
+     "mood": {
+      "lx": 0.8
+     },
+     "ad": 0.7,
+     "ac": 0
+    },
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 674,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "anger",
+       "tilt": 0.04
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 640
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 330,
+     "r": 240,
+     "rgb": "190,220,255",
+     "ga": 0.45,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0e8d8",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff4e6"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 560,
+       "s": 1.0,
+       "col": "#dce8fa"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 570,
+       "s": 0.9,
+       "col": "#dce8fa"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Under the title card Vishnu stands tall over the bright ocean, mace ready; the two dark asura brothers loom faint behind him.",
+   "vert": {
+    "focus": "vishnu"
+   }
+  },
+  {
+   "id": "s02",
+   "at": {
+    "t": 3.14,
+    "word": "5,000"
+   },
+   "cues": [
+    "years",
+    "not"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#33307e",
+     "#7a4a9a",
+     "#ff9a5a",
+     "#ffe2a8"
+    ],
+    "sx": 640,
+    "sy": 260
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "doubt",
+       "tilt": -0.05
+      }
+     ]
+    },
+    {
+     "who": "madhu",
+     "x": 860,
+     "y": 660,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "rage",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "emo": "pride",
+       "mood": {
+        "smile": 0.5,
+        "anger": 0.5
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 640
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 260,
+     "rgb": "255,170,90",
+     "ga": 0.4,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.03,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0dcd0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 380,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 620,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff0e4"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 250,
+       "y": 560,
+       "s": 1.0,
+       "col": "#e8d8f0"
+      },
+      {
+       "o": "cloud",
+       "x": 1030,
+       "y": 570,
+       "s": 0.9,
+       "col": "#e8d8f0"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 300,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 980,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot handheld: Stacked: Vishnu above lunges with his mace, Madhu below lunges back with his sword; on 'not' Vishnu's face turns to doubt as neither gives way.",
+   "vert": {
+    "mode": "stack",
+    "stack": [
+     "vishnu",
+     "madhu"
+    ]
+   },
+   "shake": 3,
+   "dx": 0
+  },
+  {
+   "id": "s03",
+   "at": {
+    "t": 6.14,
+    "word": "Then"
+   },
+   "cues": [
+    "Then",
+    "mace",
+    "offered"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 240
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 640,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.8,
+       "pose": "open",
+       "emo": "calm"
+      },
+      {
+       "c": 2,
+       "d": 0.5,
+       "emo": "joy",
+       "mood": {
+        "smile": 0.6
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 470,
+     "r": 170,
+     "rgb": "255,215,130",
+     "ga": 0.7,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 640,
+     "y": 340,
+     "w": 440,
+     "alpha": 0.45,
+     "blend": "lighter",
+     "par": 0.9,
+     "c": 2,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8eef8",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium pull_out: Vishnu opens his hands so the mace is gone from his grip, and a warm gold light of the gift glows before him as he smiles on 'offered'.",
+   "vert": {
+    "focus": "vishnu",
+    "z": 1.1,
+    "y": 0.42
+   },
+   "dx": 0
+  },
+  {
+   "id": "s04",
+   "at": {
+    "t": 9.44,
+    "word": "but"
+   },
+   "cues": [
+    "never"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 240
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 360,
+     "s": 1.15,
+     "flip": 1,
+     "head": true,
+     "emo": "calm",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "tilt": 0.05,
+       "mood": {
+        "smile": 0.8,
+        "lx": 0.8,
+        "ly": 0.1
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#dce4f4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#eef2fa"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#eef2fa"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#eef2fa"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8c08a",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8c08a",
+       "h": 520
+      }
+     ]
+    }
+   ],
+   "note": "close push_in: Close on Vishnu's face: a small knowing smile and a sideways glance on 'never', the light behind him cooling to a deep blue.",
+   "vert": {
+    "focus": "vishnu"
+   },
+   "bgc": 0,
+   "bgd": 1.0,
+   "bg2": {
+    "k": "cloudscape",
+    "sky": [
+     "#262a7a",
+     "#5458b8",
+     "#a8a8e8",
+     "#ece6fa"
+    ],
+    "sx": 640,
+    "sy": 240
+   },
+   "dx": 0
+  },
+  {
+   "id": "s05",
+   "at": {
+    "t": 11.6,
+    "word": "The"
+   },
+   "cues": [
+    "Madhu",
+    "and",
+    "Kaitabha"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a2f78",
+     "#5a62b0",
+     "#f0a080",
+     "#ffe4c4"
+    ],
+    "sx": 640,
+    "sy": 260
+   },
+   "figs": [
+    {
+     "who": "madhu",
+     "x": 555,
+     "y": 580,
+     "s": 0.88,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "pride",
+     "mood": {
+      "smile": 0.5,
+      "anger": 0.5,
+      "ly": -0.3
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "raise",
+       "emo": "pride",
+       "e": "spring"
+      }
+     ]
+    },
+    {
+     "who": "kaitabha",
+     "x": 730,
+     "y": 580,
+     "s": 0.88,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.5,
+       "emo": "pride",
+       "mood": {
+        "smile": 0.5,
+        "anger": 0.5,
+        "ly": -0.3
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Madhu",
+     "x": 555,
+     "y": 120,
+     "size": 30,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "name",
+     "d": 0.1,
+     "s": "Kaitabha",
+     "x": 730,
+     "y": 175,
+     "size": 30,
+     "c": 1
+    },
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 650
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -24,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8dcd8",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#f8eee8"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 270,
+       "s": 1.1,
+       "col": "#f8eee8"
+      },
+      {
+       "o": "cloud",
+       "x": 645,
+       "y": 420,
+       "s": 1.4,
+       "col": "#f8eee8"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 440,
+       "y": 560,
+       "s": 1.0,
+       "col": "#d8d8f0"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 570,
+       "s": 0.9,
+       "col": "#d8d8f0"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 745,
+       "s": 1.7,
+       "col": "#24345e"
+      },
+      {
+       "o": "rock",
+       "x": 850,
+       "y": 748,
+       "s": 1.5,
+       "col": "#24345e"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot tilt_down: The two horned brothers stand shoulder to shoulder over the ocean, and each name plate appears above its owner the moment the name is spoken.",
+   "vert": {
+    "x": 640,
+    "focus": "madhu"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s06",
+   "at": {
+    "t": 14.1,
+    "word": "They"
+   },
+   "cues": [
+    "crawled",
+    "out"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#262a7a",
+     "#5458b8",
+     "#a8a8e8",
+     "#ece6fa"
+    ],
+    "sx": 640,
+    "sy": 230
+   },
+   "figs": [
+    {
+     "who": "vishnu_rest",
+     "x": 720,
+     "y": 560,
+     "s": 1.0,
+     "flip": 1,
+     "emo": "calm",
+     "mood": {
+      "blink": 1,
+      "lx": -0.8
+     }
+    },
+    {
+     "who": "madhu",
+     "x": 528,
+     "y": 335,
+     "s": 0.24,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "surprise",
+     "mood": {
+      "lx": 0.8
+     },
+     "ad": 0.6,
+     "ac": 0
+    },
+    {
+     "who": "kaitabha",
+     "x": 630,
+     "y": 340,
+     "s": 0.22,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "surprise",
+     "mood": {
+      "lx": 0.8
+     },
+     "ad": 0.6,
+     "ac": 1
+    }
+   ],
+   "fx": [
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 600
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 575,
+     "y": 300,
+     "r": 130,
+     "rgb": "255,190,90",
+     "ga": 0.55,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": -8,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 8,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e4e0f4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#f4f0fc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#f4f0fc"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#f4f0fc"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 440,
+       "y": 590,
+       "s": 1.0,
+       "col": "#d4d8f4"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 600,
+       "s": 0.9,
+       "col": "#d4d8f4"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "wide dolly_right: Vishnu sleeps on the coils of Shesha over the water; beside his ear two tiny asuras appear in a dull amber glow on 'crawled'.",
+   "vert": {
+    "x": [
+     600,
+     620
+    ],
+    "focus": "vishnu_rest"
+   },
+   "tr": "iris"
+  },
+  {
+   "id": "s07",
+   "at": {
+    "t": 16.02,
+    "word": "when"
+   },
+   "cues": [
+    "creator",
+    "brought",
+    "forth",
+    "Vedas"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f4aa8",
+     "#7d9ce8",
+     "#ffd49a",
+     "#fff3d6"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "figs": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 555,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "sit",
+     "emo": "calm",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "joy"
+      },
+      {
+       "c": 2,
+       "d": 0.6,
+       "pose": "open",
+       "emo": "pride",
+       "e": "spring"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "books",
+     "c": -3,
+     "x": 640,
+     "y": 140,
+     "gap": 92,
+     "names": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 60,
+     "w": 700,
+     "alpha": 0.4,
+     "blend": "lighter",
+     "par": 0.2,
+     "c": 1,
+     "d": 0.6
+    },
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 150,
+     "r": 260,
+     "rgb": "255,225,150",
+     "ga": 0.5,
+     "par": 0.9,
+     "c": 3,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 20,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f4e6d0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff4e6"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: Brahma sits on his lotus in gold light; the four Veda books glow into being above him as he opens his arms on 'forth'.",
+   "vert": {
+    "focus": "brahma"
+   }
+  },
+  {
+   "id": "s08",
+   "at": {
+    "t": 19.66,
+    "word": "They"
+   },
+   "cues": [
+    "fed",
+    "water",
+    "huge"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#1f56b8",
+     "#4f92e2",
+     "#a6d6f6",
+     "#fff1cc"
+    ],
+    "sx": 640,
+    "sy": 300
+   },
+   "figs": [
+    {
+     "who": "madhu",
+     "x": 570,
+     "y": 560,
+     "s": 0.6,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "raise",
+       "e": "spring"
+      },
+      {
+       "c": 2,
+       "d": 0.5,
+       "emo": "pride",
+       "mood": {
+        "smile": 0.6,
+        "ly": -0.3
+       }
+      }
+     ],
+     "ds": 0.22
+    },
+    {
+     "who": "kaitabha",
+     "x": 725,
+     "y": 565,
+     "s": 0.58,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "pose": "raise",
+       "e": "spring"
+      },
+      {
+       "c": 2,
+       "d": 0.5,
+       "emo": "pride"
+      }
+     ],
+     "ds": 0.22
+    }
+   ],
+   "fx": [
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 520
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "wave_ocean",
+     "x": 470,
+     "y": 560,
+     "w": 260,
+     "alpha": 0.9,
+     "par": 1.0
+    },
+    {
+     "t": "pfx",
+     "k": "wave_ocean",
+     "x": 840,
+     "y": 565,
+     "w": 240,
+     "alpha": 0.9,
+     "par": 1.0,
+     "flip": -1
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.05,
+     "x": 0,
+     "y": 24,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8f0fa",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 560,
+       "s": 1.0,
+       "col": "#dce8fa"
+      },
+      {
+       "o": "cloud",
+       "x": 870,
+       "y": 570,
+       "s": 0.9,
+       "col": "#dce8fa"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "wide crane_up: Waist-deep in the bright ocean the two asuras raise their arms on 'fed' and swell larger and larger through the shot, proud on 'huge'.",
+   "vert": {
+    "x": 645,
+    "focus": "madhu"
+   },
+   "tr": "wipe"
+  },
+  {
+   "id": "s09",
+   "at": {
+    "t": 22.94,
+    "word": "They"
+   },
+   "cues": [
+    "told",
+    "him",
+    "bow"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a2f78",
+     "#5a62b0",
+     "#f0a080",
+     "#ffe4c4"
+    ],
+    "sx": 640,
+    "sy": 220
+   },
+   "figs": [
+    {
+     "who": "kaitabha",
+     "x": 535,
+     "y": 640,
+     "s": 1.3,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "raise",
+       "emo": "rage",
+       "e": "antic"
+      }
+     ]
+    },
+    {
+     "who": "madhu",
+     "x": 748,
+     "y": 640,
+     "s": 1.3,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "pride",
+     "talk": 0.5,
+     "mood": {
+      "smile": 0.5,
+      "anger": 0.5,
+      "ly": 0.4,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "pose": "point",
+       "emo": "anger",
+       "e": "antic"
+      }
+     ]
+    },
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 512,
+     "s": 0.82,
+     "flip": 1,
+     "pose": "sit",
+     "emo": "surprise",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.5,
+       "emo": "fear",
+       "mood": {
+        "ly": -0.4
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 650
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -24,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0dcd0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 200,
+       "s": 1.3,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 240,
+       "s": 1.1,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff0e4"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 600,
+       "s": 1.0,
+       "col": "#e0d4ec"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 610,
+       "s": 0.9,
+       "col": "#e0d4ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 840,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "low_angle crane_down: Brahma, small on his lotus, sits in front; the two giants tower behind him, Madhu points down at him and Kaitabha raises his mace as they order him to bow or fight as Brahma shrinks in fear.",
+   "vert": {
+    "x": 640,
+    "focus": "brahma"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s10",
+   "at": {
+    "t": 27.0,
+    "word": "He"
+   },
+   "cues": [
+    "shook"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a2f78",
+     "#5a62b0",
+     "#f0a080",
+     "#ffe4c4"
+    ],
+    "sx": 640,
+    "sy": 220
+   },
+   "figs": [
+    {
+     "who": "kaitabha",
+     "x": 745,
+     "y": 690,
+     "s": 1.15,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "rage",
+     "dark": 0.75,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "rage",
+       "tilt": 0.06
+      }
+     ]
+    },
+    {
+     "who": "brahma",
+     "x": 630,
+     "y": 568,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sit",
+     "emo": "calm",
+     "mood": {
+      "ly": 0.6,
+      "smile": 0,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "fear",
+       "tilt": -0.08,
+       "e": "spring"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 700
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0dcd0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff0e4"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 560,
+       "s": 1.0,
+       "col": "#e0d4ec"
+      },
+      {
+       "o": "cloud",
+       "x": 840,
+       "y": 570,
+       "s": 0.9,
+       "col": "#e0d4ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "close handheld: Close on Brahma with eyes lowered and lips shut; on 'shook' the frame shudders and his face jolts into fear while a giant arm grips the stem behind him.",
+   "vert": {
+    "focus": "brahma",
+    "z": 1.2,
+    "y": 0.42
+   },
+   "shake": 5,
+   "dx": 0
+  },
+  {
+   "id": "s11",
+   "at": {
+    "t": 29.7,
+    "word": "The"
+   },
+   "cues": [
+    "slipped",
+    "hid"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a2f78",
+     "#5a62b0",
+     "#f0a080",
+     "#ffe4c4"
+    ],
+    "sx": 640,
+    "sy": 220
+   },
+   "figs": [
+    {
+     "who": "madhu",
+     "x": 800,
+     "y": 690,
+     "s": 1.1,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "pride",
+     "mood": {
+      "smile": 0.5,
+      "anger": 0.5,
+      "ly": -0.3,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "raise",
+       "e": "spring"
+      },
+      {
+       "c": 1,
+       "d": 0.6,
+       "pose": "hold",
+       "emo": "pride",
+       "mood": {
+        "smile": 0.7,
+        "lx": 0.6
+       }
+      }
+     ]
+    },
+    {
+     "who": "brahma",
+     "x": 565,
+     "y": 382,
+     "s": 0.78,
+     "flip": 1,
+     "pose": "sit",
+     "emo": "surprise",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "open",
+       "emo": "fear",
+       "e": "spring"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "books",
+     "c": -3,
+     "x": 662,
+     "y": 335,
+     "gap": 66,
+     "fall": 35,
+     "names": [
+      "",
+      "",
+      ""
+     ]
+    },
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 690
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.05,
+     "x": 0,
+     "y": -20,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0dcd0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff0e4"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 440,
+       "y": 560,
+       "s": 1.0,
+       "col": "#e0d4ec"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 570,
+       "s": 0.9,
+       "col": "#e0d4ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "items": [
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#24345e"
+      },
+      {
+       "o": "rock",
+       "x": 850,
+       "y": 748,
+       "s": 1.5,
+       "col": "#24345e"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_down: The four Veda books tumble down from Brahma, who reaches after them in shock; below, Madhu catches them with a sneer and pulls them away on 'hid'.",
+   "vert": {
+    "x": 650,
+    "focus": "brahma"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s12",
+   "at": {
+    "t": 33.14,
+    "word": "Brahma"
+   },
+   "cues": [
+    "Brahma",
+    "Vishnu"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a5ab0",
+     "#8aa8e0",
+     "#ffc49a",
+     "#fff0cc"
+    ],
+    "sx": 640,
+    "sy": 230
+   },
+   "figs": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 547,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sit",
+     "emo": "sad",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "sitpray",
+       "emo": "grief",
+       "mood": {
+        "ly": 0.5
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 700
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 390,
+     "r": 200,
+     "rgb": "255,210,150",
+     "ga": 0.45,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e4e0f4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#f4f0fc"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#f4f0fc"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#f4f0fc"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 560,
+       "s": 1.0,
+       "col": "#d4d8f4"
+      },
+      {
+       "o": "cloud",
+       "x": 840,
+       "y": 570,
+       "s": 0.9,
+       "col": "#d4d8f4"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Brahma, alone on his lotus, joins his hands in prayer as he begs and looks down toward the sleeping Vishnu, grief on his faces.",
+   "vert": {
+    "focus": "brahma",
+    "z": 1.1,
+    "y": 0.44
+   },
+   "dx": 0
+  },
+  {
+   "id": "s13",
+   "at": {
+    "t": 34.76,
+    "word": "but"
+   },
+   "cues": [
+    "Nidra",
+    "trance"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#262a7a",
+     "#5458b8",
+     "#a8a8e8",
+     "#ece6fa"
+    ],
+    "sx": 620,
+    "sy": 200
+   },
+   "figs": [
+    {
+     "who": "nidra",
+     "x": 700,
+     "y": 455,
+     "s": 0.8,
+     "flip": -1,
+     "pose": "open",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.55,
+      "blink": 0.45,
+      "lx": 0.8
+     },
+     "a": 0.6
+    },
+    {
+     "who": "vishnu_rest",
+     "x": 720,
+     "y": 600,
+     "s": 1.0,
+     "flip": 1,
+     "emo": "calm",
+     "mood": {
+      "blink": 1,
+      "lx": -0.8
+     }
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Yoga Nidra",
+     "x": 620,
+     "y": 130,
+     "size": 30,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 640
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 600,
+     "y": 300,
+     "w": 420,
+     "alpha": 0.4,
+     "blend": "lighter",
+     "par": 0.9,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e4e0f4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#f4f0fc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#f4f0fc"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#f4f0fc"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 600,
+       "s": 1.0,
+       "col": "#d4d8f4"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 610,
+       "s": 0.9,
+       "col": "#d4d8f4"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "wide pan_left: Vishnu sleeps on Shesha in moon-silver light; the indigo goddess Nidra hovers faint behind him like a dream and her name appears on 'Nidra'.",
+   "vert": {
+    "x": [
+     640,
+     600
+    ],
+    "focus": "vishnu_rest"
+   }
+  },
+  {
+   "id": "s14",
+   "at": {
+    "t": 39.4,
+    "word": "Brahma"
+   },
+   "cues": [
+    "Nidra",
+    "release",
+    "him"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#262a7a",
+     "#5458b8",
+     "#a8a8e8",
+     "#ece6fa"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "figs": [
+    {
+     "who": "vishnu_rest",
+     "x": 790,
+     "y": 690,
+     "s": 0.6,
+     "flip": 1,
+     "emo": "calm",
+     "mood": {
+      "blink": 1,
+      "lx": -0.8
+     }
+    },
+    {
+     "who": "nidra",
+     "x": 620,
+     "y": 644,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.55,
+      "blink": 0.45,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "pose": "open",
+       "emo": "devotion",
+       "e": "spring"
+      }
+     ],
+     "fd": 1.0,
+     "fo": 2
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 620,
+     "y": 330,
+     "w": 440,
+     "alpha": 0.5,
+     "blend": "lighter",
+     "par": 0.9,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "glow",
+     "x": 620,
+     "y": 420,
+     "r": 240,
+     "rgb": "200,200,255",
+     "ga": 0.5,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.05,
+     "x": 0,
+     "y": 20,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e4e0f4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#f4f0fc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#f4f0fc"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#f4f0fc"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 440,
+       "y": 560,
+       "s": 1.0,
+       "col": "#d4d8f4"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 570,
+       "s": 0.9,
+       "col": "#d4d8f4"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 460,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: Nidra stands before the sleeping Vishnu with folded hands as Brahma calls; on 'release' she opens her arms and begins to fade from him in silver light.",
+   "vert": {
+    "focus": "nidra"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s15",
+   "at": {
+    "t": 41.8,
+    "word": "Vishnu"
+   },
+   "cues": [
+    "woke",
+    "Hayagriv"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f4aa8",
+     "#7d9ce8",
+     "#ffd49a",
+     "#fff3d6"
+    ],
+    "sx": 640,
+    "sy": 220
+   },
+   "figs": [
+    {
+     "who": "hayagriva2",
+     "x": 640,
+     "y": 636,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "open",
+       "e": "spring"
+      },
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "anger"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Hayagriv",
+     "x": 640,
+     "y": 130,
+     "size": 30,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 60,
+     "w": 760,
+     "alpha": 0.45,
+     "blend": "lighter",
+     "par": 0.2,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": 20,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f4e6d0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff4e6"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "low_angle crane_up: A white flash and Hayagriva stands in a blazing gold halo; he spreads his arms on 'woke', his eyes flash red on the name, and the name plate appears.",
+   "vert": {
+    "focus": "hayagriva2"
+   },
+   "tr": "flash"
+  },
+  {
+   "id": "s16",
+   "at": {
+    "t": 45.08,
+    "word": "When"
+   },
+   "cues": [
+    "tired",
+    "the",
+    "other",
+    "took"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#33307e",
+     "#7a4a9a",
+     "#ff9a5a",
+     "#ffe2a8"
+    ],
+    "sx": 640,
+    "sy": 260
+   },
+   "figs": [
+    {
+     "who": "hayagriva2",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.5,
+       "emo": "rage"
+      }
+     ]
+    },
+    {
+     "who": "madhu",
+     "x": 860,
+     "y": 660,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "sad",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "grief",
+       "tilt": -0.08
+      }
+     ],
+     "fd": 0.4,
+     "fo": 0
+    },
+    {
+     "who": "kaitabha",
+     "x": 860,
+     "y": 660,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "rage",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 3,
+       "d": 0.5,
+       "pose": "raise",
+       "e": "antic"
+      }
+     ],
+     "ad": 0.2,
+     "ac": 1
+    }
+   ],
+   "fx": [
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 640
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.03,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0dcd0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 380,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 620,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff0e4"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 250,
+       "y": 560,
+       "s": 1.0,
+       "col": "#e8d8f0"
+      },
+      {
+       "o": "cloud",
+       "x": 1030,
+       "y": 570,
+       "s": 0.9,
+       "col": "#e8d8f0"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 300,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 980,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot handheld: Stacked: Hayagriva lunges above; below, Madhu sags and fades out on 'tired' and fresh Kaitabha takes his place, mace raised, on 'other'.",
+   "vert": {
+    "mode": "stack",
+    "stack": [
+     "hayagriva2",
+     "kaitabha"
+    ]
+   },
+   "shake": 3,
+   "dx": 0
+  },
+  {
+   "id": "s17",
+   "at": {
+    "t": 47.7,
+    "word": "Vishnu"
+   },
+   "cues": [
+    "saw"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#33307e",
+     "#7a4a9a",
+     "#ff9a5a",
+     "#ffe2a8"
+    ],
+    "sx": 640,
+    "sy": 240
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 360,
+     "s": 1.15,
+     "flip": 1,
+     "head": true,
+     "emo": "calm",
+     "mood": {
+      "smile": 0,
+      "anger": 0.25,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "tilt": -0.04,
+       "mood": {
+        "lx": -0.7,
+        "ly": -0.25,
+        "smile": 0.05,
+        "anger": 0.25
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0dcd0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff0e4"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8c08a",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#d8c08a",
+       "h": 520
+      }
+     ]
+    }
+   ],
+   "note": "close static: Close on Vishnu's face, back in his own form: his eyes narrow in thought and drift sideways on 'saw' as he finds another way.",
+   "vert": {
+    "focus": "vishnu"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s18",
+   "at": {
+    "t": 49.98,
+    "word": "so"
+   },
+   "cues": [
+    "praised",
+    "power",
+    "boon"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 240
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 640,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "talk": 0.4,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "namaste",
+       "emo": "devotion"
+      },
+      {
+       "c": 2,
+       "d": 0.6,
+       "pose": "open",
+       "emo": "joy"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 640,
+     "y": 340,
+     "w": 460,
+     "alpha": 0.5,
+     "blend": "lighter",
+     "par": 0.9,
+     "c": 2,
+     "d": 0.6
+    },
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 220,
+     "rgb": "255,215,140",
+     "ga": 0.4,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -8,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8eef8",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium pull_out: Vishnu lowers his mace hand and joins his palms on 'praised' in honour of their strength, then opens his hands on 'boon' as a gold halo rises.",
+   "vert": {
+    "focus": "vishnu",
+    "z": 1.1,
+    "y": 0.42
+   },
+   "dx": 0
+  },
+  {
+   "id": "s19",
+   "at": {
+    "t": 54.08,
+    "word": "The"
+   },
+   "cues": [
+    "sneered"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a2f78",
+     "#5a62b0",
+     "#f0a080",
+     "#ffe4c4"
+    ],
+    "sx": 640,
+    "sy": 240
+   },
+   "figs": [
+    {
+     "who": "madhu",
+     "x": 565,
+     "y": 588,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "pride",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "tilt": -0.05,
+       "mood": {
+        "smile": 0.55,
+        "anger": 0.5,
+        "ly": -0.35
+       }
+      }
+     ]
+    },
+    {
+     "who": "kaitabha",
+     "x": 735,
+     "y": 588,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "pride",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "tilt": 0.05,
+       "mood": {
+        "smile": 0.55,
+        "anger": 0.5,
+        "ly": -0.35
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 660
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.15,
+     "x": 8,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.15,
+     "x": -8,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0dcd0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff0e4"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 560,
+       "s": 1.0,
+       "col": "#e0d4ec"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 570,
+       "s": 0.9,
+       "col": "#e0d4ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "items": [
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#24345e"
+      },
+      {
+       "o": "rock",
+       "x": 850,
+       "y": 748,
+       "s": 1.5,
+       "col": "#24345e"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot dolly_left: The two horned brothers side by side curl their lips and look down their noses on 'sneered'.",
+   "vert": {
+    "x": 645,
+    "focus": "madhu"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s20",
+   "at": {
+    "t": 55.58,
+    "word": "Victors"
+   },
+   "cues": [
+    "Victors",
+    "said",
+    "gave"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a2f78",
+     "#5a62b0",
+     "#f0a080",
+     "#ffe4c4"
+    ],
+    "sx": 640,
+    "sy": 240
+   },
+   "figs": [
+    {
+     "who": "kaitabha",
+     "x": 745,
+     "y": 640,
+     "s": 0.85,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "dark": 0.85,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "joy",
+       "mood": {
+        "smile": 1,
+        "mouth": 0.4
+       }
+      }
+     ]
+    },
+    {
+     "who": "madhu",
+     "x": 620,
+     "y": 640,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "pride",
+     "talk": 0.7,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "raise",
+       "emo": "pride",
+       "e": "spring",
+       "mood": {
+        "smile": 0.5,
+        "anger": 0.5,
+        "ly": -0.3
+       }
+      },
+      {
+       "c": 2,
+       "d": 0.5,
+       "pose": "open"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 700
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0dcd0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 660,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff0e4"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 440,
+       "y": 560,
+       "s": 1.0,
+       "col": "#e0d4ec"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 570,
+       "s": 0.9,
+       "col": "#e0d4ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 460,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Madhu speaks with chin high and points to himself on 'Victors', then flings open his hand on 'gave'; Kaitabha behind him laughs.",
+   "vert": {
+    "focus": "madhu",
+    "z": 1.1,
+    "y": 0.4
+   },
+   "dx": 0
+  },
+  {
+   "id": "s21",
+   "at": {
+    "t": 59.08,
+    "word": "They"
+   },
+   "cues": [
+    "told",
+    "ask"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a5ab0",
+     "#8aa8e0",
+     "#ffc49a",
+     "#fff0cc"
+    ],
+    "sx": 640,
+    "sy": 240
+   },
+   "figs": [
+    {
+     "who": "kaitabha",
+     "x": 860,
+     "y": 650,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "pride",
+     "talk": 0.6,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "pose": "open",
+       "mood": {
+        "smile": 0.6,
+        "anger": 0.3
+       }
+      }
+     ]
+    },
+    {
+     "who": "vishnu",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "mood": {
+        "smile": 0.6
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 420,
+     "y": 340,
+     "r": 200,
+     "rgb": "190,220,255",
+     "ga": 0.4,
+     "par": 1.0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -16,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0dcd0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 380,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff0e4"
+      },
+      {
+       "o": "cloud",
+       "x": 620,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff0e4"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 250,
+       "y": 560,
+       "s": 1.0,
+       "col": "#e0d4ec"
+      },
+      {
+       "o": "cloud",
+       "x": 1030,
+       "y": 570,
+       "s": 0.9,
+       "col": "#e0d4ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 300,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 980,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot crane_down: Stacked: Kaitabha above holds out an open, mocking hand on 'ask'; Vishnu below listens calmly with a small smile.",
+   "vert": {
+    "mode": "stack",
+    "stack": [
+     "kaitabha",
+     "vishnu"
+    ]
+   }
+  },
+  {
+   "id": "s22",
+   "at": {
+    "t": 60.74,
+    "word": "Vishnu"
+   },
+   "cues": [
+    "Grant",
+    "kill"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 240
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 651,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "talk": 0.6,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "raise",
+       "mood": {
+        "smile": 0.5
+       }
+      },
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "anger"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "sudarshan_chakra",
+     "x": 712,
+     "y": 285,
+     "w": 64,
+     "alpha": 1,
+     "spin": 3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -18,
+     "r": 0
+    },
+    "to": {
+     "z": 1.1,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8eef8",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 460,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 820,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_down: Vishnu speaks gently and raises a hand on 'Grant'; the Sudarshan chakra spins up above it and his eyes harden on 'kill'.",
+   "vert": {
+    "focus": "vishnu",
+    "z": 1.15,
+    "y": 0.42
+   },
+   "bgc": 1,
+   "bgd": 1.0,
+   "bg2": {
+    "k": "cloudscape",
+    "sky": [
+     "#33307e",
+     "#7a4a9a",
+     "#ff9a5a",
+     "#ffe2a8"
+    ],
+    "sx": 640,
+    "sy": 240
+   },
+   "dx": 0
+  },
+  {
+   "id": "s23",
+   "at": {
+    "t": 64.14,
+    "word": "They"
+   },
+   "cues": [
+    "trap",
+    "word"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#262a7a",
+     "#5458b8",
+     "#a8a8e8",
+     "#ece6fa"
+    ],
+    "sx": 640,
+    "sy": 240
+   },
+   "figs": [
+    {
+     "who": "madhu",
+     "x": 570,
+     "y": 585,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "pride",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "flee",
+       "emo": "surprise",
+       "e": "spring"
+      },
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "shame"
+      }
+     ]
+    },
+    {
+     "who": "kaitabha",
+     "x": 730,
+     "y": 585,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "pride",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "fear",
+       "e": "spring"
+      },
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "shame"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "magic_circle",
+     "x": 650,
+     "y": 655,
+     "w": 360,
+     "alpha": 0.8,
+     "blend": "lighter",
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": 0,
+     "r": 0.04
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e4e0f4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#f4f0fc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#f4f0fc"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#f4f0fc"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 560,
+       "s": 1.0,
+       "col": "#d4d8f4"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 570,
+       "s": 0.9,
+       "col": "#d4d8f4"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "items": [
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#24345e"
+      },
+      {
+       "o": "rock",
+       "x": 850,
+       "y": 748,
+       "s": 1.5,
+       "col": "#24345e"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot dutch: A gold yantra circle lights up under the brothers' feet on 'trap'; they recoil in shock, then lower their eyes in shame on 'word'.",
+   "vert": {
+    "x": 645,
+    "focus": "madhu"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s24",
+   "at": {
+    "t": 67.46,
+    "word": "They"
+   },
+   "cues": [
+    "die",
+    "only",
+    "where"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#1f56b8",
+     "#4f92e2",
+     "#a6d6f6",
+     "#fff1cc"
+    ],
+    "sx": 640,
+    "sy": 280
+   },
+   "figs": [
+    {
+     "who": "madhu",
+     "x": 580,
+     "y": 576,
+     "s": 0.85,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "pride",
+     "talk": 0.5,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "mood": {
+        "smile": 0.6,
+        "anger": 0.3,
+        "ly": -0.3
+       }
+      },
+      {
+       "c": 2,
+       "d": 0.5,
+       "pose": "open",
+       "e": "spring"
+      }
+     ]
+    },
+    {
+     "who": "kaitabha",
+     "x": 735,
+     "y": 576,
+     "s": 0.85,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "pride",
+       "mood": {
+        "smile": 0.7
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 590
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "wave_ocean",
+     "x": 440,
+     "y": 590,
+     "w": 240,
+     "alpha": 0.9,
+     "par": 1.0
+    },
+    {
+     "t": "pfx",
+     "k": "wave_ocean",
+     "x": 860,
+     "y": 595,
+     "w": 220,
+     "alpha": 0.9,
+     "par": 1.0,
+     "flip": -1
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.05,
+     "x": 0,
+     "y": 20,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8f0fa",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 560,
+       "s": 1.0,
+       "col": "#dce8fa"
+      },
+      {
+       "o": "cloud",
+       "x": 870,
+       "y": 570,
+       "s": 0.9,
+       "col": "#dce8fa"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "wide crane_up: Over an endless bright ocean the brothers smirk; Madhu sweeps his hand over the waves on 'where' certain there is no dry place left.",
+   "vert": {
+    "x": [
+     620,
+     660
+    ],
+    "focus": "madhu"
+   },
+   "tr": "wipe"
+  },
+  {
+   "id": "s25",
+   "at": {
+    "t": 70.5,
+    "word": "Vishnu"
+   },
+   "cues": [
+    "grew",
+    "towering"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 665,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.8,
+       "pose": "open",
+       "emo": "pride"
+      }
+     ],
+     "ds": 0.12
+    }
+   ],
+   "fx": [
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 640
+    }
+   ],
+   "fxb": [
+    {
+     "t": "bluemountain",
+     "x": 640,
+     "y": 640,
+     "s": 1.1,
+     "d": 2.5,
+     "c": 0
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 30,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8f0fa",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 180,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 220,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 620,
+       "s": 1.0,
+       "col": "#dce8fa"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 630,
+       "s": 0.9,
+       "col": "#dce8fa"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "low_angle tilt_up: Vishnu swells larger through the shot, a blue mountain shape rising behind him above the water, the camera tilting up his height.",
+   "vert": {
+    "x": 640,
+    "focus": "vishnu"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s26",
+   "at": {
+    "t": 74.3,
+    "word": "He"
+   },
+   "cues": [
+    "placed",
+    "beheaded"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 558,
+     "s": 1.45,
+     "flip": 1,
+     "pose": "sit",
+     "emo": "calm",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.4,
+       "emo": "anger"
+      }
+     ]
+    },
+    {
+     "who": "madhu",
+     "x": 578,
+     "y": 492,
+     "s": 0.36,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "fear",
+     "mood": {
+      "lx": 0.8
+     },
+     "fd": 0.35,
+     "fo": 1
+    },
+    {
+     "who": "kaitabha",
+     "x": 702,
+     "y": 494,
+     "s": 0.36,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "fear",
+     "mood": {
+      "lx": 0.8
+     },
+     "fd": 0.35,
+     "fo": 1
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "sudarshan_chakra",
+     "x": 772,
+     "y": 330,
+     "w": 96,
+     "alpha": 1,
+     "spin": 4,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "flash",
+     "x": 640,
+     "y": 360,
+     "w": 0.35,
+     "c": 1,
+     "d": 0.6
+    },
+    {
+     "t": "waterfront",
+     "top": "rgba(46,128,214,.86)",
+     "bot": "rgba(16,56,140,.97)",
+     "y": 650
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8eef8",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 180,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 220,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 640,
+       "s": 1.0,
+       "col": "#dce8fa"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 650,
+       "s": 0.9,
+       "col": "#dce8fa"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "wide push_in: Vast Vishnu sits above the waves with the two small brothers on his lap; the Sudarshan chakra spins beside him and on 'beheaded' a white flash ends them without blood.",
+   "vert": {
+    "x": 640,
+    "focus": "vishnu"
+   }
+  },
+  {
+   "id": "s27",
+   "at": {
+    "t": 77.38,
+    "word": "For"
+   },
+   "cues": [
+    "Madhu"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f4aa8",
+     "#7d9ce8",
+     "#ffd49a",
+     "#fff3d6"
+    ],
+    "sx": 640,
+    "sy": 220
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 643,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "raise",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "pride"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "sudarshan_chakra",
+     "x": 722,
+     "y": 215,
+     "w": 96,
+     "alpha": 1,
+     "spin": 3,
+     "par": 1.0
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.05,
+     "x": 8,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": -8,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f4e6d0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff4e6"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 460,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 820,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium pan_left: Vishnu stands calm with the chakra returning to his raised finger above the quiet water.",
+   "vert": {
+    "focus": "vishnu",
+    "z": 1.1,
+    "y": 0.42
+   },
+   "dx": 0
+  },
+  {
+   "id": "s28",
+   "at": {
+    "t": 78.48,
+    "word": "Vishnu"
+   },
+   "cues": [
+    "Vishnu",
+    "called"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#2f4aa8",
+     "#7d9ce8",
+     "#ffd49a",
+     "#fff3d6"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 655,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "pose": "namaste",
+       "emo": "devotion"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "d": 0.4,
+     "s": "Madhusudan",
+     "x": 640,
+     "y": 120,
+     "size": 32,
+     "c": 1
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 640,
+     "y": 330,
+     "w": 480,
+     "alpha": 0.5,
+     "blend": "lighter",
+     "par": 0.9,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 60,
+     "w": 700,
+     "alpha": 0.35,
+     "blend": "lighter",
+     "par": 0.2
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 16,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f4e6d0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff4e6"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: Vishnu in a gold halo with folded hands, the name plate 'Madhusudan' appearing above him as the name is spoken.",
+   "vert": {
+    "focus": "vishnu"
+   },
+   "tr": "flash"
+  },
+  {
+   "id": "s29",
+   "at": {
+    "t": 80.92,
+    "word": "Brahma"
+   },
+   "cues": [
+    "asked",
+    "saving"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a5ab0",
+     "#8aa8e0",
+     "#ffc49a",
+     "#fff0cc"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "figs": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 538,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "sit",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "sitpray",
+       "emo": "devotion",
+       "mood": {
+        "ly": -0.5
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "books",
+     "c": -4,
+     "x": 640,
+     "y": 150,
+     "gap": 100,
+     "names": [
+      "",
+      "",
+      "",
+      ""
+     ]
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 400,
+     "r": 230,
+     "rgb": "255,215,150",
+     "ga": 0.45,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -16,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f4e6d0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff4e6"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "medium crane_down: Brahma on his lotus joins his hands and looks up toward Vishnu with hope as he asks, the Vedas back above him.",
+   "vert": {
+    "focus": "brahma"
+   }
+  },
+  {
+   "id": "s30",
+   "at": {
+    "t": 83.2,
+    "word": "Vishnu"
+   },
+   "cues": [
+    "nothing"
+   ],
+   "bg": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a5ab0",
+     "#8aa8e0",
+     "#ffc49a",
+     "#fff0cc"
+    ],
+    "sx": 640,
+    "sy": 240
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 360,
+     "s": 1.15,
+     "flip": 1,
+     "head": true,
+     "emo": "calm",
+     "talk": 0.5,
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "tilt": 0.04,
+       "mood": {
+        "smile": 0.7,
+        "ly": 0.5,
+        "blink": 0.35
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f4e6d0",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4e6"
+      },
+      {
+       "o": "cloud",
+       "x": 650,
+       "y": 420,
+       "s": 1.4,
+       "col": "#fff4e6"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    }
+   ],
+   "note": "close push_in: Close on Vishnu's gentle face: his eyes lower and a soft smile comes on 'nothing'.",
+   "vert": {
+    "focus": "vishnu"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s31",
+   "at": {
+    "t": 85.64,
+    "word": "Perhaps"
+   },
+   "cues": [
+    "universe",
+    "saved",
+    "through"
+   ],
+   "bg": {
+    "k": "cosmos",
+    "rgb": "150,190,255",
+    "spin": 0.05
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 617,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "open",
+     "emo": "calm",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.6,
+       "emo": "joy",
+       "mood": {
+        "smile": 0.6,
+        "blink": 0.3
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 640,
+     "y": 340,
+     "w": 560,
+     "alpha": 0.55,
+     "blend": "lighter",
+     "par": 0.9,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 420,
+     "r": 260,
+     "rgb": "255,220,150",
+     "ga": 0.45,
+     "par": 1.0,
+     "c": 2,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.12,
+     "x": 0,
+     "y": -10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "mid",
+     "fog": 0.25,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 580,
+       "s": 1.2,
+       "col": "#bcd4ff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 585,
+       "s": 1.2,
+       "col": "#ffd8a8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "note": "wide pull_out: Vishnu stands small and calm in a vast blue-gold cosmos; a halo ring opens on 'universe' and the light flows through him on 'through'.",
+   "vert": {
+    "focus": "vishnu"
+   }
+  }
+ ]
+}

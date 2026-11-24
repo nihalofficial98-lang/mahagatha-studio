@@ -34,6 +34,10 @@ const E={
  divine_rays:{s:0,f(w,t,F,a){const n=13,L=w*.75;for(let i=0;i<n;i++){const an=PI/2+(i-(n-1)/2)*.17+Math.sin(t*.3)*.03,sp=.045+.02*(i%2),k=.6+.4*Math.abs(Math.sin(t*.7+i*1.3));
    const rg=ctx.createRadialGradient(0,0,0,0,0,L);rg.addColorStop(0,i%2?`rgba(255,226,150,${.42*k})`:`rgba(255,250,225,${.5*k})`);rg.addColorStop(1,'rgba(255,240,200,0)');ctx.fillStyle=rg;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(Math.cos(an-sp)*L,Math.sin(an-sp)*L);ctx.lineTo(Math.cos(an+sp)*L,Math.sin(an+sp)*L);ctx.closePath();ctx.fill()}
    glow(0,0,w*.28,'255,240,200',.7)}},
+ // reels (reel 4): a stream of round sand grains blowing away from (0,0) toward +x and up (w = length of the stream); "what slips away like sand"
+ sand_drift:{s:0,f(w,t){for(let k=0;k<4;k++){const u=(k+.5)/4;glow(u*w,-u*u*w*.3,w*(.1+u*.1),'240,212,160',.16*(1-u*.6))}
+  const r=rng(17);for(let i=0;i<80;i++){const ph=r(),sp=r()-.5,sz=1.8+r()*2.8,dk=r()<.35,u=((t*.38+ph)%1),x=u*w+Math.sin(t*2.2+i)*4*u,y=-u*u*w*.3+sp*w*.28*u+Math.cos(t*1.7+i)*3*u,al=Math.min(1,u*7)*(1-u)*1.3;
+   if(al<=.02)continue;ctx.fillStyle=dk?`rgba(196,150,86,${Math.min(1,al)})`:`rgba(246,222,170,${Math.min(1,al)})`;ctx.beginPath();ctx.arc(x,y,sz*(1-u*.35),0,TAU);ctx.fill()}}},
  embers:{s:0,f(w,t){const r=rng(11);for(let i=0;i<46;i++){const ph=r(),u=((t*.22+ph)%1),x=(r()-.5)*w+Math.sin(t*1.3+i)*20,y=w*.3-u*w*.7,s=2+r()*4,al=Math.sin(u*PI);
    ctx.save();ctx.translate(x,y);ctx.rotate(t*2+i);ctx.fillStyle=`rgba(255,${120+((i*37)%90)},40,${al})`;ctx.beginPath();ctx.moveTo(0,-s);ctx.lineTo(s*.6,0);ctx.lineTo(0,s);ctx.lineTo(-s*.6,0);ctx.closePath();ctx.fill();ctx.restore();glow(x,y,s*4,'255,150,60',.25*al)}}},
  energy_swirl:{s:0,am:1.4,f(w,t){glow(0,0,w*.45,'200,160,255',.5);for(let k=0;k<4;k++){ctx.save();ctx.rotate(k*TAU/4);
