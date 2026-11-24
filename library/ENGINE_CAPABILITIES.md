@@ -29,7 +29,8 @@ vista (sky, ridge colours, river, trees, ground) · cloudscape · cosmos (rgb, s
 - Defaults: far par .2 fog .55 blur 1.2 (+ haze band) · mid par .55 fog .22 · near par 1.35 blur 1.6 dark .55 (drawn in front of the actors).
 - `fog` mixes colours toward `haze` (lighter/bluer = farther); `dark` mixes toward a silhouette colour; `blur` = shallow focus.
 - Objects (x, y = base on the ground, s = scale): `tree` (kind round | banyan | palm | pine, col, trunk, flowers) · `rock` (col, moss)
-  · `cloud` (col) · `mountain` (h, w, col, snow:false, trees) · `pillar` (h, w, col) · `wall` (w, h, col: palace wall with arches) · `shrub` (col, flowers) · `hill` (w, h, col) · `hut` (reels: thatched mud house on a plinth; w, h, col, roof, lamp, toran:false).
+  · `cloud` (col) · `mountain` (h, w, col, snow:false, trees) · `pillar` (h, w, col) · `wall` (w, h, col: palace wall with arches) · `shrub` (col, flowers) · `hill` (w, h, col) · `hut` (reels: thatched mud house on a plinth; w, h, col, roof, lamp, toran:false)
+  · `road` (reels: dusty road from x,y (half-width w) narrowing to the horizon point ex,ey (half-width ew); bend, col, glow (rgb path of light), plain:true = river with ripples, no stones).
 
 ## Characters (coded rigs; names from engine_vocab: cast)
 brahma (3 visible faces + `hd` sprouting faces), vishnu, hayagriva, vishnu_rest (reclining on Shesha), shiva, daksha, manu, narada (veena), adishakti, brahmi, sati, prasuti, diti, danu, asikli,

@@ -2844,9 +2844,9 @@
      "t": "glow",
      "x": 640,
      "y": 354,
-     "r": 110,
+     "r": 80,
      "rgb": "255,210,130",
-     "ga": 0.85,
+     "ga": 0.45,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -5498,7 +5498,7 @@
    "figs": [
     {
      "who": "rudra",
-     "x": 640,
+     "x": 560,
      "y": 372,
      "s": 0.42,
      "flip": 1,
@@ -5510,7 +5510,7 @@
     },
     {
      "who": "rudra",
-     "x": 560,
+     "x": 480,
      "y": 372,
      "s": 0.42,
      "flip": 1,
@@ -5522,7 +5522,7 @@
     },
     {
      "who": "rudra",
-     "x": 720,
+     "x": 640,
      "y": 372,
      "s": 0.42,
      "flip": -1,
@@ -5534,11 +5534,23 @@
     },
     {
      "who": "rudra",
-     "x": 520,
+     "x": 440,
      "y": 430,
      "s": 0.48,
      "flip": 1,
      "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "rudra",
+     "x": 520,
+     "y": 430,
+     "s": 0.48,
+     "flip": 1,
+     "pose": "namaste",
      "emo": "calm",
      "mood": {
       "lx": 0.8
@@ -5549,11 +5561,11 @@
      "x": 600,
      "y": 430,
      "s": 0.48,
-     "flip": 1,
+     "flip": -1,
      "pose": "namaste",
      "emo": "calm",
      "mood": {
-      "lx": 0.8
+      "lx": -0.8
      }
     },
     {
@@ -5562,18 +5574,6 @@
      "y": 430,
      "s": 0.48,
      "flip": -1,
-     "pose": "namaste",
-     "emo": "calm",
-     "mood": {
-      "lx": -0.8
-     }
-    },
-    {
-     "who": "rudra",
-     "x": 760,
-     "y": 430,
-     "s": 0.48,
-     "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
@@ -5582,7 +5582,7 @@
     },
     {
      "who": "rudra",
-     "x": 478,
+     "x": 398,
      "y": 500,
      "s": 0.54,
      "flip": 1,
@@ -5594,7 +5594,7 @@
     },
     {
      "who": "rudra",
-     "x": 585,
+     "x": 505,
      "y": 500,
      "s": 0.54,
      "flip": 1,
@@ -5606,7 +5606,7 @@
     },
     {
      "who": "rudra",
-     "x": 695,
+     "x": 615,
      "y": 500,
      "s": 0.54,
      "flip": -1,
@@ -5618,7 +5618,7 @@
     },
     {
      "who": "rudra",
-     "x": 802,
+     "x": 722,
      "y": 500,
      "s": 0.54,
      "flip": -1,
@@ -5656,7 +5656,7 @@
     {
      "t": "name",
      "s": "Eleven Rudras",
-     "x": 640,
+     "x": 560,
      "y": 80,
      "size": 26,
      "c": 0,
@@ -6138,7 +6138,7 @@
    },
    "cues": [
     "spoiled",
-    "rather",
+    "plan",
     "meditate"
    ],
    "bg": {
@@ -6288,7 +6288,7 @@
      ]
     }
    ],
-   "note": "medium push_in: Shiva closes his eyes and folds his hands on 'meditate' as the hall behind him cross-fades to the white Himalaya.",
+   "note": "medium push_in: Shiva closes his eyes and folds his hands on 'plan', ready to meditate, as the hall behind him cross-fades to the white Himalaya.",
    "vert": {
     "focus": "shiva",
     "z": 1.08,
@@ -6521,13 +6521,12 @@
    },
    "figs": [
     {
-     "who": "shiva",
+     "who": "rudra",
      "x": 640,
      "y": 543,
      "s": 1.05,
      "flip": 1,
      "pose": "sitpray",
-     "prop": "none",
      "emo": "calm",
      "mood": {
       "blink": 1,
@@ -6674,9 +6673,9 @@
      ]
     }
    ],
-   "note": "wide pull_out: Shiva sits in meditation on the snowy peak with closed eyes; behind him a faint warm glow of the fire he was born from, and on 'never' a ring of undying light opens as the camera pulls away.",
+   "note": "wide pull_out: Shiva sits in meditation on the snowy peak with closed eyes, his fire halo of Rudra burning quietly behind him, the fire he was born from, and on 'never' a ring of undying light opens as the camera pulls away.",
    "vert": {
-    "focus": "shiva"
+    "focus": "rudra"
    }
   }
  ]
