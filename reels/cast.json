@@ -1,0 +1,1703 @@
+{
+ "reels": "01-07",
+ "format": "vertical 9:16 reels, ~80 s, English",
+ "notes": [
+  "All characters are coded rigs (engine/v2_cast.js); names are printed by python3 studio/engine_vocab.py.",
+  "Emotion presets (emo): calm joy anger rage sad grief surprise fear shame pride doubt devotion; \"moods\" below are custom mood:{...} presets per character.",
+  "Animals (cow, mare, duck, doe): pose stand|walk|run|bow; mood.blink/lx; no faces beyond the eyes; flip:-1 faces left; head:true gives a head close-up.",
+  "EP6 characters/specs unchanged; new characters were appended."
+ ],
+ "new_characters": [
+  "brahma5",
+  "kapali",
+  "cow",
+  "mare",
+  "duck",
+  "doe",
+  "nidra",
+  "hayagriva2",
+  "kanya",
+  "narada_g",
+  "narada_old",
+  "balak",
+  "balika",
+  "rudra",
+  "deva_thin",
+  "deva_thin2",
+  "indra_thin",
+  "kama",
+  "prakriti",
+  "swaha",
+  "haryashva",
+  "shavalashva"
+ ],
+ "overview_sheets": [
+  "library/showcase/reels_cast/lineup_reel01.jpg",
+  "library/showcase/reels_cast/lineup_reel02.jpg",
+  "library/showcase/reels_cast/lineup_reel03.jpg",
+  "library/showcase/reels_cast/lineup_reel04.jpg",
+  "library/showcase/reels_cast/lineup_reel05.jpg",
+  "library/showcase/reels_cast/lineup_reel06.jpg",
+  "library/showcase/reels_cast/lineup_reel07.jpg",
+  "library/showcase/reels_cast/shatarupa_forms.jpg",
+  "library/showcase/reels_cast/animals_motion.jpg",
+  "library/showcase/reels_cast/kapali_forms.jpg",
+  "library/showcase/reels_cast/rudra_forms.jpg",
+  "library/showcase/reels_cast/rudras_crowd.jpg",
+  "library/showcase/reels_cast/nidra_forms.jpg",
+  "library/showcase/reels_cast/maya_family.jpg",
+  "library/showcase/reels_cast/swaha_forms.jpg",
+  "library/showcase/reels_cast/sons_crowd.jpg"
+ ],
+ "per_reel": [
+  {
+   "reel": "01",
+   "title": "Did Shiva Create the First Humans?",
+   "cast": [
+    {
+     "who": "brahma",
+     "role": "hero",
+     "new": false,
+     "identity": "4 heads, white beard, red dhoti, book/mala/kamandalu, lotus seat (lotus:false = standing)",
+     "props": [
+      "veda book",
+      "mala",
+      "kamandalu",
+      "lotus seat"
+     ],
+     "poses": [
+      "sit",
+      "sitpray",
+      "stand",
+      "namaste",
+      "bow",
+      "open"
+     ],
+     "emotions": [
+      "sad",
+      "grief",
+      "doubt",
+      "surprise",
+      "devotion",
+      "joy"
+     ],
+     "moves": [
+      "walkTo",
+      "turnc",
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/brahma_faces.jpg",
+      "library/showcase/ep06_cast/brahma_poses.jpg",
+      "library/showcase/ep06_cast/brahma_forms.jpg"
+     ]
+    },
+    {
+     "who": "kumara",
+     "role": "crowd",
+     "new": false,
+     "identity": "child sage, small jata, white cloth (his sons who rejected him: 4 copies, flipped)",
+     "props": [],
+     "poses": [
+      "stand",
+      "namaste"
+     ],
+     "emotions": [
+      "calm"
+     ],
+     "moves": [
+      "walkTo",
+      "fo/fd fade-out"
+     ],
+     "sheet": []
+    },
+    {
+     "who": "vishnu",
+     "role": "support",
+     "new": false,
+     "identity": "blue, 4 arms (chakra, conch, gada, lotus), yellow dhoti, kirita",
+     "props": [
+      "chakra",
+      "shankha",
+      "gada",
+      "padma"
+     ],
+     "poses": [
+      "stand",
+      "open",
+      "point"
+     ],
+     "emotions": [
+      "calm",
+      "sad",
+      "joy"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/vishnu_faces.jpg",
+      "library/showcase/ep06_cast/vishnu_poses.jpg"
+     ]
+    },
+    {
+     "who": "shiva",
+     "role": "hero",
+     "new": false,
+     "identity": "ash-blue, jata + crescent, third eye, tiger skin, Vasuki, trishul",
+     "props": [
+      "trishul"
+     ],
+     "poses": [
+      "sitpray",
+      "stand",
+      "open"
+     ],
+     "emotions": [
+      "calm",
+      "joy"
+     ],
+     "moves": [
+      "talk",
+      "mood.blink:1 (meditating)"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/shiva_faces.jpg",
+      "library/showcase/ep06_cast/shiva_poses.jpg"
+     ],
+     "moods": {
+      "meditating": {
+       "blink": 1,
+       "smile": 0.3
+      }
+     }
+    },
+    {
+     "who": "ardha",
+     "role": "hero",
+     "new": false,
+     "identity": "Ardhanarishwara: right half Shiva, left half the Goddess (split down the middle); static form, head:true close-up works",
+     "props": [],
+     "poses": [
+      "stand"
+     ],
+     "emotions": [
+      "calm"
+     ],
+     "moves": [
+      "fade-in on \"changed\" (ac)",
+      "cross-fade from shiva"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/lineup_reel01.jpg"
+     ],
+     "note": "No pose/emotion control: the fused form is drawn calm, standing. Change Shiva -> ardha with a cross-fade (shiva fo + ardha ac)."
+    },
+    {
+     "who": "adishakti",
+     "role": "hero",
+     "new": false,
+     "identity": "the Goddess / Shakti: red sari, gold choli, devi crown, bindi",
+     "props": [],
+     "poses": [
+      "stand",
+      "open",
+      "namaste"
+     ],
+     "emotions": [
+      "calm",
+      "joy",
+      "devotion"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/lineup_reel01.jpg"
+     ]
+    },
+    {
+     "who": "manu",
+     "role": "support",
+     "new": false,
+     "identity": "first man: cream dhoti + sash, dark hair",
+     "props": [],
+     "poses": [
+      "stand",
+      "namaste"
+     ],
+     "emotions": [
+      "calm",
+      "joy",
+      "surprise"
+     ],
+     "moves": [
+      "walkTo"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/lineup_reel01.jpg"
+     ]
+    },
+    {
+     "who": "brahmi",
+     "role": "support",
+     "new": false,
+     "identity": "first woman: gold sari, cream choli and pallu, bindi",
+     "props": [],
+     "poses": [
+      "stand",
+      "namaste"
+     ],
+     "emotions": [
+      "calm",
+      "joy",
+      "surprise"
+     ],
+     "moves": [
+      "walkTo"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/lineup_reel01.jpg"
+     ]
+    }
+   ],
+   "props": [
+    "lotus seat (Brahma rig)",
+    "fx: glow / light (generative force)"
+   ],
+   "requests": []
+  },
+  {
+   "reel": "02",
+   "title": "Why Do People Go to Kashi?",
+   "cast": [
+    {
+     "who": "brahma5",
+     "role": "hero",
+     "new": true,
+     "identity": "Brahma with the FIFTH head on top; seated (default) or standing (pose + lotus:false); hd:{l,r,b,t} grows the heads one by one, omit hd = all five",
+     "props": [
+      "veda book",
+      "mala",
+      "kamandalu",
+      "lotus seat"
+     ],
+     "poses": [
+      "sit",
+      "stand",
+      "plead",
+      "bow",
+      "namaste"
+     ],
+     "emotions": [
+      "pride",
+      "calm",
+      "shame",
+      "fear",
+      "sad"
+     ],
+     "moves": [
+      "hd sprout cues",
+      "walkTo",
+      "turnc",
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/kapali_forms.jpg",
+      "library/showcase/reels_cast/brahma5_faces.jpg",
+      "library/showcase/reels_cast/brahma5_poses.jpg",
+      "library/showcase/reels_cast/lineup_reel02.jpg"
+     ],
+     "moods": {
+      "gazing": {
+       "smile": 0.4,
+       "lx": 0.8
+      }
+     },
+     "note": "after the fifth head is cut, switch to plain brahma (4 heads)"
+    },
+    {
+     "who": "brahma",
+     "role": "hero",
+     "new": false,
+     "identity": "4 heads after the cut; recites the Vedas",
+     "props": [
+      "veda book"
+     ],
+     "poses": [
+      "bow",
+      "plead",
+      "namaste",
+      "sitpray"
+     ],
+     "emotions": [
+      "shame",
+      "sad",
+      "devotion"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/brahma_forms.jpg"
+     ]
+    },
+    {
+     "who": "narada",
+     "role": "support",
+     "new": false,
+     "identity": "veena, white dhoti, orange sash, small jata (speaks the curse)",
+     "props": [
+      "veena"
+     ],
+     "poses": [
+      "point",
+      "stand"
+     ],
+     "emotions": [
+      "anger",
+      "calm"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/narada_faces.jpg",
+      "library/showcase/ep06_cast/narada_poses.jpg"
+     ]
+    },
+    {
+     "who": "brahmi",
+     "role": "hero",
+     "new": false,
+     "identity": "young woman, gold sari + cream pallu (modest); moves away from the gaze",
+     "props": [],
+     "poses": [
+      "stand",
+      "flee",
+      "namaste"
+     ],
+     "emotions": [
+      "fear",
+      "shame",
+      "sad"
+     ],
+     "moves": [
+      "walkTo",
+      "turnc",
+      "flip:-1"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/shatarupa_forms.jpg"
+     ],
+     "moods": {
+      "avoiding": {
+       "sad": 0.5,
+       "lx": -0.8,
+       "ly": 0.4
+      }
+     }
+    },
+    {
+     "who": "cow",
+     "role": "support",
+     "new": true,
+     "identity": "Shatarupa form: white cow, soft ochre patches, gold-tipped horns, red kumkum dot, Brahmi's gold necklace + green gem",
+     "props": [],
+     "poses": [
+      "stand",
+      "walk",
+      "run",
+      "bow"
+     ],
+     "emotions": [
+      "mood.blink",
+      "mood.lx"
+     ],
+     "moves": [
+      "vx",
+      "mx/my",
+      "flip"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/shatarupa_forms.jpg",
+      "library/showcase/reels_cast/animals_motion.jpg"
+     ]
+    },
+    {
+     "who": "mare",
+     "role": "support",
+     "new": true,
+     "identity": "Shatarupa form: palomino mare, cream mane crest and tail, Brahmi's gold necklace",
+     "props": [],
+     "poses": [
+      "stand",
+      "walk",
+      "run",
+      "bow"
+     ],
+     "emotions": [
+      "mood.blink",
+      "mood.lx"
+     ],
+     "moves": [
+      "vx",
+      "mx/my",
+      "flip"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/shatarupa_forms.jpg",
+      "library/showcase/reels_cast/animals_motion.jpg"
+     ]
+    },
+    {
+     "who": "duck",
+     "role": "support",
+     "new": true,
+     "identity": "Shatarupa form: cream duck, gold-ochre wing, orange bill, Brahmi's gold necklace",
+     "props": [],
+     "poses": [
+      "stand",
+      "walk",
+      "run",
+      "bow"
+     ],
+     "emotions": [
+      "mood.blink",
+      "mood.lx"
+     ],
+     "moves": [
+      "vx",
+      "mx/my",
+      "flip"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/shatarupa_forms.jpg",
+      "library/showcase/reels_cast/animals_motion.jpg"
+     ]
+    },
+    {
+     "who": "doe",
+     "role": "support",
+     "new": true,
+     "identity": "Shatarupa form: spotted chital doe, big ears, white throat, Brahmi's gold necklace",
+     "props": [],
+     "poses": [
+      "stand",
+      "walk",
+      "run",
+      "bow"
+     ],
+     "emotions": [
+      "mood.blink",
+      "mood.lx"
+     ],
+     "moves": [
+      "vx",
+      "mx/my",
+      "flip"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/shatarupa_forms.jpg",
+      "library/showcase/reels_cast/animals_motion.jpg"
+     ]
+    },
+    {
+     "who": "rishi1",
+     "role": "support",
+     "new": false,
+     "identity": "Marichi: dark jata + beard, cream cloth, mala",
+     "props": [
+      "mala"
+     ],
+     "poses": [
+      "raise",
+      "point",
+      "stand"
+     ],
+     "emotions": [
+      "anger",
+      "doubt"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/lineup_reel02.jpg"
+     ]
+    },
+    {
+     "who": "rishi2",
+     "role": "support",
+     "new": false,
+     "identity": "Atri: white jata + beard, ochre cloth, kamandalu",
+     "props": [
+      "kamandalu"
+     ],
+     "poses": [
+      "point",
+      "open",
+      "stand"
+     ],
+     "emotions": [
+      "doubt",
+      "calm"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/lineup_reel02.jpg"
+     ]
+    },
+    {
+     "who": "shiva",
+     "role": "hero",
+     "new": false,
+     "identity": "Shiva in fury (rage stance, red eyes, trishul)",
+     "props": [
+      "trishul"
+     ],
+     "poses": [
+      "rage",
+      "rpoint",
+      "lunge",
+      "stand"
+     ],
+     "emotions": [
+      "rage",
+      "anger",
+      "surprise",
+      "sad"
+     ],
+     "moves": [
+      "walkTo",
+      "mx/my",
+      "shake"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/shiva_forms.jpg"
+     ],
+     "note": "rpoint/point use his LEFT hand; flip:-1 to point right"
+    },
+    {
+     "who": "kapali",
+     "role": "hero",
+     "new": true,
+     "identity": "Shiva wandering with Brahma's head (prop:\"head\", serene, eyes closed, no blood) or the ivory skull (default) stuck to his LEFT hand; prop:\"none\" = released at Kashi",
+     "props": [
+      "brahma head",
+      "kapala skull"
+     ],
+     "poses": [
+      "stand",
+      "bow",
+      "open",
+      "namaste"
+     ],
+     "emotions": [
+      "sad",
+      "grief",
+      "surprise",
+      "calm",
+      "joy"
+     ],
+     "moves": [
+      "walk",
+      "walkTo",
+      "turnc"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/kapali_forms.jpg",
+      "library/showcase/reels_cast/kapali_faces.jpg",
+      "library/showcase/reels_cast/kapali_poses.jpg"
+     ],
+     "moods": {
+      "wandering": {
+       "sad": 0.6,
+       "ly": 0.35
+      }
+     },
+     "note": "for the skull FALLING at Kashi: cross-fade kapali(prop skull) -> kapali(prop none) and add a falling skull via fx \"skull\" or a small kapali-scaled pfx; skull-on-ground is not a separate prop"
+    }
+   ],
+   "props": [
+    "brahma head + kapala (built into kapali)",
+    "veda book (Brahma rig / fx books)",
+    "background Kashi = bg vista with river + palace_gate pfx (scene-designer)"
+   ],
+   "requests": []
+  },
+  {
+   "reel": "03",
+   "title": "Madhu and Kaitabha",
+   "cast": [
+    {
+     "who": "vishnu_rest",
+     "role": "hero",
+     "new": false,
+     "identity": "Vishnu in Yoga Nidra on Shesha (eyes closed)",
+     "props": [],
+     "poses": [
+      "(fixed)"
+     ],
+     "emotions": [
+      "(eyes closed)"
+     ],
+     "moves": [
+      "glow"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/nidra_forms.jpg"
+     ]
+    },
+    {
+     "who": "nidra",
+     "role": "support",
+     "new": true,
+     "identity": "Yoga Nidra devi: indigo skin, indigo sari with silver trim, pearl necklace, moon-silver halo, half-closed eyes",
+     "props": [],
+     "poses": [
+      "stand",
+      "namaste",
+      "open"
+     ],
+     "emotions": [
+      "calm",
+      "devotion"
+     ],
+     "moves": [
+      "fo/fd (leaves Vishnu)",
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/nidra_forms.jpg",
+      "library/showcase/reels_cast/nidra_faces.jpg",
+      "library/showcase/reels_cast/nidra_poses.jpg"
+     ],
+     "moods": {
+      "sleepy": {
+       "smile": 0.55,
+       "blink": 0.45
+      }
+     }
+    },
+    {
+     "who": "brahma",
+     "role": "hero",
+     "new": false,
+     "identity": "on his lotus, holds the Vedas; begs",
+     "props": [
+      "veda book",
+      "lotus seat"
+     ],
+     "poses": [
+      "sit",
+      "sitpray",
+      "plead",
+      "namaste"
+     ],
+     "emotions": [
+      "calm",
+      "fear",
+      "surprise",
+      "devotion",
+      "joy"
+     ],
+     "moves": [
+      "shake (stem shaken)",
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/brahma_forms.jpg"
+     ]
+    },
+    {
+     "who": "madhu",
+     "role": "hero",
+     "new": false,
+     "identity": "asura: slate-violet skin, horns, wild hair, armour, sword; huge (s 1.3+)",
+     "props": [
+      "sword"
+     ],
+     "poses": [
+      "stand",
+      "lunge",
+      "rage",
+      "point",
+      "raise"
+     ],
+     "emotions": [
+      "pride",
+      "rage",
+      "anger",
+      "surprise",
+      "fear"
+     ],
+     "moves": [
+      "walkTo",
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/nidra_forms.jpg"
+     ],
+     "moods": {
+      "sneer": {
+       "smile": 0.5,
+       "anger": 0.5,
+       "ly": -0.3
+      }
+     },
+     "note": "born from earwax: start tiny (s .2) and grow with ds or two shots"
+    },
+    {
+     "who": "kaitabha",
+     "role": "hero",
+     "new": false,
+     "identity": "asura: red-brown skin, horns, beard, armour, gada",
+     "props": [
+      "gada"
+     ],
+     "poses": [
+      "stand",
+      "lunge",
+      "rage",
+      "point",
+      "raise"
+     ],
+     "emotions": [
+      "pride",
+      "rage",
+      "anger",
+      "surprise",
+      "fear"
+     ],
+     "moves": [
+      "walkTo",
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/nidra_forms.jpg"
+     ],
+     "moods": {
+      "sneer": {
+       "smile": 0.5,
+       "anger": 0.5,
+       "ly": -0.3
+      }
+     }
+    },
+    {
+     "who": "hayagriva2",
+     "role": "hero",
+     "new": true,
+     "identity": "Hayagriva (reels): real paper-cut white horse head, gold kirita, vaishnava tilak, red irises in anger; Vishnu's 4-armed blue body",
+     "props": [
+      "chakra",
+      "shankha",
+      "gada",
+      "padma"
+     ],
+     "poses": [
+      "stand",
+      "lunge",
+      "rage",
+      "point",
+      "open"
+     ],
+     "emotions": [
+      "calm",
+      "anger",
+      "rage",
+      "joy"
+     ],
+     "moves": [
+      "walkTo",
+      "turnc"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/nidra_forms.jpg",
+      "library/showcase/reels_cast/hayagriva2_faces.jpg",
+      "library/showcase/reels_cast/hayagriva2_poses.jpg"
+     ],
+     "note": "use instead of the old EP-era \"hayagriva\" (white oval head)"
+    },
+    {
+     "who": "vishnu",
+     "role": "hero",
+     "new": false,
+     "identity": "Vishnu: puts down his mace, offers the boon; huge like a blue mountain (fx bluemountain + big s); seated with the brothers on his thighs (pose sit)",
+     "props": [
+      "gada",
+      "chakra"
+     ],
+     "poses": [
+      "stand",
+      "open",
+      "namaste",
+      "sit",
+      "raise"
+     ],
+     "emotions": [
+      "calm",
+      "joy",
+      "anger"
+     ],
+     "moves": [
+      "ds (grow)",
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/vishnu_faces.jpg",
+      "library/showcase/ep06_cast/vishnu_poses.jpg"
+     ]
+    }
+   ],
+   "props": [
+    "Vedas: fx books / PK veda in Brahma's hand",
+    "lotus seat (Brahma rig)",
+    "mace = gada (Vishnu rig)",
+    "fx bluemountain, wave_ocean"
+   ],
+   "requests": []
+  },
+  {
+   "reel": "04",
+   "title": "Narada's Maya Test",
+   "cast": [
+    {
+     "who": "narada",
+     "role": "hero",
+     "new": false,
+     "identity": "veena, white dhoti, orange sash, small jata",
+     "props": [
+      "veena"
+     ],
+     "poses": [
+      "stand",
+      "namaste",
+      "open",
+      "plead"
+     ],
+     "emotions": [
+      "doubt",
+      "surprise",
+      "fear",
+      "grief",
+      "shame"
+     ],
+     "moves": [
+      "walkTo",
+      "turnc",
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/narada_faces.jpg",
+      "library/showcase/ep06_cast/narada_poses.jpg"
+     ]
+    },
+    {
+     "who": "vishnu",
+     "role": "hero",
+     "new": false,
+     "identity": "smiling in Vaikuntha (fx vaikuntha)",
+     "props": [],
+     "poses": [
+      "stand",
+      "open",
+      "point"
+     ],
+     "emotions": [
+      "joy",
+      "calm"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/vishnu_faces.jpg"
+     ],
+     "moods": {
+      "knowing smile": {
+       "smile": 0.8,
+       "lx": 0.4
+      }
+     }
+    },
+    {
+     "who": "kanya",
+     "role": "support",
+     "new": true,
+     "identity": "the young woman at the river, later his wife: rose-pink sari, marigold choli, pink pallu, bindi (modest)",
+     "props": [],
+     "poses": [
+      "stand",
+      "namaste",
+      "hold",
+      "open"
+     ],
+     "emotions": [
+      "joy",
+      "calm",
+      "fear",
+      "surprise"
+     ],
+     "moves": [
+      "walkTo",
+      "turnc",
+      "fo/fd (washed away)"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/maya_family.jpg",
+      "library/showcase/reels_cast/kanya_faces.jpg",
+      "library/showcase/reels_cast/kanya_poses.jpg"
+     ],
+     "moods": {
+      "shy": {
+       "smile": 0.6,
+       "ly": 0.4,
+       "lx": -0.4
+      }
+     }
+    },
+    {
+     "who": "narada_g",
+     "role": "hero",
+     "new": true,
+     "identity": "Narada as householder: no veena, yellow uttariya",
+     "props": [],
+     "poses": [
+      "stand",
+      "open",
+      "namaste",
+      "hold"
+     ],
+     "emotions": [
+      "joy",
+      "calm",
+      "fear"
+     ],
+     "moves": [
+      "walkTo",
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/maya_family.jpg",
+      "library/showcase/reels_cast/narada_g_faces.jpg",
+      "library/showcase/reels_cast/narada_g_poses.jpg"
+     ]
+    },
+    {
+     "who": "narada_old",
+     "role": "hero",
+     "new": true,
+     "identity": "Narada as grandfather: white jata + white beard, no veena",
+     "props": [],
+     "poses": [
+      "stand",
+      "open",
+      "plead",
+      "flee"
+     ],
+     "emotions": [
+      "joy",
+      "fear",
+      "grief",
+      "sad"
+     ],
+     "moves": [
+      "walkTo",
+      "turnc"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/maya_family.jpg",
+      "library/showcase/reels_cast/narada_old_faces.jpg",
+      "library/showcase/reels_cast/narada_old_poses.jpg"
+     ]
+    },
+    {
+     "who": "balak",
+     "role": "crowd",
+     "new": true,
+     "identity": "boy child: topknot, white-orange cloth (children + grandchildren: use s .5-.8)",
+     "props": [],
+     "poses": [
+      "stand",
+      "open",
+      "flee"
+     ],
+     "emotions": [
+      "joy",
+      "fear"
+     ],
+     "moves": [
+      "walk",
+      "walkTo",
+      "fo/fd"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/maya_family.jpg",
+      "library/showcase/reels_cast/balak_faces.jpg",
+      "library/showcase/reels_cast/balak_poses.jpg"
+     ]
+    },
+    {
+     "who": "balika",
+     "role": "crowd",
+     "new": true,
+     "identity": "girl child: long hair, green skirt + marigold choli + yellow half-sari",
+     "props": [],
+     "poses": [
+      "stand",
+      "open",
+      "flee"
+     ],
+     "emotions": [
+      "joy",
+      "fear"
+     ],
+     "moves": [
+      "walk",
+      "walkTo",
+      "fo/fd"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/maya_family.jpg",
+      "library/showcase/reels_cast/balika_faces.jpg",
+      "library/showcase/reels_cast/balika_poses.jpg"
+     ]
+    }
+   ],
+   "props": [
+    "house on the sand: build in scenes (scene-designer), not a character",
+    "flood: pfx wave_ocean / water_splash + bg storm"
+   ],
+   "requests": []
+  },
+  {
+   "reel": "05",
+   "title": "Shiva Born From Anger",
+   "cast": [
+    {
+     "who": "brahma",
+     "role": "hero",
+     "new": false,
+     "identity": "Creator; argues, then rage rises",
+     "props": [
+      "veda book"
+     ],
+     "poses": [
+      "sit",
+      "stand",
+      "open",
+      "point",
+      "plead"
+     ],
+     "emotions": [
+      "calm",
+      "anger",
+      "rage",
+      "surprise",
+      "doubt",
+      "fear"
+     ],
+     "moves": [
+      "talk",
+      "hd"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/brahma_forms.jpg"
+     ]
+    },
+    {
+     "who": "kumara",
+     "role": "support",
+     "new": false,
+     "identity": "the four Kumaras: child sages (4 copies, flipped/offset)",
+     "props": [],
+     "poses": [
+      "namaste",
+      "stand",
+      "sitpray"
+     ],
+     "emotions": [
+      "calm",
+      "devotion",
+      "joy"
+     ],
+     "moves": [
+      "walkTo (leave)",
+      "fo/fd"
+     ],
+     "sheet": []
+    },
+    {
+     "who": "rudra",
+     "role": "hero",
+     "new": true,
+     "identity": "Shiva newly born: ash-blue, jata + crescent, third eye, tiger skin, FIRE halo, no Vasuki/trishul; blazing red eyes with emo rage",
+     "props": [],
+     "poses": [
+      "raise",
+      "rage",
+      "lunge",
+      "stand",
+      "namaste",
+      "sitpray"
+     ],
+     "emotions": [
+      "rage",
+      "anger",
+      "calm"
+     ],
+     "moves": [
+      "mx/my (step out of the beam)",
+      "talk (roar)",
+      "fo/fd"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/rudra_forms.jpg",
+      "library/showcase/reels_cast/rudra_faces.jpg",
+      "library/showcase/reels_cast/rudra_poses.jpg"
+     ],
+     "moods": {
+      "roar": {
+       "anger": 1,
+       "mouth": 0.8
+      }
+     }
+    },
+    {
+     "who": "rudra",
+     "role": "crowd",
+     "new": true,
+     "identity": "the eleven Rudras: same rig repeated 11x, flipped, scale-varied",
+     "props": [],
+     "poses": [
+      "stand",
+      "namaste"
+     ],
+     "emotions": [
+      "calm"
+     ],
+     "moves": [
+      "ac fade-in one by one"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/rudras_crowd.jpg"
+     ]
+    },
+    {
+     "who": "shiva",
+     "role": "hero",
+     "new": false,
+     "identity": "Mahadeva (after naming) / leaves to meditate",
+     "props": [
+      "trishul"
+     ],
+     "poses": [
+      "stand",
+      "sitpray"
+     ],
+     "emotions": [
+      "calm"
+     ],
+     "moves": [
+      "walkTo",
+      "fo/fd"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/shiva_faces.jpg"
+     ]
+    },
+    {
+     "who": "vishnu",
+     "role": "support",
+     "new": false,
+     "identity": "(Brahma created, Vishnu preserved...) trinity line",
+     "props": [],
+     "poses": [
+      "stand"
+     ],
+     "emotions": [
+      "calm"
+     ],
+     "moves": [],
+     "sheet": [
+      "library/showcase/ep06_cast/vishnu_faces.jpg"
+     ]
+    }
+   ],
+   "props": [
+    "fiery beam from the forehead: fx beam / light_beam pfx"
+   ],
+   "requests": []
+  },
+  {
+   "reel": "06",
+   "title": "Why Say Swaha?",
+   "cast": [
+    {
+     "who": "brahma",
+     "role": "hero",
+     "new": false,
+     "identity": "in Brahmaloka; explains, has no answer, declares",
+     "props": [
+      "veda book"
+     ],
+     "poses": [
+      "sit",
+      "stand",
+      "open",
+      "point",
+      "raise"
+     ],
+     "emotions": [
+      "calm",
+      "doubt",
+      "pride",
+      "joy"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/brahma_forms.jpg"
+     ]
+    },
+    {
+     "who": "deva_thin",
+     "role": "crowd",
+     "new": true,
+     "identity": "starving god: thin, small crown, faded ochre dhoti",
+     "props": [],
+     "poses": [
+      "stand",
+      "plead",
+      "namaste",
+      "bow"
+     ],
+     "emotions": [
+      "sad",
+      "grief",
+      "fear"
+     ],
+     "moves": [
+      "walkTo"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/swaha_forms.jpg",
+      "library/showcase/reels_cast/deva_thin_faces.jpg",
+      "library/showcase/reels_cast/deva_thin_poses.jpg"
+     ]
+    },
+    {
+     "who": "deva_thin2",
+     "role": "crowd",
+     "new": true,
+     "identity": "starving god: thin, faded blue-grey dhoti, moustache",
+     "props": [],
+     "poses": [
+      "stand",
+      "plead",
+      "namaste",
+      "bow"
+     ],
+     "emotions": [
+      "sad",
+      "grief",
+      "fear"
+     ],
+     "moves": [
+      "walkTo"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/swaha_forms.jpg",
+      "library/showcase/reels_cast/deva_thin2_faces.jpg",
+      "library/showcase/reels_cast/deva_thin2_poses.jpg"
+     ]
+    },
+    {
+     "who": "indra_thin",
+     "role": "support",
+     "new": true,
+     "identity": "Indra, thin: same fan crown, blue dhoti and vajra, dimmed halo",
+     "props": [
+      "vajra"
+     ],
+     "poses": [
+      "stand",
+      "open",
+      "point",
+      "plead"
+     ],
+     "emotions": [
+      "sad",
+      "anger",
+      "doubt"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/swaha_forms.jpg",
+      "library/showcase/reels_cast/indra_thin_faces.jpg",
+      "library/showcase/reels_cast/indra_thin_poses.jpg"
+     ]
+    },
+    {
+     "who": "kama",
+     "role": "support",
+     "new": true,
+     "identity": "Kamadeva: rose dhoti, parrot-green uttariya, flower garland, sugarcane bow with flower tips (left hand)",
+     "props": [
+      "sugarcane bow"
+     ],
+     "poses": [
+      "stand",
+      "point",
+      "open"
+     ],
+     "emotions": [
+      "anger",
+      "pride",
+      "calm"
+     ],
+     "moves": [
+      "talk",
+      "turnc"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/swaha_forms.jpg",
+      "library/showcase/reels_cast/kama_faces.jpg",
+      "library/showcase/reels_cast/kama_poses.jpg"
+     ]
+    },
+    {
+     "who": "agni",
+     "role": "hero",
+     "new": false,
+     "identity": "fire god: ember skin, flame crest, fire halo; steps forward with folded hands",
+     "props": [],
+     "poses": [
+      "namaste",
+      "bow",
+      "plead",
+      "stand"
+     ],
+     "emotions": [
+      "shame",
+      "sad",
+      "joy"
+     ],
+     "moves": [
+      "walkTo",
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/devas_forms.jpg"
+     ]
+    },
+    {
+     "who": "vishnu",
+     "role": "support",
+     "new": false,
+     "identity": "advises: pray to Prakriti",
+     "props": [],
+     "poses": [
+      "stand",
+      "open",
+      "point"
+     ],
+     "emotions": [
+      "calm"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/vishnu_faces.jpg"
+     ]
+    },
+    {
+     "who": "prakriti",
+     "role": "support",
+     "new": true,
+     "identity": "Mother Nature: leaf-green sari, gold choli, garland, lotuses in hand, green-gold halo",
+     "props": [
+      "lotus"
+     ],
+     "poses": [
+      "stand",
+      "open",
+      "namaste"
+     ],
+     "emotions": [
+      "calm",
+      "joy",
+      "devotion"
+     ],
+     "moves": [
+      "ac fade-in (appears)",
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/swaha_forms.jpg",
+      "library/showcase/reels_cast/prakriti_faces.jpg",
+      "library/showcase/reels_cast/prakriti_poses.jpg"
+     ]
+    },
+    {
+     "who": "swaha",
+     "role": "hero",
+     "new": true,
+     "identity": "young goddess Swaha: flame-orange sari, gold choli, small crown, small fire halo (modest)",
+     "props": [],
+     "poses": [
+      "stand",
+      "namaste",
+      "bow",
+      "open"
+     ],
+     "emotions": [
+      "joy",
+      "calm",
+      "devotion"
+     ],
+     "moves": [
+      "ac fade-in",
+      "walkTo (to Agni)",
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/swaha_forms.jpg",
+      "library/showcase/reels_cast/swaha_faces.jpg",
+      "library/showcase/reels_cast/swaha_poses.jpg"
+     ],
+     "moods": {
+      "\"Swaha,\" she said": {
+       "smile": 0.6,
+       "mouth": 0.4
+      }
+     }
+    }
+   ],
+   "props": [
+    "yagna: bg yagna / pfx havan_kund",
+    "offerings rising: fx orbs"
+   ],
+   "requests": []
+  },
+  {
+   "reel": "07",
+   "title": "Daksha Cursed Narada",
+   "cast": [
+    {
+     "who": "daksha",
+     "role": "hero",
+     "new": false,
+     "identity": "raja crown, dark beard, crimson dhoti, gold uttariya",
+     "props": [],
+     "poses": [
+      "stand",
+      "point",
+      "raise",
+      "rpoint",
+      "open"
+     ],
+     "emotions": [
+      "pride",
+      "rage",
+      "anger",
+      "grief",
+      "sad"
+     ],
+     "moves": [
+      "walkTo",
+      "talk",
+      "shake"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/daksha_faces.jpg",
+      "library/showcase/ep06_cast/daksha_poses.jpg",
+      "library/showcase/ep06_cast/daksha_forms.jpg"
+     ]
+    },
+    {
+     "who": "asikli",
+     "role": "support",
+     "new": false,
+     "identity": "Daksha's wife: blue sari, cream choli, bindi",
+     "props": [],
+     "poses": [
+      "stand",
+      "namaste"
+     ],
+     "emotions": [
+      "sad",
+      "grief",
+      "calm"
+     ],
+     "moves": [],
+     "sheet": [
+      "library/showcase/reels_cast/sons_crowd.jpg"
+     ]
+    },
+    {
+     "who": "haryashva",
+     "role": "crowd",
+     "new": true,
+     "identity": "the 5,000 Haryashvas: young princes, small crown, green dhoti, gold uttariya (crowd = repeated rig, rows, s .3-.45)",
+     "props": [],
+     "poses": [
+      "stand",
+      "namaste",
+      "open",
+      "walk"
+     ],
+     "emotions": [
+      "calm",
+      "doubt",
+      "joy"
+     ],
+     "moves": [
+      "walk + vx (leave)",
+      "fo/fd (vanish)"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/sons_crowd.jpg",
+      "library/showcase/reels_cast/haryashva_faces.jpg",
+      "library/showcase/reels_cast/haryashva_poses.jpg"
+     ]
+    },
+    {
+     "who": "shavalashva",
+     "role": "crowd",
+     "new": true,
+     "identity": "the 1,000 Shavalashvas: young princes, violet dhoti with white dots, white uttariya",
+     "props": [],
+     "poses": [
+      "stand",
+      "namaste",
+      "open",
+      "walk"
+     ],
+     "emotions": [
+      "calm",
+      "doubt",
+      "joy"
+     ],
+     "moves": [
+      "walk + vx (leave)",
+      "fo/fd (vanish)"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/sons_crowd.jpg",
+      "library/showcase/reels_cast/shavalashva_faces.jpg",
+      "library/showcase/reels_cast/shavalashva_poses.jpg"
+     ]
+    },
+    {
+     "who": "narada",
+     "role": "hero",
+     "new": false,
+     "identity": "divine sage with veena; smirks; cursed to wander",
+     "props": [
+      "veena"
+     ],
+     "poses": [
+      "stand",
+      "open",
+      "point",
+      "namaste"
+     ],
+     "emotions": [
+      "calm",
+      "doubt"
+     ],
+     "moves": [
+      "walk",
+      "walkTo",
+      "turnc",
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast/sons_crowd.jpg"
+     ],
+     "moods": {
+      "smirk": {
+       "smile": 0.8,
+       "lx": -0.7,
+       "ly": 0.15,
+       "blink": 0.25
+      }
+     }
+    }
+   ],
+   "props": [
+    "river Sindhu meets the sea: bg sea / vista river (scene-designer)"
+   ],
+   "requests": []
+  }
+ ],
+ "requests": [
+  {
+   "what": "Brahma with five heads",
+   "why": "Reel 2 \"who once had five heads\"",
+   "status": "built",
+   "who": "brahma5"
+  },
+  {
+   "what": "Brahmi's animal forms cow, mare, duck, doe",
+   "why": "Reel 2 \"Brahmi became a cow, a mare, a duck, a doe\"",
+   "status": "built"
+  },
+  {
+   "what": "Kapali with the head / skull in his left hand",
+   "why": "Reel 2 \"The severed head was stuck to his left hand\" / \"only a skull remained\"",
+   "status": "built"
+  },
+  {
+   "what": "Rudra + eleven Rudras",
+   "why": "Reel 5",
+   "status": "built"
+  },
+  {
+   "what": "Hayagriva with a proper horse head",
+   "why": "Reel 3 \"Vishnu woke as Hayagriva\"",
+   "status": "built",
+   "who": "hayagriva2"
+  },
+  {
+   "what": "Nidra devi",
+   "why": "Reel 3 \"Brahma called on Nidra to release him\"",
+   "status": "built"
+  },
+  {
+   "what": "Narada's wife, children, grandchildren, old Narada",
+   "why": "Reel 4",
+   "status": "built"
+  },
+  {
+   "what": "thin gods, thin Indra, Kamadeva, Prakriti, Swaha",
+   "why": "Reel 6",
+   "status": "built"
+  },
+  {
+   "what": "Haryashvas / Shavalashvas crowds",
+   "why": "Reel 7",
+   "status": "built"
+  },
+  {
+   "what": "Ardhanarishwara with poses/emotions",
+   "why": "Reel 1",
+   "status": "blocked",
+   "note": "existing ardha rig is static (calm, standing); fine for the reveal + close-up; needs engine work only if the owner wants it to gesture"
+  },
+  {
+   "what": "Brahma pursuing in animal forms (bull, stallion ...)",
+   "why": "not in the narration",
+   "status": "not needed"
+  }
+ ]
+}

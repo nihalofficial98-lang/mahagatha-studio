@@ -3,6 +3,7 @@
 Everything is drawn by code in the browser canvas (paper-cut look: gradient fill, soft drop shadow, ink edge). No images.
 The exact names below are read from the engine by `python3 studio/engine_vocab.py`; if a name is not printed there it does not exist.
 Canvas: 1280x720 plan space (CX=640), rendered at 1.5x = 1080p. Subtitles live in the band y > 590: faces must stay above it.
+Reels (9:16, `format:"vertical"`): the same 1280x720 frame shown through a portrait window (405 wide at zoom 1) on the focus figure, or a 2-figure `stack`; output 720x1280 / 1080x1920. Shot key `vert` (brief `vertical`): guides/BEATS_SCHEMA.md (Reels).
 
 ## Files
 `engine/art.js` (helpers, grade/post) · `engine/paper_kit.js` + `library/characters/shiva/shiva_v2.js` + `engine/v2_cast.js` (character rig, CAST)

@@ -16,6 +16,7 @@ Names (backgrounds, objects, cast, poses, emo, effects) must come from `python3 
 | `camera` | cinematographer | `{shot, lens, move, from:{z,x,y,r}, to:{z,x,y,r}, shake, motivation}`; shot ∈ wide medium close extreme_close insert two_shot ots pov low_angle high_angle top establishing; lens ∈ wide normal tele; move ∈ push_in pull_out pan_left pan_right tilt_up tilt_down dolly_left dolly_right crane_up crane_down static handheld dutch orbit |
 | `focus` | cinematographer | `{subject, depth: shallow|deep}` |
 | `transition_in` | cinematographer | cut fade wipe iris flash |
+| `vertical` (reels only, optional) | cinematographer | 9:16 framing: `{focus: who, z: 1..1.8, y: face height in the window 0..1, x: frame x or [x0,x1] pan}` = portrait window; `{mode:"stack", stack:[top, bottom]}` = two characters stacked. Default: window on `focus.subject`. See guides/BEATS_SCHEMA.md (Reels) |
 | `layers` | scene designer | ≥ 2 of `{d: far|mid|near, contents: "words", fog, haze, blur, dark, items:[{o, x, y, s, ...}]}`; far needs fog ≥ 0.3; `from_background:true` when the background itself draws that plane |
 | `background` | scene designer | `{k, ...params, change:{word, bg2:{k,...} | to:{param:value}, d}}` |
 | `mood` | scene designer | `{emotion, grade, palette?}` |
@@ -23,4 +24,4 @@ Names (backgrounds, objects, cast, poses, emo, effects) must come from `python3 
 | `effects` | effects designer | `[{k (pfx name or engine fx), word?, x, y, w, alpha, par, behind?, ..., meaning}]` |
 
 Rules the validator enforces: every listed word is in the narration and (when the voice exists) spoken at `start.t`; every character has an emotion and acts, looks or talks;
-faces stay above y 590 through the whole camera move; no two consecutive shots with the same camera move; no third identical frame in a row; no empty frame.
+faces stay above y 590 through the whole camera move (reels: the focus face stays in the 9:16 window above 64% of the height); no two consecutive shots with the same camera move; no third identical frame in a row; no empty frame.

@@ -36,7 +36,7 @@ window.seek=(T)=>{let i=SHOTLIST.length-1;while(i>0&&T<SHOTLIST[i].start)i--;con
    portrait WINDOW (full height x 405 wide at z 1) centred on the focus figure, or a native vertical STACK of two figures.
    shot.vert = {focus:'who'|index (default: the largest figure), x: frame x or [x0,x1] pan (plan units, overrides focus), z: extra zoom 1..1.8,
                 y: where the focus face sits in the window 0..1 (default .36, used when z>1), mode:'crop' (default) | 'stack',
-                stack:['who','who'] (top, bottom; default the first two figures), h: stack crop height (default 360*s)}
+                stack:['who','who'] (top, bottom; default the first two figures), h: stack crop height (default 330*s)}
    Title card (from reel.json via the first shot's `title`:{text,sec}) and big word-grouped subtitles are drawn in the reel safe area. */
 const VWIN=405,VFONT=fs=>`700 ${fs}px NSerLat, 'Noto Serif', 'Source Serif 4', Georgia, 'Liberation Serif', 'DejaVu Serif', serif`;
 function vFig(it,f){const F=((it.sc&&it.sc.figs)||[]).filter(g=>g&&g.who);if(typeof f==='number')return F[f];if(f)return F.find(g=>g.who===f)||null;let b=null;F.forEach(g=>{if(!b||(g.s||1)>(b.s||1)+1e-6)b=g});return b}
@@ -46,7 +46,7 @@ const vFaceY=g=>g.head?(g.y??500):((g.y??500)-300*(g.s||1));
 function vViews(it,T){const V=it.vert||{},t=T-it.start,d=Math.max(.01,it.end-it.start);
   if(V.mode==='stack'){const st=V.stack||[0,1],half=CH_/2,gap=Math.round(CH_*.004),out=[];
     [[vFig(it,st[0]),0,half-gap,.5],[vFig(it,st[1]),half+gap,CH_-half-gap,.3]].forEach(([g,oy,oh,ff])=>{if(!g)return;
-      let h=clamp(V.h||360*(g.s||1)*cam.z,200,H),w=h*CW_/oh;if(w>W){w=W;h=w*oh/CW_}const p=vScr(vFigX(g,t,it),vFaceY(g));
+      let h=clamp(V.h||330*(g.s||1)*cam.z,200,H),w=h*CW_/oh;if(w>W){w=W;h=w*oh/CW_}const p=vScr(vFigX(g,t,it),vFaceY(g));
       out.push({ox:0,oy,ow:CW_,oh,x0:clamp(p[0]-w/2,0,W-w),y0:clamp(p[1]-ff*h,0,H-h),w,h})});if(out.length===2)return out}
   const z=clamp(V.z||1,1,2.2),h=H/z,w=VWIN/z;let fx=W/2,fy=H*.4;const g=vFig(it,V.focus);
   if(Array.isArray(V.x))fx=vScr(lerp(V.x[0],V.x[1],ease(clamp(t/d))),0)[0];else if(typeof V.x==='number')fx=vScr(V.x,0)[0];
@@ -82,11 +82,12 @@ function vSubs(M,T,sh){if(!VG)VG=vGroups();let wi=-1;for(let i=0;i<WORDS.length;
       M.fillStyle=on?'#ffd23f':'#fffaf0';M.fillText(WORDS[id].text,x,y);M.restore();x+=L.ws[j]+L.sp}});M.restore()}
 /* first-frame title card: fully visible from frame 0 (thumbnail), upper safe area (14-30% of height), fades out after `sec` */
 function vTitle(M,T){const tc=SHOTLIST[0]&&SHOTLIST[0].title;if(!tc||!tc.text)return;const sec=tc.sec||2.5,a=1-clamp((T-sec)/0.5);if(a<=0)return;const u=CW_/720;
-  M.save();M.setTransform(u,0,0,u,0,0);M.globalAlpha=a;const cx=360,cy=282-14*(1-a),sc=1+0.035*clamp(T/sec);M.translate(cx,cy);M.scale(sc,sc);M.rotate(-0.022);
+  M.save();M.setTransform(u,0,0,u,0,0);M.globalAlpha=a;const sc=1+0.035*clamp(T/sec);
   let fs=tc.size||92;M.font=VFONT(fs);const words=String(tc.text).split(/\s+/);const lay=()=>{const sp=M.measureText(' ').width,w=words.map(x=>M.measureText(x).width);let best=null;
     for(let k=1;k<=words.length;k++){const l1=w.slice(0,k).reduce((s,x)=>s+x,0)+sp*(k-1),l2=k<words.length?w.slice(k).reduce((s,x)=>s+x,0)+sp*(words.length-k-1):0,m=Math.max(l1,l2);if(!best||m<best.m-1)best={k,m}}return best};
   let b=lay();if(b.m>600){fs=Math.floor(fs*600/b.m);M.font=VFONT(fs);b=lay()}
   const lines=[words.slice(0,b.k).join(' '),words.slice(b.k).join(' ')].filter(Boolean),lh=fs*1.08,bh=lines.length*lh+56,bw=Math.min(700,b.m+90);
+  const cy=Math.max(300,190+bh*sc/2)-14*(1-a);M.translate(360,cy);M.scale(sc,sc);M.rotate(-0.022);   /* top edge stays below 14% of the height (platform UI) */
   const r=rng(7);M.beginPath();M.moveTo(-bw/2,-bh/2);for(let i=1;i<=20;i++)M.lineTo(-bw/2+bw*i/20,-bh/2+(r()-.5)*9);for(let i=1;i<=6;i++)M.lineTo(bw/2+(r()-.5)*9,-bh/2+bh*i/6);
   for(let i=19;i>=0;i--)M.lineTo(-bw/2+bw*i/20,bh/2+(r()-.5)*9);for(let i=5;i>=1;i--)M.lineTo(-bw/2+(r()-.5)*9,-bh/2+bh*i/6);M.closePath();
   M.save();M.shadowColor='rgba(10,2,4,.75)';M.shadowBlur=22;M.shadowOffsetY=8;const gr=M.createLinearGradient(0,-bh/2,0,bh/2);gr.addColorStop(0,'#8a2414');gr.addColorStop(1,'#5a120c');M.fillStyle=gr;M.fill();M.restore();

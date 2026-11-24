@@ -16,6 +16,11 @@ To start: paste the prompt in `guides/PROMPT_TEMPLATE.md`.
 | 7 | Video | Sonnet, following `episodes/epNN/NEXT.md` (from `guides/RENDER.md`) | `python3 studio/render_chunks.py NN` → `renders/epNN_1080p.mp4`; subtitles `renders/epNN.srt` | only with APPROVED |
 | 8 | Deliver | producer | mp4 + srt + hook titles | — |
 
+## Reels (9:16, ~80-90 s, English; guides/RENDER.md "Reels", guides/BEATS_SCHEMA.md "Reels")
+voice mp3 + word JSON in `reels/inputs/` → `python3 studio/reel_prepare.py NN` → `python3 studio/reel_setup.py reelNN --title "2-4 words" --cast ...` (reel.json)
+→ cast sheets, **owner approves the cast** → `reels/reelNN/briefs.json` (with `vertical` framing) → validate_brief / brief_to_plan / build_shots `reelNN`
+→ `python3 studio/ep_frames.py reelNN` (1080x1920 stills), **owner approves the frames** → `reels/reelNN/APPROVED` → `python3 studio/render_chunks.py reelNN`.
+
 ## How to tell where we are
 no beats.json/script or no READY review → 1 · no `build/epNN/timings.json` → 2/3 · no cast.json or sheets not approved → 4 · briefs.json invalid → 5 · no qa pass or no APPROVED → 6 · APPROVED but no `renders/epNN_1080p.mp4` → 7.
 

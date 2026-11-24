@@ -15,10 +15,16 @@ State at the time of writing (all committed on branch `claude/amazing-heisenberg
 - New flow: script-editor drafts `beats.json` + `script.en.md` -> script-doctor (`episodes/epNN/script_review.md`) -> fix -> owner approves -> owner records. OWNER DECISION: from EP07 all scripts, voiceovers and subtitles are English; EP01-06 stay Hindi; Hindi is an optional second language (`guides/LANGUAGES.md`).
 - `studio.py check NN` now prints a retention scorecard (`studio/script_check.py`; rules `library/script_rules.json`, pace `library/voice_profile.json` : Hindi 0.367 s/word measured on EP06 = ~1,310-1,630 words; English 0.40 s/word is an ESTIMATE = ~1,200-1,500 words, calibrate after the first English recording with `script_check.py NN --calibrate`). Self-test: `python3 studio/script_check.py --selftest`.
 - Why EP06 sagged: `python3 studio/script_check.py 06 --beats library/examples/ep06_beats_example.json` (19 errors; rewrite plan inside the file).
-- Not built yet: cue-id resolver in the brief tools, English align/render run-through (tooling made language-agnostic, not yet tested on a real English recording), 9:16 reel renderer (requirements in `guides/BEATS_SCHEMA.md`).
+- Not built yet: cue-id resolver in the brief tools, English align/render run-through (tooling made language-agnostic, not yet tested on a real English recording).
 
 ## Formats
 - `story` (EP6 style) and `explainer` (owner samples: Parshuram/Ravan, Sita, Varaha): guides/LONG_STYLE.md. Explainers need a source pack with verse references from the owner.
 
 ## External skills
 - See library/EXTERNAL_SKILLS.md (three.js, javascript-animation, explainer packs installed as reference skills; engine untouched).
+
+## Reels: vertical 9:16 mode (built Nov 2026; 16:9 episodes render byte-identical, checked on EP6 stills)
+- `format:"vertical"` (reel.json) → `studio/build.py --format vertical`: the 16:9 world is shown through a portrait camera window on the focus character, or a 2-character `stack`; big word-grouped subtitles and a first-frame title card from reel.json. Code: engine/main.js (VERTICAL section), studio/project.py (reels/<id> paths), studio/reel_setup.py.
+- Every tool takes a reel id (`reel02`, `_test`): validate_brief, brief_to_plan, build_shots, ep_frames, render_chunks (`--seconds 5` test clips, `--res 720p`).
+- Proof: `reels/_test` (reel02 voice, Brahma + Shiva) → `library/showcase/vertical_test/` (3 stills 1080x1920, 5 s clip 720x1280).
+- Next: write `reels/reel01..07/briefs.json` (reel.json via reel_setup.py), owner approves cast + frames, then render. Not built: reels cut from a long episode (beat slices), end card, music.

@@ -53,8 +53,8 @@ FRAMES={
  # ---------- Reel 3 ----------
  'nidra_forms':dict(title='Reel 3 - Madhu and Kaitabha: Yoga Nidra releases Vishnu',figs=[
    ('Vishnu in Yoga Nidra',F('vishnu_rest',330,660,.62)),('Nidra devi',F('nidra',700,660,.82,pose='namaste',mood={'blink':.45,'smile':.4})),
-   ('Hayagriva',F('hayagriva',900,660,.8,emo='calm')),('Madhu',F('madhu',1060,660,.8,emo='rage',pose='lunge')),('Kaitabha',F('kaitabha',1210,660,.8,emo='anger',flip=-1)),
-   ('Nidra close-up',F('nidra',560,170,.36,head=True,mood={'blink':.5,'smile':.45}))]),
+   ('Hayagriva',F('hayagriva2',900,660,.8,emo='calm')),('Madhu',F('madhu',1060,660,.8,emo='rage',pose='lunge')),('Kaitabha',F('kaitabha',1210,660,.8,emo='anger',flip=-1)),
+   ('Nidra close-up',F('nidra',560,170,.36,head=True,mood={'blink':.5,'smile':.45})),('Hayagriva fights',F('hayagriva2',900,170,.36,head=True,emo='anger')),('Hayagriva calm',F('hayagriva2',1150,170,.36,head=True,emo='calm'))]),
  # ---------- Reel 7 ----------
  'sons_crowd':dict(title='Reel 7 - Daksha\'s sons: Haryashvas (green) and Shavalashvas (violet) - crowd rigs',figs=[('',f) for f in
    [F('haryashva',70+i*84,430+(i%2)*18,.4,flip=1 if i%3 else -1,emo='doubt' if i%2 else 'calm') for i in range(8)]+
@@ -67,7 +67,7 @@ FRAMES={
 LINE={
  'reel01':('Reel 1 - Did Shiva create the first humans?',[('Brahma (grief)','brahma',{'emo':'sad'}),('Vishnu','vishnu',{}),('Shiva meditating','shiva',{'pose':'sitpray','mood':{'blink':1}}),('Ardhanarishwara','ardha',{}),('the Goddess (Shakti)','adishakti',{'pose':'open','emo':'calm'}),('Manu','manu',{'emo':'joy'}),('Brahmi','brahmi',{'emo':'joy'})]),
  'reel02':('Reel 2 - Why people go to Kashi',[('Narada (curse)','narada',{'pose':'point','emo':'anger'}),('Brahma, five heads','brahma5',{'pose':'stand','lotus':False,'mood':{'smile':.4,'lx':.8}}),('Brahmi','brahmi',{'emo':'fear','flip':-1}),('Marichi','rishi1',{'pose':'raise','emo':'anger'}),('Atri','rishi2',{'pose':'point','emo':'doubt'}),('Shiva in fury','shiva',{'pose':'rage','emo':'rage'}),('Kapali','kapali',{'emo':'sad'})]),
- 'reel03':('Reel 3 - Madhu and Kaitabha',[('Brahma on the lotus','brahma',{'emo':'fear'}),('Vishnu','vishnu',{'emo':'calm'}),('Nidra','nidra',{'mood':{'blink':.45}}),('Hayagriva','hayagriva',{}),('Madhu','madhu',{'emo':'pride'}),('Kaitabha','kaitabha',{'emo':'pride','flip':-1})]),
+ 'reel03':('Reel 3 - Madhu and Kaitabha',[('Brahma on the lotus','brahma',{'emo':'fear'}),('Vishnu','vishnu',{'emo':'calm'}),('Nidra','nidra',{'mood':{'blink':.45}}),('Hayagriva','hayagriva2',{}),('Madhu','madhu',{'emo':'pride'}),('Kaitabha','kaitabha',{'emo':'pride','flip':-1})]),
  'reel04':('Reel 4 - Narada and Maya',[('Narada','narada',{'emo':'doubt'}),('Vishnu smiling','vishnu',{'emo':'joy'}),('the young woman','kanya',{'emo':'joy'}),('Narada, householder','narada_g',{'emo':'joy'}),('child','balak',{'emo':'joy'}),('child','balika',{'emo':'joy'}),('Narada, old','narada_old',{'emo':'grief'})]),
  'reel05':('Reel 5 - Shiva born from Brahma\'s anger',[('Brahma','brahma',{'emo':'anger'}),('Kumara','kumara',{'pose':'namaste'}),('Kumara','kumara',{'pose':'namaste'}),('Rudra (fiery birth)','rudra',{'pose':'raise','emo':'rage'}),('Rudra (calm)','rudra',{'emo':'calm'}),('Shiva / Mahadeva','shiva',{'emo':'calm'})]),
  'reel06':('Reel 6 - Swaha',[('Brahma','brahma',{'emo':'doubt'}),('starving god','deva_thin',{'emo':'sad'}),('Indra','indra_thin',{'emo':'sad','pose':'open'}),('Kamadeva','kama',{'pose':'point','emo':'anger'}),('Agni','agni',{'pose':'namaste','emo':'shame'}),('Vishnu','vishnu',{}),('Prakriti','prakriti',{}),('Swaha','swaha',{'emo':'joy'})]),

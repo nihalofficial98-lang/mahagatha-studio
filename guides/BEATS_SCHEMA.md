@@ -55,10 +55,30 @@ A shot brief refers to `{"beat": "B07", "cue": "flower_falls"}`. For each langua
             "characters": ["bali"], "names_introduced": ["bali"]}]}
 ```
 
-## Reels (9:16): requirement only, NOT built yet
-The engine renders 16:9 (1280x720 plan -> 1080p). Reels A/B/C are cut from the same beats later. What the vertical renderer will need (record it now, build it later):
-- **Cut list** = beats with `reel` = A/B/C, in order; teaser excluded; reel C includes X.
-- **Framing**: 1080x1920 output = a 9:16 window that moves over the 16:9 plan, or a re-layout. Each shot's main subject must be inside the window; `vertical.focus` names the subject to follow (default: `focus.subject` of the shot brief).
-- **Safe areas**: subtitles inside the middle band (top ~ 62-78% of height, clear of platform UI at the bottom ~ 20% and right ~ 15%); on-screen names above the subtitles; nothing important in the top 10%.
-- **Audio**: the reel uses the same voice slice (beat start/end from `build/epNN/timings.json`), music re-faded at the cut.
-- **End card**: 2-3 s "full story on the channel" card after the bridge line (art, no AI images).
+## Reels (9:16): built (vertical mode, Nov 2026)
+The engine renders 16:9 episodes unchanged; reels use `format: "vertical"` (720x1280 at scale 1.0, 1080x1920 at 1.5, 24 fps).
+**How it works**: scenes, characters and effects are still drawn in the 1280x720 16:9 frame (after the shot camera). The reel shows that
+frame through a portrait **camera window** (full height x 405 wide at zoom 1) that follows the focus character (also while it walks),
+or, for a dialogue, a native **stack** layout: two crops, speaker on top and listener below, split by a torn-paper seam.
+Every existing scene, character and effect works; screen-space fx (`text`, `name`) must be placed near the focus x or they fall outside.
+
+**Project**: `reels/reelNN/` = `reel.json` + `briefs.json` (+ shot_plan.json, shots.json, APPROVED); build files in `reels/build/reelNN/`.
+`reel.json`: `{reel, title, full_title, audio, words, cast, format:"vertical", fps:24, title_sec:2.5, duration}`
+- `title` = first-frame text, 2-4 words ("Madhu and Kaitabha"): drawn big from frame 0 for `title_sec` in the upper safe area, then fades.
+- `full_title` = upload title; `audio` = reels/inputs/reelNN.mp3 (voice only); `words` = reels/build/reelNN/words.json (spoken words, exact).
+- `cast` = rig names (python3 studio/engine_vocab.py; reels/cast.json lists the reel characters). `duration` is written by reel_setup.py.
+
+**Shot brief `vertical` block** (per shot, optional): `{focus:"brahma", z:1.2, y:.45}` window on a character (z = extra zoom 1..1.8,
+y = where the face sits in the window, used when z > 1); `{x:[400,880]}` pan across the frame; `{mode:"stack", stack:["shiva","brahma"]}`.
+Default = window on `focus.subject` (the largest figure if none). The beat-level `vertical.focus` hint is copied into the shot brief by hand.
+- Big characters: prefer s 0.85-1.1 full figures with z 1.1-1.3, or `head:true` busts; two characters further apart than ~400 need `stack`.
+- First shot: keep the focus face at >= 42% of the height (y .45+) so the title card (14-35%) does not cover it; no stack in the first shot.
+
+**Safe areas** (engine draws them): title card 14-35% of the height; subtitles centred at 70% (64-76%; stack shots: on the seam at 50%),
+left-of-centre so the right ~15% stays clear; nothing important in the bottom 20% or top 14%. Subtitles = the reel word timings grouped like
+reel_prepare.py / subs.srt (max 6 words, 36 chars, 2 lines), current word in gold, Latin serif (bold), dark box + outline.
+`validate_brief.py` checks that the focus face is inside the window and above 64%.
+
+**Cut list for reels cut from an episode** (not built yet): beats with `reel` = A/B/C in order (teaser excluded, reel C includes X);
+audio = the voice slice of those beats (build/epNN/timings.json); end card 2-3 s after the bridge line. Today's reels are recorded
+separately (reels/inputs) and run through the steps in guides/RENDER.md (Reels).
