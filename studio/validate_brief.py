@@ -30,12 +30,15 @@ def face_cropped(f,cam):
         z=e.get('z',1);sh=abs(e.get('y',0));t_=360+(top-360)*z-sh;c_=360+(chin-360)*z+sh;cx=640+(x0-640)*z
         if t_<2 or c_>590 or cx<20 or cx>1260:return True
     return False
+def seated(f):
+    """seated rigs (sit / sitpray, Brahma on his lotus): face ~195*s above y instead of ~300*s (same rule as engine/main.js vSeated)"""
+    return f.get('pose') in ('sit','sitpray') or (f.get('who')=='brahma' and f.get('lotus') is not False and f.get('pose') in (None,'stand'))
 def face_cropped_v(f,cam,vert):
     """9:16 reels: the face must sit in the portrait window above the subtitle band (64% of the height); stack mode frames faces itself"""
     if f.get('who') in ('boar','swan') or (vert or {}).get('mode')=='stack':return False
     s=f.get('s',1);y0=f.get('y',500);vz=max(1,(vert or {}).get('z',1));h=720/vz
     if f.get('head'):top=y0-104*s;chin=y0+75*s;fc=y0
-    else:fc=y0-300*s;top=fc-105*s;chin=fc+55*s
+    else:fc=y0-(195 if seated(f) else 300)*s;top=fc-105*s;chin=fc+55*s
     for e in (cam.get('from',{}),cam.get('to',{})):
         z=e.get('z',1);sy=lambda v:360+(v-360-e.get('y',0))*z
         w0=min(max(sy(fc)-(vert or {}).get('y',.36)*h,0),720-h) if vz>1 else 0

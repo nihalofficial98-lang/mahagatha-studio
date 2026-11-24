@@ -42,7 +42,8 @@ const VWIN=405,VFONT=fs=>`700 ${fs}px NSerLat, 'Noto Serif', 'Source Serif 4', G
 function vFig(it,f){const F=((it.sc&&it.sc.figs)||[]).filter(g=>g&&g.who);if(typeof f==='number')return F[f];if(f)return F.find(g=>g.who===f)||null;let b=null;F.forEach(g=>{if(!b||(g.s||1)>(b.s||1)+1e-6)b=g});return b}
 function vFigX(f,t,P){let x=f.x??640;if(f.walkTo){const W2=f.walkTo,d2=W2.d||Math.abs(W2.x-f.x)/(W2.v||120);x+=(W2.x-f.x)*clamp((t-cuT(P,W2.c||0))/Math.max(.1,d2))}if(f.mx)x+=f.mx*q(P,t,f.mc||0,f.md||1.2);return x+(f.vx||0)*t}
 const vScr=(x,y)=>[W/2+(x-W/2-cam.x)*cam.z,H/2+(y-H/2-cam.y)*cam.z];
-const vFaceY=g=>g.head?(g.y??500):((g.y??500)-300*(g.s||1));
+const vSeated=g=>g.pose==='sit'||g.pose==='sitpray'||(g.who==='brahma'&&g.lotus!==false&&(!g.pose||g.pose==='stand'));   /* seated rigs: face ~195*s above y, standing ~300*s */
+const vFaceY=g=>g.head?(g.y??500):((g.y??500)-(vSeated(g)?195:300)*(g.s||1));
 function vViews(it,T){const V=it.vert||{},t=T-it.start,d=Math.max(.01,it.end-it.start);
   if(V.mode==='stack'){const st=V.stack||[0,1],half=CH_/2,gap=Math.round(CH_*.004),out=[];
     [[vFig(it,st[0]),0,half-gap,.5],[vFig(it,st[1]),half+gap,CH_-half-gap,.3]].forEach(([g,oy,oh,ff])=>{if(!g)return;
