@@ -1,5 +1,43 @@
 # EP01-06 English reel candidates: titles only (ranked best-first)
 
+Ranks 1-6 are the picks. Ranks 7-8 are spares. Length is the estimate for the later script (0.40 s/word, 170-250 words). No reel points to a next episode. None repeats the Brahma/Ketaki reels.
+
+Update: reels 4 and 5 are scripted (Reel01_First_Man_and_Woman_English.md, Reel02_Brahma_Five_Heads_English.md). Titles below are ranked options in the owner's style (name, curiosity or "until" twist, truthful). Top pick first.
+
+## Story 08 (Jaya and Vijaya)
+1. Why Two Guards Chose to Be Vishnu's Enemies
+2. Jaya and Vijaya Could Love Vishnu for Seven Lives. They Chose Hate
+3. Vishnu's Two Guards Were Cursed Until They Made a Choice
+
+## Story 02 (Vishnu vs Madhu and Kaitabha)
+1. Vishnu Could Not Beat Madhu and Kaitabha Until He Offered a Boon
+2. Why Vishnu Stopped Fighting After Five Thousand Years
+3. Madhu and Kaitabha Chose Their Own Ending
+
+## Story 07 (Narada and maya)
+1. Narada Went for Water and Never Came Back
+2. Narada Asked Vishnu What Maya Is. Why Did It Take a Lifetime?
+3. Vishnu Was Still Thirsty. What Happened to Narada?
+
+## Story 03 (Shiva born from Brahma's anger)
+1. Shiva Was Born From Brahma's Anger. His First Demand Was a Name
+2. Why the First Words of Shiva Were Not About Power
+3. Brahma's Anger Created a God. Why Could He Not Create?
+
+## Story 10 (Agni and Swaha)
+1. Why Every Offering to Agni Ends With One Word
+2. The Gods Were Starving Until Agni Found Swaha
+3. Humans Fed the Fire Every Day. Why Did Heaven Starve?
+
+## Story 09 (Narada and Daksha's sons)
+1. Narada Only Asked Daksha's Sons One Question. Why Was He Cursed?
+2. Daksha Lost Six Thousand Sons to One Conversation
+3. Why Narada Could Never Stay Anywhere
+
+---
+Previous version (kept for reference):
+
+
 Ranks 1-6 are the picks. Ranks 7-8 are spares. Length is the estimate for the later script (0.40 s/word, 170-230 words). No reel points to a next episode. None repeats the Brahma/Ketaki reels.
 
 ## 1. Seven Lives of Love or Three of Hate?
