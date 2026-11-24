@@ -2,8 +2,9 @@
 
 **Start an episode**
 ```
-Make episode NN about <story / source/story_XX.txt>. Follow WORKFLOW.md: use the producer agent; script-editor writes the script,
-emotion-tagged voiceover script and hook titles; then stop and wait for my mp3 + word-timestamp JSON.
+Make episode NN about <story / source/story_XX.txt>. Follow WORKFLOW.md: use the producer agent; script-editor writes beats.json + the
+Hindi script, script-doctor reviews it, script-editor fixes it (studio.py check NN must PASS); then the emotion-tagged voiceover
+script and hook titles; then stop for my script approval and wait for my mp3 + word-timestamp JSON.
 ```
 
 **After recording**
@@ -14,6 +15,6 @@ Episode NN: here are the voice <path/to/voice.mp3> and the word timestamps <path
 
 **Approvals / feedback**
 ```
-Episode NN: character sheets approved.            |  Episode NN: frames approved, render it.
+Episode NN: script approved.  |  Episode NN: make the English version.  |  Episode NN: character sheets approved.            |  Episode NN: frames approved, render it.
 Episode NN frames: <shot id>: <what is wrong>.  (the producer routes it to the agent that owns that field)
 ```

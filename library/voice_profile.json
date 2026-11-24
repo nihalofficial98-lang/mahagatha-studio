@@ -1,0 +1,19 @@
+{
+ "_why": "Narration pace per language, measured from the owner's real recordings (seconds of finished audio per SCRIPT word, pauses included). studio/script_check.py turns word counts into minutes with it. Re-measure after every recorded episode: python3 studio/script_check.py NN --calibrate [--lang en]. PACE=<s/word> env still overrides for one run.",
+ "hi": {
+  "sec_per_word": 0.367,
+  "source": "EP06 owner recording: 478.4 s / 1303 script words (1326 spoken words, 0.361 s/spoken word)",
+  "measurements": [
+   {"ep": "06", "script_words": 1303, "sec": 478.4, "sec_per_word": 0.367}
+  ],
+  "beat_words": {"short": [15, 40], "long": [60, 100], "max": 110},
+  "note": "8-10 min at this pace = about 1,310-1,630 Hindi script words (aim 1,390-1,550 = 8.5-9.5 min). The old 0.575 s/word guide-voice pace is retired."
+ },
+ "en": {
+  "sec_per_word": 0.4,
+  "source": "PROVISIONAL: typical calm documentary narration (~150 words/min). Replace after the first English recording with --calibrate --lang en.",
+  "measurements": [],
+  "beat_words": {"short": [12, 35], "long": [50, 85], "max": 95},
+  "note": "8-10 min at this pace = about 1,200-1,500 English words."
+ }
+}

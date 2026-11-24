@@ -6,7 +6,8 @@ To start: paste the prompt in `guides/PROMPT_TEMPLATE.md`.
 
 | # | Step | Who (model) | Command / output | Gate |
 |---|------|-------------|------------------|------|
-| 1 | Script, emotion-tagged script, hook titles | script-editor (sonnet) | `episodes/epNN/script.md`, `deliverables/EPNN_*` ; `python3 studio/studio.py check NN` | script check passes |
+| 1 | Structure + script, reviewed, then tagged scripts + hook titles | script-editor (sonnet) -> script-doctor (sonnet) -> script-editor | `episodes/epNN/beats.json` + `script.hi.md` (`script.md` links to it) -> `episodes/epNN/script_review.md` -> `deliverables/EPNN_*` ; `python3 studio/studio.py check NN` | check RESULT: PASS, review READY, **owner approves the script** |
+| 1b | English (optional, after Hindi approved) | script-editor -> script-doctor | `script.en.md` on the same beats.json; `studio.py check NN --lang en` (guides/LANGUAGES.md) | same gates |
 | 2 | **Owner records** the voice and sends the **mp3 + word-timestamp JSON** | owner | — | nothing below starts without BOTH files |
 | 3 | Align voice + subtitles | producer (sonnet) | `python3 studio/studio.py align NN <voice.mp3> --timestamps <words.json>` → `python3 studio/hide_unspoken.py NN <words.json>` → `python3 studio/make_timeline.py NN` | `build/epNN/timings.json`, `episodes/epNN/voice_timeline.md` exist |
 | 4 | Characters first | character-designer (opus) | `episodes/epNN/cast.json`, `python3 studio/cast_sheet.py <names>` → `library/characters/sheets/` | **owner approves the sheets** |
@@ -16,9 +17,10 @@ To start: paste the prompt in `guides/PROMPT_TEMPLATE.md`.
 | 8 | Deliver | producer | mp4 + srt + hook titles | — |
 
 ## How to tell where we are
-no script.md → 1 · no `build/epNN/timings.json` → 2/3 · no cast.json or sheets not approved → 4 · briefs.json invalid → 5 · no qa pass or no APPROVED → 6 · APPROVED but no `renders/epNN_1080p.mp4` → 7.
+no beats.json/script or no READY review → 1 · no `build/epNN/timings.json` → 2/3 · no cast.json or sheets not approved → 4 · briefs.json invalid → 5 · no qa pass or no APPROVED → 6 · APPROVED but no `renders/epNN_1080p.mp4` → 7.
 
 ## Rules
+- Script shape (guides/SCRIPT_STYLE.md): 15 s teaser + 3 stand-alone chapters of 2.5-3.2 min (= reels A/B/C) ; length from the measured voice pace (`library/voice_profile.json`, re-measure with `python3 studio/script_check.py NN --calibrate` after aligning).
 - Never start a long job (render) without every input: shots.json, timings.json, the voice pieces, APPROVED. `render_chunks.py` refuses otherwise.
 - Subtitle text = the words in the owner's audio (import_timestamps + hide_unspoken), never just the script.
 - Every frame: story matches the subtitle, faces above the subtitles, ≥ 2 depth planes, nothing flat or empty (qa-reviewer checklist).

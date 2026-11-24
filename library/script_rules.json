@@ -1,0 +1,19 @@
+{
+ "_why": "Retention structure rules read by studio/script_check.py (see guides/SCRIPT_STYLE.md). Owner feedback: videos sagged in the middle, ending too long, reels must stand alone. Tighten only when feedback repeats.",
+ "video_sec": [480, 600],
+ "aim_sec": [510, 570],
+ "teaser_sec": [10, 20],
+ "chapter_sec": [150, 192],
+ "close_max_sec": 25,
+ "chapter_hook_within_sec": 10,
+ "first_stakes_by_sec": 60,
+ "max_rehook_gap_sec": 90,
+ "rehook_roles": ["hook", "stakes", "plant", "rehook", "turn", "climax"],
+ "payoff_after_climax_sec": 30,
+ "max_post_climax_share": 0.15,
+ "max_recap_words": 40,
+ "min_short_beats": 3,
+ "min_long_beats": 3,
+ "max_same_band_run": 3,
+ "budget_tolerance": 0.35
+}

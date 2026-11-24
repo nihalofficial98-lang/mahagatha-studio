@@ -1,0 +1,83 @@
+{
+ "_about": "ANALYSIS ONLY. EP06 as it was recorded (episodes/ep06/script.md, B01-B15), mapped onto the new beats.json schema (guides/BEATS_SCHEMA.md). budget_sec = the recorded beat lengths from build/ep06/timings.json. Run: python3 studio/script_check.py 06 --beats library/examples/ep06_beats_example.json  -> it FAILS on purpose and shows why the middle sagged. 'rewrite' at the bottom lists what a rewrite would change. episodes/ep06 is not modified.",
+ "episode": "06",
+ "title": {"hi": "ब्रह्मा की पूजा कोई क्यों नहीं करता?", "en": "Why Does No One Worship Brahma?"},
+ "languages": ["hi"],
+ "planted_question": {"text": "Why does no one worship Brahma, the creator?", "planted_in": "B01", "answered_in": "B13"},
+ "names": {
+  "brahma": {"hi": "ब्रह्मा", "en": "Brahma", "line": {"hi": "ब्रह्मा, जिन्होंने यह पूरी सृष्टि रची", "en": "Brahma, who created all of this"}},
+  "vishnu": {"hi": "विष्णु", "en": "Vishnu", "line": {"hi": "विष्णु, जो इस सृष्टि को पालते हैं", "en": "Vishnu, who keeps the world alive"}},
+  "shiva": {"hi": "शिव", "en": "Shiva", "line": {"hi": "शिव, जो अंत करते हैं", "en": "Shiva, the one who ends all things"}},
+  "ketaki": {"hi": "केतकी", "en": "the Ketaki flower", "line": {"hi": "केतकी, एक छोटा सफ़ेद फूल", "en": "a small white flower called Ketaki"}},
+  "daksha": {"hi": "दक्ष", "en": "Daksha", "line": {"hi": "दक्ष, ब्रह्मा का बेटा", "en": "Daksha, Brahma's son"}}
+ },
+ "cues": {
+  "creator_named": {"meaning": "Brahma shown as the creator of the universe", "anchor": {"hi": "ब्रह्मांड रचा", "en": "created"}},
+  "three_gods": {"meaning": "the three gods side by side: creator, keeper, destroyer", "anchor": {"hi": "सृष्टि के तीन बड़े देवता", "en": "three gods"}},
+  "inside_brahma": {"meaning": "Vishnu steps inside Brahma's body and sees worlds", "anchor": {"hi": "दस लाख लोक", "en": "a million worlds"}},
+  "lotus_exit": {"meaning": "Brahma climbs out of Vishnu's navel on the lotus stalk", "anchor": {"hi": "नाभि से बाहर", "en": "navel"}},
+  "pillar_appears": {"meaning": "an endless pillar of fire erupts between them", "anchor": {"hi": "आग का एक विशाल स्तंभ", "en": "pillar of fire"}},
+  "flower_falls": {"meaning": "a Ketaki flower drifts down past the swan", "anchor": {"hi": "एक केतकी का फूल", "en": "a flower"}},
+  "flower_testifies": {"meaning": "the flower lies in front of everyone", "anchor": {"hi": "ब्रह्मदेव ही सबसे महान हैं", "en": "the greatest"}},
+  "pillar_cracks": {"meaning": "the pillar splits open", "anchor": {"hi": "बीच से चटक गया", "en": "split"}},
+  "shiva_liar": {"meaning": "Shiva points at Brahma and roars", "anchor": {"hi": "झूठे", "en": "Liar"}},
+  "trident_strikes": {"meaning": "Shiva strikes the ground with the trident", "anchor": {"hi": "त्रिशूल", "en": "trident"}},
+  "no_worship_verdict": {"meaning": "the verdict: no one will worship Brahma", "anchor": {"hi": "कोई तुम्हारी पूजा नहीं करेगा", "en": "no one will worship you"}},
+  "daksha_watches": {"meaning": "Daksha watches Shiva leave, burning with hate", "anchor": {"hi": "दक्ष", "en": "Daksha"}}
+ },
+ "chapters": [
+  {"id": "T", "kind": "teaser", "title": {"en": "Cold open"}},
+  {"id": "C1", "kind": "chapter", "reel": "A", "title": {"en": "Who is greater?"}},
+  {"id": "C2", "kind": "chapter", "reel": "B", "title": {"en": "The race and the lie"}},
+  {"id": "C3", "kind": "chapter", "reel": "C", "title": {"en": "Shiva's verdict"}}
+ ],
+ "beats": [
+  {"id": "B01", "chapter": "T", "reel": null, "intent": "question + the whole answer (gives it away: 'a lie', 'a flower', 'Shiva's verdict')", "roles": ["hook", "plant"], "budget_sec": 22.7,
+   "emotion": {"hi": "तेज़, रहस्यमयी", "en": "fast, mysterious"}, "cue_ids": ["creator_named"], "characters": ["brahma", "shiva"], "names_introduced": ["brahma", "shiva"]},
+  {"id": "B02", "chapter": "C1", "reel": "A", "intent": "explains the three gods, then 'who is greater' (abstract; opens with 'let us start from the beginning', not a hook)", "roles": ["setup", "stakes"], "budget_sec": 23.4,
+   "emotion": {"hi": "धीमे, ठहराव", "en": "slow, pausing"}, "cue_ids": ["three_gods"], "characters": ["brahma", "vishnu", "shiva"], "names_introduced": ["brahma", "vishnu", "shiva"]},
+  {"id": "B03", "chapter": "C1", "reel": "A", "intent": "the argument in dialogue", "roles": ["setup"], "budget_sec": 34.1,
+   "emotion": {"hi": "क्रोध, तनाव", "en": "angry, tense"}, "cue_ids": [], "characters": ["brahma", "vishnu"], "names_introduced": []},
+  {"id": "B04", "chapter": "C1", "reel": "A", "intent": "Brahma's challenge, Vishnu sees worlds inside him (116 words, one long description)", "roles": ["rehook"], "budget_sec": 39.2,
+   "emotion": {"hi": "भव्य, चुनौती भरा", "en": "grand, challenging"}, "cue_ids": ["inside_brahma"], "characters": ["brahma", "vishnu"], "names_introduced": []},
+  {"id": "B05", "chapter": "C1", "reel": "A", "intent": "Brahma lost inside Vishnu, exits by the lotus (118 words; chapter has no bridge line)", "roles": ["turn", "payoff"], "budget_sec": 45.6,
+   "emotion": {"hi": "विस्मय, फिर घबराहट", "en": "awe, then panic"}, "cue_ids": ["lotus_exit"], "characters": ["brahma", "vishnu"], "names_introduced": []},
+  {"id": "B06", "chapter": "C2", "reel": "B", "intent": "'both showed their greatness' (back-reference), weapons, pillar, the bet. Pillar at 3:05, race only at 3:26", "roles": ["turn"], "budget_sec": 40.8,
+   "emotion": {"hi": "तेज़, गरजता हुआ", "en": "fast, thundering"}, "cue_ids": ["pillar_appears"], "characters": ["brahma", "vishnu"], "names_introduced": []},
+  {"id": "B07", "chapter": "C2", "reel": "B", "intent": "boar and swan race; flower falls", "roles": ["rehook"], "budget_sec": 31.4,
+   "emotion": {"hi": "रोमांचक, तेज़", "en": "thrilling, fast"}, "cue_ids": ["flower_falls"], "characters": ["vishnu", "brahma", "ketaki"], "names_introduced": ["ketaki"]},
+  {"id": "B08", "chapter": "C2", "reel": "B", "intent": "Brahma hears 'upper heights' and sees a way to win", "roles": ["turn"], "budget_sec": 35.8,
+   "emotion": {"hi": "धीमे, ख़तरनाक होता हुआ", "en": "slow, turning dangerous"}, "cue_ids": [], "characters": ["brahma", "ketaki"], "names_introduced": []},
+  {"id": "B09", "chapter": "C2", "reel": "B", "intent": "the bargain: the flower agrees to lie", "roles": ["setup"], "budget_sec": 22.1,
+   "emotion": {"hi": "तनाव, दबाव भरा", "en": "tense, pressing"}, "cue_ids": [], "characters": ["brahma", "ketaki"], "names_introduced": []},
+  {"id": "B10", "chapter": "C2", "reel": "B", "intent": "Vishnu admits defeat, the flower testifies (no bridge line after it)", "roles": ["payoff"], "budget_sec": 25.1,
+   "emotion": {"hi": "धूर्त, फिर विजयी", "en": "sly, then triumphant"}, "cue_ids": ["flower_testifies"], "characters": ["vishnu", "brahma", "ketaki"], "names_introduced": []},
+  {"id": "B11", "chapter": "C3", "reel": "C", "intent": "pillar cracks, Shiva appears: 'Liar!' (names used, not re-introduced)", "roles": ["hook", "climax"], "budget_sec": 19.7,
+   "emotion": {"hi": "विस्फोट, चौंकाने वाला", "en": "explosive, shocking"}, "cue_ids": ["pillar_cracks", "shiva_liar"], "characters": ["shiva", "brahma"], "names_introduced": []},
+  {"id": "B12", "chapter": "C3", "reel": "C", "intent": "Shiva explains the jyotirlinga (lecture before the verdict)", "roles": ["setup"], "budget_sec": 34.6,
+   "emotion": {"hi": "गंभीर, कठोर", "en": "grave, stern"}, "cue_ids": [], "characters": ["shiva", "brahma", "vishnu"], "names_introduced": []},
+  {"id": "B13", "chapter": "C3", "reel": "C", "intent": "verdict on Brahma and the flower = the real payoff, 35 s after the climax", "roles": ["payoff", "answer"], "budget_sec": 30.1,
+   "emotion": {"hi": "दृढ़, भारी", "en": "firm, heavy"}, "cue_ids": ["trident_strikes", "no_worship_verdict"], "characters": ["shiva", "brahma", "ketaki"], "names_introduced": []},
+  {"id": "B14", "chapter": "C3", "reel": "C", "intent": "154-word recap + moral + earlier episodes + Daksha set-up", "roles": ["recap", "tease"], "budget_sec": 50.6,
+   "emotion": {"hi": "ठहराव, गहरा", "en": "pausing, deep"}, "cue_ids": ["daksha_watches"], "characters": ["brahma", "vishnu", "shiva", "daksha"], "names_introduced": ["daksha"]},
+  {"id": "B15", "chapter": "C3", "reel": "C", "intent": "comment question + next-episode tease", "roles": ["question", "tease", "bridge"], "budget_sec": 22.9,
+   "emotion": {"hi": "शांत, जिज्ञासा जगाने वाला", "en": "calm, curious"}, "cue_ids": [], "characters": [], "names_introduced": []}
+ ],
+ "rewrite": {
+  "problems_found": [
+   "Teaser 22.7 s and it gives the answer away (lie, flower, Shiva's verdict): nothing left to wait for.",
+   "First 3 minutes are argument and description (B02-B05, 142 s). Pillar at 3:05, race at 3:26 (43%).",
+   "Every beat is 45-154 words (no short punches); B04/B05/B14 over 110 words.",
+   "No chapter hooks or bridge lines; reel B opens on 'both showed their greatness' and never says who 'both' are.",
+   "Climax B11 at 5:20, verdict (payoff) 35 s later, then 138 s (29%) of explanation, recap and outro.",
+   "Episode is 7.97 min: under the 8 min rule."
+  ],
+  "new_plan": [
+   {"chapter": "T", "budget_sec": 15, "beats": "1 beat, ~40 words", "change": "Cold open on the endless pillar and a flower falling; ask 'the creator of everything, yet almost no temple: why?'. Do NOT say lie/flower/verdict."},
+   {"chapter": "C1", "reel": "A", "budget_sec": 165, "change": "Hook in the fight itself (weapons raised, gods backing away) and introduce Brahma/Vishnu/Shiva in one line each. Stakes by 0:45: if the two fight, creation itself breaks. Plant: 'that day one of them lost something forever'. Cut the two body-journeys from 85 s to ~50 s (short punch beats: 'a million worlds.' / 'he could not find the way out.'). Turn: Brahma lost inside Vishnu. Payoff: he climbs out on the lotus, humiliated. Bridge: 'and then, between them, fire split the sky.'"},
+   {"chapter": "C2", "reel": "B", "budget_sec": 170, "change": "Hook: 'a pillar of fire with no top and no bottom' + one-line re-intro of Brahma (creator) and Vishnu (keeper) + the bet. Race starts by 0:25 of the chapter (~3:25 overall is replaced by ~3:20 with a full race and the flower by 4:00). Short beats for the dive and the climb; long beat for the bargain dialogue. Payoff: Vishnu bows, the flower testifies. Bridge: 'everyone believed it. Except the pillar.'"},
+   {"chapter": "C3", "reel": "C", "budget_sec": 165, "change": "Hook: the pillar cracks, a voice says 'Liar!' (re-introduce Shiva, Brahma, the Ketaki flower in one line each). Shiva's jyotirlinga explanation trimmed to ~20 s BEFORE the crack is fully open. Climax = the verdict on Brahma; payoff within 20 s: 'that is why almost no temple worships Brahma, and the Ketaki is never offered to Shiva'. Recap <= 40 words. Bridge = Daksha watching + comment question + next-episode tease (<= 25 s)."}
+  ],
+  "target": "15 + 165 + 170 + 165 = 515 s = 8.6 min = about 1,400 Hindi script words at 0.367 s/word; post-climax <= 70 s."
+ }
+}
