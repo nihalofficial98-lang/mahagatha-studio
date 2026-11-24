@@ -229,7 +229,23 @@ const OBJ={
   cutP(()=>ctx.rect(x-w/2-8*s,y-h-22*s,w+16*s,22*s),FOGC(shd(c,1.3),o),O);for(let xx=x-w/2;xx<x+w/2;xx+=30*s)cutP(()=>{ctx.moveTo(xx,y-h-22*s);ctx.lineTo(xx+15*s,y-h-40*s);ctx.lineTo(xx+30*s,y-h-22*s);ctx.closePath()},FOGC(shd(c,1.1),o),{sh:0,lw:1})},
  shrub(x,y,s,t,o){const c=o.col||'#3a7a44';[[-40,-20,30],[0,-34,38],[40,-18,30]].forEach(([dx,dy,r],k)=>cutU(()=>ctx.arc(x+dx*s+Math.sin(t+k)*1.5,y+dy*s,r*s,0,TAU),vg(y-72*s,y,[FOGC(shd(c,1.25),o),FOGC(shd(c,.7),o)]),fogO(o)));
   if(o.flowers){const r=rng(Math.round(x));for(let i=0;i<8;i++){ctx.fillStyle=FOGC(o.flowers,o);ctx.beginPath();ctx.arc(x+(r()-.5)*100*s,y-(10+r()*50)*s,3.4*s,0,TAU);ctx.fill()}}},
- hill(x,y,s,t,o){const c=FOGC(o.col||'#5a8a4a',o),w=(o.w||700)*s,h=(o.h||120)*s;cutP(()=>{ctx.moveTo(x-w,y+400);ctx.lineTo(x-w,y);ctx.bezierCurveTo(x-w*.5,y-h,x+w*.5,y-h,x+w,y);ctx.lineTo(x+w,y+400);ctx.closePath()},vg(y-h,y+200,[shd(c,1.2),c,shd(c,.6)]),fogO(o))}
+ hill(x,y,s,t,o){const c=FOGC(o.col||'#5a8a4a',o),w=(o.w||700)*s,h=(o.h||120)*s;cutP(()=>{ctx.moveTo(x-w,y+400);ctx.lineTo(x-w,y);ctx.bezierCurveTo(x-w*.5,y-h,x+w*.5,y-h,x+w,y);ctx.lineTo(x+w,y+400);ctx.closePath()},vg(y-h,y+200,[shd(c,1.2),c,shd(c,.6)]),fogO(o))},
+ // reels (reel 4): village house on the river sand: mud walls on a plinth, thatched roof, arched doorway (o.lamp = warm light inside), window, mango-leaf toran
+ hut(x,y,s,t,o){const w=(o.w||240)*s,h=(o.h||140)*s,c=o.col||'#e0b07a',rf=o.roof||'#d8a040',O=fogO(o),L=x-w/2,top=y-h;
+  cutP(()=>ctx.rect(L-12*s,y-16*s,w+24*s,16*s),vg(y-16*s,y,[FOGC(shd(c,.95),o),FOGC(shd(c,.6),o)]),O);
+  cutP(()=>ctx.rect(L,top,w,h-16*s),vg(top,y,[FOGC(shd(c,1.12),o),FOGC(shd(c,.78),o)]),O);
+  ctx.strokeStyle=FOGC('rgba(120,60,30,.35)',o);ctx.lineWidth=1.6*s;ctx.beginPath();ctx.moveTo(L,y-40*s);ctx.lineTo(L+w,y-40*s);ctx.stroke();
+  const dx=x-w*.14,dw=27*s,dt=y-16*s-h*.62;cutP(()=>{ctx.moveTo(dx-dw,y-16*s);ctx.lineTo(dx-dw,dt+dw);ctx.quadraticCurveTo(dx-dw,dt,dx,dt-dw*.2);ctx.quadraticCurveTo(dx+dw,dt,dx+dw,dt+dw);ctx.lineTo(dx+dw,y-16*s);ctx.closePath()},vg(dt,y,[FOGC(o.lamp?'#a85a2a':'#4a2a1c',o),FOGC(o.lamp?'#5a2a14':'#22120c',o)]),{sh:0,lw:1.8,ink:FOGC('#7a3a18',o)});
+  if(o.lamp)glow(dx,y-50*s,60*s,'255,200,120',.5*(1-(o.fog||0)));
+  const wx=x+w*.24,wy=top+h*.22,ws=34*s;cutP(()=>ctx.rect(wx-ws/2,wy,ws,ws),FOGC(o.lamp?'#8a4a20':'#3a2218',o),{sh:0,lw:1.6,ink:FOGC('#7a3a18',o)});
+  ctx.strokeStyle=FOGC('#b07a3a',o);ctx.lineWidth=2.4*s;for(let k=-1;k<=1;k++){ctx.beginPath();ctx.moveTo(wx+k*ws*.28,wy);ctx.lineTo(wx+k*ws*.28,wy+ws);ctx.stroke()}
+  const ov=44*s,rh=h*.82,sw=Math.sin(t*.6+x)*1.2*s;
+  cutP(()=>{ctx.moveTo(L-ov,top+10*s);ctx.quadraticCurveTo(L+w*.12,top-rh*.55,x-w*.08+sw,top-rh);ctx.lineTo(x+w*.08+sw,top-rh);ctx.quadraticCurveTo(L+w*.88,top-rh*.55,L+w+ov,top+10*s);
+   ctx.quadraticCurveTo(x,top+26*s,L-ov,top+10*s);ctx.closePath()},vg(top-rh,top+20*s,[FOGC(shd(rf,1.3),o),FOGC(rf,o),FOGC(shd(rf,.7),o)]),O);
+  ctx.save();ctx.strokeStyle=FOGC('rgba(110,60,10,.45)',o);ctx.lineWidth=1.3*s;for(let i=1;i<14;i++){const u=i/14,bx=L-ov+u*(w+2*ov),by=top+10*s+Math.sin(u*PI)*14*s;ctx.beginPath();ctx.moveTo(bx,by);ctx.lineTo(x+(u-.5)*w*.16+sw,top-rh+6*s);ctx.stroke()}ctx.restore();
+  cutP(()=>{ctx.moveTo(L-ov,top+10*s);ctx.quadraticCurveTo(x,top+26*s,L+w+ov,top+10*s);ctx.lineTo(L+w+ov,top+18*s);ctx.quadraticCurveTo(x,top+36*s,L-ov,top+18*s);ctx.closePath()},FOGC(shd(rf,.75),o),{sh:0,lw:1});
+  if(o.toran!==false){ctx.strokeStyle=FOGC('#6a4a20',o);ctx.lineWidth=1.4*s;ctx.beginPath();ctx.moveTo(dx-dw-10*s,dt-dw*.2-6*s);ctx.quadraticCurveTo(dx,dt+4*s,dx+dw+10*s,dt-dw*.2-6*s);ctx.stroke();
+   for(let i=0;i<7;i++){const u=i/6,lx=dx-dw-10*s+u*(2*dw+20*s),ly=dt-dw*.2-6*s+Math.sin(u*PI)*9*s;cutP(()=>{ctx.moveTo(lx-4*s,ly);ctx.lineTo(lx,ly+13*s);ctx.lineTo(lx+4*s,ly);ctx.closePath()},FOGC(i%2?'#3a8a3a':'#f0a020',o),{sh:0,lw:.8})}}}
 };
 const LDEF={far:{par:.2,fog:.55,blur:1.2,dark:0},mid:{par:.55,fog:.22,blur:0,dark:0},near:{par:1.35,fog:0,blur:1.6,dark:.55}};
 /* layered scenery: L = [{d:'far'|'mid'|'near', par?, fog?, haze?, blur?, dark?, items:[{o:'tree'|'rock'|'cloud'|'mountain'|'pillar'|'wall'|'shrub'|'hill', x, y, s, ...object options}]}]
