@@ -1,0 +1,14 @@
+{
+ "episode": "reel02",
+ "frames": 36,
+ "pass": false,
+ "checked": "all 36 frames (1080x1920) + 6 contact sheets opened; faces solved to 38-50% height in every single-window shot (animals placed by eye), title card on frame 000 above the pilgrims' faces, subtitles = reels/build/reel02 words (0 differences vs script), validate_brief 0 errors (1 false warning: duck face offset), no FX_ERRORS/PAGEERR, no hearts/stars/sparkles, no blood; restraint on the desire beat (s10 sideways stare only, s11 distance + pillar between them)",
+ "issues": [
+  {"shot":"s21","frame":"library/showcase/reel02_frames/020_s21.jpg","check":"story","problem":"the light_beam 'blade' (rot 1.35) is not visible at the still; the cut reads only through the white flash over the crown and the cross-fade brahma5 -> four-headed brahma (eyes closed, tear)","owner":"effects-designer","fix":"accept (tasteful by design) or build a diagonal light-slash pfx"},
+  {"shot":"s24","frame":"library/showcase/reel02_frames/023_s24.jpg","check":"story","problem":"kapali holds the head/skull on the SCREEN-LEFT hand; since he faces the viewer that is anatomically his RIGHT hand, while the narration says 'left hand' (also s06, s25, s29-s32)","owner":"character-designer","fix":"request: kapali prop on the other hand (handAt side +1) in engine/v2_cast.js; not changed here (character specs are off-limits)"},
+  {"shot":"s16","frame":"library/showcase/reel02_frames/015_s16.jpg","check":"technical","problem":"duck/mare feet sit a little above the meadow ground (raised so heads clear the subtitle band); same in s15 (cow) and s17 (doe)","owner":"scene-designer","fix":"accept, or add a near hill/ground object under the animals"},
+  {"shot":"s07","frame":"library/showcase/reel02_frames/006_s07.jpg","check":"story","problem":"'Narada' name plate is timed to the spoken name (16.48 s) which falls after the still time (16.14 s), so the still has no name","owner":"cinematographer","fix":"accept (correct in motion)"},
+  {"shot":"s02","frame":"library/showcase/reel02_frames/001_s02.jpg","check":"continuity","problem":"vista river runs to the bottom centre, so figures in s01, s32-s36 stand on the river path (reads as wading at the ghat)","owner":"scene-designer","fix":"accept; a true ghat-steps background does not exist yet"}
+ ],
+ "note": "pass=false only for the minor known weak spots above; no blocking face/subtitle/empty-frame problems"
+}
