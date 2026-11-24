@@ -1,0 +1,18 @@
+{"episode":"reel03","frames":31,"pass":true,
+ "checked":"every still in library/showcase/reel03_frames/ (000_s01..030_s31) opened and checked against the qa-reviewer checklist: story, faces above the subtitle band, depth, continuity, technical, owner rules (no sparkles, no gore, coded rigs)",
+ "fixed":[
+  {"shot":"s01","problem":"brothers had not appeared yet at the still time","fix":"brothers fade in on 'preserver' behind Vishnu"},
+  {"shot":"s03","problem":"still showed namaste with no gift","fix":"open hands on 'Then' (mace gone), gift glow on 'mace'"},
+  {"shot":"s05","problem":"Kaitabha name plate came after the still","fix":"plate on 'and' (0.18 s before the name)"},
+  {"shot":"s06","problem":"tiny brothers sat on Vishnu's chest, not by his head","fix":"moved beside the head / ear"},
+  {"shot":"s07","problem":"only 2 of 4 Vedas visible, leftmost cut","fix":"books c -3, gap 92"},
+  {"shot":"s09","problem":"giant brothers' faces cut at the window edges","fix":"moved inward, s 1.3"},
+  {"shot":"s10","problem":"Kaitabha almost outside the window","fix":"x 745"},
+  {"shot":"s11","problem":"falling Vedas covered Madhu's face","fix":"Brahma up-left, 3 books in the middle, Madhu right"},
+  {"shot":"s13","problem":"Nidra hidden behind Vishnu's head","fix":"Nidra floats above-right, alpha 0.6"},
+  {"shot":"s17","problem":"'doubt' preset drew a tear","fix":"calm + slight anger, eyes sideways"},
+  {"shot":"s22","problem":"chakra too big and cut at the top","fix":"w 64 just above the raised hand"},
+  {"shot":"s26","problem":"brothers' faces inside the subtitle band; chakra cut at right","fix":"brothers raised onto the thighs (s 0.36), chakra x 772"}],
+ "issues":[],
+ "notes":["validator warning s14: vishnu_rest flagged in the subtitle band (validator assumes a standing face); in the still his face is above the band",
+  "remaining weak spots are listed in reels/reel03/frames_notes.md"]}
