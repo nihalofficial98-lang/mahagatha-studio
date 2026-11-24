@@ -165,8 +165,8 @@ S.append(shot("s06",11.32,
  background=loka_bg(sky=SKY_DAWN,sx=820,sy=300),mood={"emotion":"arrival","grade":"warm"},
  characters=[{"who":"brahma","x":735,"y":660,"s":0.82,"_face":0.45,"flip":-1,"pose":"sit","emo":"calm","look":"deva_thin",
    "actions":[{"word":"Brahma","emo":"surprise","mood":{"surp":0.4},"d":0.5},{"word":"creator","emo":"calm","mood":{"smile":0.3},"d":0.6}]},
-  {"who":"deva_thin","x":510,"y":665,"s":0.9,"_face":0.45,"flip":1,"pose":"stand","emo":"sad","look":"brahma","walk":{"word":"came","to_x":600,"d":1.6,"speed":1}},
-  {"who":"deva_thin2","x":430,"y":665,"s":0.88,"_ground":True,"flip":1,"pose":"stand","emo":"sad","look":"brahma","walk":{"word":"came","to_x":515,"d":1.6,"speed":1}}],
+  {"who":"deva_thin","x":560,"y":665,"s":0.9,"_face":0.45,"flip":1,"pose":"stand","emo":"sad","look":"brahma","walk":{"word":"came","to_x":625,"d":1.6,"speed":1}},
+  {"who":"deva_thin2","x":500,"y":665,"s":0.84,"_ground":True,"flip":1,"pose":"stand","emo":"sad","look":"brahma","walk":{"word":"came","to_x":550,"d":1.6,"speed":1}}],
  effects=[name("Brahma","Brahma",700,118),glow(820,300,240,"255,220,150",0.4,meaning="morning light in Brahmaloka")],
  transition_in="fade"))
 # 7 ---------------------------------------------------------------- in Brahmaloka
