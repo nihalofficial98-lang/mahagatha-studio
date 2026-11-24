@@ -8,9 +8,9 @@
   "hi"
  ],
  "planted_question": {
-  "text": "The conqueror who took heaven by force: why did he give his life himself, and what is the price of the greatest gift?",
+  "text": "The conqueror who took heaven by force: why did he agree to give his life himself? (reason given in B09, resolved in the closing line B29)",
   "planted_in": "B01",
-  "answered_in": "B27"
+  "answered_in": "B29"
  },
  "names": {
   "bala": {
@@ -188,6 +188,13 @@
     "hi": "शुभ दृष्टि",
     "en": ""
    }
+  },
+  "chakra_wheels": {
+   "meaning": "two circles spinning opposite ways, 108 edges",
+   "anchor": {
+    "hi": "दो गोल घेरे",
+    "en": ""
+   }
   }
  },
  "chapters": [
@@ -225,12 +232,12 @@
    "id": "B01",
    "chapter": "T",
    "reel": null,
-   "intent": "teaser: two gifts of the self; planted question (why did the conqueror give his life; what does the biggest gift cost)",
+   "intent": "teaser: two gifts of the self; one planted question (why did the conqueror give his life)",
    "roles": [
     "hook",
     "plant"
    ],
-   "budget_sec": 18,
+   "budget_sec": 17,
    "emotion": {
     "hi": "रहस्यमयी, गंभीर",
     "en": ""
@@ -250,7 +257,7 @@
    "roles": [
     "hook"
    ],
-   "budget_sec": 11,
+   "budget_sec": 13,
    "emotion": {
     "hi": "तेज़",
     "en": ""
@@ -401,9 +408,10 @@
    "reel": "A",
    "intent": "heavenly voice's verdict and why he gave his life",
    "roles": [
+    "answer",
     "bridge"
    ],
-   "budget_sec": 24,
+   "budget_sec": 19,
    "emotion": {
     "hi": "शांत",
     "en": ""
@@ -420,11 +428,11 @@
    "id": "B10",
    "chapter": "C2",
    "reel": "B",
-   "intent": "re-introduce Bala; the gods cannot carry the body home",
+   "intent": "re-introduce Bala and his sacrifice; the gods cannot carry the body home; why?",
    "roles": [
     "hook"
    ],
-   "budget_sec": 12,
+   "budget_sec": 10,
    "emotion": {
     "hi": "तेज़",
     "en": ""
@@ -466,7 +474,7 @@
    "roles": [
     "turn"
    ],
-   "budget_sec": 6,
+   "budget_sec": 15,
    "emotion": {
     "hi": "रहस्यमयी",
     "en": ""
@@ -487,7 +495,7 @@
    "roles": [
     "setup"
    ],
-   "budget_sec": 29,
+   "budget_sec": 25,
    "emotion": {
     "hi": "गंभीर",
     "en": ""
@@ -502,11 +510,11 @@
    "id": "B14",
    "chapter": "C2",
    "reel": "B",
-   "intent": "the winnowing 84 -> 21 -> 9, and the origin of each",
+   "intent": "nine gems from nine organs; which gem is the surprise (voice)?",
    "roles": [
     "rehook"
    ],
-   "budget_sec": 14,
+   "budget_sec": 11,
    "emotion": {
     "hi": "रहस्यमयी",
     "en": ""
@@ -523,7 +531,7 @@
    "roles": [
     "setup"
    ],
-   "budget_sec": 19,
+   "budget_sec": 9,
    "emotion": {
     "hi": "गंभीर",
     "en": ""
@@ -565,7 +573,7 @@
    "roles": [
     "payoff"
    ],
-   "budget_sec": 23,
+   "budget_sec": 22,
    "emotion": {
     "hi": "भव्य",
     "en": ""
@@ -586,7 +594,7 @@
    "roles": [
     "bridge"
    ],
-   "budget_sec": 7,
+   "budget_sec": 16,
    "emotion": {
     "hi": "स्नेह",
     "en": ""
@@ -599,11 +607,11 @@
    "id": "B19",
    "chapter": "C3",
    "reel": "C",
-   "intent": "Vishnu calls Shiva; a thousand lotuses; one short",
+   "intent": "Vishnu worships Shiva as no one has; one lotus short of a thousand",
    "roles": [
     "hook"
    ],
-   "budget_sec": 11,
+   "budget_sec": 12,
    "emotion": {
     "hi": "गंभीर",
     "en": ""
@@ -622,12 +630,12 @@
    "id": "B20",
    "chapter": "C3",
    "reel": "C",
-   "intent": "demons unlike Bala torment gods and humans; Vishnu is weary",
+   "intent": "most demons torment gods and humans (stands alone, no Bala needed); Vishnu is weary",
    "roles": [
     "stakes",
     "setup"
    ],
-   "budget_sec": 28,
+   "budget_sec": 23,
    "emotion": {
     "hi": "गंभीर",
     "en": ""
@@ -772,18 +780,39 @@
    "id": "B27",
    "chapter": "C3",
    "reel": "C",
-   "intent": "Shiva heals him, gives the disc, names it Sudarshana",
+   "intent": "the eye outshines any gem; Shiva heals him and gives a golden disc",
    "roles": [
-    "payoff",
-    "answer"
+    "payoff"
    ],
-   "budget_sec": 36,
+   "budget_sec": 15,
    "emotion": {
-    "hi": "भव्य, दृढ़",
+    "hi": "भव्य",
     "en": ""
    },
    "cue_ids": [
-    "chakra_given",
+    "chakra_given"
+   ],
+   "characters": [
+    "shiva",
+    "vishnu"
+   ],
+   "names_introduced": []
+  },
+  {
+   "id": "B28",
+   "chapter": "C3",
+   "reel": "C",
+   "intent": "the disc's two circles, 108 edges, power against every crisis; named Sudarshana",
+   "roles": [
+    "payoff"
+   ],
+   "budget_sec": 22,
+   "emotion": {
+    "hi": "दृढ़",
+    "en": ""
+   },
+   "cue_ids": [
+    "chakra_wheels",
     "name_sudarshana"
    ],
    "characters": [
@@ -796,7 +825,7 @@
    ]
   },
   {
-   "id": "B28",
+   "id": "B29",
    "chapter": "C3",
    "reel": "C",
    "intent": "recap, resolved closing line, comment question (no tease)",
@@ -805,7 +834,7 @@
     "bridge",
     "question"
    ],
-   "budget_sec": 15,
+   "budget_sec": 14,
    "emotion": {
     "hi": "शांत",
     "en": ""
@@ -816,8 +845,7 @@
     "vishnu"
    ],
    "names_introduced": [
-    "bala",
-    "vishnu"
+    "bala"
    ]
   }
  ]
