@@ -8,7 +8,7 @@ Format: first-frame text (2-4 words) | full title. Claims are checked against th
 5. Reel 4, story 07 (SCRIPTED, Reel04): "Narada's Maya Test" | Narada Asked Vishnu What Maya Is. Then This Happened
 6. Reel 5, story 03 (SCRIPTED, Reel05): "Shiva Born From Anger" | How Was Shiva Born From Brahma's Anger?
 7. Reel 6, story 10 (SCRIPTED, Reel06): "Why Say Swaha?" | Why Does Every Offering to Agni End With Swaha?
-8. Reel 7, story 09 (SCRIPTED, Reel07): "Daksha Cursed Narada" | Why Did Daksha Curse Narada? (alts: Narada Spoke to Daksha's Sons. Then They Vanished | "6,000 Sons Vanished": Daksha Lost Six Thousand Sons to One Conversation)
+8. Reel 7, story 09 (SCRIPTED, Reel07): "Daksha Cursed Narada" | Why Did Daksha Curse Narada to Never Find a Home? (alts: Narada Spoke to Daksha's Sons. Then They Vanished | "6,000 Sons Vanished": Daksha Lost Six Thousand Sons to One Conversation)
 
 ---
 (older candidate list below, for reference)

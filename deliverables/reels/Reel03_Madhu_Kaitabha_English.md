@@ -34,4 +34,4 @@ When one brother tired, the other took over. Vishnu saw strength would never win
 9. Closing exchange: "Perhaps I did nothing. Perhaps Brahmanda saved itself through me." (Brahmanda rendered as "the universe").
 
 ## Why it works
-Context and the five-thousand-year number land in line 1, the lean is a surprising gift, and the snapback tells the viewer the trap is coming without saying how. Step by step: demand, boon, bigger demand, twist. Ends on Vishnu's open line that invites comments. Left out: the closing hint of more trouble for Brahma and the twelve seismic plates, to keep the story clean.
+Context and the five-thousand-year number land in line 1, the lean is a surprising gift, and the snapback "But the gift was never for them." signals a trap without saying how. Step by step: demand, boon, bigger demand, twist. Ends on Vishnu's open line that invites comments. Left out: the closing hint of more trouble for Brahma and the twelve seismic plates, to keep the story clean.
