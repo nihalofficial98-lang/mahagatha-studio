@@ -1,0 +1,5728 @@
+{
+ "episode": "reel04",
+ "format": "vertical",
+ "shots": [
+  {
+   "id": "s01",
+   "beat": 1,
+   "start": {
+    "t": 0.16,
+    "word": "Narada"
+   },
+   "duration": 1.96,
+   "narration": "Narada, a great sage,",
+   "meaning": "Narada is a great sage, the one who will ask the question.",
+   "why": "Narada stands with his veena in Vishnu's bright blue-gold hall below the title card; he lifts his hand in greeting on 'sage' as soft rays fall on him.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "slow push in to meet the hero of the story"
+   },
+   "focus": {
+    "subject": "narada",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "narada"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#eaf0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Vishnu's hall framing the figure",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "mood": {
+    "emotion": "wonder",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "narada",
+     "x": 640,
+     "y": 688,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 640,
+     "mood": {
+      "smile": 0.4
+     },
+     "actions": [
+      {
+       "word": "sage",
+       "pose": "open",
+       "emo": "joy",
+       "e": "spring",
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "divine_rays",
+     "x": 640,
+     "y": 80,
+     "w": 700,
+     "alpha": 0.35,
+     "blend": "lighter",
+     "par": 0.2,
+     "behind": true,
+     "meaning": "the light of Vaikuntha where the sage stands"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s02",
+   "beat": 1,
+   "start": {
+    "t": 2.12,
+    "word": "asked"
+   },
+   "duration": 3.44,
+   "narration": "asked Vishnu, the preserver, what Maya is.",
+   "meaning": "Narada asks Vishnu, the preserver, what Maya is.",
+   "why": "The window pans from Narada, hands raised in a question, to blue Vishnu, who turns to him with a knowing smile as 'Maya' is said and a violet glow stirs behind him.",
+   "camera": {
+    "shot": "two_shot",
+    "lens": "normal",
+    "move": "pan_right",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "the pan carries the question from Narada to Vishnu"
+   },
+   "focus": {
+    "subject": "vishnu",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     540,
+     760
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#eaf0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "gold pillars behind the sage and the god",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 390,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 910,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 440,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 880,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 700,
+    "sy": 190
+   },
+   "mood": {
+    "emotion": "curiosity",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "narada",
+     "x": 530,
+     "y": 605,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "doubt",
+     "talk": 0.6,
+     "look": "vishnu",
+     "actions": [
+      {
+       "word": "asked",
+       "pose": "plead",
+       "emo": "doubt",
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "vishnu",
+     "x": 770,
+     "y": 605,
+     "s": 1.0,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": "narada",
+     "actions": [
+      {
+       "word": "Maya",
+       "emo": "joy",
+       "mood": {
+        "smile": 0.8,
+        "lx": -0.4
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "Maya",
+     "x": 770,
+     "y": 330,
+     "r": 220,
+     "rgb": "200,170,255",
+     "ga": 0.5,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the mystery of Maya, a soft violet light behind Vishnu"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s03",
+   "beat": 1,
+   "start": {
+    "t": 5.56,
+    "word": "Vishnu"
+   },
+   "duration": 2.9,
+   "narration": "Vishnu did not explain. He asked for water.",
+   "meaning": "Vishnu did not explain Maya; instead he asked for water.",
+   "why": "Close on Vishnu: he gives no lecture, only a calm smile; on 'water' he opens his hand and a small drop of blue light rises in his palm.",
+   "camera": {
+    "shot": "close",
+    "lens": "tele",
+    "move": "static",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "stillness: the god says nothing and simply asks"
+   },
+   "focus": {
+    "subject": "vishnu",
+    "depth": "shallow"
+   },
+   "vertical": {
+    "focus": "vishnu",
+    "z": 1.25,
+    "y": 0.4
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#eaf0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 810,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 770,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Vishnu's hall framing the figure",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 820,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 665,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.6
+     },
+     "look": 640,
+     "actions": [
+      {
+       "word": "explain",
+       "mood": {
+        "smile": 0.8,
+        "blink": 0.4
+       },
+       "tilt": 0.04,
+       "d": 0.6
+      },
+      {
+       "word": "water",
+       "pose": "open",
+       "emo": "calm",
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "water",
+     "x": 560,
+     "y": 470,
+     "r": 90,
+     "rgb": "140,210,255",
+     "ga": 0.7,
+     "par": 1.0,
+     "meaning": "the water he asks for, a drop of blue light in his hand"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s04",
+   "beat": 1,
+   "start": {
+    "t": 8.46,
+    "word": "Narada"
+   },
+   "duration": 3.38,
+   "narration": "Narada never brought it, and that was the answer.",
+   "meaning": "Narada never brought the water, and that failure was itself the answer.",
+   "why": "Narada stands alone with empty open hands in a hall turning violet; on 'answer' a pale halo ring opens behind him, the riddle he does not yet understand.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "pulling back leaves him small with the unanswered errand"
+   },
+   "focus": {
+    "subject": "narada",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "narada"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#ece4fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#f8f4ff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#f8f4ff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Vishnu's hall framing the figure",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e0c890",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e0c890",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 200,
+    "change": {
+     "word": "answer",
+     "bg2": {
+      "k": "cloudscape",
+      "sky": [
+       "#3a2a7a",
+       "#7a6ac0",
+       "#c8b8ec",
+       "#f4ecff"
+      ],
+      "sx": 640,
+      "sy": 200
+     },
+     "d": 1.0
+    }
+   },
+   "mood": {
+    "emotion": "mystery",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "narada",
+     "x": 640,
+     "y": 626,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "open",
+     "emo": "doubt",
+     "look": 640,
+     "actions": [
+      {
+       "word": "never",
+       "emo": "shame",
+       "mood": {
+        "ly": 0.6
+       },
+       "d": 0.6
+      },
+      {
+       "word": "answer",
+       "emo": "surprise",
+       "mood": {
+        "ly": -0.3
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "halo_ring",
+     "word": "answer",
+     "x": 640,
+     "y": 330,
+     "w": 460,
+     "alpha": 0.45,
+     "blend": "lighter",
+     "par": 0.9,
+     "behind": true,
+     "meaning": "the hidden answer glowing behind him"
+    }
+   ],
+   "transition_in": "iris"
+  },
+  {
+   "id": "s05",
+   "beat": 1,
+   "start": {
+    "t": 11.84,
+    "word": "Narada"
+   },
+   "duration": 2.88,
+   "narration": "Narada had come to Vaikuntha, Vishnu's home,",
+   "meaning": "Narada had come to Vaikuntha, Vishnu's home.",
+   "why": "Wide on Vaikuntha: a gold temple gateway shines on the clouds and Narada walks in with his veena; the name plate appears as 'Vaikuntha' is said.",
+   "camera": {
+    "shot": "establishing",
+    "lens": "wide",
+    "move": "crane_down",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -24,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "descending from the sky of Vaikuntha to the arriving sage"
+   },
+   "focus": {
+    "subject": "narada",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     600,
+     660
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "cloud banks and pale peaks around Vishnu's home",
+     "fog": 0.55,
+     "haze": "#eef2fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 500,
+       "s": 1.1,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 500,
+       "s": 0.9,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Vishnu's hall framing the figure",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 480
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 480
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 460,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 200
+   },
+   "mood": {
+    "emotion": "arrival",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "narada",
+     "x": 560,
+     "y": 601,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": 700,
+     "walk": {
+      "word": "come",
+      "to_x": 640,
+      "d": 1.6,
+      "speed": 1
+     },
+     "actions": [
+      {
+       "word": "Vaikuntha",
+       "emo": "joy",
+       "mood": {
+        "ly": -0.4,
+        "smile": 0.7
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "palace_gate",
+     "x": 640,
+     "y": 420,
+     "w": 250,
+     "alpha": 0.85,
+     "par": 0.4,
+     "behind": true,
+     "meaning": "the gateway of Vaikuntha, Vishnu's home"
+    },
+    {
+     "k": "name",
+     "word": "Vaikuntha",
+     "s": "Vaikuntha",
+     "x": 640,
+     "y": 130,
+     "size": 30,
+     "meaning": "the name of Vishnu's home on screen when it is spoken"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s06",
+   "beat": 1,
+   "start": {
+    "t": 14.72,
+    "word": "to"
+   },
+   "duration": 3.78,
+   "narration": "to tell him how his curse had come true on his father, Brahma.",
+   "meaning": "He had come to tell Vishnu how his curse had come true on his own father, Brahma.",
+   "why": "Narada talks eagerly with an open hand; behind him a faint memory of Brahma glows in a rose light, the father his curse came true on.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "push in as he gets to the news he came to tell"
+   },
+   "focus": {
+    "subject": "narada",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "narada",
+    "z": 1.1,
+    "y": 0.46
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#f4e6ee",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#fff4f4"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#fff4f4"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Vishnu's hall framing the figure",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 840,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a4aa8",
+     "#8a9ae0",
+     "#f0c8d0",
+     "#fff2ec"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "mood": {
+    "emotion": "telling",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 790,
+     "y": 407,
+     "s": 0.62,
+     "flip": -1,
+     "pose": "stand",
+     "lotus": false,
+     "emo": "sad",
+     "look": "narada",
+     "engine": {
+      "a": 0.45
+     },
+     "actions": [
+      {
+       "word": "curse",
+       "emo": "grief",
+       "mood": {
+        "ly": 0.5
+       },
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "narada",
+     "x": 600,
+     "y": 665,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "pride",
+     "talk": 0.7,
+     "look": 900,
+     "actions": [
+      {
+       "word": "tell",
+       "pose": "open",
+       "emo": "joy",
+       "d": 0.6
+      },
+      {
+       "word": "curse",
+       "pose": "point",
+       "emo": "pride",
+       "e": "spring",
+       "d": 0.5
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "curse",
+     "x": 790,
+     "y": 380,
+     "r": 200,
+     "rgb": "255,140,150",
+     "ga": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the curse that came true on Brahma, a rose-red memory light"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s07",
+   "beat": 1,
+   "start": {
+    "t": 18.5,
+    "word": "Vishnu"
+   },
+   "duration": 3.1,
+   "narration": "Vishnu smiled and said it was all Maya.",
+   "meaning": "Vishnu smiled and said that it was all Maya.",
+   "why": "Vishnu smiles knowingly; on 'Maya' a violet swirl of light turns behind him and the sky softens to violet.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "tilt_up",
+    "from": {
+     "z": 1.05,
+     "x": 0,
+     "y": 16,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "tilt up to the god who knows the secret"
+   },
+   "focus": {
+    "subject": "vishnu",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "vishnu"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#ece4fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Vishnu's hall framing the figure",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 190,
+    "change": {
+     "word": "Maya",
+     "bg2": {
+      "k": "cloudscape",
+      "sky": [
+       "#2a3f9e",
+       "#6a8ae0",
+       "#d8c8f4",
+       "#fff2e0"
+      ],
+      "sx": 640,
+      "sy": 190
+     },
+     "d": 1.0
+    }
+   },
+   "mood": {
+    "emotion": "knowing",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 629,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "talk": 0.5,
+     "look": 540,
+     "actions": [
+      {
+       "word": "smiled",
+       "emo": "joy",
+       "mood": {
+        "smile": 0.9,
+        "lx": -0.4
+       },
+       "d": 0.6
+      },
+      {
+       "word": "Maya",
+       "pose": "open",
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "energy_swirl",
+     "word": "Maya",
+     "x": 640,
+     "y": 330,
+     "w": 460,
+     "alpha": 0.55,
+     "blend": "lighter",
+     "par": 0.9,
+     "behind": true,
+     "meaning": "Maya, the turning illusion, as a violet swirl of light"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s08",
+   "beat": 1,
+   "start": {
+    "t": 21.6,
+    "word": "Narada"
+   },
+   "duration": 1.94,
+   "narration": "Narada asked what that meant.",
+   "meaning": "Narada asked what that meant.",
+   "why": "Close on Narada's face: brows knit in doubt, head tilted, eyes on Vishnu as he asks.",
+   "camera": {
+    "shot": "close",
+    "lens": "tele",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "push in on his confusion"
+   },
+   "focus": {
+    "subject": "narada",
+    "depth": "shallow"
+   },
+   "vertical": {
+    "focus": "narada"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#e8ecf8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Vishnu's hall framing the figure",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a3f9e",
+     "#6a8ae0",
+     "#d8c8f4",
+     "#fff2e0"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "mood": {
+    "emotion": "doubt",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "narada",
+     "x": 640,
+     "y": 360,
+     "s": 1.15,
+     "flip": 1,
+     "head": true,
+     "emo": "doubt",
+     "talk": 0.6,
+     "look": 900,
+     "actions": [
+      {
+       "word": "meant",
+       "emo": "surprise",
+       "tilt": 0.07,
+       "d": 0.5
+      }
+     ]
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s09",
+   "beat": 1,
+   "start": {
+    "t": 23.54,
+    "word": "Vishnu"
+   },
+   "duration": 1.78,
+   "narration": "Vishnu said he was thirsty.",
+   "meaning": "Vishnu said he was thirsty.",
+   "why": "Vishnu, still smiling, opens his empty hand toward Narada as he says he is thirsty, his eyes on the sage.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "dolly_left",
+    "from": {
+     "z": 1.05,
+     "x": 12,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": -12,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a sideways drift as the god changes the subject"
+   },
+   "focus": {
+    "subject": "vishnu",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "vishnu",
+    "z": 1.1,
+    "y": 0.42
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#eaf0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Vishnu's hall framing the figure",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 460,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 700,
+    "sy": 190
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "vishnu",
+     "x": 650,
+     "y": 643,
+     "s": 1.0,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.7
+     },
+     "talk": 0.6,
+     "look": 420,
+     "actions": [
+      {
+       "word": "thirsty",
+       "pose": "open",
+       "emo": "calm",
+       "mood": {
+        "smile": 0.5,
+        "ly": 0.2
+       },
+       "tilt": -0.04,
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s10",
+   "beat": 1,
+   "start": {
+    "t": 25.32,
+    "word": "He"
+   },
+   "duration": 3.52,
+   "narration": "He told Narada to fetch some water, and then he would answer.",
+   "meaning": "Vishnu told Narada to fetch some water; then he would answer.",
+   "why": "The window pans from Vishnu pointing out of his hall on 'fetch' to Narada, who bows with folded hands on 'answer', ready to go.",
+   "camera": {
+    "shot": "two_shot",
+    "lens": "normal",
+    "move": "pan_left",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "the pan follows the errand from the god to the sage"
+   },
+   "focus": {
+    "subject": "narada",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     750,
+     550
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#eaf0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "gold pillars behind both",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 400,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 900,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 440,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 880,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "mood": {
+    "emotion": "errand",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "vishnu",
+     "x": 760,
+     "y": 605,
+     "s": 1.0,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "talk": 0.6,
+     "look": "narada",
+     "actions": [
+      {
+       "word": "fetch",
+       "pose": "point",
+       "emo": "joy",
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "narada",
+     "x": 540,
+     "y": 605,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": "vishnu",
+     "actions": [
+      {
+       "word": "water",
+       "emo": "joy",
+       "mood": {
+        "smile": 0.6
+       },
+       "d": 0.5
+      },
+      {
+       "word": "answer",
+       "pose": "namaste",
+       "emo": "devotion",
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s11",
+   "beat": 1,
+   "start": {
+    "t": 28.84,
+    "word": "Narada"
+   },
+   "duration": 2.1,
+   "narration": "Narada walked to the river outside.",
+   "meaning": "Narada walked out of Vaikuntha to the river outside.",
+   "why": "A bright morning river valley: Narada walks along the sandy bank with his veena, the blue river winding behind him.",
+   "camera": {
+    "shot": "wide",
+    "lens": "wide",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "the dolly travels with him to the river"
+   },
+   "focus": {
+    "subject": "narada",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     560,
+     660
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "hill",
+       "x": 500,
+       "y": 470,
+       "s": 1.0,
+       "w": 380,
+       "h": 90,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "hill",
+       "x": 800,
+       "y": 480,
+       "s": 1.0,
+       "w": 340,
+       "h": 70,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "the sandy river bank with a banyan and a palm",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 610,
+       "s": 0.8,
+       "kind": "banyan",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "tree",
+       "x": 860,
+       "y": 605,
+       "s": 0.75,
+       "kind": "palm",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 650,
+       "s": 1.0,
+       "w": 620,
+       "h": 50,
+       "col": "#f4dca8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark blurred reeds and shrubs in the bottom corners",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 840,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#2f6ad0",
+     "#7ab8f0",
+     "#ffe6c4",
+     "#fff8ea"
+    ],
+    "sx": 700,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "river": "#5ab8e8",
+    "haze": "240,246,255"
+   },
+   "mood": {
+    "emotion": "journey",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "narada",
+     "x": 520,
+     "y": 611,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.4
+     },
+     "look": 800,
+     "walk": {
+      "word": "walked",
+      "to_x": 680,
+      "d": 1.8,
+      "speed": 1
+     },
+     "actions": [
+      {
+       "word": "river",
+       "emo": "joy",
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [],
+   "transition_in": "wipe"
+  },
+  {
+   "id": "s12",
+   "beat": 1,
+   "start": {
+    "t": 30.94,
+    "word": "By"
+   },
+   "duration": 2.42,
+   "narration": "By the bank, he saw a young woman.",
+   "meaning": "By the river bank Narada saw a young woman.",
+   "why": "The window pans from Narada, who stops in surprise, to the young woman in a rose sari standing by the water.",
+   "camera": {
+    "shot": "two_shot",
+    "lens": "normal",
+    "move": "pan_right",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "the pan follows his gaze to her"
+   },
+   "focus": {
+    "subject": "kanya",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     540,
+     760
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "hill",
+       "x": 540,
+       "y": 470,
+       "s": 1.0,
+       "w": 380,
+       "h": 90,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "hill",
+       "x": 800,
+       "y": 480,
+       "s": 1.0,
+       "w": 340,
+       "h": 70,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "cloud",
+       "x": 580,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "the bank with a flowering tree behind her and a palm",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "tree",
+       "x": 400,
+       "y": 605,
+       "s": 0.75,
+       "kind": "palm",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 610,
+       "s": 0.85,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#ff9ac0"
+      },
+      {
+       "o": "hill",
+       "x": 660,
+       "y": 650,
+       "s": 1.0,
+       "w": 620,
+       "h": 50,
+       "col": "#f4dca8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark blurred reeds and shrubs in the bottom corners",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 430,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 900,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#2f6ad0",
+     "#7ab8f0",
+     "#ffe6c4",
+     "#fff8ea"
+    ],
+    "sx": 760,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "river": "#5ab8e8",
+    "haze": "240,246,255"
+   },
+   "mood": {
+    "emotion": "enchantment",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "narada",
+     "x": 530,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": "kanya",
+     "actions": [
+      {
+       "word": "saw",
+       "emo": "surprise",
+       "mood": {
+        "surp": 0.7
+       },
+       "d": 0.5
+      }
+     ]
+    },
+    {
+     "who": "kanya",
+     "x": 770,
+     "y": 612,
+     "s": 0.98,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": "narada",
+     "mood": {
+      "smile": 0.5,
+      "ly": 0.3
+     },
+     "actions": [
+      {
+       "word": "woman",
+       "mood": {
+        "smile": 0.6,
+        "ly": 0.4,
+        "lx": -0.4
+       },
+       "tilt": 0.05,
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s13",
+   "beat": 1,
+   "start": {
+    "t": 33.36,
+    "word": "She"
+   },
+   "duration": 1.24,
+   "narration": "She was so lovely",
+   "meaning": "She was so lovely.",
+   "why": "Close on her face: a shy smile, eyes lowered, a warm rose glow and a halo of light behind her head.",
+   "camera": {
+    "shot": "close",
+    "lens": "tele",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "push in as he is drawn to her"
+   },
+   "focus": {
+    "subject": "kanya",
+    "depth": "shallow"
+   },
+   "vertical": {
+    "focus": "kanya"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "hill",
+       "x": 520,
+       "y": 470,
+       "s": 1.0,
+       "w": 380,
+       "h": 90,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "hill",
+       "x": 780,
+       "y": 480,
+       "s": 1.0,
+       "w": 340,
+       "h": 70,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "pink blossoms of a flowering tree beside her",
+     "fog": 0.25,
+     "items": [
+      {
+       "o": "tree",
+       "x": 470,
+       "y": 600,
+       "s": 0.85,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#ff9ac0"
+      },
+      {
+       "o": "tree",
+       "x": 830,
+       "y": 610,
+       "s": 0.8,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#ffd0e0"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#3a78d0",
+     "#8ac4f0",
+     "#ffd8e4",
+     "#fff6f4"
+    ],
+    "sx": 640,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "river": "#5ab8e8",
+    "haze": "240,246,255"
+   },
+   "mood": {
+    "emotion": "love",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "kanya",
+     "x": 640,
+     "y": 360,
+     "s": 1.15,
+     "flip": -1,
+     "head": true,
+     "emo": "calm",
+     "mood": {
+      "smile": 0.6,
+      "ly": 0.4,
+      "lx": -0.4
+     },
+     "actions": [
+      {
+       "word": "lovely",
+       "emo": "joy",
+       "mood": {
+        "smile": 0.8,
+        "ly": 0.5,
+        "lx": -0.5
+       },
+       "tilt": 0.05,
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "lovely",
+     "x": 640,
+     "y": 330,
+     "r": 260,
+     "rgb": "255,190,200",
+     "ga": 0.5,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "her loveliness as a warm rose light"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s14",
+   "beat": 1,
+   "start": {
+    "t": 34.6,
+    "word": "that"
+   },
+   "duration": 3.3,
+   "narration": "that he forgot Vishnu, his errand, and his thirst.",
+   "meaning": "He forgot Vishnu, his errand and his own thirst.",
+   "why": "Narada gazes at her with a dreamy smile while a faint image of Vishnu behind him fades into mist on 'Vishnu' and is gone by 'thirst'.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "pulling back as the memory of Vishnu drifts away"
+   },
+   "focus": {
+    "subject": "narada",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "narada"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "hill",
+       "x": 520,
+       "y": 470,
+       "s": 1.0,
+       "w": 380,
+       "h": 90,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "hill",
+       "x": 800,
+       "y": 480,
+       "s": 1.0,
+       "w": 340,
+       "h": 70,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "the sandy river bank with a banyan and a palm",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "tree",
+       "x": 440,
+       "y": 610,
+       "s": 0.8,
+       "kind": "banyan",
+       "col": "#2e7a44",
+       "flowers": "#ff9ac0"
+      },
+      {
+       "o": "tree",
+       "x": 850,
+       "y": 605,
+       "s": 0.75,
+       "kind": "palm",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 650,
+       "s": 1.0,
+       "w": 620,
+       "h": 50,
+       "col": "#f4dca8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark blurred reeds and shrubs in the bottom corners",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 460,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#3a78d0",
+     "#8ac4f0",
+     "#ffd8e4",
+     "#fff6f4"
+    ],
+    "sx": 700,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "river": "#5ab8e8",
+    "haze": "240,246,255"
+   },
+   "mood": {
+    "emotion": "enchantment",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "vishnu",
+     "x": 760,
+     "y": 415,
+     "s": 0.6,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.6
+     },
+     "look": "narada",
+     "engine": {
+      "a": 0.5,
+      "fd": 1.6
+     },
+     "engine_cues": {
+      "fo": "Vishnu"
+     }
+    },
+    {
+     "who": "narada",
+     "x": 610,
+     "y": 631,
+     "s": 1.02,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "smile": 0.8,
+      "ly": -0.1
+     },
+     "look": 900,
+     "actions": [
+      {
+       "word": "forgot",
+       "mood": {
+        "smile": 1,
+        "blink": 0.5
+       },
+       "tilt": 0.06,
+       "d": 0.7
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "forgot",
+     "x": 740,
+     "y": 380,
+     "w": 420,
+     "alpha": 0.7,
+     "par": 1.0,
+     "meaning": "mist swallowing the memory of Vishnu and the errand"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s15",
+   "beat": 1,
+   "start": {
+    "t": 37.9,
+    "word": "He"
+   },
+   "duration": 1.6,
+   "narration": "He married her right there and",
+   "meaning": "He married her right there by the river.",
+   "why": "Narada, now a householder in a yellow shawl, and the young woman fold their hands to each other as husband and wife inside a ring of marigold light.",
+   "camera": {
+    "shot": "two_shot",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "push in on the vow"
+   },
+   "focus": {
+    "subject": "narada_g",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     640,
+     660
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "hill",
+       "x": 520,
+       "y": 470,
+       "s": 1.0,
+       "w": 380,
+       "h": 90,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "hill",
+       "x": 780,
+       "y": 480,
+       "s": 1.0,
+       "w": 340,
+       "h": 70,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two flowering trees on the river bank",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "tree",
+       "x": 440,
+       "y": 600,
+       "s": 0.85,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#f0a020"
+      },
+      {
+       "o": "tree",
+       "x": 850,
+       "y": 605,
+       "s": 0.8,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#ff9ac0"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 650,
+       "s": 1.0,
+       "w": 620,
+       "h": 50,
+       "col": "#f4dca8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark blurred reeds and shrubs in the bottom corners",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 460,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#3a78d0",
+     "#8ac4f0",
+     "#ffd8e4",
+     "#fff6f4"
+    ],
+    "sx": 700,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "river": "#5ab8e8",
+    "haze": "240,246,255"
+   },
+   "mood": {
+    "emotion": "marriage",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "narada_g",
+     "x": 570,
+     "y": 612,
+     "s": 0.98,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "kanya",
+     "actions": [
+      {
+       "word": "married",
+       "pose": "namaste",
+       "emo": "joy",
+       "mood": {
+        "smile": 0.9
+       },
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "kanya",
+     "x": 730,
+     "y": 612,
+     "s": 0.96,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "narada_g",
+     "mood": {
+      "smile": 0.7,
+      "ly": 0.3
+     },
+     "actions": [
+      {
+       "word": "married",
+       "pose": "namaste",
+       "emo": "joy",
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "halo_ring",
+     "word": "married",
+     "x": 650,
+     "y": 360,
+     "w": 520,
+     "alpha": 0.45,
+     "blend": "lighter",
+     "par": 0.9,
+     "behind": true,
+     "meaning": "the sacred ring of the marriage vow"
+    },
+    {
+     "k": "glow",
+     "word": "married",
+     "x": 650,
+     "y": 400,
+     "r": 260,
+     "rgb": "255,200,110",
+     "ga": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "marigold light of the wedding"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s16",
+   "beat": 1,
+   "start": {
+    "t": 39.5,
+    "word": "built"
+   },
+   "duration": 2.22,
+   "narration": "built a house on the sand by the river.",
+   "meaning": "He built a house on the sand by the river.",
+   "why": "Wide: a thatched mud house stands on the sand with the river behind it; Narada opens his arms to show it and his wife smiles at the door.",
+   "camera": {
+    "shot": "wide",
+    "lens": "wide",
+    "move": "crane_up",
+    "from": {
+     "z": 1.06,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "crane up to show the new home and the river"
+   },
+   "focus": {
+    "subject": "narada_g",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     600,
+     660
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "hill",
+       "x": 500,
+       "y": 470,
+       "s": 1.0,
+       "w": 380,
+       "h": 90,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "hill",
+       "x": 800,
+       "y": 480,
+       "s": 1.0,
+       "w": 340,
+       "h": 70,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "the thatched house on the sand with a palm beside it",
+     "fog": 0.12,
+     "items": [
+      {
+       "o": "hut",
+       "x": 650,
+       "y": 600,
+       "s": 1.05
+      },
+      {
+       "o": "tree",
+       "x": 860,
+       "y": 600,
+       "s": 0.75,
+       "kind": "palm",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 620,
+       "h": 40,
+       "col": "#f4dca8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark blurred reeds and shrubs in the bottom corners",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 840,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#2f6ad0",
+     "#7ab8f0",
+     "#ffe6c4",
+     "#fff8ea"
+    ],
+    "sx": 760,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "river": "#5ab8e8",
+    "haze": "240,246,255"
+   },
+   "mood": {
+    "emotion": "home",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "narada_g",
+     "x": 560,
+     "y": 618,
+     "s": 0.85,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": 700,
+     "actions": [
+      {
+       "word": "house",
+       "pose": "open",
+       "emo": "joy",
+       "e": "spring",
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "kanya",
+     "x": 740,
+     "y": 618,
+     "s": 0.82,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "narada_g",
+     "mood": {
+      "smile": 0.7
+     },
+     "actions": [
+      {
+       "word": "sand",
+       "mood": {
+        "smile": 0.9,
+        "ly": -0.2
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "embers",
+     "word": "house",
+     "x": 650,
+     "y": 420,
+     "w": 380,
+     "alpha": 0.4,
+     "blend": "lighter",
+     "par": 1.0,
+     "rgb": "255,230,160",
+     "meaning": "warm motes of light over the new home"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s17",
+   "beat": 1,
+   "start": {
+    "t": 41.72,
+    "word": "Years"
+   },
+   "duration": 1.2,
+   "narration": "Years passed.",
+   "meaning": "Years passed.",
+   "why": "The same house through the seasons: pink spring blossoms drift down, then on 'passed' the sky turns to golden autumn and the light deepens.",
+   "camera": {
+    "shot": "wide",
+    "lens": "wide",
+    "move": "dolly_left",
+    "from": {
+     "z": 1.02,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow drift like time going by"
+   },
+   "focus": {
+    "subject": "hut",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     660,
+     620
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "hill",
+       "x": 500,
+       "y": 470,
+       "s": 1.0,
+       "w": 380,
+       "h": 90,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "hill",
+       "x": 800,
+       "y": 480,
+       "s": 1.0,
+       "w": 340,
+       "h": 70,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "the house with a blossom tree and an autumn tree beside it",
+     "fog": 0.12,
+     "items": [
+      {
+       "o": "tree",
+       "x": 470,
+       "y": 610,
+       "s": 0.8,
+       "kind": "round",
+       "col": "#3a8a4a",
+       "flowers": "#ff9ac0"
+      },
+      {
+       "o": "hut",
+       "x": 650,
+       "y": 610,
+       "s": 1.0,
+       "lamp": true
+      },
+      {
+       "o": "tree",
+       "x": 830,
+       "y": 615,
+       "s": 0.8,
+       "kind": "round",
+       "col": "#d0802a"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 670,
+       "s": 1.0,
+       "w": 620,
+       "h": 40,
+       "col": "#f4dca8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark blurred reeds and shrubs in the bottom corners",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 748,
+       "s": 1.5,
+       "col": "#5a4a2a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 840,
+       "y": 750,
+       "s": 1.4,
+       "col": "#5a4a2a"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#3a78d0",
+     "#8ac4f0",
+     "#ffd8e4",
+     "#fff6f4"
+    ],
+    "sx": 700,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "river": "#5ab8e8",
+    "haze": "240,246,255",
+    "change": {
+     "word": "passed",
+     "bg2": {
+      "k": "vista",
+      "sky": [
+       "#3a58b0",
+       "#d88a5a",
+       "#ffc070",
+       "#fff0cc"
+      ],
+      "sx": 700,
+      "sy": 230,
+      "ridge": [
+       "#a8c4e4",
+       "#8ab4cc",
+       "#6aa08a",
+       "#4a8064"
+      ],
+      "river": "#5ab8e8",
+      "haze": "240,246,255"
+     },
+     "d": 0.9
+    }
+   },
+   "mood": {
+    "emotion": "time passing",
+    "grade": "warm"
+   },
+   "characters": [],
+   "effects": [
+    {
+     "k": "petals",
+     "word": "Years",
+     "x": 640,
+     "y": 120,
+     "n": 14,
+     "sp": 40,
+     "len": 520,
+     "meaning": "blossoms falling as the seasons turn"
+    },
+    {
+     "k": "glow",
+     "word": "passed",
+     "x": 650,
+     "y": 470,
+     "r": 160,
+     "rgb": "255,200,120",
+     "ga": 0.45,
+     "par": 1.0,
+     "meaning": "the lamp of the house glowing through the years"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s18",
+   "beat": 1,
+   "start": {
+    "t": 42.92,
+    "word": "Narada"
+   },
+   "duration": 2.9,
+   "narration": "Narada became a father, then a grandfather.",
+   "meaning": "Narada became a father, then a grandfather.",
+   "why": "Narada stands with his son and daughter; on 'grandfather' he cross-fades into the white-bearded old man and two small grandchildren appear at his side.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "push in on the growing family"
+   },
+   "focus": {
+    "subject": "narada_g",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     650,
+     650
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "fog": 0.55,
+     "haze": "#fbf0e0",
+     "items": [
+      {
+       "o": "hill",
+       "x": 520,
+       "y": 470,
+       "s": 1.0,
+       "w": 380,
+       "h": 90,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "hill",
+       "x": 790,
+       "y": 480,
+       "s": 1.0,
+       "w": 340,
+       "h": 70,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "the house behind the family",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hut",
+       "x": 820,
+       "y": 600,
+       "s": 0.9,
+       "lamp": true
+      },
+      {
+       "o": "tree",
+       "x": 440,
+       "y": 605,
+       "s": 0.75,
+       "kind": "round",
+       "col": "#c88a2a"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 620,
+       "h": 40,
+       "col": "#f4dca8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark blurred reeds and shrubs in the bottom corners",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 460,
+       "y": 748,
+       "s": 1.5,
+       "col": "#5a4a2a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#5a4a2a"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#3a58b0",
+     "#d88a5a",
+     "#ffc070",
+     "#fff0cc"
+    ],
+    "sx": 700,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "river": "#5ab8e8",
+    "haze": "240,246,255"
+   },
+   "mood": {
+    "emotion": "family",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "narada_g",
+     "x": 620,
+     "y": 610,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "balak",
+     "engine_cues": {
+      "fo": "grandfather"
+     },
+     "engine": {
+      "fd": 0.8
+     },
+     "actions": [
+      {
+       "word": "father",
+       "pose": "open",
+       "emo": "joy",
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "narada_old",
+     "x": 620,
+     "y": 610,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "open",
+     "emo": "joy",
+     "look": "balak",
+     "engine_cues": {
+      "ac": "grandfather"
+     },
+     "engine": {
+      "ad": 0.8
+     }
+    },
+    {
+     "who": "balak",
+     "x": 745,
+     "y": 604,
+     "s": 0.62,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "narada_g",
+     "actions": [
+      {
+       "word": "father",
+       "pose": "open",
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "balika",
+     "x": 510,
+     "y": 598,
+     "s": 0.6,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "narada_g",
+     "actions": [
+      {
+       "word": "father",
+       "mood": {
+        "smile": 1
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "word": "grandfather",
+     "x": 620,
+     "y": 380,
+     "r": 220,
+     "rgb": "255,225,170",
+     "ga": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the years turning the father into a grandfather"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s19",
+   "beat": 1,
+   "start": {
+    "t": 45.82,
+    "word": "The"
+   },
+   "duration": 2.66,
+   "narration": "The house had become his whole world.",
+   "meaning": "The house had become his whole world.",
+   "why": "Old Narada stands before his lamp-lit house with his wife and the children around him; a warm ring of light circles the house: everything he has is here.",
+   "camera": {
+    "shot": "wide",
+    "lens": "wide",
+    "move": "pull_out",
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "pull out until the house is the whole picture of his life"
+   },
+   "focus": {
+    "subject": "narada_old",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     640,
+     640
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "fog": 0.55,
+     "haze": "#fbf0e0",
+     "items": [
+      {
+       "o": "hill",
+       "x": 500,
+       "y": 470,
+       "s": 1.0,
+       "w": 380,
+       "h": 90,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "hill",
+       "x": 800,
+       "y": 480,
+       "s": 1.0,
+       "w": 340,
+       "h": 70,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "the lamp-lit house on the sand",
+     "fog": 0.12,
+     "items": [
+      {
+       "o": "hut",
+       "x": 640,
+       "y": 590,
+       "s": 1.05,
+       "lamp": true
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 620,
+       "h": 40,
+       "col": "#f4dca8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark blurred reeds and shrubs in the bottom corners",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 748,
+       "s": 1.5,
+       "col": "#4a5a2a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#4a5a2a"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#3a58b0",
+     "#d88a5a",
+     "#ffc070",
+     "#fff0cc"
+    ],
+    "sx": 640,
+    "sy": 260,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "river": "#5ab8e8",
+    "haze": "240,246,255"
+   },
+   "mood": {
+    "emotion": "contentment",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "narada_old",
+     "x": 580,
+     "y": 615,
+     "s": 0.85,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "kanya",
+     "actions": [
+      {
+       "word": "world",
+       "pose": "open",
+       "emo": "joy",
+       "mood": {
+        "smile": 1
+       },
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "kanya",
+     "x": 700,
+     "y": 615,
+     "s": 0.82,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "narada_old",
+     "mood": {
+      "smile": 0.8
+     }
+    },
+    {
+     "who": "balak",
+     "x": 500,
+     "y": 569,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "open",
+     "emo": "joy",
+     "look": "narada_old"
+    },
+    {
+     "who": "balika",
+     "x": 780,
+     "y": 569,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "kanya",
+     "actions": [
+      {
+       "word": "house",
+       "mood": {
+        "smile": 1
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "halo_ring",
+     "word": "world",
+     "x": 640,
+     "y": 420,
+     "w": 560,
+     "alpha": 0.4,
+     "blend": "lighter",
+     "par": 0.9,
+     "behind": true,
+     "meaning": "the house as his whole world, circled in light"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s20",
+   "beat": 1,
+   "start": {
+    "t": 48.48,
+    "word": "Then"
+   },
+   "duration": 2.56,
+   "narration": "Then one day, the sky turned gray.",
+   "meaning": "Then one day the sky turned gray.",
+   "why": "Old Narada looks up in unease as the bright sky over the river cross-fades to gray on 'gray'.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "tilt_up",
+    "from": {
+     "z": 1.05,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "tilt up with his eyes to the changing sky"
+   },
+   "focus": {
+    "subject": "narada_old",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "narada_old"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "fog": 0.55,
+     "haze": "#eef4fa",
+     "items": [
+      {
+       "o": "hill",
+       "x": 500,
+       "y": 470,
+       "s": 1.0,
+       "w": 380,
+       "h": 90,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "hill",
+       "x": 800,
+       "y": 480,
+       "s": 1.0,
+       "w": 340,
+       "h": 70,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "cloud",
+       "x": 540,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "the house and a tree on the bank",
+     "fog": 0.18,
+     "items": [
+      {
+       "o": "hut",
+       "x": 820,
+       "y": 600,
+       "s": 0.9
+      },
+      {
+       "o": "tree",
+       "x": 460,
+       "y": 605,
+       "s": 0.75,
+       "kind": "round",
+       "col": "#3a7a4a"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 620,
+       "h": 40,
+       "col": "#f4dca8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark blurred reeds and shrubs in the bottom corners",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 460,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#2f6ad0",
+     "#7ab8f0",
+     "#ffe6c4",
+     "#fff8ea"
+    ],
+    "sx": 700,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "river": "#5ab8e8",
+    "haze": "240,246,255",
+    "change": {
+     "word": "gray",
+     "bg2": {
+      "k": "vista",
+      "sky": [
+       "#56607a",
+       "#8a94aa",
+       "#b8c0ce",
+       "#e2e6ee"
+      ],
+      "sx": 700,
+      "sy": 230,
+      "ridge": [
+       "#a0a8bc",
+       "#8890a8",
+       "#6e7890",
+       "#566078"
+      ],
+      "river": "#7a98b8",
+      "haze": "220,226,236"
+     },
+     "d": 1.2
+    }
+   },
+   "mood": {
+    "emotion": "unease",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "narada_old",
+     "x": 640,
+     "y": 634,
+     "s": 1.02,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700,
+     "actions": [
+      {
+       "word": "sky",
+       "emo": "doubt",
+       "mood": {
+        "ly": -0.7
+       },
+       "d": 0.6
+      },
+      {
+       "word": "gray",
+       "emo": "fear",
+       "mood": {
+        "ly": -0.6
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s21",
+   "beat": 1,
+   "start": {
+    "t": 51.04,
+    "word": "Thunder"
+   },
+   "duration": 3.68,
+   "narration": "Thunder roared, rain poured, and the river flooded.",
+   "meaning": "Thunder roared, rain poured and the river flooded.",
+   "why": "Rain streaks over the house; a lightning fork flashes far in the sky on 'Thunder', and on 'flooded' a big paper wave of river water rises at the bank as the family huddles.",
+   "camera": {
+    "shot": "wide",
+    "lens": "wide",
+    "move": "handheld",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 2,
+    "motivation": "a slight tremor of the storm"
+   },
+   "focus": {
+    "subject": "narada_old",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     620,
+     660
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "gray hills under the rain",
+     "fog": 0.6,
+     "haze": "#9aa4b8",
+     "items": [
+      {
+       "o": "hill",
+       "x": 520,
+       "y": 470,
+       "s": 1.0,
+       "w": 380,
+       "h": 90,
+       "col": "#6a7a98"
+      },
+      {
+       "o": "hill",
+       "x": 800,
+       "y": 480,
+       "s": 1.0,
+       "w": 340,
+       "h": 70,
+       "col": "#6a7a98"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "the house on the sand in the storm",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hut",
+       "x": 800,
+       "y": 600,
+       "s": 0.9
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 620,
+       "h": 40,
+       "col": "#d8c49a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark wet reeds in the corners",
+     "dark": 0.5,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 750,
+       "s": 1.5,
+       "col": "#2a4a4a"
+      },
+      {
+       "o": "shrub",
+       "x": 840,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a4a4a"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "storm",
+    "r": 0
+   },
+   "mood": {
+    "emotion": "storm",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "narada_old",
+     "x": 560,
+     "y": 612,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "fear",
+     "look": "kanya",
+     "actions": [
+      {
+       "word": "Thunder",
+       "emo": "fear",
+       "mood": {
+        "ly": -0.6
+       },
+       "d": 0.5
+      },
+      {
+       "word": "flooded",
+       "pose": "flee",
+       "emo": "fear",
+       "e": "spring",
+       "d": 0.5
+      }
+     ]
+    },
+    {
+     "who": "kanya",
+     "x": 700,
+     "y": 612,
+     "s": 0.92,
+     "flip": -1,
+     "pose": "hold",
+     "emo": "fear",
+     "look": "narada_old"
+    },
+    {
+     "who": "balak",
+     "x": 760,
+     "y": 584,
+     "s": 0.52,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "fear",
+     "look": "kanya"
+    }
+   ],
+   "effects": [
+    {
+     "k": "lightning_forks",
+     "word": "Thunder",
+     "x": 560,
+     "y": 120,
+     "w": 260,
+     "alpha": 0.9,
+     "par": 0.25,
+     "behind": true,
+     "meaning": "thunder roaring far in the gray sky"
+    },
+    {
+     "k": "wave_ocean",
+     "word": "flooded",
+     "x": 860,
+     "y": 650,
+     "w": 520,
+     "alpha": 0.95,
+     "par": 1.0,
+     "vy": -10,
+     "meaning": "the river rising over the bank in a flood"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s22",
+   "beat": 1,
+   "start": {
+    "t": 54.72,
+    "word": "The"
+   },
+   "duration": 2.26,
+   "narration": "The water swept his family away.",
+   "meaning": "The flood water swept his family away.",
+   "why": "A great blue wave rolls across; his wife and children slide away into the water and fade, while old Narada reaches after them in grief.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.0,
+     "x": -8,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 8,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "the dolly drifts with the water carrying them off"
+   },
+   "focus": {
+    "subject": "narada_old",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     600,
+     680
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "gray hills under the rain",
+     "fog": 0.6,
+     "haze": "#9aa4b8",
+     "items": [
+      {
+       "o": "hill",
+       "x": 560,
+       "y": 470,
+       "s": 1.0,
+       "w": 420,
+       "h": 90,
+       "col": "#6a7a98"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "the bank half under water",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 560,
+       "y": 670,
+       "s": 1.0,
+       "w": 620,
+       "h": 30,
+       "col": "#d8c49a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark wet reeds in the corners",
+     "dark": 0.5,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 440,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a4a"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "storm",
+    "r": 0
+   },
+   "mood": {
+    "emotion": "loss",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "narada_old",
+     "x": 540,
+     "y": 619,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "grief",
+     "look": "kanya",
+     "actions": [
+      {
+       "word": "swept",
+       "pose": "plead",
+       "emo": "grief",
+       "e": "spring",
+       "d": 0.5
+      },
+      {
+       "word": "away",
+       "emo": "grief",
+       "tilt": -0.06,
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "kanya",
+     "x": 720,
+     "y": 619,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "open",
+     "emo": "fear",
+     "look": "narada_old",
+     "engine_cues": {
+      "mc": "swept",
+      "fo": "family"
+     },
+     "engine": {
+      "mx": 150,
+      "my": -20,
+      "md": 1.6,
+      "fd": 1.4
+     }
+    },
+    {
+     "who": "balika",
+     "x": 790,
+     "y": 595,
+     "s": 0.55,
+     "flip": -1,
+     "pose": "open",
+     "emo": "fear",
+     "look": "narada_old",
+     "engine_cues": {
+      "mc": "swept",
+      "fo": "family"
+     },
+     "engine": {
+      "mx": 160,
+      "my": -30,
+      "md": 1.5,
+      "fd": 1.3
+     }
+    }
+   ],
+   "effects": [
+    {
+     "k": "wave_ocean",
+     "x": 800,
+     "y": 640,
+     "w": 560,
+     "alpha": 0.95,
+     "par": 1.0,
+     "vx": 30,
+     "meaning": "the flood wave rolling over the family"
+    },
+    {
+     "k": "water_splash",
+     "word": "swept",
+     "x": 700,
+     "y": 600,
+     "w": 220,
+     "alpha": 0.85,
+     "par": 1.0,
+     "meaning": "spray where the water takes them"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s23",
+   "beat": 1,
+   "start": {
+    "t": 56.98,
+    "word": "Suddenly"
+   },
+   "duration": 3.9,
+   "narration": "Suddenly, Narada was back in Vaikuntha, standing before Vishnu.",
+   "meaning": "Suddenly Narada was back in Vaikuntha, standing before Vishnu.",
+   "why": "A white flash and the storm is gone: stacked, Vishnu above in the bright hall smiles; below, young Narada with his veena stands blinking in surprise.",
+   "camera": {
+    "shot": "two_shot",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -16,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "from Vishnu down to the sage who has just woken"
+   },
+   "focus": {
+    "subject": "narada",
+    "depth": "deep"
+   },
+   "vertical": {
+    "mode": "stack",
+    "stack": [
+     "vishnu",
+     "narada"
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#eaf0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 320,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 900,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 380,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 860,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Vishnu's hall framing the figure",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 250,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 1030,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 300,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 980,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "mood": {
+    "emotion": "awakening",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "vishnu",
+     "x": 800,
+     "y": 650,
+     "s": 0.95,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.8
+     },
+     "look": "narada",
+     "actions": [
+      {
+       "word": "Vishnu",
+       "emo": "joy",
+       "mood": {
+        "smile": 0.9
+       },
+       "d": 0.6
+      }
+     ]
+    },
+    {
+     "who": "narada",
+     "x": 460,
+     "y": 665,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "surprise",
+     "look": "vishnu",
+     "actions": [
+      {
+       "word": "Suddenly",
+       "emo": "surprise",
+       "mood": {
+        "surp": 1
+       },
+       "d": 0.4
+      },
+      {
+       "word": "standing",
+       "emo": "fear",
+       "mood": {
+        "ly": -0.3
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "glow",
+     "x": 800,
+     "y": 330,
+     "r": 220,
+     "rgb": "190,220,255",
+     "ga": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "Vishnu's calm light in Vaikuntha"
+    }
+   ],
+   "transition_in": "flash"
+  },
+  {
+   "id": "s24",
+   "beat": 1,
+   "start": {
+    "t": 60.88,
+    "word": "Vishnu"
+   },
+   "duration": 3.94,
+   "narration": "Vishnu asked, \"Where is the water? I told you I am thirsty.\"",
+   "meaning": "Vishnu asks where the water is: he had said he was thirsty.",
+   "why": "Vishnu holds out his empty open hand and asks with a gentle teasing smile; his eyes rest on Narada.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "push in on the simple question that holds the whole lesson"
+   },
+   "focus": {
+    "subject": "vishnu",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "vishnu",
+    "z": 1.12,
+    "y": 0.42
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#eaf0fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Vishnu's hall framing the figure",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 460,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#1d4fae",
+     "#5aa0e8",
+     "#c4e4fa",
+     "#fff6dc"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "mood": {
+    "emotion": "gentle irony",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 646,
+     "s": 1.0,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "talk": 0.6,
+     "look": 420,
+     "mood": {
+      "smile": 0.7
+     },
+     "actions": [
+      {
+       "word": "water",
+       "pose": "open",
+       "emo": "joy",
+       "mood": {
+        "smile": 0.8
+       },
+       "d": 0.6
+      },
+      {
+       "word": "thirsty",
+       "tilt": 0.05,
+       "mood": {
+        "smile": 0.9,
+        "blink": 0.3
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s25",
+   "beat": 1,
+   "start": {
+    "t": 64.819,
+    "word": "Narada"
+   },
+   "duration": 1.72,
+   "narration": "Narada stood stunned.",
+   "meaning": "Narada stood stunned.",
+   "why": "Close on Narada's face, eyes wide and mouth open in shock as he understands no time has passed.",
+   "camera": {
+    "shot": "close",
+    "lens": "tele",
+    "move": "static",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "stillness: he cannot move"
+   },
+   "focus": {
+    "subject": "narada",
+    "depth": "shallow"
+   },
+   "vertical": {
+    "focus": "narada"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#e8ecf8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 440,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Vishnu's hall framing the figure",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a3f9e",
+     "#6a8ae0",
+     "#d8c8f4",
+     "#fff2e0"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "mood": {
+    "emotion": "shock",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "narada",
+     "x": 640,
+     "y": 360,
+     "s": 1.15,
+     "flip": 1,
+     "head": true,
+     "emo": "surprise",
+     "look": 900,
+     "actions": [
+      {
+       "word": "stunned",
+       "emo": "surprise",
+       "mood": {
+        "surp": 1,
+        "mouth": 0.6
+       },
+       "d": 0.5
+      }
+     ]
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s26",
+   "beat": 1,
+   "start": {
+    "t": 66.54,
+    "word": "His"
+   },
+   "duration": 4.52,
+   "narration": "His wife, his children, his home, none of it had been real.",
+   "meaning": "His wife, his children and his home: none of it had been real.",
+   "why": "A violet dream: his wife, then his son and daughter float faintly in the mist beside the house as each is named, then dissolve away on 'none'.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.06,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "pulling back as the dream thins out"
+   },
+   "focus": {
+    "subject": "kanya",
+    "depth": "deep"
+   },
+   "vertical": {
+    "x": [
+     640,
+     640
+    ]
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "violet dream clouds",
+     "fog": 0.6,
+     "haze": "#e8e0fa",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#f4eeff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 280,
+       "s": 1.1,
+       "col": "#f4eeff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "the faint house of the dream on a pale sand bank",
+     "fog": 0.45,
+     "haze": "#e0d8f4",
+     "items": [
+      {
+       "o": "hut",
+       "x": 650,
+       "y": 560,
+       "s": 0.9
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 640,
+       "s": 1.0,
+       "w": 620,
+       "h": 40,
+       "col": "#e8d8c0"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 820,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#3a2a7a",
+     "#7a6ac0",
+     "#c8b8ec",
+     "#f4ecff"
+    ],
+    "sx": 640,
+    "sy": 220
+   },
+   "mood": {
+    "emotion": "unreal",
+    "grade": "cool"
+   },
+   "characters": [
+    {
+     "who": "kanya",
+     "x": 600,
+     "y": 594,
+     "s": 0.92,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.6,
+      "blink": 0.3
+     },
+     "look": 700,
+     "engine_cues": {
+      "ac": "wife",
+      "fo": "none"
+     },
+     "engine": {
+      "ad": 0.6,
+      "fd": 1.0
+     }
+    },
+    {
+     "who": "balak",
+     "x": 720,
+     "y": 582,
+     "s": 0.55,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "kanya",
+     "engine_cues": {
+      "ac": "children",
+      "fo": "none"
+     },
+     "engine": {
+      "ad": 0.5,
+      "fd": 1.0
+     }
+    },
+    {
+     "who": "balika",
+     "x": 790,
+     "y": 578,
+     "s": 0.53,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": "kanya",
+     "engine_cues": {
+      "ac": "children",
+      "fo": "none"
+     },
+     "engine": {
+      "ad": 0.5,
+      "fd": 1.0
+     }
+    }
+   ],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "home",
+     "x": 640,
+     "y": 560,
+     "w": 520,
+     "alpha": 0.8,
+     "par": 1.0,
+     "meaning": "the dream mist the whole family is made of"
+    },
+    {
+     "k": "glow",
+     "word": "real",
+     "x": 640,
+     "y": 380,
+     "r": 260,
+     "rgb": "220,200,255",
+     "ga": 0.5,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "the empty light left when the dream is gone"
+    }
+   ],
+   "transition_in": "iris"
+  },
+  {
+   "id": "s27",
+   "beat": 1,
+   "start": {
+    "t": 71.06,
+    "word": "Vishnu"
+   },
+   "duration": 4.68,
+   "narration": "Vishnu said that was Maya, attachment to a world that does not last.",
+   "meaning": "Vishnu explains that this was Maya: attachment to a world that does not last.",
+   "why": "Vishnu speaks with an open teaching hand inside a violet swirl; the name 'Maya' appears and on 'last' a small faint house drifts behind him and is gone.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "tilt_down",
+    "from": {
+     "z": 1.06,
+     "x": 0,
+     "y": -20,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "tilting down from the light to the god who explains"
+   },
+   "focus": {
+    "subject": "vishnu",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "vishnu"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#ece4fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Vishnu's hall framing the figure",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c8a0",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c8a0",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a3f9e",
+     "#6a8ae0",
+     "#d8c8f4",
+     "#fff2e0"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "mood": {
+    "emotion": "teaching",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 621,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "talk": 0.6,
+     "look": 540,
+     "mood": {
+      "smile": 0.5
+     },
+     "actions": [
+      {
+       "word": "Maya",
+       "pose": "open",
+       "emo": "calm",
+       "d": 0.6
+      },
+      {
+       "word": "last",
+       "emo": "sad",
+       "mood": {
+        "ly": 0.3,
+        "smile": 0.3
+       },
+       "tilt": -0.04,
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "energy_swirl",
+     "word": "Maya",
+     "x": 640,
+     "y": 330,
+     "w": 460,
+     "alpha": 0.5,
+     "blend": "lighter",
+     "par": 0.9,
+     "behind": true,
+     "meaning": "Maya as a turning violet light"
+    },
+    {
+     "k": "name",
+     "word": "Maya",
+     "s": "Maya",
+     "x": 640,
+     "y": 120,
+     "size": 32,
+     "meaning": "the word Maya on screen as Vishnu names it"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s28",
+   "beat": 1,
+   "start": {
+    "t": 75.74,
+    "word": "It"
+   },
+   "duration": 2.88,
+   "narration": "It makes us chase what slips away like sand.",
+   "meaning": "Maya makes us chase what slips away like sand.",
+   "why": "Young Narada on the empty river bank reaches out; golden sand-coloured motes stream out of his hands and blow away on 'slips'.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "dolly_left",
+    "from": {
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a drift that follows the sand blowing away"
+   },
+   "focus": {
+    "subject": "narada",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "narada",
+    "z": 1.08,
+    "y": 0.44
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "blue hills and white clouds in morning haze beyond the river",
+     "fog": 0.55,
+     "haze": "#f4eefa",
+     "items": [
+      {
+       "o": "hill",
+       "x": 520,
+       "y": 470,
+       "s": 1.0,
+       "w": 380,
+       "h": 90,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "hill",
+       "x": 800,
+       "y": 480,
+       "s": 1.0,
+       "w": 340,
+       "h": 70,
+       "col": "#9ab4d4"
+      },
+      {
+       "o": "cloud",
+       "x": 560,
+       "y": 200,
+       "s": 1.1,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 250,
+       "s": 0.9,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "the empty sand bank where the house stood",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 605,
+       "s": 0.75,
+       "kind": "palm",
+       "col": "#2e7a44"
+      },
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 660,
+       "s": 1.0,
+       "w": 620,
+       "h": 50,
+       "col": "#f4dca8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark blurred reeds and shrubs in the bottom corners",
+     "dark": 0.45,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 460,
+       "y": 748,
+       "s": 1.5,
+       "col": "#2a5a3a",
+       "flowers": "#f0c040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 750,
+       "s": 1.4,
+       "col": "#2a5a3a"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#3a5ab8",
+     "#9ab0e8",
+     "#f4d8c8",
+     "#fff4ea"
+    ],
+    "sx": 760,
+    "sy": 230,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "river": "#5ab8e8",
+    "haze": "240,246,255"
+   },
+   "mood": {
+    "emotion": "longing",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "narada",
+     "x": 600,
+     "y": 655,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "sad",
+     "look": 800,
+     "actions": [
+      {
+       "word": "chase",
+       "pose": "plead",
+       "emo": "sad",
+       "d": 0.6
+      },
+      {
+       "word": "slips",
+       "mood": {
+        "ly": -0.3
+       },
+       "emo": "grief",
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "embers",
+     "word": "slips",
+     "x": 720,
+     "y": 470,
+     "w": 320,
+     "alpha": 0.6,
+     "blend": "lighter",
+     "par": 1.0,
+     "rgb": "255,215,140",
+     "vx": 40,
+     "meaning": "sand slipping away from his hands as drifting golden motes"
+    }
+   ],
+   "transition_in": "wipe"
+  },
+  {
+   "id": "s29",
+   "beat": 1,
+   "start": {
+    "t": 78.62,
+    "word": "Then"
+   },
+   "duration": 4.14,
+   "narration": "Then he smiled and warned Narada that there would be much more Maya to come.",
+   "meaning": "Vishnu smiles and warns Narada that much more Maya is still to come.",
+   "why": "Vishnu smiles warmly and raises a warning hand on 'warned'; a violet swirl and halo open behind him on 'Maya' as the camera pulls away.",
+   "camera": {
+    "shot": "wide",
+    "lens": "wide",
+    "move": "pull_out",
+    "from": {
+     "z": 1.12,
+     "x": 0,
+     "y": -8,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "final pull out: the lesson is only beginning"
+   },
+   "focus": {
+    "subject": "vishnu",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "vishnu"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "soft cloud banks and two hazy peaks of Vaikuntha far behind",
+     "fog": 0.55,
+     "haze": "#ece4fa",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 460,
+       "y": 500,
+       "s": 1.0,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "mountain",
+       "x": 820,
+       "y": 510,
+       "s": 0.85,
+       "col": "#9aaad8"
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 230,
+       "s": 1.3,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 270,
+       "s": 1.1,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "two gold pillars of Vishnu's hall framing the figure",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "pillar",
+       "x": 450,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      },
+      {
+       "o": "pillar",
+       "x": 830,
+       "y": 700,
+       "s": 1.0,
+       "col": "#e8c878",
+       "h": 520
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "white cloud puffs low in the bottom corners",
+     "dark": 0.1,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 470,
+       "y": 745,
+       "s": 1.7,
+       "col": "#ffffff"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 748,
+       "s": 1.6,
+       "col": "#ffffff"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape",
+    "sky": [
+     "#2a3f9e",
+     "#6a8ae0",
+     "#d8c8f4",
+     "#fff2e0"
+    ],
+    "sx": 640,
+    "sy": 190
+   },
+   "mood": {
+    "emotion": "promise",
+    "grade": "warm"
+   },
+   "characters": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 619,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "smile": 0.9
+     },
+     "talk": 0.5,
+     "look": 540,
+     "actions": [
+      {
+       "word": "smiled",
+       "mood": {
+        "smile": 1
+       },
+       "d": 0.6
+      },
+      {
+       "word": "warned",
+       "pose": "raise",
+       "emo": "calm",
+       "mood": {
+        "smile": 0.7
+       },
+       "d": 0.6
+      }
+     ]
+    }
+   ],
+   "effects": [
+    {
+     "k": "energy_swirl",
+     "word": "Maya",
+     "x": 640,
+     "y": 330,
+     "w": 480,
+     "alpha": 0.55,
+     "blend": "lighter",
+     "par": 0.9,
+     "behind": true,
+     "meaning": "more Maya to come, the violet swirl returning"
+    },
+    {
+     "k": "halo_ring",
+     "word": "smiled",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.45,
+     "blend": "lighter",
+     "par": 0.9,
+     "behind": true,
+     "meaning": "Vishnu's divine knowing"
+    }
+   ],
+   "transition_in": "cut"
+  }
+ ]
+}
