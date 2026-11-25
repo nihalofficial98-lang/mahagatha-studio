@@ -41,7 +41,7 @@ Example (EP6, shown in English): context "Brahma made the whole universe, so why
 ## Lines (unchanged)
 - Short lines, one new idea or image per sentence: every sentence is a possible cut (3-4 s).
 - Dialogue in quotes; each speaker has a distinct rhythm. Names appear on screen when spoken.
-- One emotion cue per beat: `**B07** [calm, firm]`. Keep the cues mild and readable, never shouting. English cues: slow, mysterious, grand, grave, calm, measured, firm, pitiful, fast, angry, explosive, whispering, pleading, cold, tender (Hindi equivalents for the Hindi version: धीमे, रहस्यमयी, भव्य, गंभीर, शांत, दृढ़, करुण, तेज़, क्रोध, विस्फोट, फुसफुसाकर, गिड़गिड़ाते हुए, ठंडा, स्नेह).
+- One emotion cue per beat: `**B07** [calm, firm]`. Keep the cues mild and readable, never shouting. English cues (never slow/whispering/hush/soft: see guides/VOICE_TAGS.md): mysterious, grand, grave, calm, firm, serious, curious, surprised, angry, sad, cold, excited, urgent, tense, dramatic, fast (Hindi equivalents for the Hindi version: धीमे, रहस्यमयी, भव्य, गंभीर, शांत, दृढ़, करुण, तेज़, क्रोध, विस्फोट, फुसफुसाकर, गिड़गिड़ाते हुए, ठंडा, स्नेह).
 - English script: plain spoken English; short sentences, one action each (`guides/REEL_STYLE.md`); numbers written as words ("nine hundred and ninety-nine", so the speech recognizer and the subtitles match); no standalone dashes; no Devanagari; one spelling per name (`names.*.en`); at most one Sanskrit term per chapter, explained in the same line. Hindi script (optional second language): no English words. Details: `guides/LANGUAGES.md`.
 - No AI images anywhere: all art is code.
 
