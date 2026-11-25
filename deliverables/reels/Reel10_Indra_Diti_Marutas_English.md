@@ -1,40 +1,43 @@
 # Reel 10: Why Did Indra Cut Diti's Unborn Son Into 49 Pieces? (story 29)
 
 ## Hook (first lines, read first)
-- Context: Indra, king of the gods, once cut a mother's unborn son into forty-nine pieces.
-- Lean: That son was growing up to be his killer.
-- Snapback: But why did the king of the gods attack a child?
+- Context: Indra slipped into a sleeping woman's womb, thunderbolt in hand.
+- Lean: He cut the unborn child into seven pieces. Then the pieces began to cry.
+- Snapback: Why did Indra cut Diti's unborn son into forty-nine pieces?
 
-**Spoken:** Indra, king of the gods, once cut a mother's unborn son into forty-nine pieces. That son was growing up to be his killer. But why did the king of the gods attack a child?
+**Spoken:** Indra slipped into a sleeping woman's womb, thunderbolt in hand. He cut the unborn child into seven pieces. Then the pieces began to cry. Why did Indra cut Diti's unborn son into forty-nine pieces?
 
 **Question:** Why Did Indra Cut Diti's Unborn Son Into 49 Pieces?
-**Answer:** He feared the son who was meant to kill him. He cut him into seven, then each into seven more, but the pieces lived and became the forty-nine Marutas, Indra's companions.
+**Answer:** Because the child was born of a hundred years of prayer to kill him. Indra struck when Diti slept with unwashed feet, but the pieces lived and became the forty-nine Marutas, his companions.
 
 **First-frame title:** Why Cut Diti's Unborn Son?
 **Full title:** Why Did Indra Cut Diti's Unborn Son Into 49 Pieces?
 **Alternates:** (a) Why Did Indra Enter Diti's Womb? | (b) Diti Wanted a Son to Kill Indra. Then One Dirty Foot Ruined It (first-frame: "Indra Entered Her Womb")
 
-## Tagged narration
-[curious] Indra, king of the gods, once cut a mother's unborn son into forty-nine pieces. That son was growing up to be his killer. But why did the king of the gods attack a child?
-[calm] Diti was the mother of the demons. Vishnu had killed her sons Hiranyaksha and Hiranyakashipu. She asked her husband, Kashyapa, for a son who would kill Indra.
-[calm] Kashyapa agreed, with strict rules. The child would grow in her womb for a hundred years. All that time she must live as an ascetic and never lie down without washing her feet. If she failed, her son would befriend Indra instead.
-[firm] Diti followed every rule. Indra watched for years, waiting for one mistake. She made none. Then only three days remained.
-[curious] That evening, Diti was tired. She fell asleep without washing her feet. Indra leapt in. He entered her womb and cut the child into seven pieces with his Vajra, his thunderbolt.
-[firm] The pieces were alive. They wailed. Indra shouted, "Ma ruda," which means, "Don't cry." They only grew louder. He cut each piece into seven more. They still would not die.
-[calm] Diti woke and Indra vanished. She had lost. She gave birth to forty-nine children. They became his companions, as Kashyapa had said. Because of his cry, they were called the Marutas, the storm gods.
-[curious] That is why Indra did it. He feared the son who would kill him. But the pieces lived. Instead of one killer, Indra got forty-nine friends.
+## Alternate hook
+- Context: Three days were left. Then a child would be born to kill Indra, king of the gods.
+- Lean: For years he had watched for one mistake, and found none.
+- Snapback: Why did Indra cut Diti's unborn son into forty-nine pieces?
 
-**Length:** 244 words (tags excluded), about 98 s at 0.40 s/word.
+## Tagged narration
+[curious] Indra slipped into a sleeping woman's womb, thunderbolt in hand. He cut the unborn child into seven pieces. Then the pieces began to cry. Why did Indra cut Diti's unborn son into forty-nine pieces?
+[calm] The mother was Diti. Vishnu had killed her sons Hiranyaksha and Hiranyakashipu. She asked her husband, Kashyapa, for a son who would kill Indra. Kashyapa set strict rules. A hundred years of purity. Never lie down without washing her feet. If she failed, her son would befriend Indra.
+[firm] Indra lurked outside her hut, waiting for one mistake. There was none. Her belly grew. His end came closer. Three days remained. He began to write his own elegy.
+[curious] Then that evening, Diti, exhausted, fell asleep without washing her feet. Indra leapt.
+[firm] He entered her womb. His Vajra flashed. Seven pieces. He laughed. Then he choked. The pieces were alive. They wailed. "Ma ruda!" he shouted. "Don't cry!" They only grew louder. He cut each piece into seven more. Still alive. Still louder.
+[calm] Diti woke. Indra fled. She knew she had lost. She gave birth to forty-nine children. They were not his killers. They were his companions, as Kashyapa had decreed. Since Indra had shouted "Ma ruda," they were called the Marutas, the storm gods.
+[curious] Indra cut the child to stop one killer. He ended with forty-nine allies.
+
+**Length:** 220 words (tags excluded), about 88 s at 0.40 s/word.
 
 ## Plain narration
-Indra, king of the gods, once cut a mother's unborn son into forty-nine pieces. That son was growing up to be his killer. But why did the king of the gods attack a child?
-Diti was the mother of the demons. Vishnu had killed her sons Hiranyaksha and Hiranyakashipu. She asked her husband, Kashyapa, for a son who would kill Indra.
-Kashyapa agreed, with strict rules. The child would grow in her womb for a hundred years. All that time she must live as an ascetic and never lie down without washing her feet. If she failed, her son would befriend Indra instead.
-Diti followed every rule. Indra watched for years, waiting for one mistake. She made none. Then only three days remained.
-That evening, Diti was tired. She fell asleep without washing her feet. Indra leapt in. He entered her womb and cut the child into seven pieces with his Vajra, his thunderbolt.
-The pieces were alive. They wailed. Indra shouted, "Ma ruda," which means, "Don't cry." They only grew louder. He cut each piece into seven more. They still would not die.
-Diti woke and Indra vanished. She had lost. She gave birth to forty-nine children. They became his companions, as Kashyapa had said. Because of his cry, they were called the Marutas, the storm gods.
-That is why Indra did it. He feared the son who would kill him. But the pieces lived. Instead of one killer, Indra got forty-nine friends.
+Indra slipped into a sleeping woman's womb, thunderbolt in hand. He cut the unborn child into seven pieces. Then the pieces began to cry. Why did Indra cut Diti's unborn son into forty-nine pieces?
+The mother was Diti. Vishnu had killed her sons Hiranyaksha and Hiranyakashipu. She asked her husband, Kashyapa, for a son who would kill Indra. Kashyapa set strict rules. A hundred years of purity. Never lie down without washing her feet. If she failed, her son would befriend Indra.
+Indra lurked outside her hut, waiting for one mistake. There was none. Her belly grew. His end came closer. Three days remained. He began to write his own elegy.
+Then that evening, Diti, exhausted, fell asleep without washing her feet. Indra leapt.
+He entered her womb. His Vajra flashed. Seven pieces. He laughed. Then he choked. The pieces were alive. They wailed. "Ma ruda!" he shouted. "Don't cry!" They only grew louder. He cut each piece into seven more. Still alive. Still louder.
+Diti woke. Indra fled. She knew she had lost. She gave birth to forty-nine children. They were not his killers. They were his companions, as Kashyapa had decreed. Since Indra had shouted "Ma ruda," they were called the Marutas, the storm gods.
+Indra cut the child to stop one killer. He ended with forty-nine allies.
 
 ## Source lines (story 29)
 1. Hook and setup: Diti asks "A son who shall kill Indra"; Hiranyaksha, Hiranyakashipu "killed by Vishnu"; "Indra was also his son, born to him and Diti's sister, Aditi".
@@ -42,6 +45,7 @@ That is why Indra did it. He feared the son who would kill him. But the pieces l
 3. Indra: Aditi alerts him; he watches; "only three days now remained"; Diti "fell asleep without having washed her feet"; "he was inside her womb"; "sliced the foetus into seven pieces" with his Vajra.
 4. "Ma ruda" (Don't cry); each piece cut into seven; "forty-nine parts ... forty-nine beings ... companions now, as stipulated by Kashyapa ... Marutas. The storm deities."
 5. Cut: Diti's curse on Aditi, Devaki/Krishna prophecy, her second ten-thousand-year vow. The final line is editorial. Word "killer" for the embryo follows Diti's own wish ("who shall kill Indra").
+6. Beats: Diti's sons killed by Vishnu; "A son who shall kill Indra"; Kashyapa's conditions (hundred years, washing feet, "if you fail, he will befriend him instead"); Indra waits; "only three days now remained"; "composing his own elegy"; asleep "without having washed her feet"; "he was inside her womb"; Vajra, seven pieces; "Ma ruda"; each into seven; forty-nine; Marutas, "storm deities". Cut: Aditi's warning, the later curse.
 
 ## Why it works
-The hook raises one question; the trick (the unwashed feet) and the backfire answer it. Ends on the answer. No series pointer.
+Opens inside the womb and asks the title question; the reason is set up in one paragraph, then three turns (the wait, the mistake, the pieces that live). No series pointer.

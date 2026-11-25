@@ -14,6 +14,9 @@
 **Full title:** Why Did Garuda Become Vishnu's Vahana?
 **Alternates:** (a) What Did Vishnu Ask of Garuda in Return for Immortality? | (b) Garuda Stole the Amrita but Never Drank It (first-frame: "He Never Drank It")
 
+## Alternate hook
+(none; the owner approved this reel as written)
+
 ## Tagged narration
 [curious] Garuda, the half-bird, half-human son of Vinata, was flying off with the nectar of immortality. He had not tasted a drop. Then Vishnu blocked his path. Why did Garuda become Vishnu's vahana, his mount?
 [calm] The gods had guarded the amrita with fire, spinning blades and two serpents. Garuda broke through all of it, to buy his mother Vinata's freedom from the serpents.

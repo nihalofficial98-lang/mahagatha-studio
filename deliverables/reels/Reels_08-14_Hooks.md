@@ -1,57 +1,57 @@
 # Reels 08-14: opening hooks, question and answer (read first)
 
 ## Reel 8: How Did Vishnu Lose His Head?
-- Context: Vishnu fought one demon for sixteen thousand years and could not beat him.
-- Lean: Then the gods accidentally cut off Vishnu's head.
+- Context: Vishnu lay asleep, his chin on his bow.
+- Lean: Termites were gnawing the bowstring under his face, and every one of them was a god.
 - Snapback: How did Vishnu lose his head?
 
 Question: How Did Vishnu Lose His Head?
-Answer: By accident. The gods, who needed him awake for a yagna, turned into termites and gnawed his bowstring. It snapped and cut off his head, and that brought back the horse-headed Hayagriva, the one god who could kill the demon.
+Answer: By accident. The gods, who needed him awake for a yagna, turned into termites and gnawed his bowstring. It snapped and cut off his head, and the loss brought back the horse-headed Hayagriva, the one god who could kill the demon.
 
 ## Reel 9: How Did Shiva Escape Bhasmasura?
-- Context: A demon asked Shiva for a boon that could turn anyone to ash.
-- Lean: Shiva said yes, and the demon, Bhasmasura, chased Shiva himself.
-- Snapback: How did Shiva escape him?
+- Context: Shiva was running for his life.
+- Lean: Behind him ran a demon with one hand raised. One touch on Shiva's head, and the Destroyer would be ash.
+- Snapback: And Shiva himself had given him that power. How did Shiva escape Bhasmasura?
 
 Question: How Did Shiva Escape Bhasmasura?
 Answer: Vishnu, as Mohini, made the demon dance until he touched his own head and burned himself to ash.
 
 ## Reel 10: Why Did Indra Cut Diti's Unborn Son Into 49 Pieces?
-- Context: Indra, king of the gods, once cut a mother's unborn son into forty-nine pieces.
-- Lean: That son was growing up to be his killer.
-- Snapback: But why did the king of the gods attack a child?
+- Context: Indra slipped into a sleeping woman's womb, thunderbolt in hand.
+- Lean: He cut the unborn child into seven pieces. Then the pieces began to cry.
+- Snapback: Why did Indra cut Diti's unborn son into forty-nine pieces?
 
 Question: Why Did Indra Cut Diti's Unborn Son Into 49 Pieces?
-Answer: He feared the son who was meant to kill him. He cut him into seven, then each into seven more, but the pieces lived and became the forty-nine Marutas, Indra's companions.
+Answer: Because the child was born of a hundred years of prayer to kill him. Indra struck when Diti slept with unwashed feet, but the pieces lived and became the forty-nine Marutas, his companions.
 
 ## Reel 11: How Did Garuda Free His Mother Vinata From Kadru?
-- Context: Kadru cheated her sister Vinata in a bet over a horse's tail.
-- Lean: The loser became a slave.
-- Snapback: How did her son Garuda free her?
+- Context: At dawn, two sisters stood behind a white horse.
+- Lean: Its tail looked black, because snakes were wrapped around it. One sister had just lost her freedom to that trick.
+- Snapback: How did her son Garuda free his mother Vinata from Kadru?
 
 Question: How Did Garuda Free His Mother Vinata From Kadru?
 Answer: The serpents agreed to free Vinata only for amrita, so Garuda brought it through fire, spinning blades and guard snakes.
 
 ## Reel 12: Why Would Harishchandra Not Break His Word, Even for His Dead Son?
-- Context: King Harishchandra gave away his kingdom and sold his wife and himself.
-- Lean: Then his son died, and he still would not break his word.
-- Snapback: Why would he not break his word, even for his dead son?
+- Context: Night, at a cremation ground. A king held his dead son in his arms.
+- Lean: His wife begged him to break his word, just once. He said no.
+- Snapback: Why would Harishchandra not break his word, even for his dead son?
 
 Question: Why Would Harishchandra Not Break His Word, Even for His Dead Son?
 Answer: He had once failed to keep a vow to Varuna, paid for it, and sworn never again. So he refused to cremate Rohita without the fee, until Vishwamitra gave everything back.
 
 ## Reel 13: Why Did Paundraka Dress as Vishnu to Replace Krishna?
-- Context: King Paundraka dressed up as Vishnu to replace Krishna.
-- Lean: He painted himself blue and strapped on wooden arms.
-- Snapback: Why did he do it?
+- Context: A king stood before an army, painted blue, with two wooden arms strapped to his back.
+- Lean: He shouted that he was Vishnu. Krishna's soldiers rolled on the ground, laughing.
+- Snapback: Why did Paundraka dress as Vishnu to replace Krishna?
 
 Question: Why Did Paundraka Dress as Vishnu to Replace Krishna?
 Answer: His flatterers repeated the lie that he was the true Vishnu until he believed it, so he copied Vishnu's look to replace Krishna.
 
 ## Reel 14: Who Was Gajendra the Elephant Before Vishnu Saved Him?
-- Context: A crocodile clamped onto the leg of Gajendra, king of the elephants.
-- Lean: His whole herd walked away.
-- Snapback: Who was he, that Vishnu called him by another name?
+- Context: A crocodile held the leg of Gajendra, king of the elephants. His herd looked at him, then walked away.
+- Lean: Alone, bleeding, he lifted a white lotus and prayed to Vishnu.
+- Snapback: Then a voice called him by another name. Who was Gajendra before Vishnu saved him?
 
 Question: Who Was Gajendra the Elephant Before Vishnu Saved Him?
 Answer: King Indradyumna, cursed by Sage Agastya to be born an elephant to learn to surrender. At the pond, he surrendered to Vishnu and bowed.
