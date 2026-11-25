@@ -9,7 +9,10 @@ def _cast():
 def _pfx():return re.findall(r"^ (\w+):\{s:",rd('paper_fx.js'),re.M)
 def _obj():
     s=rd('paper_scenes.js');a=s.index('const OBJ={');b=s.index('\n};',a)
-    return re.findall(r"^ (\w+)\(x,y,s,t,o\)",s[a:b],re.M)
+    out=re.findall(r"^ (\w+)\(x,y,s,t,o\)",s[a:b],re.M)
+    for m in re.finditer(r"Object\.assign\(OBJ,\{(.*?)\n\}\);",s,re.S):   # objects added later (EP07: demons, stree, smoke, winwall)
+        out+=[n for n in re.findall(r"^ (\w+)\(x,y,s,t,o\)",m.group(1),re.M) if n not in out]
+    return out
 def _poses():
     s=rd('v2_cast.js');a=s.index('const PZ={');b=s.index('const poseOf=')
     return sorted(set(re.findall(r"^ (\w+):\{",s[a:b],re.M))|set(re.findall(r"PZ\.(\w+)=",s)))
