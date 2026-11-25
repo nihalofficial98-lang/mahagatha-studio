@@ -1,11 +1,11 @@
 # Reel 17: How Did Vishnu Get the Sudarshana Chakra? (story 13)
 
 ## Hook (first lines, read first)
-- Context: How did Vishnu get the Sudarshana Chakra?
-- Lean: By tearing out his own eye, for another god.
-- Snapback: Why would the protector of the universe do that?
+- Context: To get the Sudarshana Chakra, Vishnu had to pull out his own eye.
+- Lean: And he did it for another god.
+- Snapback: How did Vishnu get the Sudarshana Chakra?
 
-**Spoken:** How did Vishnu get the Sudarshana Chakra? By tearing out his own eye, for another god. Why would the protector of the universe do that?
+**Spoken:** To get the Sudarshana Chakra, Vishnu had to pull out his own eye. And he did it for another god. How did Vishnu get the Sudarshana Chakra?
 
 **Question:** How Did Vishnu Get the Sudarshana Chakra?
 **Answer:** He worshipped Shiva with a thousand lotuses. When one went missing, he plucked out his own eye and offered it. Shiva gave him the Chakra.
@@ -15,7 +15,7 @@
 **Alternates:** (a) Why Did Vishnu Pull Out His Own Eye? | (b) Why Did Vishnu Worship Shiva? (first-frame: "Vishnu Worships Shiva")
 
 ## Tagged narration
-[curious] How did Vishnu get the Sudarshana Chakra? By tearing out his own eye, for another god. Why would the protector of the universe do that?
+[curious] To get the Sudarshana Chakra, Vishnu had to pull out his own eye. And he did it for another god. How did Vishnu get the Sudarshana Chakra?
 [grave] It began with demons. They tormented the gods and killed people. The gods begged Vishnu to save them. Vishnu was tired of the endless attacks. He knew he needed Shiva's power. He went into the wilderness and worshipped Shiva. Years passed. Shiva did not appear.
 [calm] So Vishnu shaped a lingam, the sacred form of Shiva, out of earth. He chanted the thousand names of Shiva. For every name, he laid one lotus on the lingam. When the chant ended, a thousand lotuses covered it. Shiva was moved. But he wanted to test Vishnu one last time. He quietly took one lotus.
 [whispering] Vishnu counted the flowers. Nine hundred and ninety-nine. He searched everywhere. The lotus was gone. One flower short meant the worship was unfinished. Years of effort, wasted. Would Vishnu fail before Shiva?
@@ -25,7 +25,7 @@
 **Length:** 253 words (tags excluded), about 101 s at 0.40 s/word.
 
 ## Plain narration
-How did Vishnu get the Sudarshana Chakra? By tearing out his own eye, for another god. Why would the protector of the universe do that?
+To get the Sudarshana Chakra, Vishnu had to pull out his own eye. And he did it for another god. How did Vishnu get the Sudarshana Chakra?
 It began with demons. They tormented the gods and killed people. The gods begged Vishnu to save them. Vishnu was tired of the endless attacks. He knew he needed Shiva's power. He went into the wilderness and worshipped Shiva. Years passed. Shiva did not appear.
 So Vishnu shaped a lingam, the sacred form of Shiva, out of earth. He chanted the thousand names of Shiva. For every name, he laid one lotus on the lingam. When the chant ended, a thousand lotuses covered it. Shiva was moved. But he wanted to test Vishnu one last time. He quietly took one lotus.
 Vishnu counted the flowers. Nine hundred and ninety-nine. He searched everywhere. The lotus was gone. One flower short meant the worship was unfinished. Years of effort, wasted. Would Vishnu fail before Shiva?
