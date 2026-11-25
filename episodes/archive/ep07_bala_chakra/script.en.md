@@ -1,0 +1,127 @@
+# Episode 07: Bala's Sacrifice and the Sudarshana Chakra
+
+**Estimated time:** 8.5-9.5 min at the owner's English voice pace (estimate 0.40 s/word, studio.py check 07)
+**Source:** story 12 (Bala creates nine wonders) and story 13 (Vishnu gets the Sudarshana Chakra)
+
+---
+
+**B01** [mysterious, grave]
+A demon took heaven by force, then gave away his own body. A god gave away his eye.
+Both gifts bought something no sword could.
+So why would a conqueror agree to die?
+
+**B02** [fast]
+Bala, a demon so strong that nothing could stop him, beat Indra, king of the gods, and took heaven. Then he made one small promise.
+It would cost him everything.
+
+**B03** [grave]
+The gods stood helpless at the gates of heaven. Their home was gone, and shame burned in them.
+Gods and demons came from the same family tree. Still, they hated each other, and fought again and again over heaven and earth. This time the demons had won.
+Without heaven, the gods had nowhere to go.
+
+**B04** [calm]
+Then Bala walked up to them. His mind was wicked, but his heart was generous. He had never refused anyone who asked him for a gift.
+Standing among the gods, he said, "You have lost your power, but not my help. I have given freely before, and I will give again. Whenever you perform a yagna, a fire ritual, you can count on me."
+He left. Indra looked at the other gods, and smiled.
+
+**B05** [mysterious]
+Why would a beaten king smile? Then the gods understood. Bala had made an innocent mistake. A yagna.
+
+**B06** [fast]
+The preparations began at once, and the day of the yagna came. The fire rose high. Mantras rang out.
+Indra and the gods went back to the palace and bowed to the demon. "We are holding a yagna, my lord. To finish it, we need a being to sacrifice."
+"Of course," said Bala.
+"We ask you to offer yourself, so the yagna can be complete..."
+The hall froze. Bala stood up. His face was terrible. His shadow swallowed them. Were these their last words? He came closer. And closer. And closer.
+
+**B07** [firm]
+Bala folded his hands. "I am ready." He did not say it with fear.
+Then the flames of the yagna fed on his body. They burned his bones and melted his flesh. The gods' trick had worked.
+
+**B08** [grand]
+Bala was dead, and heaven was theirs again. The gods danced around his body. Then someone screamed, "Look!"
+The burned body was changing. Every part was turning solid, and becoming something so beautiful that no one could look away. The gods crept closer to touch those colors.
+Red, green, blue, yellow. Shades nobody had ever seen, dazzling their eyes and gripping their hearts. His body had become a rainbow, glowing with the light of a million stars.
+
+**B09** [calm]
+Then a voice from the sky spoke. "Bala's last selfless act has made his body holy. Now it holds the most precious things in the universe."
+He gave his life because his heart could not say no. The kindness that cost him his life also made his body priceless.
+
+**B10** [fast]
+Bala, the generous demon, gave his life in a fire ritual. His burned body turned priceless. The gods lifted it to carry it home to heaven.
+And it began to slip.
+
+**B11** [calm]
+The gods stared. They had come to celebrate a victory over a demon. Now his body was the greatest wonder in heaven. The demon they had feared had a body this wonderful! They remembered the voice: the most precious things in the universe. They tried to carry it home at any cost. They tightened their grip. But it was slipping.
+
+**B12** [mysterious]
+It slipped from their hands and fell towards the earth. As it fell, cracks ran through it. Before anyone could understand, it had shattered. The gods watched from above, helpless, as the pieces tore through the clouds and rained down.
+
+**B13** [grave]
+The pieces fell on mountains, in forests, into rivers and deep into the seas. Wherever they landed, they settled into the ground as treasure. There were eighty-four pieces in all. The body that had burned in the fire a moment ago now belonged to the whole earth.
+Twenty-one of them became the brightest things in nature. People called them jewels. And nine of those were counted the most precious of all.
+
+**B14** [mysterious]
+Nine jewels, from nine parts of one body. And the strangest of them came from his voice. What can a voice turn into? First, the bones.
+
+**B15** [grave]
+His bones became diamonds. His bile became emeralds. His blood became rubies, red as embers. His eyes became sapphires. One part, one jewel.
+
+**B16** [slow]
+His teeth became pearls. His skin became topaz. His nails became garnets. His guts became coral.
+And his voice became the cat's eye. The same voice that had said, "I am ready."
+They sound like jewellery in a shop. But each one is a piece of the body the gods once saw as an enemy.
+
+**B17** [grand]
+These nine jewels were called the Navaratnas, the nine gems. They were the most precious things the universe had to give. The gods took a life by trickery, and the earth received a treasure no victory could ever bring.
+
+**B18** [tender]
+Heaven was won by a trick. The treasure of the earth was won by a gift. The gods thought they had beaten a demon. In truth, they had lost a giver. And every jewel still carries his gift.
+
+**B19** [grave]
+Vishnu, who keeps the world alive, began to worship Shiva, the god of destruction, as no one ever had. He offered a thousand lotus flowers.
+One of them went missing.
+
+**B20** [grave]
+Most demons were cruel. They tormented the gods and killed people. They ruined sacred rituals and harmed women. Their darkness began to blind the worlds.
+The gods begged Vishnu to save them. But Vishnu himself was tired of the endless attacks. As the ruin grew, he knew he had to take a harder step.
+
+**B21** [firm]
+"I must call on Shiva. I must reach him as no one ever has."
+
+**B22** [slow]
+Vishnu went into the empty wilderness and worshipped Shiva. Years came and years went. Shiva did not appear. Vishnu sang hymns that could please any god, but the vision he longed for did not come.
+So he stopped. He sifted the earth and shaped a lingam, the sacred form of Shiva. Sitting before it, he began to chant the thousand names.
+"Ashutosh... Bhairava... Mahakaal... Rudradeva..."
+
+**B23** [calm]
+For every name, he laid one lotus on the lingam. When the chant ended, a thousand blooms covered it.
+Shiva was moved. He was about to appear. But first he wanted to test the keeper of the world one last time. While Vishnu arranged the flowers, Shiva quietly stole a single lotus.
+Vishnu counted the flowers. Nine hundred and ninety-nine.
+
+**B24** [whispering]
+Vishnu was baffled. He searched everywhere. The lotus was nowhere to be found. One flower short meant the worship was unfinished. Years of effort, wasted. Would Vishnu fail before Shiva?
+
+**B25** [firm]
+Then Vishnu's face lit up. While chanting Shiva's names, he had forgotten that he had many names too. Beautiful names, given by his devotees. One of them was Kamalanayana.
+The one with eyes like lotuses.
+"If my eyes are like lotuses," he said happily, "then one of them can go on the lingam."
+
+**B26** [grave]
+Shiva watched. The gods watched. All of creation watched. Vishnu plucked out his eye, and placed it on the lingam.
+The thousandth lotus. It shone above all the other flowers.
+
+**B27** [grand]
+That eye shone brighter than any gem, wet with the dew of devotion. Shiva appeared at once and healed Vishnu's eye. He knew what Vishnu wanted. And he gave him a golden disc.
+
+**B28** [firm]
+It had two circles, spinning in opposite directions, and one hundred and eight sharp edges.
+"It is the only weapon in the universe that flies," said Shiva. "It obeys your will. It flies out, destroys its target and comes back to you. With it, you can face every disaster."
+"What shall we call it?" asked Vishnu.
+"Sudarshana." Shiva touched his eyes. "Virtuous vision."
+
+**B29** [calm]
+Bala agreed to die because he could never refuse anyone who asked. His body became nine jewels. Vishnu gave his eye, and Shiva gave him the Sudarshana Chakra. Whose gift moved you more? Tell us in the comments.
+
+---
+*The End*

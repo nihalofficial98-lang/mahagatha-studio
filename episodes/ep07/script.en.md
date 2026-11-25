@@ -1,127 +1,125 @@
-# Episode 07: Bala's Sacrifice and the Sudarshana Chakra
+# Episode 07: Kacha Steals the Secret of the Dead
 
 **Estimated time:** 8.5-9.5 min at the owner's English voice pace (estimate 0.40 s/word, studio.py check 07)
-**Source:** story 12 (Bala creates nine wonders) and story 13 (Vishnu gets the Sudarshana Chakra)
+**Source:** story 79 (Kacha Steals a Secret)
 
 ---
 
 **B01** [mysterious, grave]
-A demon took heaven by force, then gave away his own body. A god gave away his eye.
-Both gifts bought something no sword could.
-So why would a conqueror agree to die?
+Kacha wanted to be killed. Burned. Ground to ash. And swallowed by his enemy's guru.
+It was the only way to steal a secret that could bring the dead back to life.
+It worked. But what he did to the girl who loved him was worse than death.
 
 **B02** [fast]
-Bala, a demon so strong that nothing could stop him, beat Indra, king of the gods, and took heaven. Then he made one small promise.
-It would cost him everything.
+Every time the gods killed a demon, one old man brought him back to life. Shukracharya, guru of the demons. His secret was Mritasanjivani, the power to revive the dead.
+As long as he held it, the gods could never win.
 
 **B03** [grave]
-The gods stood helpless at the gates of heaven. Their home was gone, and shame burned in them.
-Gods and demons came from the same family tree. Still, they hated each other, and fought again and again over heaven and earth. This time the demons had won.
-Without heaven, the gods had nowhere to go.
+Brihaspati, guru of the gods, called a council in heaven. His face was grim. He spoke one word. "Mritasanjivani."
+"You want us to steal it?" said Indra, king of the gods. "From Shukracharya? He guards it with his life."
+"Not with force," said Brihaspati. "I have someone he will never suspect. And I have a plan."
 
 **B04** [calm]
-Then Bala walked up to them. His mind was wicked, but his heart was generous. He had never refused anyone who asked him for a gift.
-Standing among the gods, he said, "You have lost your power, but not my help. I have given freely before, and I will give again. Whenever you perform a yagna, a fire ritual, you can count on me."
-He left. Indra looked at the other gods, and smiled.
+A few days later, a young man walked into Shukracharya's hermitage and asked to be his student. The guru tied a sacred thread on his wrist, a promise to keep him safe. He did not know whose son the boy was.
+"I am Kacha," said the young man. His new teacher's daughter was watching him from the doorway.
+"I am Devayani," she said, and lowered her eyes.
 
-**B05** [mysterious]
-Why would a beaten king smile? Then the gods understood. Bala had made an innocent mistake. A yagna.
+**B05** [whispering]
+Soon she had written his name on her heart. Every morning he sang hymns by her window. Every evening he brought her wild flowers from the woods.
+And every night, a shadow slipped into his room. Brihaspati.
+"Do you have it, Kacha?"
+"Not yet, father. But his daughter loves me more every day."
 
-**B06** [fast]
-The preparations began at once, and the day of the yagna came. The fire rose high. Mantras rang out.
-Indra and the gods went back to the palace and bowed to the demon. "We are holding a yagna, my lord. To finish it, we need a being to sacrifice."
-"Of course," said Bala.
-"We ask you to offer yourself, so the yagna can be complete..."
-The hall froze. Bala stood up. His face was terrible. His shadow swallowed them. Were these their last words? He came closer. And closer. And closer.
+**B06** [mysterious]
+Then one evening, Kacha saw the demons brewing wine for their guru. They burned a deer and stirred its ashes into the cup. Shukracharya drank it all.
+A thought tore through Kacha's mind. So terrible that his legs gave way. His heart pounded. Every part of him begged him to stop.
+What if the ashes were his?
+He knew it was the only way. The demons hated Brihaspati's son. Shukracharya loved his wine. And Devayani loved Kacha exactly as much as she loved her father. Not more. Not less.
 
 **B07** [firm]
-Bala folded his hands. "I am ready." He did not say it with fear.
-Then the flames of the yagna fed on his body. They burned his bones and melted his flesh. The gods' trick had worked.
+The plan had three stages. Kacha would control two. The third was in Devayani's hands.
+He would not tell her. Her ignorance was worth more than her loyalty.
 
-**B08** [grand]
-Bala was dead, and heaven was theirs again. The gods danced around his body. Then someone screamed, "Look!"
-The burned body was changing. Every part was turning solid, and becoming something so beautiful that no one could look away. The gods crept closer to touch those colors.
-Red, green, blue, yellow. Shades nobody had ever seen, dazzling their eyes and gripping their hearts. His body had become a rainbow, glowing with the light of a million stars.
+**B08** [fast]
+Stage one. A wild feast of the demons. Kacha picked up a cup, pretended to be drunk, and whispered to a demon, "Shall I tell you a secret? I am the son of Brihaspati."
+The demon choked on his drink. He told another. And another. Soon a ring of red eyes closed around Kacha. Hands reached for his throat.
+"Halt!" Shukracharya's voice shook the hall. "The thread on his wrist binds me to protect him. He is my student. Treat him as one of your own."
+The demons backed away.
 
 **B09** [calm]
-Then a voice from the sky spoke. "Bala's last selfless act has made his body holy. Now it holds the most precious things in the universe."
-He gave his life because his heart could not say no. The kindness that cost him his life also made his body priceless.
+That night, Devayani stormed into his room, shaking with anger. Kacha soothed her. She left, calm again.
+He lay awake. The demons wanted him dead. Exactly as he planned.
 
-**B10** [fast]
-Bala, the generous demon, gave his life in a fire ritual. His burned body turned priceless. The gods lifted it to carry it home to heaven.
-And it began to slip.
+**B10** [grave]
+Stage two. At dawn, Kacha took the guru's horses to graze. Deep in the forest, he stopped. And waited.
+A twig cracked. "They are coming."
 
-**B11** [calm]
-The gods stared. They had come to celebrate a victory over a demon. Now his body was the greatest wonder in heaven. The demon they had feared had a body this wonderful! They remembered the voice: the most precious things in the universe. They tried to carry it home at any cost. They tightened their grip. But it was slipping.
+**B11** [grave]
+He piled up branches and lit a fire. The footsteps grew louder. Closer. Closer. He never looked up. He only watched their feet. Their nails hungry for his flesh. Their blades thirsty for his blood.
+The circle closed. It blotted out the sun.
+His body shook, but his soul was calm. Everything was falling into place, just as he had planned. He was going to die, and yet not die.
 
-**B12** [mysterious]
-It slipped from their hands and fell towards the earth. As it fell, cracks ran through it. Before anyone could understand, it had shattered. The gods watched from above, helpless, as the pieces tore through the clouds and rained down.
+**B12** [tender]
+That night, Devayani stumbled out of the forest, clutching a piece of burnt cloth. She stood before her father, Shukracharya.
+"Kacha's cloth? What are you saying?"
+"Your demons killed him. They hacked him and burned him."
+"How dare they! I will not spare them..."
+He stopped. Devayani was laughing. Tears poured down her face, and she was laughing.
+"You will not spare them? You, who have drunk my Kacha?"
+She scraped a black speck from his lips. "The demons put his ashes in your wine."
 
 **B13** [grave]
-The pieces fell on mountains, in forests, into rivers and deep into the seas. Wherever they landed, they settled into the ground as treasure. There were eighty-four pieces in all. The body that had burned in the fire a moment ago now belonged to the whole earth.
-Twenty-one of them became the brightest things in nature. People called them jewels. And nine of those were counted the most precious of all.
+Shukracharya closed his eyes in horror. Then he spoke. "From today, any Brahmin who drinks wine will lose his wisdom and his virtue." He had failed to keep Kacha safe.
+"You know what you have to do," said Devayani.
+"Mritasanjivani. But he is inside me. To rise again, Kacha must tear my body apart. And I am willing."
+She froze. She had begged for a life, and not seen the price. Kacha's life demanded another life. Her father's.
 
-**B14** [mysterious]
-Nine jewels, from nine parts of one body. And the strangest of them came from his voice. What can a voice turn into? First, the bones.
+**B14** [pleading]
+"Never!" cried Devayani. "I cannot live without you. I love you both. Not more. Not less."
+"Then you must choose. Him or me?"
+Her eyes began to gleam. "Not him or you. Both. Give me the mantra. When Kacha comes out of you, I will bring you back."
+Shukracharya felt ice around his heart. A thousand years of penance had earned him this secret. And his daughter asked, "Don't you trust me, father?"
+He nodded. He wrote it down. "Use it once. Then destroy it. Promise me."
+"I promise."
 
-**B15** [grave]
-His bones became diamonds. His bile became emeralds. His blood became rubies, red as embers. His eyes became sapphires. One part, one jewel.
+**B15** [grand]
+He closed his eyes and began to chant. His belly shook. Then his chest, his face, his arms.
+A finger tore out of his eye. A foot burst through his navel.
 
-**B16** [slow]
-His teeth became pearls. His skin became topaz. His nails became garnets. His guts became coral.
-And his voice became the cat's eye. The same voice that had said, "I am ready."
-They sound like jewellery in a shop. But each one is a piece of the body the gods once saw as an enemy.
+**B16** [calm]
+Kacha's face broke through Shukracharya's skull. His arms shattered the old man's ribs. He rose out of the body like a butterfly from a cocoon, drenched in blood.
+"Kacha!" Devayani held him, laughing and crying.
+He smiled. Not the smile she knew. A smile she had never seen.
 
-**B17** [grand]
-These nine jewels were called the Navaratnas, the nine gems. They were the most precious things the universe had to give. The gods took a life by trickery, and the earth received a treasure no victory could ever bring.
+**B17** [fast]
+"Now I must bring father back."
+"Let me do it," said Kacha.
+She hid the mantra behind her. "No. It is father's secret. Only I may use it."
+"Only you? Am I anyone? I am you. You are me. The guru gave me back my life. Let me give his back."
+His eyes held hers. Her fingers loosened. The mantra fell.
+Kacha caught it.
 
-**B18** [tender]
-Heaven was won by a trick. The treasure of the earth was won by a gift. The gods thought they had beaten a demon. In truth, they had lost a giver. And every jewel still carries his gift.
+**B18** [firm]
+He read it over the guru's body. The pride of the demons. The boon of Shiva. Every word. Every line. It sank into his mind and stayed there.
+Shukracharya stood up. He took a step toward his daughter. Then he saw the mantra in Kacha's hand. He saw the gleam in Kacha's eyes.
+He knew. There was no rage on his face. Only pain. And he fell.
 
-**B19** [grave]
-Vishnu, who keeps the world alive, began to worship Shiva, the god of destruction, as no one ever had. He offered a thousand lotus flowers.
-One of them went missing.
+**B19** [cold]
+Kacha began to walk away.
+"Kacha!" Devayani ran after him. "I told father about us. Speak to him so we can marry."
+"You still don't understand?"
+Then she saw it. The word fell from her lips. "Mritasanjivani?"
+"I came for what my father sent me for."
 
-**B20** [grave]
-Most demons were cruel. They tormented the gods and killed people. They ruined sacred rituals and harmed women. Their darkness began to blind the worlds.
-The gods begged Vishnu to save them. But Vishnu himself was tired of the endless attacks. As the ruin grew, he knew he had to take a harder step.
+**B20** [cold]
+She touched her father's blood on her cheek and stared at her fingers.
+"You made me betray my father so you could keep your promise to yours! How could you be so cruel?"
+"If I was cruel, the universe would have stopped me. I only found a friend. I never made any promises. And now that I was born from your father's body, I am his son too. That makes you my sister."
 
-**B21** [firm]
-"I must call on Shiva. I must reach him as no one ever has."
+**B21** [grave]
+She watched him go. Then she spoke.
+"I curse you, Kacha. The secret you stole will never work for you."
+Kacha turned. "Then I will teach it to others. It will work for them. And I curse you, Devayani. You will never find the love you seek."
 
-**B22** [slow]
-Vishnu went into the empty wilderness and worshipped Shiva. Years came and years went. Shiva did not appear. Vishnu sang hymns that could please any god, but the vision he longed for did not come.
-So he stopped. He sifted the earth and shaped a lingam, the sacred form of Shiva. Sitting before it, he began to chant the thousand names.
-"Ashutosh... Bhairava... Mahakaal... Rudradeva..."
-
-**B23** [calm]
-For every name, he laid one lotus on the lingam. When the chant ended, a thousand blooms covered it.
-Shiva was moved. He was about to appear. But first he wanted to test the keeper of the world one last time. While Vishnu arranged the flowers, Shiva quietly stole a single lotus.
-Vishnu counted the flowers. Nine hundred and ninety-nine.
-
-**B24** [whispering]
-Vishnu was baffled. He searched everywhere. The lotus was nowhere to be found. One flower short meant the worship was unfinished. Years of effort, wasted. Would Vishnu fail before Shiva?
-
-**B25** [firm]
-Then Vishnu's face lit up. While chanting Shiva's names, he had forgotten that he had many names too. Beautiful names, given by his devotees. One of them was Kamalanayana.
-The one with eyes like lotuses.
-"If my eyes are like lotuses," he said happily, "then one of them can go on the lingam."
-
-**B26** [grave]
-Shiva watched. The gods watched. All of creation watched. Vishnu plucked out his eye, and placed it on the lingam.
-The thousandth lotus. It shone above all the other flowers.
-
-**B27** [grand]
-That eye shone brighter than any gem, wet with the dew of devotion. Shiva appeared at once and healed Vishnu's eye. He knew what Vishnu wanted. And he gave him a golden disc.
-
-**B28** [firm]
-It had two circles, spinning in opposite directions, and one hundred and eight sharp edges.
-"It is the only weapon in the universe that flies," said Shiva. "It obeys your will. It flies out, destroys its target and comes back to you. With it, you can face every disaster."
-"What shall we call it?" asked Vishnu.
-"Sudarshana." Shiva touched his eyes. "Virtuous vision."
-
-**B29** [calm]
-Bala agreed to die because he could never refuse anyone who asked. His body became nine jewels. Vishnu gave his eye, and Shiva gave him the Sudarshana Chakra. Whose gift moved you more? Tell us in the comments.
-
----
-*The End*
+**B22** [calm]
+Kacha got the mantra. Devayani lost her father's trust and the man she gave it up for. Was Kacha a hero for the gods, or a thief of a girl's heart? Tell us in the comments.
