@@ -5,6 +5,7 @@ from scipy.signal import butter,sosfilt,fftconvolve
 SR=44100;R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def f(m):return 440*2**((m-69)/12)
 def bp(x,a,b):return sosfilt(butter(2,[a,b],'band',fs=SR,output='sos'),x)
+def hp(x,c):return sosfilt(butter(2,c,'high',fs=SR,output='sos'),x)
 def lp(x,c):return sosfilt(butter(2,c,'low',fs=SR,output='sos'),x)
 # progression in semitone offsets from root: i, VI, III, VII style modal (Dorian/Aeolian) -> serene, devotional
 PROG=[[0,7,12,15,19],[-4,3,8,12,15],[3,10,15,19,22],[-2,5,10,14,17]]
@@ -75,6 +76,40 @@ def tense(dur,seed):
     wet=reverb(cl+hits*.7,2.8)
     mix=sub*.5+cl*.7+hb*.8+hits*.9+wet*.7
     fade=np.minimum(1,np.minimum(t/2,(dur-t)/3));mix*=fade
+    return mix/np.max(np.abs(mix))
+def war(dur,seed):
+    """Battle: taiko/war drums with driving rhythm, low brass-like power drone, cymbal-like noise swells, rising tempo."""
+    rng=np.random.default_rng(seed);n=int(dur*SR);t=np.arange(n)/SR;root=38+seed%3
+    def drum(freq,L,g,dec):
+        tt=np.arange(L)/SR;return g*(np.sin(2*np.pi*(freq+freq*1.4*np.exp(-tt*30))*tt)+.25*lp(rng.standard_normal(L),1500)*np.exp(-tt*40))*np.exp(-tt*dec)
+    dr=np.zeros(n);bpm=96.;b=0.0;i=0
+    # pattern per bar of 8 eighths: big=low taiko, mid=hi taiko
+    PAT=[(1,1.0),(0,0),(1,.55),(1,.7),(2,.9),(0,0),(1,.6),(2,.8)]
+    while b<dur-.6:
+        kind,g=PAT[i%8]
+        if kind:
+            L=int(.55*SR);a=int(b*SR)
+            if a+L<n:dr[a:a+L]+=drum(55 if kind==1 else 95,L,g*(.8+.2*rng.random()),7 if kind==1 else 11)
+        if i%16==0 and b>2:   # crash + roll before each phrase
+            for j in range(6):
+                a=int((b-.5+j*.08)*SR);L=int(.25*SR)
+                if 0<=a and a+L<n:dr[a:a+L]+=drum(120,L,.25+.08*j,16)
+        bpm=96+34*b/dur;b+=60/bpm/2;i+=1
+    # brass-like power drone (fifths, filtered saw) swelling with phrase
+    br=np.zeros(n)
+    for m in(root,root+7,root+12):
+        ph=2*np.pi*np.cumsum(f(m)*(1+.002*np.sin(2*np.pi*5*t)))/SR
+        br+=sum(np.sin(h*ph)/h for h in range(1,12))
+    br=lp(br,1400)*(.5+.5*np.sin(2*np.pi*t/(60/96*8))**2)
+    # metal clangs / noise swells on phrase starts
+    sw=np.zeros(n)
+    for c in np.arange(4,dur-1,60/110*8):
+        a=int(c*SR);L=int(2.2*SR)
+        if a+L<n:
+            tt=np.arange(L)/SR;sw[a:a+L]+=hp(rng.standard_normal(L),4000)*np.exp(-tt*2.5)*.35
+    wet=reverb(dr*.6+br*.2,1.6)
+    mix=dr*1.0+br*.35+sw*.5+wet*.4
+    fade=np.minimum(1,np.minimum(t/.6,(dur-t)/2.5));mix*=fade
     return mix/np.max(np.abs(mix))
 def run(reel,seed):
     src=f'{R}/renders/{reel}_1080x1920.mp4';out=f'{R}/renders/{reel}_bgm_1080x1920.mp4'
