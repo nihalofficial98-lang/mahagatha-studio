@@ -5,6 +5,8 @@ Status: setup + prepare done for all three (reels/reel15, reel09, reel10 have re
 Already available (no work): vishnu, vishnu_rest, shiva, narada, indra (prop vajra, crown), indra_thin, kashyapa, diti (EP rig), hiranyaksha, hiranyakashipu, boar, agni, vayu, villager(_w), asikli, Shesha snake tube + snakeHead helper (engine/v2_cast.js ~l.377-410), PK.vajra, PK.sword, PK.chakra, gada, pfx (embers, energy_swirl, divine_rays, ground_crack, halo_ring, havan_kund, sand_drift, boulder, cloud_white_cluster...).
 NOTE: **parvati is NOT in the engine** (only listed in library/SERIES_PLAN.md); `sati` / `adishakti` rigs exist and could be recoloured.
 
+**Designer update (Nov 2026): BUILT, waiting for owner approval.** Names: garuda, vinata, naga, naga2, naga_guard, vrikasura, bhasmasura, mohini, parvati, diti_p, maruta, maruta_baby; pfx amrut_pot, fire_ring, spinning_blades, golden_feather, vajra_thrown, ash_pile, embryo, womb_view, maruta_pieces; bg vaikuntha; poses carry fly glide spread sneak throw headtouch dance dance2 selfcut sleep. Keys + usage: reels/cast.json (per_reel 15/09/10) and library/ENGINE_CAPABILITIES.md. Sheets: library/showcase/reels_cast_15_09_10/. Not built: kadru (not spoken), Garuda carrying Vishnu on his back, a true Vishnu-to-Mohini morph (use a cross-fade).
+
 ## Characters (new rigs)
 | name | story role | look (iconography) | poses / props / animation needed | reels |
 |---|---|---|---|---|

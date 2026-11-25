@@ -687,7 +687,7 @@ function garudaHead(c,k,t,M){M=M||{};const ink='#3a160c',an=Math.max(k||0,M.ange
   // vaishnava tilak (Garuda serves Vishnu)
   PK.cut(c,cc=>{cc.moveTo(-7,-44);cc.lineTo(-3,-22);cc.lineTo(3,-22);cc.lineTo(7,-44);cc.lineTo(3.5,-44);cc.lineTo(0,-28);cc.lineTo(-3.5,-44);cc.closePath()},'#fff6dc',{lw:1,ink:'#a08040',sh:0});PK.cut(c,cc=>cc.roundRect(-1.5,-42,3,18,1.5),'#d0243a',{lw:0,sh:0});
   // eyes: big amber raptor eyes (red irises in anger), heavy brows
-  [-1,1].forEach(sd=>{const ex=sd*20,ey=-8,ry=10.5*(1-bl*.9);const eye=cc=>{cc.moveTo(ex-sd*13,ey+2);cc.quadraticCurveTo(ex,ey-ry*1.45,ex+sd*14,ey-3);cc.quadraticCurveTo(ex,ey+ry*1.15,ex-sd*13,ey+2);cc.closePath()};
+  [-1,1].forEach(sd=>{const ex=sd*20,ey=-8,ry=10.5*(1+su*.35)*(1-bl*.9);const eye=cc=>{cc.moveTo(ex-sd*13,ey+2);cc.quadraticCurveTo(ex,ey-ry*1.45,ex+sd*14,ey-3);cc.quadraticCurveTo(ex,ey+ry*1.15,ex-sd*13,ey+2);cc.closePath()};
     PK.cut(c,eye,'#fffaf0',{lw:1.8,ink:ink,sh:0});
     if(bl<.8){c.save();c.beginPath();eye(c);c.clip();const ix=ex+lx*4-sd*1,iy=ey-1+ly*2;c.fillStyle=PK.rg(c,ix,iy,0,7,an>.35?[[0,'#ff7a40'],[.55,'#c81e14'],[1,'#3a0404']]:[[0,'#ffe080'],[.6,'#e89a1a'],[1,'#6a3408']]);c.beginPath();c.arc(ix,iy,8,0,7);c.fill();
       c.fillStyle='#0a0404';c.beginPath();c.arc(ix,iy,3.8,0,7);c.fill();c.fillStyle='#fff';c.beginPath();c.arc(ix-2,iy-2.4,1.6,0,7);c.fill();c.restore();if(an>.35)PK.glow(c,ex,ey,16,'255,60,40',.4*an)}
@@ -737,7 +737,7 @@ function drawBhasma(c,o,t,kk,face){const S=CAST.bhasmasura,P=poseOf(o.pose,'bhas
   drawHuman(c,S,P,{t:t,k:o.k!=null?o.k:(S.kdef||kk),expr:face,prop:o.prop,mood:o.mood,tilt:o.tilt});c.filter='none';
   if(hg>0&&ash<.3){c.save();leanAt(c,P);const h=handAt(S,P,t,1),pu=.8+.2*Math.sin(t*5);PK.glow(c,h[0],h[1]-6,110*hg,'255,130,50',.7*hg*pu);PK.glow(c,h[0],h[1]-6,46*hg,'255,240,210',.85*hg);
     for(let i=0;i<6;i++){const u=(t*.6+i/6)%1;c.fillStyle=`rgba(190,184,180,${.5*(1-u)*hg})`;c.beginPath();c.arc(h[0]+Math.sin(i*2.1+t)*16,h[1]-14-u*60,3+u*4,0,7);c.fill()}c.restore()}
-  if(ash>0){const u=Math.max(0,Math.min(1,(ash-.3)/.7)),yc=PK.lerp(-640,10,u);c.save();c.globalCompositeOperation='destination-out';c.beginPath();c.moveTo(-420,-920);c.lineTo(420,-920);c.lineTo(420,yc);
+  if(ash>0){const u=Math.max(0,Math.min(1,(ash-.3)/.7)),yc=PK.lerp(-640,10,u);c.save();c.globalCompositeOperation='destination-out';c.fillStyle='#000';c.globalAlpha=1;c.beginPath();c.moveTo(-420,-920);c.lineTo(420,-920);c.lineTo(420,yc);
       for(let i=20;i>=0;i--){const x=-420+i*42;c.lineTo(x,yc+Math.sin(i*2.7+t*3)*14+(i%2?10:-6))}c.closePath();c.fill();c.restore();
     if(u>0&&u<1)for(let i=0;i<40;i++){const v=(t*.5+i/40)%1,x=Math.sin(i*5.3)*110+Math.sin(t+i)*20,y=yc-v*120+v*v*200;c.fillStyle=`rgba(210,206,200,${.7*(1-v)})`;c.beginPath();c.arc(x,y,2+(i%3),0,7);c.fill()}
     ashPile(c,300,Math.min(1,ash*1.1),t)}
@@ -784,6 +784,8 @@ function embryo(c,x,y,r,t,cry,seed){seed=seed||0;c.save();c.translate(x,y);const
   PK.cut(c,PK.P.ell(2,-4,5,4),sk.b,{lw:1,sh:0});c.restore()}
 function hexPts(n,D){const P=[[0,0]];for(let i=0;i<6;i++){const a=i/6*Math.PI*2-Math.PI/2;P.push([Math.cos(a)*D,Math.sin(a)*D])}return P.slice(0,n)}
 function marutaPieces(c,w,t,F){const n=F.n||7,sp=F.spread==null?1:F.spread,cry=F.cry==null?1:F.cry,r=n>7?w*.045:w*.1,pts=[];
+  if(F.born){const cols=Math.min(7,n),rows=Math.ceil(n/cols),cell=w/cols;for(let i=0;i<n;i++){const cx=(i%cols-(cols-1)/2)*cell*Math.max(.2,sp),cy=(Math.floor(i/cols)-(rows-1)/2)*cell*1.25*Math.max(.2,sp);
+    c.save();c.translate(cx+(Math.floor(i/cols)%2)*cell*.12,cy+cell*.62);c.scale(cell/190,cell/190);babyFig(c,{mood:cry>.3?{sad:.9,mouth:.5+.3*Math.abs(Math.sin(t*6+i))}:{smile:.5}},t+i*.3);c.restore()}return}
   if(n<=7)hexPts(n,w*.28*sp).forEach(p=>pts.push(p));else hexPts(7,w*.36*sp).forEach(g=>hexPts(7,w*.105*Math.max(.15,sp)).forEach(p=>pts.push([g[0]+p[0],g[1]+p[1]])));
   pts.forEach((p,i)=>{if(F.born){c.save();c.translate(p[0],p[1]+r*1.2);c.scale(r/70,r/70);babyFig(c,{mood:cry>.3?{sad:.9,mouth:.5+.3*Math.abs(Math.sin(t*6+i))}:{smile:.5}},t+i*.3);c.restore()}
     else embryo(c,p[0],p[1],r,t,cry*(.6+.4*Math.abs(Math.sin(t*5+i))),i)})}
@@ -837,8 +839,8 @@ Object.assign(XFIG,{garuda:drawGaruda,bhasmasura:drawBhasma,mohini:drawMohini,di
 const XHEAD={
  garuda:(c,o,t,kk,face,M)=>{const S=CAST.garuda;[-1,1].forEach(sd=>{c.save();c.translate(sd*104,92);garudaWing(c,sd,.42,Math.sin(t*1.2)*.03,1.05);c.restore()});bust(c,S,{t:t});c.save();c.translate(0,-8);c.scale(1.25,1.25);garudaHead(c,kk,t,M);c.restore()},
  maruta_baby:(c,o,t)=>{c.translate(0,250);c.scale(1.5,1.5);babyFig(c,o,t)},
- naga:(c,o,t,kk)=>{c.translate(0,250);c.scale(.82,.82);nagaFig(c,o,t,kk,NAGA.naga)},naga2:(c,o,t,kk)=>{c.translate(0,250);c.scale(.82,.82);nagaFig(c,o,t,kk,NAGA.naga2)},
- naga_guard:(c,o,t,kk)=>{c.translate(0,250);c.scale(.82/1.45,.82/1.45);nagaFig(c,o,t,kk,NAGA.naga_guard)}
+ naga:(c,o,t,kk)=>{c.scale(1.25,1.25);c.translate(0,322);nagaFig(c,o,t,kk,NAGA.naga)},naga2:(c,o,t,kk)=>{c.scale(1.25,1.25);c.translate(0,322);nagaFig(c,o,t,kk,NAGA.naga2)},
+ naga_guard:(c,o,t,kk)=>{c.scale(1.25/1.45,1.25/1.45);c.translate(0,322*1.45);nagaFig(c,o,t,kk,NAGA.naga_guard)}
 };
 
 /* ---------- engine glue ---------- */

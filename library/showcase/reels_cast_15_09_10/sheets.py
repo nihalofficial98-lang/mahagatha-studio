@@ -26,12 +26,12 @@ FRAMES={
  'garuda_motion':dict(title='Garuda - flap cycle (pose fly at 4 moments), glide, carry, namaste',bg=SKY,figs=[
    ('fly',F('garuda',140,560,.62,pose='fly',prop='amrut',flap=1,wing=1)),('',F('garuda',380,560,.62,pose='fly',prop='amrut',flap=1.35)),('',F('garuda',620,560,.62,pose='fly',prop='amrut',flap=.6)),
    ('glide',F('garuda',870,560,.62,pose='glide',emo='joy')),('carry (standing)',F('garuda',1060,660,.62,pose='carry',prop='amrut')),('namaste',F('garuda',1200,660,.62,pose='namaste',emo='devotion'))]),
- 'nagas':dict(title='Nagas (Reel 15): naga (teal) / naga2 (black-gold) crowd, naga_guard (big, crowned, red eyes); pose stand=rise | bow | point=strike | sit=coil',figs=[
+ 'nagas':dict(title='Nagas (Reel 15): naga / naga2 crowd, naga_guard (big, crowned); pose stand | bow | point=strike | sit=coil',figs=[
    ('nagas, hoods raised',F('naga',120,640,.5,emo='anger')),('',F('naga2',250,650,.46,flip=-1)),('',F('naga',360,655,.42,pose='sit')),
    ('bowing before the pot',F('naga2',520,650,.5,pose='bow',flip=-1)),
    ('Vinata, their slave',F('vinata',700,660,.72,pose='plead',emo='grief')),
    ('the two guard snakes',F('naga_guard',900,660,.5)),('',F('naga_guard',1130,660,.5,pose='point',flip=-1,emo='rage')),
-   ('naga close-up',F('naga',620,170,.3,head=True,emo='anger'))],fx=[P('amrut_pot',430,600,70)]),
+   ('naga close-up',F('naga',560,150,.3,head=True,emo='anger')),('guard close-up',F('naga_guard',800,150,.3,head=True))],fx=[P('amrut_pot',430,600,70)]),
  'reel15_props':dict(title='Reel 15 props: Amrut pot inside the ring of fire, spinning blades, golden feather, thrown Vajra',bg={'k':'storm','r':.3,'fore':False},labcol='#ffe9b8',figs=[
    ('Garuda breaks through',F('garuda',980,600,.62,pose='fly',prop='amrut',emo='anger',flap=1.2))],
    extra=[],fx=[P('fire_ring',300,610,420,part='back'),P('amrut_pot',300,560,80),P('fire_ring',300,610,420,part='front'),P('spinning_blades',660,300,230),
@@ -45,8 +45,8 @@ FRAMES={
    ('Vrikasura',F('vrikasura',300,190,.3,head=True,emo='devotion')),('Bhasmasura',F('bhasmasura',520,190,.3,head=True,emo='rage')),('stares at Parvati',F('bhasmasura',740,190,.3,head=True,mood={'smile':.6,'lx':.8,'ly':-.1}))]),
  'bhasma_ash':dict(title='Reel 9 - hand on his own head: Bhasmasura turns to ash (key ash 0..1, or ashc cue + ashd seconds)',bg={'k':'vaikuntha'},figs=[
    ('Mohini: hand on head',F('mohini',130,660,.76,pose='headtouch',mood={'smile':.7})),('he copies her',F('bhasmasura',360,660,.76,pose='headtouch',mood={'smile':.5})),
-   ('ash .45',F('bhasmasura',600,660,.76,pose='headtouch',ash=.45)),('ash .75',F('bhasmasura',840,660,.76,pose='headtouch',ash=.75)),('ash 1: a pile of ash',F('bhasmasura',1060,660,.76,pose='headtouch',ash=1)),
-   ('Mohini spins (spin:1)',F('mohini',1200,660,.6,pose='dance2',spin=.07,mood={'smile':.8,'mouth':.4}))]),
+   ('ash .45',F('bhasmasura',600,660,.76,pose='headtouch',ash=.45)),('ash .75',F('bhasmasura',840,660,.76,pose='headtouch',ash=.75)),('ash 1: ash pile',F('bhasmasura',1050,660,.76,pose='headtouch',ash=1)),
+   ('spin',F('mohini',1210,660,.6,pose='dance2',spin=.07,mood={'smile':.8,'mouth':.4}))]),
  'mohini_forms':dict(title='Reel 9 - Mohini: Vishnu\'s enchantress form (Vishnu-blue skin, red sari, yellow pallu): dance poses',bg={'k':'vaikuntha'},figs=[
    ('Vishnu',F('vishnu',130,660,.74,emo='calm')),('Mohini',F('mohini',330,660,.76,emo='joy')),('dance',F('mohini',520,660,.76,pose='dance',mood={'smile':.7})),
    ('dance2',F('mohini',710,660,.76,pose='dance2',mood={'smile':.7,'lx':.6})),('"Come, dance with me"',F('mohini',900,660,.76,pose='open',mood={'smile':.8,'mouth':.4})),
@@ -58,16 +58,16 @@ FRAMES={
    ('"Protect me"',F('shiva',420,660,.74,pose='plead',emo='fear',flip=1)),('Vishnu',F('vishnu',820,660,.74,emo='calm',flip=-1))]),
  # ---------- Reel 10: Indra, Diti, Marutas ----------
  'diti_forms':dict(title='Reel 10 - Diti (pregnant: diti_p): tapasya, asleep with unwashed feet (pose sleep), Indra sneaking',bg={'k':'dusk'},labcol='#ffe9b8',figs=[
-   ('tapasya',F('diti_p',130,650,.74,pose='sitpray',mood={'blink':1})),('standing',F('diti_p',330,660,.76,emo='calm')),
-   ('asleep (sleep)',F('diti_p',650,660,.74,pose='sleep')),('Indra sneaks (sneak)',F('indra',1000,660,.76,pose='sneak',mood={'lx':-.6,'anger':.3},flip=-1)),
-   ('Indra throws (throw)',F('indra',1180,660,.72,pose='throw',emo='anger',flip=-1)),
-   ('Diti',F('diti_p',500,190,.3,head=True,emo='calm')),('Kashyapa',F('kashyapa',740,240,.62,pose='point',emo='calm'))]),
+   ('tapasya',F('diti_p',110,650,.7,pose='sitpray',mood={'blink':1})),('standing',F('diti_p',290,660,.72,emo='calm')),
+   ('asleep (sleep)',F('diti_p',560,660,.7,pose='sleep')),('Kashyapa: the rules',F('kashyapa',820,660,.7,pose='point',emo='calm')),('Indra sneaks (sneak)',F('indra',1010,660,.72,pose='sneak',mood={'lx':-.6,'anger':.3},flip=-1)),
+   ('Indra throws (throw)',F('indra',1190,660,.68,pose='throw',emo='anger',flip=-1)),
+   ('Diti',F('diti_p',470,170,.3,head=True,emo='calm')),('Diti asleep',F('diti_p',700,170,.3,head=True,mood={'blink':1,'smile':.1}))]),
  'womb_marutas':dict(title='Reel 10 - womb_view (n 1/7/49, cry, flash), maruta_pieces (spread, cry, born), maruta_baby crowd, grown maruta',bg={'k':'voidR','rgb':'255,120,80'},labcol='#ffe9b8',figs=[
    ('Marutas (grown)',F('maruta',1060,680,.6,emo='joy')),('',F('maruta',1200,680,.6,emo='calm',flip=-1)),('Indra',F('indra',930,680,.62,emo='joy'))],
    fx=[P('womb_view',150,200,240,n=1),P('womb_view',420,200,240,n=1,flash=1,cry=.5),P('womb_view',700,200,240,n=7,cry=1),P('womb_view',990,200,240,n=49,spread=1,cry=1),
-     P('maruta_pieces',300,520,330,n=49,born=1,cry=1),P('maruta_pieces',650,540,260,n=7,born=1,cry=0),
+     P('maruta_pieces',330,560,230,n=49,born=1,cry=1),P('maruta_pieces',650,540,260,n=7,born=1,cry=0),
      lab('the unborn child',150,345,16,'#ffe9b8'),lab('the Vajra flashes',420,345,16,'#ffe9b8'),lab('seven pieces, crying',700,345,16,'#ffe9b8'),lab('forty-nine',990,345,16,'#ffe9b8'),
-     lab('49 crying babies (born:1)',300,700,16,'#ffe9b8'),lab('calm',650,700,16,'#ffe9b8')]),
+     lab('49 crying babies (born:1)',330,712,16,'#ffe9b8'),lab('calm',650,700,16,'#ffe9b8')]),
 }
 LINE={
  'reel15':('Reel 15 - How did Garuda become Vishnu\'s vahana?',[('Garuda','garuda',{'pose':'carry','prop':'amrut'}),('Vinata','vinata',{'emo':'sad'}),('naga','naga',{'emo':'anger'}),('naga2','naga2',{}),('guard snake','naga_guard',{}),('Vishnu','vishnu',{'emo':'joy'}),('Indra','indra',{'pose':'throw','emo':'anger','flip':-1})]),

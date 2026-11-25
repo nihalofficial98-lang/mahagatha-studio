@@ -1,11 +1,12 @@
 {
- "reels": "01-07",
+ "reels": "01-07, 09, 10, 15",
  "format": "vertical 9:16 reels, ~80 s, English",
  "notes": [
   "All characters are coded rigs (engine/v2_cast.js); names are printed by python3 studio/engine_vocab.py.",
   "Emotion presets (emo): calm joy anger rage sad grief surprise fear shame pride doubt devotion; \"moods\" below are custom mood:{...} presets per character.",
   "Animals (cow, mare, duck, doe): pose stand|run|bow, walk:1 key = gentle gait; mood.blink/lx; no faces beyond the eyes; flip:-1 faces left; head:true gives a head close-up.",
-  "EP6 characters/specs unchanged; new characters were appended."
+  "EP6 characters/specs unchanged; new characters were appended.",
+  "Reels 15/09/10 (Nov 2026): figure keys read by the new rigs: garuda wing 0..1 / flap 0..1 / prop:'amrut'; bhasmasura hand 0..1 (boon glow), ash 0..1 or ashc cue + ashd s; mohini spin (turns/s) + spinc cue; pose 'sleep' lays any standard human rig on a mat (mat:false); poses carry fly glide spread (garuda), sneak throw (indra: throw = vajra raised, grip:1), headtouch, dance, dance2, selfcut (prop:'sword'). New pfx: amrut_pot fire_ring(part back|front) spinning_blades golden_feather vajra_thrown ash_pile embryo womb_view maruta_pieces. New bg: vaikuntha."
  ],
  "new_characters": [
   "brahma5",
@@ -29,7 +30,19 @@
   "prakriti",
   "swaha",
   "haryashva",
-  "shavalashva"
+  "shavalashva",
+  "garuda",
+  "vinata",
+  "naga",
+  "naga2",
+  "naga_guard",
+  "vrikasura",
+  "bhasmasura",
+  "mohini",
+  "parvati",
+  "diti_p",
+  "maruta",
+  "maruta_baby"
  ],
  "overview_sheets": [
   "library/showcase/reels_cast/lineup_reel01.jpg",
@@ -47,7 +60,21 @@
   "library/showcase/reels_cast/nidra_forms.jpg",
   "library/showcase/reels_cast/maya_family.jpg",
   "library/showcase/reels_cast/swaha_forms.jpg",
-  "library/showcase/reels_cast/sons_crowd.jpg"
+  "library/showcase/reels_cast/sons_crowd.jpg",
+  "library/showcase/reels_cast_15_09_10/lineup_reel15.jpg",
+  "library/showcase/reels_cast_15_09_10/lineup_reel09.jpg",
+  "library/showcase/reels_cast_15_09_10/lineup_reel10.jpg",
+  "library/showcase/reels_cast_15_09_10/garuda_forms.jpg",
+  "library/showcase/reels_cast_15_09_10/garuda_motion.jpg",
+  "library/showcase/reels_cast_15_09_10/nagas.jpg",
+  "library/showcase/reels_cast_15_09_10/reel15_props.jpg",
+  "library/showcase/reels_cast_15_09_10/bhasma_forms.jpg",
+  "library/showcase/reels_cast_15_09_10/bhasma_ash.jpg",
+  "library/showcase/reels_cast_15_09_10/mohini_forms.jpg",
+  "library/showcase/reels_cast_15_09_10/reel09_places.jpg",
+  "library/showcase/reels_cast_15_09_10/vaikuntha_bg.jpg",
+  "library/showcase/reels_cast_15_09_10/diti_forms.jpg",
+  "library/showcase/reels_cast_15_09_10/womb_marutas.jpg"
  ],
  "per_reel": [
   {
@@ -1634,6 +1661,509 @@
     "river Sindhu meets the sea: bg sea / vista river (scene-designer)"
    ],
    "requests": []
+  },
+  {
+   "reel": "15",
+   "title": "How Did Garuda Become Vishnu's Vahana?",
+   "cast": [
+    {
+     "who": "garuda",
+     "role": "hero",
+     "new": true,
+     "identity": "half bird half man: gilded body, white eagle face with golden hooked beak, red/gold crest + small crown, Vaishnava tilak, red-gold wings, talons, red short dhoti",
+     "props": [
+      "amrut (prop:amrut)",
+      "golden_feather pfx"
+     ],
+     "poses": [
+      "stand",
+      "carry",
+      "fly",
+      "glide",
+      "spread",
+      "bow",
+      "namaste"
+     ],
+     "emotions": [
+      "calm",
+      "anger",
+      "fear",
+      "surprise",
+      "joy",
+      "devotion"
+     ],
+     "moves": [
+      "wing",
+      "flap",
+      "walkTo",
+      "turnc",
+      "acts (stand->fly blends wings)"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/garuda_faces.jpg",
+      "library/showcase/reels_cast_15_09_10/garuda_poses.jpg",
+      "library/showcase/reels_cast_15_09_10/garuda_forms.jpg",
+      "library/showcase/reels_cast_15_09_10/garuda_motion.jpg"
+     ]
+    },
+    {
+     "who": "vinata",
+     "role": "support",
+     "new": true,
+     "identity": "Garuda's mother, slave of the snakes: faded brown sari, plain choli, no jewellery, glass bangles",
+     "props": [],
+     "poses": [
+      "stand",
+      "plead",
+      "bow",
+      "namaste",
+      "walk"
+     ],
+     "emotions": [
+      "sad",
+      "grief",
+      "joy"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/vinata_faces.jpg",
+      "library/showcase/reels_cast_15_09_10/vinata_poses.jpg"
+     ]
+    },
+    {
+     "who": "naga",
+     "role": "crowd",
+     "new": true,
+     "identity": "teal cobra, raised hood, forked tongue flicks",
+     "props": [],
+     "poses": [
+      "stand (rise)",
+      "sit (coil)",
+      "bow",
+      "point (strike)"
+     ],
+     "emotions": [
+      "calm",
+      "anger"
+     ],
+     "moves": [
+      "flip",
+      "x offsets give each a different sway"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/naga_faces.jpg",
+      "library/showcase/reels_cast_15_09_10/naga_poses.jpg",
+      "library/showcase/reels_cast_15_09_10/nagas.jpg"
+     ]
+    },
+    {
+     "who": "naga2",
+     "role": "crowd",
+     "new": true,
+     "identity": "black-gold cobra",
+     "props": [],
+     "poses": [
+      "stand",
+      "sit",
+      "bow",
+      "point"
+     ],
+     "emotions": [
+      "calm",
+      "anger"
+     ],
+     "moves": [],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/naga2_faces.jpg",
+      "library/showcase/reels_cast_15_09_10/naga2_poses.jpg"
+     ]
+    },
+    {
+     "who": "naga_guard",
+     "role": "support",
+     "new": true,
+     "identity": "big crowned guard serpent, glowing red eyes (use two)",
+     "props": [],
+     "poses": [
+      "stand",
+      "point (strike)"
+     ],
+     "emotions": [
+      "rage"
+     ],
+     "moves": [],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/naga_guard_faces.jpg",
+      "library/showcase/reels_cast_15_09_10/naga_guard_poses.jpg"
+     ]
+    },
+    {
+     "who": "vishnu",
+     "role": "support",
+     "new": false,
+     "identity": "blue, 4 arms, yellow dhoti, kirita",
+     "props": [],
+     "poses": [
+      "stand",
+      "open"
+     ],
+     "emotions": [
+      "joy",
+      "calm"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/vishnu_faces.jpg"
+     ]
+    },
+    {
+     "who": "indra",
+     "role": "support",
+     "new": false,
+     "identity": "blue dhoti, fan crown, vajra",
+     "props": [
+      "vajra",
+      "vajra_thrown pfx"
+     ],
+     "poses": [
+      "stand",
+      "throw"
+     ],
+     "emotions": [
+      "anger",
+      "surprise",
+      "shame"
+     ],
+     "moves": [
+      "acts stand->throw"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/lineup_reel15.jpg"
+     ]
+    }
+   ]
+  },
+  {
+   "reel": "09",
+   "title": "Why Did Shiva Run From His Own Devotee?",
+   "cast": [
+    {
+     "who": "vrikasura",
+     "role": "hero",
+     "new": true,
+     "identity": "asura devotee: dark red-brown skin, small horns, matted jata, ash tripundra, rudraksha, saffron cloth",
+     "props": [
+      "sword (prop:sword)"
+     ],
+     "poses": [
+      "sitpray",
+      "selfcut",
+      "plead",
+      "namaste",
+      "stand"
+     ],
+     "emotions": [
+      "devotion",
+      "grief",
+      "joy"
+     ],
+     "moves": [
+      "mood.blink 1 = tapasya"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/vrikasura_faces.jpg",
+      "library/showcase/reels_cast_15_09_10/vrikasura_poses.jpg",
+      "library/showcase/reels_cast_15_09_10/bhasma_forms.jpg"
+     ]
+    },
+    {
+     "who": "bhasmasura",
+     "role": "hero",
+     "new": true,
+     "identity": "same face after the boon: asura crown + horns, red eyes, ash streaks, black-red cloth, glowing right hand",
+     "props": [
+      "ash_pile pfx"
+     ],
+     "poses": [
+      "raise",
+      "run",
+      "headtouch",
+      "dance",
+      "point",
+      "stand"
+     ],
+     "emotions": [
+      "anger",
+      "rage",
+      "joy",
+      "pride"
+     ],
+     "moves": [
+      "hand",
+      "ash / ashc+ashd",
+      "walkTo"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/bhasmasura_faces.jpg",
+      "library/showcase/reels_cast_15_09_10/bhasmasura_poses.jpg",
+      "library/showcase/reels_cast_15_09_10/bhasma_ash.jpg"
+     ]
+    },
+    {
+     "who": "mohini",
+     "role": "hero",
+     "new": true,
+     "identity": "Vishnu as the enchantress: Vishnu-blue skin, red sari, yellow pallu, gold choli, garland, crown",
+     "props": [],
+     "poses": [
+      "stand",
+      "dance",
+      "dance2",
+      "headtouch",
+      "open"
+     ],
+     "emotions": [
+      "joy",
+      "calm"
+     ],
+     "moves": [
+      "spin (+spinc)",
+      "cross-fade from vishnu (ac/fo)"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/mohini_faces.jpg",
+      "library/showcase/reels_cast_15_09_10/mohini_poses.jpg",
+      "library/showcase/reels_cast_15_09_10/mohini_forms.jpg"
+     ]
+    },
+    {
+     "who": "parvati",
+     "role": "support",
+     "new": true,
+     "identity": "red sari, green choli, small crown, lotus",
+     "props": [
+      "lotus"
+     ],
+     "poses": [
+      "stand",
+      "walk"
+     ],
+     "emotions": [
+      "calm",
+      "fear",
+      "surprise"
+     ],
+     "moves": [
+      "walk",
+      "walkTo"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/parvati_faces.jpg",
+      "library/showcase/reels_cast_15_09_10/parvati_poses.jpg"
+     ]
+    },
+    {
+     "who": "shiva",
+     "role": "hero",
+     "new": false,
+     "identity": "ash-blue, jata + crescent, third eye, tiger skin, Vasuki, trishul",
+     "props": [],
+     "poses": [
+      "flee",
+      "run",
+      "plead",
+      "stand"
+     ],
+     "emotions": [
+      "fear",
+      "calm"
+     ],
+     "moves": [
+      "walkTo"
+     ],
+     "sheet": [
+      "library/showcase/ep06_cast/shiva_faces.jpg"
+     ]
+    },
+    {
+     "who": "narada",
+     "role": "support",
+     "new": false,
+     "identity": "veena, saffron sash",
+     "props": [
+      "veena"
+     ],
+     "poses": [
+      "stand",
+      "point"
+     ],
+     "emotions": [
+      "joy"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": []
+    },
+    {
+     "who": "vishnu",
+     "role": "support",
+     "new": false,
+     "identity": "blue, 4 arms",
+     "props": [],
+     "poses": [
+      "stand"
+     ],
+     "emotions": [
+      "calm",
+      "joy"
+     ],
+     "moves": [
+      "fo (becomes Mohini)"
+     ],
+     "sheet": []
+    }
+   ]
+  },
+  {
+   "reel": "10",
+   "title": "A Mother Prayed 100 Years for a Son to Kill Indra. How Did Indra Survive?",
+   "cast": [
+    {
+     "who": "diti_p",
+     "role": "hero",
+     "new": true,
+     "identity": "Diti late in pregnancy: maroon sari, round belly, dusty feet; pose sleep lies on a mat",
+     "props": [],
+     "poses": [
+      "stand",
+      "sitpray",
+      "sleep"
+     ],
+     "emotions": [
+      "calm",
+      "devotion",
+      "surprise",
+      "anger"
+     ],
+     "moves": [
+      "acts sleep->sit (cut)"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/diti_p_faces.jpg",
+      "library/showcase/reels_cast_15_09_10/diti_p_poses.jpg",
+      "library/showcase/reels_cast_15_09_10/diti_forms.jpg"
+     ]
+    },
+    {
+     "who": "indra",
+     "role": "hero",
+     "new": false,
+     "identity": "blue dhoti, fan crown, vajra",
+     "props": [
+      "vajra"
+     ],
+     "poses": [
+      "sneak",
+      "throw",
+      "flee",
+      "stand"
+     ],
+     "emotions": [
+      "fear",
+      "anger",
+      "shame",
+      "surprise"
+     ],
+     "moves": [
+      "walkTo",
+      "turnc"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/diti_forms.jpg"
+     ]
+    },
+    {
+     "who": "kashyapa",
+     "role": "support",
+     "new": false,
+     "identity": "white jata + beard, saffron, kamandalu",
+     "props": [],
+     "poses": [
+      "point",
+      "stand"
+     ],
+     "emotions": [
+      "calm"
+     ],
+     "moves": [
+      "talk"
+     ],
+     "sheet": []
+    },
+    {
+     "who": "maruta_baby",
+     "role": "crowd",
+     "new": true,
+     "identity": "storm-god baby: tiny crown, blue glow ring, crying (emo grief) or calm",
+     "props": [],
+     "poses": [
+      "stand"
+     ],
+     "emotions": [
+      "grief",
+      "joy",
+      "calm"
+     ],
+     "moves": [
+      "crowds as figures or maruta_pieces born:1"
+     ],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/maruta_baby_faces.jpg",
+      "library/showcase/reels_cast_15_09_10/maruta_baby_poses.jpg",
+      "library/showcase/reels_cast_15_09_10/womb_marutas.jpg"
+     ]
+    },
+    {
+     "who": "maruta",
+     "role": "crowd",
+     "new": true,
+     "identity": "grown storm god: sky-blue dhoti, white wind scarf, fan crest, storm halo",
+     "props": [],
+     "poses": [
+      "stand",
+      "namaste"
+     ],
+     "emotions": [
+      "joy",
+      "calm"
+     ],
+     "moves": [],
+     "sheet": [
+      "library/showcase/reels_cast_15_09_10/maruta_faces.jpg",
+      "library/showcase/reels_cast_15_09_10/maruta_poses.jpg"
+     ]
+    },
+    {
+     "who": "hiranyaksha",
+     "role": "support",
+     "new": false,
+     "identity": "asura (Diti's son, killed by Vishnu)",
+     "props": [],
+     "poses": [
+      "stand"
+     ],
+     "emotions": [
+      "anger"
+     ],
+     "moves": [],
+     "sheet": []
+    }
+   ]
   }
  ],
  "requests": [
@@ -1694,6 +2224,61 @@
    "what": "Brahma pursuing in animal forms (bull, stallion ...)",
    "why": "not in the narration",
    "status": "not needed"
+  },
+  {
+   "what": "Garuda (wings, flap, Amrut pot, talons)",
+   "why": "Reel 15",
+   "status": "built",
+   "who": "garuda"
+  },
+  {
+   "what": "Vinata",
+   "why": "Reel 15 \"son of Vinata ... freed his mother\"",
+   "status": "built"
+  },
+  {
+   "what": "nagas crowd + two guard snakes",
+   "why": "Reel 15",
+   "status": "built",
+   "who": "naga, naga2, naga_guard"
+  },
+  {
+   "what": "Kadru",
+   "why": "not named in the spoken audio",
+   "status": "not needed"
+  },
+  {
+   "what": "ring of fire, spinning blades, Amrut pot, golden feather, thrown Vajra",
+   "why": "Reel 15",
+   "status": "built",
+   "who": "pfx"
+  },
+  {
+   "what": "Garuda carrying Vishnu",
+   "why": "Reel 15 last lines",
+   "status": "not needed",
+   "note": "brief said not needed; stage as Vishnu standing beside / above Garuda"
+  },
+  {
+   "what": "Vrikasura / Bhasmasura two looks, boon hand, turn to ash, ash pile",
+   "why": "Reel 9",
+   "status": "built"
+  },
+  {
+   "what": "Mohini + dance/spin, Parvati, Vaikuntha background",
+   "why": "Reel 9",
+   "status": "built"
+  },
+  {
+   "what": "pregnant sleeping Diti, womb view, embryo, 7/49 pieces, 49 babies, grown Marutas, Indra sneak/throw",
+   "why": "Reel 10",
+   "status": "built"
+  },
+  {
+   "what": "Vishnu-to-Mohini transformation effect",
+   "why": "Reel 9 \"Vishnu vanished. A beautiful woman stood in his place\"",
+   "status": "built",
+   "note": "no morph: cross-fade vishnu (fo) -> mohini (ac) with energy_swirl / divine_rays pfx"
   }
  ]
 }
