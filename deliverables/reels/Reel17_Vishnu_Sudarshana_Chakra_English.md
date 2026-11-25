@@ -1,11 +1,11 @@
 # Reel 17: How Did Vishnu Get the Sudarshana Chakra? (story 13)
 
 ## Hook (first lines, read first)
-- Context: Vishnu counted the lotuses. Nine hundred and ninety-nine. One was missing.
-- Lean: So he pulled out his own eye.
-- Snapback: And that eye won him the Sudarshana Chakra. How?
+- Context: How did Vishnu get the Sudarshana Chakra?
+- Lean: He pulled out his own eye.
+- Snapback: The god who protects the whole universe tore out his own eye, for another god. Why?
 
-**Spoken:** Vishnu counted the lotuses. Nine hundred and ninety-nine. One was missing. So he pulled out his own eye. And that eye won him the Sudarshana Chakra. How?
+**Spoken:** How did Vishnu get the Sudarshana Chakra? He pulled out his own eye. The god who protects the whole universe tore out his own eye, for another god. Why?
 
 **Question:** How Did Vishnu Get the Sudarshana Chakra?
 **Answer:** He worshipped Shiva with a thousand lotuses. When one went missing, he plucked out his own eye and offered it. Shiva gave him the Chakra.
@@ -15,20 +15,20 @@
 **Alternates:** (a) Why Did Vishnu Pull Out His Own Eye? | (b) Why Did Vishnu Worship Shiva? (first-frame: "Vishnu Worships Shiva")
 
 ## Tagged narration
-[curious] Vishnu counted the lotuses. Nine hundred and ninety-nine. One was missing. So he pulled out his own eye. And that eye won him the Sudarshana Chakra. How?
+[curious] How did Vishnu get the Sudarshana Chakra? He pulled out his own eye. The god who protects the whole universe tore out his own eye, for another god. Why?
 [grave] It began with demons. They tormented the gods and killed people. The gods begged Vishnu to save them. Vishnu was tired of the endless attacks. He knew he needed Shiva's power. He went into the wilderness and worshipped Shiva. Years passed. Shiva did not appear.
 [calm] So Vishnu shaped a lingam, the sacred form of Shiva, out of earth. He chanted the thousand names of Shiva. For every name, he laid one lotus on the lingam. When the chant ended, a thousand lotuses covered it. Shiva was moved. But he wanted to test Vishnu one last time. He quietly took one lotus.
-[whispering] Vishnu counted again. Nine hundred and ninety-nine. He searched everywhere. The lotus was gone. One flower short meant the worship was unfinished. Years of effort, wasted. Would Vishnu fail before Shiva?
+[whispering] Vishnu counted the flowers. Nine hundred and ninety-nine. He searched everywhere. The lotus was gone. One flower short meant the worship was unfinished. Years of effort, wasted. Would Vishnu fail before Shiva?
 [firm] Then Vishnu smiled. One of his names was Kamalanayana, the one with lotus eyes. "If my eyes are like lotuses," he said, "one of them can go on the lingam." He plucked out his eye and placed it there. The thousandth lotus.
 [grand] Shiva appeared at once and healed Vishnu's eye. Then he gave him a golden disc with two circles spinning in opposite directions. "Call it Sudarshana," he said, "virtuous vision." That is how Vishnu got the Sudarshana Chakra. He gave an eye, and Shiva gave him the weapon.
 
 **Length:** 253 words (tags excluded), about 101 s at 0.40 s/word.
 
 ## Plain narration
-Vishnu counted the lotuses. Nine hundred and ninety-nine. One was missing. So he pulled out his own eye. And that eye won him the Sudarshana Chakra. How?
+How did Vishnu get the Sudarshana Chakra? He pulled out his own eye. The god who protects the whole universe tore out his own eye, for another god. Why?
 It began with demons. They tormented the gods and killed people. The gods begged Vishnu to save them. Vishnu was tired of the endless attacks. He knew he needed Shiva's power. He went into the wilderness and worshipped Shiva. Years passed. Shiva did not appear.
 So Vishnu shaped a lingam, the sacred form of Shiva, out of earth. He chanted the thousand names of Shiva. For every name, he laid one lotus on the lingam. When the chant ended, a thousand lotuses covered it. Shiva was moved. But he wanted to test Vishnu one last time. He quietly took one lotus.
-Vishnu counted again. Nine hundred and ninety-nine. He searched everywhere. The lotus was gone. One flower short meant the worship was unfinished. Years of effort, wasted. Would Vishnu fail before Shiva?
+Vishnu counted the flowers. Nine hundred and ninety-nine. He searched everywhere. The lotus was gone. One flower short meant the worship was unfinished. Years of effort, wasted. Would Vishnu fail before Shiva?
 Then Vishnu smiled. One of his names was Kamalanayana, the one with lotus eyes. "If my eyes are like lotuses," he said, "one of them can go on the lingam." He plucked out his eye and placed it there. The thousandth lotus.
 Shiva appeared at once and healed Vishnu's eye. Then he gave him a golden disc with two circles spinning in opposite directions. "Call it Sudarshana," he said, "virtuous vision." That is how Vishnu got the Sudarshana Chakra. He gave an eye, and Shiva gave him the weapon.
 
