@@ -25,9 +25,8 @@ And every night, a shadow slipped into his room. Brihaspati.
 
 **B06** [mysterious]
 Then one evening, Kacha saw the demons brewing wine for their guru. They burned a deer and stirred its ashes into the cup. Shukracharya drank it all.
-A thought tore through Kacha's mind. So terrible that his legs gave way. His heart pounded. Every part of him begged him to stop.
-What if the ashes were his?
-He knew it was the only way. The demons hated Brihaspati's son. Shukracharya loved his wine. And Devayani loved Kacha exactly as much as she loved her father. Not more. Not less.
+Kacha stared at the cup. A terrible idea came to him. What if those ashes were his?
+It could kill him. But it was the only way. The demons hated Brihaspati's son. Shukracharya loved his wine. And Devayani loved Kacha exactly as much as she loved her father. Not more. Not less.
 
 **B07** [firm]
 The plan had three stages. Kacha would control two. The third was in Devayani's hands.
