@@ -40,13 +40,41 @@ def make(dur,seed):
     for s in range(0,n,seg):
         ch=PROG[(s//seg)%4];L=min(seg+3*SR,n-s)
         m=[root+x for x in ch];c=choir(L,m,rng)
-        e=np.ones(L);a=int(2.5*SR);e[:a]=np.linspace(0,1,a)**1.5;r=int(3*SR);e[-r:]*=np.linspace(1,0,r)
+        e=np.ones(L);a=min(L,int(2.5*SR));e[:a]=np.linspace(0,1,a)**1.5;r=min(L,int(3*SR));e[-r:]*=np.linspace(1,0,r)
         pad[s:s+L]+=c*e
     drone=lp(sum(np.sin(2*np.pi*f(root-12)*k*np.arange(n)/SR)/k for k in(1,2,3)),400)*.5
     hp=harp(root,dur,rng,seed%3*6+60)
     wet=reverb(pad*1.0+hp*.8)
     mix=pad*.55+drone*.25+hp*.5+wet*.9
     fade=np.minimum(1,np.minimum(np.arange(n)/(2*SR),(n-np.arange(n))/(3*SR)));mix*=fade
+    return mix/np.max(np.abs(mix))
+def tense(dur,seed):
+    """Suspense/drama: sub drone, dissonant string cluster with tremolo, heartbeat, risers, hits."""
+    rng=np.random.default_rng(seed);n=int(dur*SR);t=np.arange(n)/SR;root=38+seed%3
+    sub=np.sin(2*np.pi*f(root)*t)*(.7+.3*np.sin(2*np.pi*.1*t))
+    cl=np.zeros(n)
+    for m in(root+12,root+13,root+18,root+19):   # minor-2nd / tritone cluster
+        ph=2*np.pi*np.cumsum(f(m)*(1+.003*np.sin(2*np.pi*4.5*t+m)))/SR
+        cl+=sum(np.sin(h*ph)/h for h in range(1,10))
+    cl=lp(cl,2500)*(.35+.65*(.5+.5*np.sin(2*np.pi*(.07+.02*(seed%3))*t)))*(.5+.5*np.sin(2*np.pi*9*t)*.5+.25)
+    cl*=np.minimum(1,t/6)**2*(1+.8*t/dur)/1.8      # slowly intensifies
+    hb=np.zeros(n);bpm=62+36*np.arange(n)/n/SR*0
+    k=0.0
+    while k<dur-1:
+        for off,g in((0,1),(.32,.6)):
+            a=int((k+off)*SR);L=int(.35*SR);tt=np.arange(L)/SR
+            if a+L<n:hb[a:a+L]+=g*np.sin(2*np.pi*(95-120*tt)*tt)*np.exp(-tt*11)
+        k+=1.0-.45*k/dur                            # heartbeat speeds up
+    hits=np.zeros(n)
+    for c in np.arange(7,dur-2,rng.uniform(9,13)):   # distant impacts + risers
+        a=int(c*SR);L=int(3*SR)
+        if a+L>=n:break
+        tt=np.arange(L)/SR;noise=lp(rng.standard_normal(L),900)
+        hits[a:a+L]+=(np.sin(2*np.pi*(60-20*tt)*tt)+noise*.5)*np.exp(-tt*2.2)
+        a0=max(0,a-int(3*SR));rl=a-a0;rn=bp(rng.standard_normal(rl),500,3000)*np.linspace(0,1,rl)**3;hits[a0:a]+=rn*.4
+    wet=reverb(cl+hits*.7,2.8)
+    mix=sub*.5+cl*.7+hb*.8+hits*.9+wet*.7
+    fade=np.minimum(1,np.minimum(t/2,(dur-t)/3));mix*=fade
     return mix/np.max(np.abs(mix))
 def run(reel,seed):
     src=f'{R}/renders/{reel}_1080x1920.mp4';out=f'{R}/renders/{reel}_bgm_1080x1920.mp4'
