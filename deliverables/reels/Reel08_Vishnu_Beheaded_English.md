@@ -1,38 +1,38 @@
 # Reel 8: Vishnu Fought a Demon for 16,000 Years. Then He Lost His Head. (story 53)
 
 ## Hook (first lines, read first)
-- Context: Vishnu, the Preserver, fought one demon for sixteen thousand years.
+- Context: Vishnu, the Preserver, fought the demon Hayagriva for sixteen thousand years.
 - Lean: He still could not win, and then he lost his head.
 - Snapback: The ones who cut it off were the gods.
 
-**Spoken:** Vishnu, the Preserver, fought one demon for sixteen thousand years. He still could not win, and then he lost his head. The ones who cut it off were the gods.
+**Spoken:** Vishnu, the Preserver, fought the demon Hayagriva for sixteen thousand years. He still could not win, and then he lost his head. The ones who cut it off were the gods.
 
 **First-frame title:** Vishnu Lost His Head
 **Full title:** Vishnu Fought a Demon for 16,000 Years. Then He Lost His Head.
 **Alternates:** (a) Who Cut Off Vishnu's Head? The Gods Did | (b) Vishnu Slept. The Gods Became Termites (first-frame: "Gods Became Termites")
 
 ## Tagged narration
-[curious] Vishnu, the Preserver, fought one demon for sixteen thousand years. He still could not win, and then he lost his head. The ones who cut it off were the gods.
+[curious] Vishnu, the Preserver, fought the demon Hayagriva for sixteen thousand years. He still could not win, and then he lost his head. The ones who cut it off were the gods.
 [calm] Nothing worked on the demon. Vishnu's mace was thrown back and smashed his chariot. His Sudarshana disc stopped at an invisible wall. The demon laughed. Only one who knew his secret could kill him.
 [calm] Worn out, Vishnu went home to Vaikuntha and fell into a deep sleep, his chin on his bow. Brahma, the Creator, and the gods came to wake him for a yagna, a fire ritual. Nothing worked.
 [calm] Brahma had an idea. Vishnu was sleeping on his bowstring. If it snapped, the sound would wake him. The gods turned into termites and gnawed at the string. Thinner and thinner. Faster and faster. Then it snapped.
 [firm] The string lashed out and cut off Vishnu's head. Silence. The gods stood frozen. What have we done?
 [curious] Then Lakshmi, Vishnu's wife, walked in, leaving red footprints. She asked the gods to forgive her. The demon was unbeatable because of a boon, and the boon was hers. His devotion had touched her. He could only be killed by a god with the head of a horse.
-[calm] Lakshmi said the universe is never random. It looks after itself. Vishnu would become Hayagriva, the Horse-Headed One, again.
-[calm] Not long after, Hayagriva neighed aloud, and the demon fell silent.
+[calm] Lakshmi said the universe is never random. It looks after itself. Vishnu would take a horse's head and become the Horse-Headed One.
+[calm] Not long after, the horse-headed Vishnu neighed aloud, and the demon Hayagriva fell silent.
 [curious] Was it a mistake, or the only way?
 
-**Length:** 241 words (tags excluded), about 96 s at 0.40 s/word.
+**Length:** ~248 words (tags excluded), about 96 s at 0.40 s/word.
 
 ## Plain narration
-Vishnu, the Preserver, fought one demon for sixteen thousand years. He still could not win, and then he lost his head. The ones who cut it off were the gods.
+Vishnu, the Preserver, fought the demon Hayagriva for sixteen thousand years. He still could not win, and then he lost his head. The ones who cut it off were the gods.
 Nothing worked on the demon. Vishnu's mace was thrown back and smashed his chariot. His Sudarshana disc stopped at an invisible wall. The demon laughed. Only one who knew his secret could kill him.
 Worn out, Vishnu went home to Vaikuntha and fell into a deep sleep, his chin on his bow. Brahma, the Creator, and the gods came to wake him for a yagna, a fire ritual. Nothing worked.
 Brahma had an idea. Vishnu was sleeping on his bowstring. If it snapped, the sound would wake him. The gods turned into termites and gnawed at the string. Thinner and thinner. Faster and faster. Then it snapped.
 The string lashed out and cut off Vishnu's head. Silence. The gods stood frozen. What have we done?
 Then Lakshmi, Vishnu's wife, walked in, leaving red footprints. She asked the gods to forgive her. The demon was unbeatable because of a boon, and the boon was hers. His devotion had touched her. He could only be killed by a god with the head of a horse.
-Lakshmi said the universe is never random. It looks after itself. Vishnu would become Hayagriva, the Horse-Headed One, again.
-Not long after, Hayagriva neighed aloud, and the demon fell silent.
+Lakshmi said the universe is never random. It looks after itself. Vishnu would take a horse's head and become the Horse-Headed One.
+Not long after, the horse-headed Vishnu neighed aloud, and the demon Hayagriva fell silent.
 Was it a mistake, or the only way?
 
 ## Source lines (story 53)
