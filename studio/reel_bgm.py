@@ -144,6 +144,86 @@ def dark(dur,seed):
     mix=sub*.55+cl*.35+hol*.12+gong*.5+wet*.45
     fade=np.minimum(1,np.minimum(t/2,(dur-t)/3));mix*=fade
     return mix/np.max(np.abs(mix))
+def ks(fr,L,rng,decay=.996,bright=.5):
+    N=int(SR/fr);buf=rng.uniform(-1,1,N)*1.0;out=np.zeros(L)
+    for i in range(L):
+        out[i]=buf[i%N];buf[i%N]=decay*(bright*buf[i%N]+(1-bright)*buf[(i+1)%N])
+    return out
+def nolan(dur,seed):
+    """Nolan/Zimmer style (original): ticking clock, endlessly rising Shepard tone, huge low organ-brass hits."""
+    rng=np.random.default_rng(seed);n=int(dur*SR);t=np.arange(n)/SR;root=38
+    sh=np.zeros(n);T0=40.0
+    for k in range(8):
+        ph=((t/T0)+k/8)%1.0;fr=f(root)*2**(ph*8)      # 8 octaves glide, wrap
+        amp=np.sin(np.pi*ph)**2;sh+=amp*np.sin(2*np.pi*np.cumsum(fr)/SR)
+    sh=lp(sh,2500)/8
+    drone=sum(np.sin(2*np.pi*f(root-12+k)*h*t)/h for k in(0,7) for h in(1,2,3,4))*.3
+    tick=np.zeros(n);k=0.0
+    while k<dur-1:
+        a=int(k*SR);L=int(.08*SR);tt=np.arange(L)/SR
+        tick[a:a+L]+=np.sin(2*np.pi*1900*tt)*np.exp(-tt*90)+.4*lp(rng.standard_normal(L),6000)*np.exp(-tt*120);k+=1.0 if k<dur*.5 else .5
+    hits=np.zeros(n);x=8.0
+    while x<dur-3:
+        a=int(x*SR);L=int(4*SR);tt=np.arange(L)/SR
+        h=sum(np.sin(2*np.pi*f(root-12+k2)*q*tt)/q for k2 in(0,7,12) for q in(1,2,3))*np.exp(-tt*1.2)+lp(rng.standard_normal(L),500)*np.exp(-tt*3)
+        e=min(L,n-a);hits[a:a+e]+=h[:e]*np.minimum(1,tt[:e]*200);x+=rng.uniform(10,14)
+    wet=reverb(hits*.8+drone*.3,3.0)
+    mix=sh*.35+drone*.5+tick*.5+hits*.7+wet*.5
+    mix*=np.minimum(1,np.minimum(t/2,(dur-t)/3));return mix/np.max(np.abs(mix))
+def spielberg(dur,seed):
+    """Spielberg/Williams style (original): warm string bed, a heroic French-horn theme, harp glints, wonder."""
+    rng=np.random.default_rng(seed);n=int(dur*SR);t=np.arange(n)/SR;root=50
+    chords=[[0,4,7,12],[-3,0,4,9],[-5,-1,2,7],[0,4,7,12]]   # I vi V I-ish
+    pad=np.zeros(n);bar=6.0
+    for s0 in range(0,n,int(bar*SR)):
+        L=min(int((bar+1.5)*SR),n-s0);tt=np.arange(L)/SR;c=chords[(s0//int(bar*SR))%4]
+        v=sum(sum(np.sin(2*np.pi*f(root+k+12)*(1+dt)*q*tt)/q**1.2 for q in range(1,9))for k in c for dt in(-.003,.003))
+        e=np.minimum(1,tt/1.2)*np.minimum(1,(L/SR-tt)/1.5);pad[s0:s0+L]+=lp(v,3500)*e
+    pad/=np.max(np.abs(pad))
+    th=[(0,2),(4,1),(7,1),(9,2),(7,1),(4,1),(2,2),(4,1),(5,1),(7,3),(0,2),(2,1),(4,1),(7,2),(12,2),(11,1),(9,1),(7,4)]  # original theme, (semitone,beats)
+    mel=np.zeros(n);x=2.0;bt=.62;i=0
+    while x<dur-3:
+        k,b=th[i%len(th)];L=int(b*bt*SR*1.15);tt=np.arange(L)/SR
+        h=lp(sum(np.sin(2*np.pi*f(root+12+k)*q*tt)/q for q in range(1,10)),1800)*np.minimum(1,tt*12)*np.minimum(1,(L/SR-tt)*10)
+        a=int(x*SR);e=min(L,n-a);mel[a:a+e]+=h[:e];x+=b*bt;i+=1
+        if i%len(th)==0:x+=2.5
+    harp=np.zeros(n);x=1.0
+    while x<dur-2:
+        fr=f(root+24+rng.choice([0,4,7,12]));L=int(2.5*SR);tt=np.arange(L)/SR
+        h=sum(np.sin(2*np.pi*fr*q*tt)*np.exp(-tt*(2+q))/q for q in range(1,5))
+        a=int(x*SR);e=min(L,n-a);harp[a:a+e]+=h[:e];x+=rng.uniform(2.5,5)
+    mel/=np.max(np.abs(mel))
+    wet=reverb(pad*.3+mel*.5+harp*.2,2.6)
+    mix=pad*.4+mel*.45+harp*.12+wet*.5
+    mix*=np.minimum(1,np.minimum(t/2,(dur-t)/3));return mix/np.max(np.abs(mix))
+def tarantino(dur,seed):
+    """Tarantino-style (original): spaghetti-western/surf cool - twangy reverb guitar riff, fat bass, tight drums, a lonely whistle."""
+    rng=np.random.default_rng(seed);n=int(dur*SR);t=np.arange(n)/SR;bpm=104;sp=60/bpm/2;root=40
+    riff=[0,0,3,0,5,0,3,7,0,0,3,0,5,3,2,0]   # E-minor-ish, original riff
+    gt=np.zeros(n);bs=np.zeros(n);dr=np.zeros(n);i=0;x=0.0
+    while x<dur-1:
+        k=riff[i%16];a=int(x*SR);L=int(.55*SR)
+        if a+L<n:
+            g=ks(f(root+24+k),L,rng,.998,.5)*np.exp(-np.arange(L)/SR*3.5);gt[a:a+L]+=g
+            bs[a:a+L]+=np.sin(2*np.pi*f(root+k-12)*np.arange(L)/SR)*np.exp(-np.arange(L)/SR*5)*(1 if i%2==0 else .6)
+        if i%4==0 and a+int(.3*SR)<n:
+            tt=np.arange(int(.3*SR))/SR;dr[a:a+len(tt)]+=np.sin(2*np.pi*(130+120*np.exp(-tt*40))*tt)*np.exp(-tt*14)
+        if i%4==2 and a+int(.2*SR)<n:
+            tt=np.arange(int(.2*SR))/SR;dr[a:a+len(tt)]+=.5*hp(rng.standard_normal(len(tt)),1500)*np.exp(-tt*25)
+        if i%2==1 and a+int(.06*SR)<n:
+            tt=np.arange(int(.06*SR))/SR;dr[a:a+len(tt)]+=.15*hp(rng.standard_normal(len(tt)),6000)*np.exp(-tt*80)
+        x+=sp;i+=1
+    wh=np.zeros(n);x=8.0
+    for _ in range(int(dur//16)):
+        for k,b in((0,.8),(3,.4),(5,.4),(7,1.5)):
+            L=int(b*SR*.95);tt=np.arange(L)/SR;v=np.sin(2*np.pi*f(root+36+k)*tt*(1+.004*np.sin(2*np.pi*6*tt)))*np.minimum(1,tt*20)*np.minimum(1,(L/SR-tt)*10)
+            a=int(x*SR);e=min(L,n-a)
+            if e>0:wh[a:a+e]+=v[:e]*.3
+            x+=b
+        x+=16-3.1
+    wet=reverb(gt*.8+wh*.5,1.8)
+    mix=gt*.5+bs*.5+dr*.5+wh*.35+wet*.6
+    mix*=np.minimum(1,np.minimum(t/1,(dur-t)/2));return mix/np.max(np.abs(mix))
 def run(reel,seed):
     src=f'{R}/renders/{reel}_1080x1920.mp4';out=f'{R}/renders/{reel}_bgm_1080x1920.mp4'
     dur=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',src]))
