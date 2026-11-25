@@ -9,7 +9,7 @@
  "planted_question": {
   "text": "What did Kacha's plan cost the girl who loved him? (answered B16: her father's trust, the man she loved; the curses)",
   "planted_in": "B01",
-  "answered_in": "B21"
+  "answered_in": "B22"
  },
  "names": {
   "kacha": {
@@ -108,6 +108,12 @@
    "meaning": "the two curses",
    "anchor": {
     "en": "I curse you"
+   }
+  },
+  "ashes_in_wine_drunk": {
+   "meaning": "the demons stir Kacha's ashes into the wine; the guru drinks it",
+   "anchor": {
+    "en": "drank the whole cup"
    }
   }
  },
@@ -374,6 +380,29 @@
    "id": "B12",
    "chapter": "C2",
    "reel": "B",
+   "intent": "the demons kill him, burn him, put the ashes in the guru's wine; the guru drinks",
+   "roles": [
+    "rehook"
+   ],
+   "budget_sec": 18,
+   "emotion": {
+    "en": "grave"
+   },
+   "cue_ids": [
+    "ashes_in_wine_drunk"
+   ],
+   "characters": [
+    "shukracharya",
+    "kacha"
+   ],
+   "names_introduced": [
+    "shukracharya"
+   ]
+  },
+  {
+   "id": "B13",
+   "chapter": "C2",
+   "reel": "B",
    "intent": "Devayani brings the burnt cloth; the black speck",
    "roles": [
     "turn"
@@ -391,12 +420,11 @@
     "shukracharya"
    ],
    "names_introduced": [
-    "devayani",
-    "shukracharya"
+    "devayani"
    ]
   },
   {
-   "id": "B13",
+   "id": "B14",
    "chapter": "C2",
    "reel": "B",
    "intent": "guru curses wine; he must be torn open to revive Kacha",
@@ -415,7 +443,7 @@
    "names_introduced": []
   },
   {
-   "id": "B14",
+   "id": "B15",
    "chapter": "C2",
    "reel": "B",
    "intent": "Him or me? Devayani asks for the mantra; he writes it",
@@ -436,7 +464,7 @@
    "names_introduced": []
   },
   {
-   "id": "B15",
+   "id": "B16",
    "chapter": "C2",
    "reel": "B",
    "intent": "the chant begins; the body tears",
@@ -454,7 +482,7 @@
    "names_introduced": []
   },
   {
-   "id": "B16",
+   "id": "B17",
    "chapter": "C3",
    "reel": "C",
    "intent": "Kacha rises from the guru's body",
@@ -481,7 +509,7 @@
    ]
   },
   {
-   "id": "B17",
+   "id": "B18",
    "chapter": "C3",
    "reel": "C",
    "intent": "Kacha talks the mantra from her fingers",
@@ -502,7 +530,7 @@
    "names_introduced": []
   },
   {
-   "id": "B18",
+   "id": "B19",
    "chapter": "C3",
    "reel": "C",
    "intent": "he reads it; guru revives and understands",
@@ -521,7 +549,7 @@
    "names_introduced": []
   },
   {
-   "id": "B19",
+   "id": "B20",
    "chapter": "C3",
    "reel": "C",
    "intent": "Kacha walks away; she sees the truth: Mritasanjivani",
@@ -540,7 +568,7 @@
    "names_introduced": []
   },
   {
-   "id": "B20",
+   "id": "B21",
    "chapter": "C3",
    "reel": "C",
    "intent": "the betrayal: sister; \"I only found a friend\"",
@@ -559,7 +587,7 @@
    "names_introduced": []
   },
   {
-   "id": "B21",
+   "id": "B22",
    "chapter": "C3",
    "reel": "C",
    "intent": "the two curses",
@@ -581,7 +609,7 @@
    "names_introduced": []
   },
   {
-   "id": "B22",
+   "id": "B23",
    "chapter": "C3",
    "reel": "C",
    "intent": "recap; the price; comment question",

@@ -40,6 +40,9 @@ He piled up branches and lit a fire. The demons' footsteps grew louder. Closer. 
 They stood all around him.
 His body shook, but his mind was calm. Everything was going as he had planned. He was going to die, but he would not stay dead.
 
+The demons killed him. They burned his body and ground the ashes to powder. They stirred the powder into Shukracharya's wine, the way they had done with the deer.
+Shukracharya drank the whole cup. He did not know that he had just swallowed Kacha.
+
 That night, Devayani stumbled out of the forest, clutching a piece of burnt cloth. She stood before her father, Shukracharya.
 "Kacha's cloth? What are you saying?"
 "Your demons killed him. They hacked him and burned him."

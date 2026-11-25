@@ -51,7 +51,11 @@ He piled up branches and lit a fire. The demons' footsteps grew louder. Closer. 
 They stood all around him.
 His body shook, but his mind was calm. Everything was going as he had planned. He was going to die, but he would not stay dead.
 
-**B12** [tender]
+**B12** [grave]
+The demons killed him. They burned his body and ground the ashes to powder. They stirred the powder into Shukracharya's wine, the way they had done with the deer.
+Shukracharya drank the whole cup. He did not know that he had just swallowed Kacha.
+
+**B13** [tender]
 That night, Devayani stumbled out of the forest, clutching a piece of burnt cloth. She stood before her father, Shukracharya.
 "Kacha's cloth? What are you saying?"
 "Your demons killed him. They hacked him and burned him."
@@ -60,13 +64,13 @@ He stopped. Devayani was laughing. Tears poured down her face, and she was laugh
 "You will not spare them? You, who have drunk my Kacha?"
 She scraped a black speck from his lips. "The demons put his ashes in your wine."
 
-**B13** [grave]
+**B14** [grave]
 Shukracharya closed his eyes in horror. Then he spoke. "From today, any Brahmin who drinks wine will lose his wisdom and his virtue." He had failed to keep Kacha safe.
 "You know what you have to do," said Devayani.
 "Mritasanjivani. But he is inside me. To rise again, Kacha must tear my body apart. And I am willing."
 She froze. She had begged for a life, and not seen the price. Kacha's life demanded another life. Her father's.
 
-**B14** [pleading]
+**B15** [pleading]
 "Never!" cried Devayani. "I cannot live without you. I love you both. Not more. Not less."
 "Then you must choose. Him or me?"
 Her eyes lit up. "Not him or you. Both. Give me the mantra. When Kacha comes out of you, I will bring you back."
@@ -74,16 +78,16 @@ Shukracharya was afraid. He had prayed for a thousand years to earn this secret.
 He looked at his daughter for a long time. Then he nodded. He wrote it down. "Use it once. Then destroy it. Promise me."
 "I promise."
 
-**B15** [grand]
+**B16** [grand]
 He closed his eyes and began to chant. His belly shook. Then his chest, his face, his arms.
 A finger came out of his eye. A foot came out of his belly.
 
-**B16** [calm]
+**B17** [calm]
 Kacha came out of Shukracharya's body, covered in blood.
 "Kacha!" Devayani held him, laughing and crying. She did not see his eyes.
 He smiled, but not the way he used to.
 
-**B17** [fast]
+**B18** [fast]
 "Now I must bring father back."
 "Let me do it," said Kacha.
 She hid the mantra behind her. "No. It is father's secret. Only I may use it."
@@ -91,27 +95,27 @@ She hid the mantra behind her. "No. It is father's secret. Only I may use it."
 His eyes held hers. Her fingers loosened. The mantra fell.
 Kacha caught it.
 
-**B18** [firm]
+**B19** [firm]
 He read it over the guru's body. The secret the demons were proud of. A gift from Shiva. He read every word and learned it by heart.
 Shukracharya stood up. He took a step toward his daughter. Then he saw the mantra in Kacha's hand. He saw Kacha smiling.
 He knew. There was no rage on his face. Only pain. And he fell to the ground.
 
-**B19** [cold]
+**B20** [cold]
 Kacha began to walk away.
 "Kacha!" Devayani ran after him. "I told father about us. Speak to him so we can marry."
 "You still don't understand?" He did not even look at her.
 Then she understood. "Mritasanjivani?" she whispered.
 "I came for what my father sent me for."
 
-**B20** [cold]
+**B21** [cold]
 She touched her father's blood on her cheek and stared at her fingers.
 "You made me betray my father so you could keep your promise to yours! How could you be so cruel?"
 "If I was cruel, the universe would have stopped me. I only found a friend. I never made any promises. And now that I was born from your father's body, I am his son too. That makes you my sister."
 
-**B21** [grave]
+**B22** [grave]
 She watched him go. Her father lay on the ground, and the man she loved was leaving. She was crying. Then she spoke.
 "I curse you, Kacha. The secret you stole will never work for you."
 Kacha turned. "Then I will teach it to others. It will work for them. And I curse you, Devayani. You will never find the love you seek."
 
-**B22** [calm]
+**B23** [calm]
 Kacha got the mantra. Devayani lost her father's trust and the man she gave it up for. Was Kacha a hero for the gods, or a thief of a girl's heart? Tell us in the comments.
