@@ -95,15 +95,12 @@ def war(dur,seed):
                 a=int((b-.5+j*.08)*SR);L=int(.25*SR)
                 if 0<=a and a+L<n:dr[a:a+L]+=drum(120,L,.25+.08*j,16)
         bpm=96+34*b/dur;b+=60/bpm/2;i+=1
-    # one constant-level tone that rises steadily in pitch the whole reel (no swells, no wobble)
-    f0,f1=f(root+12),f(root+24);fr=f0*(f1/f0)**(t/dur)
-    ph=2*np.pi*np.cumsum(fr)/SR
-    br=lp(sum(np.sin(h*ph)/h for h in range(1,7)),3000)
+    # drums + plain steady bass (sub + 2nd harmonic, constant level)
+    br=np.sin(2*np.pi*f(root)*t)+.5*np.sin(2*np.pi*f(root)*2*t)
     br/=np.max(np.abs(br))
-    wet=reverb(dr*.3,1.0)
     dn=dr/np.max(np.abs(dr))
-    mix=dn*1.0+wet*.15+br*.22
-    mix=np.tanh(mix*1.8)   # glue: drums punchy and always up front
+    mix=dn*1.0+br*.35
+    mix=np.tanh(mix*1.6)
     fade=np.minimum(1,np.minimum(t/.6,(dur-t)/2.5));mix*=fade
     return mix/np.max(np.abs(mix))
 def run(reel,seed):
