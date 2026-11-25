@@ -1,0 +1,6548 @@
+{
+ "episode": "reel10",
+ "shots": [
+  {
+   "id": "s01",
+   "at": {
+    "t": 0.1,
+    "word": "A"
+   },
+   "cues": [
+    "prayed",
+    "hundred"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#3a4ab0",
+     "#8a94dc",
+     "#ffbc8c",
+     "#ffeac4"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "diti",
+     "x": 640,
+     "y": 588,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "devotion",
+     "mood": {
+      "blink": 1,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "devotion"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 360,
+     "r": 250,
+     "rgb": "255,214,140",
+     "ga": 0.35,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8e0d0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Diti sits in prayer in front of her hut with closed eyes, her hands folded and a faint gold glow around her; the title card sits above her.",
+   "vert": {
+    "focus": "diti"
+   }
+  },
+  {
+   "id": "s02",
+   "at": {
+    "t": 4.96,
+    "word": "With"
+   },
+   "cues": [
+    "three",
+    "terrible"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2a2a6a",
+     "#6a5aa8",
+     "#e49a9a",
+     "#ffd8a8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 619,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sneak",
+     "emo": "fear",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "anger"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "3 days left",
+     "x": 640,
+     "y": 128,
+     "size": 30,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#c8b8d8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "hut",
+       "x": 820,
+       "y": 505,
+       "s": 0.7,
+       "lamp": false
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_left: Indra creeps forward in a crouch with a tense face, one hand holding the Vajra low, a thatched hut at the right behind him.",
+   "vert": {
+    "focus": "indra"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s03",
+   "at": {
+    "t": 7.84,
+    "word": "and"
+   },
+   "cues": [
+    "cut",
+    "child"
+   ],
+   "bg": {
+    "k": "voidR"
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 520,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "rage",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.4,
+       "emo": "rage"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "womb_view",
+     "x": 640,
+     "y": 440,
+     "w": 400,
+     "alpha": 1,
+     "par": 1.0,
+     "n": 1,
+     "cry": 0,
+     "flash": 1,
+     "spread": 1,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#8a3a3a",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#6a2a3a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#a85a5a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 660,
+       "s": 1.6,
+       "col": "#7a2a30"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 670,
+       "s": 1.5,
+       "col": "#6a2428"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 752,
+       "s": 1.7,
+       "col": "#3a1218"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 754,
+       "s": 1.6,
+       "col": "#3a1218"
+      }
+     ]
+    }
+   ],
+   "note": "insert push_in: The womb glows in the dark red space with the unborn child curled inside, a bright white flash of the Vajra slicing across it.",
+   "vert": {
+    "x": 640
+   },
+   "shake": 3,
+   "tr": "flash"
+  },
+  {
+   "id": "s04",
+   "at": {
+    "t": 10.16,
+    "word": "What"
+   },
+   "cues": [
+    "killed"
+   ],
+   "bg": {
+    "k": "voidR"
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 520,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "surprise",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "surprise"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "womb_view",
+     "x": 640,
+     "y": 440,
+     "w": 400,
+     "alpha": 1,
+     "par": 1.0,
+     "n": 7,
+     "cry": 1,
+     "flash": 0,
+     "spread": 1,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#8a3a3a",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#6a2a3a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#a85a5a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 660,
+       "s": 1.6,
+       "col": "#7a2a30"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 670,
+       "s": 1.5,
+       "col": "#6a2428"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 752,
+       "s": 1.7,
+       "col": "#3a1218"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 754,
+       "s": 1.6,
+       "col": "#3a1218"
+      }
+     ]
+    }
+   ],
+   "note": "insert pull_out: The womb now holds seven small glowing children, all alive and crying, spread around the sac.",
+   "vert": {
+    "x": 640
+   },
+   "dx": 0
+  },
+  {
+   "id": "s05",
+   "at": {
+    "t": 12.44,
+    "word": "So"
+   },
+   "cues": [
+    "survive"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#1a2a6a",
+     "#4a64b8",
+     "#a8bce8",
+     "#eef0ff"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#5a64a8",
+     "#4a5498",
+     "#3a4488",
+     "#2a3478"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 618,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "doubt",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "surprise"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#c4cce8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#5a64a8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#5a64a8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 210,
+       "s": 1.3,
+       "col": "#b4bce0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 640,
+       "s": 1.6,
+       "col": "#c8d0f0"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 650,
+       "s": 1.5,
+       "col": "#b8c0e8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.3,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 750,
+       "s": 1.7,
+       "col": "#8890c8"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 752,
+       "s": 1.6,
+       "col": "#8890c8"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: Indra stands under storm clouds with a puzzled worried look, his crown glowing and the Vajra lowered, glancing sideways.",
+   "vert": {
+    "focus": "indra"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s06",
+   "at": {
+    "t": 14.28,
+    "word": "The"
+   },
+   "cues": [
+    "Diti"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2466c8",
+     "#6ab0ee",
+     "#c8ecfa",
+     "#fff8e8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "diti",
+     "x": 640,
+     "y": 614,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "devotion"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Diti",
+     "x": 640,
+     "y": 128,
+     "size": 32,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8e0d0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium static: Diti stands calm in a maroon sari in her ashram yard, hands folded, and her name appears on 'Diti'.",
+   "vert": {
+    "focus": "diti"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s07",
+   "at": {
+    "t": 16.04,
+    "word": "Vishnu"
+   },
+   "cues": [
+    "killed",
+    "sons",
+    "Hiranyaksha",
+    "Hiranyakashipu"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2a2a6a",
+     "#6a5aa8",
+     "#e49a9a",
+     "#ffd8a8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "hiranyakashipu",
+     "x": 780,
+     "y": 660,
+     "s": 0.62,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 3,
+       "d": 0.4,
+       "emo": "anger"
+      }
+     ],
+     "a": 0.55
+    },
+    {
+     "who": "hiranyaksha",
+     "x": 700,
+     "y": 680,
+     "s": 0.7,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.4,
+       "emo": "anger"
+      }
+     ],
+     "a": 0.65
+    },
+    {
+     "who": "diti",
+     "x": 545,
+     "y": 622,
+     "s": 0.85,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "grief",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "grief"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 700,
+     "y": 470,
+     "w": 420,
+     "alpha": 0.45,
+     "par": 0.8,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 48,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 10,
+     "y": 48,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#d8c8d8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot dolly_right: Diti stands grieving at the left with a sad face while her two dead sons, the asuras Hiranyaksha and Hiranyakashipu, stand pale and faint like memories at the right.",
+   "vert": {
+    "x": 640,
+    "focus": "diti"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s08",
+   "at": {
+    "t": 19.64,
+    "word": "She"
+   },
+   "cues": [
+    "Kashyapa",
+    "son"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2466c8",
+     "#6ab0ee",
+     "#c8ecfa",
+     "#fff8e8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "diti",
+     "x": 545,
+     "y": 565,
+     "s": 0.82,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "devotion",
+     "talk": 0.7,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "anger"
+      }
+     ]
+    },
+    {
+     "who": "kashyapa",
+     "x": 735,
+     "y": 565,
+     "s": 0.82,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "calm"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Kashyapa",
+     "x": 735,
+     "y": 128,
+     "size": 30,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8e0d0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot push_in: Diti bows with pleading hands before the white-bearded sage Kashyapa who listens with a grave calm face and his kamandalu.",
+   "vert": {
+    "x": 640,
+    "focus": "diti"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s09",
+   "at": {
+    "t": 24.12,
+    "word": "Kashyapa"
+   },
+   "cues": [
+    "rules"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2466c8",
+     "#6ab0ee",
+     "#c8ecfa",
+     "#fff8e8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "kashyapa",
+     "x": 640,
+     "y": 618,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "point",
+     "emo": "calm",
+     "talk": 0.8,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "calm"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8e0d0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: Kashyapa raises one finger in a stern warning with a grave face, his white beard and kamandalu clear in the yard.",
+   "vert": {
+    "focus": "kashyapa"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s10",
+   "at": {
+    "t": 26.12,
+    "word": "live"
+   },
+   "cues": [
+    "pure",
+    "hundred"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#3a4ab0",
+     "#8a94dc",
+     "#ffbc8c",
+     "#ffeac4"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "diti",
+     "x": 640,
+     "y": 527,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "devotion",
+     "mood": {
+      "blink": 1,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "calm"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "100 years",
+     "x": 640,
+     "y": 128,
+     "size": 32,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "magic_circle",
+     "x": 640,
+     "y": 420,
+     "w": 380,
+     "alpha": 0.35,
+     "par": 1.0,
+     "blend": "lighter",
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0e8d8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Diti sits in calm prayer with closed eyes under a hundred small lights and the words '100 years' above her.",
+   "vert": {
+    "focus": "diti"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s11",
+   "at": {
+    "t": 28.54,
+    "word": "never"
+   },
+   "cues": [
+    "washing"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2466c8",
+     "#6ab0ee",
+     "#c8ecfa",
+     "#fff8e8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "diti",
+     "x": 640,
+     "y": 613,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "bow",
+     "emo": "calm",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "stand",
+       "emo": "calm"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "water_splash",
+     "x": 640,
+     "y": 690,
+     "w": 200,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -8,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 6,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8e0d0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_down: Diti stands at a water pot and pours water over her feet with a careful face; clear water splashes at her feet on 'washing'.",
+   "vert": {
+    "focus": "diti"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s12",
+   "at": {
+    "t": 30.86,
+    "word": "If"
+   },
+   "cues": [
+    "failed",
+    "friend"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2466c8",
+     "#6ab0ee",
+     "#c8ecfa",
+     "#fff8e8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "kashyapa",
+     "x": 545,
+     "y": 565,
+     "s": 0.82,
+     "flip": 1,
+     "pose": "point",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "calm"
+      }
+     ]
+    },
+    {
+     "who": "indra",
+     "x": 735,
+     "y": 565,
+     "s": 0.82,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "smile": 0.6,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "joy"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8e0d0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot dolly_left: Kashyapa lifts a hand in warning at the left while Indra stands at the right with a friendly smile and the Vajra lowered, showing the friend the son would become.",
+   "vert": {
+    "x": 640,
+    "focus": "kashyapa"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s13",
+   "at": {
+    "t": 34.02,
+    "word": "Indra"
+   },
+   "cues": [
+    "mistake"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2a2a6a",
+     "#6a5aa8",
+     "#e49a9a",
+     "#ffd8a8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 720,
+     "y": 619,
+     "s": 1.0,
+     "flip": -1,
+     "pose": "sneak",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "anger"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#c8b8d8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "hut",
+       "x": 820,
+       "y": 505,
+       "s": 0.7,
+       "lamp": false
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_right: Indra peeks out from behind the thatched hut at the right with a sly watchful face, one hand on the wall, under a dusk sky.",
+   "vert": {
+    "focus": "indra"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s14",
+   "at": {
+    "t": 37.5,
+    "word": "There"
+   },
+   "cues": [
+    "none"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#3a4ab0",
+     "#8a94dc",
+     "#ffbc8c",
+     "#ffeac4"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "diti",
+     "x": 640,
+     "y": 529,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "devotion",
+     "mood": {
+      "blink": 1,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "calm"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 360,
+     "r": 260,
+     "rgb": "255,214,140",
+     "ga": 0.4,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0e8d8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "hut",
+       "x": 820,
+       "y": 505,
+       "s": 0.7,
+       "lamp": false
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium static: Diti sits perfectly still in prayer with serene closed eyes and a steady golden glow, no flaw anywhere.",
+   "vert": {
+    "focus": "diti"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s15",
+   "at": {
+    "t": 38.58,
+    "word": "Her"
+   },
+   "cues": [
+    "safe",
+    "fort"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#3a4ab0",
+     "#8a94dc",
+     "#ffbc8c",
+     "#ffeac4"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "diti_p",
+     "x": 640,
+     "y": 528,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "devotion",
+     "mood": {
+      "blink": 1,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "devotion"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "magic_circle",
+     "x": 640,
+     "y": 450,
+     "w": 520,
+     "alpha": 0.5,
+     "par": 1.0,
+     "blend": "lighter",
+     "c": 1,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 640,
+     "y": 360,
+     "w": 360,
+     "alpha": 0.5,
+     "par": 1.0,
+     "blend": "lighter",
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0e8d8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium pull_out: Diti sits in prayer inside a ring of golden light and a glowing yantra that shields her like fort walls.",
+   "vert": {
+    "focus": "diti_p"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s16",
+   "at": {
+    "t": 41.3,
+    "word": "Her"
+   },
+   "cues": [
+    "grew"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2466c8",
+     "#6ab0ee",
+     "#c8ecfa",
+     "#fff8e8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "diti_p",
+     "x": 640,
+     "y": 613,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "devotion"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -8,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 6,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8e0d0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_down: Diti, now pregnant with a round belly in her maroon sari, stands in the yard with a hand resting near it and a peaceful face.",
+   "vert": {
+    "focus": "diti_p"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s17",
+   "at": {
+    "t": 42.48,
+    "word": "His"
+   },
+   "cues": [
+    "end",
+    "closer"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#1a2a6a",
+     "#4a64b8",
+     "#a8bce8",
+     "#eef0ff"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#5a64a8",
+     "#4a5498",
+     "#3a4488",
+     "#2a3478"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 300,
+     "s": 0.8,
+     "head": true,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "fear",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "fear"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "lightning_forks",
+     "x": 640,
+     "y": 240,
+     "w": 420,
+     "alpha": 0.5,
+     "par": 1.0,
+     "blend": "lighter",
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": -10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.1,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#c4cce8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#5a64a8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#5a64a8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 210,
+       "s": 1.3,
+       "col": "#b4bce0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 640,
+       "s": 1.6,
+       "col": "#c8d0f0"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 650,
+       "s": 1.5,
+       "col": "#b8c0e8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.3,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 750,
+       "s": 1.7,
+       "col": "#8890c8"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 752,
+       "s": 1.6,
+       "col": "#8890c8"
+      }
+     ]
+    }
+   ],
+   "note": "close crane_down: A close bust of Indra with a fearful tense face and eyes darting sideways, the storm sky dark behind his crown.",
+   "vert": {
+    "focus": "indra"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s18",
+   "at": {
+    "t": 44.26,
+    "word": "Then"
+   },
+   "cues": [
+    "three",
+    "tired"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2a2a6a",
+     "#6a5aa8",
+     "#e49a9a",
+     "#ffd8a8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "diti_p",
+     "x": 640,
+     "y": 527,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "calm",
+     "mood": {
+      "blink": 0.6,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "sad",
+       "mood": {
+        "blink": 0.8
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "3 days left",
+     "x": 640,
+     "y": 128,
+     "size": 30,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#c8b8d8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "hut",
+       "x": 820,
+       "y": 505,
+       "s": 0.7,
+       "lamp": false
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Diti sits wearily with drooping eyes and a heavy belly, one hand pressed to her side, in the evening yard.",
+   "vert": {
+    "focus": "diti_p"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s19",
+   "at": {
+    "t": 47.54,
+    "word": "that"
+   },
+   "cues": [
+    "asleep"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#0a0e38",
+     "#2a2a7a",
+     "#6a58a8",
+     "#c8a8c8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#3a3a7a",
+     "#2a2a6a",
+     "#1a1a58",
+     "#12124a"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "diti_p",
+     "x": 600,
+     "y": 660,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.7,
+       "pose": "sleep",
+       "emo": "calm"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "night",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#a898c8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "hut",
+       "x": 820,
+       "y": 505,
+       "s": 0.7,
+       "lamp": true
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "wide pull_out: Diti lies asleep on a mat with her eyes closed and her dusty unwashed feet toward the viewer under a night sky.",
+   "vert": {
+    "focus": "diti_p"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s20",
+   "at": {
+    "t": 50.14,
+    "word": "Indra"
+   },
+   "cues": [
+    "jumped"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#0a0e38",
+     "#2a2a7a",
+     "#6a58a8",
+     "#c8a8c8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#3a3a7a",
+     "#2a2a6a",
+     "#1a1a58",
+     "#12124a"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "rage",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "rage"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "sand_drift",
+     "x": 420,
+     "y": 650,
+     "w": 360,
+     "alpha": 0.5,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "night",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#a898c8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "hut",
+       "x": 820,
+       "y": 505,
+       "s": 0.7,
+       "lamp": true
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium handheld: Indra leaps forward with the Vajra in his raised hand and an eager grin, a streak of dust behind him.",
+   "vert": {
+    "focus": "indra"
+   },
+   "shake": 3,
+   "dx": 0
+  },
+  {
+   "id": "s21",
+   "at": {
+    "t": 51.16,
+    "word": "He"
+   },
+   "cues": [
+    "womb"
+   ],
+   "bg": {
+    "k": "voidR"
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 520,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "sneak",
+     "emo": "fear",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "fear"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "womb_view",
+     "x": 640,
+     "y": 440,
+     "w": 400,
+     "alpha": 1,
+     "par": 1.0,
+     "n": 1,
+     "cry": 0,
+     "flash": 0,
+     "spread": 1,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#8a3a3a",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#6a2a3a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#a85a5a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 660,
+       "s": 1.6,
+       "col": "#7a2a30"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 670,
+       "s": 1.5,
+       "col": "#6a2428"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 752,
+       "s": 1.7,
+       "col": "#3a1218"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 754,
+       "s": 1.6,
+       "col": "#3a1218"
+      }
+     ]
+    }
+   ],
+   "note": "insert push_in: The womb glows red-gold with the curled unborn child and tiny Indra with the Vajra inside it.",
+   "vert": {
+    "x": 640
+   },
+   "tr": "iris"
+  },
+  {
+   "id": "s22",
+   "at": {
+    "t": 52.64,
+    "word": "His"
+   },
+   "cues": [
+    "flashed"
+   ],
+   "bg": {
+    "k": "voidR"
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 520,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "rage",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "rage"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "womb_view",
+     "x": 640,
+     "y": 440,
+     "w": 400,
+     "alpha": 1,
+     "par": 1.0,
+     "n": 1,
+     "cry": 0,
+     "flash": 1,
+     "spread": 1,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#8a3a3a",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#6a2a3a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#a85a5a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 660,
+       "s": 1.6,
+       "col": "#7a2a30"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 670,
+       "s": 1.5,
+       "col": "#6a2428"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 752,
+       "s": 1.7,
+       "col": "#3a1218"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 754,
+       "s": 1.6,
+       "col": "#3a1218"
+      }
+     ]
+    }
+   ],
+   "note": "extreme_close handheld: A blinding blue-white flash of the Vajra cuts across the womb, the glowing child beneath it.",
+   "vert": {
+    "x": 640
+   },
+   "shake": 3,
+   "tr": "flash"
+  },
+  {
+   "id": "s23",
+   "at": {
+    "t": 55.32,
+    "word": "Seven"
+   },
+   "cues": [
+    "pieces"
+   ],
+   "bg": {
+    "k": "voidR"
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 520,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "surprise",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "surprise"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "womb_view",
+     "x": 640,
+     "y": 470,
+     "w": 470,
+     "alpha": 1,
+     "par": 1.0,
+     "n": 7,
+     "cry": 0,
+     "flash": 0,
+     "spread": 1.3,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#8a3a3a",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#6a2a3a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#a85a5a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 660,
+       "s": 1.6,
+       "col": "#7a2a30"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 670,
+       "s": 1.5,
+       "col": "#6a2428"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 752,
+       "s": 1.7,
+       "col": "#3a1218"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 754,
+       "s": 1.6,
+       "col": "#3a1218"
+      }
+     ]
+    }
+   ],
+   "note": "insert push_in: Seven small glowing children float apart in the womb, each one separate.",
+   "vert": {
+    "x": 640
+   },
+   "dx": 0
+  },
+  {
+   "id": "s24",
+   "at": {
+    "t": 56.52,
+    "word": "Then"
+   },
+   "cues": [
+    "stopped"
+   ],
+   "bg": {
+    "k": "voidR"
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "surprise",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "fear"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 330,
+     "r": 240,
+     "rgb": "255,150,120",
+     "ga": 0.35,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#8a3a3a",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#6a2a3a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#a85a5a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 660,
+       "s": 1.6,
+       "col": "#7a2a30"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 670,
+       "s": 1.5,
+       "col": "#6a2428"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 752,
+       "s": 1.7,
+       "col": "#3a1218"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 754,
+       "s": 1.6,
+       "col": "#3a1218"
+      }
+     ]
+    }
+   ],
+   "note": "medium pull_out: Indra freezes with wide eyes and the Vajra lowered, mouth open in shock.",
+   "vert": {
+    "focus": "indra"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s25",
+   "at": {
+    "t": 57.64,
+    "word": "The"
+   },
+   "cues": [
+    "alive",
+    "cried"
+   ],
+   "bg": {
+    "k": "voidR"
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 520,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "surprise",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.4,
+       "emo": "surprise"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "womb_view",
+     "x": 640,
+     "y": 440,
+     "w": 400,
+     "alpha": 1,
+     "par": 1.0,
+     "n": 7,
+     "cry": 1,
+     "flash": 0,
+     "spread": 1,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#8a3a3a",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#6a2a3a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#a85a5a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 660,
+       "s": 1.6,
+       "col": "#7a2a30"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 670,
+       "s": 1.5,
+       "col": "#6a2428"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 752,
+       "s": 1.7,
+       "col": "#3a1218"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 754,
+       "s": 1.6,
+       "col": "#3a1218"
+      }
+     ]
+    }
+   ],
+   "note": "insert push_in: Seven small children glow in the womb with open crying mouths, pulsing as they cry.",
+   "vert": {
+    "x": 640
+   },
+   "dx": 0
+  },
+  {
+   "id": "s26",
+   "at": {
+    "t": 60.02,
+    "word": "Maruda"
+   },
+   "cues": [
+    "Maruda",
+    "shouted"
+   ],
+   "bg": {
+    "k": "voidR"
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 613,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "open",
+     "emo": "surprise",
+     "talk": 1,
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.4,
+       "emo": "anger"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Maruda!",
+     "x": 640,
+     "y": 128,
+     "size": 36,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#8a3a3a",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#6a2a3a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#a85a5a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 660,
+       "s": 1.6,
+       "col": "#7a2a30"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 670,
+       "s": 1.5,
+       "col": "#6a2428"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 752,
+       "s": 1.7,
+       "col": "#3a1218"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 754,
+       "s": 1.6,
+       "col": "#3a1218"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_right: Indra shouts with his mouth wide open and hands pushed forward, and the word 'Maruda' appears big beside him.",
+   "vert": {
+    "focus": "indra"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s27",
+   "at": {
+    "t": 61.64,
+    "word": "Don't"
+   },
+   "cues": [
+    "cry"
+   ],
+   "bg": {
+    "k": "voidR"
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "fear",
+     "talk": 0.8,
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "sad"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#8a3a3a",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#6a2a3a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#a85a5a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 660,
+       "s": 1.6,
+       "col": "#7a2a30"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 670,
+       "s": 1.5,
+       "col": "#6a2428"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 752,
+       "s": 1.7,
+       "col": "#3a1218"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 754,
+       "s": 1.6,
+       "col": "#3a1218"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Indra pleads with both hands out and a desperate pleading face, begging the tiny children to stop.",
+   "vert": {
+    "focus": "indra"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s28",
+   "at": {
+    "t": 62.78,
+    "word": "They"
+   },
+   "cues": [
+    "louder"
+   ],
+   "bg": {
+    "k": "voidR"
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 520,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "fear",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "fear"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "womb_view",
+     "x": 640,
+     "y": 440,
+     "w": 400,
+     "alpha": 1,
+     "par": 1.0,
+     "n": 7,
+     "cry": 1,
+     "flash": 0,
+     "spread": 1,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#8a3a3a",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#6a2a3a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#a85a5a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 660,
+       "s": 1.6,
+       "col": "#7a2a30"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 670,
+       "s": 1.5,
+       "col": "#6a2428"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 752,
+       "s": 1.7,
+       "col": "#3a1218"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 754,
+       "s": 1.6,
+       "col": "#3a1218"
+      }
+     ]
+    }
+   ],
+   "note": "insert handheld: Seven glowing children scream with wide open mouths in the womb and the sac shakes with their sound.",
+   "vert": {
+    "x": 640
+   },
+   "shake": 4,
+   "dx": 0
+  },
+  {
+   "id": "s29",
+   "at": {
+    "t": 64.5,
+    "word": "He"
+   },
+   "cues": [
+    "seven"
+   ],
+   "bg": {
+    "k": "voidR"
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 520,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "rage",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "rage"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "womb_view",
+     "x": 640,
+     "y": 440,
+     "w": 400,
+     "alpha": 1,
+     "par": 1.0,
+     "n": 49,
+     "cry": 0,
+     "flash": 0.5,
+     "spread": 1,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#8a3a3a",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#6a2a3a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#a85a5a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 660,
+       "s": 1.6,
+       "col": "#7a2a30"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 670,
+       "s": 1.5,
+       "col": "#6a2428"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 752,
+       "s": 1.7,
+       "col": "#3a1218"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 754,
+       "s": 1.6,
+       "col": "#3a1218"
+      }
+     ]
+    }
+   ],
+   "note": "close push_in: The womb fills with forty-nine small glowing children after a white slash of the Vajra.",
+   "vert": {
+    "x": 640
+   },
+   "shake": 2,
+   "tr": "flash"
+  },
+  {
+   "id": "s30",
+   "at": {
+    "t": 66.84,
+    "word": "Still"
+   },
+   "cues": [
+    "louder"
+   ],
+   "bg": {
+    "k": "voidR"
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 520,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "flee",
+     "emo": "fear",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "fear"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "womb_view",
+     "x": 640,
+     "y": 450,
+     "w": 480,
+     "alpha": 1,
+     "par": 1.0,
+     "n": 49,
+     "cry": 1,
+     "flash": 0,
+     "spread": 1.3,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#8a3a3a",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#6a2a3a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#a85a5a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 660,
+       "s": 1.6,
+       "col": "#7a2a30"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 670,
+       "s": 1.5,
+       "col": "#6a2428"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 752,
+       "s": 1.7,
+       "col": "#3a1218"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 754,
+       "s": 1.6,
+       "col": "#3a1218"
+      }
+     ]
+    }
+   ],
+   "note": "insert pull_out: Forty-nine small children cry with open mouths in the womb, spread wide and glowing.",
+   "vert": {
+    "x": 640
+   },
+   "shake": 3,
+   "dx": 0
+  },
+  {
+   "id": "s31",
+   "at": {
+    "t": 68.82,
+    "word": "Diti"
+   },
+   "cues": [
+    "woke"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#0a0e38",
+     "#2a2a7a",
+     "#6a58a8",
+     "#c8a8c8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#3a3a7a",
+     "#2a2a6a",
+     "#1a1a58",
+     "#12124a"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "diti_p",
+     "x": 640,
+     "y": 636,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sleep",
+     "emo": "calm",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "sitpray",
+       "emo": "surprise"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 8,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": -2,
+     "r": 0
+    }
+   },
+   "grade": "night",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#a898c8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "hut",
+       "x": 820,
+       "y": 505,
+       "s": 0.7,
+       "lamp": true
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: Diti sits up from her mat in surprise with wide eyes and a hand on her belly.",
+   "vert": {
+    "focus": "diti_p"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s32",
+   "at": {
+    "t": 69.98,
+    "word": "Indra"
+   },
+   "cues": [
+    "ran",
+    "away"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#0a0e38",
+     "#2a2a7a",
+     "#6a58a8",
+     "#c8a8c8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#3a3a7a",
+     "#2a2a6a",
+     "#1a1a58",
+     "#12124a"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 600,
+     "y": 619,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "flee",
+     "emo": "fear",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.4,
+       "emo": "fear"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "sand_drift",
+     "x": 420,
+     "y": 650,
+     "w": 420,
+     "alpha": 0.5,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 14,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "night",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#a898c8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "hut",
+       "x": 820,
+       "y": 505,
+       "s": 0.7,
+       "lamp": true
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "wide pan_right: Indra runs away across the dark yard with his Vajra and a scared face, glancing back over his shoulder.",
+   "vert": {
+    "focus": "indra"
+   },
+   "shake": 2,
+   "dx": 0
+  },
+  {
+   "id": "s33",
+   "at": {
+    "t": 71.42,
+    "word": "She"
+   },
+   "cues": [
+    "birth",
+    "49",
+    "children"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#3a4ab0",
+     "#8a94dc",
+     "#ffbc8c",
+     "#ffeac4"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "maruta_baby",
+     "x": 640,
+     "y": 580,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "grief",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.4,
+       "emo": "joy"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "maruta_pieces",
+     "x": 640,
+     "y": 560,
+     "w": 430,
+     "alpha": 1,
+     "par": 1.0,
+     "n": 49,
+     "spread": 1,
+     "cry": 1,
+     "born": 1,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "name",
+     "s": "49",
+     "x": 640,
+     "y": 128,
+     "size": 34,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 14,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 2,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0e8d8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "wide crane_up: Forty-nine tiny storm-god babies with blue halos sit in a grid of seven rows, crying, as dawn light rises behind them; Diti sits smiling above.",
+   "vert": {
+    "x": 640,
+    "focus": "maruta_baby"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s34",
+   "at": {
+    "t": 73.68,
+    "word": "They"
+   },
+   "cues": [
+    "kill",
+    "Indra"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2466c8",
+     "#6ab0ee",
+     "#c8ecfa",
+     "#fff8e8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "maruta_baby",
+     "x": 560,
+     "y": 580,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "calm"
+      }
+     ]
+    },
+    {
+     "who": "maruta_baby",
+     "x": 720,
+     "y": 580,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "calm"
+      }
+     ]
+    },
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 619,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "surprise",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "calm"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 8,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": 4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8f0f8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Indra stands calm and unharmed under a clear sky with a few small storm-god babies in front of him not attacking.",
+   "vert": {
+    "focus": "indra"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s35",
+   "at": {
+    "t": 75.08,
+    "word": "They"
+   },
+   "cues": [
+    "friends",
+    "Kashyapa"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2466c8",
+     "#6ab0ee",
+     "#c8ecfa",
+     "#fff8e8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "maruta_baby",
+     "x": 555,
+     "y": 595,
+     "s": 0.55,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "joy"
+      }
+     ]
+    },
+    {
+     "who": "maruta_baby",
+     "x": 725,
+     "y": 595,
+     "s": 0.55,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "joy"
+      }
+     ]
+    },
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "open",
+     "emo": "joy",
+     "mood": {
+      "smile": 0.7,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "joy"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 320,
+     "r": 300,
+     "rgb": "255,214,140",
+     "ga": 0.4,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8f0f8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_left: Indra smiles with a baby storm god on each side and Kashyapa nodding behind them; light halos glow warm around all.",
+   "vert": {
+    "focus": "indra"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s36",
+   "at": {
+    "t": 77.74,
+    "word": "Because"
+   },
+   "cues": [
+    "Maruda"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#1a2a6a",
+     "#4a64b8",
+     "#a8bce8",
+     "#eef0ff"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#5a64a8",
+     "#4a5498",
+     "#3a4488",
+     "#2a3478"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 618,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "raise",
+     "emo": "surprise",
+     "talk": 1,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "anger"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Maruda",
+     "x": 640,
+     "y": 128,
+     "size": 36,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#c4cce8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#5a64a8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#5a64a8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 210,
+       "s": 1.3,
+       "col": "#b4bce0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 640,
+       "s": 1.6,
+       "col": "#c8d0f0"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 650,
+       "s": 1.5,
+       "col": "#b8c0e8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.3,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 750,
+       "s": 1.7,
+       "col": "#8890c8"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 752,
+       "s": 1.6,
+       "col": "#8890c8"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: Indra shouts with his mouth open and a hand raised, the word 'Maruda' glowing next to him as in the womb.",
+   "vert": {
+    "focus": "indra"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s37",
+   "at": {
+    "t": 79.68,
+    "word": "they"
+   },
+   "cues": [
+    "Marutas",
+    "storm"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#1a2a6a",
+     "#4a64b8",
+     "#a8bce8",
+     "#eef0ff"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#5a64a8",
+     "#4a5498",
+     "#3a4488",
+     "#2a3478"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "maruta",
+     "x": 510,
+     "y": 616,
+     "s": 0.62,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "joy"
+      }
+     ]
+    },
+    {
+     "who": "maruta",
+     "x": 770,
+     "y": 616,
+     "s": 0.62,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "joy"
+      }
+     ]
+    },
+    {
+     "who": "maruta",
+     "x": 640,
+     "y": 547,
+     "s": 0.74,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "calm"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Marutas",
+     "x": 640,
+     "y": 128,
+     "size": 34,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "lightning_forks",
+     "x": 640,
+     "y": 240,
+     "w": 460,
+     "alpha": 0.5,
+     "par": 1.0,
+     "blend": "lighter",
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 14,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#c4cce8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#5a64a8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#5a64a8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 210,
+       "s": 1.3,
+       "col": "#b4bce0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 640,
+       "s": 1.6,
+       "col": "#c8d0f0"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 650,
+       "s": 1.5,
+       "col": "#b8c0e8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.3,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 750,
+       "s": 1.7,
+       "col": "#8890c8"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 752,
+       "s": 1.6,
+       "col": "#8890c8"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Three grown storm gods with fan crowns and storm halos stand side by side in wind and clouds, calm and strong; the name 'Marutas' appears above them.",
+   "vert": {
+    "x": 640,
+    "focus": "maruta"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s38",
+   "at": {
+    "t": 82.68,
+    "word": "That"
+   },
+   "cues": [
+    "survived"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#3a4ab0",
+     "#8a94dc",
+     "#ffbc8c",
+     "#ffeac4"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "open",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.5,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "joy"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 320,
+     "r": 260,
+     "rgb": "255,214,140",
+     "ga": 0.4,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8f0f8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0b8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c8a878"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#3a7a44"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#3a7a44"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium pull_out: Indra stands relieved with a calm smile, one hand open and his crown glowing in clear light.",
+   "vert": {
+    "focus": "indra"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s39",
+   "at": {
+    "t": 84.5,
+    "word": "Diti's"
+   },
+   "cues": [
+    "beside",
+    "49",
+    "stood"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#1a2a6a",
+     "#4a64b8",
+     "#a8bce8",
+     "#eef0ff"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#5a64a8",
+     "#4a5498",
+     "#3a4488",
+     "#2a3478"
+    ],
+    "haze": "240,244,255",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "maruta",
+     "x": 470,
+     "y": 580,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.4,
+       "emo": "joy"
+      }
+     ]
+    },
+    {
+     "who": "maruta",
+     "x": 560,
+     "y": 610,
+     "s": 0.6,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.4,
+       "emo": "joy"
+      }
+     ]
+    },
+    {
+     "who": "maruta",
+     "x": 810,
+     "y": 580,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.4,
+       "emo": "joy"
+      }
+     ]
+    },
+    {
+     "who": "maruta",
+     "x": 720,
+     "y": 610,
+     "s": 0.6,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.4,
+       "emo": "joy"
+      }
+     ]
+    },
+    {
+     "who": "indra",
+     "x": 640,
+     "y": 567,
+     "s": 0.8,
+     "flip": 1,
+     "pose": "open",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "joy"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "49",
+     "x": 640,
+     "y": 128,
+     "size": 34,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.4,
+     "par": 1.0,
+     "blend": "lighter",
+     "c": 2,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 22,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 8,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#c4cce8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#5a64a8",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#5a64a8",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 210,
+       "s": 1.3,
+       "col": "#b4bce0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 480,
+       "y": 640,
+       "s": 1.6,
+       "col": "#c8d0f0"
+      },
+      {
+       "o": "cloud",
+       "x": 810,
+       "y": 650,
+       "s": 1.5,
+       "col": "#b8c0e8"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.3,
+     "blur": 2,
+     "items": [
+      {
+       "o": "cloud",
+       "x": 450,
+       "y": 750,
+       "s": 1.7,
+       "col": "#8890c8"
+      },
+      {
+       "o": "cloud",
+       "x": 830,
+       "y": 752,
+       "s": 1.6,
+       "col": "#8890c8"
+      }
+     ]
+    }
+   ],
+   "note": "wide crane_up: Indra stands in the middle with a row of Marutas on each side, storm-god brothers in blue with halos, all standing beside him; the number 49 appears.",
+   "vert": {
+    "x": 640,
+    "focus": "indra"
+   },
+   "dx": 0
+  }
+ ]
+}
