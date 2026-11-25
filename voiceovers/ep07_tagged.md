@@ -13,7 +13,7 @@ Brihaspati, guru of the gods, called a council in heaven. His face was grim. He 
 "Not with force," said Brihaspati. "I have someone he will never suspect. And I have a plan."
 
 **B04** [calm]
-A few days later, a young man walked into Shukracharya's hermitage and asked to be his student. The guru tied a sacred thread on his wrist, a promise to keep him safe. He did not know whose son the boy was.
+A few days later, a young man walked into Shukracharya's ashram and asked to be his student. The guru tied a sacred thread on his wrist, a promise to keep him safe. He did not know whose son the boy was.
 "I am Kacha," said the young man. His new teacher's daughter was watching him from the doorway.
 "I am Devayani," she said, and lowered her eyes.
 
