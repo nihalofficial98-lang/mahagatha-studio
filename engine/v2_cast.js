@@ -169,6 +169,7 @@ function headgear(c,S,hx,hy){c.save();c.translate(hx,hy);
   if(cr==='vishnu')PK.kirita(c,66);else if(cr==='devi')PK.kirita(c,58);else if(cr==='small')PK.kirita(c,34);
   else if(cr==='raja')PK.crownK(c,44,{gem:'#18a57a'});else if(cr==='indra')PK.crownK(c,70,{crest:'fan',gem:'#3b7cf0'});else if(cr==='chandra')PK.crownK(c,46,{crest:'moon',gem:'#dfe8ff'});else if(cr==='agni')PK.crownK(c,44,{crest:'flame',gem:'#ff7a1a'});else if(cr==='vayu')PK.crownK(c,40,{crest:'fan',gem:'#7ac8f0'});
   else if(cr==='brahma')PK.jataMukuta(c);else if(cr==='asura')PK.asuraCrown(c,S.crownCol);
+  if(S.hairFlower)hairFlowers(c,S.hairFlower);
   else if(cr==='helmet'){PK.cut(c,cc=>{cc.moveTo(-35,-14);cc.bezierCurveTo(-38,-66,38,-66,35,-14);cc.lineTo(22,-22);cc.lineTo(-22,-22);cc.closePath()},PK.goldG(c,-35,35),{lw:2.2});
     PK.cut(c,cc=>cc.roundRect(-35,-32,70,10,3),PK.goldG(c,-35,35),{lw:1.6,sh:0});for(let k=-2;k<=2;k++)PK.gem(c,k*13,-27,2.6,k%2?'#18a57a':'#e0234a');
     if(S.plume)PK.cut(c,cc=>{cc.moveTo(0,-58);cc.bezierCurveTo(-16,-86,10,-104,24,-98);cc.bezierCurveTo(10,-86,8,-68,6,-56)},S.plume,{lw:1.6,sh:0})}
@@ -200,7 +201,7 @@ function lowerBody(c,S,sk,P,sw,t){const L=S.lower||{type:'short',col:'#f1ead8',c
   const topW=(fem?40:46)*bw,ty=L.type;
   const leg=(h,f,side)=>{const r=elbow(h,f,86,92,side),k=r.e;return{h,k,f}};
   const lg_=[leg(P.hipL,P.fL,-1),leg(P.hipR,P.fR,1)];
-  const shin=(g,sd)=>{const sl=S.legSk||sk;PK.limbOutline(c,g.k,[g.f[0],g.f[1]-14],21*bw,12*bw);PK.limb(c,sl,g.k,[g.f[0],g.f[1]-14],21*bw,12*bw,{lw:0,sh:0});if(S.talons){legScales(c,g.k,[g.f[0],g.f[1]-14]);talonFoot(c,sl,g.f[0],g.f[1]-4,sd,t)}else PK.footF(c,sk,g.f[0],g.f[1]-4,sd,{anklet:S.anklet||(S.female||S.halo||S.crown?GOLD:false),alta:S.female||!!S.halo});if(S.dust)footDust(c,g.f[0],g.f[1]-4,sd)};
+  const shin=(g,sd)=>{const sl=S.legSk||sk;PK.limbOutline(c,g.k,[g.f[0],g.f[1]-14],21*bw,12*bw);PK.limb(c,sl,g.k,[g.f[0],g.f[1]-14],21*bw,12*bw,{lw:0,sh:0});if(S.talons){legScales(c,g.k,[g.f[0],g.f[1]-14]);talonFoot(c,sl,g.f[0],g.f[1]-4,sd,t)}else PK.footF(c,sk,g.f[0],g.f[1]-4,sd,{anklet:S.anklet||(S.female||S.halo||S.crown?GOLD:false),alta:S.female||!!S.halo});if(S.claws)footClaws(c,g.f[0],g.f[1]-4,sd);if(S.dust)footDust(c,g.f[0],g.f[1]-4,sd)};
   const thigh=(g)=>{PK.limbOutline(c,g.h,g.k,29*bw,22*bw);PK.limb(c,sk,g.h,g.k,29*bw,22*bw,{lw:0,sh:0})};
   const clothTube=(a,b,ra,rb)=>{const dx=b[0]-a[0],dy=b[1]-a[1],d=Math.hypot(dx,dy)||1,nx=-dy/d,ny=dx/d;PK.cut(c,PK.P.caps(a,b,ra,rb),PK.lg(c,a[0]+nx*ra,a[1]+ny*ra,a[0]-nx*ra,a[1]-ny*ra,[L.colL,L.col,L.colD]),{lw:2.2,sh:0});
     [-.45,0,.45].forEach(f=>PK.stroke(c,cc=>{cc.moveTo(a[0]+nx*ra*f,a[1]+ny*ra*f);cc.quadraticCurveTo((a[0]+b[0])/2+nx*ra*(f+.15),(a[1]+b[1])/2+ny*ra*(f+.15),b[0]+nx*rb*f,b[1]+ny*rb*f)},'rgba(40,10,20,.2)',1.4))};
@@ -316,10 +317,11 @@ function vasuki(c,P,t,k){const nx=P.nk[0],ny=P.nk[1]+10,vp=PK.ellPts(nx,ny,40,22
 function sideHeads(c,S,hx,hy,o,k,t){const H=o.hd,ez=v=>v*v*(3-2*v);const one=(dx,dy,s,turn)=>{c.save();c.translate(hx+dx,hy+dy);c.scale(s,s);c.filter='brightness(.82)';drawHead(c,0,0,{expr:o.expr||'calm',k:k,S:S,t:t+dx*.01,mood:{smile:.25},turn:turn});PK.hairCap(c,S.hair.col);PK.jataMukuta(c);c.filter='none';c.restore()};
   const l=H?ez(H.l||0):1,r=H?ez(H.r||0):1;if(l>.02)one(-18-26*l,8,.8*l,-.6);if(r>.02)one(18+26*r,8,.8*r,.6)}
 function frontArms(c,S,sk,P,o,t,k){const fem=!!S.female,bw=S.build||1,w=[(fem?14:17)*Math.min(bw,1.25),(fem?11:13.5)*Math.min(bw,1.25),(fem?8.5:10.5)*Math.min(bw,1.2)];
-  const sl=fem&&S.upper?S.upper.col:null,dL=Math.hypot(P.hL[0]-P.hR[0],P.hL[1]-P.hR[1]),join=dL<60&&!P.sit,joinSit=dL<60&&P.sit;
+  const sl=fem&&S.upper?S.upper.col:(S.sleeve||null),dL=Math.hypot(P.hL[0]-P.hR[0],P.hL[1]-P.hR[1]),join=dL<60&&!P.sit,joinSit=dL<60&&P.sit;
   const typ=(s,hh,sd)=>{if(join||joinSit)return'pray';if(hh[1]<s[1]-40)return'abhaya';const ext=Math.abs(hh[0]-s[0])>92&&hh[1]<s[1]+50;if(ext)return'ext';if(P.sit)return'jnana';return'rest'};
   const tl=typ(P.sL,P.hL,-1),tr=typ(P.sR,P.hR,1),both=tl==='ext'&&tr==='ext';
   const aL=armX(c,S,sk,P.sL,P.hL,1,{w,sleeve:sl}),aR=armX(c,S,sk,P.sR,P.hR,-1,{w,sleeve:sl});
+  if(S.wristThread)wristCord(c,aR,w[2],S.wristThread,t);
   const pr=S.prop||o.prop;
   const hand=(a,ty,sd)=>{const dir=Math.atan2(a.t[0]-a.e[0],-(a.t[1]-a.e[1]));
     if(ty==='pray'){PK.hand(c,sk,[a.t[0]-sd*2,a.t[1]+6],sd*-.08,'rest',sd>0?-1:1);return}
@@ -327,6 +329,8 @@ function frontArms(c,S,sk,P,o,t,k){const fem=!!S.female,bw=S.build||1,w=[(fem?14
     if(ty==='ext'){if(both||sd<0)PK.hand(c,sk,a.t,dir*.55,'abhaya');else PK.hand(c,sk,a.t,dir,'point');return}
     if(ty==='jnana'){PK.hand(c,sk,a.t,sd*-2.6,'jnana',sd>0?-1:1);return}
     PK.hand(c,sk,a.t,dir,'rest')};
+  if(HPROP[pr]&&!S.arms4){const d=Math.atan2(aR.t[0]-aR.e[0],-(aR.t[1]-aR.e[1]));if(P.hLt)PK.hand(c,sk,aL.t,P.hLa||0,P.hLt,-1);else hand(aL,tl,-1);HPROP[pr](c,aR.t,t,o.f||{});PK.hand(c,sk,aR.t,P.hRt?(P.hRa||0):d,P.hRt||'hold');return}
+  if(P.hLt){PK.hand(c,sk,aL.t,P.hLa||0,P.hLt,-1);if(P.hRt)PK.hand(c,sk,aR.t,P.hRa||0,P.hRt);else hand(aR,tr,1);return}
   if(P.hRt){hand(aL,tl,-1);PK.hand(c,sk,aR.t,P.hRa||0,P.hRt);return}
   if(P.grip&&(pr==='sword'||pr==='vajra')){const d=P.gripA!=null?P.gripA:Math.atan2(aR.t[0]-aR.e[0],-(aR.t[1]-aR.e[1]));if(pr==='sword')PK.sword(c,aR.t[0],aR.t[1]+4,d,1.1);else PK.vajra(c,aR.t[0],aR.t[1],d,1.05);hand(aL,tl,-1);PK.hand(c,sk,aR.t,d,'hold');return}
   // props carried in a lowered hand
@@ -543,7 +547,7 @@ function drawCow(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#f8f2e6',d:'#d2c2a4',h:
   PK.cut(c,PK.P.ell(66,38,22,17,.2),PK.lg(c,50,24,86,56,['#f8d4c4','#e6a898']),{lw:1.8,ink:AINK,sh:0});PK.cut(c,PK.P.ell(76,32,3.6,5.6,.3),'#5a3a2a',{lw:0,sh:0});PK.stroke(c,cc=>{cc.moveTo(52,50);cc.quadraticCurveTo(64,56,78,50)},AINK,1.6);
   aEye(c,16,-6,7.5,A.M,t);PK.cut(c,PK.P.ell(32,-30,3.4,4.4),'#d0243a',{lw:.8,ink:AINK,sh:0});horn(-2,6);
   c.restore()}
-function drawMare(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#e8c48a',d:'#b48450',h:'#fae4bc'},MN={b:'#fbf6e8',d:'#d8ccb0',h:'#ffffff'},hoof='#4a3a2a',body=PK.lg(c,0,-335,0,-210,[C.h,C.b,C.d]),mane=PK.lg(c,0,-480,0,-300,[MN.h,MN.b,MN.d]);aShadow(c,210);
+function drawMare(c,o,t){const A=aMove(o,t),b=A.bob,C=o.C||{b:'#e8c48a',d:'#b48450',h:'#fae4bc'},MN=o.MN||{b:'#fbf6e8',d:'#d8ccb0',h:'#ffffff'},hoof='#4a3a2a',body=PK.lg(c,0,-335,0,-210,[C.h,C.b,C.d]),mane=PK.lg(c,0,-480,0,-300,[MN.h,MN.b,MN.d]);aShadow(c,210);
   aLeg(c,-124,-222+b,222,17,A.sw(0),C,hoof,1,1);aLeg(c,100,-222+b,222,17,A.sw(2),C,hoof,1);aLeg(c,-102,-226+b,226,19,A.sw(1),C,hoof,0,1);aLeg(c,122,-226+b,226,19,A.sw(3),C,hoof,0);
   const ts=Math.sin(t*1.8)*8+(A.run?14:0);PK.cut(c,cc=>{cc.moveTo(-176,-312+b);cc.bezierCurveTo(-226,-300+b,-232+ts,-220,-246+ts,-112);cc.bezierCurveTo(-226+ts,-150,-210,-230,-172,-282+b);cc.closePath()},mane,{lw:2,ink:AINK,sh:0});
   const bp=PK.P.smooth([[-182,-302+b],[-110,-334+b],[30,-326+b],[118,-326+b],[160,-286+b],[144,-226+b],[60,-212+b],[-60,-216+b],[-160,-222+b],[-198,-264+b]]);
@@ -553,7 +557,7 @@ function drawMare(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#e8c48a',d:'#b48450',h
   {const A0=[hx-4,hy-22],B0=[80,-326+b],dx=B0[0]-A0[0],dy=B0[1]-A0[1],d=Math.hypot(dx,dy),nx=-dy/d,ny=dx/d,pts=[];for(let i=0;i<=8;i++){const u=i/8;pts.push([A0[0]+dx*u-nx*12,A0[1]+dy*u-ny*12])}
     for(let i=8;i>=0;i--){const u=i/8,j=(i%2?40:24)+Math.sin(t*2+i)*3;pts.push([A0[0]+dx*u+nx*j,A0[1]+dy*u+ny*j])}
     PK.cut(c,PK.P.smooth(pts),mane,{lw:1.8,ink:AINK,sh:0});for(let i=1;i<8;i++){const u=i/8;PK.stroke(c,cc=>{cc.moveTo(A0[0]+dx*u-nx*6,A0[1]+dy*u-ny*6);cc.lineTo(A0[0]+dx*u+nx*24,A0[1]+dy*u+ny*24)},'rgba(150,130,90,.45)',1.4)}}
-  aBand(c,[150,-404+b+A.bow*60],[176,-350+b+A.bow*70],[196,-372+b+A.bow*70]);
+  if(!o.noBand)aBand(c,[150,-404+b+A.bow*60],[176,-350+b+A.bow*70],[196,-372+b+A.bow*70]);
   c.save();c.translate(hx,hy);c.rotate(.98+A.bow*.4);
   PK.cut(c,cc=>{cc.moveTo(-22,-18);cc.lineTo(-14,-62);cc.lineTo(0,-20);cc.closePath()},PK.lg(c,0,-62,0,-18,[C.h,C.d]),{lw:1.8,ink:AINK,sh:0});
   PK.cut(c,PK.P.smooth([[-32,-24],[20,-30],[92,-18],[124,2],[122,24],[92,32],[20,28],[-32,16]]),PK.lg(c,-30,-30,120,30,[C.h,C.b,C.d]),{lw:2.2,ink:AINK});
@@ -561,7 +565,7 @@ function drawMare(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#e8c48a',d:'#b48450',h
   PK.cut(c,PK.P.ell(112,8,4,6,.4),'#3a2a1a',{lw:0,sh:0});PK.stroke(c,cc=>{cc.moveTo(98,26);cc.quadraticCurveTo(110,28,120,20)},AINK,1.6);
   PK.cut(c,cc=>{cc.moveTo(-26,-26);cc.quadraticCurveTo(0,-44,24,-26);cc.quadraticCurveTo(10,-10,30,4);cc.quadraticCurveTo(-4,-6,-20,-8);cc.closePath()},mane,{lw:1.6,ink:AINK,sh:0});
   aEye(c,8,-2,7.5,A.M,t);c.restore()}
-function drawDoe(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#d0905a',d:'#9a6034',h:'#eab886'},hoof='#3a2a1a',body=PK.lg(c,0,-262,0,-172,[C.h,C.b,C.d]);aShadow(c,160);
+function drawDoe(c,o,t){const A=aMove(o,t),b=A.bob,C=o.C||{b:'#d0905a',d:'#9a6034',h:'#eab886'},hoof='#3a2a1a',body=PK.lg(c,0,-262,0,-172,[C.h,C.b,C.d]);aShadow(c,160);
   aLeg(c,-104,-182+b,182,12,A.sw(0),C,hoof,1,1);aLeg(c,84,-182+b,182,12,A.sw(2),C,hoof,1);aLeg(c,-86,-186+b,186,13,A.sw(1),C,hoof,0,1);aLeg(c,102,-186+b,186,13,A.sw(3),C,hoof,0);
   PK.cut(c,cc=>{cc.moveTo(-136,-246+b);cc.quadraticCurveTo(-170,-262+b+Math.sin(t*3)*5,-162,-230+b);cc.quadraticCurveTo(-150,-224+b,-132,-232+b);cc.closePath()},'#fbf4e6',{lw:1.6,ink:AINK,sh:0});
   const bp=PK.P.smooth([[-142,-236+b],[-60,-262+b],[40,-258+b],[108,-252+b],[132,-212+b],[100,-180+b],[0,-172+b],[-100,-176+b],[-150,-200+b]]);
@@ -569,7 +573,7 @@ function drawDoe(c,o,t){const A=aMove(o,t),b=A.bob,C={b:'#d0905a',d:'#9a6034',h:
     c.fillStyle='rgba(255,248,232,.92)';for(let r=0;r<3;r++)for(let i=0;i<8;i++){const x=-118+i*30+(r%2)*14,y=-244+r*18+b;if(x<120)c.beginPath(),c.ellipse(x,y,4.6,3.4,0,0,7),c.fill()}c.restore();
   const hx=150+A.bow*16,hy=-350+b+A.bow*120;
   PK.cut(c,PK.P.smooth([[78,-252+b],[112,-318+b+A.bow*60],[hx-6,hy-6],[hx+16,hy+16],[134,-262+b+A.bow*40],[118,-196+b],[96,-190+b]]),body,{lw:2.2,ink:AINK});
-  aBand(c,[110,-310+b+A.bow*60],[132,-276+b+A.bow*50],[148,-300+b+A.bow*50]);
+  if(!o.noBand)aBand(c,[110,-310+b+A.bow*60],[132,-276+b+A.bow*50],[148,-300+b+A.bow*50]);
   c.save();c.translate(hx,hy);c.rotate(.42+A.bow*.7);
   const ear=(a,l)=>{c.save();c.rotate(a);PK.cut(c,cc=>{cc.moveTo(-4,-10);cc.quadraticCurveTo(-30,-l*.5,-12,-l);cc.quadraticCurveTo(10,-l*.55,8,-8);cc.closePath()},PK.lg(c,-20,0,10,0,[C.d,C.b]),{lw:1.8,ink:AINK,sh:0});
     PK.cut(c,cc=>{cc.moveTo(-2,-14);cc.quadraticCurveTo(-18,-l*.5,-10,-l*.86);cc.quadraticCurveTo(4,-l*.5,4,-14);cc.closePath()},'#f2c8b0',{lw:0,sh:0});c.restore()};

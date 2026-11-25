@@ -43,13 +43,12 @@ His body shook, but his mind was calm. Everything was going as he had planned. H
 The demons killed him. They burned his body and ground the ashes to powder. They stirred the powder into Shukracharya's wine, the way they had done with the deer.
 Shukracharya drank the whole cup. He did not know that he had just swallowed Kacha.
 
-That night, Devayani stumbled out of the forest, clutching a piece of burnt cloth. She stood before her father, Shukracharya.
-"Kacha's cloth? What are you saying?"
-"Your demons killed him. They hacked him and burned him."
-"How dare they! I will not spare them..."
+That night, Devayani stumbled out of the forest, holding a piece of burnt cloth. She stood before her father, Shukracharya.
+"Father," she said, "this is all that is left of Kacha. Your demons killed him. They hacked him and burned him."
+"How dare they! I will punish every one of them..."
 He stopped. Devayani was laughing. Tears poured down her face, and she was laughing.
-"You will not spare them? You, who have drunk my Kacha?"
-She scraped a black speck from his lips. "The demons put his ashes in your wine."
+"Punish them? You, father? You drank him. You drank my Kacha."
+She wiped a black speck from his lips. "This is his ash. The demons put it in your wine."
 
 Shukracharya closed his eyes in horror. Then he spoke. "From today, any Brahmin who drinks wine will lose his wisdom and his virtue." He had failed to keep Kacha safe.
 "You know what you have to do," said Devayani.
