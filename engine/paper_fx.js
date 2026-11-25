@@ -5,7 +5,7 @@
    Extra options: ketaki ("flower_petals"): wither 0..1 or wc (cue) + wd, fall:1 (petals drop), glow 0..1.  ground_crack: grows with the fade-in.
    Also defines: SHOTS.scene with depth layers (sc.layers), background change on a cue (sc.bg2 + bgc/bgd) and bg parameter tween (sc.bgTo + bgc/bgd). */
 (function(){
-const {cutP,cutU,vg,shd,mix,hx,drawLayers}=window.PS,TAU=Math.PI*2,PI=Math.PI;
+const {cutP,cutU,vg,shd,mix,hx,drawLayers,OBJ}=window.PS,TAU=Math.PI*2,PI=Math.PI;
 window.IMG_PENDING=0; // no images are loaded any more (renderers still wait on this flag)
 const gold=(y0,y1)=>vg(y0,y1,['#fff4c0','#f2c14e','#b87a1a']);
 const gem=(x,y,r,c)=>cutP(()=>ctx.arc(x,y,r,0,TAU),(()=>{const g=ctx.createRadialGradient(x-r*.3,y-r*.3,0,x,y,r);g.addColorStop(0,'#ffffff');g.addColorStop(.35,c);g.addColorStop(1,shd(c,.45));return g})(),{sh:0,lw:1.2});
@@ -127,10 +127,36 @@ const E={
  embryo:{s:0,f(w,t,F){V2.FX.embryo(ctx,w,t,F)}},
  womb_view:{s:0,f(w,t,F){V2.FX.womb_view(ctx,w,t,F)}},
  maruta_pieces:{s:0,f(w,t,F){V2.FX.maruta_pieces(ctx,w,t,F)}},
+ // EP07 dark look (Nov 2026). demon_crowd: rows of black asura silhouettes with ember eyes (rows 1-3, n per row, w = width, seed, sway, eyes 0..1, haze = smoke colour; x,y = middle of the front row's feet)
+ demon_crowd:{s:0,f(w,t,F){const rows=F.rows||2,n=F.n||8,hz=F.haze||'#5a2414';for(let k=rows-1;k>=0;k--){const sc=1-k*.22;OBJ.demons(0,-k*34,sc*(F.sc||1),t,{n:Math.round(n*(1+k*.35)),w:w/sc,seed:(F.seed||3)+k*17,fog:k*.28,haze:hz,eyes:F.eyes??1,sway:F.sway})}}},
+ // smoke_bank: a dark rolling smoke band (w wide, h tall, col, v drift speed)
+ smoke_bank:{s:0,f(w,t,F){OBJ.smoke(0,0,1,t,{w:w,h:F.h||w*.1,col:F.col||'#2a1814',a:1,seed:F.seed||5,v:F.v??10})}},
+ // ember_fire: a matte paper campfire of crossed branches (fire 0..1 = how high it burns; logs:false hides the wood); x,y = base
+ ember_fire:{s:0,f(w,t,F){const k=F.fire??1,h=w*.9*k;glow(0,-h*.35,w*1.1,'255,120,40',.35*k);
+  const logs=[[-.5,.06,.42,-.22],[-.45,-.12,.5,.1],[-.2,.1,.15,-.3],[.3,.08,-.1,-.32]];if(F.logs!==false)logs.forEach(([a,b,c2,d2])=>{ctx.save();ctx.lineCap='round';ctx.strokeStyle='#1a0c06';ctx.lineWidth=w*.1;ctx.beginPath();ctx.moveTo(a*w,b*w);ctx.lineTo(c2*w,d2*w);ctx.stroke();ctx.strokeStyle='#4a2a16';ctx.lineWidth=w*.07;ctx.stroke();ctx.strokeStyle='rgba(255,110,40,.5)';ctx.lineWidth=w*.015;ctx.setLineDash([w*.03,w*.05]);ctx.stroke();ctx.restore()});
+  for(let i=0;i<7;i++){const x=(i-3)*w*.09,f=Math.sin(t*7+i*1.9)*w*.04,hh=h*(.55+.45*Math.abs(Math.sin(i*2.1)))*(.85+.15*Math.sin(t*9+i));if(hh<2)continue;
+   [[1,['#f0a040','#d8501a','#7a140a']],[.55,['#fff0b0','#ffc050','#e8761c']]].forEach(([q,cols])=>cutP(()=>{ctx.moveTo(x-w*.07*q,0);ctx.quadraticCurveTo(x-w*.08*q+f,-hh*.55*q,x+f*1.4,-hh*q);ctx.quadraticCurveTo(x+w*.08*q+f,-hh*.55*q,x+w*.07*q,0);ctx.closePath()},vg(-hh*q,0,cols),{sh:0,lw:1,ink:'rgba(80,10,0,.55)'}))}
+  for(let i=0;i<14;i++){const u=(t*.35+i/14)%1;ctx.fillStyle=`rgba(255,${120+(i*23)%90},40,${(1-u)*.9})`;ctx.beginPath();ctx.arc(Math.sin(i*3.3+t)*w*.3*u,-h*.6-u*w*.9,1.4+(i%3)*.6,0,TAU);ctx.fill()}
+  if(F.smoke!==false){ctx.save();ctx.globalAlpha*=.5;OBJ.smoke(0,-h-w*.3,.5,t,{w:w*2.2,h:w*.35,col:'#3a2620',a:.7,seed:4,v:6});ctx.restore()}}},
+ // curse_glow: a matte red (or col:'violet') ring of jagged rays around a hand or a figure (pulses)
+ curse_glow:{s:0,f(w,t,F){const R=w*.5,rgb=F.col==='violet'?'150,70,200':(F.rgb||'200,30,20'),pu=.8+.2*Math.sin(t*4);glow(0,0,R*1.1,rgb,.45*pu);
+  ctx.save();ctx.rotate(t*.4);for(let i=0;i<18;i++){ctx.save();ctx.rotate(i/18*TAU);const L=R*(.7+.3*Math.abs(Math.sin(i*1.7+t*2)));cutP(()=>{ctx.moveTo(-R*.035,-R*.35);ctx.lineTo(R*.02,-L*.7);ctx.lineTo(-R*.01,-L*.72);ctx.lineTo(0,-L);ctx.lineTo(R*.035,-R*.35);ctx.closePath()},`rgba(${rgb},.8)`,{sh:0,lw:1,ink:'rgba(30,0,0,.6)'});ctx.restore()}ctx.restore();
+  ctx.strokeStyle=`rgba(${rgb},.9)`;ctx.lineWidth=w*.02;ctx.setLineDash([w*.04,w*.03]);ctx.beginPath();ctx.arc(0,0,R*.34,0,TAU);ctx.stroke();ctx.setLineDash([])}},
+ // ash_speck: a few black ash flakes (the speck on the guru's lips / on a fingertip)
+ ash_speck:{s:0,f(w,t){const r=rng(9);for(let i=0;i<7;i++){const x=(r()-.5)*w,y=(r()-.5)*w*.5,sz=w*(.05+r()*.07);cutP(()=>{ctx.moveTo(x-sz,y);ctx.lineTo(x-sz*.2,y-sz*.8);ctx.lineTo(x+sz,y-sz*.2);ctx.lineTo(x+sz*.3,y+sz*.7);ctx.closePath()},'#141010',{sh:0,lw:.6,ink:'rgba(120,110,100,.5)'})}}},
+ // props drawn by engine/v2_cast.js (also figure prop keys): wine_cup (ash 0..1 swirl), burnt_cloth, palm_leaf (glow 0..1, rot), blood_splash (dark-red paper drops; n, spread), wild_flowers
+ wine_cup:{s:0,f(w,t,F){V2.FX.wine_cup(ctx,w,t,F)}},
+ burnt_cloth:{s:0,f(w,t,F){V2.FX.burnt_cloth(ctx,w,t,F)}},
+ palm_leaf:{s:0,f(w,t,F){V2.FX.palm_leaf(ctx,w,t,F)}},
+ blood_splash:{s:0,f(w,t,F){V2.FX.blood_splash(ctx,w,t,F)}},
+ wild_flowers:{s:0,f(w,t,F){V2.FX.wild_flowers(ctx,w,t,F)}},
  whirlpool_churn:{s:0,am:1.8,f(w,t){ctx.save();ctx.scale(1,.5);glow(0,0,w*.5,'90,170,230',.35);for(let k=0;k<5;k++){ctx.save();ctx.rotate(k*TAU/5);ctx.strokeStyle=k%2?'rgba(170,225,255,.75)':'rgba(60,140,210,.8)';ctx.lineWidth=w*.03*(1-k*.08);ctx.lineCap='round';ctx.beginPath();
   for(let i=0;i<=40;i++){const u=i/40,R=w*.48*(1-u),an=u*4.4;ctx.lineTo(Math.cos(an)*R,Math.sin(an)*R)}ctx.stroke();ctx.restore()}glow(0,0,w*.1,'10,30,70',.8);ctx.restore()}}
 };
 window.PFX=E;
+/* looks: a shot preset chosen by its grade name (shot.look or shot.grade = 'ep07_dark'): soft-light tint, heavy vignette, low bloom, and for
+   every figure (unless the figure sets its own): warm firelight key + soft ember rim + matte filter (less saturation, no gloss) */
+window.LOOKS={ep07_dark:{grade:'rgba(150,60,20,0.26)',vig:.66,bloom:.02,key:'255,140,70',rim:'rgba(255,140,70,.38)',filt:'saturate(.78) brightness(.9) contrast(1.05)'}};
 function pfxName(F){if(F.k)return F.k;const s=String(F.src||'').split('/').pop().replace(/\.png$/,'');return s.replace(/^fx_/,'')}
 FXV2.pfx=FXV2.fximg=function(F,t,P,d,a){const nm=pfxName(F),e=E[nm];if(!e){(window.FX_ERRORS=window.FX_ERRORS||[]);const m='pfx: unknown effect '+nm;if(window.FX_ERRORS.indexOf(m)<0)window.FX_ERRORS.push(m);return}
   if(F.par!=null&&!F._in){layer(F.par,()=>FXV2.pfx(Object.assign({},F,{_in:1,par:null}),t,P,d,a));return}
@@ -149,7 +175,9 @@ function bgDraw(S,t,P){let bg=S.bg;if(S.bgTo&&!S.bg2)bg=lerpBg(bg,S.bgTo,q(P,t,S
   if(S.bg2){const u=q(P,t,S.bgc||0,S.bgd||1.2);if(u<=0)return;if(u>=1){BG[S.bg2.k](S.bg2,t);return}
     const main=ctx,M=ctx.getTransform();if(!OFF){OFF=document.createElement('canvas')}OFF.width=main.canvas.width;OFF.height=main.canvas.height;const o=OFF.getContext('2d');o.setTransform(M);ctx=o;BG[S.bg2.k](S.bg2,t);ctx=main;
     ctx.save();ctx.setTransform(1,0,0,1,0,0);ctx.globalAlpha=u;ctx.drawImage(OFF,0,0);ctx.restore()}}
-SHOTS.scene=function(t,d,P){const S=P.sc;if(S.bg)bgDraw(S,t,P);
+SHOTS.scene=function(t,d,P){const LK=window.LOOKS[P.look]||window.LOOKS[P.grade];let S=P.sc;
+  if(LK){if(!P.look)P.look=P.grade;if(window.LOOKS[P.grade])P.grade=LK.grade;if(P.vig==null)P.vig=LK.vig;if(P.bloom==null)P.bloom=LK.bloom;S=Object.assign({},S,{figs:(S.figs||[]).map(f=>Object.assign({key:LK.key,rim:LK.rim,filt:LK.filt},f))})}
+  if(S.bg)bgDraw(S,t,P);
   if(S.layers)drawLayers(S.layers,t,'back');
   layer(1,()=>(S.fxb||[]).forEach(F=>drawFx(F,t,P,d)));
   layer(S.depth??1,()=>(S.figs||[]).forEach(f=>drawWho(f,t,P)));
