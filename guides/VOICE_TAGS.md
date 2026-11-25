@@ -4,3 +4,4 @@
 - **No beat ids** (B01, B02...) and no chapter labels in the tagged file. Only tags and text.
 - Plain narration, no quoted dialogue (indirect speech): the narrator tells everything; no character imitation.
 - Allowed tags (examples): mysterious, curious, calm, firm, grave, serious, surprised, shocked, angry, sad, bitter, cold, excited, urgent, tense, fearful, determined, dramatic, desperate, intense, emotional, warm, confident.
+- **Pauses (owner: the voice speaks too fast, no pauses):** put `[pause]` after every very short sentence (4 words or fewer), after key dramatic lines and at the end of every paragraph. Do not use fast/urgent/excited/tense/intense tags (they speed the voice up). In the AI tool, also set the voice speed to about 0.9-0.95.
