@@ -24,13 +24,13 @@ Answer: Vishnu, as Mohini, made the demon dance until he touched his own head an
 Question: Why Did Indra Cut Diti's Unborn Son Into 49 Pieces?
 Answer: He feared the son who was meant to kill him. He cut him into seven, then each into seven more, but the pieces lived and became the forty-nine Marutas, Indra's companions.
 
-## Reel 11: Why Did Garuda Have to Pay for Kadru's Cheating?
+## Reel 11: How Did Garuda Free His Mother Vinata From Kadru?
 - Context: Kadru cheated her sister Vinata in a bet over a horse's tail.
 - Lean: The loser became a slave.
-- Snapback: So why did Vinata's son, Garuda, have to pay for it?
+- Snapback: How did her son Garuda free her?
 
-Question: Why Did Garuda Have to Pay for Kadru's Cheating?
-Answer: The serpents would free his mother, Vinata, only for amrita, so Garuda risked fire, blades and guard snakes to win her freedom.
+Question: How Did Garuda Free His Mother Vinata From Kadru?
+Answer: The serpents agreed to free Vinata only for amrita, so Garuda brought it through fire, spinning blades and guard snakes.
 
 ## Reel 12: Why Did Harishchandra Give Up His Kingdom, Wife and Son?
 - Context: King Harishchandra lost his kingdom, his wife and his son.
