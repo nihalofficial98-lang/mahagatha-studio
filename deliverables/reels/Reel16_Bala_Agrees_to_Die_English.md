@@ -16,18 +16,18 @@
 
 ## Tagged narration
 [mysterious] A demon so strong he beat Indra and took heaven. No god could touch him. But one thing could beat him, a request. Why did Bala agree to die?
-[calm] Bala was a demon king, but his heart was kind. He had never refused anyone who asked him for a gift. After he took heaven, the gods stood outside its gates with nowhere to go. Bala walked up to them. "I have given freely before, and I will give again," he said. "Whenever you hold a yagna, a fire ritual, I will help you." Indra smiled.
-[fast] The gods held a yagna. A yagna needs a being to offer. They bowed to Bala and said, "We ask you to offer yourself." The hall froze. Bala stood up. His shadow fell over them. He came closer. And closer. Then he folded his hands. "I am ready."
-[grave] The flames took his body. The gods cheered. Then someone screamed, "Look!" The burned body was turning into something so bright that no one could look away. The gods tried to lift it to heaven. It slipped. It fell to earth and broke into eighty-four pieces. Wherever they landed, they became jewels. His bones became diamonds. His blood became rubies. His eyes became sapphires. His teeth became pearls. His voice, the voice that said "I am ready," became the cat's eye.
+[calm] Bala was a demon king, but his heart was kind. He had never refused anyone who asked him for a gift. The gods stood outside heaven with nowhere to go. Bala walked up to them. "I have given freely before, and I will give again," he said. "Whenever you hold a yagna, a fire ritual, I will help you." Indra smiled.
+[fast] The gods held a yagna. A yagna needs a being to offer. They bowed to Bala and said, "We ask you to offer yourself." The hall froze. Bala stood up. He came closer. And closer. Then he folded his hands. "I am ready."
+[grave] The flames took his body. Then someone screamed, "Look!" The burned body was turning into something so bright that no one could look away. The gods tried to lift it to heaven. It slipped. It fell to earth and broke into eighty-four pieces. Wherever they landed, they became jewels. His bones became diamonds. His blood became rubies. His eyes became sapphires. His teeth became pearls. His voice, the voice that said "I am ready," became the cat's eye.
 [firm] Nine of those jewels are called the Navaratnas. That is why Bala agreed to die. He could never say no to anyone who asked. The gods won heaven by a trick. The earth won a treasure.
 
 **Length:** 260 words (tags excluded), about 104 s at 0.40 s/word.
 
 ## Plain narration
 A demon so strong he beat Indra and took heaven. No god could touch him. But one thing could beat him, a request. Why did Bala agree to die?
-Bala was a demon king, but his heart was kind. He had never refused anyone who asked him for a gift. After he took heaven, the gods stood outside its gates with nowhere to go. Bala walked up to them. "I have given freely before, and I will give again," he said. "Whenever you hold a yagna, a fire ritual, I will help you." Indra smiled.
-The gods held a yagna. A yagna needs a being to offer. They bowed to Bala and said, "We ask you to offer yourself." The hall froze. Bala stood up. His shadow fell over them. He came closer. And closer. Then he folded his hands. "I am ready."
-The flames took his body. The gods cheered. Then someone screamed, "Look!" The burned body was turning into something so bright that no one could look away. The gods tried to lift it to heaven. It slipped. It fell to earth and broke into eighty-four pieces. Wherever they landed, they became jewels. His bones became diamonds. His blood became rubies. His eyes became sapphires. His teeth became pearls. His voice, the voice that said "I am ready," became the cat's eye.
+Bala was a demon king, but his heart was kind. He had never refused anyone who asked him for a gift. The gods stood outside heaven with nowhere to go. Bala walked up to them. "I have given freely before, and I will give again," he said. "Whenever you hold a yagna, a fire ritual, I will help you." Indra smiled.
+The gods held a yagna. A yagna needs a being to offer. They bowed to Bala and said, "We ask you to offer yourself." The hall froze. Bala stood up. He came closer. And closer. Then he folded his hands. "I am ready."
+The flames took his body. Then someone screamed, "Look!" The burned body was turning into something so bright that no one could look away. The gods tried to lift it to heaven. It slipped. It fell to earth and broke into eighty-four pieces. Wherever they landed, they became jewels. His bones became diamonds. His blood became rubies. His eyes became sapphires. His teeth became pearls. His voice, the voice that said "I am ready," became the cat's eye.
 Nine of those jewels are called the Navaratnas. That is why Bala agreed to die. He could never say no to anyone who asked. The gods won heaven by a trick. The earth won a treasure.
 
 ## Source lines (story 12)
