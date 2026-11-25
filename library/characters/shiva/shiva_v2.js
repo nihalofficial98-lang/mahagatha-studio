@@ -71,7 +71,7 @@ function drawHead(c,hx,hy,o){ // o:{expr:'calm'|'closed'|'rage', k:0..1 anger, S
   const S=o.S||SHIVA_FACE,M=o.mood||{},e=o.expr||'calm',k=Math.max(M.anger||0,e==='rage'?1:(e==='calm'?(o.k||0):0)),t=o.t||0;
   const bl=Math.max(M.blink||0,e==='closed'?1:0,((t*.37)%1)<.03?1:0),tri=S.third&&S.tripundra!==false;
   c.save();c.translate(hx,hy);
-  PK.face(c,{skin:skinPK(S),t:t,turn:o.turn||0,must:S.mustache,blink:bl,mouth:M.mouth||0,smile:M.smile==null?(S.female?.5:.3):M.smile,lx:M.lx||0,ly:M.ly||0,anger:k,sad:M.sad||0,surp:M.surp||0,
+  PK.face(c,{skin:skinPK(S),t:t,turn:o.turn||0,must:S.mustache,blink:bl,mouth:M.mouth||0,smile:M.smile==null?(S.female?.5:.3):M.smile,lx:M.lx||0,ly:M.ly||0,anger:k,sad:M.sad||0,surp:M.surp||0,wide:M.wide,laugh:M.laugh,smirk:M.smirk,tears:M.tears,brow:M.brow,
     tilak:tri?'tripundra':(S.tilak==='vaishnava'||S.tilak==='brahma'?S.tilak:(S.tilak==='ash'?'tripundra':null)),bindi:S.bindi||S.tilak==='dot',third:tri?k:null,beard:S.beard,beardLen:S.beardLen,
     browCol:S.brow,lip:S.female?'#c4384a':(S.lip||'#a8384e'),eyeRed:S.eyeRed,kgem:S.kgem||(S.female?'#18a57a':undefined)});
   c.restore()}
