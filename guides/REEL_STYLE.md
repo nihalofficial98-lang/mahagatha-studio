@@ -7,3 +7,4 @@
 - Ending in the last 2-3 sentences, one of: twist/reveal, respect restored after a myth is corrected, or one open question that invites comments. Story is complete in every case.
 - Each reel is self-contained: re-introduce every name; no "as we saw".
 - English is the primary language from EP07: this style also governs the long-form English script (short plain past-tense sentences, one action each, numbers as words, no filler). Word range of a full video: `guides/SCRIPT_STYLE.md`.
+- **Every reel answers a question (owner's rule, reels 8-14 on).** The triple hook raises ONE clear question tied to the title; the body answers it explicitly and plainly before the end; the last line states the answer/payoff. Never end on an open editorial question. The comment CTA, if any, lives in the caption, not the script. Each reel file lists `Question:` and `Answer:` under the hook.
