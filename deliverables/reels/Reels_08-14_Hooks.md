@@ -1,7 +1,7 @@
 # Reels 08-14: opening hooks (read first)
 
 ## Reel 8: Vishnu Fought a Demon for 16,000 Years. Then He Lost His Head.
-- Context: Vishnu, the Preserver, fought the demon Hayagriva for sixteen thousand years.
+- Context: Vishnu, the Preserver, fought one demon for sixteen thousand years.
 - Lean: He still could not win, and then he lost his head.
 - Snapback: The ones who cut it off were the gods.
 
