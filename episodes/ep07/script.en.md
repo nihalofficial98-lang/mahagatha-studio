@@ -16,7 +16,7 @@ As long as he held it, the gods could never win.
 
 **B03** [grave]
 Brihaspati, guru of the gods, called a council in heaven. His face was grim. He spoke one word. "Mritasanjivani."
-"You want us to steal it?" said Indra, king of the gods. "From Shukracharya? He guards it with his life."
+"You want us to steal it?" said Indra, king of the gods. "From Shukracharya? He will never share it."
 "Not with force," said Brihaspati. "I have someone he will never suspect. And I have a plan."
 
 **B04** [calm]
@@ -25,7 +25,7 @@ A few days later, a young man walked into Shukracharya's ashram and asked to be 
 "I am Devayani," she said, and lowered her eyes.
 
 **B05** [whispering]
-Soon she had written his name on her heart. Every morning he sang hymns by her window. Every evening he brought her wild flowers from the woods.
+Soon she was in love with him. Every morning he sang hymns by her window. Every evening he brought her wild flowers from the woods.
 And every night, a shadow slipped into his room. Brihaspati.
 "Do you have it, Kacha?"
 "Not yet, father. But his daughter loves me more every day."
@@ -37,12 +37,12 @@ It could kill him. But it was the only way. The demons hated Brihaspati's son. S
 
 **B07** [firm]
 The plan had three stages. Kacha would control two. The third was in Devayani's hands.
-He would not tell her. Her ignorance was worth more than her loyalty.
+He would not tell her. It was better if she did not know.
 
 **B08** [fast]
 Stage one. A wild feast of the demons. Kacha picked up a cup, pretended to be drunk, and whispered to a demon, "Shall I tell you a secret? I am the son of Brihaspati."
-The demon choked on his drink. He told another. And another. Soon a ring of red eyes closed around Kacha. Hands reached for his throat.
-"Halt!" Shukracharya's voice shook the hall. "The thread on his wrist binds me to protect him. He is my student. Treat him as one of your own."
+The demon choked on his drink. He told another. And another. Soon the demons were angry. They crowded around Kacha. One reached for his throat.
+"Stop!" shouted Shukracharya. "The thread on his wrist binds me to protect him. He is my student. Treat him as one of your own."
 The demons backed away.
 
 **B09** [calm]
@@ -54,9 +54,9 @@ Stage two. At dawn, Kacha took the guru's horses to graze. Deep in the forest, h
 A twig cracked. "They are coming."
 
 **B11** [grave]
-He piled up branches and lit a fire. The footsteps grew louder. Closer. Closer. He never looked up. He only watched their feet. Their nails hungry for his flesh. Their blades thirsty for his blood.
-The circle closed. It blotted out the sun.
-His body shook, but his soul was calm. Everything was falling into place, just as he had planned. He was going to die, and yet not die.
+He piled up branches and lit a fire. The footsteps grew louder. Closer. Closer. He never looked up. He only watched their feet. They had knives and claws.
+They stood all around him.
+His body shook, but his mind was calm. Everything was going as he had planned. He was going to die, but he would not stay dead.
 
 **B12** [tender]
 That night, Devayani stumbled out of the forest, clutching a piece of burnt cloth. She stood before her father, Shukracharya.
@@ -76,19 +76,19 @@ She froze. She had begged for a life, and not seen the price. Kacha's life deman
 **B14** [pleading]
 "Never!" cried Devayani. "I cannot live without you. I love you both. Not more. Not less."
 "Then you must choose. Him or me?"
-Her eyes began to gleam. "Not him or you. Both. Give me the mantra. When Kacha comes out of you, I will bring you back."
-Shukracharya felt ice around his heart. A thousand years of penance had earned him this secret. And his daughter asked, "Don't you trust me, father?"
+Her eyes lit up. "Not him or you. Both. Give me the mantra. When Kacha comes out of you, I will bring you back."
+Shukracharya was afraid. He had prayed for a thousand years to earn this secret. And his daughter asked, "Don't you trust me, father?"
 He nodded. He wrote it down. "Use it once. Then destroy it. Promise me."
 "I promise."
 
 **B15** [grand]
 He closed his eyes and began to chant. His belly shook. Then his chest, his face, his arms.
-A finger tore out of his eye. A foot burst through his navel.
+A finger came out of his eye. A foot came out of his belly.
 
 **B16** [calm]
-Kacha's face broke through Shukracharya's skull. His arms shattered the old man's ribs. He rose out of the body like a butterfly from a cocoon, drenched in blood.
+Kacha came out of Shukracharya's body, covered in blood.
 "Kacha!" Devayani held him, laughing and crying.
-He smiled. Not the smile she knew. A smile she had never seen.
+He smiled, but not the way he used to.
 
 **B17** [fast]
 "Now I must bring father back."
@@ -99,15 +99,15 @@ His eyes held hers. Her fingers loosened. The mantra fell.
 Kacha caught it.
 
 **B18** [firm]
-He read it over the guru's body. The pride of the demons. The boon of Shiva. Every word. Every line. It sank into his mind and stayed there.
-Shukracharya stood up. He took a step toward his daughter. Then he saw the mantra in Kacha's hand. He saw the gleam in Kacha's eyes.
-He knew. There was no rage on his face. Only pain. And he fell.
+He read it over the guru's body. The secret the demons were proud of. A gift from Shiva. He read every word and learned it by heart.
+Shukracharya stood up. He took a step toward his daughter. Then he saw the mantra in Kacha's hand. He saw Kacha smiling.
+He knew. There was no rage on his face. Only pain. And he fell to the ground.
 
 **B19** [cold]
 Kacha began to walk away.
 "Kacha!" Devayani ran after him. "I told father about us. Speak to him so we can marry."
 "You still don't understand?"
-Then she saw it. The word fell from her lips. "Mritasanjivani?"
+Then she understood. "Mritasanjivani?" she whispered.
 "I came for what my father sent me for."
 
 **B20** [cold]
