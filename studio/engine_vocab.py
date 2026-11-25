@@ -12,7 +12,7 @@ def _obj():
     return re.findall(r"^ (\w+)\(x,y,s,t,o\)",s[a:b],re.M)
 def _poses():
     s=rd('v2_cast.js');a=s.index('const PZ={');b=s.index('const poseOf=')
-    return sorted(set(re.findall(r"^ (\w+):\{",s[a:b],re.M))|set(re.findall(r"PZ\.(\w+)=",s[a:b])))
+    return sorted(set(re.findall(r"^ (\w+):\{",s[a:b],re.M))|set(re.findall(r"PZ\.(\w+)=",s)))
 def _emo():
     m=re.search(r"const EMO=\{(.*?)\};",rd('scenes.js'),re.S);return re.findall(r"(\w+):\{",m.group(1))
 def _bgf():
