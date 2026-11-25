@@ -108,16 +108,20 @@ def cosmic(dur,seed):
     rng=np.random.default_rng(seed);n=int(dur*SR);t=np.arange(n)/SR;root=50+seed%3
     def organ(fr,tt):return sum(a*np.sin(2*np.pi*fr*h*tt) for h,a in((1,1),(2,.6),(3,.35),(4,.25),(6,.15),(8,.08)))
     drone=sum(organ(f(root+k),t) for k in(-24,-12,-5,0))*.25     # fixed sustained chord, constant
-    # ostinato: even eighth notes, same loudness, same length, rising line in a fixed pattern
-    pat=[0,7,12,14,12,7,0,7,12,16,14,12,7,12,14,12];step=.34;osc=np.zeros(n);i=0;x=0.5
-    while x<dur-.4:
-        L=int(step*1.6*SR);a=int(x*SR);tt=np.arange(L)/SR
-        env=np.minimum(1,tt*80)*np.minimum(1,(L/SR-tt)*40)
-        v=organ(f(root+12+pat[i%16]),tt)*env
-        e=min(L,n-a);osc[a:a+e]+=v[:e];x+=step;i+=1
-    osc*=.12
-    wet=reverb(osc,2.2)
-    mix=drone+osc+wet*.5
+    # steady choir "ooh" pad on the same chord (no vibrato, constant), high airy shimmer, sparse soft bells
+    ch=np.zeros(n)
+    for k in(0,7,12,16,19):
+        for dt in(-5,5):ch+=sum(np.sin(2*np.pi*f(root+12+k)*2**(dt/1200)*h*t)/h**1.3 for h in range(1,12))
+    ch=bp(ch,500,1200)+.5*bp(ch,1800,2800)+.4*lp(ch,300)
+    ch*=.35/np.max(np.abs(ch))
+    shim=sum(np.sin(2*np.pi*f(root+36+k)*t) for k in(0,7,12))*.025
+    bells=np.zeros(n);x=3.0
+    while x<dur-3:
+        fr=f(root+24+rng.choice([0,7,12,14,16,19]));L=int(4*SR);tt=np.arange(L)/SR
+        bl=sum(am*np.sin(2*np.pi*fr*r*tt)*np.exp(-tt*dc) for r,am,dc in((1,1,.9),(2,.4,1.4),(3,.2,2)))*np.minimum(1,tt*300)
+        a=int(x*SR);e=min(L,n-a);bells[a:a+e]+=bl[:e]*.09;x+=rng.uniform(4,8)
+    wet=reverb(ch*.5+bells,3.0)
+    mix=drone*.9+ch*.5+shim+bells+wet*.5
     fade=np.minimum(1,np.minimum(t/2,(dur-t)/3));mix*=fade
     return mix/np.max(np.abs(mix))
 def run(reel,seed):
