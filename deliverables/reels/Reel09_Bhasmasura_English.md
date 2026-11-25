@@ -21,24 +21,24 @@
 
 ## Tagged narration
 [curious] Shiva was running for his life. Behind him ran a demon with one hand raised. One touch on Shiva's head, and the Destroyer would be ash. And Shiva himself had given him that power. How did Shiva escape Bhasmasura?
-[calm] It had begun with a sword at a man's throat. The demon Vrikasura had prayed to Shiva for hundreds of years. Shiva never came. So he began cutting off his own flesh. As the blade reached his neck, Shiva caught his arm.
+[calm] It had begun with a sword at a man's throat. The demon Vrikasura wanted to be Shiva's greatest devotee. The sage Narada told him to win a boon. He prayed for hundreds of years. Shiva stayed hidden. So he began cutting off his own flesh. As the blade reached his neck, Shiva caught his arm.
 [calm] "Ask," said Shiva. "Anyone I touch on the head turns to ash." "But that is so violent." "If you grant it, it proves you adore me." Shiva agreed. He named him Bhasmasura, the ash demon.
-[firm] Then Parvati, Shiva's wife, came down the slope. The demon stared. Her husband stood in the way. He raised his hand. Shiva stepped back. He understood, and ran.
-[curious] He ran in all ten directions. Every time he looked back, the demon was there. His legs failed. One place was left: Vaikuntha, the home of Vishnu.
-[calm] Vishnu was smiling. "I know everything, Mahadeva." "Protect me," said Shiva. Vishnu vanished. A woman stood in his place. "Who are you?" "Mohini." The demon forgot his boon. "Come," she said. "Dance with me."
-[firm] He copied every step. Every turn. Every sway of her hips. Then she placed her hand on her head. So did he.
+[firm] Then Parvati, Shiva's wife, came down the slope. The demon stared. Her husband stood in the way. The demon raised his hand. Shiva stepped back. He ran.
+[curious] He ran in all ten directions. Every time he looked back, the demon was there. One place was left: Vaikuntha, the home of Vishnu.
+[calm] Vishnu was smiling. "I know everything, Mahadeva." "Protect me," said Shiva. Vishnu vanished. A woman stood in his place. Mohini. The demon forgot his boon. "Come," she said. "Dance with me."
+[firm] He copied every step and every turn. Then she placed her hand on her head. So did he.
 [curious] Mohini laughed as she whirled around a pile of ash. Shiva escaped because Vishnu made the demon dance into his own boon.
 
-**Length:** 249 words (tags excluded), about 100 s at 0.40 s/word.
+**Length:** 251 words (tags excluded), about 100 s at 0.40 s/word.
 
 ## Plain narration
 Shiva was running for his life. Behind him ran a demon with one hand raised. One touch on Shiva's head, and the Destroyer would be ash. And Shiva himself had given him that power. How did Shiva escape Bhasmasura?
-It had begun with a sword at a man's throat. The demon Vrikasura had prayed to Shiva for hundreds of years. Shiva never came. So he began cutting off his own flesh. As the blade reached his neck, Shiva caught his arm.
+It had begun with a sword at a man's throat. The demon Vrikasura wanted to be Shiva's greatest devotee. The sage Narada told him to win a boon. He prayed for hundreds of years. Shiva stayed hidden. So he began cutting off his own flesh. As the blade reached his neck, Shiva caught his arm.
 "Ask," said Shiva. "Anyone I touch on the head turns to ash." "But that is so violent." "If you grant it, it proves you adore me." Shiva agreed. He named him Bhasmasura, the ash demon.
-Then Parvati, Shiva's wife, came down the slope. The demon stared. Her husband stood in the way. He raised his hand. Shiva stepped back. He understood, and ran.
-He ran in all ten directions. Every time he looked back, the demon was there. His legs failed. One place was left: Vaikuntha, the home of Vishnu.
-Vishnu was smiling. "I know everything, Mahadeva." "Protect me," said Shiva. Vishnu vanished. A woman stood in his place. "Who are you?" "Mohini." The demon forgot his boon. "Come," she said. "Dance with me."
-He copied every step. Every turn. Every sway of her hips. Then she placed her hand on her head. So did he.
+Then Parvati, Shiva's wife, came down the slope. The demon stared. Her husband stood in the way. The demon raised his hand. Shiva stepped back. He ran.
+He ran in all ten directions. Every time he looked back, the demon was there. One place was left: Vaikuntha, the home of Vishnu.
+Vishnu was smiling. "I know everything, Mahadeva." "Protect me," said Shiva. Vishnu vanished. A woman stood in his place. Mohini. The demon forgot his boon. "Come," she said. "Dance with me."
+He copied every step and every turn. Then she placed her hand on her head. So did he.
 Mohini laughed as she whirled around a pile of ash. Shiva escaped because Vishnu made the demon dance into his own boon.
 
 ## Source lines (story 48)

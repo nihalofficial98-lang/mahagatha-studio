@@ -21,23 +21,23 @@
 
 ## Tagged narration
 [curious] At dawn, two sisters stood behind a white horse. Its tail looked black, because snakes were wrapped around it. One sister had just lost her freedom to that trick. How did her son Garuda free his mother Vinata from Kadru?
-[calm] It began with an argument. Vinata said the horse Uchchaishrava was white, every inch. Kadru said the tail was black. They bet. The loser would be the winner's slave.
-[calm] Kadru's sons warned her. "It's white. Every bristle." Kadru smirked. "White can be black." She ordered them to coil around the tail. Some refused. She cursed them. The rest obeyed.
-[firm] Vinata saw black. She became a slave. It was a curse come true. She had once cracked open one of her two eggs too early. Out came half-formed Aruna. "You shall be enslaved by your sister," he said. Only the second egg could break the curse.
-[curious] Five hundred years later, it cracked. Golden light poured out. Garuda, half bird, half man, rose on red wings. "Release my mother." The serpents agreed, for a price. "Bring us amrita."
-[firm] The nectar sat inside a ring of fire. Blades spun at the entrance. Two serpents waited to strike. Garuda laughed. "Venom is guarding amrita?" He drowned the fire with river water. He shrank through the blades. He trampled the snakes.
-[curious] He set the vessel down before the serpents. They let Vinata go. Garuda freed his mother by winning the one prize they named, through fire, blades and venom.
+[calm] Kadru and Vinata were sisters, both wives of the sage Kashyapa. Kadru bore a thousand serpents. Vinata wanted two sons mightier than all of them. They argued over a horse. Vinata said Uchchaishrava was white, every inch. Kadru said the tail was black. They bet. The loser would be the winner's slave.
+[calm] Kadru's sons warned her. "It's white. Every bristle.""White can be black." She ordered them to coil around the tail. Some refused, and she cursed them.
+[firm] Vinata saw black. She became a slave. Long before, she had cracked open one of her two eggs too early. Out came half-formed Aruna. "You shall be enslaved by your sister," he said. Only the second egg could break the curse.
+[curious] Five hundred years later, it cracked. Garuda, half bird, half man, rose. "Release my mother." The serpents agreed, for a price. "Bring us amrita, the nectar of immortality."
+[firm] The nectar sat inside a ring of fire. Blades spun at the entrance. Two serpents waited to strike. Garuda laughed. "Venom is guarding amrita?" He doused the fire with river water, slipped through the blades and trampled the snakes.
+[curious] He set the vessel down before the serpents. They let Vinata go. Garuda freed his mother by winning the one prize they named.
 
-**Length:** 244 words (tags excluded), about 98 s at 0.40 s/word.
+**Length:** 248 words (tags excluded), about 99 s at 0.40 s/word.
 
 ## Plain narration
 At dawn, two sisters stood behind a white horse. Its tail looked black, because snakes were wrapped around it. One sister had just lost her freedom to that trick. How did her son Garuda free his mother Vinata from Kadru?
-It began with an argument. Vinata said the horse Uchchaishrava was white, every inch. Kadru said the tail was black. They bet. The loser would be the winner's slave.
-Kadru's sons warned her. "It's white. Every bristle." Kadru smirked. "White can be black." She ordered them to coil around the tail. Some refused. She cursed them. The rest obeyed.
-Vinata saw black. She became a slave. It was a curse come true. She had once cracked open one of her two eggs too early. Out came half-formed Aruna. "You shall be enslaved by your sister," he said. Only the second egg could break the curse.
-Five hundred years later, it cracked. Golden light poured out. Garuda, half bird, half man, rose on red wings. "Release my mother." The serpents agreed, for a price. "Bring us amrita."
-The nectar sat inside a ring of fire. Blades spun at the entrance. Two serpents waited to strike. Garuda laughed. "Venom is guarding amrita?" He drowned the fire with river water. He shrank through the blades. He trampled the snakes.
-He set the vessel down before the serpents. They let Vinata go. Garuda freed his mother by winning the one prize they named, through fire, blades and venom.
+Kadru and Vinata were sisters, both wives of the sage Kashyapa. Kadru bore a thousand serpents. Vinata wanted two sons mightier than all of them. They argued over a horse. Vinata said Uchchaishrava was white, every inch. Kadru said the tail was black. They bet. The loser would be the winner's slave.
+Kadru's sons warned her. "It's white. Every bristle.""White can be black." She ordered them to coil around the tail. Some refused, and she cursed them.
+Vinata saw black. She became a slave. Long before, she had cracked open one of her two eggs too early. Out came half-formed Aruna. "You shall be enslaved by your sister," he said. Only the second egg could break the curse.
+Five hundred years later, it cracked. Garuda, half bird, half man, rose. "Release my mother." The serpents agreed, for a price. "Bring us amrita, the nectar of immortality."
+The nectar sat inside a ring of fire. Blades spun at the entrance. Two serpents waited to strike. Garuda laughed. "Venom is guarding amrita?" He doused the fire with river water, slipped through the blades and trampled the snakes.
+He set the vessel down before the serpents. They let Vinata go. Garuda freed his mother by winning the one prize they named.
 
 ## Source lines (story 40)
 1. Bet: Kadru "spawned one thousand serpents"; Vinata asked "only two sons who would surpass Kadru's thousand"; the sisters argue about the tail of Uchchaishrava (white vs black) and "The loser would have to become the winner's slave."

@@ -21,24 +21,24 @@
 
 ## Tagged narration
 [curious] Night, at a cremation ground. A king held his dead son in his arms. His wife begged him to break his word, just once. He said no. Why would Harishchandra not break his word, even for his dead son?
-[calm] He had been king of Ayodhya. Once, he had stalled a vow to the god Varuna to keep his baby son alive. Afterwards he swore never again.
+[calm] He was king of Ayodhya. The god Varuna had once given him a son, on one condition: sacrifice the boy. The king kept finding excuses. Afterwards he swore never to break his word again.
 [calm] Then a spirit made him insult the sage Vishwamitra. To atone, he promised the sage anything. "Your throne." "All yours." "Your wealth." "All yours."
-[firm] Then the sage demanded a fee, dakshina. In Kashi, they found no work. "Sell me," said his wife, Taramati. He refused. "Do it or I shall kill myself." He sold her. It was only half. "Sell yourself too," said the sage. The buyer was a Chandala, a man who burned the dead.
-[curious] One night a woman came with a dead child and no money for the fee. The moon came out. It was Taramati. The boy was Rohita, bitten by a snake.
+[firm] The sage demanded a fee, dakshina. In Kashi, they found no work. "Sell me," said his wife, Taramati. He refused. "Do it or I shall kill myself." He sold her. It was only half. "Sell yourself too," said the sage. The buyer was a Chandala, a man who burned the dead.
+[curious] One night a woman came with a dead child and no money for the fee. It was Taramati. The boy was Rohita, bitten by a snake.
 [firm] "Your word!" she screamed. "You can surely break it for our Rohita." "I did that once," he wept, "and I am still paying." She snatched his axe to end her life.
-[calm] "Taramati!" Vishwamitra called. Rohita ran to her, alive. "I was certain I would defeat you." He gave back everything. The Chandala was Yama.
+[calm] "Taramati!" Vishwamitra called. Rohita ran to her, alive. He gave back everything. The Chandala was Yama.
 [curious] He would not break his word because he had broken it once, and sworn never again. That is why his name means truth.
 
-**Length:** 249 words (tags excluded), about 100 s at 0.40 s/word.
+**Length:** 244 words (tags excluded), about 98 s at 0.40 s/word.
 
 ## Plain narration
 Night, at a cremation ground. A king held his dead son in his arms. His wife begged him to break his word, just once. He said no. Why would Harishchandra not break his word, even for his dead son?
-He had been king of Ayodhya. Once, he had stalled a vow to the god Varuna to keep his baby son alive. Afterwards he swore never again.
+He was king of Ayodhya. The god Varuna had once given him a son, on one condition: sacrifice the boy. The king kept finding excuses. Afterwards he swore never to break his word again.
 Then a spirit made him insult the sage Vishwamitra. To atone, he promised the sage anything. "Your throne." "All yours." "Your wealth." "All yours."
-Then the sage demanded a fee, dakshina. In Kashi, they found no work. "Sell me," said his wife, Taramati. He refused. "Do it or I shall kill myself." He sold her. It was only half. "Sell yourself too," said the sage. The buyer was a Chandala, a man who burned the dead.
-One night a woman came with a dead child and no money for the fee. The moon came out. It was Taramati. The boy was Rohita, bitten by a snake.
+The sage demanded a fee, dakshina. In Kashi, they found no work. "Sell me," said his wife, Taramati. He refused. "Do it or I shall kill myself." He sold her. It was only half. "Sell yourself too," said the sage. The buyer was a Chandala, a man who burned the dead.
+One night a woman came with a dead child and no money for the fee. It was Taramati. The boy was Rohita, bitten by a snake.
 "Your word!" she screamed. "You can surely break it for our Rohita." "I did that once," he wept, "and I am still paying." She snatched his axe to end her life.
-"Taramati!" Vishwamitra called. Rohita ran to her, alive. "I was certain I would defeat you." He gave back everything. The Chandala was Yama.
+"Taramati!" Vishwamitra called. Rohita ran to her, alive. He gave back everything. The Chandala was Yama.
 He would not break his word because he had broken it once, and sworn never again. That is why his name means truth.
 
 ## Source lines (story 61 (context: 60))
