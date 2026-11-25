@@ -95,20 +95,15 @@ def war(dur,seed):
                 a=int((b-.5+j*.08)*SR);L=int(.25*SR)
                 if 0<=a and a+L<n:dr[a:a+L]+=drum(120,L,.25+.08*j,16)
         bpm=96+34*b/dur;b+=60/bpm/2;i+=1
-    # brass-like power drone (fifths, filtered saw) swelling with phrase
-    br=np.zeros(n)
-    for m in(root,root+7,root+12):
-        ph=2*np.pi*np.cumsum(f(m)*(1+.002*np.sin(2*np.pi*5*t)))/SR
-        br+=sum(np.sin(h*ph)/h for h in range(1,12))
-    br=lp(br,1400)*(.5+.5*np.sin(2*np.pi*t/(60/96*8))**2)
-    # metal clangs / noise swells on phrase starts
-    sw=np.zeros(n)
-    for c in np.arange(4,dur-1,60/110*8):
-        a=int(c*SR);L=int(2.2*SR)
-        if a+L<n:
-            tt=np.arange(L)/SR;sw[a:a+L]+=hp(rng.standard_normal(L),4000)*np.exp(-tt*2.5)*.35
-    wet=reverb(dr*.6+br*.2,1.6)
-    mix=dr*1.0+br*.35+sw*.5+wet*.4
+    # one constant-level tone that rises steadily in pitch the whole reel (no swells, no wobble)
+    f0,f1=f(root+12),f(root+24);fr=f0*(f1/f0)**(t/dur)
+    ph=2*np.pi*np.cumsum(fr)/SR
+    br=lp(sum(np.sin(h*ph)/h for h in range(1,7)),3000)
+    br/=np.max(np.abs(br))
+    wet=reverb(dr*.3,1.0)
+    dn=dr/np.max(np.abs(dr))
+    mix=dn*1.0+wet*.15+br*.22
+    mix=np.tanh(mix*1.8)   # glue: drums punchy and always up front
     fade=np.minimum(1,np.minimum(t/.6,(dur-t)/2.5));mix*=fade
     return mix/np.max(np.abs(mix))
 def run(reel,seed):
