@@ -50,7 +50,7 @@ That night, Devayani stormed into his room, shaking with anger. Kacha soothed he
 He lay awake. The demons wanted him dead. Exactly as he planned.
 
 **B10** [grave]
-Stage two. At dawn, Kacha took the guru's horses to graze. Deep in the forest, he stopped. And waited. He was waiting for the angry demons. They had followed him before. He knew they would come.
+Stage two. At dawn, Kacha took the guru's horses to graze. Deep in the forest, he stopped. And waited. He was waiting for the demons. They were angry at him, and he knew they would come.
 A twig cracked. "The demons are coming."
 
 **B11** [grave]
