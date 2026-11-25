@@ -253,6 +253,36 @@ def lament(dur,seed):
     far=reverb(tr,4.5);far=lp(far,2200)      # distance: mostly reverb, dulled
     mix=bass*.6+hol*.18+tr*.12+far*.55+gong*.55+reverb(gong,3.5)*.3
     mix*=np.minimum(1,np.minimum(t/3,(dur-t)/4));return mix/np.max(np.abs(mix))
+def battlefield(dur,seed):
+    """War soundscape: taiko drums + bass, random sword clashes, wailing voices of the wounded, rolling thunder."""
+    rng=np.random.default_rng(seed);n=int(dur*SR);t=np.arange(n)/SR
+    base=war(dur,seed)
+    sw=np.zeros(n);x=1.0
+    while x<dur-1:
+        for _ in range(rng.integers(1,4)):                       # a flurry of 1-3 clashes
+            a=int((x+rng.uniform(0,.5))*SR);L=int(.9*SR);tt=np.arange(L)/SR;fb=rng.uniform(1700,3100)
+            c=sum(am*np.sin(2*np.pi*fb*r*tt)*np.exp(-tt*dc) for r,am,dc in((1,1,9),(2.76,.7,12),(5.4,.5,16),(.62,.5,7)))
+            c+=.8*hp(rng.standard_normal(L),3000)*np.exp(-tt*60)
+            e=min(L,n-a)
+            if e>0:sw[a:a+e]+=c[:e]*rng.uniform(.5,1)
+        x+=rng.uniform(.8,2.6)
+    wl=np.zeros(n);x=3.0
+    while x<dur-3:                                               # distant wailing: falling cries, formant "aah"
+        L=int(rng.uniform(1.8,3.5)*SR);tt=np.arange(L)/SR;f0=rng.uniform(300,520)*(1-.35*tt/(L/SR))
+        ph=2*np.pi*np.cumsum(f0*(1+.012*np.sin(2*np.pi*6*tt)))/SR
+        v=sum(np.sin(q*ph)/q for q in range(1,16));v=bp(v,700,1100)+.6*bp(v,1300,1800)
+        v*=np.minimum(1,tt*4)*np.minimum(1,(L/SR-tt)*2)*rng.uniform(.5,1)
+        a=int(x*SR);e=min(L,n-a);wl[a:a+e]+=v[:e];x+=rng.uniform(2.5,6)
+    wl=reverb(wl,2.5)*1.0
+    th=np.zeros(n);x=5.0
+    while x<dur-4:
+        L=int(rng.uniform(4,6)*SR);tt=np.arange(L)/SR
+        r=lp(rng.standard_normal(L),rng.uniform(150,320))*(np.exp(-tt*.8)*(1+.6*np.sin(2*np.pi*rng.uniform(3,7)*tt)**2))
+        cr=hp(rng.standard_normal(L),1200)*np.exp(-tt*25)*.5     # sharp crack at the start
+        a=int(x*SR);e=min(L,n-a);th[a:a+e]+=(r+cr)[:e]*np.minimum(1,tt[:e]*30);x+=rng.uniform(9,15)
+    for v in(sw,wl,th):v/=np.max(np.abs(v))+1e-9
+    mix=base*.75+sw*.3+reverb(sw,1.2)*.15+wl*.28+th*.7
+    mix*=np.minimum(1,np.minimum(t/1.5,(dur-t)/3));return np.tanh(mix*1.2)/np.max(np.abs(np.tanh(mix*1.2)))
 def run(reel,seed):
     src=f'{R}/renders/{reel}_1080x1920.mp4';out=f'{R}/renders/{reel}_bgm_1080x1920.mp4'
     dur=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',src]))
