@@ -18,7 +18,7 @@ def _emo():
 def _bgf():
     m=re.search(r"window\.BGF=\{(.*?)\n\};",rd('paper_scenes.js'),re.S);return re.findall(r"^ (\w+):",m.group(1),re.M)
 CAST=_cast();PFX=_pfx();OBJ=_obj();POSES=_poses();EMO=_emo();FORE=_bgf()
-BG='vista cloudscape earth pillar cel storm voidR night dusk moon palace dawn amber cosmos sea plain yagna kailash garden cosmicsea vaikuntha ashram kacha_room forest feasthall council'.split()
+BG='vista cloudscape earth pillar cel storm voidR night dusk moon palace dawn amber cosmos sea plain yagna kailash garden cosmicsea vaikuntha ashram kacha_room_night forest feasthall council'.split()
 BANNED_FX={'heart','sparkle','fximg'}   # owner rule: no hearts, stars, sparkles; fximg = legacy alias of pfx
 FX=sorted((set(re.findall(r"k==='(\w+)'",rd('scenes.js')))|set(re.findall(r'FXV2\.(\w+)=',''.join(rd(f) for f in ('v2_scenes.js','paper_fx.js')))))-BANNED_FX)
 GRADES='cel warm red night pal cool dark amb earth void ep07_dark'.split()   # ep07_dark = look preset (tint + vignette + matte firelit figures)

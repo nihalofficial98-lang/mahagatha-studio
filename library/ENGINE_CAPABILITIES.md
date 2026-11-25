@@ -14,11 +14,12 @@ paper OBJECTS, depth layers, default foregrounds) · `engine/paper_fx.js` (24 pa
 ## Shot (in shots.json, written by build_shots.py from shot_plan.json)
 - Starts on a spoken word; `cues` = words inside the shot; anything with `c:i` fades in on cue i over `d` seconds.
 - `cam:{from:{z,x,y,r},to:{...}}` eased over the shot; z 1.0 wide … 1.3 close (higher only for head close-ups), x/y ±120, r ±0.05. `shake` 0-8, `tilt`.
-- `grade`: cel warm red night pal cool dark amb earth void, or an rgba() tint.
+- `grade`: cel warm red night pal cool dark amb earth void, or an rgba() tint. **`ep07_dark`** = a full LOOK preset (engine/paper_fx.js `window.LOOKS`): warm soft-light tint, vignette .66, bloom .02, and every figure gets a firelight key, a soft ember rim and a matte filter (`saturate(.78) brightness(.9)`), unless the figure sets its own `key`/`rim`/`filt`.
 - Transition into the shot: `tr`: fade (default dissolve) | wipe (torn-paper edge sweeps left to right) | iris (circle opens) | flash (white bloom); `dx` = seconds; `dx:0` = hard cut.
 
 ## Backgrounds (`bg:{k:...}`)
-vista (sky, ridge colours, river, trees, ground) · cloudscape · cosmos (rgb, spin) · pillar (fire column, `ct` crack cue) · storm (r 0..1)
+EP07 dark look: **ashram** (dusk: maroon-ember sky, low sun, ridge, banyan/round trees, two thatched huts with lamps; `lamp:false`, `fire:false`, `sx/sy`, `hx/hx2`) · **kacha_room_night** (Kacha's room at night: mud wall, barred window with moon `wx`, oil lamp on a shelf `lx`, `lamp` 0..1, reed mat, low bed `bx`) · **forest** (dawn: silhouette tree rows, smoke bands `smoke` 0..1, dim sun shafts `rays:false`, branch-littered ground) · **feasthall** (demon feast hall: fire-lit stone arches, back-row silhouette crowd `crowd:false`/`crowdN`, fire bowls `fire` 0..1, feast table `table:false`) · **council** (heaven council, dim gold-brown: arches, pillars, lamps, red runner).
+· vista (sky, ridge colours, river, trees, ground) · cloudscape · cosmos (rgb, spin) · pillar (fire column, `ct` crack cue) · storm (r 0..1)
 · voidR · plain · amber · dusk · earth (strata) · sea · kailash · palace · yagna (fire 0..1) · garden · cosmicsea · cel · night · moon · dawn · vaikuntha (reels: golden sky, far golden palace, milk ocean with lotuses; sx/sy, y1, sea).
 - Far ridges of `vista` are blurred and hazed; trees on ridges are the paper tree object.
 - Default foreground (in FRONT of the actors, blurred, darker, bottom corners only) for vista, kailash, cloudscape, amber, dusk, garden, storm, palace. Turn off with `bg.fore:false`; replaced automatically when the shot has its own `near` layer.
@@ -30,15 +31,17 @@ vista (sky, ridge colours, river, trees, ground) · cloudscape · cosmos (rgb, s
 - `fog` mixes colours toward `haze` (lighter/bluer = farther); `dark` mixes toward a silhouette colour; `blur` = shallow focus.
 - Objects (x, y = base on the ground, s = scale): `tree` (kind round | banyan | palm | pine, col, trunk, flowers) · `rock` (col, moss)
   · `cloud` (col) · `mountain` (h, w, col, snow:false, trees) · `pillar` (h, w, col) · `wall` (w, h, col: palace wall with arches) · `shrub` (col, flowers) · `hill` (w, h, col) · `hut` (reels: thatched mud house on a plinth; w, h, col, roof, lamp, toran:false)
+  · EP07: `demons` (row of black asura silhouettes: n, w, seed, h, eyes 0..1 ember eyes, sway; fog/haze tints far rows) · `stree` (forest silhouette tree: h, seed, bare) · `smoke` (soft dark smoke band: w, h, col, a, v drift)
   · `road` (reels: dusty road from x,y (half-width w) narrowing to the horizon point ex,ey (half-width ew); bend, col, glow (rgb path of light), plain:true = river with ripples, no stones).
 
 ## Characters (coded rigs; names from engine_vocab: cast)
 brahma (3 visible faces + `hd` sprouting faces), vishnu, (reels 15/09/10: garuda, vinata, naga, naga2, naga_guard, vrikasura, bhasmasura, mohini, parvati, diti_p, maruta, maruta_baby; see library/CHARACTERS.md), hayagriva, vishnu_rest (reclining on Shesha), shiva, daksha, manu, narada (veena), adishakti, brahmi, sati, prasuti, diti, danu, asikli,
 kashyapa, indra, surya, chandra, agni, vayu, kumara (child sage), jaya, vijaya, villager, villager_w, madhu, kaitabha, hiranyaksha, hiranyakashipu, ravana, rishi0-6, harihara, ardha (Ardhanarishvara), boar, swan, ketaki (speaking flower: emo/mood/talk, `wither` or `wc`/`wd`, `fall`).
 Figure keys: `x,y` (feet), `s`, `flip` (1 faces right, -1 left), `pose`, `head:true` (bust close-up), `aura`, `dark`, `fo/fd` fade-out.
-- Poses: stand namaste open point rpoint raise plead bow hold flee lunge sit sitpray lie lie2 run (+ shiva calm/rage); reels 15/09/10: carry fly glide spread (garuda; wing/flap ride on the pose), sneak, throw (right-hand weapon raised: indra's vajra), headtouch (flat palm on own head), dance, dance2, selfcut (seated, sword level at the neck, prop:'sword'), sleep (any standard human rig lies on a mat; mat:false).
+- Poses: stand namaste open point rpoint raise plead bow hold flee lunge sit sitpray lie lie2 run (+ shiva calm/rage); reels 15/09/10: carry fly glide spread (garuda; wing/flap ride on the pose), sneak, throw (right-hand weapon raised: indra's vajra), headtouch (flat palm on own head), dance, dance2, selfcut (seated, sword level at the neck, prop:'sword'), sleep (any standard human rig lies on a mat; mat:false). EP07: kneel (both knees down, folded cloth), sing (hand on chest + raised palm), collapse (legs give way, slumped), hug (both arms forward: put the hugger in front, overlapping), grasp (both hands reaching, claws), catch (raised fist, use with prop leaf), fall (toppling back, arms flung; add figure `bow` to topple), rise (arms opening upward).
+- Hand props (figure `prop`, right hand, EP07): cup (wine cup; `ash` 0..1 swirl) · cloth (burnt cloth) · leaf (mantra palm leaf; `glow`) · flowers (wild flowers) · veda. Figure `filt` = a CSS filter on that figure (e.g. a shadow visitor: `filt:'brightness(.07) saturate(0)'` + `rim` + `halo:false`). shukracharya: `tear`/`tearc`+`teard`, `rise`/`risec`+`rised`, `kpose`, `kmood` (seated pose = cocoon split; pose sleep = Kacha rises out of the lying body).
 - Rig keys read from the figure (reels 15/09/10): garuda `wing` `flap` `prop:'amrut'`; bhasmasura `hand` (boon glow), `ash` 0..1 or `ashc` cue + `ashd` (greys, crumbles top-down into an ash pile); mohini `spin` (turns/s) + `spinc`. Shiva points with his LEFT hand (flip:-1 to point right); rpoint = furious lunge + point. Blend on a word: `acts:[{c, pose, d, e:'spring'|'antic', emo, mood, tilt}]`.
-- Faces: `emo` preset = calm joy anger rage sad grief surprise fear shame pride doubt devotion (on the figure or on an act). Fine control `mood:{smile, sad, surp, anger, mouth, lx, ly, blink, turn}`
+- Faces: `emo` preset = calm joy anger rage sad grief surprise fear shame pride doubt devotion, EP07: love scheme fury laughcry horror coldsmile pain shock (on the figure or on an act). Fine control `mood:{smile, sad, surp, anger, mouth, lx, ly, blink, turn, wide (eyes wide), laugh (open laughing mouth, survives sad), smirk (one-sided smile), tears (streaming), brow (lift)}`
   (lx/ly = where the eyes look -1..1, turn = head three-quarter turn -1..1). Anger = red eyes + heavy brows + frown (no fangs). Sad adds a tear.
 - Movement: `walk:<speed>` + `vx` (walk while drifting) · `walkTo:{x, c, d, sp}` walks to x starting on cue c, legs swing only while moving
   · `mx,my,mc,md` slide on a cue · `bow` (lean angle) + `bc,bd` · `kneel` + `kc` · `tilt` (head) · `talk:0..1` (mouth + head sway).
@@ -49,6 +52,7 @@ Figure keys: `x,y` (feet), `s`, `flip` (1 faces right, -1 left), `pose`, `head:t
 boulder · cloud_white_cluster · crown_gold · divine_rays · embers · energy_swirl · flower_petals (= the ketaki flower; `wither` 0..1 or `wc`/`wd` cue, `fall:1` petals drop, `glow`)
 · ground_crack (grows with its fade-in) · halo_ring · havan_kund (with fire) · light_beam · lightning_bolt_a · lightning_forks · magic_circle (yantra)
 · mandara_mountain (tall peak) · mist_wisps · om_symbol · palace_gate (temple gateway) · red_energy_pulse · smoke_plume · sudarshan_chakra
+· EP07: demon_crowd (rows 1-3, n, w, seed, sc, eyes, haze) · smoke_bank (w, h, col, v) · ember_fire (fire 0..1, logs:false, smoke:false; x,y = base) · curse_glow (col:'violet' or rgb) · ash_speck · sacred_thread (tied 0..1) · wine_cup (ash 0..1) · burnt_cloth · palm_leaf (glow, rot) · blood_splash (dark-red paper drops + pool; n, spread) · wild_flowers
 · water_splash · wave_ocean · whirlpool_churn · sand_drift (reels: round sand grains blowing from x,y toward +x, w = length)
 · reels 15/09/10: amrut_pot · fire_ring (part:'back'|'front' to sandwich the pot / Garuda) · spinning_blades (sp rad/s) · golden_feather (fall:1; vy drops it) · vajra_thrown (lightning trail, flies +x; flip:-1) · ash_pile (h 0..1) · embryo (cry) · womb_view (n 0|1|7|49, spread, cry, flash) · maruta_pieces (n 7|49, spread, cry, born:1 = crying babies grid). Old plans that say `{"t":"img","src":name}` or `fximg` are converted to pfx automatically.
 
@@ -60,4 +64,4 @@ Banned by the owner: hearts, stars, sparkles.
 
 ## Not possible (ask Opus to build it before planning a shot that needs it)
 true side/back views of characters, lip-sync to phonemes, running/fighting choreography beyond poses, crowds with individual motion,
-water/cloth simulation, 3D camera, animals other than boar, swan, the reels animals (cow, mare, doe, duck) and nagas; Garuda carrying Vishnu on his back (not built).
+water/cloth simulation, 3D camera, animals other than boar, swan, the reels animals (cow, mare, doe, duck), nagas and EP07 horse, deer; Garuda carrying Vishnu on his back (not built).

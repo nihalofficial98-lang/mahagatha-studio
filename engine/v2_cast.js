@@ -206,6 +206,14 @@ function lowerBody(c,S,sk,P,sw,t){const L=S.lower||{type:'short',col:'#f1ead8',c
   const clothTube=(a,b,ra,rb)=>{const dx=b[0]-a[0],dy=b[1]-a[1],d=Math.hypot(dx,dy)||1,nx=-dy/d,ny=dx/d;PK.cut(c,PK.P.caps(a,b,ra,rb),PK.lg(c,a[0]+nx*ra,a[1]+ny*ra,a[0]-nx*ra,a[1]-ny*ra,[L.colL,L.col,L.colD]),{lw:2.2,sh:0});
     [-.45,0,.45].forEach(f=>PK.stroke(c,cc=>{cc.moveTo(a[0]+nx*ra*f,a[1]+ny*ra*f);cc.quadraticCurveTo((a[0]+b[0])/2+nx*ra*(f+.15),(a[1]+b[1])/2+ny*ra*(f+.15),b[0]+nx*rb*f,b[1]+ny*rb*f)},'rgba(40,10,20,.2)',1.4))};
   const hemBand=(a,b,rb)=>{const an=Math.atan2(b[1]-a[1],b[0]-a[0]);c.save();c.translate(b[0],b[1]);c.rotate(an);PK.cut(c,cc=>cc.roundRect(-9,-rb-1,10,2*rb+2,3),L.trim,{lw:1.4,sh:0});if(L.dots)for(let k=-1;k<=1;k++)PK.cut(c,PK.P.ell(-15,k*rb*.55,2.2,2.2),L.dots,{sh:0,lw:.6});c.restore()};
+  if(P.kneel){ // EP07 kneeling (both knees down, front view): folded cloth from the waist to the knees, soles tucked behind
+    const kx=44*bw,gy=-4,lc=ty==='tiger'?{colL:'#ffc060',col:'#f09a30',colD:'#a84a0c',trim:'#5a3a22'}:L;
+    [-1,1].forEach(sd=>{c.save();c.translate(sd*(kx+20),gy-8);c.scale(sd,1);PK.cut(c,cc=>{cc.moveTo(-8,-6);cc.quadraticCurveTo(14,-14,22,-2);cc.quadraticCurveTo(10,6,-8,4);cc.closePath()},PK.lg(c,0,-14,0,6,[sk.h,sk.b,sk.d]),{lw:1.6,sh:0});c.restore()});
+    const kp=[[-topW,wy],[topW,wy],[topW+16,wy+(gy-wy)*.45],[kx+34,gy-26],[kx+28,gy],[0,gy-6],[-kx-28,gy],[-kx-34,gy-26],[-topW-16,wy+(gy-wy)*.45]];
+    PK.cut(c,PK.P.smooth(kp),PK.lg(c,-kx-34,0,kx+34,0,[lc.colL,lc.col,lc.colD]),{lw:2.2});
+    [-1,1].forEach(sd=>PK.cut(c,PK.P.ell(sd*kx*.62,gy-20,28,18),PK.lg(c,0,gy-38,0,gy,[lc.colL,lc.col]),{lw:1.8,sh:0}));
+    c.save();c.beginPath();PK.P.smooth(kp)(c);c.clip();for(let k=-3;k<=3;k++)PK.stroke(c,cc=>{cc.moveTo(k*topW/4,wy+8);cc.quadraticCurveTo(k*topW/3.4+sw*2,(wy+gy)/2,k*kx/2.6,gy-8)},'rgba(30,10,20,.22)',1.5);c.restore();
+    PK.stroke(c,cc=>{cc.moveTo(-kx-30,gy-6);cc.quadraticCurveTo(0,gy+2,kx+30,gy-6)},lc.trim,4);return}
   if(P.sit){ // crossed legs (Opus): a cloth mound with both feet resting on top
     c.save();c.translate(P.ph[0],P.ph[1]+104);
     const lp=[[-172,-96],[-162,-134],[-98,-162],[0,-152],[98,-162],[162,-134],[172,-96],[110,-84],[0,-92],[-110,-84]];
@@ -873,21 +881,21 @@ Object.assign(CAST,{
    lower:L_('#d89a10','#7a2a12','dhoti',{pleat:true,fan:'#eab030'}),uttariya:'#e8c040',thread:true,neck:['rudraksha','pearls'],bangle:'rudraksha',muscle:.4,build:.96,prop:'veda',kgem:'#c8901a',
    halo:{r:88,col:['#f4e2b0','#c89a48','#8a5a24','#3a2410'],rgb:'200,150,80',rgb2:'230,200,150',petal:'rgba(240,220,170,.3)',g:.25}}),
  // asuras (generic, matte): brute with mace, lean swordsman, heavy feaster with a wine cup; all horned, red eyes, clawed feet
- asura1:skinSet('#5e3a2e',{skinH:'#86584a',skinD:'#34201a',skinM:'#50322a',hair:{type:'wild',col:'#0c0a0c'},horns:'#d8ccb0',beard:'#0c0a0c',beardLen:14,mustache:'#0c0a0c',brow:'#060406',eyeRed:true,
+ asura1:skinSet('#7a4030',{skinH:'#a8644c',skinD:'#44221a',skinM:'#6a382a',hair:{type:'wild',col:'#0c0a0c'},horns:'#d8ccb0',beard:'#0c0a0c',beardLen:14,mustache:'#0c0a0c',brow:'#060406',eyeRed:true,
    lower:L_('#3a2420','#8a6a32','short',{fan:'#4a2e26'}),armor:'#5a4a30',armlet:'#8a6a32',muscle:1,build:1.3,kdef:.45,prop:'gada',claws:true,kgem:'#8a2a1a'}),
- asura2:skinSet('#3c4842',{skinH:'#5e6c64',skinD:'#202a26',skinM:'#34403a',hair:{type:'wild',col:'#08080a'},horns:'#c8bca0',crown:'asura',crownCol:'#2a2a2a',mustache:'#08080a',brow:'#040406',eyeRed:true,
+ asura2:skinSet('#4e665a',{skinH:'#76907e',skinD:'#283a32',skinM:'#44584e',hair:{type:'wild',col:'#08080a'},horns:'#c8bca0',crown:'asura',crownCol:'#2a2a2a',mustache:'#08080a',brow:'#040406',eyeRed:true,
    lower:L_('#5a1a1a','#7a6a3a','short',{fan:'#6a2424'}),armlet:'#7a6a3a',muscle:.9,build:1.08,kdef:.4,prop:'sword',claws:true,kgem:'#5a1a1a'}),
- asura3:skinSet('#5a3a4c',{skinH:'#7e5a6c',skinD:'#30202a',skinM:'#4e3242',hair:{type:'wild',col:'#0a080c'},horns:'#e0d0b0',beard:'#0a080c',beardLen:22,mustache:'#0a080c',brow:'#060406',eyeRed:true,
+ asura3:skinSet('#7a4a66',{skinH:'#a2708c',skinD:'#44263a',skinM:'#6a3e58',hair:{type:'wild',col:'#0a080c'},horns:'#e0d0b0',beard:'#0a080c',beardLen:22,mustache:'#0a080c',brow:'#060406',eyeRed:true,
    lower:L_('#2a2634','#8a6a3a','short',{fan:'#3a3444'}),gamcha:'#6a2a20',neck:['rudraksha'],armlet:'#8a6a3a',muscle:.6,build:1.24,kdef:.35,prop:'cup',claws:true,kgem:'#6a2a20'})
 });
 SCALE.asura1=.64;
 // poses (EP07)
-PZ.kneel={ph:[0,-150],ch:[0,-276],nk:[0,-316],hd:[0,-366],sL:[-64,-290],sR:[64,-290],hipL:[-24,-146],hipR:[24,-146],fL:[-96,-8],fR:[70,0],hL:[-58,-130],hR:[62,-150],hem:120,sway:0};
+PZ.kneel={kneel:1,ph:[0,-150],ch:[0,-276],nk:[0,-316],hd:[0,-366],sL:[-64,-290],sR:[64,-290],hipL:[-24,-146],hipR:[24,-146],fL:[-96,-8],fR:[70,0],hL:[-58,-130],hR:[62,-150],hem:120,sway:0};
 PZ.sing={hL:[-28,-318],hR:[112,-462]};
-PZ.collapse={ph:[0,-112],ch:[10,-230],nk:[16,-266],hd:[24,-312],sL:[-54,-246],sR:[72,-240],hipL:[-24,-108],hipR:[24,-108],fL:[-92,-4],fR:[96,-4],hL:[-86,-40],hR:[112,-36],lean:.3,hem:100,sway:0};
+PZ.collapse={kneel:1,ph:[0,-112],ch:[10,-230],nk:[16,-266],hd:[24,-312],sL:[-54,-246],sR:[72,-240],hipL:[-24,-108],hipR:[24,-108],fL:[-92,-4],fR:[96,-4],hL:[-86,-40],hR:[112,-36],lean:.3,hem:100,sway:0};
 PZ.hug={hL:[96,-338],hR:[150,-326],hLt:'rest',hLa:1.75,hRt:'rest',hRa:1.9,lean:.06};
 PZ.grasp={hL:[118,-404],hR:[184,-372],hLt:'rest',hLa:1.4,hRt:'rest',hRa:1.5,lean:.08,kL:[-40,-128],fL:[-60,0],fR:[56,0]};
-PZ.catch={hR:[150,-440],hRt:'hold',hRa:.6};
+PZ.catch={hR:[128,-520],hRt:'hold',hRa:.35};
 PZ.fall={lean:-.32,ch:[-8,-384],nk:[-14,-422],hd:[-22,-470],hL:[-176,-470],hR:[150,-462],fL:[-40,0],fR:[74,-46],hem:150,sway:0};
 PZ.rise={hL:[-150,-520],hR:[150,-520]};   // arms opening upward (Kacha out of the cocoon)
 // --- small rig parts ---
@@ -925,13 +933,13 @@ function wildFlowers(c,x,y,s,t){c.save();c.translate(x,y);c.scale(s,s);const F=[
   F.forEach(([fx,fy],i)=>PK.stroke(c,cc=>{cc.moveTo(0,4);cc.quadraticCurveTo(fx*.4,fy*.5,fx,fy)},'#3a5a2a',2));
   [[-10,-24,-.6],[10,-30,.6]].forEach(([lx,ly,a])=>{c.save();c.translate(lx,ly);c.rotate(a);PK.cut(c,PK.P.ell(0,0,4,10),'#4a6a32',{lw:1,sh:0});c.restore()});
   F.forEach(([fx,fy,col],i)=>{const sw=Math.sin(t*1.5+i)*1.5;for(let k=0;k<5;k++){const a=k/5*Math.PI*2+i;PK.cut(c,PK.P.ell(fx+sw+Math.cos(a)*5,fy+Math.sin(a)*5,4.2,2.8,a),col,{lw:.8,ink:'#3a2414',sh:0})}PK.cut(c,PK.P.ell(fx+sw,fy,2.6,2.6),'#e8c040',{lw:.6,sh:0})});c.restore()}
-const HPROP={cup:(c,p,t,F)=>wineCup(c,p[0],p[1]-6,.8,t,F.ash||0),cloth:(c,p,t)=>burntCloth(c,p[0],p[1]+4,.9,t),leaf:(c,p,t,F)=>palmLeaf(c,p[0]+4,p[1]-10,.62,t,F.glow||0),
+const HPROP={cup:(c,p,t,F)=>wineCup(c,p[0],p[1]-6,.8,t,F.ash||0),cloth:(c,p,t)=>burntCloth(c,p[0],p[1]+4,.9,t),leaf:(c,p,t,F)=>palmLeaf(c,p[0]+4,p[1]-12,.9,t,F.glow||0),
   flowers:(c,p,t)=>wildFlowers(c,p[0],p[1]-4,.9,t),veda:(c,p)=>PK.veda(c,p[0]+2,p[1]-26,-.12)};
 // dark-red paper splashes (no gore realism): a burst of drops + a pool; w = size
 function bloodSplash(c,w,t,F){const n=F&&F.n||14,s=w/200;c.save();c.scale(s,s);const sp=F&&F.spread!=null?F.spread:1;
-  PK.cut(c,cc=>{for(let i=0;i<=16;i++){const a=i/16*Math.PI*2,rr=(i%2?44:58)+Math.sin(i*3.1)*8;i?cc.lineTo(Math.cos(a)*rr,Math.sin(a)*rr*.42+12):cc.moveTo(Math.cos(a)*rr,Math.sin(a)*rr*.42+12)}cc.closePath()},PK.lg(c,0,-14,0,40,['#7a1018','#4a0810','#2a0408']),{lw:1.6,ink:'#1a0206'});
+  const pool=[];for(let i=0;i<16;i++){const a=i/16*Math.PI*2,rr=(i%2?46:58)+Math.sin(i*3.1)*8;pool.push([Math.cos(a)*rr,Math.sin(a)*rr*.42+12])}PK.cut(c,PK.P.smooth(pool),PK.lg(c,0,-14,0,40,['#7a1018','#4a0810','#2a0408']),{lw:1.6,ink:'#1a0206'});
   for(let i=0;i<n;i++){const a=-Math.PI*.95+i/(n-1)*Math.PI*.9+Math.sin(i*5.3)*.12,d=(70+((i*37)%50))*sp,x=Math.cos(a)*d,y=Math.sin(a)*d*.8,rr=4+((i*13)%7);c.save();c.translate(x,y);c.rotate(a+Math.PI/2);
-    PK.cut(c,cc=>{cc.moveTo(0,-rr*2.4);cc.quadraticCurveTo(rr,0,0,rr);cc.quadraticCurveTo(-rr,0,0,-rr*2.4)},PK.lg(c,0,-rr*2,0,rr,['#8a1820','#4a0810']),{lw:1,ink:'#1a0206',sh:0});c.restore()}
+    PK.cut(c,cc=>{cc.moveTo(0,-rr*2.4);cc.quadraticCurveTo(rr,0,0,rr);cc.quadraticCurveTo(-rr,0,0,-rr*2.4)},PK.lg(c,0,-rr*2,0,rr,['#6a1018','#3a060c']),{lw:1,ink:'#1a0206',sh:0});c.restore()}
   c.restore()}
 // Shukracharya: cracks of light (tear) and the cocoon split with Kacha rising (rise)
 const SHUKRA_CR=[[[.95,0],0,.32],[[0,1],.24,.56],[[0,.62],.48,.8],[[.3,-1.2],.72,1]];   // [anchor, start, end]
@@ -943,8 +951,15 @@ function drawCracks(c,P,tear,t,HS){const hx=P.hd[0],hy=P.hd[1],an=[[hx+16*HS,hy-
       const f=cc=>{P2.forEach((p,i)=>i?cc.lineTo(p[0],p[1]):cc.moveTo(p[0],p[1]))};PK.stroke(c,f,'#2a0408',7*u+2);PK.stroke(c,f,'#ff9a3a',3*u+1);PK.stroke(c,f,'#fff0c0',1.2);c.restore()}});
   c.restore();an.forEach((a,k)=>{const sg=SHUKRA_CR[k],u=PK.clamp((tear-sg[1])/(sg[2]-sg[1]));if(u>0)PK.glow(c,a[0],a[1],40+60*u,'255,160,70',.35*u)})}
 function drawShukra(c,o,t,kk,face){const S=CAST.shukracharya,P=poseOf(o.pose||'stand','shukracharya'),f=o.f||{},Q=(k,d,v)=>f[k+'c']!=null&&o.q?o.q(f[k+'c'],f[k+'d']||d):(f[k]||v||0);
-  const tear=Q('tear',3),rise=Q('rise',3),lying=isLying(o.pose),HS=S.hs||1.12;if(lying)layDown(c,o);
+  const tear=Q('tear',3),rise=Q('rise',3),lying=isLying(o.pose),HS=S.hs||1.12;
   const body=()=>drawHuman(c,S,P,{t:t,k:o.k!=null?o.k:kk,expr:lying?'closed':face,mood:o.mood,tilt:o.tilt,turn:o.mood&&o.mood.turn!=null?o.mood.turn:undefined});
+  if(lying&&rise>0){// the torn body lies on the ground (cracks of light, dark-red paper) and Kacha rises straight up out of the chest
+    const e=rise*rise*(3-2*rise);c.save();layDown(c,o);body();c.save();leanAt(c,P);drawCracks(c,P,1,t,HS);c.restore();c.restore();
+    [[-200,-20,1],[120,-10,.9],[-60,-40,.7]].forEach(([x,y,s2])=>{c.save();c.translate(x,y);bloodSplash(c,150*s2,t,{spread:.5+e*.5,n:8});c.restore()});
+    const K=CAST.kacha,KP=poseOf(f.kpose||'rise','kacha'),ky=(1-e)*560;c.save();c.beginPath();c.rect(-700,-1200,1400,1200-30);c.clip();c.translate(-40,ky-20);PK.glow(c,0,-380,260*e,'255,170,90',.4*e);
+    drawHuman(c,K,KP,{t:t,k:0,expr:'calm',mood:f.kmood||{blink:.2,smile:.05}});c.globalCompositeOperation='source-atop';c.fillStyle='rgba(90,8,16,.55)';
+    [[-50,-400,26,70],[44,-380,22,90],[-10,-300,30,40],[0,-470,24,20]].forEach(([x,y,rx,ry])=>{c.beginPath();c.ellipse(x,y,rx,ry,0,0,7);c.fill()});c.restore();return}
+  if(lying)layDown(c,o);
   if(rise<=0){c.save();if(tear>0)c.translate(Math.sin(t*37)*tear*3,Math.cos(t*29)*tear*2);body();if(tear>0){c.save();leanAt(c,P);drawCracks(c,P,tear,t,HS);c.restore()}c.restore();return}
   const e=rise*rise*(3-2*rise),seam=sd=>cc=>{cc.moveTo(0,-900);for(let i=0;i<=18;i++){const y=-760+i*42;cc.lineTo(Math.sin(i*2.7)*14+(i%2?8:-8),y)}cc.lineTo(sd*600,40);cc.lineTo(sd*600,-900);cc.closePath()};
   [-1,1].forEach(sd=>{c.save();c.translate(sd*e*70,0);c.translate(sd*40,0);c.rotate(sd*e*.42);c.translate(-sd*40,0);c.beginPath();seam(sd)(c);c.clip();body();drawCracks(c,P,1,t,HS);
@@ -982,7 +997,7 @@ function v2fig(who,x,y,s,t,o){
   else if(who==='harihara')drawHarihara(c,{t:t});
   else if(XFIG[who])XFIG[who](c,o,t,kk,face);
   else if(ANIMAL[who])ANIMAL[who](c,o,t);
-  else drawHuman(c,CAST[who],poseOf(o.pose,who),{t:t,k:o.k!=null?o.k:(CAST[who].kdef||kk),expr:face,prop:o.prop,mood:o.mood,tilt:o.tilt,turn:o.mood&&o.mood.turn!=null?o.mood.turn:undefined});
+  else drawHuman(c,CAST[who],poseOf(o.pose,who),{t:t,k:o.k!=null?o.k:(CAST[who].kdef||kk),expr:face,prop:o.prop,mood:o.mood,tilt:o.tilt,f:o.f,turn:o.mood&&o.mood.turn!=null?o.mood.turn:undefined});
   figFinish(c,o,x,y,s,FR,OY,RG,.22,.3,true)}
 // head close-up: shoulders, chest, garments and jewellery under the head (Opus torso), so heads never float like masks
 function bust(c,S,o){const sk=skinPK(S),t=o.t||0,bw=Math.min(S.build||1,1.2);c.save();c.translate(0,-10);

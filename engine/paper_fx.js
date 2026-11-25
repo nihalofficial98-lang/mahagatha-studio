@@ -143,6 +143,11 @@ const E={
   ctx.save();ctx.rotate(t*.4);for(let i=0;i<18;i++){ctx.save();ctx.rotate(i/18*TAU);const L=R*(.7+.3*Math.abs(Math.sin(i*1.7+t*2)));cutP(()=>{ctx.moveTo(-R*.035,-R*.35);ctx.lineTo(R*.02,-L*.7);ctx.lineTo(-R*.01,-L*.72);ctx.lineTo(0,-L);ctx.lineTo(R*.035,-R*.35);ctx.closePath()},`rgba(${rgb},.8)`,{sh:0,lw:1,ink:'rgba(30,0,0,.6)'});ctx.restore()}ctx.restore();
   ctx.strokeStyle=`rgba(${rgb},.9)`;ctx.lineWidth=w*.02;ctx.setLineDash([w*.04,w*.03]);ctx.beginPath();ctx.arc(0,0,R*.34,0,TAU);ctx.stroke();ctx.setLineDash([])}},
  // ash_speck: a few black ash flakes (the speck on the guru's lips / on a fingertip)
+ // sacred_thread: the red-gold raksha cord tied on Kacha's wrist (insert close-up; tied 0..1 closes the knot)
+ sacred_thread:{s:0,f(w,t,F){const k=F.tied??1,R=w*.32;ctx.save();ctx.lineCap='round';[['#6a0c0c',w*.075],['#c42820',w*.055]].forEach(([c2,lw])=>{ctx.strokeStyle=c2;ctx.lineWidth=lw;ctx.beginPath();ctx.ellipse(0,0,R,R*.36,0,.15,.15+(PI*2-.3)*k);ctx.stroke()});
+  ctx.strokeStyle='#e8b040';ctx.lineWidth=w*.014;ctx.setLineDash([w*.025,w*.03]);ctx.beginPath();ctx.ellipse(0,0,R,R*.36,0,.15,.15+(PI*2-.3)*k);ctx.stroke();ctx.setLineDash([]);
+  const sw=Math.sin(t*2)*w*.02;[[-1,.5],[1,.62]].forEach(([sd,L])=>{ctx.strokeStyle='#c42820';ctx.lineWidth=w*.04;ctx.beginPath();ctx.moveTo(R*.98,0);ctx.quadraticCurveTo(R*1.15,sd*w*.1,R*1.1+sw,sd*w*L*.5);ctx.stroke();cutP(()=>ctx.ellipse(R*1.1+sw,sd*w*L*.5+sd*w*.03,w*.03,w*.045,0,0,TAU),'#e8b040',{sh:0,lw:1})});
+  cutP(()=>ctx.ellipse(R,0,w*.06,w*.05,0,0,TAU),'#a81818',{sh:0,lw:1.2,ink:'#3a0404'});ctx.restore()}},
  ash_speck:{s:0,f(w,t){const r=rng(9);for(let i=0;i<7;i++){const x=(r()-.5)*w,y=(r()-.5)*w*.5,sz=w*(.05+r()*.07);cutP(()=>{ctx.moveTo(x-sz,y);ctx.lineTo(x-sz*.2,y-sz*.8);ctx.lineTo(x+sz,y-sz*.2);ctx.lineTo(x+sz*.3,y+sz*.7);ctx.closePath()},'#141010',{sh:0,lw:.6,ink:'rgba(120,110,100,.5)'})}}},
  // props drawn by engine/v2_cast.js (also figure prop keys): wine_cup (ash 0..1 swirl), burnt_cloth, palm_leaf (glow 0..1, rot), blood_splash (dark-red paper drops; n, spread), wild_flowers
  wine_cup:{s:0,f(w,t,F){V2.FX.wine_cup(ctx,w,t,F)}},

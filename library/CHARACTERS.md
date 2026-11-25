@@ -33,7 +33,14 @@ Sheet for any of them: `python3 studio/cast_sheet.py <names> [--out DIR]` → <n
 | mohini, parvati (reels) | Mohini: Vishnu-blue skin, red sari, yellow pallu, garland, crown; dance/dance2/headtouch, `spin` · Parvati: red sari, green choli, small crown, lotus |
 | diti_p (reels) | Diti late in pregnancy (round belly, dusty feet); pose `sleep` lies on a mat, eyes closed |
 | maruta, maruta_baby (reels) | grown storm god (sky-blue dhoti, wind scarf, fan crest, storm halo) · storm-god baby (tiny crown, blue glow ring; emo grief = crying) |
+| kacha (EP07) | Brihaspati's son, Shukracharya's student: black topknot, no beard, unbleached dhoti, saffron uttariya, sacred thread, red raksha cord on the right wrist (`wristThread`), ash tripundra; calm, clever |
+| devayani (EP07) | Shukracharya's daughter: rose-maroon sari, ochre choli, jasmine string + red flower in her long hair (`hairFlower`), bindi |
+| shukracharya (EP07) | old asura guru: white jata + long white beard, dark maroon robe over both shoulders with sleeves, two rudraksha strands, kamandalu; `tear` 0..1 (or `tearc`+`teard`) = cracks of light (eye, navel, chest, skull); `rise` 0..1 (or `risec`+`rised`) = body opens like a cocoon and Kacha rises (`kpose`, `kmood`), dark-red paper splashes; with pose `sleep` (+`mat:false`) the torn body lies on the ground and Kacha rises out of the chest |
+| brihaspati (EP07) | guru of the gods: brown-gold skin, grey jata + beard, turmeric-yellow dhoti, gold uttariya, palm-leaf book, dim gold halo; as a night shadow: `filt:"brightness(.07) saturate(0)"`, `rim`, `halo:false` |
+| asura1, asura2, asura3 (EP07) | generic asuras, red eyes, horns, clawed feet (`claws`): rust brute with armour + mace · slate-green swordsman with asura crown · plum feaster with beard + wine cup |
+| horse, deer (EP07) | the guru's bay horses (dark mane) and the spotted deer, mare/doe rigs without Brahmi's necklace; pose stand / bow (graze) / run |
 
+EP07 dark-look sheets (scenes, silhouette crowds, expression strips, poses, props, the guru's tearing): `python3 library/showcase/ep07_cast/sheets.py` → library/showcase/ep07_cast/.
 Reels overview sheets: `python3 library/showcase/reels_cast/reels_sheets.py` → library/showcase/reels_cast/ (line-ups per reel, animal forms, crowds); reels 15/09/10: `python3 library/showcase/reels_cast_15_09_10/sheets.py`.
 
 New character checklist (character-designer): spec in CAST + name in V2NAMES, sheet rendered and looked at, line added here.

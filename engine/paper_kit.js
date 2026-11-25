@@ -76,11 +76,12 @@ function face(c,F){const sk=F.skin,tn=clamp(F.turn||0,-1,1),sq=1-Math.abs(tn)*.3
     [-18,-9,0,9,18].forEach((x,i)=>stroke(c,cc=>{cc.moveTo(x*1.1,46);cc.quadraticCurveTo(x*.9,64,x*.4+bw,84-Math.abs(x)*.6)},'rgba(120,110,130,.45)',1.3));c.restore()}
   // lips (talking mouth opens)
   const my=30,cw=10,cu=sm*3,lo=mo*7,cL=cu-smk*1.2,cR=cu+smk*4.6;
-  if(mo>.04){c.fillStyle='#3a0a16';c.beginPath();c.ellipse(0,my+1.5+lo*.45,cw*.78,1.2+lo*.6,0,0,TAU);c.fill();c.fillStyle='#f6eee2';c.fillRect(-5,my-.4,10,1.3+mo)}
+  if(lau>.05){const lw2=cw*1.05,dp=4+lau*9;cut(c,cc=>{cc.moveTo(-lw2,my-cL-1);cc.quadraticCurveTo(0,my+1-lau*2,lw2,my-cR-1);cc.quadraticCurveTo(0,my+dp*1.6,-lw2,my-cL-1);cc.closePath()},'#3a0a16',{sh:0,lw:1.4});c.fillStyle='#f6eee2';c.beginPath();c.moveTo(-lw2*.8,my-cL*.8);c.quadraticCurveTo(0,my+1.5-lau*2,lw2*.8,my-cR*.8);c.quadraticCurveTo(0,my+3,-lw2*.8,my-cL*.8);c.fill();stroke(c,cc=>{cc.moveTo(-lw2,my-cL-1);cc.quadraticCurveTo(0,my+1-lau*2,lw2,my-cR-1)},F.lip||'#b8324a',2.4);}
+  else{if(mo>.04){c.fillStyle='#3a0a16';c.beginPath();c.ellipse(0,my+1.5+lo*.45,cw*.78,1.2+lo*.6,0,0,TAU);c.fill();c.fillStyle='#f6eee2';c.fillRect(-5,my-.4,10,1.3+mo)}
   c.fillStyle=F.lip||'#b8324a';c.beginPath();c.moveTo(-cw,my-cL);c.quadraticCurveTo(-5,my-4.6,0,my-2.6);c.quadraticCurveTo(5,my-4.6,cw,my-cR);c.quadraticCurveTo(0,my+.4,-cw,my-cL);c.fill();
   c.beginPath();c.moveTo(-cw*.8,my-cL*.5+lo*.4);c.quadraticCurveTo(0,my+6.5+lo,cw*.8,my-cR*.5+lo*.4);c.quadraticCurveTo(0,my+1.6+lo,-cw*.8,my-cL*.5+lo*.4);c.fill();
   stroke(c,cc=>{cc.moveTo(-cw,my-cL);cc.quadraticCurveTo(0,my+1+lo*.6+sm*1.6,cw,my-cR)},INK,1.5);
-  c.fillStyle='rgba(255,255,255,.35)';c.beginPath();c.ellipse(2,my+3.4+lo,3,1,0,0,TAU);c.fill();
+  c.fillStyle='rgba(255,255,255,.35)';c.beginPath();c.ellipse(2,my+3.4+lo,3,1,0,0,TAU);c.fill();}
   if(F.beard||F.must){const bc=F.must||F.beard;[-1,1].forEach(sd=>{const m=cc=>{cc.moveTo(sd*1,25.5);cc.quadraticCurveTo(sd*12,23.5,sd*17,29.5);cc.quadraticCurveTo(sd*21,33,sd*25,27)};stroke(c,m,INK,6.2);stroke(c,m,bc,4)})}
   // marks
   if(F.bindi){c.fillStyle=PAL.ruby;c.beginPath();c.arc(0,-21,2.6,0,TAU);c.fill()}

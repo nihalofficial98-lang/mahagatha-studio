@@ -1,0 +1,406 @@
+{
+ "episode": "07",
+ "look": "ep07_dark",
+ "cast": [
+  {
+   "who": "kacha",
+   "role": "hero",
+   "new": true,
+   "identity": "young student of Shukracharya, Brihaspati's son: black topknot, no beard, unbleached dhoti, saffron uttariya, sacred thread across the chest, red raksha cord on the right wrist (wristThread), rudraksha, ash tripundra; calm, clever",
+   "props": [
+    "sacred thread on the wrist (spec, + pfx sacred_thread insert)",
+    "wine cup (prop cup, ash 0..1) at the feast",
+    "wild flowers (prop flowers) for Devayani",
+    "mantra palm leaf (prop leaf, glow 0..1) caught / read",
+    "ember_fire (pfx) in the forest",
+    "burnt cloth = his (prop cloth on Devayani)"
+   ],
+   "poses": [
+    "stand",
+    "kneel",
+    "sing",
+    "sit",
+    "sleep",
+    "raise",
+    "hold",
+    "catch",
+    "point",
+    "collapse",
+    "rise (inside shukracharya rise)",
+    "namaste",
+    "bow"
+   ],
+   "emotions": [
+    "calm",
+    "scheme",
+    "coldsmile",
+    "fear",
+    "pain",
+    "love",
+    "shock",
+    "grief"
+   ],
+   "moves": [
+    "walkTo",
+    "turnc",
+    "talk",
+    "tilt",
+    "acts (pose/emo on a word)",
+    "filt/halo via look"
+   ],
+   "sheet": [
+    "library/characters/sheets/kacha_faces.jpg",
+    "library/characters/sheets/kacha_poses.jpg",
+    "library/showcase/ep07_cast/faces_kacha.jpg",
+    "library/showcase/ep07_cast/poses_ep07.jpg",
+    "library/showcase/ep07_cast/poses_ep07b.jpg",
+    "library/showcase/ep07_cast/scene_kacha_room_night.jpg",
+    "library/showcase/ep07_cast/scene_feasthall.jpg",
+    "library/showcase/ep07_cast/scene_forest.jpg"
+   ]
+  },
+  {
+   "who": "devayani",
+   "role": "hero",
+   "new": true,
+   "identity": "Shukracharya's daughter: deep rose-maroon sari, ochre choli, jasmine string + red flower in her long hair, bindi, simple gold",
+   "props": [
+    "burnt cloth (prop cloth)",
+    "mantra palm leaf (prop leaf; hides it behind her = flip/hand pose)",
+    "ash_speck (pfx) scraped from her father's lips",
+    "father's blood on her cheek and fingers (pfx blood_splash, w 30-40)",
+    "curse_glow (pfx) on her curse"
+   ],
+   "poses": [
+    "stand",
+    "run",
+    "hug",
+    "point",
+    "bow",
+    "plead",
+    "collapse",
+    "kneel",
+    "open",
+    "hold"
+   ],
+   "emotions": [
+    "love",
+    "laughcry",
+    "fury",
+    "grief",
+    "shock",
+    "fear",
+    "pain",
+    "doubt",
+    "calm"
+   ],
+   "moves": [
+    "walkTo",
+    "run (pose run + walkTo)",
+    "turnc",
+    "talk",
+    "tilt"
+   ],
+   "sheet": [
+    "library/characters/sheets/devayani_faces.jpg",
+    "library/characters/sheets/devayani_poses.jpg",
+    "library/showcase/ep07_cast/faces_devayani.jpg",
+    "library/showcase/ep07_cast/poses_ep07b.jpg",
+    "library/showcase/ep07_cast/guru_rise2.jpg",
+    "library/showcase/ep07_cast/scene_ashram.jpg"
+   ]
+  },
+  {
+   "who": "shukracharya",
+   "role": "hero",
+   "new": true,
+   "identity": "old guru of the asuras: long white jata and beard, dark maroon robe over both shoulders with sleeves, rudraksha (2 strands), ash tripundra, kamandalu; tear 0..1 / rise 0..1 keys for the tearing and Kacha rising out",
+   "props": [
+    "kamandalu (spec)",
+    "wine cup (prop cup, ash 1) when he drinks",
+    "palm leaf (prop leaf) when he writes the mantra",
+    "sacred thread he ties (pfx sacred_thread tied 0..1)",
+    "blood_splash (pfx) when he lies torn"
+   ],
+   "poses": [
+    "stand",
+    "hold",
+    "raise (\"Halt!\")",
+    "sit / sitpray (chanting; sit keeps the face clear)",
+    "sleep (dead, mat:false)",
+    "fall (+ figure bow to topple)",
+    "point",
+    "namaste"
+   ],
+   "emotions": [
+    "calm",
+    "fury",
+    "horror",
+    "pain",
+    "grief",
+    "shock",
+    "doubt",
+    "love"
+   ],
+   "moves": [
+    "tear / tearc+teard (cracks of light on a word)",
+    "rise / risec+rised (cocoon split, kpose + kmood for Kacha)",
+    "bow (topple)",
+    "talk",
+    "tilt"
+   ],
+   "sheet": [
+    "library/characters/sheets/shukracharya_faces.jpg",
+    "library/characters/sheets/shukracharya_poses.jpg",
+    "library/showcase/ep07_cast/faces_shukracharya.jpg",
+    "library/showcase/ep07_cast/guru_rise.jpg",
+    "library/showcase/ep07_cast/guru_rise2.jpg",
+    "library/showcase/ep07_cast/guru_after.jpg",
+    "library/showcase/ep07_cast/scene_feasthall.jpg"
+   ]
+  },
+  {
+   "who": "brihaspati",
+   "role": "support",
+   "new": true,
+   "identity": "guru of the gods, grave: brown-gold skin, grey jata and beard, turmeric-yellow dhoti, gold uttariya, sacred thread, pearls + rudraksha, vaishnava tilak, palm-leaf book, dim gold halo (halo:false when he visits as a shadow)",
+   "props": [
+    "veda book (spec prop)"
+   ],
+   "poses": [
+    "stand",
+    "point",
+    "open",
+    "hold"
+   ],
+   "emotions": [
+    "doubt",
+    "calm",
+    "scheme",
+    "shock",
+    "pain"
+   ],
+   "moves": [
+    "shadow visitor at night: filt \"brightness(.07) saturate(0)\" + rim \"rgba(255,140,70,.55)\" + halo:false",
+    "walkTo",
+    "turnc",
+    "talk"
+   ],
+   "sheet": [
+    "library/characters/sheets/brihaspati_faces.jpg",
+    "library/characters/sheets/brihaspati_poses.jpg",
+    "library/showcase/ep07_cast/faces_brihaspati.jpg",
+    "library/showcase/ep07_cast/scene_council.jpg",
+    "library/showcase/ep07_cast/scene_kacha_room_night.jpg"
+   ]
+  },
+  {
+   "who": "indra",
+   "role": "support",
+   "new": false,
+   "identity": "king of the gods: tall gold crown with fan crest, blue dhoti, gold uttariya, vajra, blue halo (set halo:false if it is too bright for the dark look)",
+   "props": [
+    "vajra"
+   ],
+   "poses": [
+    "stand",
+    "open",
+    "point"
+   ],
+   "emotions": [
+    "shock",
+    "doubt",
+    "calm",
+    "fear"
+   ],
+   "moves": [
+    "talk",
+    "turnc"
+   ],
+   "sheet": [
+    "library/characters/sheets/indra_faces.jpg",
+    "library/characters/sheets/indra_poses.jpg",
+    "library/showcase/ep07_cast/scene_council.jpg",
+    "library/showcase/ep07_cast/lineup.jpg"
+   ]
+  },
+  {
+   "who": "asura1",
+   "role": "crowd",
+   "new": true,
+   "identity": "asura brute: rust-red skin, wild hair, big curved horns, beard, red eyes, armour, mace, clawed feet",
+   "props": [
+    "gada"
+   ],
+   "poses": [
+    "stand",
+    "grasp",
+    "lunge",
+    "point",
+    "rage"
+   ],
+   "emotions": [
+    "fury",
+    "anger",
+    "scheme",
+    "laughcry (drunk)"
+   ],
+   "moves": [
+    "walkTo",
+    "sway via layers"
+   ],
+   "sheet": [
+    "library/characters/sheets/asura1_faces.jpg",
+    "library/characters/sheets/asura1_poses.jpg",
+    "library/showcase/ep07_cast/asuras.jpg",
+    "library/showcase/ep07_cast/scene_feasthall.jpg"
+   ]
+  },
+  {
+   "who": "asura2",
+   "role": "crowd",
+   "new": true,
+   "identity": "asura swordsman: slate-green skin, asura crown + horns, wild hair, moustache, red eyes, blood-red short dhoti, sword, clawed feet",
+   "props": [
+    "sword"
+   ],
+   "poses": [
+    "stand",
+    "grasp",
+    "point",
+    "sneak",
+    "lunge"
+   ],
+   "emotions": [
+    "fury",
+    "scheme",
+    "anger"
+   ],
+   "moves": [
+    "walkTo"
+   ],
+   "sheet": [
+    "library/characters/sheets/asura2_faces.jpg",
+    "library/characters/sheets/asura2_poses.jpg",
+    "library/showcase/ep07_cast/asuras.jpg",
+    "library/showcase/ep07_cast/crowd_layers.jpg"
+   ]
+  },
+  {
+   "who": "asura3",
+   "role": "crowd",
+   "new": true,
+   "identity": "asura feaster: plum skin, horns, long beard, red eyes, dark dhoti + red shoulder cloth, wine cup in hand (prop cup), clawed feet",
+   "props": [
+    "wine cup (spec prop cup, ash 0..1)"
+   ],
+   "poses": [
+    "stand",
+    "raise (toast)",
+    "grasp"
+   ],
+   "emotions": [
+    "joy",
+    "laughcry",
+    "fury",
+    "shock (chokes on his drink)"
+   ],
+   "moves": [
+    "talk",
+    "walkTo"
+   ],
+   "sheet": [
+    "library/characters/sheets/asura3_faces.jpg",
+    "library/characters/sheets/asura3_poses.jpg",
+    "library/showcase/ep07_cast/asuras.jpg",
+    "library/showcase/ep07_cast/scene_feasthall.jpg"
+   ]
+  },
+  {
+   "who": "horse",
+   "role": "crowd",
+   "new": true,
+   "identity": "the guru's horses: bay brown, dark mane, no necklace (mare rig recoloured)",
+   "props": [],
+   "poses": [
+    "stand",
+    "bow (graze)",
+    "run"
+   ],
+   "emotions": [],
+   "moves": [
+    "walkTo"
+   ],
+   "sheet": [
+    "library/showcase/ep07_cast/animals.jpg",
+    "library/showcase/ep07_cast/scene_forest.jpg"
+   ]
+  },
+  {
+   "who": "deer",
+   "role": "crowd",
+   "new": true,
+   "identity": "the deer the demons burn for the wine: spotted doe, no necklace",
+   "props": [],
+   "poses": [
+    "stand",
+    "run",
+    "bow"
+   ],
+   "emotions": [],
+   "moves": [
+    "walkTo"
+   ],
+   "sheet": [
+    "library/showcase/ep07_cast/animals.jpg"
+   ]
+  }
+ ],
+ "requests": [
+  {
+   "what": "dark cinematic look preset \"ep07_dark\" (grade name): soft-light tint, vignette .66, bloom .02, firelight key + soft ember rim, matte filter on every figure",
+   "why": "owner art direction: dark, cinematic, matte, firelight only",
+   "status": "built"
+  },
+  {
+   "what": "backgrounds ashram (dusk), kacha_room_night (night: oil lamp, mat, bed, barred window), forest (dawn, smoke), feasthall (firelight, back-row crowd), council (dim gold-brown)",
+   "why": "B03 council, B04-B05 ashram + Kacha's room (\"every night, a shadow slipped into his room\"), B06/B08 feast, B10-B11 forest",
+   "status": "built"
+  },
+  {
+   "what": "silhouette crowd: layer object \"demons\" (far/mid, fog/haze) + pfx demon_crowd (rows), ember eyes, horns, weapons, sizes, sway; plus layer objects stree (forest silhouette tree) and smoke, pfx smoke_bank",
+   "why": "\"Soon a ring of red eyes closed around Kacha\" / \"The circle closed. It blotted out the sun.\"",
+   "status": "built"
+  },
+  {
+   "what": "expressions love, scheme, fury, laughcry, horror, coldsmile, pain, shock (+ mood keys wide, laugh, smirk, tears, brow)",
+   "why": "\"Devayani was laughing. Tears poured down her face\" / \"closed his eyes in horror\" / \"A smile she had never seen\" / \"no rage on his face. Only pain\"",
+   "status": "built"
+  },
+  {
+   "what": "poses kneel, sing, collapse, hug, grasp, catch, fall, rise (+ existing bow, sleep, run, point)",
+   "why": "\"asked to be his student\" / \"sang hymns by her window\" / \"his legs gave way\" / \"Devayani held him\" / \"Hands reached for his throat\" / \"Kacha caught it\" / \"And he fell\"",
+   "status": "built"
+  },
+  {
+   "what": "Shukracharya tear 0..1 (cracks of light at eye, navel, chest, skull) and rise 0..1 (body opens like a cocoon, Kacha rises, dark-red paper splashes)",
+   "why": "B15-B16: \"A finger tore out of his eye. A foot burst through his navel... He rose out of the body like a butterfly from a cocoon, drenched in blood.\"",
+   "status": "built (stylised: light through cracks, not a literal finger/foot; see open issue)"
+  },
+  {
+   "what": "props: sacred_thread, wine_cup (ash swirl), burnt_cloth, blood_splash, ember_fire, palm_leaf (glow), curse_glow (red/violet), wild_flowers, ash_speck; hand props cup/cloth/leaf/flowers/veda",
+   "why": "thread on the wrist, ashes in the wine, burnt cloth, black speck, the written mantra, the two curses, wild flowers every evening",
+   "status": "built"
+  },
+  {
+   "what": "horse and deer (no Brahmi necklace)",
+   "why": "\"took the guru's horses to graze\" / \"They burned a deer\"",
+   "status": "built"
+  },
+  {
+   "what": "literal finger through the eye / foot through the navel during the tearing",
+   "why": "B15 narration",
+   "status": "blocked: deliberately not drawn (respectful depiction of the guru, owner asked for no gore realism); cracks of light at the eye and navel carry the line. Producer/owner: confirm this is acceptable"
+  }
+ ]
+}
