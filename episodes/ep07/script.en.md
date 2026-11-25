@@ -54,7 +54,7 @@ Stage two. At dawn, Kacha took the guru's horses to graze. Deep in the forest, h
 A twig cracked. "They are coming."
 
 **B11** [grave]
-He piled up branches and lit a fire. The footsteps grew louder. Closer. Closer. He never looked up. He only watched their feet. They had knives and claws.
+He piled up branches and lit a fire. The footsteps grew louder. Closer. Closer. He never looked up. He only watched their feet. He did not run. He did not fight. They had knives and claws.
 They stood all around him.
 His body shook, but his mind was calm. Everything was going as he had planned. He was going to die, but he would not stay dead.
 
@@ -78,7 +78,7 @@ She froze. She had begged for a life, and not seen the price. Kacha's life deman
 "Then you must choose. Him or me?"
 Her eyes lit up. "Not him or you. Both. Give me the mantra. When Kacha comes out of you, I will bring you back."
 Shukracharya was afraid. He had prayed for a thousand years to earn this secret. And his daughter asked, "Don't you trust me, father?"
-He nodded. He wrote it down. "Use it once. Then destroy it. Promise me."
+He looked at his daughter for a long time. Then he nodded. He wrote it down. "Use it once. Then destroy it. Promise me."
 "I promise."
 
 **B15** [grand]
@@ -87,7 +87,7 @@ A finger came out of his eye. A foot came out of his belly.
 
 **B16** [calm]
 Kacha came out of Shukracharya's body, covered in blood.
-"Kacha!" Devayani held him, laughing and crying.
+"Kacha!" Devayani held him, laughing and crying. She did not see his eyes.
 He smiled, but not the way he used to.
 
 **B17** [fast]
@@ -106,7 +106,7 @@ He knew. There was no rage on his face. Only pain. And he fell to the ground.
 **B19** [cold]
 Kacha began to walk away.
 "Kacha!" Devayani ran after him. "I told father about us. Speak to him so we can marry."
-"You still don't understand?"
+"You still don't understand?" He did not even look at her.
 Then she understood. "Mritasanjivani?" she whispered.
 "I came for what my father sent me for."
 
@@ -116,7 +116,7 @@ She touched her father's blood on her cheek and stared at her fingers.
 "If I was cruel, the universe would have stopped me. I only found a friend. I never made any promises. And now that I was born from your father's body, I am his son too. That makes you my sister."
 
 **B21** [grave]
-She watched him go. Then she spoke.
+She watched him go. Her father lay on the ground, and the man she loved was leaving. She was crying. Then she spoke.
 "I curse you, Kacha. The secret you stole will never work for you."
 Kacha turned. "Then I will teach it to others. It will work for them. And I curse you, Devayani. You will never find the love you seek."
 
