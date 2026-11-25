@@ -1,45 +1,45 @@
-# Reel 9: How Did Shiva Escape Bhasmasura? (story 48)
+# Reel 9: Why Did Shiva Run From His Own Devotee? (story 48)
 
 ## Hook (first lines, read first)
-- Context: Shiva was running for his life.
-- Lean: Behind him ran a demon with one hand raised. One touch on Shiva's head, and the Destroyer would be ash.
-- Snapback: And Shiva himself had given him that power. How did Shiva escape Bhasmasura?
+- Context: Shiva said yes to a demon. It was the worst yes of his life.
+- Lean: The gift: anyone the demon touched on the head would turn to ash. Then his eyes turned to Shiva's head.
+- Snapback: Why did Shiva run from his own devotee?
 
-**Spoken:** Shiva was running for his life. Behind him ran a demon with one hand raised. One touch on Shiva's head, and the Destroyer would be ash. And Shiva himself had given him that power. How did Shiva escape Bhasmasura?
+**Spoken:** Shiva said yes to a demon. It was the worst yes of his life. The gift: anyone the demon touched on the head would turn to ash. Then his eyes turned to Shiva's head. Why did Shiva run from his own devotee?
 
-**Question:** How Did Shiva Escape Bhasmasura?
-**Answer:** Vishnu, as Mohini, made the demon dance until he touched his own head and burned himself to ash.
+**Question:** Why Did Shiva Run From His Own Devotee?
+**Answer:** The boon he had given the demon, to burn anyone he touched on the head, would spare no one, not even Shiva. Vishnu, as Mohini, made the demon dance until he burned himself to ash.
 
-**First-frame title:** How Shiva Escaped Bhasmasura
-**Full title:** How Did Shiva Escape Bhasmasura?
+**First-frame title:** Why Shiva Ran From His Devotee
+**Full title:** Why Did Shiva Run From His Own Devotee?
 **Alternates:** (a) Shiva Gave a Boon to a Demon. Then He Had to Run | (b) How Did Vishnu Save Shiva From Bhasmasura? (first-frame: "Shiva Ran for His Life")
 
 ## Alternate hook
-- Context: "Anyone I touch on the head turns to ash," said the demon.
-- Lean: Shiva said yes. Moments later, the demon's eyes fell on Shiva's wife, and then on Shiva's head.
-- Snapback: How did Shiva escape Bhasmasura?
+- Context: Shiva was running for his life.
+- Lean: Behind him ran a demon with one hand raised, and Shiva himself had given him that power.
+- Snapback: Why did Shiva run from his own devotee?
 
 ## Tagged narration
-[curious] Shiva was running for his life. Behind him ran a demon with one hand raised. One touch on Shiva's head, and the Destroyer would be ash. And Shiva himself had given him that power. How did Shiva escape Bhasmasura?
-[calm] It had begun with a sword at a man's throat. The demon Vrikasura wanted to be Shiva's greatest devotee. The sage Narada told him to win a boon. He prayed for hundreds of years in vain. So he began cutting off his own flesh. As the blade reached his neck, Shiva caught his arm.
-[calm] "Ask," said Shiva. "Anyone I touch on the head turns to ash." "But that is so violent." "If you grant it, it proves you adore me." Shiva agreed. He named him Bhasmasura, the ash demon.
-[firm] Then Parvati, Shiva's wife, came down the slope. The demon stared. Her husband stood in the way. The demon raised his hand. Shiva stepped back. He ran.
+[curious] Shiva said yes to a demon. It was the worst yes of his life. The gift: anyone the demon touched on the head would turn to ash. Then his eyes turned to Shiva's head. Why did Shiva run from his own devotee?
+[calm] The demon was Vrikasura. He wanted to be Shiva's greatest devotee. The sage Narada told him to win a boon. He prayed for hundreds of years. So he began cutting off his own flesh. As the blade reached his neck, Shiva caught his arm.
+[calm] "Make my flesh magical," the demon begged. "Anyone I touch on the head turns to ash." "If you grant it, it proves you adore me." Shiva agreed and named him Bhasmasura, the ash demon.
+[firm] Then Parvati, Shiva's wife, came down the slope. The demon stared. The demon raised his hand. Shiva stepped back. The boon would spare no one, not even him. He ran.
 [curious] He ran in all ten directions. Every time he looked back, the demon was there. One place was left: Vaikuntha, the home of Vishnu.
-[calm] Vishnu was smiling. "I know everything, Mahadeva." "Protect me," said Shiva. Vishnu vanished. A woman stood in his place. Mohini. The demon forgot his boon. "Come," she said. "Dance with me."
-[firm] He copied every step and every turn. Then she placed her hand on her head. So did he.
-[curious] Mohini laughed as she whirled around a pile of ash. Shiva escaped because Vishnu made the demon dance into his own boon.
+[calm] "I know everything, Mahadeva." "Protect me," said Shiva. Vishnu vanished. A woman stood in his place. Mohini. The demon forgot his boon. "Come," she said. "Dance with me."
+[firm] He copied her every step. Then she placed her hand on her head. So did he.
+[curious] Mohini laughed as she whirled around a pile of ash. Shiva ran because his own gift spared no one. Vishnu saved him by making the demon dance into it.
 
-**Length:** 250 words (tags excluded), about 100 s at 0.40 s/word.
+**Length:** 247 words (tags excluded), about 99 s at 0.40 s/word.
 
 ## Plain narration
-Shiva was running for his life. Behind him ran a demon with one hand raised. One touch on Shiva's head, and the Destroyer would be ash. And Shiva himself had given him that power. How did Shiva escape Bhasmasura?
-It had begun with a sword at a man's throat. The demon Vrikasura wanted to be Shiva's greatest devotee. The sage Narada told him to win a boon. He prayed for hundreds of years in vain. So he began cutting off his own flesh. As the blade reached his neck, Shiva caught his arm.
-"Ask," said Shiva. "Anyone I touch on the head turns to ash." "But that is so violent." "If you grant it, it proves you adore me." Shiva agreed. He named him Bhasmasura, the ash demon.
-Then Parvati, Shiva's wife, came down the slope. The demon stared. Her husband stood in the way. The demon raised his hand. Shiva stepped back. He ran.
+Shiva said yes to a demon. It was the worst yes of his life. The gift: anyone the demon touched on the head would turn to ash. Then his eyes turned to Shiva's head. Why did Shiva run from his own devotee?
+The demon was Vrikasura. He wanted to be Shiva's greatest devotee. The sage Narada told him to win a boon. He prayed for hundreds of years. So he began cutting off his own flesh. As the blade reached his neck, Shiva caught his arm.
+"Make my flesh magical," the demon begged. "Anyone I touch on the head turns to ash." "If you grant it, it proves you adore me." Shiva agreed and named him Bhasmasura, the ash demon.
+Then Parvati, Shiva's wife, came down the slope. The demon stared. The demon raised his hand. Shiva stepped back. The boon would spare no one, not even him. He ran.
 He ran in all ten directions. Every time he looked back, the demon was there. One place was left: Vaikuntha, the home of Vishnu.
-Vishnu was smiling. "I know everything, Mahadeva." "Protect me," said Shiva. Vishnu vanished. A woman stood in his place. Mohini. The demon forgot his boon. "Come," she said. "Dance with me."
-He copied every step and every turn. Then she placed her hand on her head. So did he.
-Mohini laughed as she whirled around a pile of ash. Shiva escaped because Vishnu made the demon dance into his own boon.
+"I know everything, Mahadeva." "Protect me," said Shiva. Vishnu vanished. A woman stood in his place. Mohini. The demon forgot his boon. "Come," she said. "Dance with me."
+He copied her every step. Then she placed her hand on her head. So did he.
+Mohini laughed as she whirled around a pile of ash. Shiva ran because his own gift spared no one. Vishnu saved him by making the demon dance into it.
 
 ## Source lines (story 48)
 1. Hook and chase: boon "any living creature on whose head I place my hands would be instantly reduced to ashes"; Shiva "spun and fled"; "Traversing all ten directions"; "whenever he would look back, the demon was right behind".
@@ -48,7 +48,7 @@ Mohini laughed as she whirled around a pile of ash. Shiva escaped because Vishnu
 4. Parvati arrives, demon "enraptured", thinks "he could not have her until her husband was dead", wants to "place [his hands] on his head"; Shiva "realised what was going on".
 5. Vaikuntha: "I know everything, Mahadeva"; "Why must you grant every wish of your devotees?"; "Protect this Hara"; Vishnu becomes Mohini ("Who are you?" "Mohini."); "Come. Dance with me."; "Placing his hand on his head the way she did"; last line "Mohini laughed as she whirled now around that pile of ash."
 6. Cut: Shiva's name Bholenath, the earlier Mohini episode with amrita. "Hara" and ten directions kept as in the source.
-7. Beats: sword at neck, Shiva "clasped his arm"; "Make my flesh magical. Grant me the boon that any living creature on whose head I place my hands would be instantly reduced to ashes."; "But that's so violent"; "proves that you truly adore me"; renamed Bhasmasura; Parvati; Shiva "took a step back ... spun and fled"; "ten directions"; Vaikuntha; "I know everything, Mahadeva"; "Protect this Hara"; Mohini, "Come. Dance with me."; hand on head; "pile of ash". Cut in rewrite: Narada, the six days of offerings, the "Bholenath" line.
+7. Beats: sword at neck, Shiva "clasped his arm"; "Make my flesh magical. Grant me the boon that any living creature on whose head I place my hands would be instantly reduced to ashes."; "But that's so violent"; "proves that you truly adore me"; renamed Bhasmasura; Parvati; the demon wants to "place [his hands] on his head"; Shiva "knew that his boon was all-pervasive and would not spare even him"; "ten directions"; Vaikuntha; "I know everything, Mahadeva"; "Protect this Hara"; Mohini, "Come. Dance with me."; hand on head; "pile of ash". Narada: "You shall be truly blessed only when you receive a boon". Cut: the six days of offerings, "Bholenath".
 
 ## Why it works
-Opens mid-chase with the stakes (one touch on his head); the flashback is two short paragraphs; ends on the twist and the answer. No series pointer.
+Opens on the stakes and the secret (the worst yes), asks the title question, and answers it in the last line. Short backstory (devotion, boon), then flight, then the twist. No series pointer.

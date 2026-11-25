@@ -8,21 +8,21 @@
 Question: How Did Vishnu Lose His Head?
 Answer: By accident. The gods, who needed him awake for a yagna, turned into termites and gnawed his bowstring. It snapped and cut off his head, and the loss brought back the horse-headed Hayagriva, the one god who could kill the demon.
 
-## Reel 9: How Did Shiva Escape Bhasmasura?
-- Context: Shiva was running for his life.
-- Lean: Behind him ran a demon with one hand raised. One touch on Shiva's head, and the Destroyer would be ash.
-- Snapback: And Shiva himself had given him that power. How did Shiva escape Bhasmasura?
+## Reel 9: Why Did Shiva Run From His Own Devotee?
+- Context: Shiva said yes to a demon. It was the worst yes of his life.
+- Lean: The gift: anyone the demon touched on the head would turn to ash. Then his eyes turned to Shiva's head.
+- Snapback: Why did Shiva run from his own devotee?
 
-Question: How Did Shiva Escape Bhasmasura?
-Answer: Vishnu, as Mohini, made the demon dance until he touched his own head and burned himself to ash.
+Question: Why Did Shiva Run From His Own Devotee?
+Answer: The boon he had given the demon, to burn anyone he touched on the head, would spare no one, not even Shiva. Vishnu, as Mohini, made the demon dance until he burned himself to ash.
 
-## Reel 10: Why Did Indra Cut Diti's Unborn Son Into 49 Pieces?
-- Context: Indra slipped into a sleeping woman's womb, thunderbolt in hand.
-- Lean: He cut the unborn child into seven pieces. Then the pieces began to cry.
-- Snapback: Why did Indra cut Diti's unborn son into forty-nine pieces?
+## Reel 10: A Mother Prayed 100 Years for a Son to Kill Indra. How Did Indra Survive?
+- Context: One mother spent a hundred years growing a son to kill a god.
+- Lean: Three days were left. Then Indra slipped inside her womb.
+- Snapback: How did Indra survive?
 
-Question: Why Did Indra Cut Diti's Unborn Son Into 49 Pieces?
-Answer: Because the child was born of a hundred years of prayer to kill him. Indra struck when Diti slept with unwashed feet, but the pieces lived and became the forty-nine Marutas, his companions.
+Question: A Mother Prayed 100 Years for a Son to Kill Indra. How Did Indra Survive?
+Answer: Indra cut the unborn child into seven pieces, then each into seven more. The pieces lived and were born as the forty-nine Marutas, his companions, so Diti's wish turned out differently.
 
 ## Reel 11: How Did Garuda Free His Mother Vinata From Kadru?
 - Context: At dawn, two sisters stood behind a white horse.
@@ -56,10 +56,10 @@ Answer: His flatterers repeated the lie that he was the true Vishnu until he bel
 Question: Who Was Gajendra the Elephant Before Vishnu Saved Him?
 Answer: King Indradyumna, cursed by Sage Agastya to be born an elephant to learn to surrender. At the pond, he surrendered to Vishnu and bowed.
 
-## Reel 15: Why Did Garuda Become Vishnu's Vahana?
-- Context: Garuda, the half-bird, half-human son of Vinata, was flying off with the nectar of immortality.
-- Lean: He had not tasted a drop.
-- Snapback: Then Vishnu blocked his path. Why did Garuda become Vishnu's vahana, his mount?
+## Reel 15: How Did Garuda Become Vishnu's Vahana?
+- Context: Garuda held immortality in his talons.
+- Lean: He had not taken a single sip. Then Vishnu stopped him in the sky.
+- Snapback: How did Garuda become Vishnu's vahana, his mount?
 
-Question: Why Did Garuda Become Vishnu's Vahana?
+Question: How Did Garuda Become Vishnu's Vahana?
 Answer: He won the amrita for his mother's freedom and never tasted it. Vishnu rewarded him with two boons, and Garuda gave his strength in return.

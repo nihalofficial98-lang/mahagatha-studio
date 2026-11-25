@@ -1,40 +1,42 @@
-# Reel 15: Why Did Garuda Become Vishnu's Vahana? (story 40 (plus Mahabharata, Adi Parva, as given in the brief))
+# Reel 15: How Did Garuda Become Vishnu's Vahana? (story 40 (plus Mahabharata, Adi Parva, as given in the brief))
 
 ## Hook (first lines, read first)
-- Context: Garuda, the half-bird, half-human son of Vinata, was flying off with the nectar of immortality.
-- Lean: He had not tasted a drop.
-- Snapback: Then Vishnu blocked his path. Why did Garuda become Vishnu's vahana, his mount?
+- Context: Garuda held immortality in his talons.
+- Lean: He had not taken a single sip. Then Vishnu stopped him in the sky.
+- Snapback: How did Garuda become Vishnu's vahana, his mount?
 
-**Spoken:** Garuda, the half-bird, half-human son of Vinata, was flying off with the nectar of immortality. He had not tasted a drop. Then Vishnu blocked his path. Why did Garuda become Vishnu's vahana, his mount?
+**Spoken:** Garuda held immortality in his talons. He had not taken a single sip. Then Vishnu stopped him in the sky. How did Garuda become Vishnu's vahana, his mount?
 
-**Question:** Why Did Garuda Become Vishnu's Vahana?
+**Question:** How Did Garuda Become Vishnu's Vahana?
 **Answer:** He won the amrita for his mother's freedom and never tasted it. Vishnu rewarded him with two boons, and Garuda gave his strength in return.
 
-**First-frame title:** Why Garuda Became Vishnu's Mount
-**Full title:** Why Did Garuda Become Vishnu's Vahana?
+**First-frame title:** How Garuda Became Vishnu's Vahana
+**Full title:** How Did Garuda Become Vishnu's Vahana?
 **Alternates:** (a) What Did Vishnu Ask of Garuda in Return for Immortality? | (b) Garuda Stole the Amrita but Never Drank It (first-frame: "He Never Drank It")
 
 ## Alternate hook
-(none; the owner approved this reel as written)
+- Context: A bird stole the nectar of the gods and never tasted it.
+- Lean: The king of the gods hurled a thunderbolt at him. It shed one feather.
+- Snapback: How did Garuda become Vishnu's vahana?
 
 ## Tagged narration
-[curious] Garuda, the half-bird, half-human son of Vinata, was flying off with the nectar of immortality. He had not tasted a drop. Then Vishnu blocked his path. Why did Garuda become Vishnu's vahana, his mount?
-[calm] The gods had guarded the amrita with fire, spinning blades and two serpents. Garuda broke through all of it, to buy his mother Vinata's freedom from the serpents.
-[firm] Flying back, he froze. Vishnu was standing in his way. Vishnu had been watching. He knew why Garuda was taking the amrita, and he was pleased that Garuda had not tasted any.
+[curious] Garuda held immortality in his talons. He had not taken a single sip. Then Vishnu stopped him in the sky. How did Garuda become Vishnu's vahana, his mount?
+[calm] Garuda, half bird and half man, was the son of Vinata. The serpents held her as a slave. They would free her for amrita, the nectar of the gods. The gods had guarded it with fire, spinning blades and two serpents. Garuda broke through all of it.
+[firm] Flying back, he froze. Vishnu was standing in his way. He knew why Garuda was taking the amrita, and he was pleased that Garuda had not tasted any.
 [calm] Vishnu offered him a boon. Garuda asked for two things. He wanted to stay above Vishnu. And he wanted to be immortal and free of disease, without drinking the amrita. Vishnu granted both. In return, he asked Garuda to be his carrier, his vahana.
-[curious] Further on, Indra, king of the gods, hurled his Vajra at Garuda. The mighty weapon shed only one golden feather. Indra saw his strength and stepped aside, but first they made a bargain. Indra promised that serpents would be Garuda's food from then on.
+[curious] Further on, Indra, king of the gods, hurled his Vajra at Garuda. The mighty weapon shed only one golden feather. Indra saw his strength and stepped aside, but first they made a bargain. Indra promised that serpents would be Garuda's food.
 [calm] Garuda set the vessel down before the serpents. They freed his mother.
 [firm] Kadru boasted that her sons served Vishnu. Garuda said he would carry Vishnu too. Vishnu had made him his mount.
 [curious] That is why Garuda became Vishnu's vahana. He won the nectar for his mother's freedom and never tasted it. Vishnu rewarded him, and Garuda gave his strength in return.
 
-**Length:** 243 words (tags excluded), about 97 s at 0.40 s/word.
+**Length:** 249 words (tags excluded), about 100 s at 0.40 s/word.
 
 ## Plain narration
-Garuda, the half-bird, half-human son of Vinata, was flying off with the nectar of immortality. He had not tasted a drop. Then Vishnu blocked his path. Why did Garuda become Vishnu's vahana, his mount?
-The gods had guarded the amrita with fire, spinning blades and two serpents. Garuda broke through all of it, to buy his mother Vinata's freedom from the serpents.
-Flying back, he froze. Vishnu was standing in his way. Vishnu had been watching. He knew why Garuda was taking the amrita, and he was pleased that Garuda had not tasted any.
+Garuda held immortality in his talons. He had not taken a single sip. Then Vishnu stopped him in the sky. How did Garuda become Vishnu's vahana, his mount?
+Garuda, half bird and half man, was the son of Vinata. The serpents held her as a slave. They would free her for amrita, the nectar of the gods. The gods had guarded it with fire, spinning blades and two serpents. Garuda broke through all of it.
+Flying back, he froze. Vishnu was standing in his way. He knew why Garuda was taking the amrita, and he was pleased that Garuda had not tasted any.
 Vishnu offered him a boon. Garuda asked for two things. He wanted to stay above Vishnu. And he wanted to be immortal and free of disease, without drinking the amrita. Vishnu granted both. In return, he asked Garuda to be his carrier, his vahana.
-Further on, Indra, king of the gods, hurled his Vajra at Garuda. The mighty weapon shed only one golden feather. Indra saw his strength and stepped aside, but first they made a bargain. Indra promised that serpents would be Garuda's food from then on.
+Further on, Indra, king of the gods, hurled his Vajra at Garuda. The mighty weapon shed only one golden feather. Indra saw his strength and stepped aside, but first they made a bargain. Indra promised that serpents would be Garuda's food.
 Garuda set the vessel down before the serpents. They freed his mother.
 Kadru boasted that her sons served Vishnu. Garuda said he would carry Vishnu too. Vishnu had made him his mount.
 That is why Garuda became Vishnu's vahana. He won the nectar for his mother's freedom and never tasted it. Vishnu rewarded him, and Garuda gave his strength in return.
@@ -45,4 +47,4 @@ That is why Garuda became Vishnu's vahana. He won the nectar for his mother's fr
 3. Cut: Garuda's birth, Aruna's curse, the forked tongues (reel 11 covers freeing Vinata).
 
 ## Why it works
-One question in the hook, answered in the last line. Reel 15 focuses on the meeting with Vishnu, not on freeing Vinata. No series pointer.
+Opens on the stakes (immortality in his talons, never tasted) and asks the title question; the last line answers. Focuses on the meeting with Vishnu, not on freeing Vinata. No series pointer.
