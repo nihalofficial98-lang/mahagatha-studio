@@ -1,40 +1,40 @@
-# Reel 10: Indra Tried to Kill an Unborn Child. It Backfired. (story 29)
+# Reel 10: Why Did Indra Cut Diti's Unborn Son Into 49 Pieces? (story 29)
 
 ## Hook (first lines, read first)
-- Context: Indra, king of the gods, once entered a mother's womb to kill her unborn son.
+- Context: Indra, king of the gods, once cut a mother's unborn son into forty-nine pieces.
 - Lean: That son was growing up to be his killer.
-- Snapback: So how did his plan backfire?
+- Snapback: But why did the king of the gods attack a child?
 
-**Spoken:** Indra, king of the gods, once entered a mother's womb to kill her unborn son. That son was growing up to be his killer. So how did his plan backfire?
+**Spoken:** Indra, king of the gods, once cut a mother's unborn son into forty-nine pieces. That son was growing up to be his killer. But why did the king of the gods attack a child?
 
-**Question:** How did Indra's attack on the unborn child backfire?
-**Answer:** The child did not die. Cut into forty-nine pieces, it became the forty-nine Marutas, Indra's companions, not his killer.
+**Question:** Why Did Indra Cut Diti's Unborn Son Into 49 Pieces?
+**Answer:** He feared the son who was meant to kill him. He cut him into seven, then each into seven more, but the pieces lived and became the forty-nine Marutas, Indra's companions.
 
-**First-frame title:** Indra Cut an Unborn Child
-**Full title:** Indra Tried to Kill an Unborn Child. It Backfired.
+**First-frame title:** Why Cut Diti's Unborn Son?
+**Full title:** Why Did Indra Cut Diti's Unborn Son Into 49 Pieces?
 **Alternates:** (a) Why Did Indra Enter Diti's Womb? | (b) Diti Wanted a Son to Kill Indra. Then One Dirty Foot Ruined It (first-frame: "Indra Entered Her Womb")
 
 ## Tagged narration
-[curious] Indra, king of the gods, once entered a mother's womb to kill her unborn son. That son was growing up to be his killer. So how did his plan backfire?
-[calm] Diti was the mother of the demons. Vishnu had killed her sons Hiranyaksha and Hiranyakashipu. The gods under Indra had killed many more. She asked her husband, Kashyapa, for a son who would kill Indra.
+[curious] Indra, king of the gods, once cut a mother's unborn son into forty-nine pieces. That son was growing up to be his killer. But why did the king of the gods attack a child?
+[calm] Diti was the mother of the demons. Vishnu had killed her sons Hiranyaksha and Hiranyakashipu. She asked her husband, Kashyapa, for a son who would kill Indra.
 [calm] Kashyapa agreed, with strict rules. The child would grow in her womb for a hundred years. All that time she must live as an ascetic and never lie down without washing her feet. If she failed, her son would befriend Indra instead.
 [firm] Diti followed every rule. Indra watched for years, waiting for one mistake. She made none. Then only three days remained.
 [curious] That evening, Diti was tired. She fell asleep without washing her feet. Indra leapt in. He entered her womb and cut the child into seven pieces with his Vajra, his thunderbolt.
 [firm] The pieces were alive. They wailed. Indra shouted, "Ma ruda," which means, "Don't cry." They only grew louder. He cut each piece into seven more. They still would not die.
-[calm] Diti woke and Indra vanished. She had lost. She gave birth to forty-nine children. They were no threat to Indra. They became his companions, as Kashyapa had said. Because of his cry, they were called the Marutas, the storm gods.
-[curious] That is how it backfired. Indra wanted one killer gone. He got forty-nine friends.
+[calm] Diti woke and Indra vanished. She had lost. She gave birth to forty-nine children. They became his companions, as Kashyapa had said. Because of his cry, they were called the Marutas, the storm gods.
+[curious] That is why Indra did it. He feared the son who would kill him. But the pieces lived. Instead of one killer, Indra got forty-nine friends.
 
-**Length:** 242 words (tags excluded), about 97 s at 0.40 s/word.
+**Length:** 244 words (tags excluded), about 98 s at 0.40 s/word.
 
 ## Plain narration
-Indra, king of the gods, once entered a mother's womb to kill her unborn son. That son was growing up to be his killer. So how did his plan backfire?
-Diti was the mother of the demons. Vishnu had killed her sons Hiranyaksha and Hiranyakashipu. The gods under Indra had killed many more. She asked her husband, Kashyapa, for a son who would kill Indra.
+Indra, king of the gods, once cut a mother's unborn son into forty-nine pieces. That son was growing up to be his killer. But why did the king of the gods attack a child?
+Diti was the mother of the demons. Vishnu had killed her sons Hiranyaksha and Hiranyakashipu. She asked her husband, Kashyapa, for a son who would kill Indra.
 Kashyapa agreed, with strict rules. The child would grow in her womb for a hundred years. All that time she must live as an ascetic and never lie down without washing her feet. If she failed, her son would befriend Indra instead.
 Diti followed every rule. Indra watched for years, waiting for one mistake. She made none. Then only three days remained.
 That evening, Diti was tired. She fell asleep without washing her feet. Indra leapt in. He entered her womb and cut the child into seven pieces with his Vajra, his thunderbolt.
 The pieces were alive. They wailed. Indra shouted, "Ma ruda," which means, "Don't cry." They only grew louder. He cut each piece into seven more. They still would not die.
-Diti woke and Indra vanished. She had lost. She gave birth to forty-nine children. They were no threat to Indra. They became his companions, as Kashyapa had said. Because of his cry, they were called the Marutas, the storm gods.
-That is how it backfired. Indra wanted one killer gone. He got forty-nine friends.
+Diti woke and Indra vanished. She had lost. She gave birth to forty-nine children. They became his companions, as Kashyapa had said. Because of his cry, they were called the Marutas, the storm gods.
+That is why Indra did it. He feared the son who would kill him. But the pieces lived. Instead of one killer, Indra got forty-nine friends.
 
 ## Source lines (story 29)
 1. Hook and setup: Diti asks "A son who shall kill Indra"; Hiranyaksha, Hiranyakashipu "killed by Vishnu"; "Indra was also his son, born to him and Diti's sister, Aditi".

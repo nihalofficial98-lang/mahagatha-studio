@@ -1,21 +1,21 @@
-# Reel 12: King Harishchandra Lost His Kingdom, His Wife and His Son (story 61 (context: 60))
+# Reel 12: Why Did Harishchandra Give Up His Kingdom, Wife and Son? (story 61 (context: 60))
 
 ## Hook (first lines, read first)
 - Context: King Harishchandra lost his kingdom, his wife and his son.
 - Lean: He gave each one up himself.
-- Snapback: Why would a king give up everything?
+- Snapback: Why did Harishchandra give up all three?
 
-**Spoken:** King Harishchandra lost his kingdom, his wife and his son. He gave each one up himself. Why would a king give up everything?
+**Spoken:** King Harishchandra lost his kingdom, his wife and his son. He gave each one up himself. Why did Harishchandra give up all three?
 
-**Question:** Why did King Harishchandra give up his kingdom, wife and son?
+**Question:** Why Did Harishchandra Give Up His Kingdom, Wife and Son?
 **Answer:** Because he had sworn never to break his word again, and he kept it through every test until Vishwamitra gave everything back.
 
-**First-frame title:** He Lost Everything
-**Full title:** King Harishchandra Lost His Kingdom, His Wife and His Son
+**First-frame title:** Why Harishchandra Gave Up Everything
+**Full title:** Why Did Harishchandra Give Up His Kingdom, Wife and Son?
 **Alternates:** (a) King Harishchandra Sold His Wife and Then Himself | (b) Why Is Harishchandra Called the King of Truth? (first-frame: "King of Truth")
 
 ## Tagged narration
-[curious] King Harishchandra lost his kingdom, his wife and his son. He gave each one up himself. Why would a king give up everything?
+[curious] King Harishchandra lost his kingdom, his wife and his son. He gave each one up himself. Why did Harishchandra give up all three?
 [calm] Harishchandra, king of Ayodhya, had once broken a vow to the water god Varuna. He swore never again. One day a spirit made him insult the sage Vishwamitra. To make amends, he promised the sage anything. Vishwamitra took his throne, his wealth and Ayodhya.
 [calm] The king left with his wife, Taramati, and son, Rohita. The sage demanded dakshina, a payment for accepting charity. The family found no work in Kashi. Taramati asked to be sold as a maid. Harishchandra refused until she threatened to die. It was only half.
 [firm] Vishwamitra told him to sell himself to a Chandala, a man who burned the dead. He worked at the cremation ground.
@@ -27,7 +27,7 @@
 **Length:** 246 words (tags excluded), about 98 s at 0.40 s/word.
 
 ## Plain narration
-King Harishchandra lost his kingdom, his wife and his son. He gave each one up himself. Why would a king give up everything?
+King Harishchandra lost his kingdom, his wife and his son. He gave each one up himself. Why did Harishchandra give up all three?
 Harishchandra, king of Ayodhya, had once broken a vow to the water god Varuna. He swore never again. One day a spirit made him insult the sage Vishwamitra. To make amends, he promised the sage anything. Vishwamitra took his throne, his wealth and Ayodhya.
 The king left with his wife, Taramati, and son, Rohita. The sage demanded dakshina, a payment for accepting charity. The family found no work in Kashi. Taramati asked to be sold as a maid. Harishchandra refused until she threatened to die. It was only half.
 Vishwamitra told him to sell himself to a Chandala, a man who burned the dead. He worked at the cremation ground.

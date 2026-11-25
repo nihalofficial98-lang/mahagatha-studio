@@ -1,21 +1,21 @@
-# Reel 13: A King Dressed as Vishnu to Replace Krishna (story 95)
+# Reel 13: Why Did Paundraka Dress as Vishnu to Replace Krishna? (story 95)
 
 ## Hook (first lines, read first)
 - Context: King Paundraka dressed up as Vishnu to replace Krishna.
 - Lean: He painted himself blue and strapped on wooden arms.
-- Snapback: Why would a king make himself look so foolish?
+- Snapback: Why did he do it?
 
-**Spoken:** King Paundraka dressed up as Vishnu to replace Krishna. He painted himself blue and strapped on wooden arms. Why would a king make himself look so foolish?
+**Spoken:** King Paundraka dressed up as Vishnu to replace Krishna. He painted himself blue and strapped on wooden arms. Why did he do it?
 
-**Question:** Why did King Paundraka dress up as Vishnu?
+**Question:** Why Did Paundraka Dress as Vishnu to Replace Krishna?
 **Answer:** His flatterers repeated the lie that he was the true Vishnu until he believed it, so he copied Vishnu's look to replace Krishna.
 
-**First-frame title:** A King Played Vishnu
-**Full title:** A King Dressed as Vishnu to Replace Krishna
+**First-frame title:** Why Paundraka Dressed as Vishnu
+**Full title:** Why Did Paundraka Dress as Vishnu to Replace Krishna?
 **Alternates:** (a) King Paundraka Painted Himself Blue and Called Himself Vishnu | (b) Who Was the False Vasudeva Who Challenged Krishna? (first-frame: "The False Vishnu")
 
 ## Tagged narration
-[curious] King Paundraka dressed up as Vishnu to replace Krishna. He painted himself blue and strapped on wooden arms. Why would a king make himself look so foolish?
+[curious] King Paundraka dressed up as Vishnu to replace Krishna. He painted himself blue and strapped on wooden arms. Why did he do it?
 [calm] Paundraka ruled the eastern land of Pundra. He hated Krishna, the Yadava king of Dwaravati. When Krishna killed his friend Jarasandh, Paundraka raged. His flatterers told him Krishna was a thief, and that Paundraka was the true Vishnu.
 [calm] They said it again and again. Paundraka believed it. He renamed himself Vasudeva, a name of Vishnu, and sent Krishna a decree. Give up the title and the divine weapons, or fight.
 [firm] Krishna smiled, then laughed. He said he would fight.
@@ -25,10 +25,10 @@
 [calm] The disc cut off Paundraka's head. His wooden arms fell off. The rain washed the blue paint off his skin.
 [curious] Krishna warned everyone to beware of the Paundrakas of the Earth. One false god, he said, would plague people more than a hundred demons. A lie told again and again had made a king believe he was a god.
 
-**Length:** 246 words (tags excluded), about 98 s at 0.40 s/word.
+**Length:** 242 words (tags excluded), about 97 s at 0.40 s/word.
 
 ## Plain narration
-King Paundraka dressed up as Vishnu to replace Krishna. He painted himself blue and strapped on wooden arms. Why would a king make himself look so foolish?
+King Paundraka dressed up as Vishnu to replace Krishna. He painted himself blue and strapped on wooden arms. Why did he do it?
 Paundraka ruled the eastern land of Pundra. He hated Krishna, the Yadava king of Dwaravati. When Krishna killed his friend Jarasandh, Paundraka raged. His flatterers told him Krishna was a thief, and that Paundraka was the true Vishnu.
 They said it again and again. Paundraka believed it. He renamed himself Vasudeva, a name of Vishnu, and sent Krishna a decree. Give up the title and the divine weapons, or fight.
 Krishna smiled, then laughed. He said he would fight.

@@ -1,21 +1,21 @@
-# Reel 14: An Elephant Called Out to Vishnu While a Crocodile Held His Leg (story 22)
+# Reel 14: Who Was Gajendra the Elephant Before Vishnu Saved Him? (story 22)
 
 ## Hook (first lines, read first)
 - Context: A crocodile clamped onto the leg of Gajendra, king of the elephants.
 - Lean: His whole herd walked away.
-- Snapback: Then Vishnu came and called him by another name. Why?
+- Snapback: Who was he, that Vishnu called him by another name?
 
-**Spoken:** A crocodile clamped onto the leg of Gajendra, king of the elephants. His whole herd walked away. Then Vishnu came and called him by another name. Why?
+**Spoken:** A crocodile clamped onto the leg of Gajendra, king of the elephants. His whole herd walked away. Who was he, that Vishnu called him by another name?
 
-**Question:** Why did Vishnu call the elephant Gajendra by the name Indradyumna?
-**Answer:** In a past life Gajendra was King Indradyumna, cursed by Sage Agastya to be an elephant to learn surrender, which he did while praying to Vishnu.
+**Question:** Who Was Gajendra the Elephant Before Vishnu Saved Him?
+**Answer:** King Indradyumna, cursed by Sage Agastya to be born an elephant so he would learn to surrender, which he did while praying to Vishnu.
 
-**First-frame title:** His Herd Left Him
-**Full title:** An Elephant Called Out to Vishnu While a Crocodile Held His Leg
+**First-frame title:** Who Was Gajendra Before?
+**Full title:** Who Was Gajendra the Elephant Before Vishnu Saved Him?
 **Alternates:** (a) Why Did Vishnu Call Gajendra "Indradyumna"? | (b) Gajendra Was Abandoned by His Herd. Then He Prayed (first-frame: "His Herd Abandoned Him")
 
 ## Tagged narration
-[curious] A crocodile clamped onto the leg of Gajendra, king of the elephants. His whole herd walked away. Then Vishnu came and called him by another name. Why?
+[curious] A crocodile clamped onto the leg of Gajendra, king of the elephants. His whole herd walked away. Who was he, that Vishnu called him by another name?
 [calm] By the Ocean of Milk was a lotus pond where elephants came to drink. Their leader was Gajendra, a king tusker devoted to Vishnu.
 [firm] One day, Gajendra trumpeted in terror. A crocodile had seized his leg. Blood clouded the pond. The herd knew a crocodile is stronger in water. They watched helplessly, and then they left.
 [calm] Gajendra was alone. He stopped fighting. He lifted a white lotus in his trunk and prayed to Vishnu. He said he could do nothing to save himself. Protect me, he said, or free me if my hour has come.
@@ -23,12 +23,12 @@
 [calm] Vishnu smiled. He asked, "Have you learnt your lesson, Indradyumna?"
 [firm] Gajendra froze. The name stirred a past life. He had been a king named Indradyumna. When the sage Agastya came to his court, he did not even open his eyes to greet him. The sage cursed him to be born as an elephant, to learn to surrender.
 [calm] The crocodile, Vishnu said, was a gandharva named Huhu, who had insulted the sage Deval. Gajendra bowed to the ground.
-[curious] That is why Vishnu called him Indradyumna. The elephant was the cursed king, and he had finally learned to surrender.
+[curious] Before he was Gajendra, he was King Indradyumna, cursed to be born an elephant. Now he had learned to surrender.
 
 **Length:** 244 words (tags excluded), about 98 s at 0.40 s/word.
 
 ## Plain narration
-A crocodile clamped onto the leg of Gajendra, king of the elephants. His whole herd walked away. Then Vishnu came and called him by another name. Why?
+A crocodile clamped onto the leg of Gajendra, king of the elephants. His whole herd walked away. Who was he, that Vishnu called him by another name?
 By the Ocean of Milk was a lotus pond where elephants came to drink. Their leader was Gajendra, a king tusker devoted to Vishnu.
 One day, Gajendra trumpeted in terror. A crocodile had seized his leg. Blood clouded the pond. The herd knew a crocodile is stronger in water. They watched helplessly, and then they left.
 Gajendra was alone. He stopped fighting. He lifted a white lotus in his trunk and prayed to Vishnu. He said he could do nothing to save himself. Protect me, he said, or free me if my hour has come.
@@ -36,7 +36,7 @@ The morning turned dark. A blue shape spread across the sky, a blue finger holdi
 Vishnu smiled. He asked, "Have you learnt your lesson, Indradyumna?"
 Gajendra froze. The name stirred a past life. He had been a king named Indradyumna. When the sage Agastya came to his court, he did not even open his eyes to greet him. The sage cursed him to be born as an elephant, to learn to surrender.
 The crocodile, Vishnu said, was a gandharva named Huhu, who had insulted the sage Deval. Gajendra bowed to the ground.
-That is why Vishnu called him Indradyumna. The elephant was the cursed king, and he had finally learned to surrender.
+Before he was Gajendra, he was King Indradyumna, cursed to be born an elephant. Now he had learned to surrender.
 
 ## Source lines (story 22)
 1. Setting: "Ksheersagar ... Trikuta"; forest "Ritumata ... a beautiful pond"; "Gajendra, the king tusker", "devoted to Vishnu".

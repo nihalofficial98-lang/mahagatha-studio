@@ -1,21 +1,21 @@
-# Reel 11: Kadru Cheated Her Sister Vinata, and Garuda Paid for It (story 40)
+# Reel 11: Why Did Garuda Have to Pay for Kadru's Cheating? (story 40)
 
 ## Hook (first lines, read first)
 - Context: Kadru cheated her sister Vinata in a bet over a horse's tail.
 - Lean: The loser became a slave.
-- Snapback: So why did Vinata's son have to pay?
+- Snapback: So why did Vinata's son, Garuda, have to pay for it?
 
-**Spoken:** Kadru cheated her sister Vinata in a bet over a horse's tail. The loser became a slave. So why did Vinata's son have to pay?
+**Spoken:** Kadru cheated her sister Vinata in a bet over a horse's tail. The loser became a slave. So why did Vinata's son, Garuda, have to pay for it?
 
-**Question:** Why did Garuda have to pay for Kadru's cheating?
+**Question:** Why Did Garuda Have to Pay for Kadru's Cheating?
 **Answer:** The serpents would free his mother, Vinata, only for amrita, so Garuda risked fire, blades and guard snakes to win her freedom.
 
-**First-frame title:** Kadru Cheated Vinata
-**Full title:** Kadru Cheated Her Sister Vinata, and Garuda Paid for It
+**First-frame title:** Why Garuda Paid for Kadru
+**Full title:** Why Did Garuda Have to Pay for Kadru's Cheating?
 **Alternates:** (a) Kadru Cheated Her Sister With a Horse's Tail | (b) Why Do Snakes Have Forked Tongues? (first-frame: "Why Snakes Fork Tongues")
 
 ## Tagged narration
-[curious] Kadru cheated her sister Vinata in a bet over a horse's tail. The loser became a slave. So why did Vinata's son have to pay?
+[curious] Kadru cheated her sister Vinata in a bet over a horse's tail. The loser became a slave. So why did Vinata's son, Garuda, have to pay for it?
 [calm] Kadru, mother of a thousand serpents, and her sister Vinata were wives of the sage Kashyapa. Vinata's two eggs would not hatch. Impatient, she cracked one open. Inside was half-formed Aruna. He cursed her to become her sister's slave, unless the other egg hatched on its own.
 [calm] The ocean had been churned, and a white horse, Uchchaishrava, rose from it. Vinata said it was white to the tail. Kadru said the tail was black. The loser would be the winner's slave.
 [firm] Kadru's sons told her the tail was white. She ordered them to coil around it so no white hair showed. Some refused, and she cursed them. At dawn the tail looked black. Vinata admitted defeat and became a slave.
@@ -23,10 +23,10 @@
 [firm] The serpents freed Vinata. Indra swooped in and took the nectar back. A few drops fell on sharp grass. The serpents licked them and split their tongues. That is why snakes have forked tongues.
 [curious] That is how Garuda paid for Kadru's cheating. He won his mother's freedom, and Vishnu made him his mount. Vinata smiled.
 
-**Length:** 240 words (tags excluded), about 96 s at 0.40 s/word.
+**Length:** 243 words (tags excluded), about 97 s at 0.40 s/word.
 
 ## Plain narration
-Kadru cheated her sister Vinata in a bet over a horse's tail. The loser became a slave. So why did Vinata's son have to pay?
+Kadru cheated her sister Vinata in a bet over a horse's tail. The loser became a slave. So why did Vinata's son, Garuda, have to pay for it?
 Kadru, mother of a thousand serpents, and her sister Vinata were wives of the sage Kashyapa. Vinata's two eggs would not hatch. Impatient, she cracked one open. Inside was half-formed Aruna. He cursed her to become her sister's slave, unless the other egg hatched on its own.
 The ocean had been churned, and a white horse, Uchchaishrava, rose from it. Vinata said it was white to the tail. Kadru said the tail was black. The loser would be the winner's slave.
 Kadru's sons told her the tail was white. She ordered them to coil around it so no white hair showed. Some refused, and she cursed them. At dawn the tail looked black. Vinata admitted defeat and became a slave.

@@ -1,21 +1,21 @@
-# Reel 9: Shiva Ran From His Own Devotee (story 48)
+# Reel 9: How Did Shiva Escape Bhasmasura? (story 48)
 
 ## Hook (first lines, read first)
 - Context: A demon asked Shiva for a boon that could turn anyone to ash.
-- Lean: Shiva said yes, and the demon chased Shiva himself.
-- Snapback: How do you escape a boon even a god cannot stop?
+- Lean: Shiva said yes, and the demon, Bhasmasura, chased Shiva himself.
+- Snapback: How did Shiva escape him?
 
-**Spoken:** A demon asked Shiva for a boon that could turn anyone to ash. Shiva said yes, and the demon chased Shiva himself. How do you escape a boon even a god cannot stop?
+**Spoken:** A demon asked Shiva for a boon that could turn anyone to ash. Shiva said yes, and the demon, Bhasmasura, chased Shiva himself. How did Shiva escape him?
 
-**Question:** How can Shiva escape the demon whose boon burns anyone he touches?
+**Question:** How Did Shiva Escape Bhasmasura?
 **Answer:** Vishnu, as Mohini, made the demon dance until he touched his own head and burned himself to ash.
 
-**First-frame title:** Shiva Ran From a Devotee
-**Full title:** Shiva Ran From His Own Devotee
+**First-frame title:** How Shiva Escaped Bhasmasura
+**Full title:** How Did Shiva Escape Bhasmasura?
 **Alternates:** (a) Shiva Gave a Boon to a Demon. Then He Had to Run | (b) How Did Vishnu Save Shiva From Bhasmasura? (first-frame: "Shiva Ran for His Life")
 
 ## Tagged narration
-[curious] A demon asked Shiva for a boon that could turn anyone to ash. Shiva said yes, and the demon chased Shiva himself. How do you escape a boon even a god cannot stop?
+[curious] A demon asked Shiva for a boon that could turn anyone to ash. Shiva said yes, and the demon, Bhasmasura, chased Shiva himself. How did Shiva escape him?
 [calm] The demon was Vrikasura, a devotee of Shiva, the Destroyer. Narada, the trouble-maker sage, told him he was no true devotee without a boon. He prayed on Mount Kailash for hundreds of years. Shiva did not come. He began cutting off parts of his body as offerings. As his sword reached his neck, Shiva caught his arm and healed him.
 [calm] Vrikasura asked that anyone he touched on the head turn to ashes. Shiva called it violent. Vrikasura said it would prove Shiva's love. Shiva agreed and named him Bhasmasura, the ash demon.
 [firm] Then Parvati, Shiva's wife, came down the slope. Bhasmasura stared. He could not have her while her husband lived. He raised his hand toward Shiva's head.
@@ -25,10 +25,10 @@
 [firm] Then she placed her hand on her head. So did he. Mohini laughed as she whirled around a pile of ash.
 [curious] That is how Shiva escaped. Vishnu, as Mohini, made the demon turn himself to ash.
 
-**Length:** 249 words (tags excluded), about 100 s at 0.40 s/word.
+**Length:** 244 words (tags excluded), about 98 s at 0.40 s/word.
 
 ## Plain narration
-A demon asked Shiva for a boon that could turn anyone to ash. Shiva said yes, and the demon chased Shiva himself. How do you escape a boon even a god cannot stop?
+A demon asked Shiva for a boon that could turn anyone to ash. Shiva said yes, and the demon, Bhasmasura, chased Shiva himself. How did Shiva escape him?
 The demon was Vrikasura, a devotee of Shiva, the Destroyer. Narada, the trouble-maker sage, told him he was no true devotee without a boon. He prayed on Mount Kailash for hundreds of years. Shiva did not come. He began cutting off parts of his body as offerings. As his sword reached his neck, Shiva caught his arm and healed him.
 Vrikasura asked that anyone he touched on the head turn to ashes. Shiva called it violent. Vrikasura said it would prove Shiva's love. Shiva agreed and named him Bhasmasura, the ash demon.
 Then Parvati, Shiva's wife, came down the slope. Bhasmasura stared. He could not have her while her husband lived. He raised his hand toward Shiva's head.
