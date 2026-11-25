@@ -224,6 +224,35 @@ def tarantino(dur,seed):
     wet=reverb(gt*.8+wh*.5,1.8)
     mix=gt*.5+bs*.5+dr*.5+wh*.35+wet*.6
     mix*=np.minimum(1,np.minimum(t/1,(dur-t)/2));return mix/np.max(np.abs(mix))
+def lament(dur,seed):
+    """Dark low bass bed, distant muted trumpet playing a slow sad minor melody, deep gongs for death and cruelty."""
+    rng=np.random.default_rng(seed);n=int(dur*SR);t=np.arange(n)/SR;root=31
+    bass=np.sin(2*np.pi*f(root)*t)+.6*np.sin(2*np.pi*f(root)*2*t)+.25*np.sin(2*np.pi*f(root+7)*t)
+    bass=bass/np.max(np.abs(bass))
+    hol=lp(sum(np.sin(2*np.pi*f(root+12+k)*h*t)/h for k in(0,3,7) for h in(1,2,3)),700);hol/=np.max(np.abs(hol))
+    # sad minor melody (original), (semitone from root, beats); trumpet = bright saw lowpassed, soft slow attack, slight scoop
+    mel=[(12,3),(15,1),(14,2),(10,2),(12,4),(None,2),(15,2),(17,2),(15,1),(14,1),(12,2),(10,2),(7,5),(None,3)]
+    tr=np.zeros(n);x=5.0;bt=.9;i=0
+    while x<dur-6:
+        k,b=mel[i%len(mel)];i+=1
+        if k is not None:
+            L=int(b*bt*SR*1.05);tt=np.arange(L)/SR;fr=f(root+24+k)*(1-.02*np.exp(-tt*14))
+            ph=2*np.pi*np.cumsum(fr*(1+.003*np.sin(2*np.pi*5*tt)))/SR
+            v=lp(sum(np.sin(q*ph)/q**.9 for q in range(1,14)),2200)
+            v*=np.minimum(1,tt*5)*np.minimum(1,(L/SR-tt)*4)
+            a=int(x*SR);e=min(L,n-a);tr[a:a+e]+=v[:e]
+        x+=b*bt
+        if i%len(mel)==0:x+=6
+    tr/=np.max(np.abs(tr))+1e-9
+    gong=np.zeros(n);x=9.0
+    while x<dur-5:
+        fr=f(root+rng.choice([0,0,3,-2]));L=int(7*SR);tt=np.arange(L)/SR
+        g=sum(am*np.sin(2*np.pi*fr*r*tt)*np.exp(-tt*dc) for r,am,dc in((1,1,.35),(1.47,.7,.5),(2.09,.6,.7),(2.9,.4,1.0),(4.1,.25,1.5)))*np.minimum(1,tt*300)+.2*lp(rng.standard_normal(L),800)*np.exp(-tt*4)
+        a=int(x*SR);e=min(L,n-a);gong[a:a+e]+=g[:e];x+=rng.uniform(11,16)
+    gong/=np.max(np.abs(gong))+1e-9
+    far=reverb(tr,4.5);far=lp(far,2200)      # distance: mostly reverb, dulled
+    mix=bass*.6+hol*.18+tr*.12+far*.55+gong*.55+reverb(gong,3.5)*.3
+    mix*=np.minimum(1,np.minimum(t/3,(dur-t)/4));return mix/np.max(np.abs(mix))
 def run(reel,seed):
     src=f'{R}/renders/{reel}_1080x1920.mp4';out=f'{R}/renders/{reel}_bgm_1080x1920.mp4'
     dur=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',src]))
