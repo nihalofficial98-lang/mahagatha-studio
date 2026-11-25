@@ -1,0 +1,48 @@
+{
+ "episode": "reel10",
+ "frames": 39,
+ "pass": true,
+ "checked": "all 39 frames opened on contact sheets sheet_00..06 over three rounds (womb shots, s19 sleeper, s31 waking, crowd shots re-checked); title card 'A Son Born to Kill Indra' on frame 000 above Diti; hero faces 43-55% above the subtitle box, small fixed figures (Marutas, babies, tiny Indra) placed so every face clears the 64% line; subtitles = reels/build/reel10/words.json (validator 0 errors; word differences vs the script: spoken 'Maruda' for 'Ma ruda', '49' for 'forty-nine'; 'Marutas' as spoken); 3 depth planes in every shot; no FX_ERRORS/PAGEERR, cue misses []; no hearts/stars/sparkles; no video, no APPROVED.",
+ "issues": [
+  {
+   "shot": "s04,s21-s23,s28-s30",
+   "check": "story",
+   "problem": "Indra inside the womb is a tiny figure (scale .3) behind the sac and hard to see; the womb view carries the story",
+   "owner": "cinematographer",
+   "status": "accepted",
+   "fix": "owner may prefer Indra removed from the womb shots"
+  },
+  {
+   "shot": "s33",
+   "check": "framing",
+   "problem": "The 49 babies fill the whole window as a dense grid; Diti is not in the frame",
+   "owner": "cinematographer",
+   "status": "accepted",
+   "fix": "intended: the crowd is the picture"
+  },
+  {
+   "shot": "s39",
+   "check": "framing",
+   "problem": "Indra's arms overlap the nearest Marutas; only 4 Marutas stand beside him (the number 49 is on the name plate)",
+   "owner": "action-director",
+   "status": "accepted",
+   "fix": "a real 49 crowd would need many tiny rigs"
+  },
+  {
+   "shot": "s02,s18",
+   "check": "story",
+   "problem": "The '3 days left' name plate is still fading at the still time in s18",
+   "owner": "effects-designer",
+   "status": "accepted",
+   "fix": "fully visible in the video"
+  },
+  {
+   "shot": "s19",
+   "check": "story",
+   "problem": "Diti lying on the mat is placed high in the frame so the face clears the subtitle; the unwashed dusty feet are not clearly visible",
+   "owner": "character-designer",
+   "status": "accepted",
+   "fix": "feet detail not readable at this scale; the voice says it"
+  }
+ ]
+}

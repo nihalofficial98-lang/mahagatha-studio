@@ -55,7 +55,7 @@ A("What he cut",meaning="What he cut could not be killed.",
  camera=cam("pull_out",(1.1,0,-4),(1.0,0,0),"insert","normal",0,"pulling back reveals the pieces are alive"),
  focus={"subject":"womb","depth":"shallow"},vertical={"x":640},layers=L_womb(),background=wbg(),mood={"emotion":"shock","grade":"warm"},
  characters=[tiny_indra("killed","throw","surprise")],
- effects=[womb(7,1,0,word="killed",meaning="seven small glowing children crying inside the womb")],transition_in="cut")
+ effects=[womb(7,1,0,word="What",meaning="seven small glowing children crying inside the womb")],transition_in="cut")
 # 5
 A("So how did Indra",meaning="The question: so how did Indra survive?",
  why="Indra stands under storm clouds with a puzzled worried look, his crown glowing and the Vajra lowered, glancing sideways.",
@@ -163,7 +163,7 @@ A("that she fell",meaning="She fell asleep without washing her feet.",
  why="Diti lies asleep on a mat with her eyes closed and her dusty unwashed feet toward the viewer under a night sky.",
  camera=cam("pull_out",(1.1,0,-4),(1.0,0,0),"wide","normal",0,"pulling back on the sleeper"),
  focus={"subject":"diti_p","depth":"deep"},vertical={"focus":"diti_p"},layers=L_hut('#a898c8',lamp=True),background=vista(SKY_NITE,['#3a3a7a','#2a2a6a','#1a1a58','#12124a']),mood={"emotion":"sleep","grade":"night"},
- characters=[{"who":"diti_p","x":600,"y":690,"s":1.0,"_face":.5,"flip":1,"pose":"stand","emo":"calm","look":640,"actions":[{"word":"asleep","pose":"sleep","emo":"calm","d":.7}]}],
+ characters=[{"who":"diti_p","x":620,"y":465,"s":1.0,"_fixed":True,"flip":1,"pose":"sleep","emo":"calm","look":640,"actions":[{"word":"asleep","emo":"calm","d":.7}]}],
  effects=[],transition_in="cut")
 # 20
 A("Indra jumped",meaning="Indra jumped toward the sleeping Diti.",
@@ -178,14 +178,14 @@ A("He went into",meaning="He went into her womb.",
  camera=cam("push_in",(1.0,0,0),(1.08,0,-4),"insert","normal",0,"a push in through the wall of the womb"),
  focus={"subject":"womb","depth":"shallow"},vertical={"x":640},layers=L_womb(),background=wbg(),mood={"emotion":"intrusion","grade":"warm"},
  characters=[tiny_indra("womb","sneak","fear")],
- effects=[womb(1,0,0,word="womb",meaning="the unborn child curled in the red-gold womb")],transition_in="iris")
+ effects=[womb(1,0,0,word="He",meaning="the unborn child curled in the red-gold womb")],transition_in="iris")
 # 22
 A("His Vajra",meaning="His Vajra, his thunder weapon, flashed.",
  why="A blinding blue-white flash of the Vajra cuts across the womb, the glowing child beneath it.",
  camera=cam("handheld",(1.04,0,0),(1.1,0,-4),"extreme_close","normal",3,"a shake at the thunderclap"),
  focus={"subject":"womb","depth":"shallow"},vertical={"x":640},layers=L_womb(),background=wbg(),mood={"emotion":"strike","grade":"warm"},
  characters=[tiny_indra("flashed.","throw","rage")],
- effects=[womb(1,0,1,word="flashed.",meaning="the Vajra flash across the unborn child")],transition_in="flash")
+ effects=[womb(1,0,1,word="His",meaning="the Vajra flash across the unborn child")],transition_in="flash")
 # 23
 A("Seven pieces",meaning="The child was in seven pieces.",
  why="Seven small glowing children float apart in the womb, each one separate.",
@@ -227,27 +227,27 @@ A("They only cried louder",meaning="They only cried louder.",
  camera=cam("handheld",(1.04,0,0),(1.08,0,-4),"insert","normal",4,"a shake with the louder crying"),
  focus={"subject":"womb","depth":"shallow"},vertical={"x":640},layers=L_womb(),background=wbg(),mood={"emotion":"noise","grade":"warm"},
  characters=[tiny_indra("louder.","stand","fear")],
- effects=[womb(7,1,0,word="louder.",meaning="seven children crying louder in the womb")],transition_in="cut")
+ effects=[womb(7,1,0,word="They",meaning="seven children crying louder in the womb")],transition_in="cut")
 # 29
 A("He cut each piece",meaning="He cut each piece into seven more.",
  why="The womb fills with forty-nine small glowing children after a white slash of the Vajra.",
  camera=cam("push_in",(1.0,0,0),(1.08,0,-4),"close","normal",2,"a push in as the pieces multiply"),
  focus={"subject":"womb","depth":"shallow"},vertical={"x":640},layers=L_womb(),background=wbg(),mood={"emotion":"multiplication","grade":"warm"},
  characters=[tiny_indra("seven","throw","rage")],
- effects=[womb(49,0,.5,word="seven",meaning="forty-nine small glowing children in the womb")],transition_in="flash")
+ effects=[womb(49,0,.5,word="He",meaning="forty-nine small glowing children in the womb")],transition_in="flash")
 # 30
 A("Still alive, still louder",meaning="They were still alive and still louder.",
  why="Forty-nine small children cry with open mouths in the womb, spread wide and glowing.",
  camera=cam("pull_out",(1.1,0,-4),(1.0,0,0),"insert","normal",3,"pulling back on the noise"),
  focus={"subject":"womb","depth":"shallow"},vertical={"x":640},layers=L_womb(),background=wbg(),mood={"emotion":"noise","grade":"warm"},
  characters=[tiny_indra("louder","flee","fear")],
- effects=[womb(49,1,0,w=480,y=450,spread=1.3,word="louder",meaning="forty-nine crying children glowing in the womb")],transition_in="cut")
+ effects=[womb(49,1,0,w=480,y=450,spread=1.3,word="Still",meaning="forty-nine crying children glowing in the womb")],transition_in="cut")
 # 31
 A("Diti woke up",meaning="Diti woke up from her sleep on the mat.",
  why="Diti sits up from her mat in surprise with wide eyes and a hand on her belly.",
  camera=cam("tilt_up",(1.0,0,8),(1.06,0,-2),"medium","normal",0,"rising with her as she wakes"),
  focus={"subject":"diti_p","depth":"deep"},vertical={"focus":"diti_p"},layers=L_hut('#a898c8',lamp=True),background=vista(SKY_NITE,['#3a3a7a','#2a2a6a','#1a1a58','#12124a']),mood={"emotion":"waking","grade":"night"},
- characters=[{"who":"diti_p","x":640,"y":690,"s":1.0,"_face":.46,"flip":1,"pose":"sleep","emo":"calm","look":640,"actions":[{"word":"woke","pose":"sitpray","emo":"surprise","d":.5}]}],
+ characters=[{"who":"diti_p","x":640,"y":690,"s":1.0,"_face":.46,"flip":1,"pose":"sitpray","emo":"surprise","look":640,"actions":[{"word":"woke","emo":"surprise","d":.5}]}],
  effects=[],transition_in="cut")
 # 32
 A("Indra ran away",meaning="Indra ran away from the hut and from Diti.",
@@ -262,7 +262,7 @@ A("She gave birth",meaning="She gave birth to forty-nine children.",
  camera=cam("crane_up",(1.0,0,6),(1.04,0,-6),"wide","normal",0,"rising over the new crowd of children"),
  focus={"subject":"maruta_baby","depth":"deep"},vertical={"x":640},layers=L_open('#f0e8d8'),background=vista(SKY_DAWN),mood={"emotion":"birth","grade":"warm"},
  characters=[{"who":"maruta_baby","x":640,"y":580,"s":.5,"_fixed":True,"flip":1,"pose":"stand","emo":"grief","look":640,"actions":[{"word":"children.","emo":"joy","d":.4}]}],
- effects=[pfx("maruta_pieces","birth",640,560,430,"forty-nine crying storm-god babies in a grid",n=49,spread=1,cry=1,born=1),name("49","49",640,128,34)],transition_in="cut")
+ effects=[pfx("maruta_pieces","birth",640,540,380,"forty-nine crying storm-god babies in a grid",n=49,spread=1,cry=1,born=1),name("49","49",640,128,34)],transition_in="cut")
 # 34
 A("They did not kill",meaning="They did not kill Indra.",
  why="Indra stands calm and unharmed under a clear sky with a few small storm-god babies in front of him not attacking.",
