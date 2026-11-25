@@ -115,6 +115,18 @@ const E={
   cutP(()=>{ctx.moveTo(w*.02,-h*.6+s);ctx.bezierCurveTo(w*.12,-h*.78+s,w*.32,-h*.6+s,w*.28,-h*.34);ctx.bezierCurveTo(w*.24,-h*.5+s,w*.14,-h*.58+s,w*.02,-h*.6+s)},'#f2faff',{sh:0,lw:1.6});
   ctx.strokeStyle='rgba(230,246,255,.7)';ctx.lineWidth=2.4;for(let i=0;i<4;i++){ctx.beginPath();ctx.moveTo(-w*.45+i*w*.12,h*(.12+i*.08));ctx.quadraticCurveTo(-w*.35+i*w*.12,h*(.04+i*.08)+Math.sin(t*2+i)*4,-w*.25+i*w*.12,h*(.12+i*.08));ctx.stroke()}
   for(let i=0;i<7;i++){ctx.fillStyle='#ffffff';ctx.beginPath();ctx.arc(w*(.04+i*.04),-h*(.66-Math.sin(i)*.05)+s-Math.abs(Math.sin(t*3+i))*8,3+i%3,0,TAU);ctx.fill()}}},
+ // reels 15/09/10 (drawn by engine/v2_cast.js REELFX): amrut_pot (x,y = centre) · fire_ring (part:'back'|'front' to put a pot or Garuda inside) · spinning_blades (sp = rad/s)
+ // golden_feather (fall:1 sways; use vy to drop) · vajra_thrown (flies toward +x with a lightning trail; flip:-1 flies left) · ash_pile (h 0..1)
+ // embryo (cry 0..1) · womb_view (n 0|1|7|49, spread, cry, flash 0..1) · maruta_pieces (n 7|49, spread 0..1, cry, born:1 = crying babies)
+ amrut_pot:{s:1,f(w,t,F){V2.FX.amrut_pot(ctx,w,t,F)}},
+ fire_ring:{s:0,f(w,t,F){V2.FX.fire_ring(ctx,w,t,F)}},
+ spinning_blades:{s:1,f(w,t,F){V2.FX.spinning_blades(ctx,w,t,F)}},
+ golden_feather:{s:1,f(w,t,F){V2.FX.golden_feather(ctx,w,t,F)}},
+ vajra_thrown:{s:0,f(w,t,F){V2.FX.vajra_thrown(ctx,w,t,F)}},
+ ash_pile:{s:1,f(w,t,F){V2.FX.ash_pile(ctx,w,t,F)}},
+ embryo:{s:0,f(w,t,F){V2.FX.embryo(ctx,w,t,F)}},
+ womb_view:{s:0,f(w,t,F){V2.FX.womb_view(ctx,w,t,F)}},
+ maruta_pieces:{s:0,f(w,t,F){V2.FX.maruta_pieces(ctx,w,t,F)}},
  whirlpool_churn:{s:0,am:1.8,f(w,t){ctx.save();ctx.scale(1,.5);glow(0,0,w*.5,'90,170,230',.35);for(let k=0;k<5;k++){ctx.save();ctx.rotate(k*TAU/5);ctx.strokeStyle=k%2?'rgba(170,225,255,.75)':'rgba(60,140,210,.8)';ctx.lineWidth=w*.03*(1-k*.08);ctx.lineCap='round';ctx.beginPath();
   for(let i=0;i<=40;i++){const u=i/40,R=w*.48*(1-u),an=u*4.4;ctx.lineTo(Math.cos(an)*R,Math.sin(an)*R)}ctx.stroke();ctx.restore()}glow(0,0,w*.1,'10,30,70',.8);ctx.restore()}}
 };

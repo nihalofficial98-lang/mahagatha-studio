@@ -181,6 +181,21 @@ Object.assign(BG,{
     cutP(()=>{ctx.moveTo(CX-80,575);ctx.lineTo(CX+80,575);ctx.lineTo(CX+220,H+60);ctx.lineTo(CX-220,H+60);ctx.closePath()},vg(575,H,['#8a1a24','#4a0a10']),{sh:0,lw:1.6});ctx.strokeStyle='#e0b04a';ctx.lineWidth=3;[[-70,-200],[70,200]].forEach(([a,b])=>{ctx.beginPath();ctx.moveTo(CX+a,577);ctx.lineTo(CX+b,H+60);ctx.stroke()})});
   glow(CX,420,480,o.glow||'255,190,120',.12);dust(t,30,31,'255,230,170',.35,3)}
 });
+// reels: Vaikuntha, Vishnu's abode: golden light, white cloud banks, a far golden palace with domes, the ocean of milk with lotuses
+BG.vaikuntha=function(S,t){skyG(['#fff4d8','#ffe2a0','#f6c070','#f0a858'],-300,H+300);const sx=S.sx??CX,sy=S.sy??250;glow(sx,sy,600,'255,240,190',.5);
+  layer(.05,()=>{rays(sx,sy,t,'255,245,210',.08,16,1500);sunburst(sx,sy,58,t,['#fffef4','#ffe88a','#f2b040'],.7)});
+  layer(.1,()=>cloudlets(31,6,50,200,{light:'#ffffff',mid:'#f8ead0'},t,1));
+  layer(.18,()=>{const base=372,gold=vg(170,base,['#fff2b8','#f2c14e','#b87a1a']);
+    [[sx-260,70,120],[sx+260,70,120],[sx-130,95,170],[sx+130,95,170],[sx,130,230]].forEach(([x,w,h])=>{cutP(()=>ctx.rect(x-w/2,base-h,w,h),gold,{blur:6,lw:1.8,ink:'rgba(120,70,10,.6)'});
+      cutP(()=>{ctx.moveTo(x-w*.55,base-h);ctx.quadraticCurveTo(x-w*.5,base-h-w*.75,x,base-h-w*.95);ctx.quadraticCurveTo(x+w*.5,base-h-w*.75,x+w*.55,base-h);ctx.closePath()},gold,{blur:6,lw:1.8,ink:'rgba(120,70,10,.6)'});
+      cutP(()=>{ctx.moveTo(x-3,base-h-w*.95);ctx.lineTo(x,base-h-w*.95-26);ctx.lineTo(x+3,base-h-w*.95);ctx.closePath()},'#fff2b8',{sh:0,lw:1});
+      for(let k=0;k<3;k++){const ax=x-w*.3+k*w*.3;cutP(()=>{ctx.moveTo(ax-8,base-8);ctx.lineTo(ax-8,base-h*.45);ctx.quadraticCurveTo(ax,base-h*.6,ax+8,base-h*.45);ctx.lineTo(ax+8,base-8);ctx.closePath()},'rgba(150,90,20,.55)',{sh:0,lw:0})}})});
+  layer(.3,()=>deck(33,S.y1??350,220,{light:'#ffffff',mid:'#f6ecd8',dark:'#cdbb98'},t,14,30,62));
+  layer(.55,()=>{const y0=S.sea??560;cutP(()=>{ctx.moveTo(-300,y0);for(let x=-300;x<=W+300;x+=40)ctx.quadraticCurveTo(x+10,y0-6+Math.sin(x*.02+t)*3,x+20,y0);ctx.lineTo(W+300,H+300);ctx.lineTo(-300,H+300);ctx.closePath()},vg(y0,H+60,['#fffcf2','#f2e8d6','#d8c8aa']),{blur:8,lw:2,ink:'rgba(150,120,80,.5)'});
+    for(let k=0;k<6;k++){const yy=y0+20+k*24,off=(t*12*(1+k*.3))%80;ctx.strokeStyle='rgba(200,180,140,.35)';ctx.lineWidth=2;ctx.beginPath();for(let x=-300-off;x<W+300;x+=80){ctx.moveTo(x,yy);ctx.quadraticCurveTo(x+20,yy-5,x+40,yy)}ctx.stroke()}
+    [[110,600,.7],[300,640,.55],[1000,610,.65],[1180,650,.75],[640,690,.5]].forEach(([x,y,s2])=>{cutP(()=>ctx.ellipse(x+20*s2,y+8*s2,46*s2,12*s2,0,0,TAU),'#5a9a4a',{sh:0,lw:1.4,ink:'#2a5a2a'});V2.PK.padma(ctx,x,y,s2,1,t)})});
+  dust(t,30,9,'255,245,210',.5,4)};
+
 
 /* ---- paper-cut OBJECTS with atmospheric perspective (owner rule: every scene has 2-3 depth layers).
    Every object: (x, y = base on the ground, s = scale, t, o) with o.fog 0..1 (mix toward o.haze), o.dark 0..1 (foreground
@@ -278,6 +293,7 @@ window.BGF={
  dusk:(S,t)=>FG([{o:'cloud',x:-10,y:H,s:2.1,col:'#f0b0a0'},{o:'cloud',x:1290,y:H+10,s:2,col:'#f0b0a0'}],{dark:.15,blur:2}),
  garden:(S,t)=>FG([{o:'shrub',x:70,y:H+20,s:1.6,col:'#2e6a34',flowers:'#f6c8d8'},{o:'shrub',x:1210,y:H+20,s:1.7,col:'#2e6a34',flowers:'#fff0b8'}],{dark:.3}),
  storm:(S,t)=>FG([{o:'rock',x:40,y:H+40,s:1.9,col:'#3a3040'},{o:'rock',x:1250,y:H+40,s:1.6,col:'#3a3040'}],{dark:.45}),
+ vaikuntha:(S,t)=>FG([{o:'cloud',x:-20,y:H-10,s:2.4,col:'#ffffff'},{o:'cloud',x:1300,y:H,s:2.2,col:'#ffffff'}],{dark:.06,blur:2}),
  palace:(S,t)=>FG([{o:'pillar',x:-6,y:H+30,s:1.25,col:'#e8c878'},{o:'pillar',x:1286,y:H+30,s:1.25,col:'#e8c878'}],{dark:.35,darkc:'#2a0a10'})
 };
 window.PS={cutP,cutU,vg,shd,mix,hx,hex,lum,CC,puffs,blob,deck,cloudlets,sunburst,paperMandala,mandala,waves,peaks,ptree,ridgeP,stars,OBJ,drawLayers,FOGC,fogO};

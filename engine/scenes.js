@@ -190,7 +190,7 @@ function drawWho(f,t,P){const a=(f.ac!=null?q(P,t,f.ac,f.ad||0.5):(f.a??1))*(f.f
         PO.hL[0]+=w2*26;PO.hR[0]+=w*26;PO.hd[1]-=Math.abs(w)*3;PO.ch[1]-=Math.abs(w)*3}}
     if((o.flip||1)<0){if(MOOD.lx)MOOD.lx=-MOOD.lx;TILT=-TILT}
     if(f.talk){const ts=t*11+(f.x||0);MOOD.mouth=Math.max(MOOD.mouth||0,f.talk*(.25+.45*Math.abs(Math.sin(ts))*Math.abs(Math.sin(ts*.37+1))));TILT+=Math.sin(t*1.9)*.025*f.talk}
-    const vo={pose:PO,expr:ex,flip:o.flip,key:o.key,rim:o.rim,lx:o.lx,k:f.k,prop:f.prop,imp:f.imp,hd:HD,mood:MOOD,tilt:TILT,lotus:f.lotus,halo:f.halo};
+    const vo={pose:PO,expr:ex,flip:o.flip,key:o.key,rim:o.rim,lx:o.lx,k:f.k,prop:f.prop,imp:f.imp,hd:HD,mood:MOOD,tilt:TILT,lotus:f.lotus,halo:f.halo,f:f,q:(c,d)=>q(P,t,c,d)};
     if(f.head)V2.head(f.who,x,y,s,t,vo);else V2.fig(f.who,x,y,s,t,vo)}
   else if(f.who==='brahma')drawBrahma(x,y,s,t,{aura:null,expr:ex,key:o.key,rim:o.rim,lx:o.lx,lotus:f.lotus!==false});
   else if(f.who==='boar')drawBoar(x,y,s,t,f);
