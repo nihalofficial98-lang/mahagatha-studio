@@ -33,10 +33,10 @@ The demons backed away.
 That night, Devayani stormed into his room, shaking with anger. Kacha soothed her. She left, calm again.
 He lay awake. The demons wanted him dead. Exactly as he planned.
 
-Stage two. At dawn, Kacha took the guru's horses to graze. Deep in the forest, he stopped. And waited.
-A twig cracked. "They are coming."
+Stage two. At dawn, Kacha took the guru's horses to graze. Deep in the forest, he stopped. And waited. He was waiting for the angry demons. They had followed him before. He knew they would come.
+A twig cracked. "The demons are coming."
 
-He piled up branches and lit a fire. The footsteps grew louder. Closer. Closer. He never looked up. He only watched their feet. He did not run. He did not fight. They had knives and claws.
+He piled up branches and lit a fire. The demons' footsteps grew louder. Closer. Closer. He never looked up. He only watched their feet. He did not run. He did not fight. The demons had knives and claws.
 They stood all around him.
 His body shook, but his mind was calm. Everything was going as he had planned. He was going to die, but he would not stay dead.
 
