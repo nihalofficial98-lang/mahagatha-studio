@@ -103,6 +103,23 @@ def war(dur,seed):
     mix=np.tanh(mix*1.6)
     fade=np.minimum(1,np.minimum(t/.6,(dur-t)/2.5));mix*=fade
     return mix/np.max(np.abs(mix))
+def cosmic(dur,seed):
+    """Divine/interstellar: pipe-organ drone + steady organ ostinato. Constant level, no vibrato, no tremolo, no swells."""
+    rng=np.random.default_rng(seed);n=int(dur*SR);t=np.arange(n)/SR;root=50+seed%3
+    def organ(fr,tt):return sum(a*np.sin(2*np.pi*fr*h*tt) for h,a in((1,1),(2,.6),(3,.35),(4,.25),(6,.15),(8,.08)))
+    drone=sum(organ(f(root+k),t) for k in(-24,-12,-5,0))*.25     # fixed sustained chord, constant
+    # ostinato: even eighth notes, same loudness, same length, rising line in a fixed pattern
+    pat=[0,7,12,14,12,7,0,7,12,16,14,12,7,12,14,12];step=.34;osc=np.zeros(n);i=0;x=0.5
+    while x<dur-.4:
+        L=int(step*1.6*SR);a=int(x*SR);tt=np.arange(L)/SR
+        env=np.minimum(1,tt*80)*np.minimum(1,(L/SR-tt)*40)
+        v=organ(f(root+12+pat[i%16]),tt)*env
+        e=min(L,n-a);osc[a:a+e]+=v[:e];x+=step;i+=1
+    osc*=.12
+    wet=reverb(osc,2.2)
+    mix=drone+osc+wet*.5
+    fade=np.minimum(1,np.minimum(t/2,(dur-t)/3));mix*=fade
+    return mix/np.max(np.abs(mix))
 def run(reel,seed):
     src=f'{R}/renders/{reel}_1080x1920.mp4';out=f'{R}/renders/{reel}_bgm_1080x1920.mp4'
     dur=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',src]))
