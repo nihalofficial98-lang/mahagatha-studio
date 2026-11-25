@@ -124,6 +124,26 @@ def cosmic(dur,seed):
     mix=drone*.9+ch*.5+shim+bells+wet*.5
     fade=np.minimum(1,np.minimum(t/2,(dur-t)/3));mix*=fade
     return mix/np.max(np.abs(mix))
+def dark(dur,seed):
+    """Cruel/dark: steady sub drone, dissonant low cluster (minor 2nd + tritone), cold hollow tone, rare deep gong hits. Constant level, no swells or wobble."""
+    rng=np.random.default_rng(seed);n=int(dur*SR);t=np.arange(n)/SR;root=33+seed%3
+    sub=np.sin(2*np.pi*f(root)*t)+.5*np.sin(2*np.pi*f(root)*2*t)
+    cl=np.zeros(n)
+    for k in(0,1,6,13):   # root, minor 2nd, tritone, minor 9th: harsh and cold
+        cl+=sum(np.sin(2*np.pi*f(root+12+k)*h*t)/h**1.2 for h in range(1,9))
+    cl=lp(cl,1800);cl/=np.max(np.abs(cl))
+    hol=bp(rng.standard_normal(n),180,420)*8      # hollow cold wind-like bed, constant
+    hol/=np.max(np.abs(hol))
+    gong=np.zeros(n);x=6.0
+    while x<dur-4:
+        fr=f(root+rng.choice([0,1,6]));L=int(5*SR);tt=np.arange(L)/SR
+        g=sum(am*np.sin(2*np.pi*fr*r*tt)*np.exp(-tt*dc) for r,am,dc in((1,1,.5),(1.47,.6,.7),(2.09,.5,.9),(3.3,.3,1.4)))*np.minimum(1,tt*400)
+        a=int(x*SR);e=min(L,n-a);gong[a:a+e]+=g[:e];x+=rng.uniform(9,14)
+    gong/=np.max(np.abs(gong))+1e-9
+    wet=reverb(cl*.3+gong*.8,3.5)
+    mix=sub*.55+cl*.35+hol*.12+gong*.5+wet*.45
+    fade=np.minimum(1,np.minimum(t/2,(dur-t)/3));mix*=fade
+    return mix/np.max(np.abs(mix))
 def run(reel,seed):
     src=f'{R}/renders/{reel}_1080x1920.mp4';out=f'{R}/renders/{reel}_bgm_1080x1920.mp4'
     dur=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',src]))
