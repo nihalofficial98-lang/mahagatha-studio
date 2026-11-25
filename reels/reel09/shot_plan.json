@@ -1,0 +1,5441 @@
+{
+ "episode": "reel09",
+ "shots": [
+  {
+   "id": "s01",
+   "at": {
+    "t": 0.18,
+    "word": "Why"
+   },
+   "cues": [
+    "destroyer",
+    "run"
+   ],
+   "bg": {
+    "k": "kailash",
+    "mx": 0.42
+   },
+   "figs": [
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 672,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "flee",
+     "emo": "fear",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "flee",
+       "emo": "surprise"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "sand_drift",
+     "x": 420,
+     "y": 640,
+     "w": 420,
+     "alpha": 0.5,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef2fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 170,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 150,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.2,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#e8eefc"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.6,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.55,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#8a96b0"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#8a96b0"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Shiva runs in fear across the Kailash snow with his hair and tiger skin flying and a worried face; the title card sits above him.",
+   "vert": {
+    "focus": "shiva"
+   }
+  },
+  {
+   "id": "s02",
+   "at": {
+    "t": 6.34,
+    "word": "The"
+   },
+   "cues": [
+    "ash"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#6a2a3a",
+     "#c8604a",
+     "#ffa86a",
+     "#ffe4b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#b87a6a",
+     "#9a5a5a",
+     "#7a4a4a",
+     "#5a3a3a"
+    ],
+    "haze": "240,244,255",
+    "dust": 12
+   },
+   "figs": [
+    {
+     "who": "bhasmasura",
+     "x": 640,
+     "y": 617,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "raise",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "rage"
+      }
+     ],
+     "hand": 1
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "embers",
+     "x": 640,
+     "y": 420,
+     "w": 300,
+     "alpha": 0.6,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -2,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0c8a8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#b87a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#b87a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#ffd8b0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c08a5a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#8a5a3a"
+      },
+      {
+       "o": "rock",
+       "x": 870,
+       "y": 516,
+       "s": 0.7,
+       "col": "#8a5a3a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#4a2a22"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#4a2a22"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: Bhasmasura raises his glowing right hand and stares with red eyes; ash grey sparks drift off his hand on 'ash'.",
+   "vert": {
+    "focus": "bhasmasura"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s03",
+   "at": {
+    "t": 8.9,
+    "word": "and"
+   },
+   "cues": [
+    "Vishnu",
+    "save"
+   ],
+   "bg": {
+    "k": "vaikuntha",
+    "sx": 640,
+    "sy": 250
+   },
+   "figs": [
+    {
+     "who": "shiva",
+     "x": 545,
+     "y": 565,
+     "s": 0.82,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "fear",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "fear"
+      }
+     ]
+    },
+    {
+     "who": "vishnu",
+     "x": 735,
+     "y": 565,
+     "s": 0.82,
+     "flip": -1,
+     "pose": "open",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "calm"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 735,
+     "y": 300,
+     "r": 230,
+     "rgb": "255,214,140",
+     "ga": 0.4,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#fff0d4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.2,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.0,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 0.9,
+       "w": 200,
+       "h": 120,
+       "col": "#d8b88a",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 470,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#f2dca8"
+      },
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 640,
+       "s": 1.5,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 650,
+       "s": 1.4,
+       "col": "#fff8ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.35,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#3a7a54",
+       "flowers": "#ffd0e0"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#3a7a54",
+       "flowers": "#ffe8b0"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot dolly_right: Vishnu stands calm in a golden light with a hand raised in protection while Shiva stands anxious beside him.",
+   "vert": {
+    "x": 640,
+    "focus": "vishnu"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s04",
+   "at": {
+    "t": 11.32,
+    "word": "Vishnu"
+   },
+   "cues": [
+    "trick"
+   ],
+   "bg": {
+    "k": "vaikuntha",
+    "sx": 640,
+    "sy": 250
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 300,
+     "s": 0.8,
+     "head": true,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "smile": 0.7,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "emo": "calm",
+       "mood": {
+        "smile": 0.9,
+        "lx": -0.7,
+        "blink": 0.3
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 640,
+     "y": 320,
+     "w": 360,
+     "alpha": 0.5,
+     "par": 1.0,
+     "blend": "lighter",
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#fff0d4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.2,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.0,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 0.9,
+       "w": 200,
+       "h": 120,
+       "col": "#d8b88a",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 470,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#f2dca8"
+      },
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 640,
+       "s": 1.5,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 650,
+       "s": 1.4,
+       "col": "#fff8ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.35,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#3a7a54",
+       "flowers": "#ffd0e0"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#3a7a54",
+       "flowers": "#ffe8b0"
+      }
+     ]
+    }
+   ],
+   "note": "close push_in: A close Vishnu with a sly quiet smile and eyes glancing sideways, a pale halo behind his head.",
+   "vert": {
+    "focus": "vishnu"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s05",
+   "at": {
+    "t": 13.32,
+    "word": "The"
+   },
+   "cues": [
+    "Vrikasura"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2466c8",
+     "#6ab0ee",
+     "#c8ecfa",
+     "#fff8e8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 12
+   },
+   "figs": [
+    {
+     "who": "vrikasura",
+     "x": 640,
+     "y": 614,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "devotion",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "devotion"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Vrikasura",
+     "x": 640,
+     "y": 128,
+     "size": 32,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8d8c8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#b89a68"
+      },
+      {
+       "o": "tree",
+       "x": 410,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#4a7a5a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#4a7a5a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium static: Vrikasura, a thin ascetic demon with small horns and matted hair, stands with folded hands and a humble face; his name appears on 'Vrikasura'.",
+   "vert": {
+    "focus": "vrikasura"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s06",
+   "at": {
+    "t": 15.22,
+    "word": "The"
+   },
+   "cues": [
+    "boon",
+    "gift"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2466c8",
+     "#6ab0ee",
+     "#c8ecfa",
+     "#fff8e8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 12
+   },
+   "figs": [
+    {
+     "who": "narada",
+     "x": 735,
+     "y": 567,
+     "s": 0.85,
+     "flip": -1,
+     "pose": "point",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "joy",
+       "mood": {
+        "smile": 0.8
+       }
+      }
+     ]
+    },
+    {
+     "who": "vrikasura",
+     "x": 545,
+     "y": 574,
+     "s": 0.85,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "devotion",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "joy"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 260,
+     "r": 200,
+     "rgb": "255,214,140",
+     "ga": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8d8c8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#b89a68"
+      },
+      {
+       "o": "tree",
+       "x": 410,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#4a7a5a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#4a7a5a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot dolly_left: Narada with his veena smiles and points a finger up toward the sky while Vrikasura listens with folded hands, nodding.",
+   "vert": {
+    "x": 640,
+    "focus": "narada"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s07",
+   "at": {
+    "t": 19.3,
+    "word": "He"
+   },
+   "cues": [
+    "prayed",
+    "hundreds",
+    "years"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2a2a6a",
+     "#6a5aa8",
+     "#e49a9a",
+     "#ffd8a8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 12
+   },
+   "figs": [
+    {
+     "who": "vrikasura",
+     "x": 640,
+     "y": 527,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "devotion",
+     "mood": {
+      "blink": 1,
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.5,
+       "emo": "devotion"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "sand_drift",
+     "x": 420,
+     "y": 560,
+     "w": 420,
+     "alpha": 0.5,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 330,
+     "r": 230,
+     "rgb": "255,214,140",
+     "ga": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e0c8b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#b89a68"
+      },
+      {
+       "o": "tree",
+       "x": 410,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#4a7a5a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#4a7a5a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Vrikasura sits cross-legged with closed eyes and folded hands in deep prayer while fallen leaves drift by to show passing years.",
+   "vert": {
+    "focus": "vrikasura"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s08",
+   "at": {
+    "t": 21.58,
+    "word": "Shiva"
+   },
+   "cues": [
+    "started"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2a2a6a",
+     "#6a5aa8",
+     "#e49a9a",
+     "#ffd8a8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 12
+   },
+   "figs": [
+    {
+     "who": "vrikasura",
+     "x": 640,
+     "y": 528,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "sad",
+     "prop": "sword",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "pose": "selfcut",
+       "emo": "grief"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e0c8b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#b89a68"
+      },
+      {
+       "o": "tree",
+       "x": 410,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#4a7a5a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#4a7a5a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium pull_out: Vrikasura opens his eyes with a sad hurt face, then lifts a sword toward his body on 'cutting' in a grim, desperate pose.",
+   "vert": {
+    "focus": "vrikasura"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s09",
+   "at": {
+    "t": 25.78,
+    "word": "As"
+   },
+   "cues": [
+    "neck",
+    "caught"
+   ],
+   "bg": {
+    "k": "kailash",
+    "mx": 0.42
+   },
+   "figs": [
+    {
+     "who": "vrikasura",
+     "x": 545,
+     "y": 578,
+     "s": 0.82,
+     "flip": 1,
+     "pose": "selfcut",
+     "prop": "sword",
+     "emo": "grief",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "grief"
+      }
+     ]
+    },
+    {
+     "who": "shiva",
+     "x": 735,
+     "y": 565,
+     "s": 0.82,
+     "flip": -1,
+     "pose": "point",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.4,
+       "emo": "surprise"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "flash",
+     "x": 640,
+     "y": 340,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef2fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 170,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 150,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.2,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#e8eefc"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.6,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.55,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#8a96b0"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#8a96b0"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot push_in: Vrikasura holds the sword level at his own neck at the left while Shiva steps in from the right and grips his arm with a firm calm face.",
+   "vert": {
+    "x": 640,
+    "focus": "vrikasura"
+   },
+   "shake": 2,
+   "tr": "flash"
+  },
+  {
+   "id": "s10",
+   "at": {
+    "t": 28.86,
+    "word": "Make"
+   },
+   "cues": [
+    "said"
+   ],
+   "bg": {
+    "k": "kailash",
+    "mx": 0.42
+   },
+   "figs": [
+    {
+     "who": "vrikasura",
+     "x": 640,
+     "y": 620,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "devotion",
+     "talk": 0.8,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "joy"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef2fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 170,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 150,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.2,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#e8eefc"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.6,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.55,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#8a96b0"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#8a96b0"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_right: Vrikasura kneels and pleads with open eyes and hands pressed together, looking up at Shiva.",
+   "vert": {
+    "focus": "vrikasura"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s11",
+   "at": {
+    "t": 31.34,
+    "word": "Anyone"
+   },
+   "cues": [
+    "touch",
+    "ash"
+   ],
+   "bg": {
+    "k": "kailash",
+    "mx": 0.42
+   },
+   "figs": [
+    {
+     "who": "vrikasura",
+     "x": 640,
+     "y": 617,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "devotion",
+     "talk": 0.7,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "plead",
+       "emo": "joy"
+      },
+      {
+       "c": 1,
+       "d": 0.5,
+       "pose": "namaste",
+       "emo": "devotion"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 330,
+     "r": 220,
+     "rgb": "200,200,210",
+     "ga": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -2,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef2fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 170,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 150,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.2,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#e8eefc"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.6,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.55,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#8a96b0"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#8a96b0"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: The demon points a glowing hand at his own head, ash-grey light and drifting sparks around it, with a greedy smile.",
+   "vert": {
+    "focus": "vrikasura"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s12",
+   "at": {
+    "t": 34.02,
+    "word": "But"
+   },
+   "cues": [
+    "Shiva"
+   ],
+   "bg": {
+    "k": "kailash",
+    "mx": 0.42
+   },
+   "figs": [
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "open",
+     "emo": "surprise",
+     "talk": 0.8,
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "calm",
+       "tilt": 0.05
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef2fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 170,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 150,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.2,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#e8eefc"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.6,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.55,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#8a96b0"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#8a96b0"
+      }
+     ]
+    }
+   ],
+   "note": "medium pull_out: Shiva frowns with worried eyes and a raised hand, shaking his head slowly at the demand.",
+   "vert": {
+    "focus": "shiva"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s13",
+   "at": {
+    "t": 36.3,
+    "word": "If"
+   },
+   "cues": [
+    "love"
+   ],
+   "bg": {
+    "k": "kailash",
+    "mx": 0.42
+   },
+   "figs": [
+    {
+     "who": "vrikasura",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "devotion",
+     "talk": 0.8,
+     "mood": {
+      "smile": 0.4,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "joy",
+       "mood": {
+        "smile": 0.6
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 320,
+     "r": 220,
+     "rgb": "255,200,160",
+     "ga": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef2fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 170,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 150,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.2,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#e8eefc"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.6,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.55,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#8a96b0"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#8a96b0"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Vrikasura clasps his hands and looks up with a pleading smile that shows devotion, a light glow around him.",
+   "vert": {
+    "focus": "vrikasura"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s14",
+   "at": {
+    "t": 38.88,
+    "word": "Shiva"
+   },
+   "cues": [
+    "agreed"
+   ],
+   "bg": {
+    "k": "kailash",
+    "mx": 0.42
+   },
+   "figs": [
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "open",
+     "emo": "sad",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "calm",
+       "tilt": 0.08
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "light_beam",
+     "x": 640,
+     "y": 330,
+     "w": 480,
+     "alpha": 0.4,
+     "par": 1.0,
+     "blend": "lighter",
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": -8,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 4,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef2fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 170,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 150,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.2,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#e8eefc"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.6,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.55,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#8a96b0"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#8a96b0"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_down: Shiva lowers his head in a slow sad nod with one open hand giving the blessing, light spilling from his palm.",
+   "vert": {
+    "focus": "shiva"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s15",
+   "at": {
+    "t": 40.08,
+    "word": "He"
+   },
+   "cues": [
+    "named",
+    "Bhasmasura",
+    "ash"
+   ],
+   "bg": {
+    "k": "kailash",
+    "mx": 0.42
+   },
+   "figs": [
+    {
+     "who": "vrikasura",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "devotion",
+     "mood": {
+      "lx": 0.8
+     },
+     "fd": 0.8,
+     "fo": 1
+    },
+    {
+     "who": "bhasmasura",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "pride",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.5,
+       "emo": "anger"
+      }
+     ],
+     "a": 0,
+     "ac": 1
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Bhasmasura",
+     "x": 640,
+     "y": 128,
+     "size": 32,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "energy_swirl",
+     "x": 640,
+     "y": 340,
+     "w": 420,
+     "alpha": 0.45,
+     "par": 1.0,
+     "blend": "lighter",
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "cool",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#eef2fc",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 170,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 150,
+       "col": "#b4c4e8",
+       "snow": true
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.2,
+       "col": "#ffffff"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#e8eefc"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 520,
+       "s": 0.6,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.55,
+       "kind": "pine",
+       "col": "#2e5a4a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.4,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#8a96b0"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#8a96b0"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: The ascetic now stands as Bhasmasura with horns, red eyes and ash streaks and a glowing right hand, his name on the screen as a violet swirl rises.",
+   "vert": {
+    "focus": "bhasmasura"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s16",
+   "at": {
+    "t": 42.82,
+    "word": "Then"
+   },
+   "cues": [
+    "Parvati",
+    "hill"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2466c8",
+     "#6ab0ee",
+     "#c8ecfa",
+     "#fff8e8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 12
+   },
+   "figs": [
+    {
+     "who": "parvati",
+     "x": 580,
+     "y": 619,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "calm"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Parvati",
+     "x": 640,
+     "y": 128,
+     "size": 32,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": -12,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 12,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8e0d0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#b89a68"
+      },
+      {
+       "o": "tree",
+       "x": 410,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#4a8a5a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#4a8a5a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_right: Parvati in a red sari with a lotus walks gently along a green hillside with a calm face; her name is on the screen.",
+   "vert": {
+    "focus": "parvati"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s17",
+   "at": {
+    "t": 46.1,
+    "word": "The"
+   },
+   "cues": [
+    "her"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2466c8",
+     "#6ab0ee",
+     "#c8ecfa",
+     "#fff8e8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 12
+   },
+   "figs": [
+    {
+     "who": "bhasmasura",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "surprise",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "anger",
+       "mood": {
+        "lx": 0.9
+       }
+      }
+     ],
+     "hand": 0
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8e0d0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#b89a68"
+      },
+      {
+       "o": "tree",
+       "x": 410,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#4a7a5a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#4a7a5a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Bhasmasura stares with wide red eyes toward the right, his mouth slightly open and his eyes fixed on her.",
+   "vert": {
+    "focus": "bhasmasura"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s18",
+   "at": {
+    "t": 47.76,
+    "word": "He"
+   },
+   "cues": [
+    "husband",
+    "way"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#6a2a3a",
+     "#c8604a",
+     "#ffa86a",
+     "#ffe4b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 12
+   },
+   "figs": [
+    {
+     "who": "bhasmasura",
+     "x": 640,
+     "y": 300,
+     "s": 0.8,
+     "head": true,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "rage"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 300,
+     "r": 260,
+     "rgb": "255,100,80",
+     "ga": 0.4,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": -10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.1,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8c8b8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#b89a68"
+      },
+      {
+       "o": "tree",
+       "x": 410,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#4a7a5a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#4a7a5a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "close crane_down: A close bust of Bhasmasura with a dark angry scowl and a sly sideways glance as the thought forms; red glow behind his head.",
+   "vert": {
+    "focus": "bhasmasura"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s19",
+   "at": {
+    "t": 50.74,
+    "word": "He"
+   },
+   "cues": [
+    "hand"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#6a2a3a",
+     "#c8604a",
+     "#ffa86a",
+     "#ffe4b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 12
+   },
+   "figs": [
+    {
+     "who": "bhasmasura",
+     "x": 640,
+     "y": 617,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "raise",
+     "emo": "rage",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "rage"
+      }
+     ],
+     "hand": 1
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "embers",
+     "x": 640,
+     "y": 380,
+     "w": 320,
+     "alpha": 0.6,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": -2,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8c8b8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#b89a68"
+      },
+      {
+       "o": "tree",
+       "x": 410,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#4a7a5a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#4a7a5a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: Bhasmasura lifts his glowing right hand high above his head with a wild grin, ash-grey light flaring from his palm.",
+   "vert": {
+    "focus": "bhasmasura"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s20",
+   "at": {
+    "t": 52.0,
+    "word": "Shiva"
+   },
+   "cues": [
+    "ran"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#6a2a3a",
+     "#c8604a",
+     "#ffa86a",
+     "#ffe4b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 12
+   },
+   "figs": [
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": -1,
+     "pose": "plead",
+     "emo": "surprise",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "pose": "flee",
+       "emo": "fear"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "sand_drift",
+     "x": 760,
+     "y": 640,
+     "w": 460,
+     "alpha": 0.5,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8c8b8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#b89a68"
+      },
+      {
+       "o": "tree",
+       "x": 410,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#4a7a5a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#4a7a5a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_left: Shiva leans away in alarm with hands out and then turns into a run with his hair streaming; a gust of dust behind him.",
+   "vert": {
+    "focus": "shiva"
+   },
+   "shake": 2,
+   "dx": 0
+  },
+  {
+   "id": "s21",
+   "at": {
+    "t": 54.14,
+    "word": "He"
+   },
+   "cues": [
+    "ran",
+    "directions"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#6a2a3a",
+     "#c8604a",
+     "#ffa86a",
+     "#ffe4b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#b87a6a",
+     "#9a5a5a",
+     "#7a4a4a",
+     "#5a3a3a"
+    ],
+    "haze": "240,244,255",
+    "dust": 12
+   },
+   "figs": [
+    {
+     "who": "shiva",
+     "x": 600,
+     "y": 619,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "run",
+     "emo": "fear",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.4,
+       "emo": "fear"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "sand_drift",
+     "x": 380,
+     "y": 640,
+     "w": 480,
+     "alpha": 0.6,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 14,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#f0c8a8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#b87a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#b87a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#ffd8b0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#c08a5a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#8a5a3a"
+      },
+      {
+       "o": "rock",
+       "x": 870,
+       "y": 516,
+       "s": 0.7,
+       "col": "#8a5a3a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#4a2a22"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#4a2a22"
+      }
+     ]
+    }
+   ],
+   "note": "wide pan_right: Shiva sprints across a red desert road with his hair and tiger skin flying; speed dust streams behind him.",
+   "vert": {
+    "focus": "shiva"
+   },
+   "shake": 3,
+   "tr": "wipe"
+  },
+  {
+   "id": "s22",
+   "at": {
+    "t": 56.16,
+    "word": "Every"
+   },
+   "cues": [
+    "looked",
+    "back",
+    "there"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#2a2a6a",
+     "#6a5aa8",
+     "#e49a9a",
+     "#ffd8a8"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#a8c4e4",
+     "#8ab4cc",
+     "#6aa08a",
+     "#4a8064"
+    ],
+    "haze": "240,244,255",
+    "dust": 12
+   },
+   "figs": [
+    {
+     "who": "bhasmasura",
+     "x": 740,
+     "y": 610,
+     "s": 0.6,
+     "flip": -1,
+     "pose": "run",
+     "emo": "rage",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 2,
+       "d": 0.4,
+       "emo": "rage"
+      }
+     ],
+     "hand": 1
+    },
+    {
+     "who": "shiva",
+     "x": 560,
+     "y": 569,
+     "s": 0.82,
+     "flip": 1,
+     "pose": "run",
+     "emo": "fear",
+     "mood": {
+      "lx": 0.8,
+      "turn": -0.5
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.4,
+       "emo": "fear"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "sand_drift",
+     "x": 380,
+     "y": 640,
+     "w": 460,
+     "alpha": 0.5,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 10,
+     "y": 4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.55,
+     "haze": "#e8d0b8",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 150,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 130,
+       "col": "#8aa0a0",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#fff0e0"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#b89a68"
+      },
+      {
+       "o": "tree",
+       "x": 410,
+       "y": 520,
+       "s": 0.62,
+       "kind": "round",
+       "col": "#4a7a5a"
+      },
+      {
+       "o": "tree",
+       "x": 880,
+       "y": 516,
+       "s": 0.58,
+       "kind": "round",
+       "col": "#4a7a5a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.45,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#2a4a38",
+       "flowers": "#e0a040"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#2a4a38",
+       "flowers": "#f0a020"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot dolly_right: Shiva runs at the left and glances back over his shoulder in terror while the demon, a smaller figure with a glowing hand, follows close behind at the right.",
+   "vert": {
+    "x": 640,
+    "focus": "shiva"
+   },
+   "shake": 2,
+   "dx": 0
+  },
+  {
+   "id": "s23",
+   "at": {
+    "t": 58.64,
+    "word": "Only"
+   },
+   "cues": [
+    "Vaikuntha",
+    "home"
+   ],
+   "bg": {
+    "k": "vaikuntha",
+    "sx": 640,
+    "sy": 250
+   },
+   "figs": [
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 602,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "fear",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.6,
+       "emo": "calm"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Vaikuntha",
+     "x": 640,
+     "y": 128,
+     "size": 32,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 300,
+     "r": 300,
+     "rgb": "255,214,140",
+     "ga": 0.4,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": -10,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#fff0d4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.2,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.0,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 0.9,
+       "w": 200,
+       "h": 120,
+       "col": "#d8b88a",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 470,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#f2dca8"
+      },
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 640,
+       "s": 1.5,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 650,
+       "s": 1.4,
+       "col": "#fff8ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.35,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#3a7a54",
+       "flowers": "#ffd0e0"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#3a7a54",
+       "flowers": "#ffe8b0"
+      }
+     ]
+    }
+   ],
+   "note": "wide crane_up: Shiva, exhausted, stands small at the gates of golden Vaikuntha with the golden palace and milk ocean ahead; the name Vaikuntha appears.",
+   "vert": {
+    "focus": "shiva"
+   }
+  },
+  {
+   "id": "s24",
+   "at": {
+    "t": 62.54,
+    "word": "Protect"
+   },
+   "cues": [
+    "said",
+    "Shiva"
+   ],
+   "bg": {
+    "k": "vaikuntha",
+    "sx": 640,
+    "sy": 250
+   },
+   "figs": [
+    {
+     "who": "shiva",
+     "x": 545,
+     "y": 565,
+     "s": 0.82,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "fear",
+     "talk": 0.8,
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.4,
+       "emo": "fear"
+      }
+     ]
+    },
+    {
+     "who": "vishnu",
+     "x": 735,
+     "y": 565,
+     "s": 0.82,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "calm"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#fff0d4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.2,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.0,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 0.9,
+       "w": 200,
+       "h": 120,
+       "col": "#d8b88a",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 470,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#f2dca8"
+      },
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 640,
+       "s": 1.5,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 650,
+       "s": 1.4,
+       "col": "#fff8ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.35,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#3a7a54",
+       "flowers": "#ffd0e0"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#3a7a54",
+       "flowers": "#ffe8b0"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot push_in: Shiva pleads with pressed hands and a frightened face before Vishnu, who stands calm and listening at the right.",
+   "vert": {
+    "x": 640,
+    "focus": "shiva"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s25",
+   "at": {
+    "t": 64.44,
+    "word": "Vishnu"
+   },
+   "cues": [
+    "vanished"
+   ],
+   "bg": {
+    "k": "vaikuntha",
+    "sx": 640,
+    "sy": 250
+   },
+   "figs": [
+    {
+     "who": "shiva",
+     "x": 545,
+     "y": 567,
+     "s": 0.82,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "surprise",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "emo": "surprise"
+      }
+     ]
+    },
+    {
+     "who": "vishnu",
+     "x": 735,
+     "y": 567,
+     "s": 0.82,
+     "flip": -1,
+     "pose": "open",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "fd": 0.9,
+     "fo": 0
+    }
+   ],
+   "fx": [
+    {
+     "t": "flash",
+     "x": 735,
+     "y": 340,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "energy_swirl",
+     "x": 735,
+     "y": 360,
+     "w": 420,
+     "alpha": 0.5,
+     "par": 1.0,
+     "blend": "lighter",
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#fff0d4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.2,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.0,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 0.9,
+       "w": 200,
+       "h": 120,
+       "col": "#d8b88a",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 470,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#f2dca8"
+      },
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 640,
+       "s": 1.5,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 650,
+       "s": 1.4,
+       "col": "#fff8ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.35,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#3a7a54",
+       "flowers": "#ffd0e0"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#3a7a54",
+       "flowers": "#ffe8b0"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot static: Vishnu dissolves into a bright flash of gold light and swirling shimmer, fading out as Shiva watches with wide eyes.",
+   "vert": {
+    "x": 640,
+    "focus": "vishnu"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s26",
+   "at": {
+    "t": 65.76,
+    "word": "A"
+   },
+   "cues": [
+    "woman",
+    "Mohini"
+   ],
+   "bg": {
+    "k": "vaikuntha",
+    "sx": 640,
+    "sy": 250
+   },
+   "figs": [
+    {
+     "who": "mohini",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "dance",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "pose": "dance2",
+       "emo": "joy"
+      }
+     ],
+     "a": 0,
+     "ac": 0
+    }
+   ],
+   "fx": [
+    {
+     "t": "name",
+     "s": "Mohini",
+     "x": 640,
+     "y": 128,
+     "size": 32,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "halo_ring",
+     "x": 640,
+     "y": 320,
+     "w": 360,
+     "alpha": 0.45,
+     "par": 1.0,
+     "blend": "lighter",
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#fff0d4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.2,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.0,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 0.9,
+       "w": 200,
+       "h": 120,
+       "col": "#d8b88a",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 470,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#f2dca8"
+      },
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 640,
+       "s": 1.5,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 650,
+       "s": 1.4,
+       "col": "#fff8ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.35,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#3a7a54",
+       "flowers": "#ffd0e0"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#3a7a54",
+       "flowers": "#ffe8b0"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: Mohini, blue-skinned in a red sari with garland and crown, stands in a graceful dance pose in the golden light, her name appearing on 'Mohini'.",
+   "vert": {
+    "focus": "mohini"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s27",
+   "at": {
+    "t": 69.0,
+    "word": "The"
+   },
+   "cues": [
+    "forgot",
+    "gift"
+   ],
+   "bg": {
+    "k": "vaikuntha",
+    "sx": 640,
+    "sy": 250
+   },
+   "figs": [
+    {
+     "who": "bhasmasura",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "mood": {
+      "smile": 0.7,
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "joy",
+       "mood": {
+        "smile": 0.9,
+        "lx": 0.9
+       }
+      }
+     ],
+     "hand": 0.2
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 320,
+     "r": 240,
+     "rgb": "255,190,200",
+     "ga": 0.35,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#fff0d4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.2,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.0,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 0.9,
+       "w": 200,
+       "h": 120,
+       "col": "#d8b88a",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 470,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#f2dca8"
+      },
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 640,
+       "s": 1.5,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 650,
+       "s": 1.4,
+       "col": "#fff8ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.35,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#3a7a54",
+       "flowers": "#ffd0e0"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#3a7a54",
+       "flowers": "#ffe8b0"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_right: Bhasmasura gazes dreamily at Mohini with a soft goofy smile, his glowing hand hanging down, forgotten.",
+   "vert": {
+    "focus": "bhasmasura"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s28",
+   "at": {
+    "t": 70.74,
+    "word": "Come"
+   },
+   "cues": [
+    "Dance"
+   ],
+   "bg": {
+    "k": "vaikuntha",
+    "sx": 640,
+    "sy": 250
+   },
+   "figs": [
+    {
+     "who": "mohini",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "open",
+     "emo": "joy",
+     "talk": 0.8,
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "pose": "dance",
+       "emo": "joy"
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#fff0d4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.2,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.0,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 0.9,
+       "w": 200,
+       "h": 120,
+       "col": "#d8b88a",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 470,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#f2dca8"
+      },
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 640,
+       "s": 1.5,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 650,
+       "s": 1.4,
+       "col": "#fff8ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.35,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#3a7a54",
+       "flowers": "#ffd0e0"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#3a7a54",
+       "flowers": "#ffe8b0"
+      }
+     ]
+    }
+   ],
+   "note": "medium pull_out: Mohini beckons with an open hand and a bright smile, her sari swaying in a dance pose.",
+   "vert": {
+    "focus": "mohini"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s29",
+   "at": {
+    "t": 73.02,
+    "word": "Then"
+   },
+   "cues": [
+    "he",
+    "head"
+   ],
+   "bg": {
+    "k": "vaikuntha",
+    "sx": 640,
+    "sy": 250
+   },
+   "figs": [
+    {
+     "who": "mohini",
+     "x": 420,
+     "y": 690,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "dance",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "pose": "headtouch",
+       "emo": "joy"
+      }
+     ]
+    },
+    {
+     "who": "bhasmasura",
+     "x": 860,
+     "y": 690,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "dance",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.4,
+       "pose": "headtouch",
+       "emo": "pride"
+      }
+     ],
+     "hand": 1
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#fff0d4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.2,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.0,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 0.9,
+       "w": 200,
+       "h": 120,
+       "col": "#d8b88a",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 470,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#f2dca8"
+      },
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 640,
+       "s": 1.5,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 650,
+       "s": 1.4,
+       "col": "#fff8ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.35,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#3a7a54",
+       "flowers": "#ffd0e0"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#3a7a54",
+       "flowers": "#ffe8b0"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot static: Stacked: Mohini above puts her hand on her head in the dance; below the demon copies her and touches his own head with his glowing hand.",
+   "vert": {
+    "mode": "stack",
+    "stack": [
+     "mohini",
+     "bhasmasura"
+    ]
+   },
+   "tr": "wipe"
+  },
+  {
+   "id": "s30",
+   "at": {
+    "t": 76.0,
+    "word": "Mohini"
+   },
+   "cues": [
+    "laughed",
+    "ash"
+   ],
+   "bg": {
+    "k": "vaikuntha",
+    "sx": 640,
+    "sy": 250
+   },
+   "figs": [
+    {
+     "who": "mohini",
+     "x": 570,
+     "y": 568,
+     "s": 0.85,
+     "flip": 1,
+     "pose": "dance2",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.4,
+       "emo": "joy"
+      }
+     ],
+     "spin": 0.6
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ash_pile",
+     "x": 700,
+     "y": 700,
+     "w": 300,
+     "alpha": 1,
+     "par": 1.0,
+     "h": 1,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "embers",
+     "x": 700,
+     "y": 580,
+     "w": 260,
+     "alpha": 0.5,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#fff0d4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.2,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.0,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 0.9,
+       "w": 200,
+       "h": 120,
+       "col": "#d8b88a",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 470,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#f2dca8"
+      },
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 640,
+       "s": 1.5,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 650,
+       "s": 1.4,
+       "col": "#fff8ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.35,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#3a7a54",
+       "flowers": "#ffd0e0"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#3a7a54",
+       "flowers": "#ffe8b0"
+      }
+     ]
+    }
+   ],
+   "note": "medium orbit: Mohini spins in a joyful dance beside a heap of grey ash where the demon stood, and grey flakes drift in the golden light.",
+   "vert": {
+    "x": 640,
+    "focus": "mohini"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s31",
+   "at": {
+    "t": 78.9,
+    "word": "Shiva"
+   },
+   "cues": [
+    "gift",
+    "even",
+    "him"
+   ],
+   "bg": {
+    "k": "vaikuntha",
+    "sx": 640,
+    "sy": 250
+   },
+   "figs": [
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 612,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "fear",
+     "mood": {
+      "lx": -0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "surprise"
+      },
+      {
+       "c": 2,
+       "d": 0.6,
+       "emo": "calm"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "embers",
+     "x": 500,
+     "y": 500,
+     "w": 240,
+     "alpha": 0.5,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#fff0d4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.2,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.0,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 0.9,
+       "w": 200,
+       "h": 120,
+       "col": "#d8b88a",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 470,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#f2dca8"
+      },
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 640,
+       "s": 1.5,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 650,
+       "s": 1.4,
+       "col": "#fff8ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.35,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#3a7a54",
+       "flowers": "#ffd0e0"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#3a7a54",
+       "flowers": "#ffe8b0"
+      }
+     ]
+    }
+   ],
+   "note": "medium dolly_left: Shiva stands with a worried face looking back at the empty path, one hand open, and a faint grey spark glows in the air where the gift hung.",
+   "vert": {
+    "focus": "shiva"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s32",
+   "at": {
+    "t": 82.5,
+    "word": "Vishnu"
+   },
+   "cues": [
+    "saved",
+    "dance"
+   ],
+   "bg": {
+    "k": "vaikuntha",
+    "sx": 640,
+    "sy": 250
+   },
+   "figs": [
+    {
+     "who": "shiva",
+     "x": 545,
+     "y": 565,
+     "s": 0.82,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 1,
+       "d": 0.5,
+       "emo": "joy"
+      }
+     ]
+    },
+    {
+     "who": "vishnu",
+     "x": 735,
+     "y": 565,
+     "s": 0.82,
+     "flip": -1,
+     "pose": "open",
+     "emo": "joy",
+     "mood": {
+      "lx": 0.8
+     },
+     "acts": [
+      {
+       "c": 0,
+       "d": 0.5,
+       "emo": "joy",
+       "mood": {
+        "smile": 0.8
+       }
+      }
+     ]
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "glow",
+     "x": 640,
+     "y": 300,
+     "r": 300,
+     "rgb": "255,214,140",
+     "ga": 0.45,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "warm",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.5,
+     "haze": "#fff0d4",
+     "items": [
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 230,
+       "s": 1.2,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "cloud",
+       "x": 800,
+       "y": 270,
+       "s": 1.0,
+       "col": "#fff4dc"
+      },
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 0.9,
+       "w": 200,
+       "h": 120,
+       "col": "#d8b88a",
+       "snow": false
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.15,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 470,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#f2dca8"
+      },
+      {
+       "o": "cloud",
+       "x": 430,
+       "y": 640,
+       "s": 1.5,
+       "col": "#fff8ec"
+      },
+      {
+       "o": "cloud",
+       "x": 850,
+       "y": 650,
+       "s": 1.4,
+       "col": "#fff8ec"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.35,
+     "blur": 2,
+     "items": [
+      {
+       "o": "shrub",
+       "x": 450,
+       "y": 752,
+       "s": 1.5,
+       "col": "#3a7a54",
+       "flowers": "#ffd0e0"
+      },
+      {
+       "o": "shrub",
+       "x": 830,
+       "y": 752,
+       "s": 1.4,
+       "col": "#3a7a54",
+       "flowers": "#ffe8b0"
+      }
+     ]
+    }
+   ],
+   "note": "two_shot pull_out: Vishnu and Shiva stand together in golden light, Vishnu with a calm smile and Shiva relaxed with a thankful face.",
+   "vert": {
+    "x": 640,
+    "focus": "vishnu"
+   },
+   "dx": 0
+  }
+ ]
+}

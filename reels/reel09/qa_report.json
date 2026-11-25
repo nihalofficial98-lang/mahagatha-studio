@@ -1,0 +1,48 @@
+{
+ "episode": "reel09",
+ "frames": 32,
+ "pass": true,
+ "checked": "all 32 frames opened on contact sheets sheet_00..05 after two rounds (s07-s12, s29, s30 re-checked); title card 'Why Shiva Ran' drawn from frame 0 (full question title kept in reel.json full_title); hero faces solved to 43-52% of the height above the subtitle box; subtitles = reels/build/reel09/words.json (validator 0 errors; 2 word differences vs the script: spoken '10' for 'ten'); 3 depth planes in every shot; no FX_ERRORS/PAGEERR, cue misses []; no hearts/stars/sparkles; no video, no APPROVED.",
+ "issues": [
+  {
+   "shot": "s09",
+   "check": "story",
+   "problem": "Vrikasura's sword at his neck sits behind the subtitle box and is small; the seated selfcut pose is low in the frame",
+   "owner": "action-director",
+   "status": "accepted",
+   "fix": "readable with the voice; sword is visible just under his chin"
+  },
+  {
+   "shot": "s29",
+   "check": "story",
+   "problem": "Hand-on-head poses are starting at the still time; the demon's ash (ash/ashc) is not shown in the stack, it appears only in s30 as a pile",
+   "owner": "effects-designer",
+   "status": "accepted",
+   "fix": "an ashc cue on 'he.' could be added if the owner wants the crumble on screen"
+  },
+  {
+   "shot": "s05",
+   "check": "story",
+   "problem": "The 'Vrikasura' name plate is still fading in at the still time",
+   "owner": "effects-designer",
+   "status": "accepted",
+   "fix": "fully visible in the video"
+  },
+  {
+   "shot": "s04/s18",
+   "check": "framing",
+   "problem": "Vishnu / Bhasmasura busts are big close-ups with shoulders filling the width",
+   "owner": "cinematographer",
+   "status": "accepted",
+   "fix": "intended close-ups"
+  },
+  {
+   "shot": "s21",
+   "check": "story",
+   "problem": "'run' pose reads as a stride, not a sprint; there is no back view or true running choreography",
+   "owner": "character-designer",
+   "status": "accepted",
+   "fix": "dust and the pan carry the speed"
+  }
+ ]
+}
