@@ -281,7 +281,7 @@ def battlefield(dur,seed):
         cr=hp(rng.standard_normal(L),1200)*np.exp(-tt*25)*.5     # sharp crack at the start
         a=int(x*SR);e=min(L,n-a);th[a:a+e]+=(r+cr)[:e]*np.minimum(1,tt[:e]*30);x+=rng.uniform(9,15)
     for v in(sw,wl,th):v/=np.max(np.abs(v))+1e-9
-    mix=base*.75+sw*.3+reverb(sw,1.2)*.15+wl*.28+th*.7
+    mix=base*.8+th*.7   # drums + thunder only
     mix*=np.minimum(1,np.minimum(t/1.5,(dur-t)/3));return np.tanh(mix*1.2)/np.max(np.abs(np.tanh(mix*1.2)))
 def run(reel,seed):
     src=f'{R}/renders/{reel}_1080x1920.mp4';out=f'{R}/renders/{reel}_bgm_1080x1920.mp4'
