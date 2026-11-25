@@ -52,7 +52,7 @@ Bala, the generous demon, gave his life in a fire ritual. His burned body turned
 And it began to slip.
 
 **B11** [calm]
-The gods stared. They had come to celebrate a victory over a demon. Now his body was the greatest wonder in heaven. The demon they had feared had a body this wonderful! They remembered the voice: the most precious store in the universe. They tried to carry it home at any cost. They tightened their grip. But it was slipping.
+The gods stared. They had come to celebrate a victory over a demon. Now his body was the greatest wonder in heaven. The demon they had feared had a body this wonderful! They remembered the voice: the most precious things in the universe. They tried to carry it home at any cost. They tightened their grip. But it was slipping.
 
 **B12** [mysterious]
 It slipped from their hands and fell towards the earth. As it fell, cracks ran through it. Before anyone could understand, it had shattered. The gods watched from above, helpless, as the pieces tore through the clouds and rained down.
