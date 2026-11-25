@@ -1,11 +1,11 @@
 # Reel 8: How Did Vishnu Lose His Head? (story 53)
 
 ## Hook (first lines, read first)
-- Context: Vishnu lay asleep, his chin on his bow.
-- Lean: Termites were gnawing the bowstring under his face, and every one of them was a god.
+- Context: Vishnu lay asleep with his chin on his bow.
+- Lean: Termites were chewing the bowstring under his face, and every one of them was a god.
 - Snapback: How did Vishnu lose his head?
 
-**Spoken:** Vishnu lay asleep, his chin on his bow. Termites were gnawing the bowstring under his face, and every one of them was a god. How did Vishnu lose his head?
+**Spoken:** Vishnu lay asleep with his chin on his bow. Termites were chewing the bowstring under his face, and every one of them was a god. How did Vishnu lose his head?
 
 **Question:** How Did Vishnu Lose His Head?
 **Answer:** By accident. The gods, who needed him awake for a yagna, turned into termites and gnawed his bowstring. It snapped and cut off his head, and the loss brought back the horse-headed Hayagriva, the one god who could kill the demon.
@@ -20,26 +20,26 @@
 - Snapback: How did Vishnu lose his head?
 
 ## Tagged narration
-[curious] Vishnu lay asleep, his chin on his bow. Termites were gnawing the bowstring under his face, and every one of them was a god. How did Vishnu lose his head?
-[calm] Vishnu, the Preserver of the world, had fought one demon for sixteen thousand years. His mace came back and smashed his chariot. The demon laughed. "I have been blessed by a divine one. Only he who knows my secret can slay me."
-[calm] Vishnu went home, exhausted, and slept. The gods, led by Brahma the Creator, needed him awake for a yagna, a fire ritual, because their own powers had failed against the demon. Brahma had an idea. If the bowstring snapped, the sound would shake the cosmos.
-[firm] The gods gnawed. Thinner and thinner. Faster and faster.
+[curious] Vishnu lay asleep with his chin on his bow. Termites were chewing the bowstring under his face, and every one of them was a god. How did Vishnu lose his head?
+[calm] Vishnu, who protects the world, had fought one demon for sixteen thousand years. His mace flew back and smashed his chariot. The demon laughed. "A god blessed me. Only the one who knows my secret can kill me."
+[calm] Vishnu went home, very tired, and fell asleep. The gods, led by Brahma, who made the world, needed him awake for a yagna, a fire prayer. Their own powers had failed against the demon. Brahma had an idea. If the bowstring snapped, the sound would shake the whole sky.
+[firm] So the gods chewed. Thinner and thinner. Faster and faster.
 [firm] Twang. The string whipped loose and cut off Vishnu's head. It rolled away. His eyes were still closed. "What have we done?"
-[curious] Then Lakshmi, his wife, walked in, her feet leaving red prints. "Forgive me," she said. The demon had prayed to her so devotedly that she had blessed him. That was why he was unbeatable. He could die only at the hands of a god with a horse's head.
-[calm] "That's why! That's why!" Lakshmi nodded. "Get the head of a horse. Sri Hari shall be Hayagriva again."
-[curious] Soon a horse-headed Vishnu neighed, and the demon fell silent. The gods had beheaded Vishnu by mistake, trying to wake him. And that mistake gave them the one god who could kill the demon.
+[curious] Then Lakshmi, his wife, walked in. Her feet left red marks. "Forgive me," she said. The demon had prayed to her so hard that she gave him a gift. He could die only at the hands of a god with a horse's head.
+[calm] "That's why!" the gods cried. Lakshmi said, "Get the head of a horse. Vishnu will be Hayagriva again, the horse-headed god."
+[curious] Soon horse-headed Vishnu neighed, and the demon fell silent. The gods had cut off Vishnu's head by mistake, trying to wake him. And that mistake gave them the one god who could kill the demon.
 
-**Length:** 248 words (tags excluded), about 99 s at 0.40 s/word.
+**Length:** 249 words (tags excluded), about 100 s at 0.40 s/word.
 
 ## Plain narration
-Vishnu lay asleep, his chin on his bow. Termites were gnawing the bowstring under his face, and every one of them was a god. How did Vishnu lose his head?
-Vishnu, the Preserver of the world, had fought one demon for sixteen thousand years. His mace came back and smashed his chariot. The demon laughed. "I have been blessed by a divine one. Only he who knows my secret can slay me."
-Vishnu went home, exhausted, and slept. The gods, led by Brahma the Creator, needed him awake for a yagna, a fire ritual, because their own powers had failed against the demon. Brahma had an idea. If the bowstring snapped, the sound would shake the cosmos.
-The gods gnawed. Thinner and thinner. Faster and faster.
+Vishnu lay asleep with his chin on his bow. Termites were chewing the bowstring under his face, and every one of them was a god. How did Vishnu lose his head?
+Vishnu, who protects the world, had fought one demon for sixteen thousand years. His mace flew back and smashed his chariot. The demon laughed. "A god blessed me. Only the one who knows my secret can kill me."
+Vishnu went home, very tired, and fell asleep. The gods, led by Brahma, who made the world, needed him awake for a yagna, a fire prayer. Their own powers had failed against the demon. Brahma had an idea. If the bowstring snapped, the sound would shake the whole sky.
+So the gods chewed. Thinner and thinner. Faster and faster.
 Twang. The string whipped loose and cut off Vishnu's head. It rolled away. His eyes were still closed. "What have we done?"
-Then Lakshmi, his wife, walked in, her feet leaving red prints. "Forgive me," she said. The demon had prayed to her so devotedly that she had blessed him. That was why he was unbeatable. He could die only at the hands of a god with a horse's head.
-"That's why! That's why!" Lakshmi nodded. "Get the head of a horse. Sri Hari shall be Hayagriva again."
-Soon a horse-headed Vishnu neighed, and the demon fell silent. The gods had beheaded Vishnu by mistake, trying to wake him. And that mistake gave them the one god who could kill the demon.
+Then Lakshmi, his wife, walked in. Her feet left red marks. "Forgive me," she said. The demon had prayed to her so hard that she gave him a gift. He could die only at the hands of a god with a horse's head.
+"That's why!" the gods cried. Lakshmi said, "Get the head of a horse. Vishnu will be Hayagriva again, the horse-headed god."
+Soon horse-headed Vishnu neighed, and the demon fell silent. The gods had cut off Vishnu's head by mistake, trying to wake him. And that mistake gave them the one god who could kill the demon.
 
 ## Source lines (story 53)
 1. Hook: "battling a demon for sixteen thousand years and still not conquered him"; the gods, led by Brahma, "resolved now to conduct a yagna"; the string "severed Vishnu's head". "Preserver" is the source's own epithet for Vishnu.

@@ -1,11 +1,11 @@
 # Reel 10: A Mother Prayed 100 Years for a Son to Kill Indra. How Did Indra Survive? (story 29)
 
 ## Hook (first lines, read first)
-- Context: One mother spent a hundred years growing a son to kill a god.
-- Lean: Three days were left. Then Indra slipped inside her womb.
-- Snapback: How did Indra survive?
+- Context: A mother prayed for a hundred years for a son who would kill the king of the gods.
+- Lean: With three days left, Indra did something terrible and cut the unborn child apart.
+- Snapback: What he cut could not be killed. So how did Indra survive?
 
-**Spoken:** One mother spent a hundred years growing a son to kill a god. Three days were left. Then Indra slipped inside her womb. How did Indra survive?
+**Spoken:** A mother prayed for a hundred years for a son who would kill the king of the gods. With three days left, Indra did something terrible and cut the unborn child apart. What he cut could not be killed. So how did Indra survive?
 
 **Question:** A Mother Prayed 100 Years for a Son to Kill Indra. How Did Indra Survive?
 **Answer:** Indra cut the unborn child into seven pieces, then each into seven more. The pieces lived and were born as the forty-nine Marutas, his companions, so Diti's wish turned out differently.
@@ -16,28 +16,28 @@
 
 ## Alternate hook
 - Context: Indra, king of the gods, was afraid of an unborn child.
-- Lean: The child had been growing for a hundred years, with one purpose: to kill him.
-- Snapback: How did Indra survive?
+- Lean: It had grown for a hundred years, with one goal: to kill him.
+- Snapback: With three days left, he struck. How did Indra survive?
 
 ## Tagged narration
-[curious] One mother spent a hundred years growing a son to kill a god. Three days were left. Then Indra slipped inside her womb. How did Indra survive?
-[calm] The mother was Diti. Vishnu had killed her sons Hiranyaksha and Hiranyakashipu. The gods, under Indra's command, had slaughtered countless more. She asked her husband, Kashyapa, for a son who would kill Indra. Kashyapa set strict rules. A hundred years of purity. Never lie down without washing her feet. If she failed, her son would befriend Indra.
-[firm] Indra lurked outside her hut, waiting for one mistake. There was none. Her austerities made her womb a fortress. Her belly grew. His end came closer. He began to write his own elegy.
-[curious] Then, three days from the end, Diti, exhausted, fell asleep without washing her feet. Indra leapt.
-[firm] He entered her womb. His Vajra flashed. Seven pieces. He laughed. Then he choked. The pieces were alive. They wailed. "Ma ruda!" he shouted. "Don't cry!" They only grew louder. He cut each piece into seven more. Still alive. Still louder.
-[calm] Diti woke. Indra fled. She knew she had lost. She gave birth to forty-nine children. They were not his killers. They were his companions, as Kashyapa had decreed. Since Indra had shouted "Ma ruda," they were called the Marutas, the storm gods.
-[curious] That is how Indra survived. Diti's son could not be killed, only multiplied, and all forty-nine stood beside him.
+[curious] A mother prayed for a hundred years for a son who would kill the king of the gods. With three days left, Indra did something terrible and cut the unborn child apart. What he cut could not be killed. So how did Indra survive?
+[calm] The mother was Diti. Vishnu had killed her sons Hiranyaksha and Hiranyakashipu. She asked her husband, the sage Kashyapa, for a son who would kill Indra. Kashyapa gave strict rules. Live a pure life for a hundred years. Never lie down without washing your feet. If she failed, her son would be Indra's friend.
+[firm] Indra hid near her hut, waiting for one mistake. There was none. Her prayers kept her womb safe like a fort. Her belly grew. His end came closer.
+[curious] Then, three days before the birth, Diti was so tired that she fell asleep without washing her feet. Indra jumped.
+[firm] He went into her womb. His Vajra, his thunder weapon, flashed. Seven pieces. Then he stopped. The pieces were alive. They cried. "Ma ruda!" he shouted. "Don't cry!" They only cried louder. He cut each piece into seven more. Still alive. Still louder.
+[calm] Diti woke up. Indra ran away. She gave birth to forty-nine children. They did not kill Indra. They became his friends, as Kashyapa had said. Because Indra shouted "Ma ruda," they were called the Marutas, the storm gods.
+[curious] That is how Indra survived. Diti's son could not be killed, only made into many, and all forty-nine stood beside him.
 
-**Length:** 235 words (tags excluded), about 94 s at 0.40 s/word.
+**Length:** 248 words (tags excluded), about 99 s at 0.40 s/word.
 
 ## Plain narration
-One mother spent a hundred years growing a son to kill a god. Three days were left. Then Indra slipped inside her womb. How did Indra survive?
-The mother was Diti. Vishnu had killed her sons Hiranyaksha and Hiranyakashipu. The gods, under Indra's command, had slaughtered countless more. She asked her husband, Kashyapa, for a son who would kill Indra. Kashyapa set strict rules. A hundred years of purity. Never lie down without washing her feet. If she failed, her son would befriend Indra.
-Indra lurked outside her hut, waiting for one mistake. There was none. Her austerities made her womb a fortress. Her belly grew. His end came closer. He began to write his own elegy.
-Then, three days from the end, Diti, exhausted, fell asleep without washing her feet. Indra leapt.
-He entered her womb. His Vajra flashed. Seven pieces. He laughed. Then he choked. The pieces were alive. They wailed. "Ma ruda!" he shouted. "Don't cry!" They only grew louder. He cut each piece into seven more. Still alive. Still louder.
-Diti woke. Indra fled. She knew she had lost. She gave birth to forty-nine children. They were not his killers. They were his companions, as Kashyapa had decreed. Since Indra had shouted "Ma ruda," they were called the Marutas, the storm gods.
-That is how Indra survived. Diti's son could not be killed, only multiplied, and all forty-nine stood beside him.
+A mother prayed for a hundred years for a son who would kill the king of the gods. With three days left, Indra did something terrible and cut the unborn child apart. What he cut could not be killed. So how did Indra survive?
+The mother was Diti. Vishnu had killed her sons Hiranyaksha and Hiranyakashipu. She asked her husband, the sage Kashyapa, for a son who would kill Indra. Kashyapa gave strict rules. Live a pure life for a hundred years. Never lie down without washing your feet. If she failed, her son would be Indra's friend.
+Indra hid near her hut, waiting for one mistake. There was none. Her prayers kept her womb safe like a fort. Her belly grew. His end came closer.
+Then, three days before the birth, Diti was so tired that she fell asleep without washing her feet. Indra jumped.
+He went into her womb. His Vajra, his thunder weapon, flashed. Seven pieces. Then he stopped. The pieces were alive. They cried. "Ma ruda!" he shouted. "Don't cry!" They only cried louder. He cut each piece into seven more. Still alive. Still louder.
+Diti woke up. Indra ran away. She gave birth to forty-nine children. They did not kill Indra. They became his friends, as Kashyapa had said. Because Indra shouted "Ma ruda," they were called the Marutas, the storm gods.
+That is how Indra survived. Diti's son could not be killed, only made into many, and all forty-nine stood beside him.
 
 ## Source lines (story 29)
 1. Hook and setup: Diti asks "A son who shall kill Indra"; Hiranyaksha, Hiranyakashipu "killed by Vishnu"; "Indra was also his son, born to him and Diti's sister, Aditi".

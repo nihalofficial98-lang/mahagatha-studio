@@ -21,22 +21,22 @@
 
 ## Tagged narration
 [curious] A crocodile held the leg of Gajendra, king of the elephants. His herd looked at him, then walked away. Alone, bleeding, he lifted a white lotus and prayed to Vishnu. Then a voice called him by another name. Who was Gajendra before Vishnu saved him?
-[calm] Gajendra had come to a lotus pond with his herd. The crocodile's teeth dug toward the bone. The herd knew a crocodile is stronger in water. Gajendra, devoted to Vishnu, whispered, "I surrender, Sri Hari. There is nothing more I can do. Protect me, or free me if my hour has come."
-[curious] The morning turned dark. The sun vanished. A blue form spread across the sky. A blue finger held the Sudarshana disc. It flew and cut off the crocodile's head.
-[calm] Vishnu smiled. "Have you learnt your lesson, Indradyumna?"
-[firm] Gajendra froze. Indradyumna? The name rippled through his mind like a stone in a pond. Memories rose. He had been a human king. The sage Agastya had come to his court. The king, lost in thought, had not even opened his eyes to greet him. The sage cursed him to be born as an elephant, to learn to surrender.
-[calm] "The crocodile," Vishnu said, "was a gandharva named Huhu, who insulted the sage Deval. And you?" Gajendra bowed to the ground.
+[calm] Gajendra had come to a lotus pond with his herd. The crocodile's teeth dug toward the bone. The herd knew a crocodile is stronger in water. Gajendra loved Vishnu. He whispered, "I give up, Sri Hari. There is nothing more I can do. Protect me, or free me if my time has come."
+[curious] The morning turned dark. The sun disappeared. A blue form spread across the sky. A blue finger held the Sudarshana, Vishnu's spinning disc. It flew and cut off the crocodile's head.
+[calm] Vishnu smiled. "Have you learned your lesson, Indradyumna?"
+[firm] Gajendra froze. Indradyumna? The name woke old memories. He had once been a human king. A sage called Agastya came to his court. The king was deep in thought and did not even open his eyes to greet him. The sage cursed him to be born as an elephant, to learn to surrender.
+[calm] "The crocodile," Vishnu said, "was a gandharva, a heavenly singer, named Huhu. He had insulted the sage Deval. And you?" Gajendra bowed to the ground.
 [curious] Before he was Gajendra, he was King Indradyumna, too lost in thought to greet a sage. The curse was meant to teach him to surrender. At the pond, he did.
 
-**Length:** 244 words (tags excluded), about 98 s at 0.40 s/word.
+**Length:** 245 words (tags excluded), about 98 s at 0.40 s/word.
 
 ## Plain narration
 A crocodile held the leg of Gajendra, king of the elephants. His herd looked at him, then walked away. Alone, bleeding, he lifted a white lotus and prayed to Vishnu. Then a voice called him by another name. Who was Gajendra before Vishnu saved him?
-Gajendra had come to a lotus pond with his herd. The crocodile's teeth dug toward the bone. The herd knew a crocodile is stronger in water. Gajendra, devoted to Vishnu, whispered, "I surrender, Sri Hari. There is nothing more I can do. Protect me, or free me if my hour has come."
-The morning turned dark. The sun vanished. A blue form spread across the sky. A blue finger held the Sudarshana disc. It flew and cut off the crocodile's head.
-Vishnu smiled. "Have you learnt your lesson, Indradyumna?"
-Gajendra froze. Indradyumna? The name rippled through his mind like a stone in a pond. Memories rose. He had been a human king. The sage Agastya had come to his court. The king, lost in thought, had not even opened his eyes to greet him. The sage cursed him to be born as an elephant, to learn to surrender.
-"The crocodile," Vishnu said, "was a gandharva named Huhu, who insulted the sage Deval. And you?" Gajendra bowed to the ground.
+Gajendra had come to a lotus pond with his herd. The crocodile's teeth dug toward the bone. The herd knew a crocodile is stronger in water. Gajendra loved Vishnu. He whispered, "I give up, Sri Hari. There is nothing more I can do. Protect me, or free me if my time has come."
+The morning turned dark. The sun disappeared. A blue form spread across the sky. A blue finger held the Sudarshana, Vishnu's spinning disc. It flew and cut off the crocodile's head.
+Vishnu smiled. "Have you learned your lesson, Indradyumna?"
+Gajendra froze. Indradyumna? The name woke old memories. He had once been a human king. A sage called Agastya came to his court. The king was deep in thought and did not even open his eyes to greet him. The sage cursed him to be born as an elephant, to learn to surrender.
+"The crocodile," Vishnu said, "was a gandharva, a heavenly singer, named Huhu. He had insulted the sage Deval. And you?" Gajendra bowed to the ground.
 Before he was Gajendra, he was King Indradyumna, too lost in thought to greet a sage. The curse was meant to teach him to surrender. At the pond, he did.
 
 ## Source lines (story 22)

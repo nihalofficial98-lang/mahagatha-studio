@@ -1,11 +1,11 @@
 # Reel 12: Why Would Harishchandra Not Break His Word, Even for His Dead Son? (story 61 (context: 60))
 
 ## Hook (first lines, read first)
-- Context: Night, at a cremation ground. A king held his dead son in his arms.
+- Context: Night, at a place where the dead are burned. A king held his dead son in his arms.
 - Lean: His wife begged him to break his word, just once. He said no.
 - Snapback: Why would Harishchandra not break his word, even for his dead son?
 
-**Spoken:** Night, at a cremation ground. A king held his dead son in his arms. His wife begged him to break his word, just once. He said no. Why would Harishchandra not break his word, even for his dead son?
+**Spoken:** Night, at a place where the dead are burned. A king held his dead son in his arms. His wife begged him to break his word, just once. He said no. Why would Harishchandra not break his word, even for his dead son?
 
 **Question:** Why Would Harishchandra Not Break His Word, Even for His Dead Son?
 **Answer:** He had once failed to keep a vow to Varuna, paid for it, and sworn never again. So he refused to cremate Rohita without the fee, until Vishwamitra gave everything back.
@@ -20,26 +20,26 @@
 - Snapback: Why would Harishchandra not break his word, even for his dead son?
 
 ## Tagged narration
-[curious] Night, at a cremation ground. A king held his dead son in his arms. His wife begged him to break his word, just once. He said no. Why would Harishchandra not break his word, even for his dead son?
-[calm] He was king of Ayodhya. The god Varuna had once given him a son, on one condition: sacrifice the boy. The king kept finding excuses. Afterwards he swore never to break his word again.
-[calm] Then a spirit made him insult the sage Vishwamitra. To atone, he promised the sage anything. "Your throne." "All yours." "Your wealth." "All yours."
-[firm] The sage demanded a fee, dakshina. In Kashi, they found no work. "Sell me," said his wife, Taramati. He refused. "Do it or I shall kill myself." He sold her. It was only half. "Sell yourself too," said the sage. The buyer was a Chandala, a man who burned the dead.
-[curious] One night a woman came with a dead child and no money for the fee. It was Taramati. The boy was Rohita, bitten by a snake.
-[firm] "Your word!" she screamed. "You can surely break it for our Rohita." "I did that once," he wept, "and I am still paying." She snatched his axe to end her life.
-[calm] "Taramati!" Vishwamitra called. Rohita ran to her, alive. He gave back everything. The Chandala was Yama.
-[curious] He would not break his word because he had broken it once, and sworn never again. That is why his name means truth.
+[curious] Night, at a place where the dead are burned. A king held his dead son in his arms. His wife begged him to break his word, just once. He said no. Why would Harishchandra not break his word, even for his dead son?
+[calm] He was king of Ayodhya. Varuna had once given him a son, on one condition: give the boy as a sacrifice. The king delayed. Later he promised never to break his word again.
+[calm] Then a spirit made him insult the sage Vishwamitra. To say sorry, the king promised the sage anything. "Your throne." "It is yours."
+[firm] Then the sage asked for a fee. They found no work. "Sell me," said his wife, Taramati. He said no. "Do it, or I will kill myself." He sold her. It was not enough. "Sell yourself too," said the sage. The buyer was a man who burned dead bodies.
+[curious] One night, a woman came with a dead child and no money for the fee. It was Taramati. The boy was Rohita, bitten by a snake.
+[firm] "Your word!" she screamed. "Break it for our Rohita." "I did that once," he cried, "and I am still paying." She grabbed his axe to kill herself.
+[calm] "Taramati!" Vishwamitra called. Rohita ran to her, alive. The sage gave back everything. The man who burned the dead was Yama, the god of death.
+[curious] Harishchandra would not break his word because he had broken it once and promised never again. That is why his name means truth.
 
-**Length:** 244 words (tags excluded), about 98 s at 0.40 s/word.
+**Length:** 249 words (tags excluded), about 100 s at 0.40 s/word.
 
 ## Plain narration
-Night, at a cremation ground. A king held his dead son in his arms. His wife begged him to break his word, just once. He said no. Why would Harishchandra not break his word, even for his dead son?
-He was king of Ayodhya. The god Varuna had once given him a son, on one condition: sacrifice the boy. The king kept finding excuses. Afterwards he swore never to break his word again.
-Then a spirit made him insult the sage Vishwamitra. To atone, he promised the sage anything. "Your throne." "All yours." "Your wealth." "All yours."
-The sage demanded a fee, dakshina. In Kashi, they found no work. "Sell me," said his wife, Taramati. He refused. "Do it or I shall kill myself." He sold her. It was only half. "Sell yourself too," said the sage. The buyer was a Chandala, a man who burned the dead.
-One night a woman came with a dead child and no money for the fee. It was Taramati. The boy was Rohita, bitten by a snake.
-"Your word!" she screamed. "You can surely break it for our Rohita." "I did that once," he wept, "and I am still paying." She snatched his axe to end her life.
-"Taramati!" Vishwamitra called. Rohita ran to her, alive. He gave back everything. The Chandala was Yama.
-He would not break his word because he had broken it once, and sworn never again. That is why his name means truth.
+Night, at a place where the dead are burned. A king held his dead son in his arms. His wife begged him to break his word, just once. He said no. Why would Harishchandra not break his word, even for his dead son?
+He was king of Ayodhya. Varuna had once given him a son, on one condition: give the boy as a sacrifice. The king delayed. Later he promised never to break his word again.
+Then a spirit made him insult the sage Vishwamitra. To say sorry, the king promised the sage anything. "Your throne." "It is yours."
+Then the sage asked for a fee. They found no work. "Sell me," said his wife, Taramati. He said no. "Do it, or I will kill myself." He sold her. It was not enough. "Sell yourself too," said the sage. The buyer was a man who burned dead bodies.
+One night, a woman came with a dead child and no money for the fee. It was Taramati. The boy was Rohita, bitten by a snake.
+"Your word!" she screamed. "Break it for our Rohita." "I did that once," he cried, "and I am still paying." She grabbed his axe to kill herself.
+"Taramati!" Vishwamitra called. Rohita ran to her, alive. The sage gave back everything. The man who burned the dead was Yama, the god of death.
+Harishchandra would not break his word because he had broken it once and promised never again. That is why his name means truth.
 
 ## Source lines (story 61 (context: 60))
 1. Vow (story 60): Harishchandra delayed sacrificing Rohita to Varuna; "I failed to uphold my own principle ... Henceforth, every resolve I make shall be dearer to me than my life ... Any cost." Context only, kept to one sentence.
