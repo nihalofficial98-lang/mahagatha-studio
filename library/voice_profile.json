@@ -2,11 +2,18 @@
  "_why": "Narration pace per language, in seconds of finished audio per SCRIPT word (pauses included); studio/script_check.py turns word counts into minutes with it. From EP07 English is the primary language (episode.json \"language\"). IMPORTANT: the English 0.40 s/word is an ESTIMATE, not a measurement. After the first English recording run: python3 studio/script_check.py 07 --calibrate (add --lang hi for the Hindi reference) and the number below becomes measured. PACE=<s/word> env still overrides for one run.",
  "primary": "en",
  "en": {
-  "sec_per_word": 0.4,
+  "sec_per_word": 0.336,
   "estimated": true,
   "calibrate_after": "first English recording: python3 studio/script_check.py NN --calibrate",
-  "source": "ESTIMATE (not measured): typical calm documentary narration, ~150 words/min. Replaced automatically by the measured value after --calibrate.",
-  "measurements": [],
+  "source": "measured from 1 recording(s): EP07 0.336",
+  "measurements": [
+   {
+    "ep": "07",
+    "script_words": 1405,
+    "sec": 471.8,
+    "sec_per_word": 0.336
+   }
+  ],
   "beat_words": {
    "short": [
     12,
