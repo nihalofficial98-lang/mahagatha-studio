@@ -1,0 +1,48 @@
+{
+ "episode": "reel15",
+ "frames": 33,
+ "pass": true,
+ "checked": "all 33 frames opened on contact sheets sheet_00..05 (two rounds; s17 stack and the two-figure framing re-checked at full size); title card 'Garuda, Vishnu's Vahana' on frame 000 above Vishnu; hero faces solved to 42-52% of the height and above the subtitle box; subtitles = reels/build/reel15/words.json (validator 0 errors, narration continuity asserted in briefs_gen.py, 0 word differences vs the script; 'amrut' and 'vahana' as spoken); 3 depth planes in every shot; no FX_ERRORS/PAGEERR, cue misses []; no hearts/stars/sparkles; flower_petals removed because it draws the ketaki flower; no video rendered, no APPROVED file.",
+ "issues": [
+  {
+   "shot": "s05",
+   "check": "story",
+   "problem": "The 'Vinata' name plate is still fading in at the still time (55% of the shot)",
+   "owner": "effects-designer",
+   "status": "accepted",
+   "fix": "visible fully in the video"
+  },
+  {
+   "shot": "s16",
+   "check": "story",
+   "problem": "The 'Two boons' name plate is still fading in at the still time",
+   "owner": "effects-designer",
+   "status": "accepted",
+   "fix": "visible fully in the video"
+  },
+  {
+   "shot": "s13",
+   "check": "framing",
+   "problem": "Vishnu head bust is large (fills the width with shoulders)",
+   "owner": "cinematographer",
+   "status": "accepted",
+   "fix": "intended close-up on 'He knew why'"
+  },
+  {
+   "shot": "s30/s33",
+   "check": "story",
+   "problem": "Garuda carrying Vishnu on his back is not built, so 'made him his mount' and the ending show them side by side (Vishnu blessing, Garuda wings spread)",
+   "owner": "character-designer",
+   "status": "open",
+   "fix": "ask Opus for a Garuda+Vishnu carry rig if the owner wants it"
+  },
+  {
+   "shot": "s26",
+   "check": "story",
+   "problem": "Vajra impact flash and the golden feather fall come after the still time; the still shows the Vajra on Garuda's chest",
+   "owner": "effects-designer",
+   "status": "accepted",
+   "fix": "the feather falls on 'golden' in the video"
+  }
+ ]
+}

@@ -47,7 +47,8 @@ def main():
             else:sel.append(int(part))
     tmp=work+'/stills';shutil.rmtree(tmp,ignore_errors=True);os.makedirs(tmp)
     ts=[round(inf[i][1]+inf[i][2]*a.at,2) for i in sel]
-    r=subprocess.run(['node',ROOT+'/studio/still.js',epd+'/shots.json',tm,tmp]+[str(t) for t in ts],env=env,cwd=ROOT,check=True,capture_output=True,text=True)
+    r=subprocess.run(['node',ROOT+'/studio/still.js',epd+'/shots.json',tm,tmp]+[str(t) for t in ts],env=env,cwd=ROOT,capture_output=True,text=True)
+    if r.returncode:print(r.stderr[-2500:],r.stdout[-800:]);sys.exit('still.js failed')
     for l in r.stdout.splitlines():
         if l.startswith(('PAGEERR','CONSOLE','FX_ERRORS')) and l!='FX_ERRORS []':print(l)
     files=[tmp+'/t%s.png'%str(t).rjust(5,'0') if False else None for t in ts]
