@@ -58,7 +58,7 @@ def ashram(night=False,morning=False,near=True,far_dem=False,**bgo):
     bg.update(bgo)
     far=L('far','silhouette forest trees on the far ridge in ember haze',[ST(80,540,.5,420,3),ST(900,540,.45,380,5),ST(1260,540,.5,440,7)],fog=.5,haze='#4a2018' if night else '#6a2e1e')
     if far_dem:far['items'].append(DEM(640,560,.5,16,1500,4,eyes=.8))
-    mid=L('mid','shrubs and a small tulsi bush along the ashram yard',[SH(470,600,.9,'#1e120c'),SH(820,606,.8,'#1e120c')],fog=.2,haze='#3a1a10')
+    mid=L('mid','dark silhouette trees and a low hedge along the ashram yard',[ST(560,600,.55,520,41),ST(1180,600,.6,560,43),SH(820,612,.7,'#120806')],fog=.15,haze='#2a120a')
     out=[far,mid]
     if near:out.append(L('near','dark shrubs in the bottom corners, out of focus',[SH(30,770,1.7),SH(1250,770,1.6)],dark=.6))
     return bg,out
@@ -67,7 +67,7 @@ def window(night=False,x=900,y=640):
     bg.update(dict(sky=NIGHT_SKY,sx=-900,sy=200) if night else dict(sky=MORN_SKY,sx=420,sy=210))
     lay=[L('far','silhouette trees on the ridge behind the ashram',[ST(100,540,.5,420,3),ST(500,540,.42,360,9)],fog=.5,haze='#5a2a1e'),
          L('mid','the dark room behind Devayani\'s window'+(' lit by her oil lamp' if night else ''),[{'o':'winwall','part':'back','x':x,'y':y,'s':1,'lamp':1 if night else 0}],fog=0),
-         L('near','the mud wall of her room with the window cut out, open wooden shutters, thatch eave and a jasmine vine',[{'o':'winwall','x':x,'y':y,'s':1,'lamp':1 if night else 0,'lit':'255,120,60' if night else '255,180,100'}],dark=.08 if not night else .2,blur=0,par=1.0)]
+         L('near','the mud wall of her room with the window cut out, open wooden shutters, thatch eave and a jasmine vine',[{'o':'winwall','x':x,'y':y,'s':1,'lamp':1 if night else 0,'lit':'255,120,60' if night else '255,180,100'}],dark=.08 if not night else .5,darkc='#0a0404',blur=0,par=1.0)]
     return bg,lay
 def room(lamp=1,bx=1080,near=True):
     bg={'k':'kacha_room_night','lamp':lamp,'bx':bx}
@@ -79,7 +79,7 @@ def feast(crowd=True,fire=1,near=True,mid=True):
     bg={'k':'feasthall','fire':fire,'crowd':crowd}
     lay=[L('far','a silhouette army of demons with ember eyes under the fire-lit arches',[DEM(640,560,.62,20,1500,4)],fog=.45,haze=HZ,blur=1.4)]
     if mid:lay.append(L('mid','two packs of horned demon silhouettes left and right',[DEM(200,640,.95,4,360,8),DEM(1080,640,.95,4,360,12)],fog=.12,haze=HZ))
-    if near:lay.append(L('near','huge black demon shoulders and horns in the bottom corners',[DEM(20,850,1.7,2,200,77,eyes=.6),DEM(1270,850,1.6,2,200,91,eyes=.6)],dark=.2,blur=2))
+    if near:lay.append(L('near','huge black demon shoulders and horns in the bottom corners',[DEM(-60,860,1.45,2,180,77,eyes=.6),DEM(1340,860,1.4,2,180,91,eyes=.6)],dark=.2,blur=2))
     return bg,lay
 def forest(night=False,demons=0,smoke=.8,near=True,**bgo):
     bg={'k':'forest','smoke':smoke}
@@ -104,8 +104,8 @@ def battle():
          L('mid','smoke rolling over the battlefield and two demon packs',[SM(640,610,1800,100,'#3a1a10',.6),DEM(1100,680,1.0,3,260,53)],fog=.15,haze=HZ),
          L('near','a broken black tree and rocks in the corners',[ST(-20,800,1.2,900,63,bare=1),{'o':'rock','x':1250,'y':760,'s':1.6,'col':'#1a0c08'}],dark=.7)]
     return bg,lay
-def kailash():
-    bg={'k':'kailash'}
+def kailash():   # Shiva's mountain: the dusk-ember sky of the EP07 look, no huts, snow peaks in the far layer
+    bg={'k':'ashram','fire':False,'lamp':False,'hx':-900,'hx2':2600,'sky':['#0a0406','#2a0e0a','#5a2414','#8a4a24'],'sx':640,'sy':300}
     lay=[L('far','snow peaks of Kailash in a dim ember haze',[{'o':'mountain','x':300,'y':520,'s':1.1,'col':'#6a4a48'},{'o':'mountain','x':1020,'y':520,'s':1.0,'col':'#5a3e40'}],fog=.5,haze='#5a3a34'),
          L('mid','dark rocks at the foot of the peak',[{'o':'rock','x':180,'y':640,'s':1.2,'col':'#3a2a2a'},{'o':'rock','x':1120,'y':640,'s':1.1,'col':'#3a2a2a'}],fog=.2,haze='#2a1a18'),
          L('near','black rocks in the bottom corners',[{'o':'rock','x':30,'y':780,'s':2.0,'col':'#140c0c'},{'o':'rock','x':1260,'y':780,'s':1.8,'col':'#140c0c'}],dark=.6)]
@@ -125,7 +125,7 @@ S(0.08,'close','tele','push_in',C(1.0,1.14,0,0,10,0),'slow push into his calm fa
   'kacha',forest(demons=1,smoke=1),'mysterious dread',
   [F('kacha',640,330,1.25,1,'calm',head=True,mood={'blink':.3},actions=[A('killed',emo='coldsmile',d=.7)])],
   [NAME('Kacha',640,96,'Kacha'),X('embers',640,520,1100,'sparks of the fire that will burn him drift up',par=1.3)],tr='fade')
-S(2.44,'low_angle','wide','tilt_up',C(1.08,1.16,0,0,30,-10),'tilt up the flames that rise around the kneeling boy',
+S(2.44,'low_angle','wide','tilt_up',C(1.3,1.4,0,0,70,40),'tilt up the flames that rise around the kneeling boy',
   'Burned: Kacha will be burned in a fire.',
   'Kacha kneels with eyes closed while a paper fire burns high in front of his knees and smoke rolls past; the demon army waits in the haze.',
   'kacha',forest(demons=1,smoke=1),'dread',
@@ -276,7 +276,7 @@ S(60.25,'medium','normal','dolly_right',C(1.18,1.24,20,60,0,0),'slide toward the
   'shukracharya',ashram(),'blessing',
   [F('kacha',600,676,.8,1,'devotion',pose='kneel',look='shukracharya'),
    F('shukracharya',820,676,.82,-1,'love',pose='hold',look='kacha',actions=[A('tied',tilt=.08)])],
-  [X('sacred_thread',705,480,70,'the sacred thread tied on Kacha\'s wrist',word='thread')])
+  [X('glow',650,560,110,'the warm moment the thread is tied',word='thread',rgb='255,150,70',ga=.4)])
 S(62.76,'insert','tele','push_in',C(1.0,1.1),'push into the knot of the promise',
   'A promise to keep him safe.',
   'The red-gold raksha thread fills the frame on his wrist, its knot glowing; Kacha\'s face beside it looks down at it, calm.',
@@ -295,7 +295,7 @@ S(67.03,'medium','normal','dolly_left',C(1.1,1.18,30,-20,0,0),'drift toward the 
   'kacha',ashram(),'introduction',
   [F('kacha',520,676,.88,1,'calm',talk=.6,look='shukracharya',actions=[A('told',pose='namaste')]),
    F('shukracharya',900,676,.84,-1,'calm',look='kacha',mood={'smile':.3})],
-  [NAME('Kacha',520,110,'name')])
+  [NAME('Kacha',520,110,'told')])
 S(69.54,'wide','normal','pan_left',C(1.12,1.16,80,-140,0,0),'pan from Kacha to the girl watching him',
   'Shukracharya\'s daughter was watching him from the doorway.',
   'In the lit doorway of the hut a young woman in a maroon sari leans and watches Kacha with soft eyes; Kacha, in front, does not see her.',
@@ -307,7 +307,7 @@ S(72.53,'two_shot','normal','push_in',C(1.08,1.16,-40,-40,0,0),'push in on the g
   'Devayani steps out and speaks shyly to Kacha; her name appears above her as Kacha turns and smiles at her.',
   'devayani',ashram(),'shy love',
   [F('devayani',500,676,.86,1,'love',talk=.5,look='kacha'),F('kacha',860,676,.86,-1,'calm',look='devayani',mood={'smile':.5})],
-  [NAME('Devayani',500,110,'name')])
+  [NAME('Devayani',500,110,'told')])
 S(74.50,'close','tele','crane_down',C(1.15,1.24,0,0,-20,10),'drop with her gaze',
   'And she lowered her eyes.',
   'Devayani\'s face in close-up: she lowers her eyes and blushes into a small smile, the jasmine in her hair catching the dusk light.',
@@ -368,8 +368,8 @@ S(99.14,'medium','normal','push_in',C(1.1,1.2,0,0,0,0),'push into the burning de
   'The demons burned a deer in the fire.',
   'A spotted deer is laid down in the flames, darkening as the fire burns high around it; a horned demon watches, grinning.',
   'deer',feast(),'grim',
-  [F('deer',600,650,.82,1,'pain',pose='bow',look=900,filt='brightness(.4) saturate(.4)'),F('asura1',960,690,.8,-1,'joy',look='deer',mood={'laugh':.5})],
-  [X('ember_fire',600,700,280,'the fire burning the deer',word='burned',d=.3)])
+  [F('deer',600,640,.82,1,'pain',pose='bow',look=900,filt='brightness(.75) saturate(.6)'),F('asura1',960,690,.8,-1,'joy',look='deer',mood={'laugh':.5})],
+  [X('ember_fire',600,712,200,'the fire burning the deer',word='burned',d=.3)])
 S(100.21,'insert','tele','crane_down',C(1.1,1.2,0,0,-30,0),'follow the ash falling into the cup',
   'They stirred the deer\'s ashes into the wine cup.',
   'Big in frame, the golden wine cup swirls with grey ash while black flakes drop into it; the plum feaster demon peers at it from the right.',
@@ -436,7 +436,7 @@ S(123.07,'medium','normal','push_in',C(1.04,1.14,0,0,20,20),'push in on the plan
   'In his dark room Kacha sits cross-legged before three small oil lamps, scheming; the words Three stages appear above him.',
   'kacha',room(),'scheming',
   [F('kacha',560,640,.82,1,'scheme',pose='sit',mood={'ly':.6},actions=[A('plan',mood={'smirk':.8,'ly':.3})])],
-  [TEXT('Three stages',640,96,'three','the plan has three stages',50),X('glow',420,600,60,'the first lamp',rgb='255,170,90',ga=.7),X('glow',700,600,60,'the second and third lamps',rgb='255,170,90',ga=.7)],tr='fade')
+  [TEXT('Three stages',640,96,'plan','the plan has three stages',50),X('glow',420,600,60,'the first lamp',rgb='255,170,90',ga=.7),X('glow',700,600,60,'the second and third lamps',rgb='255,170,90',ga=.7)],tr='fade')
 S(124.93,'medium','normal','dolly_left',C(1.16,1.2,40,0,0,0),'slide with his raised hand',
   'Kacha would control two of the stages.',
   'Kacha stands in his room and raises his hand with a sly smile; the numerals I and II appear: the stages he controls.',
@@ -546,7 +546,7 @@ S(169.07,'high_angle','normal','crane_up',C(1.18,1.1,0,0,40,40),'look down on hi
   'Kacha lay awake in the dark.',
   'From above, Kacha lies on his low bed in the dark room, eyes wide open, staring at the ceiling.',
   'kacha',room(bx=640),'sleepless',
-  [F('kacha',640,560,.78,1,'calm',pose='sleep',mat=False,mood={'blink':0,'ly':-.5},actions=[A('awake',mood={'blink':0,'wide':.3})])])
+  [F('kacha',640,540,1.0,1,'calm',pose='sleep',mat=False,mood={'blink':0,'ly':-.5},actions=[A('awake',mood={'blink':0,'wide':.3})])])
 S(170.36,'medium','normal','dolly_right',C(1.06,1.12,-30,30,0,0),'slide past the plotting demons',
   'The demons wanted Kacha dead.',
   'In the dim feast hall two demons whisper over a low fire with red eyes; the brute points out toward Kacha\'s room, murder on his face.',
@@ -884,7 +884,7 @@ S(320.55,'insert','tele','crane_down',C(1.1,1.18,0,0,-20,0),'descend onto the wr
   'He wrote the mantra down.',
   'Seated Shukracharya writes on a glowing palm leaf held in his hand, letters of light appearing on it.',
   'palm leaf',ashram(night=True),'gift',
-  [F('shukracharya',640,660,.94,1,'calm',pose='sit',mood={'ly':.8},talk=.3)],
+  [F('shukracharya',640,680,1.1,1,'calm',pose='sit',mood={'ly':.8},talk=.3)],
   [X('palm_leaf',640,520,320,'the mantra written on a palm leaf',glow=1,word='wrote',d=.3)])
 S(321.98,'two_shot','normal','dolly_right',C(1.06,1.12,-20,30,0,0),'slide from the leaf to his warning finger',
   'He told her to use it once, and then destroy it.',
@@ -907,14 +907,14 @@ S(328.95,'medium','normal','handheld',C(1.12,1.18,0,0,30,30),'the camera shakes 
   'Shukracharya\'s belly began to shake.',
   'The seated guru\'s body shakes violently; dark-red paper blood bursts at his belly.',
   'shukracharya',ashram(night=True),'agony',
-  [F('shukracharya',640,680,.94,1,'pain',pose='sitpray',talk=.5,mood={'blink':1})],
-  [X('blood_splash',650,590,120,'his belly begins to tear',word='belly',d=.3,n=8,spread=.6)],shake=5)
+  [F('shukracharya',640,690,1.15,1,'pain',pose='sitpray',talk=.5,mood={'blink':1})],
+  [X('blood_splash',650,600,130,'his belly begins to tear',word='belly',d=.3,n=8,spread=.6)],shake=5)
 S(330.23,'medium','normal','push_in',C(1.1,1.2,0,0,30,30),'push in as the tearing spreads',
   'Then his chest, his face, his arms.',
   'Blood splashes burst one after another at the guru\'s chest, face and arms as his body shakes and his face twists in pain.',
   'shukracharya',ashram(night=True),'agony',
-  [F('shukracharya',640,680,.94,1,'pain',pose='sitpray',talk=.5,mood={'blink':1,'mouth':.5})],
-  [X('blood_splash',650,520,140,'his chest tears',word='chest',d=.3,n=9),X('blood_splash',640,440,90,'his face tears',word='face',d=.3,n=7),X('blood_splash',520,560,90,'his arms tear',word='arms',d=.3,n=6)],shake=4)
+  [F('shukracharya',640,690,1.15,1,'pain',pose='sitpray',talk=.5,mood={'blink':1,'mouth':.5})],
+  [X('blood_splash',650,545,140,'his chest tears',word='chest',d=.3,n=9),X('blood_splash',625,470,80,'his face tears',word='face',d=.3,n=7),X('blood_splash',500,575,90,'his arms tear',word='arms',d=.3,n=6)],shake=4)
 S(333.31,'close','tele','dutch',C(1.14,1.2,0,0,0,0,0,.04),'tilted frame on the horror at his eye',
   'A finger came out of his eye.',
   'Close on Shukracharya\'s face twisted in pain, a dark-red burst of paper blood spraying from one eye.',
@@ -925,10 +925,10 @@ S(335.18,'medium','normal','pull_out',C(1.16,1.06,0,0,30,20),'pull back as the b
   'A foot came out of his belly.',
   'The seated guru\'s body starts to split open like a torn cocoon, blood spraying from his belly as a figure pushes out.',
   'shukracharya',ashram(night=True),'horror',
-  [F('shukracharya',640,690,.92,1,'pain',pose='sitpray',talk=.4,rised=3.0,engine_cues={'risec':'foot'})],
-  [X('blood_splash',640,600,180,'the belly tears open',word='foot',d=.3,n=10)],shake=3)
+  [F('shukracharya',640,700,1.1,1,'pain',pose='sitpray',talk=.4,rised=3.0,engine_cues={'risec':'foot'})],
+  [X('blood_splash',640,615,190,'the belly tears open',word='foot',d=.3,n=10)],shake=3)
 # ================= B17 Kacha rises out of the guru =================
-GURU_DEAD=lambda x=980,y=600,s=.66,**k:F('shukracharya',x,y,s,1,'pain',pose='sleep',mat=False,mood={'blink':1},look=640,actions=[],**k)
+GURU_DEAD=lambda x=980,y=565,s=.66,**k:F('shukracharya',x,y,s,1,'pain',pose='sleep',mat=False,mood={'blink':1},look=640,actions=[],**k)
 S(337.05,'wide','normal','tilt_up',C(1.06,1.14,0,0,40,0),'tilt up with Kacha as he rises out of the body',
   'Kacha came out of Shukracharya\'s body, covered in blood.',
   'The guru\'s torn body lies on the ground in a pool of dark-red paper blood and Kacha rises straight up out of his chest, bloodied, arms opening; Devayani stares in horror.',
@@ -1217,7 +1217,34 @@ S(470.70,'wide','wide','crane_up',C(1.04,1.0,0,0,0,-30),'rise up and away from t
   'ashram',ashram(night=True),'reflection',
   [F('devayani',380,690,.7,1,'grief',pose='kneel',look=1000),F('kacha',960,670,.58,1,'calm',prop='leaf',glow=.8,look=1300)])
 #@@SHOTS@@
+def face_y(f):
+    s=f.get('s',1);p=f.get('pose')
+    if p in('sit','sitpray'):return f['y']-195*s
+    if p=='kneel':return f['y']-250*s
+    return f['y']-300*s
+BOOST={'medium','two_shot','ots','insert'}
+def frame(s):
+    """cinematographer pass: medium / two-shot / ots shots of full figures are framed waist-up (zoom in, centre on the figures, faces in
+    the upper third) instead of showing tiny full figures; screen-placed name pills follow the camera"""
+    c=s['camera'];figs=[f for f in s['characters'] if not f.get('head') and f.get('pose')!='sleep' and 'filt' not in (f.get('engine') or {})]
+    if c['shot'] not in BOOST or not figs or any(f.get('head') for f in s['characters']):return
+    xs=[f['x'] for f in s['characters'] if not f.get('head')];mx=(min(xs)+max(xs))/2;spread=max(xs)-min(xs)
+    zt=c['to']['z'];zn=min(1.7,zt*1.3,1040/(spread+300));r=max(1.0,zn/zt)
+    if r<=1.02:return
+    for e in('from','to'):c[e]['z']=round(min(1.8,c[e]['z']*r),3)
+    zb=max(c['from']['z'],c['to']['z']);fm=sum(face_y(f) for f in figs)/len(figs)
+    cy=fm-360+60/zb;cx=max(-200,min(200,mx-640))
+    for e in('from','to'):
+        c[e]['x']=round(max(-220,min(220,cx+c[e]['x']*.5)),1);c[e]['y']=round(max(-200,min(200,cy+c[e]['y']*.5)),1)
+    zm=(c['from']['z']+c['to']['z'])/2;xm=(c['from']['x']+c['to']['x'])/2;ym=(c['from']['y']+c['to']['y'])/2
+    for e in s['effects']:
+        if e['k']=='name':e['y']=round(360+ym+(100-360)/zm);e['x']=round(640+xm+(max(200,min(1080,640+(e['x']-640-xm)*zm))-640)/zm)
+NIGHT_VAR={13:(250,1060),14:(120,1150),15:(420,980),16:(200,1180),17:(330,1000),18:(150,1100),19:(260,1200),20:(80,1050),21:(380,1130),22:(180,960),23:(250,1060)}
 def build():
+    for s in SHOTS:
+        frame(s);bg=s['background']
+        b=[x for x in TL if abs(x['t']-s['t'])<.006][0]['beat']
+        if bg['k']=='ashram' and bg.get('sx')==-900 and 'hx' not in bg and b in NIGHT_VAR:bg['hx'],bg['hx2']=NIGHT_VAR[b]
     sh=sorted(SHOTS,key=lambda s:s['t']);out=[];cnt={}
     for k,s in enumerate(sh):
         i=idx(s['t']);nt=sh[k+1]['t'] if k+1<len(sh) else TOTAL;j=i

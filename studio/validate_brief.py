@@ -25,10 +25,10 @@ def face_cropped(f,cam):
     if f.get('who') in ('boar','swan'):return False
     s=f.get('s',1);x0,y0=f.get('x',640),f.get('y',500)
     if f.get('head'):top=y0-104*s;chin=y0+75*s
-    else:cy=y0-300*s;top=cy-105*s;chin=cy+55*s
+    else:cy=y0-(195 if f.get('pose') in ('sit','sitpray') else 300)*s;top=cy-105*s;chin=cy+55*s   # seated rigs (sit, sitpray): face ~195*s above y
     for e in (cam.get('from',{}),cam.get('to',{})):
-        z=e.get('z',1);sh=abs(e.get('y',0));t_=360+(top-360)*z-sh;c_=360+(chin-360)*z+sh;cx=640+(x0-640)*z
-        if t_<2 or c_>590 or cx<20 or cx>1260:return True
+        z=e.get('z',1);cy_=e.get('y',0);t_=360+(top-360-cy_)*z;c_=360+(chin-360-cy_)*z;cx=640+(x0-640-e.get('x',0))*z   # exact engine camera (main.js vScr)
+        if t_<2 or c_>600 or cx<20 or cx>1260:return True   # subtitle text sits at y 662 (band gradient from ~600)
     return False
 def seated(f):
     """seated rigs (sit / sitpray, Brahma on his lotus): face ~195*s above y instead of ~300*s (same rule as engine/main.js vSeated)"""

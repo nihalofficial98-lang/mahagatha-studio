@@ -124,10 +124,10 @@ def main():
                 if ff.get('who') in (None,'img','boar','swan','bull'):continue
                 fs=ff.get('s',1);fx0,fy0=ff.get('x',640),ff.get('y',500)
                 if ff.get('head'):cy=fy0;top=fy0-104*fs;chin=fy0+75*fs
-                else:cy=fy0-300*fs;top=cy-105*fs;chin=cy+55*fs
+                else:cy=fy0-(195 if ff.get('pose') in ('sit','sitpray') else 300)*fs;top=cy-105*fs;chin=cy+55*fs   # seated rigs: face ~195*s above y
                 for e in((cam or {}).get('from',{}),(cam or {}).get('to',{})) if cam else [{}]:
-                    z=e.get('z',1);sh=abs(e.get('y',0))
-                    t_=360+(top-360)*z-sh;c_=360+(chin-360)*z+sh;cx_=640+(fx0-640)*z
+                    z=e.get('z',1);cy_=e.get('y',0)
+                    t_=360+(top-360-cy_)*z;c_=360+(chin-360-cy_)*z;cx_=640+(fx0-640-e.get('x',0))*z   # exact engine camera
                     if t_<2 or c_>640 or cx_<20 or cx_>1260:
                         errs.append(f"{sid}: FACE CROPPED '{ff.get('who')}' (x={fx0}, y={fy0}, s={fs}, head={bool(ff.get('head'))}): crown at {t_:.0f}, chin at {c_:.0f} on a 720-high frame. Move the figure so the whole face is visible above the subtitles.");break
         ncue=len(s.get('cues') or [])

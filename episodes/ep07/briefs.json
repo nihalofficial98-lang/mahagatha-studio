@@ -184,15 +184,15 @@
     "lens": "wide",
     "move": "tilt_up",
     "from": {
-     "z": 1.08,
+     "z": 1.3,
      "x": 0,
-     "y": 30,
+     "y": 70,
      "r": 0
     },
     "to": {
-     "z": 1.16,
+     "z": 1.4,
      "x": 0,
-     "y": -10,
+     "y": 40,
      "r": 0
     },
     "shake": 0,
@@ -355,15 +355,15 @@
     "lens": "normal",
     "move": "crane_down",
     "from": {
-     "z": 1.2,
-     "x": 0,
-     "y": -30,
+     "z": 1.545,
+     "x": 200.0,
+     "y": 104.3,
      "r": 0
     },
     "to": {
-     "z": 1.32,
-     "x": 0,
-     "y": 10,
+     "z": 1.7,
+     "x": 200.0,
+     "y": 124.3,
      "r": 0
     },
     "shake": 0,
@@ -591,21 +591,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -678,15 +678,15 @@
     "lens": "normal",
     "move": "dolly_left",
     "from": {
-     "z": 1.15,
-     "x": 40,
-     "y": 0,
+     "z": 1.495,
+     "x": -60.0,
+     "y": 100.5,
      "r": 0
     },
     "to": {
-     "z": 1.2,
-     "x": -40,
-     "y": 0,
+     "z": 1.56,
+     "x": -100.0,
+     "y": 100.5,
      "r": 0
     },
     "shake": 0,
@@ -733,25 +733,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -1059,25 +1068,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -1220,25 +1238,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -1734,21 +1761,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -1877,25 +1904,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -2693,15 +2729,15 @@
     "lens": "normal",
     "move": "dolly_left",
     "from": {
-     "z": 1.05,
-     "x": 30,
-     "y": 0,
+     "z": 1.354,
+     "x": -35.0,
+     "y": 94.6,
      "r": 0
     },
     "to": {
-     "z": 1.12,
-     "x": -10,
-     "y": 0,
+     "z": 1.444,
+     "x": -55.0,
+     "y": 94.6,
      "r": 0
     },
     "shake": 0,
@@ -2807,7 +2843,7 @@
      "k": "name",
      "s": "Indra, king of the gods",
      "x": 800,
-     "y": 96,
+     "y": 269,
      "size": 28,
      "word": "Indra",
      "meaning": "the name Indra, king of the gods appears the moment it is spoken"
@@ -2829,15 +2865,15 @@
     "lens": "normal",
     "move": "pan_right",
     "from": {
-     "z": 1.12,
-     "x": -40,
-     "y": 0,
+     "z": 1.456,
+     "x": -60.0,
+     "y": 89.1,
      "r": 0
     },
     "to": {
-     "z": 1.18,
-     "x": 30,
-     "y": 0,
+     "z": 1.534,
+     "x": -25.0,
+     "y": 89.1,
      "r": 0
     },
     "shake": 0,
@@ -2884,25 +2920,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -2988,15 +3033,15 @@
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.14,
-     "x": 0,
-     "y": 0,
+     "z": 1.482,
+     "x": -10.0,
+     "y": 96.5,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 0,
-     "y": 0,
+     "z": 1.352,
+     "x": -10.0,
+     "y": 96.5,
      "r": 0
     },
     "shake": 0,
@@ -3121,15 +3166,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.0,
-     "x": -30,
-     "y": 0,
+     "z": 1.3,
+     "x": -90.0,
+     "y": 96.0,
      "r": 0
     },
     "to": {
-     "z": 1.1,
-     "x": -10,
-     "y": 0,
+     "z": 1.43,
+     "x": -80.0,
+     "y": 96.0,
      "r": 0
     },
     "shake": 0,
@@ -3416,25 +3461,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -3511,15 +3565,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.06,
-     "x": 40,
-     "y": 0,
+     "z": 1.378,
+     "x": 80.0,
+     "y": 112.8,
      "r": 0
     },
     "to": {
-     "z": 1.16,
-     "x": 60,
-     "y": 0,
+     "z": 1.508,
+     "x": 90.0,
+     "y": 112.8,
      "r": 0
     },
     "shake": 0,
@@ -3566,25 +3620,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -3664,15 +3727,15 @@
     "lens": "normal",
     "move": "dolly_right",
     "from": {
-     "z": 1.18,
-     "x": 20,
-     "y": 0,
+     "z": 1.534,
+     "x": 80.0,
+     "y": 130.2,
      "r": 0
     },
     "to": {
-     "z": 1.24,
-     "x": 60,
-     "y": 0,
+     "z": 1.612,
+     "x": 100.0,
+     "y": 130.2,
      "r": 0
     },
     "shake": 0,
@@ -3719,25 +3782,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -3801,12 +3873,14 @@
    ],
    "effects": [
     {
-     "k": "sacred_thread",
-     "x": 705,
-     "y": 480,
-     "w": 70,
-     "meaning": "the sacred thread tied on Kacha's wrist",
-     "word": "thread"
+     "k": "glow",
+     "x": 650,
+     "y": 560,
+     "w": 110,
+     "meaning": "the warm moment the thread is tied",
+     "word": "thread",
+     "rgb": "255,150,70",
+     "ga": 0.4
     }
    ],
    "transition_in": "cut"
@@ -3880,25 +3954,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -4046,25 +4129,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -4145,15 +4237,15 @@
     "lens": "normal",
     "move": "dolly_left",
     "from": {
-     "z": 1.1,
-     "x": 30,
-     "y": 0,
+     "z": 1.426,
+     "x": 85.0,
+     "y": 97.2,
      "r": 0
     },
     "to": {
-     "z": 1.18,
-     "x": -20,
-     "y": 0,
+     "z": 1.529,
+     "x": 60.0,
+     "y": 97.2,
      "r": 0
     },
     "shake": 0,
@@ -4200,25 +4292,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -4287,9 +4388,9 @@
      "k": "name",
      "s": "Kacha",
      "x": 520,
-     "y": 110,
+     "y": 281,
      "size": 30,
-     "word": "name",
+     "word": "told",
      "meaning": "the name Kacha appears the moment it is spoken"
     }
    ],
@@ -4364,25 +4465,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -4460,15 +4570,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": -40,
-     "y": 0,
+     "z": 1.404,
+     "x": 20.0,
+     "y": 97.8,
      "r": 0
     },
     "to": {
-     "z": 1.16,
-     "x": -40,
-     "y": 0,
+     "z": 1.508,
+     "x": 20.0,
+     "y": 97.8,
      "r": 0
     },
     "shake": 0,
@@ -4515,25 +4625,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -4596,9 +4715,9 @@
      "k": "name",
      "s": "Devayani",
      "x": 500,
-     "y": 110,
+     "y": 279,
      "size": 30,
-     "word": "name",
+     "word": "told",
      "meaning": "the name Devayani appears the moment it is spoken"
     }
    ],
@@ -4673,25 +4792,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -4763,15 +4891,15 @@
     "lens": "normal",
     "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": -30,
-     "y": 0,
+     "z": 1.352,
+     "x": -5.0,
+     "y": 103.0,
      "r": 0
     },
     "to": {
-     "z": 1.1,
-     "x": 30,
-     "y": 0,
+     "z": 1.43,
+     "x": 25.0,
+     "y": 103.0,
      "r": 0
     },
     "shake": 0,
@@ -4818,25 +4946,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -4993,6 +5130,7 @@
       }
      ],
      "dark": 0.08,
+     "darkc": "#0a0404",
      "blur": 0,
      "par": 1.0
     }
@@ -5066,15 +5204,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": 0,
-     "y": 0,
+     "z": 1.352,
+     "x": 30.0,
+     "y": 101.5,
      "r": 0
     },
     "to": {
-     "z": 1.14,
-     "x": 40,
-     "y": 0,
+     "z": 1.482,
+     "x": 50.0,
+     "y": 101.5,
      "r": 0
     },
     "shake": 0,
@@ -5121,25 +5259,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -5451,15 +5598,15 @@
     "lens": "normal",
     "move": "pan_left",
     "from": {
-     "z": 1.12,
-     "x": 60,
-     "y": 20,
+     "z": 1.456,
+     "x": 50.0,
+     "y": 173.8,
      "r": 0
     },
     "to": {
-     "z": 1.16,
-     "x": -20,
-     "y": 20,
+     "z": 1.508,
+     "x": 10.0,
+     "y": 173.8,
      "r": 0
     },
     "shake": 0,
@@ -5672,15 +5819,15 @@
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.2,
-     "x": 120,
-     "y": 0,
+     "z": 1.56,
+     "x": 180.0,
+     "y": -22.5,
      "r": 0
     },
     "to": {
-     "z": 1.08,
-     "x": 60,
-     "y": 0,
+     "z": 1.404,
+     "x": 150.0,
+     "y": -22.5,
      "r": 0
     },
     "shake": 0,
@@ -5745,7 +5892,8 @@
        "lit": "255,120,60"
       }
      ],
-     "dark": 0.2,
+     "dark": 0.5,
+     "darkc": "#0a0404",
      "blur": 0,
      "par": 1.0
     }
@@ -5878,21 +6026,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -5987,15 +6135,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": 0,
+     "z": 1.43,
+     "x": 140.0,
+     "y": 128.5,
      "r": 0
     },
     "to": {
-     "z": 1.2,
-     "x": 0,
-     "y": 0,
+     "z": 1.56,
+     "x": 140.0,
+     "y": 128.5,
      "r": 0
     },
     "shake": 0,
@@ -6058,21 +6206,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -6094,14 +6242,14 @@
     {
      "who": "deer",
      "x": 600,
-     "y": 650,
+     "y": 640,
      "s": 0.82,
      "flip": 1,
      "emo": "pain",
      "pose": "bow",
      "look": 900,
      "engine": {
-      "filt": "brightness(.4) saturate(.4)"
+      "filt": "brightness(.75) saturate(.6)"
      },
      "actions": []
     },
@@ -6123,8 +6271,8 @@
     {
      "k": "ember_fire",
      "x": 600,
-     "y": 700,
-     "w": 280,
+     "y": 712,
+     "w": 200,
      "meaning": "the fire burning the deer",
      "word": "burned",
      "d": 0.3
@@ -6349,21 +6497,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -6695,15 +6843,15 @@
     "lens": "normal",
     "move": "dolly_right",
     "from": {
-     "z": 1.15,
-     "x": -20,
-     "y": 0,
+     "z": 1.495,
+     "x": -90.0,
+     "y": 97.8,
      "r": 0
     },
     "to": {
-     "z": 1.22,
-     "x": 40,
-     "y": 0,
+     "z": 1.586,
+     "x": -60.0,
+     "y": 97.8,
      "r": 0
     },
     "shake": 0,
@@ -6766,21 +6914,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -6855,15 +7003,15 @@
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.16,
-     "x": 0,
-     "y": 20,
+     "z": 1.508,
+     "x": -80.0,
+     "y": 169.9,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
-     "y": 10,
+     "z": 1.378,
+     "x": -80.0,
+     "y": 164.9,
      "r": 0
     },
     "shake": 0,
@@ -7032,21 +7180,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -7103,15 +7251,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.05,
-     "x": 0,
-     "y": 0,
+     "z": 1.365,
+     "x": 0.0,
+     "y": 100.1,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": 0,
-     "y": 0,
+     "z": 1.495,
+     "x": 0.0,
+     "y": 100.1,
      "r": 0
     },
     "shake": 0,
@@ -7174,21 +7322,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -7306,25 +7454,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -7470,25 +7627,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     }
    ],
    "background": {
@@ -7566,15 +7732,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": 0,
-     "y": 20,
+     "z": 1.352,
+     "x": -80.0,
+     "y": 170.6,
      "r": 0
     },
     "to": {
-     "z": 1.14,
-     "x": 0,
-     "y": 20,
+     "z": 1.482,
+     "x": -80.0,
+     "y": 170.6,
      "r": 0
     },
     "shake": 0,
@@ -7665,7 +7831,7 @@
      "y": 96,
      "size": 50,
      "col": "#ffd9a0",
-     "word": "three",
+     "word": "plan",
      "meaning": "the plan has three stages"
     },
     {
@@ -7703,15 +7869,15 @@
     "lens": "normal",
     "move": "dolly_left",
     "from": {
-     "z": 1.16,
-     "x": 40,
-     "y": 0,
+     "z": 1.508,
+     "x": -60.0,
+     "y": 88.5,
      "r": 0
     },
     "to": {
-     "z": 1.2,
-     "x": 0,
-     "y": 0,
+     "z": 1.56,
+     "x": -80.0,
+     "y": 88.5,
      "r": 0
     },
     "shake": 0,
@@ -7816,15 +7982,15 @@
     "lens": "normal",
     "move": "crane_down",
     "from": {
-     "z": 1.14,
-     "x": 120,
-     "y": -30,
+     "z": 1.482,
+     "x": 180.0,
+     "y": -37.5,
      "r": 0
     },
     "to": {
-     "z": 1.2,
-     "x": 120,
-     "y": 0,
+     "z": 1.56,
+     "x": 180.0,
+     "y": -22.5,
      "r": 0
     },
     "shake": 0,
@@ -7889,7 +8055,8 @@
        "lit": "255,120,60"
       }
      ],
-     "dark": 0.2,
+     "dark": 0.5,
+     "darkc": "#0a0404",
      "blur": 0,
      "par": 1.0
     }
@@ -7945,7 +8112,7 @@
      "k": "name",
      "s": "Devayani",
      "x": 760,
-     "y": 170,
+     "y": 159,
      "size": 30,
      "word": "Devayani's",
      "meaning": "the name Devayani appears the moment it is spoken"
@@ -8040,7 +8207,8 @@
        "lit": "255,120,60"
       }
      ],
-     "dark": 0.2,
+     "dark": 0.5,
+     "darkc": "#0a0404",
      "blur": 0,
      "par": 1.0
     }
@@ -8182,21 +8350,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -8290,15 +8458,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": -20,
-     "y": 0,
+     "z": 1.404,
+     "x": 90.0,
+     "y": 113.1,
      "r": 0
     },
     "to": {
-     "z": 1.18,
-     "x": -30,
-     "y": 0,
+     "z": 1.534,
+     "x": 85.0,
+     "y": 113.1,
      "r": 0
     },
     "shake": 0,
@@ -8361,21 +8529,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -8457,15 +8625,15 @@
     "lens": "normal",
     "move": "dolly_right",
     "from": {
-     "z": 1.12,
-     "x": 0,
-     "y": 0,
+     "z": 1.456,
+     "x": 45.0,
+     "y": 103.5,
      "r": 0
     },
     "to": {
-     "z": 1.2,
-     "x": 40,
-     "y": 0,
+     "z": 1.56,
+     "x": 65.0,
+     "y": 103.5,
      "r": 0
     },
     "shake": 0,
@@ -8528,21 +8696,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -8809,21 +8977,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -8975,21 +9143,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -9106,21 +9274,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -9191,15 +9359,15 @@
     "lens": "normal",
     "move": "handheld",
     "from": {
-     "z": 1.16,
-     "x": 0,
-     "y": 0,
+     "z": 1.508,
+     "x": 20.0,
+     "y": 101.8,
      "r": 0
     },
     "to": {
-     "z": 1.22,
-     "x": 20,
-     "y": 0,
+     "z": 1.586,
+     "x": 30.0,
+     "y": 101.8,
      "r": 0
     },
     "shake": 3,
@@ -9262,21 +9430,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -9417,21 +9585,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -9495,15 +9663,15 @@
     "lens": "normal",
     "move": "dolly_left",
     "from": {
-     "z": 1.1,
-     "x": 30,
-     "y": 0,
+     "z": 1.43,
+     "x": 30.0,
+     "y": 108.8,
      "r": 0
     },
     "to": {
-     "z": 1.16,
-     "x": -20,
-     "y": 0,
+     "z": 1.508,
+     "x": 5.0,
+     "y": 108.8,
      "r": 0
     },
     "shake": 0,
@@ -9566,21 +9734,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -9727,21 +9895,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -9888,21 +10056,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -10093,15 +10261,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 40,
-     "y": 0,
+     "z": 1.404,
+     "x": 60.0,
+     "y": 98.1,
      "r": 0
     },
     "to": {
-     "z": 1.18,
-     "x": 60,
-     "y": 0,
+     "z": 1.534,
+     "x": 70.0,
+     "y": 98.1,
      "r": 0
     },
     "shake": 0,
@@ -10210,15 +10378,15 @@
     "lens": "normal",
     "move": "pan_left",
     "from": {
-     "z": 1.08,
-     "x": 0,
-     "y": 0,
+     "z": 1.404,
+     "x": 80.0,
+     "y": 104.0,
      "r": 0
     },
     "to": {
-     "z": 1.1,
-     "x": -80,
-     "y": 0,
+     "z": 1.43,
+     "x": 40.0,
+     "y": 104.0,
      "r": 0
     },
     "shake": 0,
@@ -10395,8 +10563,8 @@
     {
      "who": "kacha",
      "x": 640,
-     "y": 560,
-     "s": 0.78,
+     "y": 540,
+     "s": 1.0,
      "flip": 1,
      "emo": "calm",
      "pose": "sleep",
@@ -10436,15 +10604,15 @@
     "lens": "normal",
     "move": "dolly_right",
     "from": {
-     "z": 1.06,
-     "x": -30,
-     "y": 0,
+     "z": 1.378,
+     "x": -5.0,
+     "y": 118.2,
      "r": 0
     },
     "to": {
-     "z": 1.12,
-     "x": 30,
-     "y": 0,
+     "z": 1.456,
+     "x": 25.0,
+     "y": 118.2,
      "r": 0
     },
     "shake": 0,
@@ -10507,21 +10675,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -10871,15 +11039,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": 0,
-     "y": 0,
+     "z": 1.352,
+     "x": 120.0,
+     "y": 138.5,
      "r": 0
     },
     "to": {
-     "z": 1.14,
-     "x": 0,
-     "y": 0,
+     "z": 1.482,
+     "x": 120.0,
+     "y": 138.5,
      "r": 0
     },
     "shake": 0,
@@ -11020,15 +11188,15 @@
     "lens": "tele",
     "move": "static",
     "from": {
-     "z": 1.2,
-     "x": 0,
-     "y": 0,
+     "z": 1.56,
+     "x": 0.0,
+     "y": 92.5,
      "r": 0
     },
     "to": {
-     "z": 1.2,
-     "x": 0,
-     "y": 0,
+     "z": 1.56,
+     "x": 0.0,
+     "y": 92.5,
      "r": 0
     },
     "shake": 0,
@@ -11617,15 +11785,15 @@
     "lens": "normal",
     "move": "crane_down",
     "from": {
-     "z": 1.04,
-     "x": 0,
-     "y": -30,
+     "z": 1.352,
+     "x": -140.0,
+     "y": 141.2,
      "r": 0
     },
     "to": {
-     "z": 1.12,
-     "x": 0,
-     "y": 0,
+     "z": 1.456,
+     "x": -140.0,
+     "y": 156.2,
      "r": 0
     },
     "shake": 0,
@@ -12290,15 +12458,15 @@
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.16,
-     "x": 0,
-     "y": 0,
+     "z": 1.508,
+     "x": -40.0,
+     "y": 154.8,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
-     "y": 0,
+     "z": 1.378,
+     "x": -40.0,
+     "y": 154.8,
      "r": 0
     },
     "shake": 0,
@@ -12820,15 +12988,15 @@
     "lens": "tele",
     "move": "handheld",
     "from": {
-     "z": 1.2,
-     "x": 0,
-     "y": 0,
+     "z": 1.56,
+     "x": 0.0,
+     "y": 126.6,
      "r": 0
     },
     "to": {
-     "z": 1.26,
-     "x": 0,
-     "y": 0,
+     "z": 1.638,
+     "x": 0.0,
+     "y": 126.6,
      "r": 0
     },
     "shake": 3,
@@ -13330,15 +13498,15 @@
     "lens": "normal",
     "move": "handheld",
     "from": {
-     "z": 1.12,
-     "x": 0,
-     "y": 0,
+     "z": 1.456,
+     "x": 100.0,
+     "y": 129.5,
      "r": 0
     },
     "to": {
-     "z": 1.2,
-     "x": 0,
-     "y": 0,
+     "z": 1.56,
+     "x": 100.0,
+     "y": 129.5,
      "r": 0
     },
     "shake": 6,
@@ -13839,15 +14007,15 @@
     "lens": "normal",
     "move": "dolly_right",
     "from": {
-     "z": 1.06,
-     "x": -20,
-     "y": 0,
+     "z": 1.378,
+     "x": 10.0,
+     "y": 112.2,
      "r": 0
     },
     "to": {
-     "z": 1.12,
-     "x": 30,
-     "y": 0,
+     "z": 1.456,
+     "x": 35.0,
+     "y": 112.2,
      "r": 0
     },
     "shake": 0,
@@ -13910,21 +14078,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -14063,21 +14231,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -14140,15 +14308,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": 0,
-     "y": 0,
+     "z": 1.352,
+     "x": 0.0,
+     "y": 98.5,
      "r": 0
     },
     "to": {
-     "z": 1.14,
-     "x": 0,
-     "y": 0,
+     "z": 1.482,
+     "x": 0.0,
+     "y": 98.5,
      "r": 0
     },
     "shake": 0,
@@ -14211,21 +14379,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -14606,15 +14774,15 @@
     "lens": "normal",
     "move": "pan_right",
     "from": {
-     "z": 1.04,
-     "x": -30,
-     "y": 0,
+     "z": 1.352,
+     "x": -5.0,
+     "y": 97.0,
      "r": 0
     },
     "to": {
-     "z": 1.1,
-     "x": 30,
-     "y": 0,
+     "z": 1.43,
+     "x": 25.0,
+     "y": 97.0,
      "r": 0
     },
     "shake": 0,
@@ -14661,25 +14829,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -14713,7 +14890,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "confrontation",
@@ -14753,7 +14932,7 @@
      "k": "name",
      "s": "Shukracharya",
      "x": 860,
-     "y": 110,
+     "y": 270,
      "size": 30,
      "word": "father",
      "meaning": "the name Shukracharya appears the moment it is spoken"
@@ -14783,15 +14962,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": -40,
-     "y": 0,
+     "z": 1.36,
+     "x": 20.0,
+     "y": 89.4,
      "r": 0
     },
     "to": {
-     "z": 1.18,
-     "x": -60,
-     "y": 0,
+     "z": 1.486,
+     "x": 10.0,
+     "y": 89.4,
      "r": 0
     },
     "shake": 0,
@@ -14838,25 +15017,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -14890,7 +15078,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "grief",
@@ -14941,15 +15131,15 @@
     "lens": "normal",
     "move": "dolly_left",
     "from": {
-     "z": 1.1,
-     "x": 20,
-     "y": 0,
+     "z": 1.43,
+     "x": 30.0,
+     "y": 92.5,
      "r": 0
     },
     "to": {
-     "z": 1.14,
-     "x": -20,
-     "y": 0,
+     "z": 1.482,
+     "x": 10.0,
+     "y": 92.5,
      "r": 0
     },
     "shake": 0,
@@ -14996,25 +15186,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -15048,7 +15247,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "accusation",
@@ -15150,25 +15351,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -15202,7 +15412,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "fury",
@@ -15253,15 +15465,15 @@
     "lens": "tele",
     "move": "static",
     "from": {
-     "z": 1.18,
-     "x": 0,
-     "y": 0,
+     "z": 1.534,
+     "x": 0.0,
+     "y": 103.1,
      "r": 0
     },
     "to": {
-     "z": 1.18,
-     "x": 0,
-     "y": 0,
+     "z": 1.534,
+     "x": 0.0,
+     "y": 103.1,
      "r": 0
     },
     "shake": 0,
@@ -15308,25 +15520,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -15360,7 +15581,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "confusion",
@@ -15457,25 +15680,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -15509,7 +15741,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "hysteria",
@@ -15610,25 +15844,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -15662,7 +15905,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "laughing while crying",
@@ -15707,15 +15952,15 @@
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.14,
-     "x": 0,
-     "y": 0,
+     "z": 1.482,
+     "x": 10.0,
+     "y": 89.5,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 0,
-     "y": 0,
+     "z": 1.352,
+     "x": 10.0,
+     "y": 89.5,
      "r": 0
     },
     "shake": 0,
@@ -15762,25 +16007,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -15814,7 +16068,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "realisation",
@@ -15922,25 +16178,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -15974,7 +16239,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "discovery",
@@ -16096,25 +16363,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     }
    ],
    "background": {
@@ -16127,7 +16403,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "horror",
@@ -16191,15 +16469,15 @@
     "lens": "normal",
     "move": "pan_left",
     "from": {
-     "z": 1.08,
-     "x": 40,
-     "y": 0,
+     "z": 1.404,
+     "x": 20.0,
+     "y": 99.2,
      "r": 0
     },
     "to": {
-     "z": 1.12,
-     "x": -40,
-     "y": 0,
+     "z": 1.456,
+     "x": -20.0,
+     "y": 99.2,
      "r": 0
     },
     "shake": 0,
@@ -16262,21 +16540,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -16383,25 +16661,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -16435,7 +16722,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 120,
+    "hx2": 1150
    },
    "mood": {
     "emotion": "horror",
@@ -16533,25 +16822,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -16585,7 +16883,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 120,
+    "hx2": 1150
    },
    "mood": {
     "emotion": "judgement",
@@ -16626,15 +16926,15 @@
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.14,
-     "x": 0,
-     "y": 0,
+     "z": 1.482,
+     "x": 0.0,
+     "y": 98.5,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 0,
-     "y": 0,
+     "z": 1.352,
+     "x": 0.0,
+     "y": 98.5,
      "r": 0
     },
     "shake": 0,
@@ -16681,25 +16981,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -16733,7 +17042,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 120,
+    "hx2": 1150
    },
    "mood": {
     "emotion": "curse",
@@ -16851,25 +17162,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -16903,7 +17223,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 120,
+    "hx2": 1150
    },
    "mood": {
     "emotion": "guilt",
@@ -16960,15 +17282,15 @@
     "lens": "normal",
     "move": "dolly_left",
     "from": {
-     "z": 1.06,
-     "x": 20,
-     "y": 0,
+     "z": 1.378,
+     "x": 30.0,
+     "y": 90.2,
      "r": 0
     },
     "to": {
-     "z": 1.12,
-     "x": -30,
-     "y": 0,
+     "z": 1.456,
+     "x": 5.0,
+     "y": 90.2,
      "r": 0
     },
     "shake": 0,
@@ -17015,25 +17337,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -17067,7 +17398,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 120,
+    "hx2": 1150
    },
    "mood": {
     "emotion": "determination",
@@ -17172,25 +17505,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -17224,7 +17566,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 120,
+    "hx2": 1150
    },
    "mood": {
     "emotion": "acceptance",
@@ -17289,15 +17633,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": 0,
-     "y": 0,
+     "z": 1.352,
+     "x": 5.0,
+     "y": 97.8,
      "r": 0
     },
     "to": {
-     "z": 1.16,
-     "x": 0,
-     "y": 0,
+     "z": 1.508,
+     "x": 5.0,
+     "y": 97.8,
      "r": 0
     },
     "shake": 0,
@@ -17344,25 +17688,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -17396,7 +17749,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 120,
+    "hx2": 1150
    },
    "mood": {
     "emotion": "trapped life",
@@ -17469,15 +17824,15 @@
     "lens": "normal",
     "move": "dolly_right",
     "from": {
-     "z": 1.06,
-     "x": -30,
-     "y": 0,
+     "z": 1.367,
+     "x": -5.0,
+     "y": 93.6,
      "r": 0
     },
     "to": {
-     "z": 1.12,
-     "x": 20,
-     "y": 0,
+     "z": 1.444,
+     "x": 20.0,
+     "y": 93.6,
      "r": 0
     },
     "shake": 0,
@@ -17524,25 +17879,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -17576,7 +17940,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 120,
+    "hx2": 1150
    },
    "mood": {
     "emotion": "dread",
@@ -17636,15 +18002,15 @@
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.14,
-     "x": 0,
-     "y": 0,
+     "z": 1.482,
+     "x": 60.0,
+     "y": 88.5,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
-     "y": 0,
+     "z": 1.378,
+     "x": 60.0,
+     "y": 88.5,
      "r": 0
     },
     "shake": 0,
@@ -17691,25 +18057,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -17743,7 +18118,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 120,
+    "hx2": 1150
    },
    "mood": {
     "emotion": "sacrifice",
@@ -17840,25 +18217,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -17892,7 +18278,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 120,
+    "hx2": 1150
    },
    "mood": {
     "emotion": "shock",
@@ -17936,15 +18324,15 @@
     "lens": "tele",
     "move": "dolly_left",
     "from": {
-     "z": 1.16,
-     "x": 30,
-     "y": 0,
+     "z": 1.323,
+     "x": 85.0,
+     "y": 85.9,
      "r": 0
     },
     "to": {
-     "z": 1.2,
-     "x": -10,
-     "y": 0,
+     "z": 1.368,
+     "x": 65.0,
+     "y": 85.9,
      "r": 0
     },
     "shake": 0,
@@ -17991,25 +18379,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -18043,7 +18440,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 120,
+    "hx2": 1150
    },
    "mood": {
     "emotion": "remorse",
@@ -18147,25 +18546,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     }
    ],
    "background": {
@@ -18178,7 +18586,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 120,
+    "hx2": 1150
    },
    "mood": {
     "emotion": "impossible choice",
@@ -18248,15 +18658,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.06,
-     "x": -30,
-     "y": 0,
+     "z": 1.358,
+     "x": 45.0,
+     "y": 99.4,
      "r": 0
     },
     "to": {
-     "z": 1.16,
-     "x": -40,
-     "y": 0,
+     "z": 1.486,
+     "x": 40.0,
+     "y": 99.4,
      "r": 0
     },
     "shake": 0,
@@ -18303,25 +18713,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -18355,7 +18774,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 420,
+    "hx2": 980
    },
    "mood": {
     "emotion": "despair",
@@ -18460,25 +18881,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     }
    ],
    "background": {
@@ -18491,7 +18921,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 420,
+    "hx2": 980
    },
    "mood": {
     "emotion": "torn",
@@ -18618,25 +19050,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -18670,7 +19111,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 420,
+    "hx2": 980
    },
    "mood": {
     "emotion": "ultimatum",
@@ -18715,15 +19158,15 @@
     "lens": "normal",
     "move": "dolly_right",
     "from": {
-     "z": 1.08,
-     "x": -40,
-     "y": 0,
+     "z": 1.404,
+     "x": 90.0,
+     "y": 100.2,
      "r": 0
     },
     "to": {
-     "z": 1.12,
-     "x": 30,
-     "y": 0,
+     "z": 1.456,
+     "x": 125.0,
+     "y": 100.2,
      "r": 0
     },
     "shake": 0,
@@ -18770,25 +19213,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -18822,7 +19274,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 420,
+    "hx2": 980
    },
    "mood": {
     "emotion": "dilemma",
@@ -18945,25 +19399,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -18997,7 +19460,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 420,
+    "hx2": 980
    },
    "mood": {
     "emotion": "hope",
@@ -19053,15 +19518,15 @@
     "lens": "normal",
     "move": "dolly_left",
     "from": {
-     "z": 1.06,
-     "x": 30,
-     "y": 0,
+     "z": 1.378,
+     "x": 55.0,
+     "y": 97.2,
      "r": 0
     },
     "to": {
-     "z": 1.12,
-     "x": -20,
-     "y": 0,
+     "z": 1.456,
+     "x": 30.0,
+     "y": 97.2,
      "r": 0
     },
     "shake": 0,
@@ -19108,25 +19573,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -19160,7 +19634,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 420,
+    "hx2": 980
    },
    "mood": {
     "emotion": "asking",
@@ -19207,15 +19683,15 @@
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.12,
-     "x": 0,
-     "y": 0,
+     "z": 1.456,
+     "x": 20.0,
+     "y": 100.2,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 0,
-     "y": 0,
+     "z": 1.352,
+     "x": 20.0,
+     "y": 100.2,
      "r": 0
     },
     "shake": 0,
@@ -19262,25 +19738,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -19314,7 +19799,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 420,
+    "hx2": 980
    },
    "mood": {
     "emotion": "eager",
@@ -19455,7 +19942,19 @@
     }
    ],
    "background": {
-    "k": "kailash"
+    "k": "ashram",
+    "fire": false,
+    "lamp": false,
+    "hx": -900,
+    "hx2": 2600,
+    "sky": [
+     "#0a0406",
+     "#2a0e0a",
+     "#5a2414",
+     "#8a4a24"
+    ],
+    "sx": 640,
+    "sy": 300
    },
    "mood": {
     "emotion": "devotion",
@@ -19565,25 +20064,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -19617,7 +20125,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 420,
+    "hx2": 980
    },
    "mood": {
     "emotion": "pleading",
@@ -19713,25 +20223,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -19765,7 +20284,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 420,
+    "hx2": 980
    },
    "mood": {
     "emotion": "trust",
@@ -19808,15 +20329,15 @@
     "lens": "tele",
     "move": "crane_down",
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -20,
+     "z": 1.43,
+     "x": 0.0,
+     "y": 134.6,
      "r": 0
     },
     "to": {
-     "z": 1.18,
-     "x": 0,
-     "y": 0,
+     "z": 1.534,
+     "x": 0.0,
+     "y": 144.6,
      "r": 0
     },
     "shake": 0,
@@ -19863,25 +20384,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -19915,7 +20445,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 420,
+    "hx2": 980
    },
    "mood": {
     "emotion": "gift",
@@ -19925,8 +20457,8 @@
     {
      "who": "shukracharya",
      "x": 640,
-     "y": 660,
-     "s": 0.94,
+     "y": 680,
+     "s": 1.1,
      "flip": 1,
      "emo": "calm",
      "pose": "sit",
@@ -19965,15 +20497,15 @@
     "lens": "normal",
     "move": "dolly_right",
     "from": {
-     "z": 1.06,
-     "x": -20,
-     "y": 0,
+     "z": 1.378,
+     "x": 10.0,
+     "y": 94.2,
      "r": 0
     },
     "to": {
-     "z": 1.12,
-     "x": 30,
-     "y": 0,
+     "z": 1.456,
+     "x": 35.0,
+     "y": 94.2,
      "r": 0
     },
     "shake": 0,
@@ -20020,25 +20552,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -20072,7 +20613,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 420,
+    "hx2": 980
    },
    "mood": {
     "emotion": "warning",
@@ -20127,15 +20670,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.12,
-     "x": 0,
-     "y": 0,
+     "z": 1.456,
+     "x": -40.0,
+     "y": 86.5,
      "r": 0
     },
     "to": {
-     "z": 1.2,
-     "x": 0,
-     "y": 0,
+     "z": 1.56,
+     "x": -40.0,
+     "y": 86.5,
      "r": 0
     },
     "shake": 0,
@@ -20182,25 +20725,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -20234,7 +20786,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 420,
+    "hx2": 980
    },
    "mood": {
     "emotion": "vow",
@@ -20335,25 +20889,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -20387,7 +20950,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 200,
+    "hx2": 1180
    },
    "mood": {
     "emotion": "ritual",
@@ -20450,15 +21015,15 @@
     "lens": "normal",
     "move": "handheld",
     "from": {
-     "z": 1.12,
-     "x": 0,
-     "y": 30,
+     "z": 1.456,
+     "x": 0.0,
+     "y": 159.9,
      "r": 0
     },
     "to": {
-     "z": 1.18,
-     "x": 0,
-     "y": 30,
+     "z": 1.534,
+     "x": 0.0,
+     "y": 159.9,
      "r": 0
     },
     "shake": 5,
@@ -20505,25 +21070,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -20557,7 +21131,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 200,
+    "hx2": 1180
    },
    "mood": {
     "emotion": "agony",
@@ -20567,8 +21143,8 @@
     {
      "who": "shukracharya",
      "x": 640,
-     "y": 680,
-     "s": 0.94,
+     "y": 690,
+     "s": 1.15,
      "flip": 1,
      "emo": "pain",
      "pose": "sitpray",
@@ -20583,8 +21159,8 @@
     {
      "k": "blood_splash",
      "x": 650,
-     "y": 590,
-     "w": 120,
+     "y": 600,
+     "w": 130,
      "meaning": "his belly begins to tear",
      "word": "belly",
      "d": 0.3,
@@ -20608,15 +21184,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": 30,
+     "z": 1.43,
+     "x": 0.0,
+     "y": 159.2,
      "r": 0
     },
     "to": {
-     "z": 1.2,
-     "x": 0,
-     "y": 30,
+     "z": 1.56,
+     "x": 0.0,
+     "y": 159.2,
      "r": 0
     },
     "shake": 4,
@@ -20663,25 +21239,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -20715,7 +21300,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 200,
+    "hx2": 1180
    },
    "mood": {
     "emotion": "agony",
@@ -20725,8 +21312,8 @@
     {
      "who": "shukracharya",
      "x": 640,
-     "y": 680,
-     "s": 0.94,
+     "y": 690,
+     "s": 1.15,
      "flip": 1,
      "emo": "pain",
      "pose": "sitpray",
@@ -20742,7 +21329,7 @@
     {
      "k": "blood_splash",
      "x": 650,
-     "y": 520,
+     "y": 545,
      "w": 140,
      "meaning": "his chest tears",
      "word": "chest",
@@ -20751,9 +21338,9 @@
     },
     {
      "k": "blood_splash",
-     "x": 640,
-     "y": 440,
-     "w": 90,
+     "x": 625,
+     "y": 470,
+     "w": 80,
      "meaning": "his face tears",
      "word": "face",
      "d": 0.3,
@@ -20761,8 +21348,8 @@
     },
     {
      "k": "blood_splash",
-     "x": 520,
-     "y": 560,
+     "x": 500,
+     "y": 575,
      "w": 90,
      "meaning": "his arms tear",
      "word": "arms",
@@ -20841,25 +21428,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -20893,7 +21489,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 200,
+    "hx2": 1180
    },
    "mood": {
     "emotion": "horror",
@@ -20944,15 +21542,15 @@
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.16,
-     "x": 0,
-     "y": 30,
+     "z": 1.508,
+     "x": 0.0,
+     "y": 180.3,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
-     "y": 20,
+     "z": 1.378,
+     "x": 0.0,
+     "y": 175.3,
      "r": 0
     },
     "shake": 3,
@@ -20999,25 +21597,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -21051,7 +21658,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 200,
+    "hx2": 1180
    },
    "mood": {
     "emotion": "horror",
@@ -21061,8 +21670,8 @@
     {
      "who": "shukracharya",
      "x": 640,
-     "y": 690,
-     "s": 0.92,
+     "y": 700,
+     "s": 1.1,
      "flip": 1,
      "emo": "pain",
      "pose": "sitpray",
@@ -21080,8 +21689,8 @@
     {
      "k": "blood_splash",
      "x": 640,
-     "y": 600,
-     "w": 180,
+     "y": 615,
+     "w": 190,
      "meaning": "the belly tears open",
      "word": "foot",
      "d": 0.3,
@@ -21159,25 +21768,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -21211,7 +21829,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 330,
+    "hx2": 1000
    },
    "mood": {
     "emotion": "gruesome rebirth",
@@ -21296,15 +21916,15 @@
     "lens": "normal",
     "move": "dolly_left",
     "from": {
-     "z": 1.08,
-     "x": 40,
-     "y": 0,
+     "z": 1.331,
+     "x": 160.0,
+     "y": 103.7,
      "r": 0
     },
     "to": {
-     "z": 1.14,
-     "x": 0,
-     "y": 0,
+     "z": 1.405,
+     "x": 140.0,
+     "y": 103.7,
      "r": 0
     },
     "shake": 0,
@@ -21351,25 +21971,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -21403,7 +22032,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 330,
+    "hx2": 1000
    },
    "mood": {
     "emotion": "relief and horror",
@@ -21551,25 +22182,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     }
    ],
    "background": {
@@ -21582,7 +22222,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 330,
+    "hx2": 1000
    },
    "mood": {
     "emotion": "coldness",
@@ -21700,25 +22342,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -21752,7 +22403,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 330,
+    "hx2": 1000
    },
    "mood": {
     "emotion": "menace",
@@ -21861,25 +22514,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -21913,7 +22575,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 150,
+    "hx2": 1100
    },
    "mood": {
     "emotion": "urgency",
@@ -21990,15 +22654,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.06,
-     "x": 0,
-     "y": 0,
+     "z": 1.378,
+     "x": 10.0,
+     "y": 105.8,
      "r": 0
     },
     "to": {
-     "z": 1.16,
-     "x": 0,
-     "y": 0,
+     "z": 1.508,
+     "x": 10.0,
+     "y": 105.8,
      "r": 0
     },
     "shake": 0,
@@ -22045,25 +22709,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -22097,7 +22770,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 150,
+    "hx2": 1100
    },
    "mood": {
     "emotion": "temptation",
@@ -22149,15 +22824,15 @@
     "lens": "normal",
     "move": "dolly_left",
     "from": {
-     "z": 1.1,
-     "x": 30,
-     "y": 0,
+     "z": 1.43,
+     "x": -5.0,
+     "y": 105.8,
      "r": 0
     },
     "to": {
-     "z": 1.16,
-     "x": -20,
-     "y": 0,
+     "z": 1.508,
+     "x": -30.0,
+     "y": 105.8,
      "r": 0
     },
     "shake": 0,
@@ -22204,25 +22879,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -22256,7 +22940,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 150,
+    "hx2": 1100
    },
    "mood": {
     "emotion": "mistrust",
@@ -22363,25 +23049,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -22415,7 +23110,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 150,
+    "hx2": 1100
    },
    "mood": {
     "emotion": "guarded",
@@ -22510,25 +23207,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -22562,7 +23268,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 150,
+    "hx2": 1100
    },
    "mood": {
     "emotion": "manipulation",
@@ -22657,25 +23365,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     }
    ],
    "background": {
@@ -22688,7 +23405,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 150,
+    "hx2": 1100
    },
    "mood": {
     "emotion": "seduction",
@@ -22797,25 +23516,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -22849,7 +23577,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 150,
+    "hx2": 1100
    },
    "mood": {
     "emotion": "persuasion",
@@ -22987,25 +23717,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     }
    ],
    "background": {
@@ -23018,7 +23757,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 150,
+    "hx2": 1100
    },
    "mood": {
     "emotion": "spell",
@@ -23126,25 +23867,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -23178,7 +23928,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 150,
+    "hx2": 1100
    },
    "mood": {
     "emotion": "fall",
@@ -23231,15 +23983,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": 0,
+     "z": 1.43,
+     "x": -40.0,
+     "y": 92.5,
      "r": 0
     },
     "to": {
-     "z": 1.2,
-     "x": 0,
-     "y": 0,
+     "z": 1.56,
+     "x": -40.0,
+     "y": 92.5,
      "r": 0
     },
     "shake": 0,
@@ -23286,25 +24038,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -23338,7 +24099,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 150,
+    "hx2": 1100
    },
    "mood": {
     "emotion": "triumph",
@@ -23439,25 +24202,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -23491,7 +24263,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 260,
+    "hx2": 1200
    },
    "mood": {
     "emotion": "incantation",
@@ -23651,21 +24425,21 @@
      "items": [
       {
        "o": "demons",
-       "x": 20,
-       "y": 850,
-       "s": 1.7,
+       "x": -60,
+       "y": 860,
+       "s": 1.45,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 77,
        "eyes": 0.6
       },
       {
        "o": "demons",
-       "x": 1270,
-       "y": 850,
-       "s": 1.6,
+       "x": 1340,
+       "y": 860,
+       "s": 1.4,
        "n": 2,
-       "w": 200,
+       "w": 180,
        "seed": 91,
        "eyes": 0.6
       }
@@ -23804,7 +24578,19 @@
     }
    ],
    "background": {
-    "k": "kailash"
+    "k": "ashram",
+    "fire": false,
+    "lamp": false,
+    "hx": -900,
+    "hx2": 2600,
+    "sky": [
+     "#0a0406",
+     "#2a0e0a",
+     "#5a2414",
+     "#8a4a24"
+    ],
+    "sx": 640,
+    "sy": 300
    },
    "mood": {
     "emotion": "divine origin",
@@ -23923,25 +24709,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -23975,7 +24770,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 260,
+    "hx2": 1200
    },
    "mood": {
     "emotion": "theft",
@@ -24024,15 +24821,15 @@
     "lens": "normal",
     "move": "tilt_up",
     "from": {
-     "z": 1.06,
-     "x": 0,
-     "y": 30,
+     "z": 1.378,
+     "x": 0.0,
+     "y": 119.5,
      "r": 0
     },
     "to": {
-     "z": 1.14,
-     "x": 0,
-     "y": 0,
+     "z": 1.482,
+     "x": 0.0,
+     "y": 104.5,
      "r": 0
     },
     "shake": 0,
@@ -24079,25 +24876,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -24131,7 +24937,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 260,
+    "hx2": 1200
    },
    "mood": {
     "emotion": "revival",
@@ -24183,15 +24991,15 @@
     "lens": "normal",
     "move": "dolly_left",
     "from": {
-     "z": 1.06,
-     "x": 20,
-     "y": 0,
+     "z": 1.262,
+     "x": -10.0,
+     "y": 111.0,
      "r": 0
     },
     "to": {
-     "z": 1.12,
-     "x": -30,
-     "y": 0,
+     "z": 1.333,
+     "x": -35.0,
+     "y": 111.0,
      "r": 0
     },
     "shake": 0,
@@ -24238,25 +25046,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -24290,7 +25107,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 260,
+    "hx2": 1200
    },
    "mood": {
     "emotion": "reunion",
@@ -24347,15 +25166,15 @@
     "lens": "normal",
     "move": "pan_left",
     "from": {
-     "z": 1.08,
-     "x": 40,
-     "y": 0,
+     "z": 1.331,
+     "x": 40.0,
+     "y": 107.7,
      "r": 0
     },
     "to": {
-     "z": 1.14,
-     "x": -40,
-     "y": 0,
+     "z": 1.405,
+     "x": 0.0,
+     "y": 107.7,
      "r": 0
     },
     "shake": 0,
@@ -24402,25 +25221,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -24454,7 +25282,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 260,
+    "hx2": 1200
    },
    "mood": {
     "emotion": "realisation",
@@ -24565,25 +25395,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -24617,7 +25456,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 260,
+    "hx2": 1200
    },
    "mood": {
     "emotion": "victory",
@@ -24711,25 +25552,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -24763,7 +25613,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 260,
+    "hx2": 1200
    },
    "mood": {
     "emotion": "heartbreak",
@@ -24808,15 +25660,15 @@
     "lens": "normal",
     "move": "crane_down",
     "from": {
-     "z": 1.04,
-     "x": 0,
-     "y": -20,
+     "z": 1.282,
+     "x": -40.0,
+     "y": 98.7,
      "r": 0
     },
     "to": {
-     "z": 1.14,
-     "x": 0,
-     "y": 20,
+     "z": 1.405,
+     "x": -40.0,
+     "y": 118.7,
      "r": 0
     },
     "shake": 0,
@@ -24863,25 +25715,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -24915,7 +25776,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 260,
+    "hx2": 1200
    },
    "mood": {
     "emotion": "collapse",
@@ -25034,25 +25897,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -25086,7 +25958,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 80,
+    "hx2": 1050
    },
    "mood": {
     "emotion": "abandonment",
@@ -25214,25 +26088,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -25266,7 +26149,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 80,
+    "hx2": 1050
    },
    "mood": {
     "emotion": "pursuit",
@@ -25322,15 +26207,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": 0,
-     "y": 0,
+     "z": 1.352,
+     "x": 50.0,
+     "y": 106.5,
      "r": 0
     },
     "to": {
-     "z": 1.14,
-     "x": 40,
-     "y": 0,
+     "z": 1.482,
+     "x": 70.0,
+     "y": 106.5,
      "r": 0
     },
     "shake": 0,
@@ -25377,25 +26262,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -25429,7 +26323,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 80,
+    "hx2": 1050
    },
    "mood": {
     "emotion": "hope",
@@ -25534,25 +26430,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -25586,7 +26491,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 80,
+    "hx2": 1050
    },
    "mood": {
     "emotion": "coldness",
@@ -25623,15 +26530,15 @@
     "lens": "normal",
     "move": "dolly_left",
     "from": {
-     "z": 1.08,
-     "x": 30,
-     "y": 0,
+     "z": 1.296,
+     "x": 5.0,
+     "y": 113.9,
      "r": 0
     },
     "to": {
-     "z": 1.14,
-     "x": -20,
-     "y": 0,
+     "z": 1.368,
+     "x": -20.0,
+     "y": 113.9,
      "r": 0
     },
     "shake": 0,
@@ -25678,25 +26585,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -25730,7 +26646,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 80,
+    "hx2": 1050
    },
    "mood": {
     "emotion": "rejection",
@@ -25833,25 +26751,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -25885,7 +26812,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 80,
+    "hx2": 1050
    },
    "mood": {
     "emotion": "realisation",
@@ -25992,25 +26921,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -26044,7 +26982,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 80,
+    "hx2": 1050
    },
    "mood": {
     "emotion": "true purpose",
@@ -26151,25 +27091,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -26203,7 +27152,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 380,
+    "hx2": 1130
    },
    "mood": {
     "emotion": "horror",
@@ -26261,15 +27212,15 @@
     "lens": "normal",
     "move": "dolly_right",
     "from": {
-     "z": 1.06,
-     "x": -30,
-     "y": 0,
+     "z": 1.378,
+     "x": -135.0,
+     "y": 94.5,
      "r": 0
     },
     "to": {
-     "z": 1.14,
-     "x": 20,
-     "y": 0,
+     "z": 1.482,
+     "x": -110.0,
+     "y": 94.5,
      "r": 0
     },
     "shake": 0,
@@ -26316,25 +27267,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -26368,7 +27328,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 380,
+    "hx2": 1130
    },
    "mood": {
     "emotion": "accusation",
@@ -26466,25 +27428,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -26518,7 +27489,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 380,
+    "hx2": 1130
    },
    "mood": {
     "emotion": "betrayal",
@@ -26646,25 +27619,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -26698,7 +27680,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 380,
+    "hx2": 1130
    },
    "mood": {
     "emotion": "self-justification",
@@ -26743,15 +27727,15 @@
     "lens": "normal",
     "move": "dolly_left",
     "from": {
-     "z": 1.06,
-     "x": 30,
-     "y": 0,
+     "z": 1.367,
+     "x": -15.0,
+     "y": 110.6,
      "r": 0
     },
     "to": {
-     "z": 1.12,
-     "x": -20,
-     "y": 0,
+     "z": 1.444,
+     "x": -40.0,
+     "y": 110.6,
      "r": 0
     },
     "shake": 0,
@@ -26798,25 +27782,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -26850,7 +27843,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 380,
+    "hx2": 1130
    },
    "mood": {
     "emotion": "denial",
@@ -26952,25 +27947,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -27004,7 +28008,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 380,
+    "hx2": 1130
    },
    "mood": {
     "emotion": "twisted logic",
@@ -27132,25 +28138,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -27184,7 +28199,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 380,
+    "hx2": 1130
    },
    "mood": {
     "emotion": "devastation",
@@ -27280,25 +28297,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -27332,7 +28358,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 180,
+    "hx2": 960
    },
    "mood": {
     "emotion": "loss",
@@ -27442,25 +28470,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -27494,7 +28531,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 180,
+    "hx2": 960
    },
    "mood": {
     "emotion": "abandoned",
@@ -27627,25 +28666,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -27679,7 +28727,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 180,
+    "hx2": 960
    },
    "mood": {
     "emotion": "grief to fury",
@@ -27778,25 +28828,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -27830,7 +28889,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 180,
+    "hx2": 960
    },
    "mood": {
     "emotion": "curse",
@@ -27932,25 +28993,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -27984,7 +29054,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 180,
+    "hx2": 960
    },
    "mood": {
     "emotion": "vengeance",
@@ -28031,15 +29103,15 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 0,
-     "y": 0,
+     "z": 1.404,
+     "x": 0.0,
+     "y": 93.8,
      "r": 0
     },
     "to": {
-     "z": 1.16,
-     "x": 0,
-     "y": 0,
+     "z": 1.508,
+     "x": 0.0,
+     "y": 93.8,
      "r": 0
     },
     "shake": 0,
@@ -28086,25 +29158,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -28138,7 +29219,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 180,
+    "hx2": 960
    },
    "mood": {
     "emotion": "confrontation",
@@ -28240,25 +29323,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -28292,7 +29384,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 180,
+    "hx2": 960
    },
    "mood": {
     "emotion": "defiance",
@@ -28333,15 +29427,15 @@
     "lens": "normal",
     "move": "dolly_right",
     "from": {
-     "z": 1.06,
-     "x": -20,
-     "y": 0,
+     "z": 1.378,
+     "x": 150.0,
+     "y": 95.2,
      "r": 0
     },
     "to": {
-     "z": 1.12,
-     "x": 30,
-     "y": 0,
+     "z": 1.456,
+     "x": 175.0,
+     "y": 95.2,
      "r": 0
     },
     "shake": 0,
@@ -28388,25 +29482,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -28440,7 +29543,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 180,
+    "hx2": 960
    },
    "mood": {
     "emotion": "counter-curse",
@@ -28543,25 +29648,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -28595,7 +29709,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 180,
+    "hx2": 960
    },
    "mood": {
     "emotion": "doomed love",
@@ -28651,15 +29767,15 @@
     "lens": "normal",
     "move": "pan_right",
     "from": {
-     "z": 1.04,
-     "x": -30,
-     "y": 0,
+     "z": 1.352,
+     "x": -95.0,
+     "y": 102.0,
      "r": 0
     },
     "to": {
-     "z": 1.1,
-     "x": 40,
-     "y": 0,
+     "z": 1.43,
+     "x": -60.0,
+     "y": 102.0,
      "r": 0
     },
     "shake": 0,
@@ -28706,25 +29822,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -28758,7 +29883,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "cold victory",
@@ -28858,25 +29985,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -28910,7 +30046,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "loss",
@@ -29030,25 +30168,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     }
    ],
    "background": {
@@ -29061,7 +30208,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "question",
@@ -29177,25 +30326,34 @@
     },
     {
      "d": "mid",
-     "contents": "shrubs and a small tulsi bush along the ashram yard",
+     "contents": "dark silhouette trees and a low hedge along the ashram yard",
      "items": [
       {
-       "o": "shrub",
-       "x": 470,
+       "o": "stree",
+       "x": 560,
        "y": 600,
-       "s": 0.9,
-       "col": "#1e120c"
+       "s": 0.55,
+       "h": 520,
+       "seed": 41
+      },
+      {
+       "o": "stree",
+       "x": 1180,
+       "y": 600,
+       "s": 0.6,
+       "h": 560,
+       "seed": 43
       },
       {
        "o": "shrub",
        "x": 820,
-       "y": 606,
-       "s": 0.8,
-       "col": "#1e120c"
+       "y": 612,
+       "s": 0.7,
+       "col": "#120806"
       }
      ],
-     "fog": 0.2,
-     "haze": "#3a1a10"
+     "fog": 0.15,
+     "haze": "#2a120a"
     },
     {
      "d": "near",
@@ -29229,7 +30387,9 @@
      "#3e1a10"
     ],
     "sx": -900,
-    "sy": 200
+    "sy": 200,
+    "hx": 250,
+    "hx2": 1060
    },
    "mood": {
     "emotion": "reflection",
