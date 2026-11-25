@@ -1,0 +1,64 @@
+{
+ "video": "renders/reel03_1080x1920.mp4",
+ "out": "renders/reel03_scored_1080x1920.mp4",
+ "master": 0.16,
+ "voice_db": 10,
+ "cues": [
+  {
+   "track": "renders/bgm/reel03_battle.mp3",
+   "start": 0,
+   "end": 11,
+   "in": 1,
+   "out": 2,
+   "g": 0.85
+  },
+  {
+   "track": "renders/bgm/reel03_dark.mp3",
+   "start": 10,
+   "end": 34,
+   "in": 2,
+   "out": 2,
+   "g": 0.9
+  },
+  {
+   "track": "renders/bgm/reel03_cosmic.mp3",
+   "start": 32.5,
+   "end": 47.5,
+   "in": 2.5,
+   "out": 2,
+   "g": 0.85
+  },
+  {
+   "track": "renders/bgm/reel03_tense.mp3",
+   "start": 46,
+   "end": 70.5,
+   "in": 2,
+   "out": 1.5,
+   "g": 0.8
+  },
+  {
+   "track": "renders/bgm/reel03_battle.mp3",
+   "start": 69,
+   "end": 77.2,
+   "in": 1.2,
+   "out": 0.4,
+   "g": 0.9
+  },
+  {
+   "track": "renders/bgm/reel03_cosmic.mp3",
+   "start": 78.4,
+   "end": 89.333333,
+   "in": 2.5,
+   "out": 4,
+   "g": 0.85
+  }
+ ],
+ "holds": [
+  {
+   "start": 77.2,
+   "end": 78.4,
+   "floor": 0.0,
+   "fade": 0.25
+  }
+ ]
+}
