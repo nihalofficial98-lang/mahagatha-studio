@@ -11,15 +11,26 @@ IND=['#0e0820','#2a1850','#5a2a58','#b05a48'];EMB=['#12060c','#3a1018','#7a2020'
 SK={'indigo':IND,'ember':EMB,'brown':BRN,'night':NITE,'teal':TEAL}
 RIDGE={'indigo':['#3a2a5a','#2e2048','#241838','#1a1028'],'ember':['#6a2a2a','#521e22','#3a1618','#2a0e10'],'brown':['#6a4a34','#523a28','#3a281c','#2a1c12'],'night':['#2a3a6a','#202e56','#18224a','#101830'],'teal':['#2a5a5a','#204a4a','#183a3a','#102a2a']}
 GRD='ep07_dark'
-def layers(sc):
-    r=RIDGE[sc];far_c=r[0];gr=r[2];rk=r[3]
-    return [far("dark far peaks and haze",[mtn(470,470,1.0,far_c,260,160),mtn(840,480,.9,far_c,240,140),cld(520,220,1.1,SK[sc][2])],SK[sc][3],.55),
-            mid("dark ground with rocks",[ground(480,gr,1100,12),{"o":"rock","x":430,"y":520,"s":.8,"col":rk},{"o":"rock","x":860,"y":516,"s":.7,"col":rk}],.2),
-            near("dark rocks low in the corners",[{"o":"rock","x":440,"y":752,"s":1.6,"col":'#120a10'},{"o":"rock","x":840,"y":756,"s":1.5,"col":'#120a10'}],.5)]
+def layers(sc,theme='hills'):
+    r=RIDGE[sc];sil=r[3];sil2=r[2];sk=SK[sc]
+    fars=[mtn(430,470,1.1,r[0],230,190),mtn(560,478,.9,r[1],200,130),mtn(700,470,1.2,r[0],250,210),mtn(830,480,.95,r[1],210,150),cld(500,200,1.0,sk[2]),cld(780,250,.9,sk[2])]
+    if theme=='palace':fars+=[{"o":"wall","x":600,"y":470,"s":.8,"col":sil2},{"o":"pillar","x":470,"y":520,"s":.55,"col":sil2},{"o":"pillar","x":800,"y":520,"s":.55,"col":sil2}]
+    L=[far("layered dark peaks and distant clouds",fars,sk[3],.6)]
+    ms=[ground(480,sil2,1100,12)]
+    if theme=='forest':ms+=[tree(455,520,.65,"banyan",sil),tree(830,516,.6,"pine",sil),tree(540,510,.45,"pine",sil2),tree(760,508,.45,"palm",sil2)]
+    elif theme=='village':ms+=[{"o":"hut","x":470,"y":520,"s":.6,"col":sil},{"o":"hut","x":820,"y":518,"s":.55,"col":sil},tree(560,510,.45,"palm",sil2),tree(740,508,.4,"round",sil2)]
+    elif theme=='palace':ms+=[{"o":"pillar","x":455,"y":540,"s":.8,"col":sil},{"o":"pillar","x":835,"y":540,"s":.8,"col":sil},{"o":"wall","x":640,"y":500,"s":.7,"col":sil2}]
+    else:ms+=[{"o":"rock","x":450,"y":520,"s":.95,"col":sil},{"o":"rock","x":840,"y":516,"s":.85,"col":sil},tree(540,505,.42,"pine",sil2),tree(750,505,.4,"round",sil2)]
+    L.append(mid("dark silhouettes of the setting on both sides",ms,.22))
+    nr=[{"o":"rock","x":440,"y":752,"s":1.6,"col":'#0a0610'},{"o":"rock","x":850,"y":756,"s":1.5,"col":'#0a0610'}]
+    nr+=[tree(420,760,1.5,"pine" if theme in('forest','hills') else "palm",'#0a0610'),tree(870,762,1.4,"round" if theme=='village' else "pine",'#0a0610'),shrub(520,752,1.2,'#0a0610','#0a0610'),shrub(780,752,1.1,'#0a0610','#0a0610')]
+    L.append(near("black foreground silhouettes framing the figures",nr,.55))
+    return L
+THEMES=[('forest',r'\b(forest|wilderness|tree|trees|woods|ashram|mahendra|narmada|river bank)\b'),('palace',r'\b(palace|heaven|temple|gate|council|lanka|vaikuntha|throne|yajna|yagna)\b'),('village',r'\b(village|people|families|relatives|travelers|locals|shambhala|home)\b')]
 def background(sc):
     if sc in SK:return bg("vista",sky=SK[sc],sx=640,sy=300,ridge=RIDGE[sc],haze="200,160,170",dust=10)
     return bg(sc)
-def scene_layers(sc):return layers(sc if sc in SK else PAL.get(sc,'indigo'))
+def scene_layers(sc,theme='hills'):return layers(sc if sc in SK else PAL.get(sc,'indigo'),theme)
 EMO=[('anger',r'\b(angry|furious|rage|cursed|curse|killed|kill|struck|attack|attacked|hit)\b'),('fear',r'\b(scared|afraid|fear|terrified|froze|trapped)\b'),('sad',r'\b(sad|pain|wound|wounded|blood|cried|wandering|lost|punishment)\b'),('surprise',r'\b(suddenly|shock|shocked|surprised|bright|jewels|amazing)\b'),('devotion',r'\b(pray|prayed|worship|worshipped|devotee|loved|blessed)\b'),('pride',r'\b(strong|strongest|powerful|beat|won|brave)\b'),('scheme',r'\b(trick|plan|idea|secret|mistake)\b'),('joy',r'\b(smiled|laughed|happy|gift)\b')]
 POSE=[('sitpray',r'\b(prayed|worshipped|chanted|meditation)\b'),('sleep',r'\b(asleep|sleeping|slept)\b'),('plead',r'\b(begged|asked|forgive)\b'),('lunge',r'\b(killed|struck|attacked|threw|hit|drove|cut)\b'),('fall',r'\b(fell|collapsed|snapped)\b'),('namaste',r'\b(bowed|blessed)\b'),('point',r'\b(told|said|warned|named)\b'),('open',r'\b(spread|rose|appeared)\b')]
 FX=[('ember_fire',r'\b(fire|flames|burned|burning|yajna|yagna)\b',(640,560,300)),('flower_petals',r'\b(lotus|lotuses|flower|flowers)\b',(640,420,420)),('blood_splash',r'\b(blood)\b',(640,500,260)),('curse_glow',r'\b(curse|cursed)\b',(640,420,420)),('lightning_forks',r'\b(lightning|thunder|storm)\b',(640,260,500)),('smoke_plume',r'\b(smoke|ashes|ash)\b',(640,560,300)),('wave_ocean',r'\b(ocean|sea|water|river)\b',(640,640,640)),('divine_rays',r'\b(light|glowing|shine|bright|golden|divine)\b',(640,330,520)),('sudarshan_chakra',r'\b(chakra|disc)\b',(640,400,260)),('red_energy_pulse',r'\b(boon|power|powers|weapon|astra)\b',(640,420,300)),('mist_wisps',r'\b(night|dark|silent|mystery)\b',(640,540,640))]
@@ -83,6 +94,9 @@ def main(reel):
             o=cfg['over'][n]
             if 'scene' in o:scene=o['scene']
             if 'fx' in o:fxs=o['fx']
+        theme=cfg.get('theme','hills')
+        for th,rx in THEMES:
+            if re.search(rx,low):theme=th;break
         cname,ca,cb,shs=CAMS[ci%len(CAMS)];ci+=1
         sh={"id":"x","beat":1,"start":{"t":s[0][2],"word":first}};G.S.append(sh)
         sx=[640,520,760,600,700][n%5]
@@ -91,7 +105,7 @@ def main(reel):
             if len(ch)==1 and n%2:c_['flip']=-1
         sh.update(meaning=re.sub(r'\b(good|great|nice|very|something|anything)\b','it',txt+" (shown as a dark story frame)")[:110],why=re.sub(r'\b(something|anything|things?|stuff|good|great|nice|very)\b','it',f"{(who[0] if who else 'The scene')} in a dark {scene} world while '{txt[:50]}' is spoken."),
           camera=cam(cname,ca,cb,shs,"normal",0,"a slow move that follows the story beat"),focus={"subject":who[0] if who else "scene","depth":"deep"},
-          vertical={"focus":who[0]} if who else {},layers=scene_layers(scene),background=dict(background(scene),sx=sx) if scene in SK else background(scene),mood={"emotion":emo,"grade":GRD},
+          vertical={"focus":who[0]} if who else {},layers=scene_layers(scene,theme),background=dict(background(scene),sx=sx) if scene in SK else background(scene),mood={"emotion":emo,"grade":GRD},
           characters=ch,effects=fxs,transition_in="cut" if n else "fade")
     G.finish()
 if __name__=='__main__':main(sys.argv[1])
