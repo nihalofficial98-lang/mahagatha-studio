@@ -18,7 +18,7 @@ def main(reel):
     w=f'/tmp/{reel}_score.wav'
     with wave.open(w,'wb') as o:o.setnchannels(1);o.setsampwidth(2);o.setframerate(SR);o.writeframes((mix*32000).astype('<i2').tobytes())
     out=f"{R}/{sc['out']}"
-    fc=(f"[1:a]volume={sc['master']}[m];[0:a]volume={sc.get("voice_db",0)}dB,asplit[v][sc];[m][sc]sidechaincompress=threshold=0.03:ratio=5:attack=40:release=500[md];"
+    fc=(f"[1:a]volume={sc['master']}[m];[0:a]volume={sc.get("voice_db",0)}dB,asplit[v][sc];[m][sc]sidechaincompress=threshold=0.03:ratio={sc.get("ratio",5)}:attack=40:release=500[md];"
         "[v][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]")
     subprocess.check_call(['ffmpeg','-y','-v','error','-i',src,'-i',w,'-filter_complex',fc,'-map','0:v','-map','[a]','-c:v','copy','-c:a','aac','-b:a','192k',out]);print(out)
 if __name__=='__main__':main(sys.argv[1])
