@@ -21,3 +21,5 @@ Say the OPPOSITE of what people believe about a character, a claim that sounds a
 - Short, simple plain English. No spoiler of the answer in the hook.
 
 **File name rule (owner):** whenever a video is sent to the owner, the file name must be the video title (for example "EP07 - Kacha Steals the Secret of the Dead.mp4" or "Reel 5 - How Was Shiva Born.mp4"), so the downloaded file has its title as the name. Copy the video with `studio/titled_copy.sh <video> "<Title>"` and send that copy with SendUserFile. Never send files named like `ep07_scored_1080p.mp4`.
+
+- **Name the character in the hook (owner):** the first 2 to 3 spoken lines of every reel and episode, and its title and thumbnail text, must name the main character (or the object, for a story about one), so the viewer knows at once who the story is about. Never open with "a man", "a demon" or "someone" for a named figure.
