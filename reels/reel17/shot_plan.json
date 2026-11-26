@@ -7,7 +7,9 @@
     "t": 0.16,
     "word": "Vishnu"
    },
-   "cues": [],
+   "cues": [
+    "Vishnu"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -34,15 +36,39 @@
      "y": 587,
      "s": 0.9,
      "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
+     "pose": "selfcut",
+     "emo": "pain",
      "mood": {
       "lx": 0.8
      }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "blood_splash",
+     "x": 640,
+     "y": 330,
+     "w": 150,
+     "alpha": 1.0,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 330,
+     "w": 380,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -455,8 +481,7 @@
     "word": "Shiva"
    },
    "cues": [
-    "weapon",
-    "Chakra"
+    "Shiva"
    ],
    "bg": {
     "k": "vista",
@@ -484,7 +509,7 @@
      "y": 590,
      "s": 0.9,
      "flip": 1,
-     "pose": "stand",
+     "pose": "open",
      "emo": "calm",
      "mood": {
       "lx": 0.8
@@ -496,22 +521,22 @@
      "t": "pfx",
      "k": "sudarshan_chakra",
      "x": 640,
-     "y": 400,
-     "w": 260,
-     "alpha": 0.8,
+     "y": 330,
+     "w": 320,
+     "alpha": 1.0,
      "par": 1.0,
-     "c": 1,
+     "c": 0,
      "d": 0.6
     }
    ],
    "fxb": [
     {
      "t": "pfx",
-     "k": "red_energy_pulse",
+     "k": "divine_rays",
      "x": 640,
-     "y": 420,
-     "w": 300,
-     "alpha": 0.8,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.6,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -2089,7 +2114,9 @@
     "t": 31.86,
     "word": "He"
    },
-   "cues": [],
+   "cues": [
+    "He"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -2117,14 +2144,38 @@
      "s": 0.9,
      "flip": -1,
      "pose": "sitpray",
-     "emo": "calm",
+     "emo": "devotion",
      "mood": {
       "lx": -0.8
      }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "flower_petals",
+     "x": 640,
+     "y": 420,
+     "w": 420,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.6,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.04,
@@ -4914,7 +4965,7 @@
     "word": "He"
    },
    "cues": [
-    "lotus"
+    "He"
    ],
    "bg": {
     "k": "vista",
@@ -4942,8 +4993,8 @@
      "y": 587,
      "s": 0.9,
      "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
+     "pose": "selfcut",
+     "emo": "pain",
      "mood": {
       "lx": -0.8
      }
@@ -4952,17 +5003,29 @@
    "fx": [
     {
      "t": "pfx",
-     "k": "flower_petals",
+     "k": "blood_splash",
      "x": 640,
-     "y": 420,
-     "w": 420,
-     "alpha": 0.8,
+     "y": 330,
+     "w": 150,
+     "alpha": 1.0,
      "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 330,
+     "w": 380,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -5360,8 +5423,7 @@
     "word": "Then"
    },
    "cues": [
-    "golden",
-    "disc"
+    "Then"
    ],
    "bg": {
     "k": "kailash"
@@ -5373,7 +5435,7 @@
      "y": 590,
      "s": 0.9,
      "flip": -1,
-     "pose": "stand",
+     "pose": "open",
      "emo": "calm",
      "mood": {
       "lx": -0.8
@@ -5385,11 +5447,11 @@
      "t": "pfx",
      "k": "sudarshan_chakra",
      "x": 640,
-     "y": 400,
-     "w": 260,
-     "alpha": 0.8,
+     "y": 330,
+     "w": 320,
+     "alpha": 1.0,
      "par": 1.0,
-     "c": 1,
+     "c": 0,
      "d": 0.6
     }
    ],
@@ -5400,7 +5462,7 @@
      "x": 640,
      "y": 330,
      "w": 520,
-     "alpha": 0.8,
+     "alpha": 0.6,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -5803,7 +5865,7 @@
     "word": "That"
    },
    "cues": [
-    "Chakra"
+    "That"
    ],
    "bg": {
     "k": "kailash"
@@ -5815,7 +5877,7 @@
      "y": 590,
      "s": 0.9,
      "flip": -1,
-     "pose": "stand",
+     "pose": "open",
      "emo": "calm",
      "mood": {
       "lx": -0.8
@@ -5827,15 +5889,27 @@
      "t": "pfx",
      "k": "sudarshan_chakra",
      "x": 640,
-     "y": 400,
-     "w": 260,
-     "alpha": 0.8,
+     "y": 330,
+     "w": 320,
+     "alpha": 1.0,
      "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.6,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.04,

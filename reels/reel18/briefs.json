@@ -42,43 +42,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -91,24 +118,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -116,14 +159,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -216,43 +291,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -264,25 +366,41 @@
        "col": "#3a1618"
       },
       {
-       "o": "rock",
-       "x": 430,
+       "o": "hut",
+       "x": 470,
        "y": 520,
-       "s": 0.8,
+       "s": 0.6,
        "col": "#2a0e10"
       },
       {
-       "o": "rock",
-       "x": 860,
-       "y": 516,
-       "s": 0.7,
+       "o": "hut",
+       "x": 820,
+       "y": 518,
+       "s": 0.55,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 560,
+       "y": 510,
+       "s": 0.45,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 740,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -290,14 +408,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "palm",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "round",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -392,43 +542,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -441,24 +618,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -466,14 +659,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -566,43 +791,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -615,24 +867,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -640,14 +908,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -730,43 +1030,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -779,24 +1106,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -804,14 +1147,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -906,43 +1281,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -954,25 +1356,41 @@
        "col": "#3a1618"
       },
       {
-       "o": "rock",
-       "x": 430,
+       "o": "hut",
+       "x": 470,
        "y": 520,
-       "s": 0.8,
+       "s": 0.6,
        "col": "#2a0e10"
       },
       {
-       "o": "rock",
-       "x": 860,
-       "y": 516,
-       "s": 0.7,
+       "o": "hut",
+       "x": 820,
+       "y": 518,
+       "s": 0.55,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 560,
+       "y": 510,
+       "s": 0.45,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 740,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -980,14 +1398,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "palm",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "round",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -1080,43 +1530,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -1129,24 +1606,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -1154,14 +1647,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -1244,43 +1769,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -1293,24 +1845,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -1318,14 +1886,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -1408,43 +2008,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -1457,24 +2084,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -1482,14 +2125,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -1572,43 +2247,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a4a34",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a4a34",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5e3a24"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#5e3a24"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -1620,25 +2322,43 @@
        "col": "#3a281c"
       },
       {
-       "o": "rock",
-       "x": 430,
+       "o": "tree",
+       "x": 455,
        "y": 520,
-       "s": 0.8,
+       "s": 0.65,
+       "kind": "banyan",
        "col": "#2a1c12"
       },
       {
-       "o": "rock",
-       "x": 860,
+       "o": "tree",
+       "x": 830,
        "y": 516,
-       "s": 0.7,
+       "s": 0.6,
+       "kind": "pine",
        "col": "#2a1c12"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 510,
+       "s": 0.45,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 760,
+       "y": 508,
+       "s": 0.45,
+       "kind": "palm",
+       "col": "#3a281c"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -1646,14 +2366,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -1746,43 +2498,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#2a3a6a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#24366a"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -1795,24 +2574,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#101830"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#101830"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -1820,14 +2615,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -1910,43 +2737,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#2a3a6a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#24366a"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -1958,25 +2812,41 @@
        "col": "#18224a"
       },
       {
-       "o": "rock",
-       "x": 430,
+       "o": "hut",
+       "x": 470,
        "y": 520,
-       "s": 0.8,
+       "s": 0.6,
        "col": "#101830"
       },
       {
-       "o": "rock",
-       "x": 860,
-       "y": 516,
-       "s": 0.7,
+       "o": "hut",
+       "x": 820,
+       "y": 518,
+       "s": 0.55,
        "col": "#101830"
+      },
+      {
+       "o": "tree",
+       "x": 560,
+       "y": 510,
+       "s": 0.45,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 740,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -1984,14 +2854,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "palm",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "round",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -2074,43 +2976,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#2a3a6a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#24366a"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -2123,24 +3052,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#101830"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#101830"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -2148,14 +3093,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -2248,43 +3225,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#2a3a6a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#24366a"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -2297,24 +3301,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#101830"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#101830"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -2322,14 +3342,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -2412,43 +3464,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -2461,24 +3540,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -2486,14 +3581,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -2598,43 +3725,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -2647,24 +3801,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -2672,14 +3842,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -2762,43 +3964,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -2811,24 +4040,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -2836,14 +4081,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -2926,43 +4203,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -2975,24 +4279,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -3000,14 +4320,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -3100,43 +4452,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -3149,24 +4528,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -3174,14 +4569,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -3264,43 +4691,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -3313,24 +4767,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -3338,14 +4808,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -3428,43 +4930,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -3477,24 +5006,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -3502,14 +5047,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }
@@ -3602,43 +5179,70 @@
    "layers": [
     {
      "d": "far",
-     "contents": "dark far peaks and haze",
-     "fog": 0.55,
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 470,
+       "x": 430,
        "y": 470,
-       "s": 1.0,
-       "w": 260,
-       "h": 160,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 840,
-       "y": 480,
+       "x": 560,
+       "y": 478,
        "s": 0.9,
-       "w": 240,
-       "h": 140,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
        "col": "#6a2a2a",
        "snow": false
       },
       {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
        "o": "cloud",
-       "x": 520,
-       "y": 220,
-       "s": 1.1,
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark ground with rocks",
-     "fog": 0.2,
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
      "items": [
       {
        "o": "hill",
@@ -3651,24 +5255,40 @@
       },
       {
        "o": "rock",
-       "x": 430,
+       "x": 450,
        "y": 520,
-       "s": 0.8,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 860,
+       "x": 840,
        "y": 516,
-       "s": 0.7,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "dark rocks low in the corners",
-     "dark": 0.5,
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
      "blur": 2,
      "items": [
       {
@@ -3676,14 +5296,46 @@
        "x": 440,
        "y": 752,
        "s": 1.6,
-       "col": "#120a10"
+       "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 840,
+       "x": 850,
        "y": 756,
        "s": 1.5,
-       "col": "#120a10"
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
       }
      ]
     }

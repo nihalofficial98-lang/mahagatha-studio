@@ -223,7 +223,7 @@
     "dust": 10
    },
    "mood": {
-    "emotion": "calm",
+    "emotion": "pain",
     "grade": "ep07_dark"
    },
    "characters": [
@@ -233,12 +233,35 @@
      "y": 587,
      "s": 0.9,
      "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
+     "pose": "selfcut",
+     "emo": "pain",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "blood_splash",
+     "word": "Vishnu",
+     "x": 640,
+     "y": 330,
+     "w": 150,
+     "alpha": 1.0,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "blood splash showing what the narration says"
+    },
+    {
+     "k": "divine_rays",
+     "word": "Vishnu",
+     "x": 640,
+     "y": 330,
+     "w": 380,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays showing what the narration says"
+    }
+   ],
    "transition_in": "fade"
   },
   {
@@ -711,7 +734,7 @@
      "y": 590,
      "s": 0.9,
      "flip": 1,
-     "pose": "stand",
+     "pose": "open",
      "emo": "calm",
      "look": 700
     }
@@ -719,25 +742,25 @@
    "effects": [
     {
      "k": "sudarshan_chakra",
-     "word": "Chakra",
+     "word": "Shiva",
      "x": 640,
-     "y": 400,
-     "w": 260,
-     "alpha": 0.8,
+     "y": 330,
+     "w": 320,
+     "alpha": 1.0,
      "par": 1.0,
      "behind": false,
-     "meaning": "sudarshan chakra as the story says 'chakra'"
+     "meaning": "sudarshan chakra showing what the narration says"
     },
     {
-     "k": "red_energy_pulse",
-     "word": "weapon",
+     "k": "divine_rays",
+     "word": "Shiva",
      "x": 640,
-     "y": 420,
-     "w": 300,
-     "alpha": 0.8,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.6,
      "par": 1.0,
      "behind": true,
-     "meaning": "red energy pulse as the story says 'weapon'"
+     "meaning": "divine rays showing what the narration says"
     }
    ],
    "transition_in": "cut"
@@ -2431,7 +2454,7 @@
     "dust": 10
    },
    "mood": {
-    "emotion": "calm",
+    "emotion": "devotion",
     "grade": "ep07_dark"
    },
    "characters": [
@@ -2442,11 +2465,34 @@
      "s": 0.9,
      "flip": -1,
      "pose": "sitpray",
-     "emo": "calm",
+     "emo": "devotion",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "divine_rays",
+     "word": "He",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.6,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays showing what the narration says"
+    },
+    {
+     "k": "flower_petals",
+     "word": "He",
+     "x": 640,
+     "y": 420,
+     "w": 420,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "flower petals showing what the narration says"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -5415,7 +5461,7 @@
     "dust": 10
    },
    "mood": {
-    "emotion": "calm",
+    "emotion": "pain",
     "grade": "ep07_dark"
    },
    "characters": [
@@ -5425,22 +5471,33 @@
      "y": 587,
      "s": 0.9,
      "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
+     "pose": "selfcut",
+     "emo": "pain",
      "look": 700
     }
    ],
    "effects": [
     {
-     "k": "flower_petals",
-     "word": "lotus",
+     "k": "blood_splash",
+     "word": "He",
      "x": 640,
-     "y": 420,
-     "w": 420,
-     "alpha": 0.8,
+     "y": 330,
+     "w": 150,
+     "alpha": 1.0,
      "par": 1.0,
      "behind": false,
-     "meaning": "flower petals as the story says 'lotus'"
+     "meaning": "blood splash showing what the narration says"
+    },
+    {
+     "k": "divine_rays",
+     "word": "He",
+     "x": 640,
+     "y": 330,
+     "w": 380,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays showing what the narration says"
     }
    ],
    "transition_in": "cut"
@@ -5883,33 +5940,33 @@
      "y": 590,
      "s": 0.9,
      "flip": -1,
-     "pose": "stand",
+     "pose": "open",
      "emo": "calm",
      "look": 700
     }
    ],
    "effects": [
     {
+     "k": "sudarshan_chakra",
+     "word": "Then",
+     "x": 640,
+     "y": 330,
+     "w": 320,
+     "alpha": 1.0,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "sudarshan chakra showing what the narration says"
+    },
+    {
      "k": "divine_rays",
-     "word": "golden",
+     "word": "Then",
      "x": 640,
      "y": 330,
      "w": 520,
-     "alpha": 0.8,
+     "alpha": 0.6,
      "par": 1.0,
      "behind": true,
-     "meaning": "divine rays as the story says 'golden'"
-    },
-    {
-     "k": "sudarshan_chakra",
-     "word": "disc",
-     "x": 640,
-     "y": 400,
-     "w": 260,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "sudarshan chakra as the story says 'disc'"
+     "meaning": "divine rays showing what the narration says"
     }
    ],
    "transition_in": "cut"
@@ -6352,7 +6409,7 @@
      "y": 590,
      "s": 0.9,
      "flip": -1,
-     "pose": "stand",
+     "pose": "open",
      "emo": "calm",
      "look": 700
     }
@@ -6360,14 +6417,25 @@
    "effects": [
     {
      "k": "sudarshan_chakra",
-     "word": "Chakra",
+     "word": "That",
      "x": 640,
-     "y": 400,
-     "w": 260,
-     "alpha": 0.8,
+     "y": 330,
+     "w": 320,
+     "alpha": 1.0,
      "par": 1.0,
      "behind": false,
-     "meaning": "sudarshan chakra as the story says 'chakra'"
+     "meaning": "sudarshan chakra showing what the narration says"
+    },
+    {
+     "k": "divine_rays",
+     "word": "That",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.6,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays showing what the narration says"
     }
    ],
    "transition_in": "cut"
