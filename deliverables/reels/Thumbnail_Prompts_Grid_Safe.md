@@ -27,7 +27,7 @@ Scene: furious king Daksha, face large and angry, points a trembling finger at t
 **Reel 8. Title lines: "WHEN VISHNU'S" / "HEAD WAS CUT OFF"** (key word: CUT OFF). Other options: "VISHNU LOST" / "HIS HEAD"
 Scene: Vishnu's headless body sits calmly holding his bow while shocked gods gather around him; a bright ghostly light shows where the head should be. Lakshmi looks on in worry. Show the shock on the gods' faces; keep it clean, no gore. Palette: deep blue ocean, gold.
 
-**Reel 9. Title lines: "DID VISHNU CHEAT" / "A DEVOTEE?"** (key word: CHEAT). Other options: "WHY DID SHIVA" / "RUN AWAY?"
+**Reel 9. Title lines: "THE ONLY DEMON" / "SHIVA RAN FROM"** (key word: RAN FROM). Other options: "THE DEMON SHIVA" / "WAS AFRAID OF"; "SHIVA RAN FROM" / "HIS OWN DEVOTEE"
 Scene: the demon Bhasmasura, face large and wicked, raises a glowing hand toward a worried Shiva; behind them a smiling Vishnu as the beautiful Mohini peeks in. Palette: fire orange, ash grey, blue. Mood: danger with a twist.
 
 **Reel 10. Title lines: "INDRA ATTACKED" / "AN UNBORN BABY"** (key word: UNBORN). Other options: "INDRA'S" / "CRUEL ACT"
