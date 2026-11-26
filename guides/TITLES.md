@@ -9,3 +9,6 @@ Thumbnail / first-frame text: 2-4 big words ("Why Not Kill Bali?", "Ashwatthama 
 4. Full title 6-12 words. First-frame text 2-4 words, same subject, bigger and punchier.
 5. Truthful: the video must pay off exactly what the title asks.
 6. Reels: the first-frame text is the title of the reel; give 3 options ranked, each as `first-frame text` + `full title`.
+
+## Opposite-notion rule (owner)
+Every title and thumbnail text states the opposite of what people believe about the character (see guides/REEL_STYLE.md, "Opposite-notion hook"). Example: "The Only Demon Shiva Ran From".

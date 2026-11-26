@@ -62,3 +62,5 @@ Each chapter is cut as a vertical reel later. Write with that in mind: the hook 
 8. Comment question only at the very end; no next-episode tease anywhere (standalone episode).
 9. Every chapter is 2.5-3.2 min; total 8-10 min at the measured pace.
 10. Read each reel alone: would a stranger understand who, what they want, and why it matters?
+
+- **Hook = opposite notion (owner's rule):** the first 2 to 3 lines say the reverse of what people believe about the character, then the story breaks the old belief. See guides/REEL_STYLE.md.

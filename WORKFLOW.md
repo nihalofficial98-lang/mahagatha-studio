@@ -32,3 +32,5 @@ no beats.json/script or no READY review → 1 · no `build/epNN/timings.json` �
 - Only use names printed by `python3 studio/engine_vocab.py`; anything missing is built by Opus first (engine work).
 - No polling of long jobs; one status line when asked. Render runs as a normal background task and resumes from finished chunks.
 - Voice tags (guides/VOICE_TAGS.md): per-sentence tags that follow the story; never whisper/hush/slow/soft tags; no beat ids; narration only, no quoted dialogue.
+
+**Hook rule (owner):** every hook, title and thumbnail text says the OPPOSITE of what people believe about the character, then the story breaks that belief (guides/REEL_STYLE.md, "Opposite-notion hook").

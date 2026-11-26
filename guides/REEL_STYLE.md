@@ -11,3 +11,11 @@
 - **Reel title = the question the reel answers**, with character names (owner's rule, reels 8-14 on). Examples: "Why Did the Gods Cut Off Vishnu's Head?", "How Did Shiva Escape Bhasmasura?", "Who Was Gajendra the Elephant Before Vishnu Saved Him?". First-frame title = a shortened form of the same question (about 6 words max). The hook's last line raises this question; the last line of the reel answers it.
 
 - **Shock-first hook (owner's rule, from reel 17 on, every story).** The first 2-3 lines must be so shocking or unbelievable that a stranger thinks 'what?!'. Open with the title question, then the most shocking fact of the story (a god tearing out his own eye, a demon's body turning into jewels), then 'why' or 'for whom'. Never open with background, names or setup; no spoilers of the answer.
+
+## Opposite-notion hook (owner's rule, applies to EVERY hook, title, thumbnail text and script from now on)
+Say the OPPOSITE of what people believe about a character, a claim that sounds almost impossible, as a deliberate clickbait hook. The viewer must think "that cannot be true", then the story breaks their old belief and ends with "so that is why it happened".
+- Pick the quality the character is famous for (Shiva fears nothing, Vishnu is all-powerful, Indra protects, Garuda serves, Narada helps) and state the reverse as the hook or title.
+- Examples: "The only demon Shiva ran from" / "The only demon Shiva was afraid of" (Bhasmasura). "The demon who wanted to die" (Bala). "The god who tore out his own eye" (Vishnu). "Did Vishnu cheat a devotee?".
+- The hook is true to the story, only framed as the opposite. The body must show the real reason, so the claim is never a lie (for example Shiva ran because of his own boon and his own word).
+- Use it for: reel/episode title, first-frame text, thumbnail text (2 short lines, key word in yellow), the first 2-3 spoken lines, captions. Combine with the shock-first rule above: title, then the shocking opposite fact, then no repeated question.
+- Short, simple plain English. No spoiler of the answer in the hook.

@@ -30,16 +30,16 @@ Scene: Vishnu's headless body sits calmly holding his bow while shocked gods gat
 **Reel 9. Title lines: "THE ONLY DEMON" / "SHIVA RAN FROM"** (key word: RAN FROM). Other options: "THE DEMON SHIVA" / "WAS AFRAID OF"; "SHIVA RAN FROM" / "HIS OWN DEVOTEE"
 Scene: the demon Bhasmasura, face large and wicked, raises a glowing hand toward a worried Shiva; behind them a smiling Vishnu as the beautiful Mohini peeks in. Palette: fire orange, ash grey, blue. Mood: danger with a twist.
 
-**Reel 10. Title lines: "INDRA ATTACKED" / "AN UNBORN BABY"** (key word: UNBORN). Other options: "INDRA'S" / "CRUEL ACT"
+**Reel 10. Title lines: "THE GOD WHO" / "CUT AN UNBORN BABY"** (key word: UNBORN). Other options: "INDRA ATTACKED" / "AN UNBORN BABY"
 Scene: Indra, holding his thunderbolt, looms over a glowing sleeping child-shaped light of seven tiny golden babies inside a mother's glowing womb; the mother Diti kneels, looking up in fear. Palette: lightning white and royal purple. Mood: shock, mystery.
 
 **Reel 15. Title lines: "WHY GARUDA" / "SERVES VISHNU?"** (key word: SERVES VISHNU). Other options: "GARUDA WON" / "A BOON"
 Scene: Garuda carrying a smiling blue Vishnu, who holds his mace and conch, flying through glowing clouds. Garuda's face is large and proud. Palette: gold, deep blue, white clouds.
 
-**Reel 16. Title lines: "WHY DID BALA" / "AGREE TO DIE?"** (key word: DIE). Other options: "THE DEMON WHO" / "WANTED TO DIE"
+**Reel 16. Title lines: "THE DEMON WHO" / "WANTED TO DIE"** (key word: DIE). Other options: "WHY DID BALA" / "AGREE TO DIE?"
 Scene: the huge demon Bala, in golden armour, face calm and proud, standing before the gods and Indra with a glowing sacrifice fire at his feet; the gods look small and nervous. Palette: dark red, gold, black.
 
-**Reel 17. Title lines: "VISHNU TORE" / "OUT HIS EYE"** (key word: EYE). Other options: "VISHNU'S EYE" / "FOR SHIVA"
+**Reel 17. Title lines: "THE GOD WHO" / "TORE OUT HIS EYE"** (key word: EYE). Other options: "VISHNU TORE" / "OUT HIS EYE"
 Scene: Vishnu, face large and in pain but strong, holds a glowing lotus-eye in his hand toward Shiva, who sits on Kailash with a fiery spinning golden Sudarshana Chakra glowing in the sky behind him. Keep it clean, no gore. Palette: Kailash ice blue, fire gold.
 
 ## Check before you post
