@@ -16285,11 +16285,11 @@
      "k": "glow",
      "x": 862,
      "y": 415,
-     "w": 60,
+     "w": 40,
      "meaning": "the speck catches the firelight",
      "word": "black",
      "rgb": "255,150,80",
-     "ga": 0.4
+     "ga": 0.2
     }
    ],
    "transition_in": "cut"
@@ -16439,8 +16439,8 @@
     {
      "k": "ash_speck",
      "x": 640,
-     "y": 330,
-     "w": 190,
+     "y": 320,
+     "w": 300,
      "meaning": "Kacha's ash on her finger"
     },
     {
@@ -19313,16 +19313,16 @@
    "effects": [
     {
      "k": "burnt_cloth",
-     "x": 230,
-     "y": 330,
-     "w": 150,
+     "x": 440,
+     "y": 300,
+     "w": 130,
      "meaning": "Kacha, what is left of him"
     },
     {
      "k": "glow",
-     "x": 230,
-     "y": 320,
-     "w": 160,
+     "x": 440,
+     "y": 290,
+     "w": 150,
      "meaning": "the cloth glows like a memory",
      "rgb": "255,120,60",
      "ga": 0.4
@@ -25628,19 +25628,24 @@
      "y": 340,
      "s": 1.15,
      "flip": -1,
-     "emo": "shock",
+     "emo": "pain",
      "look": 300,
      "head": true,
      "actions": [
       {
        "word": "knew",
        "d": 0.8,
-       "emo": "pain",
        "mood": {
-        "tears": 0.6
+        "blink": 0.6,
+        "tears": 0.8
        }
       }
-     ]
+     ],
+     "mood": {
+      "anger": 0,
+      "sad": 1,
+      "tears": 0.6
+     }
     }
    ],
    "effects": [],

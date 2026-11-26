@@ -743,13 +743,13 @@ S(254.02,'close','tele','dolly_right',C(1.1,1.16,-20,20,0,0),'slide to the speck
   'Devayani\'s face close on the left as she reaches toward her father; on the right a black speck of ash glints on his white beard by his lips.',
   'ash speck',ashram(night=True),'discovery',
   [F('devayani',380,350,1.0,1,'grief',head=True,look='shukracharya'),F('shukracharya',880,340,1.05,-1,'horror',head=True,look='devayani')],
-  [X('ash_speck',862,415,34,'the black speck of Kacha\'s ash on his lips',word='black',d=.3),X('glow',862,415,60,'the speck catches the firelight',rgb='255,150,80',ga=.4,word='black')])
+  [X('ash_speck',862,415,34,'the black speck of Kacha\'s ash on his lips',word='black',d=.3),X('glow',862,415,40,'the speck catches the firelight',rgb='255,150,80',ga=.2,word='black')])
 S(256.44,'insert','tele','push_in',C(1.08,1.18),'push into the speck of ash',
   'The speck was Kacha\'s ash.',
   'The black ash flakes, huge in the centre, glow on Devayani\'s fingertip; her face on the left and her father\'s on the right stare at it.',
   'ash speck',ashram(night=True,near=False),'horror',
   [F('devayani',260,380,.9,1,'shock',head=True,look=640),F('shukracharya',1020,380,.9,-1,'horror',head=True,look=640)],
-  [X('ash_speck',640,330,190,'Kacha\'s ash on her finger'),X('glow',640,330,200,'the ash in the firelight',rgb='255,130,60',ga=.35)])
+  [X('ash_speck',640,320,300,'Kacha\'s ash on her finger'),X('glow',640,330,200,'the ash in the firelight',rgb='255,130,60',ga=.35)])
 S(258.02,'medium','normal','pan_left',C(1.08,1.12,40,-40,0,0),'memory: pan across the demon who poisoned the cup',
   'The demons had put Kacha\'s ash in his wine.',
   'In a remembered flash of the feast hall, the plum demon grins and holds up the ash-swirled wine cup.',
@@ -847,7 +847,7 @@ S(303.39,'medium','normal','dolly_right',C(1.08,1.12,-40,30,0,0),'slide from the
   'Devayani looks to the glowing burnt cloth of Kacha on the left, then to her father on the right, torn.',
   'devayani',ashram(night=True),'dilemma',
   [F('devayani',560,690,.9,1,'pain',look=200,actions=[A('or',look='shukracharya',d=.4)]),F('shukracharya',940,676,.86,-1,'calm',look='devayani')],
-  [X('burnt_cloth',230,330,150,'Kacha, what is left of him'),X('glow',230,320,160,'the cloth glows like a memory',rgb='255,120,60',ga=.4)])
+  [X('burnt_cloth',440,300,130,'Kacha, what is left of him'),X('glow',440,290,150,'the cloth glows like a memory',rgb='255,120,60',ga=.4)])
 S(304.86,'close','tele','push_in',C(1.1,1.22),'push in as her eyes light up',
   'Her eyes lit up. She said she did not have to choose.',
   'Devayani\'s face lights up: eyes wide, a hopeful smile breaking through her tears.',
@@ -1058,7 +1058,7 @@ S(391.24,'close','tele','static',C(1.14,1.14),'hold on the face that breaks',
   'He knew. There was no rage on his face, only pain.',
   'Shukracharya\'s face in close-up: no anger at all, only deep pain, tears in his old eyes.',
   'shukracharya',ashram(night=True),'heartbreak',
-  [F('shukracharya',640,340,1.15,-1,'shock',head=True,look=300,actions=[A('knew',emo='pain',mood={'tears':.6},d=.8)])])
+  [F('shukracharya',640,340,1.15,-1,'pain',head=True,look=300,mood={'anger':0,'sad':1,'tears':.6},actions=[A('knew',mood={'blink':.6,'tears':.8},d=.8)])])
 S(395.33,'medium','normal','crane_down',C(1.04,1.14,0,0,-20,20),'drop down with him as he falls',
   'And he fell to the ground.',
   'Shukracharya topples backwards to the ground, arms flung out; Devayani reaches toward him in shock.',
