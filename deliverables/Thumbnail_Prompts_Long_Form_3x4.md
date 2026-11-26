@@ -8,7 +8,7 @@ Use these as the cover for Instagram and Facebook. 3:4 is the size the Instagram
 - A small "EP 01" style badge in the top-left corner is fine, but keep it small and outside the title.
 
 ## Master prompt (paste first, then one episode block)
-Vertical 3:4 cover image, 1080x1440, for a long Indian mythology video. Bold, vivid, painterly illustration like a premium comic cover: rich saturated colours, dramatic glowing light behind the hero, thick clean outlines, high contrast, readable at the size of a small phone thumbnail. A huge bold title sits in the top third, centred, on two short lines, first line white and the key word in bright yellow, thick black outline and a soft shadow, letters filling about 80% of the width without touching the edges. The main character's face and upper body are large and fully visible in the middle, centred, with a strong clear emotion. Keep 6% of empty margin around every edge. No watermark, not photorealistic, not a 3D render, no extra text except the title. Spell the title exactly as given.
+Vertical 3:4 cover image, 1080x1440, for a long Indian mythology video. Bold, vivid, painterly illustration like a premium comic cover: rich saturated colours, dramatic glowing light behind the hero, thick clean outlines, high contrast, readable at the size of a small phone thumbnail. A huge bold title sits in the top third, centred, on two short lines in a clean, simple, very readable bold sans-serif font (like Montserrat ExtraBold, solid straight letters, all capitals), first line plain white and the key word solid yellow, a thin dark outline and a soft plain shadow, no neon, no glow, no brush or handwritten style, no decoration, letters filling about 80% of the width without touching the edges. The main character's face and upper body are large and fully visible in the middle, centred, with a strong clear emotion. Keep 6% of empty margin around every edge. No watermark, not photorealistic, not a 3D render, no extra text except the title. Spell the title exactly as given.
 
 ## Episode blocks
 
@@ -35,3 +35,9 @@ Scene: young sage Kacha, face cold and half-smiling, standing in front of the ol
 
 ## Check before you post
 Shrink the image to a small square on your phone. The title and the face should both be easy to read. If not, ask the tool to make the letters bigger and move the face to the centre.
+
+## Font options to try (all simple and readable)
+1. Montserrat ExtraBold (default in the prompt).
+2. Bebas Neue style: tall, narrow, capitals. Fits more letters on a line.
+3. Anton or Impact style: very heavy and narrow, strongest at a small size.
+To test one, replace the font name in the master prompt. If the tool spells the text wrongly, generate the picture without text and add the title in Canva with the same font.

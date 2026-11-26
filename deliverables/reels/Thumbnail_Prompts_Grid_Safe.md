@@ -11,7 +11,7 @@ Safe zones (percent of the 1080x1920 image, measured from the top):
 - Left and right 10%: nothing important. Keep all text 10% away from both edges.
 
 ## Master prompt (paste first, then one reel block)
-Vertical 9:16 cover image, 1080x1920, for a short Indian mythology video. Bold, vivid, painterly illustration like a premium comic cover: rich saturated colours, dramatic glowing light behind the hero, thick clean outlines, high contrast, readable at the size of a small phone thumbnail. IMPORTANT LAYOUT: the picture will be cropped to 3:4 from the centre, so everything that matters must be inside the middle 75% of the height and the middle 80% of the width. Put a huge bold title in the upper-middle area, between 14% and 40% of the height, perfectly centred, on two short lines, with the first line in white and the key word in bright yellow, thick black outline and a soft shadow, letters very large so they fill about 80% of the width without touching the edges. The main character's face and upper body must be large and fully visible between 38% and 80% of the height, centred, with a strong clear emotion on the face. The top 14% and the bottom 20% contain only background, glow or sky, no faces, no text, no hands holding important objects. No watermark, not photorealistic, not a 3D render, no extra text except the title, spell the title exactly as given.
+Vertical 9:16 cover image, 1080x1920, for a short Indian mythology video. Bold, vivid, painterly illustration like a premium comic cover: rich saturated colours, dramatic glowing light behind the hero, thick clean outlines, high contrast, readable at the size of a small phone thumbnail. IMPORTANT LAYOUT: the picture will be cropped to 3:4 from the centre, so everything that matters must be inside the middle 75% of the height and the middle 80% of the width. Put a huge bold title in the upper-middle area, between 14% and 40% of the height, perfectly centred, on two short lines in a clean, simple, very readable bold sans-serif font (like Montserrat ExtraBold, solid straight letters, all capitals), first line plain white and the key word solid yellow, a thin dark outline and a soft plain shadow, no neon, no glow, no brush or handwritten style, no decoration, letters very large so they fill about 80% of the width without touching the edges. The main character's face and upper body must be large and fully visible between 38% and 80% of the height, centred, with a strong clear emotion on the face. The top 14% and the bottom 20% contain only background, glow or sky, no faces, no text, no hands holding important objects. No watermark, not photorealistic, not a 3D render, no extra text except the title, spell the title exactly as given.
 
 ## Reel blocks (add after the master prompt)
 
@@ -44,3 +44,9 @@ Scene: Vishnu, face large and in pain but strong, holds a glowing lotus-eye in h
 
 ## Check before you post
 Shrink the image to a small square thumbnail on your phone. If the title and the face are not both readable inside the middle 3:4, ask the image tool to move them toward the centre.
+
+## Font options to try (all simple and readable)
+1. Montserrat ExtraBold (default in the prompt).
+2. Bebas Neue style: tall, narrow, capitals. Fits more letters on a line.
+3. Anton or Impact style: very heavy and narrow, strongest at a small size.
+To test one, replace the font name in the master prompt. If the tool spells the text wrongly, generate the picture without text and add the title in Canva with the same font.
