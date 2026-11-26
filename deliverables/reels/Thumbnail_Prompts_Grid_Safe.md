@@ -15,31 +15,31 @@ Vertical 9:16 cover image, 1080x1920, for a short Indian mythology video. Bold, 
 
 ## Reel blocks (add after the master prompt)
 
-**Reel 5. Title lines: "SHIVA BORN" / "FROM ANGER"** (key word: ANGER)
+**Reel 5. Title lines: "SHIVA WAS" / "BORN ANGRY"** (key word: ANGRY). Other options: "BRAHMA'S ANGER" / "MADE A GOD"
 Scene: Brahma sits shocked on a lotus, centred. Behind and above his forehead a blazing red-orange fiery being with glowing red eyes bursts out. Two or three tiny child sages walk away in the lower corner. Mood: explosive, shocking. Palette: red, orange, gold, with dark blue night sky.
 
-**Reel 6. Title lines: "WHY DO WE" / "SAY SWAHA?"** (key word: SWAHA)
+**Reel 6. Title lines: "WHO IS" / "SWAHA?"** (key word: SWAHA). Other options: "WHY DO WE" / "SAY SWAHA?"
 Scene: a beautiful goddess Swaha with a kind, bright face stands in a golden sacrificial fire, her hands offering a glowing flame upward to gods floating in clouds. Palette: warm orange fire and gold on deep blue. Mood: sacred, curious.
 
-**Reel 7. Title lines: "DAKSHA CURSED" / "NARADA"** (key word: CURSED)
+**Reel 7. Title lines: "CURSED TO" / "NEVER STOP"** (key word: NEVER STOP). Other options: "DAKSHA CURSED" / "NARADA"
 Scene: furious king Daksha, face large and angry, points a trembling finger at the calm sage Narada, who holds a veena and looks sad but steady. Dark stormy sky with a lightning glow behind them. Mood: anger against calm.
 
-**Reel 8. Title lines: "VISHNU LOST" / "HIS HEAD"** (key word: HEAD)
+**Reel 8. Title lines: "VISHNU'S HEAD" / "FELL OFF!"** (key word: FELL OFF). Other options: "HEADLESS" / "VISHNU"
 Scene: Vishnu's headless body sits calmly holding his bow while shocked gods gather around him; a bright ghostly light shows where the head should be. Lakshmi looks on in worry. Show the shock on the gods' faces; keep it clean, no gore. Palette: deep blue ocean, gold.
 
-**Reel 9. Title lines: "THE DEMON WHO" / "BURNED SHIVA"** (key word: BURNED)
+**Reel 9. Title lines: "HE TRIED TO" / "BURN SHIVA"** (key word: BURN). Other options: "SHIVA'S BOON" / "BACKFIRED"
 Scene: the demon Bhasmasura, face large and wicked, raises a glowing hand toward a worried Shiva; behind them a smiling Vishnu as the beautiful Mohini peeks in. Palette: fire orange, ash grey, blue. Mood: danger with a twist.
 
-**Reel 10. Title lines: "INDRA CUT" / "THE UNBORN"** (key word: UNBORN)
+**Reel 10. Title lines: "INDRA ATTACKED" / "AN UNBORN BABY"** (key word: UNBORN). Other options: "INDRA'S" / "CRUEL ACT"
 Scene: Indra, holding his thunderbolt, looms over a glowing sleeping child-shaped light of seven tiny golden babies inside a mother's glowing womb; the mother Diti kneels, looking up in fear. Palette: lightning white and royal purple. Mood: shock, mystery.
 
-**Reel 15. Title lines: "GARUDA" / "BECAME HIS RIDE"** (key word: RIDE)
+**Reel 15. Title lines: "WHY GARUDA" / "SERVES VISHNU?"** (key word: SERVES VISHNU). Other options: "GARUDA WON" / "A BOON"
 Scene: Garuda carrying a smiling blue Vishnu, who holds his mace and conch, flying through glowing clouds. Garuda's face is large and proud. Palette: gold, deep blue, white clouds.
 
-**Reel 16. Title lines: "WHY BALA" / "AGREED TO DIE"** (key word: DIE)
+**Reel 16. Title lines: "WHY DID BALA" / "AGREE TO DIE?"** (key word: DIE). Other options: "THE DEMON WHO" / "WANTED TO DIE"
 Scene: the huge demon Bala, in golden armour, face calm and proud, standing before the gods and Indra with a glowing sacrifice fire at his feet; the gods look small and nervous. Palette: dark red, gold, black.
 
-**Reel 17. Title lines: "VISHNU TORE" / "OUT HIS EYE"** (key word: EYE)
+**Reel 17. Title lines: "VISHNU TORE" / "OUT HIS EYE"** (key word: EYE). Other options: "VISHNU'S EYE" / "FOR SHIVA"
 Scene: Vishnu, face large and in pain but strong, holds a glowing lotus-eye in his hand toward Shiva, who sits on Kailash with a fiery spinning golden Sudarshana Chakra glowing in the sky behind him. Keep it clean, no gore. Palette: Kailash ice blue, fire gold.
 
 ## Check before you post
