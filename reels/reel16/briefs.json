@@ -1,0 +1,5038 @@
+{
+ "episode": "reel16",
+ "format": "vertical",
+ "shots": [
+  {
+   "id": "s01",
+   "beat": 1,
+   "start": {
+    "t": 0.16,
+    "word": "A"
+   },
+   "duration": 3.38,
+   "narration": "A demon beat Indra and took heaven.",
+   "meaning": "A demon beat Indra and took heaven. (shown as a dark story frame)",
+   "why": "bala in a dark indigo world while 'A demon beat Indra and took heaven.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.07,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b05a48",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#5a2a58"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#241838"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#1a1028"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#1a1028"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#0e0820",
+     "#2a1850",
+     "#5a2a58",
+     "#b05a48"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#3a2a5a",
+     "#2e2048",
+     "#241838",
+     "#1a1028"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "pride",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 470,
+     "y": 588,
+     "s": 0.765,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "pride",
+     "look": 700
+    },
+    {
+     "who": "indra",
+     "x": 810,
+     "y": 588,
+     "s": 0.765,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s02",
+   "beat": 1,
+   "start": {
+    "t": 3.54,
+    "word": "No"
+   },
+   "duration": 1.96,
+   "narration": "No god could kill him.",
+   "meaning": "No god could kill him. (shown as a dark story frame)",
+   "why": "deva_thin in a dark indigo world while 'No god could kill him.' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b05a48",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#5a2a58"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#241838"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#1a1028"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#1a1028"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#0e0820",
+     "#2a1850",
+     "#5a2a58",
+     "#b05a48"
+    ],
+    "sx": 520,
+    "sy": 300,
+    "ridge": [
+     "#3a2a5a",
+     "#2e2048",
+     "#241838",
+     "#1a1028"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "anger",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 610,
+     "y": 588,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "anger",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s03",
+   "beat": 1,
+   "start": {
+    "t": 5.5,
+    "word": "Then"
+   },
+   "duration": 2.7,
+   "narration": "Then he agreed to die.",
+   "meaning": "Then he agreed to die. (shown as a dark story frame)",
+   "why": "deva_thin in a dark indigo world while 'Then he agreed to die.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "pan_left",
+    "from": {
+     "z": 1.04,
+     "x": 22,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": -22,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b05a48",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#5a2a58"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#241838"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#1a1028"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#1a1028"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#0e0820",
+     "#2a1850",
+     "#5a2a58",
+     "#b05a48"
+    ],
+    "sx": 760,
+    "sy": 300,
+    "ridge": [
+     "#3a2a5a",
+     "#2e2048",
+     "#241838",
+     "#1a1028"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 670,
+     "y": 590,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s04",
+   "beat": 1,
+   "start": {
+    "t": 8.2,
+    "word": "Bala"
+   },
+   "duration": 3.62,
+   "narration": "Bala was a demon king, but his heart was kind.",
+   "meaning": "Bala was a demon king, but his heart was kind. (shown as a dark story frame)",
+   "why": "bala in a dark indigo world while 'Bala was a demon king, but his heart was kind.' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "tilt_up",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b05a48",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#5a2a58"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#241838"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#1a1028"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#1a1028"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#0e0820",
+     "#2a1850",
+     "#5a2a58",
+     "#b05a48"
+    ],
+    "sx": 600,
+    "sy": 300,
+    "ridge": [
+     "#3a2a5a",
+     "#2e2048",
+     "#241838",
+     "#1a1028"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 630,
+     "y": 594,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s05",
+   "beat": 1,
+   "start": {
+    "t": 11.82,
+    "word": "He"
+   },
+   "duration": 3.48,
+   "narration": "He had never refused anyone who asked him for a gift.",
+   "meaning": "He had never refused anyone who asked him for a gift. (shown as a dark story frame)",
+   "why": "bala in a dark indigo world while 'He had never refused anyone who asked him for a gi' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pan_right",
+    "from": {
+     "z": 1.04,
+     "x": -22,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 22,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b05a48",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#5a2a58"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#241838"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#1a1028"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#1a1028"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#0e0820",
+     "#2a1850",
+     "#5a2a58",
+     "#b05a48"
+    ],
+    "sx": 700,
+    "sy": 300,
+    "ridge": [
+     "#3a2a5a",
+     "#2e2048",
+     "#241838",
+     "#1a1028"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "joy",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 655,
+     "y": 590,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "joy",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s06",
+   "beat": 1,
+   "start": {
+    "t": 15.3,
+    "word": "The"
+   },
+   "duration": 3.08,
+   "narration": "The gods stood outside heaven with nowhere to go.",
+   "meaning": "The gods stood outside heaven with nowhere to go. (shown as a dark story frame)",
+   "why": "deva_thin in a dark indigo world while 'The gods stood outside heaven with nowhere to go.' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b05a48",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#5a2a58"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#241838"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#1a1028"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#1a1028"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#0e0820",
+     "#2a1850",
+     "#5a2a58",
+     "#b05a48"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#3a2a5a",
+     "#2e2048",
+     "#241838",
+     "#1a1028"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 470,
+     "y": 590,
+     "s": 0.765,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "indra",
+     "x": 810,
+     "y": 590,
+     "s": 0.765,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s07",
+   "beat": 1,
+   "start": {
+    "t": 18.38,
+    "word": "Bala"
+   },
+   "duration": 5.56,
+   "narration": "Bala walked up to them and told them he had always given freely, and he would give again.",
+   "meaning": "Bala walked up to them and told them he had always given freely, and he would give again. (shown as a dark sto",
+   "why": "bala in a dark indigo world while 'Bala walked up to them and told them he had always' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 14,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b05a48",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#5a2a58"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#241838"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#1a1028"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#1a1028"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#0e0820",
+     "#2a1850",
+     "#5a2a58",
+     "#b05a48"
+    ],
+    "sx": 520,
+    "sy": 300,
+    "ridge": [
+     "#3a2a5a",
+     "#2e2048",
+     "#241838",
+     "#1a1028"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 610,
+     "y": 587,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "point",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s08",
+   "beat": 1,
+   "start": {
+    "t": 23.94,
+    "word": "Whenever"
+   },
+   "duration": 3.7,
+   "narration": "Whenever they held a yajna, a fire ritual, he would help.",
+   "meaning": "Whenever they held a yajna, a fire ritual, he would help. (shown as a dark story frame)",
+   "why": "bala in a dark ember world while 'Whenever they held a yajna, a fire ritual, he woul' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.07,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 760,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 670,
+     "y": 587,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "yajna",
+     "x": 640,
+     "y": 560,
+     "w": 300,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire as the story says 'yajna'"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s09",
+   "beat": 1,
+   "start": {
+    "t": 27.64,
+    "word": "Indra"
+   },
+   "duration": 1.54,
+   "narration": "Indra smiled.",
+   "meaning": "Indra smiled. (shown as a dark story frame)",
+   "why": "indra in a dark ember world while 'Indra smiled.' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "indra",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "indra"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 600,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "joy",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "indra",
+     "x": 630,
+     "y": 588,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "joy",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s10",
+   "beat": 1,
+   "start": {
+    "t": 29.18,
+    "word": "The"
+   },
+   "duration": 1.96,
+   "narration": "The gods held their yajna.",
+   "meaning": "The gods held their yajna. (shown as a dark story frame)",
+   "why": "deva_thin in a dark ember world while 'The gods held their yajna.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "pan_left",
+    "from": {
+     "z": 1.04,
+     "x": 22,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": -22,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 700,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 655,
+     "y": 590,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "yajna",
+     "x": 640,
+     "y": 560,
+     "w": 300,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire as the story says 'yajna'"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s11",
+   "beat": 1,
+   "start": {
+    "t": 31.14,
+    "word": "A"
+   },
+   "duration": 2.76,
+   "narration": "A yajna needs a being to offer to the fire.",
+   "meaning": "A yajna needs a being to offer to the fire. (shown as a dark story frame)",
+   "why": "deva_thin in a dark ember world while 'A yajna needs a being to offer to the fire.' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "tilt_up",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 640,
+     "y": 594,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "yajna",
+     "x": 640,
+     "y": 560,
+     "w": 300,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire as the story says 'yajna'"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s12",
+   "beat": 1,
+   "start": {
+    "t": 33.9,
+    "word": "They"
+   },
+   "duration": 3.44,
+   "narration": "They bowed to Bala and asked him to offer himself.",
+   "meaning": "They bowed to Bala and asked him to offer himself. (shown as a dark story frame)",
+   "why": "bala in a dark ember world while 'They bowed to Bala and asked him to offer himself.' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pan_right",
+    "from": {
+     "z": 1.04,
+     "x": -22,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 22,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 520,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 610,
+     "y": 590,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "plead",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s13",
+   "beat": 1,
+   "start": {
+    "t": 37.34,
+    "word": "The"
+   },
+   "duration": 1.62,
+   "narration": "The hall froze.",
+   "meaning": "The hall froze. (shown as a dark story frame)",
+   "why": "bala in a dark ember world while 'The hall froze.' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 760,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "fear",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 670,
+     "y": 589,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "fear",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s14",
+   "beat": 1,
+   "start": {
+    "t": 38.96,
+    "word": "Bala"
+   },
+   "duration": 3.38,
+   "narration": "Bala stood up and came closer and closer.",
+   "meaning": "Bala stood up and came closer and closer. (shown as a dark story frame)",
+   "why": "bala in a dark ember world while 'Bala stood up and came closer and closer.' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 14,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 600,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 630,
+     "y": 587,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s15",
+   "beat": 1,
+   "start": {
+    "t": 42.34,
+    "word": "Then"
+   },
+   "duration": 3.82,
+   "narration": "Then he folded his hands and said he was ready.",
+   "meaning": "Then he folded his hands and said he was ready. (shown as a dark story frame)",
+   "why": "bala in a dark ember world while 'Then he folded his hands and said he was ready.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.07,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 700,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 655,
+     "y": 587,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "point",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s16",
+   "beat": 1,
+   "start": {
+    "t": 46.16,
+    "word": "The"
+   },
+   "duration": 2.0,
+   "narration": "The flames took his body.",
+   "meaning": "The flames took his body. (shown as a dark story frame)",
+   "why": "bala in a dark ember world while 'The flames took his body.' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 640,
+     "y": 588,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "flames",
+     "x": 640,
+     "y": 560,
+     "w": 300,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire as the story says 'flames'"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s17",
+   "beat": 1,
+   "start": {
+    "t": 48.16,
+    "word": "Then"
+   },
+   "duration": 1.62,
+   "narration": "Then someone cried out.",
+   "meaning": "Then someone cried out. (shown as a dark story frame)",
+   "why": "bala in a dark ember world while 'Then someone cried out.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "pan_left",
+    "from": {
+     "z": 1.04,
+     "x": 22,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": -22,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 520,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "sad",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 610,
+     "y": 590,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "sad",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s18",
+   "beat": 1,
+   "start": {
+    "t": 49.78,
+    "word": "The"
+   },
+   "duration": 4.46,
+   "narration": "The burnt body was turning into something so bright that no one could look at it.",
+   "meaning": "The burnt body was turning into it so bright that no one could look at it. (shown as a dark story frame)",
+   "why": "bala in a dark ember world while 'The burnt body was turning into it so brigh' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "tilt_up",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 760,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "surprise",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 670,
+     "y": 594,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "surprise",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "divine_rays",
+     "word": "bright",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays as the story says 'bright'"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s19",
+   "beat": 1,
+   "start": {
+    "t": 54.24,
+    "word": "The"
+   },
+   "duration": 2.76,
+   "narration": "The gods tried to lift it to heaven, but it slipped.",
+   "meaning": "The gods tried to lift it to heaven, but it slipped. (shown as a dark story frame)",
+   "why": "deva_thin in a dark ember world while 'The gods tried to lift it to heaven, but it slippe' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pan_right",
+    "from": {
+     "z": 1.04,
+     "x": -22,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 22,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 600,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 460,
+     "y": 591,
+     "s": 0.765,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "indra",
+     "x": 800,
+     "y": 591,
+     "s": 0.765,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s20",
+   "beat": 1,
+   "start": {
+    "t": 57.0,
+    "word": "It"
+   },
+   "duration": 3.44,
+   "narration": "It fell to earth and broke into 84 pieces.",
+   "meaning": "It fell to earth and broke into 84 pieces. (shown as a dark story frame)",
+   "why": "deva_thin in a dark ember world while 'It fell to earth and broke into 84 pieces.' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 700,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 655,
+     "y": 589,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s21",
+   "beat": 1,
+   "start": {
+    "t": 60.44,
+    "word": "Wherever"
+   },
+   "duration": 2.6,
+   "narration": "Wherever they landed, they became jewels.",
+   "meaning": "Wherever they landed, they became jewels. (shown as a dark story frame)",
+   "why": "deva_thin in a dark night world while 'Wherever they landed, they became jewels.' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 14,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "surprise",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 640,
+     "y": 587,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "surprise",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s22",
+   "beat": 1,
+   "start": {
+    "t": 63.04,
+    "word": "His"
+   },
+   "duration": 1.82,
+   "narration": "His bones became diamonds.",
+   "meaning": "His bones became diamonds. (shown as a dark story frame)",
+   "why": "deva_thin in a dark night world while 'His bones became diamonds.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.07,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 520,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 610,
+     "y": 587,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s23",
+   "beat": 1,
+   "start": {
+    "t": 64.86,
+    "word": "His"
+   },
+   "duration": 1.78,
+   "narration": "His blood became rubies.",
+   "meaning": "His blood became rubies. (shown as a dark story frame)",
+   "why": "deva_thin in a dark night world while 'His blood became rubies.' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 760,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "sad",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 670,
+     "y": 588,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "sad",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "blood_splash",
+     "word": "blood",
+     "x": 640,
+     "y": 500,
+     "w": 260,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "blood splash as the story says 'blood'"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s24",
+   "beat": 1,
+   "start": {
+    "t": 66.64,
+    "word": "His"
+   },
+   "duration": 1.88,
+   "narration": "His eyes became sapphires.",
+   "meaning": "His eyes became sapphires. (shown as a dark story frame)",
+   "why": "deva_thin in a dark night world while 'His eyes became sapphires.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "pan_left",
+    "from": {
+     "z": 1.04,
+     "x": 22,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": -22,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 600,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 630,
+     "y": 590,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s25",
+   "beat": 1,
+   "start": {
+    "t": 68.52,
+    "word": "His"
+   },
+   "duration": 1.88,
+   "narration": "His teeth became pearls.",
+   "meaning": "His teeth became pearls. (shown as a dark story frame)",
+   "why": "deva_thin in a dark night world while 'His teeth became pearls.' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "tilt_up",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 700,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 655,
+     "y": 594,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s26",
+   "beat": 1,
+   "start": {
+    "t": 70.4,
+    "word": "His"
+   },
+   "duration": 4.72,
+   "narration": "His voice, the voice that said he was ready, became the cat's eye.",
+   "meaning": "His voice, the voice that said he was ready, became the cat's eye. (shown as a dark story frame)",
+   "why": "deva_thin in a dark night world while 'His voice, the voice that said he was ready, becam' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pan_right",
+    "from": {
+     "z": 1.04,
+     "x": -22,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 22,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 640,
+     "y": 590,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "point",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s27",
+   "beat": 1,
+   "start": {
+    "t": 75.12,
+    "word": "Nine"
+   },
+   "duration": 2.72,
+   "narration": "Nine of those jewels are called the Navratnas.",
+   "meaning": "Nine of those jewels are called the Navratnas. (shown as a dark story frame)",
+   "why": "deva_thin in a dark night world while 'Nine of those jewels are called the Navratnas.' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 520,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "surprise",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 610,
+     "y": 589,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "surprise",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s28",
+   "beat": 1,
+   "start": {
+    "t": 77.84,
+    "word": "That"
+   },
+   "duration": 2.14,
+   "narration": "That is why Bala agreed to die.",
+   "meaning": "That is why Bala agreed to die. (shown as a dark story frame)",
+   "why": "bala in a dark night world while 'That is why Bala agreed to die.' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 14,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 760,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 670,
+     "y": 587,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s29",
+   "beat": 1,
+   "start": {
+    "t": 79.98,
+    "word": "He"
+   },
+   "duration": 2.82,
+   "narration": "He could never say no to anyone who asked.",
+   "meaning": "He could never say no to anyone who asked. (shown as a dark story frame)",
+   "why": "bala in a dark night world while 'He could never say no to anyone who asked.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.07,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 600,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 630,
+     "y": 587,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s30",
+   "beat": 1,
+   "start": {
+    "t": 82.8,
+    "word": "The"
+   },
+   "duration": 4.03,
+   "narration": "The gods won heaven by a trick, and the earth won a treasure.",
+   "meaning": "The gods won heaven by a trick, and the earth won a treasure. (shown as a dark story frame)",
+   "why": "deva_thin in a dark night world while 'The gods won heaven by a trick, and the earth won ' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "deva_thin",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "deva_thin"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 700,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "pride",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "deva_thin",
+     "x": 485,
+     "y": 589,
+     "s": 0.765,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "pride",
+     "look": 700
+    },
+    {
+     "who": "indra",
+     "x": 825,
+     "y": 589,
+     "s": 0.765,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  }
+ ]
+}

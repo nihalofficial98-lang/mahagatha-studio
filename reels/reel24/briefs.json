@@ -1,0 +1,3029 @@
+{
+ "episode": "reel24",
+ "format": "vertical",
+ "shots": [
+  {
+   "id": "s01",
+   "beat": 1,
+   "start": {
+    "t": 0.1,
+    "word": "Which"
+   },
+   "duration": 2.7,
+   "narration": "Which weapon is stronger than the Brahmastra?",
+   "meaning": "Which weapon is stronger than the Brahmastra? (shown as a dark story frame)",
+   "why": "brahma in a dark night world while 'Which weapon is stronger than the Brahmastra?' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.07,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 492,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "red_energy_pulse",
+     "word": "weapon",
+     "x": 640,
+     "y": 420,
+     "w": 300,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "red energy pulse as the story says 'weapon'"
+    }
+   ],
+   "transition_in": "fade"
+  },
+  {
+   "id": "s02",
+   "beat": 1,
+   "start": {
+    "t": 2.8,
+    "word": "The"
+   },
+   "duration": 5.6,
+   "narration": "The Brahmastra can stop whole armies, but three weapons are even stronger.",
+   "meaning": "The Brahmastra can stop whole armies, but three weapons are even stronger. (shown as a dark story frame)",
+   "why": "brahma in a dark night world while 'The Brahmastra can stop whole armies, but three we' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 520,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 610,
+     "y": 493,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s03",
+   "beat": 1,
+   "start": {
+    "t": 8.4,
+    "word": "First"
+   },
+   "duration": 2.2,
+   "narration": "First, the Pashupatastra.",
+   "meaning": "First, the Pashupatastra. (shown as a dark story frame)",
+   "why": "brahma in a dark ember world while 'First, the Pashupatastra.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "pan_left",
+    "from": {
+     "z": 1.04,
+     "x": 22,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": -22,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 760,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 670,
+     "y": 496,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s04",
+   "beat": 1,
+   "start": {
+    "t": 10.6,
+    "word": "Shiva"
+   },
+   "duration": 2.46,
+   "narration": "Shiva gave it to Arjun and warned him,",
+   "meaning": "Shiva gave it to Arjun and warned him, (shown as a dark story frame)",
+   "why": "shiva in a dark ember world while 'Shiva gave it to Arjun and warned him,' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "tilt_up",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "shiva"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 600,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "shiva",
+     "x": 630,
+     "y": 594,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "point",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s05",
+   "beat": 1,
+   "start": {
+    "t": 13.06,
+    "word": "if"
+   },
+   "duration": 4.36,
+   "narration": "if he used it on a weak enemy, it could burn the whole universe.",
+   "meaning": "if he used it on a weak enemy, it could burn the whole universe. (shown as a dark story frame)",
+   "why": "shiva in a dark ember world while 'if he used it on a weak enemy, it could burn the w' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pan_right",
+    "from": {
+     "z": 1.04,
+     "x": -22,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 22,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "shiva"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 700,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "shiva",
+     "x": 655,
+     "y": 590,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s06",
+   "beat": 1,
+   "start": {
+    "t": 17.42,
+    "word": "Arjun"
+   },
+   "duration": 1.98,
+   "narration": "Arjun did not even need a bow.",
+   "meaning": "Arjun did not even need a bow. (shown as a dark story frame)",
+   "why": "shiva in a dark ember world while 'Arjun did not even need a bow.' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "shiva"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 589,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s07",
+   "beat": 1,
+   "start": {
+    "t": 19.4,
+    "word": "He"
+   },
+   "duration": 4.54,
+   "narration": "He could send it with a word, a look, or just a thought and call it back.",
+   "meaning": "He could send it with a word, a look, or just a thought and call it back. (shown as a dark story frame)",
+   "why": "shiva in a dark ember world while 'He could send it with a word, a look, or just a th' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 14,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "shiva"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 520,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "shiva",
+     "x": 610,
+     "y": 587,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s08",
+   "beat": 1,
+   "start": {
+    "t": 23.94,
+    "word": "The"
+   },
+   "duration": 3.54,
+   "narration": "The Mahabharat says it is greater than the Brahma weapon.",
+   "meaning": "The Mahabharat says it is greater than the Brahma weapon. (shown as a dark story frame)",
+   "why": "shiva in a dark ember world while 'The Mahabharat says it is greater than the Brahma ' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.07,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "shiva"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 760,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "shiva",
+     "x": 670,
+     "y": 587,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "red_energy_pulse",
+     "word": "weapon",
+     "x": 640,
+     "y": 420,
+     "w": 300,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "red energy pulse as the story says 'weapon'"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s09",
+   "beat": 1,
+   "start": {
+    "t": 27.48,
+    "word": "Second"
+   },
+   "duration": 2.84,
+   "narration": "Second, Vishnu's Sudarshan Chakra.",
+   "meaning": "Second, Vishnu's Sudarshan Chakra. (shown as a dark story frame)",
+   "why": "shiva in a dark ember world while 'Second, Vishnu's Sudarshan Chakra.' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "shiva"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 600,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "shiva",
+     "x": 630,
+     "y": 588,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "sudarshan_chakra",
+     "word": "Chakra",
+     "x": 640,
+     "y": 400,
+     "w": 260,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "sudarshan chakra as the story says 'chakra'"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s10",
+   "beat": 1,
+   "start": {
+    "t": 30.32,
+    "word": "Ashwatthama"
+   },
+   "duration": 4.46,
+   "narration": "Ashwatthama had the Brahmashira weapon, but he still wanted Krishna's chakra.",
+   "meaning": "Ashwatthama had the Brahmashira weapon, but he still wanted Krishna's chakra. (shown as a dark story frame)",
+   "why": "ashwatthama in a dark ember world while 'Ashwatthama had the Brahmashira weapon, but he sti' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "pan_left",
+    "from": {
+     "z": 1.04,
+     "x": 22,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": -22,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "ashwatthama",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "ashwatthama"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 700,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "ashwatthama",
+     "x": 655,
+     "y": 590,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "sudarshan_chakra",
+     "word": "chakra",
+     "x": 640,
+     "y": 400,
+     "w": 260,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "sudarshan chakra as the story says 'chakra'"
+    },
+    {
+     "k": "red_energy_pulse",
+     "word": "weapon",
+     "x": 640,
+     "y": 420,
+     "w": 300,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "red energy pulse as the story says 'weapon'"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s11",
+   "beat": 1,
+   "start": {
+    "t": 34.78,
+    "word": "Krishna"
+   },
+   "duration": 1.42,
+   "narration": "Krishna let him try.",
+   "meaning": "Krishna let him try. (shown as a dark story frame)",
+   "why": "krishna in a dark ember world while 'Krishna let him try.' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "tilt_up",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "krishna",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "krishna"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "krishna",
+     "x": 640,
+     "y": 594,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s12",
+   "beat": 1,
+   "start": {
+    "t": 36.2,
+    "word": "Ashwatthama"
+   },
+   "duration": 4.14,
+   "narration": "Ashwatthama used all his strength and could not even lift it.",
+   "meaning": "Ashwatthama used all his strength and could not even lift it. (shown as a dark story frame)",
+   "why": "ashwatthama in a dark ember world while 'Ashwatthama used all his strength and could not ev' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pan_right",
+    "from": {
+     "z": 1.04,
+     "x": -22,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 22,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "ashwatthama",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "ashwatthama"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 520,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "ashwatthama",
+     "x": 610,
+     "y": 590,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s13",
+   "beat": 1,
+   "start": {
+    "t": 40.34,
+    "word": "Third"
+   },
+   "duration": 2.36,
+   "narration": "Third, Shiva's trident.",
+   "meaning": "Third, Shiva's trident. (shown as a dark story frame)",
+   "why": "ashwatthama in a dark night world while 'Third, Shiva's trident.' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.08,
+     "x": 0,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "ashwatthama",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "ashwatthama"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 760,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "ashwatthama",
+     "x": 670,
+     "y": 589,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s14",
+   "beat": 1,
+   "start": {
+    "t": 42.7,
+    "word": "The"
+   },
+   "duration": 3.88,
+   "narration": "The Mahabharat says it is as powerful as the Pashupatastra.",
+   "meaning": "The Mahabharat says it is as powerful as the Pashupatastra. (shown as a dark story frame)",
+   "why": "ashwatthama in a dark ember world while 'The Mahabharat says it is as powerful as the Pashu' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 14,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "ashwatthama",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "ashwatthama"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 600,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "pride",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "ashwatthama",
+     "x": 630,
+     "y": 587,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "pride",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s15",
+   "beat": 1,
+   "start": {
+    "t": 46.58,
+    "word": "In"
+   },
+   "duration": 6.24,
+   "narration": "In Shiva's hands, it could split the earth, dry up the oceans, and destroy the whole universe.",
+   "meaning": "In Shiva's hands, it could split the earth, dry up the oceans, and destroy the whole universe. (shown as a dar",
+   "why": "ashwatthama in a dark ember world while 'In Shiva's hands, it could split the earth, dry up' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.07,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "ashwatthama",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "ashwatthama"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 700,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "ashwatthama",
+     "x": 655,
+     "y": 587,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s16",
+   "beat": 1,
+   "start": {
+    "t": 52.82,
+    "word": "So"
+   },
+   "duration": 3.0,
+   "narration": "So the Brahmastra, which can stop whole armies,",
+   "meaning": "So the Brahmastra, which can stop whole armies, (shown as a dark story frame)",
+   "why": "brahma in a dark ember world while 'So the Brahmastra, which can stop whole armies,' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.1,
+     "x": 0,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 493,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s17",
+   "beat": 1,
+   "start": {
+    "t": 55.82,
+    "word": "comes"
+   },
+   "duration": 5.1,
+   "narration": "comes after Shiva's Pashupatastra, Vishnu's Sudarshan Chakra, and Shiva's trident.",
+   "meaning": "comes after Shiva's Pashupatastra, Vishnu's Sudarshan Chakra, and Shiva's trident. (shown as a dark story fram",
+   "why": "brahma in a dark night world while 'comes after Shiva's Pashupatastra, Vishnu's Sudars' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "pan_left",
+    "from": {
+     "z": 1.04,
+     "x": 22,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": -22,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 520,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 610,
+     "y": 496,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "sudarshan_chakra",
+     "word": "Chakra",
+     "x": 640,
+     "y": 400,
+     "w": 260,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "sudarshan chakra as the story says 'chakra'"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s18",
+   "beat": 1,
+   "start": {
+    "t": 60.92,
+    "word": "Which"
+   },
+   "duration": 2.01,
+   "narration": "Which one do you think is the strongest?",
+   "meaning": "Which one do you think is the strongest? (shown as a dark story frame)",
+   "why": "brahma in a dark night world while 'Which one do you think is the strongest?' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "tilt_up",
+    "from": {
+     "z": 1.0,
+     "x": 0,
+     "y": 10,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "dark far peaks and haze",
+     "fog": 0.55,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 470,
+       "y": 470,
+       "s": 1.0,
+       "w": 260,
+       "h": 160,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 480,
+       "s": 0.9,
+       "w": 240,
+       "h": 140,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 520,
+       "y": 220,
+       "s": 1.1,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark ground with rocks",
+     "fog": 0.2,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 430,
+       "y": 520,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 860,
+       "y": 516,
+       "s": 0.7,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "dark rocks low in the corners",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#120a10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 756,
+       "s": 1.5,
+       "col": "#120a10"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 760,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "pride",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 670,
+     "y": 500,
+     "s": 0.9,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "pride",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  }
+ ]
+}

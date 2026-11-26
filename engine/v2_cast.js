@@ -856,7 +856,7 @@ const XHEAD={
 };
 
 /* ---------- engine glue ---------- */
-const V2NAMES=new Set(['kacha','devayani','shukracharya','brihaspati','asura1','asura2','asura3','horse','deer','narada','kumara','jaya','vijaya','villager','villager_w','prasuti','sati','diti','danu','asikli','kashyapa','indra','surya','chandra','agni','vayu','hiranyaksha','hiranyakashipu','ravana','harihara','shiva','vishnu','hayagriva','daksha','manu','adishakti','brahmi','madhu','kaitabha','ardha','brahma','vishnu_rest','rudra','kapali','brahma5','kama','prakriti','swaha','nidra','kanya','balak','balika','deva_thin','deva_thin2','indra_thin','haryashva','shavalashva','narada_g','narada_old','cow','mare','doe','duck','hayagriva2','garuda','vinata','naga','naga2','naga_guard','vrikasura','bhasmasura','mohini','parvati','diti_p','maruta','maruta_baby',...[0,1,2,3,4,5,6].map(i=>'rishi'+i)]);
+const V2NAMES=new Set(['kacha','devayani','shukracharya','brihaspati','asura1','asura2','asura3','horse','deer','narada','kumara','jaya','vijaya','villager','villager_w','prasuti','sati','diti','danu','asikli','kashyapa','indra','surya','chandra','agni','vayu','hiranyaksha','hiranyakashipu','ravana','harihara','shiva','vishnu','hayagriva','daksha','manu','adishakti','brahmi','madhu','kaitabha','ardha','brahma','vishnu_rest','rudra','kapali','brahma5','kama','prakriti','swaha','nidra','kanya','balak','balika','deva_thin','deva_thin2','indra_thin','haryashva','shavalashva','narada_g','narada_old','cow','mare','doe','duck','hayagriva2','garuda','vinata','naga','naga2','naga_guard','vrikasura','bhasmasura','mohini','parvati','diti_p','maruta','maruta_baby','parashurama','rama','krishna','kalki','yama','ashwatthama','kumbhakarna','meghanada','bala','mahabali','vibhishana','markandeya','lakshmi','sita','arjuna','hanuman','sugriva',...[0,1,2,3,4,5,6].map(i=>'rishi'+i)]);
 const SCALE={shiva:.62,kumara:.5,default:.62};
 Object.assign(SCALE,{balak:.42,balika:.42});
 /* ---------- EP07 (Kacha and Devayani, dark cinematic look, Nov 2026): new specs, poses, hand props, Shukracharya's tearing / rising rig.
@@ -1023,4 +1023,45 @@ function v2head(who,x,y,s,t,o){ // close-up of the head with neck, shoulders and
     if(S.headType==='horse'){bust(c,S,{t:t});horseHead(c,0,10,kk,t)}else{
       hairBack(c,S,{hd:[0,0],ph:[0,200]},t);bust(c,S,{t:t,k:kk});drawHead(c,0,0,{expr:face,k:o.k!=null?o.k:(S.kdef||kk),S:S,t:t,mood:M,turn:turn});hairFront(c,S,0,0,t);headgear(c,S,0,0)}}
   figFinish(c,o,x,y,s,FR,OYH,RG,.22,.3,false)}
+
+/* ---------- REELS 17,8,16,18-28: cloned and tweaked cast (owner: reuse existing characters) + Hanuman/Sugriva vanara head, axe and bow props ---------- */
+Object.assign(CAST,{
+ parashurama:Object.assign({},CAST.kashyapa,{hair:{type:'jata',col:'#2a1a14'},beard:'#2a1a14',mustache:'#2a1a14',brow:'#2a1a14',lower:L_('#7a2a14','#4a1a0a','dhoti',{fan:'#a04020'}),muscle:.95,build:1.08,prop:'axe'}),
+ rama:Object.assign({},CAST.vishnu,{arms4:false,crown:'small',skin:'#4a86d0',kaustubha:false,halo:{r:92},prop:'bow',tilak:'vaishnava'}),
+ krishna:Object.assign({},CAST.vishnu,{arms4:false,crown:'small',skin:'#2a58a8',halo:{r:92},prop:null}),
+ kalki:Object.assign({},CAST.vishnu,{arms4:false,crown:'helmet',prop:'sword',armor:'#c9a24a'}),
+ yama:Object.assign({},CAST.asura1,{skin:'#2e4a44',skinH:'#5a8a80',skinD:'#14241f',skinM:'#27403a',crown:'asura',lower:L_('#1a1424','#c9a24a','short'),armor:'#3a3040',armlet:'#c9a24a',build:1.22,prop:'gada'}),
+ ashwatthama:Object.assign({},CAST.deva_thin2,{skin:'#b0805a',lower:L_('#7a2a2a','#c8a050','dhoti',{fan:'#a04040'}),uttariya:'#5a1a1a',kgem:'#2ad0a0',muscle:.8,build:1.04,prop:'sword'}),
+ kumbhakarna:Object.assign({},CAST.asura1,{skin:'#5a3a2e',skinH:'#8a5a46',skinD:'#2a1a14',skinM:'#4a2e24',build:1.5,horns:'#c8b890',lower:L_('#3a1a1a','#c9a24a','short'),armor:'#6a4a3a',prop:'gada'}),
+ meghanada:Object.assign({},CAST.ravana,{skin:'#2a2a50',skinH:'#4a4a80',skinD:'#12122a',skinM:'#22223e',build:1.12,crown:'asura',lower:L_('#2a1a4a','#c9a24a','short'),armor:'#c9a24a'}),
+ bala:Object.assign({},CAST.asura1,{skin:'#8a5a34',crown:'asura',build:1.2,lower:L_('#8a1a1a','#e0b040','short'),armor:'#e0b040',armlet:'#e0b040',prop:'sword'}),
+ mahabali:Object.assign({},CAST.asura1,{skin:'#b07a4a',crown:'asura',build:1.15,eyeRed:false,lower:L_('#f0e8d8','#e0b040','dhoti'),armor:'#e0b040',armlet:'#e0b040',prop:null}),
+ vibhishana:Object.assign({},CAST.deva_thin,{skin:'#7a5a44',crown:'asura',lower:L_('#2a4a7a','#c9a24a','dhoti'),prop:null}),
+ markandeya:Object.assign({},CAST.balak,{hs:1.22,build:.92,tilak:'ash'}),
+ lakshmi:Object.assign({},CAST.parvati,{lower:L_('#e8a020','#c8102e','sari'),upper:{type:'choli',col:'#c8102e'},pallu:'#f2c14e',prop:'lotus2'}),
+ sita:Object.assign({},CAST.parvati,{lower:L_('#e8c040','#2a8a54','sari'),upper:{type:'choli',col:'#2a8a54'},pallu:'#e8e0a0',crown:null,prop:null}),
+ arjuna:Object.assign({},CAST.deva_thin2,{skin:'#9a6a44',crown:'small',lower:L_('#2a3a7a','#c8a050','dhoti'),uttariya:'#d8a830',muscle:.9,prop:'bow'}),
+ hanuman:skinSet('#d2682c',{skinH:'#f08a4a',skinD:'#8a3a14',skinM:'#b8561e',hair:{type:'none'},crown:'small',lower:L_('#d02a2a','#f0c048','short'),armlet:'#e0b040',muscle:1,build:1.14,brow:'#4a1a08',prop:'gada'}),
+ sugriva:skinSet('#c8903c',{skinH:'#e8b060',skinD:'#7a5418',skinM:'#a87430',hair:{type:'none'},crown:'small',lower:L_('#2a5a9a','#f0c048','short'),armlet:'#e0b040',muscle:.95,build:1.1,brow:'#3a2408'})
+});
+HPROP.axe=(c,p)=>{c.save();c.translate(p[0],p[1]);PK.stroke(c,cc=>{cc.moveTo(0,34);cc.lineTo(2,-118)},'#2a1a10',7);PK.stroke(c,cc=>{cc.moveTo(0,34);cc.lineTo(2,-118)},'#7a4a24',4.6);
+  PK.cut(c,cc=>{cc.moveTo(3,-112);cc.quadraticCurveTo(46,-120,50,-80);cc.quadraticCurveTo(46,-44,3,-60);cc.quadraticCurveTo(14,-86,3,-112);cc.closePath()},PK.lg(c,0,-110,50,-50,['#f4f6fa','#a8b0c0','#6a7284']),{lw:2,ink:'#2a2a3a'});c.restore()};
+HPROP.bow=(c,p)=>{c.save();c.translate(p[0],p[1]);PK.stroke(c,cc=>{cc.moveTo(10,-96);cc.quadraticCurveTo(-34,0,10,96)},'#2a1a10',7);PK.stroke(c,cc=>{cc.moveTo(10,-96);cc.quadraticCurveTo(-34,0,10,96)},'#9a6a2a',4.2);PK.stroke(c,cc=>{cc.moveTo(10,-96);cc.lineTo(10,96)},'rgba(240,232,210,.9)',1.4);c.restore()};
+function monkeyHead(c,S,k,t,M){M=M||{};const ink='#3a1a10',an=Math.max(k||0,M.anger||0),bl=Math.min(1,Math.max(M.blink||0,((t*.37)%1)<.03?1:0));
+  [-1,1].forEach(sd=>{PK.cut(c,PK.P.ell(sd*40,-6,13,17,sd*.2),PK.lg(c,sd*30,-20,sd*52,10,[S.skinH,S.skin,S.skinD]),{lw:2,ink:ink,sh:0});PK.cut(c,PK.P.ell(sd*40,-6,6,10,sd*.2),'#f0b0a0',{lw:0,sh:0})});
+  PK.cut(c,PK.P.ell(0,0,38,36),PK.lg(c,-38,-34,38,36,[S.skinH,S.skin,S.skinD]),{lw:2.4,ink:ink});
+  PK.cut(c,PK.P.smooth([[-30,2],[-22,-10],[0,-14],[22,-10],[30,2],[24,34],[0,44],[-24,34]]),PK.lg(c,0,-10,0,44,['#f6c8a0','#e8a878','#c88a5a']),{lw:1.8,ink:ink,sh:0});
+  [-1,1].forEach(sd=>{const ex=sd*14,ey=-6,ry=7.5*(1-bl*.85);PK.cut(c,PK.P.ell(ex,ey,9,ry,sd*.2),'#fffaf0',{lw:1.6,ink:ink,sh:0});
+    if(bl<.7){c.save();c.beginPath();c.ellipse(ex,ey,9,ry,sd*.2,0,7);c.clip();const ix=ex+(M.lx||0)*3-sd*1.2;c.fillStyle=an>.35?'#c81e14':'#3a2010';c.beginPath();c.arc(ix,ey+(M.ly||0)*2,5.4,0,7);c.fill();c.fillStyle='#0c0604';c.beginPath();c.arc(ix,ey,2.7,0,7);c.fill();c.fillStyle='#fff';c.beginPath();c.arc(ix-1.5,ey-2,1.3,0,7);c.fill();c.restore()}
+    const bi=ey-11+an*6+(M.surp||0)*-4,bo=ey-13-an*2+(M.sad||0)*4;PK.stroke(c,cc=>{cc.moveTo(sd*5,bi);cc.quadraticCurveTo(sd*14,Math.min(bi,bo)-3,sd*25,bo)},ink,3+an*1.2)});
+  [-1,1].forEach(sd=>PK.cut(c,PK.P.ell(sd*4,20,2.6,3.6),'#4a2a20',{lw:0,sh:0}));
+  const sm=(M.smile||0)*4-an*3;PK.stroke(c,cc=>{cc.moveTo(-14,32);cc.quadraticCurveTo(0,36+sm,14,32)},ink,2);
+  PK.cut(c,cc=>{cc.moveTo(-24,-26);cc.quadraticCurveTo(0,-50,24,-26);cc.quadraticCurveTo(0,-34,-24,-26)},'#c9a24a',{lw:1.6,ink:ink,sh:0})}
+const mkVanara=who=>function(c,o,t,kk,face){const S=CAST[who],P=poseOf(o.pose||'stand','hayagriva');
+  c.save();c.translate(-34,-170);PK.stroke(c,cc=>{cc.moveTo(0,40);cc.bezierCurveTo(-60,60,-90,-20,-60,-90)},ink0,9);PK.stroke(c,cc=>{cc.moveTo(0,40);cc.bezierCurveTo(-60,60,-90,-20,-60,-90)},S.skin,6);c.restore();
+  drawHuman(c,S,P,{t:t,k:kk,expr:face,noHead:true,prop:o.prop,mood:o.mood});
+  c.save();leanAt(c,P);const hx=P.hd[0],hy=P.hd[1]+Math.sin(t*1.7)*2;c.translate(hx,hy+40);c.rotate(o.tilt||0);c.translate(0,-50);monkeyHead(c,S,kk,t,o.mood);c.restore()};
+const ink0='#3a1a10';
+Object.assign(XFIG,{hanuman:mkVanara('hanuman'),sugriva:mkVanara('sugriva')});
+['parashurama','rama','krishna','kalki','yama','ashwatthama','kumbhakarna','meghanada','bala','mahabali','vibhishana','markandeya','lakshmi','sita','arjuna','hanuman','sugriva'].forEach(n=>V2NAMES.add(n));
 return {PK:PK,has:w=>V2NAMES.has(w),fig:v2fig,head:v2head,CAST:CAST,poseOf:poseOf,drawHuman:drawHuman,drawBrahmaRig:drawBrahmaRig,drawReclineVishnu:drawReclineVishnu,drawArdha:drawArdha,drawShiva:drawShiva,drawHead:drawHead,FX:REELFX,drawJata:drawJata,POSES:POSES,mixPose:mixPose,SH:SH};
