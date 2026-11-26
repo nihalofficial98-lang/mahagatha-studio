@@ -64,3 +64,5 @@ Each chapter is cut as a vertical reel later. Write with that in mind: the hook 
 10. Read each reel alone: would a stranger understand who, what they want, and why it matters?
 
 - **Hook = opposite notion (owner's rule):** the first 2 to 3 lines say the reverse of what people believe about the character, then the story breaks the old belief. See guides/REEL_STYLE.md.
+
+- **Close the loop (owner, most important):** the LAST lines of every reel and episode must spin back to the hook: repeat the hook's key claim in a new light, now that the viewer knows the story (for example hook "Shiva killed Yama to save a boy" -> ending "Shiva killed Yama to save one sixteen-year-old boy. Because of this he is called Kalantaka"). The ending is never a new topic and never a vague "what do you think?". Before sending any script, check the first line against the last line and fix it if they do not connect.
