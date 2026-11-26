@@ -6,7 +6,7 @@
 
 **Posted column rule (owner):** column H "Posted? (you set this)" of the calendar belongs to the owner (Not posted / Posted). Each time I read the calendar, for every row where H is Posted, set Status (column E) to Posted and leave H alone. Never change H myself.
 
-- **Name the character in the hook (owner):** the first 2 to 3 spoken lines of every reel and episode, and its title and thumbnail text, must name the main character (or the object, for a story about one), so the viewer knows at once who the story is about. Never open with "a man", "a demon" or "someone" for a named figure.
+- **Name the character in the hook (owner):** the VERY FIRST SENTENCE (and the title and thumbnail text; the first 2 to 3 spoken lines at most) of every reel and episode, and its title and thumbnail text, must name the main character (or the object, for a story about one), so the viewer knows at once who the story is about. Never open with "a man", "a demon" or "someone" for a named figure.
 
 - **Keep it simple (owner):** the narration must be easy for an Indian listener who knows everyday English: short plain sentences, common words, one idea each, a clear story told in order. No abstract or "wise" lines (for example "being able to do a job and being the one meant to do it are two different things"). If a sentence needs a second listen, rewrite it with simpler words. Prefer "belly button", "hugged", "caught" over fancy words; no words like govern, beneath, propitiate, mannered phrases or idioms.
 
