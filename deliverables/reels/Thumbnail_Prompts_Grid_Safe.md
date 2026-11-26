@@ -36,7 +36,7 @@ Scene: Indra, holding his thunderbolt, looms over a glowing sleeping child-shape
 **Reel 15. Title lines: "WHY GARUDA" / "SERVES VISHNU?"** (key word: SERVES VISHNU). Other options: "GARUDA WON" / "A BOON"
 Scene: Garuda carrying a smiling blue Vishnu, who holds his mace and conch, flying through glowing clouds. Garuda's face is large and proud. Palette: gold, deep blue, white clouds.
 
-**Reel 16. Title lines: "THE DEMON WHO" / "WANTED TO DIE"** (key word: DIE). Other options: "WHY DID BALA" / "AGREE TO DIE?"
+**Reel 16. Title lines: "THE DEMON WHO" / "AGREED TO DIE"** (key word: DIE). Other options: "WHY DID BALA" / "AGREE TO DIE?"
 Scene: the huge demon Bala, in golden armour, face calm and proud, standing before the gods and Indra with a glowing sacrifice fire at his feet; the gods look small and nervous. Palette: dark red, gold, black.
 
 **Reel 17. Title lines: "THE GOD WHO" / "TORE OUT HIS EYE"** (key word: EYE). Other options: "VISHNU TORE" / "OUT HIS EYE"
