@@ -15,3 +15,5 @@
 - **No invented calls to action (owner):** never write "comment X for the full video", "follow", "like" or "tell us in the comments" in a script unless the owner asks for it. The only thing allowed at the end is a good question about the story itself, or the last strong fact.
 
 - **Close the loop (owner, most important):** the LAST lines of every reel and episode must spin back to the hook: repeat the hook's key claim in a new light, now that the viewer knows the story (for example hook "Shiva killed Yama to save a boy" -> ending "Shiva killed Yama to save one sixteen-year-old boy. Because of this he is called Kalantaka"). The ending is never a new topic and never a vague "what do you think?". Before sending any script, check the first line against the last line and fix it if they do not connect.
+
+- **Save usage (owner): do not look at or review the rendered frames yourself.** After the frames are rendered and the contact sheets exist, push them and tell the owner; the owner checks them. Do not open the images, do not run extra review passes, and keep the work as cheap as possible (the weekly limit is small).
