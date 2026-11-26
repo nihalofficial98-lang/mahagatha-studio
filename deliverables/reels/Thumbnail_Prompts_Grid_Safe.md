@@ -1,4 +1,4 @@
-# Reel cover prompts, grid-safe (reels 5 to 17)
+# Reel cover prompts, grid-safe (reels 5 to 10, 15 to 17; reels 11 to 14 skipped)
 
 ## Why the last covers got cut in the grid
 Instagram shows reels as full 9:16 in the Reels tab, but the profile grid crops each cover to 3:4 from the centre. That removes about 12% from the top and 12% from the bottom, and a little from the sides. The title and faces must sit inside the centre 3:4 box. The Reels tab also puts the view count at the bottom-left, so keep the bottom clear.
@@ -32,18 +32,6 @@ Scene: the demon Bhasmasura, face large and wicked, raises a glowing hand toward
 
 **Reel 10. Title lines: "INDRA CUT" / "THE UNBORN"** (key word: UNBORN)
 Scene: Indra, holding his thunderbolt, looms over a glowing sleeping child-shaped light of seven tiny golden babies inside a mother's glowing womb; the mother Diti kneels, looking up in fear. Palette: lightning white and royal purple. Mood: shock, mystery.
-
-**Reel 11. Title lines: "GARUDA FREES" / "HIS MOTHER"** (key word: FREES)
-Scene: the huge golden eagle-man Garuda, face fierce and loving, breaks open a chain with his wings; behind him a small Vinata smiles in tears. Fire and snakes shown only as a glowing orange background ring. Palette: gold, orange, deep blue sky.
-
-**Reel 12. Title lines: "HE WOULD NOT" / "BREAK HIS WORD"** (key word: WORD)
-Scene: King Harishchandra, thin and tired, in plain cloth, stands with his hand raised in a promise; at his feet a woman and boy; a stern glowing sage Vishwamitra behind him. Palette: warm gold and dusty orange with a dark funeral-ghat sunset. Mood: noble, sad.
-
-**Reel 13. Title lines: "THE KING WHO" / "FAKED VISHNU"** (key word: FAKED)
-Scene: king Paundraka in a fake Vishnu costume with a fake crown, fake chakra and fake conch, standing proudly but looking silly, while the real calm Vishnu smiles slightly in the clouds behind him. Palette: gold and blue. Mood: funny, ironic.
-
-**Reel 14. Title lines: "WHO WAS" / "GAJENDRA?"** (key word: GAJENDRA)
-Scene: a huge elephant, eyes bright and scared, trapped by a crocodile in a lotus lake, trunk raised holding a lotus up to the sky; Vishnu's glowing golden chakra flies in from above. Palette: lake green, sunset gold. Mood: desperate prayer.
 
 **Reel 15. Title lines: "GARUDA" / "BECAME HIS RIDE"** (key word: RIDE)
 Scene: Garuda carrying a smiling blue Vishnu, who holds his mace and conch, flying through glowing clouds. Garuda's face is large and proud. Palette: gold, deep blue, white clouds.
