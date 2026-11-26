@@ -19,3 +19,5 @@ Say the OPPOSITE of what people believe about a character, a claim that sounds a
 - The hook is true to the story, only framed as the opposite. The body must show the real reason, so the claim is never a lie (for example Shiva ran because of his own boon and his own word).
 - Use it for: reel/episode title, first-frame text, thumbnail text (2 short lines, key word in yellow), the first 2-3 spoken lines, captions. Combine with the shock-first rule above: title, then the shocking opposite fact, then no repeated question.
 - Short, simple plain English. No spoiler of the answer in the hook.
+
+**File name rule (owner):** whenever a video is sent to the owner, the file name must be the video title (for example "EP07 - Kacha Steals the Secret of the Dead.mp4" or "Reel 5 - How Was Shiva Born.mp4"), so the downloaded file has its title as the name. Copy the video with `studio/titled_copy.sh <video> "<Title>"` and send that copy with SendUserFile. Never send files named like `ep07_scored_1080p.mp4`.

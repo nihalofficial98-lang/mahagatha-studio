@@ -34,3 +34,5 @@ no beats.json/script or no READY review → 1 · no `build/epNN/timings.json` �
 - Voice tags (guides/VOICE_TAGS.md): per-sentence tags that follow the story; never whisper/hush/slow/soft tags; no beat ids; narration only, no quoted dialogue.
 
 **Hook rule (owner):** every hook, title and thumbnail text says the OPPOSITE of what people believe about the character, then the story breaks that belief (guides/REEL_STYLE.md, "Opposite-notion hook").
+
+**File name rule (owner):** whenever a video is sent to the owner, the file name must be the video title (for example "EP07 - Kacha Steals the Secret of the Dead.mp4" or "Reel 5 - How Was Shiva Born.mp4"), so the downloaded file has its title as the name. Copy the video with `studio/titled_copy.sh <video> "<Title>"` and send that copy with SendUserFile. Never send files named like `ep07_scored_1080p.mp4`.
