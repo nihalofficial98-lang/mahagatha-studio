@@ -1066,8 +1066,7 @@ const ink0='#3a1a10';
 Object.assign(XFIG,{hanuman:mkVanara('hanuman'),sugriva:mkVanara('sugriva')});
 function drawRavana10(c,o,t,kk,face){const S=CAST.ravana10,P=poseOf(o.pose||'stand','ravana'),hx=P.hd[0],hy=P.hd[1];
   drawHuman(c,S,P,{t:t,k:kk,expr:face,noHead:true,prop:o.prop,mood:o.mood});
-  c.save();leanAt(c,P);const sm=[];[-74,-50,-26,0,26,50,74].forEach(a=>{const r=a*Math.PI/180;sm.push([Math.sin(r)*84,-Math.cos(r)*84+16])});[-16,16].forEach(a=>{const r=a*Math.PI/180;sm.push([Math.sin(r)*128,-Math.cos(r)*128+12])});
-  sm.forEach(([dx,dy],i)=>{c.save();c.translate(hx+dx,hy+dy);c.scale(.5,.5);drawHead(c,0,0,{expr:i%2?'anger':'calm',k:kk,S:S,t:t+i,mood:o.mood,turn:.1});hairFront(c,S,0,0,t);headgear(c,S,0,0);c.restore()});
+  c.save();leanAt(c,P);const sm=[[-74,-26],[74,-26],[-106,-64],[106,-64],[-58,-84],[58,-84],[-26,-118],[26,-118],[0,-152]];sm.forEach(([dx,dy],i)=>{c.save();c.translate(hx+dx,hy+dy);c.scale(.56,.56);drawHead(c,0,0,{expr:i%2?'anger':'calm',k:kk,S:S,t:t+i,mood:o.mood,turn:.1});hairFront(c,S,0,0,t);headgear(c,S,0,0);c.restore()});
   drawHead(c,hx,hy,{expr:face,k:kk,S:S,t:t,mood:o.mood,turn:.1});hairFront(c,S,hx,hy,t);headgear(c,S,hx,hy);c.restore()}
 XFIG.ravana10=drawRavana10;
 ['parashurama','rama','krishna','kalki','yama','ashwatthama','kumbhakarna','meghanada','bala','mahabali','vibhishana','markandeya','lakshmi','sita','arjuna','hanuman','sugriva','ravana10'].forEach(n=>V2NAMES.add(n));

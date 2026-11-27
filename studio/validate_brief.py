@@ -52,6 +52,7 @@ def load_timeline(ep):
         out+=[(norm(w['text']),off+w['start']) for w in b['words']];off+=b['duration']
     return out
 def check(brief,ep):
+    FLOW=bool(brief.get('flow'))   # owner's one-take look: allow a steady background and a continuous camera
     errs=[];warn=[];tl=load_timeline(ep);prev=None;prev2=None;vert=PJ.fmt(ep)=='vertical'
     if tl is None:warn.append('no build/epNN/timings.json yet: start words not checked against the voice (run import_timestamps.py first)')
     ids=set()
@@ -135,8 +136,8 @@ def check(brief,ep):
         if s['transition_in'] not in V.TRANS:errs.append(f"{sid}: transition_in must be one of {V.TRANS}")
         if not figs and not s['effects'] and len(L)<3:errs.append(f'{sid}: empty frame (no character, no effect, fewer than 3 layers)')
         key=(bg.get('k'),tuple(sorted(figs)),c.get('shot'))
-        if prev and prev[0]==c.get('move') and c.get('move')!='static':errs.append(f"{sid}: same camera move '{c.get('move')}' as the previous shot")
-        if prev and prev2 and prev[1]==key and prev2[1]==key:errs.append(f'{sid}: third shot in a row with the same background, cast and framing')
+        if prev and prev[0]==c.get('move') and c.get('move')!='static' and not FLOW:errs.append(f"{sid}: same camera move '{c.get('move')}' as the previous shot")
+        if prev and prev2 and prev[1]==key and prev2[1]==key and not FLOW:errs.append(f'{sid}: third shot in a row with the same background, cast and framing')
         prev2=prev;prev=(c.get('move'),key)
     return errs,warn
 def main():

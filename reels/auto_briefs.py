@@ -74,7 +74,7 @@ def sentences(words):
         m.append([list(s),(end-s[0][2])<1.25 and i+1<len(res)])
     return [x[0] for x in m]
 def main(reel):
-    cfg=SP.SPEC[reel];G=Gen(reel);S=sentences(G.T);prev=None;scene=cfg.get('scene','indigo');ci=0
+    cfg=SP.SPEC[reel];G=Gen(reel);S=sentences(G.T);prev=None;scene=cfg.get('scene','indigo');ci=0;cam_end=(1.0,0,0);cur=None;lastchg=0
     for n,s in enumerate(S):
         txt=' '.join(w for _,w,_ in s);low=txt.lower();first=s[0][1].strip(',.?!"')
         for key,sc in cfg.get('scenes',[]):
@@ -127,17 +127,24 @@ def main(reel):
         theme=cfg.get('theme','hills');bgk=None
         for th,rx,bk in THEMES:
             if re.search(rx,low):theme=th;bgk=bk;break
+        want=(scene,theme,bgk)
+        if n==0 or n in cfg.get('over',{}) and 'scene' in cfg['over'][n]:cur=want;lastchg=n
+        elif want!=cur and n-lastchg>=4:cur=want;lastchg=n
+        scene,theme,bgk=cur
         cname,ca,cb,shs=CAMS[ci%len(CAMS)];ci+=1
+        # continuous camera: each shot starts exactly where the previous one ended (one long take)
+        Z=[1.06,1.0,1.08,1.02,1.09,1.03][ci%6];X=[14,-14,10,-10][ci%4];ca=cam_end;cb=(Z,X,-4 if Z>1.04 else 0);cam_end=cb
+        dz=cb[0]-ca[0];dx=cb[1]-ca[1]
+        cname=(['push_in','crane_up'] if dz>.03 else ['pull_out','crane_down'] if dz<-.03 else ['dolly_right','pan_right'] if dx>0 else ['dolly_left','pan_left'])[ci%2]
+        shs='medium'
         sh={"id":"x","beat":1,"start":{"t":s[0][2],"word":first}};G.S.append(sh)
-        sx=[640,520,760,600,700][n%5]
-        for c_ in ch:c_['x']=c_['x']+(sx-640)//4;
-        for c_ in ch:
-            if len(ch)==1 and n%2:c_['flip']=-1
+        sx=640
         sh.update(meaning=re.sub(r'\b(good|great|nice|very|something|anything)\b','it',txt+" (shown as a dark story frame)")[:110],why=re.sub(r'\b(something|anything|things?|stuff|good|great|nice|very)\b','it',f"{(who[0] if who else 'The scene')} in a dark {scene} world while '{txt[:50]}' is spoken."),
           camera=cam(cname,ca,cb,shs,"normal",0,"a slow move that follows the story beat"),focus={"subject":who[0] if who else "scene","depth":"deep"},
           vertical={"focus":who[0]} if who else {},layers=[dict(l_,items=l_['items']+extra_mid) if l_['d']=='mid' else l_ for l_ in scene_layers(scene,theme)],background=(bg(bgk) if bgk and not cfg.get('over',{}).get(n,{}).get('scene') else (dict(background(scene),sx=sx) if scene in SK else background(scene))),mood={"emotion":emo,"grade":GRD},
-          characters=ch,effects=fxs,transition_in="cut" if n else "fade")
+          characters=ch,effects=fxs,transition_in="cut")
         ov=cfg.get('over',{}).get(n,{})
         if 'vertical' in ov:sh['vertical']=ov['vertical']
     G.finish()
+    bp=f'/home/user/mahagatha-studio/reels/{reel}/briefs.json';bj=json.load(open(bp));bj['flow']=True;json.dump(bj,open(bp,'w'),ensure_ascii=False,indent=1)
 if __name__=='__main__':main(sys.argv[1])
