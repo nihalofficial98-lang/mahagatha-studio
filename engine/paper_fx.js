@@ -148,6 +148,22 @@ const E={
   ctx.strokeStyle='#e8b040';ctx.lineWidth=w*.014;ctx.setLineDash([w*.025,w*.03]);ctx.beginPath();ctx.ellipse(0,0,R,R*.36,0,.15,.15+(PI*2-.3)*k);ctx.stroke();ctx.setLineDash([]);
   const sw=Math.sin(t*2)*w*.02;[[-1,.5],[1,.62]].forEach(([sd,L])=>{ctx.strokeStyle='#c42820';ctx.lineWidth=w*.04;ctx.beginPath();ctx.moveTo(R*.98,0);ctx.quadraticCurveTo(R*1.15,sd*w*.1,R*1.1+sw,sd*w*L*.5);ctx.stroke();cutP(()=>ctx.ellipse(R*1.1+sw,sd*w*L*.5+sd*w*.03,w*.03,w*.045,0,0,TAU),'#e8b040',{sh:0,lw:1})});
   cutP(()=>ctx.ellipse(R,0,w*.06,w*.05,0,0,TAU),'#a81818',{sh:0,lw:1.2,ink:'#3a0404'});ctx.restore()}},
+ // reel 8: a drawn bow with its string (F.cut 0..1: the string thins as termites chew it, then SNAPS at 1 and the two ends whip apart)
+ bowstring:{s:0,f(w,t,F){const k=F.snapk??0,h=w*.62,snap=k>=.98,thin=Math.max(.25,1-k*.8);ctx.save();ctx.lineCap='round';
+  ctx.strokeStyle='#1a0c06';ctx.lineWidth=w*.07;ctx.beginPath();ctx.moveTo(w*.46,-h*.5);ctx.quadraticCurveTo(-w*.22,0,w*.46,h*.5);ctx.stroke();
+  ctx.strokeStyle='#8a5a2a';ctx.lineWidth=w*.045;ctx.beginPath();ctx.moveTo(w*.46,-h*.5);ctx.quadraticCurveTo(-w*.22,0,w*.46,h*.5);ctx.stroke();
+  ctx.strokeStyle='#f0e4c8';ctx.lineWidth=Math.max(1.2,w*.016*thin);
+  if(!snap){ctx.beginPath();ctx.moveTo(w*.46,-h*.5);ctx.lineTo(w*.46,h*.5);ctx.stroke()}
+  else{const a=Math.sin(t*14)*w*.02;ctx.beginPath();ctx.moveTo(w*.46,-h*.5);ctx.quadraticCurveTo(w*.1+a,-h*.2,-w*.02,-h*.34);ctx.stroke();ctx.beginPath();ctx.moveTo(w*.46,h*.5);ctx.quadraticCurveTo(w*.3-a,h*.22,w*.12,h*.4);ctx.stroke();
+   glow(w*.46,0,w*.5,'255,240,200',.5)}ctx.restore()}},
+ // reel 8: a swarm of little golden termites (the gods in disguise); F.n count, F.along 0..1 gathers them on the bowstring
+ termite_swarm:{s:0,f(w,t,F){const n=F.cnt||14,r=rng(21),al=F.gath??.6;for(let i=0;i<n;i++){const u=r(),ph=r()*6,bx=(r()-.5)*w*.9,by=(r()-.5)*w*.7,tx=w*.46*.0+(u-.5)*0*w,ty=-w*.31+u*w*.62;
+   const x=bx*(1-al)+(w*.46-Math.abs(u-.5)*0)*al+Math.sin(t*3+ph)*w*.012,y=by*(1-al)+ty*al+Math.cos(t*3+ph)*w*.01,sz=w*(.045+r()*.02),ang=al>.5?Math.PI/2:r()*6;
+   ctx.save();ctx.translate(x,y);ctx.rotate(ang);
+   ctx.strokeStyle='#3a2410';ctx.lineWidth=Math.max(1,sz*.12);for(let l=-1;l<=1;l++){ctx.beginPath();ctx.moveTo(l*sz*.35,-sz*.2);ctx.lineTo(l*sz*.5,-sz*.62);ctx.moveTo(l*sz*.35,sz*.2);ctx.lineTo(l*sz*.5,sz*.62);ctx.stroke()}
+   cutP(()=>ctx.ellipse(-sz*.7,0,sz*.5,sz*.34,0,0,TAU),'#e0c070',{sh:0,lw:1,ink:'#3a2410'});cutP(()=>ctx.ellipse(0,0,sz*.55,sz*.4,0,0,TAU),'#d8b060',{sh:0,lw:1,ink:'#3a2410'});cutP(()=>ctx.ellipse(sz*.72,0,sz*.38,sz*.32,0,0,TAU),'#9a6a30',{sh:0,lw:1,ink:'#3a2410'});
+   cutP(()=>{ctx.moveTo(sz*.62,-sz*.3);ctx.lineTo(sz*.72,-sz*.62);ctx.lineTo(sz*.86,-sz*.3);ctx.closePath()},'#f2c14e',{sh:0,lw:.8,ink:'#5a3a10'});
+   ctx.restore()}}},
  ash_speck:{s:0,f(w,t){const r=rng(9);for(let i=0;i<7;i++){const x=(r()-.5)*w,y=(r()-.5)*w*.5,sz=w*(.05+r()*.07);cutP(()=>{ctx.moveTo(x-sz,y);ctx.lineTo(x-sz*.2,y-sz*.8);ctx.lineTo(x+sz,y-sz*.2);ctx.lineTo(x+sz*.3,y+sz*.7);ctx.closePath()},'#141010',{sh:0,lw:.6,ink:'rgba(120,110,100,.5)'})}}},
  // props drawn by engine/v2_cast.js (also figure prop keys): wine_cup (ash 0..1 swirl), burnt_cloth, palm_leaf (glow 0..1, rot), blood_splash (dark-red paper drops; n, spread), wild_flowers
  wine_cup:{s:0,f(w,t,F){V2.FX.wine_cup(ctx,w,t,F)}},

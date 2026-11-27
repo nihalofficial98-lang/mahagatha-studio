@@ -12,7 +12,7 @@
    "duration": 2.18,
    "narration": "The gods cut off Vishnu's head.",
    "meaning": "The gods cut off Vishnu's head. (shown as a dark story frame)",
-   "why": "deva_thin in a dark night world while 'The gods cut off Vishnu's head.' is spoken.",
+   "why": "vishnu in a dark night world while 'The gods cut off Vishnu's head.' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -33,11 +33,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "vishnu",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "deva_thin"
+    "focus": "vishnu"
    },
    "layers": [
     {
@@ -228,38 +228,41 @@
    },
    "characters": [
     {
-     "who": "deva_thin",
+     "who": "vishnu",
      "x": 640,
-     "y": 587,
-     "s": 0.9,
+     "y": 536,
+     "s": 0.82,
      "flip": 1,
-     "pose": "fall",
-     "emo": "shock",
+     "pose": "sleep",
+     "emo": "calm",
      "look": 700
     }
    ],
    "effects": [
     {
-     "k": "blood_splash",
-     "word": "The",
+     "k": "bowstring",
+     "word": "gods",
      "x": 640,
-     "y": 360,
-     "w": 200,
-     "alpha": 0.9,
+     "y": 690,
+     "w": 440,
+     "alpha": 1,
      "par": 1.0,
      "behind": false,
-     "meaning": "blood splash showing what the narration says"
+     "meaning": "a drawn bow and its string: it is being chewed thinner by termites",
+     "snapk": 0.3
     },
     {
-     "k": "red_energy_pulse",
-     "word": "The",
+     "k": "termite_swarm",
+     "word": "gods",
      "x": 640,
-     "y": 420,
-     "w": 420,
-     "alpha": 0.6,
+     "y": 690,
+     "w": 440,
+     "alpha": 1,
      "par": 1.0,
-     "behind": true,
-     "meaning": "red energy pulse showing what the narration says"
+     "behind": false,
+     "meaning": "little golden termites, the gods in disguise, swarming the bowstring",
+     "cnt": 10,
+     "gath": 0.4
     }
    ],
    "transition_in": "fade"
@@ -491,16 +494,38 @@
    "characters": [
     {
      "who": "deva_thin",
-     "x": 610,
-     "y": 588,
-     "s": 0.9,
+     "x": 448,
+     "y": 570,
+     "s": 0.7,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "scheme",
+     "look": 700
+    },
+    {
+     "who": "deva_thin2",
+     "x": 776,
+     "y": 563,
+     "s": 0.68,
      "flip": -1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "scheme",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "purpose",
+     "x": 640,
+     "y": 560,
+     "w": 640,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "dark mist of a secret plan"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -513,7 +538,7 @@
    "duration": 3.02,
    "narration": "Every one of them had turned into a termite.",
    "meaning": "Every one of them had turned into a termite. (shown as a dark story frame)",
-   "why": "deva_thin in a dark night world while 'Every one of them had turned into a termite.' is spoken.",
+   "why": "vishnu in a dark night world while 'Every one of them had turned into a termite.' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -534,11 +559,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "vishnu",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "deva_thin"
+    "focus": "vishnu"
    },
    "layers": [
     {
@@ -729,17 +754,43 @@
    },
    "characters": [
     {
-     "who": "deva_thin",
+     "who": "vishnu",
      "x": 670,
-     "y": 590,
-     "s": 0.9,
+     "y": 503,
+     "s": 0.7,
      "flip": 1,
-     "pose": "stand",
+     "pose": "sleep",
      "emo": "calm",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "bowstring",
+     "word": "termite.",
+     "x": 640,
+     "y": 660,
+     "w": 440,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a drawn bow and its string: it is being chewed thinner by termites",
+     "snapk": 0.2
+    },
+    {
+     "k": "termite_swarm",
+     "word": "termite.",
+     "x": 640,
+     "y": 620,
+     "w": 440,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "little golden termites, the gods in disguise, swarming the bowstring",
+     "cnt": 22,
+     "gath": 0.2
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1947,7 +1998,7 @@
    "duration": 5.4,
    "narration": "Vishnu went home very tired and fell asleep with his chin resting on his bow.",
    "meaning": "Vishnu went home it tired and fell asleep with his chin resting on his bow. (shown as a dark story frame)",
-   "why": "vishnu in a dark indigo world while 'Vishnu went home it tired and fell asleep with h' is spoken.",
+   "why": "vishnu in a dark night world while 'Vishnu went home it tired and fell asleep with h' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -1979,7 +2030,7 @@
      "d": "far",
      "contents": "layered dark peaks and distant clouds",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -1988,7 +2039,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1998,7 +2049,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -2008,7 +2059,7 @@
        "s": 1.2,
        "w": 250,
        "h": 210,
-       "col": "#3a2a5a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -2018,7 +2069,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -2026,14 +2077,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 780,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#24366a"
       }
      ]
     },
@@ -2049,21 +2100,21 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#18224a"
       },
       {
        "o": "hut",
        "x": 470,
        "y": 520,
        "s": 0.6,
-       "col": "#1a1028"
+       "col": "#101830"
       },
       {
        "o": "hut",
        "x": 820,
        "y": 518,
        "s": 0.55,
-       "col": "#1a1028"
+       "col": "#101830"
       },
       {
        "o": "tree",
@@ -2071,7 +2122,7 @@
        "y": 510,
        "s": 0.45,
        "kind": "palm",
-       "col": "#241838"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2079,7 +2130,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#18224a"
       }
      ]
     },
@@ -2141,18 +2192,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
     "sx": 600,
     "sy": 300,
     "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -2165,8 +2216,8 @@
     {
      "who": "vishnu",
      "x": 630,
-     "y": 588,
-     "s": 0.9,
+     "y": 537,
+     "s": 0.82,
      "flip": 1,
      "pose": "sleep",
      "emo": "calm",
@@ -2175,15 +2226,16 @@
    ],
    "effects": [
     {
-     "k": "mist_wisps",
-     "word": "Vishnu",
+     "k": "bowstring",
+     "word": "bow.",
      "x": 640,
-     "y": 560,
-     "w": 640,
-     "alpha": 0.8,
+     "y": 690,
+     "w": 440,
+     "alpha": 1,
      "par": 1.0,
-     "behind": true,
-     "meaning": "mist wisps showing what the narration says"
+     "behind": false,
+     "meaning": "a drawn bow and its string: it is being chewed thinner by termites",
+     "snapk": 0
     }
    ],
    "transition_in": "cut"
@@ -2198,7 +2250,7 @@
    "duration": 2.98,
    "narration": "The gods, led by Brahma, who made the world,",
    "meaning": "The gods, led by Brahma, who made the world, (shown as a dark story frame)",
-   "why": "deva_thin in a dark indigo world while 'The gods, led by Brahma, who made the world,' is spoken.",
+   "why": "deva_thin in a dark night world while 'The gods, led by Brahma, who made the world,' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -2230,7 +2282,7 @@
      "d": "far",
      "contents": "layered dark peaks and distant clouds",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -2239,7 +2291,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -2249,7 +2301,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -2259,7 +2311,7 @@
        "s": 1.2,
        "w": 250,
        "h": 210,
-       "col": "#3a2a5a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -2269,7 +2321,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -2277,14 +2329,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 780,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#24366a"
       }
      ]
     },
@@ -2300,21 +2352,21 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 520,
        "s": 0.95,
-       "col": "#1a1028"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 516,
        "s": 0.85,
-       "col": "#1a1028"
+       "col": "#101830"
       },
       {
        "o": "tree",
@@ -2322,7 +2374,7 @@
        "y": 505,
        "s": 0.42,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2330,7 +2382,7 @@
        "y": 505,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#18224a"
       }
      ]
     },
@@ -2392,18 +2444,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
     "sx": 700,
     "sy": 300,
     "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -2447,7 +2499,7 @@
    "duration": 3.46,
    "narration": "needed Vishnu awake for a fire prayer called a yajna.",
    "meaning": "needed Vishnu awake for a fire prayer called a yajna. (shown as a dark story frame)",
-   "why": "vishnu in a dark indigo world while 'needed Vishnu awake for a fire prayer called a yaj' is spoken.",
+   "why": "vishnu in a dark night world while 'needed Vishnu awake for a fire prayer called a yaj' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -2479,7 +2531,7 @@
      "d": "far",
      "contents": "layered dark peaks and distant clouds",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -2488,7 +2540,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -2498,7 +2550,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -2508,7 +2560,7 @@
        "s": 1.2,
        "w": 250,
        "h": 210,
-       "col": "#3a2a5a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -2518,7 +2570,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -2526,35 +2578,35 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 780,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#24366a"
       },
       {
        "o": "wall",
        "x": 600,
        "y": 470,
        "s": 0.8,
-       "col": "#241838"
+       "col": "#18224a"
       },
       {
        "o": "pillar",
        "x": 470,
        "y": 520,
        "s": 0.55,
-       "col": "#241838"
+       "col": "#18224a"
       },
       {
        "o": "pillar",
        "x": 800,
        "y": 520,
        "s": 0.55,
-       "col": "#241838"
+       "col": "#18224a"
       }
      ]
     },
@@ -2570,28 +2622,28 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#18224a"
       },
       {
        "o": "pillar",
        "x": 455,
        "y": 540,
        "s": 0.8,
-       "col": "#1a1028"
+       "col": "#101830"
       },
       {
        "o": "pillar",
        "x": 835,
        "y": 540,
        "s": 0.8,
-       "col": "#1a1028"
+       "col": "#101830"
       },
       {
        "o": "wall",
        "x": 640,
        "y": 500,
        "s": 0.7,
-       "col": "#241838"
+       "col": "#18224a"
       }
      ]
     },
@@ -2653,18 +2705,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -2710,7 +2762,7 @@
    "duration": 2.76,
    "narration": "Their own powers had failed against the demon.",
    "meaning": "Their own powers had failed against the demon. (shown as a dark story frame)",
-   "why": "asura1 in a dark indigo world while 'Their own powers had failed against the demon.' is spoken.",
+   "why": "asura1 in a dark night world while 'Their own powers had failed against the demon.' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -2742,7 +2794,7 @@
      "d": "far",
      "contents": "layered dark peaks and distant clouds",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -2751,7 +2803,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -2761,7 +2813,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -2771,7 +2823,7 @@
        "s": 1.2,
        "w": 250,
        "h": 210,
-       "col": "#3a2a5a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -2781,7 +2833,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -2789,14 +2841,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 780,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#24366a"
       }
      ]
     },
@@ -2812,21 +2864,21 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 520,
        "s": 0.95,
-       "col": "#1a1028"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 516,
        "s": 0.85,
-       "col": "#1a1028"
+       "col": "#101830"
       },
       {
        "o": "tree",
@@ -2834,7 +2886,7 @@
        "y": 505,
        "s": 0.42,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2842,7 +2894,7 @@
        "y": 505,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#18224a"
       }
      ]
     },
@@ -2904,18 +2956,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
     "sx": 520,
     "sy": 300,
     "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -2961,7 +3013,7 @@
    "duration": 1.58,
    "narration": "Brahma had an idea.",
    "meaning": "Brahma had an idea. (shown as a dark story frame)",
-   "why": "brahma in a dark indigo world while 'Brahma had an idea.' is spoken.",
+   "why": "brahma in a dark night world while 'Brahma had an idea.' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -2976,6 +3028,245 @@
      "z": 1.0,
      "x": 0,
      "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark peaks and distant clouds",
+     "fog": 0.6,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 430,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 560,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 470,
+       "s": 1.2,
+       "w": 250,
+       "h": 210,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 830,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 780,
+       "y": 250,
+       "s": 0.9,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "dark silhouettes of the setting on both sides",
+     "fog": 0.22,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 480,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 520,
+       "s": 0.95,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 516,
+       "s": 0.85,
+       "col": "#101830"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 505,
+       "s": 0.42,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 750,
+       "y": 505,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "black foreground silhouettes framing the figures",
+     "dark": 0.55,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 440,
+       "y": 752,
+       "s": 1.6,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 850,
+       "y": 756,
+       "s": 1.5,
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 420,
+       "y": 760,
+       "s": 1.5,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "tree",
+       "x": 870,
+       "y": 762,
+       "s": 1.4,
+       "kind": "pine",
+       "col": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 520,
+       "y": 752,
+       "s": 1.2,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      },
+      {
+       "o": "shrub",
+       "x": 780,
+       "y": 752,
+       "s": 1.1,
+       "col": "#0a0610",
+       "flowers": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 760,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "scheme",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 670,
+     "y": 494,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "scheme",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s14",
+   "beat": 1,
+   "start": {
+    "t": 40.22,
+    "word": "If"
+   },
+   "duration": 4.1,
+   "narration": "If the bowstring snapped, the sound would shake the whole sky.",
+   "meaning": "If the bowstring snapped, the sound would shake the whole sky. (shown as a dark story frame)",
+   "why": "brahma in a dark indigo world while 'If the bowstring snapped, the sound would shake th' is spoken.",
+   "camera": {
+    "shot": "close",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 14,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -3160,7 +3451,7 @@
      "#5a2a58",
      "#b05a48"
     ],
-    "sx": 760,
+    "sx": 600,
     "sy": 300,
     "ridge": [
      "#3a2a5a",
@@ -3172,282 +3463,44 @@
     "dust": 10
    },
    "mood": {
-    "emotion": "scheme",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "brahma",
-     "x": 670,
-     "y": 494,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "scheme",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s14",
-   "beat": 1,
-   "start": {
-    "t": 40.22,
-    "word": "If"
-   },
-   "duration": 4.1,
-   "narration": "If the bowstring snapped, the sound would shake the whole sky.",
-   "meaning": "If the bowstring snapped, the sound would shake the whole sky. (shown as a dark story frame)",
-   "why": "brahma in a dark ember world while 'If the bowstring snapped, the sound would shake th' is spoken.",
-   "camera": {
-    "shot": "close",
-    "lens": "normal",
-    "move": "dolly_right",
-    "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "brahma",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "brahma"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark peaks and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 430,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 560,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 470,
-       "s": 1.2,
-       "w": 250,
-       "h": 210,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 830,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 780,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 480,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 520,
-       "s": 0.95,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 516,
-       "s": 0.85,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 505,
-       "s": 0.42,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 750,
-       "y": 505,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
-       "y": 760,
-       "s": 1.5,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 600,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
     "emotion": "shock",
     "grade": "ep07_dark"
    },
    "characters": [
     {
      "who": "brahma",
-     "x": 630,
-     "y": 587,
-     "s": 0.9,
+     "x": 510,
+     "y": 579,
+     "s": 0.85,
      "flip": -1,
-     "pose": "fall",
-     "emo": "shock",
+     "pose": "point",
+     "emo": "scheme",
      "look": 700
     }
    ],
    "effects": [
     {
-     "k": "blood_splash",
-     "word": "If",
-     "x": 640,
-     "y": 360,
-     "w": 200,
-     "alpha": 0.9,
+     "k": "bowstring",
+     "word": "bowstring",
+     "x": 790,
+     "y": 640,
+     "w": 300,
+     "alpha": 1,
      "par": 1.0,
      "behind": false,
-     "meaning": "blood splash showing what the narration says"
+     "meaning": "a drawn bow and its string: it is being chewed thinner by termites",
+     "snapk": 0
     },
     {
      "k": "red_energy_pulse",
-     "word": "If",
+     "word": "sound",
      "x": 640,
      "y": 420,
      "w": 420,
      "alpha": 0.6,
      "par": 1.0,
      "behind": true,
-     "meaning": "red energy pulse showing what the narration says"
+     "meaning": "the sound that would shake the sky"
     }
    ],
    "transition_in": "cut"
@@ -3462,7 +3515,7 @@
    "duration": 3.2,
    "narration": "So the gods turned into termites and chewed the string,",
    "meaning": "So the gods turned into termites and chewed the string, (shown as a dark story frame)",
-   "why": "deva_thin in a dark ember world while 'So the gods turned into termites and chewed the st' is spoken.",
+   "why": "vishnu in a dark night world while 'So the gods turned into termites and chewed the st' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -3483,18 +3536,18 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "vishnu",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "deva_thin"
+    "focus": "vishnu"
    },
    "layers": [
     {
      "d": "far",
      "contents": "layered dark peaks and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -3503,7 +3556,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -3513,7 +3566,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -3523,7 +3576,7 @@
        "s": 1.2,
        "w": 250,
        "h": 210,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -3533,7 +3586,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -3541,14 +3594,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 780,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -3564,21 +3617,21 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 520,
        "s": 0.95,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 516,
        "s": 0.85,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "tree",
@@ -3586,7 +3639,7 @@
        "y": 505,
        "s": 0.42,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3594,7 +3647,7 @@
        "y": 505,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       }
      ]
     },
@@ -3656,18 +3709,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
     "sx": 700,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -3678,17 +3731,43 @@
    },
    "characters": [
     {
-     "who": "deva_thin",
+     "who": "vishnu",
      "x": 655,
-     "y": 587,
-     "s": 0.9,
+     "y": 518,
+     "s": 0.76,
      "flip": 1,
-     "pose": "stand",
+     "pose": "sleep",
      "emo": "calm",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "bowstring",
+     "word": "termites",
+     "x": 640,
+     "y": 660,
+     "w": 440,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a drawn bow and its string: it is being chewed thinner by termites",
+     "snapk": 0.35
+    },
+    {
+     "k": "termite_swarm",
+     "word": "termites",
+     "x": 640,
+     "y": 660,
+     "w": 440,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "little golden termites, the gods in disguise, swarming the bowstring",
+     "cnt": 16,
+     "gath": 0.95
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3701,7 +3780,7 @@
    "duration": 3.24,
    "narration": "thinner and thinner, faster and faster.",
    "meaning": "thinner and thinner, faster and faster. (shown as a dark story frame)",
-   "why": "deva_thin in a dark ember world while 'thinner and thinner, faster and faster.' is spoken.",
+   "why": "vishnu in a dark night world while 'thinner and thinner, faster and faster.' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -3722,18 +3801,18 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "vishnu",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "deva_thin"
+    "focus": "vishnu"
    },
    "layers": [
     {
      "d": "far",
      "contents": "layered dark peaks and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -3742,7 +3821,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -3752,7 +3831,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -3762,7 +3841,7 @@
        "s": 1.2,
        "w": 250,
        "h": 210,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -3772,7 +3851,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -3780,14 +3859,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 780,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -3803,21 +3882,21 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 520,
        "s": 0.95,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 516,
        "s": 0.85,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "tree",
@@ -3825,7 +3904,7 @@
        "y": 505,
        "s": 0.42,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3833,7 +3912,7 @@
        "y": 505,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       }
      ]
     },
@@ -3895,18 +3974,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -3917,17 +3996,43 @@
    },
    "characters": [
     {
-     "who": "deva_thin",
+     "who": "vishnu",
      "x": 640,
-     "y": 588,
-     "s": 0.9,
+     "y": 518,
+     "s": 0.76,
      "flip": -1,
-     "pose": "stand",
+     "pose": "sleep",
      "emo": "calm",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "bowstring",
+     "word": "thinner",
+     "x": 640,
+     "y": 660,
+     "w": 440,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a drawn bow and its string: it is being chewed thinner by termites",
+     "snapk": 0.8
+    },
+    {
+     "k": "termite_swarm",
+     "word": "thinner",
+     "x": 640,
+     "y": 660,
+     "w": 440,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "little golden termites, the gods in disguise, swarming the bowstring",
+     "cnt": 26,
+     "gath": 0.98
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3940,7 +4045,7 @@
    "duration": 4.04,
    "narration": "Then it snapped, and the string whipped loose and cut off Vishnu's head.",
    "meaning": "Then it snapped, and the string whipped loose and cut off Vishnu's head. (shown as a dark story frame)",
-   "why": "deva_thin in a dark ember world while 'Then it snapped, and the string whipped loose and ' is spoken.",
+   "why": "vishnu in a dark ember world while 'Then it snapped, and the string whipped loose and ' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -3961,11 +4066,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "vishnu",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "deva_thin"
+    "focus": "vishnu"
    },
    "layers": [
     {
@@ -4156,10 +4261,10 @@
    },
    "characters": [
     {
-     "who": "deva_thin",
+     "who": "vishnu",
      "x": 610,
-     "y": 590,
-     "s": 0.9,
+     "y": 533,
+     "s": 0.8,
      "flip": 1,
      "pose": "fall",
      "emo": "shock",
@@ -4168,26 +4273,27 @@
    ],
    "effects": [
     {
-     "k": "blood_splash",
-     "word": "Then",
+     "k": "bowstring",
+     "word": "snapped,",
      "x": 640,
-     "y": 360,
+     "y": 700,
+     "w": 440,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "the bowstring snapped and whipping loose",
+     "snapk": 1.0
+    },
+    {
+     "k": "blood_splash",
+     "word": "head.",
+     "x": 640,
+     "y": 400,
      "w": 200,
      "alpha": 0.9,
      "par": 1.0,
      "behind": false,
-     "meaning": "blood splash showing what the narration says"
-    },
-    {
-     "k": "red_energy_pulse",
-     "word": "Then",
-     "x": 640,
-     "y": 420,
-     "w": 420,
-     "alpha": 0.6,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "red energy pulse showing what the narration says"
+     "meaning": "blood where the string cut"
     }
    ],
    "transition_in": "cut"
@@ -4202,7 +4308,7 @@
    "duration": 3.18,
    "narration": "It rolled away. His eyes were still closed.",
    "meaning": "It rolled away. His eyes were still closed. (shown as a dark story frame)",
-   "why": "deva_thin in a dark ember world while 'It rolled away. His eyes were still closed.' is spoken.",
+   "why": "vishnu in a dark ember world while 'It rolled away. His eyes were still closed.' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -4223,11 +4329,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "vishnu",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "deva_thin"
+    "focus": "vishnu"
    },
    "layers": [
     {
@@ -4418,17 +4524,29 @@
    },
    "characters": [
     {
-     "who": "deva_thin",
+     "who": "vishnu",
      "x": 670,
-     "y": 594,
+     "y": 671,
      "s": 0.9,
      "flip": -1,
-     "pose": "stand",
+     "pose": "sleep",
      "emo": "calm",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "blood_splash",
+     "word": "closed.",
+     "x": 640,
+     "y": 640,
+     "w": 220,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "blood on the floor"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -4658,16 +4776,38 @@
    "characters": [
     {
      "who": "deva_thin",
-     "x": 630,
-     "y": 590,
-     "s": 0.9,
+     "x": 468,
+     "y": 572,
+     "s": 0.7,
      "flip": 1,
-     "pose": "stand",
+     "pose": "plead",
+     "emo": "fear",
+     "look": 700
+    },
+    {
+     "who": "deva_thin2",
+     "x": 796,
+     "y": 566,
+     "s": 0.68,
+     "flip": -1,
+     "pose": "plead",
      "emo": "fear",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "smoke_plume",
+     "word": "froze.",
+     "x": 640,
+     "y": 580,
+     "w": 420,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "dark smoke in the frozen silence"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -5384,7 +5524,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "blood_splash",
+     "word": "marks",
+     "x": 640,
+     "y": 744,
+     "w": 200,
+     "alpha": 0.9,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "red footprints on the floor"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -5875,15 +6027,15 @@
      "meaning": "divine rays showing what the narration says"
     },
     {
-     "k": "flower_petals",
+     "k": "mist_wisps",
      "word": "The",
      "x": 640,
-     "y": 420,
-     "w": 420,
+     "y": 560,
+     "w": 640,
      "alpha": 0.7,
      "par": 1.0,
-     "behind": false,
-     "meaning": "flower petals showing what the narration says"
+     "behind": true,
+     "meaning": "mist wisps showing what the narration says"
     }
    ],
    "transition_in": "cut"

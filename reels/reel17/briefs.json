@@ -775,7 +775,7 @@
    "duration": 1.78,
    "narration": "It began with demons.",
    "meaning": "It began with demons. (shown as a dark story frame)",
-   "why": "shiva in a dark ember world while 'It began with demons.' is spoken.",
+   "why": "asura1 in a dark ember world while 'It began with demons.' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -796,11 +796,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "shiva",
+    "subject": "asura1",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "shiva"
+    "focus": "asura1"
    },
    "layers": [
     {
@@ -991,17 +991,51 @@
    },
    "characters": [
     {
-     "who": "shiva",
+     "who": "asura1",
      "x": 630,
-     "y": 594,
-     "s": 0.9,
+     "y": 687,
+     "s": 1.3,
      "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
+     "pose": "rage",
+     "emo": "rage",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "lightning_forks",
+     "word": "demons",
+     "x": 640,
+     "y": 260,
+     "w": 560,
+     "alpha": 0.9,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "lightning behind a huge scary demon"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "demons",
+     "x": 640,
+     "y": 580,
+     "w": 420,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "black smoke at the demon feet"
+    },
+    {
+     "k": "red_energy_pulse",
+     "word": "demons",
+     "x": 640,
+     "y": 420,
+     "w": 420,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a red glow of danger"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1014,7 +1048,7 @@
    "duration": 2.66,
    "narration": "They tormented the gods and killed people.",
    "meaning": "They tormented the gods and killed people. (shown as a dark story frame)",
-   "why": "shiva in a dark ember world while 'They tormented the gods and killed people.' is spoken.",
+   "why": "asura1 in a dark ember world while 'They tormented the gods and killed people.' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -1035,11 +1069,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "shiva",
+    "subject": "asura1",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "shiva"
+    "focus": "asura1"
    },
    "layers": [
     {
@@ -1230,17 +1264,71 @@
    },
    "characters": [
     {
-     "who": "shiva",
+     "who": "asura1",
      "x": 655,
-     "y": 590,
-     "s": 0.9,
+     "y": 640,
+     "s": 1.25,
      "flip": 1,
      "pose": "lunge",
-     "emo": "anger",
+     "emo": "rage",
+     "look": 700
+    },
+    {
+     "who": "deva_thin",
+     "x": 493,
+     "y": 584,
+     "s": 0.6,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "fear",
+     "look": 700
+    },
+    {
+     "who": "deva_thin2",
+     "x": 821,
+     "y": 578,
+     "s": 0.58,
+     "flip": -1,
+     "pose": "plead",
+     "emo": "fear",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "demon_crowd",
+     "word": "tormented",
+     "x": 640,
+     "y": 470,
+     "w": 700,
+     "alpha": 0.85,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "dark demon shapes crowding in on the frightened gods"
+    },
+    {
+     "k": "ember_fire",
+     "word": "tormented",
+     "x": 640,
+     "y": 620,
+     "w": 520,
+     "alpha": 0.9,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "fire burning around the frightened gods"
+    },
+    {
+     "k": "red_energy_pulse",
+     "word": "tormented",
+     "x": 640,
+     "y": 420,
+     "w": 420,
+     "alpha": 0.6,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a red glow of terror"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1253,7 +1341,7 @@
    "duration": 2.34,
    "narration": "The gods begged Vishnu to save them.",
    "meaning": "The gods begged Vishnu to save them. (shown as a dark story frame)",
-   "why": "vishnu in a dark ember world while 'The gods begged Vishnu to save them.' is spoken.",
+   "why": "vishnu in a dark night world while 'The gods begged Vishnu to save them.' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -1285,7 +1373,7 @@
      "d": "far",
      "contents": "layered dark peaks and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -1294,7 +1382,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1304,7 +1392,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1314,7 +1402,7 @@
        "s": 1.2,
        "w": 250,
        "h": 210,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1324,7 +1412,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1332,14 +1420,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 780,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -1355,21 +1443,21 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 520,
        "s": 0.95,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 516,
        "s": 0.85,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "tree",
@@ -1377,7 +1465,7 @@
        "y": 505,
        "s": 0.42,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1385,7 +1473,7 @@
        "y": 505,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       }
      ]
     },
@@ -1447,18 +1535,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -1471,15 +1559,47 @@
     {
      "who": "vishnu",
      "x": 640,
-     "y": 589,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "plead",
+     "y": 590,
+     "s": 0.95,
+     "flip": 1,
+     "pose": "stand",
      "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "deva_thin",
+     "x": 478,
+     "y": 590,
+     "s": 0.58,
+     "flip": 1,
+     "pose": "kneel",
+     "emo": "fear",
+     "look": 700
+    },
+    {
+     "who": "deva_thin2",
+     "x": 806,
+     "y": 584,
+     "s": 0.56,
+     "flip": -1,
+     "pose": "kneel",
+     "emo": "fear",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "divine_rays",
+     "word": "begged",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "Vishnu light falling on the begging gods"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -2482,15 +2602,15 @@
      "meaning": "divine rays showing what the narration says"
     },
     {
-     "k": "flower_petals",
+     "k": "mist_wisps",
      "word": "He",
      "x": 640,
-     "y": 420,
-     "w": 420,
+     "y": 560,
+     "w": 640,
      "alpha": 0.7,
      "par": 1.0,
-     "behind": false,
-     "meaning": "flower petals showing what the narration says"
+     "behind": true,
+     "meaning": "mist wisps showing what the narration says"
     }
    ],
    "transition_in": "cut"
@@ -2505,7 +2625,7 @@
    "duration": 3.14,
    "narration": "For every name, he laid one lotus on the lingam.",
    "meaning": "For every name, he laid one lotus on the lingam. (shown as a dark story frame)",
-   "why": "shiva in a dark indigo world while 'For every name, he laid one lotus on the lingam.' is spoken.",
+   "why": "vishnu in a dark indigo world while 'For every name, he laid one lotus on the lingam.' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -2526,11 +2646,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "shiva",
+    "subject": "vishnu",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "shiva"
+    "focus": "vishnu"
    },
    "layers": [
     {
@@ -2638,6 +2758,13 @@
        "s": 0.4,
        "kind": "round",
        "col": "#241838"
+      },
+      {
+       "o": "rock",
+       "x": 780,
+       "y": 600,
+       "s": 0.9,
+       "col": "#2e2838"
       }
      ]
     },
@@ -2721,27 +2848,36 @@
    },
    "characters": [
     {
-     "who": "shiva",
-     "x": 640,
-     "y": 594,
-     "s": 0.9,
+     "who": "vishnu",
+     "x": 520,
+     "y": 593,
+     "s": 0.85,
      "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "pose": "namaste",
+     "emo": "devotion",
+     "look": 720
     }
    ],
    "effects": [
     {
-     "k": "flower_petals",
+     "k": "lotus",
      "word": "lotus",
-     "x": 640,
-     "y": 420,
+     "x": 780,
+     "y": 560,
+     "sc": 0.55,
+     "open": 1,
+     "meaning": "one paper-cut lotus laid on the lingam"
+    },
+    {
+     "k": "divine_rays",
+     "word": "lotus",
+     "x": 780,
+     "y": 520,
      "w": 420,
-     "alpha": 0.8,
+     "alpha": 0.6,
      "par": 1.0,
-     "behind": false,
-     "meaning": "flower petals as the story says 'lotus'"
+     "behind": true,
+     "meaning": "soft light on the lingam"
     }
    ],
    "transition_in": "cut"
@@ -2756,7 +2892,7 @@
    "duration": 3.36,
    "narration": "When the chant ended, a thousand lotuses covered it.",
    "meaning": "When the chant ended, a thousand lotuses covered it. (shown as a dark story frame)",
-   "why": "shiva in a dark indigo world while 'When the chant ended, a thousand lotuses covered i' is spoken.",
+   "why": "vishnu in a dark indigo world while 'When the chant ended, a thousand lotuses covered i' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -2777,11 +2913,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "shiva",
+    "subject": "vishnu",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "shiva"
+    "focus": "vishnu"
    },
    "layers": [
     {
@@ -2889,6 +3025,13 @@
        "s": 0.4,
        "kind": "round",
        "col": "#241838"
+      },
+      {
+       "o": "rock",
+       "x": 780,
+       "y": 600,
+       "s": 0.9,
+       "col": "#2e2838"
       }
      ]
     },
@@ -2972,27 +3115,43 @@
    },
    "characters": [
     {
-     "who": "shiva",
-     "x": 610,
-     "y": 590,
-     "s": 0.9,
+     "who": "vishnu",
+     "x": 490,
+     "y": 602,
+     "s": 0.8,
      "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "pose": "namaste",
+     "emo": "joy",
+     "look": 720
     }
    ],
    "effects": [
     {
-     "k": "flower_petals",
+     "k": "lotus",
      "word": "lotuses",
-     "x": 640,
-     "y": 420,
-     "w": 420,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "flower petals as the story says 'lotuses'"
+     "x": 740,
+     "y": 560,
+     "sc": 0.5,
+     "open": 1,
+     "meaning": "a thousand lotuses piled on the lingam (first)"
+    },
+    {
+     "k": "lotus",
+     "word": "lotuses",
+     "x": 830,
+     "y": 566,
+     "sc": 0.5,
+     "open": 1,
+     "meaning": "a thousand lotuses piled on the lingam (second)"
+    },
+    {
+     "k": "lotus",
+     "word": "lotuses",
+     "x": 785,
+     "y": 520,
+     "sc": 0.55,
+     "open": 1,
+     "meaning": "a thousand lotuses piled on the lingam (top)"
     }
    ],
    "transition_in": "cut"
@@ -3389,6 +3548,13 @@
        "s": 0.4,
        "kind": "round",
        "col": "#241838"
+      },
+      {
+       "o": "rock",
+       "x": 790,
+       "y": 600,
+       "s": 0.9,
+       "col": "#2e2838"
       }
      ]
     },
@@ -3473,26 +3639,35 @@
    "characters": [
     {
      "who": "shiva",
-     "x": 630,
-     "y": 587,
-     "s": 0.9,
+     "x": 510,
+     "y": 586,
+     "s": 0.85,
      "flip": -1,
-     "pose": "stand",
+     "pose": "point",
      "emo": "calm",
-     "look": 700
+     "look": 720
     }
    ],
    "effects": [
     {
-     "k": "flower_petals",
+     "k": "lotus",
+     "word": "lotus",
+     "x": 560,
+     "y": 330,
+     "sc": 0.4,
+     "open": 1,
+     "meaning": "one lotus lifted away by Shiva"
+    },
+    {
+     "k": "divine_rays",
      "word": "lotus",
      "x": 640,
-     "y": 420,
-     "w": 420,
-     "alpha": 0.8,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.6,
      "par": 1.0,
-     "behind": false,
-     "meaning": "flower petals as the story says 'lotus'"
+     "behind": true,
+     "meaning": "a hidden light of Shiva"
     }
    ],
    "transition_in": "cut"
@@ -3640,6 +3815,13 @@
        "s": 0.4,
        "kind": "round",
        "col": "#241838"
+      },
+      {
+       "o": "rock",
+       "x": 780,
+       "y": 600,
+       "s": 0.9,
+       "col": "#2e2838"
       }
      ]
     },
@@ -3724,26 +3906,33 @@
    "characters": [
     {
      "who": "vishnu",
-     "x": 655,
-     "y": 587,
-     "s": 0.9,
+     "x": 535,
+     "y": 586,
+     "s": 0.85,
      "flip": 1,
      "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "emo": "doubt",
+     "look": 720
     }
    ],
    "effects": [
     {
-     "k": "flower_petals",
-     "word": "flowers",
-     "x": 640,
-     "y": 420,
-     "w": 420,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "flower petals as the story says 'flowers'"
+     "k": "lotus",
+     "word": "flowers,",
+     "x": 740,
+     "y": 560,
+     "sc": 0.45,
+     "open": 1,
+     "meaning": "counted lotus one"
+    },
+    {
+     "k": "lotus",
+     "word": "flowers,",
+     "x": 830,
+     "y": 566,
+     "sc": 0.45,
+     "open": 1,
+     "meaning": "counted lotus two"
     }
    ],
    "transition_in": "cut"
@@ -3891,6 +4080,13 @@
        "s": 0.4,
        "kind": "round",
        "col": "#241838"
+      },
+      {
+       "o": "rock",
+       "x": 780,
+       "y": 600,
+       "s": 0.9,
+       "col": "#2e2838"
       }
      ]
     },
@@ -3975,26 +4171,26 @@
    "characters": [
     {
      "who": "vishnu",
-     "x": 640,
-     "y": 588,
-     "s": 0.9,
+     "x": 520,
+     "y": 587,
+     "s": 0.85,
      "flip": -1,
      "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "emo": "fear",
+     "look": 720
     }
    ],
    "effects": [
     {
-     "k": "flower_petals",
-     "word": "lotus",
+     "k": "mist_wisps",
+     "word": "searched",
      "x": 640,
-     "y": 420,
-     "w": 420,
-     "alpha": 0.8,
+     "y": 560,
+     "w": 640,
+     "alpha": 0.7,
      "par": 1.0,
-     "behind": false,
-     "meaning": "flower petals as the story says 'lotus'"
+     "behind": true,
+     "meaning": "dark mist while he searches"
     }
    ],
    "transition_in": "cut"
@@ -4976,15 +5172,13 @@
    ],
    "effects": [
     {
-     "k": "flower_petals",
+     "k": "lotus",
      "word": "lotus",
      "x": 640,
-     "y": 420,
-     "w": 420,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "flower petals as the story says 'lotus'"
+     "y": 610,
+     "sc": 0.8,
+     "open": 1,
+     "meaning": "a paper-cut lotus placed where the story says lotus"
     }
    ],
    "transition_in": "cut"
@@ -5227,15 +5421,24 @@
    ],
    "effects": [
     {
-     "k": "flower_petals",
+     "k": "lotus",
      "word": "lotuses",
+     "x": 640,
+     "y": 610,
+     "sc": 0.8,
+     "open": 1,
+     "meaning": "a paper-cut lotus placed where the story says lotus"
+    },
+    {
+     "k": "flower_petals",
+     "word": "flower",
      "x": 640,
      "y": 420,
      "w": 420,
      "alpha": 0.8,
      "par": 1.0,
      "behind": false,
-     "meaning": "flower petals as the story says 'lotuses'"
+     "meaning": "flower petals as the story says 'flower'"
     }
    ],
    "transition_in": "cut"
@@ -5478,6 +5681,15 @@
    ],
    "effects": [
     {
+     "k": "lotus",
+     "word": "lotus",
+     "x": 640,
+     "y": 610,
+     "sc": 0.8,
+     "open": 1,
+     "meaning": "a paper-cut lotus placed where the story says lotus"
+    },
+    {
      "k": "blood_splash",
      "word": "He",
      "x": 640,
@@ -5487,17 +5699,6 @@
      "par": 1.0,
      "behind": false,
      "meaning": "blood splash showing what the narration says"
-    },
-    {
-     "k": "divine_rays",
-     "word": "He",
-     "x": 640,
-     "y": 330,
-     "w": 380,
-     "alpha": 0.7,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "divine rays showing what the narration says"
     }
    ],
    "transition_in": "cut"

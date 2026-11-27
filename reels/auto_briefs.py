@@ -33,13 +33,13 @@ def background(sc):
 def scene_layers(sc,theme='hills'):return layers(sc if sc in SK else PAL.get(sc,'indigo'),theme)
 EMO=[('anger',r'\b(angry|furious|rage|cursed|curse|killed|kill|struck|attack|attacked|hit)\b'),('fear',r'\b(scared|afraid|fear|terrified|froze|trapped)\b'),('sad',r'\b(sad|pain|wound|wounded|blood|cried|wandering|lost|punishment)\b'),('surprise',r'\b(suddenly|shock|shocked|surprised|bright|jewels|amazing)\b'),('devotion',r'\b(pray|prayed|worship|worshipped|devotee|loved|blessed)\b'),('pride',r'\b(strong|strongest|powerful|beat|won|brave)\b'),('scheme',r'\b(trick|plan|idea|secret|mistake)\b'),('joy',r'\b(smiled|laughed|happy|gift)\b')]
 POSE=[('sitpray',r'\b(prayed|worshipped|chanted|meditation)\b'),('sleep',r'\b(asleep|sleeping|slept)\b'),('plead',r'\b(begged|asked|forgive)\b'),('lunge',r'\b(killed|struck|attacked|threw|hit|drove|cut)\b'),('fall',r'\b(fell|collapsed|snapped)\b'),('namaste',r'\b(bowed|blessed)\b'),('point',r'\b(told|said|warned|named)\b'),('open',r'\b(spread|rose|appeared)\b')]
-FX=[('ember_fire',r'\b(fire|flames|burned|burning|yajna|yagna)\b',(640,560,300)),('flower_petals',r'\b(lotus|lotuses|flower|flowers)\b',(640,420,420)),('blood_splash',r'\b(blood)\b',(640,500,260)),('curse_glow',r'\b(curse|cursed)\b',(640,420,420)),('lightning_forks',r'\b(lightning|thunder|storm)\b',(640,260,500)),('smoke_plume',r'\b(smoke|ashes|ash)\b',(640,560,300)),('wave_ocean',r'\b(ocean|sea|water|river)\b',(640,640,640)),('divine_rays',r'\b(light|glowing|shine|bright|golden|divine)\b',(640,330,520)),('sudarshan_chakra',r'\b(chakra|disc)\b',(640,400,260)),('red_energy_pulse',r'\b(boon|power|powers|weapon|astra)\b',(640,420,300)),('mist_wisps',r'\b(night|dark|silent|mystery)\b',(640,540,640))]
+FX=[('ember_fire',r'\b(fire|flames|burned|burning|yajna|yagna)\b',(640,560,300)),('flower_petals',r'\b(flowers?)\b',(640,420,420)),('blood_splash',r'\b(blood)\b',(640,500,260)),('curse_glow',r'\b(curse|cursed)\b',(640,420,420)),('lightning_forks',r'\b(lightning|thunder|storm)\b',(640,260,500)),('smoke_plume',r'\b(smoke|ashes|ash)\b',(640,560,300)),('wave_ocean',r'\b(ocean|sea|water|river)\b',(640,640,640)),('divine_rays',r'\b(light|glowing|shine|bright|golden|divine)\b',(640,330,520)),('sudarshan_chakra',r'\b(chakra|disc)\b',(640,400,260)),('red_energy_pulse',r'\b(boon|power|powers|weapon|astra)\b',(640,420,300)),('mist_wisps',r'\b(night|dark|silent|mystery)\b',(640,540,640))]
 EVENTS=[(r'\b(tore|pulled|plucked|placed)\b.*\beye\b|\beye\b.*\b(tore|pulled|plucked|placed)\b|\b(plucked|pulled) out his eye\b','selfcut','pain',[('blood_splash',640,330,150,1.0,False),('divine_rays',640,330,380,.7,True)]),
  (r'\b(cut off|snapped|whipped|beheaded|cut off vishnu)\b','fall','shock',[('blood_splash',640,360,200,.9,False),('red_energy_pulse',640,420,420,.6,True)]),
  (r'\bchakra\b|\bdisc\b','open','calm',[('sudarshan_chakra',640,330,320,1.0,False),('divine_rays',640,330,520,.6,True)]),
  (r'\b(spear)\b','lunge','anger',[('red_energy_pulse',640,420,380,.8,False),('blood_splash',640,520,220,.8,False)]),
  (r'\b(mountains?|peaks?)\b.*\b(threw|throw)|\bthrew mountains\b','throw','rage',[('mandara_mountain',640,330,360,.9,False),('smoke_plume',640,560,360,.6,False)]),
- (r'\b(prayed|worshipped|chanted)\b','sitpray','devotion',[('divine_rays',640,330,520,.6,True),('flower_petals',640,420,420,.7,False)]),
+ (r'\b(prayed|worshipped|chanted)\b','sitpray','devotion',[('divine_rays',640,330,520,.6,True),('mist_wisps',640,560,640,.7,True)]),
  (r'\b(asleep|slept)\b','sleep','calm',[('mist_wisps',640,560,640,.8,True)]),
  (r'\b(curse|cursed)\b','point','anger',[('curse_glow',640,400,440,.9,False)]),
  (r'\b(jewels?|diamonds?|rubies|pearls?)\b','open','surprise',[('divine_rays',640,330,520,.8,True),('flower_petals',640,420,440,.9,False)]),
@@ -107,8 +107,16 @@ def main(reel):
         if evx:
             wv=[w.strip(',.?!"') for _,w,_ in s][0]
             fxs=[pfx(k,wv,x,y,wd,f"{k.replace('_',' ')} showing what the narration says",alpha=a,behind=b) for k,x,y,wd,a,b in evx[2]][:3]
+        mt=re.search(r'\b(lotus|lotuses)\b',low)
+        if mt and not ('fx' in cfg.get('over',{}).get(n,{})):
+            lw=([w.strip(',.?!"') for _,w,_ in s if w.strip(',.?!"').lower()==mt.group(0)] or [first])[0]
+            fxs=[{"k":"lotus","word":lw,"x":640,"y":610,"sc":.8,"open":1,"meaning":"a paper-cut lotus placed where the story says lotus"}]+fxs[:1]
+        extra_mid=[]
         if n in cfg.get('over',{}):
             o=cfg['over'][n]
+            if 'chars' in o:
+                ch=[dict(c_) for c_ in o['chars']];who=[c_['who'] for c_ in ch]
+            if 'mid' in o:extra_mid=o['mid']
             if 'scene' in o:scene=o['scene']
             if 'fx' in o:fxs=o['fx']
         theme=cfg.get('theme','hills')
@@ -122,7 +130,7 @@ def main(reel):
             if len(ch)==1 and n%2:c_['flip']=-1
         sh.update(meaning=re.sub(r'\b(good|great|nice|very|something|anything)\b','it',txt+" (shown as a dark story frame)")[:110],why=re.sub(r'\b(something|anything|things?|stuff|good|great|nice|very)\b','it',f"{(who[0] if who else 'The scene')} in a dark {scene} world while '{txt[:50]}' is spoken."),
           camera=cam(cname,ca,cb,shs,"normal",0,"a slow move that follows the story beat"),focus={"subject":who[0] if who else "scene","depth":"deep"},
-          vertical={"focus":who[0]} if who else {},layers=scene_layers(scene,theme),background=dict(background(scene),sx=sx) if scene in SK else background(scene),mood={"emotion":emo,"grade":GRD},
+          vertical={"focus":who[0]} if who else {},layers=[dict(l_,items=l_['items']+extra_mid) if l_['d']=='mid' else l_ for l_ in scene_layers(scene,theme)],background=dict(background(scene),sx=sx) if scene in SK else background(scene),mood={"emotion":emo,"grade":GRD},
           characters=ch,effects=fxs,transition_in="cut" if n else "fade")
     G.finish()
 if __name__=='__main__':main(sys.argv[1])

@@ -1,7 +1,28 @@
 """Per-reel specs for reels/auto_briefs.py: lex = word in narration -> cast key (who appears), scenes = (sentence index or keyword in sentence, scene), scale/big/maxc/over optional."""
+import sys;sys.path.insert(0,"/home/user/mahagatha-studio/reels")
+from briefs_lib import pfx
 SPEC={
  'reel17':dict(scene='night',lex={'vishnu':'vishnu','shiva':'shiva'},scenes=[(0,'night'),('demons','ember'),('wilderness','brown'),('lingam','indigo'),('thousand lotuses','indigo'),('appeared','kailash')],
-   scale={'vishnu':.9,'shiva':.9}),
+   scale={'vishnu':.9,'shiva':.9},
+   over={
+    3:dict(scene='ember',chars=[dict(who='asura1',x=640,y=690,s=1.3,_face=.40,flip=1,pose='rage',emo='rage',look=700)],
+           fx=[pfx('lightning_forks','demons',640,260,560,'lightning behind a huge scary demon',alpha=.9,behind=True),pfx('smoke_plume','demons',640,580,420,'black smoke at the demon feet',alpha=.8),pfx('red_energy_pulse','demons',640,420,420,'a red glow of danger',alpha=.7,behind=True)]),
+    4:dict(scene='ember',chars=[dict(who='asura1',x=640,y=640,s=1.25,_face=.36,flip=1,pose='lunge',emo='rage',look=700),
+            dict(who='deva_thin',x=478,y=740,s=.6,_face=.56,flip=1,pose='plead',emo='fear',look=700),dict(who='deva_thin2',x=806,y=745,s=.58,_face=.56,flip=-1,pose='plead',emo='fear',look=700)],
+           fx=[pfx('demon_crowd','tormented',640,470,700,'dark demon shapes crowding in on the frightened gods',alpha=.85,behind=True),pfx('ember_fire','tormented',640,620,520,'fire burning around the frightened gods',alpha=.9),pfx('red_energy_pulse','tormented',640,420,420,'a red glow of terror',alpha=.6,behind=True)]),
+    5:dict(scene='night',chars=[dict(who='vishnu',x=640,y=690,s=.95,_face=.42,flip=1,pose='stand',emo='calm',look=700),
+            dict(who='deva_thin',x=478,y=745,s=.58,_face=.58,flip=1,pose='kneel',emo='fear',look=700),dict(who='deva_thin2',x=806,y=748,s=.56,_face=.58,flip=-1,pose='kneel',emo='fear',look=700)],
+           fx=[pfx('divine_rays','begged',640,330,520,'Vishnu light falling on the begging gods',alpha=.7,behind=True)]),
+    10:dict(scene='indigo',chars=[dict(who='vishnu',x=520,y=690,s=.85,_face=.46,flip=1,pose='namaste',emo='devotion',look=720)],mid=[{"o":"rock","x":780,"y":600,"s":.9,"col":"#2e2838"}],
+           fx=[{"k":"lotus","word":"lotus","x":780,"y":560,"sc":.55,"open":1,"meaning":"one paper-cut lotus laid on the lingam"},pfx('divine_rays','lotus',780,520,420,'soft light on the lingam',alpha=.6,behind=True)]),
+    11:dict(scene='indigo',chars=[dict(who='vishnu',x=520,y=690,s=.8,_face=.5,flip=1,pose='namaste',emo='joy',look=720)],mid=[{"o":"rock","x":780,"y":600,"s":.9,"col":"#2e2838"}],
+           fx=[{"k":"lotus","word":"lotuses","x":740,"y":560,"sc":.5,"open":1,"meaning":"a thousand lotuses piled on the lingam (first)"},{"k":"lotus","word":"lotuses","x":830,"y":566,"sc":.5,"open":1,"meaning":"a thousand lotuses piled on the lingam (second)"},{"k":"lotus","word":"lotuses","x":785,"y":520,"sc":.55,"open":1,"meaning":"a thousand lotuses piled on the lingam (top)"}]),
+    13:dict(scene='indigo',chars=[dict(who='shiva',x=520,y=690,s=.85,_face=.46,flip=1,pose='point',emo='calm',look=720)],mid=[{"o":"rock","x":790,"y":600,"s":.9,"col":"#2e2838"}],
+           fx=[{"k":"lotus","word":"lotus","x":560,"y":330,"sc":.4,"open":1,"meaning":"one lotus lifted away by Shiva"},pfx('divine_rays','lotus',640,330,520,'a hidden light of Shiva',alpha=.6,behind=True)]),
+    14:dict(scene='indigo',chars=[dict(who='vishnu',x=520,y=690,s=.85,_face=.46,flip=1,pose='stand',emo='doubt',look=720)],mid=[{"o":"rock","x":780,"y":600,"s":.9,"col":"#2e2838"}],
+           fx=[{"k":"lotus","word":"flowers,","x":740,"y":560,"sc":.45,"open":1,"meaning":"counted lotus one"},{"k":"lotus","word":"flowers,","x":830,"y":566,"sc":.45,"open":1,"meaning":"counted lotus two"}]),
+    15:dict(scene='indigo',chars=[dict(who='vishnu',x=520,y=690,s=.85,_face=.46,flip=1,pose='stand',emo='fear',look=720)],mid=[{"o":"rock","x":780,"y":600,"s":.9,"col":"#2e2838"}],fx=[pfx('mist_wisps','searched',640,560,640,'dark mist while he searches',alpha=.7,behind=True)]),
+   }),
 
  'reel08':dict(scene='night',lex={'vishnu':'vishnu','gods':'deva_thin','god':'hayagriva','brahma':'brahma','lakshmi':'lakshmi','hayagriv':'hayagriva','demon':'asura1','termites':'deva_thin','termite':'deva_thin'},scenes=[(0,'night'),('fought','ember'),('home','indigo'),('snapped','ember'),('lakshmi','brown'),('horse','indigo'),('neighed','night')]),
  'reel16':dict(scene='indigo',lex={'bala':'bala','demon':'bala','indra':'indra','gods':'deva_thin','god':'deva_thin','heaven':'indra'},scenes=[(0,'indigo'),('yajna','ember'),('flames','ember'),('jewels','night'),('diamonds','night')]),
@@ -16,4 +37,21 @@ SPEC={
  'reel26':dict(scene='ember',lex={'ravana':'ravana','indra':'indra','meghanada':'meghanada','son':'meghanada','brahma':'brahma','indrajit':'meghanada'},scenes=[(0,'ember'),('invisible','night'),('lanka','brown'),('brahma','indigo')]),
  'reel27':dict(scene='night',lex={'hanuman':'hanuman','parashuram':'parashurama','parashurama':'parashurama','ashwatthama':'ashwatthama','mahabali':'mahabali','vyasa':'rishi3','vibhishana':'vibhishana','kripa':'rishi4','rama':'rama','shiva':'shiva','drona':'rishi2','ravana':'ravana'},scenes=[(0,'night'),('curse','ember'),('mahendra','brown')]),
  'reel28':dict(scene='ember',lex={'ravana':'ravana','sita':'sita','hanuman':'hanuman','brahma':'brahma','apsara':'kanya','punjikasthala':'kanya','women':'kanya'},scenes=[(0,'ember'),('palace','brown'),('cursed','night'),('carried','ember')]),
+}
+
+BOW=lambda w,cut,y=690,x=640,wd=440:pfx('bowstring',w,x,y,wd,'a drawn bow and its string: it is being chewed thinner by termites' if cut<1 else 'the bowstring snapped and whipping loose',alpha=1,snapk=cut)
+TER=lambda w,n,al,y=690:pfx('termite_swarm',w,640,y,440,'little golden termites, the gods in disguise, swarming the bowstring',alpha=1,cnt=n,gath=al)
+V8=lambda pose,y=600,emo='calm',s=.82:dict(who='vishnu',x=640,y=y,s=s,_face=.40,flip=1,pose=pose,emo=emo,look=700)
+SPEC['reel08']['over']={
+ 0:dict(scene='night',chars=[V8('sleep',560)],fx=[BOW('gods',.3),TER('gods',10,.4)]),
+ 1:dict(scene='night',chars=[dict(who='deva_thin',x=478,y=720,s=.7,_face=.5,flip=1,pose='stand',emo='scheme',look=700),dict(who='deva_thin2',x=806,y=722,s=.68,_face=.5,flip=-1,pose='stand',emo='scheme',look=700)],fx=[pfx('mist_wisps','purpose',640,560,640,'dark mist of a secret plan',alpha=.8,behind=True)]),
+ 2:dict(scene='night',chars=[V8('sleep',520,s=.7)],fx=[BOW('termite.',.2,y=660),TER('termite.',22,.2,y=620)]),
+ 8:dict(scene='night',chars=[V8('sleep',560)],fx=[BOW('bow.',0)]),
+ 13:dict(scene='indigo',chars=[dict(who='brahma',x=520,y=690,s=.85,_face=.45,flip=1,pose='point',emo='scheme',look=700)],fx=[BOW('bowstring',0,x=790,y=640,wd=300),pfx('red_energy_pulse','sound',640,420,420,'the sound that would shake the sky',alpha=.6,behind=True)]),
+ 14:dict(scene='night',chars=[V8('sleep',520,s=.76)],fx=[BOW('termites',.35,y=660),TER('termites',16,.95,y=660)]),
+ 15:dict(scene='night',chars=[V8('sleep',520,s=.76)],fx=[BOW('thinner',.8,y=660),TER('thinner',26,.98,y=660)]),
+ 16:dict(scene='ember',chars=[V8('fall',640,'shock',.8)],fx=[BOW('snapped,',1.0,y=700),pfx('blood_splash','head.',640,400,200,'blood where the string cut',alpha=.9)]),
+ 17:dict(scene='ember',chars=[dict(who='vishnu',x=640,y=700,s=.9,_face=.55,flip=1,pose='sleep',emo='calm',look=700)],fx=[pfx('blood_splash','closed.',640,640,220,'blood on the floor',alpha=.8)]),
+ 18:dict(scene='ember',chars=[dict(who='deva_thin',x=478,y=720,s=.7,_face=.5,flip=1,pose='plead',emo='fear',look=700),dict(who='deva_thin2',x=806,y=722,s=.68,_face=.5,flip=-1,pose='plead',emo='fear',look=700)],fx=[pfx('smoke_plume','froze.',640,580,420,'dark smoke in the frozen silence',alpha=.8)]),
+ 21:dict(scene='brown',fx=[pfx('blood_splash','marks',640,744,200,'red footprints on the floor',alpha=.9)]),
 }
