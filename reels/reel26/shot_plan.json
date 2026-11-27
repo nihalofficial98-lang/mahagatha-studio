@@ -7,7 +7,9 @@
     "t": 0.24,
     "word": "Ravana"
    },
-   "cues": [],
+   "cues": [
+    "Ravana"
+   ],
    "bg": {
     "k": "palace"
    },
@@ -35,10 +37,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 524,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 524,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 524,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 524,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 524,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 524,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -263,7 +385,9 @@
     "t": 4.48,
     "word": "and"
    },
-   "cues": [],
+   "cues": [
+    "and"
+   ],
    "bg": {
     "k": "palace"
    },
@@ -279,10 +403,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -507,7 +751,9 @@
     "t": 7.58,
     "word": "Ravana"
    },
-   "cues": [],
+   "cues": [
+    "Ravana"
+   ],
    "bg": {
     "k": "palace"
    },
@@ -523,10 +769,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.08,
@@ -751,7 +1117,9 @@
     "t": 9.94,
     "word": "He"
    },
-   "cues": [],
+   "cues": [
+    "He"
+   ],
    "bg": {
     "k": "palace"
    },
@@ -767,10 +1135,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.02,
@@ -995,9 +1483,11 @@
     "t": 11.92,
     "word": "At"
    },
-   "cues": [],
+   "cues": [
+    "At"
+   ],
    "bg": {
-    "k": "plain"
+    "k": "palace"
    },
    "figs": [
     {
@@ -1011,10 +1501,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.09,
@@ -1099,6 +1709,41 @@
        "y": 250,
        "s": 0.9,
        "col": "#7a2020"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
       }
      ]
     },
@@ -1116,38 +1761,56 @@
        "col": "#3a1618"
       },
       {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
        "col": "#2a0e10"
       },
       {
        "o": "wall",
-       "x": 790,
-       "y": 515,
-       "s": 0.4,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
        "x": 640,
-       "y": 515,
-       "s": 0.5,
+       "y": 505,
+       "s": 0.7,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
        "col": "#3a1618"
       }
      ]
@@ -1186,9 +1849,11 @@
     "t": 15.32,
     "word": "Then"
    },
-   "cues": [],
+   "cues": [
+    "Then"
+   ],
    "bg": {
-    "k": "plain"
+    "k": "palace"
    },
    "figs": [
     {
@@ -1214,10 +1879,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.03,
@@ -1302,6 +2087,41 @@
        "y": 250,
        "s": 0.9,
        "col": "#7a2020"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
       }
      ]
     },
@@ -1319,38 +2139,56 @@
        "col": "#3a1618"
       },
       {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
        "col": "#2a0e10"
       },
       {
        "o": "wall",
-       "x": 790,
-       "y": 515,
-       "s": 0.4,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
        "x": 640,
-       "y": 515,
-       "s": 0.5,
+       "y": 505,
+       "s": 0.7,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
        "col": "#3a1618"
       }
      ]
@@ -1389,26 +2227,172 @@
     "t": 18.5,
     "word": "His"
    },
-   "cues": [],
+   "cues": [
+    "His"
+   ],
    "bg": {
-    "k": "plain"
+    "k": "palace"
    },
    "figs": [
     {
      "who": "indra",
      "x": 640,
-     "y": 588,
-     "s": 0.9,
+     "y": 561,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "asura1",
+     "x": 500,
+     "y": 573,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "rage",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 780,
+     "y": 573,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.06,
@@ -1493,6 +2477,41 @@
        "y": 250,
        "s": 0.9,
        "col": "#7a2020"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
       }
      ]
     },
@@ -1510,38 +2529,56 @@
        "col": "#3a1618"
       },
       {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
        "col": "#2a0e10"
       },
       {
        "o": "wall",
-       "x": 790,
-       "y": 515,
-       "s": 0.4,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
        "x": 640,
-       "y": 515,
-       "s": 0.5,
+       "y": 505,
+       "s": 0.7,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
        "col": "#3a1618"
       }
      ]
@@ -1580,9 +2617,11 @@
     "t": 20.84,
     "word": "For"
    },
-   "cues": [],
+   "cues": [
+    "For"
+   ],
    "bg": {
-    "k": "plain"
+    "k": "palace"
    },
    "figs": [
     {
@@ -1596,10 +2635,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -1684,6 +2843,41 @@
        "y": 250,
        "s": 0.9,
        "col": "#7a2020"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
       }
      ]
     },
@@ -1701,38 +2895,56 @@
        "col": "#3a1618"
       },
       {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
        "col": "#2a0e10"
       },
       {
        "o": "wall",
-       "x": 790,
-       "y": 515,
-       "s": 0.4,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
        "x": 640,
-       "y": 515,
-       "s": 0.5,
+       "y": 505,
+       "s": 0.7,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
        "col": "#3a1618"
       }
      ]
@@ -1771,7 +2983,9 @@
     "t": 25.12,
     "word": "At"
    },
-   "cues": [],
+   "cues": [
+    "At"
+   ],
    "bg": {
     "k": "palace"
    },
@@ -1787,10 +3001,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.08,
@@ -2015,7 +3349,9 @@
     "t": 29.02,
     "word": "He"
    },
-   "cues": [],
+   "cues": [
+    "He"
+   ],
    "bg": {
     "k": "palace"
    },
@@ -2031,10 +3367,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.02,
@@ -2259,7 +3715,9 @@
     "t": 31.8,
     "word": "so"
    },
-   "cues": [],
+   "cues": [
+    "so"
+   ],
    "bg": {
     "k": "palace"
    },
@@ -2275,10 +3733,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.09,
@@ -2503,7 +4081,9 @@
     "t": 37.24,
     "word": "In"
    },
-   "cues": [],
+   "cues": [
+    "In"
+   ],
    "bg": {
     "k": "palace"
    },
@@ -2519,10 +4099,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 514,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 514,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 514,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 514,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 514,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 514,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "brown",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.03,
@@ -2542,7 +4242,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -2551,7 +4251,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -2561,7 +4261,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -2571,7 +4271,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -2581,7 +4281,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -2591,7 +4291,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -2599,49 +4299,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "wall",
        "x": 600,
        "y": 470,
        "s": 0.8,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 470,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 560,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 720,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 810,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#3a281c"
       }
      ]
     },
@@ -2656,28 +4356,28 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 452,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#2a1c12"
       },
       {
        "o": "pillar",
        "x": 834,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#2a1c12"
       },
       {
        "o": "wall",
        "x": 640,
        "y": 505,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2685,7 +4385,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2693,7 +4393,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2701,7 +4401,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2709,7 +4409,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#3a281c"
       }
      ]
     },
@@ -2735,7 +4435,7 @@
      ]
     }
    ],
-   "note": "medium push_in: indra in a dark ember world while 'In the end, he defeated Indra and took him to Lank' is spoken.",
+   "note": "medium push_in: indra in a dark brown world while 'In the end, he defeated Indra and took him to Lank' is spoken.",
    "vert": {
     "focus": "indra"
    },
@@ -2747,7 +4447,9 @@
     "t": 41.36,
     "word": "That"
    },
-   "cues": [],
+   "cues": [
+    "That"
+   ],
    "bg": {
     "k": "palace"
    },
@@ -2775,10 +4477,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 514,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 514,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 514,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 514,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 514,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 514,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "brown",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.06,
@@ -2798,7 +4620,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -2807,7 +4629,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -2817,7 +4639,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -2827,7 +4649,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -2837,7 +4659,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -2847,7 +4669,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -2855,49 +4677,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "wall",
        "x": 600,
        "y": 470,
        "s": 0.8,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 470,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 560,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 720,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 810,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#3a281c"
       }
      ]
     },
@@ -2912,28 +4734,28 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 452,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#2a1c12"
       },
       {
        "o": "pillar",
        "x": 834,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#2a1c12"
       },
       {
        "o": "wall",
        "x": 640,
        "y": 505,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2941,7 +4763,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2949,7 +4771,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2957,7 +4779,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2965,7 +4787,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#3a281c"
       }
      ]
     },
@@ -2991,7 +4813,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: meghanada in a dark ember world while 'That is why Meghnad is called Indrajit, the one wh' is spoken.",
+   "note": "medium crane_down: meghanada in a dark brown world while 'That is why Meghnad is called Indrajit, the one wh' is spoken.",
    "vert": {
     "focus": "meghanada"
    },
@@ -3003,7 +4825,9 @@
     "t": 46.02,
     "word": "It"
    },
-   "cues": [],
+   "cues": [
+    "It"
+   ],
    "bg": {
     "k": "palace"
    },
@@ -3031,10 +4855,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 513,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 513,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "indigo",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -3054,7 +4998,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#b05a48",
      "items": [
       {
        "o": "mountain",
@@ -3063,7 +5007,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -3073,7 +5017,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -3083,7 +5027,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -3093,7 +5037,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -3103,7 +5047,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -3111,49 +5055,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5a2a58"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5a2a58"
       },
       {
        "o": "wall",
        "x": 600,
        "y": 470,
        "s": 0.8,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 470,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 560,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 720,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 810,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#241838"
       }
      ]
     },
@@ -3168,28 +5112,28 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 452,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#1a1028"
       },
       {
        "o": "pillar",
        "x": 834,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#1a1028"
       },
       {
        "o": "wall",
        "x": 640,
        "y": 505,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3197,7 +5141,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3205,7 +5149,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3213,7 +5157,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3221,7 +5165,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#241838"
       }
      ]
     },
@@ -3247,7 +5191,7 @@
      ]
     }
    ],
-   "note": "medium push_in: brahma in a dark ember world while 'It became so serious that Brahma himself came to L' is spoken.",
+   "note": "medium push_in: brahma in a dark indigo world while 'It became so serious that Brahma himself came to L' is spoken.",
    "vert": {
     "focus": "brahma"
    },
@@ -3259,7 +5203,9 @@
     "t": 51.96,
     "word": "So"
    },
-   "cues": [],
+   "cues": [
+    "So"
+   ],
    "bg": {
     "k": "palace"
    },
@@ -3287,10 +5233,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "indigo",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.08,
@@ -3310,7 +5376,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#b05a48",
      "items": [
       {
        "o": "mountain",
@@ -3319,7 +5385,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -3329,7 +5395,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -3339,7 +5405,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -3349,7 +5415,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -3359,7 +5425,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -3367,49 +5433,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5a2a58"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5a2a58"
       },
       {
        "o": "wall",
        "x": 600,
        "y": 470,
        "s": 0.8,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 470,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 560,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 720,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 810,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#241838"
       }
      ]
     },
@@ -3424,28 +5490,28 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 452,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#1a1028"
       },
       {
        "o": "pillar",
        "x": 834,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#1a1028"
       },
       {
        "o": "wall",
        "x": 640,
        "y": 505,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3453,7 +5519,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3461,7 +5527,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3469,7 +5535,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3477,7 +5543,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#241838"
       }
      ]
     },
@@ -3503,7 +5569,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: ravana10 in a dark ember world while 'So Ravana, who beat kings and gods, was saved from' is spoken.",
+   "note": "medium crane_down: ravana10 in a dark indigo world while 'So Ravana, who beat kings and gods, was saved from' is spoken.",
    "vert": {
     "focus": "ravana10"
    },
@@ -3515,7 +5581,9 @@
     "t": 57.0,
     "word": "who"
    },
-   "cues": [],
+   "cues": [
+    "who"
+   ],
    "bg": {
     "k": "palace"
    },
@@ -3531,10 +5599,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "indigo",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.02,
@@ -3554,7 +5742,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#b05a48",
      "items": [
       {
        "o": "mountain",
@@ -3563,7 +5751,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -3573,7 +5761,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -3583,7 +5771,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -3593,7 +5781,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -3603,7 +5791,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -3611,49 +5799,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5a2a58"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5a2a58"
       },
       {
        "o": "wall",
        "x": 600,
        "y": 470,
        "s": 0.8,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 470,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 560,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 720,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 810,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#241838"
       }
      ]
     },
@@ -3668,28 +5856,28 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 452,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#1a1028"
       },
       {
        "o": "pillar",
        "x": 834,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#1a1028"
       },
       {
        "o": "wall",
        "x": 640,
        "y": 505,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3697,7 +5885,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3705,7 +5893,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3713,7 +5901,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3721,7 +5909,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#241838"
       }
      ]
     },
@@ -3747,7 +5935,7 @@
      ]
     }
    ],
-   "note": "medium push_in: indra in a dark ember world while 'who then took Indra himself as a prisoner.' is spoken.",
+   "note": "medium push_in: indra in a dark indigo world while 'who then took Indra himself as a prisoner.' is spoken.",
    "vert": {
     "focus": "indra"
    },
@@ -3759,7 +5947,9 @@
     "t": 59.56,
     "word": "Who"
    },
-   "cues": [],
+   "cues": [
+    "Who"
+   ],
    "bg": {
     "k": "palace"
    },
@@ -3787,10 +5977,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "indigo",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.09,
@@ -3810,7 +6120,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#b05a48",
      "items": [
       {
        "o": "mountain",
@@ -3819,7 +6129,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -3829,7 +6139,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -3839,7 +6149,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -3849,7 +6159,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -3859,7 +6169,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -3867,49 +6177,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5a2a58"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5a2a58"
       },
       {
        "o": "wall",
        "x": 600,
        "y": 470,
        "s": 0.8,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 470,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 560,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 720,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 810,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#241838"
       }
      ]
     },
@@ -3924,28 +6234,28 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 452,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#1a1028"
       },
       {
        "o": "pillar",
        "x": 834,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#1a1028"
       },
       {
        "o": "wall",
        "x": 640,
        "y": 505,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3953,7 +6263,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3961,7 +6271,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3969,7 +6279,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -3977,7 +6287,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#241838"
       }
      ]
     },
@@ -4003,7 +6313,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: ravana10 in a dark ember world while 'Who do you think was stronger, Ravana or Indra?' is spoken.",
+   "note": "medium crane_down: ravana10 in a dark indigo world while 'Who do you think was stronger, Ravana or Indra?' is spoken.",
    "vert": {
     "focus": "ravana10"
    },
