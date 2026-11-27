@@ -112,3 +112,16 @@ SPEC['reel16'].setdefault('over',{}).update({
  26:dict(scene='night',chars=[],fx=[GM('mix',9,420,640,340)+{}] if False else [GM('diamond',1,100,545,290),GM('ruby',1,100,645,290),GM('sapphire',1,100,745,290),GM('pearl',1,100,545,400),GM('cat_eye',1,105,645,400),GM('emerald',1,100,745,400),GM('topaz',1,100,545,510),GM('coral',1,100,645,510),GM('garnet',1,100,745,510)]),
  29:dict(scene='night',chars=[],fx=[GM('mix',16,520,640,380)]),
 })
+
+# ---- reel20 (Ashwatthama): the people of the story around him
+VL=lambda who,x,pose,emo='calm',flip=1,s=.58:dict(who=who,x=x,y=730,s=s,_face=.64,flip=flip,pose=pose,emo=emo,look=700)
+LGT=lambda:pfx('lingam',None,640,610,200,'a dark stone Shivling at a temple',alpha=1,glow=.5)
+SPEC['reel20'].setdefault('over',{}).update({
+ 2:dict(scene='brown',chars=[],fx=[LGT(),pfx('wild_flowers',None,640,540,180,'fresh flowers lying on the Shivling',alpha=1),pfx('mist_wisps',None,640,600,640,'early morning mist in the empty temple',alpha=.7,behind=True)]),
+ 3:dict(scene='brown',chars=[],fx=[LGT(),pfx('wild_flowers',None,640,540,180,'fresh flowers lying on the Shivling',alpha=1),pfx('divine_rays',None,640,330,520,'first light of morning on the temple',alpha=.7,behind=True)]),
+ 4:dict(scene='brown',chars=[VL('villager',500,'point','surprise',1),VL('villager_w',780,'point','surprise',-1)],fx=[LGT(),pfx('wild_flowers',None,640,540,180,'fresh flowers lying on the Shivling',alpha=1)]),
+ 6:dict(scene='brown',chars=[dict(who='ashwatthama',x=640,y=700,s=.8,_face=.46,flip=1,pose='sitpray',emo='devotion',look=700),VL('villager',500,'namaste','devotion',1),VL('villager_w',780,'namaste','devotion',-1)],fx=[pfx('divine_rays',None,640,330,520,'light on the praying warrior',alpha=.6,behind=True)]),
+ 8:dict(scene='teal',chars=[dict(who='ashwatthama',x=640,y=700,s=1.05,_face=.40,flip=1,pose='stand',emo='pain',look=700),VL('villager',500,'stand','fear',1,.5),VL('villager_w',780,'stand','fear',-1,.5)],fx=[pfx('mist_wisps',None,640,600,640,'river mist at the Narmada',alpha=.8,behind=True)]),
+ 9:dict(scene='teal',chars=[dict(who='ashwatthama',x=640,y=700,s=1.05,_face=.40,flip=1,pose='stand',emo='pain',look=700),VL('villager',500,'stand','surprise',1,.5),VL('villager_w',780,'stand','surprise',-1,.5)],fx=[pfx('blood_splash',None,640,318,70,'a wound on the forehead that never heals',alpha=.9)]),
+ 10:dict(scene='teal',chars=[dict(who='ashwatthama',x=640,y=700,s=1.05,_face=.40,flip=1,pose='plead',emo='pain',look=700),VL('villager',500,'stand','calm',1,.5),VL('villager_w',780,'namaste','devotion',-1,.5)]),
+})

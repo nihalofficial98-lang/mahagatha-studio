@@ -570,55 +570,66 @@
     "word": "Every"
    },
    "cues": [
-    "flowers"
+    "Every"
    ],
    "bg": {
     "k": "vista",
     "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
-   "figs": [
-    {
-     "who": "ashwatthama",
-     "x": 640,
-     "y": 589,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
-    }
-   ],
+   "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "flower_petals",
+     "k": "lingam",
      "x": 640,
-     "y": 660,
-     "w": 420,
-     "alpha": 0.8,
+     "y": 610,
+     "w": 200,
+     "alpha": 1,
+     "par": 1.0,
+     "glow": 0.5,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "wild_flowers",
+     "x": 640,
+     "y": 540,
+     "w": 180,
+     "alpha": 1,
      "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.08,
@@ -638,7 +649,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -647,8 +658,8 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
-       "snow": false
+       "col": "#6a4a34",
+       "snow": true
       },
       {
        "o": "mountain",
@@ -657,7 +668,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -667,8 +678,8 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
-       "snow": false
+       "col": "#6a4a34",
+       "snow": true
       },
       {
        "o": "mountain",
@@ -677,7 +688,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -687,7 +698,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -695,14 +706,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#5e3a24"
       }
      ]
     },
@@ -717,109 +728,35 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
+       "o": "pillar",
+       "x": 455,
+       "y": 545,
+       "s": 0.7,
+       "col": "#2a1c12"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
+       "o": "pillar",
+       "x": 830,
+       "y": 545,
+       "s": 0.7,
+       "col": "#2a1c12"
       },
       {
        "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#101830"
+       "x": 560,
+       "y": 525,
+       "s": 0.7,
+       "col": "#3a281c"
       },
       {
        "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#101830"
+       "x": 730,
+       "y": 525,
+       "s": 0.6,
+       "col": "#3a281c"
       }
      ]
     },
@@ -845,10 +782,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: ashwatthama in a dark night world while 'Every morning, fresh flowers are lying on a Shivli' is spoken.",
-   "vert": {
-    "focus": "ashwatthama"
-   },
+   "note": "medium crane_down: The scene in a dark brown world while 'Every morning, fresh flowers are lying on a Shivli' is spoken.",
    "dx": 0
   },
   {
@@ -857,42 +791,67 @@
     "t": 11.72,
     "word": "a"
    },
-   "cues": [],
+   "cues": [
+    "a"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
-   "figs": [
+   "figs": [],
+   "fx": [
     {
-     "who": "shiva",
+     "t": "pfx",
+     "k": "lingam",
      "x": 640,
-     "y": 589,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
+     "y": 610,
+     "w": 200,
+     "alpha": 1,
+     "par": 1.0,
+     "glow": 0.5,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "wild_flowers",
+     "x": 640,
+     "y": 540,
+     "w": 180,
+     "alpha": 1,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.02,
@@ -912,7 +871,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -921,8 +880,8 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
-       "snow": false
+       "col": "#6a4a34",
+       "snow": true
       },
       {
        "o": "mountain",
@@ -931,7 +890,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -941,8 +900,8 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
-       "snow": false
+       "col": "#6a4a34",
+       "snow": true
       },
       {
        "o": "mountain",
@@ -951,7 +910,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -961,7 +920,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -969,14 +928,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#5e3a24"
       }
      ]
     },
@@ -991,109 +950,35 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
+       "o": "pillar",
+       "x": 455,
+       "y": 545,
+       "s": 0.7,
+       "col": "#2a1c12"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
+       "o": "pillar",
+       "x": 830,
+       "y": 545,
+       "s": 0.7,
+       "col": "#2a1c12"
       },
       {
        "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#101830"
+       "x": 560,
+       "y": 525,
+       "s": 0.7,
+       "col": "#3a281c"
       },
       {
        "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#101830"
+       "x": 730,
+       "y": 525,
+       "s": 0.6,
+       "col": "#3a281c"
       }
      ]
     },
@@ -1119,10 +1004,7 @@
      ]
     }
    ],
-   "note": "medium push_in: shiva in a dark night world while 'a temple in Madhya Pradesh before anyone arrives.' is spoken.",
-   "vert": {
-    "focus": "shiva"
-   },
+   "note": "medium push_in: The scene in a dark brown world while 'a temple in Madhya Pradesh before anyone arrives.' is spoken.",
    "dx": 0
   },
   {
@@ -1131,22 +1013,24 @@
     "t": 15.34,
     "word": "Local"
    },
-   "cues": [],
+   "cues": [
+    "Local"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -1154,18 +1038,54 @@
    "figs": [
     {
      "who": "villager",
-     "x": 640,
-     "y": 589,
-     "s": 0.9,
+     "x": 470,
+     "y": 590,
+     "s": 0.58,
      "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
+     "pose": "point",
+     "emo": "surprise",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "villager_w",
+     "x": 810,
+     "y": 590,
+     "s": 0.58,
+     "flip": -1,
+     "pose": "point",
+     "emo": "surprise",
      "mood": {
       "lx": 0.8
      }
     }
    ],
-   "fx": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "lingam",
+     "x": 640,
+     "y": 610,
+     "w": 200,
+     "alpha": 1,
+     "par": 1.0,
+     "glow": 0.5,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "wild_flowers",
+     "x": 640,
+     "y": 540,
+     "w": 180,
+     "alpha": 1,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "fxb": [],
    "cam": {
     "from": {
@@ -1186,7 +1106,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -1195,7 +1115,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1205,7 +1125,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1215,7 +1135,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1225,7 +1145,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1235,7 +1155,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1243,14 +1163,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#5e3a24"
       }
      ]
     },
@@ -1265,7 +1185,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1273,7 +1193,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1281,7 +1201,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1289,7 +1209,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1297,7 +1217,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1305,7 +1225,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1313,7 +1233,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1321,7 +1241,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1329,7 +1249,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1337,7 +1257,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1345,7 +1265,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1353,28 +1273,28 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "hut",
        "x": 462,
        "y": 526,
        "s": 0.6,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "hut",
        "x": 826,
        "y": 524,
        "s": 0.55,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "road",
        "x": 640,
        "y": 560,
        "s": 1.0,
-       "col": "#18224a"
+       "col": "#3a281c"
       }
      ]
     },
@@ -1400,7 +1320,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: villager in a dark night world while 'Local people say he puts them there.' is spoken.",
+   "note": "medium crane_down: villager in a dark brown world while 'Local people say he puts them there.' is spoken.",
    "vert": {
     "focus": "villager"
    },
@@ -1416,18 +1336,18 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -1467,7 +1387,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -1476,7 +1396,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1486,7 +1406,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1496,7 +1416,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1506,7 +1426,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1516,7 +1436,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1524,14 +1444,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#5e3a24"
       }
      ]
     },
@@ -1546,7 +1466,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1554,7 +1474,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1562,7 +1482,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1570,7 +1490,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1578,7 +1498,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1586,7 +1506,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1594,7 +1514,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1602,7 +1522,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1610,7 +1530,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1618,7 +1538,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1626,7 +1546,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1634,28 +1554,28 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "hut",
        "x": 462,
        "y": 526,
        "s": 0.6,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "hut",
        "x": 826,
        "y": 524,
        "s": 0.55,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "road",
        "x": 640,
        "y": 560,
        "s": 1.0,
-       "col": "#18224a"
+       "col": "#3a281c"
       }
      ]
     },
@@ -1681,7 +1601,7 @@
      ]
     }
    ],
-   "note": "medium push_in: shiva in a dark night world while 'The temple is called Gupteshwar Mahadev inside the' is spoken.",
+   "note": "medium push_in: shiva in a dark brown world while 'The temple is called Gupteshwar Mahadev inside the' is spoken.",
    "vert": {
     "focus": "shiva"
    },
@@ -1693,54 +1613,80 @@
     "t": 23.18,
     "word": "Local"
    },
-   "cues": [],
+   "cues": [
+    "Local"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
    "figs": [
     {
-     "who": "villager",
-     "x": 470,
-     "y": 590,
-     "s": 0.765,
+     "who": "ashwatthama",
+     "x": 640,
+     "y": 489,
+     "s": 0.8,
      "flip": 1,
-     "pose": "stand",
+     "pose": "sitpray",
      "emo": "devotion",
      "mood": {
       "lx": 0.8
      }
     },
     {
-     "who": "ashwatthama",
+     "who": "villager",
+     "x": 470,
+     "y": 593,
+     "s": 0.58,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "devotion",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "villager_w",
      "x": 810,
-     "y": 590,
-     "s": 0.765,
+     "y": 593,
+     "s": 0.58,
      "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
+     "pose": "namaste",
+     "emo": "devotion",
      "mood": {
       "lx": 0.8
      }
     }
    ],
    "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.6,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.06,
@@ -1760,7 +1706,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -1769,7 +1715,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1779,7 +1725,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1789,7 +1735,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1799,7 +1745,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1809,7 +1755,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1817,14 +1763,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#5e3a24"
       }
      ]
     },
@@ -1839,7 +1785,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1847,7 +1793,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1855,7 +1801,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1863,7 +1809,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1871,7 +1817,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1879,7 +1825,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1887,7 +1833,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1895,7 +1841,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1903,7 +1849,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1911,7 +1857,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1919,7 +1865,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1927,28 +1873,28 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "hut",
        "x": 462,
        "y": 526,
        "s": 0.6,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "hut",
        "x": 826,
        "y": 524,
        "s": 0.55,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "road",
        "x": 640,
        "y": 560,
        "s": 1.0,
-       "col": "#18224a"
+       "col": "#3a281c"
       }
      ]
     },
@@ -1974,9 +1920,9 @@
      ]
     }
    ],
-   "note": "medium crane_down: villager in a dark night world while 'Local people say Ashwatthama still comes here ever' is spoken.",
+   "note": "medium crane_down: ashwatthama in a dark brown world while 'Local people say Ashwatthama still comes here ever' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   },
@@ -1992,25 +1938,25 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
    "figs": [
     {
-     "who": "villager",
+     "who": "ashwatthama",
      "x": 640,
      "y": 588,
      "s": 0.9,
@@ -2055,7 +2001,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -2064,7 +2010,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -2074,7 +2020,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -2084,7 +2030,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -2094,7 +2040,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -2104,7 +2050,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -2112,14 +2058,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#5e3a24"
       }
      ]
     },
@@ -2134,7 +2080,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2142,7 +2088,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2150,7 +2096,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2158,7 +2104,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2166,7 +2112,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2174,7 +2120,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2182,7 +2128,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2190,7 +2136,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2198,7 +2144,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2206,7 +2152,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2214,7 +2160,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -2222,28 +2168,28 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "hut",
        "x": 462,
        "y": 526,
        "s": 0.6,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "hut",
        "x": 826,
        "y": 524,
        "s": 0.55,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "road",
        "x": 640,
        "y": 560,
        "s": 1.0,
-       "col": "#18224a"
+       "col": "#3a281c"
       }
      ]
     },
@@ -2269,9 +2215,9 @@
      ]
     }
    ],
-   "note": "medium push_in: villager in a dark night world while 'There is another story from the Narmada River.' is spoken.",
+   "note": "medium push_in: ashwatthama in a dark brown world while 'There is another story from the Narmada River.' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   },
@@ -2281,54 +2227,80 @@
     "t": 31.1,
     "word": "Travelers"
    },
-   "cues": [],
+   "cues": [
+    "Travelers"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
+     "#06101a",
+     "#12303a",
+     "#2a6a6a",
+     "#8ac0b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
+     "#2a5a5a",
+     "#204a4a",
+     "#183a3a",
+     "#102a2a"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
    "figs": [
     {
-     "who": "villager",
-     "x": 470,
-     "y": 590,
-     "s": 0.765,
+     "who": "ashwatthama",
+     "x": 640,
+     "y": 606,
+     "s": 1.05,
      "flip": 1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "pain",
      "mood": {
       "lx": 0.8
      }
     },
     {
-     "who": "ashwatthama",
+     "who": "villager",
+     "x": 470,
+     "y": 571,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "fear",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "villager_w",
      "x": 810,
-     "y": 590,
-     "s": 0.765,
+     "y": 571,
+     "s": 0.5,
      "flip": -1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "fear",
      "mood": {
       "lx": 0.8
      }
     }
    ],
    "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.08,
@@ -2348,7 +2320,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -2357,7 +2329,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -2367,7 +2339,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -2377,7 +2349,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -2387,7 +2359,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -2397,7 +2369,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -2405,14 +2377,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -2427,7 +2399,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2435,7 +2407,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2443,7 +2415,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2451,7 +2423,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2459,7 +2431,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2467,7 +2439,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2475,7 +2447,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2483,7 +2455,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2491,7 +2463,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2499,7 +2471,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2507,7 +2479,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2515,28 +2487,28 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "hut",
        "x": 462,
        "y": 526,
        "s": 0.6,
-       "col": "#101830"
+       "col": "#102a2a"
       },
       {
        "o": "hut",
        "x": 826,
        "y": 524,
        "s": 0.55,
-       "col": "#101830"
+       "col": "#102a2a"
       },
       {
        "o": "road",
        "x": 640,
        "y": 560,
        "s": 1.0,
-       "col": "#18224a"
+       "col": "#183a3a"
       }
      ]
     },
@@ -2562,9 +2534,9 @@
      ]
     }
    ],
-   "note": "medium crane_down: villager in a dark night world while 'Travelers say a it tall stranger comes to them.' is spoken.",
+   "note": "medium crane_down: ashwatthama in a dark teal world while 'Travelers say a it tall stranger comes to them.' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   },
@@ -2574,41 +2546,79 @@
     "t": 34.58,
     "word": "He"
    },
-   "cues": [],
+   "cues": [
+    "He"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06101a",
+     "#12303a",
+     "#2a6a6a",
+     "#8ac0b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a5a5a",
+     "#204a4a",
+     "#183a3a",
+     "#102a2a"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
    "figs": [
     {
-     "who": "villager",
+     "who": "ashwatthama",
      "x": 640,
-     "y": 589,
-     "s": 0.9,
+     "y": 607,
+     "s": 1.05,
      "flip": 1,
      "pose": "stand",
-     "emo": "sad",
+     "emo": "pain",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "villager",
+     "x": 470,
+     "y": 569,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "surprise",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "villager_w",
+     "x": 810,
+     "y": 569,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "surprise",
      "mood": {
       "lx": 0.8
      }
     }
    ],
-   "fx": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "blood_splash",
+     "x": 640,
+     "y": 318,
+     "w": 70,
+     "alpha": 0.9,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "fxb": [],
    "cam": {
     "from": {
@@ -2629,7 +2639,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -2638,7 +2648,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -2648,7 +2658,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -2658,7 +2668,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -2668,7 +2678,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -2678,7 +2688,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -2686,14 +2696,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -2708,7 +2718,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2716,7 +2726,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2724,7 +2734,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2732,7 +2742,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2740,7 +2750,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2748,7 +2758,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2756,7 +2766,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2764,7 +2774,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2772,7 +2782,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2780,7 +2790,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2788,7 +2798,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2796,21 +2806,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       }
      ]
     },
@@ -2836,9 +2846,9 @@
      ]
     }
    ],
-   "note": "medium push_in: villager in a dark ember world while 'He has a wound on his forehead that never heals.' is spoken.",
+   "note": "medium push_in: ashwatthama in a dark teal world while 'He has a wound on his forehead that never heals.' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   },
@@ -2852,31 +2862,55 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06101a",
+     "#12303a",
+     "#2a6a6a",
+     "#8ac0b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a5a5a",
+     "#204a4a",
+     "#183a3a",
+     "#102a2a"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
    "figs": [
     {
-     "who": "villager",
+     "who": "ashwatthama",
      "x": 640,
-     "y": 589,
-     "s": 0.9,
+     "y": 607,
+     "s": 1.05,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "pain",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "villager",
+     "x": 470,
+     "y": 570,
+     "s": 0.5,
      "flip": 1,
      "pose": "stand",
-     "emo": "sad",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "villager_w",
+     "x": 810,
+     "y": 570,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "namaste",
+     "emo": "devotion",
      "mood": {
       "lx": 0.8
      }
@@ -2903,7 +2937,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -2912,7 +2946,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -2922,7 +2956,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -2932,7 +2966,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -2942,7 +2976,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -2952,7 +2986,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -2960,14 +2994,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -2982,7 +3016,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2990,7 +3024,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -2998,7 +3032,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3006,7 +3040,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3014,7 +3048,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3022,7 +3056,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3030,7 +3064,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3038,7 +3072,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3046,7 +3080,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3054,7 +3088,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3062,7 +3096,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3070,21 +3104,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       }
      ]
     },
@@ -3110,9 +3144,9 @@
      ]
     }
    ],
-   "note": "medium crane_down: villager in a dark ember world while 'He asks for oil or turmeric to ease the pain.' is spoken.",
+   "note": "medium crane_down: ashwatthama in a dark teal world while 'He asks for oil or turmeric to ease the pain.' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   },
@@ -3126,28 +3160,28 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06101a",
+     "#12303a",
+     "#2a6a6a",
+     "#8ac0b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a5a5a",
+     "#204a4a",
+     "#183a3a",
+     "#102a2a"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
    "figs": [
     {
-     "who": "villager",
-     "x": 470,
-     "y": 589,
-     "s": 0.765,
+     "who": "ashwatthama",
+     "x": 640,
+     "y": 562,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -3156,12 +3190,24 @@
      }
     },
     {
-     "who": "ashwatthama",
+     "who": "villager",
+     "x": 470,
+     "y": 572,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "villager_w",
      "x": 810,
-     "y": 589,
-     "s": 0.765,
+     "y": 572,
+     "s": 0.5,
      "flip": -1,
-     "pose": "stand",
+     "pose": "namaste",
      "emo": "calm",
      "mood": {
       "lx": 0.8
@@ -3189,7 +3235,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -3198,7 +3244,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -3208,7 +3254,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -3218,7 +3264,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -3228,7 +3274,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -3238,7 +3284,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -3246,14 +3292,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -3268,7 +3314,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3276,7 +3322,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3284,7 +3330,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3292,7 +3338,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3300,7 +3346,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3308,7 +3354,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3316,7 +3362,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3324,7 +3370,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3332,7 +3378,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3340,7 +3386,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3348,7 +3394,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3356,21 +3402,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       }
      ]
     },
@@ -3396,9 +3442,9 @@
      ]
     }
    ],
-   "note": "medium push_in: villager in a dark ember world while 'People believe this is Ashwatthama.' is spoken.",
+   "note": "medium push_in: ashwatthama in a dark teal world while 'People believe this is Ashwatthama.' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   },
@@ -3412,25 +3458,25 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06101a",
+     "#12303a",
+     "#2a6a6a",
+     "#8ac0b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a5a5a",
+     "#204a4a",
+     "#183a3a",
+     "#102a2a"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
    "figs": [
     {
-     "who": "villager",
+     "who": "ashwatthama",
      "x": 640,
      "y": 588,
      "s": 0.9,
@@ -3463,7 +3509,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -3472,7 +3518,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -3482,7 +3528,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -3492,7 +3538,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -3502,7 +3548,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -3512,7 +3558,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -3520,14 +3566,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -3542,7 +3588,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3550,7 +3596,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3558,7 +3604,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3566,7 +3612,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3574,7 +3620,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3582,7 +3628,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3590,7 +3636,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3598,7 +3644,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3606,7 +3652,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3614,7 +3660,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3622,7 +3668,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3630,21 +3676,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       }
      ]
     },
@@ -3670,9 +3716,9 @@
      ]
     }
    ],
-   "note": "medium crane_down: villager in a dark ember world while 'He has been wandering for thousands of years.' is spoken.",
+   "note": "medium crane_down: ashwatthama in a dark teal world while 'He has been wandering for thousands of years.' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   },
@@ -3688,25 +3734,25 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06101a",
+     "#12303a",
+     "#2a6a6a",
+     "#8ac0b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a5a5a",
+     "#204a4a",
+     "#183a3a",
+     "#102a2a"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
    "figs": [
     {
-     "who": "villager",
+     "who": "ashwatthama",
      "x": 640,
      "y": 588,
      "s": 0.9,
@@ -3751,7 +3797,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -3760,7 +3806,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -3770,7 +3816,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -3780,7 +3826,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -3790,7 +3836,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -3800,7 +3846,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -3808,14 +3854,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -3830,7 +3876,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3838,7 +3884,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3846,7 +3892,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3854,7 +3900,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3862,7 +3908,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3870,7 +3916,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3878,7 +3924,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3886,7 +3932,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3894,7 +3940,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3902,7 +3948,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3910,7 +3956,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -3918,21 +3964,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       }
      ]
     },
@@ -3958,9 +4004,9 @@
      ]
     }
    ],
-   "note": "medium push_in: villager in a dark ember world while 'He does not ask for money or power.' is spoken.",
+   "note": "medium push_in: ashwatthama in a dark teal world while 'He does not ask for money or power.' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   },
@@ -3974,25 +4020,25 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06101a",
+     "#12303a",
+     "#2a6a6a",
+     "#8ac0b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a5a5a",
+     "#204a4a",
+     "#183a3a",
+     "#102a2a"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
    "figs": [
     {
-     "who": "villager",
+     "who": "ashwatthama",
      "x": 640,
      "y": 589,
      "s": 0.9,
@@ -4025,7 +4071,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -4034,7 +4080,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -4044,7 +4090,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -4054,7 +4100,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -4064,7 +4110,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -4074,7 +4120,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -4082,14 +4128,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -4104,7 +4150,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4112,7 +4158,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4120,7 +4166,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4128,7 +4174,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4136,7 +4182,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4144,7 +4190,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4152,7 +4198,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4160,7 +4206,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4168,7 +4214,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4176,7 +4222,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4184,7 +4230,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4192,21 +4238,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       }
      ]
     },
@@ -4232,9 +4278,9 @@
      ]
     }
    ],
-   "note": "medium crane_down: villager in a dark ember world while 'He only asks for relief from his pain.' is spoken.",
+   "note": "medium crane_down: ashwatthama in a dark teal world while 'He only asks for relief from his pain.' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   },
@@ -4248,30 +4294,54 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06101a",
+     "#12303a",
+     "#2a6a6a",
+     "#8ac0b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a5a5a",
+     "#204a4a",
+     "#183a3a",
+     "#102a2a"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
    "figs": [
     {
-     "who": "villager",
+     "who": "ashwatthama",
      "x": 640,
-     "y": 589,
-     "s": 0.9,
+     "y": 562,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "villager",
+     "x": 470,
+     "y": 569,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "villager_w",
+     "x": 810,
+     "y": 569,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "namaste",
      "emo": "calm",
      "mood": {
       "lx": 0.8
@@ -4299,7 +4369,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -4308,7 +4378,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -4318,7 +4388,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -4328,7 +4398,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -4338,7 +4408,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -4348,7 +4418,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -4356,14 +4426,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -4378,7 +4448,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4386,7 +4456,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4394,7 +4464,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4402,7 +4472,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4410,7 +4480,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4418,7 +4488,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4426,7 +4496,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4434,7 +4504,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4442,7 +4512,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4450,7 +4520,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4458,7 +4528,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4466,28 +4536,28 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "hut",
        "x": 462,
        "y": 526,
        "s": 0.6,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "hut",
        "x": 826,
        "y": 524,
        "s": 0.55,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "road",
        "x": 640,
        "y": 560,
        "s": 1.0,
-       "col": "#3a1618"
+       "col": "#183a3a"
       }
      ]
     },
@@ -4513,9 +4583,9 @@
      ]
     }
    ],
-   "note": "medium push_in: villager in a dark ember world while 'These are stories that people tell.' is spoken.",
+   "note": "medium push_in: ashwatthama in a dark teal world while 'These are stories that people tell.' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   },
@@ -4529,25 +4599,25 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06101a",
+     "#12303a",
+     "#2a6a6a",
+     "#8ac0b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a5a5a",
+     "#204a4a",
+     "#183a3a",
+     "#102a2a"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
    "figs": [
     {
-     "who": "villager",
+     "who": "ashwatthama",
      "x": 640,
      "y": 589,
      "s": 0.9,
@@ -4580,7 +4650,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -4589,7 +4659,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -4599,7 +4669,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -4609,7 +4679,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -4619,7 +4689,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -4629,7 +4699,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -4637,14 +4707,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -4659,7 +4729,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4667,7 +4737,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4675,7 +4745,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4683,7 +4753,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4691,7 +4761,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4699,7 +4769,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4707,7 +4777,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4715,7 +4785,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4723,7 +4793,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4731,7 +4801,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4739,7 +4809,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4747,28 +4817,28 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "hut",
        "x": 462,
        "y": 526,
        "s": 0.6,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "hut",
        "x": 826,
        "y": 524,
        "s": 0.55,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "road",
        "x": 640,
        "y": 560,
        "s": 1.0,
-       "col": "#3a1618"
+       "col": "#183a3a"
       }
      ]
     },
@@ -4794,9 +4864,9 @@
      ]
     }
    ],
-   "note": "medium crane_down: villager in a dark ember world while 'But what do the old books say?' is spoken.",
+   "note": "medium crane_down: ashwatthama in a dark teal world while 'But what do the old books say?' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   },
@@ -4812,18 +4882,18 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06101a",
+     "#12303a",
+     "#2a6a6a",
+     "#8ac0b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a5a5a",
+     "#204a4a",
+     "#183a3a",
+     "#102a2a"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -4887,7 +4957,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -4896,7 +4966,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -4906,7 +4976,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -4916,7 +4986,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -4926,7 +4996,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -4936,7 +5006,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -4944,14 +5014,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -4966,7 +5036,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4974,7 +5044,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4982,7 +5052,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4990,7 +5060,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -4998,7 +5068,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5006,7 +5076,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5014,7 +5084,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5022,7 +5092,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5030,7 +5100,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5038,7 +5108,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5046,7 +5116,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5054,28 +5124,28 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "hut",
        "x": 462,
        "y": 526,
        "s": 0.6,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "hut",
        "x": 826,
        "y": 524,
        "s": 0.55,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "road",
        "x": 640,
        "y": 560,
        "s": 1.0,
-       "col": "#3a1618"
+       "col": "#183a3a"
       }
      ]
     },
@@ -5101,7 +5171,7 @@
      ]
     }
    ],
-   "note": "medium push_in: krishna in a dark ember world while 'In the Mahabharat, Krishna cursed Ashwatthama afte' is spoken.",
+   "note": "medium push_in: krishna in a dark teal world while 'In the Mahabharat, Krishna cursed Ashwatthama afte' is spoken.",
    "vert": {
     "focus": "krishna"
    },
@@ -5117,18 +5187,18 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06101a",
+     "#12303a",
+     "#2a6a6a",
+     "#8ac0b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a5a5a",
+     "#204a4a",
+     "#183a3a",
+     "#102a2a"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -5168,7 +5238,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -5177,7 +5247,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -5187,7 +5257,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -5197,7 +5267,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -5207,7 +5277,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -5217,7 +5287,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -5225,14 +5295,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -5247,7 +5317,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5255,7 +5325,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5263,7 +5333,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5271,7 +5341,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5279,7 +5349,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5287,7 +5357,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5295,7 +5365,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5303,7 +5373,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5311,7 +5381,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5319,7 +5389,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5327,7 +5397,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -5335,28 +5405,28 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "hut",
        "x": 462,
        "y": 526,
        "s": 0.6,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "hut",
        "x": 826,
        "y": 524,
        "s": 0.55,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "road",
        "x": 640,
        "y": 560,
        "s": 1.0,
-       "col": "#3a1618"
+       "col": "#183a3a"
       }
      ]
     },
@@ -5382,7 +5452,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: krishna in a dark ember world while 'He would wander the Earth for 3,000 years with a w' is spoken.",
+   "note": "medium crane_down: krishna in a dark teal world while 'He would wander the Earth for 3,000 years with a w' is spoken.",
    "vert": {
     "focus": "krishna"
    },
@@ -5402,10 +5472,10 @@
    },
    "figs": [
     {
-     "who": "villager",
-     "x": 470,
-     "y": 589,
-     "s": 0.765,
+     "who": "ashwatthama",
+     "x": 640,
+     "y": 562,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -5414,12 +5484,24 @@
      }
     },
     {
-     "who": "ashwatthama",
+     "who": "villager",
+     "x": 470,
+     "y": 570,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "villager_w",
      "x": 810,
-     "y": 589,
-     "s": 0.765,
+     "y": 570,
+     "s": 0.5,
      "flip": -1,
-     "pose": "stand",
+     "pose": "namaste",
      "emo": "calm",
      "mood": {
       "lx": 0.8
@@ -5459,7 +5541,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -5468,7 +5550,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": true
       },
       {
@@ -5478,7 +5560,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -5488,7 +5570,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": true
       },
       {
@@ -5498,7 +5580,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -5508,7 +5590,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -5516,14 +5598,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -5538,35 +5620,35 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "pillar",
        "x": 455,
        "y": 545,
        "s": 0.7,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "pillar",
        "x": 830,
        "y": 545,
        "s": 0.7,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "rock",
        "x": 560,
        "y": 525,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "rock",
        "x": 730,
        "y": 525,
        "s": 0.6,
-       "col": "#3a1618"
+       "col": "#183a3a"
       }
      ]
     },
@@ -5592,9 +5674,9 @@
      ]
     }
    ],
-   "note": "medium push_in: villager in a dark ember world while 'So when people say Ashwatthama still puts flowers ' is spoken.",
+   "note": "medium push_in: ashwatthama in a dark teal world while 'So when people say Ashwatthama still puts flowers ' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   },
@@ -5610,7 +5692,7 @@
    },
    "figs": [
     {
-     "who": "villager",
+     "who": "ashwatthama",
      "x": 640,
      "y": 589,
      "s": 0.9,
@@ -5643,7 +5725,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -5652,7 +5734,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": true
       },
       {
@@ -5662,7 +5744,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -5672,7 +5754,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": true
       },
       {
@@ -5682,7 +5764,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -5692,7 +5774,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -5700,14 +5782,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -5722,35 +5804,35 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "pillar",
        "x": 455,
        "y": 545,
        "s": 0.7,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "pillar",
        "x": 830,
        "y": 545,
        "s": 0.7,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "rock",
        "x": 560,
        "y": 525,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "rock",
        "x": 730,
        "y": 525,
        "s": 0.6,
-       "col": "#3a1618"
+       "col": "#183a3a"
       }
      ]
     },
@@ -5776,9 +5858,9 @@
      ]
     }
    ],
-   "note": "medium crane_down: villager in a dark ember world while 'this is the man they mean.' is spoken.",
+   "note": "medium crane_down: ashwatthama in a dark teal world while 'this is the man they mean.' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   },
@@ -5796,7 +5878,7 @@
    },
    "figs": [
     {
-     "who": "villager",
+     "who": "ashwatthama",
      "x": 640,
      "y": 589,
      "s": 0.9,
@@ -5841,7 +5923,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -5850,7 +5932,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": true
       },
       {
@@ -5860,7 +5942,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -5870,7 +5952,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": true
       },
       {
@@ -5880,7 +5962,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -5890,7 +5972,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -5898,14 +5980,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -5920,35 +6002,35 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "pillar",
        "x": 455,
        "y": 545,
        "s": 0.7,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "pillar",
        "x": 830,
        "y": 545,
        "s": 0.7,
-       "col": "#2a0e10"
+       "col": "#102a2a"
       },
       {
        "o": "rock",
        "x": 560,
        "y": 525,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "rock",
        "x": 730,
        "y": 525,
        "s": 0.6,
-       "col": "#3a1618"
+       "col": "#183a3a"
       }
      ]
     },
@@ -5974,9 +6056,9 @@
      ]
     }
    ],
-   "note": "medium push_in: villager in a dark ember world while 'A man who tried to kill an unborn baby and was cur' is spoken.",
+   "note": "medium push_in: ashwatthama in a dark teal world while 'A man who tried to kill an unborn baby and was cur' is spoken.",
    "vert": {
-    "focus": "villager"
+    "focus": "ashwatthama"
    },
    "dx": 0
   }

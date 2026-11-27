@@ -36,6 +36,11 @@ def background(sc):
     if sc in SK:return bg("vista",sky=SK[sc],sx=640,sy=300,ridge=RIDGE[sc],haze="200,160,170",dust=10)
     return bg(sc)
 def scene_layers(sc,theme='hills'):return layers(sc if sc in SK else PAL.get(sc,'indigo'),theme)
+GROUPS=[(r'\b(people|locals|travelers|villagers|families|relatives|devotees|crowd)\b',[('villager',-1,'namaste'),('villager_w',1,'namaste')]),
+ (r'\b(gods|devas)\b',[('deva_thin',-1,'plead'),('deva_thin2',1,'plead')]),
+ (r'\b(demons|enemies|army|asuras|rakshasas)\b',[('asura1',-1,'rage'),('asura2',1,'rage')]),
+ (r'\b(sages|rishis|brahmins?)\b',[('rishi1',-1,'namaste'),('rishi2',1,'namaste')])]
+GW={'people','locals','travelers','villagers','families','relatives','devotees','crowd','gods','devas','demons','enemies','army','asuras','rakshasas','sages','rishis'}
 EMO=[('anger',r'\b(angry|furious|rage|cursed|curse|killed|kill|struck|attack|attacked|hit)\b'),('fear',r'\b(scared|afraid|fear|terrified|froze|trapped)\b'),('sad',r'\b(sad|pain|wound|wounded|blood|cried|wandering|lost|punishment)\b'),('surprise',r'\b(suddenly|shock|shocked|surprised|bright|jewels|amazing)\b'),('devotion',r'\b(pray|prayed|worship|worshipped|devotee|loved|blessed)\b'),('pride',r'\b(strong|strongest|powerful|beat|won|brave)\b'),('scheme',r'\b(trick|plan|idea|secret|mistake)\b'),('joy',r'\b(smiled|laughed|happy|gift)\b')]
 POSE=[('sitpray',r'\b(prayed|worshipped|chanted|meditation)\b'),('sleep',r'\b(asleep|sleeping|slept)\b'),('plead',r'\b(begged|asked|forgive)\b'),('lunge',r'\b(killed|struck|attacked|threw|hit|drove|cut)\b'),('fall',r'\b(fell|collapsed|snapped)\b'),('namaste',r'\b(bowed|blessed)\b'),('point',r'\b(told|said|warned|named)\b'),('open',r'\b(spread|rose|appeared)\b')]
 FX=[('ember_fire',r'\b(fire|flames|burned|burning|yajna|yagna)\b',(640,560,300)),('flower_petals',r'\b(flowers?)\b',(640,660,420)),('blood_splash',r'\b(blood)\b',(640,500,260)),('curse_glow',r'\b(curse|cursed)\b',(640,420,420)),('lightning_forks',r'\b(lightning|thunder|storm)\b',(640,260,500)),('smoke_plume',r'\b(smoke|ashes|ash)\b',(640,560,300)),('wave_ocean',r'\b(ocean|sea|water|river)\b',(640,640,640)),('divine_rays',r'\b(light|glowing|shine|bright|golden|divine)\b',(640,330,520)),('sudarshan_chakra',r'\b(chakra|disc)\b',(640,400,260)),('red_energy_pulse',r'\b(boon|power|powers|weapon|astra)\b',(640,420,300)),('mist_wisps',r'\b(night|dark|silent|mystery)\b',(640,540,640))]
@@ -82,7 +87,7 @@ def main(reel):
         # characters: lexicon words in the sentence, in order
         found=[]
         for m in re.finditer(r"[a-z']+",low):
-            who=cfg['lex'].get(m.group(0))
+            who=None if m.group(0) in GW else cfg['lex'].get(m.group(0))
             if who and who not in [f for f,_ in found]:found.append((who,m.start()))
         who=[f for f,_ in found][:cfg.get('maxc',2)]
         if not who and prev:who=prev[:1]
@@ -94,6 +99,9 @@ def main(reel):
         pose='stand'
         for p,rx in POSE:
             if re.search(rx,low):pose=p;break
+        extras=[]
+        for rx,gl in GROUPS:
+            if re.search(rx,low):extras=gl;break
         evx=None
         for rx,ep,ee,efx in EVENTS:
             if re.search(rx,low):evx=(ep,ee,efx);break
@@ -103,6 +111,10 @@ def main(reel):
         for k,w in enumerate(who):
             big=w in cfg.get('big',[]);sc_=cfg.get('scale',{}).get(w,.9)
             ch.append({"who":w,"x":xs[k],"y":690,"s":sc_*(0.85 if len(who)>1 else 1),"_face":.44 if len(who)==1 else .5,"flip":1 if k==0 and len(who)>1 else (-1 if k==1 else 1),"pose":pose if k==0 else 'stand',"emo":emo if k==0 else 'calm',"look":700,**({"prop":"none"} if w in ("hanuman","sugriva") else {})})
+        if extras and len(ch)==1 and ch[0]['who'] not in [e for e,_,_ in extras]:
+            ch[0]['s']=ch[0]['s']*.9
+            for e_,sd,ps in extras:ch.append({"who":e_,"x":640+sd*140,"y":725,"s":.5,"_face":.64,"flip":-sd,"pose":ps,"emo":"calm","look":700})
+        elif extras and not ch and prev:pass
         fxs=[]
         for k,rx,(x,y,wd) in FX:
             m=re.search(rx,low)

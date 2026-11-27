@@ -871,9 +871,9 @@
    "characters": [
     {
      "who": "ravana10",
-     "x": 470,
-     "y": 590,
-     "s": 0.765,
+     "x": 640,
+     "y": 562,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
      "emo": "anger",
@@ -881,11 +881,21 @@
     },
     {
      "who": "asura1",
+     "x": 470,
+     "y": 571,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "rage",
+     "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "asura2",
      "x": 810,
-     "y": 590,
-     "s": 0.765,
+     "y": 571,
+     "s": 0.5,
      "flip": -1,
-     "pose": "stand",
+     "pose": "rage",
      "emo": "calm",
      "look": 700
     }
@@ -2113,7 +2123,7 @@
    "duration": 3.58,
    "narration": "Some enemies fell to the ground just from the sound of his roar.",
    "meaning": "Some enemies fell to the ground just from the sound of his roar. (shown as a dark story frame)",
-   "why": "asura1 in a dark ember world while 'Some enemies fell to the ground just from the soun' is spoken.",
+   "why": "hanuman in a dark ember world while 'Some enemies fell to the ground just from the soun' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -2134,11 +2144,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "asura1",
+    "subject": "hanuman",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "asura1"
+    "focus": "hanuman"
    },
    "layers": [
     {
@@ -2296,13 +2306,34 @@
    },
    "characters": [
     {
-     "who": "asura1",
+     "who": "hanuman",
      "x": 640,
-     "y": 589,
-     "s": 0.9,
+     "y": 611,
+     "s": 0.9720000000000001,
      "flip": 1,
      "pose": "fall",
      "emo": "fear",
+     "look": 700,
+     "prop": "none"
+    },
+    {
+     "who": "asura1",
+     "x": 470,
+     "y": 571,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "rage",
+     "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 810,
+     "y": 571,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "calm",
      "look": 700
     }
    ],
