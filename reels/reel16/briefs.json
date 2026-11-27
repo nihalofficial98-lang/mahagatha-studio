@@ -5247,7 +5247,7 @@
    "duration": 3.44,
    "narration": "It fell to earth and broke into 84 pieces.",
    "meaning": "It fell to earth and broke into 84 pieces. (shown as a dark story frame)",
-   "why": "deva_thin in a dark ember world while 'It fell to earth and broke into 84 pieces.' is spoken.",
+   "why": "The scene in a dark ember world while 'It fell to earth and broke into 84 pieces.' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -5268,12 +5268,10 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "deva_thin"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
@@ -5511,29 +5509,31 @@
     "emotion": "fear",
     "grade": "ep07_dark"
    },
-   "characters": [
-    {
-     "who": "deva_thin",
-     "x": 655,
-     "y": 589,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "fall",
-     "emo": "fear",
-     "look": 700
-    }
-   ],
+   "characters": [],
    "effects": [
+    {
+     "k": "gems",
+     "word": "It",
+     "x": 640,
+     "y": 340,
+     "w": 620,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut mix gemstone(s) from the story",
+     "kind": "mix",
+     "cnt": 24
+    },
     {
      "k": "ground_crack",
      "word": "It",
      "x": 640,
      "y": 640,
      "w": 520,
-     "alpha": 0.8,
+     "alpha": 0.7,
      "par": 1.0,
      "behind": false,
-     "meaning": "ground crack showing what the narration says"
+     "meaning": "the body breaking on the ground"
     }
    ],
    "transition_in": "cut"
@@ -5548,7 +5548,7 @@
    "duration": 2.6,
    "narration": "Wherever they landed, they became jewels.",
    "meaning": "Wherever they landed, they became jewels. (shown as a dark story frame)",
-   "why": "deva_thin in a dark night world while 'Wherever they landed, they became jewels.' is spoken.",
+   "why": "The scene in a dark night world while 'Wherever they landed, they became jewels.' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -5569,12 +5569,10 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "deva_thin"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
@@ -5812,19 +5810,21 @@
     "emotion": "surprise",
     "grade": "ep07_dark"
    },
-   "characters": [
-    {
-     "who": "deva_thin",
-     "x": 640,
-     "y": 587,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "open",
-     "emo": "surprise",
-     "look": 700
-    }
-   ],
+   "characters": [],
    "effects": [
+    {
+     "k": "gems",
+     "word": "Wherever",
+     "x": 640,
+     "y": 380,
+     "w": 600,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut mix gemstone(s) from the story",
+     "kind": "mix",
+     "cnt": 30
+    },
     {
      "k": "divine_rays",
      "word": "Wherever",
@@ -5834,18 +5834,7 @@
      "alpha": 0.8,
      "par": 1.0,
      "behind": true,
-     "meaning": "divine rays showing what the narration says"
-    },
-    {
-     "k": "flower_petals",
-     "word": "Wherever",
-     "x": 640,
-     "y": 420,
-     "w": 440,
-     "alpha": 0.9,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "flower petals showing what the narration says"
+     "meaning": "bright light on the new jewels"
     }
    ],
    "transition_in": "cut"
@@ -5860,7 +5849,7 @@
    "duration": 1.82,
    "narration": "His bones became diamonds.",
    "meaning": "His bones became diamonds. (shown as a dark story frame)",
-   "why": "deva_thin in a dark night world while 'His bones became diamonds.' is spoken.",
+   "why": "The scene in a dark night world while 'His bones became diamonds.' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -5881,12 +5870,10 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "deva_thin"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
@@ -6124,40 +6111,31 @@
     "emotion": "surprise",
     "grade": "ep07_dark"
    },
-   "characters": [
-    {
-     "who": "deva_thin",
-     "x": 610,
-     "y": 587,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "open",
-     "emo": "surprise",
-     "look": 700
-    }
-   ],
+   "characters": [],
    "effects": [
+    {
+     "k": "gems",
+     "word": "His",
+     "x": 640,
+     "y": 340,
+     "w": 300,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut diamond gemstone(s) from the story",
+     "kind": "diamond",
+     "cnt": 1
+    },
     {
      "k": "divine_rays",
      "word": "His",
      "x": 640,
      "y": 330,
      "w": 520,
-     "alpha": 0.8,
+     "alpha": 0.7,
      "par": 1.0,
      "behind": true,
-     "meaning": "divine rays showing what the narration says"
-    },
-    {
-     "k": "flower_petals",
-     "word": "His",
-     "x": 640,
-     "y": 420,
-     "w": 440,
-     "alpha": 0.9,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "flower petals showing what the narration says"
+     "meaning": "white light of a diamond"
     }
    ],
    "transition_in": "cut"
@@ -6172,7 +6150,7 @@
    "duration": 1.78,
    "narration": "His blood became rubies.",
    "meaning": "His blood became rubies. (shown as a dark story frame)",
-   "why": "deva_thin in a dark night world while 'His blood became rubies.' is spoken.",
+   "why": "The scene in a dark ember world while 'His blood became rubies.' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -6193,18 +6171,16 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "deva_thin"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -6213,7 +6189,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -6223,7 +6199,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -6233,7 +6209,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -6243,7 +6219,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -6253,7 +6229,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -6261,14 +6237,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#7a2020"
       }
      ]
     },
@@ -6284,7 +6260,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6292,7 +6268,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6300,7 +6276,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6308,7 +6284,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6316,7 +6292,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6324,7 +6300,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6332,7 +6308,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6340,7 +6316,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6348,7 +6324,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6356,7 +6332,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6364,7 +6340,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6372,21 +6348,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#101830"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#101830"
+       "col": "#2a0e10"
       }
      ]
     },
@@ -6416,18 +6392,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
     ],
     "sx": 760,
     "sy": 300,
     "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -6436,40 +6412,31 @@
     "emotion": "surprise",
     "grade": "ep07_dark"
    },
-   "characters": [
-    {
-     "who": "deva_thin",
-     "x": 670,
-     "y": 588,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "open",
-     "emo": "surprise",
-     "look": 700
-    }
-   ],
+   "characters": [],
    "effects": [
     {
-     "k": "divine_rays",
+     "k": "gems",
      "word": "His",
      "x": 640,
-     "y": 330,
-     "w": 520,
-     "alpha": 0.8,
+     "y": 340,
+     "w": 300,
+     "alpha": 1,
      "par": 1.0,
-     "behind": true,
-     "meaning": "divine rays showing what the narration says"
+     "behind": false,
+     "meaning": "paper-cut ruby gemstone(s) from the story",
+     "kind": "ruby",
+     "cnt": 1
     },
     {
-     "k": "flower_petals",
+     "k": "red_energy_pulse",
      "word": "His",
      "x": 640,
      "y": 420,
-     "w": 440,
-     "alpha": 0.9,
+     "w": 420,
+     "alpha": 0.7,
      "par": 1.0,
-     "behind": false,
-     "meaning": "flower petals showing what the narration says"
+     "behind": true,
+     "meaning": "red glow of a ruby"
     }
    ],
    "transition_in": "cut"
@@ -6484,7 +6451,7 @@
    "duration": 1.88,
    "narration": "His eyes became sapphires.",
    "meaning": "His eyes became sapphires. (shown as a dark story frame)",
-   "why": "deva_thin in a dark night world while 'His eyes became sapphires.' is spoken.",
+   "why": "The scene in a dark night world while 'His eyes became sapphires.' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -6505,12 +6472,10 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "deva_thin"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
@@ -6748,19 +6713,33 @@
     "emotion": "calm",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "deva_thin",
-     "x": 630,
-     "y": 590,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "k": "gems",
+     "word": "His",
+     "x": 640,
+     "y": 340,
+     "w": 300,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut sapphire gemstone(s) from the story",
+     "kind": "sapphire",
+     "cnt": 1
+    },
+    {
+     "k": "divine_rays",
+     "word": "His",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.5,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "blue glow of a sapphire"
     }
    ],
-   "effects": [],
    "transition_in": "cut"
   },
   {
@@ -6773,7 +6752,7 @@
    "duration": 1.88,
    "narration": "His teeth became pearls.",
    "meaning": "His teeth became pearls. (shown as a dark story frame)",
-   "why": "deva_thin in a dark night world while 'His teeth became pearls.' is spoken.",
+   "why": "The scene in a dark night world while 'His teeth became pearls.' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -6794,12 +6773,10 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "deva_thin"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
@@ -7037,40 +7014,31 @@
     "emotion": "surprise",
     "grade": "ep07_dark"
    },
-   "characters": [
-    {
-     "who": "deva_thin",
-     "x": 655,
-     "y": 594,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "open",
-     "emo": "surprise",
-     "look": 700
-    }
-   ],
+   "characters": [],
    "effects": [
+    {
+     "k": "gems",
+     "word": "His",
+     "x": 640,
+     "y": 340,
+     "w": 280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut pearl gemstone(s) from the story",
+     "kind": "pearl",
+     "cnt": 1
+    },
     {
      "k": "divine_rays",
      "word": "His",
      "x": 640,
      "y": 330,
      "w": 520,
-     "alpha": 0.8,
+     "alpha": 0.6,
      "par": 1.0,
      "behind": true,
-     "meaning": "divine rays showing what the narration says"
-    },
-    {
-     "k": "flower_petals",
-     "word": "His",
-     "x": 640,
-     "y": 420,
-     "w": 440,
-     "alpha": 0.9,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "flower petals showing what the narration says"
+     "meaning": "soft white glow of a pearl"
     }
    ],
    "transition_in": "cut"
@@ -7085,7 +7053,7 @@
    "duration": 4.72,
    "narration": "His voice, the voice that said he was ready, became the cat's eye.",
    "meaning": "His voice, the voice that said he was ready, became the cat's eye. (shown as a dark story frame)",
-   "why": "deva_thin in a dark night world while 'His voice, the voice that said he was ready, becam' is spoken.",
+   "why": "The scene in a dark night world while 'His voice, the voice that said he was ready, becam' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -7106,12 +7074,10 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "deva_thin"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
@@ -7349,19 +7315,33 @@
     "emotion": "calm",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "deva_thin",
+     "k": "gems",
+     "word": "His",
      "x": 640,
-     "y": 590,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "point",
-     "emo": "calm",
-     "look": 700
+     "y": 340,
+     "w": 320,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut cat_eye gemstone(s) from the story",
+     "kind": "cat_eye",
+     "cnt": 1
+    },
+    {
+     "k": "divine_rays",
+     "word": "His",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.6,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "golden glow of a cats eye"
     }
    ],
-   "effects": [],
    "transition_in": "cut"
   },
   {
@@ -7374,7 +7354,7 @@
    "duration": 2.72,
    "narration": "Nine of those jewels are called the Navratnas.",
    "meaning": "Nine of those jewels are called the Navratnas. (shown as a dark story frame)",
-   "why": "deva_thin in a dark night world while 'Nine of those jewels are called the Navratnas.' is spoken.",
+   "why": "The scene in a dark night world while 'Nine of those jewels are called the Navratnas.' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -7395,12 +7375,10 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "deva_thin"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
@@ -7638,40 +7616,124 @@
     "emotion": "surprise",
     "grade": "ep07_dark"
    },
-   "characters": [
-    {
-     "who": "deva_thin",
-     "x": 610,
-     "y": 589,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "open",
-     "emo": "surprise",
-     "look": 700
-    }
-   ],
+   "characters": [],
    "effects": [
     {
-     "k": "divine_rays",
+     "k": "gems",
      "word": "Nine",
-     "x": 640,
-     "y": 330,
-     "w": 520,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "divine rays showing what the narration says"
-    },
-    {
-     "k": "flower_petals",
-     "word": "Nine",
-     "x": 640,
-     "y": 420,
-     "w": 440,
-     "alpha": 0.9,
+     "x": 545,
+     "y": 290,
+     "w": 100,
+     "alpha": 1,
      "par": 1.0,
      "behind": false,
-     "meaning": "flower petals showing what the narration says"
+     "meaning": "paper-cut diamond gemstone(s) from the story",
+     "kind": "diamond",
+     "cnt": 1
+    },
+    {
+     "k": "gems",
+     "word": "Nine",
+     "x": 645,
+     "y": 290,
+     "w": 100,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut ruby gemstone(s) from the story",
+     "kind": "ruby",
+     "cnt": 1
+    },
+    {
+     "k": "gems",
+     "word": "Nine",
+     "x": 745,
+     "y": 290,
+     "w": 100,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut sapphire gemstone(s) from the story",
+     "kind": "sapphire",
+     "cnt": 1
+    },
+    {
+     "k": "gems",
+     "word": "Nine",
+     "x": 545,
+     "y": 400,
+     "w": 100,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut pearl gemstone(s) from the story",
+     "kind": "pearl",
+     "cnt": 1
+    },
+    {
+     "k": "gems",
+     "word": "Nine",
+     "x": 645,
+     "y": 400,
+     "w": 105,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut cat_eye gemstone(s) from the story",
+     "kind": "cat_eye",
+     "cnt": 1
+    },
+    {
+     "k": "gems",
+     "word": "Nine",
+     "x": 745,
+     "y": 400,
+     "w": 100,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut emerald gemstone(s) from the story",
+     "kind": "emerald",
+     "cnt": 1
+    },
+    {
+     "k": "gems",
+     "word": "Nine",
+     "x": 545,
+     "y": 510,
+     "w": 100,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut topaz gemstone(s) from the story",
+     "kind": "topaz",
+     "cnt": 1
+    },
+    {
+     "k": "gems",
+     "word": "Nine",
+     "x": 645,
+     "y": 510,
+     "w": 100,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut coral gemstone(s) from the story",
+     "kind": "coral",
+     "cnt": 1
+    },
+    {
+     "k": "gems",
+     "word": "Nine",
+     "x": 745,
+     "y": 510,
+     "w": 100,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut garnet gemstone(s) from the story",
+     "kind": "garnet",
+     "cnt": 1
     }
    ],
    "transition_in": "cut"
@@ -8264,7 +8326,7 @@
    "duration": 4.03,
    "narration": "The gods won heaven by a trick, and the earth won a treasure.",
    "meaning": "The gods won heaven by a trick, and the earth won a treasure. (shown as a dark story frame)",
-   "why": "deva_thin in a dark night world while 'The gods won heaven by a trick, and the earth won ' is spoken.",
+   "why": "The scene in a dark night world while 'The gods won heaven by a trick, and the earth won ' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -8285,12 +8347,10 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "deva_thin"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
@@ -8492,35 +8552,44 @@
     }
    ],
    "background": {
-    "k": "palace"
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 700,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "mood": {
     "emotion": "pride",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "deva_thin",
-     "x": 485,
-     "y": 589,
-     "s": 0.765,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "pride",
-     "look": 700
-    },
-    {
-     "who": "indra",
-     "x": 825,
-     "y": 589,
-     "s": 0.765,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "k": "gems",
+     "word": "The",
+     "x": 640,
+     "y": 380,
+     "w": 520,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "paper-cut mix gemstone(s) from the story",
+     "kind": "mix",
+     "cnt": 16
     }
    ],
-   "effects": [],
    "transition_in": "cut"
   }
  ]

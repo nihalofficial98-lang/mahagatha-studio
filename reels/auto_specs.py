@@ -99,3 +99,16 @@ SPEC['reel17']['over'].update({
  15:dict(scene='indigo',vertical=VX,chars=[V17('vishnu','stand','fear')],fx=[LG(),LP(13,748,520,215),pfx('mist_wisps',None,640,540,640,'dark mist while he searches',alpha=.6,behind=True)]),
  16:dict(scene='indigo',vertical=VX,chars=[V17('vishnu','stand','fear')],fx=[LG(),LP(13,748,520,215)]),
 })
+
+GM=lambda kind,n=1,w=300,x=640,y=520,al=1:pfx('gems',None,x,y,w,'paper-cut '+kind+' gemstone(s) from the story',alpha=al,kind=kind,cnt=n)
+SPEC['reel16'].setdefault('over',{}).update({
+ 19:dict(scene='ember',chars=[],fx=[GM('mix',24,620,640,340),pfx('ground_crack',None,640,640,520,'the body breaking on the ground',alpha=.7)]),
+ 20:dict(scene='night',chars=[],fx=[GM('mix',30,600,640,380),pfx('divine_rays',None,640,330,520,'bright light on the new jewels',alpha=.8,behind=True)]),
+ 21:dict(scene='night',chars=[],fx=[GM('diamond',1,300,640,340),pfx('divine_rays',None,640,330,520,'white light of a diamond',alpha=.7,behind=True)]),
+ 22:dict(scene='ember',chars=[],fx=[GM('ruby',1,300,640,340),pfx('red_energy_pulse',None,640,420,420,'red glow of a ruby',alpha=.7,behind=True)]),
+ 23:dict(scene='night',chars=[],fx=[GM('sapphire',1,300,640,340),pfx('divine_rays',None,640,330,520,'blue glow of a sapphire',alpha=.5,behind=True)]),
+ 24:dict(scene='night',chars=[],fx=[GM('pearl',1,280,640,340),pfx('divine_rays',None,640,330,520,'soft white glow of a pearl',alpha=.6,behind=True)]),
+ 25:dict(scene='night',chars=[],fx=[GM('cat_eye',1,320,640,340),pfx('divine_rays',None,640,330,520,'golden glow of a cats eye',alpha=.6,behind=True)]),
+ 26:dict(scene='night',chars=[],fx=[GM('mix',9,420,640,340)+{}] if False else [GM('diamond',1,100,545,290),GM('ruby',1,100,645,290),GM('sapphire',1,100,745,290),GM('pearl',1,100,545,400),GM('cat_eye',1,105,645,400),GM('emerald',1,100,745,400),GM('topaz',1,100,545,510),GM('coral',1,100,645,510),GM('garnet',1,100,745,510)]),
+ 29:dict(scene='night',chars=[],fx=[GM('mix',16,520,640,380)]),
+})

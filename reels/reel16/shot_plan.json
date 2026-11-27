@@ -4994,28 +4994,28 @@
     "haze": "200,160,170",
     "dust": 10
    },
-   "figs": [
-    {
-     "who": "deva_thin",
-     "x": 655,
-     "y": 589,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "fall",
-     "emo": "fear",
-     "mood": {
-      "lx": -0.8
-     }
-    }
-   ],
+   "figs": [],
    "fx": [
+    {
+     "t": "pfx",
+     "k": "gems",
+     "x": 640,
+     "y": 340,
+     "w": 620,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "mix",
+     "cnt": 24,
+     "c": 0,
+     "d": 0.6
+    },
     {
      "t": "pfx",
      "k": "ground_crack",
      "x": 640,
      "y": 640,
      "w": 520,
-     "alpha": 0.8,
+     "alpha": 0.7,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -5248,10 +5248,7 @@
      ]
     }
    ],
-   "note": "wide pull_out: deva_thin in a dark ember world while 'It fell to earth and broke into 84 pieces.' is spoken.",
-   "vert": {
-    "focus": "deva_thin"
-   },
+   "note": "wide pull_out: The scene in a dark ember world while 'It fell to earth and broke into 84 pieces.' is spoken.",
    "dx": 0
   },
   {
@@ -5282,29 +5279,18 @@
     "haze": "200,160,170",
     "dust": 10
    },
-   "figs": [
-    {
-     "who": "deva_thin",
-     "x": 640,
-     "y": 587,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "open",
-     "emo": "surprise",
-     "mood": {
-      "lx": 0.8
-     }
-    }
-   ],
+   "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "flower_petals",
+     "k": "gems",
      "x": 640,
-     "y": 420,
-     "w": 440,
-     "alpha": 0.9,
+     "y": 380,
+     "w": 600,
+     "alpha": 1,
      "par": 1.0,
+     "kind": "mix",
+     "cnt": 30,
      "c": 0,
      "d": 0.6
     }
@@ -5548,10 +5534,7 @@
      ]
     }
    ],
-   "note": "close dolly_right: deva_thin in a dark night world while 'Wherever they landed, they became jewels.' is spoken.",
-   "vert": {
-    "focus": "deva_thin"
-   },
+   "note": "close dolly_right: The scene in a dark night world while 'Wherever they landed, they became jewels.' is spoken.",
    "dx": 0
   },
   {
@@ -5582,29 +5565,18 @@
     "haze": "200,160,170",
     "dust": 10
    },
-   "figs": [
-    {
-     "who": "deva_thin",
-     "x": 610,
-     "y": 587,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "open",
-     "emo": "surprise",
-     "mood": {
-      "lx": -0.8
-     }
-    }
-   ],
+   "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "flower_petals",
+     "k": "gems",
      "x": 640,
-     "y": 420,
-     "w": 440,
-     "alpha": 0.9,
+     "y": 340,
+     "w": 300,
+     "alpha": 1,
      "par": 1.0,
+     "kind": "diamond",
+     "cnt": 1,
      "c": 0,
      "d": 0.6
     }
@@ -5616,7 +5588,7 @@
      "x": 640,
      "y": 330,
      "w": 520,
-     "alpha": 0.8,
+     "alpha": 0.7,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -5848,10 +5820,7 @@
      ]
     }
    ],
-   "note": "medium push_in: deva_thin in a dark night world while 'His bones became diamonds.' is spoken.",
-   "vert": {
-    "focus": "deva_thin"
-   },
+   "note": "medium push_in: The scene in a dark night world while 'His bones became diamonds.' is spoken.",
    "dx": 0
   },
   {
@@ -5866,45 +5835,34 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
     ],
     "sx": 760,
     "sy": 300,
     "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
-   "figs": [
-    {
-     "who": "deva_thin",
-     "x": 670,
-     "y": 588,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "open",
-     "emo": "surprise",
-     "mood": {
-      "lx": 0.8
-     }
-    }
-   ],
+   "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "flower_petals",
+     "k": "gems",
      "x": 640,
-     "y": 420,
-     "w": 440,
-     "alpha": 0.9,
+     "y": 340,
+     "w": 300,
+     "alpha": 1,
      "par": 1.0,
+     "kind": "ruby",
+     "cnt": 1,
      "c": 0,
      "d": 0.6
     }
@@ -5912,11 +5870,11 @@
    "fxb": [
     {
      "t": "pfx",
-     "k": "divine_rays",
+     "k": "red_energy_pulse",
      "x": 640,
-     "y": 330,
-     "w": 520,
-     "alpha": 0.8,
+     "y": 420,
+     "w": 420,
+     "alpha": 0.7,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -5941,7 +5899,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -5950,7 +5908,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -5960,7 +5918,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5970,7 +5928,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -5980,7 +5938,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5990,7 +5948,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5998,14 +5956,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#7a2020"
       }
      ]
     },
@@ -6020,7 +5978,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6028,7 +5986,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6036,7 +5994,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6044,7 +6002,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6052,7 +6010,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6060,7 +6018,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6068,7 +6026,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6076,7 +6034,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6084,7 +6042,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6092,7 +6050,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6100,7 +6058,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -6108,21 +6066,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#101830"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#101830"
+       "col": "#2a0e10"
       }
      ]
     },
@@ -6148,10 +6106,7 @@
      ]
     }
    ],
-   "note": "close pull_out: deva_thin in a dark night world while 'His blood became rubies.' is spoken.",
-   "vert": {
-    "focus": "deva_thin"
-   },
+   "note": "close pull_out: The scene in a dark ember world while 'His blood became rubies.' is spoken.",
    "dx": 0
   },
   {
@@ -6160,7 +6115,9 @@
     "t": 66.64,
     "word": "His"
    },
-   "cues": [],
+   "cues": [
+    "His"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -6180,22 +6137,35 @@
     "haze": "200,160,170",
     "dust": 10
    },
-   "figs": [
+   "figs": [],
+   "fx": [
     {
-     "who": "deva_thin",
-     "x": 630,
-     "y": 590,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": -0.8
-     }
+     "t": "pfx",
+     "k": "gems",
+     "x": 640,
+     "y": 340,
+     "w": 300,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "sapphire",
+     "cnt": 1,
+     "c": 0,
+     "d": 0.6
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.5,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.04,
@@ -6422,10 +6392,7 @@
      ]
     }
    ],
-   "note": "medium pan_left: deva_thin in a dark night world while 'His eyes became sapphires.' is spoken.",
-   "vert": {
-    "focus": "deva_thin"
-   },
+   "note": "medium pan_left: The scene in a dark night world while 'His eyes became sapphires.' is spoken.",
    "dx": 0
   },
   {
@@ -6456,29 +6423,18 @@
     "haze": "200,160,170",
     "dust": 10
    },
-   "figs": [
-    {
-     "who": "deva_thin",
-     "x": 655,
-     "y": 594,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "open",
-     "emo": "surprise",
-     "mood": {
-      "lx": 0.8
-     }
-    }
-   ],
+   "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "flower_petals",
+     "k": "gems",
      "x": 640,
-     "y": 420,
-     "w": 440,
-     "alpha": 0.9,
+     "y": 340,
+     "w": 280,
+     "alpha": 1,
      "par": 1.0,
+     "kind": "pearl",
+     "cnt": 1,
      "c": 0,
      "d": 0.6
     }
@@ -6490,7 +6446,7 @@
      "x": 640,
      "y": 330,
      "w": 520,
-     "alpha": 0.8,
+     "alpha": 0.6,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -6722,10 +6678,7 @@
      ]
     }
    ],
-   "note": "wide tilt_up: deva_thin in a dark night world while 'His teeth became pearls.' is spoken.",
-   "vert": {
-    "focus": "deva_thin"
-   },
+   "note": "wide tilt_up: The scene in a dark night world while 'His teeth became pearls.' is spoken.",
    "dx": 0
   },
   {
@@ -6734,7 +6687,9 @@
     "t": 70.4,
     "word": "His"
    },
-   "cues": [],
+   "cues": [
+    "His"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -6754,22 +6709,35 @@
     "haze": "200,160,170",
     "dust": 10
    },
-   "figs": [
+   "figs": [],
+   "fx": [
     {
-     "who": "deva_thin",
+     "t": "pfx",
+     "k": "gems",
      "x": 640,
-     "y": 590,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "point",
-     "emo": "calm",
-     "mood": {
-      "lx": -0.8
-     }
+     "y": 340,
+     "w": 320,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "cat_eye",
+     "cnt": 1,
+     "c": 0,
+     "d": 0.6
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.6,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.04,
@@ -6996,10 +6964,7 @@
      ]
     }
    ],
-   "note": "close pan_right: deva_thin in a dark night world while 'His voice, the voice that said he was ready, becam' is spoken.",
-   "vert": {
-    "focus": "deva_thin"
-   },
+   "note": "close pan_right: The scene in a dark night world while 'His voice, the voice that said he was ready, becam' is spoken.",
    "dx": 0
   },
   {
@@ -7030,46 +6995,127 @@
     "haze": "200,160,170",
     "dust": 10
    },
-   "figs": [
-    {
-     "who": "deva_thin",
-     "x": 610,
-     "y": 589,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "open",
-     "emo": "surprise",
-     "mood": {
-      "lx": 0.8
-     }
-    }
-   ],
+   "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "flower_petals",
-     "x": 640,
-     "y": 420,
-     "w": 440,
-     "alpha": 0.9,
+     "k": "gems",
+     "x": 545,
+     "y": 290,
+     "w": 100,
+     "alpha": 1,
      "par": 1.0,
+     "kind": "diamond",
+     "cnt": 1,
      "c": 0,
      "d": 0.6
-    }
-   ],
-   "fxb": [
+    },
     {
      "t": "pfx",
-     "k": "divine_rays",
-     "x": 640,
-     "y": 330,
-     "w": 520,
-     "alpha": 0.8,
+     "k": "gems",
+     "x": 645,
+     "y": 290,
+     "w": 100,
+     "alpha": 1,
      "par": 1.0,
+     "kind": "ruby",
+     "cnt": 1,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "gems",
+     "x": 745,
+     "y": 290,
+     "w": 100,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "sapphire",
+     "cnt": 1,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "gems",
+     "x": 545,
+     "y": 400,
+     "w": 100,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "pearl",
+     "cnt": 1,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "gems",
+     "x": 645,
+     "y": 400,
+     "w": 105,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "cat_eye",
+     "cnt": 1,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "gems",
+     "x": 745,
+     "y": 400,
+     "w": 100,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "emerald",
+     "cnt": 1,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "gems",
+     "x": 545,
+     "y": 510,
+     "w": 100,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "topaz",
+     "cnt": 1,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "gems",
+     "x": 645,
+     "y": 510,
+     "w": 100,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "coral",
+     "cnt": 1,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "gems",
+     "x": 745,
+     "y": 510,
+     "w": 100,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "garnet",
+     "cnt": 1,
      "c": 0,
      "d": 0.6
     }
    ],
+   "fxb": [],
    "cam": {
     "from": {
      "z": 1.08,
@@ -7296,10 +7342,7 @@
      ]
     }
    ],
-   "note": "wide pull_out: deva_thin in a dark night world while 'Nine of those jewels are called the Navratnas.' is spoken.",
-   "vert": {
-    "focus": "deva_thin"
-   },
+   "note": "wide pull_out: The scene in a dark night world while 'Nine of those jewels are called the Navratnas.' is spoken.",
    "dx": 0
   },
   {
@@ -7856,37 +7899,44 @@
     "t": 82.8,
     "word": "The"
    },
-   "cues": [],
+   "cues": [
+    "The"
+   ],
    "bg": {
-    "k": "palace"
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 700,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
-   "figs": [
+   "figs": [],
+   "fx": [
     {
-     "who": "deva_thin",
-     "x": 485,
-     "y": 589,
-     "s": 0.765,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "pride",
-     "mood": {
-      "lx": 0.8
-     }
-    },
-    {
-     "who": "indra",
-     "x": 825,
-     "y": 589,
-     "s": 0.765,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
+     "t": "pfx",
+     "k": "gems",
+     "x": 640,
+     "y": 380,
+     "w": 520,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "mix",
+     "cnt": 16,
+     "c": 0,
+     "d": 0.6
     }
    ],
-   "fx": [],
    "fxb": [],
    "cam": {
     "from": {
@@ -8100,10 +8150,7 @@
      ]
     }
    ],
-   "note": "close pull_out: deva_thin in a dark night world while 'The gods won heaven by a trick, and the earth won ' is spoken.",
-   "vert": {
-    "focus": "deva_thin"
-   },
+   "note": "close pull_out: The scene in a dark night world while 'The gods won heaven by a trick, and the earth won ' is spoken.",
    "dx": 0
   }
  ]
