@@ -161,6 +161,38 @@ const E={
   const n=F.cnt||1,kind=F.kind||'diamond',r=rng(7);
   if(n<=1){glow(0,0,w*1.2,'255,255,255',.35);one(kind,w,0);const k=.5+.5*Math.sin(t*3);ctx.strokeStyle='rgba(255,255,255,'+(.5+.4*k)+')';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(-w*.7,-w*.55);ctx.lineTo(-w*.45,-w*.55);ctx.moveTo(-w*.57,-w*.68);ctx.lineTo(-w*.57,-w*.42);ctx.moveTo(w*.62,w*.35);ctx.lineTo(w*.82,w*.35);ctx.moveTo(w*.72,w*.25);ctx.lineTo(w*.72,w*.45);ctx.stroke();return}
   for(let i=0;i<n;i++){const kk=kind==='mix'?ORD[i%9]:kind,x=(r()-.5)*w*1.6,y=(r()-.5)*w*1.4+((t*20+i*13)%40)*.0,s=w*(.12+r()*.1);ctx.save();ctx.translate(x,y);glow(0,0,s*1.6,'255,240,220',.18);one(kk,s,(r()-.5)*.8);ctx.restore()}}},
+ // full-frame paper-cut scenery for the reels. F.kind: forest_dusk | temple_dawn | palace_night | battle_fire | sea_night | cosmos | heaven | village_dusk | hills_night | kailash ; F.pal: ember | indigo | brown | night | teal
+ scene_kit:{s:0,f(w,t,F){const W=w,H=w*.5625,X0=-W/2,Y0=-H/2,kind=F.kind||'hills_night',pal=F.pal||'indigo';
+   const SKY={ember:['#12060c','#4a1420','#a83a28','#f09a4a'],indigo:['#0c0820','#2a1858','#5a3a80','#c07a8a'],brown:['#100a06','#36220e','#7a4a24','#e0a860'],night:['#04050c','#0c1636','#1c3470','#5a78b8'],teal:['#04101a','#0c3640','#1c7a78','#9ad0b8']}[pal];
+   const mix=(a,b,k)=>{const h=c=>[1,3,5].map(i=>parseInt(c.slice(i,i+2),16)),A=h(a),B=h(b);return'rgb('+A.map((v,i)=>Math.round(v+(B[i]-v)*k)).join(',')+')'};
+   const HL=[mix(SKY[2],'#000000',.4),mix(SKY[2],'#000000',.58),mix(SKY[2],'#000000',.74),mix(SKY[2],'#000000',.88)];
+   const g=ctx.createLinearGradient(0,Y0,0,Y0+H);SKY.forEach((c,i)=>g.addColorStop(i/3,c));ctx.fillStyle=g;ctx.fillRect(X0,Y0,W,H);
+   const r=rng(5);const dark=pal==='night'||pal==='indigo'||pal==='ember';
+   if(kind==='cosmos'||dark){for(let i=0;i<70;i++){const sx=X0+r()*W,sy=Y0+r()*H*.55,sz=.8+r()*1.8;ctx.globalAlpha=.4+.5*Math.abs(Math.sin(t*1.5+i));ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(sx,sy,sz,0,TAU);ctx.fill()}ctx.globalAlpha=1}
+   const orb=(x,y,rr,rgb,fill)=>{glow(x,y,rr*3.4,rgb,.35);ctx.fillStyle=fill;ctx.beginPath();ctx.arc(x,y,rr,0,TAU);ctx.fill()};
+   if(kind==='temple_dawn'||kind==='forest_dusk'||kind==='village_dusk')orb(-30,Y0+H*.4,52,'255,190,120','#ffe6b0');
+   else if(kind==='sea_night'||kind==='hills_night'||kind==='palace_night'||kind==='kailash')orb(60,Y0+H*.22,34,'200,220,255','#f2f6ff');
+   if(kind==='cosmos'){orb(70,Y0+H*.3,70,'150,140,255','#6a5ac8');ctx.strokeStyle='rgba(200,190,255,.7)';ctx.lineWidth=5;ctx.beginPath();ctx.ellipse(70,Y0+H*.3,118,22,-.3,0,TAU);ctx.stroke();glow(-200,Y0+H*.5,300,'180,120,255',.25)}
+   if(kind==='heaven'){for(let i=0;i<7;i++){ctx.fillStyle='rgba(255,236,200,'+(.5-i*.05)+')';ctx.beginPath();ctx.moveTo(-40,Y0+H*.28);ctx.lineTo(X0+i*W/6-W*.1,Y0+H);ctx.lineTo(X0+(i+1)*W/6-W*.1,Y0+H);ctx.closePath();ctx.fill()}orb(-40,Y0+H*.28,40,'255,220,150','#fff2c8')}
+   const hill=(yb,amp,fr,ph,col)=>{ctx.fillStyle=col;ctx.beginPath();ctx.moveTo(X0,Y0+H);for(let x=0;x<=W;x+=12)ctx.lineTo(X0+x,yb-Math.sin(x*fr+ph)*amp-Math.sin(x*fr*2.3+ph*1.7)*amp*.4);ctx.lineTo(X0+W,Y0+H);ctx.closePath();ctx.fill()};
+   const tree=(x,y,s,col)=>{ctx.fillStyle=col;ctx.fillRect(x-3*s,y-26*s,6*s,26*s);[[0,-48,22],[-14,-38,15],[14,-38,15],[0,-34,18]].forEach(([dx,dy,rr])=>{ctx.beginPath();ctx.arc(x+dx*s,y+dy*s,rr*s,0,TAU);ctx.fill()})};
+   const pine=(x,y,s,col)=>{ctx.fillStyle=col;for(let k=0;k<4;k++){const yy=y-k*20*s,ww=(30-k*6)*s;ctx.beginPath();ctx.moveTo(x-ww,yy);ctx.lineTo(x,yy-30*s);ctx.lineTo(x+ww,yy);ctx.closePath();ctx.fill()}ctx.fillRect(x-3*s,y,6*s,10*s)};
+   const temple=(x,y,s,col)=>{ctx.fillStyle=col;ctx.fillRect(x-70*s,y-14*s,140*s,14*s);ctx.fillRect(x-56*s,y-30*s,112*s,16*s);ctx.fillRect(x-40*s,y-60*s,80*s,30*s);for(let k=0;k<6;k++){const ww=(34-k*5)*s,yy=y-60*s-k*18*s;ctx.beginPath();ctx.moveTo(x-ww,yy);ctx.lineTo(x+ww,yy);ctx.lineTo(x+(ww-3*s),yy-18*s);ctx.lineTo(x-(ww-3*s),yy-18*s);ctx.closePath();ctx.fill()}ctx.beginPath();ctx.arc(x,y-172*s,8*s,0,TAU);ctx.fill();ctx.fillRect(x-1.5*s,y-196*s,3*s,24*s);ctx.beginPath();ctx.moveTo(x+1.5*s,y-196*s);ctx.lineTo(x+26*s,y-188*s);ctx.lineTo(x+1.5*s,y-180*s);ctx.closePath();ctx.fill()};
+   const palace=(x,y,s,col)=>{ctx.fillStyle=col;ctx.fillRect(x-90*s,y-50*s,180*s,50*s);[-70,0,70].forEach(dx=>{ctx.fillRect(x+(dx-16)*s,y-110*s,32*s,60*s);ctx.beginPath();ctx.arc(x+dx*s,y-110*s,18*s,Math.PI,0);ctx.fill();ctx.fillRect(x+(dx-1.5)*s,y-146*s,3*s,22*s)});ctx.fillStyle='rgba(255,210,120,.9)';[-70,0,70].forEach(dx=>ctx.fillRect(x+(dx-4)*s,y-92*s,8*s,14*s));for(let k=-3;k<=3;k++)ctx.fillRect(x+(k*24-4)*s,y-30*s,8*s,14*s)};
+   const hut=(x,y,s,col)=>{ctx.fillStyle=col;ctx.fillRect(x-24*s,y-26*s,48*s,26*s);ctx.beginPath();ctx.moveTo(x-34*s,y-24*s);ctx.lineTo(x,y-58*s);ctx.lineTo(x+34*s,y-24*s);ctx.closePath();ctx.fill()};
+   hill(Y0+H*.62,20,.006,0,HL[0]);
+   if(kind==='kailash'||kind==='hills_night'){const pk=(pts,col)=>{ctx.fillStyle=col;ctx.beginPath();pts.forEach(([x,y],i)=>i?ctx.lineTo(x,Y0+H*y):ctx.moveTo(x,Y0+H*y));ctx.closePath();ctx.fill()};
+     const base=kind==='kailash'?'#cfd8f0':HL[0],shade=kind==='kailash'?'#8a98c0':HL[1];
+     pk([[-190,.68],[-130,.46],[-95,.52],[-50,.3],[-12,.18],[26,.34],[58,.28],[96,.5],[140,.42],[200,.68]],base);pk([[-12,.18],[26,.34],[58,.28],[96,.5],[140,.42],[200,.68],[20,.68],[-8,.42]],shade)}
+   if(kind==='temple_dawn')temple(150,Y0+H*.66,.9,HL[0]);if(kind==='palace_night'){palace(-20,Y0+H*.66,1.1,HL[0]);palace(190,Y0+H*.68,.7,HL[1])}
+   hill(Y0+H*.7,26,.005,2,HL[1]);
+   if(kind==='forest_dusk'||kind==='temple_dawn'||kind==='hills_night'){for(let x=-W/2+20;x<W/2;x+=56)(Math.floor(x/56)%2?pine:tree)(x+r()*20,Y0+H*.72,.7+r()*.3,HL[1])}
+   if(kind==='village_dusk'){[-150,-40,110,230].forEach((x,i)=>hut(x,Y0+H*.72,.9,HL[1]));for(let x=-250;x<260;x+=90)tree(x,Y0+H*.73,.6,HL[1])}
+   if(kind==='battle_fire'){glow(0,Y0+H*.7,520,'255,110,40',.4);for(let k=0;k<9;k++){const x=-W/2+60+k*140+r()*40,hh=40+r()*70;ctx.fillStyle=HL[1];ctx.fillRect(x,Y0+H*.7-hh,26,hh);ctx.beginPath();ctx.moveTo(x,Y0+H*.7-hh);ctx.lineTo(x+13,Y0+H*.7-hh-14);ctx.lineTo(x+26,Y0+H*.7-hh);ctx.fill()}for(let k=0;k<5;k++){const x=-W/2+120+k*250;ctx.strokeStyle=HL[2];ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(x,Y0+H*.8);ctx.lineTo(x,Y0+H*.45);ctx.stroke();ctx.fillStyle='#8a1a18';ctx.beginPath();ctx.moveTo(x,Y0+H*.46);ctx.lineTo(x+34,Y0+H*.5);ctx.lineTo(x,Y0+H*.54);ctx.fill()}}
+   if(kind==='sea_night'){for(let k=0;k<6;k++){ctx.strokeStyle='rgba(180,210,255,'+(.5-k*.07)+')';ctx.lineWidth=3;ctx.beginPath();for(let x=0;x<=W;x+=16)ctx.lineTo(X0+x,Y0+H*(.7+k*.045)+Math.sin(x*.03+t*1.3+k)*5);ctx.stroke()}ctx.fillStyle=HL[1];ctx.beginPath();ctx.ellipse(-180,Y0+H*.69,120,18,0,Math.PI,0);ctx.fill()}
+   else hill(Y0+H*.8,22,.004,4,HL[2]);
+   if(kind==='forest_dusk'||kind==='village_dusk'||kind==='temple_dawn'){for(let x=-W/2+10;x<W/2;x+=90)pine(x+r()*30,Y0+H*.86,1.1,HL[3])}
+   hill(Y0+H*.93,14,.007,1,HL[3])}},
  // reel 24: Shiva's trident (trishul): gold shaft with bands, silver three-pronged head, damaru and red cloth
  trishul:{s:0,f(w,t,F){const h=w*1.9,sw=Math.sin(t*2)*w*.02;glow(0,-h*.2,w*1.2,'255,200,120',.3);
    const G=(x0,y0,x1,y1,c)=>{const g=ctx.createLinearGradient(x0,y0,x1,y1);c.forEach((cc,i)=>g.addColorStop(i/(c.length-1),cc));return g};

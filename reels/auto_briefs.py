@@ -11,6 +11,8 @@ IND=['#0e0820','#2a1850','#5a2a58','#b05a48'];EMB=['#12060c','#3a1018','#7a2020'
 SK={'indigo':IND,'ember':EMB,'brown':BRN,'night':NITE,'teal':TEAL}
 RIDGE={'indigo':['#3a2a5a','#2e2048','#241838','#1a1028'],'ember':['#6a2a2a','#521e22','#3a1618','#2a0e10'],'brown':['#6a4a34','#523a28','#3a281c','#2a1c12'],'night':['#2a3a6a','#202e56','#18224a','#101830'],'teal':['#2a5a5a','#204a4a','#183a3a','#102a2a']}
 GRD='ep07_dark'
+KIND_BY_THEME={'forest':'forest_dusk','temple':'temple_dawn','sea':'sea_night','cosmos':'cosmos','lanka':'palace_night','palace':'palace_night','heaven':'heaven','battle':'battle_fire','village':'village_dusk','hills':'hills_night','ashram':'forest_dusk'}
+KIND_BY_BG={'palace':'palace_night','council':'palace_night','garden':'forest_dusk','forest':'forest_dusk','dusk':'village_dusk','storm':'battle_fire','night':'hills_night','cloudscape':'heaven','vaikuntha':'heaven','sea':'sea_night','cosmos':'cosmos','kailash':'kailash','plain':'battle_fire','ashram':'forest_dusk'}
 def layers(sc,theme='hills'):
     r=RIDGE[sc];sil=r[3];sil2=r[2];sk=SK[sc]
     snow=theme in('temple',)
@@ -152,6 +154,10 @@ def main(reel):
             for wx,wk,wp in cfg['war']:ch.append({"who":wk,"x":wx,"y":690,"s":.26,"_ground":True,"flip":1 if wx<640 else -1,"pose":wp,"emo":"anger","look":700})
             fxs=fxs[:1]+[pfx('ember_fire',None,452,672,95,'burning fire on the battlefield at the left',alpha=.8),pfx('ember_fire',None,830,672,95,'burning fire on the battlefield at the right',alpha=.8),pfx('smoke_plume',None,640,470,560,'war smoke over the battlefield',alpha=.3,behind=True)]
             fxs=[dict(f_,word=(f_.get('word') or first)) for f_ in fxs]
+        kind_=KIND_BY_BG.get(bgk) if bgk else None
+        kind_=kind_ or KIND_BY_THEME.get(theme,'hills_night')
+        pal_=scene if scene in SK else PAL.get(scene,'indigo')
+        fxs=[pfx('scene_kit',first,640,360,1280,'a full paper-cut landscape of the place where this happens',alpha=1,behind=True,kind=kind_,pal=pal_)]+[f_ for f_ in fxs if f_.get('k')!='scene_kit']
         cname,ca,cb,shs=CAMS[ci%len(CAMS)];ci+=1
         # continuous camera: each shot starts exactly where the previous one ended (one long take)
         Z=[1.06,1.0,1.08,1.02,1.09,1.03][ci%6];X=[14,-14,10,-10][ci%4];ca=cam_end;cb=(Z,X,-4 if Z>1.04 else 0);cam_end=cb
