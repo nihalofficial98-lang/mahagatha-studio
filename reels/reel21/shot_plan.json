@@ -33,7 +33,7 @@
     {
      "who": "hanuman",
      "x": 470,
-     "y": 634,
+     "y": 638,
      "s": 0.918,
      "flip": 1,
      "pose": "throw",
@@ -46,7 +46,7 @@
     {
      "who": "kumbhakarna",
      "x": 810,
-     "y": 652,
+     "y": 656,
      "s": 0.9774999999999999,
      "flip": -1,
      "pose": "stand",
@@ -89,9 +89,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     }
    },
@@ -307,10 +307,11 @@
      ]
     }
    ],
-   "note": "medium push_in: hanuman in a dark ember world while 'Hanuman threw mountains at Kumbhakarna.' is spoken.",
+   "note": "medium pan_left: hanuman in a dark ember world while 'Hanuman threw mountains at Kumbhakarna.' is spoken.",
    "vert": {
     "focus": "hanuman"
-   }
+   },
+   "dx": 0
   },
   {
    "id": "s02",
@@ -322,12 +323,28 @@
     "Kumbhakarna"
    ],
    "bg": {
-    "k": "plain"
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "figs": [
     {
      "who": "kumbhakarna",
-     "x": 440,
+     "x": 470,
      "y": 653,
      "s": 0.9774999999999999,
      "flip": 1,
@@ -339,7 +356,7 @@
     },
     {
      "who": "hanuman",
-     "x": 780,
+     "x": 810,
      "y": 635,
      "s": 0.918,
      "flip": -1,
@@ -378,15 +395,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -477,39 +494,106 @@
        "col": "#3a1618"
       },
       {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#2a0e10"
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
       },
       {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
        "s": 0.4,
-       "col": "#2a0e10"
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 525,
-       "s": 0.95,
+       "y": 522,
+       "s": 0.9,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 520,
-       "s": 0.85,
+       "y": 518,
+       "s": 0.8,
        "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#3a1618"
       }
      ]
     },
@@ -535,7 +619,7 @@
      ]
     }
    ],
-   "note": "close pull_out: kumbhakarna in a dark ember world while 'Kumbhakarna hit back with a spear, and Hanuman thr' is spoken.",
+   "note": "medium push_in: kumbhakarna in a dark ember world while 'Kumbhakarna hit back with a spear, and Hanuman thr' is spoken.",
    "vert": {
     "focus": "kumbhakarna"
    },
@@ -549,250 +633,6 @@
    },
    "cues": [],
    "bg": {
-    "k": "palace"
-   },
-   "figs": [
-    {
-     "who": "kumbhakarna",
-     "x": 670,
-     "y": 666,
-     "s": 1.15,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
-    }
-   ],
-   "fx": [],
-   "fxb": [],
-   "cam": {
-    "from": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
-     "r": 0
-    }
-   },
-   "grade": "ep07_dark",
-   "layers": [
-    {
-     "d": "far",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "note": "medium pan_left: kumbhakarna in a dark ember world while 'This happened in the war in Lanka.' is spoken.",
-   "vert": {
-    "focus": "kumbhakarna"
-   },
-   "dx": 0
-  },
-  {
-   "id": "s04",
-   "at": {
-    "t": 9.3,
-    "word": "Kumbhakarna"
-   },
-   "cues": [],
-   "bg": {
     "k": "vista",
     "sky": [
      "#12060c",
@@ -800,7 +640,7 @@
      "#7a2020",
      "#b04a28"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a2a2a",
@@ -814,14 +654,14 @@
    "figs": [
     {
      "who": "kumbhakarna",
-     "x": 630,
-     "y": 670,
+     "x": 640,
+     "y": 664,
      "s": 1.15,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -829,14 +669,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     }
@@ -1053,7 +893,281 @@
      ]
     }
    ],
-   "note": "wide tilt_up: kumbhakarna in a dark ember world while 'Kumbhakarna was a giant, and mountains did not sto' is spoken.",
+   "note": "medium crane_down: kumbhakarna in a dark ember world while 'This happened in the war in Lanka.' is spoken.",
+   "vert": {
+    "focus": "kumbhakarna"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s04",
+   "at": {
+    "t": 9.3,
+    "word": "Kumbhakarna"
+   },
+   "cues": [],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "kumbhakarna",
+     "x": 640,
+     "y": 664,
+     "s": 1.15,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "ep07_dark",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: kumbhakarna in a dark ember world while 'Kumbhakarna was a giant, and mountains did not sto' is spoken.",
    "vert": {
     "focus": "kumbhakarna"
    },
@@ -1074,8 +1188,8 @@
    "figs": [
     {
      "who": "kumbhakarna",
-     "x": 655,
-     "y": 666,
+     "x": 640,
+     "y": 665,
      "s": 1.15,
      "flip": 1,
      "pose": "lunge",
@@ -1112,14 +1226,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.03,
+     "x": -14,
      "y": 0,
      "r": 0
     }
@@ -1269,7 +1383,7 @@
      ]
     }
    ],
-   "note": "close pan_right: kumbhakarna in a dark ember world while 'He drove his spear into Hanuman's chest.' is spoken.",
+   "note": "medium crane_down: kumbhakarna in a dark ember world while 'He drove his spear into Hanuman's chest.' is spoken.",
    "vert": {
     "focus": "kumbhakarna"
    },
@@ -1283,23 +1397,7 @@
    },
    "cues": [],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "plain"
    },
    "figs": [
     {
@@ -1307,12 +1405,12 @@
      "x": 640,
      "y": 643,
      "s": 1.08,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "prop": "none",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -1320,15 +1418,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.08,
-     "x": 0,
-     "y": -4,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -1337,7 +1435,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -1346,7 +1444,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1356,7 +1454,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1366,7 +1464,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1376,7 +1474,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1386,7 +1484,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1394,14 +1492,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       }
      ]
     },
@@ -1416,109 +1514,42 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#241838"
+       "o": "wall",
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#2a0e10"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
+       "o": "wall",
+       "x": 790,
+       "y": 515,
        "s": 0.4,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#241838"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#1a1028"
+       "y": 525,
+       "s": 0.95,
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#1a1028"
+       "y": 520,
+       "s": 0.85,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#3a1618"
       }
      ]
     },
@@ -1544,7 +1575,7 @@
      ]
     }
    ],
-   "note": "wide pull_out: hanuman in a dark indigo world while 'The Ramayana says Hanuman was badly hurt,' is spoken.",
+   "note": "medium push_in: hanuman in a dark ember world while 'The Ramayana says Hanuman was badly hurt,' is spoken.",
    "vert": {
     "focus": "hanuman"
    },
@@ -1560,29 +1591,13 @@
     "blood"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
-    ],
-    "sx": 520,
-    "sy": 300,
-    "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "plain"
    },
    "figs": [
     {
      "who": "hanuman",
-     "x": 610,
-     "y": 641,
+     "x": 640,
+     "y": 642,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -1609,15 +1624,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     }
    },
@@ -1626,7 +1641,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -1635,7 +1650,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1645,7 +1660,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1655,7 +1670,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1665,7 +1680,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1675,7 +1690,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1683,14 +1698,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       }
      ]
     },
@@ -1705,109 +1720,42 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#241838"
+       "o": "wall",
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#2a0e10"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
+       "o": "wall",
+       "x": 790,
+       "y": 515,
        "s": 0.4,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#241838"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#1a1028"
+       "y": 525,
+       "s": 0.95,
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#1a1028"
+       "y": 520,
+       "s": 0.85,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#3a1618"
       }
      ]
     },
@@ -1833,7 +1781,7 @@
      ]
     }
    ],
-   "note": "close dolly_right: hanuman in a dark indigo world while 'with blood coming out of his mouth, but he did not' is spoken.",
+   "note": "medium crane_down: hanuman in a dark ember world while 'with blood coming out of his mouth, but he did not' is spoken.",
    "vert": {
     "focus": "hanuman"
    },
@@ -1854,8 +1802,8 @@
    "figs": [
     {
      "who": "kumbhakarna",
-     "x": 500,
-     "y": 652,
+     "x": 470,
+     "y": 653,
      "s": 0.9774999999999999,
      "flip": 1,
      "pose": "lunge",
@@ -1866,8 +1814,8 @@
     },
     {
      "who": "sugriva",
-     "x": 840,
-     "y": 588,
+     "x": 810,
+     "y": 589,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -1906,14 +1854,14 @@
    "cam": {
     "from": {
      "z": 1.0,
-     "x": 0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     }
    },
@@ -1922,7 +1870,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -1931,7 +1879,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1941,7 +1889,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1951,7 +1899,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1961,7 +1909,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1971,7 +1919,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1979,14 +1927,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       }
      ]
     },
@@ -2001,42 +1949,42 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "wall",
        "x": 500,
        "y": 515,
        "s": 0.45,
-       "col": "#1a1028"
+       "col": "#2a0e10"
       },
       {
        "o": "wall",
        "x": 790,
        "y": 515,
        "s": 0.4,
-       "col": "#1a1028"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 525,
        "s": 0.95,
-       "col": "#1a1028"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 520,
        "s": 0.85,
-       "col": "#1a1028"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 640,
        "y": 515,
        "s": 0.5,
-       "col": "#241838"
+       "col": "#3a1618"
       }
      ]
     },
@@ -2062,7 +2010,7 @@
      ]
     }
    ],
-   "note": "medium push_in: kumbhakarna in a dark indigo world while 'Then Kumbhakarna threw his spear at Sugriva, the m' is spoken.",
+   "note": "medium push_in: kumbhakarna in a dark ember world while 'Then Kumbhakarna threw his spear at Sugriva, the m' is spoken.",
    "vert": {
     "focus": "kumbhakarna"
    },
@@ -2078,18 +2026,18 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -2097,8 +2045,8 @@
    "figs": [
     {
      "who": "hanuman",
-     "x": 630,
-     "y": 642,
+     "x": 640,
+     "y": 643,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -2113,14 +2061,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     }
@@ -2130,7 +2078,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -2139,7 +2087,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -2149,7 +2097,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -2159,7 +2107,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -2169,7 +2117,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -2179,7 +2127,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -2187,14 +2135,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       }
      ]
     },
@@ -2209,7 +2157,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2217,7 +2165,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2225,7 +2173,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2233,7 +2181,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2241,7 +2189,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2249,7 +2197,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2257,7 +2205,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2265,7 +2213,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2273,7 +2221,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2281,7 +2229,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2289,7 +2237,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2297,21 +2245,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#1a1028"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#1a1028"
+       "col": "#2a0e10"
       }
      ]
     },
@@ -2337,7 +2285,7 @@
      ]
     }
    ],
-   "note": "close pull_out: hanuman in a dark indigo world while 'Hanuman jumped in front of it, caught it, and brok' is spoken.",
+   "note": "medium crane_down: hanuman in a dark ember world while 'Hanuman jumped in front of it, caught it, and brok' is spoken.",
    "vert": {
     "focus": "hanuman"
    },
@@ -2353,18 +2301,18 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
     ],
-    "sx": 700,
+    "sx": 640,
     "sy": 300,
     "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -2372,8 +2320,8 @@
    "figs": [
     {
      "who": "kumbhakarna",
-     "x": 485,
-     "y": 655,
+     "x": 470,
+     "y": 653,
      "s": 0.9774999999999999,
      "flip": 1,
      "pose": "stand",
@@ -2384,8 +2332,8 @@
     },
     {
      "who": "sugriva",
-     "x": 825,
-     "y": 591,
+     "x": 810,
+     "y": 589,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -2400,15 +2348,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -2417,7 +2365,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -2426,7 +2374,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -2436,7 +2384,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -2446,7 +2394,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -2456,7 +2404,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -2466,7 +2414,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -2474,14 +2422,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       }
      ]
     },
@@ -2496,7 +2444,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2504,7 +2452,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2512,7 +2460,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2520,7 +2468,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2528,7 +2476,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2536,7 +2484,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2544,7 +2492,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2552,7 +2500,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2560,7 +2508,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2568,7 +2516,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2576,7 +2524,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2584,21 +2532,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#1a1028"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#1a1028"
+       "col": "#2a0e10"
       }
      ]
     },
@@ -2624,7 +2572,7 @@
      ]
     }
    ],
-   "note": "medium pan_left: kumbhakarna in a dark indigo world while 'Later, Kumbhakarna caught Sugriva.' is spoken.",
+   "note": "medium push_in: kumbhakarna in a dark ember world while 'Later, Kumbhakarna caught Sugriva.' is spoken.",
    "vert": {
     "focus": "kumbhakarna"
    },
@@ -2640,18 +2588,18 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -2660,7 +2608,7 @@
     {
      "who": "hanuman",
      "x": 470,
-     "y": 642,
+     "y": 636,
      "s": 0.918,
      "flip": 1,
      "pose": "stand",
@@ -2673,7 +2621,7 @@
     {
      "who": "kumbhakarna",
      "x": 810,
-     "y": 659,
+     "y": 654,
      "s": 0.9774999999999999,
      "flip": -1,
      "pose": "stand",
@@ -2687,14 +2635,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     }
@@ -2704,7 +2652,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -2713,7 +2661,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -2723,7 +2671,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -2733,7 +2681,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -2743,7 +2691,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -2753,7 +2701,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -2761,14 +2709,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       }
      ]
     },
@@ -2783,7 +2731,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2791,7 +2739,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2799,7 +2747,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2807,7 +2755,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2815,7 +2763,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2823,7 +2771,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2831,7 +2779,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2839,7 +2787,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2847,7 +2795,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2855,7 +2803,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2863,7 +2811,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -2871,21 +2819,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#1a1028"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#1a1028"
+       "col": "#2a0e10"
       }
      ]
     },
@@ -2911,7 +2859,7 @@
      ]
     }
    ],
-   "note": "wide tilt_up: hanuman in a dark indigo world while 'Hanuman thought of growing as big as a mountain an' is spoken.",
+   "note": "medium crane_down: hanuman in a dark ember world while 'Hanuman thought of growing as big as a mountain an' is spoken.",
    "vert": {
     "focus": "hanuman"
    },
@@ -2927,18 +2875,18 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -2946,15 +2894,15 @@
    "figs": [
     {
      "who": "sugriva",
-     "x": 610,
-     "y": 590,
+     "x": 640,
+     "y": 588,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "prop": "none",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -2962,15 +2910,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.06,
+     "x": 14,
+     "y": -4,
      "r": 0
     }
    },
@@ -2979,7 +2927,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -2988,7 +2936,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -2998,7 +2946,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -3008,7 +2956,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#3a2a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -3018,7 +2966,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -3028,7 +2976,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#2e2048",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -3036,14 +2984,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#7a2020"
       }
      ]
     },
@@ -3058,7 +3006,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3066,7 +3014,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3074,7 +3022,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3082,7 +3030,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3090,7 +3038,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3098,7 +3046,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3106,7 +3054,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3114,7 +3062,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3122,7 +3070,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3130,7 +3078,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3138,7 +3086,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3146,21 +3094,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#241838"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#1a1028"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#1a1028"
+       "col": "#2a0e10"
       }
      ]
     },
@@ -3186,7 +3134,7 @@
      ]
     }
    ],
-   "note": "close pan_right: sugriva in a dark indigo world while 'but he trusted Sugriva to free himself, and Sugriv' is spoken.",
+   "note": "medium push_in: sugriva in a dark ember world while 'but he trusted Sugriva to free himself, and Sugriv' is spoken.",
    "vert": {
     "focus": "sugriva"
    },
@@ -3205,7 +3153,7 @@
    "figs": [
     {
      "who": "kumbhakarna",
-     "x": 500,
+     "x": 470,
      "y": 654,
      "s": 0.9774999999999999,
      "flip": 1,
@@ -3217,7 +3165,7 @@
     },
     {
      "who": "rama",
-     "x": 840,
+     "x": 810,
      "y": 590,
      "s": 0.765,
      "flip": -1,
@@ -3232,14 +3180,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.08,
-     "x": 0,
+     "z": 1.06,
+     "x": 14,
      "y": -4,
      "r": 0
     },
     "to": {
      "z": 1.0,
-     "x": 0,
+     "x": -14,
      "y": 0,
      "r": 0
     }
@@ -3389,7 +3337,7 @@
      ]
     }
    ],
-   "note": "wide pull_out: kumbhakarna in a dark indigo world while 'Kumbhakarna kept fighting until he met Rama.' is spoken.",
+   "note": "medium crane_down: kumbhakarna in a dark indigo world while 'Kumbhakarna kept fighting until he met Rama.' is spoken.",
    "vert": {
     "focus": "kumbhakarna"
    },
@@ -3410,14 +3358,14 @@
    "figs": [
     {
      "who": "rama",
-     "x": 630,
-     "y": 587,
+     "x": 640,
+     "y": 588,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "fall",
      "emo": "shock",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -3455,9 +3403,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -3606,7 +3554,7 @@
      ]
     }
    ],
-   "note": "close dolly_right: rama in a dark indigo world while 'Rama cut off his arms, then his legs, and then his' is spoken.",
+   "note": "medium push_in: rama in a dark indigo world while 'Rama cut off his arms, then his legs, and then his' is spoken.",
    "vert": {
     "focus": "rama"
    },
@@ -3627,8 +3575,8 @@
    "figs": [
     {
      "who": "hanuman",
-     "x": 655,
-     "y": 641,
+     "x": 640,
+     "y": 643,
      "s": 1.08,
      "flip": 1,
      "pose": "lunge",
@@ -3655,15 +3603,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     }
    },
@@ -3812,7 +3760,7 @@
      ]
     }
    ],
-   "note": "medium push_in: hanuman in a dark indigo world while 'Hanuman threw up blood in that battle, but he neve' is spoken.",
+   "note": "medium crane_down: hanuman in a dark indigo world while 'Hanuman threw up blood in that battle, but he neve' is spoken.",
    "vert": {
     "focus": "hanuman"
    },
@@ -3826,23 +3774,7 @@
    },
    "cues": [],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "plain"
    },
    "figs": [
     {
@@ -3874,15 +3806,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     }
    },
@@ -3973,106 +3905,39 @@
        "col": "#241838"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#241838"
+       "o": "wall",
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#1a1028"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
+       "o": "wall",
+       "x": 790,
+       "y": 515,
        "s": 0.4,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#241838"
+       "col": "#1a1028"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "y": 525,
+       "s": 0.95,
        "col": "#1a1028"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 518,
-       "s": 0.8,
+       "y": 520,
+       "s": 0.85,
        "col": "#1a1028"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#241838"
       }
      ]
     },
@@ -4098,7 +3963,7 @@
      ]
     }
    ],
-   "note": "close pull_out: rama in a dark indigo world while 'In the end, it took Rama to stop Kumbhakarna.' is spoken.",
+   "note": "medium push_in: rama in a dark indigo world while 'In the end, it took Rama to stop Kumbhakarna.' is spoken.",
    "vert": {
     "focus": "rama"
    },

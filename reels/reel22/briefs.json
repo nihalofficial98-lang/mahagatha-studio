@@ -16,7 +16,7 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pan_left",
     "from": {
      "z": 1.0,
      "x": 0,
@@ -24,9 +24,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -287,7 +287,7 @@
     {
      "who": "vishnu",
      "x": 640,
-     "y": 587,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -296,7 +296,7 @@
     }
    ],
    "effects": [],
-   "transition_in": "fade"
+   "transition_in": "cut"
   },
   {
    "id": "s02",
@@ -310,19 +310,19 @@
    "meaning": "It even tells the name of his father. (shown as a dark story frame)",
    "why": "vishnu in a dark brown world while 'It even tells the name of his father.' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "push_in",
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -435,7 +435,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a281c"
       },
       {
@@ -451,7 +451,7 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a281c"
       },
       {
@@ -467,7 +467,7 @@
        "x": 630,
        "y": 508,
        "s": 0.4,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a281c"
       },
       {
@@ -483,7 +483,7 @@
        "x": 720,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a281c"
       },
       {
@@ -499,7 +499,7 @@
        "x": 810,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a281c"
       },
       {
@@ -511,18 +511,25 @@
        "col": "#3a281c"
       },
       {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "o": "hut",
+       "x": 462,
+       "y": 526,
+       "s": 0.6,
        "col": "#2a1c12"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
+       "o": "hut",
+       "x": 826,
+       "y": 524,
+       "s": 0.55,
        "col": "#2a1c12"
+      },
+      {
+       "o": "road",
+       "x": 640,
+       "y": 560,
+       "s": 1.0,
+       "col": "#3a281c"
       }
      ]
     },
@@ -557,7 +564,7 @@
      "#5e3a24",
      "#9a6a3c"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a4a34",
@@ -575,10 +582,10 @@
    "characters": [
     {
      "who": "vishnu",
-     "x": 610,
+     "x": 640,
      "y": 588,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700
@@ -601,16 +608,16 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "crane_down",
     "from": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     },
@@ -853,7 +860,7 @@
      "#5e3a24",
      "#9a6a3c"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a4a34",
@@ -871,8 +878,8 @@
    "characters": [
     {
      "who": "kalki",
-     "x": 670,
-     "y": 590,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -895,19 +902,19 @@
    "meaning": "His father is a Brahmin named Vishnuyasha. (shown as a dark story frame)",
    "why": "rishi1 in a dark brown world while 'His father is a Brahmin named Vishnuyasha.' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "tilt_up",
+    "move": "push_in",
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -1020,7 +1027,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a281c"
       },
       {
@@ -1036,7 +1043,7 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a281c"
       },
       {
@@ -1052,7 +1059,7 @@
        "x": 630,
        "y": 508,
        "s": 0.4,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a281c"
       },
       {
@@ -1068,7 +1075,7 @@
        "x": 720,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a281c"
       },
       {
@@ -1084,7 +1091,7 @@
        "x": 810,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a281c"
       },
       {
@@ -1096,18 +1103,25 @@
        "col": "#3a281c"
       },
       {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "o": "hut",
+       "x": 462,
+       "y": 526,
+       "s": 0.6,
        "col": "#2a1c12"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
+       "o": "hut",
+       "x": 826,
+       "y": 524,
+       "s": 0.55,
        "col": "#2a1c12"
+      },
+      {
+       "o": "road",
+       "x": 640,
+       "y": 560,
+       "s": 1.0,
+       "col": "#3a281c"
       }
      ]
     },
@@ -1142,7 +1156,7 @@
      "#5e3a24",
      "#9a6a3c"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a4a34",
@@ -1160,10 +1174,10 @@
    "characters": [
     {
      "who": "rishi1",
-     "x": 630,
-     "y": 594,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "point",
      "emo": "calm",
      "look": 700
@@ -1184,18 +1198,18 @@
    "meaning": "The child will be Kalki. (shown as a dark story frame)",
    "why": "kalki in a dark brown world while 'The child will be Kalki.' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pan_right",
+    "move": "crane_down",
     "from": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.03,
+     "x": -14,
      "y": 0,
      "r": 0
     },
@@ -1431,7 +1445,7 @@
      "#5e3a24",
      "#9a6a3c"
     ],
-    "sx": 700,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a4a34",
@@ -1449,8 +1463,8 @@
    "characters": [
     {
      "who": "kalki",
-     "x": 655,
-     "y": 590,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -1471,21 +1485,21 @@
    "duration": 4.16,
    "narration": "The same book tells us what the Kali Yuga, our age, will be like.",
    "meaning": "The same book tells us what the Kali Yuga, our age, will be like. (shown as a dark story frame)",
-   "why": "kalki in a dark ember world while 'The same book tells us what the Kali Yuga, our age' is spoken.",
+   "why": "kalki in a dark brown world while 'The same book tells us what the Kali Yuga, our age' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 0,
-     "y": -4,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -1497,6 +1511,873 @@
    },
    "vertical": {
     "focus": "kalki"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#9a6a3c",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5e3a24"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5e3a24"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a1c12"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "kalki",
+     "x": 640,
+     "y": 588,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s07",
+   "beat": 1,
+   "start": {
+    "t": 18.34,
+    "word": "People"
+   },
+   "duration": 3.56,
+   "narration": "People will be respected for their money, not for their goodness.",
+   "meaning": "People will be respected for their money, not for their goodness. (shown as a dark story frame)",
+   "why": "villager in a dark brown world while 'People will be respected for their money, not for ' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "villager",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "villager"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#9a6a3c",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5e3a24"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5e3a24"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a1c12"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "villager",
+     "x": 640,
+     "y": 588,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s08",
+   "beat": 1,
+   "start": {
+    "t": 21.9,
+    "word": "People"
+   },
+   "duration": 2.76,
+   "narration": "People will do religion only to show others.",
+   "meaning": "People will do religion only to show others. (shown as a dark story frame)",
+   "why": "villager in a dark brown world while 'People will do religion only to show others.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "villager",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "villager"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#9a6a3c",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5e3a24"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5e3a24"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a1c12"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "villager",
+     "x": 640,
+     "y": 588,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s09",
+   "beat": 1,
+   "start": {
+    "t": 24.66,
+    "word": "Families"
+   },
+   "duration": 2.74,
+   "narration": "Families will stay together only for gain.",
+   "meaning": "Families will stay together only for gain. (shown as a dark story frame)",
+   "why": "villager in a dark ember world while 'Families will stay together only for gain.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "villager",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "villager"
    },
    "layers": [
     {
@@ -1598,7 +2479,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -1614,7 +2495,7 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -1630,7 +2511,7 @@
        "x": 630,
        "y": 508,
        "s": 0.4,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -1646,7 +2527,7 @@
        "x": 720,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -1662,7 +2543,7 @@
        "x": 810,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -1674,18 +2555,25 @@
        "col": "#3a1618"
       },
       {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "o": "hut",
+       "x": 462,
+       "y": 526,
+       "s": 0.6,
        "col": "#2a0e10"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
+       "o": "hut",
+       "x": 826,
+       "y": 524,
+       "s": 0.55,
        "col": "#2a0e10"
+      },
+      {
+       "o": "road",
+       "x": 640,
+       "y": 560,
+       "s": 1.0,
+       "col": "#3a1618"
       }
      ]
     },
@@ -1737,897 +2625,9 @@
    },
    "characters": [
     {
-     "who": "kalki",
+     "who": "villager",
      "x": 640,
      "y": 589,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s07",
-   "beat": 1,
-   "start": {
-    "t": 18.34,
-    "word": "People"
-   },
-   "duration": 3.56,
-   "narration": "People will be respected for their money, not for their goodness.",
-   "meaning": "People will be respected for their money, not for their goodness. (shown as a dark story frame)",
-   "why": "villager in a dark ember world while 'People will be respected for their money, not for ' is spoken.",
-   "camera": {
-    "shot": "close",
-    "lens": "normal",
-    "move": "dolly_right",
-    "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "villager",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "villager"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "hut",
-       "x": 462,
-       "y": 526,
-       "s": 0.6,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "hut",
-       "x": 826,
-       "y": 524,
-       "s": 0.55,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "road",
-       "x": 640,
-       "y": 560,
-       "s": 1.0,
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 520,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "villager",
-     "x": 610,
-     "y": 587,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s08",
-   "beat": 1,
-   "start": {
-    "t": 21.9,
-    "word": "People"
-   },
-   "duration": 2.76,
-   "narration": "People will do religion only to show others.",
-   "meaning": "People will do religion only to show others. (shown as a dark story frame)",
-   "why": "villager in a dark ember world while 'People will do religion only to show others.' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "push_in",
-    "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "villager",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "villager"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "hut",
-       "x": 462,
-       "y": 526,
-       "s": 0.6,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "hut",
-       "x": 826,
-       "y": 524,
-       "s": 0.55,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "road",
-       "x": 640,
-       "y": 560,
-       "s": 1.0,
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 760,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "villager",
-     "x": 670,
-     "y": 587,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s09",
-   "beat": 1,
-   "start": {
-    "t": 24.66,
-    "word": "Families"
-   },
-   "duration": 2.74,
-   "narration": "Families will stay together only for gain.",
-   "meaning": "Families will stay together only for gain. (shown as a dark story frame)",
-   "why": "villager in a dark ember world while 'Families will stay together only for gain.' is spoken.",
-   "camera": {
-    "shot": "close",
-    "lens": "normal",
-    "move": "pull_out",
-    "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "villager",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "villager"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "hut",
-       "x": 462,
-       "y": 526,
-       "s": 0.6,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "hut",
-       "x": 826,
-       "y": 524,
-       "s": 0.55,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "road",
-       "x": 640,
-       "y": 560,
-       "s": 1.0,
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 600,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "villager",
-     "x": 630,
-     "y": 588,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -2652,16 +2652,312 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "villager",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "villager"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "hut",
+       "x": 462,
+       "y": 526,
+       "s": 0.6,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "hut",
+       "x": 826,
+       "y": 524,
+       "s": 0.55,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "road",
+       "x": 640,
+       "y": 560,
+       "s": 1.0,
+       "col": "#3a1618"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "villager",
+     "x": 640,
+     "y": 589,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s11",
+   "beat": 1,
+   "start": {
+    "t": 31.72,
+    "word": "Which"
+   },
+   "duration": 1.98,
+   "narration": "Which of these is not true today?",
+   "meaning": "Which of these is not true today? (shown as a dark story frame)",
+   "why": "villager in a dark ember world while 'Which of these is not true today?' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     },
@@ -2904,7 +3200,7 @@
      "#7a2020",
      "#b04a28"
     ],
-    "sx": 700,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a2a2a",
@@ -2922,10 +3218,10 @@
    "characters": [
     {
      "who": "villager",
-     "x": 655,
-     "y": 590,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700
@@ -2935,30 +3231,30 @@
    "transition_in": "cut"
   },
   {
-   "id": "s11",
+   "id": "s12",
    "beat": 1,
    "start": {
-    "t": 31.72,
-    "word": "Which"
+    "t": 33.7,
+    "word": "But"
    },
-   "duration": 1.98,
-   "narration": "Which of these is not true today?",
-   "meaning": "Which of these is not true today? (shown as a dark story frame)",
-   "why": "villager in a dark ember world while 'Which of these is not true today?' is spoken.",
+   "duration": 2.86,
+   "narration": "But the Purana also says how it will end.",
+   "meaning": "But the Purana also says how it will end. (shown as a dark story frame)",
+   "why": "villager in a dark ember world while 'But the Purana also says how it will end.' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "tilt_up",
+    "move": "push_in",
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.03,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
      "z": 1.06,
-     "x": 0,
-     "y": 0,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -3071,7 +3367,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -3087,7 +3383,7 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -3103,7 +3399,7 @@
        "x": 630,
        "y": 508,
        "s": 0.4,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -3119,7 +3415,7 @@
        "x": 720,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -3135,7 +3431,7 @@
        "x": 810,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -3147,18 +3443,25 @@
        "col": "#3a1618"
       },
       {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "o": "hut",
+       "x": 462,
+       "y": 526,
+       "s": 0.6,
        "col": "#2a0e10"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
+       "o": "hut",
+       "x": 826,
+       "y": 524,
+       "s": 0.55,
        "col": "#2a0e10"
+      },
+      {
+       "o": "road",
+       "x": 640,
+       "y": 560,
+       "s": 1.0,
+       "col": "#3a1618"
       }
      ]
     },
@@ -3212,298 +3515,9 @@
     {
      "who": "villager",
      "x": 640,
-     "y": 594,
+     "y": 588,
      "s": 0.9,
      "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s12",
-   "beat": 1,
-   "start": {
-    "t": 33.7,
-    "word": "But"
-   },
-   "duration": 2.86,
-   "narration": "But the Purana also says how it will end.",
-   "meaning": "But the Purana also says how it will end. (shown as a dark story frame)",
-   "why": "villager in a dark ember world while 'But the Purana also says how it will end.' is spoken.",
-   "camera": {
-    "shot": "close",
-    "lens": "normal",
-    "move": "pan_right",
-    "from": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "villager",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "villager"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 520,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "villager",
-     "x": 610,
-     "y": 590,
-     "s": 0.9,
-     "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "look": 700
@@ -3524,18 +3538,18 @@
    "meaning": "When evil crosses every limit, Vishnu will be born as Kalki with divine powers. (shown as a dark story frame)",
    "why": "vishnu in a dark night world while 'When evil crosses every limit, Vishnu will be born' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "crane_down",
     "from": {
-     "z": 1.08,
-     "x": 0,
+     "z": 1.06,
+     "x": 14,
      "y": -4,
      "r": 0
     },
     "to": {
      "z": 1.0,
-     "x": 0,
+     "x": -14,
      "y": 0,
      "r": 0
     },
@@ -3771,7 +3785,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -3789,7 +3803,7 @@
    "characters": [
     {
      "who": "vishnu",
-     "x": 500,
+     "x": 470,
      "y": 590,
      "s": 0.765,
      "flip": 1,
@@ -3799,7 +3813,7 @@
     },
     {
      "who": "kalki",
-     "x": 840,
+     "x": 810,
      "y": 590,
      "s": 0.765,
      "flip": -1,
@@ -3846,9 +3860,9 @@
    "meaning": "People's minds will become clear and pure, like waking up after a long night. (shown as a dark story frame)",
    "why": "vishnu in a dark night world while 'People's minds will become clear and pure, like wa' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "dolly_right",
+    "move": "push_in",
     "from": {
      "z": 1.0,
      "x": -14,
@@ -3856,9 +3870,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -3971,7 +3985,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "palm",
+       "kind": "pine",
        "col": "#18224a"
       },
       {
@@ -3987,7 +4001,7 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "palm",
+       "kind": "pine",
        "col": "#18224a"
       },
       {
@@ -4003,7 +4017,7 @@
        "x": 630,
        "y": 508,
        "s": 0.4,
-       "kind": "palm",
+       "kind": "pine",
        "col": "#18224a"
       },
       {
@@ -4019,7 +4033,7 @@
        "x": 720,
        "y": 508,
        "s": 0.35,
-       "kind": "palm",
+       "kind": "pine",
        "col": "#18224a"
       },
       {
@@ -4035,7 +4049,7 @@
        "x": 810,
        "y": 508,
        "s": 0.3,
-       "kind": "palm",
+       "kind": "pine",
        "col": "#18224a"
       },
       {
@@ -4047,25 +4061,18 @@
        "col": "#18224a"
       },
       {
-       "o": "hut",
-       "x": 462,
-       "y": 526,
-       "s": 0.6,
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
        "col": "#101830"
       },
       {
-       "o": "hut",
-       "x": 826,
-       "y": 524,
-       "s": 0.55,
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
        "col": "#101830"
-      },
-      {
-       "o": "road",
-       "x": 640,
-       "y": 560,
-       "s": 1.0,
-       "col": "#18224a"
       }
      ]
     },
@@ -4100,7 +4107,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -4118,10 +4125,10 @@
    "characters": [
     {
      "who": "vishnu",
-     "x": 630,
-     "y": 587,
+     "x": 640,
+     "y": 588,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700
@@ -4156,17 +4163,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "crane_down",
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -4401,7 +4408,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 700,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -4419,8 +4426,8 @@
    "characters": [
     {
      "who": "vishnu",
-     "x": 655,
-     "y": 587,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -4441,232 +4448,21 @@
    "duration": 5.82,
    "narration": "In earlier ages, people needed years of meditation, big fire rituals, or long worship.",
    "meaning": "In earlier ages, people needed years of meditation, big fire rituals, or long worship. (shown as a dark story ",
-   "why": "villager in a dark ember world while 'In earlier ages, people needed years of meditation' is spoken.",
-   "camera": {
-    "shot": "close",
-    "lens": "normal",
-    "move": "pull_out",
-    "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "villager",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "villager"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": true
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": true
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 455,
-       "y": 545,
-       "s": 0.7,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "pillar",
-       "x": 830,
-       "y": 545,
-       "s": 0.7,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 560,
-       "y": 525,
-       "s": 0.7,
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 730,
-       "y": 525,
-       "s": 0.6,
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "kailash"
-   },
-   "mood": {
-    "emotion": "devotion",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "villager",
-     "x": 640,
-     "y": 493,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "sitpray",
-     "emo": "devotion",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "ember_fire",
-     "word": "fire",
-     "x": 640,
-     "y": 560,
-     "w": 300,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire as the story says 'fire'"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s17",
-   "beat": 1,
-   "start": {
-    "t": 55.06,
-    "word": "In"
-   },
-   "duration": 3.46,
-   "narration": "In the Kali Yuga, just saying God's name is enough.",
-   "meaning": "In the Kali Yuga, just saying God's name is enough. (shown as a dark story frame)",
-   "why": "villager in a dark brown world while 'In the Kali Yuga, just saying God's name is enough' is spoken.",
+   "why": "villager in a dark night world while 'In earlier ages, people needed years of meditation' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -4678,584 +4474,6 @@
    },
    "vertical": {
     "focus": "villager"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#9a6a3c",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a4a34",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a4a34",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#5e3a24"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#5e3a24"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a1c12"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#100a08",
-     "#2e1c14",
-     "#5e3a24",
-     "#9a6a3c"
-    ],
-    "sx": 520,
-    "sy": 300,
-    "ridge": [
-     "#6a4a34",
-     "#523a28",
-     "#3a281c",
-     "#2a1c12"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "villager",
-     "x": 610,
-     "y": 590,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s18",
-   "beat": 1,
-   "start": {
-    "t": 58.52,
-    "word": "So"
-   },
-   "duration": 1.58,
-   "narration": "So when will Kalki come?",
-   "meaning": "So when will Kalki come? (shown as a dark story frame)",
-   "why": "kalki in a dark brown world while 'So when will Kalki come?' is spoken.",
-   "camera": {
-    "shot": "wide",
-    "lens": "normal",
-    "move": "tilt_up",
-    "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
-     "r": 0
-    },
-    "to": {
-     "z": 1.06,
-     "x": 0,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "kalki",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "kalki"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#9a6a3c",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a4a34",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a4a34",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#5e3a24"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#5e3a24"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a1c12"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#100a08",
-     "#2e1c14",
-     "#5e3a24",
-     "#9a6a3c"
-    ],
-    "sx": 760,
-    "sy": 300,
-    "ridge": [
-     "#6a4a34",
-     "#523a28",
-     "#3a281c",
-     "#2a1c12"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "kalki",
-     "x": 670,
-     "y": 594,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s19",
-   "beat": 1,
-   "start": {
-    "t": 60.1,
-    "word": "When"
-   },
-   "duration": 5.76,
-   "narration": "When evil crosses every limit in the village of Shambhala, in the house of Vishnuyasha.",
-   "meaning": "When evil crosses every limit in the village of Shambhala, in the house of Vishnuyasha. (shown as a dark story",
-   "why": "kalki in a dark night world while 'When evil crosses every limit in the village of Sh' is spoken.",
-   "camera": {
-    "shot": "close",
-    "lens": "normal",
-    "move": "pan_right",
-    "from": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "kalki",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "kalki"
    },
    "layers": [
     {
@@ -5357,7 +4575,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "palm",
+       "kind": "pine",
        "col": "#18224a"
       },
       {
@@ -5373,7 +4591,7 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "palm",
+       "kind": "pine",
        "col": "#18224a"
       },
       {
@@ -5389,7 +4607,7 @@
        "x": 630,
        "y": 508,
        "s": 0.4,
-       "kind": "palm",
+       "kind": "pine",
        "col": "#18224a"
       },
       {
@@ -5405,7 +4623,7 @@
        "x": 720,
        "y": 508,
        "s": 0.35,
-       "kind": "palm",
+       "kind": "pine",
        "col": "#18224a"
       },
       {
@@ -5421,7 +4639,7 @@
        "x": 810,
        "y": 508,
        "s": 0.3,
-       "kind": "palm",
+       "kind": "pine",
        "col": "#18224a"
       },
       {
@@ -5433,25 +4651,18 @@
        "col": "#18224a"
       },
       {
-       "o": "hut",
-       "x": 462,
-       "y": 526,
-       "s": 0.6,
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
        "col": "#101830"
       },
       {
-       "o": "hut",
-       "x": 826,
-       "y": 524,
-       "s": 0.55,
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
        "col": "#101830"
-      },
-      {
-       "o": "road",
-       "x": 640,
-       "y": 560,
-       "s": 1.0,
-       "col": "#18224a"
       }
      ]
     },
@@ -5486,7 +4697,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -5498,26 +4709,317 @@
     "dust": 10
    },
    "mood": {
+    "emotion": "devotion",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "villager",
+     "x": 640,
+     "y": 494,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "devotion",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "fire",
+     "x": 640,
+     "y": 560,
+     "w": 300,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire as the story says 'fire'"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s17",
+   "beat": 1,
+   "start": {
+    "t": 55.06,
+    "word": "In"
+   },
+   "duration": 3.46,
+   "narration": "In the Kali Yuga, just saying God's name is enough.",
+   "meaning": "In the Kali Yuga, just saying God's name is enough. (shown as a dark story frame)",
+   "why": "villager in a dark brown world while 'In the Kali Yuga, just saying God's name is enough' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "villager",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "villager"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#9a6a3c",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5e3a24"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5e3a24"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a1c12"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
     "emotion": "calm",
     "grade": "ep07_dark"
    },
    "characters": [
     {
-     "who": "kalki",
-     "x": 460,
-     "y": 591,
-     "s": 0.765,
+     "who": "villager",
+     "x": 640,
+     "y": 589,
+     "s": 0.9,
      "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    },
-    {
-     "who": "rishi1",
-     "x": 800,
-     "y": 591,
-     "s": 0.765,
-     "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "look": 700
@@ -5527,29 +5029,318 @@
    "transition_in": "cut"
   },
   {
-   "id": "s20",
+   "id": "s18",
    "beat": 1,
    "start": {
-    "t": 65.86,
-    "word": "Until"
+    "t": 58.52,
+    "word": "So"
    },
-   "duration": 2.66,
-   "narration": "Until then, God's name is enough.",
-   "meaning": "Until then, God's name is enough. (shown as a dark story frame)",
-   "why": "kalki in a dark brown world while 'Until then, God's name is enough.' is spoken.",
+   "duration": 1.58,
+   "narration": "So when will Kalki come?",
+   "meaning": "So when will Kalki come? (shown as a dark story frame)",
+   "why": "kalki in a dark brown world while 'So when will Kalki come?' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 0,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "kalki",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "kalki"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#9a6a3c",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5e3a24"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5e3a24"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a1c12"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "kalki",
+     "x": 640,
+     "y": 588,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s19",
+   "beat": 1,
+   "start": {
+    "t": 60.1,
+    "word": "When"
+   },
+   "duration": 5.76,
+   "narration": "When evil crosses every limit in the village of Shambhala, in the house of Vishnuyasha.",
+   "meaning": "When evil crosses every limit in the village of Shambhala, in the house of Vishnuyasha. (shown as a dark story",
+   "why": "kalki in a dark brown world while 'When evil crosses every limit in the village of Sh' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.06,
+     "x": 10,
      "y": -4,
      "r": 0
     },
     "to": {
      "z": 1.0,
-     "x": 0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
@@ -5785,7 +5576,7 @@
      "#5e3a24",
      "#9a6a3c"
     ],
-    "sx": 700,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a4a34",
@@ -5803,9 +5594,19 @@
    "characters": [
     {
      "who": "kalki",
-     "x": 655,
-     "y": 589,
-     "s": 0.9,
+     "x": 470,
+     "y": 590,
+     "s": 0.765,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "rishi1",
+     "x": 810,
+     "y": 590,
+     "s": 0.765,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
@@ -5814,6 +5615,296 @@
    ],
    "effects": [],
    "transition_in": "cut"
+  },
+  {
+   "id": "s20",
+   "beat": 1,
+   "start": {
+    "t": 65.86,
+    "word": "Until"
+   },
+   "duration": 2.66,
+   "narration": "Until then, God's name is enough.",
+   "meaning": "Until then, God's name is enough. (shown as a dark story frame)",
+   "why": "kalki in a dark brown world while 'Until then, God's name is enough.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "kalki",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "kalki"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#9a6a3c",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5e3a24"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5e3a24"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a1c12"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "kalki",
+     "x": 640,
+     "y": 588,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
   }
- ]
+ ],
+ "flow": true
 }

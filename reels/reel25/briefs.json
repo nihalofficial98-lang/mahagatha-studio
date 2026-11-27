@@ -16,7 +16,7 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pan_left",
     "from": {
      "z": 1.0,
      "x": 0,
@@ -24,9 +24,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -300,7 +300,7 @@
      "meaning": "a world drawn as a small globe"
     }
    ],
-   "transition_in": "fade"
+   "transition_in": "cut"
   },
   {
    "id": "s02",
@@ -314,19 +314,19 @@
    "meaning": "and it is as small as a mustard seed. (shown as a dark story frame)",
    "why": "The scene in a dark night world while 'and it is as small as a mustard seed.' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "push_in",
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -559,7 +559,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -616,16 +616,16 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "crane_down",
     "from": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     },
@@ -859,7 +859,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -914,19 +914,19 @@
    "meaning": "The Bhagavata Purana tells how the worlds were made. (shown as a dark story frame)",
    "why": "naga in a dark night world while 'The Bhagavata Purana tells how the worlds were mad' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "tilt_up",
+    "move": "push_in",
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -1154,7 +1154,23 @@
     }
    ],
    "background": {
-    "k": "cosmos"
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "mood": {
     "emotion": "calm",
@@ -1163,10 +1179,10 @@
    "characters": [
     {
      "who": "naga",
-     "x": 630,
-     "y": 594,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700
@@ -1187,18 +1203,18 @@
    "meaning": "At the start, Vishnu was sleeping on the ocean. (shown as a dark story frame)",
    "why": "vishnu_rest in a dark sea world while 'At the start, Vishnu was sleeping on the ocean.' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pan_right",
+    "move": "crane_down",
     "from": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.03,
+     "x": -14,
      "y": 0,
      "r": 0
     },
@@ -1328,8 +1344,8 @@
    "characters": [
     {
      "who": "vishnu_rest",
-     "x": 655,
-     "y": 647,
+     "x": 640,
+     "y": 645,
      "s": 0.95,
      "flip": 1,
      "pose": "lie",
@@ -1364,19 +1380,19 @@
    "meaning": "A golden lotus came out of his belly button, and Brahma appeared on it. (shown as a dark story frame)",
    "why": "vishnu_rest in a dark sea world while 'A golden lotus came out of his belly button, and B' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 0,
-     "y": -4,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -1614,7 +1630,7 @@
     {
      "who": "vishnu_rest",
      "x": 640,
-     "y": 635,
+     "y": 634,
      "s": 0.8,
      "flip": 1,
      "pose": "lie",
@@ -1659,19 +1675,19 @@
    "meaning": "Inside the stem of the lotus, Brahma made 14 worlds, one below the other. (shown as a dark story frame)",
    "why": "brahma in a dark night world while 'Inside the stem of the lotus, Brahma made 14 world' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "dolly_right",
+    "move": "crane_down",
     "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -1906,7 +1922,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -1924,8 +1940,8 @@
    "characters": [
     {
      "who": "brahma",
-     "x": 610,
-     "y": 396,
+     "x": 640,
+     "y": 397,
      "s": 0.62,
      "flip": 1,
      "pose": "stand",
@@ -2108,14 +2124,14 @@
     "move": "push_in",
     "from": {
      "z": 1.0,
-     "x": 0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -2350,7 +2366,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -2368,8 +2384,8 @@
    "characters": [
     {
      "who": "brahma",
-     "x": 670,
-     "y": 397,
+     "x": 640,
+     "y": 398,
      "s": 0.62,
      "flip": 1,
      "pose": "stand",
@@ -2378,8 +2394,8 @@
     },
     {
      "who": "naga",
-     "x": 670,
-     "y": 594,
+     "x": 640,
+     "y": 596,
      "s": 0.6,
      "flip": 1,
      "pose": "stand",
@@ -2557,18 +2573,18 @@
    "meaning": "But when the worlds filled with life, they became too heavy. (shown as a dark story frame)",
    "why": "The scene in a dark ember world while 'But when the worlds filled with life, they became ' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "crane_down",
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     },
@@ -2802,7 +2818,7 @@
      "#7a2020",
      "#b04a28"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a2a2a",
@@ -3001,17 +3017,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -3136,7 +3152,7 @@
      "#7a2020",
      "#b04a28"
     ],
-    "sx": 700,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a2a2a",
@@ -3333,18 +3349,18 @@
    "meaning": "Then Sheshnag appeared with a thousand hoods far below the lowest world. (shown as a dark story frame)",
    "why": "The scene in a dark night world while 'Then Sheshnag appeared with a thousand hoods far b' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "tilt_up",
+    "move": "crane_down",
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     },
@@ -3633,19 +3649,19 @@
    "meaning": "He lifted all 14 worlds on a single hood, (shown as a dark story frame)",
    "why": "The scene in a dark night world while 'He lifted all 14 worlds on a single hood,' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pan_right",
+    "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.06,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -3878,7 +3894,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -3988,18 +4004,18 @@
    "meaning": "and Vishnu, as a giant tortoise, holds Sheshnag up. (shown as a dark story frame)",
    "why": "vishnu in a dark sea world while 'and Vishnu, as a giant tortoise, holds Sheshnag up' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "crane_down",
     "from": {
-     "z": 1.08,
-     "x": 0,
+     "z": 1.06,
+     "x": 14,
      "y": -4,
      "r": 0
     },
     "to": {
      "z": 1.0,
-     "x": 0,
+     "x": -14,
      "y": 0,
      "r": 0
     },
@@ -4237,8 +4253,8 @@
    "characters": [
     {
      "who": "vishnu",
-     "x": 670,
-     "y": 600,
+     "x": 640,
+     "y": 601,
      "s": 0.62,
      "flip": 1,
      "pose": "stand",
@@ -4274,9 +4290,9 @@
    "meaning": "All 14 worlds sit on his hood like one mustard seed. (shown as a dark story frame)",
    "why": "The scene in a dark night world while 'All 14 worlds sit on his hood like one mustard see' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "dolly_right",
+    "move": "push_in",
     "from": {
      "z": 1.0,
      "x": -14,
@@ -4284,9 +4300,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -4519,7 +4535,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -4576,17 +4592,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "crane_down",
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -4819,7 +4835,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 700,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -4874,19 +4890,19 @@
    "meaning": "So the whole universe sits on one hood of Sheshnag, (shown as a dark story frame)",
    "why": "The scene in a dark night world while 'So the whole universe sits on one hood of Sheshnag' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "push_in",
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -5176,16 +5192,16 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "crane_down",
     "from": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.03,
+     "x": -14,
      "y": 0,
      "r": 0
     },
@@ -5419,7 +5435,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -5474,19 +5490,19 @@
    "meaning": "That is why we cannot see him. (shown as a dark story frame)",
    "why": "The scene in a dark night world while 'That is why we cannot see him.' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "tilt_up",
+    "move": "push_in",
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
      "z": 1.06,
-     "x": 0,
-     "y": 0,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -5719,7 +5735,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -5762,5 +5778,6 @@
    ],
    "transition_in": "cut"
   }
- ]
+ ],
+ "flow": true
 }

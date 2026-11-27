@@ -16,7 +16,7 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pan_left",
     "from": {
      "z": 1.0,
      "x": 0,
@@ -24,9 +24,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -197,7 +197,7 @@
     {
      "who": "brahma",
      "x": 640,
-     "y": 492,
+     "y": 495,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -218,7 +218,7 @@
      "meaning": "red energy pulse as the story says 'weapon'"
     }
    ],
-   "transition_in": "fade"
+   "transition_in": "cut"
   },
   {
    "id": "s02",
@@ -232,18 +232,224 @@
    "meaning": "The Brahmastra can stop whole armies, but three weapons are even stronger. (shown as a dark story frame)",
    "why": "brahma in a dark night world while 'The Brahmastra can stop whole armies, but three we' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "push_in",
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "wall",
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#101830"
+      },
+      {
+       "o": "wall",
+       "x": 790,
+       "y": 515,
+       "s": 0.4,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 525,
+       "s": 0.95,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 520,
+       "s": 0.85,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#18224a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "plain"
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 494,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s03",
+   "beat": 1,
+   "start": {
+    "t": 8.4,
+    "word": "First"
+   },
+   "duration": 2.2,
+   "narration": "First, the Pashupatastra.",
+   "meaning": "First, the Pashupatastra. (shown as a dark story frame)",
+   "why": "brahma in a dark night world while 'First, the Pashupatastra.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     },
@@ -414,297 +620,8 @@
    "characters": [
     {
      "who": "brahma",
-     "x": 610,
-     "y": 493,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s03",
-   "beat": 1,
-   "start": {
-    "t": 8.4,
-    "word": "First"
-   },
-   "duration": 2.2,
-   "narration": "First, the Pashupatastra.",
-   "meaning": "First, the Pashupatastra. (shown as a dark story frame)",
-   "why": "brahma in a dark ember world while 'First, the Pashupatastra.' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "pan_left",
-    "from": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "brahma",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "brahma"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 760,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "brahma",
-     "x": 670,
-     "y": 496,
+     "x": 640,
+     "y": 494,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -725,21 +642,21 @@
    "duration": 2.46,
    "narration": "Shiva gave it to Arjun and warned him,",
    "meaning": "Shiva gave it to Arjun and warned him, (shown as a dark story frame)",
-   "why": "shiva in a dark ember world while 'Shiva gave it to Arjun and warned him,' is spoken.",
+   "why": "shiva in a dark night world while 'Shiva gave it to Arjun and warned him,' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "tilt_up",
+    "move": "push_in",
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -757,7 +674,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -766,7 +683,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -776,7 +693,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -786,7 +703,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -796,7 +713,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -806,7 +723,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -814,14 +731,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -837,109 +754,42 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
+       "o": "wall",
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#101830"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
+       "o": "wall",
+       "x": 790,
+       "y": 515,
        "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a0e10"
+       "y": 525,
+       "s": 0.95,
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
+       "y": 520,
+       "s": 0.85,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#18224a"
       }
      ]
     },
@@ -967,23 +817,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 600,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "plain"
    },
    "mood": {
     "emotion": "calm",
@@ -992,10 +826,10 @@
    "characters": [
     {
      "who": "shiva",
-     "x": 630,
-     "y": 594,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "point",
      "emo": "calm",
      "look": 700
@@ -1014,20 +848,20 @@
    "duration": 4.36,
    "narration": "if he used it on a weak enemy, it could burn the whole universe.",
    "meaning": "if he used it on a weak enemy, it could burn the whole universe. (shown as a dark story frame)",
-   "why": "shiva in a dark ember world while 'if he used it on a weak enemy, it could burn the w' is spoken.",
+   "why": "shiva in a dark night world while 'if he used it on a weak enemy, it could burn the w' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pan_right",
+    "move": "crane_down",
     "from": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.03,
+     "x": -14,
      "y": 0,
      "r": 0
     },
@@ -1046,7 +880,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -1055,7 +889,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1065,7 +899,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1075,7 +909,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1085,7 +919,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1095,7 +929,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1103,14 +937,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -1126,7 +960,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1134,7 +968,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1142,7 +976,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1150,7 +984,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1158,7 +992,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1166,7 +1000,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1174,7 +1008,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1182,7 +1016,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1190,7 +1024,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1198,7 +1032,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1206,7 +1040,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1214,21 +1048,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#101830"
       }
      ]
     },
@@ -1265,8 +1099,8 @@
    "characters": [
     {
      "who": "shiva",
-     "x": 655,
-     "y": 590,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -1287,21 +1121,21 @@
    "duration": 1.98,
    "narration": "Arjun did not even need a bow.",
    "meaning": "Arjun did not even need a bow. (shown as a dark story frame)",
-   "why": "shiva in a dark ember world while 'Arjun did not even need a bow.' is spoken.",
+   "why": "shiva in a dark night world while 'Arjun did not even need a bow.' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 0,
-     "y": -4,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -1319,7 +1153,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -1328,7 +1162,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1338,7 +1172,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1348,7 +1182,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1358,7 +1192,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1368,7 +1202,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1376,14 +1210,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -1399,7 +1233,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1407,7 +1241,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1415,7 +1249,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1423,7 +1257,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1431,7 +1265,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1439,7 +1273,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1447,7 +1281,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1455,7 +1289,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1463,7 +1297,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1471,7 +1305,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1479,7 +1313,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1487,21 +1321,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#101830"
       }
      ]
     },
@@ -1529,23 +1363,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "mood": {
     "emotion": "calm",
@@ -1555,9 +1373,9 @@
     {
      "who": "shiva",
      "x": 640,
-     "y": 589,
+     "y": 588,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700
@@ -1576,21 +1394,21 @@
    "duration": 4.54,
    "narration": "He could send it with a word, a look, or just a thought and call it back.",
    "meaning": "He could send it with a word, a look, or just a thought and call it back. (shown as a dark story frame)",
-   "why": "shiva in a dark ember world while 'He could send it with a word, a look, or just a th' is spoken.",
+   "why": "shiva in a dark night world while 'He could send it with a word, a look, or just a th' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "dolly_right",
+    "move": "crane_down",
     "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -1608,7 +1426,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -1617,7 +1435,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1627,7 +1445,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1637,7 +1455,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1647,7 +1465,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1657,7 +1475,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1665,14 +1483,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -1688,7 +1506,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1696,7 +1514,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1704,7 +1522,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1712,7 +1530,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1720,7 +1538,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1728,7 +1546,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1736,7 +1554,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1744,7 +1562,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1752,7 +1570,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1760,7 +1578,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1768,7 +1586,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1776,21 +1594,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#101830"
       }
      ]
     },
@@ -1818,23 +1636,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 520,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "mood": {
     "emotion": "calm",
@@ -1843,8 +1645,8 @@
    "characters": [
     {
      "who": "shiva",
-     "x": 610,
-     "y": 587,
+     "x": 640,
+     "y": 588,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -1865,21 +1667,21 @@
    "duration": 3.54,
    "narration": "The Mahabharat says it is greater than the Brahma weapon.",
    "meaning": "The Mahabharat says it is greater than the Brahma weapon. (shown as a dark story frame)",
-   "why": "shiva in a dark ember world while 'The Mahabharat says it is greater than the Brahma ' is spoken.",
+   "why": "shiva in a dark night world while 'The Mahabharat says it is greater than the Brahma ' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
     "move": "push_in",
     "from": {
      "z": 1.0,
-     "x": 0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -1897,7 +1699,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -1906,7 +1708,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1916,7 +1718,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1926,7 +1728,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1936,7 +1738,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1946,7 +1748,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1954,14 +1756,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -1977,42 +1779,109 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#2a0e10"
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
       },
       {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
        "s": 0.4,
-       "col": "#2a0e10"
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a0e10"
+       "y": 522,
+       "s": 0.9,
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#3a1618"
+       "y": 518,
+       "s": 0.8,
+       "col": "#101830"
       }
      ]
     },
@@ -2040,7 +1909,7 @@
     }
    ],
    "background": {
-    "k": "plain"
+    "k": "cosmos"
    },
    "mood": {
     "emotion": "calm",
@@ -2049,10 +1918,10 @@
    "characters": [
     {
      "who": "shiva",
-     "x": 670,
-     "y": 587,
+     "x": 640,
+     "y": 588,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700
@@ -2083,20 +1952,20 @@
    "duration": 2.84,
    "narration": "Second, Vishnu's Sudarshan Chakra.",
    "meaning": "Second, Vishnu's Sudarshan Chakra. (shown as a dark story frame)",
-   "why": "shiva in a dark ember world while 'Second, Vishnu's Sudarshan Chakra.' is spoken.",
+   "why": "shiva in a dark night world while 'Second, Vishnu's Sudarshan Chakra.' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "crane_down",
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     },
@@ -2115,7 +1984,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -2124,7 +1993,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -2134,7 +2003,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -2144,7 +2013,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -2154,7 +2023,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -2164,7 +2033,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -2172,14 +2041,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -2195,7 +2064,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2203,7 +2072,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2211,7 +2080,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2219,7 +2088,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2227,7 +2096,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2235,7 +2104,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2243,7 +2112,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2251,7 +2120,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2259,7 +2128,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2267,7 +2136,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2275,7 +2144,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -2283,21 +2152,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#101830"
       }
      ]
     },
@@ -2327,18 +2196,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -2350,8 +2219,8 @@
    "characters": [
     {
      "who": "shiva",
-     "x": 630,
-     "y": 588,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "open",
@@ -2395,21 +2264,1200 @@
    "duration": 4.46,
    "narration": "Ashwatthama had the Brahmashira weapon, but he still wanted Krishna's chakra.",
    "meaning": "Ashwatthama had the Brahmashira weapon, but he still wanted Krishna's chakra. (shown as a dark story frame)",
-   "why": "ashwatthama in a dark ember world while 'Ashwatthama had the Brahmashira weapon, but he sti' is spoken.",
+   "why": "ashwatthama in a dark night world while 'Ashwatthama had the Brahmashira weapon, but he sti' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "ashwatthama",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "ashwatthama"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "ashwatthama",
+     "x": 640,
+     "y": 589,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "open",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "sudarshan_chakra",
+     "word": "Ashwatthama",
+     "x": 640,
+     "y": 330,
+     "w": 320,
+     "alpha": 1.0,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "sudarshan chakra showing what the narration says"
+    },
+    {
+     "k": "divine_rays",
+     "word": "Ashwatthama",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.6,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays showing what the narration says"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s11",
+   "beat": 1,
+   "start": {
+    "t": 34.78,
+    "word": "Krishna"
+   },
+   "duration": 1.42,
+   "narration": "Krishna let him try.",
+   "meaning": "Krishna let him try. (shown as a dark story frame)",
+   "why": "krishna in a dark night world while 'Krishna let him try.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.03,
+     "x": -10,
      "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "krishna",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "krishna"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "krishna",
+     "x": 640,
+     "y": 589,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s12",
+   "beat": 1,
+   "start": {
+    "t": 36.2,
+    "word": "Ashwatthama"
+   },
+   "duration": 4.14,
+   "narration": "Ashwatthama used all his strength and could not even lift it.",
+   "meaning": "Ashwatthama used all his strength and could not even lift it. (shown as a dark story frame)",
+   "why": "ashwatthama in a dark night world while 'Ashwatthama used all his strength and could not ev' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.03,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "ashwatthama",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "ashwatthama"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "ashwatthama",
+     "x": 640,
+     "y": 588,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s13",
+   "beat": 1,
+   "start": {
+    "t": 40.34,
+    "word": "Third"
+   },
+   "duration": 2.36,
+   "narration": "Third, Shiva's trident.",
+   "meaning": "Third, Shiva's trident. (shown as a dark story frame)",
+   "why": "ashwatthama in a dark night world while 'Third, Shiva's trident.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.06,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "ashwatthama",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "ashwatthama"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "ashwatthama",
+     "x": 640,
+     "y": 588,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s14",
+   "beat": 1,
+   "start": {
+    "t": 42.7,
+    "word": "The"
+   },
+   "duration": 3.88,
+   "narration": "The Mahabharat says it is as powerful as the Pashupatastra.",
+   "meaning": "The Mahabharat says it is as powerful as the Pashupatastra. (shown as a dark story frame)",
+   "why": "ashwatthama in a dark ember world while 'The Mahabharat says it is as powerful as the Pashu' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -2510,39 +3558,106 @@
        "col": "#3a1618"
       },
       {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#2a0e10"
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
       },
       {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
        "s": 0.4,
-       "col": "#2a0e10"
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 525,
-       "s": 0.95,
+       "y": 522,
+       "s": 0.9,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 520,
-       "s": 0.85,
+       "y": 518,
+       "s": 0.8,
        "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#3a1618"
       }
      ]
     },
@@ -2570,74 +3685,67 @@
     }
    ],
    "background": {
-    "k": "plain"
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "mood": {
-    "emotion": "calm",
+    "emotion": "pride",
     "grade": "ep07_dark"
    },
    "characters": [
     {
      "who": "ashwatthama",
-     "x": 655,
-     "y": 590,
+     "x": 640,
+     "y": 588,
      "s": 0.9,
-     "flip": -1,
-     "pose": "open",
-     "emo": "calm",
+     "flip": 1,
+     "pose": "stand",
+     "emo": "pride",
      "look": 700
     }
    ],
-   "effects": [
-    {
-     "k": "sudarshan_chakra",
-     "word": "Ashwatthama",
-     "x": 640,
-     "y": 330,
-     "w": 320,
-     "alpha": 1.0,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "sudarshan chakra showing what the narration says"
-    },
-    {
-     "k": "divine_rays",
-     "word": "Ashwatthama",
-     "x": 640,
-     "y": 330,
-     "w": 520,
-     "alpha": 0.6,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "divine rays showing what the narration says"
-    }
-   ],
+   "effects": [],
    "transition_in": "cut"
   },
   {
-   "id": "s11",
+   "id": "s15",
    "beat": 1,
    "start": {
-    "t": 34.78,
-    "word": "Krishna"
+    "t": 46.58,
+    "word": "In"
    },
-   "duration": 1.42,
-   "narration": "Krishna let him try.",
-   "meaning": "Krishna let him try. (shown as a dark story frame)",
-   "why": "krishna in a dark ember world while 'Krishna let him try.' is spoken.",
+   "duration": 6.24,
+   "narration": "In Shiva's hands, it could split the earth, dry up the oceans, and destroy the whole universe.",
+   "meaning": "In Shiva's hands, it could split the earth, dry up the oceans, and destroy the whole universe. (shown as a dar",
+   "why": "ashwatthama in a dark ember world while 'In Shiva's hands, it could split the earth, dry up' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "tilt_up",
+    "move": "crane_down",
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     },
@@ -2645,11 +3753,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "krishna",
+    "subject": "ashwatthama",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "krishna"
+    "focus": "ashwatthama"
    },
    "layers": [
     {
@@ -2890,1149 +3998,9 @@
    },
    "characters": [
     {
-     "who": "krishna",
+     "who": "ashwatthama",
      "x": 640,
-     "y": 594,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s12",
-   "beat": 1,
-   "start": {
-    "t": 36.2,
-    "word": "Ashwatthama"
-   },
-   "duration": 4.14,
-   "narration": "Ashwatthama used all his strength and could not even lift it.",
-   "meaning": "Ashwatthama used all his strength and could not even lift it. (shown as a dark story frame)",
-   "why": "ashwatthama in a dark ember world while 'Ashwatthama used all his strength and could not ev' is spoken.",
-   "camera": {
-    "shot": "close",
-    "lens": "normal",
-    "move": "pan_right",
-    "from": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "ashwatthama",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "ashwatthama"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 520,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "ashwatthama",
-     "x": 610,
-     "y": 590,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s13",
-   "beat": 1,
-   "start": {
-    "t": 40.34,
-    "word": "Third"
-   },
-   "duration": 2.36,
-   "narration": "Third, Shiva's trident.",
-   "meaning": "Third, Shiva's trident. (shown as a dark story frame)",
-   "why": "ashwatthama in a dark night world while 'Third, Shiva's trident.' is spoken.",
-   "camera": {
-    "shot": "wide",
-    "lens": "normal",
-    "move": "pull_out",
-    "from": {
-     "z": 1.08,
-     "x": 0,
-     "y": -4,
-     "r": 0
-    },
-    "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "ashwatthama",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "ashwatthama"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#5a70b0",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#24366a"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#24366a"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#101830"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#101830"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 760,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "ashwatthama",
-     "x": 670,
      "y": 589,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s14",
-   "beat": 1,
-   "start": {
-    "t": 42.7,
-    "word": "The"
-   },
-   "duration": 3.88,
-   "narration": "The Mahabharat says it is as powerful as the Pashupatastra.",
-   "meaning": "The Mahabharat says it is as powerful as the Pashupatastra. (shown as a dark story frame)",
-   "why": "ashwatthama in a dark ember world while 'The Mahabharat says it is as powerful as the Pashu' is spoken.",
-   "camera": {
-    "shot": "close",
-    "lens": "normal",
-    "move": "dolly_right",
-    "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "ashwatthama",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "ashwatthama"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 600,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "pride",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "ashwatthama",
-     "x": 630,
-     "y": 587,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "pride",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s15",
-   "beat": 1,
-   "start": {
-    "t": 46.58,
-    "word": "In"
-   },
-   "duration": 6.24,
-   "narration": "In Shiva's hands, it could split the earth, dry up the oceans, and destroy the whole universe.",
-   "meaning": "In Shiva's hands, it could split the earth, dry up the oceans, and destroy the whole universe. (shown as a dar",
-   "why": "ashwatthama in a dark ember world while 'In Shiva's hands, it could split the earth, dry up' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "push_in",
-    "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "ashwatthama",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "ashwatthama"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "cosmos"
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "ashwatthama",
-     "x": 655,
-     "y": 587,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -4055,18 +4023,307 @@
    "meaning": "So the Brahmastra, which can stop whole armies, (shown as a dark story frame)",
    "why": "brahma in a dark ember world while 'So the Brahmastra, which can stop whole armies,' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "push_in",
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 494,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s17",
+   "beat": 1,
+   "start": {
+    "t": 55.82,
+    "word": "comes"
+   },
+   "duration": 5.1,
+   "narration": "comes after Shiva's Pashupatastra, Vishnu's Sudarshan Chakra, and Shiva's trident.",
+   "meaning": "comes after Shiva's Pashupatastra, Vishnu's Sudarshan Chakra, and Shiva's trident. (shown as a dark story fram",
+   "why": "brahma in a dark ember world while 'comes after Shiva's Pashupatastra, Vishnu's Sudars' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.03,
+     "x": -14,
      "y": 0,
      "r": 0
     },
@@ -4168,218 +4425,12 @@
        "col": "#3a1618"
       },
       {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
-       "s": 0.4,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "plain"
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "brahma",
-     "x": 640,
-     "y": 493,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s17",
-   "beat": 1,
-   "start": {
-    "t": 55.82,
-    "word": "comes"
-   },
-   "duration": 5.1,
-   "narration": "comes after Shiva's Pashupatastra, Vishnu's Sudarshan Chakra, and Shiva's trident.",
-   "meaning": "comes after Shiva's Pashupatastra, Vishnu's Sudarshan Chakra, and Shiva's trident. (shown as a dark story fram",
-   "why": "brahma in a dark night world while 'comes after Shiva's Pashupatastra, Vishnu's Sudars' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "pan_left",
-    "from": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "brahma",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "brahma"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#5a70b0",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#24366a"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#24366a"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#18224a"
-      },
-      {
        "o": "tree",
        "x": 405,
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4387,7 +4438,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4395,7 +4446,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4403,7 +4454,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4411,7 +4462,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4419,7 +4470,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4427,7 +4478,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4435,7 +4486,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4443,7 +4494,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4451,7 +4502,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4459,21 +4510,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#101830"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#101830"
+       "col": "#2a0e10"
       }
      ]
     },
@@ -4503,18 +4554,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -4526,8 +4577,8 @@
    "characters": [
     {
      "who": "brahma",
-     "x": 610,
-     "y": 590,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "open",
@@ -4571,21 +4622,21 @@
    "duration": 2.01,
    "narration": "Which one do you think is the strongest?",
    "meaning": "Which one do you think is the strongest? (shown as a dark story frame)",
-   "why": "brahma in a dark night world while 'Which one do you think is the strongest?' is spoken.",
+   "why": "brahma in a dark ember world while 'Which one do you think is the strongest?' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "tilt_up",
+    "move": "push_in",
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
      "z": 1.06,
-     "x": 0,
-     "y": 0,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -4603,7 +4654,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -4612,7 +4663,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -4622,7 +4673,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -4632,7 +4683,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -4642,7 +4693,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -4652,7 +4703,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -4660,14 +4711,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#7a2020"
       }
      ]
     },
@@ -4683,7 +4734,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4691,7 +4742,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4699,7 +4750,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4707,7 +4758,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4715,7 +4766,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4723,7 +4774,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4731,7 +4782,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4739,7 +4790,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4747,7 +4798,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4755,7 +4806,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4763,7 +4814,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4771,21 +4822,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#101830"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#101830"
+       "col": "#2a0e10"
       }
      ]
     },
@@ -4815,18 +4866,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -4838,10 +4889,10 @@
    "characters": [
     {
      "who": "brahma",
-     "x": 670,
-     "y": 500,
+     "x": 640,
+     "y": 494,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "pride",
      "look": 700
@@ -4850,5 +4901,6 @@
    "effects": [],
    "transition_in": "cut"
   }
- ]
+ ],
+ "flow": true
 }

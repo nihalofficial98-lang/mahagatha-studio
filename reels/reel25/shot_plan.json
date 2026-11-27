@@ -64,9 +64,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     }
    },
@@ -282,7 +282,8 @@
      ]
     }
    ],
-   "note": "medium push_in: The scene in a dark night world while 'The whole universe sits on one hood of Sheshnag,' is spoken."
+   "note": "medium pan_left: The scene in a dark night world while 'The whole universe sits on one hood of Sheshnag,' is spoken.",
+   "dx": 0
   },
   {
    "id": "s02",
@@ -301,7 +302,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -341,15 +342,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -565,7 +566,7 @@
      ]
     }
    ],
-   "note": "close pull_out: The scene in a dark night world while 'and it is as small as a mustard seed.' is spoken.",
+   "note": "medium push_in: The scene in a dark night world while 'and it is as small as a mustard seed.' is spoken.",
    "dx": 0
   },
   {
@@ -586,7 +587,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -626,14 +627,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     }
@@ -850,7 +851,7 @@
      ]
     }
    ],
-   "note": "medium pan_left: The scene in a dark night world while 'So, where is he?' is spoken.",
+   "note": "medium crane_down: The scene in a dark night world while 'So, where is he?' is spoken.",
    "dx": 0
   },
   {
@@ -861,19 +862,35 @@
    },
    "cues": [],
    "bg": {
-    "k": "cosmos"
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "figs": [
     {
      "who": "naga",
-     "x": 630,
-     "y": 594,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -881,15 +898,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     }
    },
@@ -1105,7 +1122,7 @@
      ]
     }
    ],
-   "note": "wide tilt_up: naga in a dark night world while 'The Bhagavata Purana tells how the worlds were mad' is spoken.",
+   "note": "medium push_in: naga in a dark night world while 'The Bhagavata Purana tells how the worlds were mad' is spoken.",
    "vert": {
     "focus": "naga"
    },
@@ -1126,8 +1143,8 @@
    "figs": [
     {
      "who": "vishnu_rest",
-     "x": 655,
-     "y": 647,
+     "x": 640,
+     "y": 645,
      "s": 0.95,
      "flip": 1,
      "pose": "lie",
@@ -1153,14 +1170,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.03,
+     "x": -14,
      "y": 0,
      "r": 0
     }
@@ -1269,7 +1286,7 @@
      ]
     }
    ],
-   "note": "close pan_right: vishnu_rest in a dark sea world while 'At the start, Vishnu was sleeping on the ocean.' is spoken.",
+   "note": "medium crane_down: vishnu_rest in a dark sea world while 'At the start, Vishnu was sleeping on the ocean.' is spoken.",
    "vert": {
     "focus": "vishnu_rest"
    },
@@ -1291,7 +1308,7 @@
     {
      "who": "vishnu_rest",
      "x": 640,
-     "y": 635,
+     "y": 634,
      "s": 0.8,
      "flip": 1,
      "pose": "lie",
@@ -1329,15 +1346,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.08,
-     "x": 0,
-     "y": -4,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -1553,7 +1570,7 @@
      ]
     }
    ],
-   "note": "wide pull_out: vishnu_rest in a dark sea world while 'A golden lotus came out of his belly button, and B' is spoken.",
+   "note": "medium push_in: vishnu_rest in a dark sea world while 'A golden lotus came out of his belly button, and B' is spoken.",
    "vert": {
     "focus": "vishnu_rest"
    },
@@ -1576,7 +1593,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -1590,8 +1607,8 @@
    "figs": [
     {
      "who": "brahma",
-     "x": 610,
-     "y": 396,
+     "x": 640,
+     "y": 397,
      "s": 0.62,
      "flip": 1,
      "pose": "stand",
@@ -1760,15 +1777,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     }
    },
@@ -1984,7 +2001,7 @@
      ]
     }
    ],
-   "note": "close dolly_right: brahma in a dark night world while 'Inside the stem of the lotus, Brahma made 14 world' is spoken.",
+   "note": "medium crane_down: brahma in a dark night world while 'Inside the stem of the lotus, Brahma made 14 world' is spoken.",
    "vert": {
     "focus": "brahma"
    },
@@ -2007,7 +2024,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -2021,8 +2038,8 @@
    "figs": [
     {
      "who": "brahma",
-     "x": 670,
-     "y": 397,
+     "x": 640,
+     "y": 398,
      "s": 0.62,
      "flip": 1,
      "pose": "stand",
@@ -2033,8 +2050,8 @@
     },
     {
      "who": "naga",
-     "x": 670,
-     "y": 594,
+     "x": 640,
+     "y": 596,
      "s": 0.6,
      "flip": 1,
      "pose": "stand",
@@ -2204,14 +2221,14 @@
    "cam": {
     "from": {
      "z": 1.0,
-     "x": 0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     }
    },
@@ -2451,7 +2468,7 @@
      "#7a2020",
      "#b04a28"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a2a2a",
@@ -2633,14 +2650,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     }
@@ -2857,7 +2874,7 @@
      ]
     }
    ],
-   "note": "close pull_out: The scene in a dark ember world while 'But when the worlds filled with life, they became ' is spoken.",
+   "note": "medium crane_down: The scene in a dark ember world while 'But when the worlds filled with life, they became ' is spoken.",
    "dx": 0
   },
   {
@@ -2877,7 +2894,7 @@
      "#7a2020",
      "#b04a28"
     ],
-    "sx": 700,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a2a2a",
@@ -3060,15 +3077,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -3176,7 +3193,7 @@
      ]
     }
    ],
-   "note": "medium pan_left: The scene in a dark ember world while 'The stem began to bend, and everything started to ' is spoken.",
+   "note": "medium push_in: The scene in a dark ember world while 'The stem began to bend, and everything started to ' is spoken.",
    "dx": 0
   },
   {
@@ -3237,14 +3254,14 @@
    ],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     }
@@ -3461,7 +3478,7 @@
      ]
     }
    ],
-   "note": "wide tilt_up: The scene in a dark night world while 'Then Sheshnag appeared with a thousand hoods far b' is spoken.",
+   "note": "medium crane_down: The scene in a dark night world while 'Then Sheshnag appeared with a thousand hoods far b' is spoken.",
    "dx": 0
   },
   {
@@ -3482,7 +3499,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -3577,15 +3594,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.06,
+     "x": 14,
+     "y": -4,
      "r": 0
     }
    },
@@ -3801,7 +3818,7 @@
      ]
     }
    ],
-   "note": "close pan_right: The scene in a dark night world while 'He lifted all 14 worlds on a single hood,' is spoken.",
+   "note": "medium push_in: The scene in a dark night world while 'He lifted all 14 worlds on a single hood,' is spoken.",
    "dx": 0
   },
   {
@@ -3819,8 +3836,8 @@
    "figs": [
     {
      "who": "vishnu",
-     "x": 670,
-     "y": 600,
+     "x": 640,
+     "y": 601,
      "s": 0.62,
      "flip": 1,
      "pose": "stand",
@@ -3847,14 +3864,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.08,
-     "x": 0,
+     "z": 1.06,
+     "x": 14,
      "y": -4,
      "r": 0
     },
     "to": {
      "z": 1.0,
-     "x": 0,
+     "x": -14,
      "y": 0,
      "r": 0
     }
@@ -4071,7 +4088,7 @@
      ]
     }
    ],
-   "note": "wide pull_out: vishnu in a dark sea world while 'and Vishnu, as a giant tortoise, holds Sheshnag up' is spoken.",
+   "note": "medium crane_down: vishnu in a dark sea world while 'and Vishnu, as a giant tortoise, holds Sheshnag up' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -4094,7 +4111,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -4140,9 +4157,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -4358,7 +4375,7 @@
      ]
     }
    ],
-   "note": "close dolly_right: The scene in a dark night world while 'All 14 worlds sit on his hood like one mustard see' is spoken.",
+   "note": "medium push_in: The scene in a dark night world while 'All 14 worlds sit on his hood like one mustard see' is spoken.",
    "dx": 0
   },
   {
@@ -4378,7 +4395,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 700,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -4418,15 +4435,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     }
    },
@@ -4642,7 +4659,7 @@
      ]
     }
    ],
-   "note": "medium push_in: The scene in a dark night world while 'So our Earth is smaller than a speck of dust on it' is spoken.",
+   "note": "medium crane_down: The scene in a dark night world while 'So our Earth is smaller than a speck of dust on it' is spoken.",
    "dx": 0
   },
   {
@@ -4702,15 +4719,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     }
    },
@@ -4926,7 +4943,7 @@
      ]
     }
    ],
-   "note": "close pull_out: The scene in a dark night world while 'So the whole universe sits on one hood of Sheshnag' is spoken.",
+   "note": "medium push_in: The scene in a dark night world while 'So the whole universe sits on one hood of Sheshnag' is spoken.",
    "dx": 0
   },
   {
@@ -4946,7 +4963,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -4986,14 +5003,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.03,
+     "x": -14,
      "y": 0,
      "r": 0
     }
@@ -5210,7 +5227,7 @@
      ]
     }
    ],
-   "note": "medium pan_left: The scene in a dark night world while 'as small as a mustard seed, and we are even smalle' is spoken.",
+   "note": "medium crane_down: The scene in a dark night world while 'as small as a mustard seed, and we are even smalle' is spoken.",
    "dx": 0
   },
   {
@@ -5230,7 +5247,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -5270,15 +5287,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
      "z": 1.06,
-     "x": 0,
-     "y": 0,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -5494,7 +5511,7 @@
      ]
     }
    ],
-   "note": "wide tilt_up: The scene in a dark night world while 'That is why we cannot see him.' is spoken.",
+   "note": "medium push_in: The scene in a dark night world while 'That is why we cannot see him.' is spoken.",
    "dx": 0
   }
  ]

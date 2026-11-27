@@ -79,9 +79,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     }
    },
@@ -283,10 +283,11 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark night world while 'The gods cut off Vishnu's head.' is spoken.",
+   "note": "medium pan_left: vishnu in a dark night world while 'The gods cut off Vishnu's head.' is spoken.",
    "vert": {
     "focus": "vishnu"
-   }
+   },
+   "dx": 0
   },
   {
    "id": "s02",
@@ -305,7 +306,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -319,7 +320,7 @@
    "figs": [
     {
      "who": "deva_thin",
-     "x": 448,
+     "x": 478,
      "y": 570,
      "s": 0.7,
      "flip": 1,
@@ -331,8 +332,8 @@
     },
     {
      "who": "deva_thin2",
-     "x": 776,
-     "y": 563,
+     "x": 806,
+     "y": 564,
      "s": 0.68,
      "flip": -1,
      "pose": "stand",
@@ -358,15 +359,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -582,7 +583,7 @@
      ]
     }
    ],
-   "note": "close pull_out: deva_thin in a dark night world while 'They did it on purpose.' is spoken.",
+   "note": "medium push_in: deva_thin in a dark night world while 'They did it on purpose.' is spoken.",
    "vert": {
     "focus": "deva_thin"
    },
@@ -605,7 +606,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -619,8 +620,8 @@
    "figs": [
     {
      "who": "vishnu",
-     "x": 670,
-     "y": 503,
+     "x": 640,
+     "y": 501,
      "s": 0.7,
      "flip": 1,
      "pose": "sleep",
@@ -660,14 +661,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     }
@@ -884,7 +885,7 @@
      ]
     }
    ],
-   "note": "medium pan_left: vishnu in a dark night world while 'Every one of them had turned into a termite.' is spoken.",
+   "note": "medium crane_down: vishnu in a dark night world while 'Every one of them had turned into a termite.' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -905,7 +906,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -919,266 +920,8 @@
    "figs": [
     {
      "who": "vishnu",
-     "x": 630,
-     "y": 594,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": -0.8
-     }
-    }
-   ],
-   "fx": [],
-   "fxb": [],
-   "cam": {
-    "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
-     "r": 0
-    },
-    "to": {
-     "z": 1.06,
-     "x": 0,
-     "y": 0,
-     "r": 0
-    }
-   },
-   "grade": "ep07_dark",
-   "layers": [
-    {
-     "d": "far",
-     "fog": 0.6,
-     "haze": "#5a70b0",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#24366a"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#24366a"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#101830"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#101830"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "note": "wide tilt_up: vishnu in a dark night world while 'How did Vishnu lose his head?' is spoken.",
-   "vert": {
-    "focus": "vishnu"
-   },
-   "dx": 0
-  },
-  {
-   "id": "s05",
-   "at": {
-    "t": 9.7,
-    "word": "Vishnu"
-   },
-   "cues": [],
-   "bg": {
-    "k": "cosmos"
-   },
-   "figs": [
-    {
-     "who": "vishnu",
-     "x": 655,
-     "y": 590,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -1192,14 +935,288 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "ep07_dark",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.6,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: vishnu in a dark night world while 'How did Vishnu lose his head?' is spoken.",
+   "vert": {
+    "focus": "vishnu"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s05",
+   "at": {
+    "t": 9.7,
+    "word": "Vishnu"
+   },
+   "cues": [],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 589,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.03,
+     "x": -14,
      "y": 0,
      "r": 0
     }
@@ -1416,7 +1433,7 @@
      ]
     }
    ],
-   "note": "close pan_right: vishnu in a dark night world while 'Vishnu protects the world.' is spoken.",
+   "note": "medium crane_down: vishnu in a dark night world while 'Vishnu protects the world.' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -1430,19 +1447,35 @@
    },
    "cues": [],
    "bg": {
-    "k": "plain"
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "figs": [
     {
      "who": "asura1",
      "x": 640,
-     "y": 589,
+     "y": 588,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -1450,15 +1483,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.08,
-     "x": 0,
-     "y": -4,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -1467,7 +1500,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -1476,7 +1509,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1486,7 +1519,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1496,7 +1529,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1506,7 +1539,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1516,7 +1549,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1524,14 +1557,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -1546,42 +1579,109 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#2a0e10"
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
       },
       {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
        "s": 0.4,
-       "col": "#2a0e10"
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a0e10"
+       "y": 522,
+       "s": 0.9,
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#3a1618"
+       "y": 518,
+       "s": 0.8,
+       "col": "#101830"
       }
      ]
     },
@@ -1607,7 +1707,7 @@
      ]
     }
    ],
-   "note": "wide pull_out: asura1 in a dark ember world while 'He had fought one demon for 16,000 years and could' is spoken.",
+   "note": "medium push_in: asura1 in a dark night world while 'He had fought one demon for 16,000 years and could' is spoken.",
    "vert": {
     "focus": "asura1"
    },
@@ -1623,18 +1723,18 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -1642,8 +1742,8 @@
    "figs": [
     {
      "who": "asura1",
-     "x": 610,
-     "y": 587,
+     "x": 640,
+     "y": 588,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -1657,15 +1757,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     }
    },
@@ -1674,7 +1774,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -1683,7 +1783,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1693,7 +1793,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1703,7 +1803,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1713,7 +1813,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1723,7 +1823,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1731,14 +1831,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -1753,7 +1853,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1761,7 +1861,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1769,7 +1869,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1777,7 +1877,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1785,7 +1885,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1793,7 +1893,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1801,7 +1901,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1809,7 +1909,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1817,7 +1917,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1825,7 +1925,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1833,7 +1933,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -1841,21 +1941,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#101830"
       }
      ]
     },
@@ -1881,7 +1981,7 @@
      ]
     }
    ],
-   "note": "close dolly_right: asura1 in a dark ember world while 'His mace flew back and smashed his own chariot.' is spoken.",
+   "note": "medium crane_down: asura1 in a dark night world while 'His mace flew back and smashed his own chariot.' is spoken.",
    "vert": {
     "focus": "asura1"
    },
@@ -1900,14 +2000,14 @@
    "figs": [
     {
      "who": "asura1",
-     "x": 670,
-     "y": 587,
+     "x": 640,
+     "y": 588,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "point",
      "emo": "anger",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -1916,14 +2016,14 @@
    "cam": {
     "from": {
      "z": 1.0,
-     "x": 0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     }
    },
@@ -1932,7 +2032,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -1941,7 +2041,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1951,7 +2051,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1961,7 +2061,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -1971,7 +2071,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1981,7 +2081,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1989,14 +2089,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -2011,42 +2111,42 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "wall",
        "x": 500,
        "y": 515,
        "s": 0.45,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "wall",
        "x": 790,
        "y": 515,
        "s": 0.4,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 525,
        "s": 0.95,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 520,
        "s": 0.85,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 640,
        "y": 515,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#18224a"
       }
      ]
     },
@@ -2072,7 +2172,7 @@
      ]
     }
    ],
-   "note": "medium push_in: asura1 in a dark ember world while 'The demon told him that only someone who knew his ' is spoken.",
+   "note": "medium push_in: asura1 in a dark night world while 'The demon told him that only someone who knew his ' is spoken.",
    "vert": {
     "focus": "asura1"
    },
@@ -2095,7 +2195,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -2109,8 +2209,8 @@
    "figs": [
     {
      "who": "vishnu",
-     "x": 630,
-     "y": 537,
+     "x": 640,
+     "y": 538,
      "s": 0.82,
      "flip": 1,
      "pose": "sleep",
@@ -2137,14 +2237,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     }
@@ -2368,7 +2468,7 @@
      ]
     }
    ],
-   "note": "close pull_out: vishnu in a dark night world while 'Vishnu went home it tired and fell asleep with h' is spoken.",
+   "note": "medium crane_down: vishnu in a dark night world while 'Vishnu went home it tired and fell asleep with h' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -2382,13 +2482,29 @@
    },
    "cues": [],
    "bg": {
-    "k": "cosmos"
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "figs": [
     {
      "who": "deva_thin",
-     "x": 485,
-     "y": 591,
+     "x": 470,
+     "y": 589,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -2399,8 +2515,8 @@
     },
     {
      "who": "brahma",
-     "x": 825,
-     "y": 511,
+     "x": 810,
+     "y": 509,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -2414,15 +2530,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -2525,7 +2641,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -2541,7 +2657,7 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -2557,7 +2673,7 @@
        "x": 630,
        "y": 508,
        "s": 0.4,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -2573,7 +2689,7 @@
        "x": 720,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -2589,7 +2705,7 @@
        "x": 810,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -2601,18 +2717,25 @@
        "col": "#18224a"
       },
       {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "o": "hut",
+       "x": 462,
+       "y": 526,
+       "s": 0.6,
        "col": "#101830"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
+       "o": "hut",
+       "x": 826,
+       "y": 524,
+       "s": 0.55,
        "col": "#101830"
+      },
+      {
+       "o": "road",
+       "x": 640,
+       "y": 560,
+       "s": 1.0,
+       "col": "#18224a"
       }
      ]
     },
@@ -2638,7 +2761,7 @@
      ]
     }
    ],
-   "note": "medium pan_left: deva_thin in a dark night world while 'The gods, led by Brahma, who made the world,' is spoken.",
+   "note": "medium push_in: deva_thin in a dark night world while 'The gods, led by Brahma, who made the world,' is spoken.",
    "vert": {
     "focus": "deva_thin"
    },
@@ -2654,13 +2777,29 @@
     "fire"
    ],
    "bg": {
-    "k": "palace"
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "figs": [
     {
      "who": "vishnu",
      "x": 640,
-     "y": 594,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -2686,14 +2825,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 0,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     }
@@ -2768,41 +2907,6 @@
        "y": 250,
        "s": 0.9,
        "col": "#24366a"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#18224a"
       }
      ]
     },
@@ -2820,32 +2924,11 @@
        "col": "#18224a"
       },
       {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#101830"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#101830"
-      },
-      {
-       "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#18224a"
-      },
-      {
        "o": "tree",
        "x": 405,
        "y": 508,
        "s": 0.3,
-       "kind": "palm",
+       "kind": "round",
        "col": "#18224a"
       },
       {
@@ -2853,7 +2936,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "round",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -2861,7 +2944,7 @@
        "x": 495,
        "y": 508,
        "s": 0.4,
-       "kind": "palm",
+       "kind": "round",
        "col": "#18224a"
       },
       {
@@ -2869,7 +2952,84 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
        "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "hut",
+       "x": 462,
+       "y": 526,
+       "s": 0.6,
+       "col": "#101830"
+      },
+      {
+       "o": "hut",
+       "x": 826,
+       "y": 524,
+       "s": 0.55,
+       "col": "#101830"
+      },
+      {
+       "o": "road",
+       "x": 640,
+       "y": 560,
+       "s": 1.0,
        "col": "#18224a"
       }
      ]
@@ -2896,7 +3056,7 @@
      ]
     }
    ],
-   "note": "wide tilt_up: vishnu in a dark night world while 'needed Vishnu awake for a fire prayer called a yaj' is spoken.",
+   "note": "medium crane_down: vishnu in a dark night world while 'needed Vishnu awake for a fire prayer called a yaj' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -2912,19 +3072,35 @@
     "powers"
    ],
    "bg": {
-    "k": "plain"
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "figs": [
     {
      "who": "asura1",
-     "x": 610,
-     "y": 590,
+     "x": 640,
+     "y": 588,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -2944,15 +3120,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.06,
+     "x": 14,
+     "y": -4,
      "r": 0
     }
    },
@@ -3043,38 +3219,112 @@
        "col": "#18224a"
       },
       {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#101830"
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
       },
       {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
-       "s": 0.4,
-       "col": "#101830"
-      },
-      {
-       "o": "rock",
+       "o": "tree",
        "x": 450,
-       "y": 525,
-       "s": 0.95,
+       "y": 508,
+       "s": 0.35,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "hut",
+       "x": 462,
+       "y": 526,
+       "s": 0.6,
        "col": "#101830"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 520,
-       "s": 0.85,
+       "o": "hut",
+       "x": 826,
+       "y": 524,
+       "s": 0.55,
        "col": "#101830"
       },
       {
-       "o": "rock",
+       "o": "road",
        "x": 640,
-       "y": 515,
-       "s": 0.5,
+       "y": 560,
+       "s": 1.0,
        "col": "#18224a"
       }
      ]
@@ -3101,7 +3351,7 @@
      ]
     }
    ],
-   "note": "close pan_right: asura1 in a dark night world while 'Their own powers had failed against the demon.' is spoken.",
+   "note": "medium push_in: asura1 in a dark night world while 'Their own powers had failed against the demon.' is spoken.",
    "vert": {
     "focus": "asura1"
    },
@@ -3122,7 +3372,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -3136,7 +3386,7 @@
    "figs": [
     {
      "who": "brahma",
-     "x": 670,
+     "x": 640,
      "y": 494,
      "s": 0.9,
      "flip": 1,
@@ -3151,14 +3401,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.08,
-     "x": 0,
+     "z": 1.06,
+     "x": 14,
      "y": -4,
      "r": 0
     },
     "to": {
      "z": 1.0,
-     "x": 0,
+     "x": -14,
      "y": 0,
      "r": 0
     }
@@ -3375,7 +3625,7 @@
      ]
     }
    ],
-   "note": "wide pull_out: brahma in a dark night world while 'Brahma had an idea.' is spoken.",
+   "note": "medium crane_down: brahma in a dark night world while 'Brahma had an idea.' is spoken.",
    "vert": {
     "focus": "brahma"
    },
@@ -3399,7 +3649,7 @@
      "#5a2a58",
      "#b05a48"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#3a2a5a",
@@ -3413,14 +3663,14 @@
    "figs": [
     {
      "who": "brahma",
-     "x": 510,
-     "y": 579,
+     "x": 520,
+     "y": 580,
      "s": 0.85,
-     "flip": -1,
+     "flip": 1,
      "pose": "point",
      "emo": "scheme",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -3459,9 +3709,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -3677,7 +3927,7 @@
      ]
     }
    ],
-   "note": "close dolly_right: brahma in a dark indigo world while 'If the bowstring snapped, the sound would shake th' is spoken.",
+   "note": "medium push_in: brahma in a dark indigo world while 'If the bowstring snapped, the sound would shake th' is spoken.",
    "vert": {
     "focus": "brahma"
    },
@@ -3700,7 +3950,7 @@
      "#24366a",
      "#5a70b0"
     ],
-    "sx": 700,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#2a3a6a",
@@ -3714,8 +3964,8 @@
    "figs": [
     {
      "who": "vishnu",
-     "x": 655,
-     "y": 518,
+     "x": 640,
+     "y": 520,
      "s": 0.76,
      "flip": 1,
      "pose": "sleep",
@@ -3755,15 +4005,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     }
    },
@@ -3965,7 +4215,7 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark night world while 'So the gods turned into termites and chewed the st' is spoken.",
+   "note": "medium crane_down: vishnu in a dark night world while 'So the gods turned into termites and chewed the st' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -4003,13 +4253,13 @@
     {
      "who": "vishnu",
      "x": 640,
-     "y": 518,
+     "y": 520,
      "s": 0.76,
-     "flip": -1,
+     "flip": 1,
      "pose": "sleep",
      "emo": "calm",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -4043,15 +4293,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     }
    },
@@ -4267,7 +4517,7 @@
      ]
     }
    ],
-   "note": "close pull_out: vishnu in a dark night world while 'thinner and thinner, faster and faster.' is spoken.",
+   "note": "medium push_in: vishnu in a dark night world while 'thinner and thinner, faster and faster.' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -4291,7 +4541,7 @@
      "#7a2020",
      "#b04a28"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a2a2a",
@@ -4305,8 +4555,8 @@
    "figs": [
     {
      "who": "vishnu",
-     "x": 610,
-     "y": 533,
+     "x": 640,
+     "y": 532,
      "s": 0.8,
      "flip": 1,
      "pose": "fall",
@@ -4344,14 +4594,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.03,
+     "x": -14,
      "y": 0,
      "r": 0
     }
@@ -4568,7 +4818,7 @@
      ]
     }
    ],
-   "note": "medium pan_left: vishnu in a dark ember world while 'Then it snapped, and the string whipped loose and ' is spoken.",
+   "note": "medium crane_down: vishnu in a dark ember world while 'Then it snapped, and the string whipped loose and ' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -4591,7 +4841,7 @@
      "#7a2020",
      "#b04a28"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a2a2a",
@@ -4605,14 +4855,14 @@
    "figs": [
     {
      "who": "vishnu",
-     "x": 670,
-     "y": 671,
+     "x": 640,
+     "y": 664,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "sleep",
      "emo": "calm",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -4632,15 +4882,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
      "z": 1.06,
-     "x": 0,
-     "y": 0,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -4856,7 +5106,7 @@
      ]
     }
    ],
-   "note": "wide tilt_up: vishnu in a dark ember world while 'It rolled away. His eyes were still closed.' is spoken.",
+   "note": "medium push_in: vishnu in a dark ember world while 'It rolled away. His eyes were still closed.' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -4879,7 +5129,7 @@
      "#7a2020",
      "#b04a28"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a2a2a",
@@ -4893,8 +5143,8 @@
    "figs": [
     {
      "who": "deva_thin",
-     "x": 468,
-     "y": 572,
+     "x": 478,
+     "y": 570,
      "s": 0.7,
      "flip": 1,
      "pose": "plead",
@@ -4905,8 +5155,8 @@
     },
     {
      "who": "deva_thin2",
-     "x": 796,
-     "y": 566,
+     "x": 806,
+     "y": 564,
      "s": 0.68,
      "flip": -1,
      "pose": "plead",
@@ -4932,14 +5182,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     }
@@ -5142,7 +5392,7 @@
      ]
     }
    ],
-   "note": "close pan_right: deva_thin in a dark ember world while 'The gods froze.' is spoken.",
+   "note": "medium crane_down: deva_thin in a dark ember world while 'The gods froze.' is spoken.",
    "vert": {
     "focus": "deva_thin"
    },
@@ -5156,35 +5406,19 @@
    },
    "cues": [],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 700,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "palace"
    },
    "figs": [
     {
      "who": "deva_thin",
-     "x": 655,
-     "y": 589,
+     "x": 640,
+     "y": 588,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "scheme",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -5192,15 +5426,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.08,
-     "x": 0,
-     "y": -4,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     }
    },
@@ -5274,6 +5508,41 @@
        "y": 250,
        "s": 0.9,
        "col": "#7a2020"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
       }
      ]
     },
@@ -5291,11 +5560,32 @@
        "col": "#3a1618"
       },
       {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "wall",
+       "x": 640,
+       "y": 505,
+       "s": 0.7,
+       "col": "#3a1618"
+      },
+      {
        "o": "tree",
        "x": 405,
        "y": 508,
        "s": 0.3,
-       "kind": "round",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -5303,7 +5593,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "round",
        "col": "#3a1618"
       },
       {
@@ -5311,7 +5601,7 @@
        "x": 495,
        "y": 508,
        "s": 0.4,
-       "kind": "round",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -5319,78 +5609,8 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
        "kind": "round",
        "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
       }
      ]
     },
@@ -5416,7 +5636,7 @@
      ]
     }
    ],
-   "note": "wide pull_out: deva_thin in a dark ember world while 'They knew they had made a terrible mistake.' is spoken.",
+   "note": "medium push_in: deva_thin in a dark ember world while 'They knew they had made a terrible mistake.' is spoken.",
    "vert": {
     "focus": "deva_thin"
    },
@@ -5436,7 +5656,7 @@
     {
      "who": "lakshmi",
      "x": 640,
-     "y": 587,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -5450,15 +5670,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
+     "z": 1.02,
+     "x": -14,
+     "y": 0,
      "r": 0
     }
    },
@@ -5467,7 +5687,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#9a6a3c",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -5476,7 +5696,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -5486,7 +5706,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5496,7 +5716,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -5506,7 +5726,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5516,7 +5736,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5524,49 +5744,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5e3a24"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5e3a24"
+       "col": "#7a2020"
       },
       {
        "o": "wall",
        "x": 600,
        "y": 470,
        "s": 0.8,
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "pillar",
        "x": 470,
        "y": 525,
        "s": 0.5,
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "pillar",
        "x": 560,
        "y": 525,
        "s": 0.45,
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "pillar",
        "x": 720,
        "y": 525,
        "s": 0.45,
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "pillar",
        "x": 810,
        "y": 525,
        "s": 0.5,
-       "col": "#3a281c"
+       "col": "#3a1618"
       }
      ]
     },
@@ -5581,28 +5801,28 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "pillar",
        "x": 452,
        "y": 545,
        "s": 0.8,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       },
       {
        "o": "pillar",
        "x": 834,
        "y": 545,
        "s": 0.8,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       },
       {
        "o": "wall",
        "x": 640,
        "y": 505,
        "s": 0.7,
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5610,7 +5830,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5618,7 +5838,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5626,7 +5846,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5634,7 +5854,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       }
      ]
     },
@@ -5660,7 +5880,7 @@
      ]
     }
    ],
-   "note": "close dolly_right: lakshmi in a dark brown world while 'Then Lakshmi, his wife, walked in.' is spoken.",
+   "note": "medium crane_down: lakshmi in a dark ember world while 'Then Lakshmi, his wife, walked in.' is spoken.",
    "vert": {
     "focus": "lakshmi"
    },
@@ -5683,7 +5903,7 @@
      "#5e3a24",
      "#9a6a3c"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a4a34",
@@ -5697,14 +5917,14 @@
    "figs": [
     {
      "who": "lakshmi",
-     "x": 610,
-     "y": 587,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -5724,15 +5944,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 0,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -5969,7 +6189,7 @@
      "#5e3a24",
      "#9a6a3c"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a4a34",
@@ -5983,8 +6203,8 @@
    "figs": [
     {
      "who": "lakshmi",
-     "x": 670,
-     "y": 588,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "plead",
@@ -5998,14 +6218,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     }
@@ -6222,7 +6442,7 @@
      ]
     }
    ],
-   "note": "close pull_out: lakshmi in a dark brown world while 'She asked them to forgive her.' is spoken.",
+   "note": "medium crane_down: lakshmi in a dark brown world while 'She asked them to forgive her.' is spoken.",
    "vert": {
     "focus": "lakshmi"
    },
@@ -6238,19 +6458,35 @@
     "The"
    ],
    "bg": {
-    "k": "plain"
+    "k": "vista",
+    "sky": [
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "figs": [
     {
      "who": "asura1",
-     "x": 630,
-     "y": 496,
+     "x": 640,
+     "y": 494,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "sitpray",
      "emo": "devotion",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -6281,14 +6517,749 @@
    ],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.06,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "ep07_dark",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.6,
+     "haze": "#9a6a3c",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5e3a24"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5e3a24"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a1c12"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: asura1 in a dark brown world while 'The demon had prayed to her for so long that she h' is spoken.",
+   "vert": {
+    "focus": "asura1"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s25",
+   "at": {
+    "t": 72.56,
+    "word": "He"
+   },
+   "cues": [],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "hayagriva",
+     "x": 640,
+     "y": 588,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.06,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "ep07_dark",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.6,
+     "haze": "#9a6a3c",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5e3a24"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5e3a24"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a1c12"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "note": "medium crane_down: hayagriva in a dark brown world while 'He could only be killed by a god with a horse's he' is spoken.",
+   "vert": {
+    "focus": "hayagriva"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s26",
+   "at": {
+    "t": 76.02,
+    "word": "That"
+   },
+   "cues": [],
+   "bg": {
+    "k": "plain"
+   },
+   "figs": [
+    {
+     "who": "asura1",
+     "x": 640,
+     "y": 588,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    }
+   },
+   "grade": "ep07_dark",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.6,
+     "haze": "#9a6a3c",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5e3a24"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5e3a24"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a281c"
+      },
+      {
+       "o": "wall",
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "wall",
+       "x": 790,
+       "y": 515,
+       "s": 0.4,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 525,
+       "s": 0.95,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 520,
+       "s": 0.85,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#3a281c"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: asura1 in a dark brown world while 'That was why the demon could not be beaten.' is spoken.",
+   "vert": {
+    "focus": "asura1"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s27",
+   "at": {
+    "t": 78.44,
+    "word": "Lakshmi"
+   },
+   "cues": [],
+   "bg": {
+    "k": "plain"
+   },
+   "figs": [
+    {
+     "who": "lakshmi",
+     "x": 470,
+     "y": 590,
+     "s": 0.765,
+     "flip": 1,
+     "pose": "point",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 810,
+     "y": 590,
+     "s": 0.765,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    }
+   ],
+   "fx": [],
+   "fxb": [],
+   "cam": {
+    "from": {
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     }
@@ -6438,728 +7409,7 @@
      ]
     }
    ],
-   "note": "medium pan_left: asura1 in a dark brown world while 'The demon had prayed to her for so long that she h' is spoken.",
-   "vert": {
-    "focus": "asura1"
-   },
-   "dx": 0
-  },
-  {
-   "id": "s25",
-   "at": {
-    "t": 72.56,
-    "word": "He"
-   },
-   "cues": [],
-   "bg": {
-    "k": "vista",
-    "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
-    ],
-    "sx": 700,
-    "sy": 300,
-    "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "figs": [
-    {
-     "who": "hayagriva",
-     "x": 655,
-     "y": 594,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "lunge",
-     "emo": "anger",
-     "mood": {
-      "lx": 0.8
-     }
-    }
-   ],
-   "fx": [],
-   "fxb": [],
-   "cam": {
-    "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
-     "r": 0
-    },
-    "to": {
-     "z": 1.06,
-     "x": 0,
-     "y": 0,
-     "r": 0
-    }
-   },
-   "grade": "ep07_dark",
-   "layers": [
-    {
-     "d": "far",
-     "fog": 0.6,
-     "haze": "#b05a48",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#3a2a5a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#2e2048",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#3a2a5a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#2e2048",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#2e2048",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#5a2a58"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#5a2a58"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#1a1028"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#1a1028"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "note": "wide tilt_up: hayagriva in a dark indigo world while 'He could only be killed by a god with a horse's he' is spoken.",
-   "vert": {
-    "focus": "hayagriva"
-   },
-   "dx": 0
-  },
-  {
-   "id": "s26",
-   "at": {
-    "t": 76.02,
-    "word": "That"
-   },
-   "cues": [],
-   "bg": {
-    "k": "plain"
-   },
-   "figs": [
-    {
-     "who": "asura1",
-     "x": 640,
-     "y": 590,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": -0.8
-     }
-    }
-   ],
-   "fx": [],
-   "fxb": [],
-   "cam": {
-    "from": {
-     "z": 1.04,
-     "x": -22,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
-     "r": 0
-    }
-   },
-   "grade": "ep07_dark",
-   "layers": [
-    {
-     "d": "far",
-     "fog": 0.6,
-     "haze": "#b05a48",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#3a2a5a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#2e2048",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#3a2a5a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#2e2048",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#2e2048",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#5a2a58"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#5a2a58"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#241838"
-      },
-      {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#1a1028"
-      },
-      {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
-       "s": 0.4,
-       "col": "#1a1028"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#1a1028"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#1a1028"
-      },
-      {
-       "o": "rock",
-       "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#241838"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "note": "close pan_right: asura1 in a dark indigo world while 'That was why the demon could not be beaten.' is spoken.",
-   "vert": {
-    "focus": "asura1"
-   },
-   "dx": 0
-  },
-  {
-   "id": "s27",
-   "at": {
-    "t": 78.44,
-    "word": "Lakshmi"
-   },
-   "cues": [],
-   "bg": {
-    "k": "palace"
-   },
-   "figs": [
-    {
-     "who": "lakshmi",
-     "x": 440,
-     "y": 590,
-     "s": 0.765,
-     "flip": 1,
-     "pose": "point",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
-    },
-    {
-     "who": "deva_thin",
-     "x": 780,
-     "y": 590,
-     "s": 0.765,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
-    }
-   ],
-   "fx": [],
-   "fxb": [],
-   "cam": {
-    "from": {
-     "z": 1.08,
-     "x": 0,
-     "y": -4,
-     "r": 0
-    },
-    "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
-     "r": 0
-    }
-   },
-   "grade": "ep07_dark",
-   "layers": [
-    {
-     "d": "far",
-     "fog": 0.6,
-     "haze": "#b05a48",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#3a2a5a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#2e2048",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#3a2a5a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#2e2048",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#2e2048",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#5a2a58"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#5a2a58"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#241838"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#241838"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#241838"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#241838"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#241838"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#241838"
-      },
-      {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#1a1028"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#1a1028"
-      },
-      {
-       "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#241838"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "note": "wide pull_out: lakshmi in a dark indigo world while 'Lakshmi told the gods to bring the head of a horse' is spoken.",
+   "note": "medium crane_down: lakshmi in a dark brown world while 'Lakshmi told the gods to bring the head of a horse' is spoken.",
    "vert": {
     "focus": "lakshmi"
    },
@@ -7173,35 +7423,19 @@
    },
    "cues": [],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
-    ],
-    "sx": 760,
-    "sy": 300,
-    "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "plain"
    },
    "figs": [
     {
      "who": "hayagriva",
-     "x": 670,
-     "y": 587,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -7209,15 +7443,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": -14,
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.06,
+     "z": 1.09,
      "x": 14,
-     "y": -6,
+     "y": -4,
      "r": 0
     }
    },
@@ -7226,7 +7460,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -7235,7 +7469,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -7245,7 +7479,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -7255,7 +7489,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#3a2a5a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -7265,7 +7499,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -7275,7 +7509,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#2e2048",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -7283,14 +7517,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#5e3a24"
       }
      ]
     },
@@ -7305,109 +7539,42 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#3a281c"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#241838"
+       "o": "wall",
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#2a1c12"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
+       "o": "wall",
+       "x": 790,
+       "y": 515,
        "s": 0.4,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#241838"
+       "col": "#2a1c12"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#1a1028"
+       "y": 525,
+       "s": 0.95,
+       "col": "#2a1c12"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#1a1028"
+       "y": 520,
+       "s": 0.85,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#3a281c"
       }
      ]
     },
@@ -7433,7 +7600,7 @@
      ]
     }
    ],
-   "note": "close dolly_right: hayagriva in a dark indigo world while 'He became Hayagriv, the horse-headed god.' is spoken.",
+   "note": "medium push_in: hayagriva in a dark brown world while 'He became Hayagriv, the horse-headed god.' is spoken.",
    "vert": {
     "focus": "hayagriva"
    },
@@ -7454,8 +7621,8 @@
    "figs": [
     {
      "who": "vishnu",
-     "x": 460,
-     "y": 588,
+     "x": 470,
+     "y": 590,
      "s": 0.765,
      "flip": 1,
      "pose": "fall",
@@ -7466,8 +7633,8 @@
     },
     {
      "who": "asura1",
-     "x": 800,
-     "y": 588,
+     "x": 810,
+     "y": 590,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -7493,15 +7660,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
      "r": 0
     }
    },
@@ -7510,7 +7677,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -7519,7 +7686,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -7529,7 +7696,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -7539,7 +7706,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -7549,7 +7716,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -7559,7 +7726,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -7567,14 +7734,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#5e3a24"
       }
      ]
     },
@@ -7589,42 +7756,42 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "wall",
        "x": 500,
        "y": 515,
        "s": 0.45,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "wall",
        "x": 790,
        "y": 515,
        "s": 0.4,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 525,
        "s": 0.95,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 520,
        "s": 0.85,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "rock",
        "x": 640,
        "y": 515,
        "s": 0.5,
-       "col": "#18224a"
+       "col": "#3a281c"
       }
      ]
     },
@@ -7650,7 +7817,7 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark night world while 'Soon Vishnu neighed, and the demon fell silent.' is spoken.",
+   "note": "medium crane_down: vishnu in a dark brown world while 'Soon Vishnu neighed, and the demon fell silent.' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -7671,14 +7838,14 @@
    "figs": [
     {
      "who": "deva_thin",
-     "x": 655,
+     "x": 640,
      "y": 588,
      "s": 0.9,
-     "flip": -1,
+     "flip": 1,
      "pose": "fall",
      "emo": "shock",
      "mood": {
-      "lx": -0.8
+      "lx": 0.8
      }
     }
    ],
@@ -7710,15 +7877,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     }
    },
@@ -7727,7 +7894,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -7736,7 +7903,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -7746,7 +7913,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -7756,7 +7923,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -7766,7 +7933,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -7776,7 +7943,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -7784,49 +7951,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#5e3a24"
       },
       {
        "o": "wall",
        "x": 600,
        "y": 470,
        "s": 0.8,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 470,
        "y": 525,
        "s": 0.5,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 560,
        "y": 525,
        "s": 0.45,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 720,
        "y": 525,
        "s": 0.45,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 810,
        "y": 525,
        "s": 0.5,
-       "col": "#18224a"
+       "col": "#3a281c"
       }
      ]
     },
@@ -7841,28 +8008,28 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 452,
        "y": 545,
        "s": 0.8,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "pillar",
        "x": 834,
        "y": 545,
        "s": 0.8,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "wall",
        "x": 640,
        "y": 505,
        "s": 0.7,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -7870,7 +8037,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -7878,7 +8045,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -7886,7 +8053,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -7894,7 +8061,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       }
      ]
     },
@@ -7920,7 +8087,7 @@
      ]
     }
    ],
-   "note": "close pull_out: deva_thin in a dark night world while 'The gods cut off Vishnu's head by mistake, only to' is spoken.",
+   "note": "medium push_in: deva_thin in a dark brown world while 'The gods cut off Vishnu's head by mistake, only to' is spoken.",
    "vert": {
     "focus": "deva_thin"
    },
@@ -7934,13 +8101,13 @@
    },
    "cues": [],
    "bg": {
-    "k": "plain"
+    "k": "palace"
    },
    "figs": [
     {
      "who": "hayagriva",
      "x": 470,
-     "y": 591,
+     "y": 590,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -7952,7 +8119,7 @@
     {
      "who": "asura1",
      "x": 810,
-     "y": 591,
+     "y": 590,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -7966,14 +8133,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     }
@@ -7983,7 +8150,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -7992,7 +8159,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -8002,7 +8169,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -8012,7 +8179,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -8022,7 +8189,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -8032,7 +8199,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -8040,14 +8207,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#5e3a24"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a281c"
       }
      ]
     },
@@ -8062,42 +8264,60 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a1c12"
       },
       {
        "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#101830"
-      },
-      {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
-       "s": 0.4,
-       "col": "#101830"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#101830"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#101830"
-      },
-      {
-       "o": "rock",
        "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#18224a"
+       "y": 505,
+       "s": 0.7,
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
       }
      ]
     },
@@ -8123,7 +8343,7 @@
      ]
     }
    ],
-   "note": "medium pan_left: hayagriva in a dark night world while 'and that mistake gave them the one god who could k' is spoken.",
+   "note": "medium crane_down: hayagriva in a dark brown world while 'and that mistake gave them the one god who could k' is spoken.",
    "vert": {
     "focus": "hayagriva"
    },

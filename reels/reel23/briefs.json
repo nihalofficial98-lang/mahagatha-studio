@@ -16,7 +16,7 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pan_left",
     "from": {
      "z": 1.0,
      "x": 0,
@@ -24,9 +24,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -290,7 +290,7 @@
     }
    ],
    "effects": [],
-   "transition_in": "fade"
+   "transition_in": "cut"
   },
   {
    "id": "s02",
@@ -304,19 +304,19 @@
    "meaning": "but in the Valmiki Ramayana, he never fights with one. (shown as a dark story frame)",
    "why": "hanuman in a dark ember world while 'but in the Valmiki Ramayana, he never fights with ' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "push_in",
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.0,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -551,7 +551,7 @@
      "#7a2020",
      "#b04a28"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a2a2a",
@@ -569,10 +569,10 @@
    "characters": [
     {
      "who": "hanuman",
-     "x": 610,
+     "x": 640,
      "y": 615,
      "s": 1.08,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700,
@@ -604,20 +604,20 @@
    "duration": 2.84,
    "narration": "Ravana sent thousands of demons to kill him.",
    "meaning": "Ravana sent thousands of demons to kill him. (shown as a dark story frame)",
-   "why": "ravana10 in a dark brown world while 'Ravana sent thousands of demons to kill him.' is spoken.",
+   "why": "ravana10 in a dark ember world while 'Ravana sent thousands of demons to kill him.' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "crane_down",
     "from": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.08,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     },
@@ -636,7 +636,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#9a6a3c",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -645,7 +645,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -655,7 +655,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -665,7 +665,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -675,7 +675,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -685,7 +685,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -693,49 +693,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5e3a24"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5e3a24"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a281c"
+       "col": "#7a2020"
       }
      ]
     },
@@ -751,241 +716,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "palace"
-   },
-   "mood": {
-    "emotion": "anger",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "ravana10",
-     "x": 500,
-     "y": 591,
-     "s": 0.765,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "anger",
-     "look": 700
-    },
-    {
-     "who": "asura1",
-     "x": 840,
-     "y": 591,
-     "s": 0.765,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s04",
-   "beat": 1,
-   "start": {
-    "t": 9.46,
-    "word": "Hanuman"
-   },
-   "duration": 4.9,
-   "narration": "Hanuman tore a heavy iron bar out of a gate and used it to destroy them.",
-   "meaning": "Hanuman tore a heavy iron bar out of a gate and used it to destroy them. (shown as a dark story frame)",
-   "why": "hanuman in a dark brown world while 'Hanuman tore a heavy iron bar out of a gate and us' is spoken.",
-   "camera": {
-    "shot": "wide",
-    "lens": "normal",
-    "move": "tilt_up",
-    "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
-     "r": 0
-    },
-    "to": {
-     "z": 1.06,
-     "x": 0,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "hanuman",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "hanuman"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#9a6a3c",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a4a34",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a4a34",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#5e3a24"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#5e3a24"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -993,7 +724,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1001,7 +732,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1009,7 +740,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1017,7 +748,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1025,7 +756,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1033,7 +764,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1041,7 +772,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1049,7 +780,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1057,7 +788,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1065,7 +796,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1073,21 +804,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       }
      ]
     },
@@ -1117,85 +848,94 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#100a08",
-     "#2e1c14",
-     "#5e3a24",
-     "#9a6a3c"
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
     ],
-    "sx": 600,
+    "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a4a34",
-     "#523a28",
-     "#3a281c",
-     "#2a1c12"
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
     ],
     "haze": "200,160,170",
     "dust": 10
    },
    "mood": {
-    "emotion": "calm",
+    "emotion": "anger",
     "grade": "ep07_dark"
    },
    "characters": [
     {
-     "who": "hanuman",
-     "x": 630,
-     "y": 649,
-     "s": 1.08,
+     "who": "ravana10",
+     "x": 470,
+     "y": 590,
+     "s": 0.765,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura1",
+     "x": 810,
+     "y": 590,
+     "s": 0.765,
      "flip": -1,
      "pose": "stand",
      "emo": "calm",
-     "look": 700,
-     "prop": "none"
+     "look": 700
     }
    ],
    "effects": [],
    "transition_in": "cut"
   },
   {
-   "id": "s05",
+   "id": "s04",
    "beat": 1,
    "start": {
-    "t": 14.36,
-    "word": "Then"
+    "t": 9.46,
+    "word": "Hanuman"
    },
-   "duration": 2.94,
-   "narration": "Then Ravana sent the seven sons of his ministers.",
-   "meaning": "Then Ravana sent the seven sons of his ministers. (shown as a dark story frame)",
-   "why": "ravana10 in a dark brown world while 'Then Ravana sent the seven sons of his ministers.' is spoken.",
+   "duration": 4.9,
+   "narration": "Hanuman tore a heavy iron bar out of a gate and used it to destroy them.",
+   "meaning": "Hanuman tore a heavy iron bar out of a gate and used it to destroy them. (shown as a dark story frame)",
+   "why": "hanuman in a dark ember world while 'Hanuman tore a heavy iron bar out of a gate and us' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pan_right",
+    "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "ravana10",
+    "subject": "hanuman",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "ravana10"
+    "focus": "hanuman"
    },
    "layers": [
     {
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#9a6a3c",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -1204,7 +944,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1214,7 +954,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1224,7 +964,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1234,7 +974,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1244,7 +984,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1252,49 +992,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5e3a24"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5e3a24"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a281c"
+       "col": "#7a2020"
       }
      ]
     },
@@ -1310,60 +1015,109 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 405,
        "y": 508,
        "s": 0.3,
-       "kind": "palm",
-       "col": "#3a281c"
+       "kind": "round",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
+       "kind": "pine",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 495,
        "y": 508,
        "s": 0.4,
-       "kind": "palm",
-       "col": "#3a281c"
+       "kind": "round",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 540,
        "y": 508,
        "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
       }
      ]
     },
@@ -1391,7 +1145,313 @@
     }
    ],
    "background": {
-    "k": "palace"
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "hanuman",
+     "x": 640,
+     "y": 643,
+     "s": 1.08,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700,
+     "prop": "none"
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s05",
+   "beat": 1,
+   "start": {
+    "t": 14.36,
+    "word": "Then"
+   },
+   "duration": 2.94,
+   "narration": "Then Ravana sent the seven sons of his ministers.",
+   "meaning": "Then Ravana sent the seven sons of his ministers. (shown as a dark story frame)",
+   "why": "ravana10 in a dark ember world while 'Then Ravana sent the seven sons of his ministers.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "ravana10",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "ravana10"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "mood": {
     "emotion": "calm",
@@ -1400,8 +1460,8 @@
    "characters": [
     {
      "who": "ravana10",
-     "x": 485,
-     "y": 591,
+     "x": 470,
+     "y": 590,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -1410,8 +1470,8 @@
     },
     {
      "who": "asura2",
-     "x": 825,
-     "y": 591,
+     "x": 810,
+     "y": 590,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -1432,21 +1492,21 @@
    "duration": 2.48,
    "narration": "Hanuman fought them with his bare hands.",
    "meaning": "Hanuman fought them with his bare hands. (shown as a dark story frame)",
-   "why": "hanuman in a dark brown world while 'Hanuman fought them with his bare hands.' is spoken.",
+   "why": "hanuman in a dark ember world while 'Hanuman fought them with his bare hands.' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 0,
-     "y": -4,
+     "z": 1.03,
+     "x": -14,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -1464,7 +1524,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#9a6a3c",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -1473,7 +1533,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1483,7 +1543,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1493,7 +1553,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1503,7 +1563,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1513,7 +1573,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1521,14 +1581,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5e3a24"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5e3a24"
+       "col": "#7a2020"
       }
      ]
     },
@@ -1544,42 +1604,42 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "wall",
        "x": 500,
        "y": 515,
        "s": 0.45,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       },
       {
        "o": "wall",
        "x": 790,
        "y": 515,
        "s": 0.4,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 525,
        "s": 0.95,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 520,
        "s": 0.85,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 640,
        "y": 515,
        "s": 0.5,
-       "col": "#3a281c"
+       "col": "#3a1618"
       }
      ]
     },
@@ -1619,7 +1679,7 @@
      "x": 640,
      "y": 643,
      "s": 1.08,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700,
@@ -1639,21 +1699,21 @@
    "duration": 3.28,
    "narration": "He hit some with his palms and some with his feet.",
    "meaning": "He hit some with his palms and some with his feet. (shown as a dark story frame)",
-   "why": "hanuman in a dark brown world while 'He hit some with his palms and some with his feet.' is spoken.",
+   "why": "hanuman in a dark ember world while 'He hit some with his palms and some with his feet.' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "dolly_right",
+    "move": "crane_down",
     "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -6,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -1671,7 +1731,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#9a6a3c",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -1680,7 +1740,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1690,7 +1750,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1700,7 +1760,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1710,7 +1770,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1720,7 +1780,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1728,14 +1788,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5e3a24"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5e3a24"
+       "col": "#7a2020"
       }
      ]
     },
@@ -1751,109 +1811,42 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
+       "o": "wall",
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#2a0e10"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
+       "o": "wall",
+       "x": 790,
+       "y": 515,
        "s": 0.4,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a1c12"
+       "y": 525,
+       "s": 0.95,
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a1c12"
+       "y": 520,
+       "s": 0.85,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#3a1618"
       }
      ]
     },
@@ -1881,23 +1874,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#100a08",
-     "#2e1c14",
-     "#5e3a24",
-     "#9a6a3c"
-    ],
-    "sx": 520,
-    "sy": 300,
-    "ridge": [
-     "#6a4a34",
-     "#523a28",
-     "#3a281c",
-     "#2a1c12"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "plain"
    },
    "mood": {
     "emotion": "anger",
@@ -1906,8 +1883,8 @@
    "characters": [
     {
      "who": "hanuman",
-     "x": 610,
-     "y": 641,
+     "x": 640,
+     "y": 642,
      "s": 1.08,
      "flip": 1,
      "pose": "lunge",
@@ -1929,21 +1906,21 @@
    "duration": 5.16,
    "narration": "In battle, he used his fists, his nails, his chest, and his legs.",
    "meaning": "In battle, he used his fists, his nails, his chest, and his legs. (shown as a dark story frame)",
-   "why": "hanuman in a dark brown world while 'In battle, he used his fists, his nails, his chest' is spoken.",
+   "why": "hanuman in a dark ember world while 'In battle, he used his fists, his nails, his chest' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
     "move": "push_in",
     "from": {
      "z": 1.0,
-     "x": 0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.07,
-     "x": 0,
-     "y": -6,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -1961,7 +1938,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#9a6a3c",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -1970,7 +1947,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1980,7 +1957,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1990,7 +1967,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -2000,7 +1977,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -2010,7 +1987,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -2018,14 +1995,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5e3a24"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5e3a24"
+       "col": "#7a2020"
       }
      ]
     },
@@ -2041,42 +2018,42 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "wall",
        "x": 500,
        "y": 515,
        "s": 0.45,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       },
       {
        "o": "wall",
        "x": 790,
        "y": 515,
        "s": 0.4,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 525,
        "s": 0.95,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 520,
        "s": 0.85,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 640,
        "y": 515,
        "s": 0.5,
-       "col": "#3a281c"
+       "col": "#3a1618"
       }
      ]
     },
@@ -2113,10 +2090,10 @@
    "characters": [
     {
      "who": "hanuman",
-     "x": 670,
-     "y": 641,
+     "x": 640,
+     "y": 643,
      "s": 1.08,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700,
@@ -2138,18 +2115,18 @@
    "meaning": "Some enemies fell to the ground just from the sound of his roar. (shown as a dark story frame)",
    "why": "asura1 in a dark ember world while 'Some enemies fell to the ground just from the soun' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "crane_down",
     "from": {
-     "z": 1.1,
-     "x": 0,
-     "y": -6,
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 0,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     },
@@ -2320,8 +2297,8 @@
    "characters": [
     {
      "who": "asura1",
-     "x": 630,
-     "y": 588,
+     "x": 640,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "fall",
@@ -2358,16 +2335,306 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": 22,
+     "z": 1.02,
+     "x": -14,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "hanuman",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "hanuman"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "hanuman",
+     "x": 640,
+     "y": 643,
+     "s": 1.08,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700,
+     "prop": "none"
+    }
+   ],
+   "effects": [],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s11",
+   "beat": 1,
+   "start": {
+    "t": 35.2,
+    "word": "His"
+   },
+   "duration": 2.14,
+   "narration": "His strength was his weapon.",
+   "meaning": "His strength was his weapon. (shown as a dark story frame)",
+   "why": "hanuman in a dark ember world while 'His strength was his weapon.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     },
@@ -2603,7 +2870,7 @@
      "#7a2020",
      "#b04a28"
     ],
-    "sx": 700,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a2a2a",
@@ -2621,215 +2888,8 @@
    "characters": [
     {
      "who": "hanuman",
-     "x": 655,
-     "y": 645,
-     "s": 1.08,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700,
-     "prop": "none"
-    }
-   ],
-   "effects": [],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s11",
-   "beat": 1,
-   "start": {
-    "t": 35.2,
-    "word": "His"
-   },
-   "duration": 2.14,
-   "narration": "His strength was his weapon.",
-   "meaning": "His strength was his weapon. (shown as a dark story frame)",
-   "why": "hanuman in a dark ember world while 'His strength was his weapon.' is spoken.",
-   "camera": {
-    "shot": "wide",
-    "lens": "normal",
-    "move": "tilt_up",
-    "from": {
-     "z": 1.0,
-     "x": 0,
-     "y": 10,
-     "r": 0
-    },
-    "to": {
-     "z": 1.06,
-     "x": 0,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "hanuman",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "hanuman"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
-       "s": 0.4,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "plain"
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "hanuman",
      "x": 640,
-     "y": 649,
+     "y": 644,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -2865,19 +2925,19 @@
    "meaning": "So the mace we always draw in Hanuman's hand does not appear in his fights in the Valmiki Ramayana. (shown as ",
    "why": "hanuman in a dark ember world while 'So the mace we always draw in Hanuman's hand does ' is spoken.",
    "camera": {
-    "shot": "close",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pan_right",
+    "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": -22,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 22,
-     "y": 0,
+     "z": 1.06,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -3112,7 +3172,7 @@
      "#7a2020",
      "#b04a28"
     ],
-    "sx": 520,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a2a2a",
@@ -3130,10 +3190,10 @@
    "characters": [
     {
      "who": "hanuman",
-     "x": 610,
-     "y": 645,
+     "x": 640,
+     "y": 643,
      "s": 1.08,
-     "flip": -1,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700,
@@ -3155,18 +3215,18 @@
    "meaning": "Then why do we always draw him with a mace? (shown as a dark story frame)",
    "why": "hanuman in a dark ember world while 'Then why do we always draw him with a mace?' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "crane_down",
     "from": {
-     "z": 1.08,
-     "x": 0,
+     "z": 1.06,
+     "x": 14,
      "y": -4,
      "r": 0
     },
     "to": {
      "z": 1.0,
-     "x": 0,
+     "x": -14,
      "y": 0,
      "r": 0
     },
@@ -3402,7 +3462,7 @@
      "#7a2020",
      "#b04a28"
     ],
-    "sx": 760,
+    "sx": 640,
     "sy": 300,
     "ridge": [
      "#6a2a2a",
@@ -3420,8 +3480,8 @@
    "characters": [
     {
      "who": "hanuman",
-     "x": 670,
-     "y": 643,
+     "x": 640,
+     "y": 642,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -3433,5 +3493,6 @@
    "effects": [],
    "transition_in": "cut"
   }
- ]
+ ],
+ "flow": true
 }
