@@ -11,46 +11,28 @@
     "The"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "hood_fan",
+     "k": "sheshnag",
      "x": 640,
-     "y": 560,
-     "w": 760,
+     "y": 520,
+     "w": 430,
      "alpha": 1,
      "par": 1.0,
-     "cnt": 9,
+     "earth": 0.07,
      "c": 0,
      "d": 0.6
     },
     {
-     "t": "pfx",
-     "k": "earth_globe",
+     "t": "name",
+     "s": "Sheshnag",
      "x": 640,
-     "y": 170,
-     "w": 90,
-     "alpha": 1,
-     "par": 1.0,
+     "y": 130,
+     "size": 32,
      "c": 0,
      "d": 0.6
     }
@@ -295,51 +277,36 @@
     "and"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "hood_fan",
+     "k": "sheshnag",
      "x": 640,
-     "y": 560,
-     "w": 760,
+     "y": 520,
+     "w": 430,
      "alpha": 1,
      "par": 1.0,
-     "cnt": 9,
+     "seed": 1,
      "c": 0,
      "d": 0.6
-    },
+    }
+   ],
+   "fxb": [
     {
      "t": "pfx",
-     "k": "earth_globe",
+     "k": "mist_wisps",
      "x": 640,
-     "y": 188,
-     "w": 18,
-     "alpha": 1,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
      "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
    "cam": {
     "from": {
      "z": 1.0,
@@ -576,39 +543,22 @@
     "word": "So"
    },
    "cues": [
-    "So",
-    "where"
+    "So"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "hood_fan",
+     "k": "sheshnag",
      "x": 640,
-     "y": 600,
-     "w": 760,
-     "alpha": 0.55,
+     "y": 520,
+     "w": 430,
+     "alpha": 1,
      "par": 1.0,
-     "cnt": 9,
+     "earth": 0.07,
      "c": 0,
      "d": 0.6
     },
@@ -616,11 +566,11 @@
      "t": "pfx",
      "k": "mist_wisps",
      "x": 640,
-     "y": 520,
+     "y": 420,
      "w": 700,
-     "alpha": 0.9,
+     "alpha": 0.75,
      "par": 1.0,
-     "c": 1,
+     "c": 0,
      "d": 0.6
     }
    ],
@@ -860,34 +810,20 @@
     "t": 8.18,
     "word": "The"
    },
-   "cues": [],
+   "cues": [
+    "The"
+   ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "sea"
    },
    "figs": [
     {
-     "who": "naga",
+     "who": "vishnu_rest",
      "x": 640,
-     "y": 589,
+     "y": 603,
      "s": 0.9,
      "flip": 1,
-     "pose": "stand",
+     "pose": "lie",
      "emo": "calm",
      "mood": {
       "lx": 0.8
@@ -895,7 +831,19 @@
     }
    ],
    "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.02,
@@ -915,7 +863,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
@@ -924,7 +872,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -934,7 +882,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -944,7 +892,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
@@ -954,7 +902,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -964,7 +912,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -972,14 +920,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#2a6a6a"
       }
      ]
     },
@@ -994,7 +942,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -1002,7 +950,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -1010,7 +958,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -1018,7 +966,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -1026,7 +974,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -1034,7 +982,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -1042,7 +990,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -1050,7 +998,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -1058,7 +1006,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -1066,7 +1014,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -1074,7 +1022,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
@@ -1082,21 +1030,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#183a3a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#101830"
+       "col": "#102a2a"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#101830"
+       "col": "#102a2a"
       }
      ]
     },
@@ -1122,9 +1070,9 @@
      ]
     }
    ],
-   "note": "medium push_in: naga in a dark night world while 'The Bhagavata Purana tells how the worlds were mad' is spoken.",
+   "note": "medium push_in: vishnu_rest in a dark teal world while 'The Bhagavata Purana tells how the worlds were mad' is spoken.",
    "vert": {
-    "focus": "naga"
+    "focus": "vishnu_rest"
    },
    "dx": 0
   },
@@ -1135,7 +1083,7 @@
     "word": "At"
    },
    "cues": [
-    "sleeping"
+    "At"
    ],
    "bg": {
     "k": "sea"
@@ -1144,8 +1092,8 @@
     {
      "who": "vishnu_rest",
      "x": 640,
-     "y": 645,
-     "s": 0.95,
+     "y": 603,
+     "s": 0.9,
      "flip": 1,
      "pose": "lie",
      "emo": "calm",
@@ -1159,9 +1107,20 @@
      "t": "pfx",
      "k": "wave_ocean",
      "x": 640,
-     "y": 660,
+     "y": 690,
      "w": 700,
      "alpha": 0.9,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "wave_ocean",
+     "x": 640,
+     "y": 690,
+     "w": 640,
+     "alpha": 0.6,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -1286,7 +1245,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: vishnu_rest in a dark sea world while 'At the start, Vishnu was sleeping on the ocean.' is spoken.",
+   "note": "medium crane_down: vishnu_rest in a dark teal world while 'At the start, Vishnu was sleeping on the ocean.' is spoken.",
    "vert": {
     "focus": "vishnu_rest"
    },
@@ -1299,7 +1258,7 @@
     "word": "A"
    },
    "cues": [
-    "lotus"
+    "A"
    ],
    "bg": {
     "k": "sea"
@@ -1308,7 +1267,7 @@
     {
      "who": "vishnu_rest",
      "x": 640,
-     "y": 634,
+     "y": 572,
      "s": 0.8,
      "flip": 1,
      "pose": "lie",
@@ -1339,6 +1298,17 @@
      "y": 420,
      "w": 520,
      "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -1570,7 +1540,7 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu_rest in a dark sea world while 'A golden lotus came out of his belly button, and B' is spoken.",
+   "note": "medium push_in: vishnu_rest in a dark teal world while 'A golden lotus came out of his belly button, and B' is spoken.",
    "vert": {
     "focus": "vishnu_rest"
    },
@@ -1586,23 +1556,7 @@
     "lotus"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "figs": [
     {
@@ -2017,23 +1971,7 @@
     "top"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "figs": [
     {
@@ -2041,18 +1979,6 @@
      "x": 640,
      "y": 398,
      "s": 0.62,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
-    },
-    {
-     "who": "naga",
-     "x": 640,
-     "y": 596,
-     "s": 0.6,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -2457,27 +2383,10 @@
     "word": "But"
    },
    "cues": [
-    "But",
-    "heavy"
+    "But"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "figs": [],
    "fx": [
@@ -2643,7 +2552,7 @@
      "w": 520,
      "alpha": 0.8,
      "par": 1.0,
-     "c": 1,
+     "c": 0,
      "d": 0.6
     }
    ],
@@ -2884,26 +2793,11 @@
     "word": "The"
    },
    "cues": [
+    "The",
     "stem"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "storm"
    },
    "figs": [],
    "fx": [
@@ -2915,7 +2809,7 @@
      "w": 34,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -2926,7 +2820,7 @@
      "w": 40,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -2937,7 +2831,7 @@
      "w": 46,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -2948,7 +2842,7 @@
      "w": 34,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -2959,7 +2853,7 @@
      "w": 40,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -2970,7 +2864,7 @@
      "w": 46,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -2981,7 +2875,7 @@
      "w": 34,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -2992,7 +2886,7 @@
      "w": 40,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -3003,7 +2897,7 @@
      "w": 46,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -3014,7 +2908,7 @@
      "w": 34,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -3025,7 +2919,7 @@
      "w": 40,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -3036,7 +2930,7 @@
      "w": 46,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -3047,7 +2941,7 @@
      "w": 34,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     },
     {
@@ -3058,7 +2952,7 @@
      "w": 40,
      "alpha": 0.95,
      "par": 1.0,
-     "c": 0,
+     "c": 1,
      "d": 0.6
     }
    ],
@@ -3206,35 +3100,19 @@
     "Then"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "sea"
    },
    "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "hood_fan",
+     "k": "sheshnag",
      "x": 640,
-     "y": 560,
-     "w": 780,
+     "y": 520,
+     "w": 430,
      "alpha": 1,
      "par": 1.0,
-     "cnt": 9,
+     "earth": 0.07,
      "c": 0,
      "d": 0.6
     }
@@ -3488,110 +3366,40 @@
     "word": "He"
    },
    "cues": [
-    "He",
-    "lifted"
+    "He"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "hood_fan",
+     "k": "sheshnag",
      "x": 640,
-     "y": 620,
-     "w": 760,
+     "y": 670,
+     "w": 370,
      "alpha": 1,
      "par": 1.0,
-     "cnt": 9,
+     "stack": 14,
+     "earth": 0.05,
      "c": 0,
-     "d": 0.6
-    },
-    {
-     "t": "pfx",
-     "k": "earth_globe",
-     "x": 680,
-     "y": 150,
-     "w": 30,
-     "alpha": 0.95,
-     "par": 1.0,
-     "c": 1,
-     "d": 0.6
-    },
-    {
-     "t": "pfx",
-     "k": "earth_globe",
-     "x": 600,
-     "y": 167,
-     "w": 30,
-     "alpha": 0.95,
-     "par": 1.0,
-     "c": 1,
-     "d": 0.6
-    },
-    {
-     "t": "pfx",
-     "k": "earth_globe",
-     "x": 680,
-     "y": 184,
-     "w": 30,
-     "alpha": 0.95,
-     "par": 1.0,
-     "c": 1,
-     "d": 0.6
-    },
-    {
-     "t": "pfx",
-     "k": "earth_globe",
-     "x": 600,
-     "y": 161,
-     "w": 30,
-     "alpha": 0.95,
-     "par": 1.0,
-     "c": 1,
-     "d": 0.6
-    },
-    {
-     "t": "pfx",
-     "k": "earth_globe",
-     "x": 680,
-     "y": 178,
-     "w": 30,
-     "alpha": 0.95,
-     "par": 1.0,
-     "c": 1,
-     "d": 0.6
-    },
-    {
-     "t": "pfx",
-     "k": "earth_globe",
-     "x": 600,
-     "y": 155,
-     "w": 30,
-     "alpha": 0.95,
-     "par": 1.0,
-     "c": 1,
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "divine_rays",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.03,
@@ -3833,30 +3641,28 @@
    "bg": {
     "k": "sea"
    },
-   "figs": [
-    {
-     "who": "vishnu",
-     "x": 640,
-     "y": 601,
-     "s": 0.62,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
-    }
-   ],
+   "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "hood_fan",
+     "k": "tortoise",
      "x": 640,
-     "y": 420,
-     "w": 640,
+     "y": 690,
+     "w": 400,
      "alpha": 1,
      "par": 1.0,
-     "cnt": 9,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "sheshnag",
+     "x": 640,
+     "y": 500,
+     "w": 330,
+     "alpha": 1,
+     "par": 1.0,
+     "earth": 0.06,
      "c": 0,
      "d": 0.6
     }
@@ -4088,10 +3894,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: vishnu in a dark sea world while 'and Vishnu, as a giant tortoise, holds Sheshnag up' is spoken.",
-   "vert": {
-    "focus": "vishnu"
-   },
+   "note": "medium crane_down: The scene in a dark teal world while 'and Vishnu, as a giant tortoise, holds Sheshnag up' is spoken.",
    "dx": 0
   },
   {
@@ -4104,51 +3907,36 @@
     "All"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "hood_fan",
+     "k": "sheshnag",
      "x": 640,
-     "y": 560,
-     "w": 760,
+     "y": 520,
+     "w": 430,
      "alpha": 1,
      "par": 1.0,
-     "cnt": 9,
+     "earth": 0.07,
      "c": 0,
      "d": 0.6
-    },
+    }
+   ],
+   "fxb": [
     {
      "t": "pfx",
-     "k": "earth_globe",
+     "k": "divine_rays",
      "x": 640,
-     "y": 185,
-     "w": 16,
-     "alpha": 1,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
      "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
    "cam": {
     "from": {
      "z": 1.0,
@@ -4388,51 +4176,36 @@
     "So"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "hood_fan",
+     "k": "sheshnag",
      "x": 640,
-     "y": 560,
-     "w": 760,
+     "y": 520,
+     "w": 430,
      "alpha": 1,
      "par": 1.0,
-     "cnt": 9,
+     "earth": 0.04,
      "c": 0,
      "d": 0.6
-    },
+    }
+   ],
+   "fxb": [
     {
      "t": "pfx",
-     "k": "earth_globe",
+     "k": "mist_wisps",
      "x": 640,
-     "y": 185,
-     "w": 10,
-     "alpha": 1,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
      "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
    "cam": {
     "from": {
      "z": 1.08,
@@ -4672,46 +4445,28 @@
     "So"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "hood_fan",
+     "k": "sheshnag",
      "x": 640,
-     "y": 560,
-     "w": 760,
+     "y": 520,
+     "w": 430,
      "alpha": 1,
      "par": 1.0,
-     "cnt": 9,
+     "earth": 0.07,
      "c": 0,
      "d": 0.6
     },
     {
-     "t": "pfx",
-     "k": "earth_globe",
+     "t": "name",
+     "s": "Sheshnag",
      "x": 640,
-     "y": 185,
-     "w": 18,
-     "alpha": 1,
-     "par": 1.0,
+     "y": 130,
+     "size": 32,
      "c": 0,
      "d": 0.6
     }
@@ -4956,51 +4711,36 @@
     "as"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "hood_fan",
+     "k": "sheshnag",
      "x": 640,
-     "y": 560,
-     "w": 760,
+     "y": 520,
+     "w": 430,
      "alpha": 1,
      "par": 1.0,
-     "cnt": 9,
+     "seed": 1,
      "c": 0,
      "d": 0.6
-    },
+    }
+   ],
+   "fxb": [
     {
      "t": "pfx",
-     "k": "earth_globe",
+     "k": "mist_wisps",
      "x": 640,
-     "y": 185,
-     "w": 10,
-     "alpha": 1,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
      "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
    "cam": {
     "from": {
      "z": 1.09,
@@ -5240,35 +4980,19 @@
     "That"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "figs": [],
    "fx": [
     {
      "t": "pfx",
-     "k": "hood_fan",
+     "k": "sheshnag",
      "x": 640,
-     "y": 580,
-     "w": 760,
-     "alpha": 0.9,
+     "y": 520,
+     "w": 430,
+     "alpha": 1,
      "par": 1.0,
-     "cnt": 9,
+     "earth": 0.07,
      "c": 0,
      "d": 0.6
     },
@@ -5276,9 +5000,9 @@
      "t": "pfx",
      "k": "mist_wisps",
      "x": 640,
-     "y": 540,
+     "y": 420,
      "w": 700,
-     "alpha": 0.9,
+     "alpha": 0.8,
      "par": 1.0,
      "c": 0,
      "d": 0.6

@@ -161,6 +161,52 @@ const E={
   const n=F.cnt||1,kind=F.kind||'diamond',r=rng(7);
   if(n<=1){glow(0,0,w*1.2,'255,255,255',.35);one(kind,w,0);const k=.5+.5*Math.sin(t*3);ctx.strokeStyle='rgba(255,255,255,'+(.5+.4*k)+')';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(-w*.7,-w*.55);ctx.lineTo(-w*.45,-w*.55);ctx.moveTo(-w*.57,-w*.68);ctx.lineTo(-w*.57,-w*.42);ctx.moveTo(w*.62,w*.35);ctx.lineTo(w*.82,w*.35);ctx.moveTo(w*.72,w*.25);ctx.lineTo(w*.72,w*.45);ctx.stroke();return}
   for(let i=0;i<n;i++){const kk=kind==='mix'?ORD[i%9]:kind,x=(r()-.5)*w*1.6,y=(r()-.5)*w*1.4+((t*20+i*13)%40)*.0,s=w*(.12+r()*.1);ctx.save();ctx.translate(x,y);glow(0,0,s*1.6,'255,240,220',.18);one(kk,s,(r()-.5)*.8);ctx.restore()}}},
+ // reel 24: Shiva's trident (trishul): gold shaft with bands, silver three-pronged head, damaru and red cloth
+ trishul:{s:0,f(w,t,F){const h=w*1.9,sw=Math.sin(t*2)*w*.02;glow(0,-h*.2,w*1.2,'255,200,120',.3);
+   const G=(x0,y0,x1,y1,c)=>{const g=ctx.createLinearGradient(x0,y0,x1,y1);c.forEach((cc,i)=>g.addColorStop(i/(c.length-1),cc));return g};
+   cutP(()=>{ctx.moveTo(-w*.03,h*.5);ctx.lineTo(w*.03,h*.5);ctx.lineTo(w*.03,-h*.06);ctx.lineTo(-w*.03,-h*.06);ctx.closePath()},G(-w*.03,0,w*.03,0,['#8a5a10','#ffe08a','#a86a14']),{sh:0,lw:2,ink:'#3a2204'});
+   [.4,.2,0,-.02].forEach(y=>cutP(()=>ctx.rect(-w*.045,y*h,w*.09,h*.018),'#c9a24a',{sh:0,lw:1.2,ink:'#3a2204'}));
+   const prong=(sd,spread)=>{ctx.strokeStyle='#2a2a3a';ctx.lineWidth=w*.07;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(0,-h*.08);ctx.bezierCurveTo(sd*w*.3,-h*.06,sd*w*.34,-h*.16,sd*spread,-h*.36);ctx.stroke();
+     ctx.strokeStyle=sd>0?'#e8ecf4':'#dde2ee';ctx.lineWidth=w*.05;ctx.beginPath();ctx.moveTo(0,-h*.08);ctx.bezierCurveTo(sd*w*.3,-h*.06,sd*w*.34,-h*.16,sd*spread,-h*.36);ctx.stroke();
+     cutP(()=>{ctx.moveTo(sd*spread-w*.06,-h*.34);ctx.lineTo(sd*spread,-h*.52);ctx.lineTo(sd*spread+w*.06,-h*.34);ctx.closePath()},G(0,-h*.52,0,-h*.34,['#ffffff','#9aa6c0']),{sh:0,lw:1.6,ink:'#2a2a3a'})};
+   prong(-1,w*.3);prong(1,w*.3);
+   cutP(()=>{ctx.moveTo(-w*.075,-h*.1);ctx.lineTo(0,-h*.66);ctx.lineTo(w*.075,-h*.1);ctx.closePath()},G(-w*.07,0,w*.07,0,['#9aa6c0','#ffffff','#7a869e']),{sh:0,lw:2,ink:'#2a2a3a'});
+   cutP(()=>ctx.ellipse(0,-h*.075,w*.1,w*.05,0,0,TAU),'#e0b040',{sh:0,lw:1.6,ink:'#3a2204'});
+   cutP(()=>{ctx.moveTo(-w*.02,-h*.02);ctx.lineTo(-w*.16,h*.02);ctx.lineTo(-w*.16,h*.1);ctx.lineTo(-w*.02,h*.06);ctx.closePath()},'#c8a060',{sh:0,lw:1.4,ink:'#3a2204'});
+   cutP(()=>{ctx.moveTo(-w*.02,-h*.02);ctx.lineTo(w*.12,h*.02);ctx.lineTo(w*.12,h*.1);ctx.lineTo(-w*.02,h*.06);ctx.closePath()},'#c8a060',{sh:0,lw:1.4,ink:'#3a2204'});
+   ctx.strokeStyle='#c42820';ctx.lineWidth=w*.04;ctx.beginPath();ctx.moveTo(w*.03,-h*.05);ctx.quadraticCurveTo(w*.18+sw,h*.12,w*.1-sw,h*.3);ctx.stroke()}},
+ // reel 24: a drawn astra (divine arrow of flame). F.kind: brahma (gold) | pashupata (white-blue)
+ astra:{s:0,f(w,t,F){const k=F.kind||'brahma',h=w*1.9,C=k==='pashupata'?['#ffffff','#9ad0ff','#4a5ae8']:['#fff6c0','#ffc040','#e8501a'],rgb=k==='pashupata'?'150,190,255':'255,190,90';glow(0,0,w*1.3,rgb,.4);
+   for(let i=0;i<7;i++){const y=h*.1+i*h*.07,sc=w*(.2-i*.018),fl=Math.sin(t*9+i)*w*.02;cutP(()=>{ctx.moveTo(fl,y-sc*.6);ctx.bezierCurveTo(sc*.9+fl,y,sc*.5,y+sc*1.2,fl,y+sc*1.6);ctx.bezierCurveTo(-sc*.5,y+sc*1.2,-sc*.9+fl,y,fl,y-sc*.6)},(()=>{const g=ctx.createLinearGradient(0,y-sc,0,y+sc*1.6);g.addColorStop(0,C[0]);g.addColorStop(.5,C[1]);g.addColorStop(1,C[2]);return g})(),{sh:0,lw:1,ink:'rgba(60,10,0,.45)'})}
+   cutP(()=>{ctx.moveTo(-w*.022,h*.46);ctx.lineTo(w*.022,h*.46);ctx.lineTo(w*.022,-h*.28);ctx.lineTo(-w*.022,-h*.28);ctx.closePath()},'#6a4a24',{sh:0,lw:1.6,ink:'#241608'});
+   cutP(()=>{ctx.moveTo(-w*.09,-h*.28);ctx.lineTo(0,-h*.5);ctx.lineTo(w*.09,-h*.28);ctx.lineTo(0,-h*.22);ctx.closePath()},(()=>{const g=ctx.createLinearGradient(-w*.09,0,w*.09,0);g.addColorStop(0,'#aab4c8');g.addColorStop(.5,'#ffffff');g.addColorStop(1,'#8a94ac');return g})(),{sh:0,lw:1.8,ink:'#1a1a2a'});
+   [-1,1].forEach(sd=>cutP(()=>{ctx.moveTo(sd*w*.02,h*.46);ctx.lineTo(sd*w*.1,h*.5);ctx.lineTo(sd*w*.02,h*.34);ctx.closePath()},k==='pashupata'?'#bcd8ff':'#ffe090',{sh:0,lw:1,ink:'#241608'}))}},
+ // reel 25: giant Sheshnag: coils, nine cobra hoods on thick necks, gold crown on the centre hood, Earth on it. F.earth (relative size), F.stack (n mini worlds above), F.seed (tiny Earth)
+ sheshnag:{s:0,f(w,t,F){const n=9,by=w*.34,INK='#05201e',DK='#1a5a56',MD='#2a8a80',LT='#8ac8b8';
+   const ring=(rx,ry,cy)=>{ctx.lineCap='round';ctx.strokeStyle=INK;ctx.lineWidth=w*.125;ctx.beginPath();ctx.ellipse(0,cy,rx,ry,0,0,TAU);ctx.stroke();ctx.strokeStyle=DK;ctx.lineWidth=w*.1;ctx.beginPath();ctx.ellipse(0,cy,rx,ry,0,0,TAU);ctx.stroke();ctx.strokeStyle=LT;ctx.lineWidth=w*.03;ctx.beginPath();ctx.ellipse(0,cy,rx,ry,0,.15*Math.PI,.85*Math.PI);ctx.stroke()};
+   glow(0,-w*.1,w*.95,'120,230,210',.2);ring(w*.44,w*.13,by);ring(w*.35,w*.11,by-w*.1);ring(w*.26,w*.09,by-w*.19);
+   const hp=[];for(let i=0;i<n;i++){const u=(i/(n-1))*2-1;hp.push({u,x:u*w*.4,y:-w*.18-(1-u*u)*w*.18+Math.abs(u)*w*.05,sc:w*.2*(1-Math.abs(u)*.3)})}
+   hp.slice().sort((a,b)=>Math.abs(b.u)-Math.abs(a.u)).forEach(H=>{const sw=Math.sin(t*1.4+H.u*3)*w*.012;
+     ctx.lineCap='round';[[INK,w*.095],[DK,w*.075]].forEach(([c2,lw])=>{ctx.strokeStyle=c2;ctx.lineWidth=lw;ctx.beginPath();ctx.moveTo(H.u*w*.12,by-w*.2);ctx.bezierCurveTo(H.u*w*.22,by-w*.3,H.x*1.1+sw,H.y+w*.34,H.x+sw,H.y+H.sc*.55);ctx.stroke()});
+     ctx.save();ctx.translate(H.x+sw,H.y);const s2=H.sc;
+     cutP(()=>{ctx.moveTo(-s2*.18,s2*.7);ctx.bezierCurveTo(-s2*.85,s2*.35,-s2*.7,-s2*.7,0,-s2*.75);ctx.bezierCurveTo(s2*.7,-s2*.7,s2*.85,s2*.35,s2*.18,s2*.7);ctx.closePath()},(()=>{const g=ctx.createLinearGradient(0,-s2*.75,0,s2*.7);g.addColorStop(0,MD);g.addColorStop(1,DK);return g})(),{sh:0,lw:1.8,ink:INK});
+     cutP(()=>{ctx.moveTo(-s2*.12,s2*.62);ctx.bezierCurveTo(-s2*.45,s2*.3,-s2*.38,-s2*.35,0,-s2*.45);ctx.bezierCurveTo(s2*.38,-s2*.35,s2*.45,s2*.3,s2*.12,s2*.62);ctx.closePath()},LT,{sh:0,lw:0});
+     cutP(()=>{ctx.moveTo(-s2*.18,-s2*.02);ctx.bezierCurveTo(-s2*.36,s2*.32,-s2*.12,s2*.5,0,s2*.2);ctx.bezierCurveTo(s2*.12,s2*.5,s2*.36,s2*.32,s2*.18,-s2*.02);ctx.closePath()},'#0c3a36',{sh:0,lw:0});
+     [-1,1].forEach(sd=>cutP(()=>ctx.ellipse(sd*s2*.2,-s2*.3,s2*.09,s2*.065,0,0,TAU),'#ffd34a',{sh:0,lw:1,ink:INK}));
+     if(Math.abs(H.u)<.01){cutP(()=>{ctx.moveTo(-s2*.3,-s2*.62);ctx.lineTo(-s2*.2,-s2*.95);ctx.lineTo(-s2*.07,-s2*.72);ctx.lineTo(0,-s2*1.05);ctx.lineTo(s2*.07,-s2*.72);ctx.lineTo(s2*.2,-s2*.95);ctx.lineTo(s2*.3,-s2*.62);ctx.closePath()},'#e8c050',{sh:0,lw:1.6,ink:'#5a3a08'})}
+     ctx.restore()});
+   const c0=hp[(n-1)/2|0],ex=c0.x,ey=c0.y-c0.sc*1.08;
+   if(F.seed){glow(ex,ey-w*.02,w*.06,'255,240,200',.5);ctx.save();ctx.translate(ex,ey-w*.015);cutP(()=>ctx.arc(0,0,w*.012,0,TAU),'#2a5ac8',{sh:0,lw:1,ink:'#081a4a'});ctx.restore()}
+   else{const r=w*(F.earth??.075);glow(ex,ey-r*.6,r*3,'160,210,255',.35);ctx.save();ctx.translate(ex,ey-r*.5);cutP(()=>ctx.arc(0,0,r,0,TAU),(()=>{const g=ctx.createRadialGradient(-r*.3,-r*.3,r*.1,0,0,r*1.05);g.addColorStop(0,'#8ac4ff');g.addColorStop(.55,'#2a5ac8');g.addColorStop(1,'#102a70');return g})(),{sh:0,lw:1.6,ink:'#081a4a'});
+     ctx.beginPath();ctx.arc(0,0,r,0,TAU);ctx.clip();ctx.fillStyle='#3a9a58';[[-.35,-.2,.4,.26],[.25,.18,.45,.3],[-.1,.55,.3,.18]].forEach(([x,y,a,b])=>{ctx.beginPath();ctx.ellipse(x*r,y*r,a*r,b*r,x,0,TAU);ctx.fill()});ctx.restore()}
+   for(let k=0;k<(F.stack||0);k++){const rr=w*.024,yy=ey-w*.085-k*rr*2.2;ctx.save();ctx.translate(ex,yy);cutP(()=>ctx.arc(0,0,rr,0,TAU),['#2a5ac8','#c04a8a','#3a9a58','#e0a030','#8a4ac8'][k%5],{sh:0,lw:1.2,ink:'#081a4a'});ctx.restore()}}},
+ // reel 25: a giant tortoise (Vishnu's Kurma avatar): gold-patterned shell, head, flippers
+ tortoise:{s:0,f(w,t,F){const sw=Math.sin(t*1.2)*w*.01;glow(0,0,w*.8,'255,214,120',.25);
+   [[-.36,.1],[.3,.12],[-.22,.14],[.18,.15]].forEach(([x,y])=>cutP(()=>ctx.ellipse(x*w,y*w,w*.1,w*.05,x,0,TAU),'#5a7a3a',{sh:0,lw:1.6,ink:'#16240a'}));
+   cutP(()=>ctx.ellipse(-w*.5,w*.02,w*.11,w*.085,0,0,TAU),'#6a8a44',{sh:0,lw:2,ink:'#16240a'});cutP(()=>ctx.arc(-w*.53,0,w*.012,0,TAU),'#fff',{sh:0,lw:0});
+   const g=ctx.createLinearGradient(0,-w*.2,0,w*.12);g.addColorStop(0,'#c8a040');g.addColorStop(1,'#5a3a10');
+   cutP(()=>{ctx.moveTo(-w*.42,w*.1);ctx.bezierCurveTo(-w*.4,-w*.28,w*.4,-w*.28,w*.42,w*.1);ctx.closePath()},g,{sh:0,lw:2.4,ink:'#2a1a04'});
+   ctx.strokeStyle='#2a1a04';ctx.lineWidth=2;[-.22,-.04,.14].forEach(x=>{ctx.beginPath();ctx.moveTo(x*w,w*.1);ctx.lineTo(x*w*.9,-w*.2*(1-Math.abs(x)*1.4));ctx.stroke()});ctx.beginPath();ctx.moveTo(-w*.4,-w*.02);ctx.quadraticCurveTo(0,-w*.12,w*.4,-w*.02);ctx.stroke()}},
  // reel 17: a Shiva lingam (dark stone dome on a round base with three ash lines); F.glow 0..1
  lingam:{s:0,f(w,t,F){const g=F.glow??.6;glow(0,-w*.3,w*.9,'255,214,150',.35*g);
    cutP(()=>ctx.ellipse(0,w*.1,w*.5,w*.12,0,0,TAU),(()=>{const q=ctx.createLinearGradient(0,0,0,w*.22);q.addColorStop(0,'#5a4a5a');q.addColorStop(1,'#241a26');return q})(),{sh:0,lw:2,ink:'#0c0610'});

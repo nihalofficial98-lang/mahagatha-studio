@@ -249,26 +249,37 @@
    "characters": [
     {
      "who": "ravana10",
-     "x": 470,
-     "y": 592,
-     "s": 0.765,
+     "x": 566,
+     "y": 574,
+     "s": 0.8,
      "flip": 1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "scheme",
      "look": 700
     },
     {
      "who": "sita",
-     "x": 810,
-     "y": 592,
-     "s": 0.765,
+     "x": 718,
+     "y": 549,
+     "s": 0.72,
      "flip": -1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "sad",
      "look": 700
     }
    ],
    "effects": [
+    {
+     "k": "ember_fire",
+     "word": "Did",
+     "x": 452,
+     "y": 672,
+     "w": 80,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a palace torch"
+    },
     {
      "k": "ember_fire",
      "word": "Did",
@@ -541,9 +552,9 @@
    "characters": [
     {
      "who": "ravana10",
-     "x": 470,
-     "y": 589,
-     "s": 0.765,
+     "x": 566,
+     "y": 572,
+     "s": 0.8,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -551,16 +562,27 @@
     },
     {
      "who": "sita",
-     "x": 810,
-     "y": 589,
-     "s": 0.765,
+     "x": 718,
+     "y": 548,
+     "s": 0.72,
      "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
+     "pose": "plead",
+     "emo": "fear",
      "look": 700
     }
    ],
    "effects": [
+    {
+     "k": "ember_fire",
+     "word": "Ravana",
+     "x": 452,
+     "y": 672,
+     "w": 80,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a palace torch"
+    },
     {
      "k": "ember_fire",
      "word": "Ravana",
@@ -596,7 +618,7 @@
    "duration": 6.18,
    "narration": "Many people say this proves Ravana was great, but the old books say something different.",
    "meaning": "Many people say this proves Ravana was it, but the old books say it different. (shown as a dark story frame)",
-   "why": "ravana10 in a dark ember world while 'Many people say this proves Ravana was it, but ' is spoken.",
+   "why": "ravana10 in a dark brown world while 'Many people say this proves Ravana was it, but ' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -628,7 +650,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -637,7 +659,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -647,7 +669,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -657,7 +679,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -667,7 +689,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -677,7 +699,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -685,49 +707,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "wall",
        "x": 600,
        "y": 470,
        "s": 0.8,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 470,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 560,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 720,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 810,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#3a281c"
       }
      ]
     },
@@ -743,28 +765,28 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 452,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#2a1c12"
       },
       {
        "o": "pillar",
        "x": 834,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#2a1c12"
       },
       {
        "o": "wall",
        "x": 640,
        "y": 505,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -772,7 +794,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -780,7 +802,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -788,7 +810,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -796,7 +818,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#3a281c"
       }
      ]
     },
@@ -824,7 +846,7 @@
     }
    ],
    "background": {
-    "k": "palace"
+    "k": "council"
    },
    "mood": {
     "emotion": "calm",
@@ -834,35 +856,26 @@
     {
      "who": "ravana10",
      "x": 640,
-     "y": 562,
-     "s": 0.81,
+     "y": 597,
+     "s": 0.88,
      "flip": 1,
      "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    },
-    {
-     "who": "villager",
-     "x": 500,
-     "y": 571,
-     "s": 0.5,
-     "flip": 1,
-     "pose": "namaste",
-     "emo": "calm",
-     "look": 700
-    },
-    {
-     "who": "villager_w",
-     "x": 780,
-     "y": 571,
-     "s": 0.5,
-     "flip": -1,
-     "pose": "namaste",
-     "emo": "calm",
+     "emo": "pride",
      "look": 700
     }
    ],
    "effects": [
+    {
+     "k": "divine_rays",
+     "word": "Many",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.5,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a king in his court"
+    },
     {
      "k": "ember_fire",
      "word": "Many",
@@ -898,21 +911,21 @@
    "duration": 4.6,
    "narration": "When Hanuman entered Ravana's palace, he saw rooms full of women.",
    "meaning": "When Hanuman entered Ravana's palace, he saw rooms full of women. (shown as a dark story frame)",
-   "why": "hanuman in a dark ember world while 'When Hanuman entered Ravana's palace, he saw rooms' is spoken.",
+   "why": "hanuman in a dark brown world while 'When Hanuman entered Ravana's palace, he saw rooms' is spoken.",
    "camera": {
-    "shot": "wide",
+    "shot": "medium",
     "lens": "normal",
-    "move": "pan_right",
+    "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": -50,
+     "z": 1.02,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 70,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "shake": 0,
@@ -930,7 +943,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -939,7 +952,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -949,7 +962,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -959,7 +972,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -969,7 +982,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -979,7 +992,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -987,49 +1000,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "wall",
        "x": 600,
        "y": 470,
        "s": 0.8,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 470,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 560,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 720,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 810,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#3a281c"
       }
      ]
     },
@@ -1045,28 +1058,28 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 452,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#2a1c12"
       },
       {
        "o": "pillar",
        "x": 834,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#2a1c12"
       },
       {
        "o": "wall",
        "x": 640,
        "y": 505,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1074,7 +1087,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1082,7 +1095,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1090,7 +1103,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -1098,7 +1111,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#3a281c"
       }
      ]
     },
@@ -1135,33 +1148,47 @@
    "characters": [
     {
      "who": "hanuman",
-     "x": 560,
-     "y": 591,
-     "s": 0.765,
+     "x": 562,
+     "y": 587,
+     "s": 0.85,
      "flip": 1,
      "pose": "stand",
-     "emo": "calm",
-     "look": 700,
-     "prop": "none",
-     "walk": {
-      "word": "When",
-      "to_x": 740,
-      "d": 4.1,
-      "speed": 1
-     }
+     "emo": "surprise",
+     "look": 700
     },
     {
      "who": "kanya",
-     "x": 840,
-     "y": 591,
-     "s": 0.765,
+     "x": 718,
+     "y": 512,
+     "s": 0.6,
      "flip": -1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "sad",
+     "look": 700
+    },
+    {
+     "who": "kanya",
+     "x": 750,
+     "y": 497,
+     "s": 0.55,
+     "flip": -1,
+     "pose": "plead",
+     "emo": "fear",
      "look": 700
     }
    ],
    "effects": [
+    {
+     "k": "ember_fire",
+     "word": "When",
+     "x": 452,
+     "y": 672,
+     "w": 80,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a palace torch"
+    },
     {
      "k": "ember_fire",
      "word": "When",
@@ -1197,15 +1224,15 @@
    "duration": 4.44,
    "narration": "The Ramayana says Ravana had taken them during his wars.",
    "meaning": "The Ramayana says Ravana had taken them during his wars. (shown as a dark story frame)",
-   "why": "ravana10 in a dark ember world while 'The Ramayana says Ravana had taken them during his' is spoken.",
+   "why": "ravana10 in a dark indigo world while 'The Ramayana says Ravana had taken them during his' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "crane_down",
     "from": {
-     "z": 1.04,
-     "x": 70,
-     "y": 0,
+     "z": 1.09,
+     "x": 14,
+     "y": -4,
      "r": 0
     },
     "to": {
@@ -1229,7 +1256,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#b05a48",
      "items": [
       {
        "o": "mountain",
@@ -1238,7 +1265,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -1248,7 +1275,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -1258,7 +1285,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -1268,7 +1295,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -1278,7 +1305,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -1286,49 +1313,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5a2a58"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5a2a58"
       },
       {
        "o": "wall",
        "x": 600,
        "y": 470,
        "s": 0.8,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 470,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 560,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 720,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 810,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#241838"
       }
      ]
     },
@@ -1344,28 +1371,28 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "pillar",
        "x": 452,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#1a1028"
       },
       {
        "o": "pillar",
        "x": 834,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#1a1028"
       },
       {
        "o": "wall",
        "x": 640,
        "y": 505,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -1373,7 +1400,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -1381,7 +1408,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -1389,7 +1416,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#241838"
       },
       {
        "o": "tree",
@@ -1397,7 +1424,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#241838"
       }
      ]
     },
@@ -1425,7 +1452,7 @@
     }
    ],
    "background": {
-    "k": "palace"
+    "k": "dusk"
    },
    "mood": {
     "emotion": "calm",
@@ -1434,16 +1461,47 @@
    "characters": [
     {
      "who": "ravana10",
-     "x": 640,
-     "y": 590,
-     "s": 0.9,
+     "x": 566,
+     "y": 579,
+     "s": 0.82,
      "flip": 1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "kanya",
+     "x": 718,
+     "y": 519,
+     "s": 0.62,
+     "flip": -1,
+     "pose": "plead",
+     "emo": "sad",
+     "look": 700
+    },
+    {
+     "who": "kanya",
+     "x": 750,
+     "y": 501,
+     "s": 0.56,
+     "flip": -1,
+     "pose": "plead",
+     "emo": "fear",
      "look": 700
     }
    ],
    "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "The",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a sad mist over the captives"
+    },
     {
      "k": "ember_fire",
      "word": "The",
@@ -1479,7 +1537,7 @@
    "duration": 3.78,
    "narration": "Ravana had also attacked an apsara named Punjikasthala.",
    "meaning": "Ravana had also attacked an apsara named Punjikasthala. (shown as a dark story frame)",
-   "why": "ravana10 in a dark ember world while 'Ravana had also attacked an apsara named Punjikast' is spoken.",
+   "why": "kanya in a dark night world while 'Ravana had also attacked an apsara named Punjikast' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -1493,6 +1551,1788 @@
     "to": {
      "z": 1.06,
      "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "kanya",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "kanya"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#24366a"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#18224a"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#18224a"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#18224a"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#18224a"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#18224a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "wall",
+       "x": 640,
+       "y": 505,
+       "s": 0.7,
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "night"
+   },
+   "mood": {
+    "emotion": "anger",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "kanya",
+     "x": 566,
+     "y": 566,
+     "s": 0.78,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "fear",
+     "look": 700
+    },
+    {
+     "who": "ravana10",
+     "x": 722,
+     "y": 578,
+     "s": 0.82,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "red_energy_pulse",
+     "word": "Ravana",
+     "x": 640,
+     "y": 420,
+     "w": 420,
+     "alpha": 0.6,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "danger in the dark"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Ravana",
+     "x": 466,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Ravana",
+     "x": 818,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s07",
+   "beat": 1,
+   "start": {
+    "t": 27.26,
+    "word": "When"
+   },
+   "duration": 2.92,
+   "narration": "When Brahma found out, he cursed Ravana.",
+   "meaning": "When Brahma found out, he cursed Ravana. (shown as a dark story frame)",
+   "why": "brahma in a dark indigo world while 'When Brahma found out, he cursed Ravana.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.06,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b05a48",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#2e2048",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#2e2048",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#2e2048",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5a2a58"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5a2a58"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#241838"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#1a1028"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#1a1028"
+      },
+      {
+       "o": "wall",
+       "x": 640,
+       "y": 505,
+       "s": 0.7,
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#241838"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vaikuntha"
+   },
+   "mood": {
+    "emotion": "anger",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 640,
+     "y": 596,
+     "s": 0.88,
+     "flip": 1,
+     "pose": "point",
+     "emo": "anger",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "curse_glow",
+     "word": "When",
+     "x": 640,
+     "y": 400,
+     "w": 460,
+     "alpha": 0.9,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "the curse glowing"
+    },
+    {
+     "k": "divine_rays",
+     "word": "When",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.6,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "Brahma in heaven"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s08",
+   "beat": 1,
+   "start": {
+    "t": 30.18,
+    "word": "If"
+   },
+   "duration": 3.2,
+   "narration": "If Ravana ever forced a woman against her wish again,",
+   "meaning": "If Ravana ever forced a woman against her wish again, (shown as a dark story frame)",
+   "why": "brahma in a dark indigo world while 'If Ravana ever forced a woman against her wish aga' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "brahma",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "brahma"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b05a48",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#2e2048",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#2e2048",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#2e2048",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5a2a58"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5a2a58"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#241838"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#1a1028"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#1a1028"
+      },
+      {
+       "o": "wall",
+       "x": 640,
+       "y": 505,
+       "s": 0.7,
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#241838"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "cloudscape"
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "brahma",
+     "x": 562,
+     "y": 587,
+     "s": 0.85,
+     "flip": 1,
+     "pose": "point",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "ravana10",
+     "x": 722,
+     "y": 572,
+     "s": 0.8,
+     "flip": -1,
+     "pose": "plead",
+     "emo": "fear",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "curse_glow",
+     "word": "If",
+     "x": 640,
+     "y": 400,
+     "w": 460,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "the curse upon him"
+    },
+    {
+     "k": "ember_fire",
+     "word": "If",
+     "x": 466,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "If",
+     "x": 818,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s09",
+   "beat": 1,
+   "start": {
+    "t": 33.38,
+    "word": "his"
+   },
+   "duration": 3.48,
+   "narration": "his head would split into a hundred pieces.",
+   "meaning": "his head would split into a hundred pieces. (shown as a dark story frame)",
+   "why": "ravana10 in a dark ember world while 'his head would split into a hundred pieces.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.08,
+     "x": 14,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "ravana10",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "ravana10"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "storm"
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "ravana10",
+     "x": 640,
+     "y": 603,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "horror",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "lightning_forks",
+     "word": "his",
+     "x": 640,
+     "y": 260,
+     "w": 560,
+     "alpha": 0.9,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "lightning over the cursed king"
+    },
+    {
+     "k": "curse_glow",
+     "word": "his",
+     "x": 640,
+     "y": 300,
+     "w": 460,
+     "alpha": 0.9,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "the curse around his heads"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s10",
+   "beat": 1,
+   "start": {
+    "t": 36.86,
+    "word": "When"
+   },
+   "duration": 3.78,
+   "narration": "When Ravana carried Sita away, he took her by force.",
+   "meaning": "When Ravana carried Sita away, he took her by force. (shown as a dark story frame)",
+   "why": "ravana10 in a dark teal world while 'When Ravana carried Sita away, he took her by forc' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.02,
+     "x": -14,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "ravana10",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "ravana10"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#8ac0b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#2a5a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#204a4a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#2a5a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#204a4a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#204a4a",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#2a6a6a"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#2a6a6a"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#183a3a"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#183a3a"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#183a3a"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#183a3a"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#183a3a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#183a3a"
+      },
+      {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#102a2a"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#102a2a"
+      },
+      {
+       "o": "wall",
+       "x": 640,
+       "y": 505,
+       "s": 0.7,
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#183a3a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "forest"
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "ravana10",
+     "x": 566,
+     "y": 578,
+     "s": 0.82,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "scheme",
+     "look": 700
+    },
+    {
+     "who": "sita",
+     "x": 780,
+     "y": 549,
+     "s": 0.72,
+     "flip": -1,
+     "pose": "plead",
+     "emo": "fear",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "When",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "forest mist as she is carried away"
+    },
+    {
+     "k": "ember_fire",
+     "word": "When",
+     "x": 466,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "When",
+     "x": 818,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s11",
+   "beat": 1,
+   "start": {
+    "t": 40.64,
+    "word": "And"
+   },
+   "duration": 4.04,
+   "narration": "And in the Ramayana, he admits why he never forced her into his bed.",
+   "meaning": "And in the Ramayana, he admits why he never forced her into his bed. (shown as a dark story frame)",
+   "why": "sita in a dark brown world while 'And in the Ramayana, he admits why he never forced' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "crane_down",
+    "from": {
+     "z": 1.09,
+     "x": 10,
+     "y": -4,
+     "r": 0
+    },
+    "to": {
+     "z": 1.03,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "sita",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "sita"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#9a6a3c",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5e3a24"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5e3a24"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a1c12"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "garden"
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "sita",
+     "x": 562,
+     "y": 567,
+     "s": 0.78,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "pride",
+     "look": 700
+    },
+    {
+     "who": "ravana10",
+     "x": 722,
+     "y": 579,
+     "s": 0.82,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "scheme",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "And",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s12",
+   "beat": 1,
+   "start": {
+    "t": 44.68,
+    "word": "It"
+   },
+   "duration": 2.2,
+   "narration": "It was not because he respected her.",
+   "meaning": "It was not because he respected her. (shown as a dark story frame)",
+   "why": "ravana10 in a dark ember world while 'It was not because he respected her.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.03,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.06,
+     "x": 14,
      "y": -4,
      "r": 0
     },
@@ -1576,41 +3416,6 @@
        "y": 250,
        "s": 0.9,
        "col": "#7a2020"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a1618"
       }
      ]
     },
@@ -1629,1428 +3434,12 @@
        "col": "#3a1618"
       },
       {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#3a1618"
-      },
-      {
        "o": "tree",
        "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
        "y": 508,
        "s": 0.3,
        "kind": "round",
        "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "palace"
-   },
-   "mood": {
-    "emotion": "anger",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "ravana10",
-     "x": 470,
-     "y": 589,
-     "s": 0.765,
-     "flip": 1,
-     "pose": "lunge",
-     "emo": "anger",
-     "look": 700
-    },
-    {
-     "who": "kanya",
-     "x": 810,
-     "y": 589,
-     "s": 0.765,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "ember_fire",
-     "word": "Ravana",
-     "x": 466,
-     "y": 664,
-     "w": 70,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire giving the lanka its atmosphere"
-    },
-    {
-     "k": "ember_fire",
-     "word": "Ravana",
-     "x": 818,
-     "y": 664,
-     "w": 70,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire giving the lanka its atmosphere"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s07",
-   "beat": 1,
-   "start": {
-    "t": 27.26,
-    "word": "When"
-   },
-   "duration": 2.92,
-   "narration": "When Brahma found out, he cursed Ravana.",
-   "meaning": "When Brahma found out, he cursed Ravana. (shown as a dark story frame)",
-   "why": "brahma in a dark night world while 'When Brahma found out, he cursed Ravana.' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "crane_down",
-    "from": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
-     "r": 0
-    },
-    "to": {
-     "z": 1.0,
-     "x": -10,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "brahma",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "brahma"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#5a70b0",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#24366a"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#24366a"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#18224a"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#101830"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#101830"
-      },
-      {
-       "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "palace"
-   },
-   "mood": {
-    "emotion": "anger",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "brahma",
-     "x": 470,
-     "y": 590,
-     "s": 0.765,
-     "flip": 1,
-     "pose": "point",
-     "emo": "anger",
-     "look": 700
-    },
-    {
-     "who": "ravana10",
-     "x": 810,
-     "y": 590,
-     "s": 0.765,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "curse_glow",
-     "word": "When",
-     "x": 640,
-     "y": 400,
-     "w": 440,
-     "alpha": 0.9,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "curse glow showing what the narration says"
-    },
-    {
-     "k": "ember_fire",
-     "word": "When",
-     "x": 466,
-     "y": 664,
-     "w": 70,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire giving the lanka its atmosphere"
-    },
-    {
-     "k": "ember_fire",
-     "word": "When",
-     "x": 818,
-     "y": 664,
-     "w": 70,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire giving the lanka its atmosphere"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s08",
-   "beat": 1,
-   "start": {
-    "t": 30.18,
-    "word": "If"
-   },
-   "duration": 3.2,
-   "narration": "If Ravana ever forced a woman against her wish again,",
-   "meaning": "If Ravana ever forced a woman against her wish again, (shown as a dark story frame)",
-   "why": "ravana10 in a dark night world while 'If Ravana ever forced a woman against her wish aga' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "push_in",
-    "from": {
-     "z": 1.0,
-     "x": -10,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.08,
-     "x": 14,
-     "y": -4,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "ravana10",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "ravana10"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#5a70b0",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#24366a"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#24366a"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#18224a"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#101830"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#101830"
-      },
-      {
-       "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "palace"
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "ravana10",
-     "x": 640,
-     "y": 588,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "ember_fire",
-     "word": "If",
-     "x": 466,
-     "y": 664,
-     "w": 70,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire giving the lanka its atmosphere"
-    },
-    {
-     "k": "ember_fire",
-     "word": "If",
-     "x": 818,
-     "y": 664,
-     "w": 70,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire giving the lanka its atmosphere"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s09",
-   "beat": 1,
-   "start": {
-    "t": 33.38,
-    "word": "his"
-   },
-   "duration": 3.48,
-   "narration": "his head would split into a hundred pieces.",
-   "meaning": "his head would split into a hundred pieces. (shown as a dark story frame)",
-   "why": "ravana10 in a dark night world while 'his head would split into a hundred pieces.' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "crane_down",
-    "from": {
-     "z": 1.08,
-     "x": 14,
-     "y": -4,
-     "r": 0
-    },
-    "to": {
-     "z": 1.02,
-     "x": -14,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "ravana10",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "ravana10"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#5a70b0",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#24366a"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#24366a"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#18224a"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#101830"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#101830"
-      },
-      {
-       "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "palace"
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "ravana10",
-     "x": 640,
-     "y": 589,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "ember_fire",
-     "word": "his",
-     "x": 466,
-     "y": 664,
-     "w": 70,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire giving the lanka its atmosphere"
-    },
-    {
-     "k": "ember_fire",
-     "word": "his",
-     "x": 818,
-     "y": 664,
-     "w": 70,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire giving the lanka its atmosphere"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s10",
-   "beat": 1,
-   "start": {
-    "t": 36.86,
-    "word": "When"
-   },
-   "duration": 3.78,
-   "narration": "When Ravana carried Sita away, he took her by force.",
-   "meaning": "When Ravana carried Sita away, he took her by force. (shown as a dark story frame)",
-   "why": "ravana10 in a dark night world while 'When Ravana carried Sita away, he took her by forc' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "push_in",
-    "from": {
-     "z": 1.02,
-     "x": -14,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.09,
-     "x": 10,
-     "y": -4,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "ravana10",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "ravana10"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#5a70b0",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#24366a"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#24366a"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#18224a"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#18224a"
-      },
-      {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#101830"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#101830"
-      },
-      {
-       "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "palace"
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "ravana10",
-     "x": 470,
-     "y": 589,
-     "s": 0.765,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    },
-    {
-     "who": "sita",
-     "x": 810,
-     "y": 589,
-     "s": 0.765,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "ember_fire",
-     "word": "When",
-     "x": 466,
-     "y": 664,
-     "w": 70,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire giving the lanka its atmosphere"
-    },
-    {
-     "k": "ember_fire",
-     "word": "When",
-     "x": 818,
-     "y": 664,
-     "w": 70,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire giving the lanka its atmosphere"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s11",
-   "beat": 1,
-   "start": {
-    "t": 40.64,
-    "word": "And"
-   },
-   "duration": 4.04,
-   "narration": "And in the Ramayana, he admits why he never forced her into his bed.",
-   "meaning": "And in the Ramayana, he admits why he never forced her into his bed. (shown as a dark story frame)",
-   "why": "ravana10 in a dark night world while 'And in the Ramayana, he admits why he never forced' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "crane_down",
-    "from": {
-     "z": 1.09,
-     "x": 10,
-     "y": -4,
-     "r": 0
-    },
-    "to": {
-     "z": 1.03,
-     "x": -10,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "ravana10",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "ravana10"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#5a70b0",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#24366a"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#24366a"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3058,7 +3447,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3066,7 +3455,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3074,7 +3463,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3082,7 +3471,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3090,7 +3479,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3098,7 +3487,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3106,7 +3495,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3114,7 +3503,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3122,7 +3511,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3130,21 +3519,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#101830"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#101830"
+       "col": "#2a0e10"
       }
      ]
     },
@@ -3172,23 +3561,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "palace"
    },
    "mood": {
     "emotion": "calm",
@@ -3198,316 +3571,26 @@
     {
      "who": "ravana10",
      "x": 640,
-     "y": 589,
+     "y": 602,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "coldsmile",
      "look": 700
     }
    ],
    "effects": [
     {
-     "k": "mist_wisps",
-     "word": "And",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
+     "k": "ember_fire",
+     "word": "It",
+     "x": 452,
+     "y": 672,
+     "w": 80,
+     "alpha": 0.8,
      "par": 1.0,
-     "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s12",
-   "beat": 1,
-   "start": {
-    "t": 44.68,
-    "word": "It"
-   },
-   "duration": 2.2,
-   "narration": "It was not because he respected her.",
-   "meaning": "It was not because he respected her. (shown as a dark story frame)",
-   "why": "ravana10 in a dark night world while 'It was not because he respected her.' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "push_in",
-    "from": {
-     "z": 1.03,
-     "x": -10,
-     "y": 0,
-     "r": 0
+     "behind": false,
+     "meaning": "a palace torch"
     },
-    "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -4,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "ravana10",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "ravana10"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#5a70b0",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#24366a"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#24366a"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#101830"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#101830"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "ravana10",
-     "x": 640,
-     "y": 588,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [
     {
      "k": "mist_wisps",
      "word": "It",
@@ -3774,23 +3857,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "storm"
    },
    "mood": {
     "emotion": "anger",
@@ -3800,36 +3867,36 @@
     {
      "who": "ravana10",
      "x": 640,
-     "y": 588,
+     "y": 602,
      "s": 0.9,
      "flip": 1,
-     "pose": "point",
-     "emo": "anger",
+     "pose": "stand",
+     "emo": "fear",
      "look": 700
     }
    ],
    "effects": [
     {
+     "k": "lightning_forks",
+     "word": "It",
+     "x": 640,
+     "y": 260,
+     "w": 560,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "fear of the curse"
+    },
+    {
      "k": "curse_glow",
      "word": "It",
      "x": 640,
-     "y": 400,
-     "w": 440,
-     "alpha": 0.9,
+     "y": 420,
+     "w": 460,
+     "alpha": 0.7,
      "par": 1.0,
      "behind": false,
-     "meaning": "curse glow showing what the narration says"
-    },
-    {
-     "k": "mist_wisps",
-     "word": "It",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
+     "meaning": "the curse he fears"
     }
    ],
    "transition_in": "cut"
@@ -3844,7 +3911,7 @@
    "duration": 4.36,
    "narration": "So Ravana did not hurt Sita, but it was not because he was good.",
    "meaning": "So Ravana did not hurt Sita, but it was not because he was it. (shown as a dark story frame)",
-   "why": "ravana10 in a dark night world while 'So Ravana did not hurt Sita, but it was not becaus' is spoken.",
+   "why": "ravana10 in a dark ember world while 'So Ravana did not hurt Sita, but it was not becaus' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -3876,7 +3943,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -3885,7 +3952,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -3895,7 +3962,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -3905,7 +3972,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -3915,7 +3982,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -3925,7 +3992,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -3933,14 +4000,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#7a2020"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
       }
      ]
     },
@@ -3956,109 +4058,60 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "wall",
+       "x": 640,
+       "y": 505,
+       "s": 0.7,
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 405,
        "y": 508,
        "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
+       "kind": "palm",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
+       "kind": "round",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 495,
        "y": 508,
        "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
+       "kind": "palm",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#101830"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#101830"
+       "col": "#3a1618"
       }
      ]
     },
@@ -4086,23 +4139,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "palace"
    },
    "mood": {
     "emotion": "calm",
@@ -4111,9 +4148,9 @@
    "characters": [
     {
      "who": "ravana10",
-     "x": 470,
-     "y": 589,
-     "s": 0.765,
+     "x": 566,
+     "y": 572,
+     "s": 0.8,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -4121,26 +4158,48 @@
     },
     {
      "who": "sita",
-     "x": 810,
-     "y": 589,
-     "s": 0.765,
+     "x": 718,
+     "y": 548,
+     "s": 0.72,
      "flip": -1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "sad",
      "look": 700
     }
    ],
    "effects": [
     {
-     "k": "mist_wisps",
+     "k": "ember_fire",
      "word": "So",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
+     "x": 452,
+     "y": 672,
+     "w": 80,
+     "alpha": 0.8,
      "par": 1.0,
-     "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
+     "behind": false,
+     "meaning": "a palace torch"
+    },
+    {
+     "k": "ember_fire",
+     "word": "So",
+     "x": 466,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "So",
+     "x": 818,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -4397,23 +4456,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "night"
    },
    "mood": {
     "emotion": "anger",
@@ -4423,11 +4466,11 @@
     {
      "who": "ravana10",
      "x": 640,
-     "y": 589,
+     "y": 603,
      "s": 0.9,
      "flip": 1,
-     "pose": "point",
-     "emo": "anger",
+     "pose": "stand",
+     "emo": "shame",
      "look": 700
     }
    ],
@@ -4436,12 +4479,12 @@
      "k": "curse_glow",
      "word": "He",
      "x": 640,
-     "y": 400,
-     "w": 440,
-     "alpha": 0.9,
+     "y": 420,
+     "w": 460,
+     "alpha": 0.6,
      "par": 1.0,
      "behind": false,
-     "meaning": "curse glow showing what the narration says"
+     "meaning": "the curse he fears"
     },
     {
      "k": "mist_wisps",
@@ -4467,7 +4510,7 @@
    "duration": 3.94,
    "narration": "And a king who is afraid only of a curse is not a great man.",
    "meaning": "And a king who is afraid only of a curse is not a it man. (shown as a dark story frame)",
-   "why": "ravana10 in a dark night world while 'And a king who is afraid only of a curse is not a ' is spoken.",
+   "why": "ravana10 in a dark brown world while 'And a king who is afraid only of a curse is not a ' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -4499,7 +4542,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -4508,7 +4551,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -4518,7 +4561,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -4528,7 +4571,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -4538,7 +4581,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -4548,7 +4591,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -4556,14 +4599,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#5e3a24"
       }
      ]
     },
@@ -4579,7 +4622,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -4587,7 +4630,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -4595,7 +4638,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -4603,7 +4646,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -4611,7 +4654,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -4619,7 +4662,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -4627,7 +4670,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -4635,7 +4678,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -4643,7 +4686,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -4651,7 +4694,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -4659,7 +4702,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -4667,21 +4710,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a281c"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#101830"
+       "col": "#2a1c12"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#101830"
+       "col": "#2a1c12"
       }
      ]
     },
@@ -4709,23 +4752,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "council"
    },
    "mood": {
     "emotion": "anger",
@@ -4735,25 +4762,25 @@
     {
      "who": "ravana10",
      "x": 640,
-     "y": 589,
-     "s": 0.9,
+     "y": 596,
+     "s": 0.88,
      "flip": 1,
-     "pose": "point",
-     "emo": "anger",
+     "pose": "stand",
+     "emo": "shame",
      "look": 700
     }
    ],
    "effects": [
     {
-     "k": "curse_glow",
+     "k": "mist_wisps",
      "word": "And",
      "x": 640,
-     "y": 400,
-     "w": 440,
-     "alpha": 0.9,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.6,
      "par": 1.0,
-     "behind": false,
-     "meaning": "curse glow showing what the narration says"
+     "behind": true,
+     "meaning": "a quiet end"
     },
     {
      "k": "mist_wisps",

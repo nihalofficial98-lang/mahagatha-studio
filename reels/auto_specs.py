@@ -1,6 +1,6 @@
 """Per-reel specs for reels/auto_briefs.py: lex = word in narration -> cast key (who appears), scenes = (sentence index or keyword in sentence, scene), scale/big/maxc/over optional."""
 import sys;sys.path.insert(0,"/home/user/mahagatha-studio/reels")
-from briefs_lib import pfx
+from briefs_lib import pfx,name
 SPEC={
  'reel17':dict(scene='night',lex={'vishnu':'vishnu','shiva':'shiva'},scenes=[(0,'night'),('demons','ember'),('wilderness','brown'),('lingam','indigo'),('thousand lotuses','indigo'),('appeared','kailash')],
    scale={'vishnu':.9,'shiva':.9},
@@ -130,3 +130,72 @@ SPEC['reel20'].setdefault('over',{}).update({
 SPEC['reel21']['war']=[(458,'sugriva','lunge'),(498,'sugriva','throw'),(538,'sugriva','lunge'),(742,'asura2','rage'),(782,'asura3','lunge'),(822,'asura2','rage')]
 SPEC['reel23']['war']=[(458,'asura1','fall'),(498,'asura2','lunge'),(538,'asura3','fall'),(742,'asura3','rage'),(782,'asura1','lunge'),(822,'asura2','fall')]
 SPEC['reel26']['war']=[(458,'deva_thin','lunge'),(498,'deva_thin2','lunge'),(538,'deva_thin','throw'),(742,'asura2','rage'),(782,'asura3','rage'),(822,'asura1','lunge')]
+
+# ================= reel24: the three weapons, shown alone (no characters) =================
+AS=lambda kind,x=640,y=430,w=230:pfx('astra',None,x,y,w,('the golden Brahmastra arrow of flame' if kind=='brahma' else 'the white-blue Pashupatastra arrow of fire'),alpha=1,kind=kind)
+TRI=lambda x=640,y=430,w=270:pfx('trishul',None,x,y,w,"Shiva's golden trident with silver prongs, damaru and red cloth",alpha=1)
+CHK=lambda x=640,y=420,w=380:pfx('sudarshan_chakra',None,x,y,w,"Vishnu's spinning Sudarshana Chakra",alpha=1)
+NM=lambda s,y=150:name(None,s,640,y,32)
+SPEC['reel24']['over']={
+ 0:dict(scene='night',bg='cosmos',chars=[],fx=[AS('brahma'),NM('Brahmastra')]),
+ 1:dict(scene='ember',bg='cosmos',chars=[],fx=[AS('brahma'),pfx('red_energy_pulse',None,640,430,520,'its power that stops armies',alpha=.6,behind=True)]),
+ 2:dict(scene='indigo',bg='cosmos',chars=[],fx=[AS('pashupata'),NM('Pashupatastra')]),
+ 3:dict(scene='indigo',bg='cosmos',chars=[],fx=[AS('pashupata')]),
+ 4:dict(scene='ember',bg='storm',chars=[],fx=[AS('pashupata'),pfx('ember_fire',None,640,690,420,'the whole universe burning',alpha=.8),pfx('lightning_forks',None,640,260,560,'danger of burning the universe',alpha=.7,behind=True)]),
+ 5:dict(scene='night',bg='cosmos',chars=[],fx=[AS('pashupata'),pfx('magic_circle',None,640,430,500,'rings of power around the astra',alpha=.7,behind=True)]),
+ 6:dict(scene='night',bg='cosmos',chars=[],fx=[AS('pashupata',640,430,200),pfx('magic_circle',None,640,430,560,'it is sent by a word, a look, a thought',alpha=.8,behind=True),pfx('divine_rays',None,640,330,560,'light of a thought',alpha=.6,behind=True)]),
+ 7:dict(scene='indigo',bg='cosmos',chars=[],fx=[AS('pashupata',640,380,260),AS('brahma',640,640,110)]),
+ 8:dict(scene='brown',bg='vaikuntha',chars=[],fx=[CHK(),NM("Sudarshana Chakra")]),
+ 9:dict(scene='brown',bg='vaikuntha',chars=[],fx=[CHK(640,300,300),AS('brahma',640,610,150)]),
+ 10:dict(scene='brown',bg='vaikuntha',chars=[],fx=[CHK(),pfx('divine_rays',None,640,330,560,'Krishna lets him try',alpha=.6,behind=True)]),
+ 11:dict(scene='ember',bg='storm',chars=[],fx=[CHK(640,450,380),pfx('ground_crack',None,640,670,560,'the chakra too heavy to lift',alpha=.8),pfx('lightning_forks',None,640,260,560,'its mighty power',alpha=.6,behind=True)]),
+ 12:dict(scene='night',bg='kailash',chars=[],fx=[TRI(),NM("Shiva's Trident")]),
+ 13:dict(scene='night',bg='kailash',chars=[],fx=[TRI(640,400,250),AS('pashupata',640,660,110)]),
+ 14:dict(scene='ember',bg='storm',chars=[],fx=[TRI(),pfx('ground_crack',None,640,680,600,'the earth splitting under the trident',alpha=.9),pfx('lightning_forks',None,640,260,560,'the power to destroy the universe',alpha=.8,behind=True)]),
+ 15:dict(scene='indigo',bg='cosmos',chars=[],fx=[AS('brahma'),pfx('red_energy_pulse',None,640,430,520,'its power that stops armies',alpha=.5,behind=True)]),
+ 16:dict(scene='night',bg='cosmos',chars=[],fx=[AS('pashupata',640,190,120),CHK(640,370,230),TRI(640,590,170)]),
+ 17:dict(scene='night',bg='cosmos',chars=[],fx=[AS('pashupata',640,190,120),CHK(640,370,230),TRI(640,590,170),pfx('mist_wisps',None,640,560,640,'a quiet question over the three weapons',alpha=.5,behind=True)]),
+}
+# ================= reel25: Sheshnag, drawn properly, with the Earth on his central hood =================
+SN=lambda x=640,y=520,w=430,**k:pfx('sheshnag',None,x,y,w,'giant Sheshnag with nine cobra hoods and the Earth on his central hood',alpha=1,**k)
+CH=lambda who,x,y,s,pose,emo:dict(who=who,x=x,y=y,s=s,_face=.46,flip=1,pose=pose,emo=emo,look=700)
+SPEC['reel25']['over']={
+ 0:dict(scene='night',bg='cosmos',chars=[],fx=[SN(earth=.07),NM('Sheshnag',130)]),
+ 1:dict(scene='night',bg='cosmos',chars=[],fx=[SN(seed=1)]),
+ 2:dict(scene='night',bg='cosmos',chars=[],fx=[SN(earth=.07),pfx('mist_wisps',None,640,420,700,'mist hiding Sheshnag',alpha=.75)]),
+ 3:dict(scene='teal',bg='sea',chars=[CH('vishnu_rest',640,690,.9,'lie','calm')],fx=[]),
+ 4:dict(scene='teal',bg='sea',chars=[CH('vishnu_rest',640,690,.9,'lie','calm')],fx=[pfx('wave_ocean',None,640,690,700,'the endless ocean Vishnu sleeps on',alpha=.9)]),
+ 5:dict(scene='teal',bg='sea',chars=[CH('vishnu_rest',640,720,.8,'lie','calm'),dict(who='brahma',x=640,y=430,s=.62,_face=.4,flip=1,pose='stand',emo='calm',look=700)],fx=[pfx('divine_rays',None,640,420,520,'golden light where Brahma appears',alpha=.7,behind=True)]),
+ 6:dict(scene='night',bg='cosmos',chars=[dict(who='brahma',x=640,y=470,s=.62,_face=.38,flip=1,pose='stand',emo='calm',look=700)],fx=WORLDS('lotus')),
+ 7:dict(scene='night',bg='cosmos',chars=[dict(who='brahma',x=640,y=470,s=.62,_face=.38,flip=1,pose='stand',emo='calm',look=700)],fx=WORLDS('top')),
+ 8:dict(scene='ember',bg='cosmos',chars=[],fx=WORLDS('But')+[pfx('ground_crack',None,640,660,520,'the worlds are too heavy and the ground cracks',alpha=.8)]),
+ 9:dict(scene='ember',bg='storm',chars=[],fx=WORLDS('stem',260)+[pfx('lightning_forks',None,640,260,560,'everything starts to fall',alpha=.7,behind=True)]),
+ 10:dict(scene='night',bg='sea',chars=[],fx=[SN(earth=.07),pfx('divine_rays',None,640,300,560,'Sheshnag rising from far below',alpha=.7,behind=True)]),
+ 11:dict(scene='night',bg='cosmos',chars=[],fx=[SN(640,670,370,stack=14,earth=.05)]),
+ 12:dict(scene='teal',bg='sea',chars=[],fx=[pfx('tortoise',None,640,690,400,'Vishnu as a giant tortoise holding Sheshnag up',alpha=1),SN(640,500,330,earth=.06)]),
+ 13:dict(scene='night',bg='cosmos',chars=[],fx=[SN(earth=.07)]),
+ 14:dict(scene='night',bg='cosmos',chars=[],fx=[SN(earth=.04)]),
+ 15:dict(scene='night',bg='cosmos',chars=[],fx=[SN(earth=.07),NM('Sheshnag',130)]),
+ 16:dict(scene='night',bg='cosmos',chars=[],fx=[SN(seed=1)]),
+ 17:dict(scene='night',bg='cosmos',chars=[],fx=[SN(earth=.07),pfx('mist_wisps',None,640,420,700,'mist hiding Sheshnag',alpha=.8)]),
+}
+# ================= reel28: Ravana and Sita; a different place and mood for every beat =================
+C28=lambda who,x,s,pose,emo,flip=1,y=700:dict(who=who,x=x,y=y,s=s,_face=.46,flip=flip,pose=pose,emo=emo,look=700)
+SPEC['reel28']['over']={
+ 0:dict(scene='ember',bg='palace',chars=[C28('ravana10',566,.8,'stand','scheme'),C28('sita',718,.72,'stand','sad',-1)],fx=[pfx('ember_fire',None,452,672,80,'a palace torch',alpha=.8)]),
+ 1:dict(scene='ember',bg='palace',chars=[C28('ravana10',566,.8,'stand','calm'),C28('sita',718,.72,'plead','fear',-1)],fx=[pfx('ember_fire',None,452,672,80,'a palace torch',alpha=.8)]),
+ 2:dict(scene='brown',bg='council',chars=[C28('ravana10',640,.88,'stand','pride')],fx=[pfx('divine_rays',None,640,330,520,'a king in his court',alpha=.5,behind=True)]),
+ 3:dict(scene='brown',bg='palace',chars=[C28('hanuman',562,.85,'stand','surprise'),C28('kanya',718,.6,'stand','sad',-1),C28('kanya',750,.55,'plead','fear',-1)],fx=[pfx('ember_fire',None,452,672,80,'a palace torch',alpha=.8)]),
+ 4:dict(scene='indigo',bg='dusk',chars=[C28('ravana10',566,.82,'stand','anger'),C28('kanya',718,.62,'plead','sad',-1),C28('kanya',750,.56,'plead','fear',-1)],fx=[pfx('mist_wisps',None,640,600,640,'a sad mist over the captives',alpha=.7,behind=True)]),
+ 5:dict(scene='night',bg='night',chars=[C28('kanya',566,.78,'plead','fear'),C28('ravana10',722,.82,'lunge','anger',-1)],fx=[pfx('red_energy_pulse',None,640,420,420,'danger in the dark',alpha=.6,behind=True)]),
+ 6:dict(scene='indigo',bg='vaikuntha',chars=[C28('brahma',640,.88,'point','anger')],fx=[pfx('curse_glow',None,640,400,460,'the curse glowing',alpha=.9),pfx('divine_rays',None,640,330,520,'Brahma in heaven',alpha=.6,behind=True)]),
+ 7:dict(scene='indigo',bg='cloudscape',chars=[C28('brahma',562,.85,'point','anger'),C28('ravana10',722,.8,'plead','fear',-1)],fx=[pfx('curse_glow',None,640,400,460,'the curse upon him',alpha=.8)]),
+ 8:dict(scene='ember',bg='storm',chars=[C28('ravana10',640,.9,'stand','horror')],fx=[pfx('lightning_forks',None,640,260,560,'lightning over the cursed king',alpha=.9,behind=True),pfx('curse_glow',None,640,300,460,'the curse around his heads',alpha=.9)]),
+ 9:dict(scene='teal',bg='forest',chars=[C28('ravana10',566,.82,'stand','scheme'),C28('sita',780,.72,'plead','fear',-1)],fx=[pfx('mist_wisps',None,640,600,640,'forest mist as she is carried away',alpha=.7,behind=True)]),
+ 10:dict(scene='brown',bg='garden',chars=[C28('sita',562,.78,'stand','pride'),C28('ravana10',722,.82,'stand','scheme',-1)],fx=[]),
+ 11:dict(scene='ember',bg='palace',chars=[C28('ravana10',640,.9,'stand','coldsmile')],fx=[pfx('ember_fire',None,452,672,80,'a palace torch',alpha=.8)]),
+ 12:dict(scene='night',bg='storm',chars=[C28('ravana10',640,.9,'stand','fear')],fx=[pfx('lightning_forks',None,640,260,560,'fear of the curse',alpha=.8,behind=True),pfx('curse_glow',None,640,420,460,'the curse he fears',alpha=.7)]),
+ 13:dict(scene='ember',bg='palace',chars=[C28('ravana10',566,.8,'stand','calm'),C28('sita',718,.72,'stand','sad',-1)],fx=[pfx('ember_fire',None,452,672,80,'a palace torch',alpha=.8)]),
+ 14:dict(scene='night',bg='night',chars=[C28('ravana10',640,.9,'stand','shame')],fx=[pfx('curse_glow',None,640,420,460,'the curse he fears',alpha=.6)]),
+ 15:dict(scene='brown',bg='council',chars=[C28('ravana10',640,.88,'stand','shame')],fx=[pfx('mist_wisps',None,640,600,640,'a quiet end',alpha=.6,behind=True)]),
+}

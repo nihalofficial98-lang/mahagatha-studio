@@ -44,7 +44,7 @@ GW={'people','locals','travelers','villagers','families','relatives','devotees',
 WALKRX=r'\b(walked|walking|wandering|wander|wandered|went|moved|entered|approached|came|comes|stopped him on the road|marched|ran)\b'
 EMO=[('anger',r'\b(angry|furious|rage|cursed|curse|killed|kill|struck|attack|attacked|hit)\b'),('fear',r'\b(scared|afraid|fear|terrified|froze|trapped)\b'),('sad',r'\b(sad|pain|wound|wounded|blood|cried|wandering|lost|punishment)\b'),('surprise',r'\b(suddenly|shock|shocked|surprised|bright|jewels|amazing)\b'),('devotion',r'\b(pray|prayed|worship|worshipped|devotee|loved|blessed)\b'),('pride',r'\b(strong|strongest|powerful|beat|won|brave)\b'),('scheme',r'\b(trick|plan|idea|secret|mistake)\b'),('joy',r'\b(smiled|laughed|happy|gift)\b')]
 POSE=[('sitpray',r'\b(prayed|worshipped|chanted|meditation)\b'),('sleep',r'\b(asleep|sleeping|slept)\b'),('plead',r'\b(begged|asked|forgive)\b'),('lunge',r'\b(killed|struck|attacked|threw|hit|drove|cut)\b'),('fall',r'\b(fell|collapsed|snapped)\b'),('namaste',r'\b(bowed|blessed)\b'),('point',r'\b(told|said|warned|named)\b'),('open',r'\b(spread|rose|appeared)\b')]
-FX=[('ember_fire',r'\b(fire|flames|burned|burning|yajna|yagna)\b',(640,560,300)),('flower_petals',r'\b(flowers?)\b',(640,660,420)),('blood_splash',r'\b(blood)\b',(640,500,260)),('curse_glow',r'\b(curse|cursed)\b',(640,420,420)),('lightning_forks',r'\b(lightning|thunder|storm)\b',(640,260,500)),('smoke_plume',r'\b(smoke|ashes|ash)\b',(640,560,300)),('wave_ocean',r'\b(ocean|sea|water|river)\b',(640,640,640)),('divine_rays',r'\b(light|glowing|shine|bright|golden|divine)\b',(640,330,520)),('sudarshan_chakra',r'\b(chakra|disc)\b',(640,400,260)),('red_energy_pulse',r'\b(boon|power|powers|weapon|astra)\b',(640,420,300)),('mist_wisps',r'\b(night|dark|silent|mystery)\b',(640,540,640))]
+FX=[('ember_fire',r'\b(fire|flames|burned|burning|yajna|yagna)\b',(640,560,300)),('blood_splash',r'\b(blood)\b',(640,500,260)),('curse_glow',r'\b(curse|cursed)\b',(640,420,420)),('lightning_forks',r'\b(lightning|thunder|storm)\b',(640,260,500)),('smoke_plume',r'\b(smoke|ashes|ash)\b',(640,560,300)),('wave_ocean',r'\b(ocean|sea|water|river)\b',(640,640,640)),('divine_rays',r'\b(light|glowing|shine|bright|golden|divine)\b',(640,330,520)),('sudarshan_chakra',r'\b(chakra|disc)\b',(640,400,260)),('red_energy_pulse',r'\b(boon|power|powers|weapon|astra)\b',(640,420,300)),('mist_wisps',r'\b(night|dark|silent|mystery)\b',(640,540,640))]
 EVENTS=[(r'\b(tore|pulled|plucked|placed)\b.*\beye\b|\beye\b.*\b(tore|pulled|plucked|placed)\b|\b(plucked|pulled) out his eye\b','selfcut','pain',[('blood_splash',640,330,150,1.0,False),('divine_rays',640,330,380,.7,True)]),
  (r'\b(cut off|snapped|whipped|beheaded|cut off vishnu)\b','fall','shock',[('blood_splash',640,360,200,.9,False),('red_energy_pulse',640,420,420,.6,True)]),
  (r'\bchakra\b|\bdisc\b','open','calm',[('sudarshan_chakra',640,330,320,1.0,False),('divine_rays',640,330,520,.6,True)]),
@@ -53,7 +53,7 @@ EVENTS=[(r'\b(tore|pulled|plucked|placed)\b.*\beye\b|\beye\b.*\b(tore|pulled|plu
  (r'\b(prayed|worshipped|chanted)\b','sitpray','devotion',[('divine_rays',640,330,520,.6,True),('mist_wisps',640,560,640,.7,True)]),
  (r'\b(asleep|slept)\b','sleep','calm',[('mist_wisps',640,560,640,.8,True)]),
  (r'\b(curse|cursed)\b','point','anger',[('curse_glow',640,400,440,.9,False)]),
- (r'\b(jewels?|diamonds?|rubies|pearls?)\b','open','surprise',[('divine_rays',640,330,520,.8,True),('flower_petals',640,420,440,.9,False)]),
+ (r'\b(jewels?|diamonds?|rubies|pearls?)\b','open','surprise',[('divine_rays',640,330,520,.8,True)]),
  (r'\b(fell|fall|crumbled)\b','fall','fear',[('ground_crack',640,640,520,.8,False)])]
 CAMS=[("push_in",(1.0,0,0),(1.07,0,-6),"medium"),("pull_out",(1.1,0,-6),(1.0,0,0),"close"),("pan_left",(1.04,22,0),(1.04,-22,0),"medium"),("tilt_up",(1.0,0,10),(1.06,0,0),"wide"),("pan_right",(1.04,-22,0),(1.04,22,0),"close"),("pull_out",(1.08,0,-4),(1.0,0,0),"wide"),("dolly_right",(1.0,-14,0),(1.06,14,-6),"close")]
 PAL={'kailash':'night','vaikuntha':'indigo','cosmos':'night','sea':'teal','forest':'teal','ashram':'brown','palace':'ember','yagna':'ember','plain':'ember','dusk':'ember','dawn':'brown','storm':'night','night':'night'}
@@ -142,8 +142,9 @@ def main(reel):
             if re.search(rx,low):theme=th;bgk=bk;break
         want=(scene,theme,bgk)
         if n==0 or n in cfg.get('over',{}) and 'scene' in cfg['over'][n]:cur=want;lastchg=n
-        elif want!=cur and n-lastchg>=4:cur=want;lastchg=n
+        elif want!=cur and n-lastchg>=2:cur=want;lastchg=n
         scene,theme,bgk=cur
+        if cfg.get('over',{}).get(n,{}).get('bg'):bgk=cfg['over'][n]['bg']
         AMB={'forest':[('mist_wisps',640,600,640,.5,True)],'palace':[('ember_fire',466,664,70,.8,False),('ember_fire',818,664,70,.8,False)],'lanka':[('ember_fire',466,664,70,.8,False),('ember_fire',818,664,70,.8,False)],'temple':[('mist_wisps',640,600,640,.5,True),('ember_fire',470,668,60,.8,False)],'battle':[('smoke_plume',640,480,560,.3,True),('ember_fire',455,672,70,.7,False)],'sea':[('wave_ocean',640,690,640,.6,False)],'cosmos':[('divine_rays',640,330,560,.4,True)],'heaven':[('divine_rays',640,330,560,.4,True),('ember_fire',466,664,60,.7,False)],'village':[('smoke_plume',520,520,220,.35,True)],'hills':[('mist_wisps',640,600,640,.45,True)]}
         if len(fxs)<2 and not cfg.get('war') and theme in AMB:
             for k_,x_,y_,w_,a_,b_ in AMB[theme]:fxs.append(pfx(k_,first,x_,y_,w_,f"{k_.replace('_',' ')} giving the {theme} its atmosphere",alpha=a_,behind=b_))
@@ -167,7 +168,7 @@ def main(reel):
         sx=640
         sh.update(meaning=re.sub(r'\b(good|great|nice|very|something|anything)\b','it',txt+" (shown as a dark story frame)")[:110],why=re.sub(r'\b(something|anything|things?|stuff|good|great|nice|very)\b','it',f"{(who[0] if who else 'The scene')} in a dark {scene} world while '{txt[:50]}' is spoken."),
           camera=cam(cname,ca,cb,shs,"normal",0,"a slow move that follows the story beat"),focus={"subject":who[0] if who else "scene","depth":"deep"},
-          vertical={"focus":who[0]} if who else {},layers=[dict(l_,items=l_['items']+extra_mid) if l_['d']=='mid' else l_ for l_ in scene_layers(scene,theme)],background=(bg(bgk) if bgk and not cfg.get('over',{}).get(n,{}).get('scene') else (dict(background(scene),sx=sx) if scene in SK else background(scene))),mood={"emotion":emo,"grade":GRD},
+          vertical={"focus":who[0]} if who else {},layers=[dict(l_,items=l_['items']+extra_mid) if l_['d']=='mid' else l_ for l_ in scene_layers(scene,theme)],background=(bg(bgk) if bgk and (not cfg.get('over',{}).get(n,{}).get('scene') or cfg.get('over',{}).get(n,{}).get('bg')) else (dict(background(scene),sx=sx) if scene in SK else background(scene))),mood={"emotion":emo,"grade":GRD},
           characters=ch,effects=fxs,transition_in="cut")
         ov=cfg.get('over',{}).get(n,{})
         if 'vertical' in ov:sh['vertical']=ov['vertical']
