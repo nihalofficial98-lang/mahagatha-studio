@@ -143,6 +143,10 @@ def main(reel):
         if n==0 or n in cfg.get('over',{}) and 'scene' in cfg['over'][n]:cur=want;lastchg=n
         elif want!=cur and n-lastchg>=4:cur=want;lastchg=n
         scene,theme,bgk=cur
+        if cfg.get('war') and ch:
+            for wx,wk,wp in cfg['war']:ch.append({"who":wk,"x":wx,"y":690,"s":.26,"_ground":True,"flip":1 if wx<640 else -1,"pose":wp,"emo":"anger","look":700})
+            fxs=fxs[:1]+[pfx('ember_fire',None,452,672,95,'burning fire on the battlefield at the left',alpha=.8),pfx('ember_fire',None,830,672,95,'burning fire on the battlefield at the right',alpha=.8),pfx('smoke_plume',None,640,470,560,'war smoke over the battlefield',alpha=.3,behind=True)]
+            fxs=[dict(f_,word=(f_.get('word') or first)) for f_ in fxs]
         cname,ca,cb,shs=CAMS[ci%len(CAMS)];ci+=1
         # continuous camera: each shot starts exactly where the previous one ended (one long take)
         Z=[1.06,1.0,1.08,1.02,1.09,1.03][ci%6];X=[14,-14,10,-10][ci%4];ca=cam_end;cb=(Z,X,-4 if Z>1.04 else 0);cam_end=cb

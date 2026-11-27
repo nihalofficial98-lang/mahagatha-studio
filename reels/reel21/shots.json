@@ -64,6 +64,54 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 558,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 558,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 558,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 558,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
 "fx": [
@@ -80,17 +128,40 @@
 },
 {
 "t": "pfx",
-"k": "smoke_plume",
-"x": 640,
-"y": 560,
-"w": 360,
-"alpha": 0.6,
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
 "par": 1.0,
 "c": 0,
 "d": 0.6
 }
 ],
-"fxb": [],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -380,6 +451,54 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 573,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 573,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 573,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 573,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
 "fx": [
@@ -396,17 +515,40 @@
 },
 {
 "t": "pfx",
-"k": "blood_splash",
-"x": 640,
-"y": 520,
-"w": 220,
-"alpha": 0.8,
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
 "par": 1.0,
 "c": 0,
 "d": 0.6
 }
 ],
-"fxb": [],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -679,10 +821,93 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 584,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 584,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 584,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 584,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
-"fx": [],
-"fxb": [],
+"fx": [
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -895,7 +1120,9 @@
 }
 ]
 },
-"cues": [],
+"cues": [
+"This"
+],
 "vert": {
 "focus": "kumbhakarna"
 },
@@ -953,10 +1180,93 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 584,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 584,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 584,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 584,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
-"fx": [],
-"fxb": [],
+"fx": [
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -1169,7 +1479,9 @@
 }
 ]
 },
-"cues": [],
+"cues": [
+"Kumbhakarna"
+],
 "vert": {
 "focus": "kumbhakarna"
 },
@@ -1211,6 +1523,54 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 585,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 585,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 585,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 585,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
 "fx": [
@@ -1227,17 +1587,40 @@
 },
 {
 "t": "pfx",
-"k": "blood_splash",
-"x": 640,
-"y": 520,
-"w": 220,
-"alpha": 0.8,
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
 "par": 1.0,
 "c": 0,
 "d": 0.6
 }
 ],
-"fxb": [],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -1428,195 +1811,51 @@
 "mood": {
 "lx": 0.8
 }
-}
-],
-"fx": [],
-"fxb": [],
-"layers": [
-{
-"d": "far",
-"fog": 0.6,
-"haze": "#b04a28",
-"items": [
-{
-"o": "mountain",
-"x": 420,
-"y": 470,
-"s": 1.1,
-"w": 230,
-"h": 190,
-"col": "#6a2a2a",
-"snow": false
 },
 {
-"o": "mountain",
-"x": 550,
-"y": 478,
-"s": 0.9,
-"w": 200,
-"h": 130,
-"col": "#521e22",
-"snow": false
-},
-{
-"o": "mountain",
-"x": 700,
-"y": 468,
-"s": 1.25,
-"w": 250,
-"h": 215,
-"col": "#6a2a2a",
-"snow": false
-},
-{
-"o": "mountain",
-"x": 835,
-"y": 480,
-"s": 0.95,
-"w": 210,
-"h": 150,
-"col": "#521e22",
-"snow": false
-},
-{
-"o": "mountain",
-"x": 480,
-"y": 490,
-"s": 0.6,
-"w": 160,
-"h": 90,
-"col": "#521e22",
-"snow": false
-},
-{
-"o": "cloud",
-"x": 500,
-"y": 200,
-"s": 1.0,
-"col": "#7a2020"
-},
-{
-"o": "cloud",
-"x": 790,
-"y": 250,
-"s": 0.9,
-"col": "#7a2020"
-}
-]
-},
-{
-"d": "mid",
-"fog": 0.5,
-"items": [
-{
-"o": "hill",
-"x": 640,
-"y": 482,
-"s": 1.0,
-"w": 1100,
-"h": 12,
-"col": "#3a1618"
-},
-{
-"o": "wall",
-"x": 500,
-"y": 515,
-"s": 0.45,
-"col": "#2a0e10"
-},
-{
-"o": "wall",
-"x": 790,
-"y": 515,
-"s": 0.4,
-"col": "#2a0e10"
-},
-{
-"o": "rock",
-"x": 450,
-"y": 525,
-"s": 0.95,
-"col": "#2a0e10"
-},
-{
-"o": "rock",
-"x": 840,
-"y": 520,
-"s": 0.85,
-"col": "#2a0e10"
-},
-{
-"o": "rock",
-"x": 640,
-"y": 515,
-"s": 0.5,
-"col": "#3a1618"
-}
-]
-},
-{
-"d": "near",
-"dark": 0.5,
-"blur": 2,
-"items": [
-{
-"o": "rock",
-"x": 432,
-"y": 758,
-"s": 0.9,
-"col": "#0a0610"
-},
-{
-"o": "rock",
-"x": 852,
-"y": 760,
-"s": 0.85,
-"col": "#0a0610"
-}
-]
-}
-]
-},
-"cues": [],
-"vert": {
-"focus": "hanuman"
-},
-"dx": 0
-},
-{
-"beat": 1,
-"at": 18.66,
-"draw": "scene",
-"cam": {
-"from": {
-"z": 1.06,
-"x": 10,
-"y": -4,
-"r": 0
-},
-"to": {
-"z": 1.0,
-"x": -10,
-"y": 0,
-"r": 0
-}
-},
-"grade": "rgba(150,60,20,0.26)",
-"look": "ep07_dark",
-"sc": {
-"bg": {
-"k": "plain"
-},
-"figs": [
-{
-"who": "hanuman",
-"x": 640,
-"y": 642,
-"s": 1.08,
+"who": "sugriva",
+"x": 470,
+"y": 563,
+"s": 0.3,
 "flip": 1,
-"pose": "stand",
-"emo": "sad",
-"prop": "none",
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 563,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 563,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 563,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
 "mood": {
 "lx": 0.8
 }
@@ -1625,17 +1864,40 @@
 "fx": [
 {
 "t": "pfx",
-"k": "blood_splash",
-"x": 640,
-"y": 500,
-"w": 260,
-"alpha": 0.8,
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
 "par": 1.0,
 "c": 0,
 "d": 0.6
 }
 ],
-"fxb": [],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -1782,6 +2044,295 @@
 ]
 },
 "cues": [
+"The"
+],
+"vert": {
+"focus": "hanuman"
+},
+"dx": 0
+},
+{
+"beat": 1,
+"at": 18.66,
+"draw": "scene",
+"cam": {
+"from": {
+"z": 1.06,
+"x": 10,
+"y": -4,
+"r": 0
+},
+"to": {
+"z": 1.0,
+"x": -10,
+"y": 0,
+"r": 0
+}
+},
+"grade": "rgba(150,60,20,0.26)",
+"look": "ep07_dark",
+"sc": {
+"bg": {
+"k": "plain"
+},
+"figs": [
+{
+"who": "hanuman",
+"x": 640,
+"y": 642,
+"s": 1.08,
+"flip": 1,
+"pose": "stand",
+"emo": "sad",
+"prop": "none",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 562,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 562,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 562,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 562,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+}
+],
+"fx": [
+{
+"t": "pfx",
+"k": "blood_splash",
+"x": 640,
+"y": 500,
+"w": 260,
+"alpha": 0.8,
+"par": 1.0,
+"c": 1,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"layers": [
+{
+"d": "far",
+"fog": 0.6,
+"haze": "#b04a28",
+"items": [
+{
+"o": "mountain",
+"x": 420,
+"y": 470,
+"s": 1.1,
+"w": 230,
+"h": 190,
+"col": "#6a2a2a",
+"snow": false
+},
+{
+"o": "mountain",
+"x": 550,
+"y": 478,
+"s": 0.9,
+"w": 200,
+"h": 130,
+"col": "#521e22",
+"snow": false
+},
+{
+"o": "mountain",
+"x": 700,
+"y": 468,
+"s": 1.25,
+"w": 250,
+"h": 215,
+"col": "#6a2a2a",
+"snow": false
+},
+{
+"o": "mountain",
+"x": 835,
+"y": 480,
+"s": 0.95,
+"w": 210,
+"h": 150,
+"col": "#521e22",
+"snow": false
+},
+{
+"o": "mountain",
+"x": 480,
+"y": 490,
+"s": 0.6,
+"w": 160,
+"h": 90,
+"col": "#521e22",
+"snow": false
+},
+{
+"o": "cloud",
+"x": 500,
+"y": 200,
+"s": 1.0,
+"col": "#7a2020"
+},
+{
+"o": "cloud",
+"x": 790,
+"y": 250,
+"s": 0.9,
+"col": "#7a2020"
+}
+]
+},
+{
+"d": "mid",
+"fog": 0.5,
+"items": [
+{
+"o": "hill",
+"x": 640,
+"y": 482,
+"s": 1.0,
+"w": 1100,
+"h": 12,
+"col": "#3a1618"
+},
+{
+"o": "wall",
+"x": 500,
+"y": 515,
+"s": 0.45,
+"col": "#2a0e10"
+},
+{
+"o": "wall",
+"x": 790,
+"y": 515,
+"s": 0.4,
+"col": "#2a0e10"
+},
+{
+"o": "rock",
+"x": 450,
+"y": 525,
+"s": 0.95,
+"col": "#2a0e10"
+},
+{
+"o": "rock",
+"x": 840,
+"y": 520,
+"s": 0.85,
+"col": "#2a0e10"
+},
+{
+"o": "rock",
+"x": 640,
+"y": 515,
+"s": 0.5,
+"col": "#3a1618"
+}
+]
+},
+{
+"d": "near",
+"dark": 0.5,
+"blur": 2,
+"items": [
+{
+"o": "rock",
+"x": 432,
+"y": 758,
+"s": 0.9,
+"col": "#0a0610"
+},
+{
+"o": "rock",
+"x": 852,
+"y": 760,
+"s": 0.85,
+"col": "#0a0610"
+}
+]
+}
+]
+},
+"cues": [
+"with",
 "blood"
 ],
 "vert": {
@@ -1838,6 +2389,54 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 573,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 573,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 573,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 573,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
 "fx": [
@@ -1854,17 +2453,40 @@
 },
 {
 "t": "pfx",
-"k": "blood_splash",
-"x": 640,
-"y": 520,
-"w": 220,
-"alpha": 0.8,
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
 "par": 1.0,
 "c": 0,
 "d": 0.6
 }
 ],
-"fxb": [],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -2071,10 +2693,93 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 563,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 563,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 563,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 563,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
-"fx": [],
-"fxb": [],
+"fx": [
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -2287,7 +2992,9 @@
 }
 ]
 },
-"cues": [],
+"cues": [
+"Hanuman"
+],
 "vert": {
 "focus": "hanuman"
 },
@@ -2358,10 +3065,93 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 573,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 573,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 573,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 573,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
-"fx": [],
-"fxb": [],
+"fx": [
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -2574,7 +3364,9 @@
 }
 ]
 },
-"cues": [],
+"cues": [
+"Later"
+],
 "vert": {
 "focus": "kumbhakarna"
 },
@@ -2645,10 +3437,93 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 556,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 556,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 556,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 556,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
-"fx": [],
-"fxb": [],
+"fx": [
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -2861,7 +3736,9 @@
 }
 ]
 },
-"cues": [],
+"cues": [
+"Hanuman"
+],
 "vert": {
 "focus": "hanuman"
 },
@@ -2920,10 +3797,93 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 524,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 524,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 524,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 524,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
-"fx": [],
-"fxb": [],
+"fx": [
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -3136,7 +4096,9 @@
 }
 ]
 },
-"cues": [],
+"cues": [
+"but"
+],
 "vert": {
 "focus": "sugriva"
 },
@@ -3190,10 +4152,93 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 574,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 574,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 574,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 574,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
-"fx": [],
-"fxb": [],
+"fx": [
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -3339,7 +4384,9 @@
 }
 ]
 },
-"cues": [],
+"cues": [
+"Kumbhakarna"
+],
 "vert": {
 "focus": "kumbhakarna"
 },
@@ -3381,6 +4428,54 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 522,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 522,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 522,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 522,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
 "fx": [
@@ -3394,16 +4489,38 @@
 "par": 1.0,
 "c": 0,
 "d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
 }
 ],
 "fxb": [
 {
 "t": "pfx",
-"k": "red_energy_pulse",
+"k": "smoke_plume",
 "x": 640,
-"y": 420,
-"w": 420,
-"alpha": 0.6,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
 "par": 1.0,
 "c": 0,
 "d": 0.6
@@ -3599,6 +4716,54 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 563,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 563,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 563,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 563,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
 "fx": [
@@ -3610,11 +4775,45 @@
 "w": 260,
 "alpha": 0.8,
 "par": 1.0,
+"c": 1,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
 "c": 0,
 "d": 0.6
 }
 ],
-"fxb": [],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -3761,6 +4960,7 @@
 ]
 },
 "cues": [
+"Hanuman",
 "blood"
 ],
 "vert": {
@@ -3816,10 +5016,93 @@
 "mood": {
 "lx": 0.8
 }
+},
+{
+"who": "sugriva",
+"x": 470,
+"y": 521,
+"s": 0.3,
+"flip": 1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "sugriva",
+"x": 520,
+"y": 521,
+"s": 0.3,
+"flip": 1,
+"pose": "throw",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura2",
+"x": 760,
+"y": 521,
+"s": 0.3,
+"flip": -1,
+"pose": "rage",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
+},
+{
+"who": "asura3",
+"x": 812,
+"y": 521,
+"s": 0.3,
+"flip": -1,
+"pose": "lunge",
+"emo": "anger",
+"mood": {
+"lx": 0.8
+}
 }
 ],
-"fx": [],
-"fxb": [],
+"fx": [
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 470,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+},
+{
+"t": "pfx",
+"k": "ember_fire",
+"x": 810,
+"y": 640,
+"w": 200,
+"alpha": 0.85,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
+"fxb": [
+{
+"t": "pfx",
+"k": "smoke_plume",
+"x": 640,
+"y": 520,
+"w": 520,
+"alpha": 0.7,
+"par": 1.0,
+"c": 0,
+"d": 0.6
+}
+],
 "layers": [
 {
 "d": "far",
@@ -3965,7 +5248,9 @@
 }
 ]
 },
-"cues": [],
+"cues": [
+"In"
+],
 "vert": {
 "focus": "rama"
 },

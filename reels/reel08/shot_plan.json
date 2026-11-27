@@ -2502,10 +2502,10 @@
    },
    "figs": [
     {
-     "who": "deva_thin",
-     "x": 470,
-     "y": 589,
-     "s": 0.765,
+     "who": "brahma",
+     "x": 640,
+     "y": 477,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -2514,12 +2514,24 @@
      }
     },
     {
-     "who": "brahma",
-     "x": 810,
-     "y": 509,
-     "s": 0.765,
+     "who": "deva_thin",
+     "x": 500,
+     "y": 569,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 780,
+     "y": 569,
+     "s": 0.5,
      "flip": -1,
-     "pose": "stand",
+     "pose": "plead",
      "emo": "calm",
      "mood": {
       "lx": 0.8
@@ -2761,9 +2773,9 @@
      ]
     }
    ],
-   "note": "medium push_in: deva_thin in a dark night world while 'The gods, led by Brahma, who made the world,' is spoken.",
+   "note": "medium push_in: brahma in a dark night world while 'The gods, led by Brahma, who made the world,' is spoken.",
    "vert": {
-    "focus": "deva_thin"
+    "focus": "brahma"
    },
    "dx": 0
   },
@@ -7236,7 +7248,7 @@
      }
     },
     {
-     "who": "deva_thin",
+     "who": "vishnu",
      "x": 810,
      "y": 590,
      "s": 0.765,
@@ -7837,13 +7849,37 @@
    },
    "figs": [
     {
-     "who": "deva_thin",
+     "who": "vishnu",
      "x": 640,
-     "y": 588,
-     "s": 0.9,
+     "y": 562,
+     "s": 0.81,
      "flip": 1,
      "pose": "fall",
      "emo": "shock",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 500,
+     "y": 572,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 780,
+     "y": 572,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "plead",
+     "emo": "calm",
      "mood": {
       "lx": 0.8
      }
@@ -8087,9 +8123,9 @@
      ]
     }
    ],
-   "note": "medium push_in: deva_thin in a dark brown world while 'The gods cut off Vishnu's head by mistake, only to' is spoken.",
+   "note": "medium push_in: vishnu in a dark brown world while 'The gods cut off Vishnu's head by mistake, only to' is spoken.",
    "vert": {
-    "focus": "deva_thin"
+    "focus": "vishnu"
    },
    "dx": 0
   },

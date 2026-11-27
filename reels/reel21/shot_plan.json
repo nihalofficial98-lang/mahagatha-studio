@@ -54,6 +54,54 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 558,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 558,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 558,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 558,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
    "fx": [
@@ -70,17 +118,40 @@
     },
     {
      "t": "pfx",
-     "k": "smoke_plume",
-     "x": 640,
-     "y": 560,
-     "w": 360,
-     "alpha": 0.6,
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
      "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -366,6 +437,54 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 573,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 573,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 573,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 573,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
    "fx": [
@@ -382,17 +501,40 @@
     },
     {
      "t": "pfx",
-     "k": "blood_splash",
-     "x": 640,
-     "y": 520,
-     "w": 220,
-     "alpha": 0.8,
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
      "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -631,7 +773,9 @@
     "t": 6.94,
     "word": "This"
    },
-   "cues": [],
+   "cues": [
+    "This"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -663,10 +807,93 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 584,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 584,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 584,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 584,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.08,
@@ -905,7 +1132,9 @@
     "t": 9.3,
     "word": "Kumbhakarna"
    },
-   "cues": [],
+   "cues": [
+    "Kumbhakarna"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -937,10 +1166,93 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 584,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 584,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 584,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 584,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.02,
@@ -1197,6 +1509,54 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 585,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 585,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 585,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 585,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
    "fx": [
@@ -1213,17 +1573,40 @@
     },
     {
      "t": "pfx",
-     "k": "blood_splash",
-     "x": 640,
-     "y": 520,
-     "w": 220,
-     "alpha": 0.8,
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
      "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.09,
@@ -1395,7 +1778,9 @@
     "t": 15.94,
     "word": "The"
    },
-   "cues": [],
+   "cues": [
+    "The"
+   ],
    "bg": {
     "k": "plain"
    },
@@ -1412,10 +1797,93 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 563,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 563,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 563,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 563,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.03,
@@ -1588,6 +2056,7 @@
     "word": "with"
    },
    "cues": [
+    "with",
     "blood"
    ],
    "bg": {
@@ -1606,6 +2075,54 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 562,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 562,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 562,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 562,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
    "fx": [
@@ -1617,11 +2134,45 @@
      "w": 260,
      "alpha": 0.8,
      "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.06,
@@ -1824,6 +2375,54 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 573,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 573,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 573,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 573,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
    "fx": [
@@ -1840,17 +2439,40 @@
     },
     {
      "t": "pfx",
-     "k": "blood_splash",
-     "x": 640,
-     "y": 520,
-     "w": 220,
-     "alpha": 0.8,
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
      "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -2022,7 +2644,9 @@
     "t": 26.44,
     "word": "Hanuman"
    },
-   "cues": [],
+   "cues": [
+    "Hanuman"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -2055,10 +2679,93 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 563,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 563,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 563,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 563,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.08,
@@ -2297,7 +3004,9 @@
     "t": 30.6,
     "word": "Later"
    },
-   "cues": [],
+   "cues": [
+    "Later"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -2342,10 +3051,93 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 573,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 573,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 573,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 573,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.02,
@@ -2584,7 +3376,9 @@
     "t": 33.18,
     "word": "Hanuman"
    },
-   "cues": [],
+   "cues": [
+    "Hanuman"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -2629,10 +3423,93 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 556,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 556,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 556,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 556,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.09,
@@ -2871,7 +3748,9 @@
     "t": 37.78,
     "word": "but"
    },
-   "cues": [],
+   "cues": [
+    "but"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -2904,10 +3783,93 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 524,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 524,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 524,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 524,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.03,
@@ -3146,7 +4108,9 @@
     "t": 42.2,
     "word": "Kumbhakarna"
    },
-   "cues": [],
+   "cues": [
+    "Kumbhakarna"
+   ],
    "bg": {
     "k": "plain"
    },
@@ -3174,10 +4138,93 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 574,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 574,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 574,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 574,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.06,
@@ -3367,6 +4414,54 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 522,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 522,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 522,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 522,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
    "fx": [
@@ -3380,16 +4475,38 @@
      "par": 1.0,
      "c": 0,
      "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
     }
    ],
    "fxb": [
     {
      "t": "pfx",
-     "k": "red_energy_pulse",
+     "k": "smoke_plume",
      "x": 640,
-     "y": 420,
-     "w": 420,
-     "alpha": 0.6,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -3567,6 +4684,7 @@
     "word": "Hanuman"
    },
    "cues": [
+    "Hanuman",
     "blood"
    ],
    "bg": {
@@ -3585,6 +4703,54 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 563,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 563,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 563,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 563,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
    "fx": [
@@ -3596,11 +4762,45 @@
      "w": 260,
      "alpha": 0.8,
      "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.08,
@@ -3772,7 +4972,9 @@
     "t": 54.26,
     "word": "In"
    },
-   "cues": [],
+   "cues": [
+    "In"
+   ],
    "bg": {
     "k": "plain"
    },
@@ -3800,10 +5002,93 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "sugriva",
+     "x": 470,
+     "y": 521,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "sugriva",
+     "x": 520,
+     "y": 521,
+     "s": 0.3,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 760,
+     "y": 521,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 812,
+     "y": 521,
+     "s": 0.3,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 470,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 810,
+     "y": 640,
+     "w": 200,
+     "alpha": 0.85,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 520,
+     "w": 520,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.02,

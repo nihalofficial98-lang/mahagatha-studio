@@ -297,6 +297,66 @@
      "pose": "stand",
      "emo": "calm",
      "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 558,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 558,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 558,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 558,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 558,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 558,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
    "effects": [
@@ -312,15 +372,37 @@
      "meaning": "mandara mountain showing what the narration says"
     },
     {
+     "k": "ember_fire",
+     "word": "Hanuman",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Hanuman",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
      "k": "smoke_plume",
      "word": "Hanuman",
      "x": 640,
-     "y": 560,
-     "w": 360,
-     "alpha": 0.6,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
      "par": 1.0,
-     "behind": false,
-     "meaning": "smoke plume showing what the narration says"
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
     }
    ],
    "transition_in": "cut"
@@ -620,6 +702,66 @@
      "emo": "calm",
      "look": 700,
      "prop": "none"
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 573,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 573,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 573,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 573,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 573,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 573,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
    "effects": [
@@ -635,15 +777,37 @@
      "meaning": "red energy pulse showing what the narration says"
     },
     {
-     "k": "blood_splash",
+     "k": "ember_fire",
      "word": "Kumbhakarna",
-     "x": 640,
-     "y": 520,
-     "w": 220,
+     "x": 452,
+     "y": 672,
+     "w": 95,
      "alpha": 0.8,
      "par": 1.0,
      "behind": false,
-     "meaning": "blood splash showing what the narration says"
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Kumbhakarna",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "Kumbhakarna",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
     }
    ],
    "transition_in": "cut"
@@ -932,9 +1096,103 @@
      "pose": "stand",
      "emo": "calm",
      "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 584,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 584,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 584,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 584,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 584,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 584,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "This",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "This",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "This",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1221,9 +1479,103 @@
      "pose": "stand",
      "emo": "calm",
      "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 584,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 584,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 584,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 584,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 584,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 584,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "Kumbhakarna",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Kumbhakarna",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "Kumbhakarna",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1427,6 +1779,66 @@
      "pose": "lunge",
      "emo": "anger",
      "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 585,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 585,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 585,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 585,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 585,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 585,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
    "effects": [
@@ -1442,15 +1854,37 @@
      "meaning": "red energy pulse showing what the narration says"
     },
     {
-     "k": "blood_splash",
+     "k": "ember_fire",
      "word": "He",
-     "x": 640,
-     "y": 520,
-     "w": 220,
+     "x": 452,
+     "y": 672,
+     "w": 95,
      "alpha": 0.8,
      "par": 1.0,
      "behind": false,
-     "meaning": "blood splash showing what the narration says"
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "He",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "He",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
     }
    ],
    "transition_in": "cut"
@@ -1657,9 +2091,103 @@
      "emo": "calm",
      "look": 700,
      "prop": "none"
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "The",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1864,6 +2392,66 @@
      "emo": "sad",
      "look": 700,
      "prop": "none"
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 562,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 562,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 562,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 562,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 562,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 562,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
    "effects": [
@@ -1877,6 +2465,39 @@
      "par": 1.0,
      "behind": false,
      "meaning": "blood splash as the story says 'blood'"
+    },
+    {
+     "k": "ember_fire",
+     "word": "with",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "with",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "with",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
     }
    ],
    "transition_in": "cut"
@@ -2093,6 +2714,66 @@
      "emo": "calm",
      "look": 700,
      "prop": "none"
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 573,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 573,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 573,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 573,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 573,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 573,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
    "effects": [
@@ -2108,15 +2789,37 @@
      "meaning": "red energy pulse showing what the narration says"
     },
     {
-     "k": "blood_splash",
+     "k": "ember_fire",
      "word": "Then",
-     "x": 640,
-     "y": 520,
-     "w": 220,
+     "x": 452,
+     "y": 672,
+     "w": 95,
      "alpha": 0.8,
      "par": 1.0,
      "behind": false,
-     "meaning": "blood splash showing what the narration says"
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Then",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "Then",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
     }
    ],
    "transition_in": "cut"
@@ -2406,9 +3109,103 @@
      "emo": "calm",
      "look": 700,
      "prop": "none"
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "Hanuman",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Hanuman",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "Hanuman",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -2706,9 +3503,103 @@
      "emo": "calm",
      "look": 700,
      "prop": "none"
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 573,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 573,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 573,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 573,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 573,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 573,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "Later",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Later",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "Later",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3006,9 +3897,103 @@
      "pose": "stand",
      "emo": "calm",
      "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 556,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 556,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 556,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 556,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 556,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 556,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "Hanuman",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Hanuman",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "Hanuman",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3296,9 +4281,103 @@
      "emo": "calm",
      "look": 700,
      "prop": "none"
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 514,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 514,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 514,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 514,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 514,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 514,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "but",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "but",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "but",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3512,9 +4591,103 @@
      "pose": "stand",
      "emo": "calm",
      "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 574,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 574,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 574,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 574,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 574,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 574,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "Kumbhakarna",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Kumbhakarna",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "Kumbhakarna",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3718,6 +4891,66 @@
      "pose": "fall",
      "emo": "shock",
      "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
    "effects": [
@@ -3733,15 +4966,37 @@
      "meaning": "blood splash showing what the narration says"
     },
     {
-     "k": "red_energy_pulse",
+     "k": "ember_fire",
+     "word": "Rama",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Rama",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
      "word": "Rama",
      "x": 640,
-     "y": 420,
-     "w": 420,
-     "alpha": 0.6,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
      "par": 1.0,
      "behind": true,
-     "meaning": "red energy pulse showing what the narration says"
+     "meaning": "war smoke over the battlefield"
     }
    ],
    "transition_in": "cut"
@@ -3948,6 +5203,66 @@
      "emo": "sad",
      "look": 700,
      "prop": "none"
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
    "effects": [
@@ -3961,6 +5276,39 @@
      "par": 1.0,
      "behind": false,
      "meaning": "blood splash as the story says 'blood'"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Hanuman",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Hanuman",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "Hanuman",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
     }
    ],
    "transition_in": "cut"
@@ -4176,9 +5524,103 @@
      "pose": "stand",
      "emo": "calm",
      "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 458,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 498,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "sugriva",
+     "x": 538,
+     "y": 511,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 511,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "In",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "In",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "In",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
+    }
+   ],
    "transition_in": "cut"
   }
  ],

@@ -2610,7 +2610,7 @@
    "duration": 2.98,
    "narration": "The gods, led by Brahma, who made the world,",
    "meaning": "The gods, led by Brahma, who made the world, (shown as a dark story frame)",
-   "why": "deva_thin in a dark night world while 'The gods, led by Brahma, who made the world,' is spoken.",
+   "why": "brahma in a dark night world while 'The gods, led by Brahma, who made the world,' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -2631,11 +2631,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "brahma",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "deva_thin"
+    "focus": "brahma"
    },
    "layers": [
     {
@@ -2883,22 +2883,32 @@
    },
    "characters": [
     {
-     "who": "deva_thin",
-     "x": 470,
-     "y": 589,
-     "s": 0.765,
+     "who": "brahma",
+     "x": 640,
+     "y": 477,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700
     },
     {
-     "who": "brahma",
-     "x": 810,
-     "y": 509,
-     "s": 0.765,
+     "who": "deva_thin",
+     "x": 500,
+     "y": 569,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "deva_thin2",
+     "x": 780,
+     "y": 569,
+     "s": 0.5,
      "flip": -1,
-     "pose": "stand",
+     "pose": "plead",
      "emo": "calm",
      "look": 700
     }
@@ -7769,7 +7779,7 @@
      "look": 700
     },
     {
-     "who": "deva_thin",
+     "who": "vishnu",
      "x": 810,
      "y": 590,
      "s": 0.765,
@@ -8226,7 +8236,7 @@
    "duration": 3.7,
    "narration": "The gods cut off Vishnu's head by mistake, only to wake him,",
    "meaning": "The gods cut off Vishnu's head by mistake, only to wake him, (shown as a dark story frame)",
-   "why": "deva_thin in a dark brown world while 'The gods cut off Vishnu's head by mistake, only to' is spoken.",
+   "why": "vishnu in a dark brown world while 'The gods cut off Vishnu's head by mistake, only to' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -8247,11 +8257,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "vishnu",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "deva_thin"
+    "focus": "vishnu"
    },
    "layers": [
     {
@@ -8462,13 +8472,33 @@
    },
    "characters": [
     {
-     "who": "deva_thin",
+     "who": "vishnu",
      "x": 640,
-     "y": 588,
-     "s": 0.9,
+     "y": 562,
+     "s": 0.81,
      "flip": 1,
      "pose": "fall",
      "emo": "shock",
+     "look": 700
+    },
+    {
+     "who": "deva_thin",
+     "x": 500,
+     "y": 572,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "deva_thin2",
+     "x": 780,
+     "y": 572,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "plead",
+     "emo": "calm",
      "look": 700
     }
    ],

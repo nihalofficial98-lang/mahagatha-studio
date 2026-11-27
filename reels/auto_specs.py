@@ -125,3 +125,8 @@ SPEC['reel20'].setdefault('over',{}).update({
  9:dict(scene='teal',chars=[dict(who='ashwatthama',x=640,y=700,s=1.05,_face=.40,flip=1,pose='stand',emo='pain',look=700),VL('villager',500,'stand','surprise',1,.5),VL('villager_w',780,'stand','surprise',-1,.5)],fx=[pfx('blood_splash',None,640,318,70,'a wound on the forehead that never heals',alpha=.9)]),
  10:dict(scene='teal',chars=[dict(who='ashwatthama',x=640,y=700,s=1.05,_face=.40,flip=1,pose='plead',emo='pain',look=700),VL('villager',500,'stand','calm',1,.5),VL('villager_w',780,'namaste','devotion',-1,.5)]),
 })
+
+# ---- war around the heroes: small vanara and rakshasa fighters, fires and smoke in the background
+SPEC['reel21']['war']=[(458,'sugriva','lunge'),(498,'sugriva','throw'),(538,'sugriva','lunge'),(742,'asura2','rage'),(782,'asura3','lunge'),(822,'asura2','rage')]
+SPEC['reel23']['war']=[(458,'asura1','fall'),(498,'asura2','lunge'),(538,'asura3','fall'),(742,'asura3','rage'),(782,'asura1','lunge'),(822,'asura2','fall')]
+SPEC['reel26']['war']=[(458,'deva_thin','lunge'),(498,'deva_thin2','lunge'),(538,'deva_thin','throw'),(742,'asura2','rage'),(782,'asura3','rage'),(822,'asura1','lunge')]
