@@ -13,19 +13,25 @@ RIDGE={'indigo':['#3a2a5a','#2e2048','#241838','#1a1028'],'ember':['#6a2a2a','#5
 GRD='ep07_dark'
 def layers(sc,theme='hills'):
     r=RIDGE[sc];sil=r[3];sil2=r[2];sk=SK[sc]
-    fars=[mtn(430,470,1.1,r[0],230,190),mtn(560,478,.9,r[1],200,130),mtn(700,470,1.2,r[0],250,210),mtn(830,480,.95,r[1],210,150),cld(500,200,1.0,sk[2]),cld(780,250,.9,sk[2])]
-    if theme=='palace':fars+=[{"o":"wall","x":600,"y":470,"s":.8,"col":sil2},{"o":"pillar","x":470,"y":520,"s":.55,"col":sil2},{"o":"pillar","x":800,"y":520,"s":.55,"col":sil2}]
-    L=[far("layered dark peaks and distant clouds",fars,sk[3],.6)]
-    ms=[ground(480,sil2,1100,12)]
-    if theme=='forest':ms+=[tree(455,520,.65,"banyan",sil),tree(830,516,.6,"pine",sil),tree(540,510,.45,"pine",sil2),tree(760,508,.45,"palm",sil2)]
-    elif theme=='village':ms+=[{"o":"hut","x":470,"y":520,"s":.6,"col":sil},{"o":"hut","x":820,"y":518,"s":.55,"col":sil},tree(560,510,.45,"palm",sil2),tree(740,508,.4,"round",sil2)]
-    elif theme=='palace':ms+=[{"o":"pillar","x":455,"y":540,"s":.8,"col":sil},{"o":"pillar","x":835,"y":540,"s":.8,"col":sil},{"o":"wall","x":640,"y":500,"s":.7,"col":sil2}]
-    else:ms+=[{"o":"rock","x":450,"y":520,"s":.95,"col":sil},{"o":"rock","x":840,"y":516,"s":.85,"col":sil},tree(540,505,.42,"pine",sil2),tree(750,505,.4,"round",sil2)]
-    L.append(mid("faded dark silhouettes of the setting far behind the figures",ms,.5))
+    snow=theme in('temple',)
+    fars=[mtn(420,470,1.1,r[0],230,190,snow),mtn(550,478,.9,r[1],200,130),mtn(700,468,1.25,r[0],250,215,snow),mtn(835,480,.95,r[1],210,150),mtn(480,490,.6,r[1],160,90),cld(500,200,1.0,sk[2]),cld(790,250,.9,sk[2])]
+    if theme=='sea':fars=[mtn(430,505,.8,r[1],260,60),mtn(840,508,.7,r[1],230,50),mtn(640,500,.5,r[0],180,40),cld(500,210,1.1,sk[2]),cld(790,260,1.0,sk[2])]
+    if theme in('palace','heaven','lanka'):fars+=[{"o":"wall","x":600,"y":470,"s":.8,"col":sil2},{"o":"pillar","x":470,"y":525,"s":.5,"col":sil2},{"o":"pillar","x":560,"y":525,"s":.45,"col":sil2},{"o":"pillar","x":720,"y":525,"s":.45,"col":sil2},{"o":"pillar","x":810,"y":525,"s":.5,"col":sil2}]
+    L=[far("layered dark mountains and distant clouds",fars,sk[3],.6)]
+    ms=[ground(482,sil2,1100,12)]
+    line=lambda kinds:[tree(x,508,.3+.05*((x//45)%3),kinds[(x//45)%len(kinds)],sil2) for x in range(405,880,45)]
+    if theme in('forest','ashram'):ms+=line(['pine','banyan','palm'])+[tree(448,522,.7,"banyan",sil),tree(838,518,.66,"pine",sil),{"o":"hut","x":520,"y":528,"s":.4,"col":sil}]
+    elif theme=='village':ms+=line(['palm','round'])+[{"o":"hut","x":462,"y":526,"s":.6,"col":sil},{"o":"hut","x":826,"y":524,"s":.55,"col":sil},{"o":"road","x":640,"y":560,"s":1.0,"col":sil2}]
+    elif theme in('palace','heaven','lanka'):ms+=[{"o":"pillar","x":452,"y":545,"s":.8,"col":sil},{"o":"pillar","x":834,"y":545,"s":.8,"col":sil},{"o":"wall","x":640,"y":505,"s":.7,"col":sil2}]+line(['round','palm'])[:4]
+    elif theme=='temple':ms+=[{"o":"pillar","x":455,"y":545,"s":.7,"col":sil},{"o":"pillar","x":830,"y":545,"s":.7,"col":sil},{"o":"rock","x":560,"y":525,"s":.7,"col":sil2},{"o":"rock","x":730,"y":525,"s":.6,"col":sil2}]
+    elif theme=='battle':ms+=[{"o":"wall","x":500,"y":515,"s":.45,"col":sil},{"o":"wall","x":790,"y":515,"s":.4,"col":sil},{"o":"rock","x":450,"y":525,"s":.95,"col":sil},{"o":"rock","x":840,"y":520,"s":.85,"col":sil},{"o":"rock","x":640,"y":515,"s":.5,"col":sil2}]
+    elif theme=='sea':ms+=[{"o":"rock","x":470,"y":528,"s":.5,"col":sil},{"o":"rock","x":820,"y":526,"s":.45,"col":sil}]
+    else:ms+=line(['pine','round'])+[{"o":"rock","x":450,"y":522,"s":.9,"col":sil},{"o":"rock","x":840,"y":518,"s":.8,"col":sil}]
+    L.append(mid("faded dark silhouettes of the place far behind the figures",ms,.5))
     nr=[{"o":"rock","x":432,"y":758,"s":.9,"col":'#0a0610'},{"o":"rock","x":852,"y":760,"s":.85,"col":'#0a0610'}]
     L.append(near("small low dark rocks at the very bottom corners, nothing in front of the faces",nr,.5))
     return L
-THEMES=[('forest',r'\b(forest|wilderness|tree|trees|woods|ashram|mahendra|narmada|river bank)\b'),('palace',r'\b(palace|heaven|temple|gate|council|lanka|vaikuntha|throne|yajna|yagna)\b'),('village',r'\b(village|people|families|relatives|travelers|locals|shambhala|home)\b')]
+THEMES=[('forest',r'\b(forest|wilderness|woods|ashram|mahendra|jungle|trees?)\b','forest'),('temple',r'\b(temple|shivling|lingam|kailash|chanted|worshipped|worship|thousand names|lotus eyes)\b','kailash'),('sea',r'\b(ocean|sea|river|narmada|waters?)\b','sea'),('cosmos',r'\b(universe|worlds?|fourteen|14|creation)\b','cosmos'),('lanka',r'\b(lanka|palace|throne|ravana)\b','palace'),('battle',r'\b(war|battle|spear|army|armies|enemies|weapons?|demons?|astra|arrow|fought|fighting)\b','plain'),('heaven',r'\b(heaven|gods|yajna|council|vaikuntha|lakshmi|indra)\b','palace'),('village',r'\b(village|people|families|relatives|travelers|locals|shambhala|home)\b',None)]
 def background(sc):
     if sc in SK:return bg("vista",sky=SK[sc],sx=640,sy=300,ridge=RIDGE[sc],haze="200,160,170",dust=10)
     return bg(sc)
@@ -118,9 +124,9 @@ def main(reel):
             if 'mid' in o:extra_mid=o['mid']
             if 'scene' in o:scene=o['scene']
             if 'fx' in o:fxs=[dict(f_,word=(f_['word'] or first)) for f_ in o['fx']]
-        theme=cfg.get('theme','hills')
-        for th,rx in THEMES:
-            if re.search(rx,low):theme=th;break
+        theme=cfg.get('theme','hills');bgk=None
+        for th,rx,bk in THEMES:
+            if re.search(rx,low):theme=th;bgk=bk;break
         cname,ca,cb,shs=CAMS[ci%len(CAMS)];ci+=1
         sh={"id":"x","beat":1,"start":{"t":s[0][2],"word":first}};G.S.append(sh)
         sx=[640,520,760,600,700][n%5]
@@ -129,7 +135,7 @@ def main(reel):
             if len(ch)==1 and n%2:c_['flip']=-1
         sh.update(meaning=re.sub(r'\b(good|great|nice|very|something|anything)\b','it',txt+" (shown as a dark story frame)")[:110],why=re.sub(r'\b(something|anything|things?|stuff|good|great|nice|very)\b','it',f"{(who[0] if who else 'The scene')} in a dark {scene} world while '{txt[:50]}' is spoken."),
           camera=cam(cname,ca,cb,shs,"normal",0,"a slow move that follows the story beat"),focus={"subject":who[0] if who else "scene","depth":"deep"},
-          vertical={"focus":who[0]} if who else {},layers=[dict(l_,items=l_['items']+extra_mid) if l_['d']=='mid' else l_ for l_ in scene_layers(scene,theme)],background=dict(background(scene),sx=sx) if scene in SK else background(scene),mood={"emotion":emo,"grade":GRD},
+          vertical={"focus":who[0]} if who else {},layers=[dict(l_,items=l_['items']+extra_mid) if l_['d']=='mid' else l_ for l_ in scene_layers(scene,theme)],background=(bg(bgk) if bgk and not cfg.get('over',{}).get(n,{}).get('scene') else (dict(background(scene),sx=sx) if scene in SK else background(scene))),mood={"emotion":emo,"grade":GRD},
           characters=ch,effects=fxs,transition_in="cut" if n else "fade")
     G.finish()
 if __name__=='__main__':main(sys.argv[1])
