@@ -1079,10 +1079,10 @@
    },
    "figs": [
     {
-     "who": "deva_thin",
-     "x": 470,
-     "y": 589,
-     "s": 0.765,
+     "who": "indra",
+     "x": 640,
+     "y": 562,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -1091,12 +1091,24 @@
      }
     },
     {
-     "who": "indra",
-     "x": 810,
-     "y": 589,
-     "s": 0.765,
+     "who": "deva_thin",
+     "x": 500,
+     "y": 572,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 780,
+     "y": 572,
+     "s": 0.5,
      "flip": -1,
-     "pose": "stand",
+     "pose": "plead",
      "emo": "calm",
      "mood": {
       "lx": 0.8
@@ -1331,9 +1343,9 @@
      ]
     }
    ],
-   "note": "medium push_in: deva_thin in a dark indigo world while 'The gods stood outside heaven with nowhere to go.' is spoken.",
+   "note": "medium push_in: indra in a dark indigo world while 'The gods stood outside heaven with nowhere to go.' is spoken.",
    "vert": {
-    "focus": "deva_thin"
+    "focus": "indra"
    },
    "dx": 0
   },
@@ -1343,7 +1355,9 @@
     "t": 18.38,
     "word": "Bala"
    },
-   "cues": [],
+   "cues": [
+    "Bala"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -1366,14 +1380,20 @@
    "figs": [
     {
      "who": "bala",
-     "x": 640,
-     "y": 588,
+     "x": 560,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
-     "pose": "point",
+     "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
+     },
+     "walkTo": {
+      "x": 740,
+      "c": 0,
+      "d": 5.0,
+      "sp": 1
      }
     }
    ],
@@ -1381,14 +1401,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.04,
+     "x": -50,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -10,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     }
@@ -1605,7 +1625,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: bala in a dark indigo world while 'Bala walked up to them and told them he had always' is spoken.",
+   "note": "wide pan_right: bala in a dark indigo world while 'Bala walked up to them and told them he had always' is spoken.",
    "vert": {
     "focus": "bala"
    },
@@ -1643,7 +1663,7 @@
     {
      "who": "bala",
      "x": 640,
-     "y": 588,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -1669,8 +1689,8 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": -10,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     },
@@ -2157,12 +2177,36 @@
    },
    "figs": [
     {
-     "who": "deva_thin",
+     "who": "indra",
      "x": 640,
-     "y": 589,
-     "s": 0.9,
+     "y": 562,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin",
+     "x": 500,
+     "y": 569,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 780,
+     "y": 569,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "plead",
      "emo": "calm",
      "mood": {
       "lx": 0.8
@@ -2395,9 +2439,9 @@
      ]
     }
    ],
-   "note": "medium push_in: deva_thin in a dark indigo world while 'The gods held their yajna.' is spoken.",
+   "note": "medium push_in: indra in a dark indigo world while 'The gods held their yajna.' is spoken.",
    "vert": {
-    "focus": "deva_thin"
+    "focus": "indra"
    },
    "dx": 0
   },
@@ -2415,7 +2459,7 @@
    },
    "figs": [
     {
-     "who": "deva_thin",
+     "who": "indra",
      "x": 640,
      "y": 589,
      "s": 0.9,
@@ -2653,9 +2697,9 @@
      ]
     }
    ],
-   "note": "medium crane_down: deva_thin in a dark indigo world while 'A yajna needs a being to offer to the fire.' is spoken.",
+   "note": "medium crane_down: indra in a dark indigo world while 'A yajna needs a being to offer to the fire.' is spoken.",
    "vert": {
-    "focus": "deva_thin"
+    "focus": "indra"
    },
    "dx": 0
   },
@@ -3183,7 +3227,9 @@
     "t": 38.96,
     "word": "Bala"
    },
-   "cues": [],
+   "cues": [
+    "Bala"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -3206,14 +3252,20 @@
    "figs": [
     {
      "who": "bala",
-     "x": 640,
-     "y": 588,
+     "x": 560,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "mood": {
       "lx": 0.8
+     },
+     "walkTo": {
+      "x": 740,
+      "c": 0,
+      "d": 3.0,
+      "sp": 1
      }
     }
    ],
@@ -3221,15 +3273,15 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": -14,
+     "z": 1.04,
+     "x": -50,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.04,
+     "x": 70,
+     "y": 0,
      "r": 0
     }
    },
@@ -3445,7 +3497,7 @@
      ]
     }
    ],
-   "note": "medium push_in: bala in a dark indigo world while 'Bala stood up and came closer and closer.' is spoken.",
+   "note": "wide pan_right: bala in a dark indigo world while 'Bala stood up and came closer and closer.' is spoken.",
    "vert": {
     "focus": "bala"
    },
@@ -3481,7 +3533,7 @@
     {
      "who": "bala",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "point",
@@ -3495,9 +3547,9 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.04,
+     "x": 70,
+     "y": 0,
      "r": 0
     },
     "to": {
@@ -3719,7 +3771,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: bala in a dark indigo world while 'Then he folded his hands and said he was ready.' is spoken.",
+   "note": "medium pan_left: bala in a dark indigo world while 'Then he folded his hands and said he was ready.' is spoken.",
    "vert": {
     "focus": "bala"
    },
@@ -4587,10 +4639,10 @@
    },
    "figs": [
     {
-     "who": "deva_thin",
-     "x": 470,
-     "y": 590,
-     "s": 0.765,
+     "who": "indra",
+     "x": 640,
+     "y": 561,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -4599,12 +4651,24 @@
      }
     },
     {
-     "who": "indra",
-     "x": 810,
-     "y": 590,
-     "s": 0.765,
+     "who": "deva_thin",
+     "x": 500,
+     "y": 573,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "deva_thin2",
+     "x": 780,
+     "y": 573,
+     "s": 0.5,
      "flip": -1,
-     "pose": "stand",
+     "pose": "plead",
      "emo": "calm",
      "mood": {
       "lx": 0.8
@@ -4825,9 +4889,9 @@
      ]
     }
    ],
-   "note": "medium crane_down: deva_thin in a dark indigo world while 'The gods tried to lift it to heaven, but it slippe' is spoken.",
+   "note": "medium crane_down: indra in a dark indigo world while 'The gods tried to lift it to heaven, but it slippe' is spoken.",
    "vert": {
-    "focus": "deva_thin"
+    "focus": "indra"
    },
    "dx": 0
   },

@@ -1038,7 +1038,7 @@
    "figs": [
     {
      "who": "villager",
-     "x": 470,
+     "x": 500,
      "y": 590,
      "s": 0.58,
      "flip": 1,
@@ -1050,7 +1050,7 @@
     },
     {
      "who": "villager_w",
-     "x": 810,
+     "x": 780,
      "y": 590,
      "s": 0.58,
      "flip": -1,
@@ -1650,7 +1650,7 @@
     },
     {
      "who": "villager",
-     "x": 470,
+     "x": 500,
      "y": 593,
      "s": 0.58,
      "flip": 1,
@@ -1662,7 +1662,7 @@
     },
     {
      "who": "villager_w",
-     "x": 810,
+     "x": 780,
      "y": 593,
      "s": 0.58,
      "flip": -1,
@@ -2264,7 +2264,7 @@
     },
     {
      "who": "villager",
-     "x": 470,
+     "x": 500,
      "y": 571,
      "s": 0.5,
      "flip": 1,
@@ -2276,7 +2276,7 @@
     },
     {
      "who": "villager_w",
-     "x": 810,
+     "x": 780,
      "y": 571,
      "s": 0.5,
      "flip": -1,
@@ -2583,7 +2583,7 @@
     },
     {
      "who": "villager",
-     "x": 470,
+     "x": 500,
      "y": 569,
      "s": 0.5,
      "flip": 1,
@@ -2595,7 +2595,7 @@
     },
     {
      "who": "villager_w",
-     "x": 810,
+     "x": 780,
      "y": 569,
      "s": 0.5,
      "flip": -1,
@@ -2893,7 +2893,7 @@
     },
     {
      "who": "villager",
-     "x": 470,
+     "x": 500,
      "y": 570,
      "s": 0.5,
      "flip": 1,
@@ -2905,7 +2905,7 @@
     },
     {
      "who": "villager_w",
-     "x": 810,
+     "x": 780,
      "y": 570,
      "s": 0.5,
      "flip": -1,
@@ -3191,7 +3191,7 @@
     },
     {
      "who": "villager",
-     "x": 470,
+     "x": 500,
      "y": 572,
      "s": 0.5,
      "flip": 1,
@@ -3203,7 +3203,7 @@
     },
     {
      "who": "villager_w",
-     "x": 810,
+     "x": 780,
      "y": 572,
      "s": 0.5,
      "flip": -1,
@@ -3454,7 +3454,9 @@
     "t": 44.08,
     "word": "He"
    },
-   "cues": [],
+   "cues": [
+    "He"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -3477,14 +3479,20 @@
    "figs": [
     {
      "who": "ashwatthama",
-     "x": 640,
-     "y": 588,
+     "x": 560,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
      "emo": "sad",
      "mood": {
       "lx": 0.8
+     },
+     "walkTo": {
+      "x": 740,
+      "c": 0,
+      "d": 2.5,
+      "sp": 1
      }
     }
    ],
@@ -3492,14 +3500,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.06,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": -50,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -14,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     }
@@ -3716,7 +3724,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: ashwatthama in a dark teal world while 'He has been wandering for thousands of years.' is spoken.",
+   "note": "wide pan_right: ashwatthama in a dark teal world while 'He has been wandering for thousands of years.' is spoken.",
    "vert": {
     "focus": "ashwatthama"
    },
@@ -3754,7 +3762,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 588,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -3780,8 +3788,8 @@
    ],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": -14,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     },
@@ -4325,7 +4333,7 @@
     },
     {
      "who": "villager",
-     "x": 470,
+     "x": 500,
      "y": 569,
      "s": 0.5,
      "flip": 1,
@@ -4337,7 +4345,7 @@
     },
     {
      "who": "villager_w",
-     "x": 810,
+     "x": 780,
      "y": 569,
      "s": 0.5,
      "flip": -1,
@@ -5183,7 +5191,9 @@
     "t": 61.9,
     "word": "He"
    },
-   "cues": [],
+   "cues": [
+    "He"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -5206,14 +5216,20 @@
    "figs": [
     {
      "who": "krishna",
-     "x": 640,
-     "y": 588,
+     "x": 560,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
      "emo": "sad",
      "mood": {
       "lx": 0.8
+     },
+     "walkTo": {
+      "x": 740,
+      "c": 0,
+      "d": 4.7,
+      "sp": 1
      }
     }
    ],
@@ -5221,14 +5237,14 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.04,
+     "x": -50,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -10,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     }
@@ -5452,7 +5468,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: krishna in a dark teal world while 'He would wander the Earth for 3,000 years with a w' is spoken.",
+   "note": "wide pan_right: krishna in a dark teal world while 'He would wander the Earth for 3,000 years with a w' is spoken.",
    "vert": {
     "focus": "krishna"
    },
@@ -5485,7 +5501,7 @@
     },
     {
      "who": "villager",
-     "x": 470,
+     "x": 500,
      "y": 570,
      "s": 0.5,
      "flip": 1,
@@ -5497,7 +5513,7 @@
     },
     {
      "who": "villager_w",
-     "x": 810,
+     "x": 780,
      "y": 570,
      "s": 0.5,
      "flip": -1,
@@ -5524,8 +5540,8 @@
    "fxb": [],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": -10,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     },

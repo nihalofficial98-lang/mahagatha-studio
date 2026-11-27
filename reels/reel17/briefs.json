@@ -568,7 +568,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "divine_rays",
+     "word": "He",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the cosmos its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1755,6 +1767,28 @@
      "par": 1.0,
      "behind": true,
      "meaning": "Vishnu light falling on the begging gods"
+    },
+    {
+     "k": "divine_rays",
+     "word": "The",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the heaven its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 466,
+     "y": 664,
+     "w": 60,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the heaven its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -1771,18 +1805,18 @@
    "meaning": "Vishnu knew he needed Shiva's power, so he went into the wilderness and worshiped Shiva. (shown as a dark stor",
    "why": "vishnu in a dark night world while 'Vishnu knew he needed Shiva's power, so he went in' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "pan_right",
     "from": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.04,
+     "x": -50,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -10,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     },
@@ -2006,18 +2040,24 @@
    "characters": [
     {
      "who": "vishnu",
-     "x": 470,
-     "y": 590,
+     "x": 560,
+     "y": 591,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
-     "look": 700
+     "look": 700,
+     "walk": {
+      "word": "Vishnu",
+      "to_x": 740,
+      "d": 5.0,
+      "speed": 1
+     }
     },
     {
      "who": "shiva",
-     "x": 810,
-     "y": 590,
+     "x": 840,
+     "y": 591,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -2036,6 +2076,28 @@
      "par": 1.0,
      "behind": true,
      "meaning": "red energy pulse as the story says 'power'"
+    },
+    {
+     "k": "divine_rays",
+     "word": "Vishnu",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the heaven its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Vishnu",
+     "x": 466,
+     "y": 664,
+     "w": 60,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the heaven its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -2056,8 +2118,8 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.0,
-     "x": -10,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     },
@@ -2288,7 +2350,7 @@
     {
      "who": "shiva",
      "x": 640,
-     "y": 588,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -2296,7 +2358,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "divine_rays",
+     "word": "Years",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the heaven its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Years",
+     "x": 466,
+     "y": 664,
+     "w": 60,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the heaven its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -2523,6 +2608,28 @@
      "behind": false,
      "meaning": "a dark stone Shiva lingam on a round base",
      "glow": 0.7
+    },
+    {
+     "k": "mist_wisps",
+     "word": "So",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.5,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the temple its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "So",
+     "x": 470,
+     "y": 668,
+     "w": 60,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the temple its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -5045,7 +5152,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Would",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.5,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the temple its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Would",
+     "x": 470,
+     "y": 668,
+     "w": 60,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the temple its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -5244,7 +5374,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Then",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.5,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the temple its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Then",
+     "x": 470,
+     "y": 668,
+     "w": 60,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the temple its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -5443,7 +5596,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "One",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.5,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the temple its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "One",
+     "x": 470,
+     "y": 668,
+     "w": 60,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the temple its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -5743,6 +5919,17 @@
      "par": 1.0,
      "behind": false,
      "meaning": "flower petals as the story says 'flower'"
+    },
+    {
+     "k": "mist_wisps",
+     "word": "His",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -6345,7 +6532,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Shiva",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -6946,7 +7145,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "He",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -7485,6 +7696,28 @@
      "par": 1.0,
      "behind": true,
      "meaning": "red energy pulse as the story says 'weapon'"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "Vishnu",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Vishnu",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
     }
    ],
    "transition_in": "cut"

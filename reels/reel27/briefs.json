@@ -299,7 +299,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Hanuman",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -589,7 +601,19 @@
      "prop": "none"
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "For",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -890,6 +914,17 @@
      "par": 1.0,
      "behind": false,
      "meaning": "curse glow showing what the narration says"
+    },
+    {
+     "k": "mist_wisps",
+     "word": "For",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -1181,7 +1216,19 @@
      "prop": "none"
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "They",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1480,7 +1527,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "The",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1807,18 +1866,18 @@
    "meaning": "After the Mahabharata war, he was cursed to wander the earth for thousands of years. (shown as a dark story fr",
    "why": "shiva in a dark ember world while 'After the Mahabharata war, he was cursed to wander' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "pan_right",
     "from": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.04,
+     "x": -50,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -10,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     },
@@ -1989,13 +2048,19 @@
    "characters": [
     {
      "who": "shiva",
-     "x": 640,
-     "y": 588,
+     "x": 560,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
-     "pose": "point",
+     "pose": "stand",
      "emo": "anger",
-     "look": 700
+     "look": 700,
+     "walk": {
+      "word": "After",
+      "to_x": 740,
+      "d": 4.6,
+      "speed": 1
+     }
     }
    ],
    "effects": [
@@ -2009,6 +2074,28 @@
      "par": 1.0,
      "behind": false,
      "meaning": "curse glow showing what the narration says"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "After",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "After",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -2029,8 +2116,8 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.0,
-     "x": -10,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     },
@@ -2208,7 +2295,7 @@
     {
      "who": "mahabali",
      "x": 640,
-     "y": 588,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -2216,7 +2303,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "smoke_plume",
+     "word": "The",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -2422,7 +2532,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "smoke_plume",
+     "word": "The",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -2639,7 +2772,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "smoke_plume",
+     "word": "The",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -2898,7 +3054,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 466,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 818,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3157,7 +3336,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 466,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 818,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3416,7 +3618,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "And",
+     "x": 466,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "And",
+     "x": 818,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3675,7 +3900,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "ember_fire",
+     "word": "So",
+     "x": 466,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "So",
+     "x": 818,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3964,7 +4212,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Six",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -4253,7 +4513,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Ashwatthama",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   }
  ],

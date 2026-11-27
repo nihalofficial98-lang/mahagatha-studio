@@ -215,7 +215,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "smoke_plume",
+     "word": "A",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "A",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -421,7 +444,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "smoke_plume",
+     "word": "No",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "No",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -627,7 +673,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "smoke_plume",
+     "word": "Then",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Then",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -833,7 +902,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "smoke_plume",
+     "word": "Bala",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Bala",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1122,7 +1214,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "He",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1135,7 +1239,7 @@
    "duration": 3.08,
    "narration": "The gods stood outside heaven with nowhere to go.",
    "meaning": "The gods stood outside heaven with nowhere to go. (shown as a dark story frame)",
-   "why": "deva_thin in a dark indigo world while 'The gods stood outside heaven with nowhere to go.' is spoken.",
+   "why": "indra in a dark indigo world while 'The gods stood outside heaven with nowhere to go.' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -1156,11 +1260,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "indra",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "deva_thin"
+    "focus": "indra"
    },
    "layers": [
     {
@@ -1401,27 +1505,49 @@
    },
    "characters": [
     {
-     "who": "deva_thin",
-     "x": 470,
-     "y": 589,
-     "s": 0.765,
+     "who": "indra",
+     "x": 640,
+     "y": 562,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700
     },
     {
-     "who": "indra",
-     "x": 810,
-     "y": 589,
-     "s": 0.765,
+     "who": "deva_thin",
+     "x": 500,
+     "y": 572,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "deva_thin2",
+     "x": 780,
+     "y": 572,
+     "s": 0.5,
      "flip": -1,
-     "pose": "stand",
+     "pose": "plead",
      "emo": "calm",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "The",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1436,18 +1562,18 @@
    "meaning": "Bala walked up to them and told them he had always given freely, and he would give again. (shown as a dark sto",
    "why": "bala in a dark indigo world while 'Bala walked up to them and told them he had always' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "pan_right",
     "from": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.04,
+     "x": -50,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -10,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     },
@@ -1701,16 +1827,34 @@
    "characters": [
     {
      "who": "bala",
-     "x": 640,
-     "y": 588,
+     "x": 560,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
-     "pose": "point",
+     "pose": "stand",
      "emo": "calm",
-     "look": 700
+     "look": 700,
+     "walk": {
+      "word": "Bala",
+      "to_x": 740,
+      "d": 5.0,
+      "speed": 1
+     }
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Bala",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1729,8 +1873,8 @@
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.0,
-     "x": -10,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     },
@@ -1991,7 +2135,7 @@
     {
      "who": "bala",
      "x": 640,
-     "y": 588,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -2010,6 +2154,17 @@
      "par": 1.0,
      "behind": false,
      "meaning": "ember fire as the story says 'yajna'"
+    },
+    {
+     "k": "mist_wisps",
+     "word": "Whenever",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -2270,7 +2425,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "divine_rays",
+     "word": "Indra",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the heaven its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Indra",
+     "x": 466,
+     "y": 664,
+     "w": 60,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the heaven its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -2283,7 +2461,7 @@
    "duration": 1.96,
    "narration": "The gods held their yajna.",
    "meaning": "The gods held their yajna. (shown as a dark story frame)",
-   "why": "deva_thin in a dark indigo world while 'The gods held their yajna.' is spoken.",
+   "why": "indra in a dark indigo world while 'The gods held their yajna.' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -2304,11 +2482,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "indra",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "deva_thin"
+    "focus": "indra"
    },
    "layers": [
     {
@@ -2519,12 +2697,32 @@
    },
    "characters": [
     {
-     "who": "deva_thin",
+     "who": "indra",
      "x": 640,
-     "y": 589,
-     "s": 0.9,
+     "y": 562,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "deva_thin",
+     "x": 500,
+     "y": 569,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "deva_thin2",
+     "x": 780,
+     "y": 569,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "plead",
      "emo": "calm",
      "look": 700
     }
@@ -2540,6 +2738,28 @@
      "par": 1.0,
      "behind": false,
      "meaning": "ember fire as the story says 'yajna'"
+    },
+    {
+     "k": "divine_rays",
+     "word": "The",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the heaven its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 466,
+     "y": 664,
+     "w": 60,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the heaven its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -2554,7 +2774,7 @@
    "duration": 2.76,
    "narration": "A yajna needs a being to offer to the fire.",
    "meaning": "A yajna needs a being to offer to the fire. (shown as a dark story frame)",
-   "why": "deva_thin in a dark indigo world while 'A yajna needs a being to offer to the fire.' is spoken.",
+   "why": "indra in a dark indigo world while 'A yajna needs a being to offer to the fire.' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -2575,11 +2795,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "indra",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "deva_thin"
+    "focus": "indra"
    },
    "layers": [
     {
@@ -2790,7 +3010,7 @@
    },
    "characters": [
     {
-     "who": "deva_thin",
+     "who": "indra",
      "x": 640,
      "y": 589,
      "s": 0.9,
@@ -2811,6 +3031,28 @@
      "par": 1.0,
      "behind": false,
      "meaning": "ember fire as the story says 'yajna'"
+    },
+    {
+     "k": "divine_rays",
+     "word": "A",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the heaven its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "A",
+     "x": 466,
+     "y": 664,
+     "w": 60,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the heaven its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -3071,7 +3313,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "divine_rays",
+     "word": "They",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the heaven its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "They",
+     "x": 466,
+     "y": 664,
+     "w": 60,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the heaven its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3360,7 +3625,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "The",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3375,19 +3652,19 @@
    "meaning": "Bala stood up and came closer and closer. (shown as a dark story frame)",
    "why": "bala in a dark indigo world while 'Bala stood up and came closer and closer.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pan_right",
     "from": {
-     "z": 1.0,
-     "x": -14,
+     "z": 1.04,
+     "x": -50,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.04,
+     "x": 70,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -3640,16 +3917,34 @@
    "characters": [
     {
      "who": "bala",
-     "x": 640,
-     "y": 588,
+     "x": 560,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
-     "look": 700
+     "look": 700,
+     "walk": {
+      "word": "Bala",
+      "to_x": 740,
+      "d": 3.0,
+      "speed": 1
+     }
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Bala",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3666,11 +3961,11 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "pan_left",
     "from": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.04,
+     "x": 70,
+     "y": 0,
      "r": 0
     },
     "to": {
@@ -3930,7 +4225,7 @@
     {
      "who": "bala",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "point",
@@ -3938,7 +4233,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Then",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -4238,6 +4545,17 @@
      "par": 1.0,
      "behind": false,
      "meaning": "ember fire as the story says 'flames'"
+    },
+    {
+     "k": "mist_wisps",
+     "word": "The",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -4528,7 +4846,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Then",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -4828,6 +5158,17 @@
      "par": 1.0,
      "behind": true,
      "meaning": "divine rays as the story says 'bright'"
+    },
+    {
+     "k": "mist_wisps",
+     "word": "The",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -4842,7 +5183,7 @@
    "duration": 2.76,
    "narration": "The gods tried to lift it to heaven, but it slipped.",
    "meaning": "The gods tried to lift it to heaven, but it slipped. (shown as a dark story frame)",
-   "why": "deva_thin in a dark indigo world while 'The gods tried to lift it to heaven, but it slippe' is spoken.",
+   "why": "indra in a dark indigo world while 'The gods tried to lift it to heaven, but it slippe' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -4863,11 +5204,11 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "deva_thin",
+    "subject": "indra",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "deva_thin"
+    "focus": "indra"
    },
    "layers": [
     {
@@ -5078,27 +5419,60 @@
    },
    "characters": [
     {
-     "who": "deva_thin",
-     "x": 470,
-     "y": 590,
-     "s": 0.765,
+     "who": "indra",
+     "x": 640,
+     "y": 561,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700
     },
     {
-     "who": "indra",
-     "x": 810,
-     "y": 590,
-     "s": 0.765,
+     "who": "deva_thin",
+     "x": 500,
+     "y": 573,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "plead",
+     "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "deva_thin2",
+     "x": 780,
+     "y": 573,
+     "s": 0.5,
      "flip": -1,
-     "pose": "stand",
+     "pose": "plead",
      "emo": "calm",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "divine_rays",
+     "word": "The",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the heaven its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 466,
+     "y": 664,
+     "w": 60,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the heaven its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -7888,7 +8262,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "That",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -8177,7 +8563,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "He",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -8452,6 +8850,28 @@
      "meaning": "paper-cut mix gemstone(s) from the story",
      "kind": "mix",
      "cnt": 16
+    },
+    {
+     "k": "divine_rays",
+     "word": "The",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the heaven its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 466,
+     "y": 664,
+     "w": 60,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the heaven its atmosphere"
     }
    ],
    "transition_in": "cut"

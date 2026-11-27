@@ -216,6 +216,28 @@
      "par": 1.0,
      "behind": true,
      "meaning": "red energy pulse as the story says 'weapon'"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "Which",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Which",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -423,7 +445,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "smoke_plume",
+     "word": "The",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "The",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -629,7 +674,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "smoke_plume",
+     "word": "First",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "First",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -835,7 +903,30 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "smoke_plume",
+     "word": "Shiva",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Shiva",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1108,7 +1199,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "divine_rays",
+     "word": "if",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the cosmos its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1381,7 +1484,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "divine_rays",
+     "word": "Arjun",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the cosmos its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1654,7 +1769,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "divine_rays",
+     "word": "He",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the cosmos its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1938,6 +2065,17 @@
      "par": 1.0,
      "behind": true,
      "meaning": "red energy pulse as the story says 'weapon'"
+    },
+    {
+     "k": "divine_rays",
+     "word": "The",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the cosmos its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -2852,7 +2990,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Krishna",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3141,7 +3291,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Ashwatthama",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3430,7 +3592,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Third",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3719,7 +3893,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "The",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -4008,7 +4194,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "In",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -4297,7 +4495,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "So",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -4312,18 +4522,18 @@
    "meaning": "comes after Shiva's Pashupatastra, Vishnu's Sudarshan Chakra, and Shiva's trident. (shown as a dark story fram",
    "why": "brahma in a dark ember world while 'comes after Shiva's Pashupatastra, Vishnu's Sudars' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "pan_right",
     "from": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": -50,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.03,
-     "x": -14,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     },
@@ -4577,13 +4787,19 @@
    "characters": [
     {
      "who": "brahma",
-     "x": 640,
-     "y": 589,
+     "x": 560,
+     "y": 496,
      "s": 0.9,
      "flip": 1,
-     "pose": "open",
+     "pose": "stand",
      "emo": "calm",
-     "look": 700
+     "look": 700,
+     "walk": {
+      "word": "comes",
+      "to_x": 740,
+      "d": 4.6,
+      "speed": 1
+     }
     }
    ],
    "effects": [
@@ -4626,10 +4842,10 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_left",
     "from": {
-     "z": 1.03,
-     "x": -14,
+     "z": 1.04,
+     "x": 70,
      "y": 0,
      "r": 0
     },
@@ -4898,7 +5114,19 @@
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "mist_wisps",
+     "word": "Which",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
    "transition_in": "cut"
   }
  ],

@@ -41,6 +41,7 @@ GROUPS=[(r'\b(people|locals|travelers|villagers|families|relatives|devotees|crow
  (r'\b(demons|enemies|army|asuras|rakshasas)\b',[('asura1',-1,'rage'),('asura2',1,'rage')]),
  (r'\b(sages|rishis|brahmins?)\b',[('rishi1',-1,'namaste'),('rishi2',1,'namaste')])]
 GW={'people','locals','travelers','villagers','families','relatives','devotees','crowd','gods','devas','demons','enemies','army','asuras','rakshasas','sages','rishis'}
+WALKRX=r'\b(walked|walking|wandering|wander|wandered|went|moved|entered|approached|came|comes|stopped him on the road|marched|ran)\b'
 EMO=[('anger',r'\b(angry|furious|rage|cursed|curse|killed|kill|struck|attack|attacked|hit)\b'),('fear',r'\b(scared|afraid|fear|terrified|froze|trapped)\b'),('sad',r'\b(sad|pain|wound|wounded|blood|cried|wandering|lost|punishment)\b'),('surprise',r'\b(suddenly|shock|shocked|surprised|bright|jewels|amazing)\b'),('devotion',r'\b(pray|prayed|worship|worshipped|devotee|loved|blessed)\b'),('pride',r'\b(strong|strongest|powerful|beat|won|brave)\b'),('scheme',r'\b(trick|plan|idea|secret|mistake)\b'),('joy',r'\b(smiled|laughed|happy|gift)\b')]
 POSE=[('sitpray',r'\b(prayed|worshipped|chanted|meditation)\b'),('sleep',r'\b(asleep|sleeping|slept)\b'),('plead',r'\b(begged|asked|forgive)\b'),('lunge',r'\b(killed|struck|attacked|threw|hit|drove|cut)\b'),('fall',r'\b(fell|collapsed|snapped)\b'),('namaste',r'\b(bowed|blessed)\b'),('point',r'\b(told|said|warned|named)\b'),('open',r'\b(spread|rose|appeared)\b')]
 FX=[('ember_fire',r'\b(fire|flames|burned|burning|yajna|yagna)\b',(640,560,300)),('flower_petals',r'\b(flowers?)\b',(640,660,420)),('blood_splash',r'\b(blood)\b',(640,500,260)),('curse_glow',r'\b(curse|cursed)\b',(640,420,420)),('lightning_forks',r'\b(lightning|thunder|storm)\b',(640,260,500)),('smoke_plume',r'\b(smoke|ashes|ash)\b',(640,560,300)),('wave_ocean',r'\b(ocean|sea|water|river)\b',(640,640,640)),('divine_rays',r'\b(light|glowing|shine|bright|golden|divine)\b',(640,330,520)),('sudarshan_chakra',r'\b(chakra|disc)\b',(640,400,260)),('red_energy_pulse',r'\b(boon|power|powers|weapon|astra)\b',(640,420,300)),('mist_wisps',r'\b(night|dark|silent|mystery)\b',(640,540,640))]
@@ -143,6 +144,9 @@ def main(reel):
         if n==0 or n in cfg.get('over',{}) and 'scene' in cfg['over'][n]:cur=want;lastchg=n
         elif want!=cur and n-lastchg>=4:cur=want;lastchg=n
         scene,theme,bgk=cur
+        AMB={'forest':[('mist_wisps',640,600,640,.5,True)],'palace':[('ember_fire',466,664,70,.8,False),('ember_fire',818,664,70,.8,False)],'lanka':[('ember_fire',466,664,70,.8,False),('ember_fire',818,664,70,.8,False)],'temple':[('mist_wisps',640,600,640,.5,True),('ember_fire',470,668,60,.8,False)],'battle':[('smoke_plume',640,480,560,.3,True),('ember_fire',455,672,70,.7,False)],'sea':[('wave_ocean',640,690,640,.6,False)],'cosmos':[('divine_rays',640,330,560,.4,True)],'heaven':[('divine_rays',640,330,560,.4,True),('ember_fire',466,664,60,.7,False)],'village':[('smoke_plume',520,520,220,.35,True)],'hills':[('mist_wisps',640,600,640,.45,True)]}
+        if len(fxs)<2 and not cfg.get('war') and theme in AMB:
+            for k_,x_,y_,w_,a_,b_ in AMB[theme]:fxs.append(pfx(k_,first,x_,y_,w_,f"{k_.replace('_',' ')} giving the {theme} its atmosphere",alpha=a_,behind=b_))
         if cfg.get('war') and ch:
             for wx,wk,wp in cfg['war']:ch.append({"who":wk,"x":wx,"y":690,"s":.26,"_ground":True,"flip":1 if wx<640 else -1,"pose":wp,"emo":"anger","look":700})
             fxs=fxs[:1]+[pfx('ember_fire',None,452,672,95,'burning fire on the battlefield at the left',alpha=.8),pfx('ember_fire',None,830,672,95,'burning fire on the battlefield at the right',alpha=.8),pfx('smoke_plume',None,640,470,560,'war smoke over the battlefield',alpha=.3,behind=True)]
@@ -153,6 +157,12 @@ def main(reel):
         dz=cb[0]-ca[0];dx=cb[1]-ca[1]
         cname=(['push_in','crane_up'] if dz>.03 else ['pull_out','crane_down'] if dz<-.03 else ['dolly_right','pan_right'] if dx>0 else ['dolly_left','pan_left'])[ci%2]
         shs='medium'
+        trk=False
+        if re.search(WALKRX,low) and ch and not cfg.get('war') and n not in cfg.get('over',{}) and ch[0]['who'] not in ('naga','vishnu_rest','shiva_lingam') and (s[-1][2]-s[0][2])>=1.8:
+            trk=True;dur_=max(1.8,min(6.0,(S[n+1][0][2] if n+1<len(S) else s[-1][2]+1.5)-s[0][2]))
+            ch[0]['x']=560;ch[0]['walk']={"word":first,"to_x":740,"d":round(dur_*.9,1),"speed":1};ch[0]['pose']='stand'
+            for e_ in ch[1:]:e_['x']=e_['x']+30
+            ca=(1.04,-50,0);cb=(1.04,70,0);cam_end=cb;cname='pan_right';shs='wide'
         sh={"id":"x","beat":1,"start":{"t":s[0][2],"word":first}};G.S.append(sh)
         sx=640
         sh.update(meaning=re.sub(r'\b(good|great|nice|very|something|anything)\b','it',txt+" (shown as a dark story frame)")[:110],why=re.sub(r'\b(something|anything|things?|stuff|good|great|nice|very)\b','it',f"{(who[0] if who else 'The scene')} in a dark {scene} world while '{txt[:50]}' is spoken."),
