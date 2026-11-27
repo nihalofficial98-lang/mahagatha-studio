@@ -26,17 +26,17 @@ SPEC={
 
  'reel08':dict(scene='night',lex={'vishnu':'vishnu','gods':'deva_thin','god':'hayagriva','brahma':'brahma','lakshmi':'lakshmi','hayagriv':'hayagriva','demon':'asura1','termites':'deva_thin','termite':'deva_thin'},scenes=[(0,'night'),('fought','ember'),('home','indigo'),('snapped','ember'),('lakshmi','brown'),('horse','indigo'),('neighed','night')]),
  'reel16':dict(scene='indigo',lex={'bala':'bala','demon':'bala','indra':'indra','gods':'deva_thin','god':'deva_thin','heaven':'indra'},scenes=[(0,'indigo'),('yajna','ember'),('flames','ember'),('jewels','night'),('diamonds','night')]),
- 'reel18':dict(scene='ember',lex={'parashurama':'parashurama','parashuram':'parashurama','ravana':'ravana','rama':'rama','brahma':'brahma','kashyapa':'kashyapa','king':'asura2','vishnu':'vishnu','mahendra':'parashurama'},scenes=[(0,'ember'),('Mahendra'.lower(),'brown'),('bow','night'),('arrow','ember')]),
+ 'reel18':dict(scene='ember',lex={'parashurama':'parashurama','parashuram':'parashurama','ravana':'ravana10','rama':'rama','brahma':'brahma','kashyapa':'kashyapa','king':'asura2','vishnu':'vishnu','mahendra':'parashurama'},scenes=[(0,'ember'),('Mahendra'.lower(),'brown'),('bow','night'),('arrow','ember')]),
  'reel19':dict(scene='night',lex={'shiva':'shiva','yama':'yama','markandeya':'markandeya','boy':'markandeya','mrikandu':'rishi2','father':'rishi2','sage':'rishi2','gods':'deva_thin','son':'markandeya'},scenes=[(0,'night'),('sixteenth','ember'),('rope','ember'),('killed','ember'),('begged','indigo'),('forever','indigo')]),
  'reel20':dict(scene='night',lex={'ashwatthama':'ashwatthama','krishna':'krishna','stranger':'ashwatthama','shiva':'shiva','people':'villager','travelers':'villager','locals':'villager','temple':'shiva'},scenes=[(0,'night'),('narmada','teal'),('wound','ember'),('krishna','indigo'),('baby','ember')]),
- 'reel21':dict(scene='ember',lex={'hanuman':'hanuman','kumbhakarna':'kumbhakarna','giant':'kumbhakarna','sugriva':'sugriva','rama':'rama'},scenes=[(0,'ember'),('rama','indigo')],scale={'kumbhakarna':1.15}),
+ 'reel21':dict(scene='ember',scale={'hanuman':1.08},lex={'hanuman':'hanuman','kumbhakarna':'kumbhakarna','giant':'kumbhakarna','sugriva':'sugriva','rama':'rama'},scenes=[(0,'ember'),('rama','indigo')],scale={'kumbhakarna':1.15}),
  'reel22':dict(scene='indigo',lex={'vishnu':'vishnu','kalki':'kalki','people':'villager','brahmin':'rishi1','families':'villager','relatives':'villager','shambhala':'kalki','vishnuyasha':'rishi1'},scenes=[(0,'indigo'),('kali','ember'),('lie','ember'),('crosses','night'),('crystal','indigo'),('name','brown')]),
- 'reel23':dict(scene='ember',lex={'hanuman':'hanuman','ravana':'ravana','demons':'asura1','enemies':'asura1','sons':'asura2'},scenes=[(0,'ember'),('ravana','brown'),('roar','ember')]),
+ 'reel23':dict(scene='ember',scale={'hanuman':1.08},lex={'hanuman':'hanuman','ravana':'ravana10','demons':'asura1','enemies':'asura1','sons':'asura2'},scenes=[(0,'ember'),('ravana','brown'),('roar','ember')]),
  'reel24':dict(scene='night',lex={'shiva':'shiva','arjuna':'arjuna','krishna':'krishna','ashwatthama':'ashwatthama','vishnu':'vishnu','brahmastra':'brahma'},scenes=[(0,'night'),('pashupatastra','ember'),('sudarshana','indigo'),('trident','night')]),
  'reel25':dict(scene='indigo',lex={'sheshnag':'naga','vishnu':'vishnu','brahma':'brahma','ananta':'naga','tortoise':'vishnu','serpents':'naga'},scenes=[(0,'night'),('lotus','indigo'),('ocean','teal'),('heavy','ember'),('mustard','night')]),
- 'reel26':dict(scene='ember',lex={'ravana':'ravana','indra':'indra','meghanada':'meghanada','son':'meghanada','brahma':'brahma','indrajit':'meghanada'},scenes=[(0,'ember'),('invisible','night'),('lanka','brown'),('brahma','indigo')]),
+ 'reel26':dict(scene='ember',lex={'ravana':'ravana10','indra':'indra','meghanada':'meghanada','son':'meghanada','brahma':'brahma','indrajit':'meghanada'},scenes=[(0,'ember'),('invisible','night'),('lanka','brown'),('brahma','indigo')]),
  'reel27':dict(scene='night',lex={'hanuman':'hanuman','parashuram':'parashurama','parashurama':'parashurama','ashwatthama':'ashwatthama','mahabali':'mahabali','vyasa':'rishi3','vibhishana':'vibhishana','kripa':'rishi4','rama':'rama','shiva':'shiva','drona':'rishi2','ravana':'ravana'},scenes=[(0,'night'),('curse','ember'),('mahendra','brown')]),
- 'reel28':dict(scene='ember',lex={'ravana':'ravana','sita':'sita','hanuman':'hanuman','brahma':'brahma','apsara':'kanya','punjikasthala':'kanya','women':'kanya'},scenes=[(0,'ember'),('palace','brown'),('cursed','night'),('carried','ember')]),
+ 'reel28':dict(scene='ember',lex={'ravana':'ravana10','sita':'sita','hanuman':'hanuman','brahma':'brahma','apsara':'kanya','punjikasthala':'kanya','women':'kanya'},scenes=[(0,'ember'),('palace','brown'),('cursed','night'),('carried','ember')]),
 }
 
 BOW=lambda w,cut,y=690,x=640,wd=440:pfx('bowstring',w,x,y,wd,'a drawn bow and its string: it is being chewed thinner by termites' if cut<1 else 'the bowstring snapped and whipping loose',alpha=1,snapk=cut)
@@ -54,4 +54,31 @@ SPEC['reel08']['over']={
  17:dict(scene='ember',chars=[dict(who='vishnu',x=640,y=700,s=.9,_face=.55,flip=1,pose='sleep',emo='calm',look=700)],fx=[pfx('blood_splash','closed.',640,640,220,'blood on the floor',alpha=.8)]),
  18:dict(scene='ember',chars=[dict(who='deva_thin',x=478,y=720,s=.7,_face=.5,flip=1,pose='plead',emo='fear',look=700),dict(who='deva_thin2',x=806,y=722,s=.68,_face=.5,flip=-1,pose='plead',emo='fear',look=700)],fx=[pfx('smoke_plume','froze.',640,580,420,'dark smoke in the frozen silence',alpha=.8)]),
  21:dict(scene='brown',fx=[pfx('blood_splash','marks',640,744,200,'red footprints on the floor',alpha=.9)]),
+}
+
+HF=lambda w,n=9,y=560,wd=720,a=1:pfx('hood_fan',w,640,y,wd,'Sheshnag, huge, with a fan of cobra hoods',alpha=a,cnt=n)
+GL=lambda w,x,y,wd,col=None:pfx('earth_globe',w,x,y,wd,'a world drawn as a small globe',alpha=1)
+def WORLDS(w,y0=250,step=64,x=640):return [pfx('earth_globe',w,x+(-110 if k%2 else 110),y0+k*step//2,34+((k*7)%3)*6,'one of the fourteen worlds stacked one below another',alpha=.95) for k in range(14)]
+SPEC['reel25']['over']={
+ 0:dict(scene='night',chars=[],fx=[HF(None,9,560,760),GL(None,640,170,90)]),
+ 1:dict(scene='night',chars=[],fx=[HF(None,9,560,760),GL(None,640,188,18)]),
+ 2:dict(scene='night',chars=[],fx=[HF(None,9,600,760,.55),pfx('mist_wisps','where',640,520,700,'dark mist hiding Sheshnag',alpha=.9)]),
+ 4:dict(scene='sea',chars=[dict(who='vishnu_rest',x=640,y=680,s=.95,_face=.5,flip=1,pose='lie',emo='calm',look=700)],fx=[pfx('wave_ocean','sleeping',640,660,700,'the endless ocean Vishnu sleeps on',alpha=.9)]),
+ 5:dict(scene='sea',chars=[dict(who='vishnu_rest',x=640,y=720,s=.8,_face=.55,flip=1,pose='lie',emo='calm',look=700),dict(who='brahma',x=640,y=440,s=.62,_face=.4,flip=1,pose='stand',emo='calm',look=700)],fx=[pfx('divine_rays','lotus',640,420,520,'golden light where Brahma appears',alpha=.7,behind=True)]),
+ 6:dict(scene='night',chars=[dict(who='brahma',x=640,y=470,s=.62,_face=.38,flip=1,pose='stand',emo='calm',look=700)],fx=WORLDS('lotus')),
+ 7:dict(scene='night',chars=[dict(who='brahma',x=640,y=470,s=.62,_face=.38,flip=1,pose='stand',emo='calm',look=700),dict(who='naga',x=640,y=720,s=.6,_face=.62,flip=1,pose='stand',emo='calm',look=700)],fx=WORLDS('top')),
+ 8:dict(scene='ember',chars=[],fx=WORLDS('But')+[pfx('ground_crack','heavy',640,660,520,'the worlds are too heavy and the ground cracks',alpha=.8)]),
+ 9:dict(scene='ember',chars=[],fx=WORLDS('stem',260)+[pfx('lightning_forks','stem',640,260,560,'danger as everything starts to fall',alpha=.7,behind=True)]),
+ 10:dict(scene='night',chars=[],fx=[HF(None,9,560,780),pfx('divine_rays','Then',640,300,560,'Sheshnag rising far below the lowest world',alpha=.7,behind=True)]),
+ 11:dict(scene='night',chars=[],fx=[HF(None,9,620,760)]+[pfx('earth_globe','lifted',640+(-40 if k%2 else 40),150-k*0+((k*17)%40),30,'worlds carried on the centre hood',alpha=.95) for k in range(6)]),
+ 12:dict(scene='sea',chars=[dict(who='vishnu',x=640,y=720,s=.62,_face=.62,flip=1,pose='stand',emo='calm',look=700)],fx=[HF(None,9,420,640)]),
+ 13:dict(scene='night',chars=[],fx=[HF(None,9,560,760),GL(None,640,185,16)]),
+ 14:dict(scene='night',chars=[],fx=[HF(None,9,560,760),GL(None,640,185,10)]),
+ 15:dict(scene='night',chars=[],fx=[HF(None,9,560,760),GL(None,640,185,18)]),
+ 16:dict(scene='night',chars=[],fx=[HF(None,9,560,760),GL(None,640,185,10)]),
+ 17:dict(scene='night',chars=[],fx=[HF(None,9,580,760,.9),pfx('mist_wisps','That',640,540,700,'mist hiding Sheshnag',alpha=.9)]),
+}
+SPEC['reel23']['over']={
+ 0:dict(scene='ember',chars=[dict(who='hanuman',x=640,y=690,s=1.08,_face=.40,flip=1,pose='stand',emo='pride',look=700,prop='gada')]),
+ 1:dict(scene='ember',chars=[dict(who='hanuman',x=640,y=690,s=1.08,_face=.40,flip=1,pose='stand',emo='calm',look=700,prop='none')],fx=[pfx('smoke_plume','but',640,560,360,'the mace vanishes in smoke',alpha=.9)]),
 }

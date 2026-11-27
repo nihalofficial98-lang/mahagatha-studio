@@ -856,7 +856,7 @@ const XHEAD={
 };
 
 /* ---------- engine glue ---------- */
-const V2NAMES=new Set(['kacha','devayani','shukracharya','brihaspati','asura1','asura2','asura3','horse','deer','narada','kumara','jaya','vijaya','villager','villager_w','prasuti','sati','diti','danu','asikli','kashyapa','indra','surya','chandra','agni','vayu','hiranyaksha','hiranyakashipu','ravana','harihara','shiva','vishnu','hayagriva','daksha','manu','adishakti','brahmi','madhu','kaitabha','ardha','brahma','vishnu_rest','rudra','kapali','brahma5','kama','prakriti','swaha','nidra','kanya','balak','balika','deva_thin','deva_thin2','indra_thin','haryashva','shavalashva','narada_g','narada_old','cow','mare','doe','duck','hayagriva2','garuda','vinata','naga','naga2','naga_guard','vrikasura','bhasmasura','mohini','parvati','diti_p','maruta','maruta_baby','parashurama','rama','krishna','kalki','yama','ashwatthama','kumbhakarna','meghanada','bala','mahabali','vibhishana','markandeya','lakshmi','sita','arjuna','hanuman','sugriva',...[0,1,2,3,4,5,6].map(i=>'rishi'+i)]);
+const V2NAMES=new Set(['kacha','devayani','shukracharya','brihaspati','asura1','asura2','asura3','horse','deer','narada','kumara','jaya','vijaya','villager','villager_w','prasuti','sati','diti','danu','asikli','kashyapa','indra','surya','chandra','agni','vayu','hiranyaksha','hiranyakashipu','ravana','harihara','shiva','vishnu','hayagriva','daksha','manu','adishakti','brahmi','madhu','kaitabha','ardha','brahma','vishnu_rest','rudra','kapali','brahma5','kama','prakriti','swaha','nidra','kanya','balak','balika','deva_thin','deva_thin2','indra_thin','haryashva','shavalashva','narada_g','narada_old','cow','mare','doe','duck','hayagriva2','garuda','vinata','naga','naga2','naga_guard','vrikasura','bhasmasura','mohini','parvati','diti_p','maruta','maruta_baby','parashurama','rama','krishna','kalki','yama','ashwatthama','kumbhakarna','meghanada','bala','mahabali','vibhishana','markandeya','lakshmi','sita','arjuna','hanuman','sugriva','ravana10',...[0,1,2,3,4,5,6].map(i=>'rishi'+i)]);
 const SCALE={shiva:.62,kumara:.5,default:.62};
 Object.assign(SCALE,{balak:.42,balika:.42});
 /* ---------- EP07 (Kacha and Devayani, dark cinematic look, Nov 2026): new specs, poses, hand props, Shukracharya's tearing / rising rig.
@@ -1034,14 +1034,15 @@ Object.assign(CAST,{
  ashwatthama:Object.assign({},CAST.deva_thin2,{skin:'#b0805a',lower:L_('#7a2a2a','#c8a050','dhoti',{fan:'#a04040'}),uttariya:'#5a1a1a',kgem:'#2ad0a0',muscle:.8,build:1.04,prop:'sword'}),
  kumbhakarna:Object.assign({},CAST.asura1,{skin:'#5a3a2e',skinH:'#8a5a46',skinD:'#2a1a14',skinM:'#4a2e24',build:1.5,horns:'#c8b890',lower:L_('#3a1a1a','#c9a24a','short'),armor:'#6a4a3a',prop:'gada'}),
  meghanada:Object.assign({},CAST.ravana,{skin:'#2a2a50',skinH:'#4a4a80',skinD:'#12122a',skinM:'#22223e',build:1.12,crown:'asura',lower:L_('#2a1a4a','#c9a24a','short'),armor:'#c9a24a'}),
- bala:Object.assign({},CAST.asura1,{skin:'#8a5a34',crown:'asura',build:1.2,lower:L_('#8a1a1a','#e0b040','short'),armor:'#e0b040',armlet:'#e0b040',prop:'sword'}),
+ bala:Object.assign({},CAST.deva_thin2,{skin:'#c08848',skinH:'#e0a868',skinD:'#7a4a24',crown:'asura',horns:'#d8ccb0',eyeRed:true,mustache:'#1a0c08',brow:'#0a0606',lower:L_('#8a1a1a','#e0b040','dhoti',{pleat:true,fan:'#c04030'}),uttariya:'#c9a24a',armor:'#e0b040',armlet:'#e0b040',neck:['hara','pearls'],muscle:1,build:1.2,prop:'sword'}),
+ ravana10:Object.assign({},CAST.ravana,{skin:'#4a3a34',skinH:'#7a5a50',skinD:'#241a18',crown:'asura',horns:null,build:1.3,lower:L_('#a8182a','#e8c050','dhoti',{pleat:true,fan:'#d04030',dots:'#e8c050'}),uttariya:'#2a1a50',armor:'#e8c050',armlet:'#e8c050',neck:['hara','pearls','garland'],bangle:'#e8c050',muscle:1.1,prop:'sword'}),
  mahabali:Object.assign({},CAST.asura1,{skin:'#b07a4a',crown:'asura',build:1.15,eyeRed:false,lower:L_('#f0e8d8','#e0b040','dhoti'),armor:'#e0b040',armlet:'#e0b040',prop:null}),
  vibhishana:Object.assign({},CAST.deva_thin,{skin:'#7a5a44',crown:'asura',lower:L_('#2a4a7a','#c9a24a','dhoti'),prop:null}),
  markandeya:Object.assign({},CAST.balak,{hs:1.22,build:.92,tilak:'ash'}),
  lakshmi:Object.assign({},CAST.parvati,{lower:L_('#e8a020','#c8102e','sari'),upper:{type:'choli',col:'#c8102e'},pallu:'#f2c14e',prop:'lotus2'}),
  sita:Object.assign({},CAST.parvati,{lower:L_('#e8c040','#2a8a54','sari'),upper:{type:'choli',col:'#2a8a54'},pallu:'#e8e0a0',crown:null,prop:null}),
  arjuna:Object.assign({},CAST.deva_thin2,{skin:'#9a6a44',crown:'small',lower:L_('#2a3a7a','#c8a050','dhoti'),uttariya:'#d8a830',muscle:.9,prop:'bow'}),
- hanuman:skinSet('#d2682c',{skinH:'#f08a4a',skinD:'#8a3a14',skinM:'#b8561e',hair:{type:'none'},crown:'small',lower:L_('#d02a2a','#f0c048','short'),armlet:'#e0b040',muscle:1,build:1.14,brow:'#4a1a08',prop:'gada'}),
+ hanuman:skinSet('#d2682c',{skinH:'#f08a4a',skinD:'#8a3a14',skinM:'#b8561e',hair:{type:'none'},crown:'small',lower:L_('#d02a2a','#f0c048','short'),armlet:'#e0b040',muscle:1.4,build:1.48,brow:'#4a1a08',prop:'gada'}),
  sugriva:skinSet('#c8903c',{skinH:'#e8b060',skinD:'#7a5418',skinM:'#a87430',hair:{type:'none'},crown:'small',lower:L_('#2a5a9a','#f0c048','short'),armlet:'#e0b040',muscle:.95,build:1.1,brow:'#3a2408'})
 });
 HPROP.axe=(c,p)=>{c.save();c.translate(p[0],p[1]);PK.stroke(c,cc=>{cc.moveTo(0,34);cc.lineTo(2,-118)},'#2a1a10',7);PK.stroke(c,cc=>{cc.moveTo(0,34);cc.lineTo(2,-118)},'#7a4a24',4.6);
@@ -1063,5 +1064,11 @@ const mkVanara=who=>function(c,o,t,kk,face){const S=CAST[who],P=poseOf(o.pose||'
   c.save();leanAt(c,P);const hx=P.hd[0],hy=P.hd[1]+Math.sin(t*1.7)*2;c.translate(hx,hy+40);c.rotate(o.tilt||0);c.translate(0,-50);monkeyHead(c,S,kk,t,o.mood);c.restore()};
 const ink0='#3a1a10';
 Object.assign(XFIG,{hanuman:mkVanara('hanuman'),sugriva:mkVanara('sugriva')});
-['parashurama','rama','krishna','kalki','yama','ashwatthama','kumbhakarna','meghanada','bala','mahabali','vibhishana','markandeya','lakshmi','sita','arjuna','hanuman','sugriva'].forEach(n=>V2NAMES.add(n));
+function drawRavana10(c,o,t,kk,face){const S=CAST.ravana10,P=poseOf(o.pose||'stand','ravana'),hx=P.hd[0],hy=P.hd[1];
+  drawHuman(c,S,P,{t:t,k:kk,expr:face,noHead:true,prop:o.prop,mood:o.mood});
+  c.save();leanAt(c,P);const sm=[];[-74,-50,-26,0,26,50,74].forEach(a=>{const r=a*Math.PI/180;sm.push([Math.sin(r)*84,-Math.cos(r)*84+16])});[-16,16].forEach(a=>{const r=a*Math.PI/180;sm.push([Math.sin(r)*128,-Math.cos(r)*128+12])});
+  sm.forEach(([dx,dy],i)=>{c.save();c.translate(hx+dx,hy+dy);c.scale(.5,.5);drawHead(c,0,0,{expr:i%2?'anger':'calm',k:kk,S:S,t:t+i,mood:o.mood,turn:.1});hairFront(c,S,0,0,t);headgear(c,S,0,0);c.restore()});
+  drawHead(c,hx,hy,{expr:face,k:kk,S:S,t:t,mood:o.mood,turn:.1});hairFront(c,S,hx,hy,t);headgear(c,S,hx,hy);c.restore()}
+XFIG.ravana10=drawRavana10;
+['parashurama','rama','krishna','kalki','yama','ashwatthama','kumbhakarna','meghanada','bala','mahabali','vibhishana','markandeya','lakshmi','sita','arjuna','hanuman','sugriva','ravana10'].forEach(n=>V2NAMES.add(n));
 return {PK:PK,has:w=>V2NAMES.has(w),fig:v2fig,head:v2head,CAST:CAST,poseOf:poseOf,drawHuman:drawHuman,drawBrahmaRig:drawBrahmaRig,drawReclineVishnu:drawReclineVishnu,drawArdha:drawArdha,drawShiva:drawShiva,drawHead:drawHead,FX:REELFX,drawJata:drawJata,POSES:POSES,mixPose:mixPose,SH:SH};

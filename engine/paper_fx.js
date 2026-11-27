@@ -148,6 +148,17 @@ const E={
   ctx.strokeStyle='#e8b040';ctx.lineWidth=w*.014;ctx.setLineDash([w*.025,w*.03]);ctx.beginPath();ctx.ellipse(0,0,R,R*.36,0,.15,.15+(PI*2-.3)*k);ctx.stroke();ctx.setLineDash([]);
   const sw=Math.sin(t*2)*w*.02;[[-1,.5],[1,.62]].forEach(([sd,L])=>{ctx.strokeStyle='#c42820';ctx.lineWidth=w*.04;ctx.beginPath();ctx.moveTo(R*.98,0);ctx.quadraticCurveTo(R*1.15,sd*w*.1,R*1.1+sw,sd*w*L*.5);ctx.stroke();cutP(()=>ctx.ellipse(R*1.1+sw,sd*w*L*.5+sd*w*.03,w*.03,w*.045,0,0,TAU),'#e8b040',{sh:0,lw:1})});
   cutP(()=>ctx.ellipse(R,0,w*.06,w*.05,0,0,TAU),'#a81818',{sh:0,lw:1.2,ink:'#3a0404'});ctx.restore()}},
+ // reel 25: Sheshnag's fan of cobra hoods (F.n hoods, centre largest, dark teal with pale bellies, glowing eyes); the worlds sit on the centre hood
+ hood_fan:{s:0,f(w,t,F){const n=F.cnt||9;for(let i=0;i<n;i++){const u=n>1?(i/(n-1))*2-1:0,a=u*1.25,R=w*.42,x=Math.sin(a)*R,y=-Math.cos(a)*R*.55+w*.18,sc=(1-Math.abs(u)*.42)*w*.34;
+   ctx.save();ctx.translate(x,y);ctx.rotate(a*.35);
+   cutP(()=>{ctx.moveTo(-sc*.15,sc*.9);ctx.bezierCurveTo(-sc*.7,sc*.5,-sc*.55,-sc*.55,0,-sc*.6);ctx.bezierCurveTo(sc*.55,-sc*.55,sc*.7,sc*.5,sc*.15,sc*.9);ctx.closePath()},'#1f6a66',{sh:0,lw:1.6,ink:'#06201e'});
+   cutP(()=>{ctx.moveTo(-sc*.1,sc*.85);ctx.bezierCurveTo(-sc*.4,sc*.4,-sc*.3,-sc*.3,0,-sc*.4);ctx.bezierCurveTo(sc*.3,-sc*.3,sc*.4,sc*.4,sc*.1,sc*.85);ctx.closePath()},'#7ab8a8',{sh:0,lw:0});
+   cutP(()=>{ctx.moveTo(-sc*.12,-sc*.1);ctx.bezierCurveTo(-sc*.3,sc*.2,-sc*.1,sc*.4,0,sc*.1);ctx.bezierCurveTo(sc*.1,sc*.4,sc*.3,sc*.2,sc*.12,-sc*.1);ctx.closePath()},'#0a3a38',{sh:0,lw:0});
+   [-1,1].forEach(sd=>cutP(()=>ctx.ellipse(sd*sc*.2,-sc*.28,sc*.07,sc*.05,0,0,TAU),'#ffd34a',{sh:0,lw:.6,ink:'#06201e'}));ctx.restore()}
+  glow(0,w*.05,w*.6,'120,220,200',.18)}},
+ // reel 25: a paper-cut Earth (blue ocean, green land); small w = a mustard-seed-sized world
+ earth_globe:{s:0,f(w,t,F){const r=w*.5;glow(0,0,w*.9,'160,210,255',.35);cutP(()=>ctx.arc(0,0,r,0,TAU),(()=>{const g=ctx.createRadialGradient(-r*.25,-r*.3,r*.08,0,0,r*1.05);g.addColorStop(0,F.hi||'#8ac4ff');g.addColorStop(.55,F.mid||'#2a5ac8');g.addColorStop(1,'#102a70');return g})(),{sh:0,lw:1.4,ink:'#081a4a'});
+   ctx.save();ctx.beginPath();ctx.arc(0,0,r,0,TAU);ctx.clip();ctx.fillStyle=F.land||'#3a9a58';[[-.35,-.2,.4,.26],[.25,.18,.45,.3],[-.1,.55,.3,.18],[.4,-.45,.25,.16]].forEach(([x,y,a,b])=>{ctx.beginPath();ctx.ellipse(x*r,y*r,a*r,b*r,x,0,TAU);ctx.fill()});ctx.restore()}},
  // reel 8: a drawn bow with its string (F.cut 0..1: the string thins as termites chew it, then SNAPS at 1 and the two ends whip apart)
  bowstring:{s:0,f(w,t,F){const k=F.snapk??0,h=w*.62,snap=k>=.98,thin=Math.max(.25,1-k*.8);ctx.save();ctx.lineCap='round';
   ctx.strokeStyle='#1a0c06';ctx.lineWidth=w*.07;ctx.beginPath();ctx.moveTo(w*.46,-h*.5);ctx.quadraticCurveTo(-w*.22,0,w*.46,h*.5);ctx.stroke();
