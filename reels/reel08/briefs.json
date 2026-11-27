@@ -276,6 +276,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "The",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "palace_night",
+     "pal": "night"
+    },
+    {
      "k": "bowstring",
      "word": "gods",
      "x": 640,
@@ -601,6 +614,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "They",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "night"
+    },
+    {
      "k": "mist_wisps",
      "word": "purpose",
      "x": 640,
@@ -912,6 +938,19 @@
     }
    ],
    "effects": [
+    {
+     "k": "scene_kit",
+     "word": "Every",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "night"
+    },
     {
      "k": "bowstring",
      "word": "termite.",
@@ -1228,6 +1267,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "How",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "night"
+    },
+    {
      "k": "mist_wisps",
      "word": "How",
      "x": 640,
@@ -1493,23 +1545,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "mood": {
     "emotion": "calm",
@@ -1529,15 +1565,28 @@
    ],
    "effects": [
     {
-     "k": "mist_wisps",
+     "k": "scene_kit",
      "word": "Vishnu",
      "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
      "par": 1.0,
      "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "cosmos",
+     "pal": "night"
+    },
+    {
+     "k": "divine_rays",
+     "word": "Vishnu",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the cosmos its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -1794,23 +1843,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "mood": {
     "emotion": "calm",
@@ -1830,15 +1863,28 @@
    ],
    "effects": [
     {
-     "k": "mist_wisps",
+     "k": "scene_kit",
      "word": "He",
      "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
      "par": 1.0,
      "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "cosmos",
+     "pal": "night"
+    },
+    {
+     "k": "divine_rays",
+     "word": "He",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the cosmos its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -2131,6 +2177,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "His",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "night"
+    },
+    {
      "k": "mist_wisps",
      "word": "His",
      "x": 640,
@@ -2269,39 +2328,106 @@
        "col": "#18224a"
       },
       {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#101830"
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
       },
       {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
        "s": 0.4,
-       "col": "#101830"
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 525,
-       "s": 0.95,
+       "y": 522,
+       "s": 0.9,
        "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 520,
-       "s": 0.85,
+       "y": 518,
+       "s": 0.8,
        "col": "#101830"
-      },
-      {
-       "o": "rock",
-       "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#18224a"
       }
      ]
     },
@@ -2329,7 +2455,23 @@
     }
    ],
    "background": {
-    "k": "plain"
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "mood": {
     "emotion": "anger",
@@ -2349,26 +2491,28 @@
    ],
    "effects": [
     {
-     "k": "smoke_plume",
+     "k": "scene_kit",
      "word": "The",
      "x": 640,
-     "y": 480,
-     "w": 560,
-     "alpha": 0.3,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
      "par": 1.0,
      "behind": true,
-     "meaning": "smoke plume giving the battle its atmosphere"
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "night"
     },
     {
-     "k": "ember_fire",
+     "k": "mist_wisps",
      "word": "The",
-     "x": 455,
-     "y": 672,
-     "w": 70,
-     "alpha": 0.7,
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
      "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire giving the battle its atmosphere"
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -2667,6 +2811,19 @@
     }
    ],
    "effects": [
+    {
+     "k": "scene_kit",
+     "word": "Vishnu",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "village_dusk",
+     "pal": "night"
+    },
     {
      "k": "bowstring",
      "word": "bow.",
@@ -3008,6 +3165,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "The",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "village_dusk",
+     "pal": "night"
+    },
+    {
      "k": "smoke_plume",
      "word": "The",
      "x": 520,
@@ -3128,6 +3298,41 @@
        "y": 250,
        "s": 0.9,
        "col": "#24366a"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#18224a"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#18224a"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#18224a"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#18224a"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#18224a"
       }
      ]
     },
@@ -3146,11 +3351,32 @@
        "col": "#18224a"
       },
       {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "wall",
+       "x": 640,
+       "y": 505,
+       "s": 0.7,
+       "col": "#18224a"
+      },
+      {
        "o": "tree",
        "x": 405,
        "y": 508,
        "s": 0.3,
-       "kind": "round",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -3158,7 +3384,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "palm",
+       "kind": "round",
        "col": "#18224a"
       },
       {
@@ -3166,7 +3392,7 @@
        "x": 495,
        "y": 508,
        "s": 0.4,
-       "kind": "round",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -3174,84 +3400,7 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "hut",
-       "x": 462,
-       "y": 526,
-       "s": 0.6,
-       "col": "#101830"
-      },
-      {
-       "o": "hut",
-       "x": 826,
-       "y": 524,
-       "s": 0.55,
-       "col": "#101830"
-      },
-      {
-       "o": "road",
-       "x": 640,
-       "y": 560,
-       "s": 1.0,
        "col": "#18224a"
       }
      ]
@@ -3280,23 +3429,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "palace"
    },
    "mood": {
     "emotion": "calm",
@@ -3316,6 +3449,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "needed",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "palace_night",
+     "pal": "night"
+    },
+    {
      "k": "ember_fire",
      "word": "fire",
      "x": 640,
@@ -3327,15 +3473,26 @@
      "meaning": "ember fire as the story says 'fire'"
     },
     {
-     "k": "smoke_plume",
+     "k": "divine_rays",
      "word": "needed",
-     "x": 520,
-     "y": 520,
-     "w": 220,
-     "alpha": 0.35,
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
      "par": 1.0,
      "behind": true,
-     "meaning": "smoke plume giving the village its atmosphere"
+     "meaning": "divine rays giving the heaven its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "needed",
+     "x": 466,
+     "y": 664,
+     "w": 60,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the heaven its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -3447,6 +3604,41 @@
        "y": 250,
        "s": 0.9,
        "col": "#24366a"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#18224a"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#18224a"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#18224a"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#18224a"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#18224a"
       }
      ]
     },
@@ -3465,11 +3657,32 @@
        "col": "#18224a"
       },
       {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#101830"
+      },
+      {
+       "o": "wall",
+       "x": 640,
+       "y": 505,
+       "s": 0.7,
+       "col": "#18224a"
+      },
+      {
        "o": "tree",
        "x": 405,
        "y": 508,
        "s": 0.3,
-       "kind": "round",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -3477,7 +3690,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "palm",
+       "kind": "round",
        "col": "#18224a"
       },
       {
@@ -3485,7 +3698,7 @@
        "x": 495,
        "y": 508,
        "s": 0.4,
-       "kind": "round",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -3493,84 +3706,7 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "hut",
-       "x": 462,
-       "y": 526,
-       "s": 0.6,
-       "col": "#101830"
-      },
-      {
-       "o": "hut",
-       "x": 826,
-       "y": 524,
-       "s": 0.55,
-       "col": "#101830"
-      },
-      {
-       "o": "road",
-       "x": 640,
-       "y": 560,
-       "s": 1.0,
        "col": "#18224a"
       }
      ]
@@ -3599,23 +3735,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "palace"
    },
    "mood": {
     "emotion": "calm",
@@ -3635,6 +3755,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "Their",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "palace_night",
+     "pal": "night"
+    },
+    {
      "k": "red_energy_pulse",
      "word": "powers",
      "x": 640,
@@ -3646,15 +3779,26 @@
      "meaning": "red energy pulse as the story says 'powers'"
     },
     {
-     "k": "smoke_plume",
+     "k": "divine_rays",
      "word": "Their",
-     "x": 520,
-     "y": 520,
-     "w": 220,
-     "alpha": 0.35,
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
      "par": 1.0,
      "behind": true,
-     "meaning": "smoke plume giving the village its atmosphere"
+     "meaning": "divine rays giving the heaven its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Their",
+     "x": 466,
+     "y": 664,
+     "w": 60,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the heaven its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -3946,6 +4090,19 @@
     }
    ],
    "effects": [
+    {
+     "k": "scene_kit",
+     "word": "Brahma",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "night"
+    },
     {
      "k": "mist_wisps",
      "word": "Brahma",
@@ -4248,6 +4405,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "If",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "indigo"
+    },
+    {
      "k": "bowstring",
      "word": "bowstring",
      "x": 790,
@@ -4546,6 +4716,19 @@
     }
    ],
    "effects": [
+    {
+     "k": "scene_kit",
+     "word": "So",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "palace_night",
+     "pal": "night"
+    },
     {
      "k": "bowstring",
      "word": "termites",
@@ -4862,6 +5045,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "thinner",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "night"
+    },
+    {
      "k": "bowstring",
      "word": "thinner",
      "x": 640,
@@ -5177,6 +5373,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "Then",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "ember"
+    },
+    {
      "k": "bowstring",
      "word": "snapped,",
      "x": 640,
@@ -5490,6 +5699,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "It",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "ember"
+    },
+    {
      "k": "blood_splash",
      "word": "closed.",
      "x": 640,
@@ -5798,6 +6020,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "The",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "palace_night",
+     "pal": "ember"
+    },
+    {
      "k": "smoke_plume",
      "word": "froze.",
      "x": 640,
@@ -6091,6 +6326,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "They",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "palace_night",
+     "pal": "ember"
+    },
+    {
      "k": "divine_rays",
      "word": "They",
      "x": 640,
@@ -6125,7 +6373,7 @@
    "duration": 2.48,
    "narration": "Then Lakshmi, his wife, walked in.",
    "meaning": "Then Lakshmi, his wife, walked in. (shown as a dark story frame)",
-   "why": "lakshmi in a dark ember world while 'Then Lakshmi, his wife, walked in.' is spoken.",
+   "why": "lakshmi in a dark brown world while 'Then Lakshmi, his wife, walked in.' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -6157,7 +6405,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -6166,7 +6414,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -6176,7 +6424,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -6186,7 +6434,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -6196,7 +6444,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -6206,7 +6454,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -6214,49 +6462,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "wall",
        "x": 600,
        "y": 470,
        "s": 0.8,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 470,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 560,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 720,
        "y": 525,
        "s": 0.45,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 810,
        "y": 525,
        "s": 0.5,
-       "col": "#3a1618"
+       "col": "#3a281c"
       }
      ]
     },
@@ -6272,28 +6520,28 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "pillar",
        "x": 452,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#2a1c12"
       },
       {
        "o": "pillar",
        "x": 834,
        "y": 545,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#2a1c12"
       },
       {
        "o": "wall",
        "x": 640,
        "y": 505,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -6301,7 +6549,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -6309,7 +6557,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -6317,7 +6565,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "palm",
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
        "o": "tree",
@@ -6325,7 +6573,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#3a281c"
       }
      ]
     },
@@ -6378,6 +6626,19 @@
     }
    ],
    "effects": [
+    {
+     "k": "scene_kit",
+     "word": "Then",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "palace_night",
+     "pal": "brown"
+    },
     {
      "k": "divine_rays",
      "word": "Then",
@@ -6691,6 +6952,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "Her",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "brown"
+    },
+    {
      "k": "blood_splash",
      "word": "marks",
      "x": 640,
@@ -7003,6 +7277,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "She",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "brown"
+    },
+    {
      "k": "mist_wisps",
      "word": "She",
      "x": 640,
@@ -7141,106 +7428,39 @@
        "col": "#3a281c"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
+       "o": "wall",
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#2a1c12"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
+       "o": "wall",
+       "x": 790,
+       "y": 515,
        "s": 0.4,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
+       "col": "#2a1c12"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "y": 525,
+       "s": 0.95,
        "col": "#2a1c12"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 518,
-       "s": 0.8,
+       "y": 520,
+       "s": 0.85,
        "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#3a281c"
       }
      ]
     },
@@ -7268,23 +7488,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#100a08",
-     "#2e1c14",
-     "#5e3a24",
-     "#9a6a3c"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a4a34",
-     "#523a28",
-     "#3a281c",
-     "#2a1c12"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "plain"
    },
    "mood": {
     "emotion": "devotion",
@@ -7303,6 +7507,19 @@
     }
    ],
    "effects": [
+    {
+     "k": "scene_kit",
+     "word": "The",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "battle_fire",
+     "pal": "brown"
+    },
     {
      "k": "divine_rays",
      "word": "The",
@@ -7453,106 +7670,39 @@
        "col": "#3a281c"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
+       "o": "wall",
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#2a1c12"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
+       "o": "wall",
+       "x": 790,
+       "y": 515,
        "s": 0.4,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
+       "col": "#2a1c12"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "y": 525,
+       "s": 0.95,
        "col": "#2a1c12"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 518,
-       "s": 0.8,
+       "y": 520,
+       "s": 0.85,
        "col": "#2a1c12"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#3a281c"
       }
      ]
     },
@@ -7580,23 +7730,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#100a08",
-     "#2e1c14",
-     "#5e3a24",
-     "#9a6a3c"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a4a34",
-     "#523a28",
-     "#3a281c",
-     "#2a1c12"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "plain"
    },
    "mood": {
     "emotion": "anger",
@@ -7616,15 +7750,39 @@
    ],
    "effects": [
     {
-     "k": "mist_wisps",
+     "k": "scene_kit",
      "word": "He",
      "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
      "par": 1.0,
      "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "battle_fire",
+     "pal": "brown"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "He",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "He",
+     "x": 455,
+     "y": 672,
+     "w": 70,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the battle its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -7834,6 +7992,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "That",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "battle_fire",
+     "pal": "brown"
+    },
+    {
      "k": "smoke_plume",
      "word": "That",
      "x": 640,
@@ -7868,7 +8039,7 @@
    "duration": 3.78,
    "narration": "Lakshmi told the gods to bring the head of a horse and put it on Vishnu.",
    "meaning": "Lakshmi told the gods to bring the head of a horse and put it on Vishnu. (shown as a dark story frame)",
-   "why": "lakshmi in a dark brown world while 'Lakshmi told the gods to bring the head of a horse' is spoken.",
+   "why": "lakshmi in a dark indigo world while 'Lakshmi told the gods to bring the head of a horse' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -7900,7 +8071,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#9a6a3c",
+     "haze": "#b05a48",
      "items": [
       {
        "o": "mountain",
@@ -7909,7 +8080,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a4a34",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -7919,7 +8090,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#523a28",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -7929,7 +8100,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a4a34",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -7939,7 +8110,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#523a28",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -7949,7 +8120,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#523a28",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -7957,14 +8128,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5e3a24"
+       "col": "#5a2a58"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5e3a24"
+       "col": "#5a2a58"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#241838"
       }
      ]
     },
@@ -7980,42 +8186,60 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a281c"
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#1a1028"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#1a1028"
       },
       {
        "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
-       "s": 0.4,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "rock",
        "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#3a281c"
+       "y": 505,
+       "s": 0.7,
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#241838"
       }
      ]
     },
@@ -8043,7 +8267,7 @@
     }
    ],
    "background": {
-    "k": "plain"
+    "k": "palace"
    },
    "mood": {
     "emotion": "calm",
@@ -8073,26 +8297,39 @@
    ],
    "effects": [
     {
-     "k": "smoke_plume",
+     "k": "scene_kit",
      "word": "Lakshmi",
      "x": 640,
-     "y": 480,
-     "w": 560,
-     "alpha": 0.3,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
      "par": 1.0,
      "behind": true,
-     "meaning": "smoke plume giving the battle its atmosphere"
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "palace_night",
+     "pal": "indigo"
+    },
+    {
+     "k": "divine_rays",
+     "word": "Lakshmi",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the heaven its atmosphere"
     },
     {
      "k": "ember_fire",
      "word": "Lakshmi",
-     "x": 455,
-     "y": 672,
-     "w": 70,
+     "x": 466,
+     "y": 664,
+     "w": 60,
      "alpha": 0.7,
      "par": 1.0,
      "behind": false,
-     "meaning": "ember fire giving the battle its atmosphere"
+     "meaning": "ember fire giving the heaven its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -8107,7 +8344,7 @@
    "duration": 2.92,
    "narration": "He became Hayagriv, the horse-headed god.",
    "meaning": "He became Hayagriv, the horse-headed god. (shown as a dark story frame)",
-   "why": "hayagriva in a dark brown world while 'He became Hayagriv, the horse-headed god.' is spoken.",
+   "why": "hayagriva in a dark indigo world while 'He became Hayagriv, the horse-headed god.' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -8139,7 +8376,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#9a6a3c",
+     "haze": "#b05a48",
      "items": [
       {
        "o": "mountain",
@@ -8148,7 +8385,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a4a34",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -8158,7 +8395,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#523a28",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -8168,7 +8405,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a4a34",
+       "col": "#3a2a5a",
        "snow": false
       },
       {
@@ -8178,7 +8415,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#523a28",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -8188,7 +8425,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#523a28",
+       "col": "#2e2048",
        "snow": false
       },
       {
@@ -8196,14 +8433,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5e3a24"
+       "col": "#5a2a58"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5e3a24"
+       "col": "#5a2a58"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#241838"
       }
      ]
     },
@@ -8219,42 +8491,60 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a281c"
+       "col": "#241838"
+      },
+      {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#1a1028"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#1a1028"
       },
       {
        "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
-       "s": 0.4,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "rock",
        "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#3a281c"
+       "y": 505,
+       "s": 0.7,
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#241838"
       }
      ]
     },
@@ -8282,7 +8572,7 @@
     }
    ],
    "background": {
-    "k": "plain"
+    "k": "palace"
    },
    "mood": {
     "emotion": "calm",
@@ -8302,26 +8592,39 @@
    ],
    "effects": [
     {
-     "k": "smoke_plume",
+     "k": "scene_kit",
      "word": "He",
      "x": 640,
-     "y": 480,
-     "w": 560,
-     "alpha": 0.3,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
      "par": 1.0,
      "behind": true,
-     "meaning": "smoke plume giving the battle its atmosphere"
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "palace_night",
+     "pal": "indigo"
+    },
+    {
+     "k": "divine_rays",
+     "word": "He",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.4,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays giving the heaven its atmosphere"
     },
     {
      "k": "ember_fire",
      "word": "He",
-     "x": 455,
-     "y": 672,
-     "w": 70,
+     "x": 466,
+     "y": 664,
+     "w": 60,
      "alpha": 0.7,
      "par": 1.0,
      "behind": false,
-     "meaning": "ember fire giving the battle its atmosphere"
+     "meaning": "ember fire giving the heaven its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -8336,7 +8639,7 @@
    "duration": 3.44,
    "narration": "Soon Vishnu neighed, and the demon fell silent.",
    "meaning": "Soon Vishnu neighed, and the demon fell silent. (shown as a dark story frame)",
-   "why": "vishnu in a dark brown world while 'Soon Vishnu neighed, and the demon fell silent.' is spoken.",
+   "why": "vishnu in a dark night world while 'Soon Vishnu neighed, and the demon fell silent.' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -8368,7 +8671,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#9a6a3c",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -8377,7 +8680,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a4a34",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -8387,7 +8690,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#523a28",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -8397,7 +8700,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a4a34",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -8407,7 +8710,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#523a28",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -8417,7 +8720,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#523a28",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -8425,14 +8728,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5e3a24"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5e3a24"
+       "col": "#24366a"
       }
      ]
     },
@@ -8448,42 +8751,42 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a281c"
+       "col": "#18224a"
       },
       {
        "o": "wall",
        "x": 500,
        "y": 515,
        "s": 0.45,
-       "col": "#2a1c12"
+       "col": "#101830"
       },
       {
        "o": "wall",
        "x": 790,
        "y": 515,
        "s": 0.4,
-       "col": "#2a1c12"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 525,
        "s": 0.95,
-       "col": "#2a1c12"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 520,
        "s": 0.85,
-       "col": "#2a1c12"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 640,
        "y": 515,
        "s": 0.5,
-       "col": "#3a281c"
+       "col": "#18224a"
       }
      ]
     },
@@ -8541,6 +8844,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "Soon",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "battle_fire",
+     "pal": "night"
+    },
+    {
      "k": "ground_crack",
      "word": "Soon",
      "x": 640,
@@ -8586,7 +8902,7 @@
    "duration": 3.7,
    "narration": "The gods cut off Vishnu's head by mistake, only to wake him,",
    "meaning": "The gods cut off Vishnu's head by mistake, only to wake him, (shown as a dark story frame)",
-   "why": "vishnu in a dark brown world while 'The gods cut off Vishnu's head by mistake, only to' is spoken.",
+   "why": "vishnu in a dark night world while 'The gods cut off Vishnu's head by mistake, only to' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -8618,7 +8934,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#9a6a3c",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -8627,7 +8943,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a4a34",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -8637,7 +8953,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#523a28",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -8647,7 +8963,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a4a34",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -8657,7 +8973,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#523a28",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -8667,7 +8983,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#523a28",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -8675,49 +8991,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5e3a24"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5e3a24"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a281c"
+       "col": "#24366a"
       }
      ]
     },
@@ -8733,60 +9014,42 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a1c12"
+       "col": "#18224a"
       },
       {
        "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#3a281c"
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#101830"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
+       "o": "wall",
+       "x": 790,
+       "y": 515,
        "s": 0.4,
-       "kind": "palm",
-       "col": "#3a281c"
+       "col": "#101830"
       },
       {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
+       "o": "rock",
+       "x": 450,
+       "y": 525,
+       "s": 0.95,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 520,
+       "s": 0.85,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#18224a"
       }
      ]
     },
@@ -8814,7 +9077,7 @@
     }
    ],
    "background": {
-    "k": "palace"
+    "k": "plain"
    },
    "mood": {
     "emotion": "shock",
@@ -8854,6 +9117,19 @@
    ],
    "effects": [
     {
+     "k": "scene_kit",
+     "word": "The",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "battle_fire",
+     "pal": "night"
+    },
+    {
      "k": "blood_splash",
      "word": "The",
      "x": 640,
@@ -8888,7 +9164,7 @@
    "duration": 3.75,
    "narration": "and that mistake gave them the one god who could kill the demon.",
    "meaning": "and that mistake gave them the one god who could kill the demon. (shown as a dark story frame)",
-   "why": "hayagriva in a dark brown world while 'and that mistake gave them the one god who could k' is spoken.",
+   "why": "hayagriva in a dark night world while 'and that mistake gave them the one god who could k' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -8920,7 +9196,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#9a6a3c",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -8929,7 +9205,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a4a34",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -8939,7 +9215,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#523a28",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -8949,7 +9225,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a4a34",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -8959,7 +9235,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#523a28",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -8969,7 +9245,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#523a28",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -8977,49 +9253,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5e3a24"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5e3a24"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a281c"
+       "col": "#24366a"
       }
      ]
     },
@@ -9035,60 +9276,42 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a281c"
-      },
-      {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a1c12"
+       "col": "#18224a"
       },
       {
        "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#3a281c"
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#101830"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
+       "o": "wall",
+       "x": 790,
+       "y": 515,
        "s": 0.4,
-       "kind": "palm",
-       "col": "#3a281c"
+       "col": "#101830"
       },
       {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
+       "o": "rock",
+       "x": 450,
+       "y": 525,
+       "s": 0.95,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 520,
+       "s": 0.85,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#18224a"
       }
      ]
     },
@@ -9116,7 +9339,7 @@
     }
    ],
    "background": {
-    "k": "palace"
+    "k": "plain"
    },
    "mood": {
     "emotion": "anger",
@@ -9146,26 +9369,39 @@
    ],
    "effects": [
     {
-     "k": "divine_rays",
+     "k": "scene_kit",
      "word": "and",
      "x": 640,
-     "y": 330,
-     "w": 560,
-     "alpha": 0.4,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
      "par": 1.0,
      "behind": true,
-     "meaning": "divine rays giving the heaven its atmosphere"
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "battle_fire",
+     "pal": "night"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "and",
+     "x": 640,
+     "y": 480,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "smoke plume giving the battle its atmosphere"
     },
     {
      "k": "ember_fire",
      "word": "and",
-     "x": 466,
-     "y": 664,
-     "w": 60,
+     "x": 455,
+     "y": 672,
+     "w": 70,
      "alpha": 0.7,
      "par": 1.0,
      "behind": false,
-     "meaning": "ember fire giving the heaven its atmosphere"
+     "meaning": "ember fire giving the battle its atmosphere"
     }
    ],
    "transition_in": "cut"

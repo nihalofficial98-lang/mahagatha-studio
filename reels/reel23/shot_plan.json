@@ -7,7 +7,9 @@
     "t": 0.16,
     "word": "We"
    },
-   "cues": [],
+   "cues": [
+    "We"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -40,10 +42,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 534,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 534,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 534,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 534,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 534,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 534,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -317,6 +439,78 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 535,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 535,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 535,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 535,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 535,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 535,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
    "fx": [
@@ -330,9 +524,56 @@
      "par": 1.0,
      "c": 0,
      "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -571,7 +812,9 @@
     "t": 6.62,
     "word": "Ravana"
    },
-   "cues": [],
+   "cues": [
+    "Ravana"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -594,9 +837,9 @@
    "figs": [
     {
      "who": "ravana10",
-     "x": 470,
-     "y": 590,
-     "s": 0.765,
+     "x": 640,
+     "y": 562,
+     "s": 0.81,
      "flip": 1,
      "pose": "stand",
      "emo": "anger",
@@ -606,19 +849,151 @@
     },
     {
      "who": "asura1",
-     "x": 810,
-     "y": 590,
-     "s": 0.765,
-     "flip": -1,
-     "pose": "stand",
+     "x": 500,
+     "y": 571,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "rage",
      "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 780,
+     "y": 571,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
      "mood": {
       "lx": 0.8
      }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.08,
@@ -857,7 +1232,9 @@
     "t": 9.46,
     "word": "Hanuman"
    },
-   "cues": [],
+   "cues": [
+    "Hanuman"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -890,10 +1267,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.02,
@@ -1132,25 +1629,11 @@
     "t": 14.36,
     "word": "Then"
    },
-   "cues": [],
+   "cues": [
+    "Then"
+   ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "palace"
    },
    "figs": [
     {
@@ -1176,10 +1659,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 512,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 512,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "brown",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.09,
@@ -1199,7 +1802,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -1208,7 +1811,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1218,7 +1821,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1228,7 +1831,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1238,7 +1841,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1248,7 +1851,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1256,14 +1859,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5e3a24"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a281c"
       }
      ]
     },
@@ -1278,109 +1916,60 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "wall",
+       "x": 640,
+       "y": 505,
+       "s": 0.7,
+       "col": "#3a281c"
       },
       {
        "o": "tree",
        "x": 405,
        "y": 508,
        "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
+       "kind": "palm",
+       "col": "#3a281c"
       },
       {
        "o": "tree",
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
+       "kind": "round",
+       "col": "#3a281c"
       },
       {
        "o": "tree",
        "x": 495,
        "y": 508,
        "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
+       "kind": "palm",
+       "col": "#3a281c"
       },
       {
        "o": "tree",
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#3a281c"
       }
      ]
     },
@@ -1406,7 +1995,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: ravana10 in a dark ember world while 'Then Ravana sent the seven sons of his ministers.' is spoken.",
+   "note": "medium crane_down: ravana10 in a dark brown world while 'Then Ravana sent the seven sons of his ministers.' is spoken.",
    "vert": {
     "focus": "ravana10"
    },
@@ -1418,9 +2007,11 @@
     "t": 17.3,
     "word": "Hanuman"
    },
-   "cues": [],
+   "cues": [
+    "Hanuman"
+   ],
    "bg": {
-    "k": "plain"
+    "k": "palace"
    },
    "figs": [
     {
@@ -1435,10 +2026,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "palace_night",
+     "pal": "brown",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.03,
@@ -1458,7 +2169,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -1467,7 +2178,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1477,7 +2188,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1487,7 +2198,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1497,7 +2208,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1507,7 +2218,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1515,14 +2226,49 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5e3a24"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a281c"
       }
      ]
     },
@@ -1537,42 +2283,60 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#3a281c"
+      },
+      {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a1c12"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a1c12"
       },
       {
        "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
-       "s": 0.4,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
        "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#3a1618"
+       "y": 505,
+       "s": 0.7,
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
       }
      ]
     },
@@ -1598,7 +2362,7 @@
      ]
     }
    ],
-   "note": "medium push_in: hanuman in a dark ember world while 'Hanuman fought them with his bare hands.' is spoken.",
+   "note": "medium push_in: hanuman in a dark brown world while 'Hanuman fought them with his bare hands.' is spoken.",
    "vert": {
     "focus": "hanuman"
    },
@@ -1610,9 +2374,27 @@
     "t": 19.78,
     "word": "He"
    },
-   "cues": [],
+   "cues": [
+    "He"
+   ],
    "bg": {
-    "k": "plain"
+    "k": "vista",
+    "sky": [
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "figs": [
     {
@@ -1627,10 +2409,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 562,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 562,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 562,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 562,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 562,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 562,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "brown",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.06,
@@ -1650,7 +2552,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -1659,7 +2561,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1669,7 +2571,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1679,7 +2581,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1689,7 +2591,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1699,7 +2601,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1707,14 +2609,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       }
      ]
     },
@@ -1729,42 +2631,109 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#2a0e10"
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
       },
       {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
        "s": 0.4,
-       "col": "#2a0e10"
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a0e10"
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a1c12"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#3a1618"
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a1c12"
       }
      ]
     },
@@ -1790,7 +2759,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: hanuman in a dark ember world while 'He hit some with his palms and some with his feet.' is spoken.",
+   "note": "medium crane_down: hanuman in a dark brown world while 'He hit some with his palms and some with his feet.' is spoken.",
    "vert": {
     "focus": "hanuman"
    },
@@ -1802,9 +2771,27 @@
     "t": 23.06,
     "word": "In"
    },
-   "cues": [],
+   "cues": [
+    "In"
+   ],
    "bg": {
-    "k": "plain"
+    "k": "vista",
+    "sky": [
+     "#100a08",
+     "#2e1c14",
+     "#5e3a24",
+     "#9a6a3c"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a4a34",
+     "#523a28",
+     "#3a281c",
+     "#2a1c12"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "figs": [
     {
@@ -1819,10 +2806,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "brown",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -1842,7 +2949,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#9a6a3c",
      "items": [
       {
        "o": "mountain",
@@ -1851,7 +2958,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1861,7 +2968,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1871,7 +2978,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#6a4a34",
        "snow": false
       },
       {
@@ -1881,7 +2988,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1891,7 +2998,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#523a28",
        "snow": false
       },
       {
@@ -1899,14 +3006,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#5e3a24"
       }
      ]
     },
@@ -1921,42 +3028,109 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#3a281c"
       },
       {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#2a0e10"
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
       },
       {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
        "s": 0.4,
-       "col": "#2a0e10"
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a281c"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a0e10"
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a1c12"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#3a1618"
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a1c12"
       }
      ]
     },
@@ -1982,7 +3156,7 @@
      ]
     }
    ],
-   "note": "medium push_in: hanuman in a dark ember world while 'In battle, he used his fists, his nails, his chest' is spoken.",
+   "note": "medium push_in: hanuman in a dark brown world while 'In battle, he used his fists, his nails, his chest' is spoken.",
    "vert": {
     "focus": "hanuman"
    },
@@ -2002,13 +3176,110 @@
    },
    "figs": [
     {
-     "who": "asura1",
+     "who": "hanuman",
      "x": 640,
-     "y": 589,
-     "s": 0.9,
+     "y": 611,
+     "s": 0.9720000000000001,
      "flip": 1,
      "pose": "fall",
      "emo": "fear",
+     "prop": "none",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 500,
+     "y": 571,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "rage",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 780,
+     "y": 571,
+     "s": 0.5,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 531,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 531,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 531,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 531,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 531,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 531,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
      "mood": {
       "lx": 0.8
      }
@@ -2025,9 +3296,56 @@
      "par": 1.0,
      "c": 0,
      "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "battle_fire",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.08,
@@ -2187,9 +3505,9 @@
      ]
     }
    ],
-   "note": "medium crane_down: asura1 in a dark ember world while 'Some enemies fell to the ground just from the soun' is spoken.",
+   "note": "medium crane_down: hanuman in a dark ember world while 'Some enemies fell to the ground just from the soun' is spoken.",
    "vert": {
-    "focus": "asura1"
+    "focus": "hanuman"
    },
    "dx": 0
   },
@@ -2199,25 +3517,11 @@
     "t": 31.8,
     "word": "Hanuman"
    },
-   "cues": [],
+   "cues": [
+    "Hanuman"
+   ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "plain"
    },
    "figs": [
     {
@@ -2232,10 +3536,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "battle_fire",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.02,
@@ -2337,106 +3761,39 @@
        "col": "#3a1618"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
+       "o": "wall",
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#2a0e10"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
+       "o": "wall",
+       "x": 790,
+       "y": 515,
        "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "y": 525,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 518,
-       "s": 0.8,
+       "y": 520,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#3a1618"
       }
      ]
     },
@@ -2475,26 +3832,11 @@
     "word": "His"
    },
    "cues": [
+    "His",
     "weapon"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "plain"
    },
    "figs": [
     {
@@ -2509,10 +3851,118 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 564,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 564,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 564,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 564,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 564,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 564,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "battle_fire",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
     {
      "t": "pfx",
      "k": "red_energy_pulse",
@@ -2520,6 +3970,17 @@
      "y": 420,
      "w": 300,
      "alpha": 0.8,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -2626,106 +4087,39 @@
        "col": "#3a1618"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
+       "o": "wall",
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#2a0e10"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
+       "o": "wall",
+       "x": 790,
+       "y": 515,
        "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "y": 525,
+       "s": 0.95,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 518,
-       "s": 0.8,
+       "y": 520,
+       "s": 0.85,
        "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#3a1618"
       }
      ]
     },
@@ -2763,7 +4157,9 @@
     "t": 37.34,
     "word": "So"
    },
-   "cues": [],
+   "cues": [
+    "So"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -2796,10 +4192,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.03,
@@ -3038,7 +4554,9 @@
     "t": 42.9,
     "word": "Then"
    },
-   "cues": [],
+   "cues": [
+    "Then"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -3071,10 +4589,130 @@
      "mood": {
       "lx": 0.8
      }
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 562,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 562,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 562,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 562,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 562,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 562,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.06,

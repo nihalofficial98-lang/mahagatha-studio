@@ -7,7 +7,9 @@
     "t": 0.1,
     "word": "Is"
    },
-   "cues": [],
+   "cues": [
+    "Is"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -42,7 +44,32 @@
     }
    ],
    "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "night",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -330,7 +357,32 @@
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "night",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.0,
@@ -620,6 +672,19 @@
    "fxb": [
     {
      "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "kailash",
+     "pal": "brown",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
      "k": "mist_wisps",
      "x": 640,
      "y": 600,
@@ -840,6 +905,19 @@
     }
    ],
    "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "kailash",
+     "pal": "brown",
+     "c": 0,
+     "d": 0.6
+    },
     {
      "t": "pfx",
      "k": "divine_rays",
@@ -1086,7 +1164,21 @@
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "village_dusk",
+     "pal": "brown",
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.09,
@@ -1332,7 +1424,9 @@
     "t": 18.6,
     "word": "The"
    },
-   "cues": [],
+   "cues": [
+    "The"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -1367,7 +1461,32 @@
     }
    ],
    "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "village_dusk",
+     "pal": "brown",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 520,
+     "y": 520,
+     "w": 220,
+     "alpha": 0.35,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.03,
@@ -1677,11 +1796,35 @@
    "fxb": [
     {
      "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "village_dusk",
+     "pal": "brown",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
      "k": "divine_rays",
      "x": 640,
      "y": 330,
      "w": 520,
      "alpha": 0.6,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 520,
+     "y": 520,
+     "w": 220,
+     "alpha": 0.35,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -1933,6 +2076,7 @@
     "word": "There"
    },
    "cues": [
+    "There",
     "River"
    ],
    "bg": {
@@ -1977,11 +2121,36 @@
      "w": 640,
      "alpha": 0.8,
      "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "village_dusk",
+     "pal": "brown",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 520,
+     "y": 520,
+     "w": 220,
+     "alpha": 0.35,
+     "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
    "cam": {
     "from": {
      "z": 1.0,
@@ -2291,11 +2460,35 @@
    "fxb": [
     {
      "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "village_dusk",
+     "pal": "teal",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
      "k": "mist_wisps",
      "x": 640,
      "y": 600,
      "w": 640,
      "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 520,
+     "y": 520,
+     "w": 220,
+     "alpha": 0.35,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -2619,7 +2812,32 @@
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "teal",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.02,
@@ -2858,7 +3076,9 @@
     "t": 37.8,
     "word": "He"
    },
-   "cues": [],
+   "cues": [
+    "He"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -2917,7 +3137,32 @@
     }
    ],
    "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "teal",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.09,
@@ -3156,7 +3401,9 @@
     "t": 41.16,
     "word": "People"
    },
-   "cues": [],
+   "cues": [
+    "People"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -3215,7 +3462,32 @@
     }
    ],
    "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "teal",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.03,
@@ -3497,7 +3769,32 @@
     }
    ],
    "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "teal",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.04,
@@ -3737,6 +4034,7 @@
     "word": "He"
    },
    "cues": [
+    "He",
     "power"
    ],
    "bg": {
@@ -3776,11 +4074,35 @@
    "fxb": [
     {
      "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "teal",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
      "k": "red_energy_pulse",
      "x": 640,
      "y": 420,
      "w": 300,
      "alpha": 0.8,
+     "par": 1.0,
+     "c": 1,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -4024,7 +4346,9 @@
     "t": 49.22,
     "word": "He"
    },
-   "cues": [],
+   "cues": [
+    "He"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -4059,7 +4383,32 @@
     }
    ],
    "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "teal",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.08,
@@ -4298,7 +4647,9 @@
     "t": 52.2,
     "word": "These"
    },
-   "cues": [],
+   "cues": [
+    "These"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -4357,7 +4708,32 @@
     }
    ],
    "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "village_dusk",
+     "pal": "teal",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 520,
+     "y": 520,
+     "w": 220,
+     "alpha": 0.35,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.02,
@@ -4603,7 +4979,9 @@
     "t": 54.28,
     "word": "But"
    },
-   "cues": [],
+   "cues": [
+    "But"
+   ],
    "bg": {
     "k": "vista",
     "sky": [
@@ -4638,7 +5016,32 @@
     }
    ],
    "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "village_dusk",
+     "pal": "teal",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 520,
+     "y": 520,
+     "w": 220,
+     "alpha": 0.35,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.09,
@@ -4890,18 +5293,18 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#06101a",
-     "#12303a",
-     "#2a6a6a",
-     "#8ac0b0"
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#2a5a5a",
-     "#204a4a",
-     "#183a3a",
-     "#102a2a"
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -4945,7 +5348,32 @@
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.03,
@@ -4965,7 +5393,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#8ac0b0",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -4974,7 +5402,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a5a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -4984,7 +5412,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -4994,7 +5422,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a5a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -5004,7 +5432,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5014,7 +5442,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5022,14 +5450,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#2a6a6a"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#2a6a6a"
+       "col": "#7a2020"
       }
      ]
     },
@@ -5044,7 +5472,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5052,15 +5480,15 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "palm",
-       "col": "#183a3a"
+       "kind": "pine",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5068,15 +5496,15 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "palm",
-       "col": "#183a3a"
+       "kind": "pine",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5084,15 +5512,15 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 630,
        "y": 508,
        "s": 0.4,
-       "kind": "palm",
-       "col": "#183a3a"
+       "kind": "pine",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5100,15 +5528,15 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 720,
        "y": 508,
        "s": 0.35,
-       "kind": "palm",
-       "col": "#183a3a"
+       "kind": "pine",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5116,15 +5544,15 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 810,
        "y": 508,
        "s": 0.3,
-       "kind": "palm",
-       "col": "#183a3a"
+       "kind": "pine",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5132,28 +5560,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
-       "o": "hut",
-       "x": 462,
-       "y": 526,
-       "s": 0.6,
-       "col": "#102a2a"
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
       },
       {
-       "o": "hut",
-       "x": 826,
-       "y": 524,
-       "s": 0.55,
-       "col": "#102a2a"
-      },
-      {
-       "o": "road",
-       "x": 640,
-       "y": 560,
-       "s": 1.0,
-       "col": "#183a3a"
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
       }
      ]
     },
@@ -5179,7 +5600,7 @@
      ]
     }
    ],
-   "note": "medium push_in: krishna in a dark teal world while 'In the Mahabharat, Krishna cursed Ashwatthama afte' is spoken.",
+   "note": "medium push_in: krishna in a dark ember world while 'In the Mahabharat, Krishna cursed Ashwatthama afte' is spoken.",
    "vert": {
     "focus": "krishna"
    },
@@ -5197,18 +5618,18 @@
    "bg": {
     "k": "vista",
     "sky": [
-     "#06101a",
-     "#12303a",
-     "#2a6a6a",
-     "#8ac0b0"
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#2a5a5a",
-     "#204a4a",
-     "#183a3a",
-     "#102a2a"
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -5234,7 +5655,32 @@
     }
    ],
    "fx": [],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.04,
@@ -5254,7 +5700,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#8ac0b0",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -5263,7 +5709,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a5a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -5273,7 +5719,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5283,7 +5729,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a5a5a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -5293,7 +5739,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5303,7 +5749,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5311,14 +5757,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#2a6a6a"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#2a6a6a"
+       "col": "#7a2020"
       }
      ]
     },
@@ -5333,7 +5779,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5341,15 +5787,15 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "palm",
-       "col": "#183a3a"
+       "kind": "pine",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5357,15 +5803,15 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "palm",
-       "col": "#183a3a"
+       "kind": "pine",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5373,15 +5819,15 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 630,
        "y": 508,
        "s": 0.4,
-       "kind": "palm",
-       "col": "#183a3a"
+       "kind": "pine",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5389,15 +5835,15 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 720,
        "y": 508,
        "s": 0.35,
-       "kind": "palm",
-       "col": "#183a3a"
+       "kind": "pine",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5405,15 +5851,15 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
        "x": 810,
        "y": 508,
        "s": 0.3,
-       "kind": "palm",
-       "col": "#183a3a"
+       "kind": "pine",
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -5421,28 +5867,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
-       "o": "hut",
-       "x": 462,
-       "y": 526,
-       "s": 0.6,
-       "col": "#102a2a"
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
       },
       {
-       "o": "hut",
-       "x": 826,
-       "y": 524,
-       "s": 0.55,
-       "col": "#102a2a"
-      },
-      {
-       "o": "road",
-       "x": 640,
-       "y": 560,
-       "s": 1.0,
-       "col": "#183a3a"
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
       }
      ]
     },
@@ -5468,7 +5907,7 @@
      ]
     }
    ],
-   "note": "wide pan_right: krishna in a dark teal world while 'He would wander the Earth for 3,000 years with a w' is spoken.",
+   "note": "wide pan_right: krishna in a dark ember world while 'He would wander the Earth for 3,000 years with a w' is spoken.",
    "vert": {
     "focus": "krishna"
    },
@@ -5481,7 +5920,7 @@
     "word": "So"
    },
    "cues": [
-    "flowers"
+    "So"
    ],
    "bg": {
     "k": "kailash"
@@ -5527,17 +5966,42 @@
    "fx": [
     {
      "t": "pfx",
-     "k": "flower_petals",
-     "x": 640,
-     "y": 660,
-     "w": 420,
+     "k": "ember_fire",
+     "x": 470,
+     "y": 668,
+     "w": 60,
      "alpha": 0.8,
      "par": 1.0,
      "c": 0,
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "kailash",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.5,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.04,
@@ -5557,7 +6021,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#8ac0b0",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -5566,7 +6030,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a5a5a",
+       "col": "#6a2a2a",
        "snow": true
       },
       {
@@ -5576,7 +6040,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5586,7 +6050,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a5a5a",
+       "col": "#6a2a2a",
        "snow": true
       },
       {
@@ -5596,7 +6060,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5606,7 +6070,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5614,14 +6078,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#2a6a6a"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#2a6a6a"
+       "col": "#7a2020"
       }
      ]
     },
@@ -5636,35 +6100,35 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "pillar",
        "x": 455,
        "y": 545,
        "s": 0.7,
-       "col": "#102a2a"
+       "col": "#2a0e10"
       },
       {
        "o": "pillar",
        "x": 830,
        "y": 545,
        "s": 0.7,
-       "col": "#102a2a"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 560,
        "y": 525,
        "s": 0.7,
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 730,
        "y": 525,
        "s": 0.6,
-       "col": "#183a3a"
+       "col": "#3a1618"
       }
      ]
     },
@@ -5690,7 +6154,7 @@
      ]
     }
    ],
-   "note": "medium push_in: ashwatthama in a dark teal world while 'So when people say Ashwatthama still puts flowers ' is spoken.",
+   "note": "medium push_in: ashwatthama in a dark ember world while 'So when people say Ashwatthama still puts flowers ' is spoken.",
    "vert": {
     "focus": "ashwatthama"
    },
@@ -5702,7 +6166,9 @@
     "t": 72.0,
     "word": "this"
    },
-   "cues": [],
+   "cues": [
+    "this"
+   ],
    "bg": {
     "k": "kailash"
    },
@@ -5720,8 +6186,45 @@
      }
     }
    ],
-   "fx": [],
-   "fxb": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 470,
+     "y": 668,
+     "w": 60,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "kailash",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.5,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.08,
@@ -5741,7 +6244,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#8ac0b0",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -5750,7 +6253,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a5a5a",
+       "col": "#6a2a2a",
        "snow": true
       },
       {
@@ -5760,7 +6263,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5770,7 +6273,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a5a5a",
+       "col": "#6a2a2a",
        "snow": true
       },
       {
@@ -5780,7 +6283,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5790,7 +6293,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5798,14 +6301,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#2a6a6a"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#2a6a6a"
+       "col": "#7a2020"
       }
      ]
     },
@@ -5820,35 +6323,35 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "pillar",
        "x": 455,
        "y": 545,
        "s": 0.7,
-       "col": "#102a2a"
+       "col": "#2a0e10"
       },
       {
        "o": "pillar",
        "x": 830,
        "y": 545,
        "s": 0.7,
-       "col": "#102a2a"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 560,
        "y": 525,
        "s": 0.7,
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 730,
        "y": 525,
        "s": 0.6,
-       "col": "#183a3a"
+       "col": "#3a1618"
       }
      ]
     },
@@ -5874,7 +6377,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: ashwatthama in a dark teal world while 'this is the man they mean.' is spoken.",
+   "note": "medium crane_down: ashwatthama in a dark ember world while 'this is the man they mean.' is spoken.",
    "vert": {
     "focus": "ashwatthama"
    },
@@ -5890,7 +6393,23 @@
     "A"
    ],
    "bg": {
-    "k": "kailash"
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "figs": [
     {
@@ -5919,7 +6438,32 @@
      "d": 0.6
     }
    ],
-   "fxb": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "cam": {
     "from": {
      "z": 1.02,
@@ -5939,7 +6483,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#8ac0b0",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -5948,8 +6492,8 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a5a5a",
-       "snow": true
+       "col": "#6a2a2a",
+       "snow": false
       },
       {
        "o": "mountain",
@@ -5958,7 +6502,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5968,8 +6512,8 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a5a5a",
-       "snow": true
+       "col": "#6a2a2a",
+       "snow": false
       },
       {
        "o": "mountain",
@@ -5978,7 +6522,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5988,7 +6532,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#204a4a",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -5996,14 +6540,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#2a6a6a"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#2a6a6a"
+       "col": "#7a2020"
       }
      ]
     },
@@ -6018,35 +6562,109 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#183a3a"
+       "col": "#3a1618"
       },
       {
-       "o": "pillar",
-       "x": 455,
-       "y": 545,
-       "s": 0.7,
-       "col": "#102a2a"
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
       },
       {
-       "o": "pillar",
-       "x": 830,
-       "y": 545,
-       "s": 0.7,
-       "col": "#102a2a"
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
       },
       {
        "o": "rock",
-       "x": 560,
-       "y": 525,
-       "s": 0.7,
-       "col": "#183a3a"
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 730,
-       "y": 525,
-       "s": 0.6,
-       "col": "#183a3a"
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
       }
      ]
     },
@@ -6072,7 +6690,7 @@
      ]
     }
    ],
-   "note": "medium push_in: ashwatthama in a dark teal world while 'A man who tried to kill an unborn baby and was cur' is spoken.",
+   "note": "medium push_in: ashwatthama in a dark ember world while 'A man who tried to kill an unborn baby and was cur' is spoken.",
    "vert": {
     "focus": "ashwatthama"
    },
