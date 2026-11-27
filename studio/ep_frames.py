@@ -47,6 +47,7 @@ def main():
             else:sel.append(int(part))
     tmp=work+'/stills';shutil.rmtree(tmp,ignore_errors=True);os.makedirs(tmp)
     ts=[round(inf[i][1]+inf[i][2]*a.at,2) for i in sel]
+    if sel and sel[0]==0 and sel[0] in range(len(inf)):ts[0]=round(inf[0][1]+min(inf[0][2]*a.at,1.2),2)   # first shot: still taken while the title card is up
     r=subprocess.run(['node',ROOT+'/studio/still.js',epd+'/shots.json',tm,tmp]+[str(t) for t in ts],env=env,cwd=ROOT,capture_output=True,text=True)
     if r.returncode:print(r.stderr[-2500:],r.stdout[-800:]);sys.exit('still.js failed')
     for l in r.stdout.splitlines():
