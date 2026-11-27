@@ -148,6 +148,20 @@ const E={
   ctx.strokeStyle='#e8b040';ctx.lineWidth=w*.014;ctx.setLineDash([w*.025,w*.03]);ctx.beginPath();ctx.ellipse(0,0,R,R*.36,0,.15,.15+(PI*2-.3)*k);ctx.stroke();ctx.setLineDash([]);
   const sw=Math.sin(t*2)*w*.02;[[-1,.5],[1,.62]].forEach(([sd,L])=>{ctx.strokeStyle='#c42820';ctx.lineWidth=w*.04;ctx.beginPath();ctx.moveTo(R*.98,0);ctx.quadraticCurveTo(R*1.15,sd*w*.1,R*1.1+sw,sd*w*L*.5);ctx.stroke();cutP(()=>ctx.ellipse(R*1.1+sw,sd*w*L*.5+sd*w*.03,w*.03,w*.045,0,0,TAU),'#e8b040',{sh:0,lw:1})});
   cutP(()=>ctx.ellipse(R,0,w*.06,w*.05,0,0,TAU),'#a81818',{sh:0,lw:1.2,ink:'#3a0404'});ctx.restore()}},
+ // reel 17: a Shiva lingam (dark stone dome on a round base with three ash lines); F.glow 0..1
+ lingam:{s:0,f(w,t,F){const g=F.glow??.6;glow(0,-w*.3,w*.9,'255,214,150',.35*g);
+   cutP(()=>ctx.ellipse(0,w*.1,w*.5,w*.12,0,0,TAU),(()=>{const q=ctx.createLinearGradient(0,0,0,w*.22);q.addColorStop(0,'#5a4a5a');q.addColorStop(1,'#241a26');return q})(),{sh:0,lw:2,ink:'#0c0610'});
+   cutP(()=>{ctx.moveTo(-w*.3,w*.06);ctx.lineTo(-w*.3,w*.12);ctx.quadraticCurveTo(0,w*.24,w*.3,w*.12);ctx.lineTo(w*.3,w*.06);ctx.closePath()},'#3a2c3a',{sh:0,lw:1.6,ink:'#0c0610'});
+   const lgr=ctx.createLinearGradient(-w*.2,0,w*.2,0);lgr.addColorStop(0,'#1a1220');lgr.addColorStop(.45,'#6a5a72');lgr.addColorStop(1,'#120c18');
+   cutP(()=>{ctx.moveTo(-w*.19,w*.1);ctx.lineTo(-w*.19,-w*.34);ctx.quadraticCurveTo(-w*.19,-w*.62,0,-w*.62);ctx.quadraticCurveTo(w*.19,-w*.62,w*.19,-w*.34);ctx.lineTo(w*.19,w*.1);ctx.closePath()},lgr,{sh:0,lw:2,ink:'#0c0610'});
+   ctx.strokeStyle='#f0ece4';ctx.lineWidth=w*.022;ctx.lineCap='round';[-.3,-.22,-.14].forEach(y=>{ctx.beginPath();ctx.moveTo(-w*.15,y*w);ctx.quadraticCurveTo(0,(y+.04)*w,w*.15,y*w);ctx.stroke()})}},
+ // reel 17: a pile of paper-cut lotuses on a mound (F.cnt lotuses, rows narrowing upward); each lotus = 7 pink petals with a gold centre
+ lotus_pile:{s:0,f(w,t,F){const n=F.cnt||14,rows=[];let left=n,r=0;while(left>0){const k=Math.min(left,Math.max(1,5-r));rows.push(k);left-=k;r++}
+   const draw=(x,y,s,rot)=>{ctx.save();ctx.translate(x,y);ctx.rotate(rot);for(let k=-3;k<=3;k++){const a=k*.34,len=s*(1-Math.abs(k)*.1);ctx.save();ctx.rotate(a);
+     const gg=ctx.createLinearGradient(0,0,0,-len);gg.addColorStop(0,'#fff0f4');gg.addColorStop(1,'#e04a7a');
+     cutP(()=>{ctx.moveTo(0,0);ctx.bezierCurveTo(-len*.3,-len*.3,-len*.22,-len*.85,0,-len);ctx.bezierCurveTo(len*.22,-len*.85,len*.3,-len*.3,0,0)},gg,{sh:0,lw:1.3,ink:'#5a0a24'});ctx.restore()}
+     cutP(()=>ctx.ellipse(0,-s*.12,s*.14,s*.1,0,0,TAU),'#f2c14e',{sh:0,lw:1,ink:'#5a3a08'});ctx.restore()};
+   let yy=w*.05;rows.forEach((k,ri)=>{for(let j=0;j<k;j++){const x=(j-(k-1)/2)*w*.2,y=yy-ri*w*.14;draw(x,y,w*.2,(j%2?.12:-.12)*(ri%2?1:-1))}})}},
  // reel 25: Sheshnag's fan of cobra hoods (F.n hoods, centre largest, dark teal with pale bellies, glowing eyes); the worlds sit on the centre hood
  hood_fan:{s:0,f(w,t,F){const n=F.cnt||9;for(let i=0;i<n;i++){const u=n>1?(i/(n-1))*2-1:0,a=u*1.25,R=w*.42,x=Math.sin(a)*R,y=-Math.cos(a)*R*.55+w*.18,sc=(1-Math.abs(u)*.42)*w*.34;
    ctx.save();ctx.translate(x,y);ctx.rotate(a*.35);

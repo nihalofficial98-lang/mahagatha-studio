@@ -12,7 +12,7 @@
    "duration": 3.6,
    "narration": "The whole universe sits on one hood of Sheshnag,",
    "meaning": "The whole universe sits on one hood of Sheshnag, (shown as a dark story frame)",
-   "why": "naga in a dark night world while 'The whole universe sits on one hood of Sheshnag,' is spoken.",
+   "why": "The scene in a dark night world while 'The whole universe sits on one hood of Sheshnag,' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -33,22 +33,20 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "naga",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "naga"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
      "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
@@ -58,7 +56,7 @@
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
@@ -69,20 +67,30 @@
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
+       "h": 215,
        "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
        "col": "#202e56",
        "snow": false
       },
@@ -95,7 +103,7 @@
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
        "col": "#24366a"
@@ -104,101 +112,141 @@
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
        "col": "#18224a"
       },
       {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
        "o": "rock",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
+       "y": 522,
+       "s": 0.9,
        "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 516,
-       "s": 0.85,
+       "y": 518,
+       "s": 0.8,
        "col": "#101830"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 505,
-       "s": 0.42,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 750,
-       "y": 505,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -226,19 +274,32 @@
     "emotion": "calm",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "naga",
+     "k": "hood_fan",
+     "word": "The",
      "x": 640,
-     "y": 587,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "y": 560,
+     "w": 760,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "Sheshnag, huge, with a fan of cobra hoods",
+     "cnt": 9
+    },
+    {
+     "k": "earth_globe",
+     "word": "The",
+     "x": 640,
+     "y": 170,
+     "w": 90,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a world drawn as a small globe"
     }
    ],
-   "effects": [],
    "transition_in": "fade"
   },
   {
@@ -251,7 +312,7 @@
    "duration": 2.82,
    "narration": "and it is as small as a mustard seed.",
    "meaning": "and it is as small as a mustard seed. (shown as a dark story frame)",
-   "why": "naga in a dark night world while 'and it is as small as a mustard seed.' is spoken.",
+   "why": "The scene in a dark night world while 'and it is as small as a mustard seed.' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -272,22 +333,20 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "naga",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "naga"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
      "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
@@ -297,7 +356,7 @@
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
@@ -308,20 +367,30 @@
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
+       "h": 215,
        "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
        "col": "#202e56",
        "snow": false
       },
@@ -334,7 +403,7 @@
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
        "col": "#24366a"
@@ -343,101 +412,141 @@
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
        "col": "#18224a"
       },
       {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
        "o": "rock",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
+       "y": 522,
+       "s": 0.9,
        "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 516,
-       "s": 0.85,
+       "y": 518,
+       "s": 0.8,
        "col": "#101830"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 505,
-       "s": 0.42,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 750,
-       "y": 505,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -465,19 +574,32 @@
     "emotion": "calm",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "naga",
-     "x": 610,
-     "y": 588,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "k": "hood_fan",
+     "word": "and",
+     "x": 640,
+     "y": 560,
+     "w": 760,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "Sheshnag, huge, with a fan of cobra hoods",
+     "cnt": 9
+    },
+    {
+     "k": "earth_globe",
+     "word": "and",
+     "x": 640,
+     "y": 188,
+     "w": 18,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a world drawn as a small globe"
     }
    ],
-   "effects": [],
    "transition_in": "cut"
   },
   {
@@ -490,7 +612,7 @@
    "duration": 1.62,
    "narration": "So, where is he?",
    "meaning": "So, where is he? (shown as a dark story frame)",
-   "why": "naga in a dark night world while 'So, where is he?' is spoken.",
+   "why": "The scene in a dark night world while 'So, where is he?' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -511,22 +633,20 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "naga",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "naga"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
      "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
@@ -536,7 +656,7 @@
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
@@ -547,20 +667,30 @@
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
+       "h": 215,
        "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
        "col": "#202e56",
        "snow": false
       },
@@ -573,7 +703,7 @@
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
        "col": "#24366a"
@@ -582,101 +712,141 @@
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
        "col": "#18224a"
       },
       {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
        "o": "rock",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
+       "y": 522,
+       "s": 0.9,
        "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 516,
-       "s": 0.85,
+       "y": 518,
+       "s": 0.8,
        "col": "#101830"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 505,
-       "s": 0.42,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 750,
-       "y": 505,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -704,19 +874,32 @@
     "emotion": "calm",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "naga",
-     "x": 670,
-     "y": 590,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "k": "hood_fan",
+     "word": "So",
+     "x": 640,
+     "y": 600,
+     "w": 760,
+     "alpha": 0.55,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "Sheshnag, huge, with a fan of cobra hoods",
+     "cnt": 9
+    },
+    {
+     "k": "mist_wisps",
+     "word": "where",
+     "x": 640,
+     "y": 520,
+     "w": 700,
+     "alpha": 0.9,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "dark mist hiding Sheshnag"
     }
    ],
-   "effects": [],
    "transition_in": "cut"
   },
   {
@@ -759,13 +942,13 @@
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
      "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
@@ -775,7 +958,7 @@
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
@@ -786,20 +969,30 @@
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
+       "h": 215,
        "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
        "col": "#202e56",
        "snow": false
       },
@@ -812,7 +1005,7 @@
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
        "col": "#24366a"
@@ -821,123 +1014,147 @@
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
        "col": "#18224a"
       },
       {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
        "o": "rock",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
+       "y": 522,
+       "s": 0.9,
        "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 516,
-       "s": 0.85,
+       "y": 518,
+       "s": 0.8,
        "col": "#101830"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 505,
-       "s": 0.42,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 750,
-       "y": 505,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 600,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "cosmos"
    },
    "mood": {
     "emotion": "calm",
@@ -968,7 +1185,7 @@
    "duration": 3.08,
    "narration": "At the start, Vishnu was sleeping on the ocean.",
    "meaning": "At the start, Vishnu was sleeping on the ocean. (shown as a dark story frame)",
-   "why": "vishnu in a dark teal world while 'At the start, Vishnu was sleeping on the ocean.' is spoken.",
+   "why": "vishnu_rest in a dark sea world while 'At the start, Vishnu was sleeping on the ocean.' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -989,84 +1206,74 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "vishnu",
+    "subject": "vishnu_rest",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "vishnu"
+    "focus": "vishnu_rest"
    },
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
      "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
        "x": 430,
-       "y": 470,
-       "s": 1.1,
+       "y": 505,
+       "s": 0.8,
+       "w": 260,
+       "h": 60,
+       "col": "#204a4a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 508,
+       "s": 0.7,
        "w": 230,
-       "h": 190,
-       "col": "#2a5a5a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 560,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
+       "h": 50,
        "col": "#204a4a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 700,
-       "y": 470,
-       "s": 1.2,
-       "w": 250,
-       "h": 210,
+       "x": 640,
+       "y": 500,
+       "s": 0.5,
+       "w": 180,
+       "h": 40,
        "col": "#2a5a5a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 830,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#204a4a",
        "snow": false
       },
       {
        "o": "cloud",
        "x": 500,
-       "y": 200,
-       "s": 1.0,
+       "y": 210,
+       "s": 1.1,
        "col": "#2a6a6a"
       },
       {
        "o": "cloud",
-       "x": 780,
-       "y": 250,
-       "s": 0.9,
+       "x": 790,
+       "y": 260,
+       "s": 1.0,
        "col": "#2a6a6a"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
@@ -1074,109 +1281,45 @@
       },
       {
        "o": "rock",
-       "x": 450,
-       "y": 520,
-       "s": 0.95,
+       "x": 470,
+       "y": 528,
+       "s": 0.5,
        "col": "#102a2a"
       },
       {
        "o": "rock",
-       "x": 840,
-       "y": 516,
-       "s": 0.85,
+       "x": 820,
+       "y": 526,
+       "s": 0.45,
        "col": "#102a2a"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 505,
-       "s": 0.42,
-       "kind": "pine",
-       "col": "#183a3a"
-      },
-      {
-       "o": "tree",
-       "x": 750,
-       "y": 505,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#183a3a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#06101a",
-     "#12303a",
-     "#2a6a6a",
-     "#8ac0b0"
-    ],
-    "sx": 700,
-    "sy": 300,
-    "ridge": [
-     "#2a5a5a",
-     "#204a4a",
-     "#183a3a",
-     "#102a2a"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "sea"
    },
    "mood": {
     "emotion": "calm",
@@ -1184,12 +1327,12 @@
    },
    "characters": [
     {
-     "who": "vishnu",
+     "who": "vishnu_rest",
      "x": 655,
-     "y": 590,
-     "s": 0.9,
+     "y": 647,
+     "s": 0.95,
      "flip": 1,
-     "pose": "sleep",
+     "pose": "lie",
      "emo": "calm",
      "look": 700
     }
@@ -1197,14 +1340,14 @@
    "effects": [
     {
      "k": "wave_ocean",
-     "word": "ocean",
+     "word": "sleeping",
      "x": 640,
-     "y": 640,
-     "w": 640,
-     "alpha": 0.8,
+     "y": 660,
+     "w": 700,
+     "alpha": 0.9,
      "par": 1.0,
      "behind": false,
-     "meaning": "wave ocean as the story says 'ocean'"
+     "meaning": "the endless ocean Vishnu sleeps on"
     }
    ],
    "transition_in": "cut"
@@ -1219,7 +1362,7 @@
    "duration": 4.26,
    "narration": "A golden lotus came out of his belly button, and Brahma appeared on it.",
    "meaning": "A golden lotus came out of his belly button, and Brahma appeared on it. (shown as a dark story frame)",
-   "why": "brahma in a dark indigo world while 'A golden lotus came out of his belly button, and B' is spoken.",
+   "why": "vishnu_rest in a dark sea world while 'A golden lotus came out of his belly button, and B' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -1240,57 +1383,67 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "brahma",
+    "subject": "vishnu_rest",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "brahma"
+    "focus": "vishnu_rest"
    },
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#204a4a",
        "snow": false
       },
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
-       "col": "#3a2a5a",
+       "h": 215,
+       "col": "#2a5a5a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#204a4a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -1298,136 +1451,160 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#2a6a6a"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#183a3a"
       },
       {
-       "o": "rock",
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
-       "col": "#1a1028"
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#183a3a"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 516,
-       "s": 0.85,
-       "col": "#1a1028"
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#183a3a"
       },
       {
        "o": "tree",
        "x": 540,
-       "y": 505,
-       "s": 0.42,
+       "y": 508,
+       "s": 0.3,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
-       "x": 750,
-       "y": 505,
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#183a3a"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#102a2a"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#102a2a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "sea"
    },
    "mood": {
     "emotion": "calm",
@@ -1435,38 +1612,37 @@
    },
    "characters": [
     {
+     "who": "vishnu_rest",
+     "x": 640,
+     "y": 635,
+     "s": 0.8,
+     "flip": 1,
+     "pose": "lie",
+     "emo": "calm",
+     "look": 700
+    },
+    {
      "who": "brahma",
      "x": 640,
-     "y": 589,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "open",
+     "y": 412,
+     "s": 0.62,
+     "flip": 1,
+     "pose": "stand",
      "emo": "calm",
      "look": 700
     }
    ],
    "effects": [
     {
-     "k": "flower_petals",
+     "k": "divine_rays",
      "word": "lotus",
      "x": 640,
      "y": 420,
-     "w": 420,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "flower petals as the story says 'lotus'"
-    },
-    {
-     "k": "divine_rays",
-     "word": "golden",
-     "x": 640,
-     "y": 330,
      "w": 520,
-     "alpha": 0.8,
+     "alpha": 0.7,
      "par": 1.0,
      "behind": true,
-     "meaning": "divine rays as the story says 'golden'"
+     "meaning": "golden light where Brahma appears"
     }
    ],
    "transition_in": "cut"
@@ -1481,7 +1657,7 @@
    "duration": 5.48,
    "narration": "Inside the stem of the lotus, Brahma made 14 worlds, one below the other.",
    "meaning": "Inside the stem of the lotus, Brahma made 14 worlds, one below the other. (shown as a dark story frame)",
-   "why": "brahma in a dark indigo world while 'Inside the stem of the lotus, Brahma made 14 world' is spoken.",
+   "why": "brahma in a dark night world while 'Inside the stem of the lotus, Brahma made 14 world' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -1511,48 +1687,58 @@
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#202e56",
        "snow": false
       },
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
-       "col": "#3a2a5a",
+       "h": 215,
+       "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1560,114 +1746,154 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#24366a"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#18224a"
       },
       {
-       "o": "rock",
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
-       "col": "#1a1028"
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 516,
-       "s": 0.85,
-       "col": "#1a1028"
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
       },
       {
        "o": "tree",
        "x": 540,
-       "y": 505,
-       "s": 0.42,
+       "y": 508,
+       "s": 0.3,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#18224a"
       },
       {
        "o": "tree",
-       "x": 750,
-       "y": 505,
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#101830"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -1675,18 +1901,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
     "sx": 520,
     "sy": 300,
     "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -1699,8 +1925,8 @@
     {
      "who": "brahma",
      "x": 610,
-     "y": 492,
-     "s": 0.9,
+     "y": 396,
+     "s": 0.62,
      "flip": 1,
      "pose": "stand",
      "emo": "calm",
@@ -1709,15 +1935,158 @@
    ],
    "effects": [
     {
-     "k": "flower_petals",
+     "k": "earth_globe",
      "word": "lotus",
-     "x": 640,
-     "y": 420,
-     "w": 420,
-     "alpha": 0.8,
+     "x": 750,
+     "y": 250,
+     "w": 34,
+     "alpha": 0.95,
      "par": 1.0,
      "behind": false,
-     "meaning": "flower petals as the story says 'lotus'"
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lotus",
+     "x": 530,
+     "y": 282,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lotus",
+     "x": 750,
+     "y": 314,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lotus",
+     "x": 530,
+     "y": 346,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lotus",
+     "x": 750,
+     "y": 378,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lotus",
+     "x": 530,
+     "y": 410,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lotus",
+     "x": 750,
+     "y": 442,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lotus",
+     "x": 530,
+     "y": 474,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lotus",
+     "x": 750,
+     "y": 506,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lotus",
+     "x": 530,
+     "y": 538,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lotus",
+     "x": 750,
+     "y": 570,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lotus",
+     "x": 530,
+     "y": 602,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lotus",
+     "x": 750,
+     "y": 634,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lotus",
+     "x": 530,
+     "y": 666,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
     }
    ],
    "transition_in": "cut"
@@ -1732,7 +2101,7 @@
    "duration": 4.3,
    "narration": "The top one is his own world, and the bottom one belongs to the serpents.",
    "meaning": "The top one is his own world, and the bottom one belongs to the serpents. (shown as a dark story frame)",
-   "why": "naga in a dark indigo world while 'The top one is his own world, and the bottom one b' is spoken.",
+   "why": "brahma in a dark night world while 'The top one is his own world, and the bottom one b' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -1753,57 +2122,67 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "naga",
+    "subject": "brahma",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "naga"
+    "focus": "brahma"
    },
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b05a48",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#3a2a5a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#2e2048",
+       "col": "#202e56",
        "snow": false
       },
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
-       "col": "#3a2a5a",
+       "h": 215,
+       "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#2e2048",
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -1811,114 +2190,154 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5a2a58"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5a2a58"
+       "col": "#24366a"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#241838"
+       "col": "#18224a"
       },
       {
-       "o": "rock",
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
-       "col": "#1a1028"
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 516,
-       "s": 0.85,
-       "col": "#1a1028"
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
       },
       {
        "o": "tree",
        "x": 540,
-       "y": 505,
-       "s": 0.42,
+       "y": 508,
+       "s": 0.3,
        "kind": "pine",
-       "col": "#241838"
+       "col": "#18224a"
       },
       {
        "o": "tree",
-       "x": 750,
-       "y": 505,
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#241838"
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#101830"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -1926,18 +2345,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
     "sx": 760,
     "sy": 300,
     "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -1948,17 +2367,182 @@
    },
    "characters": [
     {
+     "who": "brahma",
+     "x": 670,
+     "y": 397,
+     "s": 0.62,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    },
+    {
      "who": "naga",
      "x": 670,
-     "y": 587,
-     "s": 0.9,
-     "flip": -1,
+     "y": 594,
+     "s": 0.6,
+     "flip": 1,
      "pose": "stand",
      "emo": "calm",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 750,
+     "y": 250,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 530,
+     "y": 282,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 750,
+     "y": 314,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 530,
+     "y": 346,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 750,
+     "y": 378,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 530,
+     "y": 410,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 750,
+     "y": 442,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 530,
+     "y": 474,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 750,
+     "y": 506,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 530,
+     "y": 538,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 750,
+     "y": 570,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 530,
+     "y": 602,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 750,
+     "y": 634,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "top",
+     "x": 530,
+     "y": 666,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -1971,7 +2555,7 @@
    "duration": 3.84,
    "narration": "But when the worlds filled with life, they became too heavy.",
    "meaning": "But when the worlds filled with life, they became too heavy. (shown as a dark story frame)",
-   "why": "naga in a dark ember world while 'But when the worlds filled with life, they became ' is spoken.",
+   "why": "The scene in a dark ember world while 'But when the worlds filled with life, they became ' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -1992,22 +2576,20 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "naga",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "naga"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
@@ -2017,7 +2599,7 @@
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
@@ -2028,20 +2610,30 @@
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
+       "h": 215,
        "col": "#6a2a2a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
        "col": "#521e22",
        "snow": false
       },
@@ -2054,7 +2646,7 @@
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
        "col": "#7a2020"
@@ -2063,101 +2655,141 @@
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
        "col": "#3a1618"
       },
       {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
        "o": "rock",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
+       "y": 522,
+       "s": 0.9,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 516,
-       "s": 0.85,
+       "y": 518,
+       "s": 0.8,
        "col": "#2a0e10"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 505,
-       "s": 0.42,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 750,
-       "y": 505,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -2185,19 +2817,174 @@
     "emotion": "calm",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "naga",
-     "x": 630,
-     "y": 588,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "k": "earth_globe",
+     "word": "But",
+     "x": 750,
+     "y": 250,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "But",
+     "x": 530,
+     "y": 282,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "But",
+     "x": 750,
+     "y": 314,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "But",
+     "x": 530,
+     "y": 346,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "But",
+     "x": 750,
+     "y": 378,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "But",
+     "x": 530,
+     "y": 410,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "But",
+     "x": 750,
+     "y": 442,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "But",
+     "x": 530,
+     "y": 474,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "But",
+     "x": 750,
+     "y": 506,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "But",
+     "x": 530,
+     "y": 538,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "But",
+     "x": 750,
+     "y": 570,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "But",
+     "x": 530,
+     "y": 602,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "But",
+     "x": 750,
+     "y": 634,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "But",
+     "x": 530,
+     "y": 666,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "ground_crack",
+     "word": "heavy",
+     "x": 640,
+     "y": 660,
+     "w": 520,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "the worlds are too heavy and the ground cracks"
     }
    ],
-   "effects": [],
    "transition_in": "cut"
   },
   {
@@ -2210,7 +2997,7 @@
    "duration": 4.38,
    "narration": "The stem began to bend, and everything started to fall back into the water.",
    "meaning": "The stem began to bend, and everything started to fall back into the water. (shown as a dark story frame)",
-   "why": "naga in a dark ember world while 'The stem began to bend, and everything started to ' is spoken.",
+   "why": "The scene in a dark ember world while 'The stem began to bend, and everything started to ' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -2231,84 +3018,72 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "naga",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "naga"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
      "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
        "x": 430,
-       "y": 470,
-       "s": 1.1,
+       "y": 505,
+       "s": 0.8,
+       "w": 260,
+       "h": 60,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 840,
+       "y": 508,
+       "s": 0.7,
        "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 560,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
+       "h": 50,
        "col": "#521e22",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 700,
-       "y": 470,
-       "s": 1.2,
-       "w": 250,
-       "h": 210,
+       "x": 640,
+       "y": 500,
+       "s": 0.5,
+       "w": 180,
+       "h": 40,
        "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 830,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
        "snow": false
       },
       {
        "o": "cloud",
        "x": 500,
-       "y": 200,
-       "s": 1.0,
+       "y": 210,
+       "s": 1.1,
        "col": "#7a2020"
       },
       {
        "o": "cloud",
-       "x": 780,
-       "y": 250,
-       "s": 0.9,
+       "x": 790,
+       "y": 260,
+       "s": 1.0,
        "col": "#7a2020"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
@@ -2316,87 +3091,39 @@
       },
       {
        "o": "rock",
-       "x": 450,
-       "y": 520,
-       "s": 0.95,
+       "x": 470,
+       "y": 528,
+       "s": 0.5,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 840,
-       "y": 516,
-       "s": 0.85,
+       "x": 820,
+       "y": 526,
+       "s": 0.45,
        "col": "#2a0e10"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 505,
-       "s": 0.42,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 750,
-       "y": 505,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -2424,29 +3151,172 @@
     "emotion": "fear",
     "grade": "ep07_dark"
    },
-   "characters": [
-    {
-     "who": "naga",
-     "x": 655,
-     "y": 590,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "fall",
-     "emo": "fear",
-     "look": 700
-    }
-   ],
+   "characters": [],
    "effects": [
     {
-     "k": "ground_crack",
-     "word": "The",
-     "x": 640,
-     "y": 640,
-     "w": 520,
-     "alpha": 0.8,
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 750,
+     "y": 260,
+     "w": 34,
+     "alpha": 0.95,
      "par": 1.0,
      "behind": false,
-     "meaning": "ground crack showing what the narration says"
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 530,
+     "y": 292,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 750,
+     "y": 324,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 530,
+     "y": 356,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 750,
+     "y": 388,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 530,
+     "y": 420,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 750,
+     "y": 452,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 530,
+     "y": 484,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 750,
+     "y": 516,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 530,
+     "y": 548,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 750,
+     "y": 580,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 530,
+     "y": 612,
+     "w": 46,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 750,
+     "y": 644,
+     "w": 34,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "earth_globe",
+     "word": "stem",
+     "x": 530,
+     "y": 676,
+     "w": 40,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "one of the fourteen worlds stacked one below another"
+    },
+    {
+     "k": "lightning_forks",
+     "word": "stem",
+     "x": 640,
+     "y": 260,
+     "w": 560,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "danger as everything starts to fall"
     }
    ],
    "transition_in": "cut"
@@ -2461,7 +3331,7 @@
    "duration": 4.82,
    "narration": "Then Sheshnag appeared with a thousand hoods far below the lowest world.",
    "meaning": "Then Sheshnag appeared with a thousand hoods far below the lowest world. (shown as a dark story frame)",
-   "why": "naga in a dark ember world while 'Then Sheshnag appeared with a thousand hoods far b' is spoken.",
+   "why": "The scene in a dark night world while 'Then Sheshnag appeared with a thousand hoods far b' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -2482,57 +3352,65 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "naga",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "naga"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
-       "col": "#6a2a2a",
+       "h": 215,
+       "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -2540,114 +3418,154 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
-       "o": "rock",
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
-       "col": "#2a0e10"
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 516,
-       "s": 0.85,
-       "col": "#2a0e10"
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
       },
       {
        "o": "tree",
        "x": 540,
-       "y": 505,
-       "s": 0.42,
+       "y": 508,
+       "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
-       "x": 750,
-       "y": 505,
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#101830"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -2655,18 +3573,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -2675,19 +3593,32 @@
     "emotion": "calm",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "naga",
+     "k": "hood_fan",
+     "word": "Then",
      "x": 640,
-     "y": 594,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "open",
-     "emo": "calm",
-     "look": 700
+     "y": 560,
+     "w": 780,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "Sheshnag, huge, with a fan of cobra hoods",
+     "cnt": 9
+    },
+    {
+     "k": "divine_rays",
+     "word": "Then",
+     "x": 640,
+     "y": 300,
+     "w": 560,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "Sheshnag rising far below the lowest world"
     }
    ],
-   "effects": [],
    "transition_in": "cut"
   },
   {
@@ -2700,7 +3631,7 @@
    "duration": 3.22,
    "narration": "He lifted all 14 worlds on a single hood,",
    "meaning": "He lifted all 14 worlds on a single hood, (shown as a dark story frame)",
-   "why": "naga in a dark ember world while 'He lifted all 14 worlds on a single hood,' is spoken.",
+   "why": "The scene in a dark night world while 'He lifted all 14 worlds on a single hood,' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -2721,57 +3652,65 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "naga",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "naga"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
-       "col": "#6a2a2a",
+       "h": 215,
+       "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -2779,114 +3718,154 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
-       "o": "rock",
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
-       "col": "#2a0e10"
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 516,
-       "s": 0.85,
-       "col": "#2a0e10"
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
       },
       {
        "o": "tree",
        "x": 540,
-       "y": 505,
-       "s": 0.42,
+       "y": 508,
+       "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
-       "x": 750,
-       "y": 505,
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#101830"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -2894,18 +3873,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
     "sx": 520,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -2914,19 +3893,87 @@
     "emotion": "calm",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "naga",
-     "x": 610,
-     "y": 590,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "k": "hood_fan",
+     "word": "He",
+     "x": 640,
+     "y": 620,
+     "w": 760,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "Sheshnag, huge, with a fan of cobra hoods",
+     "cnt": 9
+    },
+    {
+     "k": "earth_globe",
+     "word": "lifted",
+     "x": 680,
+     "y": 150,
+     "w": 30,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "worlds carried on the centre hood"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lifted",
+     "x": 600,
+     "y": 167,
+     "w": 30,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "worlds carried on the centre hood"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lifted",
+     "x": 680,
+     "y": 184,
+     "w": 30,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "worlds carried on the centre hood"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lifted",
+     "x": 600,
+     "y": 161,
+     "w": 30,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "worlds carried on the centre hood"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lifted",
+     "x": 680,
+     "y": 178,
+     "w": 30,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "worlds carried on the centre hood"
+    },
+    {
+     "k": "earth_globe",
+     "word": "lifted",
+     "x": 600,
+     "y": 155,
+     "w": 30,
+     "alpha": 0.95,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "worlds carried on the centre hood"
     }
    ],
-   "effects": [],
    "transition_in": "cut"
   },
   {
@@ -2939,7 +3986,7 @@
    "duration": 3.92,
    "narration": "and Vishnu, as a giant tortoise, holds Sheshnag up.",
    "meaning": "and Vishnu, as a giant tortoise, holds Sheshnag up. (shown as a dark story frame)",
-   "why": "vishnu in a dark ember world while 'and Vishnu, as a giant tortoise, holds Sheshnag up' is spoken.",
+   "why": "vishnu in a dark sea world while 'and Vishnu, as a giant tortoise, holds Sheshnag up' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -2969,48 +4016,58 @@
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#8ac0b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a5a5a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#204a4a",
        "snow": false
       },
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
-       "col": "#6a2a2a",
+       "h": 215,
+       "col": "#2a5a5a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#204a4a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#204a4a",
        "snow": false
       },
       {
@@ -3018,136 +4075,160 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#2a6a6a"
       }
      ]
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
-       "o": "rock",
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
-       "col": "#2a0e10"
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#183a3a"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 516,
-       "s": 0.85,
-       "col": "#2a0e10"
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#183a3a"
       },
       {
        "o": "tree",
        "x": 540,
-       "y": 505,
-       "s": 0.42,
+       "y": 508,
+       "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#183a3a"
       },
       {
        "o": "tree",
-       "x": 750,
-       "y": 505,
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#183a3a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#183a3a"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#102a2a"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#102a2a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 760,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "sea"
    },
    "mood": {
     "emotion": "calm",
@@ -3156,26 +4237,29 @@
    "characters": [
     {
      "who": "vishnu",
-     "x": 500,
-     "y": 590,
-     "s": 0.765,
+     "x": 670,
+     "y": 600,
+     "s": 0.62,
      "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    },
-    {
-     "who": "naga",
-     "x": 840,
-     "y": 590,
-     "s": 0.765,
-     "flip": -1,
      "pose": "stand",
      "emo": "calm",
      "look": 700
     }
    ],
-   "effects": [],
+   "effects": [
+    {
+     "k": "hood_fan",
+     "word": "and",
+     "x": 640,
+     "y": 420,
+     "w": 640,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "Sheshnag, huge, with a fan of cobra hoods",
+     "cnt": 9
+    }
+   ],
    "transition_in": "cut"
   },
   {
@@ -3188,7 +4272,7 @@
    "duration": 3.82,
    "narration": "All 14 worlds sit on his hood like one mustard seed.",
    "meaning": "All 14 worlds sit on his hood like one mustard seed. (shown as a dark story frame)",
-   "why": "vishnu in a dark night world while 'All 14 worlds sit on his hood like one mustard see' is spoken.",
+   "why": "The scene in a dark night world while 'All 14 worlds sit on his hood like one mustard see' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -3209,22 +4293,20 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "vishnu",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "vishnu"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
      "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
@@ -3234,7 +4316,7 @@
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
@@ -3245,20 +4327,30 @@
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
+       "h": 215,
        "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
        "col": "#202e56",
        "snow": false
       },
@@ -3271,7 +4363,7 @@
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
        "col": "#24366a"
@@ -3280,101 +4372,141 @@
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
        "col": "#18224a"
       },
       {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
        "o": "rock",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
+       "y": 522,
+       "s": 0.9,
        "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 516,
-       "s": 0.85,
+       "y": 518,
+       "s": 0.8,
        "col": "#101830"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 505,
-       "s": 0.42,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 750,
-       "y": 505,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -3402,19 +4534,32 @@
     "emotion": "calm",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "vishnu",
-     "x": 630,
-     "y": 587,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "k": "hood_fan",
+     "word": "All",
+     "x": 640,
+     "y": 560,
+     "w": 760,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "Sheshnag, huge, with a fan of cobra hoods",
+     "cnt": 9
+    },
+    {
+     "k": "earth_globe",
+     "word": "All",
+     "x": 640,
+     "y": 185,
+     "w": 16,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a world drawn as a small globe"
     }
    ],
-   "effects": [],
    "transition_in": "cut"
   },
   {
@@ -3427,7 +4572,7 @@
    "duration": 3.48,
    "narration": "So our Earth is smaller than a speck of dust on it.",
    "meaning": "So our Earth is smaller than a speck of dust on it. (shown as a dark story frame)",
-   "why": "vishnu in a dark night world while 'So our Earth is smaller than a speck of dust on it' is spoken.",
+   "why": "The scene in a dark night world while 'So our Earth is smaller than a speck of dust on it' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -3448,22 +4593,20 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "vishnu",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "vishnu"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
      "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
@@ -3473,7 +4616,7 @@
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
@@ -3484,20 +4627,30 @@
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
+       "h": 215,
        "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
        "col": "#202e56",
        "snow": false
       },
@@ -3510,7 +4663,7 @@
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
        "col": "#24366a"
@@ -3519,101 +4672,141 @@
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
        "col": "#18224a"
       },
       {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
        "o": "rock",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
+       "y": 522,
+       "s": 0.9,
        "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 516,
-       "s": 0.85,
+       "y": 518,
+       "s": 0.8,
        "col": "#101830"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 505,
-       "s": 0.42,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 750,
-       "y": 505,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -3641,19 +4834,32 @@
     "emotion": "calm",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "vishnu",
-     "x": 655,
-     "y": 587,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "k": "hood_fan",
+     "word": "So",
+     "x": 640,
+     "y": 560,
+     "w": 760,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "Sheshnag, huge, with a fan of cobra hoods",
+     "cnt": 9
+    },
+    {
+     "k": "earth_globe",
+     "word": "So",
+     "x": 640,
+     "y": 185,
+     "w": 10,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a world drawn as a small globe"
     }
    ],
-   "effects": [],
    "transition_in": "cut"
   },
   {
@@ -3666,7 +4872,7 @@
    "duration": 3.52,
    "narration": "So the whole universe sits on one hood of Sheshnag,",
    "meaning": "So the whole universe sits on one hood of Sheshnag, (shown as a dark story frame)",
-   "why": "naga in a dark night world while 'So the whole universe sits on one hood of Sheshnag' is spoken.",
+   "why": "The scene in a dark night world while 'So the whole universe sits on one hood of Sheshnag' is spoken.",
    "camera": {
     "shot": "close",
     "lens": "normal",
@@ -3687,22 +4893,20 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "naga",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "naga"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
      "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
@@ -3712,7 +4916,7 @@
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
@@ -3723,20 +4927,30 @@
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
+       "h": 215,
        "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
        "col": "#202e56",
        "snow": false
       },
@@ -3749,7 +4963,7 @@
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
        "col": "#24366a"
@@ -3758,101 +4972,141 @@
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
        "col": "#18224a"
       },
       {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
        "o": "rock",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
+       "y": 522,
+       "s": 0.9,
        "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 516,
-       "s": 0.85,
+       "y": 518,
+       "s": 0.8,
        "col": "#101830"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 505,
-       "s": 0.42,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 750,
-       "y": 505,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -3880,19 +5134,32 @@
     "emotion": "calm",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "naga",
+     "k": "hood_fan",
+     "word": "So",
      "x": 640,
-     "y": 588,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "y": 560,
+     "w": 760,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "Sheshnag, huge, with a fan of cobra hoods",
+     "cnt": 9
+    },
+    {
+     "k": "earth_globe",
+     "word": "So",
+     "x": 640,
+     "y": 185,
+     "w": 18,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a world drawn as a small globe"
     }
    ],
-   "effects": [],
    "transition_in": "cut"
   },
   {
@@ -3905,7 +5172,7 @@
    "duration": 4.16,
    "narration": "as small as a mustard seed, and we are even smaller.",
    "meaning": "as small as a mustard seed, and we are even smaller. (shown as a dark story frame)",
-   "why": "naga in a dark night world while 'as small as a mustard seed, and we are even smalle' is spoken.",
+   "why": "The scene in a dark night world while 'as small as a mustard seed, and we are even smalle' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
@@ -3926,22 +5193,20 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "naga",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "naga"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
      "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
@@ -3951,7 +5216,7 @@
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
@@ -3962,20 +5227,30 @@
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
+       "h": 215,
        "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
        "col": "#202e56",
        "snow": false
       },
@@ -3988,7 +5263,7 @@
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
        "col": "#24366a"
@@ -3997,101 +5272,141 @@
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
        "col": "#18224a"
       },
       {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
        "o": "rock",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
+       "y": 522,
+       "s": 0.9,
        "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 516,
-       "s": 0.85,
+       "y": 518,
+       "s": 0.8,
        "col": "#101830"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 505,
-       "s": 0.42,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 750,
-       "y": 505,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -4119,19 +5434,32 @@
     "emotion": "calm",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "naga",
-     "x": 610,
-     "y": 590,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "k": "hood_fan",
+     "word": "as",
+     "x": 640,
+     "y": 560,
+     "w": 760,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "Sheshnag, huge, with a fan of cobra hoods",
+     "cnt": 9
+    },
+    {
+     "k": "earth_globe",
+     "word": "as",
+     "x": 640,
+     "y": 185,
+     "w": 10,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a world drawn as a small globe"
     }
    ],
-   "effects": [],
    "transition_in": "cut"
   },
   {
@@ -4144,7 +5472,7 @@
    "duration": 1.67,
    "narration": "That is why we cannot see him.",
    "meaning": "That is why we cannot see him. (shown as a dark story frame)",
-   "why": "naga in a dark night world while 'That is why we cannot see him.' is spoken.",
+   "why": "The scene in a dark night world while 'That is why we cannot see him.' is spoken.",
    "camera": {
     "shot": "wide",
     "lens": "normal",
@@ -4165,22 +5493,20 @@
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "naga",
+    "subject": "scene",
     "depth": "deep"
    },
-   "vertical": {
-    "focus": "naga"
-   },
+   "vertical": {},
    "layers": [
     {
      "d": "far",
-     "contents": "layered dark peaks and distant clouds",
+     "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
      "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
-       "x": 430,
+       "x": 420,
        "y": 470,
        "s": 1.1,
        "w": 230,
@@ -4190,7 +5516,7 @@
       },
       {
        "o": "mountain",
-       "x": 560,
+       "x": 550,
        "y": 478,
        "s": 0.9,
        "w": 200,
@@ -4201,20 +5527,30 @@
       {
        "o": "mountain",
        "x": 700,
-       "y": 470,
-       "s": 1.2,
+       "y": 468,
+       "s": 1.25,
        "w": 250,
-       "h": 210,
+       "h": 215,
        "col": "#2a3a6a",
        "snow": false
       },
       {
        "o": "mountain",
-       "x": 830,
+       "x": 835,
        "y": 480,
        "s": 0.95,
        "w": 210,
        "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
        "col": "#202e56",
        "snow": false
       },
@@ -4227,7 +5563,7 @@
       },
       {
        "o": "cloud",
-       "x": 780,
+       "x": 790,
        "y": 250,
        "s": 0.9,
        "col": "#24366a"
@@ -4236,101 +5572,141 @@
     },
     {
      "d": "mid",
-     "contents": "dark silhouettes of the setting on both sides",
-     "fog": 0.22,
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
      "items": [
       {
        "o": "hill",
        "x": 640,
-       "y": 480,
+       "y": 482,
        "s": 1.0,
        "w": 1100,
        "h": 12,
        "col": "#18224a"
       },
       {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
        "o": "rock",
        "x": 450,
-       "y": 520,
-       "s": 0.95,
+       "y": 522,
+       "s": 0.9,
        "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
-       "y": 516,
-       "s": 0.85,
+       "y": 518,
+       "s": 0.8,
        "col": "#101830"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 505,
-       "s": 0.42,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 750,
-       "y": 505,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
       }
      ]
     },
     {
      "d": "near",
-     "contents": "black foreground silhouettes framing the figures",
-     "dark": 0.55,
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
      "blur": 2,
      "items": [
       {
        "o": "rock",
-       "x": 440,
-       "y": 752,
-       "s": 1.6,
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
        "col": "#0a0610"
       },
       {
        "o": "rock",
-       "x": 850,
-       "y": 756,
-       "s": 1.5,
-       "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 420,
+       "x": 852,
        "y": 760,
-       "s": 1.5,
-       "kind": "pine",
+       "s": 0.85,
        "col": "#0a0610"
-      },
-      {
-       "o": "tree",
-       "x": 870,
-       "y": 762,
-       "s": 1.4,
-       "kind": "pine",
-       "col": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 520,
-       "y": 752,
-       "s": 1.2,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
-      },
-      {
-       "o": "shrub",
-       "x": 780,
-       "y": 752,
-       "s": 1.1,
-       "col": "#0a0610",
-       "flowers": "#0a0610"
       }
      ]
     }
@@ -4358,19 +5734,32 @@
     "emotion": "calm",
     "grade": "ep07_dark"
    },
-   "characters": [
+   "characters": [],
+   "effects": [
     {
-     "who": "naga",
-     "x": 670,
-     "y": 594,
-     "s": 0.9,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
+     "k": "hood_fan",
+     "word": "That",
+     "x": 640,
+     "y": 580,
+     "w": 760,
+     "alpha": 0.9,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "Sheshnag, huge, with a fan of cobra hoods",
+     "cnt": 9
+    },
+    {
+     "k": "mist_wisps",
+     "word": "That",
+     "x": 640,
+     "y": 540,
+     "w": 700,
+     "alpha": 0.9,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "mist hiding Sheshnag"
     }
    ],
-   "effects": [],
    "transition_in": "cut"
   }
  ]
