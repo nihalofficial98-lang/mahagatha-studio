@@ -137,5 +137,7 @@ def main(reel):
           camera=cam(cname,ca,cb,shs,"normal",0,"a slow move that follows the story beat"),focus={"subject":who[0] if who else "scene","depth":"deep"},
           vertical={"focus":who[0]} if who else {},layers=[dict(l_,items=l_['items']+extra_mid) if l_['d']=='mid' else l_ for l_ in scene_layers(scene,theme)],background=(bg(bgk) if bgk and not cfg.get('over',{}).get(n,{}).get('scene') else (dict(background(scene),sx=sx) if scene in SK else background(scene))),mood={"emotion":emo,"grade":GRD},
           characters=ch,effects=fxs,transition_in="cut" if n else "fade")
+        ov=cfg.get('over',{}).get(n,{})
+        if 'vertical' in ov:sh['vertical']=ov['vertical']
     G.finish()
 if __name__=='__main__':main(sys.argv[1])

@@ -154,7 +154,7 @@ const E={
    cutP(()=>{ctx.moveTo(-w*.3,w*.06);ctx.lineTo(-w*.3,w*.12);ctx.quadraticCurveTo(0,w*.24,w*.3,w*.12);ctx.lineTo(w*.3,w*.06);ctx.closePath()},'#3a2c3a',{sh:0,lw:1.6,ink:'#0c0610'});
    const lgr=ctx.createLinearGradient(-w*.2,0,w*.2,0);lgr.addColorStop(0,'#1a1220');lgr.addColorStop(.45,'#6a5a72');lgr.addColorStop(1,'#120c18');
    cutP(()=>{ctx.moveTo(-w*.19,w*.1);ctx.lineTo(-w*.19,-w*.34);ctx.quadraticCurveTo(-w*.19,-w*.62,0,-w*.62);ctx.quadraticCurveTo(w*.19,-w*.62,w*.19,-w*.34);ctx.lineTo(w*.19,w*.1);ctx.closePath()},lgr,{sh:0,lw:2,ink:'#0c0610'});
-   ctx.strokeStyle='#f0ece4';ctx.lineWidth=w*.022;ctx.lineCap='round';[-.3,-.22,-.14].forEach(y=>{ctx.beginPath();ctx.moveTo(-w*.15,y*w);ctx.quadraticCurveTo(0,(y+.04)*w,w*.15,y*w);ctx.stroke()})}},
+   ctx.strokeStyle='#f0ece4';ctx.lineWidth=w*.022;ctx.lineCap='round';[-.16,-.08,0].forEach(y=>{ctx.beginPath();ctx.moveTo(-w*.15,y*w);ctx.quadraticCurveTo(0,(y+.04)*w,w*.15,y*w);ctx.stroke()})}},
  // reel 17: a pile of paper-cut lotuses on a mound (F.cnt lotuses, rows narrowing upward); each lotus = 7 pink petals with a gold centre
  lotus_pile:{s:0,f(w,t,F){const n=F.cnt||14,rows=[];let left=n,r=0;while(left>0){const k=Math.min(left,Math.max(1,5-r));rows.push(k);left-=k;r++}
    const draw=(x,y,s,rot)=>{ctx.save();ctx.translate(x,y);ctx.rotate(rot);for(let k=-3;k<=3;k++){const a=k*.34,len=s*(1-Math.abs(k)*.1);ctx.save();ctx.rotate(a);

@@ -83,18 +83,19 @@ SPEC['reel23']['over']={
  1:dict(scene='ember',chars=[dict(who='hanuman',x=640,y=690,s=1.08,_face=.40,flip=1,pose='stand',emo='calm',look=700,prop='none')],fx=[pfx('smoke_plume','but',640,560,360,'the mace vanishes in smoke',alpha=.9)]),
 }
 
-# ---- reel17: proper lingam + lotus pile (dedicated props), Vishnu/Shiva beside it
-LG=lambda:pfx('lingam',None,745,650,230,'a dark stone Shiva lingam on a round base',alpha=1,glow=.7)
-LP=lambda n,x=745,y=600,w=250:pfx('lotus_pile',None,x,y,w,'a pile of pink paper-cut lotuses with gold centres',alpha=1,cnt=n)
-V17=lambda who,pose,emo:dict(who=who,x=520,y=690,s=.74,_face=.5,flip=1,pose=pose,emo=emo,look=720)
+# ---- reel17: proper lingam + lotus pile (dedicated props), Vishnu/Shiva beside it (crop centred between them)
+LG=lambda:pfx('lingam',None,748,585,200,'a dark stone Shiva lingam on a round base',alpha=1,glow=.7)
+LP=lambda n,x=748,y=520,w=215:pfx('lotus_pile',None,x,y,w,'a pile of pink paper-cut lotuses with gold centres',alpha=1,cnt=n)
+V17=lambda who,pose,emo:dict(who=who,x=584,y=690,s=.7,_face=.5,flip=1,pose=pose,emo=emo,look=720)
+VX={"x":650}
 SPEC['reel17']['over'].update({
- 8:dict(scene='indigo',chars=[V17('vishnu','open','devotion')],fx=[LG()]),
- 9:dict(scene='indigo',chars=[V17('vishnu','namaste','devotion')],fx=[LG(),pfx('divine_rays',None,745,520,420,'light on the lingam as Vishnu chants',alpha=.6,behind=True)]),
- 10:dict(scene='indigo',chars=[V17('vishnu','namaste','devotion')],fx=[LG(),LP(1,745,500,140)]),
- 11:dict(scene='indigo',chars=[V17('vishnu','namaste','joy')],fx=[LG(),LP(14,745,610,270)]),
- 12:dict(scene='indigo',chars=[V17('shiva','stand','calm')],fx=[LG(),LP(14,745,610,270)]),
- 13:dict(scene='indigo',chars=[V17('shiva','point','scheme')],fx=[LG(),LP(13,745,610,270),LP(1,640,330,130)]),
- 14:dict(scene='indigo',chars=[V17('vishnu','stand','doubt')],fx=[LG(),LP(13,745,610,270)]),
- 15:dict(scene='indigo',chars=[V17('vishnu','stand','fear')],fx=[LG(),LP(13,745,610,270),pfx('mist_wisps',None,640,560,640,'dark mist while he searches',alpha=.6,behind=True)]),
- 16:dict(scene='indigo',chars=[V17('vishnu','stand','fear')],fx=[LG(),LP(13,745,610,270)]),
+ 8:dict(scene='indigo',vertical=VX,chars=[V17('vishnu','open','devotion')],fx=[LG()]),
+ 9:dict(scene='indigo',vertical=VX,chars=[V17('vishnu','namaste','devotion')],fx=[LG(),pfx('divine_rays',None,748,470,420,'light on the lingam as Vishnu chants',alpha=.6,behind=True)]),
+ 10:dict(scene='indigo',vertical=VX,chars=[V17('vishnu','namaste','devotion')],fx=[LG(),LP(1,748,462,115)]),
+ 11:dict(scene='indigo',vertical=VX,chars=[V17('vishnu','namaste','joy')],fx=[LG(),LP(14,748,520,215)]),
+ 12:dict(scene='indigo',vertical=VX,chars=[V17('shiva','stand','calm')],fx=[LG(),LP(14,748,520,215)]),
+ 13:dict(scene='indigo',vertical=VX,chars=[V17('shiva','point','scheme')],fx=[LG(),LP(13,748,520,215),LP(1,640,300,110)]),
+ 14:dict(scene='indigo',vertical=VX,chars=[V17('vishnu','stand','doubt')],fx=[LG(),LP(13,748,520,215)]),
+ 15:dict(scene='indigo',vertical=VX,chars=[V17('vishnu','stand','fear')],fx=[LG(),LP(13,748,520,215),pfx('mist_wisps',None,640,540,640,'dark mist while he searches',alpha=.6,behind=True)]),
+ 16:dict(scene='indigo',vertical=VX,chars=[V17('vishnu','stand','fear')],fx=[LG(),LP(13,748,520,215)]),
 })
