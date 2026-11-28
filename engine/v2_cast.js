@@ -1070,4 +1070,18 @@ function drawRavana10(c,o,t,kk,face){const S=CAST.ravana10,P=poseOf(o.pose||'sta
   drawHead(c,hx,hy,{expr:face,k:kk,S:S,t:t,mood:o.mood,turn:.1});hairFront(c,S,hx,hy,t);headgear(c,S,hx,hy);c.restore()}
 XFIG.ravana10=drawRavana10;
 ['parashurama','rama','krishna','kalki','yama','ashwatthama','kumbhakarna','meghanada','bala','mahabali','vibhishana','markandeya','lakshmi','sita','arjuna','hanuman','sugriva','ravana10'].forEach(n=>V2NAMES.add(n));
+
+/* ---------- owner round: distinct Rama, aged wandering Ashwatthama with the jewel-wound on his forehead, a dark dangerous Kalki ---------- */
+Object.assign(CAST,{
+ rama:Object.assign({},CAST.vishnu,{arms4:false,crown:'small',hair:{type:'topknot',col:'#10101c'},skin:'#3a78a8',skinH:'#6aa4d0',skinD:'#1a4670',skinM:'#2f6a98',lower:L_('#f4c430','#c42b3a','dhoti',{pleat:true,dots:'#c42b3a'}),uttariya:'#c42b3a',neck:['hara','pearls'],armlet:'#e0b040',kaustubha:false,halo:null,muscle:.9,build:1.02,prop:'bow',tilak:'vaishnava',thread:true}),
+ ashwatthama:Object.assign({},CAST.deva_thin2,{skin:'#8a6446',skinH:'#a8825e',skinD:'#4a3220',skinM:'#745238',hair:{type:'jata',col:'#8c8c90'},beard:'#a0a0a4',beardLen:58,mustache:'#a0a0a4',brow:'#8c8c90',crown:null,kgem:null,lower:L_('#6a5a48','#3a2e22','dhoti',{fan:'#7a6a56'}),uttariya:null,thread:false,neck:[],armlet:null,bangle:null,armor:null,ash:true,muscle:.55,build:.94,prop:'none'}),
+ kalki:Object.assign({},CAST.vishnu,{arms4:false,crown:'helmet',skin:'#1c2c60',skinH:'#3c4c92',skinD:'#0a1232',skinM:'#15224c',eyeRed:true,lower:L_('#16161e','#c42b3a','dhoti'),uttariya:'#6a0a14',armor:'#2c2c3c',armlet:'#9a1a24',neck:['hara'],kaustubha:false,tilak:null,halo:{r:104,col:['#ffffff','#ffb090','#e04020','#5a0a10'],rgb:'255,110,70',rgb2:'255,190,160',petal:'rgba(255,160,130,.45)',g:.7},muscle:1,build:1.15,prop:'sword'})
+});
+function drawAshwa(c,o,t,kk,face){const S=CAST.ashwatthama,P=poseOf(o.pose||'stand','ashwatthama');
+  drawHuman(c,S,P,{t:t,k:kk,expr:face,prop:o.prop,mood:o.mood,tilt:o.tilt});
+  c.save();leanAt(c,P);c.translate(P.hd[0],P.hd[1]);
+  const W=(wd,col)=>PK.stroke(c,cc=>{cc.moveTo(-9,-34);cc.quadraticCurveTo(-1,-31,9,-23)},col,wd);W(6,'#3a0606');W(3.6,'#b81414');
+  [[1,-29,15],[6,-26,22],[-5,-32,12]].forEach(([x,y0,y1])=>{PK.stroke(c,cc=>{cc.moveTo(x,y0);cc.lineTo(x+(x>0?1:-1),y1)},'#8a0c0c',1.6)});
+  PK.cut(c,PK.P.ell(0,-30,13,5.5,.35),'rgba(150,20,20,.28)',{lw:0,sh:0});c.restore()}
+Object.assign(XFIG,{ashwatthama:drawAshwa});
 return {PK:PK,has:w=>V2NAMES.has(w),fig:v2fig,head:v2head,CAST:CAST,poseOf:poseOf,drawHuman:drawHuman,drawBrahmaRig:drawBrahmaRig,drawReclineVishnu:drawReclineVishnu,drawArdha:drawArdha,drawShiva:drawShiva,drawHead:drawHead,FX:REELFX,drawJata:drawJata,POSES:POSES,mixPose:mixPose,SH:SH};

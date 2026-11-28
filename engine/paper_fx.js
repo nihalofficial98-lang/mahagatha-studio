@@ -193,6 +193,8 @@ const E={
    else hill(Y0+H*.8,22,.004,4,HL[2]);
    if(kind==='forest_dusk'||kind==='village_dusk'||kind==='temple_dawn'){for(let x=-W/2+10;x<W/2;x+=90)pine(x+r()*30,Y0+H*.86,1.1,HL[3])}
    hill(Y0+H*.93,14,.007,1,HL[3])}},
+ // reel 19: Yama's rope (pasha): a thick rope flung from the left that ends in a loop closing round the lingam; F.loop 0..1
+ noose:{s:0,f(w,t,F){const lp=F.loop??1,sw=Math.sin(t*3)*w*.01;ctx.lineCap='round';[['#1a0c04',w*.045],['#9a6a34',w*.032],['#d8b070',w*.01]].forEach(([c2,lw])=>{ctx.strokeStyle=c2;ctx.lineWidth=lw;ctx.beginPath();ctx.moveTo(-w*.5,-w*.22);ctx.bezierCurveTo(-w*.3,-w*.4+sw,-w*.1,w*.0,w*.12,w*.02);ctx.stroke();ctx.beginPath();ctx.ellipse(w*.2,w*.06,w*.17*lp,w*.07*lp,.15,0,TAU);ctx.stroke()})}},
  // reel 24: Shiva's trident (trishul): gold shaft with bands, silver three-pronged head, damaru and red cloth
  trishul:{s:0,f(w,t,F){const h=w*1.9,sw=Math.sin(t*2)*w*.02;glow(0,-h*.2,w*1.2,'255,200,120',.3);
    const G=(x0,y0,x1,y1,c)=>{const g=ctx.createLinearGradient(x0,y0,x1,y1);c.forEach((cc,i)=>g.addColorStop(i/(c.length-1),cc));return g};

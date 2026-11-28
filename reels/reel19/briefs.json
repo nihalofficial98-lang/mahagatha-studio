@@ -16,7 +16,7 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "push_in",
     "from": {
      "z": 1.0,
      "x": 0,
@@ -24,9 +24,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -280,7 +280,7 @@
     {
      "who": "shiva",
      "x": 470,
-     "y": 592,
+     "y": 588,
      "s": 0.765,
      "flip": 1,
      "pose": "lunge",
@@ -290,7 +290,7 @@
     {
      "who": "yama",
      "x": 810,
-     "y": 592,
+     "y": 588,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -340,330 +340,16 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "markandeya",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "markandeya"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "markandeya",
-     "x": 640,
-     "y": 588,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "scene_kit",
-     "word": "He",
-     "x": 640,
-     "y": 360,
-     "w": 1280,
-     "alpha": 1,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "a full paper-cut landscape of the place where this happens",
-     "kind": "hills_night",
-     "pal": "ember"
-    },
-    {
-     "k": "mist_wisps",
-     "word": "He",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s03",
-   "beat": 1,
-   "start": {
-    "t": 6.76,
-    "word": "The"
-   },
-   "duration": 2.34,
-   "narration": "The boy's name was Markandeya.",
-   "meaning": "The boy's name was Markandeya. (shown as a dark story frame)",
-   "why": "markandeya in a dark ember world while 'The boy's name was Markandeya.' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "crane_down",
-    "from": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
      "z": 1.02,
-     "x": -10,
+     "x": 6,
      "y": 0,
      "r": 0
     },
@@ -929,6 +615,320 @@
    "effects": [
     {
      "k": "scene_kit",
+     "word": "He",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "ember"
+    },
+    {
+     "k": "mist_wisps",
+     "word": "He",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s03",
+   "beat": 1,
+   "start": {
+    "t": 6.76,
+    "word": "The"
+   },
+   "duration": 2.34,
+   "narration": "The boy's name was Markandeya.",
+   "meaning": "The boy's name was Markandeya. (shown as a dark story frame)",
+   "why": "markandeya in a dark ember world while 'The boy's name was Markandeya.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "markandeya",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "markandeya"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "markandeya",
+     "x": 640,
+     "y": 590,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "scene_kit",
      "word": "The",
      "x": 640,
      "y": 360,
@@ -968,17 +968,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.02,
-     "x": -10,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -1232,7 +1232,7 @@
     {
      "who": "rishi2",
      "x": 470,
-     "y": 509,
+     "y": 508,
      "s": 0.765,
      "flip": 1,
      "pose": "sitpray",
@@ -1303,17 +1303,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.03,
-     "x": -14,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -1617,17 +1617,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.03,
-     "x": -14,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -1931,17 +1931,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -10,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -2195,7 +2195,7 @@
     {
      "who": "markandeya",
      "x": 640,
-     "y": 588,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -2245,17 +2245,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": -10,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.08,
-     "x": 14,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -2569,17 +2569,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 14,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": -14,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -2833,7 +2833,7 @@
     {
      "who": "markandeya",
      "x": 470,
-     "y": 590,
+     "y": 588,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -2843,7 +2843,7 @@
     {
      "who": "shiva",
      "x": 810,
-     "y": 590,
+     "y": 588,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -3209,11 +3209,11 @@
    "duration": 1.52,
    "narration": "The boy was scared.",
    "meaning": "The boy was scared. (shown as a dark story frame)",
-   "why": "markandeya in a dark ember world while 'The boy was scared.' is spoken.",
+   "why": "markandeya in a dark night world while 'The boy was scared.' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "push_in",
     "from": {
      "z": 1.04,
      "x": 70,
@@ -3221,9 +3221,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.03,
-     "x": -10,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -3241,7 +3241,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -3250,7 +3250,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -3260,7 +3260,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -3270,7 +3270,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": false
       },
       {
@@ -3280,7 +3280,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -3290,7 +3290,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -3298,14 +3298,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -3321,7 +3321,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3329,7 +3329,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3337,7 +3337,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3345,7 +3345,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3353,7 +3353,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3361,7 +3361,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3369,7 +3369,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3377,7 +3377,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3385,7 +3385,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3393,7 +3393,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3401,7 +3401,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "tree",
@@ -3409,21 +3409,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a0e10"
+       "col": "#101830"
       }
      ]
     },
@@ -3453,18 +3453,18 @@
    "background": {
     "k": "vista",
     "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
     ],
     "sx": 640,
     "sy": 300,
     "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
     ],
     "haze": "200,160,170",
     "dust": 10
@@ -3476,9 +3476,9 @@
    "characters": [
     {
      "who": "markandeya",
-     "x": 640,
-     "y": 590,
-     "s": 0.9,
+     "x": 575,
+     "y": 542,
+     "s": 0.7,
      "flip": 1,
      "pose": "stand",
      "emo": "fear",
@@ -3497,7 +3497,19 @@
      "behind": true,
      "meaning": "a full paper-cut landscape of the place where this happens",
      "kind": "hills_night",
-     "pal": "ember"
+     "pal": "night"
+    },
+    {
+     "k": "lingam",
+     "word": "The",
+     "x": 745,
+     "y": 620,
+     "w": 240,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a dark stone Shivling with ash lines on a round base",
+     "glow": 0.8
     },
     {
      "k": "mist_wisps",
@@ -3505,10 +3517,10 @@
      "x": 640,
      "y": 600,
      "w": 640,
-     "alpha": 0.45,
+     "alpha": 0.6,
      "par": 1.0,
      "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
+     "meaning": "mist around the temple at night"
     }
    ],
    "transition_in": "cut"
@@ -3523,21 +3535,21 @@
    "duration": 2.18,
    "narration": "He hugged the Shivling and prayed.",
    "meaning": "He hugged the Shivling and prayed. (shown as a dark story frame)",
-   "why": "markandeya in a dark ember world while 'He hugged the Shivling and prayed.' is spoken.",
+   "why": "markandeya in a dark night world while 'He hugged the Shivling and prayed.' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.03,
-     "x": -10,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -3555,7 +3567,7 @@
      "d": "far",
      "contents": "layered dark mountains and distant clouds",
      "fog": 0.6,
-     "haze": "#b04a28",
+     "haze": "#5a70b0",
      "items": [
       {
        "o": "mountain",
@@ -3564,7 +3576,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": true
       },
       {
@@ -3574,7 +3586,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -3584,7 +3596,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a2a2a",
+       "col": "#2a3a6a",
        "snow": true
       },
       {
@@ -3594,7 +3606,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -3604,7 +3616,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#521e22",
+       "col": "#202e56",
        "snow": false
       },
       {
@@ -3612,14 +3624,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#7a2020"
+       "col": "#24366a"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#7a2020"
+       "col": "#24366a"
       }
      ]
     },
@@ -3635,35 +3647,35 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "pillar",
        "x": 455,
        "y": 545,
        "s": 0.7,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "pillar",
        "x": 830,
        "y": 545,
        "s": 0.7,
-       "col": "#2a0e10"
+       "col": "#101830"
       },
       {
        "o": "rock",
        "x": 560,
        "y": 525,
        "s": 0.7,
-       "col": "#3a1618"
+       "col": "#18224a"
       },
       {
        "o": "rock",
        "x": 730,
        "y": 525,
        "s": 0.6,
-       "col": "#3a1618"
+       "col": "#18224a"
       }
      ]
     },
@@ -3691,7 +3703,23 @@
     }
    ],
    "background": {
-    "k": "kailash"
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
    },
    "mood": {
     "emotion": "devotion",
@@ -3700,9 +3728,9 @@
    "characters": [
     {
      "who": "markandeya",
-     "x": 640,
-     "y": 494,
-     "s": 0.9,
+     "x": 585,
+     "y": 469,
+     "s": 0.7,
      "flip": 1,
      "pose": "sitpray",
      "emo": "devotion",
@@ -3721,29 +3749,30 @@
      "behind": true,
      "meaning": "a full paper-cut landscape of the place where this happens",
      "kind": "kailash",
-     "pal": "ember"
+     "pal": "night"
+    },
+    {
+     "k": "lingam",
+     "word": "He",
+     "x": 745,
+     "y": 620,
+     "w": 250,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a dark stone Shivling with ash lines on a round base",
+     "glow": 1.0
     },
     {
      "k": "divine_rays",
      "word": "He",
-     "x": 640,
-     "y": 330,
+     "x": 745,
+     "y": 420,
      "w": 520,
-     "alpha": 0.6,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "divine rays showing what the narration says"
-    },
-    {
-     "k": "mist_wisps",
-     "word": "He",
-     "x": 640,
-     "y": 560,
-     "w": 640,
      "alpha": 0.7,
      "par": 1.0,
      "behind": true,
-     "meaning": "mist wisps showing what the narration says"
+     "meaning": "light on the Shivling the boy is hugging"
     }
    ],
    "transition_in": "cut"
@@ -3762,17 +3791,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.06,
-     "x": 14,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -3926,7 +3955,7 @@
     }
    ],
    "background": {
-    "k": "kailash"
+    "k": "storm"
    },
    "mood": {
     "emotion": "fear",
@@ -3935,22 +3964,22 @@
    "characters": [
     {
      "who": "yama",
-     "x": 470,
-     "y": 590,
-     "s": 0.765,
+     "x": 545,
+     "y": 589,
+     "s": 0.9,
      "flip": 1,
-     "pose": "fall",
-     "emo": "fear",
+     "pose": "throw",
+     "emo": "rage",
      "look": 700
     },
     {
      "who": "markandeya",
-     "x": 810,
-     "y": 590,
-     "s": 0.765,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
+     "x": 790,
+     "y": 430,
+     "s": 0.5,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "fear",
      "look": 700
     }
    ],
@@ -3965,41 +3994,31 @@
      "par": 1.0,
      "behind": true,
      "meaning": "a full paper-cut landscape of the place where this happens",
-     "kind": "kailash",
+     "kind": "battle_fire",
      "pal": "ember"
     },
     {
-     "k": "ground_crack",
+     "k": "lingam",
      "word": "Yama",
-     "x": 640,
+     "x": 760,
      "y": 640,
-     "w": 520,
-     "alpha": 0.8,
+     "w": 200,
+     "alpha": 1,
      "par": 1.0,
      "behind": false,
-     "meaning": "ground crack showing what the narration says"
+     "meaning": "a dark stone Shivling with ash lines on a round base",
+     "glow": 0.6
     },
     {
-     "k": "mist_wisps",
+     "k": "noose",
      "word": "Yama",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.5,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "mist wisps giving the temple its atmosphere"
-    },
-    {
-     "k": "ember_fire",
-     "word": "Yama",
-     "x": 470,
-     "y": 668,
-     "w": 60,
-     "alpha": 0.8,
+     "x": 700,
+     "y": 560,
+     "w": 420,
+     "alpha": 1,
      "par": 1.0,
      "behind": false,
-     "meaning": "ember fire giving the temple its atmosphere"
+     "meaning": "the rope of Yama thrown around the boy and the Shivling"
     }
    ],
    "transition_in": "cut"
@@ -4018,17 +4037,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -4256,23 +4275,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "storm"
    },
    "mood": {
     "emotion": "anger",
@@ -4281,11 +4284,11 @@
    "characters": [
     {
      "who": "shiva",
-     "x": 640,
-     "y": 588,
+     "x": 600,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
-     "pose": "stand",
+     "pose": "rage",
      "emo": "anger",
      "look": 700
     }
@@ -4301,19 +4304,42 @@
      "par": 1.0,
      "behind": true,
      "meaning": "a full paper-cut landscape of the place where this happens",
-     "kind": "hills_night",
+     "kind": "battle_fire",
      "pal": "ember"
     },
     {
-     "k": "mist_wisps",
+     "k": "lingam",
+     "word": "This",
+     "x": 790,
+     "y": 650,
+     "w": 170,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a dark stone Shivling with ash lines on a round base",
+     "glow": 0.6
+    },
+    {
+     "k": "lightning_forks",
      "word": "This",
      "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
+     "y": 260,
+     "w": 560,
+     "alpha": 0.8,
      "par": 1.0,
      "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
+     "meaning": "the anger of Shiva"
+    },
+    {
+     "k": "red_energy_pulse",
+     "word": "This",
+     "x": 640,
+     "y": 420,
+     "w": 420,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a red glow of rage"
     }
    ],
    "transition_in": "cut"
@@ -4328,32 +4354,32 @@
    "duration": 2.56,
    "narration": "He came out of the Shivling and killed Yama.",
    "meaning": "He came out of the Shivling and killed Yama. (shown as a dark story frame)",
-   "why": "yama in a dark ember world while 'He came out of the Shivling and killed Yama.' is spoken.",
+   "why": "shiva in a dark ember world while 'He came out of the Shivling and killed Yama.' is spoken.",
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": -10,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
     "motivation": "a slow move that follows the story beat"
    },
    "focus": {
-    "subject": "yama",
+    "subject": "shiva",
     "depth": "deep"
    },
    "vertical": {
-    "focus": "yama"
+    "focus": "shiva"
    },
    "layers": [
     {
@@ -4370,7 +4396,7 @@
        "w": 230,
        "h": 190,
        "col": "#6a2a2a",
-       "snow": false
+       "snow": true
       },
       {
        "o": "mountain",
@@ -4390,7 +4416,7 @@
        "w": 250,
        "h": 215,
        "col": "#6a2a2a",
-       "snow": false
+       "snow": true
       },
       {
        "o": "mountain",
@@ -4443,106 +4469,32 @@
        "col": "#3a1618"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
+       "o": "pillar",
+       "x": 455,
+       "y": 545,
+       "s": 0.7,
+       "col": "#2a0e10"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "o": "pillar",
+       "x": 830,
+       "y": 545,
+       "s": 0.7,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
+       "x": 560,
+       "y": 525,
+       "s": 0.7,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 730,
+       "y": 525,
+       "s": 0.6,
+       "col": "#3a1618"
       }
      ]
     },
@@ -4570,23 +4522,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "storm"
    },
    "mood": {
     "emotion": "anger",
@@ -4594,13 +4530,23 @@
    },
    "characters": [
     {
-     "who": "yama",
-     "x": 640,
-     "y": 589,
-     "s": 0.9,
+     "who": "shiva",
+     "x": 600,
+     "y": 605,
+     "s": 0.95,
      "flip": 1,
-     "pose": "lunge",
+     "pose": "rage",
      "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "yama",
+     "x": 800,
+     "y": 539,
+     "s": 0.6,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "fear",
      "look": 700
     }
    ],
@@ -4615,19 +4561,42 @@
      "par": 1.0,
      "behind": true,
      "meaning": "a full paper-cut landscape of the place where this happens",
-     "kind": "hills_night",
+     "kind": "battle_fire",
      "pal": "ember"
     },
     {
-     "k": "mist_wisps",
+     "k": "lingam",
+     "word": "He",
+     "x": 620,
+     "y": 690,
+     "w": 190,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a dark stone Shivling with ash lines on a round base",
+     "glow": 1.0
+    },
+    {
+     "k": "ground_crack",
      "word": "He",
      "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
+     "y": 670,
+     "w": 520,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "the Shivling cracking open as Shiva comes out"
+    },
+    {
+     "k": "divine_rays",
+     "word": "He",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "alpha": 0.8,
      "par": 1.0,
      "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
+     "meaning": "blinding light from the Shivling"
     }
    ],
    "transition_in": "cut"
@@ -4646,17 +4615,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.02,
-     "x": -10,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -4684,7 +4653,7 @@
        "w": 230,
        "h": 190,
        "col": "#6a2a2a",
-       "snow": false
+       "snow": true
       },
       {
        "o": "mountain",
@@ -4704,7 +4673,7 @@
        "w": 250,
        "h": 215,
        "col": "#6a2a2a",
-       "snow": false
+       "snow": true
       },
       {
        "o": "mountain",
@@ -4757,106 +4726,32 @@
        "col": "#3a1618"
       },
       {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
+       "o": "pillar",
+       "x": 455,
+       "y": 545,
+       "s": 0.7,
+       "col": "#2a0e10"
       },
       {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "o": "pillar",
+       "x": 830,
+       "y": 545,
+       "s": 0.7,
        "col": "#2a0e10"
       },
       {
        "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
+       "x": 560,
+       "y": 525,
+       "s": 0.7,
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 730,
+       "y": 525,
+       "s": 0.6,
+       "col": "#3a1618"
       }
      ]
     },
@@ -4884,23 +4779,7 @@
     }
    ],
    "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "kailash"
    },
    "mood": {
     "emotion": "calm",
@@ -4910,7 +4789,7 @@
     {
      "who": "yama",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -4929,7 +4808,7 @@
      "par": 1.0,
      "behind": true,
      "meaning": "a full paper-cut landscape of the place where this happens",
-     "kind": "hills_night",
+     "kind": "kailash",
      "pal": "ember"
     },
     {
@@ -4938,10 +4817,21 @@
      "x": 640,
      "y": 600,
      "w": 640,
-     "alpha": 0.45,
+     "alpha": 0.5,
      "par": 1.0,
      "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
+     "meaning": "mist wisps giving the temple its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "But",
+     "x": 470,
+     "y": 668,
+     "w": 60,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the temple its atmosphere"
     }
    ],
    "transition_in": "cut"
@@ -4960,17 +4850,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.03,
-     "x": -14,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -5194,7 +5084,7 @@
     {
      "who": "shiva",
      "x": 470,
-     "y": 590,
+     "y": 588,
      "s": 0.765,
      "flip": 1,
      "pose": "plead",
@@ -5204,7 +5094,7 @@
     {
      "who": "yama",
      "x": 810,
-     "y": 590,
+     "y": 588,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -5265,17 +5155,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.03,
-     "x": -14,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -5570,17 +5460,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -10,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -5834,7 +5724,7 @@
     {
      "who": "shiva",
      "x": 470,
-     "y": 590,
+     "y": 588,
      "s": 0.765,
      "flip": 1,
      "pose": "lunge",
@@ -5844,7 +5734,7 @@
     {
      "who": "yama",
      "x": 810,
-     "y": 590,
+     "y": 588,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -5894,17 +5784,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": -10,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.08,
-     "x": 14,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -6158,7 +6048,7 @@
     {
      "who": "yama",
      "x": 640,
-     "y": 588,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",

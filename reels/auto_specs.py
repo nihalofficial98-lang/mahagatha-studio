@@ -199,3 +199,25 @@ SPEC['reel28']['over']={
  14:dict(scene='night',bg='night',chars=[C28('ravana10',640,.9,'stand','shame')],fx=[pfx('curse_glow',None,640,420,460,'the curse he fears',alpha=.6)]),
  15:dict(scene='brown',bg='council',chars=[C28('ravana10',640,.88,'stand','shame')],fx=[pfx('mist_wisps',None,640,600,640,'a quiet end',alpha=.6,behind=True)]),
 }
+
+# ================= reel19 (Markandeya): the Shivling is always on screen, the rope, Shiva coming out of it =================
+LGM=lambda x=745,y=620,w=240,g=.8:pfx('lingam',None,x,y,w,'a dark stone Shivling with ash lines on a round base',alpha=1,glow=g)
+MK=lambda x,pose,emo,s=.7:dict(who='markandeya',x=x,y=700,s=s,_face=.46,flip=1,pose=pose,emo=emo,look=700)
+SPEC['reel19'].setdefault('over',{}).update({
+ 10:dict(scene='night',bg='temple_dummy' if False else None,chars=[MK(575,'stand','fear')],fx=[LGM(),pfx('mist_wisps',None,640,600,640,'mist around the temple at night',alpha=.6,behind=True)]),
+ 11:dict(scene='night',chars=[MK(585,'sitpray','devotion')],fx=[LGM(745,620,250,1.0),pfx('divine_rays',None,745,420,520,'light on the Shivling the boy is hugging',alpha=.7,behind=True)]),
+ 12:dict(scene='ember',bg='storm',chars=[dict(who='yama',x=545,y=690,s=.9,_face=.44,flip=1,pose='throw',emo='rage',look=700),MK(790,'sitpray','fear',.5)],fx=[LGM(760,640,200,.6),pfx('noose',None,700,560,420,'the rope of Yama thrown around the boy and the Shivling',alpha=1)]),
+ 13:dict(scene='ember',bg='storm',chars=[dict(who='shiva',x=600,y=700,s=.9,_face=.44,flip=1,pose='rage',emo='anger',look=700)],fx=[LGM(790,650,170,.6),pfx('lightning_forks',None,640,260,560,'the anger of Shiva',alpha=.8,behind=True),pfx('red_energy_pulse',None,640,420,420,'a red glow of rage',alpha=.7,behind=True)]),
+ 14:dict(scene='ember',bg='storm',chars=[dict(who='shiva',x=600,y=700,s=.95,_face=.44,flip=1,pose='rage',emo='anger',look=700),dict(who='yama',x=800,y=700,s=.6,_face=.5,flip=-1,pose='fall',emo='fear',look=700)],fx=[LGM(620,690,190,1.0),pfx('ground_crack',None,640,670,520,'the Shivling cracking open as Shiva comes out',alpha=.8),pfx('divine_rays',None,640,330,560,'blinding light from the Shivling',alpha=.8,behind=True)]),
+})
+# ================= reel22 (Kalki): darker and dangerous =================
+SPEC['reel22']['scene']='night'
+KR=lambda y_h=735,y_k=585:[dict(who='horse',x=640,y=y_h,s=.9,_fixed=True,flip=1,pose='stand',emo='anger',look=700),dict(who='kalki',x=640,y=y_k,s=.52,_fixed=True,flip=1,pose='stand',emo='rage',look=700,prop='sword')]
+SPEC['reel22'].setdefault('over',{}).update({
+ 4:dict(scene='ember',bg='storm',chars=[dict(who='kalki',x=640,y=700,s=1.0,_face=.4,flip=1,pose='stand',emo='rage',look=700,prop='sword')],fx=[pfx('lightning_forks',None,640,260,560,'a storm over the dangerous avatar',alpha=.9,behind=True),pfx('red_energy_pulse',None,640,420,420,'a red glow of danger',alpha=.8,behind=True)]),
+ 12:dict(scene='ember',bg='storm',vertical={'focus':'kalki'},chars=KR(),fx=[pfx('lightning_forks',None,640,260,560,'lightning as Kalki rides out',alpha=.9,behind=True),pfx('ember_fire',None,452,672,90,'fire on the ground',alpha=.8),pfx('ember_fire',None,830,672,90,'fire on the ground',alpha=.8),pfx('red_energy_pulse',None,640,420,460,'a red glow of power',alpha=.7,behind=True)]),
+ 13:dict(scene='night',bg='kailash',chars=[dict(who='kalki',x=640,y=700,s=1.0,_face=.4,flip=1,pose='raise',emo='calm',look=700,prop='sword')],fx=[pfx('divine_rays',None,640,330,560,'first light of a new age',alpha=.8,behind=True)]),
+ 17:dict(scene='ember',bg='storm',vertical={'focus':'kalki'},chars=KR(),fx=[pfx('lightning_forks',None,640,260,560,'lightning as Kalki rides out',alpha=.9,behind=True),pfx('smoke_plume',None,640,560,520,'smoke of a burning age',alpha=.6)]),
+ 18:dict(scene='night',bg='dusk',vertical={'focus':'kalki'},chars=KR(),fx=[pfx('mist_wisps',None,640,600,640,'mist over the village of Shambhala',alpha=.7,behind=True),pfx('red_energy_pulse',None,640,420,460,'a red glow of power',alpha=.6,behind=True)]),
+ 19:dict(scene='ember',bg='storm',chars=[dict(who='kalki',x=640,y=700,s=1.0,_face=.4,flip=1,pose='stand',emo='rage',look=700,prop='sword')],fx=[pfx('lightning_forks',None,640,260,560,'a storm over the dangerous avatar',alpha=.9,behind=True),pfx('red_energy_pulse',None,640,420,420,'a red glow of danger',alpha=.8,behind=True)]),
+})

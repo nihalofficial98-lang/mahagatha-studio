@@ -160,9 +160,9 @@ def main(reel):
         fxs=[pfx('scene_kit',first,640,360,1280,'a full paper-cut landscape of the place where this happens',alpha=1,behind=True,kind=kind_,pal=pal_)]+[f_ for f_ in fxs if f_.get('k')!='scene_kit']
         cname,ca,cb,shs=CAMS[ci%len(CAMS)];ci+=1
         # continuous camera: each shot starts exactly where the previous one ended (one long take)
-        Z=[1.06,1.0,1.08,1.02,1.09,1.03][ci%6];X=[14,-14,10,-10][ci%4];ca=cam_end;cb=(Z,X,-4 if Z>1.04 else 0);cam_end=cb
+        Z=[1.0,1.15,1.02,1.17,1.04,1.13][ci%6];X=[6,-6][ci%2];ca=cam_end;cb=(Z,X,-6 if Z>1.08 else 0);cam_end=cb
         dz=cb[0]-ca[0];dx=cb[1]-ca[1]
-        cname=(['push_in','crane_up'] if dz>.03 else ['pull_out','crane_down'] if dz<-.03 else ['dolly_right','pan_right'] if dx>0 else ['dolly_left','pan_left'])[ci%2]
+        cname='push_in' if dz>=0 else 'pull_out'
         shs='medium'
         trk=False
         if re.search(WALKRX,low) and ch and not cfg.get('war') and n not in cfg.get('over',{}) and ch[0]['who'] not in ('naga','vishnu_rest','shiva_lingam') and (s[-1][2]-s[0][2])>=1.8:
