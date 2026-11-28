@@ -3,3 +3,4 @@ Built: cast clones (engine/v2_cast.js), auto-director (reels/auto_briefs.py + au
 Next: check frames of new characters (Hanuman, Parashurama...), fix, contact sheets, owner approval. No video render yet.
 Rule: do not review frames yourself; push contact sheets and tell the owner.
 DONE: frames for all 14 reels rendered to library/showcase/reelNN_frames (sheet_*.jpg contact sheets). Waiting for the owner to check. No video render yet.
+RENDER STARTED 2026-11-28: /tmp/render_all.sh loops reels 17,08,16,18-28 (render_chunks --res 1080p --fps 24 --workers 4), log build/render_done.txt. Next: verify with ffprobe, titled copies, send to owner. Music mixing only when the owner asks (music master about 0.5, louder than reels).
