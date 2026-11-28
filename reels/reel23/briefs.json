@@ -16,7 +16,7 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "push_in",
     "from": {
      "z": 1.0,
      "x": 0,
@@ -24,9 +24,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -280,7 +280,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 614,
+     "y": 616,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -291,7 +291,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 534,
+     "y": 536,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -301,7 +301,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 534,
+     "y": 536,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -311,7 +311,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 534,
+     "y": 536,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -321,7 +321,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 534,
+     "y": 536,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -331,7 +331,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 534,
+     "y": 536,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -341,7 +341,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 534,
+     "y": 536,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -413,17 +413,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -677,7 +677,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 615,
+     "y": 616,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -688,7 +688,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 535,
+     "y": 536,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -698,7 +698,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 535,
+     "y": 536,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -708,7 +708,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 535,
+     "y": 536,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -718,7 +718,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 535,
+     "y": 536,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -728,7 +728,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 535,
+     "y": 536,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -738,7 +738,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 535,
+     "y": 536,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -821,17 +821,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": -10,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -1095,7 +1095,7 @@
     {
      "who": "asura1",
      "x": 500,
-     "y": 571,
+     "y": 561,
      "s": 0.5,
      "flip": 1,
      "pose": "rage",
@@ -1105,7 +1105,7 @@
     {
      "who": "asura2",
      "x": 780,
-     "y": 571,
+     "y": 561,
      "s": 0.5,
      "flip": -1,
      "pose": "rage",
@@ -1115,7 +1115,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 512,
+     "y": 502,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -1125,7 +1125,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 512,
+     "y": 502,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -1135,7 +1135,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 512,
+     "y": 502,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -1145,7 +1145,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 512,
+     "y": 502,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -1155,7 +1155,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 512,
+     "y": 502,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -1165,7 +1165,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 512,
+     "y": 502,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -1237,17 +1237,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.02,
-     "x": -10,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -1501,7 +1501,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 643,
+     "y": 644,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -1512,7 +1512,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -1522,7 +1522,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -1532,7 +1532,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -1542,7 +1542,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -1552,7 +1552,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -1562,7 +1562,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -1634,17 +1634,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.03,
-     "x": -14,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -1868,7 +1868,7 @@
     {
      "who": "ravana10",
      "x": 470,
-     "y": 590,
+     "y": 588,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -1878,7 +1878,7 @@
     {
      "who": "asura2",
      "x": 810,
-     "y": 590,
+     "y": 588,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -1888,7 +1888,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 512,
+     "y": 508,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -1898,7 +1898,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 512,
+     "y": 508,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -1908,7 +1908,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 512,
+     "y": 508,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -1918,7 +1918,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 512,
+     "y": 508,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -1928,7 +1928,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 512,
+     "y": 508,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -1938,7 +1938,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 512,
+     "y": 508,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -2010,17 +2010,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.03,
-     "x": -14,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -2377,17 +2377,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -10,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -2641,7 +2641,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 642,
+     "y": 643,
      "s": 1.08,
      "flip": 1,
      "pose": "lunge",
@@ -2652,7 +2652,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 562,
+     "y": 563,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -2662,7 +2662,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 562,
+     "y": 563,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -2672,7 +2672,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 562,
+     "y": 563,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -2682,7 +2682,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 562,
+     "y": 563,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -2692,7 +2692,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 562,
+     "y": 563,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -2702,7 +2702,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 562,
+     "y": 563,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -2774,17 +2774,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": -10,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.08,
-     "x": 14,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -3171,17 +3171,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 14,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": -14,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -3363,7 +3363,7 @@
     {
      "who": "asura1",
      "x": 500,
-     "y": 571,
+     "y": 561,
      "s": 0.5,
      "flip": 1,
      "pose": "rage",
@@ -3373,7 +3373,7 @@
     {
      "who": "asura2",
      "x": 780,
-     "y": 571,
+     "y": 561,
      "s": 0.5,
      "flip": -1,
      "pose": "rage",
@@ -3516,330 +3516,16 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.02,
-     "x": -14,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.09,
-     "x": 10,
-     "y": -4,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "hanuman",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "hanuman"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "wall",
-       "x": 500,
-       "y": 515,
-       "s": 0.45,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "wall",
-       "x": 790,
-       "y": 515,
-       "s": 0.4,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 525,
-       "s": 0.95,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 520,
-       "s": 0.85,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 640,
-       "y": 515,
-       "s": 0.5,
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "plain"
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "hanuman",
-     "x": 640,
-     "y": 643,
-     "s": 1.08,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700,
-     "prop": "none"
-    },
-    {
-     "who": "asura1",
-     "x": 458,
-     "y": 563,
-     "s": 0.26,
-     "flip": 1,
-     "pose": "fall",
-     "emo": "anger",
-     "look": 700
-    },
-    {
-     "who": "asura2",
-     "x": 498,
-     "y": 563,
-     "s": 0.26,
-     "flip": 1,
-     "pose": "lunge",
-     "emo": "anger",
-     "look": 700
-    },
-    {
-     "who": "asura3",
-     "x": 538,
-     "y": 563,
-     "s": 0.26,
-     "flip": 1,
-     "pose": "fall",
-     "emo": "anger",
-     "look": 700
-    },
-    {
-     "who": "asura3",
-     "x": 742,
-     "y": 563,
-     "s": 0.26,
-     "flip": -1,
-     "pose": "rage",
-     "emo": "anger",
-     "look": 700
-    },
-    {
-     "who": "asura1",
-     "x": 782,
-     "y": 563,
-     "s": 0.26,
-     "flip": -1,
-     "pose": "lunge",
-     "emo": "anger",
-     "look": 700
-    },
-    {
-     "who": "asura2",
-     "x": 822,
-     "y": 563,
-     "s": 0.26,
-     "flip": -1,
-     "pose": "fall",
-     "emo": "anger",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "scene_kit",
-     "word": "Hanuman",
-     "x": 640,
-     "y": 360,
-     "w": 1280,
-     "alpha": 1,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "a full paper-cut landscape of the place where this happens",
-     "kind": "battle_fire",
-     "pal": "ember"
-    },
-    {
-     "k": "ember_fire",
-     "word": "Hanuman",
-     "x": 452,
-     "y": 672,
-     "w": 95,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "burning fire on the battlefield at the left"
-    },
-    {
-     "k": "ember_fire",
-     "word": "Hanuman",
-     "x": 830,
-     "y": 672,
-     "w": 95,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "burning fire on the battlefield at the right"
-    },
-    {
-     "k": "smoke_plume",
-     "word": "Hanuman",
-     "x": 640,
-     "y": 470,
-     "w": 560,
-     "alpha": 0.3,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "war smoke over the battlefield"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s11",
-   "beat": 1,
-   "start": {
-    "t": 35.2,
-    "word": "His"
-   },
-   "duration": 2.14,
-   "narration": "His strength was his weapon.",
-   "meaning": "His strength was his weapon. (shown as a dark story frame)",
-   "why": "hanuman in a dark ember world while 'His strength was his weapon.' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "crane_down",
-    "from": {
-     "z": 1.09,
-     "x": 10,
-     "y": -4,
-     "r": 0
-    },
-    "to": {
-     "z": 1.03,
-     "x": -10,
+     "z": 1.04,
+     "x": 6,
      "y": 0,
      "r": 0
     },
@@ -4083,6 +3769,320 @@
    "effects": [
     {
      "k": "scene_kit",
+     "word": "Hanuman",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "battle_fire",
+     "pal": "ember"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Hanuman",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Hanuman",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "Hanuman",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s11",
+   "beat": 1,
+   "start": {
+    "t": 35.2,
+    "word": "His"
+   },
+   "duration": 2.14,
+   "narration": "His strength was his weapon.",
+   "meaning": "His strength was his weapon. (shown as a dark story frame)",
+   "why": "hanuman in a dark ember world while 'His strength was his weapon.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "push_in",
+    "from": {
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "hanuman",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "hanuman"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "wall",
+       "x": 500,
+       "y": 515,
+       "s": 0.45,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "wall",
+       "x": 790,
+       "y": 515,
+       "s": 0.4,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 525,
+       "s": 0.95,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 520,
+       "s": 0.85,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 640,
+       "y": 515,
+       "s": 0.5,
+       "col": "#3a1618"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "plain"
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "hanuman",
+     "x": 640,
+     "y": 643,
+     "s": 1.08,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700,
+     "prop": "none"
+    },
+    {
+     "who": "asura1",
+     "x": 458,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 498,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 538,
+     "y": 563,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "fall",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 742,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura1",
+     "x": 782,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 822,
+     "y": 563,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "fall",
+     "emo": "anger",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "scene_kit",
      "word": "His",
      "x": 640,
      "y": 360,
@@ -4155,17 +4155,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.03,
-     "x": -10,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -4552,17 +4552,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.06,
-     "x": 14,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -4816,7 +4816,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 642,
+     "y": 643,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -4827,7 +4827,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 562,
+     "y": 563,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -4837,7 +4837,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 562,
+     "y": 563,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4847,7 +4847,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 562,
+     "y": 563,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -4857,7 +4857,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 562,
+     "y": 563,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4867,7 +4867,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 562,
+     "y": 563,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -4877,7 +4877,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 562,
+     "y": 563,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",

@@ -151,7 +151,10 @@ def main(reel):
         if len(fxs)<2 and not cfg.get('war') and theme in AMB:
             for k_,x_,y_,w_,a_,b_ in AMB[theme]:fxs.append(pfx(k_,first,x_,y_,w_,f"{k_.replace('_',' ')} giving the {theme} its atmosphere",alpha=a_,behind=b_))
         if cfg.get('war') and ch:
-            for wx,wk,wp in cfg['war']:ch.append({"who":wk,"x":wx,"y":690,"s":.26,"_ground":True,"flip":1 if wx<640 else -1,"pose":wp,"emo":"anger","look":700})
+            hero_=ch[0]['who']
+            for wx,wk,wp in cfg['war']:
+                if wk==hero_:wk={'sugriva':'hanuman','hanuman':'sugriva'}.get(wk,'asura1')
+                ch.append({"who":wk,"x":wx,"y":690,"s":.26,"_ground":True,"flip":1 if wx<640 else -1,"pose":wp,"emo":"anger","look":700})
             fxs=fxs[:1]+[pfx('ember_fire',None,452,672,95,'burning fire on the battlefield at the left',alpha=.8),pfx('ember_fire',None,830,672,95,'burning fire on the battlefield at the right',alpha=.8),pfx('smoke_plume',None,640,470,560,'war smoke over the battlefield',alpha=.3,behind=True)]
             fxs=[dict(f_,word=(f_.get('word') or first)) for f_ in fxs]
         kind_=KIND_BY_BG.get(bgk) if bgk else None

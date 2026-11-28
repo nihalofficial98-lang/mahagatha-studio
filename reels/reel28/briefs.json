@@ -16,7 +16,7 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pan_left",
+    "move": "push_in",
     "from": {
      "z": 1.0,
      "x": 0,
@@ -24,325 +24,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "ravana10",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "ravana10"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "palace"
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "ravana10",
-     "x": 575,
-     "y": 574,
-     "s": 0.8,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "scheme",
-     "look": 700
-    },
-    {
-     "who": "sita",
-     "x": 705,
-     "y": 549,
-     "s": 0.72,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "sad",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "scene_kit",
-     "word": "Did",
-     "x": 640,
-     "y": 360,
-     "w": 1280,
-     "alpha": 1,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "a full paper-cut landscape of the place where this happens",
-     "kind": "palace_night",
-     "pal": "ember"
-    },
-    {
-     "k": "ember_fire",
-     "word": "Did",
-     "x": 452,
-     "y": 672,
-     "w": 80,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "a palace torch"
-    },
-    {
-     "k": "ember_fire",
-     "word": "Did",
-     "x": 466,
-     "y": 664,
-     "w": 70,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire giving the lanka its atmosphere"
-    },
-    {
-     "k": "ember_fire",
-     "word": "Did",
-     "x": 818,
-     "y": 664,
-     "w": 70,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "ember fire giving the lanka its atmosphere"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s02",
-   "beat": 1,
-   "start": {
-    "t": 3.04,
-    "word": "Ravana"
-   },
-   "duration": 5.22,
-   "narration": "Ravana did not hurt Sita, and it was not because he was a good man.",
-   "meaning": "Ravana did not hurt Sita, and it was not because he was a it man. (shown as a dark story frame)",
-   "why": "ravana10 in a dark ember world while 'Ravana did not hurt Sita, and it was not because h' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "push_in",
-    "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -570,13 +254,329 @@
      "s": 0.8,
      "flip": 1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "scheme",
      "look": 700
     },
     {
      "who": "sita",
      "x": 705,
      "y": 548,
+     "s": 0.72,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "sad",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "scene_kit",
+     "word": "Did",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "palace_night",
+     "pal": "ember"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Did",
+     "x": 452,
+     "y": 672,
+     "w": 80,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "a palace torch"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Did",
+     "x": 466,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    },
+    {
+     "k": "ember_fire",
+     "word": "Did",
+     "x": 818,
+     "y": 664,
+     "w": 70,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "ember fire giving the lanka its atmosphere"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s02",
+   "beat": 1,
+   "start": {
+    "t": 3.04,
+    "word": "Ravana"
+   },
+   "duration": 5.22,
+   "narration": "Ravana did not hurt Sita, and it was not because he was a good man.",
+   "meaning": "Ravana did not hurt Sita, and it was not because he was a it man. (shown as a dark story frame)",
+   "why": "ravana10 in a dark ember world while 'Ravana did not hurt Sita, and it was not because h' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "a slow move that follows the story beat"
+   },
+   "focus": {
+    "subject": "ravana10",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "ravana10"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "wall",
+       "x": 640,
+       "y": 505,
+       "s": 0.7,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "palace"
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "ravana10",
+     "x": 575,
+     "y": 573,
+     "s": 0.8,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "sita",
+     "x": 705,
+     "y": 549,
      "s": 0.72,
      "flip": -1,
      "pose": "plead",
@@ -648,17 +648,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": -10,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -954,17 +954,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.02,
-     "x": -10,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -1188,7 +1188,7 @@
     {
      "who": "hanuman",
      "x": 575,
-     "y": 587,
+     "y": 588,
      "s": 0.85,
      "flip": 1,
      "pose": "stand",
@@ -1198,7 +1198,7 @@
     {
      "who": "kanya",
      "x": 705,
-     "y": 512,
+     "y": 513,
      "s": 0.6,
      "flip": -1,
      "pose": "stand",
@@ -1208,7 +1208,7 @@
     {
      "who": "kanya",
      "x": 712,
-     "y": 497,
+     "y": 498,
      "s": 0.55,
      "flip": -1,
      "pose": "plead",
@@ -1280,17 +1280,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.03,
-     "x": -14,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -1514,7 +1514,7 @@
     {
      "who": "ravana10",
      "x": 575,
-     "y": 579,
+     "y": 578,
      "s": 0.82,
      "flip": 1,
      "pose": "stand",
@@ -1524,7 +1524,7 @@
     {
      "who": "kanya",
      "x": 705,
-     "y": 519,
+     "y": 518,
      "s": 0.62,
      "flip": -1,
      "pose": "plead",
@@ -1534,7 +1534,7 @@
     {
      "who": "kanya",
      "x": 712,
-     "y": 501,
+     "y": 500,
      "s": 0.56,
      "flip": -1,
      "pose": "plead",
@@ -1606,17 +1606,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.03,
-     "x": -14,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -1922,17 +1922,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -10,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -2217,17 +2217,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": -10,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.08,
-     "x": 14,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -2451,7 +2451,7 @@
     {
      "who": "brahma",
      "x": 575,
-     "y": 587,
+     "y": 588,
      "s": 0.85,
      "flip": 1,
      "pose": "point",
@@ -2461,7 +2461,7 @@
     {
      "who": "ravana10",
      "x": 705,
-     "y": 572,
+     "y": 573,
      "s": 0.8,
      "flip": -1,
      "pose": "plead",
@@ -2533,17 +2533,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 14,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": -14,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -2842,17 +2842,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.02,
-     "x": -14,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.09,
-     "x": 10,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -3076,7 +3076,7 @@
     {
      "who": "ravana10",
      "x": 575,
-     "y": 578,
+     "y": 579,
      "s": 0.82,
      "flip": 1,
      "pose": "stand",
@@ -3158,17 +3158,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.09,
-     "x": 10,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.03,
-     "x": -10,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -3406,7 +3406,7 @@
     {
      "who": "sita",
      "x": 575,
-     "y": 567,
+     "y": 566,
      "s": 0.78,
      "flip": 1,
      "pose": "stand",
@@ -3416,7 +3416,7 @@
     {
      "who": "ravana10",
      "x": 705,
-     "y": 579,
+     "y": 578,
      "s": 0.82,
      "flip": -1,
      "pose": "stand",
@@ -3466,17 +3466,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.03,
-     "x": -10,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -3775,17 +3775,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.06,
-     "x": 14,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -4084,17 +4084,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -4318,7 +4318,7 @@
     {
      "who": "ravana10",
      "x": 575,
-     "y": 572,
+     "y": 573,
      "s": 0.8,
      "flip": 1,
      "pose": "stand",
@@ -4328,7 +4328,7 @@
     {
      "who": "sita",
      "x": 705,
-     "y": 548,
+     "y": 549,
      "s": 0.72,
      "flip": -1,
      "pose": "stand",
@@ -4400,17 +4400,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "crane_down",
+    "move": "push_in",
     "from": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": -10,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "shake": 0,
@@ -4709,17 +4709,17 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.02,
-     "x": -10,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
@@ -4957,7 +4957,7 @@
     {
      "who": "ravana10",
      "x": 640,
-     "y": 596,
+     "y": 597,
      "s": 0.88,
      "flip": 1,
      "pose": "stand",
