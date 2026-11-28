@@ -78,9 +78,9 @@
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     }
    },
@@ -303,7 +303,7 @@
      ]
     }
    ],
-   "note": "medium pan_left: vishnu in a dark brown world while 'The Vishnu Purana tells the name of the village wh' is spoken.",
+   "note": "medium push_in: vishnu in a dark brown world while 'The Vishnu Purana tells the name of the village wh' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -341,7 +341,7 @@
     {
      "who": "vishnu",
      "x": 640,
-     "y": 588,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -380,15 +380,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     }
    },
@@ -611,7 +611,7 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark brown world while 'It even tells the name of his father.' is spoken.",
+   "note": "medium pull_out: vishnu in a dark brown world while 'It even tells the name of his father.' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -649,7 +649,7 @@
     {
      "who": "kalki",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -688,15 +688,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": -10,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     }
    },
@@ -919,7 +919,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: kalki in a dark brown world while 'The village is Shambhala.' is spoken.",
+   "note": "medium push_in: kalki in a dark brown world while 'The village is Shambhala.' is spoken.",
    "vert": {
     "focus": "kalki"
    },
@@ -957,7 +957,7 @@
     {
      "who": "rishi1",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "point",
@@ -996,15 +996,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.02,
-     "x": -10,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     }
    },
@@ -1220,7 +1220,7 @@
      ]
     }
    ],
-   "note": "medium push_in: rishi1 in a dark brown world while 'His father is a Brahmin named Vishnuyasha.' is spoken.",
+   "note": "medium pull_out: rishi1 in a dark brown world while 'His father is a Brahmin named Vishnuyasha.' is spoken.",
    "vert": {
     "focus": "rishi1"
    },
@@ -1236,33 +1236,18 @@
     "The"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#100a08",
-     "#2e1c14",
-     "#5e3a24",
-     "#9a6a3c"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a4a34",
-     "#523a28",
-     "#3a281c",
-     "#2a1c12"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "storm"
    },
    "figs": [
     {
      "who": "kalki",
      "x": 640,
-     "y": 589,
-     "s": 0.9,
+     "y": 592,
+     "s": 1.0,
      "flip": 1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "rage",
+     "prop": "sword",
      "mood": {
       "lx": 0.8
      }
@@ -1278,18 +1263,29 @@
      "w": 1280,
      "alpha": 1,
      "par": 1.0,
-     "kind": "hills_night",
-     "pal": "brown",
+     "kind": "battle_fire",
+     "pal": "ember",
      "c": 0,
      "d": 0.6
     },
     {
      "t": "pfx",
-     "k": "mist_wisps",
+     "k": "lightning_forks",
      "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
+     "y": 260,
+     "w": 560,
+     "alpha": 0.9,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "red_energy_pulse",
+     "x": 640,
+     "y": 420,
+     "w": 420,
+     "alpha": 0.8,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -1297,15 +1293,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.03,
-     "x": -14,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     }
    },
@@ -1314,7 +1310,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#9a6a3c",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -1323,7 +1319,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1333,7 +1329,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1343,7 +1339,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#6a4a34",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -1353,7 +1349,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1363,7 +1359,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#523a28",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -1371,14 +1367,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#5e3a24"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#5e3a24"
+       "col": "#7a2020"
       }
      ]
     },
@@ -1393,7 +1389,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1401,7 +1397,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1409,7 +1405,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1417,7 +1413,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1425,7 +1421,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1433,7 +1429,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1441,7 +1437,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1449,7 +1445,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1457,7 +1453,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1465,7 +1461,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1473,7 +1469,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -1481,21 +1477,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#3a281c"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#2a1c12"
+       "col": "#2a0e10"
       }
      ]
     },
@@ -1521,7 +1517,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: kalki in a dark brown world while 'The child will be Kalki.' is spoken.",
+   "note": "medium push_in: kalki in a dark ember world while 'The child will be Kalki.' is spoken.",
    "vert": {
     "focus": "kalki"
    },
@@ -1598,15 +1594,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.03,
-     "x": -14,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     }
    },
@@ -1822,7 +1818,7 @@
      ]
     }
    ],
-   "note": "medium push_in: kalki in a dark ember world while 'The same book tells us what the Kali Yuga, our age' is spoken.",
+   "note": "medium pull_out: kalki in a dark ember world while 'The same book tells us what the Kali Yuga, our age' is spoken.",
    "vert": {
     "focus": "kalki"
    },
@@ -1860,7 +1856,7 @@
     {
      "who": "kalki",
      "x": 640,
-     "y": 561,
+     "y": 562,
      "s": 0.81,
      "flip": 1,
      "pose": "stand",
@@ -1872,7 +1868,7 @@
     {
      "who": "villager",
      "x": 500,
-     "y": 573,
+     "y": 563,
      "s": 0.5,
      "flip": 1,
      "pose": "namaste",
@@ -1884,7 +1880,7 @@
     {
      "who": "villager_w",
      "x": 780,
-     "y": 573,
+     "y": 563,
      "s": 0.5,
      "flip": -1,
      "pose": "namaste",
@@ -1904,18 +1900,18 @@
      "w": 1280,
      "alpha": 1,
      "par": 1.0,
-     "kind": "hills_night",
+     "kind": "village_dusk",
      "pal": "ember",
      "c": 0,
      "d": 0.6
     },
     {
      "t": "pfx",
-     "k": "mist_wisps",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
+     "k": "smoke_plume",
+     "x": 520,
+     "y": 520,
+     "w": 220,
+     "alpha": 0.35,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -1923,15 +1919,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -10,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     }
    },
@@ -2034,7 +2030,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -2050,7 +2046,7 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -2066,7 +2062,7 @@
        "x": 630,
        "y": 508,
        "s": 0.4,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -2082,7 +2078,7 @@
        "x": 720,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -2098,7 +2094,7 @@
        "x": 810,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#3a1618"
       },
       {
@@ -2110,18 +2106,25 @@
        "col": "#3a1618"
       },
       {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "o": "hut",
+       "x": 462,
+       "y": 526,
+       "s": 0.6,
        "col": "#2a0e10"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
+       "o": "hut",
+       "x": 826,
+       "y": 524,
+       "s": 0.55,
        "col": "#2a0e10"
+      },
+      {
+       "o": "road",
+       "x": 640,
+       "y": 560,
+       "s": 1.0,
+       "col": "#3a1618"
       }
      ]
     },
@@ -2147,7 +2150,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: kalki in a dark ember world while 'People will be respected for their money, not for ' is spoken.",
+   "note": "medium push_in: kalki in a dark ember world while 'People will be respected for their money, not for ' is spoken.",
    "vert": {
     "focus": "kalki"
    },
@@ -2197,7 +2200,7 @@
     {
      "who": "villager",
      "x": 500,
-     "y": 570,
+     "y": 563,
      "s": 0.5,
      "flip": 1,
      "pose": "namaste",
@@ -2209,7 +2212,7 @@
     {
      "who": "villager_w",
      "x": 780,
-     "y": 570,
+     "y": 563,
      "s": 0.5,
      "flip": -1,
      "pose": "namaste",
@@ -2248,15 +2251,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": -10,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.08,
-     "x": 14,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     }
    },
@@ -2479,7 +2482,7 @@
      ]
     }
    ],
-   "note": "medium push_in: kalki in a dark ember world while 'People will do religion only to show others.' is spoken.",
+   "note": "medium pull_out: kalki in a dark ember world while 'People will do religion only to show others.' is spoken.",
    "vert": {
     "focus": "kalki"
    },
@@ -2529,7 +2532,7 @@
     {
      "who": "villager",
      "x": 500,
-     "y": 571,
+     "y": 561,
      "s": 0.5,
      "flip": 1,
      "pose": "namaste",
@@ -2541,7 +2544,7 @@
     {
      "who": "villager_w",
      "x": 780,
-     "y": 571,
+     "y": 561,
      "s": 0.5,
      "flip": -1,
      "pose": "namaste",
@@ -2580,15 +2583,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.08,
-     "x": 14,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": -14,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     }
    },
@@ -2811,7 +2814,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: kalki in a dark ember world while 'Families will stay together only for gain.' is spoken.",
+   "note": "medium push_in: kalki in a dark ember world while 'Families will stay together only for gain.' is spoken.",
    "vert": {
     "focus": "kalki"
    },
@@ -2849,7 +2852,7 @@
     {
      "who": "kalki",
      "x": 640,
-     "y": 562,
+     "y": 563,
      "s": 0.81,
      "flip": 1,
      "pose": "stand",
@@ -2861,7 +2864,7 @@
     {
      "who": "villager",
      "x": 500,
-     "y": 569,
+     "y": 561,
      "s": 0.5,
      "flip": 1,
      "pose": "namaste",
@@ -2873,7 +2876,7 @@
     {
      "who": "villager_w",
      "x": 780,
-     "y": 569,
+     "y": 561,
      "s": 0.5,
      "flip": -1,
      "pose": "namaste",
@@ -2912,15 +2915,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.02,
-     "x": -14,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.09,
-     "x": 10,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     }
    },
@@ -3143,7 +3146,7 @@
      ]
     }
    ],
-   "note": "medium push_in: kalki in a dark ember world while 'People will lie in court to win and cheat their ow' is spoken.",
+   "note": "medium pull_out: kalki in a dark ember world while 'People will lie in court to win and cheat their ow' is spoken.",
    "vert": {
     "focus": "kalki"
    },
@@ -3220,15 +3223,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.09,
-     "x": 10,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.03,
-     "x": -10,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     }
    },
@@ -3444,7 +3447,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: kalki in a dark ember world while 'Which of these is not true today?' is spoken.",
+   "note": "medium push_in: kalki in a dark ember world while 'Which of these is not true today?' is spoken.",
    "vert": {
     "focus": "kalki"
    },
@@ -3521,15 +3524,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.03,
-     "x": -10,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 14,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 0,
      "r": 0
     }
    },
@@ -3745,7 +3748,7 @@
      ]
     }
    ],
-   "note": "medium push_in: kalki in a dark ember world while 'But the Purana also says how it will end.' is spoken.",
+   "note": "medium pull_out: kalki in a dark ember world while 'But the Purana also says how it will end.' is spoken.",
    "vert": {
     "focus": "kalki"
    },
@@ -3758,56 +3761,62 @@
     "word": "When"
    },
    "cues": [
-    "When",
-    "divine",
-    "powers"
+    "When"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "storm"
    },
    "figs": [
     {
-     "who": "vishnu",
-     "x": 470,
-     "y": 590,
-     "s": 0.765,
+     "who": "horse",
+     "x": 640,
+     "y": 735,
+     "s": 0.82,
      "flip": 1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "anger",
      "mood": {
       "lx": 0.8
      }
     },
     {
      "who": "kalki",
-     "x": 810,
-     "y": 590,
-     "s": 0.765,
-     "flip": -1,
+     "x": 640,
+     "y": 560,
+     "s": 0.62,
+     "flip": 1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "rage",
+     "prop": "sword",
      "mood": {
       "lx": 0.8
      }
     }
    ],
-   "fx": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 452,
+     "y": 672,
+     "w": 90,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "ember_fire",
+     "x": 830,
+     "y": 672,
+     "w": 90,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "fxb": [
     {
      "t": "pfx",
@@ -3817,20 +3826,20 @@
      "w": 1280,
      "alpha": 1,
      "par": 1.0,
-     "kind": "hills_night",
-     "pal": "night",
+     "kind": "battle_fire",
+     "pal": "ember",
      "c": 0,
      "d": 0.6
     },
     {
      "t": "pfx",
-     "k": "divine_rays",
+     "k": "lightning_forks",
      "x": 640,
-     "y": 330,
-     "w": 520,
-     "alpha": 0.8,
+     "y": 260,
+     "w": 560,
+     "alpha": 0.9,
      "par": 1.0,
-     "c": 1,
+     "c": 0,
      "d": 0.6
     },
     {
@@ -3838,24 +3847,24 @@
      "k": "red_energy_pulse",
      "x": 640,
      "y": 420,
-     "w": 300,
-     "alpha": 0.8,
+     "w": 460,
+     "alpha": 0.7,
      "par": 1.0,
-     "c": 2,
+     "c": 0,
      "d": 0.6
     }
    ],
    "cam": {
     "from": {
-     "z": 1.06,
-     "x": 14,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 70,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": 64,
      "r": 0
     }
    },
@@ -3864,7 +3873,7 @@
     {
      "d": "far",
      "fog": 0.6,
-     "haze": "#5a70b0",
+     "haze": "#b04a28",
      "items": [
       {
        "o": "mountain",
@@ -3873,7 +3882,7 @@
        "s": 1.1,
        "w": 230,
        "h": 190,
-       "col": "#2a3a6a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -3883,7 +3892,7 @@
        "s": 0.9,
        "w": 200,
        "h": 130,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -3893,7 +3902,7 @@
        "s": 1.25,
        "w": 250,
        "h": 215,
-       "col": "#2a3a6a",
+       "col": "#6a2a2a",
        "snow": false
       },
       {
@@ -3903,7 +3912,7 @@
        "s": 0.95,
        "w": 210,
        "h": 150,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -3913,7 +3922,7 @@
        "s": 0.6,
        "w": 160,
        "h": 90,
-       "col": "#202e56",
+       "col": "#521e22",
        "snow": false
       },
       {
@@ -3921,14 +3930,14 @@
        "x": 500,
        "y": 200,
        "s": 1.0,
-       "col": "#24366a"
+       "col": "#7a2020"
       },
       {
        "o": "cloud",
        "x": 790,
        "y": 250,
        "s": 0.9,
-       "col": "#24366a"
+       "col": "#7a2020"
       }
      ]
     },
@@ -3943,7 +3952,7 @@
        "s": 1.0,
        "w": 1100,
        "h": 12,
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3951,7 +3960,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3959,7 +3968,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3967,7 +3976,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3975,7 +3984,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3983,7 +3992,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3991,7 +4000,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -3999,7 +4008,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4007,7 +4016,7 @@
        "y": 508,
        "s": 0.35,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4015,7 +4024,7 @@
        "y": 508,
        "s": 0.4,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4023,7 +4032,7 @@
        "y": 508,
        "s": 0.3,
        "kind": "pine",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "tree",
@@ -4031,21 +4040,21 @@
        "y": 508,
        "s": 0.35,
        "kind": "round",
-       "col": "#18224a"
+       "col": "#3a1618"
       },
       {
        "o": "rock",
        "x": 450,
        "y": 522,
        "s": 0.9,
-       "col": "#101830"
+       "col": "#2a0e10"
       },
       {
        "o": "rock",
        "x": 840,
        "y": 518,
        "s": 0.8,
-       "col": "#101830"
+       "col": "#2a0e10"
       }
      ]
     },
@@ -4071,9 +4080,9 @@
      ]
     }
    ],
-   "note": "medium crane_down: vishnu in a dark night world while 'When evil crosses every limit, Vishnu will be born' is spoken.",
+   "note": "medium push_in: horse in a dark ember world while 'When evil crosses every limit, Vishnu will be born' is spoken.",
    "vert": {
-    "focus": "vishnu"
+    "focus": "kalki"
    },
    "dx": 0
   },
@@ -4084,61 +4093,21 @@
     "word": "People's"
    },
    "cues": [
-    "Peoples",
-    "night"
+    "Peoples"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "kailash"
    },
    "figs": [
     {
-     "who": "vishnu",
+     "who": "kalki",
      "x": 640,
-     "y": 562,
-     "s": 0.81,
+     "y": 592,
+     "s": 1.0,
      "flip": 1,
-     "pose": "stand",
+     "pose": "raise",
      "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
-    },
-    {
-     "who": "villager",
-     "x": 500,
-     "y": 570,
-     "s": 0.5,
-     "flip": 1,
-     "pose": "namaste",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
-    },
-    {
-     "who": "villager_w",
-     "x": 780,
-     "y": 570,
-     "s": 0.5,
-     "flip": -1,
-     "pose": "namaste",
-     "emo": "calm",
+     "prop": "sword",
      "mood": {
       "lx": 0.8
      }
@@ -4154,29 +4123,29 @@
      "w": 1280,
      "alpha": 1,
      "par": 1.0,
-     "kind": "hills_night",
+     "kind": "kailash",
      "pal": "night",
      "c": 0,
      "d": 0.6
     },
     {
      "t": "pfx",
-     "k": "mist_wisps",
+     "k": "divine_rays",
      "x": 640,
-     "y": 540,
-     "w": 640,
+     "y": 330,
+     "w": 560,
      "alpha": 0.8,
      "par": 1.0,
-     "c": 1,
+     "c": 0,
      "d": 0.6
     },
     {
      "t": "pfx",
-     "k": "mist_wisps",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
+     "k": "smoke_plume",
+     "x": 520,
+     "y": 520,
+     "w": 220,
+     "alpha": 0.35,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -4184,15 +4153,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": -14,
-     "y": 0,
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     }
    },
@@ -4295,7 +4264,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -4311,7 +4280,7 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -4327,7 +4296,7 @@
        "x": 630,
        "y": 508,
        "s": 0.4,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -4343,7 +4312,7 @@
        "x": 720,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -4359,7 +4328,7 @@
        "x": 810,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -4371,18 +4340,25 @@
        "col": "#18224a"
       },
       {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "o": "hut",
+       "x": 462,
+       "y": 526,
+       "s": 0.6,
        "col": "#101830"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
+       "o": "hut",
+       "x": 826,
+       "y": 524,
+       "s": 0.55,
        "col": "#101830"
+      },
+      {
+       "o": "road",
+       "x": 640,
+       "y": 560,
+       "s": 1.0,
+       "col": "#18224a"
       }
      ]
     },
@@ -4408,9 +4384,9 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark night world while 'People's minds will become clear and pure, like wa' is spoken.",
+   "note": "medium pull_out: kalki in a dark night world while 'People's minds will become clear and pure, like wa' is spoken.",
    "vert": {
-    "focus": "vishnu"
+    "focus": "kalki"
    },
    "dx": 0
   },
@@ -4446,7 +4422,7 @@
     {
      "who": "vishnu",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -4466,18 +4442,18 @@
      "w": 1280,
      "alpha": 1,
      "par": 1.0,
-     "kind": "hills_night",
+     "kind": "village_dusk",
      "pal": "night",
      "c": 0,
      "d": 0.6
     },
     {
      "t": "pfx",
-     "k": "mist_wisps",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
+     "k": "smoke_plume",
+     "x": 520,
+     "y": 520,
+     "w": 220,
+     "alpha": 0.35,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -4485,15 +4461,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.08,
-     "x": 10,
-     "y": -4,
+     "z": 1.02,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": -10,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     }
    },
@@ -4596,7 +4572,7 @@
        "x": 450,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -4612,7 +4588,7 @@
        "x": 540,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -4628,7 +4604,7 @@
        "x": 630,
        "y": 508,
        "s": 0.4,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -4644,7 +4620,7 @@
        "x": 720,
        "y": 508,
        "s": 0.35,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -4660,7 +4636,7 @@
        "x": 810,
        "y": 508,
        "s": 0.3,
-       "kind": "pine",
+       "kind": "palm",
        "col": "#18224a"
       },
       {
@@ -4672,18 +4648,25 @@
        "col": "#18224a"
       },
       {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
+       "o": "hut",
+       "x": 462,
+       "y": 526,
+       "s": 0.6,
        "col": "#101830"
       },
       {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
+       "o": "hut",
+       "x": 826,
+       "y": 524,
+       "s": 0.55,
        "col": "#101830"
+      },
+      {
+       "o": "road",
+       "x": 640,
+       "y": 560,
+       "s": 1.0,
+       "col": "#18224a"
       }
      ]
     },
@@ -4709,7 +4692,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: vishnu in a dark night world while 'And the last part is the best.' is spoken.",
+   "note": "medium push_in: vishnu in a dark night world while 'And the last part is the best.' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -4732,7 +4715,7 @@
     {
      "who": "vishnu",
      "x": 640,
-     "y": 477,
+     "y": 478,
      "s": 0.81,
      "flip": 1,
      "pose": "sitpray",
@@ -4744,7 +4727,7 @@
     {
      "who": "villager",
      "x": 500,
-     "y": 569,
+     "y": 561,
      "s": 0.5,
      "flip": 1,
      "pose": "namaste",
@@ -4756,7 +4739,7 @@
     {
      "who": "villager_w",
      "x": 780,
-     "y": 569,
+     "y": 561,
      "s": 0.5,
      "flip": -1,
      "pose": "namaste",
@@ -4818,15 +4801,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.02,
-     "x": -10,
-     "y": 0,
+     "z": 1.17,
+     "x": -6,
+     "y": -6,
      "r": 0
     },
     "to": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     }
    },
@@ -4968,7 +4951,7 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark ember world while 'In earlier ages, people needed years of meditation' is spoken.",
+   "note": "medium pull_out: vishnu in a dark ember world while 'In earlier ages, people needed years of meditation' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -5041,15 +5024,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.09,
-     "x": 14,
-     "y": -4,
+     "z": 1.04,
+     "x": 6,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.03,
-     "x": -14,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": -6,
      "r": 0
     }
    },
@@ -5191,7 +5174,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: vishnu in a dark ember world while 'In the Kali Yuga, just saying God's name is enough' is spoken.",
+   "note": "medium push_in: vishnu in a dark ember world while 'In the Kali Yuga, just saying God's name is enough' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -5207,39 +5190,48 @@
     "So"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "storm"
    },
    "figs": [
     {
-     "who": "kalki",
+     "who": "horse",
      "x": 640,
-     "y": 588,
-     "s": 0.9,
+     "y": 735,
+     "s": 0.82,
      "flip": 1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "anger",
+     "mood": {
+      "lx": 0.8
+     }
+    },
+    {
+     "who": "kalki",
+     "x": 640,
+     "y": 560,
+     "s": 0.62,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "rage",
+     "prop": "sword",
      "mood": {
       "lx": 0.8
      }
     }
    ],
-   "fx": [],
+   "fx": [
+    {
+     "t": "pfx",
+     "k": "smoke_plume",
+     "x": 640,
+     "y": 560,
+     "w": 520,
+     "alpha": 0.6,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
    "fxb": [
     {
      "t": "pfx",
@@ -5249,18 +5241,18 @@
      "w": 1280,
      "alpha": 1,
      "par": 1.0,
-     "kind": "hills_night",
+     "kind": "battle_fire",
      "pal": "ember",
      "c": 0,
      "d": 0.6
     },
     {
      "t": "pfx",
-     "k": "mist_wisps",
+     "k": "lightning_forks",
      "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
+     "y": 260,
+     "w": 560,
+     "alpha": 0.9,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -5268,15 +5260,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.03,
-     "x": -14,
-     "y": 0,
+     "z": 1.13,
+     "x": -6,
+     "y": 64,
      "r": 0
     },
     "to": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 70,
      "r": 0
     }
    },
@@ -5492,7 +5484,7 @@
      ]
     }
    ],
-   "note": "medium push_in: kalki in a dark ember world while 'So when will Kalki come?' is spoken.",
+   "note": "medium pull_out: horse in a dark ember world while 'So when will Kalki come?' is spoken.",
    "vert": {
     "focus": "kalki"
    },
@@ -5508,45 +5500,30 @@
     "When"
    ],
    "bg": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
+    "k": "dusk"
    },
    "figs": [
     {
-     "who": "kalki",
-     "x": 470,
-     "y": 590,
-     "s": 0.765,
+     "who": "horse",
+     "x": 640,
+     "y": 735,
+     "s": 0.82,
      "flip": 1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "anger",
      "mood": {
       "lx": 0.8
      }
     },
     {
-     "who": "rishi1",
-     "x": 810,
-     "y": 590,
-     "s": 0.765,
-     "flip": -1,
+     "who": "kalki",
+     "x": 640,
+     "y": 560,
+     "s": 0.62,
+     "flip": 1,
      "pose": "stand",
-     "emo": "calm",
+     "emo": "rage",
+     "prop": "sword",
      "mood": {
       "lx": 0.8
      }
@@ -5562,8 +5539,8 @@
      "w": 1280,
      "alpha": 1,
      "par": 1.0,
-     "kind": "hills_night",
-     "pal": "ember",
+     "kind": "village_dusk",
+     "pal": "night",
      "c": 0,
      "d": 0.6
     },
@@ -5573,7 +5550,18 @@
      "x": 640,
      "y": 600,
      "w": 640,
-     "alpha": 0.45,
+     "alpha": 0.7,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "red_energy_pulse",
+     "x": 640,
+     "y": 420,
+     "w": 460,
+     "alpha": 0.6,
      "par": 1.0,
      "c": 0,
      "d": 0.6
@@ -5581,14 +5569,318 @@
    ],
    "cam": {
     "from": {
-     "z": 1.06,
-     "x": 10,
-     "y": -4,
+     "z": 1.0,
+     "x": 6,
+     "y": 70,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": -10,
+     "z": 1.15,
+     "x": -6,
+     "y": 64,
+     "r": 0
+    }
+   },
+   "grade": "ep07_dark",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.6,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "hut",
+       "x": 462,
+       "y": 526,
+       "s": 0.6,
+       "col": "#101830"
+      },
+      {
+       "o": "hut",
+       "x": 826,
+       "y": 524,
+       "s": 0.55,
+       "col": "#101830"
+      },
+      {
+       "o": "road",
+       "x": 640,
+       "y": 560,
+       "s": 1.0,
+       "col": "#18224a"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "note": "medium push_in: horse in a dark night world while 'When evil crosses every limit in the village of Sh' is spoken.",
+   "vert": {
+    "focus": "kalki"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s20",
+   "at": {
+    "t": 65.86,
+    "word": "Until"
+   },
+   "cues": [
+    "Until"
+   ],
+   "bg": {
+    "k": "storm"
+   },
+   "figs": [
+    {
+     "who": "kalki",
+     "x": 640,
+     "y": 592,
+     "s": 1.0,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "rage",
+     "prop": "sword",
+     "mood": {
+      "lx": 0.8
+     }
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "battle_fire",
+     "pal": "ember",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "lightning_forks",
+     "x": 640,
+     "y": 260,
+     "w": 560,
+     "alpha": 0.9,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "red_energy_pulse",
+     "x": 640,
+     "y": 420,
+     "w": 420,
+     "alpha": 0.8,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.15,
+     "x": -6,
+     "y": -6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
+     "x": 6,
      "y": 0,
      "r": 0
     }
@@ -5805,308 +6097,7 @@
      ]
     }
    ],
-   "note": "medium crane_down: kalki in a dark ember world while 'When evil crosses every limit in the village of Sh' is spoken.",
-   "vert": {
-    "focus": "kalki"
-   },
-   "dx": 0
-  },
-  {
-   "id": "s20",
-   "at": {
-    "t": 65.86,
-    "word": "Until"
-   },
-   "cues": [
-    "Until"
-   ],
-   "bg": {
-    "k": "vista",
-    "sky": [
-     "#100a08",
-     "#2e1c14",
-     "#5e3a24",
-     "#9a6a3c"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a4a34",
-     "#523a28",
-     "#3a281c",
-     "#2a1c12"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "figs": [
-    {
-     "who": "kalki",
-     "x": 640,
-     "y": 588,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
-    }
-   ],
-   "fx": [],
-   "fxb": [
-    {
-     "t": "pfx",
-     "k": "scene_kit",
-     "x": 640,
-     "y": 360,
-     "w": 1280,
-     "alpha": 1,
-     "par": 1.0,
-     "kind": "hills_night",
-     "pal": "brown",
-     "c": 0,
-     "d": 0.6
-    },
-    {
-     "t": "pfx",
-     "k": "mist_wisps",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
-     "par": 1.0,
-     "c": 0,
-     "d": 0.6
-    }
-   ],
-   "cam": {
-    "from": {
-     "z": 1.0,
-     "x": -10,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.08,
-     "x": 14,
-     "y": -4,
-     "r": 0
-    }
-   },
-   "grade": "ep07_dark",
-   "layers": [
-    {
-     "d": "far",
-     "fog": 0.6,
-     "haze": "#9a6a3c",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a4a34",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a4a34",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#5e3a24"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#5e3a24"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a281c"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a1c12"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a1c12"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "note": "medium push_in: kalki in a dark brown world while 'Until then, God's name is enough.' is spoken.",
+   "note": "medium pull_out: kalki in a dark ember world while 'Until then, God's name is enough.' is spoken.",
    "vert": {
     "focus": "kalki"
    },
