@@ -14,23 +14,23 @@
    "meaning": "Shiva once killed Yama, the god of death. (shown as a dark story frame)",
    "why": "shiva in a dark ember world while 'Shiva once killed Yama, the god of death.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
+     "z": 1.2,
+     "x": 0,
+     "y": 6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
      "x": 0,
      "y": 0,
      "r": 0
     },
-    "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "reveal: pull back from a close start to show the whole place"
    },
    "focus": {
     "subject": "shiva",
@@ -280,7 +280,7 @@
     {
      "who": "shiva",
      "x": 470,
-     "y": 588,
+     "y": 594,
      "s": 0.765,
      "flip": 1,
      "pose": "lunge",
@@ -290,7 +290,7 @@
     {
      "who": "yama",
      "x": 810,
-     "y": 588,
+     "y": 594,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -340,21 +340,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.06,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "markandeya",
@@ -604,7 +604,7 @@
     {
      "who": "markandeya",
      "x": 640,
-     "y": 589,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -654,21 +654,1298 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "calm: a slow tilt up to the figure and the sky"
+   },
+   "focus": {
+    "subject": "markandeya",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "markandeya"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "markandeya",
+     "x": 640,
+     "y": 596,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "scene_kit",
+     "word": "The",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "ember"
+    },
+    {
+     "k": "mist_wisps",
+     "word": "The",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s04",
+   "beat": 1,
+   "start": {
+    "t": 9.1,
+    "word": "His"
+   },
+   "duration": 4.72,
+   "narration": "His father, a sage named Mrikandu, had prayed to Shiva for a son.",
+   "meaning": "His father, a sage named Mrikandu, had prayed to Shiva for a son. (shown as a dark story frame)",
+   "why": "rishi2 in a dark ember world while 'His father, a sage named Mrikandu, had prayed to S' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "handheld",
+    "from": {
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
+    },
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
+   },
+   "focus": {
+    "subject": "rishi2",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "rishi2"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "devotion",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "rishi2",
+     "x": 470,
+     "y": 509,
+     "s": 0.765,
+     "flip": 1,
+     "pose": "sitpray",
+     "emo": "devotion",
+     "look": 700
+    },
+    {
+     "who": "shiva",
+     "x": 810,
+     "y": 589,
+     "s": 0.765,
+     "flip": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "scene_kit",
+     "word": "His",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "ember"
+    },
+    {
+     "k": "divine_rays",
+     "word": "His",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "alpha": 0.6,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "divine rays showing what the narration says"
+    },
+    {
+     "k": "mist_wisps",
+     "word": "His",
+     "x": 640,
+     "y": 560,
+     "w": 640,
+     "alpha": 0.7,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps showing what the narration says"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s05",
+   "beat": 1,
+   "start": {
+    "t": 13.82,
+    "word": "Shiva"
+   },
+   "duration": 1.62,
+   "narration": "Shiva gave him a choice.",
+   "meaning": "Shiva gave him a choice. (shown as a dark story frame)",
+   "why": "shiva in a dark ember world while 'Shiva gave him a choice.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.03,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.07,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
+   },
+   "focus": {
+    "subject": "shiva",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "shiva"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "shiva",
+     "x": 640,
+     "y": 591,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "scene_kit",
+     "word": "Shiva",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "ember"
+    },
+    {
+     "k": "mist_wisps",
+     "word": "Shiva",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s06",
+   "beat": 1,
+   "start": {
+    "t": 15.44,
+    "word": "He"
+   },
+   "duration": 3.3,
+   "narration": "He could have a son who was not clever but would live long,",
+   "meaning": "He could have a son who was not clever but would live long, (shown as a dark story frame)",
+   "why": "markandeya in a dark ember world while 'He could have a son who was not clever but would l' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "tilt_up",
+    "from": {
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "calm: a slow tilt up to the figure and the sky"
+   },
+   "focus": {
+    "subject": "markandeya",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "markandeya"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#2a0e10"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#12060c",
+     "#3a1018",
+     "#7a2020",
+     "#b04a28"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#6a2a2a",
+     "#521e22",
+     "#3a1618",
+     "#2a0e10"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "markandeya",
+     "x": 640,
+     "y": 596,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "scene_kit",
+     "word": "He",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "ember"
+    },
+    {
+     "k": "mist_wisps",
+     "word": "He",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s07",
+   "beat": 1,
+   "start": {
+    "t": 18.74,
+    "word": "or"
+   },
+   "duration": 3.72,
+   "narration": "or a clever son who would live only 16 years.",
+   "meaning": "or a clever son who would live only 16 years. (shown as a dark story frame)",
+   "why": "markandeya in a dark ember world while 'or a clever son who would live only 16 years.' is spoken.",
+   "camera": {
+    "shot": "wide",
+    "lens": "normal",
+    "move": "pull_out",
+    "from": {
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "markandeya",
@@ -929,1283 +2206,6 @@
    "effects": [
     {
      "k": "scene_kit",
-     "word": "The",
-     "x": 640,
-     "y": 360,
-     "w": 1280,
-     "alpha": 1,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "a full paper-cut landscape of the place where this happens",
-     "kind": "hills_night",
-     "pal": "ember"
-    },
-    {
-     "k": "mist_wisps",
-     "word": "The",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s04",
-   "beat": 1,
-   "start": {
-    "t": 9.1,
-    "word": "His"
-   },
-   "duration": 4.72,
-   "narration": "His father, a sage named Mrikandu, had prayed to Shiva for a son.",
-   "meaning": "His father, a sage named Mrikandu, had prayed to Shiva for a son. (shown as a dark story frame)",
-   "why": "rishi2 in a dark ember world while 'His father, a sage named Mrikandu, had prayed to S' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "pull_out",
-    "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.04,
-     "x": 6,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "rishi2",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "rishi2"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "devotion",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "rishi2",
-     "x": 470,
-     "y": 508,
-     "s": 0.765,
-     "flip": 1,
-     "pose": "sitpray",
-     "emo": "devotion",
-     "look": 700
-    },
-    {
-     "who": "shiva",
-     "x": 810,
-     "y": 589,
-     "s": 0.765,
-     "flip": -1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "scene_kit",
-     "word": "His",
-     "x": 640,
-     "y": 360,
-     "w": 1280,
-     "alpha": 1,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "a full paper-cut landscape of the place where this happens",
-     "kind": "hills_night",
-     "pal": "ember"
-    },
-    {
-     "k": "divine_rays",
-     "word": "His",
-     "x": 640,
-     "y": 330,
-     "w": 520,
-     "alpha": 0.6,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "divine rays showing what the narration says"
-    },
-    {
-     "k": "mist_wisps",
-     "word": "His",
-     "x": 640,
-     "y": 560,
-     "w": 640,
-     "alpha": 0.7,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "mist wisps showing what the narration says"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s05",
-   "beat": 1,
-   "start": {
-    "t": 13.82,
-    "word": "Shiva"
-   },
-   "duration": 1.62,
-   "narration": "Shiva gave him a choice.",
-   "meaning": "Shiva gave him a choice. (shown as a dark story frame)",
-   "why": "shiva in a dark ember world while 'Shiva gave him a choice.' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "push_in",
-    "from": {
-     "z": 1.04,
-     "x": 6,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "shiva",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "shiva"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "shiva",
-     "x": 640,
-     "y": 589,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "scene_kit",
-     "word": "Shiva",
-     "x": 640,
-     "y": 360,
-     "w": 1280,
-     "alpha": 1,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "a full paper-cut landscape of the place where this happens",
-     "kind": "hills_night",
-     "pal": "ember"
-    },
-    {
-     "k": "mist_wisps",
-     "word": "Shiva",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s06",
-   "beat": 1,
-   "start": {
-    "t": 15.44,
-    "word": "He"
-   },
-   "duration": 3.3,
-   "narration": "He could have a son who was not clever but would live long,",
-   "meaning": "He could have a son who was not clever but would live long, (shown as a dark story frame)",
-   "why": "markandeya in a dark ember world while 'He could have a son who was not clever but would l' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "pull_out",
-    "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.0,
-     "x": 6,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "markandeya",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "markandeya"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "markandeya",
-     "x": 640,
-     "y": 588,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "scene_kit",
-     "word": "He",
-     "x": 640,
-     "y": 360,
-     "w": 1280,
-     "alpha": 1,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "a full paper-cut landscape of the place where this happens",
-     "kind": "hills_night",
-     "pal": "ember"
-    },
-    {
-     "k": "mist_wisps",
-     "word": "He",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s07",
-   "beat": 1,
-   "start": {
-    "t": 18.74,
-    "word": "or"
-   },
-   "duration": 3.72,
-   "narration": "or a clever son who would live only 16 years.",
-   "meaning": "or a clever son who would live only 16 years. (shown as a dark story frame)",
-   "why": "markandeya in a dark ember world while 'or a clever son who would live only 16 years.' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "push_in",
-    "from": {
-     "z": 1.0,
-     "x": 6,
-     "y": 0,
-     "r": 0
-    },
-    "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "markandeya",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "markandeya"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#2a0e10"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#12060c",
-     "#3a1018",
-     "#7a2020",
-     "#b04a28"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#6a2a2a",
-     "#521e22",
-     "#3a1618",
-     "#2a0e10"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "markandeya",
-     "x": 640,
-     "y": 589,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "scene_kit",
      "word": "or",
      "x": 640,
      "y": 360,
@@ -2245,21 +2245,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "rishi2",
@@ -2509,7 +2509,7 @@
     {
      "who": "rishi2",
      "x": 470,
-     "y": 589,
+     "y": 592,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -2519,7 +2519,7 @@
     {
      "who": "markandeya",
      "x": 810,
-     "y": 589,
+     "y": 592,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -2569,21 +2569,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "markandeya",
@@ -2833,7 +2833,7 @@
     {
      "who": "markandeya",
      "x": 470,
-     "y": 588,
+     "y": 597,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -2843,7 +2843,7 @@
     {
      "who": "shiva",
      "x": 810,
-     "y": 588,
+     "y": 597,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -2907,7 +2907,7 @@
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "yama",
@@ -3211,23 +3211,23 @@
    "meaning": "The boy was scared. (shown as a dark story frame)",
    "why": "markandeya in a dark night world while 'The boy was scared.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "close",
     "lens": "normal",
     "move": "push_in",
     "from": {
      "z": 1.04,
-     "x": 70,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
+     "z": 1.19,
+     "x": 0,
      "y": -6,
-     "r": 0
+     "r": 0.025
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "tension builds: a slow push toward the face with a slight tilt"
    },
    "focus": {
     "subject": "markandeya",
@@ -3476,8 +3476,8 @@
    "characters": [
     {
      "who": "markandeya",
-     "x": 575,
-     "y": 542,
+     "x": 570,
+     "y": 543,
      "s": 0.7,
      "flip": 1,
      "pose": "stand",
@@ -3502,8 +3502,8 @@
     {
      "k": "lingam",
      "word": "The",
-     "x": 690,
-     "y": 620,
+     "x": 655,
+     "y": 640,
      "w": 240,
      "alpha": 1,
      "par": 1.0,
@@ -3539,21 +3539,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "handheld",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "to": {
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
+    },
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "markandeya",
@@ -3728,9 +3728,9 @@
    "characters": [
     {
      "who": "markandeya",
-     "x": 585,
-     "y": 469,
-     "s": 0.7,
+     "x": 575,
+     "y": 462,
+     "s": 0.66,
      "flip": 1,
      "pose": "sitpray",
      "emo": "devotion",
@@ -3754,9 +3754,9 @@
     {
      "k": "lingam",
      "word": "He",
-     "x": 690,
-     "y": 620,
-     "w": 250,
+     "x": 660,
+     "y": 640,
+     "w": 230,
      "alpha": 1,
      "par": 1.0,
      "behind": false,
@@ -3766,7 +3766,7 @@
     {
      "k": "divine_rays",
      "word": "He",
-     "x": 745,
+     "x": 660,
      "y": 420,
      "w": 520,
      "alpha": 0.7,
@@ -3791,21 +3791,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "handheld",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": 0.04
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "yama",
@@ -3965,7 +3965,7 @@
     {
      "who": "yama",
      "x": 545,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "throw",
@@ -3974,8 +3974,8 @@
     },
     {
      "who": "markandeya",
-     "x": 790,
-     "y": 430,
+     "x": 700,
+     "y": 431,
      "s": 0.5,
      "flip": 1,
      "pose": "sitpray",
@@ -4000,9 +4000,9 @@
     {
      "k": "lingam",
      "word": "Yama",
-     "x": 700,
-     "y": 640,
-     "w": 200,
+     "x": 610,
+     "y": 655,
+     "w": 190,
      "alpha": 1,
      "par": 1.0,
      "behind": false,
@@ -4012,8 +4012,8 @@
     {
      "k": "noose",
      "word": "Yama",
-     "x": 700,
-     "y": 560,
+     "x": 545,
+     "y": 570,
      "w": 420,
      "alpha": 1,
      "par": 1.0,
@@ -4035,23 +4035,23 @@
    "meaning": "This made Shiva it angry. (shown as a dark story frame)",
    "why": "shiva in a dark ember world while 'This made Shiva it angry.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "close",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "push_in",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.03,
+     "x": 0,
      "y": 0,
      "r": 0
     },
+    "to": {
+     "z": 1.18,
+     "x": 0,
+     "y": -6,
+     "r": -0.025
+    },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "tension builds: a slow push toward the face with a slight tilt"
    },
    "focus": {
     "subject": "shiva",
@@ -4285,7 +4285,7 @@
     {
      "who": "shiva",
      "x": 600,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "rage",
@@ -4310,8 +4310,8 @@
     {
      "k": "lingam",
      "word": "This",
-     "x": 720,
-     "y": 650,
+     "x": 700,
+     "y": 655,
      "w": 170,
      "alpha": 1,
      "par": 1.0,
@@ -4358,21 +4358,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "handheld",
     "from": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": 0.04
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "shiva",
@@ -4542,7 +4542,7 @@
     {
      "who": "yama",
      "x": 800,
-     "y": 539,
+     "y": 540,
      "s": 0.6,
      "flip": -1,
      "pose": "fall",
@@ -4567,7 +4567,7 @@
     {
      "k": "lingam",
      "word": "He",
-     "x": 620,
+     "x": 640,
      "y": 690,
      "w": 190,
      "alpha": 1,
@@ -4613,23 +4613,23 @@
    "meaning": "But now no one was left to take care of death. (shown as a dark story frame)",
    "why": "yama in a dark ember world while 'But now no one was left to take care of death.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.03,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "yama",
@@ -4789,7 +4789,7 @@
     {
      "who": "yama",
      "x": 640,
-     "y": 590,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -4850,21 +4850,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "shiva",
@@ -5084,7 +5084,7 @@
     {
      "who": "shiva",
      "x": 470,
-     "y": 588,
+     "y": 592,
      "s": 0.765,
      "flip": 1,
      "pose": "plead",
@@ -5094,7 +5094,7 @@
     {
      "who": "yama",
      "x": 810,
-     "y": 588,
+     "y": 592,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -5155,21 +5155,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "shiva",
@@ -5389,7 +5389,7 @@
     {
      "who": "shiva",
      "x": 470,
-     "y": 589,
+     "y": 597,
      "s": 0.765,
      "flip": 1,
      "pose": "namaste",
@@ -5399,7 +5399,7 @@
     {
      "who": "markandeya",
      "x": 810,
-     "y": 589,
+     "y": 597,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -5460,21 +5460,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "handheld",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": 0.04
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "shiva",
@@ -5724,7 +5724,7 @@
     {
      "who": "shiva",
      "x": 470,
-     "y": 588,
+     "y": 589,
      "s": 0.765,
      "flip": 1,
      "pose": "lunge",
@@ -5734,7 +5734,7 @@
     {
      "who": "yama",
      "x": 810,
-     "y": 588,
+     "y": 589,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -5782,23 +5782,23 @@
    "meaning": "Because of this, he is also called Kalantaka, the one who ended Yama. (shown as a dark story frame)",
    "why": "yama in a dark ember world while 'Because of this, he is also called Kalantaka, the ' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.1,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "closing: slowly pull back as the story ends"
    },
    "focus": {
     "subject": "yama",
@@ -6048,7 +6048,7 @@
     {
      "who": "yama",
      "x": 640,
-     "y": 589,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",

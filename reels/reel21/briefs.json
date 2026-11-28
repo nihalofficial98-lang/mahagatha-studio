@@ -14,23 +14,23 @@
    "meaning": "Hanuman threw mountains at Kumbhakarna. (shown as a dark story frame)",
    "why": "hanuman in a dark ember world while 'Hanuman threw mountains at Kumbhakarna.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
+     "z": 1.2,
+     "x": 0,
+     "y": 6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
      "x": 0,
      "y": 0,
      "r": 0
     },
-    "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "reveal: pull back from a close start to show the whole place"
    },
    "focus": {
     "subject": "hanuman",
@@ -280,7 +280,7 @@
     {
      "who": "hanuman",
      "x": 470,
-     "y": 634,
+     "y": 640,
      "s": 0.918,
      "flip": 1,
      "pose": "throw",
@@ -291,7 +291,7 @@
     {
      "who": "kumbhakarna",
      "x": 810,
-     "y": 652,
+     "y": 658,
      "s": 0.9774999999999999,
      "flip": -1,
      "pose": "stand",
@@ -301,7 +301,7 @@
     {
      "who": "sugriva",
      "x": 458,
-     "y": 554,
+     "y": 560,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -311,7 +311,7 @@
     {
      "who": "sugriva",
      "x": 498,
-     "y": 554,
+     "y": 560,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -321,7 +321,7 @@
     {
      "who": "sugriva",
      "x": 538,
-     "y": 554,
+     "y": 560,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -331,7 +331,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 554,
+     "y": 560,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -341,7 +341,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 554,
+     "y": 560,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -351,7 +351,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 554,
+     "y": 560,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -434,21 +434,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "handheld",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "to": {
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
+    },
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "kumbhakarna",
@@ -852,21 +852,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "kumbhakarna",
@@ -1086,7 +1086,7 @@
     {
      "who": "kumbhakarna",
      "x": 640,
-     "y": 665,
+     "y": 671,
      "s": 1.15,
      "flip": 1,
      "pose": "stand",
@@ -1096,7 +1096,7 @@
     {
      "who": "sugriva",
      "x": 458,
-     "y": 585,
+     "y": 591,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -1106,7 +1106,7 @@
     {
      "who": "sugriva",
      "x": 498,
-     "y": 585,
+     "y": 591,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -1116,7 +1116,7 @@
     {
      "who": "sugriva",
      "x": 538,
-     "y": 585,
+     "y": 591,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -1126,7 +1126,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 585,
+     "y": 591,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -1136,7 +1136,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 585,
+     "y": 591,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -1146,7 +1146,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 585,
+     "y": 591,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -1216,23 +1216,23 @@
    "meaning": "Kumbhakarna was a giant, and mountains did not stop him. (shown as a dark story frame)",
    "why": "kumbhakarna in a dark ember world while 'Kumbhakarna was a giant, and mountains did not sto' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "kumbhakarna",
@@ -1584,21 +1584,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "handheld",
     "from": {
      "z": 1.04,
-     "x": 6,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": 0.04
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "kumbhakarna",
@@ -1765,7 +1765,7 @@
     {
      "who": "kumbhakarna",
      "x": 640,
-     "y": 664,
+     "y": 665,
      "s": 1.15,
      "flip": 1,
      "pose": "lunge",
@@ -1775,7 +1775,7 @@
     {
      "who": "sugriva",
      "x": 458,
-     "y": 584,
+     "y": 585,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -1785,7 +1785,7 @@
     {
      "who": "sugriva",
      "x": 498,
-     "y": 584,
+     "y": 585,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -1795,7 +1795,7 @@
     {
      "who": "sugriva",
      "x": 538,
-     "y": 584,
+     "y": 585,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -1805,7 +1805,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 584,
+     "y": 585,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -1815,7 +1815,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 584,
+     "y": 585,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -1825,7 +1825,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 584,
+     "y": 585,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -1908,21 +1908,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "hanuman",
@@ -2089,7 +2089,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 643,
+     "y": 650,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -2100,7 +2100,7 @@
     {
      "who": "sugriva",
      "x": 458,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -2110,7 +2110,7 @@
     {
      "who": "sugriva",
      "x": 498,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -2120,7 +2120,7 @@
     {
      "who": "sugriva",
      "x": 538,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -2130,7 +2130,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -2140,7 +2140,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -2150,7 +2150,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -2220,23 +2220,23 @@
    "meaning": "with blood coming out of his mouth, but he did not lose. (shown as a dark story frame)",
    "why": "hanuman in a dark ember world while 'with blood coming out of his mouth, but he did not' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "hanuman",
@@ -2486,7 +2486,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 643,
+     "y": 644,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -2497,7 +2497,7 @@
     {
      "who": "sugriva",
      "x": 458,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -2507,7 +2507,7 @@
     {
      "who": "sugriva",
      "x": 498,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -2517,7 +2517,7 @@
     {
      "who": "sugriva",
      "x": 538,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -2527,7 +2527,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -2537,7 +2537,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -2547,7 +2547,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -2630,21 +2630,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "handheld",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "to": {
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
+    },
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "kumbhakarna",
@@ -3048,21 +3048,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "hanuman",
@@ -3312,7 +3312,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 644,
+     "y": 650,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -3323,7 +3323,7 @@
     {
      "who": "sugriva",
      "x": 458,
-     "y": 564,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -3333,7 +3333,7 @@
     {
      "who": "sugriva",
      "x": 498,
-     "y": 564,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -3343,7 +3343,7 @@
     {
      "who": "sugriva",
      "x": 538,
-     "y": 564,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -3353,7 +3353,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 564,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -3363,7 +3363,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 564,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -3373,7 +3373,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 564,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -3443,23 +3443,23 @@
    "meaning": "Later, Kumbhakarna caught Sugriva. (shown as a dark story frame)",
    "why": "kumbhakarna in a dark ember world while 'Later, Kumbhakarna caught Sugriva.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "kumbhakarna",
@@ -3709,7 +3709,7 @@
     {
      "who": "kumbhakarna",
      "x": 470,
-     "y": 652,
+     "y": 655,
      "s": 0.9774999999999999,
      "flip": 1,
      "pose": "stand",
@@ -3719,7 +3719,7 @@
     {
      "who": "sugriva",
      "x": 810,
-     "y": 589,
+     "y": 592,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -3730,7 +3730,7 @@
     {
      "who": "sugriva",
      "x": 458,
-     "y": 572,
+     "y": 575,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -3740,7 +3740,7 @@
     {
      "who": "sugriva",
      "x": 498,
-     "y": 572,
+     "y": 575,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -3750,7 +3750,7 @@
     {
      "who": "sugriva",
      "x": 538,
-     "y": 572,
+     "y": 575,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -3760,7 +3760,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 572,
+     "y": 575,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -3770,7 +3770,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 572,
+     "y": 575,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -3780,7 +3780,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 572,
+     "y": 575,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -3852,21 +3852,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "hanuman",
@@ -4116,7 +4116,7 @@
     {
      "who": "hanuman",
      "x": 470,
-     "y": 634,
+     "y": 637,
      "s": 0.918,
      "flip": 1,
      "pose": "stand",
@@ -4127,7 +4127,7 @@
     {
      "who": "kumbhakarna",
      "x": 810,
-     "y": 652,
+     "y": 655,
      "s": 0.9774999999999999,
      "flip": -1,
      "pose": "stand",
@@ -4137,7 +4137,7 @@
     {
      "who": "sugriva",
      "x": 458,
-     "y": 554,
+     "y": 557,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4147,7 +4147,7 @@
     {
      "who": "sugriva",
      "x": 498,
-     "y": 554,
+     "y": 557,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -4157,7 +4157,7 @@
     {
      "who": "sugriva",
      "x": 538,
-     "y": 554,
+     "y": 557,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4167,7 +4167,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 554,
+     "y": 557,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4177,7 +4177,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 554,
+     "y": 557,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -4187,7 +4187,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 554,
+     "y": 557,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4259,21 +4259,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "sugriva",
@@ -4523,7 +4523,7 @@
     {
      "who": "sugriva",
      "x": 640,
-     "y": 588,
+     "y": 596,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -4534,7 +4534,7 @@
     {
      "who": "hanuman",
      "x": 458,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4544,7 +4544,7 @@
     {
      "who": "hanuman",
      "x": 498,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -4554,7 +4554,7 @@
     {
      "who": "hanuman",
      "x": 538,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4564,7 +4564,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4574,7 +4574,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -4584,7 +4584,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4654,23 +4654,23 @@
    "meaning": "Kumbhakarna kept fighting until he met Rama. (shown as a dark story frame)",
    "why": "kumbhakarna in a dark indigo world while 'Kumbhakarna kept fighting until he met Rama.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "kumbhakarna",
@@ -4837,7 +4837,7 @@
     {
      "who": "kumbhakarna",
      "x": 470,
-     "y": 652,
+     "y": 655,
      "s": 0.9774999999999999,
      "flip": 1,
      "pose": "stand",
@@ -4847,7 +4847,7 @@
     {
      "who": "rama",
      "x": 810,
-     "y": 588,
+     "y": 592,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -4857,7 +4857,7 @@
     {
      "who": "sugriva",
      "x": 458,
-     "y": 572,
+     "y": 575,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4867,7 +4867,7 @@
     {
      "who": "sugriva",
      "x": 498,
-     "y": 572,
+     "y": 575,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -4877,7 +4877,7 @@
     {
      "who": "sugriva",
      "x": 538,
-     "y": 572,
+     "y": 575,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4887,7 +4887,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 572,
+     "y": 575,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4897,7 +4897,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 572,
+     "y": 575,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -4907,7 +4907,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 572,
+     "y": 575,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4979,21 +4979,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "handheld",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "to": {
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
+    },
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "rama",
@@ -5160,7 +5160,7 @@
     {
      "who": "rama",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "fall",
@@ -5170,7 +5170,7 @@
     {
      "who": "sugriva",
      "x": 458,
-     "y": 509,
+     "y": 510,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -5180,7 +5180,7 @@
     {
      "who": "sugriva",
      "x": 498,
-     "y": 509,
+     "y": 510,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -5190,7 +5190,7 @@
     {
      "who": "sugriva",
      "x": 538,
-     "y": 509,
+     "y": 510,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -5200,7 +5200,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 509,
+     "y": 510,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -5210,7 +5210,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 509,
+     "y": 510,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -5220,7 +5220,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 509,
+     "y": 510,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -5303,21 +5303,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "hanuman",
@@ -5484,7 +5484,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 644,
+     "y": 650,
      "s": 1.08,
      "flip": 1,
      "pose": "lunge",
@@ -5495,7 +5495,7 @@
     {
      "who": "sugriva",
      "x": 458,
-     "y": 564,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -5505,7 +5505,7 @@
     {
      "who": "sugriva",
      "x": 498,
-     "y": 564,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -5515,7 +5515,7 @@
     {
      "who": "sugriva",
      "x": 538,
-     "y": 564,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -5525,7 +5525,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 564,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -5535,7 +5535,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 564,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -5545,7 +5545,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 564,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -5626,23 +5626,23 @@
    "meaning": "In the end, it took Rama to stop Kumbhakarna. (shown as a dark story frame)",
    "why": "rama in a dark indigo world while 'In the end, it took Rama to stop Kumbhakarna.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.1,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "closing: slowly pull back as the story ends"
    },
    "focus": {
     "subject": "rama",
@@ -5892,7 +5892,7 @@
     {
      "who": "rama",
      "x": 470,
-     "y": 589,
+     "y": 591,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -5902,7 +5902,7 @@
     {
      "who": "kumbhakarna",
      "x": 810,
-     "y": 652,
+     "y": 655,
      "s": 0.9774999999999999,
      "flip": -1,
      "pose": "stand",
@@ -5912,7 +5912,7 @@
     {
      "who": "sugriva",
      "x": 458,
-     "y": 509,
+     "y": 515,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -5922,7 +5922,7 @@
     {
      "who": "sugriva",
      "x": 498,
-     "y": 509,
+     "y": 515,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -5932,7 +5932,7 @@
     {
      "who": "sugriva",
      "x": 538,
-     "y": 509,
+     "y": 515,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -5942,7 +5942,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 509,
+     "y": 515,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -5952,7 +5952,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 509,
+     "y": 515,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -5962,7 +5962,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 509,
+     "y": 515,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",

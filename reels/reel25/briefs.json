@@ -14,23 +14,23 @@
    "meaning": "The whole universe sits on one hood of Sheshnag, (shown as a dark story frame)",
    "why": "The scene in a dark night world while 'The whole universe sits on one hood of Sheshnag,' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
+     "z": 1.2,
+     "x": 0,
+     "y": 6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
      "x": 0,
      "y": 0,
      "r": 0
     },
-    "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "reveal: pull back from a close start to show the whole place"
    },
    "focus": {
     "subject": "scene",
@@ -311,21 +311,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.06,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "scene",
@@ -608,21 +608,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "scene",
@@ -903,23 +903,23 @@
    "meaning": "The Bhagavata Purana tells how the worlds were made. (shown as a dark story frame)",
    "why": "vishnu_rest in a dark teal world while 'The Bhagavata Purana tells how the worlds were mad' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "vishnu_rest",
@@ -1153,7 +1153,7 @@
     {
      "who": "vishnu_rest",
      "x": 640,
-     "y": 603,
+     "y": 604,
      "s": 0.9,
      "flip": 1,
      "pose": "lie",
@@ -1203,21 +1203,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "vishnu_rest",
@@ -1343,7 +1343,7 @@
     {
      "who": "vishnu_rest",
      "x": 640,
-     "y": 602,
+     "y": 604,
      "s": 0.9,
      "flip": 1,
      "pose": "lie",
@@ -1404,21 +1404,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "vishnu_rest",
@@ -1652,7 +1652,7 @@
     {
      "who": "vishnu_rest",
      "x": 640,
-     "y": 572,
+     "y": 580,
      "s": 0.8,
      "flip": 1,
      "pose": "lie",
@@ -1662,7 +1662,7 @@
     {
      "who": "brahma",
      "x": 640,
-     "y": 412,
+     "y": 420,
      "s": 0.62,
      "flip": 1,
      "pose": "stand",
@@ -1721,23 +1721,23 @@
    "meaning": "Inside the stem of the lotus, Brahma made 14 worlds, one below the other. (shown as a dark story frame)",
    "why": "brahma in a dark night world while 'Inside the stem of the lotus, Brahma made 14 world' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "brahma",
@@ -1971,7 +1971,7 @@
     {
      "who": "brahma",
      "x": 640,
-     "y": 400,
+     "y": 399,
      "s": 0.62,
      "flip": 1,
      "pose": "stand",
@@ -2164,21 +2164,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "brahma",
@@ -2412,7 +2412,7 @@
     {
      "who": "brahma",
      "x": 640,
-     "y": 400,
+     "y": 399,
      "s": 0.62,
      "flip": 1,
      "pose": "stand",
@@ -2605,21 +2605,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "scene",
@@ -3044,21 +3044,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "handheld",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
      "z": 1.04,
-     "x": 6,
+     "x": 0,
      "y": 0,
      "r": 0
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "to": {
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
+    },
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "scene",
@@ -3375,21 +3375,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.07,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "scene",
@@ -3672,21 +3672,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "scene",
@@ -3968,23 +3968,23 @@
    "meaning": "and Vishnu, as a giant tortoise, holds Sheshnag up. (shown as a dark story frame)",
    "why": "The scene in a dark teal world while 'and Vishnu, as a giant tortoise, holds Sheshnag up' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "scene",
@@ -4267,21 +4267,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "scene",
@@ -4564,21 +4564,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "scene",
@@ -4859,23 +4859,23 @@
    "meaning": "So the whole universe sits on one hood of Sheshnag, (shown as a dark story frame)",
    "why": "The scene in a dark night world while 'So the whole universe sits on one hood of Sheshnag' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "scene",
@@ -5156,21 +5156,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "scene",
@@ -5451,23 +5451,23 @@
    "meaning": "That is why we cannot see him. (shown as a dark story frame)",
    "why": "The scene in a dark night world while 'That is why we cannot see him.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.1,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
      "z": 1.0,
-     "x": 6,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "closing: slowly pull back as the story ends"
    },
    "focus": {
     "subject": "scene",

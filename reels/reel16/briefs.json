@@ -14,23 +14,23 @@
    "meaning": "A demon beat Indra and took heaven. (shown as a dark story frame)",
    "why": "bala in a dark indigo world while 'A demon beat Indra and took heaven.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
+     "z": 1.2,
+     "x": 0,
+     "y": 6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
      "x": 0,
      "y": 0,
      "r": 0
     },
-    "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "reveal: pull back from a close start to show the whole place"
    },
    "focus": {
     "subject": "bala",
@@ -197,7 +197,7 @@
     {
      "who": "bala",
      "x": 470,
-     "y": 588,
+     "y": 594,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -207,7 +207,7 @@
     {
      "who": "indra",
      "x": 810,
-     "y": 588,
+     "y": 594,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -266,23 +266,23 @@
    "meaning": "No god could kill him. (shown as a dark story frame)",
    "why": "deva_thin in a dark indigo world while 'No god could kill him.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "close",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "push_in",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
      "z": 1.02,
-     "x": 6,
+     "x": 0,
      "y": 0,
      "r": 0
     },
+    "to": {
+     "z": 1.17,
+     "x": 0,
+     "y": -6,
+     "r": -0.025
+    },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "tension builds: a slow push toward the face with a slight tilt"
    },
    "focus": {
     "subject": "deva_thin",
@@ -449,7 +449,7 @@
     {
      "who": "deva_thin",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -510,21 +510,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "deva_thin",
@@ -774,7 +774,7 @@
     {
      "who": "deva_thin",
      "x": 640,
-     "y": 590,
+     "y": 596,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -822,23 +822,23 @@
    "meaning": "Bala was a demon king, but his heart was kind. (shown as a dark story frame)",
    "why": "bala in a dark indigo world while 'Bala was a demon king, but his heart was kind.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "bala",
@@ -1138,21 +1138,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "bala",
@@ -1402,7 +1402,7 @@
     {
      "who": "bala",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "plead",
@@ -1452,21 +1452,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "indra",
@@ -1686,7 +1686,7 @@
     {
      "who": "indra",
      "x": 640,
-     "y": 562,
+     "y": 569,
      "s": 0.81,
      "flip": 1,
      "pose": "stand",
@@ -1696,7 +1696,7 @@
     {
      "who": "deva_thin",
      "x": 500,
-     "y": 565,
+     "y": 577,
      "s": 0.5,
      "flip": 1,
      "pose": "plead",
@@ -1706,7 +1706,7 @@
     {
      "who": "deva_thin2",
      "x": 780,
-     "y": 565,
+     "y": 577,
      "s": 0.5,
      "flip": -1,
      "pose": "plead",
@@ -1781,7 +1781,7 @@
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "bala",
@@ -2068,21 +2068,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
      "z": 1.04,
-     "x": 70,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.08,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "bala",
@@ -2302,7 +2302,7 @@
     {
      "who": "bala",
      "x": 640,
-     "y": 590,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -2374,21 +2374,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "indra",
@@ -2608,7 +2608,7 @@
     {
      "who": "indra",
      "x": 640,
-     "y": 590,
+     "y": 596,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -2667,23 +2667,23 @@
    "meaning": "The gods held their yajna. (shown as a dark story frame)",
    "why": "indra in a dark ember world while 'The gods held their yajna.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "indra",
@@ -2913,7 +2913,7 @@
     {
      "who": "deva_thin",
      "x": 500,
-     "y": 561,
+     "y": 577,
      "s": 0.5,
      "flip": 1,
      "pose": "plead",
@@ -2923,7 +2923,7 @@
     {
      "who": "deva_thin2",
      "x": 780,
-     "y": 561,
+     "y": 577,
      "s": 0.5,
      "flip": -1,
      "pose": "plead",
@@ -2995,21 +2995,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "indra",
@@ -3229,7 +3229,7 @@
     {
      "who": "indra",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -3301,21 +3301,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "bala",
@@ -3565,7 +3565,7 @@
     {
      "who": "bala",
      "x": 640,
-     "y": 588,
+     "y": 596,
      "s": 0.9,
      "flip": 1,
      "pose": "plead",
@@ -3613,23 +3613,23 @@
    "meaning": "The hall froze. (shown as a dark story frame)",
    "why": "bala in a dark ember world while 'The hall froze.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "close",
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
+     "z": 1.2,
+     "x": 0,
      "y": -6,
-     "r": 0
+     "r": 0.025
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "tension builds: a slow push toward the face with a slight tilt"
    },
    "focus": {
     "subject": "bala",
@@ -3879,7 +3879,7 @@
     {
      "who": "bala",
      "x": 640,
-     "y": 589,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -3943,7 +3943,7 @@
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "bala",
@@ -4249,21 +4249,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.04,
-     "x": 70,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "bala",
@@ -4513,7 +4513,7 @@
     {
      "who": "bala",
      "x": 640,
-     "y": 590,
+     "y": 596,
      "s": 0.9,
      "flip": 1,
      "pose": "point",
@@ -4561,23 +4561,23 @@
    "meaning": "The flames took his body. (shown as a dark story frame)",
    "why": "bala in a dark ember world while 'The flames took his body.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "bala",
@@ -4888,21 +4888,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "bala",
@@ -5152,7 +5152,7 @@
     {
      "who": "bala",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -5202,21 +5202,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.08,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "bala",
@@ -5466,7 +5466,7 @@
     {
      "who": "bala",
      "x": 640,
-     "y": 588,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -5525,23 +5525,23 @@
    "meaning": "The gods tried to lift it to heaven, but it slipped. (shown as a dark story frame)",
    "why": "indra in a dark ember world while 'The gods tried to lift it to heaven, but it slippe' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.08,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "indra",
@@ -5761,7 +5761,7 @@
     {
      "who": "indra",
      "x": 640,
-     "y": 562,
+     "y": 564,
      "s": 0.81,
      "flip": 1,
      "pose": "stand",
@@ -5771,7 +5771,7 @@
     {
      "who": "deva_thin",
      "x": 500,
-     "y": 563,
+     "y": 574,
      "s": 0.5,
      "flip": 1,
      "pose": "plead",
@@ -5781,7 +5781,7 @@
     {
      "who": "deva_thin2",
      "x": 780,
-     "y": 563,
+     "y": 574,
      "s": 0.5,
      "flip": -1,
      "pose": "plead",
@@ -5842,21 +5842,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "handheld",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "to": {
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
+    },
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "scene",
@@ -6156,21 +6156,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "handheld",
     "from": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": 0.04
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "scene",
@@ -6470,21 +6470,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "handheld",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
      "z": 1.04,
-     "x": 6,
+     "x": 0,
      "y": 0,
      "r": 0
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "to": {
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
+    },
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "scene",
@@ -6784,21 +6784,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "handheld",
     "from": {
      "z": 1.04,
-     "x": 6,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": 0.04
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "scene",
@@ -7098,21 +7098,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "scene",
@@ -7412,21 +7412,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "handheld",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": 0.04
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "scene",
@@ -7726,21 +7726,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.03,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.07,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "scene",
@@ -8040,21 +8040,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "handheld",
     "from": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": 0.04
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "scene",
@@ -8445,337 +8445,23 @@
    "meaning": "That is why Bala agreed to die. (shown as a dark story frame)",
    "why": "bala in a dark night world while 'That is why Bala agreed to die.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.04,
-     "x": 6,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "bala",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "bala"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#5a70b0",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#2a3a6a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#202e56",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#24366a"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#24366a"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#18224a"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#18224a"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#101830"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#101830"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "vista",
-    "sky": [
-     "#06060e",
-     "#101a38",
-     "#24366a",
-     "#5a70b0"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#2a3a6a",
-     "#202e56",
-     "#18224a",
-     "#101830"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "bala",
-     "x": 640,
-     "y": 590,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "scene_kit",
-     "word": "That",
-     "x": 640,
-     "y": 360,
-     "w": 1280,
-     "alpha": 1,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "a full paper-cut landscape of the place where this happens",
-     "kind": "hills_night",
-     "pal": "night"
-    },
-    {
-     "k": "mist_wisps",
-     "word": "That",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "mist wisps giving the hills its atmosphere"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s29",
-   "beat": 1,
-   "start": {
-    "t": 79.98,
-    "word": "He"
-   },
-   "duration": 2.82,
-   "narration": "He could never say no to anyone who asked.",
-   "meaning": "He could never say no to anyone who asked. (shown as a dark story frame)",
-   "why": "bala in a dark night world while 'He could never say no to anyone who asked.' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "push_in",
-    "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.03,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "bala",
@@ -9028,6 +8714,320 @@
      "y": 589,
      "s": 0.9,
      "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "scene_kit",
+     "word": "That",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "hills_night",
+     "pal": "night"
+    },
+    {
+     "k": "mist_wisps",
+     "word": "That",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "mist wisps giving the hills its atmosphere"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s29",
+   "beat": 1,
+   "start": {
+    "t": 79.98,
+    "word": "He"
+   },
+   "duration": 2.82,
+   "narration": "He could never say no to anyone who asked.",
+   "meaning": "He could never say no to anyone who asked. (shown as a dark story frame)",
+   "why": "bala in a dark night world while 'He could never say no to anyone who asked.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "calm: a slow sideways drift"
+   },
+   "focus": {
+    "subject": "bala",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "bala"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#5a70b0",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#2a3a6a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#202e56",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#24366a"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#24366a"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#18224a"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#18224a"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#101830"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#101830"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "vista",
+    "sky": [
+     "#06060e",
+     "#101a38",
+     "#24366a",
+     "#5a70b0"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#2a3a6a",
+     "#202e56",
+     "#18224a",
+     "#101830"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "bala",
+     "x": 640,
+     "y": 590,
+     "s": 0.9,
+     "flip": 1,
      "pose": "plead",
      "emo": "calm",
      "look": 700
@@ -9073,23 +9073,23 @@
    "meaning": "The gods won heaven by a trick, and the earth won a treasure. (shown as a dark story frame)",
    "why": "The scene in a dark night world while 'The gods won heaven by a trick, and the earth won ' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.1,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
      "z": 1.0,
-     "x": 6,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "closing: slowly pull back as the story ends"
    },
    "focus": {
     "subject": "scene",

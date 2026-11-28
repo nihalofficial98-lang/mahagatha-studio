@@ -201,14 +201,14 @@ SPEC['reel28']['over']={
 }
 
 # ================= reel19 (Markandeya): the Shivling is always on screen, the rope, Shiva coming out of it =================
-LGM=lambda x=690,y=620,w=240,g=.8:pfx('lingam',None,x,y,w,'a dark stone Shivling with ash lines on a round base',alpha=1,glow=g)
+LGM=lambda x=655,y=640,w=240,g=.8:pfx('lingam',None,x,y,w,'a dark stone Shivling with ash lines on a round base',alpha=1,glow=g)
 MK=lambda x,pose,emo,s=.7:dict(who='markandeya',x=x,y=700,s=s,_face=.46,flip=1,pose=pose,emo=emo,look=700)
 SPEC['reel19'].setdefault('over',{}).update({
- 10:dict(scene='night',bg='temple_dummy' if False else None,chars=[MK(575,'stand','fear')],fx=[LGM(),pfx('mist_wisps',None,640,600,640,'mist around the temple at night',alpha=.6,behind=True)]),
- 11:dict(scene='night',chars=[MK(585,'sitpray','devotion')],fx=[LGM(690,620,250,1.0),pfx('divine_rays',None,745,420,520,'light on the Shivling the boy is hugging',alpha=.7,behind=True)]),
- 12:dict(scene='ember',bg='storm',chars=[dict(who='yama',x=545,y=690,s=.9,_face=.44,flip=1,pose='throw',emo='rage',look=700),MK(790,'sitpray','fear',.5)],fx=[LGM(700,640,200,.6),pfx('noose',None,700,560,420,'the rope of Yama thrown around the boy and the Shivling',alpha=1)]),
- 13:dict(scene='ember',bg='storm',chars=[dict(who='shiva',x=600,y=700,s=.9,_face=.44,flip=1,pose='rage',emo='anger',look=700)],fx=[LGM(720,650,170,.6),pfx('lightning_forks',None,640,260,560,'the anger of Shiva',alpha=.8,behind=True),pfx('red_energy_pulse',None,640,420,420,'a red glow of rage',alpha=.7,behind=True)]),
- 14:dict(scene='ember',bg='storm',chars=[dict(who='shiva',x=600,y=700,s=.95,_face=.44,flip=1,pose='rage',emo='anger',look=700),dict(who='yama',x=800,y=700,s=.6,_face=.5,flip=-1,pose='fall',emo='fear',look=700)],fx=[LGM(620,690,190,1.0),pfx('ground_crack',None,640,670,520,'the Shivling cracking open as Shiva comes out',alpha=.8),pfx('divine_rays',None,640,330,560,'blinding light from the Shivling',alpha=.8,behind=True)]),
+ 10:dict(scene='night',chars=[MK(570,'stand','fear')],fx=[LGM(),pfx('mist_wisps',None,640,600,640,'mist around the temple at night',alpha=.6,behind=True)]),
+ 11:dict(scene='night',chars=[MK(575,'sitpray','devotion',.66)],fx=[LGM(660,640,230,1.0),pfx('divine_rays',None,660,420,520,'light on the Shivling the boy is hugging',alpha=.7,behind=True)]),
+ 12:dict(scene='ember',bg='storm',chars=[dict(who='yama',x=545,y=690,s=.9,_face=.44,flip=1,pose='throw',emo='rage',look=700),MK(700,'sitpray','fear',.5)],fx=[LGM(610,655,190,.6),pfx('noose',None,545,570,420,'the rope of Yama thrown around the boy and the Shivling',alpha=1)]),
+ 13:dict(scene='ember',bg='storm',chars=[dict(who='shiva',x=600,y=700,s=.9,_face=.44,flip=1,pose='rage',emo='anger',look=700)],fx=[LGM(700,655,170,.6),pfx('lightning_forks',None,640,260,560,'the anger of Shiva',alpha=.8,behind=True),pfx('red_energy_pulse',None,640,420,420,'a red glow of rage',alpha=.7,behind=True)]),
+ 14:dict(scene='ember',bg='storm',chars=[dict(who='shiva',x=600,y=700,s=.95,_face=.44,flip=1,pose='rage',emo='anger',look=700),dict(who='yama',x=800,y=700,s=.6,_face=.5,flip=-1,pose='fall',emo='fear',look=700)],fx=[LGM(640,690,190,1.0),pfx('ground_crack',None,640,670,520,'the Shivling cracking open as Shiva comes out',alpha=.8),pfx('divine_rays',None,640,330,560,'blinding light from the Shivling',alpha=.8,behind=True)]),
 })
 # ================= reel22 (Kalki): darker and dangerous =================
 SPEC['reel22']['scene']='night'

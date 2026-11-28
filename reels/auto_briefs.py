@@ -162,11 +162,18 @@ def main(reel):
         pal_=scene if scene in SK else PAL.get(scene,'indigo')
         fxs=[pfx('scene_kit',first,640,360,1280,'a full paper-cut landscape of the place where this happens',alpha=1,behind=True,kind=kind_,pal=pal_)]+[f_ for f_ in fxs if f_.get('k')!='scene_kit']
         cname,ca,cb,shs=CAMS[ci%len(CAMS)];ci+=1
-        # continuous camera: each shot starts exactly where the previous one ended (one long take)
-        Z=[1.0,1.15,1.02,1.17,1.04,1.13][ci%6];X=[6,-6][ci%2];ca=cam_end;cb=(Z,X,-6 if Z>1.08 else 0);cam_end=cb
-        dz=cb[0]-ca[0];dx=cb[1]-ca[1]
-        cname='push_in' if dz>=0 else 'pull_out'
-        shs='medium'
+        # planned camera (owner: dramatic, planned moves, not constant zoom): reveal first, impact shake on violent beats, push-in on tension, tilt/pull-out on calm, pull back to close
+        tense=emo in ('anger','rage','fury','fear','horror','shock','pain');soft=emo in ('calm','devotion','sad','joy','love','pride')
+        imp=bool(evx) or bool(re.search(r'\b(lightning|snapped|killed|struck|curse|cursed|fell|cut|spear|thunder|roar|boon)\b',low))
+        z0=cam_end[0] if cam_end[0]<1.12 else 1.03;shk=0;rr=(0,0);shs='medium'
+        if n==0:ca=(1.2,0,6);cb=(1.02,0,0);cname='pull_out';shs='wide';mot='reveal: pull back from a close start to show the whole place'
+        elif n==len(S)-1:ca=(max(z0,1.1),0,0);cb=(1.0,0,0);cname='pull_out';shs='wide';mot='closing: slowly pull back as the story ends'
+        elif imp:ca=(1.04,0,0);cb=(1.12,0,-4);cname='handheld';shk=2;rr=(0,.04 if ci%2 else -.04);mot='impact: handheld shake and a quick push as it happens'
+        elif tense:ca=(z0,0,0);cb=(min(z0+.15,1.2),0,-6);cname='push_in';shs='close';rr=(0,.025 if ci%2 else -.025);mot='tension builds: a slow push toward the face with a slight tilt'
+        elif soft and ci%3==0:ca=(1.05,0,12);cb=(1.05,0,0);cname='tilt_up';mot='calm: a slow tilt up to the figure and the sky'
+        elif soft and ci%3==1:ca=(z0,0,0);cb=(1.0,0,0);cname='pull_out';shs='wide';mot='calm: a gentle pull back'
+        else:ca=(z0,-10,0);cb=(z0+.04,10,0);cname='dolly_right' if ci%2 else 'dolly_left';mot='calm: a slow sideways drift'
+        cam_end=cb
         trk=False
         if re.search(WALKRX,low) and ch and not cfg.get('war') and n not in cfg.get('over',{}) and ch[0]['who'] not in ('naga','vishnu_rest','shiva_lingam') and (s[-1][2]-s[0][2])>=1.8:
             trk=True;dur_=max(1.8,min(6.0,(S[n+1][0][2] if n+1<len(S) else s[-1][2]+1.5)-s[0][2]))
@@ -176,7 +183,7 @@ def main(reel):
         sh={"id":"x","beat":1,"start":{"t":s[0][2],"word":first}};G.S.append(sh)
         sx=640
         sh.update(meaning=re.sub(r'\b(good|great|nice|very|something|anything)\b','it',txt+" (shown as a dark story frame)")[:110],why=re.sub(r'\b(something|anything|things?|stuff|good|great|nice|very)\b','it',f"{(who[0] if who else 'The scene')} in a dark {scene} world while '{txt[:50]}' is spoken."),
-          camera=cam(cname,ca,cb,shs,"normal",0,"a slow move that follows the story beat"),focus={"subject":who[0] if who else "scene","depth":"deep"},
+          camera=cam(cname,ca,cb,shs,"normal",shk,mot,rr),focus={"subject":who[0] if who else "scene","depth":"deep"},
           vertical={"focus":who[0]} if who else {},layers=[dict(l_,items=l_['items']+extra_mid) if l_['d']=='mid' else l_ for l_ in scene_layers(scene,theme)],background=(bg(bgk) if bgk and (not cfg.get('over',{}).get(n,{}).get('scene') or cfg.get('over',{}).get(n,{}).get('bg')) else (dict(background(scene),sx=sx) if scene in SK else background(scene))),mood={"emotion":emo,"grade":GRD},
           characters=ch,effects=fxs,transition_in="cut")
         ov=cfg.get('over',{}).get(n,{})

@@ -14,23 +14,23 @@
    "meaning": "We always draw Hanuman with a huge mace, (shown as a dark story frame)",
    "why": "hanuman in a dark ember world while 'We always draw Hanuman with a huge mace,' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
+     "z": 1.2,
+     "x": 0,
+     "y": 6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
      "x": 0,
      "y": 0,
      "r": 0
     },
-    "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "reveal: pull back from a close start to show the whole place"
    },
    "focus": {
     "subject": "hanuman",
@@ -280,7 +280,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 616,
+     "y": 623,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -291,7 +291,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 536,
+     "y": 543,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -301,7 +301,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 536,
+     "y": 543,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -311,7 +311,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 536,
+     "y": 543,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -321,7 +321,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 536,
+     "y": 543,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -331,7 +331,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 536,
+     "y": 543,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -341,7 +341,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 536,
+     "y": 543,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -413,21 +413,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.06,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "hanuman",
@@ -677,7 +677,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 616,
+     "y": 617,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -688,7 +688,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 536,
+     "y": 537,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -698,7 +698,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 536,
+     "y": 537,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -708,7 +708,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 536,
+     "y": 537,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -718,7 +718,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 536,
+     "y": 537,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -728,7 +728,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 536,
+     "y": 537,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -738,7 +738,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 536,
+     "y": 537,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -819,23 +819,23 @@
    "meaning": "Ravana sent thousands of demons to kill him. (shown as a dark story frame)",
    "why": "ravana10 in a dark ember world while 'Ravana sent thousands of demons to kill him.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "close",
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.06,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
+     "z": 1.2,
+     "x": 0,
      "y": -6,
-     "r": 0
+     "r": 0.025
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "tension builds: a slow push toward the face with a slight tilt"
    },
    "focus": {
     "subject": "ravana10",
@@ -1085,7 +1085,7 @@
     {
      "who": "ravana10",
      "x": 640,
-     "y": 562,
+     "y": 564,
      "s": 0.81,
      "flip": 1,
      "pose": "stand",
@@ -1095,7 +1095,7 @@
     {
      "who": "asura1",
      "x": 500,
-     "y": 561,
+     "y": 559,
      "s": 0.5,
      "flip": 1,
      "pose": "rage",
@@ -1105,7 +1105,7 @@
     {
      "who": "asura2",
      "x": 780,
-     "y": 561,
+     "y": 559,
      "s": 0.5,
      "flip": -1,
      "pose": "rage",
@@ -1115,7 +1115,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 502,
+     "y": 500,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -1125,7 +1125,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 502,
+     "y": 500,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -1135,7 +1135,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 502,
+     "y": 500,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -1145,7 +1145,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 502,
+     "y": 500,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -1155,7 +1155,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 502,
+     "y": 500,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -1165,7 +1165,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 502,
+     "y": 500,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -1235,23 +1235,23 @@
    "meaning": "Hanuman tore a heavy iron bar out of a gate and used it to destroy them. (shown as a dark story frame)",
    "why": "hanuman in a dark ember world while 'Hanuman tore a heavy iron bar out of a gate and us' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.03,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "hanuman",
@@ -1634,21 +1634,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "ravana10",
@@ -1868,7 +1868,7 @@
     {
      "who": "ravana10",
      "x": 470,
-     "y": 588,
+     "y": 592,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -1878,7 +1878,7 @@
     {
      "who": "asura2",
      "x": 810,
-     "y": 588,
+     "y": 592,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -1888,7 +1888,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 508,
+     "y": 520,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -1898,7 +1898,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 508,
+     "y": 520,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -1908,7 +1908,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 508,
+     "y": 520,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -1918,7 +1918,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 508,
+     "y": 520,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -1928,7 +1928,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 508,
+     "y": 520,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -1938,7 +1938,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 508,
+     "y": 520,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -2010,21 +2010,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "hanuman",
@@ -2244,7 +2244,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 643,
+     "y": 650,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -2255,7 +2255,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -2265,7 +2265,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -2275,7 +2275,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -2285,7 +2285,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -2295,7 +2295,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -2305,7 +2305,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -2375,23 +2375,23 @@
    "meaning": "He hit some with his palms and some with his feet. (shown as a dark story frame)",
    "why": "hanuman in a dark brown world while 'He hit some with his palms and some with his feet.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "close",
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
+     "z": 1.2,
+     "x": 0,
      "y": -6,
-     "r": 0
+     "r": 0.025
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "tension builds: a slow push toward the face with a slight tilt"
    },
    "focus": {
     "subject": "hanuman",
@@ -2641,7 +2641,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 643,
+     "y": 644,
      "s": 1.08,
      "flip": 1,
      "pose": "lunge",
@@ -2652,7 +2652,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -2662,7 +2662,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -2672,7 +2672,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -2682,7 +2682,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -2692,7 +2692,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -2702,7 +2702,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -2774,21 +2774,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.03,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.07,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "hanuman",
@@ -3038,7 +3038,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 643,
+     "y": 645,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -3049,7 +3049,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 563,
+     "y": 565,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -3059,7 +3059,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 563,
+     "y": 565,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -3069,7 +3069,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 563,
+     "y": 565,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -3079,7 +3079,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 563,
+     "y": 565,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -3089,7 +3089,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 563,
+     "y": 565,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -3099,7 +3099,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 563,
+     "y": 565,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -3171,21 +3171,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "handheld",
     "from": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": 0.04
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "hanuman",
@@ -3352,7 +3352,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 611,
+     "y": 612,
      "s": 0.9720000000000001,
      "flip": 1,
      "pose": "fall",
@@ -3363,7 +3363,7 @@
     {
      "who": "asura1",
      "x": 500,
-     "y": 561,
+     "y": 568,
      "s": 0.5,
      "flip": 1,
      "pose": "rage",
@@ -3373,7 +3373,7 @@
     {
      "who": "asura2",
      "x": 780,
-     "y": 561,
+     "y": 568,
      "s": 0.5,
      "flip": -1,
      "pose": "rage",
@@ -3383,7 +3383,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 531,
+     "y": 532,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -3393,7 +3393,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 531,
+     "y": 532,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -3403,7 +3403,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 531,
+     "y": 532,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -3413,7 +3413,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 531,
+     "y": 532,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -3423,7 +3423,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 531,
+     "y": 532,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -3433,7 +3433,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 531,
+     "y": 532,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -3514,23 +3514,23 @@
    "meaning": "Hanuman did not need a sword, a bow, or a mace. (shown as a dark story frame)",
    "why": "hanuman in a dark ember world while 'Hanuman did not need a sword, a bow, or a mace.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.03,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "hanuman",
@@ -3830,21 +3830,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "hanuman",
@@ -4011,7 +4011,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 643,
+     "y": 644,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -4022,7 +4022,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -4032,7 +4032,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4042,7 +4042,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -4052,7 +4052,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4062,7 +4062,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -4072,7 +4072,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 563,
+     "y": 564,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -4155,21 +4155,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "hanuman",
@@ -4419,7 +4419,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 643,
+     "y": 650,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -4430,7 +4430,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -4440,7 +4440,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4450,7 +4450,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -4460,7 +4460,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4470,7 +4470,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -4480,7 +4480,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 563,
+     "y": 570,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",
@@ -4550,23 +4550,23 @@
    "meaning": "Then why do we always draw him with a mace? (shown as a dark story frame)",
    "why": "hanuman in a dark ember world while 'Then why do we always draw him with a mace?' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.1,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "closing: slowly pull back as the story ends"
    },
    "focus": {
     "subject": "hanuman",
@@ -4816,7 +4816,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 643,
+     "y": 645,
      "s": 1.08,
      "flip": 1,
      "pose": "stand",
@@ -4827,7 +4827,7 @@
     {
      "who": "asura1",
      "x": 458,
-     "y": 563,
+     "y": 565,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -4837,7 +4837,7 @@
     {
      "who": "asura2",
      "x": 498,
-     "y": 563,
+     "y": 565,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4847,7 +4847,7 @@
     {
      "who": "asura3",
      "x": 538,
-     "y": 563,
+     "y": 565,
      "s": 0.26,
      "flip": 1,
      "pose": "fall",
@@ -4857,7 +4857,7 @@
     {
      "who": "asura3",
      "x": 742,
-     "y": 563,
+     "y": 565,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4867,7 +4867,7 @@
     {
      "who": "asura1",
      "x": 782,
-     "y": 563,
+     "y": 565,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -4877,7 +4877,7 @@
     {
      "who": "asura2",
      "x": 822,
-     "y": 563,
+     "y": 565,
      "s": 0.26,
      "flip": -1,
      "pose": "fall",

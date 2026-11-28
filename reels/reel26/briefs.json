@@ -14,23 +14,23 @@
    "meaning": "Ravana beat kings and gods, but Indra once trapped him, (shown as a dark story frame)",
    "why": "ravana10 in a dark ember world while 'Ravana beat kings and gods, but Indra once trapped' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
+     "z": 1.2,
+     "x": 0,
+     "y": 6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
      "x": 0,
      "y": 0,
      "r": 0
     },
-    "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "reveal: pull back from a close start to show the whole place"
    },
    "focus": {
     "subject": "ravana10",
@@ -250,7 +250,7 @@
     {
      "who": "ravana10",
      "x": 470,
-     "y": 588,
+     "y": 594,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -260,7 +260,7 @@
     {
      "who": "indra",
      "x": 810,
-     "y": 588,
+     "y": 594,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -270,7 +270,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 508,
+     "y": 514,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -280,7 +280,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 508,
+     "y": 514,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -290,7 +290,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 508,
+     "y": 514,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -300,7 +300,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 508,
+     "y": 514,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -310,7 +310,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 508,
+     "y": 514,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -320,7 +320,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 508,
+     "y": 514,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -392,21 +392,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.06,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "meghanada",
@@ -626,7 +626,7 @@
     {
      "who": "meghanada",
      "x": 640,
-     "y": 589,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -636,7 +636,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 509,
+     "y": 517,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -646,7 +646,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 509,
+     "y": 517,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -656,7 +656,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 509,
+     "y": 517,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -666,7 +666,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 509,
+     "y": 517,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -676,7 +676,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 509,
+     "y": 517,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -686,7 +686,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 509,
+     "y": 517,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -756,23 +756,23 @@
    "meaning": "Ravana decided to attack heaven. (shown as a dark story frame)",
    "why": "ravana10 in a dark ember world while 'Ravana decided to attack heaven.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "close",
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.06,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
+     "z": 1.2,
+     "x": 0,
      "y": -6,
-     "r": 0
+     "r": 0.025
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "tension builds: a slow push toward the face with a slight tilt"
    },
    "focus": {
     "subject": "ravana10",
@@ -992,7 +992,7 @@
     {
      "who": "ravana10",
      "x": 640,
-     "y": 590,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -1002,7 +1002,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 510,
+     "y": 511,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -1012,7 +1012,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 510,
+     "y": 511,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -1022,7 +1022,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 510,
+     "y": 511,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -1032,7 +1032,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 510,
+     "y": 511,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -1042,7 +1042,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 510,
+     "y": 511,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -1052,7 +1052,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 510,
+     "y": 511,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -1122,389 +1122,23 @@
    "meaning": "He wanted Indra's kingdom. (shown as a dark story frame)",
    "why": "ravana10 in a dark ember world while 'He wanted Indra's kingdom.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.04,
-     "x": 6,
-     "y": 0,
-     "r": 0
-    },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
-   },
-   "focus": {
-    "subject": "ravana10",
-    "depth": "deep"
-   },
-   "vertical": {
-    "focus": "ravana10"
-   },
-   "layers": [
-    {
-     "d": "far",
-     "contents": "layered dark mountains and distant clouds",
-     "fog": 0.6,
-     "haze": "#b04a28",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a2a2a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#521e22",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#7a2020"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#7a2020"
-      },
-      {
-       "o": "wall",
-       "x": 600,
-       "y": 470,
-       "s": 0.8,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 470,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 560,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 720,
-       "y": 525,
-       "s": 0.45,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 810,
-       "y": 525,
-       "s": 0.5,
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "contents": "faded dark silhouettes of the place far behind the figures",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a1618"
-      },
-      {
-       "o": "pillar",
-       "x": 452,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "pillar",
-       "x": 834,
-       "y": 545,
-       "s": 0.8,
-       "col": "#2a0e10"
-      },
-      {
-       "o": "wall",
-       "x": 640,
-       "y": 505,
-       "s": 0.7,
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#3a1618"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#3a1618"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "background": {
-    "k": "palace"
-   },
-   "mood": {
-    "emotion": "calm",
-    "grade": "ep07_dark"
-   },
-   "characters": [
-    {
-     "who": "ravana10",
-     "x": 640,
-     "y": 590,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "look": 700
-    },
-    {
-     "who": "deva_thin",
-     "x": 458,
-     "y": 510,
-     "s": 0.26,
-     "flip": 1,
-     "pose": "lunge",
-     "emo": "anger",
-     "look": 700
-    },
-    {
-     "who": "deva_thin2",
-     "x": 498,
-     "y": 510,
-     "s": 0.26,
-     "flip": 1,
-     "pose": "lunge",
-     "emo": "anger",
-     "look": 700
-    },
-    {
-     "who": "deva_thin",
-     "x": 538,
-     "y": 510,
-     "s": 0.26,
-     "flip": 1,
-     "pose": "throw",
-     "emo": "anger",
-     "look": 700
-    },
-    {
-     "who": "asura2",
-     "x": 742,
-     "y": 510,
-     "s": 0.26,
-     "flip": -1,
-     "pose": "rage",
-     "emo": "anger",
-     "look": 700
-    },
-    {
-     "who": "asura3",
-     "x": 782,
-     "y": 510,
-     "s": 0.26,
-     "flip": -1,
-     "pose": "rage",
-     "emo": "anger",
-     "look": 700
-    },
-    {
-     "who": "asura1",
-     "x": 822,
-     "y": 510,
-     "s": 0.26,
-     "flip": -1,
-     "pose": "lunge",
-     "emo": "anger",
-     "look": 700
-    }
-   ],
-   "effects": [
-    {
-     "k": "scene_kit",
-     "word": "He",
-     "x": 640,
-     "y": 360,
-     "w": 1280,
-     "alpha": 1,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "a full paper-cut landscape of the place where this happens",
-     "kind": "palace_night",
-     "pal": "ember"
-    },
-    {
-     "k": "ember_fire",
-     "word": "He",
-     "x": 452,
-     "y": 672,
-     "w": 95,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "burning fire on the battlefield at the left"
-    },
-    {
-     "k": "ember_fire",
-     "word": "He",
-     "x": 830,
-     "y": 672,
-     "w": 95,
-     "alpha": 0.8,
-     "par": 1.0,
-     "behind": false,
-     "meaning": "burning fire on the battlefield at the right"
-    },
-    {
-     "k": "smoke_plume",
-     "word": "He",
-     "x": 640,
-     "y": 470,
-     "w": 560,
-     "alpha": 0.3,
-     "par": 1.0,
-     "behind": true,
-     "meaning": "war smoke over the battlefield"
-    }
-   ],
-   "transition_in": "cut"
-  },
-  {
-   "id": "s05",
-   "beat": 1,
-   "start": {
-    "t": 11.92,
-    "word": "At"
-   },
-   "duration": 3.4,
-   "narration": "At first, both armies fought hard.",
-   "meaning": "At first, both armies fought hard. (shown as a dark story frame)",
-   "why": "ravana10 in a dark ember world while 'At first, both armies fought hard.' is spoken.",
-   "camera": {
-    "shot": "medium",
-    "lens": "normal",
-    "move": "push_in",
-    "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.03,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "ravana10",
@@ -1734,7 +1368,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 509,
+     "y": 521,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -1744,7 +1378,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 509,
+     "y": 521,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -1754,7 +1388,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 509,
+     "y": 521,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -1764,7 +1398,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 509,
+     "y": 521,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -1774,7 +1408,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 509,
+     "y": 521,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -1784,7 +1418,373 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 509,
+     "y": 521,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    }
+   ],
+   "effects": [
+    {
+     "k": "scene_kit",
+     "word": "He",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "a full paper-cut landscape of the place where this happens",
+     "kind": "palace_night",
+     "pal": "ember"
+    },
+    {
+     "k": "ember_fire",
+     "word": "He",
+     "x": 452,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the left"
+    },
+    {
+     "k": "ember_fire",
+     "word": "He",
+     "x": 830,
+     "y": 672,
+     "w": 95,
+     "alpha": 0.8,
+     "par": 1.0,
+     "behind": false,
+     "meaning": "burning fire on the battlefield at the right"
+    },
+    {
+     "k": "smoke_plume",
+     "word": "He",
+     "x": 640,
+     "y": 470,
+     "w": 560,
+     "alpha": 0.3,
+     "par": 1.0,
+     "behind": true,
+     "meaning": "war smoke over the battlefield"
+    }
+   ],
+   "transition_in": "cut"
+  },
+  {
+   "id": "s05",
+   "beat": 1,
+   "start": {
+    "t": 11.92,
+    "word": "At"
+   },
+   "duration": 3.4,
+   "narration": "At first, both armies fought hard.",
+   "meaning": "At first, both armies fought hard. (shown as a dark story frame)",
+   "why": "ravana10 in a dark ember world while 'At first, both armies fought hard.' is spoken.",
+   "camera": {
+    "shot": "medium",
+    "lens": "normal",
+    "move": "dolly_right",
+    "from": {
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
+     "r": 0
+    },
+    "shake": 0,
+    "motivation": "calm: a slow sideways drift"
+   },
+   "focus": {
+    "subject": "ravana10",
+    "depth": "deep"
+   },
+   "vertical": {
+    "focus": "ravana10"
+   },
+   "layers": [
+    {
+     "d": "far",
+     "contents": "layered dark mountains and distant clouds",
+     "fog": 0.6,
+     "haze": "#b04a28",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a2a2a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#521e22",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#7a2020"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#7a2020"
+      },
+      {
+       "o": "wall",
+       "x": 600,
+       "y": 470,
+       "s": 0.8,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 470,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 560,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 720,
+       "y": 525,
+       "s": 0.45,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 810,
+       "y": 525,
+       "s": 0.5,
+       "col": "#3a1618"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "contents": "faded dark silhouettes of the place far behind the figures",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a1618"
+      },
+      {
+       "o": "pillar",
+       "x": 452,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "pillar",
+       "x": 834,
+       "y": 545,
+       "s": 0.8,
+       "col": "#2a0e10"
+      },
+      {
+       "o": "wall",
+       "x": 640,
+       "y": 505,
+       "s": 0.7,
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#3a1618"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#3a1618"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "contents": "small low dark rocks at the very bottom corners, nothing in front of the faces",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "background": {
+    "k": "palace"
+   },
+   "mood": {
+    "emotion": "calm",
+    "grade": "ep07_dark"
+   },
+   "characters": [
+    {
+     "who": "ravana10",
+     "x": 640,
+     "y": 590,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "look": 700
+    },
+    {
+     "who": "deva_thin",
+     "x": 458,
+     "y": 520,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "deva_thin2",
+     "x": 498,
+     "y": 520,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "lunge",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "deva_thin",
+     "x": 538,
+     "y": 520,
+     "s": 0.26,
+     "flip": 1,
+     "pose": "throw",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura2",
+     "x": 742,
+     "y": 520,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura3",
+     "x": 782,
+     "y": 520,
+     "s": 0.26,
+     "flip": -1,
+     "pose": "rage",
+     "emo": "anger",
+     "look": 700
+    },
+    {
+     "who": "asura1",
+     "x": 822,
+     "y": 520,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -1856,21 +1856,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "indra",
@@ -2090,7 +2090,7 @@
     {
      "who": "indra",
      "x": 470,
-     "y": 589,
+     "y": 597,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -2100,7 +2100,7 @@
     {
      "who": "ravana10",
      "x": 810,
-     "y": 589,
+     "y": 597,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -2110,7 +2110,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 509,
+     "y": 519,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -2120,7 +2120,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 509,
+     "y": 519,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -2130,7 +2130,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 509,
+     "y": 519,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -2140,7 +2140,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 509,
+     "y": 519,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -2150,7 +2150,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 509,
+     "y": 519,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -2160,7 +2160,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 509,
+     "y": 519,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -2230,23 +2230,23 @@
    "meaning": "His army surrounded the demon king. (shown as a dark story frame)",
    "why": "indra in a dark ember world while 'His army surrounded the demon king.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "indra",
@@ -2466,7 +2466,7 @@
     {
      "who": "indra",
      "x": 640,
-     "y": 562,
+     "y": 563,
      "s": 0.81,
      "flip": 1,
      "pose": "stand",
@@ -2476,7 +2476,7 @@
     {
      "who": "asura1",
      "x": 500,
-     "y": 563,
+     "y": 577,
      "s": 0.5,
      "flip": 1,
      "pose": "rage",
@@ -2486,7 +2486,7 @@
     {
      "who": "asura2",
      "x": 780,
-     "y": 563,
+     "y": 577,
      "s": 0.5,
      "flip": -1,
      "pose": "rage",
@@ -2496,7 +2496,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 504,
+     "y": 519,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -2506,7 +2506,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 504,
+     "y": 519,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -2516,7 +2516,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 504,
+     "y": 519,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -2526,7 +2526,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 504,
+     "y": 519,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -2536,7 +2536,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 504,
+     "y": 519,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -2546,7 +2546,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 504,
+     "y": 519,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -2618,21 +2618,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "ravana10",
@@ -2852,7 +2852,7 @@
     {
      "who": "ravana10",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -2862,7 +2862,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 509,
+     "y": 520,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -2872,7 +2872,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 509,
+     "y": 520,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -2882,7 +2882,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 509,
+     "y": 520,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -2892,7 +2892,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 509,
+     "y": 520,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -2902,7 +2902,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 509,
+     "y": 520,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -2912,7 +2912,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 509,
+     "y": 520,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -2984,21 +2984,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "meghanada",
@@ -3218,7 +3218,7 @@
     {
      "who": "meghanada",
      "x": 640,
-     "y": 590,
+     "y": 596,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -3228,7 +3228,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -3238,7 +3238,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -3248,7 +3248,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -3258,7 +3258,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -3268,7 +3268,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -3278,7 +3278,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -3348,23 +3348,23 @@
    "meaning": "He knew he could not beat Indra in a fair fight, (shown as a dark story frame)",
    "why": "indra in a dark ember world while 'He knew he could not beat Indra in a fair fight,' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "indra",
@@ -3594,7 +3594,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -3604,7 +3604,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -3614,7 +3614,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -3624,7 +3624,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -3634,7 +3634,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -3644,7 +3644,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -3714,23 +3714,23 @@
    "meaning": "so he used magic to become invisible and attacked from where Indra could not see him. (shown as a dark story f",
    "why": "indra in a dark ember world while 'so he used magic to become invisible and attacked ' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "close",
     "lens": "normal",
     "move": "push_in",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
+     "z": 1.15,
+     "x": 0,
      "y": -6,
-     "r": 0
+     "r": 0.025
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "tension builds: a slow push toward the face with a slight tilt"
    },
    "focus": {
     "subject": "indra",
@@ -4082,21 +4082,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "indra",
@@ -4316,7 +4316,7 @@
     {
      "who": "indra",
      "x": 640,
-     "y": 588,
+     "y": 596,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -4326,7 +4326,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4336,7 +4336,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4346,7 +4346,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -4356,7 +4356,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4366,7 +4366,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4376,7 +4376,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -4446,23 +4446,23 @@
    "meaning": "That is why Meghnad is called Indrajit, the one who won over Indra. (shown as a dark story frame)",
    "why": "meghanada in a dark brown world while 'That is why Meghnad is called Indrajit, the one wh' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "meghanada",
@@ -4682,7 +4682,7 @@
     {
      "who": "meghanada",
      "x": 470,
-     "y": 588,
+     "y": 592,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -4692,7 +4692,7 @@
     {
      "who": "indra",
      "x": 810,
-     "y": 588,
+     "y": 592,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -4702,7 +4702,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4712,7 +4712,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -4722,7 +4722,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -4732,7 +4732,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4742,7 +4742,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -4752,7 +4752,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 508,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -4824,21 +4824,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "brahma",
@@ -5058,7 +5058,7 @@
     {
      "who": "brahma",
      "x": 470,
-     "y": 589,
+     "y": 592,
      "s": 0.765,
      "flip": 1,
      "pose": "plead",
@@ -5068,7 +5068,7 @@
     {
      "who": "indra",
      "x": 810,
-     "y": 589,
+     "y": 592,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -5078,7 +5078,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 509,
+     "y": 520,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -5088,7 +5088,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 509,
+     "y": 520,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -5098,7 +5098,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 509,
+     "y": 520,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -5108,7 +5108,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 509,
+     "y": 520,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -5118,7 +5118,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 509,
+     "y": 520,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -5128,7 +5128,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 509,
+     "y": 520,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -5200,21 +5200,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "ravana10",
@@ -5434,7 +5434,7 @@
     {
      "who": "ravana10",
      "x": 470,
-     "y": 588,
+     "y": 597,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -5444,7 +5444,7 @@
     {
      "who": "indra",
      "x": 810,
-     "y": 588,
+     "y": 597,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -5454,7 +5454,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 508,
+     "y": 519,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -5464,7 +5464,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 508,
+     "y": 519,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -5474,7 +5474,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 508,
+     "y": 519,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -5484,7 +5484,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 508,
+     "y": 519,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -5494,7 +5494,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 508,
+     "y": 519,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -5504,7 +5504,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 508,
+     "y": 519,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -5574,23 +5574,23 @@
    "meaning": "who then took Indra himself as a prisoner. (shown as a dark story frame)",
    "why": "indra in a dark indigo world while 'who then took Indra himself as a prisoner.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "indra",
@@ -5820,7 +5820,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -5830,7 +5830,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -5840,7 +5840,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -5850,7 +5850,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -5860,7 +5860,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -5870,7 +5870,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 510,
+     "y": 518,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",
@@ -5940,23 +5940,23 @@
    "meaning": "Who do you think was stronger, Ravana or Indra? (shown as a dark story frame)",
    "why": "ravana10 in a dark indigo world while 'Who do you think was stronger, Ravana or Indra?' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.1,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "closing: slowly pull back as the story ends"
    },
    "focus": {
     "subject": "ravana10",
@@ -6176,7 +6176,7 @@
     {
      "who": "ravana10",
      "x": 470,
-     "y": 588,
+     "y": 591,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -6186,7 +6186,7 @@
     {
      "who": "indra",
      "x": 810,
-     "y": 588,
+     "y": 591,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -6196,7 +6196,7 @@
     {
      "who": "deva_thin",
      "x": 458,
-     "y": 508,
+     "y": 515,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -6206,7 +6206,7 @@
     {
      "who": "deva_thin2",
      "x": 498,
-     "y": 508,
+     "y": 515,
      "s": 0.26,
      "flip": 1,
      "pose": "lunge",
@@ -6216,7 +6216,7 @@
     {
      "who": "deva_thin",
      "x": 538,
-     "y": 508,
+     "y": 515,
      "s": 0.26,
      "flip": 1,
      "pose": "throw",
@@ -6226,7 +6226,7 @@
     {
      "who": "asura2",
      "x": 742,
-     "y": 508,
+     "y": 515,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -6236,7 +6236,7 @@
     {
      "who": "asura3",
      "x": 782,
-     "y": 508,
+     "y": 515,
      "s": 0.26,
      "flip": -1,
      "pose": "rage",
@@ -6246,7 +6246,7 @@
     {
      "who": "asura1",
      "x": 822,
-     "y": 508,
+     "y": 515,
      "s": 0.26,
      "flip": -1,
      "pose": "lunge",

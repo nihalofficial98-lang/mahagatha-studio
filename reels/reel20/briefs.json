@@ -14,23 +14,23 @@
    "meaning": "Is Ashwatthama still alive? (shown as a dark story frame)",
    "why": "ashwatthama in a dark night world while 'Is Ashwatthama still alive?' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
+     "z": 1.2,
+     "x": 0,
+     "y": 6,
+     "r": 0
+    },
+    "to": {
+     "z": 1.02,
      "x": 0,
      "y": 0,
      "r": 0
     },
-    "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "reveal: pull back from a close start to show the whole place"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -280,7 +280,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 589,
+     "y": 595,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -330,21 +330,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "handheld",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "to": {
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
+    },
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -594,7 +594,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "point",
@@ -655,21 +655,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "scene",
@@ -903,23 +903,23 @@
    "meaning": "a temple in Madhya Pradesh before anyone arrives. (shown as a dark story frame)",
    "why": "The scene in a dark brown world while 'a temple in Madhya Pradesh before anyone arrives.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "scene",
@@ -1155,21 +1155,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "villager",
@@ -1426,7 +1426,7 @@
     {
      "who": "villager",
      "x": 500,
-     "y": 585,
+     "y": 599,
      "s": 0.58,
      "flip": 1,
      "pose": "point",
@@ -1436,7 +1436,7 @@
     {
      "who": "villager_w",
      "x": 780,
-     "y": 585,
+     "y": 599,
      "s": 0.58,
      "flip": -1,
      "pose": "point",
@@ -1498,21 +1498,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "shiva",
@@ -1769,7 +1769,7 @@
     {
      "who": "shiva",
      "x": 640,
-     "y": 588,
+     "y": 596,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -1817,23 +1817,23 @@
    "meaning": "Local people say Ashwatthama still comes here every day to pray to Shiva. (shown as a dark story frame)",
    "why": "ashwatthama in a dark brown world while 'Local people say Ashwatthama still comes here ever' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
-    "move": "push_in",
+    "move": "pull_out",
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -2090,7 +2090,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 488,
+     "y": 490,
      "s": 0.8,
      "flip": 1,
      "pose": "sitpray",
@@ -2100,7 +2100,7 @@
     {
      "who": "villager",
      "x": 500,
-     "y": 582,
+     "y": 597,
      "s": 0.58,
      "flip": 1,
      "pose": "namaste",
@@ -2110,7 +2110,7 @@
     {
      "who": "villager_w",
      "x": 780,
-     "y": 582,
+     "y": 597,
      "s": 0.58,
      "flip": -1,
      "pose": "namaste",
@@ -2171,21 +2171,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -2442,7 +2442,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -2503,21 +2503,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -2774,7 +2774,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 609,
+     "y": 614,
      "s": 1.05,
      "flip": 1,
      "pose": "stand",
@@ -2784,7 +2784,7 @@
     {
      "who": "villager",
      "x": 500,
-     "y": 561,
+     "y": 577,
      "s": 0.5,
      "flip": 1,
      "pose": "stand",
@@ -2794,7 +2794,7 @@
     {
      "who": "villager_w",
      "x": 780,
-     "y": 561,
+     "y": 577,
      "s": 0.5,
      "flip": -1,
      "pose": "stand",
@@ -2853,23 +2853,23 @@
    "meaning": "He has a wound on his forehead that never heals. (shown as a dark story frame)",
    "why": "ashwatthama in a dark teal world while 'He has a wound on his forehead that never heals.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -3119,7 +3119,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 609,
+     "y": 607,
      "s": 1.05,
      "flip": 1,
      "pose": "stand",
@@ -3129,7 +3129,7 @@
     {
      "who": "villager",
      "x": 500,
-     "y": 561,
+     "y": 577,
      "s": 0.5,
      "flip": 1,
      "pose": "stand",
@@ -3139,7 +3139,7 @@
     {
      "who": "villager_w",
      "x": 780,
-     "y": 561,
+     "y": 577,
      "s": 0.5,
      "flip": -1,
      "pose": "stand",
@@ -3189,21 +3189,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -3453,7 +3453,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 608,
+     "y": 607,
      "s": 1.05,
      "flip": 1,
      "pose": "plead",
@@ -3463,7 +3463,7 @@
     {
      "who": "villager",
      "x": 500,
-     "y": 565,
+     "y": 579,
      "s": 0.5,
      "flip": 1,
      "pose": "stand",
@@ -3473,7 +3473,7 @@
     {
      "who": "villager_w",
      "x": 780,
-     "y": 565,
+     "y": 579,
      "s": 0.5,
      "flip": -1,
      "pose": "namaste",
@@ -3523,21 +3523,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "tilt_up",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -3787,7 +3787,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 562,
+     "y": 569,
      "s": 0.81,
      "flip": 1,
      "pose": "stand",
@@ -3797,7 +3797,7 @@
     {
      "who": "villager",
      "x": 500,
-     "y": 565,
+     "y": 577,
      "s": 0.5,
      "flip": 1,
      "pose": "namaste",
@@ -3807,7 +3807,7 @@
     {
      "who": "villager_w",
      "x": 780,
-     "y": 565,
+     "y": 577,
      "s": 0.5,
      "flip": -1,
      "pose": "namaste",
@@ -3871,7 +3871,7 @@
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -4177,21 +4177,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
      "z": 1.04,
-     "x": 70,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.08,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -4441,7 +4441,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 590,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -4502,21 +4502,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -4766,7 +4766,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 590,
+     "y": 596,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -4814,23 +4814,23 @@
    "meaning": "These are stories that people tell. (shown as a dark story frame)",
    "why": "ashwatthama in a dark teal world while 'These are stories that people tell.' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -5097,7 +5097,7 @@
     {
      "who": "villager",
      "x": 500,
-     "y": 561,
+     "y": 577,
      "s": 0.5,
      "flip": 1,
      "pose": "namaste",
@@ -5107,7 +5107,7 @@
     {
      "who": "villager_w",
      "x": 780,
-     "y": 561,
+     "y": 577,
      "s": 0.5,
      "flip": -1,
      "pose": "namaste",
@@ -5157,21 +5157,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "dolly_right",
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -5428,7 +5428,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -5478,21 +5478,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "handheld",
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
-    "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "to": {
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
+    },
+    "shake": 2,
+    "motivation": "impact: handheld shake and a quick push as it happens"
    },
    "focus": {
     "subject": "krishna",
@@ -5827,7 +5827,7 @@
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a gentle pull back"
    },
    "focus": {
     "subject": "krishna",
@@ -6133,21 +6133,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "pull_out",
+    "move": "dolly_left",
     "from": {
      "z": 1.04,
-     "x": 70,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.08,
+     "x": 10,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow sideways drift"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -6307,7 +6307,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 563,
+     "y": 564,
      "s": 0.81,
      "flip": 1,
      "pose": "stand",
@@ -6317,7 +6317,7 @@
     {
      "who": "villager",
      "x": 500,
-     "y": 578,
+     "y": 575,
      "s": 0.5,
      "flip": 1,
      "pose": "namaste",
@@ -6327,7 +6327,7 @@
     {
      "who": "villager_w",
      "x": 780,
-     "y": 578,
+     "y": 575,
      "s": 0.5,
      "flip": -1,
      "pose": "namaste",
@@ -6388,21 +6388,21 @@
    "camera": {
     "shot": "medium",
     "lens": "normal",
-    "move": "push_in",
+    "move": "tilt_up",
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "calm: a slow tilt up to the figure and the sky"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -6562,7 +6562,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 590,
+     "y": 596,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -6621,23 +6621,23 @@
    "meaning": "A man who tried to kill an unborn baby and was cursed never to find rest. (shown as a dark story frame)",
    "why": "ashwatthama in a dark ember world while 'A man who tried to kill an unborn baby and was cur' is spoken.",
    "camera": {
-    "shot": "medium",
+    "shot": "wide",
     "lens": "normal",
     "move": "pull_out",
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.1,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "shake": 0,
-    "motivation": "a slow move that follows the story beat"
+    "motivation": "closing: slowly pull back as the story ends"
    },
    "focus": {
     "subject": "ashwatthama",
@@ -6887,7 +6887,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 590,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "point",

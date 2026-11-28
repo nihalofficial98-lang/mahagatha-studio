@@ -17,7 +17,7 @@
     {
      "who": "vishnu",
      "x": 640,
-     "y": 589,
+     "y": 595,
      "s": 0.9,
      "flip": 1,
      "pose": "selfcut",
@@ -68,15 +68,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.0,
+     "z": 1.2,
      "x": 0,
-     "y": 0,
+     "y": 6,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.02,
+     "x": 0,
+     "y": 0,
      "r": 0
     }
    },
@@ -292,7 +292,7 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark night world while 'Vishnu, keeper of the universe, tore out his own e' is spoken.",
+   "note": "wide pull_out: vishnu in a dark night world while 'Vishnu, keeper of the universe, tore out his own e' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -314,7 +314,7 @@
     {
      "who": "shiva",
      "x": 640,
-     "y": 589,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -353,14 +353,14 @@
    ],
    "cam": {
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.06,
+     "x": 10,
      "y": 0,
      "r": 0
     }
@@ -577,7 +577,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: shiva in a dark night world while 'He did it for Shiva, and in return,' is spoken.",
+   "note": "medium dolly_left: shiva in a dark night world while 'He did it for Shiva, and in return,' is spoken.",
    "vert": {
     "focus": "shiva"
    },
@@ -650,16 +650,16 @@
    ],
    "cam": {
     "from": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": 0.04
     }
    },
    "grade": "ep07_dark",
@@ -874,10 +874,11 @@
      ]
     }
    ],
-   "note": "medium push_in: shiva in a dark night world while 'Shiva gave him the weapon that nothing in the univ' is spoken.",
+   "note": "medium handheld: shiva in a dark night world while 'Shiva gave him the weapon that nothing in the univ' is spoken.",
    "vert": {
     "focus": "shiva"
    },
+   "shake": 2,
    "dx": 0
   },
   {
@@ -913,7 +914,7 @@
     {
      "who": "asura1",
      "x": 640,
-     "y": 684,
+     "y": 681,
      "s": 1.3,
      "flip": 1,
      "pose": "rage",
@@ -975,14 +976,14 @@
    ],
    "cam": {
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.03,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     }
@@ -1132,7 +1133,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: asura1 in a dark ember world while 'It began with demons.' is spoken.",
+   "note": "wide pull_out: asura1 in a dark ember world while 'It began with demons.' is spoken.",
    "vert": {
     "focus": "asura1"
    },
@@ -1183,7 +1184,7 @@
     {
      "who": "deva_thin",
      "x": 478,
-     "y": 578,
+     "y": 580,
      "s": 0.6,
      "flip": 1,
      "pose": "plead",
@@ -1195,7 +1196,7 @@
     {
      "who": "deva_thin2",
      "x": 806,
-     "y": 572,
+     "y": 574,
      "s": 0.58,
      "flip": -1,
      "pose": "plead",
@@ -1258,15 +1259,15 @@
    "cam": {
     "from": {
      "z": 1.04,
-     "x": 6,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": 0.04
     }
    },
    "grade": "ep07_dark",
@@ -1467,10 +1468,11 @@
      ]
     }
    ],
-   "note": "medium push_in: asura1 in a dark ember world while 'They tormented the gods and killed people.' is spoken.",
+   "note": "medium handheld: asura1 in a dark ember world while 'They tormented the gods and killed people.' is spoken.",
    "vert": {
     "focus": "asura1"
    },
+   "shake": 2,
    "dx": 0
   },
   {
@@ -1506,7 +1508,7 @@
     {
      "who": "vishnu",
      "x": 640,
-     "y": 590,
+     "y": 597,
      "s": 0.95,
      "flip": 1,
      "pose": "stand",
@@ -1518,7 +1520,7 @@
     {
      "who": "deva_thin",
      "x": 478,
-     "y": 584,
+     "y": 596,
      "s": 0.58,
      "flip": 1,
      "pose": "kneel",
@@ -1530,7 +1532,7 @@
     {
      "who": "deva_thin2",
      "x": 806,
-     "y": 580,
+     "y": 590,
      "s": 0.56,
      "flip": -1,
      "pose": "kneel",
@@ -1592,14 +1594,14 @@
    ],
    "cam": {
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     }
@@ -1802,7 +1804,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: vishnu in a dark night world while 'The gods begged Vishnu to save them.' is spoken.",
+   "note": "medium tilt_up: vishnu in a dark night world while 'The gods begged Vishnu to save them.' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -2153,7 +2155,7 @@
     {
      "who": "shiva",
      "x": 640,
-     "y": 590,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -2193,13 +2195,13 @@
    "cam": {
     "from": {
      "z": 1.04,
-     "x": 70,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.08,
+     "x": 10,
      "y": 0,
      "r": 0
     }
@@ -2416,7 +2418,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: shiva in a dark night world while 'Years passed. Shiva did not appear.' is spoken.",
+   "note": "medium dolly_left: shiva in a dark night world while 'Years passed. Shiva did not appear.' is spoken.",
    "vert": {
     "focus": "shiva"
    },
@@ -2454,7 +2456,7 @@
     {
      "who": "vishnu",
      "x": 584,
-     "y": 569,
+     "y": 577,
      "s": 0.7,
      "flip": 1,
      "pose": "open",
@@ -2517,15 +2519,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     }
    },
@@ -2667,7 +2669,7 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark indigo world while 'So Vishnu shaped a lingam, the sacred form of Shiv' is spoken.",
+   "note": "medium tilt_up: vishnu in a dark indigo world while 'So Vishnu shaped a lingam, the sacred form of Shiv' is spoken.",
    "vert": {
     "x": 650,
     "focus": "vishnu"
@@ -2758,16 +2760,16 @@
    ],
    "cam": {
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
-     "y": 0,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
     }
    },
    "grade": "ep07_dark",
@@ -2908,11 +2910,12 @@
      ]
     }
    ],
-   "note": "medium pull_out: vishnu in a dark indigo world while 'He chanted the thousand names of Shiva.' is spoken.",
+   "note": "medium handheld: vishnu in a dark indigo world while 'He chanted the thousand names of Shiva.' is spoken.",
    "vert": {
     "x": 650,
     "focus": "vishnu"
    },
+   "shake": 2,
    "dx": 0
   },
   {
@@ -2947,7 +2950,7 @@
     {
      "who": "vishnu",
      "x": 584,
-     "y": 568,
+     "y": 572,
      "s": 0.7,
      "flip": 1,
      "pose": "namaste",
@@ -3000,15 +3003,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.07,
+     "x": 10,
+     "y": 0,
      "r": 0
     }
    },
@@ -3150,7 +3153,7 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark indigo world while 'For every name, he laid one lotus on the lingam.' is spoken.",
+   "note": "medium dolly_right: vishnu in a dark indigo world while 'For every name, he laid one lotus on the lingam.' is spoken.",
    "vert": {
     "x": 650,
     "focus": "vishnu"
@@ -3189,7 +3192,7 @@
     {
      "who": "vishnu",
      "x": 584,
-     "y": 569,
+     "y": 577,
      "s": 0.7,
      "flip": 1,
      "pose": "namaste",
@@ -3242,14 +3245,14 @@
    ],
    "cam": {
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     }
@@ -3466,7 +3469,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: vishnu in a dark indigo world while 'When the chant ended, a thousand lotuses covered i' is spoken.",
+   "note": "medium tilt_up: vishnu in a dark indigo world while 'When the chant ended, a thousand lotuses covered i' is spoken.",
    "vert": {
     "x": 650,
     "focus": "vishnu"
@@ -3505,7 +3508,7 @@
     {
      "who": "shiva",
      "x": 584,
-     "y": 568,
+     "y": 572,
      "s": 0.7,
      "flip": 1,
      "pose": "stand",
@@ -3558,15 +3561,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     }
    },
@@ -3782,7 +3785,7 @@
      ]
     }
    ],
-   "note": "medium push_in: shiva in a dark indigo world while 'Shiva was moved, but he wanted to test Vishnu one ' is spoken.",
+   "note": "wide pull_out: shiva in a dark indigo world while 'Shiva was moved, but he wanted to test Vishnu one ' is spoken.",
    "vert": {
     "x": 650,
     "focus": "shiva"
@@ -3821,7 +3824,7 @@
     {
      "who": "shiva",
      "x": 584,
-     "y": 569,
+     "y": 572,
      "s": 0.7,
      "flip": 1,
      "pose": "point",
@@ -3886,14 +3889,14 @@
    ],
    "cam": {
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 10,
      "y": 0,
      "r": 0
     }
@@ -4110,7 +4113,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: shiva in a dark indigo world while 'so he took one lotus away.' is spoken.",
+   "note": "medium dolly_left: shiva in a dark indigo world while 'so he took one lotus away.' is spoken.",
    "vert": {
     "x": 650,
     "focus": "shiva"
@@ -4149,7 +4152,7 @@
     {
      "who": "vishnu",
      "x": 584,
-     "y": 569,
+     "y": 577,
      "s": 0.7,
      "flip": 1,
      "pose": "stand",
@@ -4202,15 +4205,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     }
    },
@@ -4426,7 +4429,7 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark indigo world while 'Vishnu counted the flowers, 999.' is spoken.",
+   "note": "medium tilt_up: vishnu in a dark indigo world while 'Vishnu counted the flowers, 999.' is spoken.",
    "vert": {
     "x": 650,
     "focus": "vishnu"
@@ -4465,7 +4468,7 @@
     {
      "who": "vishnu",
      "x": 584,
-     "y": 570,
+     "y": 572,
      "s": 0.7,
      "flip": 1,
      "pose": "stand",
@@ -4529,14 +4532,14 @@
    ],
    "cam": {
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     }
@@ -4753,7 +4756,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: vishnu in a dark indigo world while 'He searched everywhere, but the lotus was gone.' is spoken.",
+   "note": "wide pull_out: vishnu in a dark indigo world while 'He searched everywhere, but the lotus was gone.' is spoken.",
    "vert": {
     "x": 650,
     "focus": "vishnu"
@@ -4792,7 +4795,7 @@
     {
      "who": "vishnu",
      "x": 584,
-     "y": 568,
+     "y": 572,
      "s": 0.7,
      "flip": 1,
      "pose": "stand",
@@ -4845,15 +4848,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     }
    },
@@ -4995,7 +4998,7 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark indigo world while 'One flower short meant the worship was not complet' is spoken.",
+   "note": "medium dolly_right: vishnu in a dark indigo world while 'One flower short meant the worship was not complet' is spoken.",
    "vert": {
     "x": 650,
     "focus": "vishnu"
@@ -5018,7 +5021,7 @@
     {
      "who": "vishnu",
      "x": 470,
-     "y": 589,
+     "y": 597,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -5030,7 +5033,7 @@
     {
      "who": "shiva",
      "x": 810,
-     "y": 589,
+     "y": 597,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -5081,14 +5084,14 @@
    ],
    "cam": {
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     }
@@ -5231,7 +5234,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: vishnu in a dark indigo world while 'Would Vishnu fail in front of Shiva?' is spoken.",
+   "note": "medium tilt_up: vishnu in a dark indigo world while 'Would Vishnu fail in front of Shiva?' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -5269,7 +5272,7 @@
     {
      "who": "vishnu",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -5308,15 +5311,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     }
    },
@@ -5532,7 +5535,7 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark indigo world while 'Then Vishnu smiled.' is spoken.",
+   "note": "wide pull_out: vishnu in a dark indigo world while 'Then Vishnu smiled.' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -5546,307 +5549,6 @@
    },
    "cues": [
     "One"
-   ],
-   "bg": {
-    "k": "vista",
-    "sky": [
-     "#0e0820",
-     "#2a1850",
-     "#5a2a58",
-     "#b05a48"
-    ],
-    "sx": 640,
-    "sy": 300,
-    "ridge": [
-     "#3a2a5a",
-     "#2e2048",
-     "#241838",
-     "#1a1028"
-    ],
-    "haze": "200,160,170",
-    "dust": 10
-   },
-   "figs": [
-    {
-     "who": "vishnu",
-     "x": 640,
-     "y": 589,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
-    }
-   ],
-   "fx": [],
-   "fxb": [
-    {
-     "t": "pfx",
-     "k": "scene_kit",
-     "x": 640,
-     "y": 360,
-     "w": 1280,
-     "alpha": 1,
-     "par": 1.0,
-     "kind": "hills_night",
-     "pal": "indigo",
-     "c": 0,
-     "d": 0.6
-    },
-    {
-     "t": "pfx",
-     "k": "mist_wisps",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.45,
-     "par": 1.0,
-     "c": 0,
-     "d": 0.6
-    }
-   ],
-   "cam": {
-    "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
-     "r": 0
-    }
-   },
-   "grade": "ep07_dark",
-   "layers": [
-    {
-     "d": "far",
-     "fog": 0.6,
-     "haze": "#b05a48",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#3a2a5a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#2e2048",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#3a2a5a",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#2e2048",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#2e2048",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#5a2a58"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#5a2a58"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#241838"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "round",
-       "col": "#241838"
-      },
-      {
-       "o": "rock",
-       "x": 450,
-       "y": 522,
-       "s": 0.9,
-       "col": "#1a1028"
-      },
-      {
-       "o": "rock",
-       "x": 840,
-       "y": 518,
-       "s": 0.8,
-       "col": "#1a1028"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "note": "medium pull_out: vishnu in a dark indigo world while 'One of his names was Kamalanayana, the one with lo' is spoken.",
-   "vert": {
-    "focus": "vishnu"
-   },
-   "dx": 0
-  },
-  {
-   "id": "s21",
-   "at": {
-    "t": 64.62,
-    "word": "His"
-   },
-   "cues": [
-    "His"
    ],
    "bg": {
     "k": "vista",
@@ -5910,15 +5612,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     }
    },
@@ -6134,7 +5836,308 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark indigo world while 'His eyes were like lotuses, so one of them could t' is spoken.",
+   "note": "medium dolly_left: vishnu in a dark indigo world while 'One of his names was Kamalanayana, the one with lo' is spoken.",
+   "vert": {
+    "focus": "vishnu"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s21",
+   "at": {
+    "t": 64.62,
+    "word": "His"
+   },
+   "cues": [
+    "His"
+   ],
+   "bg": {
+    "k": "vista",
+    "sky": [
+     "#0e0820",
+     "#2a1850",
+     "#5a2a58",
+     "#b05a48"
+    ],
+    "sx": 640,
+    "sy": 300,
+    "ridge": [
+     "#3a2a5a",
+     "#2e2048",
+     "#241838",
+     "#1a1028"
+    ],
+    "haze": "200,160,170",
+    "dust": 10
+   },
+   "figs": [
+    {
+     "who": "vishnu",
+     "x": 640,
+     "y": 596,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "hills_night",
+     "pal": "indigo",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.45,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
+     "r": 0
+    },
+    "to": {
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "ep07_dark",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.6,
+     "haze": "#b05a48",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#2e2048",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#3a2a5a",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#2e2048",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#2e2048",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5a2a58"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5a2a58"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "pine",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "round",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "pine",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "round",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#241838"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "round",
+       "col": "#241838"
+      },
+      {
+       "o": "rock",
+       "x": 450,
+       "y": 522,
+       "s": 0.9,
+       "col": "#1a1028"
+      },
+      {
+       "o": "rock",
+       "x": 840,
+       "y": 518,
+       "s": 0.8,
+       "col": "#1a1028"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "note": "medium tilt_up: vishnu in a dark indigo world while 'His eyes were like lotuses, so one of them could t' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
@@ -6207,16 +6210,16 @@
    ],
    "cam": {
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
-     "y": 0,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
     }
    },
    "grade": "ep07_dark",
@@ -6357,10 +6360,11 @@
      ]
     }
    ],
-   "note": "medium pull_out: vishnu in a dark indigo world while 'He pulled out his own eye and placed it on the lin' is spoken.",
+   "note": "medium handheld: vishnu in a dark indigo world while 'He pulled out his own eye and placed it on the lin' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
+   "shake": 2,
    "dx": 0
   },
   {
@@ -6379,7 +6383,7 @@
     {
      "who": "shiva",
      "x": 640,
-     "y": 589,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "open",
@@ -6430,15 +6434,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.03,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.07,
+     "x": 10,
+     "y": 0,
      "r": 0
     }
    },
@@ -6580,7 +6584,7 @@
      ]
     }
    ],
-   "note": "medium push_in: shiva in a dark indigo world while 'Shiva appeared at once and healed Vishnu's eye.' is spoken.",
+   "note": "medium dolly_right: shiva in a dark indigo world while 'Shiva appeared at once and healed Vishnu's eye.' is spoken.",
    "vert": {
     "focus": "shiva"
    },
@@ -6618,7 +6622,7 @@
     {
      "who": "shiva",
      "x": 640,
-     "y": 588,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "open",
@@ -6669,16 +6673,16 @@
    ],
    "cam": {
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
-     "y": 0,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
     }
    },
    "grade": "ep07_dark",
@@ -6893,10 +6897,11 @@
      ]
     }
    ],
-   "note": "medium pull_out: shiva in a dark indigo world while 'Then he gave him a golden disc with two circles sp' is spoken.",
+   "note": "medium handheld: shiva in a dark indigo world while 'Then he gave him a golden disc with two circles sp' is spoken.",
    "vert": {
     "focus": "shiva"
    },
+   "shake": 2,
    "dx": 0
   },
   {
@@ -6970,15 +6975,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.03,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     }
    },
@@ -7194,7 +7199,7 @@
      ]
     }
    ],
-   "note": "medium push_in: shiva in a dark indigo world while 'He named it Sudarshana, which means virtuous visio' is spoken.",
+   "note": "wide pull_out: shiva in a dark indigo world while 'He named it Sudarshana, which means virtuous visio' is spoken.",
    "vert": {
     "focus": "shiva"
    },
@@ -7232,7 +7237,7 @@
     {
      "who": "vishnu",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "open",
@@ -7283,16 +7288,16 @@
    ],
    "cam": {
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
     }
    },
    "grade": "ep07_dark",
@@ -7507,10 +7512,11 @@
      ]
     }
    ],
-   "note": "medium pull_out: vishnu in a dark indigo world while 'That is how Vishnu got the Sudarshana Chakra.' is spoken.",
+   "note": "medium handheld: vishnu in a dark indigo world while 'That is how Vishnu got the Sudarshana Chakra.' is spoken.",
    "vert": {
     "focus": "vishnu"
    },
+   "shake": 2,
    "dx": 0
   },
   {
@@ -7530,7 +7536,7 @@
     {
      "who": "vishnu",
      "x": 470,
-     "y": 588,
+     "y": 591,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -7542,7 +7548,7 @@
     {
      "who": "shiva",
      "x": 810,
-     "y": 588,
+     "y": 591,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -7604,15 +7610,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.1,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
      "r": 0
     }
    },
@@ -7761,7 +7767,7 @@
      ]
     }
    ],
-   "note": "medium push_in: vishnu in a dark indigo world while 'Vishnu gave his eye, and Shiva gave him the weapon' is spoken.",
+   "note": "wide pull_out: vishnu in a dark indigo world while 'Vishnu gave his eye, and Shiva gave him the weapon' is spoken.",
    "vert": {
     "focus": "vishnu"
    },

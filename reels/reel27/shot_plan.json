@@ -33,7 +33,7 @@
     {
      "who": "hanuman",
      "x": 470,
-     "y": 588,
+     "y": 594,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -46,7 +46,7 @@
     {
      "who": "parashurama",
      "x": 810,
-     "y": 588,
+     "y": 594,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -85,15 +85,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.0,
+     "z": 1.2,
      "x": 0,
-     "y": 0,
+     "y": 6,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.02,
+     "x": 0,
+     "y": 0,
      "r": 0
     }
    },
@@ -309,7 +309,7 @@
      ]
     }
    ],
-   "note": "medium push_in: hanuman in a dark night world while 'Hanuman, Parashuram, Ashwatthama, and four others ' is spoken.",
+   "note": "wide pull_out: hanuman in a dark night world while 'Hanuman, Parashuram, Ashwatthama, and four others ' is spoken.",
    "vert": {
     "focus": "hanuman"
    },
@@ -347,7 +347,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 589,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -387,14 +387,14 @@
    ],
    "cam": {
     "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
+     "z": 1.02,
+     "x": -10,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.06,
+     "x": 10,
      "y": 0,
      "r": 0
     }
@@ -611,7 +611,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: hanuman in a dark night world while 'For six of them, it is a gift.' is spoken.",
+   "note": "medium dolly_left: hanuman in a dark night world while 'For six of them, it is a gift.' is spoken.",
    "vert": {
     "focus": "hanuman"
    },
@@ -701,16 +701,16 @@
    ],
    "cam": {
     "from": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 0,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": 0.04
     }
    },
    "grade": "ep07_dark",
@@ -925,10 +925,11 @@
      ]
     }
    ],
-   "note": "medium push_in: hanuman in a dark ember world while 'For one of them, it is a curse.' is spoken.",
+   "note": "medium handheld: hanuman in a dark ember world while 'For one of them, it is a curse.' is spoken.",
    "vert": {
     "focus": "hanuman"
    },
+   "shake": 2,
    "dx": 0
   },
   {
@@ -963,7 +964,7 @@
     {
      "who": "hanuman",
      "x": 640,
-     "y": 590,
+     "y": 589,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -1003,14 +1004,14 @@
    ],
    "cam": {
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.03,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     }
@@ -1227,7 +1228,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: hanuman in a dark ember world while 'They are called the Chiranjeevis.' is spoken.",
+   "note": "wide pull_out: hanuman in a dark ember world while 'They are called the Chiranjeevis.' is spoken.",
    "vert": {
     "focus": "hanuman"
    },
@@ -1265,7 +1266,7 @@
     {
      "who": "ashwatthama",
      "x": 470,
-     "y": 588,
+     "y": 592,
      "s": 0.765,
      "flip": 1,
      "pose": "stand",
@@ -1277,7 +1278,7 @@
     {
      "who": "rishi2",
      "x": 810,
-     "y": 588,
+     "y": 592,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -1316,15 +1317,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     }
    },
@@ -1540,7 +1541,7 @@
      ]
     }
    ],
-   "note": "medium push_in: ashwatthama in a dark ember world while 'The first is Ashwatthama, the son of Drona.' is spoken.",
+   "note": "medium dolly_right: ashwatthama in a dark ember world while 'The first is Ashwatthama, the son of Drona.' is spoken.",
    "vert": {
     "focus": "ashwatthama"
    },
@@ -1578,7 +1579,7 @@
     {
      "who": "shiva",
      "x": 640,
-     "y": 588,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "open",
@@ -1628,16 +1629,16 @@
    ],
    "cam": {
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
-     "y": 0,
-     "r": 0
+     "z": 1.12,
+     "x": 0,
+     "y": -4,
+     "r": -0.04
     }
    },
    "grade": "ep07_dark",
@@ -1852,10 +1853,11 @@
      ]
     }
    ],
-   "note": "medium pull_out: shiva in a dark ember world while 'He was born with a jewel on his forehead given by ' is spoken.",
+   "note": "medium handheld: shiva in a dark ember world while 'He was born with a jewel on his forehead given by ' is spoken.",
    "vert": {
     "focus": "shiva"
    },
+   "shake": 2,
    "dx": 0
   },
   {
@@ -1951,7 +1953,7 @@
      "z": 1.04,
      "x": 70,
      "y": 0,
-     "r": 0
+     "r": 0.04
     }
    },
    "grade": "ep07_dark",
@@ -2103,6 +2105,7 @@
    "vert": {
     "focus": "shiva"
    },
+   "shake": 2,
    "dx": 0
   },
   {
@@ -2121,7 +2124,7 @@
     {
      "who": "mahabali",
      "x": 640,
-     "y": 590,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -2173,13 +2176,13 @@
    "cam": {
     "from": {
      "z": 1.04,
-     "x": 70,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.08,
+     "x": 10,
      "y": 0,
      "r": 0
     }
@@ -2329,7 +2332,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: mahabali in a dark ember world while 'The second is Mahabali, who gave everything he had' is spoken.",
+   "note": "medium dolly_left: mahabali in a dark ember world while 'The second is Mahabali, who gave everything he had' is spoken.",
    "vert": {
     "focus": "mahabali"
    },
@@ -2367,7 +2370,7 @@
     {
      "who": "rishi3",
      "x": 640,
-     "y": 590,
+     "y": 596,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -2406,15 +2409,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     }
    },
@@ -2630,7 +2633,7 @@
      ]
     }
    ],
-   "note": "medium push_in: rishi3 in a dark ember world while 'The third is Vyasa, who wrote the Mahabharata.' is spoken.",
+   "note": "medium tilt_up: rishi3 in a dark ember world while 'The third is Vyasa, who wrote the Mahabharata.' is spoken.",
    "vert": {
     "focus": "rishi3"
    },
@@ -2668,7 +2671,7 @@
     {
      "who": "hanuman",
      "x": 470,
-     "y": 589,
+     "y": 592,
      "s": 0.765,
      "flip": 1,
      "pose": "namaste",
@@ -2681,7 +2684,7 @@
     {
      "who": "rama",
      "x": 810,
-     "y": 589,
+     "y": 592,
      "s": 0.765,
      "flip": -1,
      "pose": "stand",
@@ -2720,14 +2723,14 @@
    ],
    "cam": {
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     }
@@ -2944,7 +2947,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: hanuman in a dark ember world while 'The fourth is Hanuman, who was blessed with a long' is spoken.",
+   "note": "wide pull_out: hanuman in a dark ember world while 'The fourth is Hanuman, who was blessed with a long' is spoken.",
    "vert": {
     "focus": "hanuman"
    },
@@ -2966,7 +2969,7 @@
     {
      "who": "vibhishana",
      "x": 640,
-     "y": 589,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -3017,15 +3020,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.04,
+     "x": 10,
+     "y": 0,
      "r": 0
     }
    },
@@ -3227,7 +3230,7 @@
      ]
     }
    ],
-   "note": "medium push_in: vibhishana in a dark ember world while 'The fifth is Vibhishana, Ravana's brother.' is spoken.",
+   "note": "medium dolly_right: vibhishana in a dark ember world while 'The fifth is Vibhishana, Ravana's brother.' is spoken.",
    "vert": {
     "focus": "vibhishana"
    },
@@ -3249,7 +3252,7 @@
     {
      "who": "rishi4",
      "x": 640,
-     "y": 588,
+     "y": 596,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -3300,14 +3303,14 @@
    ],
    "cam": {
     "from": {
-     "z": 1.13,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.0,
-     "x": 6,
+     "z": 1.05,
+     "x": 0,
      "y": 0,
      "r": 0
     }
@@ -3510,7 +3513,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: rishi4 in a dark ember world while 'The sixth is Kripa, a teacher in the Mahabharata.' is spoken.",
+   "note": "medium tilt_up: rishi4 in a dark ember world while 'The sixth is Kripa, a teacher in the Mahabharata.' is spoken.",
    "vert": {
     "focus": "rishi4"
    },
@@ -3532,7 +3535,301 @@
     {
      "who": "parashurama",
      "x": 640,
-     "y": 589,
+     "y": 590,
+     "s": 0.9,
+     "flip": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "mood": {
+      "lx": 0.8
+     }
+    }
+   ],
+   "fx": [],
+   "fxb": [
+    {
+     "t": "pfx",
+     "k": "scene_kit",
+     "x": 640,
+     "y": 360,
+     "w": 1280,
+     "alpha": 1,
+     "par": 1.0,
+     "kind": "forest_dusk",
+     "pal": "brown",
+     "c": 0,
+     "d": 0.6
+    },
+    {
+     "t": "pfx",
+     "k": "mist_wisps",
+     "x": 640,
+     "y": 600,
+     "w": 640,
+     "alpha": 0.5,
+     "par": 1.0,
+     "c": 0,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "from": {
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0,
+     "y": 0,
+     "r": 0
+    }
+   },
+   "grade": "ep07_dark",
+   "layers": [
+    {
+     "d": "far",
+     "fog": 0.6,
+     "haze": "#9a6a3c",
+     "items": [
+      {
+       "o": "mountain",
+       "x": 420,
+       "y": 470,
+       "s": 1.1,
+       "w": 230,
+       "h": 190,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 550,
+       "y": 478,
+       "s": 0.9,
+       "w": 200,
+       "h": 130,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 700,
+       "y": 468,
+       "s": 1.25,
+       "w": 250,
+       "h": 215,
+       "col": "#6a4a34",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 835,
+       "y": 480,
+       "s": 0.95,
+       "w": 210,
+       "h": 150,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "mountain",
+       "x": 480,
+       "y": 490,
+       "s": 0.6,
+       "w": 160,
+       "h": 90,
+       "col": "#523a28",
+       "snow": false
+      },
+      {
+       "o": "cloud",
+       "x": 500,
+       "y": 200,
+       "s": 1.0,
+       "col": "#5e3a24"
+      },
+      {
+       "o": "cloud",
+       "x": 790,
+       "y": 250,
+       "s": 0.9,
+       "col": "#5e3a24"
+      }
+     ]
+    },
+    {
+     "d": "mid",
+     "fog": 0.5,
+     "items": [
+      {
+       "o": "hill",
+       "x": 640,
+       "y": 482,
+       "s": 1.0,
+       "w": 1100,
+       "h": 12,
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 405,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 450,
+       "y": 508,
+       "s": 0.35,
+       "kind": "banyan",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 495,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 540,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 585,
+       "y": 508,
+       "s": 0.35,
+       "kind": "banyan",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 630,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 675,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 720,
+       "y": 508,
+       "s": 0.35,
+       "kind": "banyan",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 765,
+       "y": 508,
+       "s": 0.4,
+       "kind": "palm",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 810,
+       "y": 508,
+       "s": 0.3,
+       "kind": "pine",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 855,
+       "y": 508,
+       "s": 0.35,
+       "kind": "banyan",
+       "col": "#3a281c"
+      },
+      {
+       "o": "tree",
+       "x": 448,
+       "y": 522,
+       "s": 0.7,
+       "kind": "banyan",
+       "col": "#2a1c12"
+      },
+      {
+       "o": "tree",
+       "x": 838,
+       "y": 518,
+       "s": 0.66,
+       "kind": "pine",
+       "col": "#2a1c12"
+      },
+      {
+       "o": "hut",
+       "x": 520,
+       "y": 528,
+       "s": 0.4,
+       "col": "#2a1c12"
+      }
+     ]
+    },
+    {
+     "d": "near",
+     "dark": 0.5,
+     "blur": 2,
+     "items": [
+      {
+       "o": "rock",
+       "x": 432,
+       "y": 758,
+       "s": 0.9,
+       "col": "#0a0610"
+      },
+      {
+       "o": "rock",
+       "x": 852,
+       "y": 760,
+       "s": 0.85,
+       "col": "#0a0610"
+      }
+     ]
+    }
+   ],
+   "note": "wide pull_out: parashurama in a dark brown world while 'And the seventh is Parashuram, who still lives on ' is spoken.",
+   "vert": {
+    "focus": "parashurama"
+   },
+   "dx": 0
+  },
+  {
+   "id": "s14",
+   "at": {
+    "t": 48.2,
+    "word": "So"
+   },
+   "cues": [
+    "So"
+   ],
+   "bg": {
+    "k": "forest"
+   },
+   "figs": [
+    {
+     "who": "parashurama",
+     "x": 640,
+     "y": 590,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -3572,307 +3869,13 @@
    "cam": {
     "from": {
      "z": 1.0,
-     "x": 6,
+     "x": -10,
      "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    }
-   },
-   "grade": "ep07_dark",
-   "layers": [
-    {
-     "d": "far",
-     "fog": 0.6,
-     "haze": "#9a6a3c",
-     "items": [
-      {
-       "o": "mountain",
-       "x": 420,
-       "y": 470,
-       "s": 1.1,
-       "w": 230,
-       "h": 190,
-       "col": "#6a4a34",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 550,
-       "y": 478,
-       "s": 0.9,
-       "w": 200,
-       "h": 130,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 700,
-       "y": 468,
-       "s": 1.25,
-       "w": 250,
-       "h": 215,
-       "col": "#6a4a34",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 835,
-       "y": 480,
-       "s": 0.95,
-       "w": 210,
-       "h": 150,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "mountain",
-       "x": 480,
-       "y": 490,
-       "s": 0.6,
-       "w": 160,
-       "h": 90,
-       "col": "#523a28",
-       "snow": false
-      },
-      {
-       "o": "cloud",
-       "x": 500,
-       "y": 200,
-       "s": 1.0,
-       "col": "#5e3a24"
-      },
-      {
-       "o": "cloud",
-       "x": 790,
-       "y": 250,
-       "s": 0.9,
-       "col": "#5e3a24"
-      }
-     ]
-    },
-    {
-     "d": "mid",
-     "fog": 0.5,
-     "items": [
-      {
-       "o": "hill",
-       "x": 640,
-       "y": 482,
-       "s": 1.0,
-       "w": 1100,
-       "h": 12,
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 405,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 450,
-       "y": 508,
-       "s": 0.35,
-       "kind": "banyan",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 495,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 540,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 585,
-       "y": 508,
-       "s": 0.35,
-       "kind": "banyan",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 630,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 675,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 720,
-       "y": 508,
-       "s": 0.35,
-       "kind": "banyan",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 765,
-       "y": 508,
-       "s": 0.4,
-       "kind": "palm",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 810,
-       "y": 508,
-       "s": 0.3,
-       "kind": "pine",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 855,
-       "y": 508,
-       "s": 0.35,
-       "kind": "banyan",
-       "col": "#3a281c"
-      },
-      {
-       "o": "tree",
-       "x": 448,
-       "y": 522,
-       "s": 0.7,
-       "kind": "banyan",
-       "col": "#2a1c12"
-      },
-      {
-       "o": "tree",
-       "x": 838,
-       "y": 518,
-       "s": 0.66,
-       "kind": "pine",
-       "col": "#2a1c12"
-      },
-      {
-       "o": "hut",
-       "x": 520,
-       "y": 528,
-       "s": 0.4,
-       "col": "#2a1c12"
-      }
-     ]
-    },
-    {
-     "d": "near",
-     "dark": 0.5,
-     "blur": 2,
-     "items": [
-      {
-       "o": "rock",
-       "x": 432,
-       "y": 758,
-       "s": 0.9,
-       "col": "#0a0610"
-      },
-      {
-       "o": "rock",
-       "x": 852,
-       "y": 760,
-       "s": 0.85,
-       "col": "#0a0610"
-      }
-     ]
-    }
-   ],
-   "note": "medium push_in: parashurama in a dark brown world while 'And the seventh is Parashuram, who still lives on ' is spoken.",
-   "vert": {
-    "focus": "parashurama"
-   },
-   "dx": 0
-  },
-  {
-   "id": "s14",
-   "at": {
-    "t": 48.2,
-    "word": "So"
-   },
-   "cues": [
-    "So"
-   ],
-   "bg": {
-    "k": "forest"
-   },
-   "figs": [
-    {
-     "who": "parashurama",
-     "x": 640,
-     "y": 589,
-     "s": 0.9,
-     "flip": 1,
-     "pose": "stand",
-     "emo": "calm",
-     "mood": {
-      "lx": 0.8
-     }
-    }
-   ],
-   "fx": [],
-   "fxb": [
-    {
-     "t": "pfx",
-     "k": "scene_kit",
-     "x": 640,
-     "y": 360,
-     "w": 1280,
-     "alpha": 1,
-     "par": 1.0,
-     "kind": "forest_dusk",
-     "pal": "brown",
-     "c": 0,
-     "d": 0.6
-    },
-    {
-     "t": "pfx",
-     "k": "mist_wisps",
-     "x": 640,
-     "y": 600,
-     "w": 640,
-     "alpha": 0.5,
-     "par": 1.0,
-     "c": 0,
-     "d": 0.6
-    }
-   ],
-   "cam": {
-    "from": {
-     "z": 1.15,
-     "x": -6,
-     "y": -6,
-     "r": 0
-    },
-    "to": {
-     "z": 1.02,
-     "x": 6,
+     "z": 1.04,
+     "x": 10,
      "y": 0,
      "r": 0
     }
@@ -4098,7 +4101,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: parashurama in a dark brown world while 'So seven beings can never die.' is spoken.",
+   "note": "medium dolly_left: parashurama in a dark brown world while 'So seven beings can never die.' is spoken.",
    "vert": {
     "focus": "parashurama"
    },
@@ -4136,7 +4139,7 @@
     {
      "who": "parashurama",
      "x": 640,
-     "y": 590,
+     "y": 596,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -4175,15 +4178,15 @@
    ],
    "cam": {
     "from": {
-     "z": 1.02,
-     "x": 6,
-     "y": 0,
+     "z": 1.05,
+     "x": 0,
+     "y": 12,
      "r": 0
     },
     "to": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.05,
+     "x": 0,
+     "y": 0,
      "r": 0
     }
    },
@@ -4399,7 +4402,7 @@
      ]
     }
    ],
-   "note": "medium push_in: parashurama in a dark brown world while 'Six of them got a gift.' is spoken.",
+   "note": "medium tilt_up: parashurama in a dark brown world while 'Six of them got a gift.' is spoken.",
    "vert": {
     "focus": "parashurama"
    },
@@ -4437,7 +4440,7 @@
     {
      "who": "ashwatthama",
      "x": 640,
-     "y": 590,
+     "y": 591,
      "s": 0.9,
      "flip": 1,
      "pose": "stand",
@@ -4476,14 +4479,14 @@
    ],
    "cam": {
     "from": {
-     "z": 1.17,
-     "x": -6,
-     "y": -6,
+     "z": 1.1,
+     "x": 0,
+     "y": 0,
      "r": 0
     },
     "to": {
-     "z": 1.04,
-     "x": 6,
+     "z": 1.0,
+     "x": 0,
      "y": 0,
      "r": 0
     }
@@ -4700,7 +4703,7 @@
      ]
     }
    ],
-   "note": "medium pull_out: ashwatthama in a dark brown world while 'Ashwatthama got a punishment that never ends.' is spoken.",
+   "note": "wide pull_out: ashwatthama in a dark brown world while 'Ashwatthama got a punishment that never ends.' is spoken.",
    "vert": {
     "focus": "ashwatthama"
    },
